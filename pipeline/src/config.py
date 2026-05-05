@@ -27,9 +27,10 @@ PUBLISHED_ROOT = DATA_ROOT / "published"
 #   https://www.epa.gov/enviro/envirofacts-data-service-api
 ENVIROFACTS_BASE = "https://data.epa.gov/efservice"
 
-# Default reporting year for TRI runs. TRI is annual; year T is published
-# in second half of year T+1, so the most-recent settled year lags ~6 months.
-DEFAULT_TRI_YEAR = 2023
+# Default reporting year for TRI runs. TRI is annual; year T's preliminary
+# bulk CSV typically appears Oct of T+1, finalized Oct of T+2. As of 2026,
+# 2024 is the latest year EPA publishes; bump again when 2025 lands.
+DEFAULT_TRI_YEAR = 2024
 
 # How many chemicals to surface on a facility page (top by pounds).
 FACILITY_TOP_CHEMICALS = 8

@@ -1,0 +1,135 @@
+name: TRI annual refresh
+
+# EPA finalizes TRI year-N data in October of year N+2 and typically drops
+# year N+1 preliminary in the same window. This action runs Nov 1 each
+# year (~9am Pacific) to (a) re-pull the now-finalized current year and
+# (b) detect + ingest the new preliminary year if EPA has published it.
+# Manual `workflow_dispatch` for ad-hoc refresh.
+
+on:
+  schedule:
+    - cron: '0 17 1 11 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install pipeline package
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install --upgrade pip
+          .venv/bin/pip install -e .
+
+      # Envirofacts (GHGRP, SDWIS), ACS, EJScreen, and TIGER caches are
+      # gitignored but expensive to rebuild from cold (Envirofacts is
+      # rate-limited under burst). Persist them across runs.
+      - name: Restore EPA / Census raw caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/raw/envirofacts
+            data/raw/acs
+            data/raw/ejscreen
+            data/raw/tiger
+            data/raw/tri_bulk
+            data/raw/census_national_county2020.txt
+          key: epa-cache-v1-${{ github.run_id }}
+          restore-keys: |
+            epa-cache-v1-
+
+      - name: Read current DEFAULT_TRI_YEAR
+        id: current
+        run: |
+          year=$(grep -E '^DEFAULT_TRI_YEAR' pipeline/src/config.py | grep -oE '[0-9]+' | head -1)
+          echo "year=$year" >> "$GITHUB_OUTPUT"
+          echo "Current DEFAULT_TRI_YEAR: $year"
+
+      - name: Force fresh download of TRI bulk CSV for current year
+        run: rm -f "data/raw/tri_bulk/CA_${{ steps.current.outputs.year }}.csv"
+
+      - name: Refresh current TRI year
+        run: |
+          .venv/bin/python -m pipeline.src.main run \
+            --state ca \
+            --year ${{ steps.current.outputs.year }} \
+            --history-from 2010
+
+      - name: Probe next year availability
+        id: next
+        run: |
+          next=$(( ${{ steps.current.outputs.year }} + 1 ))
+          status=$(curl -s -o /dev/null -w "%{http_code}" \
+            -A "PollutionAnalystAi/0.1 (+gh-action)" \
+            "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/${next}_CA/csv")
+          echo "year=$next" >> "$GITHUB_OUTPUT"
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          echo "TRI ${next}: HTTP ${status}"
+
+      - name: Bump DEFAULT_TRI_YEAR and ingest new year
+        if: steps.next.outputs.status == '200'
+        run: |
+          sed -i "s/^DEFAULT_TRI_YEAR = .*/DEFAULT_TRI_YEAR = ${{ steps.next.outputs.year }}/" pipeline/src/config.py
+          .venv/bin/python -m pipeline.src.main run \
+            --state ca \
+            --year ${{ steps.next.outputs.year }} \
+            --history-from 2010
+
+      - name: Validate sample of named facilities
+        run: |
+          .venv/bin/python scripts/validate_facilities.py \
+            chemical-waste-management-inc \
+            clean-harbors-buttonwillow-llc \
+            clean-harbors-san-jose-llc \
+            chevron-products-co-div-of-chevron-usa-inc \
+            3m-co-corona \
+            golden-queen-mining-co-llc
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes — EPA data unchanged since last run."
+          fi
+
+      - name: Open refresh PR
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          branch="tri-refresh-$(date -u +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add -A
+
+          if [[ "${{ steps.next.outputs.status }}" == "200" ]]; then
+            summary="EPA published TRI ${{ steps.next.outputs.year }}; bumped DEFAULT_TRI_YEAR and republished. Also refreshed finalized ${{ steps.current.outputs.year }}."
+          else
+            summary="Refreshed TRI ${{ steps.current.outputs.year }} (now finalized). TRI ${{ steps.next.outputs.year }} not yet available at EPA's bulk endpoint."
+          fi
+
+          git commit -m "TRI dataset refresh ($(date -u +%Y-%m-%d))" -m "$summary"
+          git push -u origin "$branch"
+
+          diff_stat=$(git diff --stat HEAD~1 HEAD -- data/published pipeline/src/config.py)
+
+          gh pr create \
+            --title "TRI dataset refresh — $(date -u +%Y-%m)" \
+            --body "$(printf '## What changed\n\n%s\n\n## Diff stats\n\n```\n%s\n```\n\n_Triggered by [%s](%s)._\n' \
+              "$summary" "$diff_stat" "tri-annual-refresh workflow" "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID")"
