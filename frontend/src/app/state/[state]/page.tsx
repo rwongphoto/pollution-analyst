@@ -253,10 +253,13 @@ function UtilitiesSection({ data }: { data: StatePagePayload }) {
     <section className="section section-tint">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
-          <div className="eyebrow">Largest water utilities</div>
+          <div className="eyebrow">Water utilities to watch</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Top public water systems by population served
+            Largest systems with unresolved health-based violations
           </h2>
+          <p className="muted" style={{ fontSize: 14, marginTop: 10, maxWidth: "62ch" }}>
+            Sorted to surface utilities serving the most people that still have an active health-based SDWIS violation on the record. Systems in compliance with no unresolved issues fall to the bottom of the ranking.
+          </p>
         </div>
         <table className="tbl">
           <thead>

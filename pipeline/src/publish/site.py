@@ -549,6 +549,7 @@ def publish_state(
     util_map = utilities or {}
     # Top utilities: highest-pop CWS, but always include any utility with an
     # unresolved health-based violation so those don't get hidden by size.
+    # The frontend table heading reflects this dual-priority ordering.
     top_utility_objs = sorted(
         util_map.values(),
         key=lambda u: (u.health_based_5yr > 0 and u.unresolved > 0, u.population_served),
