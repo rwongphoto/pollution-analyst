@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { NotableSignals } from "@/components/site/AnomalyCard";
+import { CountyMap } from "@/components/site/CountyMap";
 import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
 import { HeroChart } from "@/components/site/HeroChart";
@@ -41,7 +42,7 @@ export async function generateMetadata({
   const { state, slug } = await params;
   const data = await loadCounty(state, slug);
   return pageMeta({
-    title: `${data.county.name}, ${data.county.state_label} Pollution Trends | Pollution Analyst.ai`,
+    title: `${data.county.name}, ${data.county.state_label} Pollution Trends | Pollution Analyst`,
     description: `${data.county.name} pollution data: TRI facility releases, hazardous air pollutants, GHG emissions, and equity context. ${data.facilities.length} top facilities tracked.`,
     path: `/state/${state}/county/${slug}`,
   });
@@ -394,6 +395,25 @@ export default async function CountyPage({
         />
         <CountyHero data={data} />
         <NotableSignals flags={data.flags ?? []} />
+        <section className="section">
+          <div className="wrap">
+            <div style={{ marginBottom: 24 }}>
+              <div className="eyebrow">Top facilities mapped</div>
+              <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
+                Where releases land in {data.county.name}
+              </h2>
+              <p className="muted" style={{ fontSize: 14, marginTop: 10, maxWidth: "62ch" }}>
+                Each red dot is one of the top TRI facilities. Size reflects {data.reporting_year} total
+                releases. County boundary outlined in blue.
+              </p>
+            </div>
+            <CountyMap
+              countyFips={data.county.fips}
+              countyName={data.county.name}
+              facilities={data.facilities}
+            />
+          </div>
+        </section>
         <PathwaysSection pathways={data.pathways} />
         <FacilitiesSection data={data} />
         <UtilitiesSection data={data} />

@@ -9,6 +9,7 @@ import { Ic } from "@/components/site/icons";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
+import { StateMap } from "@/components/site/StateMap";
 import { listStateSlugs, loadState } from "@/lib/data";
 import {
   disparityLanguage,
@@ -38,7 +39,7 @@ export async function generateMetadata({
   const { state } = await params;
   const data = await loadState(state);
   return pageMeta({
-    title: `${data.state.name} Pollution Trends | Pollution Analyst.ai`,
+    title: `${data.state.name} Pollution Trends | Pollution Analyst`,
     description: `${data.state.name} pollution data: ${data.totals.facilities_tracked.toLocaleString()} TRI facilities, ${data.totals.utilities_tracked.toLocaleString()} water utilities, ${data.totals.counties_with_data} counties tracked. Equity context from EJScreen.`,
     path: `/state/${state}`,
   });
@@ -500,6 +501,27 @@ export default async function StatePage({
           flags={data.flags ?? []}
           title="Notable signals at the state level"
         />
+        <section className="section">
+          <div className="wrap">
+            <div style={{ marginBottom: 24 }}>
+              <div className="eyebrow">Where the burden sits</div>
+              <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
+                County-level TRI choropleth
+              </h2>
+              <p className="muted" style={{ fontSize: 14, marginTop: 10, maxWidth: "62ch" }}>
+                Shaded by total reported releases for {data.reporting_year}. Counties without a published
+                page render as &ldquo;no TRI data&rdquo;. Red dots mark this state&apos;s top emitters.
+              </p>
+            </div>
+            <StateMap
+              stateFips={data.state.fips}
+              stateName={data.state.name}
+              topCounties={data.top_counties}
+              topFacilities={data.top_facilities}
+              countiesDirectory={data.counties_directory}
+            />
+          </div>
+        </section>
         <PathwaysSection pathways={data.pathways} />
         <CountiesSection data={data} />
         <FacilitiesSection data={data} />

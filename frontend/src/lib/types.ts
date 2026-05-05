@@ -255,6 +255,8 @@ export interface FacilitySummary {
   yoy_pct_change: number | null;
   top_chemical: string;
   city: string;
+  lat: number | null;
+  lng: number | null;
 }
 
 export interface UtilitySummary {
@@ -341,7 +343,13 @@ export interface StatePagePayload {
   top_counties: CountySummary[];
   // Full alphabetical county list for the bottom-of-page directory (SEO).
   // Counties with no TRI data are excluded — only published-page counties.
-  counties_directory: { slug: string; name: string; facilities_count: number }[];
+  counties_directory: {
+    slug: string;
+    name: string;
+    fips?: string;
+    facilities_count: number;
+    total_releases_pounds?: number;
+  }[];
   top_facilities: FacilitySummary[];
   top_utilities: UtilitySummary[];
   flags: Flag[];

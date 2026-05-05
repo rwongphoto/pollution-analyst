@@ -815,6 +815,8 @@ def _facility_summary(
         "yoy_pct_change": yoy,
         "top_chemical": top_chem.chemical if top_chem else "",
         "city": f.city,
+        "lat": f.lat,
+        "lng": f.lng,
     }
 
 
@@ -907,7 +909,9 @@ def publish_state(
             {
                 "slug": _county_slug(c.name, c.fips),
                 "name": c.name + " County" if not c.name.endswith("County") else c.name,
+                "fips": c.fips,
                 "facilities_count": len(c.facility_ids),
+                "total_releases_pounds": _round_pounds(c.pounds_total),
             }
             for c in counties_alphabetical
         ],
