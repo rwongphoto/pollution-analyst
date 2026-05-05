@@ -36,6 +36,7 @@ from .spatial.acs import (
     get_place_demographics,
     get_state_demographics,
 )
+from .spatial.facility_buffer import compute_facility_buffer_demographics
 from .spatial.places import assign_facilities_to_places, build_bg_to_place, load_places
 
 
@@ -400,14 +401,26 @@ def run_state(
             ghg_history=ghg_county_history.get(cfips),
             flags=county_flags.get(cfips, []),
         ))
+    # 3-mile buffer demographics per facility — block-group-level pop-weighted
+    # aggregation so the equity overlay describes who lives *near* the facility,
+    # not the entire containing county. Falls back to county demographics when
+    # the buffer is empty (rural facilities, missing lat/lng).
+    fac_points_for_buffer = [(f.facility_id, f.lat, f.lng) for f in facilities.values()]
+    try:
+        buffer_demographics = compute_facility_buffer_demographics(
+            fac_points_for_buffer, state.fips, radius_miles=3.0,
+        )
+    except Exception as exc:  # noqa: BLE001
+        logging.warning("facility buffer demographics failed for %s: %s", state.abbr, exc)
+        buffer_demographics = {}
+
     facility_paths: set = set()
     for f in facilities.values():
         facility_paths.add(publish_site.publish_facility(
             f, year,
             chem_history=chem_history.get(f.facility_id),
+            buffer_demographics=buffer_demographics.get(f.facility_id),
             county_demographics=county_demos.get(f.county_fips),
-            county_disparity_scores=county_disparity.get(f.county_fips, []),
-            county_percentiles=county_percentiles.get(f.county_fips, []),
             county_population=county_pops.get(f.county_fips, 0),
             flags=facility_flags_map.get(f.facility_id, []),
         ))

@@ -14,8 +14,6 @@ import {
   loadFacility,
 } from "@/lib/data";
 import {
-  disparityLanguage,
-  equityIndexLanguage,
   isEquityStub,
   longArcLanguage,
   magnitudeLanguage,
@@ -175,6 +173,11 @@ function ChemicalsSection({ chemicals }: { chemicals: ChemicalRelease[] }) {
 }
 
 function EquitySection({ data }: { data: FacilityPagePayload }) {
+  // Facility equity is deliberately scoped to who lives within 3 miles —
+  // pop-weighted block-group demographics. National-percentile and
+  // EJ-disparity indicator scores are rendered on state, county, and city
+  // pages; on a facility page they'd over-claim that the facility is
+  // responsible for those wider indicator levels.
   const e = data.equity;
   if (isEquityStub(e)) {
     return (
@@ -185,18 +188,16 @@ function EquitySection({ data }: { data: FacilityPagePayload }) {
       />
     );
   }
-  const topDisp = (e.disparity_scores ?? [])[0];
   return (
     <section className="section section-tint" id="equity">
       <div className="wrap">
         <div style={{ marginBottom: 24 }}>
-          <div className="eyebrow">Equity context · ACS 2018-2022 · USEPA-clone EJ disparity</div>
+          <div className="eyebrow">Equity context · ACS 2018-2022 block-group demographics</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
             Who lives next to this facility
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
-            {e.geography_label}: a population of <strong>{e.population.toLocaleString()}</strong>.
-            {topDisp ? <> Local disparity score for {topDisp.label.toLowerCase()} sits {disparityLanguage(topDisp.score)} ({topDisp.score.toFixed(0)}).</> : null}{" "}
+            {e.geography_label}: a population of <strong>{e.population.toLocaleString()}</strong>.{" "}
             <Link href="/methodology#equity">Why we surface this →</Link>
           </p>
         </div>
@@ -216,64 +217,10 @@ function EquitySection({ data }: { data: FacilityPagePayload }) {
           ))}
         </div>
 
-        {(e.ej_indexes?.length ?? 0) > 0 && (
-          <div style={{ marginBottom: 32 }}>
-            <p className="meta-mono" style={{ fontSize: 12, color: "var(--ink-3)", marginBottom: 14 }}>
-              NATIONAL PERCENTILE · vs all US block groups (population-weighted; ranked against the national EJScreen indicator distribution)
-            </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 14 }}>
-              {e.ej_indexes.map((row) => {
-                const pct = row.pct_us;
-                const barColor = pct >= 90 ? "var(--red)" : pct >= 80 ? "var(--amber)" : pct >= 60 ? "var(--blue)" : "var(--green)";
-                const numColor = pct >= 80 ? "var(--red)" : pct >= 60 ? "var(--amber)" : "var(--fg-2)";
-                return (
-                  <li key={row.label} style={{ display: "grid", gridTemplateColumns: "1fr 60px 220px", gap: 12, alignItems: "center" }}>
-                    <span style={{ fontSize: 14, color: "var(--fg-2)" }}>{row.label}</span>
-                    <span className="num-mono" style={{ textAlign: "right", color: numColor, fontSize: 14 }}>
-                      {pct.toFixed(0)}
-                    </span>
-                    <span className="muted" style={{ fontSize: 12.5 }}>{equityIndexLanguage(pct)}</span>
-                    <span style={{ gridColumn: "1 / -1", height: 6, background: "var(--bg-3)", borderRadius: 2, overflow: "hidden" }}>
-                      <span style={{ display: "block", height: "100%", width: `${pct}%`, background: barColor }} />
-                    </span>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        )}
-
-        {(e.disparity_scores?.length ?? 0) > 0 && (
-          <table className="tbl">
-            <caption style={{ captionSide: "top", textAlign: "left", padding: "0 0 12px", fontSize: 13, color: "var(--ink-3)" }}>
-              EJ disparity scores · population-weighted (100 = national reference; higher = greater disparate burden)
-            </caption>
-            <thead>
-              <tr>
-                <th>Indicator</th>
-                <th className="right">Disparity score</th>
-                <th>Reading</th>
-              </tr>
-            </thead>
-            <tbody>
-              {e.disparity_scores!.map((row) => (
-                <tr key={row.label}>
-                  <td className="name">{row.label}</td>
-                  <td
-                    className={`right num-mono ${
-                      row.score >= 150 ? "delta-down" : row.score >= 110 ? "delta-flat" : "delta-up"
-                    }`}
-                  >
-                    {row.score.toFixed(0)}
-                  </td>
-                  <td className="muted">{disparityLanguage(row.score)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
-        <p className="muted" style={{ fontSize: 12.5, marginTop: 14 }}>
-          Source: {e.source}.
+        <p className="muted" style={{ fontSize: 12.5, marginTop: 14, maxWidth: "62ch" }}>
+          Source: {e.source}. Indicator-level percentile and EJ-disparity scores are surfaced on the
+          {" "}<Link href={`/state/${data.facility.state}/county/${data.facility.county_slug}#equity`}>county page</Link>
+          {" "}and the state page — they describe wider regional exposure burdens, not effects attributable to a single facility.
         </p>
       </div>
     </section>

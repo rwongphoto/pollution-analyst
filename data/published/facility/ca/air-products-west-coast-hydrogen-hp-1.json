@@ -235,139 +235,20 @@
   ],
   "flags": [],
   "equity": {
-    "population": 1162648,
-    "pct_low_income": 8.3,
-    "pct_people_of_color": 59.4,
-    "pct_under_5": 6.0,
-    "pct_over_64": 16.4,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 91.9,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 47.5,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 49.5,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 52.7,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 55.1,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 76.0,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 59.1,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 74.2,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 72.4,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 83.9,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 91.4,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.9,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 127.3
-      },
-      {
-        "label": "Ozone",
-        "score": 45.3
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 73.1
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 73.7
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 62.7
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 95.8
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 58.1
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 63.9
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 79.0
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 112.2
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 95.7
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.3
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Contra Costa County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+    "population": 44995,
+    "pct_low_income": 11.8,
+    "pct_people_of_color": 40.1,
+    "pct_under_5": 7.0,
+    "pct_over_64": 16.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (30 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Toxics Release Inventory",
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T17:10:25Z"
+  "_published_at": "2026-05-05T17:39:04Z"
 }

@@ -263,9 +263,8 @@ def publish_facility(
     fac: FacilityAgg,
     year: int,
     chem_history: dict[str, dict[int, float]] | None = None,
+    buffer_demographics: object | None = None,
     county_demographics: object | None = None,
-    county_disparity_scores: list | None = None,
-    county_percentiles: list | None = None,
     county_population: int = 0,
     flags: list | None = None,
 ) -> Path:
@@ -330,15 +329,34 @@ def publish_facility(
         },
         "chemicals": out_chemicals,
         "flags": [f.to_payload() for f in (flags or [])],
+        # Facility equity overlay deliberately scopes to "who lives next to the
+        # facility" — 3-mile buffer of pop-weighted block-group demographics.
+        # National-percentile and EJ-disparity layers are intentionally NOT
+        # rendered on facility pages: they're county-wide indicator levels and
+        # implying the facility is responsible for them would over-claim.
+        # Falls back to county-level demographics if the buffer is empty
+        # (rural facility, missing lat/lng).
         "equity": _build_equity(
-            population=county_population,
-            geography_label=(
-                f"{fac.county_name} County, {fac.state_abbr} (facility's containing county; "
-                "3-mile buffer aggregation is a future iteration)"
+            population=(
+                buffer_demographics.population if buffer_demographics is not None else county_population
             ),
-            demographics=county_demographics,
-            disparity_scores=county_disparity_scores,
-            percentiles=county_percentiles,
+            geography_label=(
+                f"Within 3 miles of this facility "
+                f"({buffer_demographics.block_groups_in_buffer} Census block groups, "
+                "population-weighted demographics)"
+                if buffer_demographics is not None
+                else f"{fac.county_name} County, {fac.state_abbr} "
+                "(no Census block groups within 3 miles — falling back to containing county)"
+            ),
+            demographics=buffer_demographics if buffer_demographics is not None else county_demographics,
+            disparity_scores=None,
+            percentiles=None,
+            source=(
+                "Census ACS 2018-2022 block-group demographics, population-weighted "
+                "across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)"
+                if buffer_demographics is not None
+                else "Census ACS 2018-2022 (5-year), county-level fallback"
+            ),
         ),
         "source": {
             "label": "EPA Toxics Release Inventory",

@@ -226,134 +226,15 @@
     "pct_people_of_color": 90.4,
     "pct_under_5": 7.4,
     "pct_over_64": 13.2,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 88.1,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 63.6,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 60.4,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 55.7,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 40.2,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 46.7,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 50.3,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 55.7,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 88.3,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 50.2,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 99.2,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.9,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 221.7
-      },
-      {
-        "label": "Ozone",
-        "score": 207.7
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 149.9
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 134.3
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 12.8
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 108.5
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 92.8
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 51.2
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 200.7
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 111.4
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 164.3
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 8.8
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Imperial County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Imperial County, CA (no Census block groups within 3 miles \u2014 falling back to containing county)"
   },
   "source": {
     "label": "EPA Toxics Release Inventory",
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T17:10:25Z"
+  "_published_at": "2026-05-05T17:39:04Z"
 }
