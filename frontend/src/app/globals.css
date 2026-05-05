@@ -116,7 +116,6 @@ hr, .rule { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
 .site-header { position: sticky; top: 0; z-index: 30; background: rgba(14,17,22,0.88); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .site-header .row { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
 .brand { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-body); font-weight: 600; font-size: 14px; letter-spacing: 0; color: var(--fg); text-decoration: none; }
-.brand::before { content: ""; display: inline-block; width: 16px; height: 16px; background: linear-gradient(135deg, var(--green) 0%, var(--amber) 50%, var(--red) 100%); clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); }
 .brand em { font-style: normal; font-family: var(--font-mono); font-weight: 500; color: var(--blue); margin-left: 2px; }
 .brand .dot { color: var(--fg-4); margin: 0 1px; }
 
