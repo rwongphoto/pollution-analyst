@@ -1,0 +1,155 @@
+name: Data biannual refresh
+
+# Twice-yearly all-source refresh:
+#   June 15  — catches EPA's AQS summer/ozone refresh + any AirData mid-year
+#              corrections + EJScreen-clone pushes since the prior November.
+#   December 15 — catches EPA's AQS year-end refresh + the December PLACES
+#                 release window + any late-year SDWIS / GHGRP corrections.
+#
+# Companion to tri-annual-refresh.yml (Nov 1, TRI year-bumping specialized
+# logic). This workflow does NOT bump DEFAULT_TRI_YEAR — it just force-
+# refreshes the data caches that EPA / CDC update on faster cadence than
+# annual, then re-runs the full pipeline and opens a PR on diff.
+#
+# Force-cleared caches (current year only — historical years don't change):
+#   - TRI bulk CSV (current year may get republished after corrections)
+#   - AQS annual_conc_by_monitor (June + December refresh per EPA)
+#   - GHGRP current + prior year (subject to revision)
+#   - SDWIS Envirofacts subsets (continuously updated violation table)
+#   - EJScreen-clone bgej.arrow + blockgroupstats.rda (occasional EPA pushes)
+#   - CDC PLACES county / place / US subsets (annual release; current may
+#     receive corrections within the release year)
+
+on:
+  schedule:
+    - cron: '0 17 15 6 *'   # June 15, 17:00 UTC (~10am Pacific)
+    - cron: '0 17 15 12 *'  # December 15, 17:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install pipeline package
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install --upgrade pip
+          .venv/bin/pip install -e .
+
+      # Persist all gitignored raw caches across runs. Same cache key
+      # family as tri-annual-refresh.yml so the two workflows share the
+      # same warm cache.
+      - name: Restore EPA / Census raw caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/raw/envirofacts
+            data/raw/acs
+            data/raw/ejscreen
+            data/raw/tiger
+            data/raw/tri_bulk
+            data/raw/aqs
+            data/raw/cdc_places
+            data/raw/census_national_county2020.txt
+          key: epa-cache-v1-${{ github.run_id }}
+          restore-keys: |
+            epa-cache-v1-
+
+      - name: Read current DEFAULT_TRI_YEAR
+        id: current
+        run: |
+          year=$(grep -E '^DEFAULT_TRI_YEAR' pipeline/src/config.py | grep -oE '[0-9]+' | head -1)
+          echo "year=$year" >> "$GITHUB_OUTPUT"
+          echo "Refreshing against reporting year $year"
+
+      # Force-clear caches for sources EPA / CDC update faster than annual.
+      # We keep historical years intact (they don't change after T+2).
+      - name: Force-clear refreshable caches
+        run: |
+          year="${{ steps.current.outputs.year }}"
+          prev=$(( year - 1 ))
+          set -x
+          # TRI: current year may get late-cycle corrections.
+          rm -f "data/raw/tri_bulk/CA_${year}.csv"
+          # AQS: EPA refreshes June + December per release notes.
+          rm -f "data/raw/aqs/annual_conc_by_monitor_${year}.zip"
+          rm -f "data/raw/aqs/annual_conc_by_monitor_${prev}.zip"
+          # GHGRP: prior + current year subject to revision; clear cached
+          # paginated subsets and their count files.
+          rm -rf "data/raw/envirofacts/ghgrp_join_ca_${year}" \
+                 "data/raw/envirofacts/ghgrp_join_ca_${year}_count.json" \
+                 "data/raw/envirofacts/ghgrp_join_ca_${prev}" \
+                 "data/raw/envirofacts/ghgrp_join_ca_${prev}_count.json"
+          # SDWIS: continuously updated violation table — drop everything
+          # so the run re-pulls active CWS list + violations + GEOGRAPHIC_AREA.
+          rm -rf data/raw/envirofacts/sdwis_*_ca* \
+                 data/raw/envirofacts/sdwis_*_ca_*
+          # EJScreen-clone: bgej.arrow (~85 MB) + blockgroupstats.rda re-
+          # downloaded if upstream pushed a new compilation.
+          rm -f data/raw/ejscreen/bgej.arrow \
+                data/raw/ejscreen/blockgroupstats.rda
+          # CDC PLACES: full clear — Socrata datasets occasionally receive
+          # within-release-year corrections, and re-pulling is cheap.
+          rm -rf data/raw/cdc_places
+
+      - name: Run full pipeline
+        run: |
+          .venv/bin/python -m pipeline.src.main run \
+            --state ca \
+            --year ${{ steps.current.outputs.year }} \
+            --history-from 2010
+
+      - name: Validate sample of named facilities
+        run: |
+          .venv/bin/python scripts/validate_facilities.py \
+            chemical-waste-management-inc \
+            clean-harbors-buttonwillow-llc \
+            clean-harbors-san-jose-llc \
+            chevron-products-co-div-of-chevron-usa-inc \
+            3m-co-corona \
+            golden-queen-mining-co-llc
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            files=$(git status --porcelain | wc -l | tr -d ' ')
+            echo "files_changed=$files" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes — every upstream source unchanged since last run."
+          fi
+
+      - name: Open refresh PR
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          branch="data-refresh-$(date -u +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add -A
+          git commit -m "Biannual data refresh ($(date -u +%Y-%m-%d))" \
+            -m "Force-refreshed AQS, GHGRP, SDWIS, EJScreen-clone, and CDC PLACES caches; re-published CA against reporting year ${{ steps.current.outputs.year }}. ${{ steps.diff.outputs.files_changed }} files changed."
+          git push -u origin "$branch"
+
+          diff_stat=$(git diff --stat HEAD~1 HEAD -- data/published)
+
+          gh pr create \
+            --title "Data refresh — $(date -u +%Y-%m)" \
+            --body "$(printf '## What changed\n\n%s files updated against EPA / CDC sources fetched %s.\n\nSources force-refreshed:\n- TRI bulk CSV (current year)\n- AQS annual_conc_by_monitor (current + prior year)\n- GHGRP Envirofacts (current + prior year)\n- SDWIS active CWS + violations + geographic-area\n- EJScreen-clone bgej.arrow + blockgroupstats.rda\n- CDC PLACES county + place + US subsets\n\n## Diff stats\n\n```\n%s\n```\n\n_Triggered by [%s](%s)._\n' \
+              "${{ steps.diff.outputs.files_changed }}" "$(date -u +%Y-%m-%d)" "$diff_stat" "data-biannual-refresh workflow" "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID")"
