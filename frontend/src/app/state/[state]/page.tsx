@@ -72,7 +72,7 @@ function StateHero({ data }: { data: StatePagePayload }) {
       <div className="wrap">
         <div>
           <div className="eyebrow">State · {data.briefing_label}</div>
-          <h1>{s.name}</h1>
+          <h1>{s.name} Pollution</h1>
           <p className="lead lede" style={{ maxWidth: "70ch" }}>
             <strong>{t.facilities_tracked.toLocaleString()}</strong> TRI facilities and{" "}
             <strong>{t.utilities_tracked.toLocaleString()}</strong> public water systems across{" "}

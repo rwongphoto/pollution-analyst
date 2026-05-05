@@ -69,7 +69,7 @@ function CountyHero({ data }: { data: CountyPagePayload }) {
       <div className="wrap">
         <div>
           <div className="eyebrow">County · {data.briefing_label}</div>
-          <h1>{c.name}, {c.state_label}</h1>
+          <h1>{c.name}, {c.state_label} Pollution</h1>
           <p className="lead lede" style={{ maxWidth: "70ch" }}>
             {data.facilities.length === 0 ? (
               "No active TRI facilities reported in the most recent year."

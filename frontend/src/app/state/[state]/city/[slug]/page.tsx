@@ -38,7 +38,7 @@ export async function generateMetadata({
   const { state, slug } = await params;
   const data = await loadCityHub(state, slug);
   return pageMeta({
-    title: `${data.place.name} Pollution | Pollution Analyst`,
+    title: `${data.place.name} ${data.place.state.toUpperCase()} Pollution | Pollution Analyst`,
     description: `${data.place.name}, ${data.place.state_label} — ${data.totals.facilities_in_city} TRI facilities in the city, ${data.totals.utilities_serving} public water systems serving residents, with EPA equity context.`,
     path: `/state/${state}/city/${slug}`,
   });
@@ -70,7 +70,7 @@ function CityHero({ data }: { data: CityHubPayload }) {
         <div>
           <div className="eyebrow">City · {data.briefing_label}</div>
           <h1>
-            {p.name}, {p.state_label}
+            {p.name}, {p.state_label} Pollution
           </h1>
           <p className="lead lede" style={{ maxWidth: "70ch" }}>
             <strong>{t.facilities_in_city}</strong> TRI facilities inside the city limits and{" "}
