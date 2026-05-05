@@ -46,20 +46,37 @@ def _round_pounds(v: float) -> float | int:
     return round(v, 2)
 
 
-def _pick_material_baseline(history: dict[int, float], current_year: int) -> int | None:
-    """Return the earliest year with 'material' releases (>= max(1 lb, 5%
-    of current_year)), excluding the current year itself. Used to anchor
+def _pick_material_baseline(
+    history: dict[int, float],
+    current_year: int,
+    min_floor: float = 1.0,
+) -> int | None:
+    """Return the earliest year with 'material' releases (>= max(min_floor,
+    5% of current_year)), excluding the current year itself. Used to anchor
     long-arc framing on operationally-meaningful data — without this,
     facilities like Golden Queen Mining (0.1 lb 2016-2021, then 124k lb
-    2022 onward) get nonsense '+123,000,000% since 2016' copy.
+    2022 onward) get nonsense '+123,000,000% since 2016' copy, and small
+    cities with tiny TRI volumes throughout history get '+1,666% since
+    2010' off a 70-lb baseline.
 
-    Returns None when no other year clears the threshold — caller should
-    suppress long-arc copy and not trim history in that case.
+    Returns None when:
+      - history has fewer than 2 entries, OR
+      - the current year's value is below min_floor (geography is below the
+        operationally-relevant volume on this pathway — long-arc framing
+        misrepresents noise as trend), OR
+      - no other year clears max(min_floor, 5% of current).
+
+    Caller should suppress long-arc copy when this returns None.
+
+    min_floor varies by pathway: TRI tiles pass 5,000 lb; GHG tiles pass
+    10,000 mtCO2e (matches the ghg_step flag's MIN_RECENT_MTCO2E threshold).
     """
     if not history or len(history) < 2:
         return None
     current = history.get(current_year, 0.0) or 0.0
-    threshold = max(1.0, current * 0.05)
+    if current < min_floor:
+        return None
+    threshold = max(min_floor, current * 0.05)
     material = sorted(y for y, v in history.items() if v >= threshold and y != current_year)
     return material[0] if material else None
 
@@ -121,6 +138,12 @@ def _tri_pathways(
 ) -> list[dict]:
     """Build the TRI pathway cards (air, water, land+off-site) plus an
     optional GHGRP CO2e card if ghg_history is provided.
+
+    Uses ``_pick_material_baseline`` so the long-arc "since YYYY" framing
+    anchors on the first operationally-meaningful year, not the absolute
+    earliest year (which can be 0 lb or negligible). Without this, places
+    with sparse early-year reporting render nonsense like "+1,666% since
+    2010" off a 200-lb baseline.
     """
     specs = [
         ("tri_air",   "TRI air releases (5.1 fugitive + 5.2 stack)", current_air,   "AIR",  "lb"),
@@ -131,11 +154,16 @@ def _tri_pathways(
     for slug, label, current, key, units in specs:
         hist_map = (medium_history or {}).get(key) or {year: current}
         history_pts = [{"year": y, "value": round(v)} for y, v in sorted(hist_map.items())]
-        baseline_year = min(hist_map.keys()) if hist_map else year
-        long_arc = (
-            _yoy_pct_change(hist_map.get(year), hist_map.get(baseline_year))
-            if len(hist_map) > 1 else None
-        )
+        # Long-arc anchored on the first MATERIAL year, not the absolute earliest.
+        # 5,000 lb is the "operationally relevant" volume floor for a TRI pathway
+        # — below this, long-arc framing misrepresents noise as trend.
+        material = _pick_material_baseline(hist_map, year, min_floor=5000.0)
+        if material is not None:
+            baseline_year = material
+            long_arc = _yoy_pct_change(hist_map.get(year), hist_map.get(material))
+        else:
+            baseline_year = min(hist_map.keys()) if hist_map else year
+            long_arc = None  # not enough material-year data to anchor
         out.append({
             "pathway": slug,
             "label": label,
@@ -147,19 +175,29 @@ def _tri_pathways(
             "history": history_pts,
         })
     if ghg_history:
+        # GHGRP lags TRI by a reporting year. Use the latest year actually
+        # present rather than the TRI ``year`` arg, so a missing 2024 GHGRP
+        # row doesn't produce a fake -100% YoY for the displayed tile.
         history_pts = [{"year": y, "value": round(v)} for y, v in sorted(ghg_history.items())]
-        baseline_year = min(ghg_history.keys()) if ghg_history else year
-        current_ghg = ghg_history.get(year, 0.0)
-        long_arc = (
-            _yoy_pct_change(current_ghg, ghg_history.get(baseline_year))
-            if len(ghg_history) > 1 else None
-        )
+        latest_year = max(ghg_history.keys())
+        current_ghg = ghg_history[latest_year]
+        # Same material-baseline picker as TRI tiles. Without this, geographies
+        # whose first GHGRP-reporting year happened to be a small number (a
+        # plant that came online mid-decade) render misleading long-arc deltas.
+        # 10,000 mtCO2e matches the ghg_step flag's MIN_RECENT_MTCO2E threshold.
+        material = _pick_material_baseline(ghg_history, latest_year, min_floor=10000.0)
+        if material is not None:
+            baseline_year = material
+            long_arc = _yoy_pct_change(current_ghg, ghg_history.get(material))
+        else:
+            baseline_year = min(ghg_history.keys())
+            long_arc = None
         out.append({
             "pathway": "ghg",
-            "label": "Greenhouse gases (GHGRP large emitters)",
+            "label": f"Greenhouse gases (GHGRP large emitters, through {latest_year})",
             "current": round(current_ghg),
             "units": "metric tons CO₂e",
-            "yoy_pct_change": _yoy_pct_change(current_ghg, ghg_history.get(year - 1)),
+            "yoy_pct_change": _yoy_pct_change(current_ghg, ghg_history.get(latest_year - 1)),
             "long_arc_pct_change": long_arc,
             "baseline_year": baseline_year,
             "history": history_pts,
@@ -504,7 +542,8 @@ def publish_city_hub(
     facilities: list[FacilityAgg],
     utilities: list[UtilityAgg],
     facilities_chem_history: dict[str, dict[str, dict[int, float]]] | None,
-    year: int,
+    in_place_medium_history: dict[str, dict[int, float]] | None = None,
+    year: int = 0,
     place_demographics: object | None,
     place_disparity_scores: list | None,
     place_percentiles: list | None,
@@ -544,11 +583,14 @@ def publish_city_hub(
     )
 
     # Pathways (TRI air/water/land + optional GHG-county-share footnoted).
+    # Per-medium per-place history is summed in main.py from each in-place
+    # facility's per-medium-per-year totals — gives the tile real YoY +
+    # long-arc when multi-year history is available.
     pathways = _tri_pathways(
         current_air=pounds_air,
         current_water=pounds_water,
         current_land=pounds_land,
-        medium_history=None,  # per-medium per-place history not reconstructed; pathway tiles still render with current-year value
+        medium_history=in_place_medium_history,
         year=year,
         ghg_history=county_ghg_history,
     )

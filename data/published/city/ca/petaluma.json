@@ -70,10 +70,46 @@
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 6828,
       "units": "lb",
-      "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "yoy_pct_change": -73.4,
+      "long_arc_pct_change": 35.2,
+      "baseline_year": 2016,
       "history": [
+        {
+          "year": 2012,
+          "value": 250
+        },
+        {
+          "year": 2016,
+          "value": 5052
+        },
+        {
+          "year": 2017,
+          "value": 5447
+        },
+        {
+          "year": 2018,
+          "value": 5419
+        },
+        {
+          "year": 2019,
+          "value": 7132
+        },
+        {
+          "year": 2020,
+          "value": 11684
+        },
+        {
+          "year": 2021,
+          "value": 5455
+        },
+        {
+          "year": 2022,
+          "value": 14510
+        },
+        {
+          "year": 2023,
+          "value": 25675
+        },
         {
           "year": 2024,
           "value": 6828
@@ -87,8 +123,44 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2012,
       "history": [
+        {
+          "year": 2012,
+          "value": 0
+        },
+        {
+          "year": 2016,
+          "value": 0
+        },
+        {
+          "year": 2017,
+          "value": 0
+        },
+        {
+          "year": 2018,
+          "value": 0
+        },
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
         {
           "year": 2024,
           "value": 0
@@ -100,10 +172,46 @@
       "label": "TRI land + off-site releases",
       "current": 225,
       "units": "lb",
-      "yoy_pct_change": null,
+      "yoy_pct_change": -44.8,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2012,
       "history": [
+        {
+          "year": 2012,
+          "value": 0
+        },
+        {
+          "year": 2016,
+          "value": 0
+        },
+        {
+          "year": 2017,
+          "value": 0
+        },
+        {
+          "year": 2018,
+          "value": 15
+        },
+        {
+          "year": 2019,
+          "value": 10
+        },
+        {
+          "year": 2020,
+          "value": 1
+        },
+        {
+          "year": 2021,
+          "value": 25532
+        },
+        {
+          "year": 2022,
+          "value": 4
+        },
+        {
+          "year": 2023,
+          "value": 407
+        },
         {
           "year": 2024,
           "value": 225
@@ -112,11 +220,11 @@
     },
     {
       "pathway": "ghg",
-      "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 0,
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 117873,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -100.0,
-      "long_arc_pct_change": -100.0,
+      "yoy_pct_change": 67.6,
+      "long_arc_pct_change": -38.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -253,7 +361,40 @@
       }
     ]
   },
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4910701"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4910701"
+      }
+    }
+  ],
   "equity": {
     "population": 59682,
     "pct_low_income": 5.9,
@@ -396,5 +537,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T07:48:59Z"
+  "_published_at": "2026-05-05T17:10:28Z"
 }

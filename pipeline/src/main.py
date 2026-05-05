@@ -16,7 +16,7 @@ import logging
 import sys
 
 from . import states as states_mod
-from .aggregate.build import StateAgg, UtilityAgg, aggregate, aggregate_utilities
+from .aggregate.build import CountyAgg, StateAgg, UtilityAgg, aggregate, aggregate_utilities
 from .config import DEFAULT_TRI_YEAR
 from .flags import (
     Flag,
@@ -101,6 +101,17 @@ def run_state(
         fid: {cid: dict(chem.history) for cid, chem in f.chemicals.items()}
         for fid, f in facilities.items()
     }
+    # Per-facility per-medium history. Drives the in-city pathway tiles on
+    # the city hub (sum within-place to get place-level air/water/land
+    # multi-year). State + county already have this captured separately.
+    facility_medium_history: dict[str, dict[str, dict[int, float]]] = {
+        fid: {
+            "AIR": {year: f.pounds_air},
+            "WATER": {year: f.pounds_water},
+            "LAND": {year: f.pounds_land},
+        }
+        for fid, f in facilities.items()
+    }
 
     if history_from is not None:
         for y in range(history_from, year):
@@ -133,6 +144,12 @@ def run_state(
                 fac_chems = chem_history.setdefault(fid, {})
                 for cid, chem_y in f_y.chemicals.items():
                     fac_chems.setdefault(cid, {})[y] = chem_y.pounds_total
+                fac_med = facility_medium_history.setdefault(
+                    fid, {"AIR": {}, "WATER": {}, "LAND": {}},
+                )
+                fac_med["AIR"][y] = f_y.pounds_air
+                fac_med["WATER"][y] = f_y.pounds_water
+                fac_med["LAND"][y] = f_y.pounds_land
 
     # --- SDWIS ---
     utilities: dict[str, UtilityAgg] = {}
@@ -342,20 +359,47 @@ def run_state(
         ghg_history=ghg_state_history,
         flags=state_flags,
     )
-    for c in counties.values():
-        in_county = [f for f in facilities.values() if f.county_fips == c.fips]
-        publish_site.publish_county(
+    # Publish every county with data from ANY upstream source — TRI, GHG,
+    # EJ, ACS — not just counties with 2024 TRI rows. Without this, quiet
+    # counties (Marin, Sierra, etc.) only get a stale page from an earlier
+    # run or no page at all, even though they have legitimate EJ + GHG +
+    # demographic context to surface.
+    all_county_fips = set(counties.keys())
+    all_county_fips.update(county_disparity.keys())
+    all_county_fips.update(county_percentiles.keys())
+    all_county_fips.update(ghg_county_history.keys())
+    all_county_fips.update(county_demos.keys())
+    all_county_fips.update(county_pops.keys())
+    county_paths: set = set()
+    for cfips in all_county_fips:
+        c = counties.get(cfips)
+        if c is None:
+            # Synthesise an empty CountyAgg for a county with no 2024 TRI
+            # rows. The publish_county call still renders pathway tiles
+            # (GHG when present), equity overlay, and an empty facilities
+            # table.
+            cname = _county_name_from_fips(cfips, state.abbr)
+            if not cname:
+                continue  # FIPS doesn't resolve to a county name — skip rather than write nonsense
+            c = CountyAgg(
+                fips=cfips,
+                name=cname,
+                state_abbr=state.abbr,
+                state_slug=state.slug,
+            )
+        in_county = [f for f in facilities.values() if f.county_fips == cfips]
+        county_paths.add(publish_site.publish_county(
             c, in_county, year,
-            history=county_history.get(c.fips),
+            history=county_history.get(cfips),
             facilities_chem_history=chem_history,
-            medium_history=county_medium_history.get(c.fips),
-            population=county_pops.get(c.fips, 0),
-            demographics=county_demos.get(c.fips),
-            disparity_scores=county_disparity.get(c.fips, []),
-            percentiles=county_percentiles.get(c.fips, []),
-            ghg_history=ghg_county_history.get(c.fips),
-            flags=county_flags.get(c.fips, []),
-        )
+            medium_history=county_medium_history.get(cfips),
+            population=county_pops.get(cfips, 0),
+            demographics=county_demos.get(cfips),
+            disparity_scores=county_disparity.get(cfips, []),
+            percentiles=county_percentiles.get(cfips, []),
+            ghg_history=ghg_county_history.get(cfips),
+            flags=county_flags.get(cfips, []),
+        ))
     facility_paths: set = set()
     for f in facilities.values():
         facility_paths.add(publish_site.publish_facility(
@@ -474,6 +518,44 @@ def run_state(
             if pf in place_demos and hasattr(place_demos.get(pf), "population")
             else 0
         )
+        # Sum facility per-medium histories for the in-place facility set —
+        # gives the city its own multi-year air/water/land pathway tiles.
+        in_place_medium_history: dict[str, dict[int, float]] = {"AIR": {}, "WATER": {}, "LAND": {}}
+        for fid in ids_in_place:
+            fac_med = facility_medium_history.get(fid, {})
+            for medium, year_map in fac_med.items():
+                for y, v in year_map.items():
+                    in_place_medium_history[medium][y] = (
+                        in_place_medium_history[medium].get(y, 0.0) + v
+                    )
+        # City-level flags: long-arc on in-place TRI total + SDWIS violation
+        # events for utilities serving this place. ghg_step is county-share
+        # (same county GHG history the city renders on its pathway tile).
+        city_flags: list[Flag] = []
+        if not no_flags:
+            in_place_history: dict[int, float] = {}
+            for f in facs_in_place:
+                per_chem = chem_history.get(f.facility_id, {})
+                for cid_hist in per_chem.values():
+                    for y, v in cid_hist.items():
+                        in_place_history[y] = in_place_history.get(y, 0.0) + v
+            la = detect_long_arc_geo(
+                in_place_history, label="Total TRI releases",
+                pathway_units="lb", geography=place_name, recent_year=year,
+            )
+            if la is not None:
+                city_flags.append(la)
+            # Pull violation_event flags from each utility serving the place
+            # so the city hub surfaces every active SDWIS issue without the
+            # reader having to drill into each /water/[slug] page.
+            for u in utils_serving:
+                evts = detect_violation_events(
+                    pwsid=u.pwsid, utility_label=u.name, violations=u.violations,
+                    cap=2,  # tighter cap at city aggregation
+                )
+                city_flags.extend(evts)
+            if city_flags:
+                flags_summarize("city", f"{state.slug}/{pf}", city_flags)
         city_paths.add(publish_site.publish_city_hub(
             state_slug=state.slug,
             place_fips=pf,
@@ -482,6 +564,7 @@ def run_state(
             facilities=facs_in_place,
             utilities=utils_serving,
             facilities_chem_history=chem_history,
+            in_place_medium_history=in_place_medium_history,
             year=year,
             place_demographics=place_demos.get(pf),
             place_disparity_scores=place_disparity.get(pf, []),
@@ -490,15 +573,16 @@ def run_state(
             county_name=_county_name_from_fips(county_fips_for_place, state.abbr) if county_fips_for_place else None,
             county_fips=county_fips_for_place,
             county_ghg_history=ghg_county_history.get(county_fips_for_place) if county_fips_for_place else None,
-            flags=[],  # city-level flag detection deferred — same data shape as county for v2
+            flags=city_flags,
         ))
 
     removed_fac = publish_site.cleanup_stale("facility", state.slug, facility_paths)
     removed_water = publish_site.cleanup_stale("water", state.slug, water_paths)
     removed_city = publish_site.cleanup_stale("city", state.slug, city_paths)
-    if removed_fac or removed_water or removed_city:
-        logging.info("cleanup: %s — removed %d facility, %d water, %d city files",
-                     state.slug, removed_fac, removed_water, removed_city)
+    removed_county = publish_site.cleanup_stale("county", state.slug, county_paths)
+    if removed_fac or removed_water or removed_city or removed_county:
+        logging.info("cleanup: %s — removed %d facility, %d water, %d city, %d county files",
+                     state.slug, removed_fac, removed_water, removed_city, removed_county)
 
     flag_maps = {
         "state": state_flags,

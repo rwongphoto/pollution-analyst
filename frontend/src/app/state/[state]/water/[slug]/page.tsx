@@ -272,33 +272,30 @@ function EquitySection({ data }: { data: WaterUtilityPayload }) {
         </div>
 
         {(e.ej_indexes?.length ?? 0) > 0 && (
-          <table className="tbl" style={{ marginBottom: 24 }}>
-            <caption style={{ captionSide: "top", textAlign: "left", padding: "0 0 12px", fontSize: 13, color: "var(--ink-3)" }}>
-              National percentile · vs all US block groups (population-weighted; ranked against the national EJScreen indicator distribution)
-            </caption>
-            <thead>
-              <tr>
-                <th>Indicator</th>
-                <th className="right">National percentile</th>
-                <th>Reading</th>
-              </tr>
-            </thead>
-            <tbody>
-              {e.ej_indexes.map((row) => (
-                <tr key={row.label}>
-                  <td className="name">{row.label}</td>
-                  <td
-                    className={`right num-mono ${
-                      row.pct_us >= 80 ? "delta-down" : row.pct_us >= 60 ? "delta-flat" : "delta-up"
-                    }`}
-                  >
-                    {row.pct_us.toFixed(0)}
-                  </td>
-                  <td className="muted">{equityIndexLanguage(row.pct_us)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div style={{ marginBottom: 32 }}>
+            <p className="meta-mono" style={{ fontSize: 12, color: "var(--ink-3)", marginBottom: 14 }}>
+              NATIONAL PERCENTILE · vs all US block groups (population-weighted; ranked against the national EJScreen indicator distribution)
+            </p>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 14 }}>
+              {e.ej_indexes.map((row) => {
+                const pct = row.pct_us;
+                const barColor = pct >= 90 ? "var(--red)" : pct >= 80 ? "var(--amber)" : pct >= 60 ? "var(--blue)" : "var(--green)";
+                const numColor = pct >= 80 ? "var(--red)" : pct >= 60 ? "var(--amber)" : "var(--fg-2)";
+                return (
+                  <li key={row.label} style={{ display: "grid", gridTemplateColumns: "1fr 60px 220px", gap: 12, alignItems: "center" }}>
+                    <span style={{ fontSize: 14, color: "var(--fg-2)" }}>{row.label}</span>
+                    <span className="num-mono" style={{ textAlign: "right", color: numColor, fontSize: 14 }}>
+                      {pct.toFixed(0)}
+                    </span>
+                    <span className="muted" style={{ fontSize: 12.5 }}>{equityIndexLanguage(pct)}</span>
+                    <span style={{ gridColumn: "1 / -1", height: 6, background: "var(--bg-3)", borderRadius: 2, overflow: "hidden" }}>
+                      <span style={{ display: "block", height: "100%", width: `${pct}%`, background: barColor }} />
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         )}
 
         {(e.disparity_scores?.length ?? 0) > 0 && (

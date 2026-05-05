@@ -39,7 +39,10 @@ export function longArcLanguage(
   pollutant: string,
   baselineYear: number,
 ): string {
-  if (pctChange == null) return `${pollutant} levels haven't been reported long enough for a multi-decade trend.`;
+  // Null path covers both "no multi-year history yet" and the case where
+  // the geography's current value is below the operationally-meaningful
+  // floor (so a percent-change framing would misrepresent noise as trend).
+  if (pctChange == null) return `${pollutant} volumes here are too small to anchor a multi-year trend; YoY movement is still shown above.`;
   const abs = Math.abs(pctChange);
   if (abs < 10) return `${pollutant} concentrations are roughly unchanged from ${baselineYear}.`;
   if (pctChange < 0) {

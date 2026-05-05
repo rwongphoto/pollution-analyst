@@ -178,6 +178,7 @@ Rendered on state, county, city hub, facility (county-as-proxy), and water-utili
 
 ## Open Areas
 
+- **County ranking page (HIGH PRIORITY — wealth-pollution gap visualization).** A single table sorting all CA counties (and eventually all US counties as states ingest) by environmental-burden percentile, with median income alongside. Makes the structural pattern jump off the page rather than requiring readers to click between county pages and infer it. Currently the wealth-pollution correlation is only visible if you compare Marin (median income ~$140k, 0 TRI facilities, PM2.5 80th %ile) to Kern (median income ~$60k, 87 TRI facilities, PM2.5 99th %ile) by hand. Data is already in every county payload (`equity.ej_indexes` + `equity.population` + ACS pulls). Implementation shape: new route `/rankings/counties` (or fold into a richer state hub), reads the union of county JSONs at publish time, renders sortable table by indicator. Optional: scatter / strip-plot of percentile vs median income to make the correlation literally a chart. Same template generalizes to a `/rankings/cities` for the 822 city hubs.
 - **AQS / NATA ingest.** The Tier-3 neighborhood surface depends on this; the criteria-air pathway tile is stubbed and not yet emitting.
 - **TRI ↔ GHGRP facility-ID join.** Unlocks facility-level `ghg_step` flags.
 - **Sustained-shift / streak-break flags.** Need a monthly cadence; TRI is annual-native.

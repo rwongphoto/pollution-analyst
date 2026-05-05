@@ -90,10 +90,66 @@
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 82,
       "units": "lb",
-      "yoy_pct_change": null,
+      "yoy_pct_change": 26.2,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2010,
       "history": [
+        {
+          "year": 2010,
+          "value": 114
+        },
+        {
+          "year": 2011,
+          "value": 132
+        },
+        {
+          "year": 2012,
+          "value": 111
+        },
+        {
+          "year": 2013,
+          "value": 104
+        },
+        {
+          "year": 2014,
+          "value": 123
+        },
+        {
+          "year": 2015,
+          "value": 126
+        },
+        {
+          "year": 2016,
+          "value": 115
+        },
+        {
+          "year": 2017,
+          "value": 93
+        },
+        {
+          "year": 2018,
+          "value": 92
+        },
+        {
+          "year": 2019,
+          "value": 80
+        },
+        {
+          "year": 2020,
+          "value": 65
+        },
+        {
+          "year": 2021,
+          "value": 104
+        },
+        {
+          "year": 2022,
+          "value": 93
+        },
+        {
+          "year": 2023,
+          "value": 65
+        },
         {
           "year": 2024,
           "value": 82
@@ -105,10 +161,66 @@
       "label": "TRI water releases (5.3)",
       "current": 2,
       "units": "lb",
-      "yoy_pct_change": null,
+      "yoy_pct_change": -86.7,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2010,
       "history": [
+        {
+          "year": 2010,
+          "value": 1
+        },
+        {
+          "year": 2011,
+          "value": 0
+        },
+        {
+          "year": 2012,
+          "value": 0
+        },
+        {
+          "year": 2013,
+          "value": 0
+        },
+        {
+          "year": 2014,
+          "value": 0
+        },
+        {
+          "year": 2015,
+          "value": 0
+        },
+        {
+          "year": 2016,
+          "value": 3
+        },
+        {
+          "year": 2017,
+          "value": 2
+        },
+        {
+          "year": 2018,
+          "value": 2
+        },
+        {
+          "year": 2019,
+          "value": 6
+        },
+        {
+          "year": 2020,
+          "value": 3
+        },
+        {
+          "year": 2021,
+          "value": 5
+        },
+        {
+          "year": 2022,
+          "value": 2
+        },
+        {
+          "year": 2023,
+          "value": 15
+        },
         {
           "year": 2024,
           "value": 2
@@ -120,10 +232,66 @@
       "label": "TRI land + off-site releases",
       "current": 143893,
       "units": "lb",
-      "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "yoy_pct_change": 219.6,
+      "long_arc_pct_change": 172.8,
+      "baseline_year": 2010,
       "history": [
+        {
+          "year": 2010,
+          "value": 52751
+        },
+        {
+          "year": 2011,
+          "value": 104487
+        },
+        {
+          "year": 2012,
+          "value": 84260
+        },
+        {
+          "year": 2013,
+          "value": 63613
+        },
+        {
+          "year": 2014,
+          "value": 85074
+        },
+        {
+          "year": 2015,
+          "value": 65867
+        },
+        {
+          "year": 2016,
+          "value": 52229
+        },
+        {
+          "year": 2017,
+          "value": 58767
+        },
+        {
+          "year": 2018,
+          "value": 56256
+        },
+        {
+          "year": 2019,
+          "value": 64572
+        },
+        {
+          "year": 2020,
+          "value": 85117
+        },
+        {
+          "year": 2021,
+          "value": 156217
+        },
+        {
+          "year": 2022,
+          "value": 138035
+        },
+        {
+          "year": 2023,
+          "value": 45028
+        },
         {
           "year": 2024,
           "value": 143893
@@ -132,11 +300,11 @@
     },
     {
       "pathway": "ghg",
-      "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 0,
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 203237635,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -100.0,
-      "long_arc_pct_change": -100.0,
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -296,7 +464,145 @@
       }
     ]
   },
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "regression",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Santa Clarita have more than doubled since 2010 (through 2024).",
+      "magnitude_pct": 172.3,
+      "magnitude_abs": 91111.4,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 52866
+        },
+        {
+          "year": 2011,
+          "value": 104619
+        },
+        {
+          "year": 2012,
+          "value": 84371
+        },
+        {
+          "year": 2013,
+          "value": 63717
+        },
+        {
+          "year": 2014,
+          "value": 85197
+        },
+        {
+          "year": 2015,
+          "value": 65993
+        },
+        {
+          "year": 2016,
+          "value": 52347
+        },
+        {
+          "year": 2017,
+          "value": 58862
+        },
+        {
+          "year": 2018,
+          "value": 56350
+        },
+        {
+          "year": 2019,
+          "value": 64658
+        },
+        {
+          "year": 2020,
+          "value": 85185
+        },
+        {
+          "year": 2021,
+          "value": 156326
+        },
+        {
+          "year": 2022,
+          "value": 138130
+        },
+        {
+          "year": 2023,
+          "value": 45108
+        },
+        {
+          "year": 2024,
+          "value": 143977
+        }
+      ]
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1900062"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1900062"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Beryllium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2021 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1900903"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Beryllium",
+      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2021 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1900903"
+      }
+    }
+  ],
   "equity": {
     "population": 225850,
     "pct_low_income": 8.0,
@@ -439,5 +745,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T07:48:59Z"
+  "_published_at": "2026-05-05T17:10:28Z"
 }

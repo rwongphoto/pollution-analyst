@@ -90,10 +90,66 @@
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 13672,
       "units": "lb",
-      "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "yoy_pct_change": 10.6,
+      "long_arc_pct_change": 23.9,
+      "baseline_year": 2010,
       "history": [
+        {
+          "year": 2010,
+          "value": 11033
+        },
+        {
+          "year": 2011,
+          "value": 7893
+        },
+        {
+          "year": 2012,
+          "value": 8418
+        },
+        {
+          "year": 2013,
+          "value": 12016
+        },
+        {
+          "year": 2014,
+          "value": 15826
+        },
+        {
+          "year": 2015,
+          "value": 11383
+        },
+        {
+          "year": 2016,
+          "value": 9127
+        },
+        {
+          "year": 2017,
+          "value": 22196
+        },
+        {
+          "year": 2018,
+          "value": 17233
+        },
+        {
+          "year": 2019,
+          "value": 13221
+        },
+        {
+          "year": 2020,
+          "value": 14025
+        },
+        {
+          "year": 2021,
+          "value": 13427
+        },
+        {
+          "year": 2022,
+          "value": 12826
+        },
+        {
+          "year": 2023,
+          "value": 12363
+        },
         {
           "year": 2024,
           "value": 13672
@@ -105,10 +161,66 @@
       "label": "TRI water releases (5.3)",
       "current": 0,
       "units": "lb",
-      "yoy_pct_change": null,
+      "yoy_pct_change": -98.2,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2010,
       "history": [
+        {
+          "year": 2010,
+          "value": 12
+        },
+        {
+          "year": 2011,
+          "value": 7
+        },
+        {
+          "year": 2012,
+          "value": 1
+        },
+        {
+          "year": 2013,
+          "value": 4
+        },
+        {
+          "year": 2014,
+          "value": 7
+        },
+        {
+          "year": 2015,
+          "value": 10
+        },
+        {
+          "year": 2016,
+          "value": 6
+        },
+        {
+          "year": 2017,
+          "value": 23
+        },
+        {
+          "year": 2018,
+          "value": 14
+        },
+        {
+          "year": 2019,
+          "value": 12
+        },
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 1
+        },
+        {
+          "year": 2022,
+          "value": 1
+        },
+        {
+          "year": 2023,
+          "value": 9
+        },
         {
           "year": 2024,
           "value": 0
@@ -120,10 +232,66 @@
       "label": "TRI land + off-site releases",
       "current": 65812,
       "units": "lb",
-      "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "yoy_pct_change": -2.5,
+      "long_arc_pct_change": -70.5,
+      "baseline_year": 2010,
       "history": [
+        {
+          "year": 2010,
+          "value": 222849
+        },
+        {
+          "year": 2011,
+          "value": 338656
+        },
+        {
+          "year": 2012,
+          "value": 239662
+        },
+        {
+          "year": 2013,
+          "value": 176560
+        },
+        {
+          "year": 2014,
+          "value": 233206
+        },
+        {
+          "year": 2015,
+          "value": 244114
+        },
+        {
+          "year": 2016,
+          "value": 283145
+        },
+        {
+          "year": 2017,
+          "value": 1837610
+        },
+        {
+          "year": 2018,
+          "value": 397530
+        },
+        {
+          "year": 2019,
+          "value": 569274
+        },
+        {
+          "year": 2020,
+          "value": 373460
+        },
+        {
+          "year": 2021,
+          "value": 191018
+        },
+        {
+          "year": 2022,
+          "value": 83311
+        },
+        {
+          "year": 2023,
+          "value": 67494
+        },
         {
           "year": 2024,
           "value": 65812
@@ -132,11 +300,11 @@
     },
     {
       "pathway": "ghg",
-      "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 0,
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 203237635,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -100.0,
-      "long_arc_pct_change": -100.0,
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -330,7 +498,81 @@
       }
     ]
   },
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Vernon have more than halved since 2010 (through 2024).",
+      "magnitude_pct": -66.0,
+      "magnitude_abs": -154409.6,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 233894
+        },
+        {
+          "year": 2011,
+          "value": 346556
+        },
+        {
+          "year": 2012,
+          "value": 248082
+        },
+        {
+          "year": 2013,
+          "value": 188579
+        },
+        {
+          "year": 2014,
+          "value": 249039
+        },
+        {
+          "year": 2015,
+          "value": 255507
+        },
+        {
+          "year": 2016,
+          "value": 292278
+        },
+        {
+          "year": 2017,
+          "value": 1859829
+        },
+        {
+          "year": 2018,
+          "value": 414778
+        },
+        {
+          "year": 2019,
+          "value": 582507
+        },
+        {
+          "year": 2020,
+          "value": 387485
+        },
+        {
+          "year": 2021,
+          "value": 204447
+        },
+        {
+          "year": 2022,
+          "value": 96139
+        },
+        {
+          "year": 2023,
+          "value": 79867
+        },
+        {
+          "year": 2024,
+          "value": 79484
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 329,
     "pct_low_income": 0.3,
@@ -473,5 +715,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T07:48:59Z"
+  "_published_at": "2026-05-05T17:10:28Z"
 }
