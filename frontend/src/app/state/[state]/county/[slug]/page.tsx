@@ -5,6 +5,7 @@ import { NotableSignals } from "@/components/site/AnomalyCard";
 import { CountyMap } from "@/components/site/CountyMap";
 import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
+import { HealthIndicators } from "@/components/site/HealthIndicators";
 import { HeroChart } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
 import { SiteFooter } from "@/components/site/SiteFooter";
@@ -474,6 +475,11 @@ export default async function CountyPage({
         <FacilitiesSection data={data} />
         <UtilitiesSection data={data} />
         <EquitySection data={data} />
+        <HealthIndicators
+          indicators={data.health_indicators ?? []}
+          scopeLabel="County"
+          comparatorLabel={`${data.county.state_label} mean`}
+        />
         <CityDirectory data={data} />
         <SourcesFooter data={data} />
       </main>

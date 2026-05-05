@@ -222,6 +222,68 @@
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Groveland, California (Census place block groups)"
   },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.5,
+      "age_adjusted": 10.6,
+      "state_mean": 9.3,
+      "vs_state_pp": 1.32,
+      "vs_state_pct": 14.2,
+      "vs_state_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 7.6,
+      "age_adjusted": 5.7,
+      "state_mean": 4.6,
+      "vs_state_pp": 1.07,
+      "vs_state_pct": 23.1,
+      "vs_state_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.1,
+      "age_adjusted": 5.5,
+      "state_mean": 5.0,
+      "vs_state_pp": 0.53,
+      "vs_state_pct": 10.7,
+      "vs_state_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 11.5,
+      "age_adjusted": 8.5,
+      "state_mean": 10.7,
+      "vs_state_pp": -2.21,
+      "vs_state_pct": -20.6,
+      "vs_state_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.1,
+      "age_adjusted": 19.5,
+      "state_mean": 16.9,
+      "vs_state_pp": 2.61,
+      "vs_state_pct": 15.5,
+      "vs_state_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -234,5 +296,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T21:42:53Z"
+  "_published_at": "2026-05-05T22:30:46Z"
 }

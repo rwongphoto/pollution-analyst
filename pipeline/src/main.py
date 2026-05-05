@@ -29,7 +29,7 @@ from .flags import (
     detect_violation_events,
     summarize as flags_summarize,
 )
-from .ingest import aqs, ejscreen, ghgrp, sdwis, tri
+from .ingest import aqs, cdc_places, ejscreen, ghgrp, sdwis, tri
 from .publish import site as publish_site
 from .spatial.acs import (
     get_county_demographics,
@@ -66,6 +66,7 @@ def run_state(
     sdwis_since_year: int | None = 2020,
     skip_sdwis: bool = False,
     skip_aqs: bool = False,
+    skip_health: bool = False,
     history_cache_only: bool = False,
     no_flags: bool = False,
 ) -> tuple[StateAgg, dict, dict, dict[str, UtilityAgg], dict]:
@@ -290,6 +291,34 @@ def run_state(
         logging.warning("Place name index failed for %s: %s", state.abbr, exc)
         place_name_to_fips = {}
         place_fips_to_name = {}
+
+    # --- CDC PLACES (co-located health indicators) ---
+    # Modeled small-area prevalence per county and Census place. Pulled
+    # via Socrata-filtered subset (~120 KB / state for counties, a few MB
+    # for places) — light enough to fetch every cycle. ``health_county``
+    # / ``health_place`` map location_id → measure_key → PlacesReading.
+    health_release_label = "CDC PLACES · 2025 release · BRFSS 2022-2023"
+    health_county_by_loc: dict = {}
+    health_place_by_loc: dict = {}
+    health_state_means: dict[str, float] = {}
+    if not skip_health:
+        try:
+            county_readings = cdc_places.fetch_state_counties(
+                state, cache_only=history_cache_only,
+            )
+            health_county_by_loc = cdc_places.by_location(county_readings)
+            health_state_means = (
+                cdc_places.state_means_from_counties(county_readings).by_measure
+            )
+        except Exception as exc:  # noqa: BLE001
+            logging.warning("CDC PLACES county fetch failed for %s: %s", state.abbr, exc)
+        try:
+            place_readings = cdc_places.fetch_state_places(
+                state, cache_only=history_cache_only,
+            )
+            health_place_by_loc = cdc_places.by_location(place_readings)
+        except Exception as exc:  # noqa: BLE001
+            logging.warning("CDC PLACES place fetch failed for %s: %s", state.abbr, exc)
 
     # --- Flags (anomaly engine) ---
     # Detected per-entity here, between aggregate and publish, so each
@@ -555,6 +584,11 @@ def run_state(
             percentiles=county_percentiles.get(cfips, []),
             ghg_history=ghg_county_history.get(cfips),
             air_history=air_county_history.get(cfips),
+            health_indicators=publish_site._health_indicators(
+                measures=list(health_county_by_loc.get(cfips, {}).values()),
+                state_means=health_state_means,
+                release_label=health_release_label,
+            ),
             flags=county_flags.get(cfips, []),
             cities_directory=cities_by_county_fips.get(cfips, []),
         ))
@@ -698,6 +732,11 @@ def run_state(
             county_fips=county_fips_for_place,
             county_ghg_history=ghg_county_history.get(county_fips_for_place) if county_fips_for_place else None,
             county_air_history=air_county_history.get(county_fips_for_place) if county_fips_for_place else None,
+            health_indicators=publish_site._health_indicators(
+                measures=list(health_place_by_loc.get(pf, {}).values()),
+                state_means=health_state_means,
+                release_label=health_release_label,
+            ),
             flags=city_flags,
         ))
 
@@ -733,6 +772,9 @@ def main(argv: list[str] | None = None) -> int:
     runp.add_argument("--skip-aqs", action="store_true",
                       help="Skip AQS air-monitor ingest. Pages render without "
                            "criteria_air pathway tiles or naaqs_exceedance flags.")
+    runp.add_argument("--skip-health", action="store_true",
+                      help="Skip CDC PLACES ingest. County and city pages render "
+                           "without the co-located health-indicators section.")
     runp.add_argument("--sdwis-since", type=int, default=2020,
                       help="Earliest year of SDWIS violations to keep.")
     runp.add_argument("--history-cache-only", action="store_true",
@@ -765,6 +807,7 @@ def main(argv: list[str] | None = None) -> int:
             sdwis_since_year=args.sdwis_since,
             skip_sdwis=args.skip_sdwis,
             skip_aqs=args.skip_aqs,
+            skip_health=args.skip_health,
             history_cache_only=args.history_cache_only,
             no_flags=args.no_flags,
         )

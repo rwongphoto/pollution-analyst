@@ -94,6 +94,32 @@ export interface EquityOverlay {
   geography_label: string;
 }
 
+// ---- Co-located health indicators (CDC PLACES) --------------------------
+// Modeled small-area prevalence estimates from CDC PLACES, paired with
+// the existing pollution + demographic surfaces. Crude prevalence is the
+// headline value (the actual local rate); age-adjusted prevalence drives
+// the cross-geography comparator (vs state mean).
+//
+// EDITORIAL CONTRACT — modeled, not measured. Comparisons are ecological,
+// not causal. The methodology page must state this and the section
+// subtitle on the page reinforces it.
+
+export interface HealthIndicator {
+  measure_key: string;        // "asthma" / "copd" / "chd" / "diabetes" / "mental"
+  label: string;              // "Adult asthma (current)"
+  crude: number;              // local prevalence %
+  age_adjusted: number | null;
+  state_mean: number | null;  // age-adjusted state mean comparator
+  // Pre-computed comparator deltas. pp = percentage-point delta vs state
+  // mean; pct = relative percent difference (+38% etc). Class is the
+  // editorial color bucket the tile renders.
+  vs_state_pp: number | null;
+  vs_state_pct: number | null;
+  vs_state_class: "worse" | "elevated" | "neutral" | "better";
+  source: string;             // "CDC PLACES · 2025 release"
+  vintage_year: number;       // BRFSS data year (2022 / 2023)
+}
+
 // ---- Tier 1: TRI facility -----------------------------------------------
 
 export interface ChemicalRelease {
@@ -241,6 +267,7 @@ export interface CityHubPayload {
   };
   flags: Flag[];
   equity: EquityOverlay;
+  health_indicators?: HealthIndicator[];
   sources: { label: string; url: string; retrieved: string }[];
   _published_at?: string;
 }
@@ -311,6 +338,7 @@ export interface CountyPagePayload {
   }[];
   flags: Flag[];
   equity: EquityOverlay;
+  health_indicators?: HealthIndicator[];
   sources: {
     label: string;
     url: string;

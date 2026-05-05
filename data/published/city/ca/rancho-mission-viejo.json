@@ -578,6 +578,68 @@
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Rancho Mission Viejo, California (Census place block groups)"
   },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 9.3,
+      "age_adjusted": 9.5,
+      "state_mean": 9.3,
+      "vs_state_pp": 0.22,
+      "vs_state_pct": 2.4,
+      "vs_state_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 3.9,
+      "age_adjusted": 3.3,
+      "state_mean": 4.6,
+      "vs_state_pp": -1.33,
+      "vs_state_pct": -28.7,
+      "vs_state_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 5.0,
+      "age_adjusted": 3.9,
+      "state_mean": 5.0,
+      "vs_state_pp": -1.07,
+      "vs_state_pct": -21.5,
+      "vs_state_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 8.4,
+      "age_adjusted": 7.0,
+      "state_mean": 10.7,
+      "vs_state_pp": -3.71,
+      "vs_state_pct": -34.6,
+      "vs_state_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 14.6,
+      "age_adjusted": 15.9,
+      "state_mean": 16.9,
+      "vs_state_pp": -0.99,
+      "vs_state_pct": -5.9,
+      "vs_state_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -590,5 +652,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T21:42:53Z"
+  "_published_at": "2026-05-05T22:30:45Z"
 }

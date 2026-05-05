@@ -322,6 +322,60 @@ export default function MethodologyPage() {
               </p>
             </section>
 
+            <section id="health" style={{ borderTop: "1px solid var(--rule)", paddingTop: 36, marginTop: 36 }}>
+              <h2>Co-located health indicators · CDC PLACES</h2>
+              <p>
+                <strong>What this section is.</strong> County and city pages render five chronic-disease prevalence estimates from CDC&apos;s Population Level Analysis and Community Estimates (PLACES) program — adult asthma, COPD, coronary heart disease, diabetes, and frequent mental distress. These sit immediately after the equity overlay so that pollution, demographics, and health-outcome context can be read together.
+              </p>
+              <p>
+                <strong>Why it&apos;s here.</strong> The pollution-vs-health correlation is the question readers actually arrive with. Surfacing co-located prevalence at the same geography as the pollution data makes the structural pattern visible without forcing readers to cross-reference three different government tools. The pattern is striking: Kern County&apos;s COPD prevalence is 38% above the California mean; Palo Alto&apos;s is 42% below. That gradient mirrors the pollution gradient closely.
+              </p>
+              <p>
+                <strong>What the data is — and isn&apos;t.</strong>
+              </p>
+              <ul>
+                <li>
+                  <strong>Modeled, not measured.</strong> CDC PLACES uses a multi-level small-area regression on BRFSS (Behavioral Risk Factor Surveillance System) responses to produce a synthetic prevalence estimate per county and per Census place. It is <em>not</em> a count of diagnosed cases at the geography. Confidence intervals widen with smaller populations, and rural geographies with thin BRFSS samples should be read with more care.
+                </li>
+                <li>
+                  <strong>Crude vs age-adjusted.</strong> The headline tile value is <strong>crude prevalence</strong> — the actual local rate as published. The &ldquo;vs state mean&rdquo; comparator uses <strong>age-adjusted prevalence</strong> on both sides so geographies with different age structures stay apples-to-apples. PLACES publishes both; we render both, in different roles.
+                </li>
+                <li>
+                  <strong>Ecological correlation, not causation.</strong> A higher pollution reading and a higher disease prevalence in the same county do not establish that the pollution caused the disease. Causal attribution requires individual-level data, exposure histories, and confounder controls that an area-level dataset cannot provide. We say this out loud on every section header so the framing carries through to anyone who lands directly on a county page.
+                </li>
+                <li>
+                  <strong>Vintage.</strong> The 2025 PLACES release is built on BRFSS 2022 and 2023 — different measures use different years depending on questionnaire rotation. Each tile labels its underlying data year. Re-pulled on each pipeline cycle.
+                </li>
+              </ul>
+              <p>
+                <strong>Why these five measures.</strong> They map most directly to the air-pollution surfaces already on the page: asthma and COPD are the canonical PM2.5 / ozone-adjacent respiratory outcomes; CHD is the canonical air-pollution cardiovascular outcome; diabetes co-varies with the same socioeconomic structure that predicts pollution exposure; frequent mental distress captures the broader psychosocial cost of living next to industrial sites. The full PLACES catalog has 40 measures — we deliberately picked the smallest editorially defensible set rather than a wall of tiles.
+              </p>
+              <p>
+                <strong>What we do NOT render.</strong>
+              </p>
+              <ul>
+                <li>
+                  <strong>State-level health tiles.</strong> Aggregated to a whole state, chronic-disease prevalence is too smoothed out to be editorially interesting — every state lands within a narrow band of the national mean. State-level PLACES values appear only as the comparator on county and city tiles.
+                </li>
+                <li>
+                  <strong>Tract-level rollups onto county or city pages.</strong> PLACES does publish at tract level, but rolling those tract values up to a coarser geography forces a population-weighting decision that PLACES already made at the coarser-geography level — re-doing it would just introduce noise. We use PLACES-published county and place data directly.
+                </li>
+                <li>
+                  <strong>Mortality at city level.</strong> CDC WONDER&apos;s actual cancer / cardiovascular mortality is published at <em>county only</em>. A city-page tile would have to fall back to the containing county, which would surprise readers comparing two cities in the same county. Mortality is on the roadmap as a county-only addition; we do not force-fit it onto city pages.
+                </li>
+                <li>
+                  <strong>Causal lag analyses.</strong> &ldquo;PM2.5 in 2010 predicts cancer in 2025&rdquo; is the most-clicked-on chart on environmental-health sites and the most likely to be misread as causal. We do not render lag charts on per-place pages. If we ever do, it will be on a separate &ldquo;correlations&rdquo; surface with the methodology disclaimer at the top, not nested inside a county page.
+                </li>
+              </ul>
+              <p>
+                <strong>Reference.</strong>{" "}
+                <a href="https://www.cdc.gov/places/" target="_blank" rel="noreferrer">CDC PLACES program landing</a> ·{" "}
+                <a href="https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-County-Data-20/swc5-untb" target="_blank" rel="noreferrer">County dataset on chronicdata.cdc.gov</a> ·{" "}
+                <a href="https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-Place-Data-202/eav7-hnsx" target="_blank" rel="noreferrer">Place dataset</a> ·{" "}
+                <a href="https://www.cdc.gov/brfss/" target="_blank" rel="noreferrer">BRFSS source survey</a>.
+              </p>
+            </section>
+
             <section id="rights" style={{ borderTop: "1px solid var(--rule)", paddingTop: 36, marginTop: 36 }}>
               <h2>Data rights and attribution</h2>
               <p>

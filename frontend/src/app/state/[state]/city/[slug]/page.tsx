@@ -4,6 +4,7 @@ import Link from "next/link";
 import { NotableSignals } from "@/components/site/AnomalyCard";
 import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
+import { HealthIndicators } from "@/components/site/HealthIndicators";
 import { HeroChart } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
 import { SiteFooter } from "@/components/site/SiteFooter";
@@ -506,6 +507,11 @@ export default async function CityHubPage({
         <FacilitiesSection data={data} />
         <WaterSection data={data} />
         <EquitySection data={data} />
+        <HealthIndicators
+          indicators={data.health_indicators ?? []}
+          scopeLabel="City"
+          comparatorLabel={`${data.place.state_label} mean`}
+        />
         <SourcesFooter data={data} />
       </main>
       <SiteFooter briefingLabel={data.briefing_label} />

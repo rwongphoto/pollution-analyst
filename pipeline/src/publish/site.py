@@ -266,6 +266,73 @@ def _criteria_air_pathways(
     return out
 
 
+def _vs_state_class(pct: float | None) -> str:
+    """Editorial color bucket for the 'vs state mean' comparison pill.
+
+    Tighter bands than the equity-percentile classifier — chronic-disease
+    prevalence rates move on a narrower scale than EJ percentiles, so a
+    +15% gap is genuinely 'worse' rather than 'modestly above'."""
+    if pct is None:
+        return "neutral"
+    if pct >= 15:
+        return "worse"
+    if pct >= 5:
+        return "elevated"
+    if pct <= -5:
+        return "better"
+    return "neutral"
+
+
+def _health_indicators(
+    *,
+    measures: list,                                # list[cdc_places.PlacesReading]
+    state_means: dict[str, float],                 # measure_key -> state pop-weighted mean (age-adjusted)
+    release_label: str,
+) -> list[dict]:
+    """Render PLACES readings as ``HealthIndicator`` payload entries.
+
+    Tile order is deterministic (mirrors ``cdc_places.V1_MEASURES``) so
+    readers comparing two pages see the same column order. ``measures``
+    is one geography's worth of readings — county or place — keyed by
+    ``measure_key``.
+    """
+    if not measures:
+        return []
+    from ..ingest.cdc_places import V1_MEASURES, measure_for_key  # local import — pipeline-only
+
+    by_key = {r.measure_key: r for r in measures}
+    out: list[dict] = []
+    for spec in V1_MEASURES:
+        r = by_key.get(spec.key)
+        if r is None or r.crude is None:
+            continue
+        m = measure_for_key(spec.key)
+        sm = state_means.get(spec.key)
+        # Comparator: pp = age_adjusted - state_mean; pct = relative %.
+        # We use age-adjusted both sides so the comparison is apples-to-
+        # apples regardless of local age structure.
+        cmp_basis = r.age_adjusted if r.age_adjusted is not None else r.crude
+        if sm is not None and sm > 0 and cmp_basis is not None:
+            pp = round(cmp_basis - sm, 2)
+            pct = round((cmp_basis - sm) / sm * 100, 1)
+        else:
+            pp = None
+            pct = None
+        out.append({
+            "measure_key": spec.key,
+            "label": m.label,
+            "crude": round(r.crude, 1),
+            "age_adjusted": round(r.age_adjusted, 1) if r.age_adjusted is not None else None,
+            "state_mean": round(sm, 1) if sm is not None else None,
+            "vs_state_pp": pp,
+            "vs_state_pct": pct,
+            "vs_state_class": _vs_state_class(pct),
+            "source": release_label,
+            "vintage_year": r.year,
+        })
+    return out
+
+
 def _stub_equity(geography_label: str, population: int) -> dict:
     """Placeholder EJScreen overlay — flagged so the frontend can render
     the section but the reader (and any downstream auditor) can see it's
@@ -631,6 +698,7 @@ def publish_city_hub(
     county_fips: str | None,
     county_ghg_history: dict[int, float] | None,
     county_air_history: dict[str, dict[int, float]] | None = None,
+    health_indicators: list | None = None,
     flags: list | None = None,
 ) -> Path:
     """Build the place-anchored city hub payload."""
@@ -742,6 +810,7 @@ def publish_city_hub(
             disparity_scores=place_disparity_scores,
             percentiles=place_percentiles,
         ),
+        "health_indicators": health_indicators or [],
         "sources": [
             {
                 "label": "EPA Toxics Release Inventory",
@@ -788,6 +857,7 @@ def publish_county(
     percentiles: list | None = None,
     ghg_history: dict[int, float] | None = None,
     air_history: dict[str, dict[int, float]] | None = None,
+    health_indicators: list | None = None,
     flags: list | None = None,
     cities_directory: list[dict] | None = None,
 ) -> Path:
@@ -827,6 +897,7 @@ def publish_county(
             disparity_scores=disparity_scores,
             percentiles=percentiles,
         ),
+        "health_indicators": health_indicators or [],
         "sources": [
             {
                 "label": "EPA Toxics Release Inventory",
