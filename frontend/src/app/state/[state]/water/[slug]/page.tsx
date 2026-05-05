@@ -369,7 +369,23 @@ export default async function WaterPage({
         <Crumbs
           items={[
             { label: data.utility.state_label, href: `/state/${data.utility.state}` },
-            { label: city },
+            ...(data.utility.county
+              ? [{
+                  label: data.utility.county,
+                  ...(data.utility.county_slug
+                    ? { href: `/state/${data.utility.state}/county/${data.utility.county_slug}` }
+                    : {}),
+                }]
+              : []),
+            ...(city
+              ? [{
+                  label: city,
+                  ...(data.utility.place_slug
+                    ? { href: `/state/${data.utility.state}/city/${data.utility.place_slug}` }
+                    : {}),
+                }]
+              : []),
+            { label: data.utility.name },
           ]}
         />
         <WaterHero data={data} slug={slug} />

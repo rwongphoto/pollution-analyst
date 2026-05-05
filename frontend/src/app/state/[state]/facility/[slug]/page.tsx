@@ -261,6 +261,15 @@ export default async function FacilityPage({
           items={[
             { label: data.facility.state_label, href: `/state/${data.facility.state}` },
             { label: data.facility.county, href: `/state/${data.facility.state}/county/${data.facility.county_slug}` },
+            ...(data.facility.city
+              ? [{
+                  label: data.facility.city,
+                  href: `/state/${data.facility.state}/city/${data.facility.city
+                    .toLowerCase()
+                    .replace(/[^a-z0-9]+/g, "-")
+                    .replace(/^-+|-+$/g, "")}`,
+                }]
+              : []),
             { label: data.facility.name },
           ]}
         />

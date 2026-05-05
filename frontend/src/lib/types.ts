@@ -200,6 +200,9 @@ export interface WaterUtilityPayload {
     population_served: number;
     primary_source: "groundwater" | "surface_water" | "purchased" | "mixed";
     cities_served: string[];
+    county?: string | null;
+    county_slug?: string | null;
+    place_slug?: string | null;
   };
   reporting_period: { start: string; end: string }; // ISO dates
   briefing_label: string;

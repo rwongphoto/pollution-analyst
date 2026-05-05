@@ -667,6 +667,11 @@ def run_state(
             place_disparity_scores=place_disparity.get(place_fips, []) if place_fips else None,
             place_percentiles=place_percentiles.get(place_fips, []) if place_fips else None,
             place_name=place_fips_to_name.get(place_fips) if place_fips else None,
+            place_slug_value=(
+                publish_site.place_slug(place_fips_to_name[place_fips], place_fips)
+                if place_fips and place_fips in place_fips_to_name
+                else None
+            ),
             flags=utility_flags.get(u.pwsid, []),
         ))
 

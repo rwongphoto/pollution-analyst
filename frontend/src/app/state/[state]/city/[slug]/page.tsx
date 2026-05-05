@@ -491,8 +491,10 @@ export default async function CityHubPage({
             { label: data.place.state_label, href: `/state/${state}` },
             ...(data.place.county_name
               ? [{
-                  label: data.place.county_name,
-                  href: `/state/${state}/county/${(data.place.county_name || "")
+                  label: /\s+county$/i.test(data.place.county_name)
+                    ? data.place.county_name
+                    : `${data.place.county_name} County`,
+                  href: `/state/${state}/county/${data.place.county_name
                     .toLowerCase()
                     .replace(/\s+county$/, "")
                     .replace(/\s+/g, "-")}`,

@@ -572,6 +572,7 @@ def publish_water(
     place_disparity_scores: list | None = None,
     place_percentiles: list | None = None,
     place_name: str | None = None,
+    place_slug_value: str | None = None,
     flags: list | None = None,
 ) -> Path:
     """Write one city/water-utility JSON.
@@ -606,6 +607,16 @@ def publish_water(
     top_contaminants = sorted(by_contaminant.items(), key=lambda kv: kv[1], reverse=True)[:6]
     years_since_last = (current_year - last_violation_year) if last_violation_year else None
 
+    county_label = (
+        county_name + " County"
+        if county_name and not county_name.lower().endswith(" county")
+        else county_name
+    )
+    county_slug_value = (
+        _county_slug(county_name, county_fips)
+        if county_name and county_fips
+        else None
+    )
     payload = {
         "utility": {
             "state": util.state_slug,
@@ -616,6 +627,9 @@ def publish_water(
             "population_served": util.population_served,
             "primary_source": util.primary_source,
             "cities_served": [util.city_name] if util.city_name else [],
+            "county": county_label,
+            "county_slug": county_slug_value,
+            "place_slug": place_slug_value,
         },
         "reporting_period": {"start": period_start, "end": period_end},
         "briefing_label": "SDWIS through latest publish",
