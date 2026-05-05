@@ -23,8 +23,10 @@ from .publish import site as publish_site
 from .spatial.acs import (
     get_county_demographics,
     get_county_populations,
+    get_place_demographics,
     get_state_demographics,
 )
+from .spatial.places import build_bg_to_place, load_places
 
 
 def _county_name_from_fips(fips: str, state_abbr: str) -> str | None:
@@ -178,7 +180,7 @@ def run_state(
         for fips, co2e in ghgrp.aggregate_county_totals(ghg_rows).items():
             ghg_county_history.setdefault(fips, {})[y] = co2e
 
-    # --- EJScreen disparity scores (state + per-county) ---
+    # --- EJScreen disparity scores (state + per-county + per-place) ---
     try:
         state_disparity = ejscreen.aggregate_state(state.abbr)
     except Exception as exc:  # noqa: BLE001
@@ -189,6 +191,28 @@ def run_state(
     except Exception as exc:  # noqa: BLE001
         logging.warning("EJScreen county aggregate failed for %s: %s", state.abbr, exc)
         county_disparity = {}
+    try:
+        bg_to_place = build_bg_to_place(state.fips)
+        place_disparity = ejscreen.aggregate_places(state.abbr, bg_to_place)
+    except Exception as exc:  # noqa: BLE001
+        logging.warning("EJScreen place aggregate failed for %s: %s", state.abbr, exc)
+        place_disparity = {}
+    try:
+        place_demos = get_place_demographics(state.fips)
+    except Exception as exc:  # noqa: BLE001
+        logging.warning("ACS place demographics failed for %s: %s", state.abbr, exc)
+        place_demos = {}
+    try:
+        place_pairs = load_places(state.fips)
+        place_name_to_fips: dict[str, str] = {}
+        place_fips_to_name: dict[str, str] = {}
+        for p, _ in place_pairs:
+            place_name_to_fips[p.name.upper()] = p.fips
+            place_fips_to_name[p.fips] = p.name
+    except Exception as exc:  # noqa: BLE001
+        logging.warning("Place name index failed for %s: %s", state.abbr, exc)
+        place_name_to_fips = {}
+        place_fips_to_name = {}
 
     # --- Publish ---
     publish_site.publish_state(
@@ -223,6 +247,9 @@ def run_state(
         )
     for u in utilities.values():
         cfips = utility_county_map.get(u.pwsid)
+        # Match utility city_name → place FIPS by uppercase name match.
+        # Skips when no place matches (unincorporated areas, regional utilities).
+        place_fips = place_name_to_fips.get((u.city_name or "").strip().upper())
         publish_site.publish_city(
             u,
             state_demographics=state_demo,
@@ -234,6 +261,10 @@ def run_state(
             county_disparity_scores=county_disparity.get(cfips, []) if cfips else None,
             county_population=county_pops.get(cfips, 0) if cfips else 0,
             county_name=_county_name_from_fips(cfips, state.abbr) if cfips else None,
+            place_fips=place_fips,
+            place_demographics=place_demos.get(place_fips) if place_fips else None,
+            place_disparity_scores=place_disparity.get(place_fips, []) if place_fips else None,
+            place_name=place_fips_to_name.get(place_fips) if place_fips else None,
         )
 
     return state_agg, counties, facilities, utilities

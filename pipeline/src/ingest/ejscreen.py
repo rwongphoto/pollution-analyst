@@ -112,6 +112,38 @@ def aggregate_counties(state_abbr: str) -> dict[str, list[EJDisparity]]:
     return out
 
 
+def aggregate_places(
+    state_abbr: str,
+    bg_to_place: dict[str, str],
+) -> dict[str, list[EJDisparity]]:
+    """Return per-place EJ disparity scores keyed by 7-digit place FIPS.
+
+    bg_to_place: {12-digit bgfips: 7-digit place_fips}, built by
+    spatial.places.build_bg_to_place().
+    """
+    import pyarrow.compute as pc
+    t = _load_table()
+    mask = pc.equal(t.column("ST"), state_abbr.upper())
+    sub = t.filter(mask)
+    bgfips = sub.column("bgfips").to_pylist()
+    by_place: dict[str, list[int]] = {}
+    for i, bg in enumerate(bgfips):
+        if not bg:
+            continue
+        place_fips = bg_to_place.get(bg)
+        if not place_fips:
+            continue
+        by_place.setdefault(place_fips, []).append(i)
+    out: dict[str, list[EJDisparity]] = {}
+    for place_fips, idxs in by_place.items():
+        # Skip places with too few block groups for meaningful aggregation
+        if len(idxs) == 0:
+            continue
+        place_sub = sub.take(idxs)
+        out[place_fips] = _aggregate_rows(place_sub)
+    return out
+
+
 def _aggregate_rows(sub) -> list[EJDisparity]:
     """Population-weighted mean of each disparity-score column."""
     import pyarrow.compute as pc

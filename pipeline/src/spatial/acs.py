@@ -119,6 +119,37 @@ def get_state_demographics(state_fips: str) -> Demographics | None:
     return demo
 
 
+def get_place_demographics(state_fips: str) -> dict[str, Demographics]:
+    """Return {7-digit place FIPS: Demographics} for every Census place
+    in the state (incorporated cities + CDPs).
+    """
+    state_fips = state_fips.zfill(2)
+    cache = _cache_path(state_fips, "place_demo")
+    if cache.exists():
+        d = json.loads(cache.read_text())
+        return {k: Demographics(**v) for k, v in d.items()}
+    url = f"{ACS_PROFILE}?get=NAME,{_PROFILE_VARS}&for=place:*&in=state:{state_fips}"
+    log.info("ACS: fetching place demographics for state FIPS %s", state_fips)
+    with httpx.Client(timeout=120.0, headers={"User-Agent": USER_AGENT}) as client:
+        r = client.get(url)
+        r.raise_for_status()
+    rows = r.json()
+    if not rows or len(rows) < 2:
+        return {}
+    out: dict[str, Demographics] = {}
+    for row in rows[1:]:
+        demo = _parse_profile_row(row)
+        try:
+            state_code, place_code = row[-2], row[-1]
+            place_fips = f"{state_code}{place_code}"
+            out[place_fips] = demo
+        except (ValueError, IndexError):
+            continue
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    cache.write_text(json.dumps({k: v.__dict__ for k, v in out.items()}))
+    return out
+
+
 def get_county_demographics(state_fips: str) -> dict[str, Demographics]:
     state_fips = state_fips.zfill(2)
     cache = _cache_path(state_fips, "county_demo")

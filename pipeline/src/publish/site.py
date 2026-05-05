@@ -298,12 +298,17 @@ def publish_city(
     county_disparity_scores: list | None = None,
     county_population: int = 0,
     county_name: str | None = None,
+    place_fips: str | None = None,
+    place_demographics: object | None = None,
+    place_disparity_scores: list | None = None,
+    place_name: str | None = None,
 ) -> Path:
     """Write one city/water-utility JSON.
 
-    Equity overlay uses the utility's served-county data (via SDWIS
-    GEOGRAPHIC_AREA.county_served) when available; falls back to
-    state-level when the utility has no county mapping.
+    Equity overlay geography preference:
+        1. Census Place (city) — if utility city_name matches a place
+        2. SDWIS county_served — when no place match
+        3. State-level — when neither
     """
     earliest_year = min((v.year for v in util.violations), default=datetime.now(timezone.utc).year - 5)
     period_start = f"{earliest_year}-01-01"
@@ -371,10 +376,20 @@ def publish_city(
         },
         "equity": (
             _build_equity(
+                population=place_demographics.population if place_demographics else 0,
+                geography_label=(
+                    f"{place_name or 'City'}, {_state_label(util.state_slug)} "
+                    "(Census place; block-group disparity scores aggregated by centroid containment)"
+                ),
+                demographics=place_demographics,
+                disparity_scores=place_disparity_scores,
+            )
+            if place_fips and place_demographics and place_disparity_scores
+            else _build_equity(
                 population=county_population,
                 geography_label=(
                     f"{county_name or 'County'}, {_state_label(util.state_slug)} "
-                    "(utility's served county per SDWIS GEOGRAPHIC_AREA)"
+                    "(utility's served county per SDWIS GEOGRAPHIC_AREA — city-level not yet matched)"
                 ),
                 demographics=county_demographics,
                 disparity_scores=county_disparity_scores,
@@ -384,7 +399,7 @@ def publish_city(
                 population=state_population or util.population_served,
                 geography_label=(
                     f"{_state_label(util.state_slug)} state-level "
-                    "(SDWIS county_served unmapped for this utility — falling back to state)"
+                    "(neither place nor county matched for this utility)"
                 ),
                 demographics=state_demographics,
                 disparity_scores=state_disparity_scores,
