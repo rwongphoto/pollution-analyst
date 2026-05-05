@@ -5,7 +5,7 @@ import { Ic } from "@/components/site/icons";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
-import { loadHome } from "@/lib/data";
+import { loadCounty, loadHome } from "@/lib/data";
 import { SITE_URL } from "@/lib/seo";
 import type { FeaturedEntity } from "@/lib/types";
 
@@ -237,7 +237,13 @@ function FeaturedSection({ featured }: { featured: FeaturedEntity[] }) {
   );
 }
 
-function EquityBand() {
+function EquityBand({
+  indexes,
+  geographyLabel,
+}: {
+  indexes: { label: string; pct_us: number }[];
+  geographyLabel: string;
+}) {
   return (
     <section className="story-band">
       <div className="wrap">
@@ -251,7 +257,7 @@ function EquityBand() {
               Equity context, paired — <em className="h-italic">not buried</em>.
             </h2>
             <p className="lead" style={{ margin: "0 0 24px", maxWidth: "48ch" }}>
-              EPA&apos;s EJScreen pairs pollution exposure with the demographics of the people exposed. We surface those indexes verbatim on every facility and county page, with attribution. The reasoning behind this — and why it&apos;s a deliberate inversion of our companion crime site&apos;s stance on demographics — is documented in full.
+              We pair every pollution surface with the population context — demographic shares, EPA-style national percentiles per indicator, and EJ disparity scores — so readers can see who lives next to the burden, not just the pounds released.
             </p>
             <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
               <Link href="/methodology#equity" className="btn btn-primary">
@@ -271,29 +277,26 @@ function EquityBand() {
             }}
           >
             <div className="meta-mono" style={{ color: "#BFC6D4", fontSize: 11, letterSpacing: "0.08em", marginBottom: 16 }}>
-              EJSCREEN INDEX · HARRIS COUNTY, TX
+              NATIONAL PERCENTILE · {geographyLabel.toUpperCase()}
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
-              {[
-                { label: "Air toxics cancer risk", pct: 91 },
-                { label: "Air toxics respiratory hazard", pct: 88 },
-                { label: "Particulate matter (PM2.5)", pct: 79 },
-                { label: "Toxic releases to air", pct: 97 },
-                { label: "Diesel particulate", pct: 90 },
-              ].map((row) => (
-                <li key={row.label} style={{ display: "grid", gridTemplateColumns: "1fr 60px", gap: 8, alignItems: "center" }}>
-                  <span style={{ fontSize: 13, color: "var(--fg-2)" }}>{row.label}</span>
-                  <span className="num-mono" style={{ textAlign: "right", color: row.pct >= 90 ? "var(--red)" : row.pct >= 80 ? "var(--amber)" : "var(--fg-2)" }}>
-                    {row.pct}
-                  </span>
-                  <span style={{ gridColumn: "1 / -1", height: 4, background: "var(--bg-3)", borderRadius: 2, overflow: "hidden" }}>
-                    <span style={{ display: "block", height: "100%", width: `${row.pct}%`, background: row.pct >= 90 ? "var(--red)" : row.pct >= 80 ? "var(--amber)" : "var(--blue)" }} />
-                  </span>
-                </li>
-              ))}
+              {indexes.map((row) => {
+                const pct = row.pct_us;
+                return (
+                  <li key={row.label} style={{ display: "grid", gridTemplateColumns: "1fr 60px", gap: 8, alignItems: "center" }}>
+                    <span style={{ fontSize: 13, color: "var(--fg-2)" }}>{row.label}</span>
+                    <span className="num-mono" style={{ textAlign: "right", color: pct >= 90 ? "var(--red)" : pct >= 80 ? "var(--amber)" : "var(--fg-2)" }}>
+                      {pct.toFixed(0)}
+                    </span>
+                    <span style={{ gridColumn: "1 / -1", height: 4, background: "var(--bg-3)", borderRadius: 2, overflow: "hidden" }}>
+                      <span style={{ display: "block", height: "100%", width: `${pct}%`, background: pct >= 90 ? "var(--red)" : pct >= 80 ? "var(--amber)" : "var(--blue)" }} />
+                    </span>
+                  </li>
+                );
+              })}
             </ul>
             <p className="muted" style={{ fontSize: 12, marginTop: 16 }}>
-              Percentile rank vs all US block groups. EPA flags 80th-percentile-and-above for closer examination.
+              Percentile rank vs all US block groups, population-weighted. 80th and above warrants a closer look.
             </p>
           </div>
         </div>
@@ -332,7 +335,12 @@ function HomeCTA() {
 }
 
 export default async function HomePage() {
-  const data = await loadHome();
+  const [data, kern] = await Promise.all([loadHome(), loadCounty("ca", "kern")]);
+  const kernTopIndexes = [...kern.equity.ej_indexes]
+    .sort((a, b) => b.pct_us - a.pct_us)
+    .slice(0, 5)
+    .map(({ label, pct_us }) => ({ label, pct_us }));
+  const kernGeoLabel = `${kern.county.name}, ${kern.county.state.toUpperCase()}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -368,7 +376,7 @@ export default async function HomePage() {
         <SurfacesSection />
         <PrinciplesSection />
         <FeaturedSection featured={data.featured} />
-        <EquityBand />
+        <EquityBand indexes={kernTopIndexes} geographyLabel={kernGeoLabel} />
         <HomeCTA />
       </main>
       <SiteFooter briefingLabel={data.briefing_label} />
