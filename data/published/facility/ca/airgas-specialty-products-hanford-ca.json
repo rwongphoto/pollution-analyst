@@ -1,0 +1,153 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "airgas-specialty-products-hanford-ca",
+    "name": "Airgas Specialty Products - Hanford Ca",
+    "parent_company": "Airgas INC",
+    "address": "13274 CROWN AVE",
+    "city": "Hanford",
+    "county": "Kings County",
+    "county_slug": "kings",
+    "naics_label": "424690 \u00b7 Chemical Wholesalers",
+    "lat": 36.278003,
+    "lng": -119.650544
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 275,
+    "air_releases_pounds": 275,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 0.0,
+    "long_arc_pct_change": -45.0,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 500
+      },
+      {
+        "year": 2020,
+        "value": 250
+      },
+      {
+        "year": 2021,
+        "value": 250
+      },
+      {
+        "year": 2022,
+        "value": 275
+      },
+      {
+        "year": 2023,
+        "value": 275
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 275,
+      "history": [
+        {
+          "year": 2019,
+          "value": 500
+        },
+        {
+          "year": 2020,
+          "value": 250
+        },
+        {
+          "year": 2021,
+          "value": 250
+        },
+        {
+          "year": 2022,
+          "value": 275
+        },
+        {
+          "year": 2023,
+          "value": 275
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": -45.0,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "equity": {
+    "population": 152515,
+    "pct_low_income": 16.2,
+    "pct_people_of_color": 69.9,
+    "pct_under_5": 6.7,
+    "pct_over_64": 10.5,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 195.6
+      },
+      {
+        "label": "Ozone",
+        "score": 188.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 104.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 139.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 42.6
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 70.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 77.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.3
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 129.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 86.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 24.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 62.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Kings County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

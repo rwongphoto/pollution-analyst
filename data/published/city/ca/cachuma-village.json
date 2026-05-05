@@ -1,0 +1,219 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "cachuma-village",
+    "name": "Cachuma Village",
+    "pwsid": "CA4200505",
+    "population_served": 60,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Santa Barbara"
+    ]
+  },
+  "reporting_period": {
+    "start": "2020-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 5,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 3,
+    "years_since_last_violation": 4
+  },
+  "violations": [
+    {
+      "year": 2022,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2022,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2022,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2020,
+      "contaminant": "Haloacetic Acids (HAA5)",
+      "contaminant_code": "2456",
+      "severity": "monitoring",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2020,
+      "contaminant": "Total Trihalomethanes (TTHM)",
+      "contaminant_code": "2950",
+      "severity": "monitoring",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2020,
+        "value": 2
+      },
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 3
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2020,
+        "value": 0
+      },
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 3
+      },
+      {
+        "contaminant": "Haloacetic Acids (HAA5)",
+        "count": 1
+      },
+      {
+        "contaminant": "Total Trihalomethanes (TTHM)",
+        "count": 1
+      }
+    ]
+  },
+  "equity": {
+    "population": 445213,
+    "pct_low_income": 13.5,
+    "pct_people_of_color": 57.4,
+    "pct_under_5": 5.9,
+    "pct_over_64": 15.9,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 82.4
+      },
+      {
+        "label": "Ozone",
+        "score": 20.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 80.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 62.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 7.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 84.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 71.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 8.1
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 72.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 111.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 49.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 2.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Santa Barbara, California (utility's served county per SDWIS GEOGRAPHIC_AREA)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:17Z"
+}

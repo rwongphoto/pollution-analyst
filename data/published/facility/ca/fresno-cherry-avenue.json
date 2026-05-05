@@ -1,0 +1,149 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "fresno-cherry-avenue",
+    "name": "Fresno Cherry Avenue",
+    "parent_company": "Foster Farms LLC",
+    "address": "2960 S CHERRY AVE",
+    "city": "Fresno",
+    "county": "Fresno County",
+    "county_slug": "fresno",
+    "naics_label": "311615 \u00b7 Food",
+    "lat": 36.693756,
+    "lng": -119.781829
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 2442,
+    "air_releases_pounds": 2442,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -64.0,
+    "long_arc_pct_change": -65.2,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 7022
+      },
+      {
+        "year": 2020,
+        "value": 7582
+      },
+      {
+        "year": 2021,
+        "value": 2556
+      },
+      {
+        "year": 2022,
+        "value": 6783
+      },
+      {
+        "year": 2023,
+        "value": 2442
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Peracetic acid",
+      "cas": "79-21-0",
+      "category": "general",
+      "total_pounds_recent": 2442,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1847
+        },
+        {
+          "year": 2021,
+          "value": 2556
+        },
+        {
+          "year": 2022,
+          "value": 2510
+        },
+        {
+          "year": 2023,
+          "value": 2442
+        }
+      ],
+      "yoy_pct_change": -2.7,
+      "long_arc_pct_change": 32.2,
+      "long_arc_baseline_year": 2020
+    }
+  ],
+  "equity": {
+    "population": 1008280,
+    "pct_low_income": 19.5,
+    "pct_people_of_color": 72.6,
+    "pct_under_5": 7.8,
+    "pct_over_64": 12.5,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 209.5
+      },
+      {
+        "label": "Ozone",
+        "score": 204.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 120.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 179.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 135.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 130.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 92.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 117.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 163.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 148.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 67.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 7.5
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Fresno County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

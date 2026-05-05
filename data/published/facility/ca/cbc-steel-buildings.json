@@ -1,0 +1,225 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "cbc-steel-buildings",
+    "name": "Cbc Steel Buildings",
+    "parent_company": "Nucor CORP",
+    "address": "1700 E LOUISE AVE",
+    "city": "Lathrop",
+    "county": "San Joaquin County",
+    "county_slug": "san-joaquin",
+    "naics_label": "332311 \u00b7 Fabricated Metals",
+    "lat": 37.811784,
+    "lng": -121.272009
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 2,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -99.9,
+    "long_arc_pct_change": -99.1,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 261
+      },
+      {
+        "year": 2011,
+        "value": 346
+      },
+      {
+        "year": 2012,
+        "value": 546
+      },
+      {
+        "year": 2013,
+        "value": 8934
+      },
+      {
+        "year": 2014,
+        "value": 4785
+      },
+      {
+        "year": 2015,
+        "value": 5185
+      },
+      {
+        "year": 2016,
+        "value": 6178
+      },
+      {
+        "year": 2017,
+        "value": 6380
+      },
+      {
+        "year": 2018,
+        "value": 5976
+      },
+      {
+        "year": 2019,
+        "value": 6181
+      },
+      {
+        "year": 2020,
+        "value": 2995
+      },
+      {
+        "year": 2021,
+        "value": 5346
+      },
+      {
+        "year": 2022,
+        "value": 3431
+      },
+      {
+        "year": 2023,
+        "value": 2
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 2,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1
+        },
+        {
+          "year": 2011,
+          "value": 1
+        },
+        {
+          "year": 2012,
+          "value": 0
+        },
+        {
+          "year": 2013,
+          "value": 2
+        },
+        {
+          "year": 2014,
+          "value": 1
+        },
+        {
+          "year": 2015,
+          "value": 1
+        },
+        {
+          "year": 2016,
+          "value": 2
+        },
+        {
+          "year": 2017,
+          "value": 2
+        },
+        {
+          "year": 2018,
+          "value": 2
+        },
+        {
+          "year": 2019,
+          "value": 2
+        },
+        {
+          "year": 2020,
+          "value": 2
+        },
+        {
+          "year": 2021,
+          "value": 5
+        },
+        {
+          "year": 2022,
+          "value": 4
+        },
+        {
+          "year": 2023,
+          "value": 2
+        }
+      ],
+      "yoy_pct_change": -35.8,
+      "long_arc_pct_change": 122.7,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "equity": {
+    "population": 779445,
+    "pct_low_income": 12.9,
+    "pct_people_of_color": 71.3,
+    "pct_under_5": 7.2,
+    "pct_over_64": 13.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 180.8
+      },
+      {
+        "label": "Ozone",
+        "score": 163.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 102.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 144.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 67.6
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 113.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 73.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 113.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 158.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 141.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 140.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 52.4
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "San Joaquin County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

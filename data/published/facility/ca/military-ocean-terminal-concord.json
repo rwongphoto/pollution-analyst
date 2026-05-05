@@ -1,0 +1,129 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "military-ocean-terminal-concord",
+    "name": "Military Ocean Terminal Concord",
+    "parent_company": "US Department Of Defense",
+    "address": "410 NORMAN AVE",
+    "city": "Concord",
+    "county": "Contra Costa County",
+    "county_slug": "contra-costa",
+    "naics_label": "928110 \u00b7 Other",
+    "lat": 38.030322,
+    "lng": -122.031805
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 7,
+    "air_releases_pounds": 7,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": -89.4,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 66
+      },
+      {
+        "year": 2023,
+        "value": 7
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Tetrachloroethylene",
+      "cas": "127-18-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 7,
+      "history": [
+        {
+          "year": 2021,
+          "value": 7
+        },
+        {
+          "year": 2023,
+          "value": 7
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "equity": {
+    "population": 1162648,
+    "pct_low_income": 8.3,
+    "pct_people_of_color": 59.4,
+    "pct_under_5": 6.0,
+    "pct_over_64": 16.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 127.3
+      },
+      {
+        "label": "Ozone",
+        "score": 45.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 73.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 73.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 62.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 95.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 58.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 63.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 79.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 112.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 95.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Contra Costa County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

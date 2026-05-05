@@ -1,0 +1,240 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "sierracin-sylmar-corp",
+    "name": "Sierracin/Sylmar Corp",
+    "parent_company": "Ppg Industries INC",
+    "address": "12780 SAN FERNANDO RD",
+    "city": "Sylmar",
+    "county": "Los Angeles County",
+    "county_slug": "los-angeles",
+    "naics_label": "336413 \u00b7 Transportation Equipment",
+    "lat": 34.301864,
+    "lng": -118.461767
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 40,
+    "air_releases_pounds": 40,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 4.1,
+    "long_arc_pct_change": -98.5,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 2605
+      },
+      {
+        "year": 2011,
+        "value": 255
+      },
+      {
+        "year": 2012,
+        "value": 255
+      },
+      {
+        "year": 2013,
+        "value": 2605
+      },
+      {
+        "year": 2014,
+        "value": 4005
+      },
+      {
+        "year": 2015,
+        "value": 3605
+      },
+      {
+        "year": 2016,
+        "value": 2505
+      },
+      {
+        "year": 2017,
+        "value": 4125
+      },
+      {
+        "year": 2018,
+        "value": 3726
+      },
+      {
+        "year": 2019,
+        "value": 4209
+      },
+      {
+        "year": 2020,
+        "value": 38
+      },
+      {
+        "year": 2021,
+        "value": 32
+      },
+      {
+        "year": 2022,
+        "value": 38
+      },
+      {
+        "year": 2023,
+        "value": 40
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Butyl alcohol",
+      "cas": "71-36-3",
+      "category": "general",
+      "total_pounds_recent": 29,
+      "history": [
+        {
+          "year": 2023,
+          "value": 29
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Diisocyanates",
+      "cas": "N120",
+      "category": "general",
+      "total_pounds_recent": 11,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2605
+        },
+        {
+          "year": 2011,
+          "value": 255
+        },
+        {
+          "year": 2012,
+          "value": 255
+        },
+        {
+          "year": 2013,
+          "value": 2605
+        },
+        {
+          "year": 2014,
+          "value": 4005
+        },
+        {
+          "year": 2015,
+          "value": 3605
+        },
+        {
+          "year": 2016,
+          "value": 2505
+        },
+        {
+          "year": 2017,
+          "value": 4106
+        },
+        {
+          "year": 2018,
+          "value": 3726
+        },
+        {
+          "year": 2019,
+          "value": 4209
+        },
+        {
+          "year": 2020,
+          "value": 10
+        },
+        {
+          "year": 2021,
+          "value": 3
+        },
+        {
+          "year": 2022,
+          "value": 10
+        },
+        {
+          "year": 2023,
+          "value": 11
+        }
+      ],
+      "yoy_pct_change": 16.5,
+      "long_arc_pct_change": -99.6,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "equity": {
+    "population": 9936690,
+    "pct_low_income": 13.7,
+    "pct_people_of_color": 74.8,
+    "pct_under_5": 5.6,
+    "pct_over_64": 14.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 179.8
+      },
+      {
+        "label": "Ozone",
+        "score": 164.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 156.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 169.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 121.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 174.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 128.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 130.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 147.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 181.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 145.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 2.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Los Angeles County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

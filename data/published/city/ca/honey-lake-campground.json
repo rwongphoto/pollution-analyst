@@ -1,0 +1,184 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "honey-lake-campground",
+    "name": "Honey Lake Campground",
+    "pwsid": "CA1800522",
+    "population_served": 25,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Milford"
+    ]
+  },
+  "reporting_period": {
+    "start": "2020-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 6
+  },
+  "violations": [
+    {
+      "year": 2020,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2020,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2020,
+        "value": 2
+      },
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2020,
+        "value": 0
+      },
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 2
+      }
+    ]
+  },
+  "equity": {
+    "population": 31873,
+    "pct_low_income": 15.2,
+    "pct_people_of_color": 37.0,
+    "pct_under_5": 4.6,
+    "pct_over_64": 15.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 114.1
+      },
+      {
+        "label": "Ozone",
+        "score": 111.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 54.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 0.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 3.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 15.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 75.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 1.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 26.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 21.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Lassen, California (utility's served county per SDWIS GEOGRAPHIC_AREA)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:17Z"
+}

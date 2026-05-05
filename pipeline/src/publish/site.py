@@ -1,0 +1,774 @@
+"""Write JSON files matching the frontend's payload schemas.
+
+Source of truth for shapes: frontend/src/lib/types.ts. Keep in sync when the
+frontend types change. Equity overlay (EJScreen) and water utility (SDWIS)
+are not yet ingested — those sections use a clearly-tagged stub block so the
+visual doesn't go missing on the page.
+"""
+
+from __future__ import annotations
+
+import json
+import re
+from datetime import datetime, timezone
+from pathlib import Path
+
+from ..config import (
+    COUNTY_TOP_FACILITIES,
+    FACILITY_HISTORY_YEARS,
+    FACILITY_TOP_CHEMICALS,
+    PUBLISHED_ROOT,
+    STATE_TOP_COUNTIES,
+    STATE_TOP_FACILITIES,
+)
+from ..states import State
+from .._slug import slugify
+from ..aggregate.build import CountyAgg, FacilityAgg, FacilityChemical, StateAgg, UtilityAgg
+
+
+def write_json(path: Path, payload: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, default=str))
+
+
+def _now_iso() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def _county_slug(county_name: str, fips: str) -> str:
+    base = slugify(county_name.lower().replace(" county", "").strip())
+    return base or f"fips-{fips}"
+
+
+def _facility_slug(name: str, facility_id: str) -> str:
+    base = slugify(name.lower())
+    return base or f"tri-{facility_id.lower()}"
+
+
+def utility_city_slug(name: str, pwsid: str) -> str:
+    """Derive the URL slug for a utility's city page. Strip 'City of'/'Town of'
+    prefixes when present so /state/ca/city/sacramento beats
+    /state/ca/city/city-of-sacramento. Falls back to PWSID on collision-prone
+    short names.
+    """
+    s = name.strip()
+    for prefix in ("City Of ", "Town Of ", "Village Of ", "City of ", "Town of "):
+        if s.startswith(prefix):
+            s = s[len(prefix):]
+            break
+    base = slugify(s.lower())
+    if not base or len(base) < 3:
+        return pwsid.lower()
+    return base
+
+
+def _tri_pathways(
+    *,
+    current_air: float,
+    current_water: float,
+    current_land: float,
+    medium_history: dict[str, dict[int, float]] | None,
+    year: int,
+    ghg_history: dict[int, float] | None = None,
+) -> list[dict]:
+    """Build the TRI pathway cards (air, water, land+off-site) plus an
+    optional GHGRP CO2e card if ghg_history is provided.
+    """
+    specs = [
+        ("tri_air",   "TRI air releases (5.1 fugitive + 5.2 stack)", current_air,   "AIR",  "lb"),
+        ("tri_water", "TRI water releases (5.3)",                    current_water, "WATER","lb"),
+        ("tri_land",  "TRI land + off-site releases",                current_land,  "LAND", "lb"),
+    ]
+    out: list[dict] = []
+    for slug, label, current, key, units in specs:
+        hist_map = (medium_history or {}).get(key) or {year: current}
+        history_pts = [{"year": y, "value": round(v)} for y, v in sorted(hist_map.items())]
+        baseline_year = min(hist_map.keys()) if hist_map else year
+        long_arc = (
+            _yoy_pct_change(hist_map.get(year), hist_map.get(baseline_year))
+            if len(hist_map) > 1 else None
+        )
+        out.append({
+            "pathway": slug,
+            "label": label,
+            "current": round(current),
+            "units": units,
+            "yoy_pct_change": _yoy_pct_change(hist_map.get(year), hist_map.get(year - 1)),
+            "long_arc_pct_change": long_arc,
+            "baseline_year": baseline_year,
+            "history": history_pts,
+        })
+    if ghg_history:
+        history_pts = [{"year": y, "value": round(v)} for y, v in sorted(ghg_history.items())]
+        baseline_year = min(ghg_history.keys()) if ghg_history else year
+        current_ghg = ghg_history.get(year, 0.0)
+        long_arc = (
+            _yoy_pct_change(current_ghg, ghg_history.get(baseline_year))
+            if len(ghg_history) > 1 else None
+        )
+        out.append({
+            "pathway": "ghg",
+            "label": "Greenhouse gases (GHGRP large emitters)",
+            "current": round(current_ghg),
+            "units": "metric tons CO₂e",
+            "yoy_pct_change": _yoy_pct_change(current_ghg, ghg_history.get(year - 1)),
+            "long_arc_pct_change": long_arc,
+            "baseline_year": baseline_year,
+            "history": history_pts,
+        })
+    return out
+
+
+def _stub_equity(geography_label: str, population: int) -> dict:
+    """Placeholder EJScreen overlay — flagged so the frontend can render
+    the section but the reader (and any downstream auditor) can see it's
+    not real.
+    """
+    return {
+        "population": population,
+        "pct_low_income": None,
+        "pct_people_of_color": None,
+        "pct_under_5": None,
+        "pct_over_64": None,
+        "ej_indexes": [],
+        "disparity_scores": [],
+        "source": "EJScreen ingest pending — placeholder",
+        "geography_label": geography_label,
+    }
+
+
+def _build_equity(
+    population: int,
+    geography_label: str,
+    demographics: object | None,
+    disparity_scores: list | None,
+    source: str = "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+) -> dict:
+    """Real equity overlay — Census ACS demographics + USEPA-clone EJ
+    disparity scores. Falls back to stub-shaped fields when demographics is
+    None (e.g. ACS endpoint failed) or disparity_scores is empty.
+    """
+    if demographics is None and not disparity_scores:
+        return _stub_equity(geography_label, population)
+    return {
+        "population": population,
+        "pct_low_income": getattr(demographics, "pct_low_income", None),
+        "pct_people_of_color": getattr(demographics, "pct_people_of_color", None),
+        "pct_under_5": getattr(demographics, "pct_under_5", None),
+        "pct_over_64": getattr(demographics, "pct_over_64", None),
+        "ej_indexes": [],  # original EJScreen retired by EPA
+        "disparity_scores": [
+            {"label": d.label, "score": d.score} for d in (disparity_scores or [])
+        ],
+        "source": source,
+        "geography_label": geography_label,
+    }
+
+
+# ---- Facility ------------------------------------------------------------
+
+def publish_facility(
+    fac: FacilityAgg,
+    year: int,
+    chem_history: dict[str, dict[int, float]] | None = None,
+    county_demographics: object | None = None,
+    county_disparity_scores: list | None = None,
+    county_population: int = 0,
+) -> Path:
+    """Write one facility JSON. chem_history (optional): per-chemical
+    multi-year totals keyed by tri_chem_id, for the long-arc framing.
+
+    Equity overlay uses the facility's containing-county data when provided
+    — proper 3-mile-buffer aggregation is a future improvement.
+    """
+    chems = sorted(fac.chemicals.values(), key=lambda c: c.pounds_total, reverse=True)
+    top = chems[:FACILITY_TOP_CHEMICALS]
+    out_chemicals = [_facility_chemical_payload(c, chem_history, year) for c in top]
+
+    # Sum chem_history across all chemicals to get the facility's total
+    # multi-year history. Drives the hero chart + YoY + long-arc framing.
+    fac_history: dict[int, float] = {}
+    if chem_history:
+        for chem_year_map in chem_history.values():
+            for y, v in chem_year_map.items():
+                fac_history[y] = fac_history.get(y, 0.0) + v
+    if not fac_history:
+        fac_history = {year: fac.pounds_total}
+    history_pts = [{"year": y, "value": round(v)} for y, v in sorted(fac_history.items())]
+    yoy = _yoy_pct_change(fac_history.get(year), fac_history.get(year - 1))
+    baseline_year = min(fac_history.keys()) if fac_history else year
+    long_arc = (
+        _yoy_pct_change(fac_history.get(year), fac_history.get(baseline_year))
+        if len(fac_history) > 1 else None
+    )
+
+    payload = {
+        "facility": {
+            "state": fac.state_slug,
+            "state_label": _state_label(fac.state_slug),
+            "slug": _facility_slug(fac.name, fac.facility_id),
+            "name": fac.name,
+            "parent_company": fac.parent_company,
+            "address": fac.address,
+            "city": fac.city,
+            "county": fac.county_name + " County" if not fac.county_name.endswith("County") else fac.county_name,
+            "county_slug": _county_slug(fac.county_name, fac.county_fips),
+            "naics_label": fac.naics_label or "NAICS code not in joined response",
+            "lat": fac.lat,
+            "lng": fac.lng,
+        },
+        "reporting_year": year,
+        "briefing_label": f"TRI {year} reporting year",
+        "totals": {
+            "total_releases_pounds": round(fac.pounds_total),
+            "air_releases_pounds": round(fac.pounds_air),
+            "water_releases_pounds": round(fac.pounds_water),
+            "land_releases_pounds": round(fac.pounds_land),
+            "chemicals_reported": len(fac.chemicals),
+            "yoy_pct_change": yoy,
+            "long_arc_pct_change": long_arc,
+            "long_arc_baseline_year": baseline_year,
+            "history": history_pts,
+        },
+        "chemicals": out_chemicals,
+        "equity": _build_equity(
+            population=county_population,
+            geography_label=(
+                f"{fac.county_name} County, {fac.state_abbr} (facility's containing county; "
+                "3-mile buffer aggregation is a future iteration)"
+            ),
+            demographics=county_demographics,
+            disparity_scores=county_disparity_scores,
+        ),
+        "source": {
+            "label": "EPA Toxics Release Inventory",
+            "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+            "retrieved": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        },
+        "_published_at": _now_iso(),
+    }
+
+    out = PUBLISHED_ROOT / "facility" / fac.state_slug / f"{payload['facility']['slug']}.json"
+    write_json(out, payload)
+    return out
+
+
+def _facility_chemical_payload(
+    c: FacilityChemical,
+    chem_history: dict[str, dict[int, float]] | None,
+    year: int,
+) -> dict:
+    history_map = (chem_history or {}).get(c.tri_chem_id, c.history)
+    history = sorted(history_map.items())[-FACILITY_HISTORY_YEARS:]
+    yoy = _yoy_pct_change(history_map.get(year), history_map.get(year - 1))
+    if history:
+        first_year, first_v = history[0]
+        recent_v = history_map.get(year, 0.0)
+        long_arc = _yoy_pct_change(recent_v, first_v)
+        baseline_year = first_year
+    else:
+        long_arc = None
+        baseline_year = year
+    return {
+        "chemical": c.chemical,
+        "cas": c.cas or "",
+        "category": c.category,
+        "total_pounds_recent": round(c.pounds_total),
+        "history": [{"year": y, "value": round(v)} for y, v in history],
+        "yoy_pct_change": yoy,
+        "long_arc_pct_change": long_arc,
+        "long_arc_baseline_year": baseline_year,
+    }
+
+
+def _total_year(chemicals: dict[str, FacilityChemical], year: int) -> float:
+    return sum(c.history.get(year, 0.0) for c in chemicals.values())
+
+
+# ---- City (water utility) -----------------------------------------------
+
+def publish_city(
+    util: UtilityAgg,
+    state_demographics: object | None = None,
+    state_disparity_scores: list | None = None,
+    state_population: int = 0,
+    state_label: str = "",
+    county_fips: str | None = None,
+    county_demographics: object | None = None,
+    county_disparity_scores: list | None = None,
+    county_population: int = 0,
+    county_name: str | None = None,
+) -> Path:
+    """Write one city/water-utility JSON.
+
+    Equity overlay uses the utility's served-county data (via SDWIS
+    GEOGRAPHIC_AREA.county_served) when available; falls back to
+    state-level when the utility has no county mapping.
+    """
+    earliest_year = min((v.year for v in util.violations), default=datetime.now(timezone.utc).year - 5)
+    period_start = f"{earliest_year}-01-01"
+    period_end = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    # ---- Compute violation history per year + per severity bucket ----
+    current_year = datetime.now(timezone.utc).year
+    span_start = max(earliest_year, current_year - 9)  # 10-year cap
+    years_in_range = list(range(span_start, current_year + 1))
+    by_year_total = {y: 0 for y in years_in_range}
+    by_year_health = {y: 0 for y in years_in_range}
+    by_contaminant: dict[str, int] = {}
+    last_violation_year = None
+    for v in util.violations:
+        if v.year in by_year_total:
+            by_year_total[v.year] += 1
+            if v.severity == "health_based":
+                by_year_health[v.year] += 1
+        by_contaminant[v.contaminant] = by_contaminant.get(v.contaminant, 0) + 1
+        if last_violation_year is None or v.year > last_violation_year:
+            last_violation_year = v.year
+    history_total = [{"year": y, "value": by_year_total[y]} for y in years_in_range]
+    history_health = [{"year": y, "value": by_year_health[y]} for y in years_in_range]
+    top_contaminants = sorted(by_contaminant.items(), key=lambda kv: kv[1], reverse=True)[:6]
+    years_since_last = (current_year - last_violation_year) if last_violation_year else None
+
+    payload = {
+        "utility": {
+            "state": util.state_slug,
+            "state_label": state_label or _state_label(util.state_slug),
+            "slug": utility_city_slug(util.name, util.pwsid),
+            "name": util.name,
+            "pwsid": util.pwsid,
+            "population_served": util.population_served,
+            "primary_source": util.primary_source,
+            "cities_served": [util.city_name] if util.city_name else [],
+        },
+        "reporting_period": {"start": period_start, "end": period_end},
+        "briefing_label": "SDWIS through latest publish",
+        "totals": {
+            "violations_5yr": util.violations_5yr,
+            "health_based_violations_5yr": util.health_based_5yr,
+            "unresolved_violations": util.unresolved,
+            "contaminants_with_violations": util.contaminants_count,
+            "years_since_last_violation": years_since_last,
+        },
+        "violations": [
+            {
+                "year": v.year,
+                "contaminant": v.contaminant,
+                "contaminant_code": v.contaminant_code,
+                "severity": v.severity,
+                "rule": v.rule,
+                "is_unresolved": v.is_unresolved,
+                "description": v.description,
+            }
+            for v in util.violations
+        ],
+        "metrics": {
+            "violations_history": history_total,
+            "health_based_history": history_health,
+            "top_contaminants": [
+                {"contaminant": k, "count": v} for k, v in top_contaminants
+            ],
+        },
+        "equity": (
+            _build_equity(
+                population=county_population,
+                geography_label=(
+                    f"{county_name or 'County'}, {_state_label(util.state_slug)} "
+                    "(utility's served county per SDWIS GEOGRAPHIC_AREA)"
+                ),
+                demographics=county_demographics,
+                disparity_scores=county_disparity_scores,
+            )
+            if county_fips and county_demographics
+            else _build_equity(
+                population=state_population or util.population_served,
+                geography_label=(
+                    f"{_state_label(util.state_slug)} state-level "
+                    "(SDWIS county_served unmapped for this utility — falling back to state)"
+                ),
+                demographics=state_demographics,
+                disparity_scores=state_disparity_scores,
+            )
+        ),
+        "source": {
+            "label": "EPA Safe Drinking Water Information System",
+            "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+            "retrieved": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        },
+        "_published_at": _now_iso(),
+    }
+    out = PUBLISHED_ROOT / "city" / util.state_slug / f"{payload['utility']['slug']}.json"
+    write_json(out, payload)
+    return out
+
+
+# ---- County --------------------------------------------------------------
+
+def publish_county(
+    county: CountyAgg,
+    facilities_in_county: list[FacilityAgg],
+    year: int,
+    population: int = 0,
+    history: dict[int, float] | None = None,
+    facilities_chem_history: dict[str, dict[str, dict[int, float]]] | None = None,
+    medium_history: dict[str, dict[int, float]] | None = None,
+    demographics: object | None = None,
+    disparity_scores: list | None = None,
+    ghg_history: dict[int, float] | None = None,
+) -> Path:
+    top = sorted(facilities_in_county, key=lambda f: f.pounds_total, reverse=True)[:COUNTY_TOP_FACILITIES]
+    history_map = history or {year: county.pounds_total}
+    pathways = _tri_pathways(
+        current_air=county.pounds_air,
+        current_water=county.pounds_water,
+        current_land=county.pounds_land,
+        medium_history=medium_history,
+        year=year,
+        ghg_history=ghg_history,
+    )
+    payload = {
+        "county": {
+            "state": county.state_slug,
+            "state_label": _state_label(county.state_slug),
+            "slug": _county_slug(county.name, county.fips),
+            "name": county.name + " County" if not county.name.endswith("County") else county.name,
+            "fips": county.fips,
+            "population": population,
+        },
+        "reporting_year": year,
+        "briefing_label": f"TRI {year}",
+        "pathways": pathways,
+        "facilities": [
+            _facility_summary(f, chem_history=facilities_chem_history, year=year)
+            for f in top
+        ],
+        "utilities": [],  # SDWIS ingest pending
+        "equity": _build_equity(
+            population=population,
+            geography_label=f"All block groups in {county.name} County, {county.state_abbr}",
+            demographics=demographics,
+            disparity_scores=disparity_scores,
+        ),
+        "sources": [
+            {
+                "label": "EPA Toxics Release Inventory",
+                "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+                "retrieved": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+            }
+        ],
+        "_published_at": _now_iso(),
+    }
+    out = PUBLISHED_ROOT / "county" / county.state_slug / f"{payload['county']['slug']}.json"
+    write_json(out, payload)
+    return out
+
+
+def _utility_summary(u: UtilityAgg) -> dict:
+    return {
+        "slug": utility_city_slug(u.name, u.pwsid),
+        "state": u.state_slug,
+        "state_label": _state_label(u.state_slug),
+        "name": u.name,
+        "pwsid": u.pwsid,
+        "population_served": u.population_served,
+        "health_based_violations_5yr": u.health_based_5yr,
+        "unresolved": u.unresolved > 0,
+    }
+
+
+def _facility_summary(
+    f: FacilityAgg,
+    chem_history: dict[str, dict[str, dict[int, float]]] | None = None,
+    year: int = 0,
+) -> dict:
+    """Summary card used in state/county top-facilities tables. Computes YoY
+    by summing the facility's per-chemical histories for ``year`` and
+    ``year - 1``; returns None when prior-year data is missing.
+    """
+    top_chem = max(f.chemicals.values(), key=lambda c: c.pounds_total) if f.chemicals else None
+    yoy = None
+    if chem_history is not None and f.facility_id in chem_history and year:
+        per_chem = chem_history[f.facility_id]
+        cur = sum(years.get(year, 0.0) for years in per_chem.values())
+        prev = sum(years.get(year - 1, 0.0) for years in per_chem.values())
+        yoy = _yoy_pct_change(cur, prev)
+    return {
+        "slug": _facility_slug(f.name, f.facility_id),
+        "state": f.state_slug,
+        "state_label": _state_label(f.state_slug),
+        "name": f.name,
+        "parent_company": f.parent_company,
+        "total_pounds_recent": round(f.pounds_total),
+        "yoy_pct_change": yoy,
+        "top_chemical": top_chem.chemical if top_chem else "",
+        "city": f.city,
+    }
+
+
+# ---- State ---------------------------------------------------------------
+
+def publish_state(
+    state: State,
+    state_agg: StateAgg,
+    counties: dict[str, CountyAgg],
+    facilities: dict[str, FacilityAgg],
+    year: int,
+    history: dict[int, float] | None = None,
+    utilities: dict[str, UtilityAgg] | None = None,
+    county_history: dict[str, dict[int, float]] | None = None,
+    chem_history: dict[str, dict[str, dict[int, float]]] | None = None,
+    medium_history: dict[str, dict[int, float]] | None = None,
+    county_populations: dict[str, int] | None = None,
+    demographics: object | None = None,
+    disparity_scores: list | None = None,
+    ghg_history: dict[int, float] | None = None,
+) -> Path:
+    facility_count = len(facilities)
+    top_counties = sorted(
+        counties.values(), key=lambda c: c.pounds_total, reverse=True
+    )[:STATE_TOP_COUNTIES]
+    top_facilities = sorted(
+        facilities.values(), key=lambda f: f.pounds_total, reverse=True
+    )[:STATE_TOP_FACILITIES]
+
+    util_map = utilities or {}
+    # Top utilities: highest-pop CWS, but always include any utility with an
+    # unresolved health-based violation so those don't get hidden by size.
+    top_utility_objs = sorted(
+        util_map.values(),
+        key=lambda u: (u.health_based_5yr > 0 and u.unresolved > 0, u.population_served),
+        reverse=True,
+    )[:STATE_TOP_FACILITIES]
+    # Full alphabetical directory of every county we have a published page
+    # for — drives the bottom-of-state-page link sitemap. Mirrors the
+    # crime-site `NeighborhoodDirectory` SEO pattern.
+    counties_alphabetical = sorted(counties.values(), key=lambda c: c.name)
+
+    history_map = history or {year: state_agg.pounds_total}
+    history_pts = [{"year": y, "value": round(v)} for y, v in sorted(history_map.items())]
+    baseline_year = min(history_map.keys()) if history_map else year
+    long_arc = (
+        _yoy_pct_change(history_map.get(year), history_map.get(baseline_year))
+        if len(history_map) > 1 else None
+    )
+
+    payload = {
+        "state": {
+            "slug": state.slug,
+            "name": state.name,
+            "fips": state.fips,
+            "population": state.population,
+            "counties_total": state.counties_total,
+        },
+        "reporting_year": year,
+        "briefing_label": f"TRI {year}",
+        "totals": {
+            "facilities_tracked": facility_count,
+            "utilities_tracked": len(util_map),
+            "counties_with_data": len(counties),
+            "total_releases_pounds": round(state_agg.pounds_total),
+            "yoy_pct_change": _yoy_pct_change(history_map.get(year), history_map.get(year - 1)),
+            "long_arc_pct_change": long_arc,
+            "long_arc_baseline_year": baseline_year,
+        },
+        "pathways": _tri_pathways(
+            current_air=state_agg.pounds_air,
+            current_water=state_agg.pounds_water,
+            current_land=state_agg.pounds_land,
+            medium_history=medium_history,
+            year=year,
+            ghg_history=ghg_history,
+        ),
+        "top_counties": [
+            _county_summary(
+                c, facilities,
+                county_history=county_history, year=year,
+                county_populations=county_populations,
+            )
+            for c in top_counties
+        ],
+        "counties_directory": [
+            {
+                "slug": _county_slug(c.name, c.fips),
+                "name": c.name + " County" if not c.name.endswith("County") else c.name,
+                "facilities_count": len(c.facility_ids),
+            }
+            for c in counties_alphabetical
+        ],
+        "top_facilities": [
+            _facility_summary(f, chem_history=chem_history, year=year)
+            for f in top_facilities
+        ],
+        "top_utilities": [_utility_summary(u) for u in top_utility_objs],
+        "equity": _build_equity(
+            population=state.population,
+            geography_label=f"All {state.name} block groups",
+            demographics=demographics,
+            disparity_scores=disparity_scores,
+        ),
+        "sources": [
+            {
+                "label": "EPA Toxics Release Inventory",
+                "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+                "retrieved": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+            }
+        ],
+        "_published_at": _now_iso(),
+    }
+    out = PUBLISHED_ROOT / "state" / f"{state.slug}.json"
+    write_json(out, payload)
+    return out
+
+
+def _county_summary(
+    c: CountyAgg,
+    facilities: dict[str, FacilityAgg],
+    county_history: dict[str, dict[int, float]] | None = None,
+    year: int = 0,
+    county_populations: dict[str, int] | None = None,
+) -> dict:
+    fac_chemicals: dict[str, float] = {}
+    for fid in c.facility_ids:
+        fac = facilities.get(fid)
+        if not fac:
+            continue
+        for chem in fac.chemicals.values():
+            fac_chemicals[chem.chemical] = fac_chemicals.get(chem.chemical, 0) + chem.pounds_total
+    top_chem = max(fac_chemicals.items(), key=lambda kv: kv[1])[0] if fac_chemicals else ""
+    yoy = None
+    if county_history is not None and c.fips in county_history and year:
+        ch = county_history[c.fips]
+        yoy = _yoy_pct_change(ch.get(year), ch.get(year - 1))
+    population = (county_populations or {}).get(c.fips, 0)
+    return {
+        "slug": _county_slug(c.name, c.fips),
+        "state": c.state_slug,
+        "state_label": _state_label(c.state_slug),
+        "name": c.name + " County" if not c.name.endswith("County") else c.name,
+        "fips": c.fips,
+        "population": population,
+        "facilities_count": len(c.facility_ids),
+        "total_releases_pounds": round(c.pounds_total),
+        "yoy_pct_change": yoy,
+        "top_chemical": top_chem,
+    }
+
+
+# ---- Home ----------------------------------------------------------------
+
+def publish_home(
+    states: list[State],
+    state_aggs: dict[str, StateAgg],
+    facilities_by_state: dict[str, dict[str, FacilityAgg]],
+    counties_by_state: dict[str, dict[str, CountyAgg]],
+    year: int,
+    utilities_by_state: dict[str, dict[str, UtilityAgg]] | None = None,
+) -> Path:
+    total_facilities = sum(len(f) for f in facilities_by_state.values())
+    total_counties = sum(len(c) for c in counties_by_state.values())
+    total_utilities = sum(len(u) for u in (utilities_by_state or {}).values())
+
+    featured: list[dict] = []
+    # Pick the top facility nationally (by pounds) for the first card.
+    all_facilities: list[FacilityAgg] = []
+    for fmap in facilities_by_state.values():
+        all_facilities.extend(fmap.values())
+    if all_facilities:
+        top_fac = max(all_facilities, key=lambda f: f.pounds_total)
+        top_chem = max(top_fac.chemicals.values(), key=lambda c: c.pounds_total) if top_fac.chemicals else None
+        featured.append({
+            "kind": "facility",
+            "state": top_fac.state_slug,
+            "slug": _facility_slug(top_fac.name, top_fac.facility_id),
+            "name": top_fac.name,
+            "state_label": _state_label(top_fac.state_slug),
+            "headline": (
+                f"Largest single-facility TRI release in the dataset"
+                + (f"; top chemical {top_chem.chemical}." if top_chem else ".")
+            ),
+            "metric_label": f"Total releases · {year}",
+            "metric_value": _short_pounds(top_fac.pounds_total),
+        })
+    # Top county nationally
+    all_counties: list[CountyAgg] = []
+    for cmap in counties_by_state.values():
+        all_counties.extend(cmap.values())
+    if all_counties:
+        top_county = max(all_counties, key=lambda c: c.pounds_total)
+        featured.append({
+            "kind": "county",
+            "state": top_county.state_slug,
+            "slug": _county_slug(top_county.name, top_county.fips),
+            "name": top_county.name + " County",
+            "state_label": _state_label(top_county.state_slug),
+            "headline": f"{len(top_county.facility_ids)} TRI facilities reporting in {year}.",
+            "metric_label": f"TRI releases · {year}",
+            "metric_value": _short_pounds(top_county.pounds_total),
+        })
+    # Featured city: pick the most-populated utility with at least one
+    # health-based violation (real story); fall back to most populated.
+    all_utilities: list[UtilityAgg] = []
+    for umap in (utilities_by_state or {}).values():
+        all_utilities.extend(umap.values())
+    if all_utilities:
+        flagged = [u for u in all_utilities if u.health_based_5yr > 0]
+        pool = flagged or all_utilities
+        top_util = max(pool, key=lambda u: u.population_served)
+        headline = (
+            f"{top_util.health_based_5yr} health-based SDWIS violation"
+            f"{'s' if top_util.health_based_5yr != 1 else ''} in the past 5 years."
+        ) if top_util.health_based_5yr else "No health-based SDWIS violations in the past 5 years."
+        featured.append({
+            "kind": "city",
+            "state": top_util.state_slug,
+            "slug": utility_city_slug(top_util.name, top_util.pwsid),
+            "name": top_util.name,
+            "state_label": _state_label(top_util.state_slug),
+            "headline": headline,
+            "metric_label": "Population served",
+            "metric_value": f"{top_util.population_served:,}",
+        })
+
+    payload = {
+        "reporting_year": year,
+        "briefing_label": f"TRI {year} · pipeline run {datetime.now(timezone.utc):%Y-%m-%d}",
+        "totals": {
+            "facilities_tracked": total_facilities,
+            "utilities_tracked": total_utilities,
+            "counties_covered": total_counties,
+            "chemicals_indexed": _count_chemicals(facilities_by_state),
+        },
+        "featured": featured,
+        "_published_at": _now_iso(),
+    }
+    out = PUBLISHED_ROOT / "home.json"
+    write_json(out, payload)
+    return out
+
+
+def _count_chemicals(facilities_by_state: dict[str, dict[str, FacilityAgg]]) -> int:
+    seen: set[str] = set()
+    for fmap in facilities_by_state.values():
+        for f in fmap.values():
+            for chem in f.chemicals.values():
+                seen.add(chem.tri_chem_id)
+    return len(seen)
+
+
+def _short_pounds(p: float) -> str:
+    if p >= 1_000_000:
+        return f"{p/1_000_000:.1f}M lb"
+    if p >= 1_000:
+        return f"{p/1_000:.0f}k lb"
+    return f"{p:.0f} lb"
+
+
+def _yoy_pct_change(curr: float | None, prev: float | None) -> float | None:
+    if curr is None or prev is None or prev <= 0:
+        return None
+    return round((curr - prev) / prev * 100, 1)
+
+
+def _state_label(slug: str) -> str:
+    from ..states import STATES
+    return STATES[slug].name if slug in STATES else slug.upper()

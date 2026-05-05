@@ -1,0 +1,225 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "uss-upi-llc",
+    "name": "Uss-Upi LLC",
+    "parent_company": "US Steel CORP",
+    "address": "900 LOVERIDGE RD - MS-67",
+    "city": "Pittsburg",
+    "county": "Contra Costa County",
+    "county_slug": "contra-costa",
+    "naics_label": "331221 \u00b7 Primary Metals",
+    "lat": 38.027612,
+    "lng": -121.853714
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 16303,
+    "air_releases_pounds": 1,
+    "water_releases_pounds": 8,
+    "land_releases_pounds": 16295,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 6.7,
+    "long_arc_pct_change": -64.0,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 45229
+      },
+      {
+        "year": 2011,
+        "value": 67800
+      },
+      {
+        "year": 2012,
+        "value": 69288
+      },
+      {
+        "year": 2013,
+        "value": 63271
+      },
+      {
+        "year": 2014,
+        "value": 48331
+      },
+      {
+        "year": 2015,
+        "value": 45767
+      },
+      {
+        "year": 2016,
+        "value": 91596
+      },
+      {
+        "year": 2017,
+        "value": 49040
+      },
+      {
+        "year": 2018,
+        "value": 63846
+      },
+      {
+        "year": 2019,
+        "value": 36413
+      },
+      {
+        "year": 2020,
+        "value": 30990
+      },
+      {
+        "year": 2021,
+        "value": 18681
+      },
+      {
+        "year": 2022,
+        "value": 15278
+      },
+      {
+        "year": 2023,
+        "value": 16303
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
+      "cas": "N090",
+      "category": "respiratory",
+      "total_pounds_recent": 16303,
+      "history": [
+        {
+          "year": 2010,
+          "value": 39530
+        },
+        {
+          "year": 2011,
+          "value": 61079
+        },
+        {
+          "year": 2012,
+          "value": 63283
+        },
+        {
+          "year": 2013,
+          "value": 58122
+        },
+        {
+          "year": 2014,
+          "value": 38954
+        },
+        {
+          "year": 2015,
+          "value": 40353
+        },
+        {
+          "year": 2016,
+          "value": 51233
+        },
+        {
+          "year": 2017,
+          "value": 30257
+        },
+        {
+          "year": 2018,
+          "value": 35505
+        },
+        {
+          "year": 2019,
+          "value": 20532
+        },
+        {
+          "year": 2020,
+          "value": 28788
+        },
+        {
+          "year": 2021,
+          "value": 17598
+        },
+        {
+          "year": 2022,
+          "value": 15278
+        },
+        {
+          "year": 2023,
+          "value": 16303
+        }
+      ],
+      "yoy_pct_change": 6.7,
+      "long_arc_pct_change": -58.8,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "equity": {
+    "population": 1162648,
+    "pct_low_income": 8.3,
+    "pct_people_of_color": 59.4,
+    "pct_under_5": 6.0,
+    "pct_over_64": 16.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 127.3
+      },
+      {
+        "label": "Ozone",
+        "score": 45.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 73.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 73.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 62.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 95.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 58.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 63.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 79.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 112.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 95.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Contra Costa County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

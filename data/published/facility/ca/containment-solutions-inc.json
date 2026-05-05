@@ -1,0 +1,225 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "containment-solutions-inc",
+    "name": "Containment Solutions INC",
+    "parent_company": "Nov INC",
+    "address": "2600 PEGASUS DR",
+    "city": "Bakersfield",
+    "county": "Kern County",
+    "county_slug": "kern",
+    "naics_label": "326199 \u00b7 Plastics and Rubber",
+    "lat": 35.429857,
+    "lng": -119.064307
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 107202,
+    "air_releases_pounds": 107202,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 3.3,
+    "long_arc_pct_change": 943.8,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 10270
+      },
+      {
+        "year": 2011,
+        "value": 9256
+      },
+      {
+        "year": 2012,
+        "value": 10900
+      },
+      {
+        "year": 2013,
+        "value": 17689
+      },
+      {
+        "year": 2014,
+        "value": 27859
+      },
+      {
+        "year": 2015,
+        "value": 32941
+      },
+      {
+        "year": 2016,
+        "value": 36326
+      },
+      {
+        "year": 2017,
+        "value": 33745
+      },
+      {
+        "year": 2018,
+        "value": 33969
+      },
+      {
+        "year": 2019,
+        "value": 33583
+      },
+      {
+        "year": 2020,
+        "value": 49023
+      },
+      {
+        "year": 2021,
+        "value": 38596
+      },
+      {
+        "year": 2022,
+        "value": 103800
+      },
+      {
+        "year": 2023,
+        "value": 107202
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Styrene",
+      "cas": "100-42-5",
+      "category": "carcinogen",
+      "total_pounds_recent": 107202,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10270
+        },
+        {
+          "year": 2011,
+          "value": 9256
+        },
+        {
+          "year": 2012,
+          "value": 10900
+        },
+        {
+          "year": 2013,
+          "value": 17689
+        },
+        {
+          "year": 2014,
+          "value": 27859
+        },
+        {
+          "year": 2015,
+          "value": 32941
+        },
+        {
+          "year": 2016,
+          "value": 36326
+        },
+        {
+          "year": 2017,
+          "value": 33745
+        },
+        {
+          "year": 2018,
+          "value": 33969
+        },
+        {
+          "year": 2019,
+          "value": 33583
+        },
+        {
+          "year": 2020,
+          "value": 49023
+        },
+        {
+          "year": 2021,
+          "value": 38596
+        },
+        {
+          "year": 2022,
+          "value": 103800
+        },
+        {
+          "year": 2023,
+          "value": 107202
+        }
+      ],
+      "yoy_pct_change": 3.3,
+      "long_arc_pct_change": 943.8,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "equity": {
+    "population": 906883,
+    "pct_low_income": 19.3,
+    "pct_people_of_color": 68.5,
+    "pct_under_5": 7.9,
+    "pct_over_64": 11.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 200.0
+      },
+      {
+        "label": "Ozone",
+        "score": 203.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 141.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 158.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 39.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 125.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 84.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 14.3
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 144.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 134.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 6.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 15.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Kern County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

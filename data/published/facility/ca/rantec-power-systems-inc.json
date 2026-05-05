@@ -1,0 +1,153 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "rantec-power-systems-inc",
+    "name": "Rantec Power Systems INC",
+    "parent_company": "Rps Holdings INC",
+    "address": "1173 LOS OLIVOS AVE",
+    "city": "Los Osos",
+    "county": "San Luis Obispo County",
+    "county_slug": "san-luis-obispo",
+    "naics_label": "334418 \u00b7 Computers and Electronic Products",
+    "lat": 35.313129,
+    "lng": -120.829013
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 275,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 275,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -6.8,
+    "long_arc_pct_change": 31.6,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 209
+      },
+      {
+        "year": 2020,
+        "value": 187
+      },
+      {
+        "year": 2021,
+        "value": 240
+      },
+      {
+        "year": 2022,
+        "value": 295
+      },
+      {
+        "year": 2023,
+        "value": 275
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 275,
+      "history": [
+        {
+          "year": 2019,
+          "value": 209
+        },
+        {
+          "year": 2020,
+          "value": 187
+        },
+        {
+          "year": 2021,
+          "value": 240
+        },
+        {
+          "year": 2022,
+          "value": 295
+        },
+        {
+          "year": 2023,
+          "value": 275
+        }
+      ],
+      "yoy_pct_change": -6.8,
+      "long_arc_pct_change": 31.6,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "equity": {
+    "population": 281712,
+    "pct_low_income": 12.6,
+    "pct_people_of_color": 33.099999999999994,
+    "pct_under_5": 4.6,
+    "pct_over_64": 21.1,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 76.3
+      },
+      {
+        "label": "Ozone",
+        "score": 21.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 50.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 18.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 5.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 55.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 41.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 1.5
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 5.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 51.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 59.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 7.4
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "San Luis Obispo County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

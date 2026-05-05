@@ -1,0 +1,181 @@
+{
+  "county": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "harris",
+    "name": "Harris County",
+    "fips": "48201",
+    "population": 4731145
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 · EJScreen 2024",
+  "pathways": [
+    {
+      "pathway": "tri_release",
+      "label": "Toxic releases (TRI air + water + land)",
+      "current": 98400000,
+      "units": "lb",
+      "yoy_pct_change": 4.1,
+      "long_arc_pct_change": -32.8,
+      "baseline_year": 2010,
+      "history": [
+        {"year": 2010, "value": 146400000},
+        {"year": 2012, "value": 138900000},
+        {"year": 2014, "value": 131200000},
+        {"year": 2016, "value": 124800000},
+        {"year": 2018, "value": 119300000},
+        {"year": 2020, "value": 102100000},
+        {"year": 2021, "value": 94600000},
+        {"year": 2022, "value": 94500000},
+        {"year": 2023, "value": 98400000}
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Hazardous air pollutants (HAPs · TRI air subset)",
+      "current": 21800000,
+      "units": "lb",
+      "yoy_pct_change": 3.6,
+      "long_arc_pct_change": -29.4,
+      "baseline_year": 2010,
+      "history": [
+        {"year": 2010, "value": 30900000},
+        {"year": 2014, "value": 27800000},
+        {"year": 2018, "value": 25100000},
+        {"year": 2020, "value": 22400000},
+        {"year": 2022, "value": 21000000},
+        {"year": 2023, "value": 21800000}
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 89400000,
+      "units": "metric tons CO₂e",
+      "yoy_pct_change": -1.2,
+      "long_arc_pct_change": -8.4,
+      "baseline_year": 2012,
+      "history": [
+        {"year": 2012, "value": 97600000},
+        {"year": 2016, "value": 94200000},
+        {"year": 2020, "value": 91300000},
+        {"year": 2022, "value": 90500000},
+        {"year": 2023, "value": 89400000}
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "exxonmobil-baytown",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "ExxonMobil Baytown Refinery",
+      "parent_company": "Exxon Mobil Corporation",
+      "total_pounds_recent": 1412800,
+      "yoy_pct_change": 8.4,
+      "top_chemical": "Benzene",
+      "city": "Baytown"
+    },
+    {
+      "slug": "lyondellbasell-channelview",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "LyondellBasell Channelview Complex",
+      "parent_company": "LyondellBasell Industries",
+      "total_pounds_recent": 1184500,
+      "yoy_pct_change": -2.1,
+      "top_chemical": "Ethylene",
+      "city": "Channelview"
+    },
+    {
+      "slug": "chevron-phillips-cedar-bayou",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "Chevron Phillips Cedar Bayou Plant",
+      "parent_company": "Chevron Phillips Chemical",
+      "total_pounds_recent": 891200,
+      "yoy_pct_change": 6.7,
+      "top_chemical": "1,3-Butadiene",
+      "city": "Baytown"
+    },
+    {
+      "slug": "shell-deer-park",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "Shell Deer Park Refining",
+      "parent_company": "Shell USA",
+      "total_pounds_recent": 762900,
+      "yoy_pct_change": 11.2,
+      "top_chemical": "Benzene",
+      "city": "Deer Park"
+    },
+    {
+      "slug": "valero-houston",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "Valero Houston Refinery",
+      "parent_company": "Valero Energy",
+      "total_pounds_recent": 614300,
+      "yoy_pct_change": -4.8,
+      "top_chemical": "Toluene",
+      "city": "Houston"
+    }
+  ],
+  "utilities": [
+    {
+      "slug": "houston",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "City of Houston Public Works",
+      "pwsid": "TX1010013",
+      "population_served": 2304580,
+      "health_based_violations_5yr": 0,
+      "unresolved": false
+    },
+    {
+      "slug": "north-channel-water-authority",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "North Channel Water Authority",
+      "pwsid": "TX1010146",
+      "population_served": 39400,
+      "health_based_violations_5yr": 1,
+      "unresolved": false
+    }
+  ],
+  "equity": {
+    "population": 4731145,
+    "pct_low_income": 32.4,
+    "pct_people_of_color": 71.2,
+    "pct_under_5": 7.0,
+    "pct_over_64": 11.8,
+    "ej_indexes": [
+      {"label": "Air toxics cancer risk EJ index", "pct_us": 91, "pct_state": 84},
+      {"label": "Air toxics respiratory hazard EJ index", "pct_us": 88, "pct_state": 82},
+      {"label": "Particulate matter (PM2.5) EJ index", "pct_us": 79, "pct_state": 71},
+      {"label": "Ozone EJ index", "pct_us": 86, "pct_state": 78},
+      {"label": "Toxic releases to air EJ index", "pct_us": 97, "pct_state": 95},
+      {"label": "Diesel particulate EJ index", "pct_us": 90, "pct_state": 83}
+    ],
+    "source": "EJScreen 2024, EPA",
+    "geography_label": "All block groups in Harris County, TX (FIPS 48201)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-04-15"
+    },
+    {
+      "label": "EPA Greenhouse Gas Reporting Program (GHGRP)",
+      "url": "https://www.epa.gov/ghgreporting",
+      "retrieved": "2026-04-12"
+    },
+    {
+      "label": "EPA EJScreen",
+      "url": "https://www.epa.gov/ejscreen",
+      "retrieved": "2026-04-15"
+    }
+  ],
+  "_published_at": "2026-05-04T00:00:00Z"
+}

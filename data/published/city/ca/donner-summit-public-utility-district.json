@@ -1,0 +1,168 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "donner-summit-public-utility-district",
+    "name": "Donner Summit Public Utility District",
+    "pwsid": "CA2910016",
+    "population_served": 310,
+    "primary_source": "surface_water",
+    "cities_served": [
+      "Soda Springs"
+    ]
+  },
+  "reporting_period": {
+    "start": "2022-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 2,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 4
+  },
+  "violations": [
+    {
+      "year": 2022,
+      "contaminant": "Contaminant 0200",
+      "contaminant_code": "0200",
+      "severity": "health_based",
+      "rule": "Surface Water Treatment Rule",
+      "is_unresolved": false,
+      "description": "Treatment technique violation; returned to compliance"
+    },
+    {
+      "year": 2022,
+      "contaminant": "Contaminant 0200",
+      "contaminant_code": "0200",
+      "severity": "health_based",
+      "rule": "Surface Water Treatment Rule",
+      "is_unresolved": false,
+      "description": "Treatment technique violation; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2022,
+        "value": 2
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2022,
+        "value": 2
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 0200",
+        "count": 2
+      }
+    ]
+  },
+  "equity": {
+    "population": 102322,
+    "pct_low_income": 10.4,
+    "pct_people_of_color": 16.900000000000006,
+    "pct_under_5": 4.4,
+    "pct_over_64": 28.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 79.0
+      },
+      {
+        "label": "Ozone",
+        "score": 81.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 26.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 10.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 5.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 28.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 27.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 31.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 21.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 25.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 36.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.4
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Nevada, California (utility's served county per SDWIS GEOGRAPHIC_AREA)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:17Z"
+}

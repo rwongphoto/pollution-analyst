@@ -1,0 +1,211 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "livingston",
+    "name": "City Of Livingston",
+    "pwsid": "CA2410004",
+    "population_served": 14894,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Livingston"
+    ]
+  },
+  "reporting_period": {
+    "start": "2021-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 5,
+    "health_based_violations_5yr": 3,
+    "unresolved_violations": 4,
+    "contaminants_with_violations": 3,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Reporting failure"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "health_based",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Treatment technique violation"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 2414",
+      "contaminant_code": "2414",
+      "severity": "health_based",
+      "rule": "Lead and Copper Rule",
+      "is_unresolved": true,
+      "description": "Maximum contaminant level exceeded"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 2414",
+      "contaminant_code": "2414",
+      "severity": "health_based",
+      "rule": "Lead and Copper Rule",
+      "is_unresolved": true,
+      "description": "Maximum contaminant level exceeded"
+    },
+    {
+      "year": 2021,
+      "contaminant": "Beryllium",
+      "contaminant_code": "1040",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2021,
+        "value": 1
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 2
+      },
+      {
+        "year": 2024,
+        "value": 2
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 2
+      },
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 2
+      },
+      {
+        "contaminant": "Contaminant 2414",
+        "count": 2
+      },
+      {
+        "contaminant": "Beryllium",
+        "count": 1
+      }
+    ]
+  },
+  "equity": {
+    "population": 282290,
+    "pct_low_income": 18.5,
+    "pct_people_of_color": 74.8,
+    "pct_under_5": 7.9,
+    "pct_over_64": 11.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 210.0
+      },
+      {
+        "label": "Ozone",
+        "score": 200.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 111.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 170.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 29.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 101.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 84.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 93.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 101.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 109.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 107.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 12.6
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Merced, California (utility's served county per SDWIS GEOGRAPHIC_AREA)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:17Z"
+}

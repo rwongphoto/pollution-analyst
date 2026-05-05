@@ -1,0 +1,135 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "villa-blue-estates-water-district",
+    "name": "Villa Blue Estates Water District",
+    "pwsid": "CA1700579",
+    "population_served": 60,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Upper Lake"
+    ]
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Reporting failure"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 1
+      }
+    ]
+  },
+  "equity": {
+    "population": 68024,
+    "pct_low_income": 16.6,
+    "pct_people_of_color": 33.5,
+    "pct_under_5": 6.2,
+    "pct_over_64": 23.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 123.2
+      },
+      {
+        "label": "Ozone",
+        "score": 42.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 50.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 3.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 0.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 26.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 56.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 109.2
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 7.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 39.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 15.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Lake, California (utility's served county per SDWIS GEOGRAPHIC_AREA)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:17Z"
+}

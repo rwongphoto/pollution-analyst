@@ -1,0 +1,225 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "hood-manufacturing-inc",
+    "name": "Hood Manufacturing INC",
+    "parent_company": null,
+    "address": "2621 S BIRCH ST",
+    "city": "Santa Ana",
+    "county": "Orange County",
+    "county_slug": "orange",
+    "naics_label": "326199 \u00b7 Plastics and Rubber",
+    "lat": 33.712181,
+    "lng": -117.871158
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 10785,
+    "air_releases_pounds": 10785,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -6.3,
+    "long_arc_pct_change": 1.1,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 10667
+      },
+      {
+        "year": 2011,
+        "value": 27681
+      },
+      {
+        "year": 2012,
+        "value": 10930
+      },
+      {
+        "year": 2013,
+        "value": 11843
+      },
+      {
+        "year": 2014,
+        "value": 14982
+      },
+      {
+        "year": 2015,
+        "value": 16021
+      },
+      {
+        "year": 2016,
+        "value": 20051
+      },
+      {
+        "year": 2017,
+        "value": 10678
+      },
+      {
+        "year": 2018,
+        "value": 20208
+      },
+      {
+        "year": 2019,
+        "value": 17671
+      },
+      {
+        "year": 2020,
+        "value": 13582
+      },
+      {
+        "year": 2021,
+        "value": 13044
+      },
+      {
+        "year": 2022,
+        "value": 11516
+      },
+      {
+        "year": 2023,
+        "value": 10785
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Styrene",
+      "cas": "100-42-5",
+      "category": "carcinogen",
+      "total_pounds_recent": 10785,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10667
+        },
+        {
+          "year": 2011,
+          "value": 27681
+        },
+        {
+          "year": 2012,
+          "value": 10930
+        },
+        {
+          "year": 2013,
+          "value": 11843
+        },
+        {
+          "year": 2014,
+          "value": 14982
+        },
+        {
+          "year": 2015,
+          "value": 16021
+        },
+        {
+          "year": 2016,
+          "value": 20051
+        },
+        {
+          "year": 2017,
+          "value": 10678
+        },
+        {
+          "year": 2018,
+          "value": 20208
+        },
+        {
+          "year": 2019,
+          "value": 17671
+        },
+        {
+          "year": 2020,
+          "value": 13582
+        },
+        {
+          "year": 2021,
+          "value": 13044
+        },
+        {
+          "year": 2022,
+          "value": 11516
+        },
+        {
+          "year": 2023,
+          "value": 10785
+        }
+      ],
+      "yoy_pct_change": -6.3,
+      "long_arc_pct_change": 1.1,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "equity": {
+    "population": 3175227,
+    "pct_low_income": 9.7,
+    "pct_people_of_color": 61.5,
+    "pct_under_5": 5.6,
+    "pct_over_64": 15.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 144.6
+      },
+      {
+        "label": "Ozone",
+        "score": 130.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 123.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 129.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 99.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 142.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 62.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 84.3
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 97.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 143.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 118.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Orange County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

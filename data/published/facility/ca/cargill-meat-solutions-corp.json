@@ -1,0 +1,225 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "cargill-meat-solutions-corp",
+    "name": "Cargill Meat Solutions Corp",
+    "parent_company": "Cargill INC",
+    "address": "3115 SOUTH FIG AVENUE",
+    "city": "Fresno",
+    "county": "Fresno County",
+    "county_slug": "fresno",
+    "naics_label": "311611 \u00b7 Food",
+    "lat": 36.69078,
+    "lng": -119.799855
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 8800,
+    "air_releases_pounds": 250,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 8550,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -77.0,
+    "long_arc_pct_change": 15.5,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 7617
+      },
+      {
+        "year": 2011,
+        "value": 19265
+      },
+      {
+        "year": 2012,
+        "value": 14440
+      },
+      {
+        "year": 2013,
+        "value": 18118
+      },
+      {
+        "year": 2014,
+        "value": 31031
+      },
+      {
+        "year": 2015,
+        "value": 30342
+      },
+      {
+        "year": 2016,
+        "value": 29442
+      },
+      {
+        "year": 2017,
+        "value": 29189
+      },
+      {
+        "year": 2018,
+        "value": 54482
+      },
+      {
+        "year": 2019,
+        "value": 71078
+      },
+      {
+        "year": 2020,
+        "value": 33094
+      },
+      {
+        "year": 2021,
+        "value": 260
+      },
+      {
+        "year": 2022,
+        "value": 38256
+      },
+      {
+        "year": 2023,
+        "value": 8800
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 8800,
+      "history": [
+        {
+          "year": 2010,
+          "value": 7617
+        },
+        {
+          "year": 2011,
+          "value": 19265
+        },
+        {
+          "year": 2012,
+          "value": 14440
+        },
+        {
+          "year": 2013,
+          "value": 18118
+        },
+        {
+          "year": 2014,
+          "value": 31031
+        },
+        {
+          "year": 2015,
+          "value": 30342
+        },
+        {
+          "year": 2016,
+          "value": 29442
+        },
+        {
+          "year": 2017,
+          "value": 29189
+        },
+        {
+          "year": 2018,
+          "value": 54482
+        },
+        {
+          "year": 2019,
+          "value": 71078
+        },
+        {
+          "year": 2020,
+          "value": 33094
+        },
+        {
+          "year": 2021,
+          "value": 260
+        },
+        {
+          "year": 2022,
+          "value": 38256
+        },
+        {
+          "year": 2023,
+          "value": 8800
+        }
+      ],
+      "yoy_pct_change": -77.0,
+      "long_arc_pct_change": 15.5,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "equity": {
+    "population": 1008280,
+    "pct_low_income": 19.5,
+    "pct_people_of_color": 72.6,
+    "pct_under_5": 7.8,
+    "pct_over_64": 12.5,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 209.5
+      },
+      {
+        "label": "Ozone",
+        "score": 204.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 120.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 179.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 135.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 130.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 92.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 117.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 163.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 148.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 67.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 7.5
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Fresno County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

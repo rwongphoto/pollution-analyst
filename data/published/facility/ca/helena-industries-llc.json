@@ -1,0 +1,240 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "helena-industries-llc",
+    "name": "Helena Industries LLC",
+    "parent_company": "Marubeni America CORP",
+    "address": "1075 S VINELAND",
+    "city": "Kerman",
+    "county": "Fresno County",
+    "county_slug": "fresno",
+    "naics_label": "325320 \u00b7 Chemicals",
+    "lat": 36.719764,
+    "lng": -120.0498
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 248,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 248,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -95.1,
+    "long_arc_pct_change": -50.5,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 500
+      },
+      {
+        "year": 2011,
+        "value": 500
+      },
+      {
+        "year": 2012,
+        "value": 903
+      },
+      {
+        "year": 2013,
+        "value": 505
+      },
+      {
+        "year": 2014,
+        "value": 297
+      },
+      {
+        "year": 2015,
+        "value": 17
+      },
+      {
+        "year": 2016,
+        "value": 3317
+      },
+      {
+        "year": 2017,
+        "value": 9
+      },
+      {
+        "year": 2018,
+        "value": 4319
+      },
+      {
+        "year": 2019,
+        "value": 7811
+      },
+      {
+        "year": 2020,
+        "value": 8980
+      },
+      {
+        "year": 2021,
+        "value": 2867
+      },
+      {
+        "year": 2022,
+        "value": 5028
+      },
+      {
+        "year": 2023,
+        "value": 248
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 220,
+      "history": [
+        {
+          "year": 2010,
+          "value": 250
+        },
+        {
+          "year": 2011,
+          "value": 250
+        },
+        {
+          "year": 2012,
+          "value": 868
+        },
+        {
+          "year": 2013,
+          "value": 250
+        },
+        {
+          "year": 2014,
+          "value": 263
+        },
+        {
+          "year": 2015,
+          "value": 16
+        },
+        {
+          "year": 2016,
+          "value": 2601
+        },
+        {
+          "year": 2017,
+          "value": 8
+        },
+        {
+          "year": 2018,
+          "value": 3384
+        },
+        {
+          "year": 2019,
+          "value": 6745
+        },
+        {
+          "year": 2020,
+          "value": 7756
+        },
+        {
+          "year": 2021,
+          "value": 2196
+        },
+        {
+          "year": 2022,
+          "value": 4835
+        },
+        {
+          "year": 2023,
+          "value": 220
+        }
+      ],
+      "yoy_pct_change": -95.5,
+      "long_arc_pct_change": -12.2,
+      "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 28,
+      "history": [
+        {
+          "year": 2023,
+          "value": 28
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "equity": {
+    "population": 1008280,
+    "pct_low_income": 19.5,
+    "pct_people_of_color": 72.6,
+    "pct_under_5": 7.8,
+    "pct_over_64": 12.5,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 209.5
+      },
+      {
+        "label": "Ozone",
+        "score": 204.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 120.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 179.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 135.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 130.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 92.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 117.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 163.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 148.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 67.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 7.5
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Fresno County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

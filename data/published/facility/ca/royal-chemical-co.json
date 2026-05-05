@@ -1,0 +1,199 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "royal-chemical-co",
+    "name": "Royal Chemical CO",
+    "parent_company": "Chemical Services Group",
+    "address": "2498 AMERICAN AVE",
+    "city": "Hayward",
+    "county": "Alameda County",
+    "county_slug": "alameda",
+    "naics_label": "325611 \u00b7 Chemicals",
+    "lat": 37.649109,
+    "lng": -122.128447
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 1394,
+    "air_releases_pounds": 226,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1168,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -38.7,
+    "long_arc_pct_change": -47.4,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 2652
+      },
+      {
+        "year": 2021,
+        "value": 3088
+      },
+      {
+        "year": 2022,
+        "value": 2274
+      },
+      {
+        "year": 2023,
+        "value": 1394
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nonylphenol Ethoxylates",
+      "cas": "N535",
+      "category": "general",
+      "total_pounds_recent": 1062,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1502
+        },
+        {
+          "year": 2021,
+          "value": 1985
+        },
+        {
+          "year": 2022,
+          "value": 1393
+        },
+        {
+          "year": 2023,
+          "value": 1062
+        }
+      ],
+      "yoy_pct_change": -23.8,
+      "long_arc_pct_change": -29.3,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Nitric acid",
+      "cas": "7697-37-2",
+      "category": "general",
+      "total_pounds_recent": 167,
+      "history": [
+        {
+          "year": 2020,
+          "value": 143
+        },
+        {
+          "year": 2021,
+          "value": 244
+        },
+        {
+          "year": 2022,
+          "value": 234
+        },
+        {
+          "year": 2023,
+          "value": 167
+        }
+      ],
+      "yoy_pct_change": -28.6,
+      "long_arc_pct_change": 16.8,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Certain glycol ethers",
+      "cas": "N230",
+      "category": "respiratory",
+      "total_pounds_recent": 166,
+      "history": [
+        {
+          "year": 2020,
+          "value": 227
+        },
+        {
+          "year": 2021,
+          "value": 224
+        },
+        {
+          "year": 2022,
+          "value": 261
+        },
+        {
+          "year": 2023,
+          "value": 166
+        }
+      ],
+      "yoy_pct_change": -36.5,
+      "long_arc_pct_change": -27.1,
+      "long_arc_baseline_year": 2020
+    }
+  ],
+  "equity": {
+    "population": 1663823,
+    "pct_low_income": 9.2,
+    "pct_people_of_color": 70.7,
+    "pct_under_5": 5.6,
+    "pct_over_64": 14.6,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 144.3
+      },
+      {
+        "label": "Ozone",
+        "score": 24.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 103.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 117.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 67.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 138.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 92.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 57.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 90.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 142.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 49.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Alameda County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

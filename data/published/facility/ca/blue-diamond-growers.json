@@ -1,0 +1,209 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "blue-diamond-growers",
+    "name": "Blue Diamond Growers",
+    "parent_company": "Blue Diamond Growers",
+    "address": "4800 SISK RD",
+    "city": "Modesto",
+    "county": "Stanislaus County",
+    "county_slug": "stanislaus",
+    "naics_label": "115114 \u00b7 Other",
+    "lat": 37.708341,
+    "lng": -121.077476
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 37210,
+    "air_releases_pounds": 37210,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 17.0,
+    "long_arc_pct_change": 68.2,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 22128
+      },
+      {
+        "year": 2011,
+        "value": 22464
+      },
+      {
+        "year": 2012,
+        "value": 19999
+      },
+      {
+        "year": 2013,
+        "value": 13569
+      },
+      {
+        "year": 2014,
+        "value": 32642
+      },
+      {
+        "year": 2015,
+        "value": 29329
+      },
+      {
+        "year": 2016,
+        "value": 44397
+      },
+      {
+        "year": 2017,
+        "value": 34670
+      },
+      {
+        "year": 2018,
+        "value": 31034
+      },
+      {
+        "year": 2019,
+        "value": 32440
+      },
+      {
+        "year": 2020,
+        "value": 28572
+      },
+      {
+        "year": 2021,
+        "value": 38755
+      },
+      {
+        "year": 2022,
+        "value": 31816
+      },
+      {
+        "year": 2023,
+        "value": 37210
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Sulfuryl fluoride",
+      "cas": "2699-79-8",
+      "category": "general",
+      "total_pounds_recent": 37210,
+      "history": [
+        {
+          "year": 2014,
+          "value": 21875
+        },
+        {
+          "year": 2015,
+          "value": 18264
+        },
+        {
+          "year": 2016,
+          "value": 33750
+        },
+        {
+          "year": 2017,
+          "value": 25328
+        },
+        {
+          "year": 2018,
+          "value": 28698
+        },
+        {
+          "year": 2019,
+          "value": 32440
+        },
+        {
+          "year": 2020,
+          "value": 28572
+        },
+        {
+          "year": 2021,
+          "value": 38755
+        },
+        {
+          "year": 2022,
+          "value": 31816
+        },
+        {
+          "year": 2023,
+          "value": 37210
+        }
+      ],
+      "yoy_pct_change": 17.0,
+      "long_arc_pct_change": 70.1,
+      "long_arc_baseline_year": 2014
+    }
+  ],
+  "equity": {
+    "population": 552063,
+    "pct_low_income": 13.7,
+    "pct_people_of_color": 61.5,
+    "pct_under_5": 7.1,
+    "pct_over_64": 13.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 173.1
+      },
+      {
+        "label": "Ozone",
+        "score": 163.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 82.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 137.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 59.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 105.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 69.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 114.5
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 134.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 126.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 40.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 11.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Stanislaus County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

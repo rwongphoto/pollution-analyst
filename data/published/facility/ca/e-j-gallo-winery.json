@@ -1,0 +1,225 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "e-j-gallo-winery",
+    "name": "E & J Gallo Winery",
+    "parent_company": "Dry Creek CORP",
+    "address": "18000 W RIVER RD",
+    "city": "Livingston",
+    "county": "Merced County",
+    "county_slug": "merced",
+    "naics_label": "312130 \u00b7 Beverages",
+    "lat": 37.375516,
+    "lng": -120.801697
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 10775,
+    "air_releases_pounds": 604,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 10171,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 340.3,
+    "long_arc_pct_change": 214.4,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 3427
+      },
+      {
+        "year": 2011,
+        "value": 3427
+      },
+      {
+        "year": 2012,
+        "value": 4647
+      },
+      {
+        "year": 2013,
+        "value": 6037
+      },
+      {
+        "year": 2014,
+        "value": 3712
+      },
+      {
+        "year": 2015,
+        "value": 2844
+      },
+      {
+        "year": 2016,
+        "value": 8129
+      },
+      {
+        "year": 2017,
+        "value": 9515
+      },
+      {
+        "year": 2018,
+        "value": 11432
+      },
+      {
+        "year": 2019,
+        "value": 7732
+      },
+      {
+        "year": 2020,
+        "value": 5310
+      },
+      {
+        "year": 2021,
+        "value": 14337
+      },
+      {
+        "year": 2022,
+        "value": 2447
+      },
+      {
+        "year": 2023,
+        "value": 10775
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 10775,
+      "history": [
+        {
+          "year": 2010,
+          "value": 3427
+        },
+        {
+          "year": 2011,
+          "value": 3427
+        },
+        {
+          "year": 2012,
+          "value": 4647
+        },
+        {
+          "year": 2013,
+          "value": 6037
+        },
+        {
+          "year": 2014,
+          "value": 3712
+        },
+        {
+          "year": 2015,
+          "value": 2844
+        },
+        {
+          "year": 2016,
+          "value": 8129
+        },
+        {
+          "year": 2017,
+          "value": 9515
+        },
+        {
+          "year": 2018,
+          "value": 11432
+        },
+        {
+          "year": 2019,
+          "value": 7732
+        },
+        {
+          "year": 2020,
+          "value": 5310
+        },
+        {
+          "year": 2021,
+          "value": 14337
+        },
+        {
+          "year": 2022,
+          "value": 2447
+        },
+        {
+          "year": 2023,
+          "value": 10775
+        }
+      ],
+      "yoy_pct_change": 340.3,
+      "long_arc_pct_change": 214.4,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "equity": {
+    "population": 282290,
+    "pct_low_income": 18.5,
+    "pct_people_of_color": 74.8,
+    "pct_under_5": 7.9,
+    "pct_over_64": 11.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 210.0
+      },
+      {
+        "label": "Ozone",
+        "score": 200.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 111.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 170.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 29.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 101.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 84.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 93.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 101.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 109.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 107.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 12.6
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Merced County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

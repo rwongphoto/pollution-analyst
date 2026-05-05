@@ -1,0 +1,136 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "pentagon-technologies-inc",
+    "name": "Pentagon Technologies INC",
+    "parent_company": null,
+    "address": "21031 ALEXANDER COURT",
+    "city": "Hayward",
+    "county": "Alameda County",
+    "county_slug": "alameda",
+    "naics_label": "332813 \u00b7 Fabricated Metals",
+    "lat": 37.65167,
+    "lng": -122.130912
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 5194,
+    "air_releases_pounds": 544,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 4650,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 5194
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 3252,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3252
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Nitric acid",
+      "cas": "7697-37-2",
+      "category": "general",
+      "total_pounds_recent": 1943,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1943
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "equity": {
+    "population": 1663823,
+    "pct_low_income": 9.2,
+    "pct_people_of_color": 70.7,
+    "pct_under_5": 5.6,
+    "pct_over_64": 14.6,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 144.3
+      },
+      {
+        "label": "Ozone",
+        "score": 24.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 103.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 117.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 67.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 138.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 92.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 57.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 90.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 142.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 49.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Alameda County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

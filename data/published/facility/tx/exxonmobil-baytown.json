@@ -1,0 +1,153 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "exxonmobil-baytown",
+    "name": "ExxonMobil Baytown Refinery",
+    "parent_company": "Exxon Mobil Corporation",
+    "address": "5000 Bayway Drive",
+    "city": "Baytown",
+    "county": "Harris County",
+    "county_slug": "harris",
+    "naics_label": "324110 · Petroleum Refineries",
+    "lat": 29.7355,
+    "lng": -94.9672
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 1412800,
+    "air_releases_pounds": 1124600,
+    "water_releases_pounds": 18900,
+    "land_releases_pounds": 269300,
+    "chemicals_reported": 47,
+    "yoy_pct_change": 8.4
+  },
+  "chemicals": [
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 184200,
+      "history": [
+        {"year": 2010, "value": 297400},
+        {"year": 2011, "value": 286100},
+        {"year": 2012, "value": 274200},
+        {"year": 2013, "value": 268000},
+        {"year": 2014, "value": 261500},
+        {"year": 2015, "value": 248900},
+        {"year": 2016, "value": 234100},
+        {"year": 2017, "value": 222800},
+        {"year": 2018, "value": 211400},
+        {"year": 2019, "value": 198600},
+        {"year": 2020, "value": 169200},
+        {"year": 2021, "value": 162300},
+        {"year": 2022, "value": 164100},
+        {"year": 2023, "value": 184200}
+      ],
+      "yoy_pct_change": 12.2,
+      "long_arc_pct_change": -38.1,
+      "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "1,3-Butadiene",
+      "cas": "106-99-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 96400,
+      "history": [
+        {"year": 2010, "value": 162800},
+        {"year": 2014, "value": 138600},
+        {"year": 2018, "value": 118200},
+        {"year": 2020, "value": 102100},
+        {"year": 2022, "value": 91800},
+        {"year": 2023, "value": 96400}
+      ],
+      "yoy_pct_change": 5.0,
+      "long_arc_pct_change": -40.8,
+      "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "neurotoxin",
+      "total_pounds_recent": 142100,
+      "history": [
+        {"year": 2010, "value": 178300},
+        {"year": 2014, "value": 161200},
+        {"year": 2018, "value": 154600},
+        {"year": 2020, "value": 138100},
+        {"year": 2022, "value": 134900},
+        {"year": 2023, "value": 142100}
+      ],
+      "yoy_pct_change": 5.3,
+      "long_arc_pct_change": -20.3,
+      "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 167900,
+      "history": [
+        {"year": 2010, "value": 198400},
+        {"year": 2014, "value": 184200},
+        {"year": 2018, "value": 176800},
+        {"year": 2022, "value": 162300},
+        {"year": 2023, "value": 167900}
+      ],
+      "yoy_pct_change": 3.4,
+      "long_arc_pct_change": -15.4,
+      "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "neurotoxin",
+      "total_pounds_recent": 83400,
+      "history": [
+        {"year": 2010, "value": 91200},
+        {"year": 2018, "value": 87600},
+        {"year": 2023, "value": 83400}
+      ],
+      "yoy_pct_change": -1.8,
+      "long_arc_pct_change": -8.6,
+      "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "PBT-PAC",
+      "category": "pbt",
+      "total_pounds_recent": 4200,
+      "history": [
+        {"year": 2010, "value": 6800},
+        {"year": 2018, "value": 5100},
+        {"year": 2023, "value": 4200}
+      ],
+      "yoy_pct_change": -3.1,
+      "long_arc_pct_change": -38.2,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "equity": {
+    "population": 184200,
+    "pct_low_income": 41.2,
+    "pct_people_of_color": 67.8,
+    "pct_under_5": 7.1,
+    "pct_over_64": 11.3,
+    "ej_indexes": [
+      {"label": "Air toxics cancer risk EJ index", "pct_us": 96, "pct_state": 91},
+      {"label": "Air toxics respiratory hazard EJ index", "pct_us": 94, "pct_state": 88},
+      {"label": "Particulate matter (PM2.5) EJ index", "pct_us": 88, "pct_state": 79},
+      {"label": "Ozone EJ index", "pct_us": 92, "pct_state": 84},
+      {"label": "Toxic releases to air EJ index", "pct_us": 99, "pct_state": 97}
+    ],
+    "source": "EJScreen 2024, EPA",
+    "geography_label": "Block groups within 3 miles of the facility"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-04-15"
+  },
+  "_published_at": "2026-05-04T00:00:00Z"
+}

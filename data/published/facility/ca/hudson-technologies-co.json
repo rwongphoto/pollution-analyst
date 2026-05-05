@@ -1,0 +1,185 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "hudson-technologies-co",
+    "name": "Hudson Technologies CO",
+    "parent_company": "Hudson Technologies INC",
+    "address": "747 E FRANCIS ST",
+    "city": "Ontario",
+    "county": "San Bernardino County",
+    "county_slug": "san-bernardino",
+    "naics_label": "325120 \u00b7 Chemicals",
+    "lat": 34.041224,
+    "lng": -117.639873
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 2925,
+    "air_releases_pounds": 2925,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 13.6,
+    "long_arc_pct_change": 1070.0,
+    "long_arc_baseline_year": 2013,
+    "history": [
+      {
+        "year": 2013,
+        "value": 250
+      },
+      {
+        "year": 2016,
+        "value": 2051
+      },
+      {
+        "year": 2017,
+        "value": 1931
+      },
+      {
+        "year": 2018,
+        "value": 3480
+      },
+      {
+        "year": 2019,
+        "value": 4347
+      },
+      {
+        "year": 2020,
+        "value": 4125
+      },
+      {
+        "year": 2021,
+        "value": 3150
+      },
+      {
+        "year": 2022,
+        "value": 2574
+      },
+      {
+        "year": 2023,
+        "value": 2925
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chlorodifluoromethane (HCFC-22)",
+      "cas": "75-45-6",
+      "category": "general",
+      "total_pounds_recent": 2925,
+      "history": [
+        {
+          "year": 2013,
+          "value": 250
+        },
+        {
+          "year": 2016,
+          "value": 2051
+        },
+        {
+          "year": 2017,
+          "value": 1931
+        },
+        {
+          "year": 2018,
+          "value": 3480
+        },
+        {
+          "year": 2019,
+          "value": 4347
+        },
+        {
+          "year": 2020,
+          "value": 4125
+        },
+        {
+          "year": 2021,
+          "value": 3150
+        },
+        {
+          "year": 2022,
+          "value": 2574
+        },
+        {
+          "year": 2023,
+          "value": 2925
+        }
+      ],
+      "yoy_pct_change": 13.6,
+      "long_arc_pct_change": 1070.0,
+      "long_arc_baseline_year": 2013
+    }
+  ],
+  "equity": {
+    "population": 2180563,
+    "pct_low_income": 13.8,
+    "pct_people_of_color": 74.1,
+    "pct_under_5": 7.0,
+    "pct_over_64": 11.9,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 174.3
+      },
+      {
+        "label": "Ozone",
+        "score": 194.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 141.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 155.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 83.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 144.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 74.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 97.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 120.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 153.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.1
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 124.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 11.2
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "San Bernardino County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

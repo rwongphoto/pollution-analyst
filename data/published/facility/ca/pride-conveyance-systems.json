@@ -1,0 +1,151 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "pride-conveyance-systems",
+    "name": "Pride Conveyance Systems",
+    "parent_company": null,
+    "address": "1781 SHELTON DR",
+    "city": "Hollister",
+    "county": "San Benito County",
+    "county_slug": "san-benito",
+    "naics_label": "333922 \u00b7 Machinery",
+    "lat": 36.886078,
+    "lng": -121.392826
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 397,
+    "air_releases_pounds": 397,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 3,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 397
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 161,
+      "history": [
+        {
+          "year": 2023,
+          "value": 161
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 129,
+      "history": [
+        {
+          "year": 2023,
+          "value": 129
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 107,
+      "history": [
+        {
+          "year": 2023,
+          "value": 107
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "equity": {
+    "population": 64753,
+    "pct_low_income": 7.5,
+    "pct_people_of_color": 69.0,
+    "pct_under_5": 6.9,
+    "pct_over_64": 13.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 123.3
+      },
+      {
+        "label": "Ozone",
+        "score": 51.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 64.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 47.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 20.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 64.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 59.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 5.5
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 79.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 82.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 3.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 9.4
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "San Benito County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

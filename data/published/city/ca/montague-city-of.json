@@ -1,0 +1,152 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "montague-city-of",
+    "name": "Montague, City Of",
+    "pwsid": "CA4710007",
+    "population_served": 1264,
+    "primary_source": "surface_water",
+    "cities_served": [
+      "Montague"
+    ]
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 1,
+    "unresolved_violations": 2,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "health_based",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Treatment technique violation"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Reporting failure"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 2
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 2
+      }
+    ]
+  },
+  "equity": {
+    "population": 44049,
+    "pct_low_income": 16.7,
+    "pct_people_of_color": 25.799999999999997,
+    "pct_under_5": 5.0,
+    "pct_over_64": 26.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 111.1
+      },
+      {
+        "label": "Ozone",
+        "score": 70.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 30.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 4.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 5.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 23.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 70.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 18.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 30.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 1.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 19.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 8.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Siskiyou, California (utility's served county per SDWIS GEOGRAPHIC_AREA)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:17Z"
+}

@@ -1,0 +1,161 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "pom-wonderful",
+    "name": "Pom Wonderful",
+    "parent_company": null,
+    "address": "5286 S. DEL REY AVE.",
+    "city": "Del Rey",
+    "county": "Fresno County",
+    "county_slug": "fresno",
+    "naics_label": "312111 \u00b7 Beverages",
+    "lat": 36.660283,
+    "lng": -119.592442
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 13144,
+    "air_releases_pounds": 13144,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 52.6,
+    "long_arc_pct_change": -23.9,
+    "long_arc_baseline_year": 2018,
+    "history": [
+      {
+        "year": 2018,
+        "value": 17273
+      },
+      {
+        "year": 2019,
+        "value": 18685
+      },
+      {
+        "year": 2020,
+        "value": 18035
+      },
+      {
+        "year": 2021,
+        "value": 20643
+      },
+      {
+        "year": 2022,
+        "value": 8615
+      },
+      {
+        "year": 2023,
+        "value": 13144
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Peracetic acid",
+      "cas": "79-21-0",
+      "category": "general",
+      "total_pounds_recent": 13144,
+      "history": [
+        {
+          "year": 2018,
+          "value": 17273
+        },
+        {
+          "year": 2019,
+          "value": 18685
+        },
+        {
+          "year": 2020,
+          "value": 18035
+        },
+        {
+          "year": 2021,
+          "value": 20643
+        },
+        {
+          "year": 2022,
+          "value": 8615
+        },
+        {
+          "year": 2023,
+          "value": 13144
+        }
+      ],
+      "yoy_pct_change": 52.6,
+      "long_arc_pct_change": -23.9,
+      "long_arc_baseline_year": 2018
+    }
+  ],
+  "equity": {
+    "population": 1008280,
+    "pct_low_income": 19.5,
+    "pct_people_of_color": 72.6,
+    "pct_under_5": 7.8,
+    "pct_over_64": 12.5,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 209.5
+      },
+      {
+        "label": "Ozone",
+        "score": 204.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 120.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 179.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 135.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 130.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 92.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 117.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 163.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 148.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 67.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 7.5
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Fresno County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

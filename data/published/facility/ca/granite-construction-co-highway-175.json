@@ -1,0 +1,129 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "granite-construction-co-highway-175",
+    "name": "Granite Construction CO - Highway 175",
+    "parent_company": "Granite Construction INC",
+    "address": "4220 STATE HWY 175",
+    "city": "Lakeport",
+    "county": "Lake County",
+    "county_slug": "lake",
+    "naics_label": "324121 \u00b7 Petroleum",
+    "lat": 38.995772,
+    "lng": -122.935881
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 176,
+    "air_releases_pounds": 176,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -52.9,
+    "long_arc_pct_change": -52.9,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 374
+      },
+      {
+        "year": 2023,
+        "value": 176
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "N590",
+      "category": "pbt",
+      "total_pounds_recent": 176,
+      "history": [
+        {
+          "year": 2022,
+          "value": 361
+        },
+        {
+          "year": 2023,
+          "value": 176
+        }
+      ],
+      "yoy_pct_change": -51.2,
+      "long_arc_pct_change": -51.2,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "equity": {
+    "population": 68024,
+    "pct_low_income": 16.6,
+    "pct_people_of_color": 33.5,
+    "pct_under_5": 6.2,
+    "pct_over_64": 23.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 123.2
+      },
+      {
+        "label": "Ozone",
+        "score": 42.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 50.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 3.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 0.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 26.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 56.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 109.2
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 7.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 39.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 15.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Lake County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

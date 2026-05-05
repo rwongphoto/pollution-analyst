@@ -1,0 +1,220 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "hp-hood-llc",
+    "name": "Hp Hood LLC",
+    "parent_company": "Hp Hood LLC",
+    "address": "8340 BELVEDERE AVE",
+    "city": "Sacramento",
+    "county": "Sacramento County",
+    "county_slug": "sacramento",
+    "naics_label": "311511 \u00b7 Food",
+    "lat": 38.538054,
+    "lng": -121.398089
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 10507,
+    "air_releases_pounds": 592,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 9914,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -42.7,
+    "long_arc_pct_change": -23.6,
+    "long_arc_baseline_year": 2015,
+    "history": [
+      {
+        "year": 2015,
+        "value": 13758
+      },
+      {
+        "year": 2016,
+        "value": 15192
+      },
+      {
+        "year": 2017,
+        "value": 13896
+      },
+      {
+        "year": 2018,
+        "value": 15048
+      },
+      {
+        "year": 2019,
+        "value": 16241
+      },
+      {
+        "year": 2020,
+        "value": 15156
+      },
+      {
+        "year": 2021,
+        "value": 19868
+      },
+      {
+        "year": 2022,
+        "value": 18328
+      },
+      {
+        "year": 2023,
+        "value": 10507
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 9914,
+      "history": [
+        {
+          "year": 2015,
+          "value": 13758
+        },
+        {
+          "year": 2016,
+          "value": 15192
+        },
+        {
+          "year": 2017,
+          "value": 13896
+        },
+        {
+          "year": 2018,
+          "value": 14635
+        },
+        {
+          "year": 2019,
+          "value": 15849
+        },
+        {
+          "year": 2020,
+          "value": 14946
+        },
+        {
+          "year": 2021,
+          "value": 19511
+        },
+        {
+          "year": 2022,
+          "value": 17602
+        },
+        {
+          "year": 2023,
+          "value": 9914
+        }
+      ],
+      "yoy_pct_change": -43.7,
+      "long_arc_pct_change": -27.9,
+      "long_arc_baseline_year": 2015
+    },
+    {
+      "chemical": "Peracetic acid",
+      "cas": "79-21-0",
+      "category": "general",
+      "total_pounds_recent": 592,
+      "history": [
+        {
+          "year": 2018,
+          "value": 413
+        },
+        {
+          "year": 2019,
+          "value": 392
+        },
+        {
+          "year": 2020,
+          "value": 209
+        },
+        {
+          "year": 2021,
+          "value": 357
+        },
+        {
+          "year": 2022,
+          "value": 726
+        },
+        {
+          "year": 2023,
+          "value": 592
+        }
+      ],
+      "yoy_pct_change": -18.4,
+      "long_arc_pct_change": 43.5,
+      "long_arc_baseline_year": 2018
+    }
+  ],
+  "equity": {
+    "population": 1579211,
+    "pct_low_income": 13.1,
+    "pct_people_of_color": 57.8,
+    "pct_under_5": 6.3,
+    "pct_over_64": 14.6,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 155.4
+      },
+      {
+        "label": "Ozone",
+        "score": 140.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 98.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 115.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 24.6
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 124.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 55.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 109.1
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 102.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 131.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 123.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.8
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Sacramento County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

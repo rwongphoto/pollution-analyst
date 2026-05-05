@@ -1,0 +1,81 @@
+{
+  "utility": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "flint",
+    "name": "City of Flint",
+    "pwsid": "MI0002910",
+    "population_served": 79300,
+    "primary_source": "purchased",
+    "cities_served": ["Flint"]
+  },
+  "reporting_period": {
+    "start": "2014-01-01",
+    "end": "2026-03-31"
+  },
+  "briefing_label": "SDWIS through Q1 2026",
+  "totals": {
+    "violations_5yr": 4,
+    "health_based_violations_5yr": 2,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 3
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Total Trihalomethanes (TTHM)",
+      "contaminant_code": "2950",
+      "severity": "monitoring",
+      "rule": "Stage 2 Disinfectants and Disinfection Byproducts Rule",
+      "is_unresolved": true,
+      "description": "Failure to collect required quarterly samples at one of four monitoring sites. Under return-to-compliance plan with state primacy agency."
+    },
+    {
+      "year": 2022,
+      "contaminant": "Lead",
+      "contaminant_code": "1030",
+      "severity": "health_based",
+      "rule": "Lead and Copper Rule",
+      "is_unresolved": false,
+      "description": "Action level exceedance at the 90th percentile (16 ppb vs 15 ppb action level). Service-line replacement program completed in 2024."
+    },
+    {
+      "year": 2019,
+      "contaminant": "Lead",
+      "contaminant_code": "1030",
+      "severity": "health_based",
+      "rule": "Lead and Copper Rule",
+      "is_unresolved": false,
+      "description": "Final compliance violation tied to the 2014–2016 source-water switch. Resolved on certification of corrosion-control return-to-treatment."
+    },
+    {
+      "year": 2017,
+      "contaminant": "Total Coliform",
+      "contaminant_code": "3100",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Routine sample missed in February. Returned to compliance the following month."
+    }
+  ],
+  "equity": {
+    "population": 79300,
+    "pct_low_income": 51.7,
+    "pct_people_of_color": 60.4,
+    "pct_under_5": 6.8,
+    "pct_over_64": 14.2,
+    "ej_indexes": [
+      {"label": "Lead-paint EJ index", "pct_us": 89, "pct_state": 96},
+      {"label": "Drinking-water systems EJ index", "pct_us": 94, "pct_state": 98},
+      {"label": "Air toxics cancer risk EJ index", "pct_us": 71, "pct_state": 78}
+    ],
+    "source": "EJScreen 2024, EPA",
+    "geography_label": "Block groups served by PWS MI0002910"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-04-12"
+  },
+  "_published_at": "2026-05-04T00:00:00Z"
+}

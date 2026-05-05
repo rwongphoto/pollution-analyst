@@ -1,0 +1,161 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "hoover-treated-wood-products-inc",
+    "name": "Hoover Treated Wood Products INC.",
+    "parent_company": "Graham Holdings Co",
+    "address": "5601 DISTRICT BLVD",
+    "city": "Bakersfield",
+    "county": "Kern County",
+    "county_slug": "kern",
+    "naics_label": "321999 \u00b7 Wood Products",
+    "lat": 35.313014,
+    "lng": -119.064488
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 1241,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 616,
+    "land_releases_pounds": 625,
+    "chemicals_reported": 1,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": -32.7,
+    "long_arc_baseline_year": 2016,
+    "history": [
+      {
+        "year": 2016,
+        "value": 1844
+      },
+      {
+        "year": 2017,
+        "value": 1330
+      },
+      {
+        "year": 2018,
+        "value": 1252
+      },
+      {
+        "year": 2019,
+        "value": 748
+      },
+      {
+        "year": 2020,
+        "value": 543
+      },
+      {
+        "year": 2023,
+        "value": 1241
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Copper compounds",
+      "cas": "N100",
+      "category": "general",
+      "total_pounds_recent": 1241,
+      "history": [
+        {
+          "year": 2016,
+          "value": 670
+        },
+        {
+          "year": 2017,
+          "value": 1330
+        },
+        {
+          "year": 2018,
+          "value": 1252
+        },
+        {
+          "year": 2019,
+          "value": 748
+        },
+        {
+          "year": 2020,
+          "value": 543
+        },
+        {
+          "year": 2023,
+          "value": 1241
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 85.2,
+      "long_arc_baseline_year": 2016
+    }
+  ],
+  "equity": {
+    "population": 906883,
+    "pct_low_income": 19.3,
+    "pct_people_of_color": 68.5,
+    "pct_under_5": 7.9,
+    "pct_over_64": 11.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 200.0
+      },
+      {
+        "label": "Ozone",
+        "score": 203.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 141.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 158.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 39.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 125.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 84.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 14.3
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 144.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 134.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 6.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 15.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Kern County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

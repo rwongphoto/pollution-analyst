@@ -1,0 +1,215 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "shell-chemical-lp-martinez-catalyst-plant",
+    "name": "Shell Chemical LP - Martinez Catalyst Plant",
+    "parent_company": "Shell Petroleum INC",
+    "address": "10 MOCOCO RD",
+    "city": "Martinez",
+    "county": "Contra Costa County",
+    "county_slug": "contra-costa",
+    "naics_label": "325180 \u00b7 Chemicals",
+    "lat": 38.033198,
+    "lng": -122.116137
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 21376,
+    "air_releases_pounds": 21352,
+    "water_releases_pounds": 24,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -3.4,
+    "long_arc_pct_change": 27.2,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 16810
+      },
+      {
+        "year": 2020,
+        "value": 14413
+      },
+      {
+        "year": 2021,
+        "value": 24240
+      },
+      {
+        "year": 2022,
+        "value": 22133
+      },
+      {
+        "year": 2023,
+        "value": 21376
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Silver compounds",
+      "cas": "N740",
+      "category": "general",
+      "total_pounds_recent": 9434,
+      "history": [
+        {
+          "year": 2019,
+          "value": 12018
+        },
+        {
+          "year": 2020,
+          "value": 9843
+        },
+        {
+          "year": 2021,
+          "value": 13456
+        },
+        {
+          "year": 2022,
+          "value": 13717
+        },
+        {
+          "year": 2023,
+          "value": 9434
+        }
+      ],
+      "yoy_pct_change": -31.2,
+      "long_arc_pct_change": -21.5,
+      "long_arc_baseline_year": 2019
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 6979,
+      "history": [
+        {
+          "year": 2019,
+          "value": 3483
+        },
+        {
+          "year": 2020,
+          "value": 3575
+        },
+        {
+          "year": 2021,
+          "value": 4796
+        },
+        {
+          "year": 2022,
+          "value": 3368
+        },
+        {
+          "year": 2023,
+          "value": 6979
+        }
+      ],
+      "yoy_pct_change": 107.2,
+      "long_arc_pct_change": 100.4,
+      "long_arc_baseline_year": 2019
+    },
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 4963,
+      "history": [
+        {
+          "year": 2019,
+          "value": 1302
+        },
+        {
+          "year": 2020,
+          "value": 995
+        },
+        {
+          "year": 2021,
+          "value": 5988
+        },
+        {
+          "year": 2022,
+          "value": 5048
+        },
+        {
+          "year": 2023,
+          "value": 4963
+        }
+      ],
+      "yoy_pct_change": -1.7,
+      "long_arc_pct_change": 281.2,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "equity": {
+    "population": 1162648,
+    "pct_low_income": 8.3,
+    "pct_people_of_color": 59.4,
+    "pct_under_5": 6.0,
+    "pct_over_64": 16.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 127.3
+      },
+      {
+        "label": "Ozone",
+        "score": 45.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 73.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 73.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 62.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 95.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 58.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 63.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 79.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 112.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 95.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Contra Costa County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}

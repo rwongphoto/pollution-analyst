@@ -1,0 +1,215 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "granite-rock-co-redwood-city",
+    "name": "Granite Rock CO Redwood City",
+    "parent_company": "Granite Rock Co",
+    "address": "355 BLOMQUIST ST",
+    "city": "Redwood City",
+    "county": "San Mateo County",
+    "county_slug": "san-mateo",
+    "naics_label": "327320 \u00b7 Nonmetallic Mineral Product",
+    "lat": 37.493044,
+    "lng": -122.216109
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 7,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 7,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 1.1,
+    "long_arc_pct_change": 5156.4,
+    "long_arc_baseline_year": 2016,
+    "history": [
+      {
+        "year": 2016,
+        "value": 0
+      },
+      {
+        "year": 2017,
+        "value": 0
+      },
+      {
+        "year": 2018,
+        "value": 0
+      },
+      {
+        "year": 2019,
+        "value": 0
+      },
+      {
+        "year": 2020,
+        "value": 0
+      },
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 7
+      },
+      {
+        "year": 2023,
+        "value": 7
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Barium",
+      "cas": "7440-39-3",
+      "category": "general",
+      "total_pounds_recent": 6,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6
+        },
+        {
+          "year": 2023,
+          "value": 6
+        }
+      ],
+      "yoy_pct_change": 1.2,
+      "long_arc_pct_change": 1.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Zinc (fume or dust)",
+      "cas": "7440-66-6",
+      "category": "general",
+      "total_pounds_recent": 1,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1
+        },
+        {
+          "year": 2023,
+          "value": 1
+        }
+      ],
+      "yoy_pct_change": 2.4,
+      "long_arc_pct_change": 2.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 0,
+      "history": [
+        {
+          "year": 2016,
+          "value": 0
+        },
+        {
+          "year": 2017,
+          "value": 0
+        },
+        {
+          "year": 2018,
+          "value": 0
+        },
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ],
+      "yoy_pct_change": -13.0,
+      "long_arc_pct_change": -37.9,
+      "long_arc_baseline_year": 2016
+    }
+  ],
+  "equity": {
+    "population": 754250,
+    "pct_low_income": 6.4,
+    "pct_people_of_color": 63.0,
+    "pct_under_5": 5.5,
+    "pct_over_64": 16.9,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 114.2
+      },
+      {
+        "label": "Ozone",
+        "score": 3.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 72.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 54.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 35.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 113.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 83.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 46.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 9.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 117.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 89.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "San Mateo County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T01:29:16Z"
+}
