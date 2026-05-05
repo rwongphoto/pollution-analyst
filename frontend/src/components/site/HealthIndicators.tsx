@@ -68,11 +68,27 @@ export function HealthIndicators({
                 className="city-tile live"
                 style={{ cursor: "default" }}
               >
-                <div className="tile-meta">
-                  <span>{h.label.toUpperCase()}</span>
+                <h3
+                  style={{
+                    fontSize: 18,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.04em",
+                  }}
+                >
+                  {h.label}
+                </h3>
+                <div className="tile-meta" style={{ marginTop: -4 }}>
                   <span>BRFSS {h.vintage_year}</span>
                 </div>
-                <h3 style={{ fontSize: 32 }}>
+                <div
+                  style={{
+                    fontFamily: "var(--font-body)",
+                    fontWeight: 600,
+                    fontSize: 32,
+                    letterSpacing: "-0.02em",
+                    color: "var(--fg)",
+                  }}
+                >
                   {h.crude.toFixed(1)}
                   <span
                     style={{
@@ -85,7 +101,7 @@ export function HealthIndicators({
                   >
                     %
                   </span>
-                </h3>
+                </div>
                 <div
                   className="meta-mono"
                   style={{
