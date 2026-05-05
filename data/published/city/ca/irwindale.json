@@ -9,74 +9,78 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 5,
     "utilities_serving": 0,
-    "total_releases_pounds": 1942,
-    "air_releases_pounds": 1847,
+    "total_releases_pounds": 225,
+    "air_releases_pounds": 4,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 96,
-    "yoy_pct_change": 175.8,
-    "long_arc_pct_change": -86.7,
+    "land_releases_pounds": 222,
+    "yoy_pct_change": 124.6,
+    "long_arc_pct_change": 66.4,
     "long_arc_baseline_year": 2010,
     "history": [
       {
         "year": 2010,
-        "value": 14627
+        "value": 135
       },
       {
         "year": 2011,
-        "value": 10498
+        "value": 166
       },
       {
         "year": 2012,
-        "value": 4933
+        "value": 137
       },
       {
         "year": 2013,
-        "value": 20299
+        "value": 98
       },
       {
         "year": 2014,
-        "value": 3349
+        "value": 92
       },
       {
         "year": 2015,
-        "value": 4797
+        "value": 46
       },
       {
         "year": 2016,
-        "value": 24673
+        "value": 100
       },
       {
         "year": 2017,
-        "value": 10091
+        "value": 565
       },
       {
         "year": 2018,
-        "value": 19660
+        "value": 314
       },
       {
         "year": 2019,
-        "value": 14552
+        "value": 198
       },
       {
         "year": 2020,
-        "value": 24897
+        "value": 523
       },
       {
         "year": 2021,
-        "value": 21854
+        "value": 199
       },
       {
         "year": 2022,
-        "value": 704
+        "value": 101
       },
       {
         "year": 2023,
-        "value": 1942
+        "value": 100
+      },
+      {
+        "year": 2024,
+        "value": 225
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 1847,
+      "current": 4,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1847
+          "year": 2024,
+          "value": 4
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 96,
+      "current": 222,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 96
+          "year": 2024,
+          "value": 222
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,47 +200,14 @@
   ],
   "facilities": [
     {
-      "slug": "iby-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Iby LLC",
-      "parent_company": "Caiman Holdco LLC",
-      "total_pounds_recent": 1842,
-      "yoy_pct_change": 205.2,
-      "top_chemical": "Ammonia",
-      "city": "Irwindale"
-    },
-    {
       "slug": "davis-wire-corp",
       "state": "ca",
       "state_label": "California",
       "name": "Davis Wire Corp",
       "parent_company": "Heico Holding INC",
-      "total_pounds_recent": 93,
-      "yoy_pct_change": -3.0,
+      "total_pounds_recent": 197,
+      "yoy_pct_change": 112.4,
       "top_chemical": "Nickel",
-      "city": "Baldwin Park"
-    },
-    {
-      "slug": "irwindale-plant-13",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Irwindale Plant 13",
-      "parent_company": "Mcc Development CORP",
-      "total_pounds_recent": 6,
-      "yoy_pct_change": 53.3,
-      "top_chemical": "Lead compounds",
-      "city": "Irwindale"
-    },
-    {
-      "slug": "western-emulsions-irwindale-plant",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Western Emulsions Irwindale Plant",
-      "parent_company": "Idaho Asphalt Supply INC",
-      "total_pounds_recent": 1,
-      "yoy_pct_change": 5.9,
-      "top_chemical": "Polycyclic aromatic compounds",
       "city": "Baldwin Park"
     },
     {
@@ -245,10 +216,43 @@
       "state_label": "California",
       "name": "National Ready Mix Concrete CO .",
       "parent_company": "National Cement",
-      "total_pounds_recent": 0.1,
-      "yoy_pct_change": -50.0,
+      "total_pounds_recent": 22,
+      "yoy_pct_change": 22100.0,
       "top_chemical": "Lead compounds",
       "city": "Irwindale"
+    },
+    {
+      "slug": "irwindale-plant-13",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Irwindale Plant 13",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 6,
+      "yoy_pct_change": -4.5,
+      "top_chemical": "Lead compounds",
+      "city": "Irwindale"
+    },
+    {
+      "slug": "holliday-rock-co-irwindale",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Holliday Rock CO - Irwindale",
+      "parent_company": "Holliday Rock Co INC",
+      "total_pounds_recent": 0.06,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Baldwin Park"
+    },
+    {
+      "slug": "western-emulsions-irwindale-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Western Emulsions Irwindale Plant",
+      "parent_company": "Idaho Asphalt Supply INC",
+      "total_pounds_recent": 0.03,
+      "yoy_pct_change": -97.3,
+      "top_chemical": "Polycyclic aromatic compounds",
+      "city": "Baldwin Park"
     }
   ],
   "water": {
@@ -337,5 +341,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

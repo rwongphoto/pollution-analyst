@@ -9,17 +9,17 @@
     "county_name": "San Bernardino",
     "county_fips": "06071"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 10,
-    "utilities_serving": 4,
-    "total_releases_pounds": 79168,
-    "air_releases_pounds": 20141,
+    "utilities_serving": 1,
+    "total_releases_pounds": 159482,
+    "air_releases_pounds": 19634,
     "water_releases_pounds": 2,
-    "land_releases_pounds": 59026,
-    "yoy_pct_change": 58.4,
-    "long_arc_pct_change": 260.6,
+    "land_releases_pounds": 139846,
+    "yoy_pct_change": 105.8,
+    "long_arc_pct_change": 626.5,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -44,39 +44,43 @@
       },
       {
         "year": 2015,
-        "value": 42927
+        "value": 41383
       },
       {
         "year": 2016,
-        "value": 43144
+        "value": 40972
       },
       {
         "year": 2017,
-        "value": 28056
+        "value": 25782
       },
       {
         "year": 2018,
-        "value": 41918
+        "value": 40135
       },
       {
         "year": 2019,
-        "value": 57136
+        "value": 55454
       },
       {
         "year": 2020,
-        "value": 25361
+        "value": 23319
       },
       {
         "year": 2021,
-        "value": 45121
+        "value": 45146
       },
       {
         "year": 2022,
-        "value": 49977
+        "value": 48197
       },
       {
         "year": 2023,
-        "value": 79168
+        "value": 77486
+      },
+      {
+        "year": 2024,
+        "value": 159482
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 20141,
+      "current": 19634,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 20141
+          "year": 2024,
+          "value": 19634
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 2
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 59026,
+      "current": 139846,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 59026
+          "year": 2024,
+          "value": 139846
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 9779299,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -6.6,
-      "long_arc_pct_change": -7.3,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,36 +200,36 @@
   ],
   "facilities": [
     {
-      "slug": "bluescope-coated-products-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Bluescope Coated Products LLC",
-      "parent_company": "Bluescope Steel North America INC",
-      "total_pounds_recent": 48196,
-      "yoy_pct_change": 33.4,
-      "top_chemical": "1,2,4-Trimethylbenzene",
-      "city": "Rancho Cucamonga"
-    },
-    {
       "slug": "precision-aerospace-corp",
       "state": "ca",
       "state_label": "California",
       "name": "Precision Aerospace Corp",
       "parent_company": null,
-      "total_pounds_recent": 19848,
-      "yoy_pct_change": 297.9,
+      "total_pounds_recent": 105892,
+      "yoy_pct_change": 433.5,
       "top_chemical": "Nitric acid",
       "city": "Rancho Cucamonga"
     },
     {
-      "slug": "arlon-emd",
+      "slug": "bluescope-coated-products-llc",
       "state": "ca",
       "state_label": "California",
-      "name": "Arlon Emd",
-      "parent_company": null,
-      "total_pounds_recent": 3179,
-      "yoy_pct_change": 138.3,
-      "top_chemical": "Copper",
+      "name": "Bluescope Coated Products LLC",
+      "parent_company": "Bluescope Steel North America INC",
+      "total_pounds_recent": 41285,
+      "yoy_pct_change": -14.3,
+      "top_chemical": "1,2,4-Trimethylbenzene",
+      "city": "Rancho Cucamonga"
+    },
+    {
+      "slug": "accella-polyurethane-systems-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Accella Polyurethane Systems LLC",
+      "parent_company": "Carlisle Cos INC",
+      "total_pounds_recent": 3000,
+      "yoy_pct_change": null,
+      "top_chemical": "Diisocyanates",
       "city": "Rancho Cucamonga"
     },
     {
@@ -234,9 +238,20 @@
       "state_label": "California",
       "name": "Frito-Lay Inc.(F/K/A Frito-Lay North America)",
       "parent_company": "Pepsico INC",
-      "total_pounds_recent": 2885,
-      "yoy_pct_change": 20.2,
+      "total_pounds_recent": 3000,
+      "yoy_pct_change": 4.0,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Rancho Cucamonga"
+    },
+    {
+      "slug": "arlon-emd",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Arlon Emd",
+      "parent_company": null,
+      "total_pounds_recent": 2276,
+      "yoy_pct_change": -28.4,
+      "top_chemical": "N-Methyl-2-pyrrolidone",
       "city": "Rancho Cucamonga"
     },
     {
@@ -245,20 +260,9 @@
       "state_label": "California",
       "name": "Vorteq - Pacific",
       "parent_company": "Vorteq Coil Finishers LLC",
-      "total_pounds_recent": 2361,
-      "yoy_pct_change": 258.3,
+      "total_pounds_recent": 2064,
+      "yoy_pct_change": -12.6,
       "top_chemical": "Certain glycol ethers",
-      "city": "Rancho Cucamonga"
-    },
-    {
-      "slug": "parallel-products-of-california",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Parallel Products Of California",
-      "parent_company": "Erp Environmental",
-      "total_pounds_recent": 1683,
-      "yoy_pct_change": -6.5,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Rancho Cucamonga"
     },
     {
@@ -267,20 +271,9 @@
       "state_label": "California",
       "name": "Schlosser Forge CO",
       "parent_company": "Howmet Aerospace INC",
-      "total_pounds_recent": 657,
-      "yoy_pct_change": -26.1,
+      "total_pounds_recent": 1204,
+      "yoy_pct_change": 83.3,
       "top_chemical": "Nickel",
-      "city": "Rancho Cucamonga"
-    },
-    {
-      "slug": "steelscape-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Steelscape LLC",
-      "parent_company": "Ns Bluescope Holdings USA LLC",
-      "total_pounds_recent": 294,
-      "yoy_pct_change": -71.4,
-      "top_chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
       "city": "Rancho Cucamonga"
     },
     {
@@ -289,9 +282,20 @@
       "state_label": "California",
       "name": "Pac Rancho Foundry",
       "parent_company": "Consolidated Precision Products CORP",
-      "total_pounds_recent": 65,
-      "yoy_pct_change": -91.5,
-      "top_chemical": "Chromium",
+      "total_pounds_recent": 723,
+      "yoy_pct_change": 1019.8,
+      "top_chemical": "Lead",
+      "city": "Rancho Cucamonga"
+    },
+    {
+      "slug": "steelscape-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Steelscape LLC",
+      "parent_company": "Ns Bluescope Holdings USA LLC",
+      "total_pounds_recent": 37,
+      "yoy_pct_change": -87.5,
+      "top_chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
       "city": "Rancho Cucamonga"
     },
     {
@@ -301,15 +305,15 @@
       "name": "R & D Fasteners",
       "parent_company": "Count On It INC",
       "total_pounds_recent": 1,
-      "yoy_pct_change": null,
+      "yoy_pct_change": 0.0,
       "top_chemical": "Chromium",
       "city": "Rancho Cucamonga"
     }
   ],
   "water": {
-    "utilities_count": 4,
-    "population_served_total": 211996,
-    "violations_5yr_total": 7,
+    "utilities_count": 1,
+    "population_served_total": 211069,
+    "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
     "utilities_with_unresolved": 0,
@@ -321,36 +325,6 @@
         "name": "Cucamonga Valley Water District",
         "pwsid": "CA3610018",
         "population_served": 211069,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "laguna-mobile-home-and-rv-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Laguna Mobile Home And Rv Park",
-        "pwsid": "AZ0414322",
-        "population_served": 450,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "californian-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Californian Mobile Home Park",
-        "pwsid": "CA1900843",
-        "population_served": 372,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "mono-vista-ranch-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Mono Vista Ranch Mhp",
-        "pwsid": "CA5500124",
-        "population_served": 105,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -433,5 +407,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

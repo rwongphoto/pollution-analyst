@@ -9,17 +9,17 @@
     "county_name": "Shasta",
     "county_fips": "06089"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 1,
-    "total_releases_pounds": 214475,
-    "air_releases_pounds": 194177,
+    "total_releases_pounds": 188014,
+    "air_releases_pounds": 155661,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 20298,
-    "yoy_pct_change": 6.4,
-    "long_arc_pct_change": 162.4,
+    "land_releases_pounds": 32353,
+    "yoy_pct_change": -12.3,
+    "long_arc_pct_change": 130.1,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 214475
+      },
+      {
+        "year": 2024,
+        "value": 188014
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 194177,
+      "current": 155661,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 194177
+          "year": 2024,
+          "value": 155661
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 20298,
+      "current": 32353,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 20298
+          "year": 2024,
+          "value": 32353
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 658558,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -14.5,
-      "long_arc_pct_change": 131.6,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Knauf Insulation INC.",
       "parent_company": "Knauf Insulation",
-      "total_pounds_recent": 214475,
-      "yoy_pct_change": 6.4,
+      "total_pounds_recent": 188014,
+      "yoy_pct_change": -12.3,
       "top_chemical": "Ammonia",
       "city": "Shasta Lake"
     }
@@ -304,5 +308,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

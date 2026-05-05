@@ -13,18 +13,30 @@
     "lat": 36.003158,
     "lng": -119.303814
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 33835,
-    "air_releases_pounds": 33835,
+    "total_releases_pounds": 2430,
+    "air_releases_pounds": 2430,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
     "chemicals_reported": 5,
-    "yoy_pct_change": 0.0,
-    "long_arc_pct_change": 0.0,
-    "long_arc_baseline_year": 2022,
+    "yoy_pct_change": -92.8,
+    "long_arc_pct_change": 1227.9,
+    "long_arc_baseline_year": 2015,
     "history": [
+      {
+        "year": 2015,
+        "value": 183
+      },
+      {
+        "year": 2016,
+        "value": 183
+      },
+      {
+        "year": 2018,
+        "value": 0.34
+      },
       {
         "year": 2022,
         "value": 33834
@@ -32,6 +44,10 @@
       {
         "year": 2023,
         "value": 33835
+      },
+      {
+        "year": 2024,
+        "value": 2430
       }
     ]
   },
@@ -40,7 +56,7 @@
       "chemical": "Acetaldehyde",
       "cas": "75-07-0",
       "category": "carcinogen",
-      "total_pounds_recent": 15392,
+      "total_pounds_recent": 795,
       "history": [
         {
           "year": 2022,
@@ -49,17 +65,21 @@
         {
           "year": 2023,
           "value": 15392
+        },
+        {
+          "year": 2024,
+          "value": 795
         }
       ],
-      "yoy_pct_change": 0.0,
-      "long_arc_pct_change": 0.0,
+      "yoy_pct_change": -94.8,
+      "long_arc_pct_change": -94.8,
       "long_arc_baseline_year": 2022
     },
     {
       "chemical": "Acrolein",
       "cas": "107-02-8",
       "category": "carcinogen",
-      "total_pounds_recent": 13152,
+      "total_pounds_recent": 767,
       "history": [
         {
           "year": 2022,
@@ -68,29 +88,14 @@
         {
           "year": 2023,
           "value": 13152
-        }
-      ],
-      "yoy_pct_change": 0.0,
-      "long_arc_pct_change": 0.0,
-      "long_arc_baseline_year": 2022
-    },
-    {
-      "chemical": "Formaldehyde",
-      "cas": "50-00-0",
-      "category": "carcinogen",
-      "total_pounds_recent": 4666,
-      "history": [
-        {
-          "year": 2022,
-          "value": 4666
         },
         {
-          "year": 2023,
-          "value": 4666
+          "year": 2024,
+          "value": 767
         }
       ],
-      "yoy_pct_change": 0.0,
-      "long_arc_pct_change": 0.0,
+      "yoy_pct_change": -94.2,
+      "long_arc_pct_change": -94.2,
       "long_arc_baseline_year": 2022
     },
     {
@@ -106,10 +111,37 @@
         {
           "year": 2023,
           "value": 446
+        },
+        {
+          "year": 2024,
+          "value": 446
         }
       ],
       "yoy_pct_change": 0.0,
       "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 243,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4666
+        },
+        {
+          "year": 2023,
+          "value": 4666
+        },
+        {
+          "year": 2024,
+          "value": 243
+        }
+      ],
+      "yoy_pct_change": -94.8,
+      "long_arc_pct_change": -94.8,
       "long_arc_baseline_year": 2022
     },
     {
@@ -125,6 +157,10 @@
         {
           "year": 2023,
           "value": 179
+        },
+        {
+          "year": 2024,
+          "value": 179
         }
       ],
       "yoy_pct_change": 0.0,
@@ -132,7 +168,58 @@
       "long_arc_baseline_year": 2022
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Acetaldehyde",
+      "summary": "Acetaldehyde releases at Gfp Ethanol LLC Dba Calgren Renewable Fuels fell from 15k lb to 795 lb (95% lower) between 2023 and 2024.",
+      "magnitude_pct": -94.8,
+      "magnitude_abs": -14597.1,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 15391
+        },
+        {
+          "year": 2023,
+          "value": 15392
+        },
+        {
+          "year": 2024,
+          "value": 795
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Acrolein",
+      "summary": "Acrolein releases at Gfp Ethanol LLC Dba Calgren Renewable Fuels fell from 13k lb to 767 lb (94% lower) between 2023 and 2024.",
+      "magnitude_pct": -94.2,
+      "magnitude_abs": -12384.9,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 13151
+        },
+        {
+          "year": 2023,
+          "value": 13152
+        },
+        {
+          "year": 2024,
+          "value": 767
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 473446,
     "pct_low_income": 18.5,
@@ -202,5 +289,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

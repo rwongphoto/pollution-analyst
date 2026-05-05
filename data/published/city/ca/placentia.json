@@ -9,17 +9,17 @@
     "county_name": "Orange",
     "county_fips": "06059"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 1,
-    "total_releases_pounds": 4056,
-    "air_releases_pounds": 4017,
+    "total_releases_pounds": 4711,
+    "air_releases_pounds": 4674,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 39,
-    "yoy_pct_change": -0.5,
-    "long_arc_pct_change": -30.7,
+    "land_releases_pounds": 37,
+    "yoy_pct_change": 16.1,
+    "long_arc_pct_change": -19.5,
     "long_arc_baseline_year": 2014,
     "history": [
       {
@@ -61,6 +61,10 @@
       {
         "year": 2023,
         "value": 4056
+      },
+      {
+        "year": 2024,
+        "value": 4711
       }
     ]
   },
@@ -68,15 +72,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 4017,
+      "current": 4674,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 4017
+          "year": 2024,
+          "value": 4674
         }
       ]
     },
@@ -87,10 +91,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -98,25 +102,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 39,
+      "current": 37,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 39
+          "year": 2024,
+          "value": 37
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2636013,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": 39.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -185,8 +189,8 @@
       "state_label": "California",
       "name": "Arlon Graphics LLC",
       "parent_company": "Flexcon Co INC",
-      "total_pounds_recent": 4017,
-      "yoy_pct_change": -0.5,
+      "total_pounds_recent": 4674,
+      "yoy_pct_change": 16.4,
       "top_chemical": "Toluene",
       "city": "Placentia"
     },
@@ -196,8 +200,8 @@
       "state_label": "California",
       "name": "Apct Oc",
       "parent_company": "Advancedpcb Holdings INC",
-      "total_pounds_recent": 39,
-      "yoy_pct_change": 2.1,
+      "total_pounds_recent": 37,
+      "yoy_pct_change": -5.3,
       "top_chemical": "Copper",
       "city": "Placentia"
     }
@@ -299,5 +303,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

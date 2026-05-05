@@ -13,18 +13,34 @@
     "lat": 33.904482,
     "lng": -118.265227
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 27415,
+    "total_releases_pounds": 12891,
     "air_releases_pounds": 0.0,
-    "water_releases_pounds": 2,
-    "land_releases_pounds": 27413,
-    "chemicals_reported": 2,
-    "yoy_pct_change": -41.5,
-    "long_arc_pct_change": 129.6,
-    "long_arc_baseline_year": 2016,
+    "water_releases_pounds": 10,
+    "land_releases_pounds": 12881,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -53.0,
+    "long_arc_pct_change": 1028.8,
+    "long_arc_baseline_year": 2012,
     "history": [
+      {
+        "year": 2012,
+        "value": 1142
+      },
+      {
+        "year": 2013,
+        "value": 0.37
+      },
+      {
+        "year": 2014,
+        "value": 1
+      },
+      {
+        "year": 2015,
+        "value": 456
+      },
       {
         "year": 2016,
         "value": 11941
@@ -56,6 +72,10 @@
       {
         "year": 2023,
         "value": 27415
+      },
+      {
+        "year": 2024,
+        "value": 12891
       }
     ]
   },
@@ -64,7 +84,7 @@
       "chemical": "Chromium",
       "cas": "7440-47-3",
       "category": "respiratory",
-      "total_pounds_recent": 26973,
+      "total_pounds_recent": 12243,
       "history": [
         {
           "year": 2016,
@@ -97,17 +117,21 @@
         {
           "year": 2023,
           "value": 26973
+        },
+        {
+          "year": 2024,
+          "value": 12243
         }
       ],
-      "yoy_pct_change": -42.3,
-      "long_arc_pct_change": 147.4,
+      "yoy_pct_change": -54.6,
+      "long_arc_pct_change": 12.3,
       "long_arc_baseline_year": 2016
     },
     {
-      "chemical": "Lead  And Lead Compounds",
+      "chemical": "Lead compounds",
       "cas": "N420",
       "category": "pbt",
-      "total_pounds_recent": 442,
+      "total_pounds_recent": 640,
       "history": [
         {
           "year": 2017,
@@ -136,14 +160,111 @@
         {
           "year": 2023,
           "value": 442
+        },
+        {
+          "year": 2024,
+          "value": 640
         }
       ],
-      "yoy_pct_change": 342.1,
-      "long_arc_pct_change": 5.3,
+      "yoy_pct_change": 44.8,
+      "long_arc_pct_change": 52.5,
       "long_arc_baseline_year": 2017
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 7,
+      "history": [
+        {
+          "year": 2016,
+          "value": 10
+        },
+        {
+          "year": 2017,
+          "value": 10
+        },
+        {
+          "year": 2018,
+          "value": 10
+        },
+        {
+          "year": 2019,
+          "value": 10
+        },
+        {
+          "year": 2020,
+          "value": 10
+        },
+        {
+          "year": 2021,
+          "value": 10
+        },
+        {
+          "year": 2022,
+          "value": 17
+        },
+        {
+          "year": 2024,
+          "value": 7
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -29.2,
+      "long_arc_baseline_year": 2016
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Chromium",
+      "summary": "Chromium releases at V & M Aerospace fell from 27k lb to 12k lb (55% lower) between 2023 and 2024.",
+      "magnitude_pct": -54.6,
+      "magnitude_abs": -14729.9,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2016,
+          "value": 10904
+        },
+        {
+          "year": 2017,
+          "value": 17480
+        },
+        {
+          "year": 2018,
+          "value": 5603
+        },
+        {
+          "year": 2019,
+          "value": 14398
+        },
+        {
+          "year": 2020,
+          "value": 13313
+        },
+        {
+          "year": 2021,
+          "value": 9000
+        },
+        {
+          "year": 2022,
+          "value": 46750
+        },
+        {
+          "year": 2023,
+          "value": 26973
+        },
+        {
+          "year": 2024,
+          "value": 12243
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 9936690,
     "pct_low_income": 13.7,
@@ -213,5 +334,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

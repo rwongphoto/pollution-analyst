@@ -7,16 +7,16 @@
     "fips": "06013",
     "population": 1162648
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 1060905,
+      "current": 914222,
       "units": "lb",
-      "yoy_pct_change": -1.1,
-      "long_arc_pct_change": -33.2,
+      "yoy_pct_change": -13.8,
+      "long_arc_pct_change": -42.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 1060905
+        },
+        {
+          "year": 2024,
+          "value": 914222
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 1053910,
+      "current": 642624,
       "units": "lb",
-      "yoy_pct_change": -13.8,
-      "long_arc_pct_change": -27.5,
+      "yoy_pct_change": -39.0,
+      "long_arc_pct_change": -55.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 1053910
+        },
+        {
+          "year": 2024,
+          "value": 642624
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 644672,
+      "current": 1456277,
       "units": "lb",
-      "yoy_pct_change": 12.5,
-      "long_arc_pct_change": 35.5,
+      "yoy_pct_change": 125.9,
+      "long_arc_pct_change": 206.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 644672
+        },
+        {
+          "year": 2024,
+          "value": 1456277
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 82261234,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 11.9,
-      "long_arc_pct_change": 109.1,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -281,48 +293,26 @@
   ],
   "facilities": [
     {
-      "slug": "martinez-refining-co-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Martinez Refining CO LLC",
-      "parent_company": "Pbf Energy INC",
-      "total_pounds_recent": 857014,
-      "yoy_pct_change": -12.8,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Martinez"
-    },
-    {
-      "slug": "phillips-66-rodeo-renewable-energy-complex",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Phillips 66 Rodeo Renewable Energy Complex",
-      "parent_company": "Phillips 66 Co",
-      "total_pounds_recent": 711446,
-      "yoy_pct_change": -8.0,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Rodeo"
-    },
-    {
       "slug": "chevron-products-co-richmond-refinery",
       "state": "ca",
       "state_label": "California",
       "name": "Chevron Products CO Richmond Refinery",
       "parent_company": "Chevron CORP",
-      "total_pounds_recent": 571149,
-      "yoy_pct_change": -2.8,
+      "total_pounds_recent": 806300,
+      "yoy_pct_change": 41.2,
       "top_chemical": "Ammonia",
       "city": "Richmond"
     },
     {
-      "slug": "shell-catalysts-technologies-pittsburg",
+      "slug": "martinez-refining-co-llc",
       "state": "ca",
       "state_label": "California",
-      "name": "Shell Catalysts & Technologies - Pittsburg",
-      "parent_company": "Shell Petroleum INC",
-      "total_pounds_recent": 168391,
-      "yoy_pct_change": 55.3,
-      "top_chemical": "Molybdenum trioxide",
-      "city": "Pittsburg"
+      "name": "Martinez Refining CO LLC",
+      "parent_company": "Pbf Energy INC",
+      "total_pounds_recent": 735073,
+      "yoy_pct_change": -14.2,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Martinez"
     },
     {
       "slug": "corteva-agriscience-llc",
@@ -330,21 +320,43 @@
       "state_label": "California",
       "name": "Corteva Agriscience LLC",
       "parent_company": "Corteva INC",
-      "total_pounds_recent": 131334,
-      "yoy_pct_change": 240.8,
-      "top_chemical": "Hydrochloric acid (acid aerosols including mists, vapors, gas, fog, and other airborne forms of any particle size)",
+      "total_pounds_recent": 376444,
+      "yoy_pct_change": 186.6,
+      "top_chemical": "Nitrapyrin",
       "city": "Pittsburg"
     },
     {
-      "slug": "tesoro-refining-marketing-co-llc",
+      "slug": "phillips-66-rodeo-renewable-energy-complex",
       "state": "ca",
       "state_label": "California",
-      "name": "Tesoro Refining & Marketing CO LLC",
-      "parent_company": "Martinez Renewables LLC",
-      "total_pounds_recent": 93898,
-      "yoy_pct_change": 28.7,
-      "top_chemical": "Ammonia",
-      "city": "Martinez"
+      "name": "Phillips 66 Rodeo Renewable Energy Complex",
+      "parent_company": "Phillips 66 Co",
+      "total_pounds_recent": 307002,
+      "yoy_pct_change": -56.8,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Rodeo"
+    },
+    {
+      "slug": "air-liquide-large-industries-us-lp-rodeo-hydrogen-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Air Liquide Large Industries US LP - Rodeo Hydrogen Plant",
+      "parent_company": "American Air Liquide Holdings INC",
+      "total_pounds_recent": 246132,
+      "yoy_pct_change": 1540.4,
+      "top_chemical": "Zinc compounds",
+      "city": "Rodeo"
+    },
+    {
+      "slug": "shell-catalysts-technologies-pittsburg",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Shell Catalysts & Technologies - Pittsburg",
+      "parent_company": "Shell Petroleum INC",
+      "total_pounds_recent": 202730,
+      "yoy_pct_change": 20.4,
+      "top_chemical": "Molybdenum trioxide",
+      "city": "Pittsburg"
     },
     {
       "slug": "mecs-inc",
@@ -352,31 +364,20 @@
       "state_label": "California",
       "name": "Mecs INC.",
       "parent_company": "Elessent Clean Technologies INC",
-      "total_pounds_recent": 93528,
-      "yoy_pct_change": 23.9,
+      "total_pounds_recent": 144915,
+      "yoy_pct_change": 54.9,
       "top_chemical": "Vanadium compounds",
       "city": "Martinez"
     },
     {
-      "slug": "air-products-west-coast-hydrogen-hp-2",
+      "slug": "tesoro-refining-marketing-co-llc",
       "state": "ca",
       "state_label": "California",
-      "name": "Air Products West Coast Hydrogen - Hp-2",
-      "parent_company": "Air Products & Chemicals INC",
-      "total_pounds_recent": 23601,
-      "yoy_pct_change": 10.5,
-      "top_chemical": "Methanol",
-      "city": "Martinez"
-    },
-    {
-      "slug": "shell-chemical-lp-martinez-catalyst-plant",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Shell Chemical LP - Martinez Catalyst Plant",
-      "parent_company": "Shell Petroleum INC",
-      "total_pounds_recent": 21376,
-      "yoy_pct_change": -3.4,
-      "top_chemical": "Silver compounds",
+      "name": "Tesoro Refining & Marketing CO LLC",
+      "parent_company": "Martinez Renewables LLC",
+      "total_pounds_recent": 111069,
+      "yoy_pct_change": 18.3,
+      "top_chemical": "n-Hexane",
       "city": "Martinez"
     },
     {
@@ -385,84 +386,25 @@
       "state_label": "California",
       "name": "Air Products & Chemicals INC (Martinez-Waterfront Road)",
       "parent_company": "Air Products & Chemicals INC",
-      "total_pounds_recent": 17812,
-      "yoy_pct_change": -16.5,
+      "total_pounds_recent": 28349,
+      "yoy_pct_change": 59.2,
       "top_chemical": "Ammonia",
+      "city": "Martinez"
+    },
+    {
+      "slug": "air-products-west-coast-hydrogen-hp-2",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Air Products West Coast Hydrogen - Hp-2",
+      "parent_company": "Air Products & Chemicals INC",
+      "total_pounds_recent": 19013,
+      "yoy_pct_change": -19.4,
+      "top_chemical": "Methanol",
       "city": "Martinez"
     }
   ],
   "utilities": [],
-  "flags": [
-    {
-      "type": "long_arc_shift",
-      "severity": "regression",
-      "label": "Greenhouse gas emissions",
-      "summary": "Greenhouse gas emissions at Contra Costa County have more than doubled since 2010 (through 2023).",
-      "magnitude_pct": 109.1,
-      "magnitude_abs": 42926826.7,
-      "baseline_year": 2010,
-      "recent_year": 2023,
-      "units": "mtCO2e",
-      "history": [
-        {
-          "year": 2010,
-          "value": 39334407
-        },
-        {
-          "year": 2011,
-          "value": 72107992
-        },
-        {
-          "year": 2012,
-          "value": 112182316
-        },
-        {
-          "year": 2013,
-          "value": 121967587
-        },
-        {
-          "year": 2014,
-          "value": 132848440
-        },
-        {
-          "year": 2015,
-          "value": 108103922
-        },
-        {
-          "year": 2016,
-          "value": 98070792
-        },
-        {
-          "year": 2017,
-          "value": 110415618
-        },
-        {
-          "year": 2018,
-          "value": 106301016
-        },
-        {
-          "year": 2019,
-          "value": 104918059
-        },
-        {
-          "year": 2020,
-          "value": 81791851
-        },
-        {
-          "year": 2021,
-          "value": 77078427
-        },
-        {
-          "year": 2022,
-          "value": 73485085
-        },
-        {
-          "year": 2023,
-          "value": 82261234
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 1162648,
     "pct_low_income": 8.3,
@@ -534,5 +476,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

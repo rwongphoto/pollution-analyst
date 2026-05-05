@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 0,
-    "total_releases_pounds": 1416,
-    "air_releases_pounds": 661,
+    "total_releases_pounds": 1138,
+    "air_releases_pounds": 459,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 755,
-    "yoy_pct_change": -15.6,
-    "long_arc_pct_change": -79.9,
+    "land_releases_pounds": 679,
+    "yoy_pct_change": -19.6,
+    "long_arc_pct_change": -83.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 1416
+      },
+      {
+        "year": 2024,
+        "value": 1138
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 661,
+      "current": 459,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 661
+          "year": 2024,
+          "value": 459
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 755,
+      "current": 679,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 755
+          "year": 2024,
+          "value": 679
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Old Country Millwork INC.",
       "parent_company": "Old Country Millwork INC",
-      "total_pounds_recent": 755,
-      "yoy_pct_change": -16.7,
+      "total_pounds_recent": 679,
+      "yoy_pct_change": -10.0,
       "top_chemical": "Chromium  and Chromium Compounds(except for chromite ore mined in the Transvaal Region)",
       "city": "Los Angeles"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "Silvestri California",
       "parent_company": null,
-      "total_pounds_recent": 661,
-      "yoy_pct_change": -14.3,
+      "total_pounds_recent": 459,
+      "yoy_pct_change": -30.6,
       "top_chemical": "Styrene",
       "city": "Los Angeles"
     }
@@ -304,5 +308,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

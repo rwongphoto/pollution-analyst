@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 4,
     "utilities_serving": 2,
-    "total_releases_pounds": 10303,
-    "air_releases_pounds": 197,
+    "total_releases_pounds": 14617,
+    "air_releases_pounds": 134,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 10105,
-    "yoy_pct_change": 8261.0,
-    "long_arc_pct_change": 3264.9,
+    "land_releases_pounds": 14483,
+    "yoy_pct_change": 41.9,
+    "long_arc_pct_change": 4674.1,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 10303
+      },
+      {
+        "year": 2024,
+        "value": 14617
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 197,
+      "current": 134,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 197
+          "year": 2024,
+          "value": 134
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 10105,
+      "current": 14483,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 10105
+          "year": 2024,
+          "value": 14483
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Alloy Processing",
       "parent_company": "Berkshire Hathaway INC",
-      "total_pounds_recent": 10087,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 14485,
+      "yoy_pct_change": 43.6,
       "top_chemical": "Nitric acid",
       "city": "Compton"
     },
@@ -212,9 +216,20 @@
       "state_label": "California",
       "name": "Demennokerdoon Dba World Oil Recycling",
       "parent_company": "World Oil CORP",
-      "total_pounds_recent": 184,
-      "yoy_pct_change": 112.0,
+      "total_pounds_recent": 100,
+      "yoy_pct_change": -45.7,
       "top_chemical": "Lead",
+      "city": "Compton"
+    },
+    {
+      "slug": "owens-corning-roofing-asphalt-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Owens Corning Roofing & Asphalt LLC",
+      "parent_company": "Owens Corning",
+      "total_pounds_recent": 17,
+      "yoy_pct_change": 9.8,
+      "top_chemical": "Polycyclic aromatic compounds",
       "city": "Compton"
     },
     {
@@ -223,21 +238,10 @@
       "state_label": "California",
       "name": "Gardena Plant 25",
       "parent_company": "Mcc Development CORP",
-      "total_pounds_recent": 16,
-      "yoy_pct_change": -9.4,
+      "total_pounds_recent": 15,
+      "yoy_pct_change": -7.9,
       "top_chemical": "Lead compounds",
       "city": "Rosewood"
-    },
-    {
-      "slug": "owens-corning-roofing-asphalt-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Owens Corning Roofing & Asphalt LLC",
-      "parent_company": "Owens Corning",
-      "total_pounds_recent": 15,
-      "yoy_pct_change": -16.6,
-      "top_chemical": "Polycyclic aromatic compounds",
-      "city": "Compton"
     }
   ],
   "water": {
@@ -347,5 +351,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

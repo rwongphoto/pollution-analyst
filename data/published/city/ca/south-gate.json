@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 11,
     "utilities_serving": 1,
-    "total_releases_pounds": 42088,
-    "air_releases_pounds": 3075,
-    "water_releases_pounds": 19,
-    "land_releases_pounds": 38995,
-    "yoy_pct_change": 18.6,
-    "long_arc_pct_change": 584.5,
+    "total_releases_pounds": 47520,
+    "air_releases_pounds": 3281,
+    "water_releases_pounds": 3,
+    "land_releases_pounds": 44236,
+    "yoy_pct_change": 12.9,
+    "long_arc_pct_change": 672.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 42088
+      },
+      {
+        "year": 2024,
+        "value": 47520
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 3075,
+      "current": 3281,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 3075
+          "year": 2024,
+          "value": 3281
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 19,
+      "current": 3,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 19
+          "year": 2024,
+          "value": 3
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 38995,
+      "current": 44236,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 38995
+          "year": 2024,
+          "value": 44236
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,20 +205,9 @@
       "state_label": "California",
       "name": "Techni-Cast Corp",
       "parent_company": null,
-      "total_pounds_recent": 14517,
-      "yoy_pct_change": 4.2,
+      "total_pounds_recent": 14327,
+      "yoy_pct_change": -1.3,
       "top_chemical": "Copper",
-      "city": "South Gate"
-    },
-    {
-      "slug": "shultz-steel-co",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Shultz Steel CO",
-      "parent_company": "Berkshire Hathaway INC",
-      "total_pounds_recent": 9247,
-      "yoy_pct_change": 56.9,
-      "top_chemical": "Nickel",
       "city": "South Gate"
     },
     {
@@ -223,8 +216,8 @@
       "state_label": "California",
       "name": "Saputo Cheese USA INC",
       "parent_company": "Saputo INC",
-      "total_pounds_recent": 8569,
-      "yoy_pct_change": 20.2,
+      "total_pounds_recent": 12641,
+      "yoy_pct_change": 47.5,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "South Gate"
     },
@@ -234,9 +227,20 @@
       "state_label": "California",
       "name": "Pacific Alloy Castings",
       "parent_company": null,
-      "total_pounds_recent": 6261,
-      "yoy_pct_change": 18.6,
+      "total_pounds_recent": 9072,
+      "yoy_pct_change": 44.9,
       "top_chemical": "Chromium",
+      "city": "South Gate"
+    },
+    {
+      "slug": "shultz-steel-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Shultz Steel CO",
+      "parent_company": "Berkshire Hathaway INC",
+      "total_pounds_recent": 7797,
+      "yoy_pct_change": -15.7,
+      "top_chemical": "Nickel",
       "city": "South Gate"
     },
     {
@@ -245,8 +249,8 @@
       "state_label": "California",
       "name": "Tesoro - Vinvale Terminal",
       "parent_company": "Marathon Petroleum CORP",
-      "total_pounds_recent": 2306,
-      "yoy_pct_change": 7.0,
+      "total_pounds_recent": 2820,
+      "yoy_pct_change": 22.3,
       "top_chemical": "Toluene",
       "city": "South Gate"
     },
@@ -256,20 +260,9 @@
       "state_label": "California",
       "name": "Lunday-Thagard CO Dba World Oil Refining",
       "parent_company": "World Oil CORP",
-      "total_pounds_recent": 1157,
-      "yoy_pct_change": 9.9,
-      "top_chemical": "Naphthalene",
-      "city": "South Gate"
-    },
-    {
-      "slug": "titan-terminal-transport",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Titan Terminal & Transport",
-      "parent_company": null,
-      "total_pounds_recent": 12,
-      "yoy_pct_change": -33.4,
-      "top_chemical": "Methanol",
+      "total_pounds_recent": 841,
+      "yoy_pct_change": -27.3,
+      "top_chemical": "n-Hexane",
       "city": "South Gate"
     },
     {
@@ -278,8 +271,8 @@
       "state_label": "California",
       "name": "Griswold Industries Dba Soundcast",
       "parent_company": "Griswold Industries",
-      "total_pounds_recent": 7,
-      "yoy_pct_change": -7.4,
+      "total_pounds_recent": 6,
+      "yoy_pct_change": -16.7,
       "top_chemical": "Chromium",
       "city": "South Gate"
     },
@@ -295,13 +288,24 @@
       "city": "South Gate"
     },
     {
+      "slug": "herbert-malarkey-roofing-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Herbert Malarkey Roofing CO",
+      "parent_company": "Holcim Participations (Us) INC",
+      "total_pounds_recent": 4,
+      "yoy_pct_change": 31.8,
+      "top_chemical": "Polycyclic aromatic compounds",
+      "city": "South Gate"
+    },
+    {
       "slug": "hughes-bros-aircrafters-inc",
       "state": "ca",
       "state_label": "California",
       "name": "Hughes Bros Aircrafters INC",
       "parent_company": null,
       "total_pounds_recent": 4,
-      "yoy_pct_change": 7.7,
+      "yoy_pct_change": -6.6,
       "top_chemical": "Lead",
       "city": "South Gate"
     }
@@ -403,5 +407,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

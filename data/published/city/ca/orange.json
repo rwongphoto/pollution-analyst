@@ -9,17 +9,17 @@
     "county_name": "Orange",
     "county_fips": "06059"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 11,
-    "utilities_serving": 4,
-    "total_releases_pounds": 36220,
-    "air_releases_pounds": 2410,
-    "water_releases_pounds": 6,
-    "land_releases_pounds": 33803,
-    "yoy_pct_change": -22.2,
-    "long_arc_pct_change": -29.8,
+    "utilities_serving": 3,
+    "total_releases_pounds": 48209,
+    "air_releases_pounds": 3116,
+    "water_releases_pounds": 5,
+    "land_releases_pounds": 45088,
+    "yoy_pct_change": 33.1,
+    "long_arc_pct_change": -6.6,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 36220
+      },
+      {
+        "year": 2024,
+        "value": 48209
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 2410,
+      "current": 3116,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 2410
+          "year": 2024,
+          "value": 3116
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 6,
+      "current": 5,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 6
+          "year": 2024,
+          "value": 5
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 33803,
+      "current": 45088,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 33803
+          "year": 2024,
+          "value": 45088
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2636013,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": 39.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Continuous Coating Corp",
       "parent_company": "Usg CORP",
-      "total_pounds_recent": 27827,
-      "yoy_pct_change": 27.7,
+      "total_pounds_recent": 37093,
+      "yoy_pct_change": 33.3,
       "top_chemical": "Zinc compounds",
       "city": "Orange"
     },
@@ -212,20 +216,9 @@
       "state_label": "California",
       "name": "Anillo Industries INC.",
       "parent_company": "Novaria Group",
-      "total_pounds_recent": 3192,
-      "yoy_pct_change": 60.6,
+      "total_pounds_recent": 4666,
+      "yoy_pct_change": 46.2,
       "top_chemical": "Chromium",
-      "city": "Orange"
-    },
-    {
-      "slug": "summit-interconnect-inc-orange",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Summit Interconnect INC. Orange",
-      "parent_company": "Summit Interconnect Intermediate INC",
-      "total_pounds_recent": 2685,
-      "yoy_pct_change": -86.8,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Orange"
     },
     {
@@ -234,9 +227,20 @@
       "state_label": "California",
       "name": "Cytec Solvay Composite Materials Orange",
       "parent_company": "Syensqo Holding INC",
-      "total_pounds_recent": 1591,
-      "yoy_pct_change": 23.0,
+      "total_pounds_recent": 3086,
+      "yoy_pct_change": 94.0,
       "top_chemical": "Methanol",
+      "city": "Orange"
+    },
+    {
+      "slug": "summit-interconnect-inc-orange",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Summit Interconnect INC. Orange",
+      "parent_company": "Summit Interconnect Intermediate INC",
+      "total_pounds_recent": 2201,
+      "yoy_pct_change": -18.0,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Orange"
     },
     {
@@ -248,6 +252,17 @@
       "total_pounds_recent": 500,
       "yoy_pct_change": 0.0,
       "top_chemical": "Methanol",
+      "city": "Orange"
+    },
+    {
+      "slug": "fxi-inc-orange",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Fxi INC. - Orange",
+      "parent_company": "Fxi INC",
+      "total_pounds_recent": 271,
+      "yoy_pct_change": 1314.8,
+      "top_chemical": "Toluene diisocyanate (mixed isomers)",
       "city": "Orange"
     },
     {
@@ -267,8 +282,8 @@
       "state_label": "California",
       "name": "Commercial Metal Forming",
       "parent_company": "Commercial Metal Forming",
-      "total_pounds_recent": 47,
-      "yoy_pct_change": 1.4,
+      "total_pounds_recent": 44,
+      "yoy_pct_change": -7.8,
       "top_chemical": "Manganese",
       "city": "Orange"
     },
@@ -278,8 +293,8 @@
       "state_label": "California",
       "name": "Ducommun Aerostructures INC Orange Facility",
       "parent_company": "Ducommun INC",
-      "total_pounds_recent": 43,
-      "yoy_pct_change": 0.0,
+      "total_pounds_recent": 42,
+      "yoy_pct_change": -2.3,
       "top_chemical": "Tetrachloroethylene",
       "city": "Orange"
     },
@@ -289,26 +304,15 @@
       "state_label": "California",
       "name": "Apct Anaheim",
       "parent_company": "Advancedpcb Holdings INC",
-      "total_pounds_recent": 43,
-      "yoy_pct_change": 1.8,
+      "total_pounds_recent": 39,
+      "yoy_pct_change": -7.6,
       "top_chemical": "Copper",
-      "city": "Orange"
-    },
-    {
-      "slug": "fxi-inc-orange",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Fxi INC. - Orange",
-      "parent_company": "Fxi INC",
-      "total_pounds_recent": 19,
-      "yoy_pct_change": -92.9,
-      "top_chemical": "Toluene diisocyanate (mixed isomers)",
       "city": "Orange"
     }
   ],
   "water": {
-    "utilities_count": 4,
-    "population_served_total": 124342,
+    "utilities_count": 3,
+    "population_served_total": 124234,
     "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
@@ -331,16 +335,6 @@
         "name": "East Orange County Wd - Rz",
         "pwsid": "CA3010068",
         "population_served": 3464,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "countryside-village",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Countryside Village",
-        "pwsid": "ID5420014",
-        "population_served": 108,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -433,5 +427,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

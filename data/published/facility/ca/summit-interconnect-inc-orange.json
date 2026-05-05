@@ -13,16 +13,16 @@
     "lat": 33.826793,
     "lng": -117.854228
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 2685,
+    "total_releases_pounds": 2201,
     "air_releases_pounds": 20,
-    "water_releases_pounds": 0,
-    "land_releases_pounds": 2665,
+    "water_releases_pounds": 0.5,
+    "land_releases_pounds": 2181,
     "chemicals_reported": 3,
-    "yoy_pct_change": -86.8,
-    "long_arc_pct_change": 953.0,
+    "yoy_pct_change": -18.0,
+    "long_arc_pct_change": 763.3,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -80,6 +80,10 @@
       {
         "year": 2023,
         "value": 2685
+      },
+      {
+        "year": 2024,
+        "value": 2201
       }
     ]
   },
@@ -88,7 +92,7 @@
       "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "cas": "N511",
       "category": "general",
-      "total_pounds_recent": 2175,
+      "total_pounds_recent": 2171,
       "history": [
         {
           "year": 2014,
@@ -121,9 +125,13 @@
         {
           "year": 2023,
           "value": 2175
+        },
+        {
+          "year": 2024,
+          "value": 2171
         }
       ],
-      "yoy_pct_change": -89.0,
+      "yoy_pct_change": -0.2,
       "long_arc_pct_change": -80.3,
       "long_arc_baseline_year": 2014
     },
@@ -131,12 +139,8 @@
       "chemical": "Copper  And Copper Compounds",
       "cas": "N100",
       "category": "general",
-      "total_pounds_recent": 500,
+      "total_pounds_recent": 20,
       "history": [
-        {
-          "year": 2010,
-          "value": 255
-        },
         {
           "year": 2011,
           "value": 255
@@ -188,10 +192,14 @@
         {
           "year": 2023,
           "value": 500
+        },
+        {
+          "year": 2024,
+          "value": 20
         }
       ],
-      "yoy_pct_change": 13.1,
-      "long_arc_pct_change": 96.1,
+      "yoy_pct_change": -95.9,
+      "long_arc_pct_change": -92.0,
       "long_arc_baseline_year": 2010
     },
     {
@@ -215,6 +223,10 @@
         {
           "year": 2023,
           "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 10
         }
       ],
       "yoy_pct_change": 0.0,
@@ -222,53 +234,7 @@
       "long_arc_baseline_year": 2020
     }
   ],
-  "flags": [
-    {
-      "type": "release_shift",
-      "severity": "drop",
-      "label": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "summary": "Nitrate compounds (water dissociable; reportable only when in aqueous solution) releases at Summit Interconnect INC. Orange fell from 20k lb to 2k lb (89% lower) between 2022 and 2023.",
-      "magnitude_pct": -89.0,
-      "magnitude_abs": -17660.9,
-      "baseline_year": 2022,
-      "recent_year": 2023,
-      "units": "lb",
-      "history": [
-        {
-          "year": 2014,
-          "value": 11047
-        },
-        {
-          "year": 2015,
-          "value": 12759
-        },
-        {
-          "year": 2016,
-          "value": 590
-        },
-        {
-          "year": 2017,
-          "value": 548
-        },
-        {
-          "year": 2018,
-          "value": 6680
-        },
-        {
-          "year": 2019,
-          "value": 8216
-        },
-        {
-          "year": 2022,
-          "value": 19836
-        },
-        {
-          "year": 2023,
-          "value": 2175
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 3175227,
     "pct_low_income": 9.7,
@@ -338,5 +304,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

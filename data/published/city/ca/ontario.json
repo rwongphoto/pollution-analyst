@@ -9,17 +9,17 @@
     "county_name": "San Bernardino",
     "county_fips": "06071"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 11,
-    "utilities_serving": 3,
-    "total_releases_pounds": 18659,
-    "air_releases_pounds": 13123,
-    "water_releases_pounds": 0.0,
-    "land_releases_pounds": 5536,
-    "yoy_pct_change": -95.7,
-    "long_arc_pct_change": 24.4,
+    "facilities_in_city": 13,
+    "utilities_serving": 2,
+    "total_releases_pounds": 24903,
+    "air_releases_pounds": 13705,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 11198,
+    "yoy_pct_change": 33.5,
+    "long_arc_pct_change": 66.0,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -56,27 +56,31 @@
       },
       {
         "year": 2018,
-        "value": 45378
+        "value": 45379
       },
       {
         "year": 2019,
-        "value": 46226
+        "value": 46234
       },
       {
         "year": 2020,
-        "value": 42798
+        "value": 42803
       },
       {
         "year": 2021,
-        "value": 42765
+        "value": 42766
       },
       {
         "year": 2022,
-        "value": 436261
+        "value": 436263
       },
       {
         "year": 2023,
         "value": 18659
+      },
+      {
+        "year": 2024,
+        "value": 24903
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 13123,
+      "current": 13705,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 13123
+          "year": 2024,
+          "value": 13705
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 5536,
+      "current": 11198,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 5536
+          "year": 2024,
+          "value": 11198
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 9779299,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -6.6,
-      "long_arc_pct_change": -7.3,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,9 +205,20 @@
       "state_label": "California",
       "name": "New-Indy Containerboard Ontario LLC",
       "parent_company": "New-Indy Containerboard LLC",
-      "total_pounds_recent": 6524,
-      "yoy_pct_change": -98.5,
+      "total_pounds_recent": 7072,
+      "yoy_pct_change": 8.4,
       "top_chemical": "Ammonia",
+      "city": "Ontario"
+    },
+    {
+      "slug": "lighting-resources-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Lighting Resources LLC",
+      "parent_company": "Lighting Resources LLC",
+      "total_pounds_recent": 7050,
+      "yoy_pct_change": null,
+      "top_chemical": "Mercury compounds",
       "city": "Ontario"
     },
     {
@@ -212,8 +227,8 @@
       "state_label": "California",
       "name": "Sherwin-Williams CO",
       "parent_company": "The Sherwin-Williams Co",
-      "total_pounds_recent": 5457,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 3848,
+      "yoy_pct_change": -29.5,
       "top_chemical": "Triglycidyl isocyanurate",
       "city": "Ontario"
     },
@@ -223,8 +238,8 @@
       "state_label": "California",
       "name": "Linde INC",
       "parent_company": "Linde INC",
-      "total_pounds_recent": 3007,
-      "yoy_pct_change": 29.1,
+      "total_pounds_recent": 3093,
+      "yoy_pct_change": 2.9,
       "top_chemical": "Ammonia",
       "city": "Ontario"
     },
@@ -234,8 +249,8 @@
       "state_label": "California",
       "name": "Hudson Technologies CO",
       "parent_company": "Hudson Technologies INC",
-      "total_pounds_recent": 2925,
-      "yoy_pct_change": 13.6,
+      "total_pounds_recent": 2450,
+      "yoy_pct_change": -16.2,
       "top_chemical": "Chlorodifluoromethane (HCFC-22)",
       "city": "Ontario"
     },
@@ -245,8 +260,8 @@
       "state_label": "California",
       "name": "Prc Composites LLC",
       "parent_company": null,
-      "total_pounds_recent": 500,
-      "yoy_pct_change": 0.0,
+      "total_pounds_recent": 750,
+      "yoy_pct_change": 50.0,
       "top_chemical": "Styrene",
       "city": "Ontario"
     },
@@ -256,8 +271,8 @@
       "state_label": "California",
       "name": "Sterigenics-Ontario Facility",
       "parent_company": "Sotera Health LLC",
-      "total_pounds_recent": 208,
-      "yoy_pct_change": -21.5,
+      "total_pounds_recent": 612,
+      "yoy_pct_change": 194.2,
       "top_chemical": "Ethylene oxide",
       "city": "Ontario"
     },
@@ -267,30 +282,19 @@
       "state_label": "California",
       "name": "Elite Comfort Solutions",
       "parent_company": "Leggett & Platt INC",
-      "total_pounds_recent": 28,
-      "yoy_pct_change": -99.3,
+      "total_pounds_recent": 23,
+      "yoy_pct_change": -18.4,
       "top_chemical": "Toluene diisocyanate (mixed isomers)",
       "city": "Ontario"
     },
     {
-      "slug": "l-p-financial-services-co",
+      "slug": "net-shapes-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "L&P Financial Services CO.",
-      "parent_company": "Leggett & Platt INC",
-      "total_pounds_recent": 5,
-      "yoy_pct_change": -14.9,
-      "top_chemical": "Diisocyanates",
-      "city": "Ontario"
-    },
-    {
-      "slug": "summit-machine-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Summit Machine LLC",
-      "parent_company": "Berkshire Hathaway INC",
-      "total_pounds_recent": 3,
-      "yoy_pct_change": 200.0,
+      "name": "Net Shapes INC",
+      "parent_company": null,
+      "total_pounds_recent": 2,
+      "yoy_pct_change": null,
       "top_chemical": "Nickel",
       "city": "Ontario"
     },
@@ -301,13 +305,13 @@
       "name": "Net Shapes INC",
       "parent_company": null,
       "total_pounds_recent": 2,
-      "yoy_pct_change": 21.7,
+      "yoy_pct_change": -3.6,
       "top_chemical": "Chromium",
       "city": "Ontario"
     }
   ],
   "water": {
-    "utilities_count": 3,
+    "utilities_count": 2,
     "population_served_total": 185010,
     "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
@@ -321,16 +325,6 @@
         "name": "Ontario Municipal Utilities Company",
         "pwsid": "CA3610034",
         "population_served": 185010,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "chino-basin-desalter-auth-desalter-2",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Chino Basin Desalter Auth. - Desalter 2",
-        "pwsid": "CA3310083",
-        "population_served": 0,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -423,5 +417,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

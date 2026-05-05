@@ -9,17 +9,17 @@
     "county_name": "Madera",
     "county_fips": "06039"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 4,
-    "utilities_serving": 31,
-    "total_releases_pounds": 79150,
-    "air_releases_pounds": 77027,
-    "water_releases_pounds": 0,
-    "land_releases_pounds": 2123,
-    "yoy_pct_change": -18.5,
-    "long_arc_pct_change": 127.7,
+    "facilities_in_city": 5,
+    "utilities_serving": 30,
+    "total_releases_pounds": 90890,
+    "air_releases_pounds": 88044,
+    "water_releases_pounds": 1,
+    "land_releases_pounds": 2844,
+    "yoy_pct_change": 14.8,
+    "long_arc_pct_change": 161.4,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 79150
+      },
+      {
+        "year": 2024,
+        "value": 90890
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 77027,
+      "current": 88044,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 77027
+          "year": 2024,
+          "value": 88044
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 0,
+      "current": 1,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 0
+          "year": 2024,
+          "value": 1
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 2123,
+      "current": 2844,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 2123
+          "year": 2024,
+          "value": 2844
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 184315,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.8,
-      "long_arc_pct_change": 39.2,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Florestone LLC",
       "parent_company": "American Bath Group LLC",
-      "total_pounds_recent": 72000,
-      "yoy_pct_change": -21.1,
+      "total_pounds_recent": 82967,
+      "yoy_pct_change": 15.2,
       "top_chemical": "Styrene",
       "city": "Madera"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "Oldcastle Infrastructure INC.",
       "parent_company": "Crh Americas INC",
-      "total_pounds_recent": 5078,
-      "yoy_pct_change": 11.3,
+      "total_pounds_recent": 7045,
+      "yoy_pct_change": 38.7,
       "top_chemical": "Styrene",
       "city": "Madera"
     },
@@ -223,8 +227,8 @@
       "state_label": "California",
       "name": "Nutra Blend LLC",
       "parent_company": "Land O Lakes INC",
-      "total_pounds_recent": 1992,
-      "yoy_pct_change": 65.7,
+      "total_pounds_recent": 733,
+      "yoy_pct_change": -63.2,
       "top_chemical": "Zinc compounds",
       "city": "Madera"
     },
@@ -234,19 +238,30 @@
       "state_label": "California",
       "name": "Moore Quality Galvanizing",
       "parent_company": null,
-      "total_pounds_recent": 80,
-      "yoy_pct_change": 29.0,
+      "total_pounds_recent": 138,
+      "yoy_pct_change": 72.5,
       "top_chemical": "Zinc compounds",
+      "city": "Madera"
+    },
+    {
+      "slug": "evapco-madera",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Evapco - Madera",
+      "parent_company": "Evapco INC",
+      "total_pounds_recent": 7,
+      "yoy_pct_change": null,
+      "top_chemical": "Chromium",
       "city": "Madera"
     }
   ],
   "water": {
-    "utilities_count": 31,
-    "population_served_total": 88990,
-    "violations_5yr_total": 441,
+    "utilities_count": 30,
+    "population_served_total": 88901,
+    "violations_5yr_total": 440,
     "health_based_5yr_total": 275,
-    "unresolved_total": 316,
-    "utilities_with_unresolved": 10,
+    "unresolved_total": 315,
+    "utilities_with_unresolved": 9,
     "utilities": [
       {
         "slug": "madera-co-md1-hidden-lake-estates",
@@ -509,16 +524,6 @@
         "unresolved": false
       },
       {
-        "slug": "sandy-creek-village-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Sandy Creek Village Mhp",
-        "pwsid": "CA1000260",
-        "population_served": 89,
-        "health_based_violations_5yr": 0,
-        "unresolved": true
-      },
-      {
         "slug": "md-36-eastin-arcola",
         "state": "ca",
         "state_label": "California",
@@ -637,5 +642,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

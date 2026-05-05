@@ -7,16 +7,16 @@
     "fips": "06031",
     "population": 152515
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 21291,
+      "current": 61037,
       "units": "lb",
-      "yoy_pct_change": -15.4,
-      "long_arc_pct_change": -82.1,
+      "yoy_pct_change": 186.7,
+      "long_arc_pct_change": -48.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,6 +74,10 @@
         {
           "year": 2023,
           "value": 21291
+        },
+        {
+          "year": 2024,
+          "value": 61037
         }
       ]
     },
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 4036594,
+      "current": 6053114,
       "units": "lb",
-      "yoy_pct_change": -22.3,
-      "long_arc_pct_change": -37.6,
+      "yoy_pct_change": 50.0,
+      "long_arc_pct_change": -6.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 4036594
+        },
+        {
+          "year": 2024,
+          "value": 6053114
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 205176,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -14.5,
-      "long_arc_pct_change": -60.8,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -286,8 +298,8 @@
       "state_label": "California",
       "name": "Chemical Waste Management INC",
       "parent_company": "Waste Management INC",
-      "total_pounds_recent": 4038278,
-      "yoy_pct_change": -22.3,
+      "total_pounds_recent": 6062449,
+      "yoy_pct_change": 50.1,
       "top_chemical": "Asbestos (friable)",
       "city": "Kettleman City"
     },
@@ -297,9 +309,20 @@
       "state_label": "California",
       "name": "Jg Boswell CO Oil Mill",
       "parent_company": "Jg Boswell Co",
-      "total_pounds_recent": 17697,
-      "yoy_pct_change": -12.0,
+      "total_pounds_recent": 49627,
+      "yoy_pct_change": 180.4,
       "top_chemical": "n-Hexane",
+      "city": "Corcoran"
+    },
+    {
+      "slug": "j-g-boswell-co-kings-tomato",
+      "state": "ca",
+      "state_label": "California",
+      "name": "J.G. Boswell CO - Kings Tomato",
+      "parent_company": "Jg Boswell Co",
+      "total_pounds_recent": 542,
+      "yoy_pct_change": 80.7,
+      "top_chemical": "Ammonia",
       "city": "Corcoran"
     },
     {
@@ -308,8 +331,8 @@
       "state_label": "California",
       "name": "US Dod Nas Lemoore (Installation)",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 570,
-      "yoy_pct_change": -13.2,
+      "total_pounds_recent": 542,
+      "yoy_pct_change": -4.9,
       "top_chemical": "Lead",
       "city": "Lemoore"
     },
@@ -319,32 +342,10 @@
       "state_label": "California",
       "name": "Leprino Foods CO",
       "parent_company": "Leprino Foods Co",
-      "total_pounds_recent": 510,
-      "yoy_pct_change": 2.0,
+      "total_pounds_recent": 505,
+      "yoy_pct_change": -1.0,
       "top_chemical": "Nitric acid",
       "city": "Lemoore"
-    },
-    {
-      "slug": "j-g-boswell-co-kings-tomato",
-      "state": "ca",
-      "state_label": "California",
-      "name": "J.G. Boswell CO - Kings Tomato",
-      "parent_company": "Jg Boswell Co",
-      "total_pounds_recent": 300,
-      "yoy_pct_change": -53.4,
-      "top_chemical": "Ammonia",
-      "city": "Corcoran"
-    },
-    {
-      "slug": "airgas-specialty-products-hanford-ca",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Airgas Specialty Products - Hanford Ca",
-      "parent_company": "Airgas INC",
-      "total_pounds_recent": 275,
-      "yoy_pct_change": 0.0,
-      "top_chemical": "Ammonia",
-      "city": "Hanford"
     },
     {
       "slug": "leprino-foods-co",
@@ -353,83 +354,24 @@
       "name": "Leprino Foods CO",
       "parent_company": "Leprino Foods Co",
       "total_pounds_recent": 255,
-      "yoy_pct_change": -49.5,
+      "yoy_pct_change": 0.0,
       "top_chemical": "Nitric acid",
       "city": "Lemoore"
+    },
+    {
+      "slug": "airgas-specialty-products-hanford-ca",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Airgas Specialty Products - Hanford Ca",
+      "parent_company": "Airgas INC",
+      "total_pounds_recent": 232,
+      "yoy_pct_change": -15.6,
+      "top_chemical": "Ammonia",
+      "city": "Hanford"
     }
   ],
   "utilities": [],
-  "flags": [
-    {
-      "type": "long_arc_shift",
-      "severity": "improvement",
-      "label": "Greenhouse gas emissions",
-      "summary": "Greenhouse gas emissions at Kings County have more than halved since 2010 (through 2023).",
-      "magnitude_pct": -60.8,
-      "magnitude_abs": -317719.1,
-      "baseline_year": 2010,
-      "recent_year": 2023,
-      "units": "mtCO2e",
-      "history": [
-        {
-          "year": 2010,
-          "value": 522895
-        },
-        {
-          "year": 2011,
-          "value": 468094
-        },
-        {
-          "year": 2012,
-          "value": 385083
-        },
-        {
-          "year": 2013,
-          "value": 419095
-        },
-        {
-          "year": 2014,
-          "value": 488771
-        },
-        {
-          "year": 2015,
-          "value": 428018
-        },
-        {
-          "year": 2016,
-          "value": 290153
-        },
-        {
-          "year": 2017,
-          "value": 269662
-        },
-        {
-          "year": 2018,
-          "value": 257719
-        },
-        {
-          "year": 2019,
-          "value": 279380
-        },
-        {
-          "year": 2020,
-          "value": 213454
-        },
-        {
-          "year": 2021,
-          "value": 200489
-        },
-        {
-          "year": 2022,
-          "value": 240112
-        },
-        {
-          "year": 2023,
-          "value": 205176
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 152515,
     "pct_low_income": 16.2,
@@ -501,5 +443,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

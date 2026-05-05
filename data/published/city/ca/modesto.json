@@ -9,17 +9,17 @@
     "county_name": "Stanislaus",
     "county_fips": "06099"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
-    "utilities_serving": 16,
-    "total_releases_pounds": 39858,
-    "air_releases_pounds": 3119,
+    "utilities_serving": 15,
+    "total_releases_pounds": 16480,
+    "air_releases_pounds": 2207,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 36739,
-    "yoy_pct_change": 41.5,
-    "long_arc_pct_change": 1569.1,
+    "land_releases_pounds": 14273,
+    "yoy_pct_change": -58.7,
+    "long_arc_pct_change": 590.1,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 39858
+      },
+      {
+        "year": 2024,
+        "value": 16480
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 3119,
+      "current": 2207,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 3119
+          "year": 2024,
+          "value": 2207
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 36739,
+      "current": 14273,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 36739
+          "year": 2024,
+          "value": 14273
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1582022,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.2,
-      "long_arc_pct_change": 6.3,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,20 +205,9 @@
       "state_label": "California",
       "name": "Crystal Creamery INC.",
       "parent_company": "Crystal Creamery INC",
-      "total_pounds_recent": 29731,
-      "yoy_pct_change": 20.6,
+      "total_pounds_recent": 14402,
+      "yoy_pct_change": -51.6,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Modesto"
-    },
-    {
-      "slug": "enviro-tech-chemical-services-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Enviro Tech Chemical Services INC.",
-      "parent_company": "Arxada LLC",
-      "total_pounds_recent": 7655,
-      "yoy_pct_change": 1431.0,
-      "top_chemical": "Peracetic acid",
       "city": "Modesto"
     },
     {
@@ -223,16 +216,27 @@
       "state_label": "California",
       "name": "Custom Marble & Onyx",
       "parent_company": "Sharcar Enterprises INC",
-      "total_pounds_recent": 2472,
-      "yoy_pct_change": -17.5,
+      "total_pounds_recent": 1578,
+      "yoy_pct_change": -36.2,
       "top_chemical": "Styrene",
+      "city": "Modesto"
+    },
+    {
+      "slug": "enviro-tech-chemical-services-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Enviro Tech Chemical Services INC.",
+      "parent_company": "Arxada LLC",
+      "total_pounds_recent": 500,
+      "yoy_pct_change": -93.5,
+      "top_chemical": "Peracetic acid",
       "city": "Modesto"
     }
   ],
   "water": {
-    "utilities_count": 16,
-    "population_served_total": 239487,
-    "violations_5yr_total": 14,
+    "utilities_count": 15,
+    "population_served_total": 239032,
+    "violations_5yr_total": 11,
     "health_based_5yr_total": 1,
     "unresolved_total": 9,
     "utilities_with_unresolved": 4,
@@ -306,16 +310,6 @@
         "population_served": 887,
         "health_based_violations_5yr": 0,
         "unresolved": true
-      },
-      {
-        "slug": "buena-vista-migrant-center",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Buena Vista Migrant Center",
-        "pwsid": "CA4400763",
-        "population_served": 455,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
       },
       {
         "slug": "park-heights-mutual-water-co",
@@ -476,5 +470,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -381,14 +381,52 @@ def run_state(
     except Exception as exc:  # noqa: BLE001
         logging.warning("Place point-in-polygon failed for %s: %s", state.abbr, exc)
         place_to_facility_ids = {}
-    place_to_utilities: dict[str, list] = {}
+    # First pass: candidate utilities per place by SDWIS city_name match.
+    # SDWIS city_name is unreliable on its own — it often records the operator's
+    # billing/HQ city, not the service area. We filter by county in the second
+    # pass below to drop matches like CA37/CA28/CA49 mobile-home parks landing
+    # under "Stockton" because their operator is HQ'd there.
+    place_to_utility_candidates: dict[str, list] = {}
     for u in utilities.values():
         pf = place_name_to_fips.get((u.city_name or "").strip().upper())
         if pf:
-            place_to_utilities.setdefault(pf, []).append(u)
+            place_to_utility_candidates.setdefault(pf, []).append(u)
+
+    # Second pass: derive each place's canonical county and filter utilities to
+    # that county. Priority for the canonical county:
+    #   (a) majority county of facilities inside the place polygon — authoritative,
+    #       comes from centroid containment, not free-text fields.
+    #   (b) majority SDWIS county across the city_name candidates — only used when
+    #       the place has zero in-polygon facilities (bedroom communities).
+    from collections import Counter
+    place_to_utilities: dict[str, list] = {}
+    for pf in set(place_to_facility_ids.keys()) | set(place_to_utility_candidates.keys()):
+        counts: Counter[str] = Counter()
+        for fid in place_to_facility_ids.get(pf, []):
+            f = facilities.get(fid)
+            if f and f.county_fips:
+                counts[f.county_fips] += 1
+        if not counts:
+            for u in place_to_utility_candidates.get(pf, []):
+                cf = utility_county_map.get(u.pwsid)
+                if cf:
+                    counts[cf] += 1
+        canonical = counts.most_common(1)[0][0] if counts else None
+        if canonical:
+            kept = [
+                u for u in place_to_utility_candidates.get(pf, [])
+                if utility_county_map.get(u.pwsid) == canonical
+            ]
+            if kept:
+                place_to_utilities[pf] = kept
+        else:
+            # No county signal anywhere — keep candidates rather than drop
+            cands = place_to_utility_candidates.get(pf, [])
+            if cands:
+                place_to_utilities[pf] = cands
 
     city_paths: set = set()
-    # Build a city hub for any place with ≥1 facility or ≥1 utility — places
+    # Build a city hub for any place with ≥1 facility or ≥1 (filtered) utility — places
     # with neither aren't worth a programmatic page.
     eligible_places = set(place_to_facility_ids.keys()) | set(place_to_utilities.keys())
     for pf in eligible_places:

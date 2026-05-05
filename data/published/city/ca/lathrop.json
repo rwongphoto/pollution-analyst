@@ -9,17 +9,17 @@
     "county_name": "San Joaquin",
     "county_fips": "06077"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 5,
     "utilities_serving": 2,
-    "total_releases_pounds": 40057,
-    "air_releases_pounds": 4999,
+    "total_releases_pounds": 75137,
+    "air_releases_pounds": 1347,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 35058,
-    "yoy_pct_change": 35.5,
-    "long_arc_pct_change": 339.3,
+    "land_releases_pounds": 73790,
+    "yoy_pct_change": 87.6,
+    "long_arc_pct_change": 723.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 40057
+      },
+      {
+        "year": 2024,
+        "value": 75137
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 4999,
+      "current": 1347,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 4999
+          "year": 2024,
+          "value": 1347
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 35058,
+      "current": 73790,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 35058
+          "year": 2024,
+          "value": 73790
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1008482,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 46.5,
-      "long_arc_pct_change": -1.7,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Tesla INC",
       "parent_company": "Tesla INC",
-      "total_pounds_recent": 17319,
-      "yoy_pct_change": 8659540.0,
+      "total_pounds_recent": 30815,
+      "yoy_pct_change": 77.9,
       "top_chemical": "4,4'-Isopropylidenediphenol",
       "city": "Lathrop"
     },
@@ -212,9 +216,9 @@
       "state_label": "California",
       "name": "J R Simplot CO Lathrop",
       "parent_company": "J R Simplot Co",
-      "total_pounds_recent": 13374,
-      "yoy_pct_change": -20.4,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "total_pounds_recent": 25922,
+      "yoy_pct_change": 93.8,
+      "top_chemical": "Diisocyanates",
       "city": "Lathrop"
     },
     {
@@ -223,8 +227,8 @@
       "state_label": "California",
       "name": "California Natural Products",
       "parent_company": "Gehl Foods",
-      "total_pounds_recent": 8952,
-      "yoy_pct_change": -0.5,
+      "total_pounds_recent": 14816,
+      "yoy_pct_change": 65.5,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Lathrop"
     },
@@ -234,9 +238,9 @@
       "state_label": "California",
       "name": "Westlake Royal Roofing - Lathrop",
       "parent_company": "Westlake CORP",
-      "total_pounds_recent": 409,
-      "yoy_pct_change": 20.3,
-      "top_chemical": "Lead",
+      "total_pounds_recent": 3581,
+      "yoy_pct_change": 775.6,
+      "top_chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
       "city": "Lathrop"
     },
     {
@@ -245,8 +249,8 @@
       "state_label": "California",
       "name": "Cbc Steel Buildings",
       "parent_company": "Nucor CORP",
-      "total_pounds_recent": 2,
-      "yoy_pct_change": -99.9,
+      "total_pounds_recent": 3,
+      "yoy_pct_change": 19.3,
       "top_chemical": "Lead",
       "city": "Lathrop"
     }
@@ -358,5 +362,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

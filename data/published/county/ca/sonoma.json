@@ -7,16 +7,16 @@
     "fips": "06097",
     "population": 488436
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 27922,
+      "current": 8915,
       "units": "lb",
-      "yoy_pct_change": 56.9,
-      "long_arc_pct_change": 8442.8,
+      "yoy_pct_change": -68.1,
+      "long_arc_pct_change": 2627.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,6 +74,10 @@
         {
           "year": 2023,
           "value": 27922
+        },
+        {
+          "year": 2024,
+          "value": 8915
         }
       ]
     },
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 18754,
+      "current": 3089,
       "units": "lb",
-      "yoy_pct_change": 7.5,
-      "long_arc_pct_change": 24.1,
+      "yoy_pct_change": -83.5,
+      "long_arc_pct_change": -79.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 18754
+        },
+        {
+          "year": 2024,
+          "value": 3089
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 117873,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 67.6,
-      "long_arc_pct_change": -38.0,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -286,32 +298,10 @@
       "state_label": "California",
       "name": "Lgc Biosearch Technologies INC",
       "parent_company": "Lgc Biosearch Technologies INC",
-      "total_pounds_recent": 25175,
-      "yoy_pct_change": 73.5,
+      "total_pounds_recent": 6328,
+      "yoy_pct_change": -74.9,
       "top_chemical": "Dichloromethane",
       "city": "Petaluma"
-    },
-    {
-      "slug": "keysight-technologies-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Keysight Technologies INC",
-      "parent_company": "Keysight Technologies INC",
-      "total_pounds_recent": 16961,
-      "yoy_pct_change": 0.1,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Santa Rosa"
-    },
-    {
-      "slug": "nick-barbieri-trucking-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Nick Barbieri Trucking LLC",
-      "parent_company": "Reladyne LLC",
-      "total_pounds_recent": 2235,
-      "yoy_pct_change": -31.9,
-      "top_chemical": "Toluene",
-      "city": "Santa Rosa"
     },
     {
       "slug": "northgate-ready-mix",
@@ -319,10 +309,21 @@
       "state_label": "California",
       "name": "Northgate Ready Mix",
       "parent_company": "Crh Americas INC",
-      "total_pounds_recent": 1235,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 2581,
+      "yoy_pct_change": 109.1,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Windsor"
+    },
+    {
+      "slug": "nick-barbieri-trucking-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Nick Barbieri Trucking LLC",
+      "parent_company": "Reladyne LLC",
+      "total_pounds_recent": 2076,
+      "yoy_pct_change": -7.1,
+      "top_chemical": "Toluene",
+      "city": "Santa Rosa"
     },
     {
       "slug": "perdue-foods-llc-petaluma-poultry-processing-plant",
@@ -330,8 +331,8 @@
       "state_label": "California",
       "name": "Perdue Foods LLC - Petaluma Poultry Processing Plant",
       "parent_company": "Perdue Farms INC",
-      "total_pounds_recent": 503,
-      "yoy_pct_change": 13289.7,
+      "total_pounds_recent": 504,
+      "yoy_pct_change": 0.1,
       "top_chemical": "Peracetic acid",
       "city": "Petaluma"
     },
@@ -341,8 +342,8 @@
       "state_label": "California",
       "name": "Clover Stornetta Farms INC",
       "parent_company": null,
-      "total_pounds_recent": 404,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 221,
+      "yoy_pct_change": -45.2,
       "top_chemical": "Peracetic acid",
       "city": "Petaluma"
     },
@@ -352,8 +353,8 @@
       "state_label": "California",
       "name": "U.S. Coast Guard Training Center Petaluma",
       "parent_company": "US Department Of Homeland Security",
-      "total_pounds_recent": 102,
-      "yoy_pct_change": -76.7,
+      "total_pounds_recent": 200,
+      "yoy_pct_change": 96.1,
       "top_chemical": "Lead",
       "city": "Petaluma"
     },
@@ -363,9 +364,20 @@
       "state_label": "California",
       "name": "Itt Cannon LLC Dba Biw Connector Systems",
       "parent_company": "Itt CORP",
-      "total_pounds_recent": 60,
-      "yoy_pct_change": -7.7,
-      "top_chemical": "Lead  And Lead Compounds",
+      "total_pounds_recent": 83,
+      "yoy_pct_change": 38.3,
+      "top_chemical": "Lead compounds",
+      "city": "Santa Rosa"
+    },
+    {
+      "slug": "keysight-technologies-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Keysight Technologies INC",
+      "parent_company": "Keysight Technologies INC",
+      "total_pounds_recent": 10,
+      "yoy_pct_change": -99.9,
+      "top_chemical": "Nitric acid",
       "city": "Santa Rosa"
     },
     {
@@ -374,84 +386,14 @@
       "state_label": "California",
       "name": "Bodean CO INC",
       "parent_company": "Crh Americas INC",
-      "total_pounds_recent": 1,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 0.23,
+      "yoy_pct_change": -79.1,
       "top_chemical": "Polycyclic aromatic compounds",
       "city": "Santa Rosa"
     }
   ],
   "utilities": [],
-  "flags": [
-    {
-      "type": "ghg_step",
-      "severity": "surge",
-      "label": "Greenhouse gas emissions",
-      "summary": "GHG emissions in Sonoma County rose 68% year over year (70k mtCO\u2082e \u2192 118k mtCO\u2082e) \u2014 typical of new commissioning or expanded operations.",
-      "magnitude_pct": 67.6,
-      "magnitude_abs": 47526.2,
-      "baseline_year": 2022,
-      "recent_year": 2023,
-      "units": "mtCO2e",
-      "history": [
-        {
-          "year": 2010,
-          "value": 190188
-        },
-        {
-          "year": 2011,
-          "value": 184825
-        },
-        {
-          "year": 2012,
-          "value": 189951
-        },
-        {
-          "year": 2013,
-          "value": 175436
-        },
-        {
-          "year": 2014,
-          "value": 78299
-        },
-        {
-          "year": 2015,
-          "value": 71514
-        },
-        {
-          "year": 2016,
-          "value": 87893
-        },
-        {
-          "year": 2017,
-          "value": 85263
-        },
-        {
-          "year": 2018,
-          "value": 67507
-        },
-        {
-          "year": 2019,
-          "value": 76010
-        },
-        {
-          "year": 2020,
-          "value": 80123
-        },
-        {
-          "year": 2021,
-          "value": 69027
-        },
-        {
-          "year": 2022,
-          "value": 70347
-        },
-        {
-          "year": 2023,
-          "value": 117873
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 488436,
     "pct_low_income": 8.9,
@@ -523,5 +465,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

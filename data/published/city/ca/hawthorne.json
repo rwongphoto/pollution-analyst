@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
-    "utilities_serving": 5,
-    "total_releases_pounds": 2204,
-    "air_releases_pounds": 1835,
+    "utilities_serving": 1,
+    "total_releases_pounds": 2075,
+    "air_releases_pounds": 2027,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 368,
-    "yoy_pct_change": -11.4,
-    "long_arc_pct_change": -60.6,
+    "land_releases_pounds": 48,
+    "yoy_pct_change": -5.9,
+    "long_arc_pct_change": -62.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 2204
+      },
+      {
+        "year": 2024,
+        "value": 2075
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 1835,
+      "current": 2027,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1835
+          "year": 2024,
+          "value": 2027
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 368,
+      "current": 48,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 368
+          "year": 2024,
+          "value": 48
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Interplastic Corp",
       "parent_company": "Ip CORP",
-      "total_pounds_recent": 2135,
-      "yoy_pct_change": -10.5,
+      "total_pounds_recent": 2027,
+      "yoy_pct_change": -5.1,
       "top_chemical": "Styrene",
       "city": "Hawthorne"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "Teledyne Defense Electronics LLC Dba Teledyne Relays",
       "parent_company": "Teledyne Technologies INC",
-      "total_pounds_recent": 68,
-      "yoy_pct_change": -32.6,
+      "total_pounds_recent": 48,
+      "yoy_pct_change": -30.7,
       "top_chemical": "Lead",
       "city": "Hawthorne"
     },
@@ -223,16 +227,16 @@
       "state_label": "California",
       "name": "Osi Electronics",
       "parent_company": "Osi Systems INC",
-      "total_pounds_recent": 0.02,
-      "yoy_pct_change": 0.0,
+      "total_pounds_recent": 0.01,
+      "yoy_pct_change": -50.0,
       "top_chemical": "Lead",
       "city": "Hawthorne"
     }
   ],
   "water": {
-    "utilities_count": 5,
-    "population_served_total": 321206,
-    "violations_5yr_total": 3,
+    "utilities_count": 1,
+    "population_served_total": 277740,
+    "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
     "utilities_with_unresolved": 0,
@@ -244,46 +248,6 @@
         "name": "Gswc - Southwest",
         "pwsid": "CA1910155",
         "population_served": 277740,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "golden-state-water-company-orcutt",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Company - Orcutt",
-        "pwsid": "CA4210016",
-        "population_served": 34102,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "golden-state-water-company-los-osos",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Company - Los Osos",
-        "pwsid": "CA4010017",
-        "population_served": 5924,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "golden-state-water-company-tanglewood",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Company - Tanglewood",
-        "pwsid": "CA4210021",
-        "population_served": 1947,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "golden-state-water-company-edna",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Company - Edna",
-        "pwsid": "CA4010023",
-        "population_served": 1493,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -366,5 +330,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

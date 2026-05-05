@@ -9,17 +9,17 @@
     "county_name": "Ventura",
     "county_fips": "06111"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
     "utilities_serving": 13,
-    "total_releases_pounds": 31457,
-    "air_releases_pounds": 30877,
-    "water_releases_pounds": 28,
-    "land_releases_pounds": 551,
-    "yoy_pct_change": -3.8,
-    "long_arc_pct_change": 153.6,
+    "total_releases_pounds": 42244,
+    "air_releases_pounds": 41593,
+    "water_releases_pounds": 17,
+    "land_releases_pounds": 635,
+    "yoy_pct_change": 34.3,
+    "long_arc_pct_change": 240.5,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 31457
+      },
+      {
+        "year": 2024,
+        "value": 42244
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 30877,
+      "current": 41593,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 30877
+          "year": 2024,
+          "value": 41593
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 28,
+      "current": 17,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 28
+          "year": 2024,
+          "value": 17
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 551,
+      "current": 635,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 551
+          "year": 2024,
+          "value": 635
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 987448,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 2.2,
-      "long_arc_pct_change": -13.8,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "The Procter & Gamble Paper Product CO",
       "parent_company": "The Procter & Gamble Co",
-      "total_pounds_recent": 16697,
-      "yoy_pct_change": -6.9,
+      "total_pounds_recent": 25200,
+      "yoy_pct_change": 50.9,
       "top_chemical": "Ammonia",
       "city": "Oxnard"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "New-Indy Oxnard LLC",
       "parent_company": "New-Indy Containerboard LLC",
-      "total_pounds_recent": 14695,
-      "yoy_pct_change": 0.0,
+      "total_pounds_recent": 16963,
+      "yoy_pct_change": 15.4,
       "top_chemical": "Ammonia",
       "city": "Oxnard"
     },
@@ -223,8 +227,8 @@
       "state_label": "California",
       "name": "Aluminum Precision Products INC.",
       "parent_company": "Aluminum Precision Products INC",
-      "total_pounds_recent": 65,
-      "yoy_pct_change": -4.6,
+      "total_pounds_recent": 82,
+      "yoy_pct_change": 25.8,
       "top_chemical": "Copper",
       "city": "Oxnard"
     }
@@ -446,5 +450,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

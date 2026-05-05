@@ -7,16 +7,16 @@
     "fips": "06113",
     "population": 217141
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 42898,
+      "current": 52,
       "units": "lb",
-      "yoy_pct_change": -42.6,
-      "long_arc_pct_change": -44.0,
+      "yoy_pct_change": -99.9,
+      "long_arc_pct_change": -99.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,6 +74,10 @@
         {
           "year": 2023,
           "value": 42898
+        },
+        {
+          "year": 2024,
+          "value": 52
         }
       ]
     },
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 8107,
+      "current": 1842,
       "units": "lb",
-      "yoy_pct_change": -3.3,
-      "long_arc_pct_change": 3487.3,
+      "yoy_pct_change": -77.3,
+      "long_arc_pct_change": 715.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 8107
+        },
+        {
+          "year": 2024,
+          "value": 1842
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 124481,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 25.5,
-      "long_arc_pct_change": -14.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -281,35 +293,13 @@
   ],
   "facilities": [
     {
-      "slug": "truck-accessories-group-dba-tag-west",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Truck Accessories Group Dba Tag West",
-      "parent_company": "Jb Poindexter & Co INC",
-      "total_pounds_recent": 42836,
-      "yoy_pct_change": -42.6,
-      "top_chemical": "Styrene",
-      "city": "Woodland"
-    },
-    {
-      "slug": "nor-cal-beverage-co-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Nor-Cal Beverage CO INC",
-      "parent_company": "Nor-Cal Beverage Co INC",
-      "total_pounds_recent": 6333,
-      "yoy_pct_change": 3.6,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "West Sacramento"
-    },
-    {
       "slug": "watts-regulator-co",
       "state": "ca",
       "state_label": "California",
       "name": "Watts Regulator CO.",
       "parent_company": "Watts Water Technologies",
-      "total_pounds_recent": 1814,
-      "yoy_pct_change": -21.2,
+      "total_pounds_recent": 1872,
+      "yoy_pct_change": 3.2,
       "top_chemical": "Chromium",
       "city": "Woodland"
     },
@@ -320,7 +310,7 @@
       "name": "Veritiv Operating CO - Ca515 West Sacramento",
       "parent_company": "Veritiv Operating Co",
       "total_pounds_recent": 22,
-      "yoy_pct_change": 15.8,
+      "yoy_pct_change": 0.0,
       "top_chemical": "Diisocyanates",
       "city": "West Sacramento"
     },
@@ -330,14 +320,88 @@
       "state_label": "California",
       "name": "Pavestone - Winters Ca Plant",
       "parent_company": "Quikrete Holdings",
-      "total_pounds_recent": 0.17,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 0.16,
+      "yoy_pct_change": -6.3,
       "top_chemical": "Lead",
       "city": "Winters"
     }
   ],
   "utilities": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Yolo County have more than three-quarters since 2010 (through 2024).",
+      "magnitude_pct": -97.6,
+      "magnitude_abs": -77846.1,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 79740
+        },
+        {
+          "year": 2011,
+          "value": 103371
+        },
+        {
+          "year": 2012,
+          "value": 104470
+        },
+        {
+          "year": 2013,
+          "value": 115126
+        },
+        {
+          "year": 2014,
+          "value": 119918
+        },
+        {
+          "year": 2015,
+          "value": 101750
+        },
+        {
+          "year": 2016,
+          "value": 107278
+        },
+        {
+          "year": 2017,
+          "value": 111431
+        },
+        {
+          "year": 2018,
+          "value": 99232
+        },
+        {
+          "year": 2019,
+          "value": 81934
+        },
+        {
+          "year": 2020,
+          "value": 74729
+        },
+        {
+          "year": 2021,
+          "value": 91799
+        },
+        {
+          "year": 2022,
+          "value": 83054
+        },
+        {
+          "year": 2023,
+          "value": 51005
+        },
+        {
+          "year": 2024,
+          "value": 1894
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 217141,
     "pct_low_income": 17.4,
@@ -409,5 +473,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

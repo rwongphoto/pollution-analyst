@@ -9,17 +9,17 @@
     "county_name": "San Diego",
     "county_fips": "06073"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 0,
-    "total_releases_pounds": 66374,
-    "air_releases_pounds": 37680,
+    "total_releases_pounds": 58766,
+    "air_releases_pounds": 33741,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 28694,
-    "yoy_pct_change": 9.8,
-    "long_arc_pct_change": 559.9,
+    "land_releases_pounds": 25025,
+    "yoy_pct_change": -11.5,
+    "long_arc_pct_change": 484.3,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 66374
+      },
+      {
+        "year": 2024,
+        "value": 58766
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 37680,
+      "current": 33741,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 37680
+          "year": 2024,
+          "value": 33741
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 28694,
+      "current": 25025,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 28694
+          "year": 2024,
+          "value": 25025
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 7595135,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -12.3,
-      "long_arc_pct_change": -25.7,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "U.S. Naval Air Station North Island",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 41878,
-      "yoy_pct_change": 9.1,
+      "total_pounds_recent": 37593,
+      "yoy_pct_change": -10.2,
       "top_chemical": "Methyl isobutyl ketone",
       "city": "San Diego"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "US Navy Silver Strand Training Complex (Sstc)",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 24496,
-      "yoy_pct_change": 11.2,
+      "total_pounds_recent": 21173,
+      "yoy_pct_change": -13.6,
       "top_chemical": "Lead  And Lead Compounds",
       "city": "Coronado"
     }
@@ -304,5 +308,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

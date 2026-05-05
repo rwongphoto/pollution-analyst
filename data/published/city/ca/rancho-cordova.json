@@ -9,17 +9,17 @@
     "county_name": "Sacramento",
     "county_fips": "06067"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
-    "utilities_serving": 12,
-    "total_releases_pounds": 7279,
-    "air_releases_pounds": 7276,
+    "utilities_serving": 3,
+    "total_releases_pounds": 2116,
+    "air_releases_pounds": 1879,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 3,
-    "yoy_pct_change": 145.8,
-    "long_arc_pct_change": 221.8,
+    "land_releases_pounds": 237,
+    "yoy_pct_change": -70.9,
+    "long_arc_pct_change": -6.4,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 7279
+      },
+      {
+        "year": 2024,
+        "value": 2116
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 7276,
+      "current": 1879,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 7276
+          "year": 2024,
+          "value": 1879
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 3,
+      "current": 237,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 3
+          "year": 2024,
+          "value": 237
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2147517,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 36.8,
-      "long_arc_pct_change": -18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,40 +205,20 @@
       "state_label": "California",
       "name": "Ampac Fine Chemicals LLC",
       "parent_company": "Ampac Fine Chemicals LLC",
-      "total_pounds_recent": 7279,
-      "yoy_pct_change": 145.8,
-      "top_chemical": "Acetonitrile",
+      "total_pounds_recent": 2116,
+      "yoy_pct_change": -70.9,
+      "top_chemical": "Dichloromethane",
       "city": "Rancho Cordova"
     }
   ],
   "water": {
-    "utilities_count": 12,
-    "population_served_total": 134193,
-    "violations_5yr_total": 52,
-    "health_based_5yr_total": 45,
-    "unresolved_total": 46,
-    "utilities_with_unresolved": 2,
+    "utilities_count": 3,
+    "population_served_total": 53219,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
     "utilities": [
-      {
-        "slug": "golden-state-water-co-robbins",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Co. - Robbins",
-        "pwsid": "CA5100107",
-        "population_served": 205,
-        "health_based_violations_5yr": 24,
-        "unresolved": true
-      },
-      {
-        "slug": "golden-state-water-company-south-shore",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Company - South Shore",
-        "pwsid": "CA1700519",
-        "population_served": 30,
-        "health_based_violations_5yr": 21,
-        "unresolved": true
-      },
       {
         "slug": "golden-state-water-co-cordova",
         "state": "ca",
@@ -242,26 +226,6 @@
         "name": "Golden State Water Co. - Cordova",
         "pwsid": "CA3410015",
         "population_served": 47161,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "golden-state-water-company-simi-valley",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Company - Simi Valley",
-        "pwsid": "CA5610059",
-        "population_served": 45128,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "golden-state-water-company-bay-point",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Company - Bay Point",
-        "pwsid": "CA0710002",
-        "population_served": 23731,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -276,62 +240,12 @@
         "unresolved": false
       },
       {
-        "slug": "golden-state-water-co-clearlake-system",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Co.-Clearlake System",
-        "pwsid": "CA1710002",
-        "population_served": 4644,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "golden-state-water-company-nipomo",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Company - Nipomo",
-        "pwsid": "CA4010018",
-        "population_served": 4506,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "golden-state-water-company-cypress-ridge",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Company-Cypress Ridge",
-        "pwsid": "CA4010040",
-        "population_served": 2026,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "golden-state-water-company-lake-marie",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Company - Lake Marie",
-        "pwsid": "CA4210022",
-        "population_served": 545,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
         "slug": "hometown-colonial-estates-llc",
         "state": "ca",
         "state_label": "California",
         "name": "Hometown Colonial Estates Llc",
         "pwsid": "CA3400217",
         "population_served": 400,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "golden-state-water-co-san-juan-oaks",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Golden State Water Co - San Juan Oaks",
-        "pwsid": "CA3510008",
-        "population_served": 159,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -414,5 +328,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

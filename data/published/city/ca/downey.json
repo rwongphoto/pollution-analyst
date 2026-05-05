@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
-    "utilities_serving": 9,
-    "total_releases_pounds": 10841,
-    "air_releases_pounds": 6850,
+    "utilities_serving": 6,
+    "total_releases_pounds": 9381,
+    "air_releases_pounds": 5827,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 3991,
-    "yoy_pct_change": -29.2,
-    "long_arc_pct_change": 32.0,
+    "land_releases_pounds": 3554,
+    "yoy_pct_change": -13.5,
+    "long_arc_pct_change": 14.3,
     "long_arc_baseline_year": 2014,
     "history": [
       {
@@ -61,6 +61,10 @@
       {
         "year": 2023,
         "value": 10841
+      },
+      {
+        "year": 2024,
+        "value": 9381
       }
     ]
   },
@@ -68,15 +72,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 6850,
+      "current": 5827,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 6850
+          "year": 2024,
+          "value": 5827
         }
       ]
     },
@@ -87,10 +91,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -98,25 +102,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 3991,
+      "current": 3554,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 3991
+          "year": 2024,
+          "value": 3554
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -185,8 +189,8 @@
       "state_label": "California",
       "name": "K F Fiberglass INC",
       "parent_company": null,
-      "total_pounds_recent": 6850,
-      "yoy_pct_change": -42.5,
+      "total_pounds_recent": 5827,
+      "yoy_pct_change": -14.9,
       "top_chemical": "Styrene",
       "city": "Downey"
     },
@@ -196,19 +200,19 @@
       "state_label": "California",
       "name": "Rockview Dairies INC",
       "parent_company": "Rockview Dairies INC",
-      "total_pounds_recent": 3991,
-      "yoy_pct_change": 17.8,
+      "total_pounds_recent": 3554,
+      "yoy_pct_change": -10.9,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Downey"
     }
   ],
   "water": {
-    "utilities_count": 9,
-    "population_served_total": 312793,
-    "violations_5yr_total": 4,
+    "utilities_count": 6,
+    "population_served_total": 247308,
+    "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
-    "unresolved_total": 2,
-    "utilities_with_unresolved": 1,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
     "utilities": [
       {
         "slug": "downey-city-water-dept",
@@ -229,16 +233,6 @@
         "population_served": 72624,
         "health_based_violations_5yr": 0,
         "unresolved": false
-      },
-      {
-        "slug": "liberty-utilities-av-ranchos-corp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Liberty Utilities (Av Ranchos) Corp.",
-        "pwsid": "CA3610003",
-        "population_served": 64469,
-        "health_based_violations_5yr": 0,
-        "unresolved": true
       },
       {
         "slug": "liberty-utilities-compton",
@@ -277,26 +271,6 @@
         "name": "Liberty Utilities - Mesa Crest",
         "pwsid": "CA1910241",
         "population_served": 1619,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "liberty-yermo",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Liberty -Yermo",
-        "pwsid": "CA3610118",
-        "population_served": 861,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "liberty-bellview-heights",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Liberty-Bellview Heights",
-        "pwsid": "CA3600010",
-        "population_served": 155,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -379,5 +353,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "Fresno",
     "county_fips": "06019"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 2,
+    "facilities_in_city": 1,
     "utilities_serving": 1,
-    "total_releases_pounds": 166815,
-    "air_releases_pounds": 60,
+    "total_releases_pounds": 187301,
+    "air_releases_pounds": 68,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 166755,
-    "yoy_pct_change": -46.9,
-    "long_arc_pct_change": 333529.4,
+    "land_releases_pounds": 187233,
+    "yoy_pct_change": 12.3,
+    "long_arc_pct_change": 374501.2,
     "long_arc_baseline_year": 2015,
     "history": [
       {
@@ -56,7 +56,11 @@
       },
       {
         "year": 2023,
-        "value": 166815
+        "value": 166799
+      },
+      {
+        "year": 2024,
+        "value": 187301
       }
     ]
   },
@@ -64,15 +68,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 60,
+      "current": 68,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 60
+          "year": 2024,
+          "value": 68
         }
       ]
     },
@@ -83,10 +87,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -94,25 +98,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 166755,
+      "current": 187233,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 166755
+          "year": 2024,
+          "value": 187233
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1007117,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 0.6,
-      "long_arc_pct_change": -34.5,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -181,20 +185,9 @@
       "state_label": "California",
       "name": "Actagro LLC",
       "parent_company": "Nutrien US Topco LLC",
-      "total_pounds_recent": 166799,
-      "yoy_pct_change": -46.9,
+      "total_pounds_recent": 187301,
+      "yoy_pct_change": 12.3,
       "top_chemical": "Ammonia",
-      "city": "Biola"
-    },
-    {
-      "slug": "nutriag-usa-ltd",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Nutriag USA LTD",
-      "parent_company": null,
-      "total_pounds_recent": 16,
-      "yoy_pct_change": null,
-      "top_chemical": "Zinc compounds",
       "city": "Biola"
     }
   ],
@@ -242,5 +235,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

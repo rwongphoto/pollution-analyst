@@ -9,17 +9,17 @@
     "county_name": "Merced",
     "county_fips": "06047"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 0,
-    "total_releases_pounds": 19479,
-    "air_releases_pounds": 19479,
+    "total_releases_pounds": 31163,
+    "air_releases_pounds": 12739,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 0,
-    "yoy_pct_change": 731.0,
-    "long_arc_pct_change": -91.8,
+    "land_releases_pounds": 18424,
+    "yoy_pct_change": 60.0,
+    "long_arc_pct_change": -86.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 19479
+      },
+      {
+        "year": 2024,
+        "value": 31163
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 19479,
+      "current": 12739,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 19479
+          "year": 2024,
+          "value": 12739
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 0,
+      "current": 18424,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 0
+          "year": 2024,
+          "value": 18424
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 583191,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 20.4,
-      "long_arc_pct_change": 48.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,9 +205,9 @@
       "state_label": "California",
       "name": "Hilmar Cheese CO",
       "parent_company": "Hilmar Cheese Co",
-      "total_pounds_recent": 19479,
-      "yoy_pct_change": 731.0,
-      "top_chemical": "Hydrogen sulfide",
+      "total_pounds_recent": 31163,
+      "yoy_pct_change": 60.0,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Hilmar"
     }
   ],
@@ -293,5 +297,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

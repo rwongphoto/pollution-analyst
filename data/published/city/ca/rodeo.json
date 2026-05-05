@@ -9,17 +9,17 @@
     "county_name": "Contra Costa",
     "county_fips": "06013"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 0,
-    "total_releases_pounds": 726450,
-    "air_releases_pounds": 184039,
-    "water_releases_pounds": 529346,
-    "land_releases_pounds": 13065,
-    "yoy_pct_change": -7.7,
-    "long_arc_pct_change": -39.2,
+    "total_releases_pounds": 553134,
+    "air_releases_pounds": 83356,
+    "water_releases_pounds": 140477,
+    "land_releases_pounds": 329302,
+    "yoy_pct_change": -23.9,
+    "long_arc_pct_change": -53.7,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 726450
+      },
+      {
+        "year": 2024,
+        "value": 553134
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 184039,
+      "current": 83356,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 184039
+          "year": 2024,
+          "value": 83356
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 529346,
+      "current": 140477,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 529346
+          "year": 2024,
+          "value": 140477
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 13065,
+      "current": 329302,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 13065
+          "year": 2024,
+          "value": 329302
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 82261234,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 11.9,
-      "long_arc_pct_change": 109.1,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Phillips 66 Rodeo Renewable Energy Complex",
       "parent_company": "Phillips 66 Co",
-      "total_pounds_recent": 711446,
-      "yoy_pct_change": -8.0,
+      "total_pounds_recent": 307002,
+      "yoy_pct_change": -56.8,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Rodeo"
     },
@@ -212,9 +216,9 @@
       "state_label": "California",
       "name": "Air Liquide Large Industries US LP - Rodeo Hydrogen Plant",
       "parent_company": "American Air Liquide Holdings INC",
-      "total_pounds_recent": 15004,
-      "yoy_pct_change": 6.8,
-      "top_chemical": "Ammonia",
+      "total_pounds_recent": 246132,
+      "yoy_pct_change": 1540.4,
+      "top_chemical": "Zinc compounds",
       "city": "Rodeo"
     }
   ],
@@ -304,5 +308,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

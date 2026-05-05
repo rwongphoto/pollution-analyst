@@ -9,17 +9,17 @@
     "county_name": "Riverside",
     "county_fips": "06065"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 0,
-    "total_releases_pounds": 286,
-    "air_releases_pounds": 66,
+    "total_releases_pounds": 777,
+    "air_releases_pounds": 90,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 221,
-    "yoy_pct_change": 332.6,
-    "long_arc_pct_change": -90.8,
+    "land_releases_pounds": 687,
+    "yoy_pct_change": 171.3,
+    "long_arc_pct_change": -75.0,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 286
+      },
+      {
+        "year": 2024,
+        "value": 777
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 66,
+      "current": 90,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 66
+          "year": 2024,
+          "value": 90
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 221,
+      "current": 687,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 221
+          "year": 2024,
+          "value": 687
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1423181,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 5.5,
-      "long_arc_pct_change": -32.9,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,9 +205,9 @@
       "state_label": "California",
       "name": "3M CO - Corona",
       "parent_company": "3M Co",
-      "total_pounds_recent": 286,
-      "yoy_pct_change": 332.6,
-      "top_chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
+      "total_pounds_recent": 777,
+      "yoy_pct_change": 171.3,
+      "top_chemical": "Chromium  and Chromium Compounds(except for chromite ore mined in the Transvaal Region)",
       "city": "Corona"
     }
   ],
@@ -289,5 +293,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "Orange",
     "county_fips": "06059"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
-    "utilities_serving": 6,
-    "total_releases_pounds": 4236,
-    "air_releases_pounds": 0.26,
-    "water_releases_pounds": 2,
-    "land_releases_pounds": 4234,
-    "yoy_pct_change": 2978.0,
-    "long_arc_pct_change": -9.0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 2982,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 3,
+    "land_releases_pounds": 2979,
+    "yoy_pct_change": -29.6,
+    "long_arc_pct_change": -35.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 4236
+      },
+      {
+        "year": 2024,
+        "value": 2982
       }
     ]
   },
@@ -88,10 +92,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -99,40 +103,40 @@
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 2,
+      "current": 3,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 2
+          "year": 2024,
+          "value": 3
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 4234,
+      "current": 2979,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 4234
+          "year": 2024,
+          "value": 2979
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2636013,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": 39.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Griswold Industries",
       "parent_company": "Griswold Industries",
-      "total_pounds_recent": 4104,
-      "yoy_pct_change": 778713.9,
+      "total_pounds_recent": 2886,
+      "yoy_pct_change": -29.7,
       "top_chemical": "Nickel",
       "city": "Costa Mesa"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "Sanmina Corp",
       "parent_company": "Sanmina CORP",
-      "total_pounds_recent": 87,
-      "yoy_pct_change": 17.2,
+      "total_pounds_recent": 68,
+      "yoy_pct_change": -21.3,
       "top_chemical": "Copper  And Copper Compounds",
       "city": "Costa Mesa"
     },
@@ -223,30 +227,20 @@
       "state_label": "California",
       "name": "Advanced Micro Instruments INC",
       "parent_company": "Enpro Industries INC",
-      "total_pounds_recent": 45,
-      "yoy_pct_change": -28.6,
+      "total_pounds_recent": 28,
+      "yoy_pct_change": -37.8,
       "top_chemical": "Lead",
       "city": "Costa Mesa"
     }
   ],
   "water": {
-    "utilities_count": 6,
-    "population_served_total": 110866,
-    "violations_5yr_total": 86,
-    "health_based_5yr_total": 54,
-    "unresolved_total": 86,
-    "utilities_with_unresolved": 1,
+    "utilities_count": 1,
+    "population_served_total": 110000,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
     "utilities": [
-      {
-        "slug": "pine-valley-trailer-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Pine Valley Trailer Park",
-        "pwsid": "CA3701961",
-        "population_served": 200,
-        "health_based_violations_5yr": 54,
-        "unresolved": true
-      },
       {
         "slug": "mesa-water-district",
         "state": "ca",
@@ -254,46 +248,6 @@
         "name": "Mesa  Water District",
         "pwsid": "CA3010004",
         "population_served": 110000,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "lake-wohlford-resort",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Lake Wohlford Resort",
-        "pwsid": "CA3700919",
-        "population_served": 250,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "rolling-hills-community-llc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Rolling Hills Community, Llc",
-        "pwsid": "NY3300992",
-        "population_served": 200,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "brookside-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Brookside Mobile Home Park",
-        "pwsid": "CA1400059",
-        "population_served": 126,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "rustic-acres-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Rustic Acres Mhp",
-        "pwsid": "WI4430494",
-        "population_served": 90,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -376,5 +330,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

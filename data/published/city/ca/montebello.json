@@ -9,74 +9,22 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 1,
+    "facilities_in_city": 0,
     "utilities_serving": 2,
-    "total_releases_pounds": 4974,
-    "air_releases_pounds": 4955,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 18,
-    "yoy_pct_change": 165.2,
-    "long_arc_pct_change": 253.0,
-    "long_arc_baseline_year": 2010,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
     "history": [
       {
-        "year": 2010,
-        "value": 1409
-      },
-      {
-        "year": 2011,
-        "value": 1481
-      },
-      {
-        "year": 2012,
-        "value": 1444
-      },
-      {
-        "year": 2013,
-        "value": 2266
-      },
-      {
-        "year": 2014,
-        "value": 1818
-      },
-      {
-        "year": 2015,
-        "value": 1672
-      },
-      {
-        "year": 2016,
-        "value": 1563
-      },
-      {
-        "year": 2017,
-        "value": 1628
-      },
-      {
-        "year": 2018,
-        "value": 1763
-      },
-      {
-        "year": 2019,
-        "value": 1692
-      },
-      {
-        "year": 2020,
-        "value": 1659
-      },
-      {
-        "year": 2021,
-        "value": 1637
-      },
-      {
-        "year": 2022,
-        "value": 1875
-      },
-      {
-        "year": 2023,
-        "value": 4974
+        "year": 2024,
+        "value": 0
       }
     ]
   },
@@ -84,15 +32,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 4955,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 4955
+          "year": 2024,
+          "value": 0
         }
       ]
     },
@@ -103,10 +51,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +62,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 18,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 18
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -194,19 +142,7 @@
       ]
     }
   ],
-  "facilities": [
-    {
-      "slug": "chevron-montebello-terminal",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Chevron Montebello Terminal",
-      "parent_company": "Chevron CORP",
-      "total_pounds_recent": 4974,
-      "yoy_pct_change": 165.2,
-      "top_chemical": "Xylene (mixed isomers)",
-      "city": "Montebello"
-    }
-  ],
+  "facilities": [],
   "water": {
     "utilities_count": 2,
     "population_served_total": 41575,
@@ -314,5 +250,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

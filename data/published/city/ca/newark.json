@@ -9,17 +9,17 @@
     "county_name": "Alameda",
     "county_fips": "06001"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 0,
-    "total_releases_pounds": 145748,
-    "air_releases_pounds": 20,
-    "water_releases_pounds": 0.14,
-    "land_releases_pounds": 145728,
-    "yoy_pct_change": -5.8,
-    "long_arc_pct_change": 47308.6,
+    "total_releases_pounds": 806499,
+    "air_releases_pounds": 16,
+    "water_releases_pounds": 0.36,
+    "land_releases_pounds": 806482,
+    "yoy_pct_change": 453.4,
+    "long_arc_pct_change": 262235.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 145748
+      },
+      {
+        "year": 2024,
+        "value": 806499
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 20,
+      "current": 16,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 20
+          "year": 2024,
+          "value": 16
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 145728,
+      "current": 806482,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 145728
+          "year": 2024,
+          "value": 806482
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1270727,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 33.9,
-      "long_arc_pct_change": 87.5,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Safety-Kleen INC",
       "parent_company": "Clean Harbors INC",
-      "total_pounds_recent": 145748,
-      "yoy_pct_change": -5.8,
+      "total_pounds_recent": 806499,
+      "yoy_pct_change": 453.4,
       "top_chemical": "Ethylene glycol",
       "city": "Newark"
     }
@@ -293,5 +297,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

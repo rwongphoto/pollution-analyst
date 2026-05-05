@@ -9,11 +9,11 @@
     "county_name": "Fresno",
     "county_fips": "06019"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
-    "utilities_serving": 8,
+    "utilities_serving": 3,
     "total_releases_pounds": 10,
     "air_releases_pounds": 10,
     "water_releases_pounds": 0,
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 10
+      },
+      {
+        "year": 2024,
+        "value": 10
       }
     ]
   },
@@ -88,10 +92,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 10
         }
       ]
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -118,10 +122,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -129,10 +133,10 @@
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1007117,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 0.6,
-      "long_arc_pct_change": -34.5,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,63 +212,13 @@
     }
   ],
   "water": {
-    "utilities_count": 8,
-    "population_served_total": 131647,
-    "violations_5yr_total": 188,
-    "health_based_5yr_total": 140,
-    "unresolved_total": 169,
-    "utilities_with_unresolved": 7,
+    "utilities_count": 3,
+    "population_served_total": 131341,
+    "violations_5yr_total": 6,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 4,
+    "utilities_with_unresolved": 2,
     "utilities": [
-      {
-        "slug": "sierra-vista-association",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Sierra Vista Association",
-        "pwsid": "CA5400964",
-        "population_served": 43,
-        "health_based_violations_5yr": 52,
-        "unresolved": true
-      },
-      {
-        "slug": "two-twenty-four-mobile-home-pk",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Two Twenty Four Mobile Home Pk",
-        "pwsid": "CA2000592",
-        "population_served": 35,
-        "health_based_violations_5yr": 49,
-        "unresolved": true
-      },
-      {
-        "slug": "keeler-community-service-district",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Keeler Community Service District",
-        "pwsid": "CA1400036",
-        "population_served": 66,
-        "health_based_violations_5yr": 21,
-        "unresolved": true
-      },
-      {
-        "slug": "old-river-mutual-water-company",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Old River Mutual Water Company",
-        "pwsid": "CA1500096",
-        "population_served": 130,
-        "health_based_violations_5yr": 9,
-        "unresolved": true
-      },
-      {
-        "slug": "south-kern-mutual-water-company",
-        "state": "ca",
-        "state_label": "California",
-        "name": "South Kern Mutual Water Company",
-        "pwsid": "CA1500344",
-        "population_served": 32,
-        "health_based_violations_5yr": 7,
-        "unresolved": true
-      },
       {
         "slug": "shaver-lake-heights-mwc",
         "state": "ca",
@@ -374,5 +328,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -7,16 +7,16 @@
     "fips": "06099",
     "population": 552063
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 58366,
+      "current": 71130,
       "units": "lb",
-      "yoy_pct_change": -1.9,
-      "long_arc_pct_change": -33.0,
+      "yoy_pct_change": 21.9,
+      "long_arc_pct_change": -18.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,6 +74,10 @@
         {
           "year": 2023,
           "value": 58366
+        },
+        {
+          "year": 2024,
+          "value": 71130
         }
       ]
     },
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 516335,
+      "current": 177365,
       "units": "lb",
-      "yoy_pct_change": 4.8,
-      "long_arc_pct_change": 8585.3,
+      "yoy_pct_change": -65.6,
+      "long_arc_pct_change": 2883.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 516335
+        },
+        {
+          "year": 2024,
+          "value": 177365
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1582022,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.2,
-      "long_arc_pct_change": 6.3,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -281,26 +293,15 @@
   ],
   "facilities": [
     {
-      "slug": "saputo-cheese-usa-inc",
+      "slug": "blue-diamond-growers",
       "state": "ca",
       "state_label": "California",
-      "name": "Saputo Cheese USA INC",
-      "parent_company": "Saputo INC",
-      "total_pounds_recent": 288854,
-      "yoy_pct_change": -19.2,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Newman"
-    },
-    {
-      "slug": "darling-ingredients-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Darling Ingredients INC",
-      "parent_company": "Darling Ingredients INC",
-      "total_pounds_recent": 85870,
-      "yoy_pct_change": null,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Crows Landing"
+      "name": "Blue Diamond Growers",
+      "parent_company": "Blue Diamond Growers",
+      "total_pounds_recent": 45555,
+      "yoy_pct_change": 22.4,
+      "top_chemical": "Sulfuryl fluoride",
+      "city": "Modesto"
     },
     {
       "slug": "california-dairies-inc-turlock",
@@ -308,32 +309,32 @@
       "state_label": "California",
       "name": "California Dairies INC Turlock",
       "parent_company": "California Dairies INC",
-      "total_pounds_recent": 44519,
-      "yoy_pct_change": 7.5,
+      "total_pounds_recent": 44921,
+      "yoy_pct_change": 0.9,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Turlock"
     },
     {
-      "slug": "blue-diamond-growers",
+      "slug": "darling-ingredients-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Blue Diamond Growers",
-      "parent_company": "Blue Diamond Growers",
-      "total_pounds_recent": 37210,
-      "yoy_pct_change": 17.0,
-      "top_chemical": "Sulfuryl fluoride",
-      "city": "Modesto"
+      "name": "Darling Ingredients INC",
+      "parent_company": "Darling Ingredients INC",
+      "total_pounds_recent": 35290,
+      "yoy_pct_change": -58.9,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Crows Landing"
     },
     {
-      "slug": "crystal-creamery-inc",
+      "slug": "saputo-cheese-usa-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Crystal Creamery INC.",
-      "parent_company": "Crystal Creamery INC",
-      "total_pounds_recent": 29731,
-      "yoy_pct_change": 20.6,
+      "name": "Saputo Cheese USA INC",
+      "parent_company": "Saputo INC",
+      "total_pounds_recent": 31123,
+      "yoy_pct_change": -89.2,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Modesto"
+      "city": "Newman"
     },
     {
       "slug": "california-dairies-inc-turlock-north",
@@ -341,10 +342,32 @@
       "state_label": "California",
       "name": "California Dairies INC Turlock North",
       "parent_company": "California Dairies INC",
-      "total_pounds_recent": 24050,
-      "yoy_pct_change": -13.6,
+      "total_pounds_recent": 24865,
+      "yoy_pct_change": 3.4,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Turlock"
+    },
+    {
+      "slug": "silgan-container-manufacturing-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Silgan Container Manufacturing Corp.",
+      "parent_company": "Silgan Holdings INC",
+      "total_pounds_recent": 16032,
+      "yoy_pct_change": 147.6,
+      "top_chemical": "Xylene (mixed isomers)",
+      "city": "Riverbank"
+    },
+    {
+      "slug": "crystal-creamery-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Crystal Creamery INC.",
+      "parent_company": "Crystal Creamery INC",
+      "total_pounds_recent": 14402,
+      "yoy_pct_change": -51.6,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Modesto"
     },
     {
       "slug": "dairy-farmers-of-america-inc",
@@ -352,8 +375,8 @@
       "state_label": "California",
       "name": "Dairy Farmers Of America INC",
       "parent_company": "Dairy Farmers Of America INC",
-      "total_pounds_recent": 12206,
-      "yoy_pct_change": 12.1,
+      "total_pounds_recent": 12114,
+      "yoy_pct_change": -0.8,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Turlock"
     },
@@ -363,31 +386,20 @@
       "state_label": "California",
       "name": "Conagra Foods Packaged Foods Llc.",
       "parent_company": "Conagra Brands INC",
-      "total_pounds_recent": 8334,
-      "yoy_pct_change": -12.0,
+      "total_pounds_recent": 10809,
+      "yoy_pct_change": 29.7,
       "top_chemical": "Ammonia",
       "city": "Oakdale"
     },
     {
-      "slug": "super-store-industries-turlock-dairy-div",
+      "slug": "frito-lay-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Super Store Industries Turlock Dairy Div",
-      "parent_company": "Super Store Industries",
-      "total_pounds_recent": 8310,
-      "yoy_pct_change": 37.9,
+      "name": "Frito Lay INC.",
+      "parent_company": "Pepsico INC",
+      "total_pounds_recent": 3099,
+      "yoy_pct_change": null,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Turlock"
-    },
-    {
-      "slug": "enviro-tech-chemical-services-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Enviro Tech Chemical Services INC.",
-      "parent_company": "Arxada LLC",
-      "total_pounds_recent": 7655,
-      "yoy_pct_change": 1431.0,
-      "top_chemical": "Peracetic acid",
       "city": "Modesto"
     }
   ],
@@ -397,11 +409,11 @@
       "type": "long_arc_shift",
       "severity": "regression",
       "label": "Total TRI releases",
-      "summary": "Total TRI releases at Stanislaus County have more than doubled since 2010 (through 2023).",
-      "magnitude_pct": 517.3,
-      "magnitude_abs": 481607.5,
+      "summary": "Total TRI releases at Stanislaus County have more than doubled since 2010 (through 2024).",
+      "magnitude_pct": 166.9,
+      "magnitude_abs": 155401.2,
       "baseline_year": 2010,
-      "recent_year": 2023,
+      "recent_year": 2024,
       "units": "lb",
       "history": [
         {
@@ -459,6 +471,10 @@
         {
           "year": 2023,
           "value": 574701
+        },
+        {
+          "year": 2024,
+          "value": 248495
         }
       ]
     }
@@ -534,5 +550,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

@@ -9,74 +9,78 @@
     "county_name": "Contra Costa",
     "county_fips": "06013"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 4,
+    "facilities_in_city": 3,
     "utilities_serving": 1,
-    "total_releases_pounds": 149142,
-    "air_releases_pounds": 10103,
-    "water_releases_pounds": 8,
-    "land_releases_pounds": 139032,
-    "yoy_pct_change": 169.6,
-    "long_arc_pct_change": 59.5,
+    "total_releases_pounds": 376545,
+    "air_releases_pounds": 7736,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 368809,
+    "yoy_pct_change": 186.7,
+    "long_arc_pct_change": 679.5,
     "long_arc_baseline_year": 2010,
     "history": [
       {
         "year": 2010,
-        "value": 93533
+        "value": 48304
       },
       {
         "year": 2011,
-        "value": 100276
+        "value": 32477
       },
       {
         "year": 2012,
-        "value": 93773
+        "value": 24735
       },
       {
         "year": 2013,
-        "value": 86526
+        "value": 23257
       },
       {
         "year": 2014,
-        "value": 71128
+        "value": 22810
       },
       {
         "year": 2015,
-        "value": 69373
+        "value": 23869
       },
       {
         "year": 2016,
-        "value": 103367
+        "value": 11283
       },
       {
         "year": 2017,
-        "value": 62365
+        "value": 12091
       },
       {
         "year": 2018,
-        "value": 297136
+        "value": 232056
       },
       {
         "year": 2019,
-        "value": 59382
+        "value": 21736
       },
       {
         "year": 2020,
-        "value": 203602
+        "value": 171377
       },
       {
         "year": 2021,
-        "value": 33481
+        "value": 13567
       },
       {
         "year": 2022,
-        "value": 55320
+        "value": 38542
       },
       {
         "year": 2023,
-        "value": 149142
+        "value": 131339
+      },
+      {
+        "year": 2024,
+        "value": 376545
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 10103,
+      "current": 7736,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 10103
+          "year": 2024,
+          "value": 7736
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 8,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 8
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 139032,
+      "current": 368809,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 139032
+          "year": 2024,
+          "value": 368809
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 82261234,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 11.9,
-      "long_arc_pct_change": 109.1,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,31 +205,20 @@
       "state_label": "California",
       "name": "Corteva Agriscience LLC",
       "parent_company": "Corteva INC",
-      "total_pounds_recent": 131334,
-      "yoy_pct_change": 240.8,
+      "total_pounds_recent": 376444,
+      "yoy_pct_change": 186.6,
+      "top_chemical": "Nitrapyrin",
+      "city": "Pittsburg"
+    },
+    {
+      "slug": "k2-pure-solutions-nocal-lp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "K2 Pure Solutions Nocal LP",
+      "parent_company": null,
+      "total_pounds_recent": 96,
+      "yoy_pct_change": null,
       "top_chemical": "Hydrochloric acid (acid aerosols including mists, vapors, gas, fog, and other airborne forms of any particle size)",
-      "city": "Pittsburg"
-    },
-    {
-      "slug": "uss-upi-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Uss-Upi LLC",
-      "parent_company": "US Steel CORP",
-      "total_pounds_recent": 16303,
-      "yoy_pct_change": 6.7,
-      "top_chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
-      "city": "Pittsburg"
-    },
-    {
-      "slug": "douglas-products-packaging-co",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Douglas Products & Packaging CO",
-      "parent_company": "Douglas Products & Packaging Co",
-      "total_pounds_recent": 1500,
-      "yoy_pct_change": 0.0,
-      "top_chemical": "Sulfuryl fluoride",
       "city": "Pittsburg"
     },
     {
@@ -337,5 +330,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

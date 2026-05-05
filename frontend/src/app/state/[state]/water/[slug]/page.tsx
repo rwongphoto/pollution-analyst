@@ -54,8 +54,8 @@ export async function generateMetadata({
   const data = await loadWaterUtility(state, slug);
   const city = cityDisplayName(data.utility, slug);
   return pageMeta({
-    title: `${city} Water Quality | Pollution Analyst.ai`,
-    description: `${city} drinking water — served by ${data.utility.name} (PWSID ${data.utility.pwsid}, ${data.utility.population_served.toLocaleString()} people). SDWIS violation history and contaminant detail.`,
+    title: `${data.utility.name} Water Quality | Pollution Analyst.ai`,
+    description: `${data.utility.name} (PWSID ${data.utility.pwsid}) — drinking water serving ${city}, ${data.utility.state_label}. ${data.utility.population_served.toLocaleString()} people served. SDWIS violation history and contaminant detail.`,
     path: `/state/${state}/water/${slug}`,
   });
 }
@@ -78,9 +78,9 @@ function WaterHero({ data, slug }: { data: WaterUtilityPayload; slug: string }) 
       <div className="wrap">
         <div>
           <div className="eyebrow">{u.state_label} · drinking water · {data.briefing_label}</div>
-          <h1>{city} Water Quality</h1>
+          <h1>{u.name} Water Quality — {city}, {u.state_label}</h1>
           <p className="muted" style={{ marginTop: -4, marginBottom: 16, fontSize: 13.5 }}>
-            Served by {u.name} · PWSID {u.pwsid} · {SOURCE_LABEL[u.primary_source]}
+            PWSID {u.pwsid} · {SOURCE_LABEL[u.primary_source]}
           </p>
           <p className="lead lede" style={{ maxWidth: "70ch" }}>
             <strong>{u.population_served.toLocaleString()}</strong> people served.

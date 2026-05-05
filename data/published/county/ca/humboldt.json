@@ -7,16 +7,16 @@
     "fips": "06023",
     "population": 136132
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 31433,
+      "current": 25800,
       "units": "lb",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": 713.0,
+      "yoy_pct_change": -17.9,
+      "long_arc_pct_change": 567.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,6 +74,10 @@
         {
           "year": 2023,
           "value": 31433
+        },
+        {
+          "year": 2024,
+          "value": 25800
         }
       ]
     },
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 146068,
+      "current": 70296,
       "units": "lb",
-      "yoy_pct_change": 26.1,
-      "long_arc_pct_change": 35.6,
+      "yoy_pct_change": -51.9,
+      "long_arc_pct_change": -34.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 146068
+        },
+        {
+          "year": 2024,
+          "value": 70296
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 214599,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -5.5,
-      "long_arc_pct_change": -36.2,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -286,8 +298,8 @@
       "state_label": "California",
       "name": "Crystal Creamery INC. Dba Humboldt Creamery",
       "parent_company": "Crystal Creamery INC",
-      "total_pounds_recent": 146068,
-      "yoy_pct_change": 26.1,
+      "total_pounds_recent": 70296,
+      "yoy_pct_change": -51.9,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Fortuna"
     },
@@ -297,95 +309,14 @@
       "state_label": "California",
       "name": "Pg&E Humboldt Bay Power Plant",
       "parent_company": "Pacific Gas & Electric Co",
-      "total_pounds_recent": 31432,
-      "yoy_pct_change": -7.1,
+      "total_pounds_recent": 25800,
+      "yoy_pct_change": -17.9,
       "top_chemical": "Acetaldehyde",
       "city": "Eureka"
-    },
-    {
-      "slug": "humboldt-sawmill-co-cogeneration-plant",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Humboldt Sawmill CO & Cogeneration Plant",
-      "parent_company": "Mendocino Cos",
-      "total_pounds_recent": 0.72,
-      "yoy_pct_change": 0.0,
-      "top_chemical": "Lead",
-      "city": "Scotia"
     }
   ],
   "utilities": [],
-  "flags": [
-    {
-      "type": "long_arc_shift",
-      "severity": "regression",
-      "label": "Total TRI releases",
-      "summary": "Total TRI releases at Humboldt County have risen 59% since 2010 (through 2023).",
-      "magnitude_pct": 59.0,
-      "magnitude_abs": 65875.6,
-      "baseline_year": 2010,
-      "recent_year": 2023,
-      "units": "lb",
-      "history": [
-        {
-          "year": 2010,
-          "value": 111625
-        },
-        {
-          "year": 2011,
-          "value": 132369
-        },
-        {
-          "year": 2012,
-          "value": 127791
-        },
-        {
-          "year": 2013,
-          "value": 93315
-        },
-        {
-          "year": 2014,
-          "value": 97824
-        },
-        {
-          "year": 2015,
-          "value": 106902
-        },
-        {
-          "year": 2016,
-          "value": 125635
-        },
-        {
-          "year": 2017,
-          "value": 65332
-        },
-        {
-          "year": 2018,
-          "value": 73258
-        },
-        {
-          "year": 2019,
-          "value": 108029
-        },
-        {
-          "year": 2020,
-          "value": 124791
-        },
-        {
-          "year": 2021,
-          "value": 161350
-        },
-        {
-          "year": 2022,
-          "value": 149686
-        },
-        {
-          "year": 2023,
-          "value": 177501
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 136132,
     "pct_low_income": 19.8,
@@ -457,5 +388,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

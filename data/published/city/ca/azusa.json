@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 4,
+    "facilities_in_city": 3,
     "utilities_serving": 2,
-    "total_releases_pounds": 7563,
-    "air_releases_pounds": 5201,
-    "water_releases_pounds": 0.3,
-    "land_releases_pounds": 2361,
-    "yoy_pct_change": 6.1,
-    "long_arc_pct_change": 56.5,
+    "total_releases_pounds": 12353,
+    "air_releases_pounds": 6313,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 6040,
+    "yoy_pct_change": 63.7,
+    "long_arc_pct_change": 155.7,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -76,7 +76,11 @@
       },
       {
         "year": 2023,
-        "value": 7563
+        "value": 7545
+      },
+      {
+        "year": 2024,
+        "value": 12353
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 5201,
+      "current": 6313,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 5201
+          "year": 2024,
+          "value": 6313
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 2361,
+      "current": 6040,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 2361
+          "year": 2024,
+          "value": 6040
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,9 +205,20 @@
       "state_label": "California",
       "name": "Polynt Composites USA INC. - Azusa Plant",
       "parent_company": "Polynt Composites USA INC",
-      "total_pounds_recent": 7105,
-      "yoy_pct_change": 6.0,
+      "total_pounds_recent": 11125,
+      "yoy_pct_change": 56.6,
       "top_chemical": "Styrene",
+      "city": "Azusa"
+    },
+    {
+      "slug": "veolia-es-technical-solutions-l-l-c",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Veolia Es Technical Solutions L.L.C.",
+      "parent_company": "Veolia North America",
+      "total_pounds_recent": 978,
+      "yoy_pct_change": 414.5,
+      "top_chemical": "Lead",
       "city": "Azusa"
     },
     {
@@ -215,28 +230,6 @@
       "total_pounds_recent": 250,
       "yoy_pct_change": 0.0,
       "top_chemical": "Styrene",
-      "city": "Azusa"
-    },
-    {
-      "slug": "veolia-es-technical-solutions-l-l-c",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Veolia Es Technical Solutions L.L.C.",
-      "parent_company": "Veolia North America",
-      "total_pounds_recent": 190,
-      "yoy_pct_change": 12.4,
-      "top_chemical": "Benzene",
-      "city": "Azusa"
-    },
-    {
-      "slug": "inwesco-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Inwesco INC",
-      "parent_company": "Crh Americas INC",
-      "total_pounds_recent": 18,
-      "yoy_pct_change": null,
-      "top_chemical": "Chromium",
       "city": "Azusa"
     }
   ],
@@ -347,5 +340,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

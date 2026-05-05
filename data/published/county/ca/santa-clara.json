@@ -7,16 +7,16 @@
     "fips": "06085",
     "population": 1916831
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 36291,
+      "current": 13288,
       "units": "lb",
-      "yoy_pct_change": -5.0,
-      "long_arc_pct_change": -86.6,
+      "yoy_pct_change": -63.4,
+      "long_arc_pct_change": -95.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 36291
+        },
+        {
+          "year": 2024,
+          "value": 13288
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 15,
+      "current": 17,
       "units": "lb",
-      "yoy_pct_change": -53.4,
-      "long_arc_pct_change": -23.5,
+      "yoy_pct_change": 16.6,
+      "long_arc_pct_change": -10.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 15
+        },
+        {
+          "year": 2024,
+          "value": 17
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 195543,
+      "current": 472756,
       "units": "lb",
-      "yoy_pct_change": -10.8,
-      "long_arc_pct_change": 185.3,
+      "yoy_pct_change": 141.8,
+      "long_arc_pct_change": 589.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 195543
+        },
+        {
+          "year": 2024,
+          "value": 472756
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2123248,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 6.0,
-      "long_arc_pct_change": -31.3,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -281,37 +293,26 @@
   ],
   "facilities": [
     {
+      "slug": "clean-harbors-san-jose-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Clean Harbors San Jose LLC",
+      "parent_company": "Clean Harbors INC",
+      "total_pounds_recent": 358921,
+      "yoy_pct_change": 3820.0,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "San Jose"
+    },
+    {
       "slug": "gorilla-circuits",
       "state": "ca",
       "state_label": "California",
       "name": "Gorilla Circuits",
       "parent_company": "Gorilla Circuits",
-      "total_pounds_recent": 73200,
-      "yoy_pct_change": 38.8,
+      "total_pounds_recent": 72800,
+      "yoy_pct_change": -0.5,
       "top_chemical": "Copper",
       "city": "San Jose"
-    },
-    {
-      "slug": "lumileds-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Lumileds LLC",
-      "parent_company": "Lumileds USA Holding CORP",
-      "total_pounds_recent": 27070,
-      "yoy_pct_change": -10.2,
-      "top_chemical": "Ammonia",
-      "city": "San Jose"
-    },
-    {
-      "slug": "streamline-circuits",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Streamline Circuits",
-      "parent_company": "Summit Interconnect Intermediate INC",
-      "total_pounds_recent": 21888,
-      "yoy_pct_change": 1976.5,
-      "top_chemical": "Copper  And Copper Compounds",
-      "city": "Santa Clara"
     },
     {
       "slug": "sierra-circuits-inc-dba-sierra-proto-express",
@@ -319,21 +320,10 @@
       "state_label": "California",
       "name": "Sierra Circuits INC (Dba Sierra Proto Express)",
       "parent_company": null,
-      "total_pounds_recent": 20181,
-      "yoy_pct_change": -5.4,
-      "top_chemical": "Copper compounds",
+      "total_pounds_recent": 20964,
+      "yoy_pct_change": 3.9,
+      "top_chemical": "Copper  And Copper Compounds",
       "city": "Sunnyvale"
-    },
-    {
-      "slug": "apct-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Apct INC",
-      "parent_company": "Advancedpcb Holdings INC",
-      "total_pounds_recent": 14643,
-      "yoy_pct_change": 6807.1,
-      "top_chemical": "Nitric acid",
-      "city": "Santa Clara"
     },
     {
       "slug": "qualitek-inc-dba-westak",
@@ -341,54 +331,76 @@
       "state_label": "California",
       "name": "Qualitek INC (Dba Westak)",
       "parent_company": null,
-      "total_pounds_recent": 13853,
-      "yoy_pct_change": -10.1,
+      "total_pounds_recent": 13307,
+      "yoy_pct_change": -3.9,
       "top_chemical": "Ammonia",
       "city": "Sunnyvale"
     },
     {
-      "slug": "lenthor-engineering",
+      "slug": "headway-technologies-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Lenthor Engineering",
-      "parent_company": null,
-      "total_pounds_recent": 10897,
-      "yoy_pct_change": -3.9,
-      "top_chemical": "Nickel",
+      "name": "Headway Technologies INC.",
+      "parent_company": "Sae Magnetics (Hk) LTD",
+      "total_pounds_recent": 4497,
+      "yoy_pct_change": 2.4,
+      "top_chemical": "N-Methyl-2-pyrrolidone",
       "city": "Milpitas"
     },
     {
-      "slug": "clean-harbors-san-jose-llc",
+      "slug": "agilent-technologies-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Clean Harbors San Jose LLC",
-      "parent_company": "Clean Harbors INC",
-      "total_pounds_recent": 9156,
-      "yoy_pct_change": -87.2,
+      "name": "Agilent Technologies INC",
+      "parent_company": "Agilent Technologies INC",
+      "total_pounds_recent": 4218,
+      "yoy_pct_change": -1.0,
+      "top_chemical": "Acetonitrile",
+      "city": "Santa Clara"
+    },
+    {
+      "slug": "ttm-technologies",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ttm Technologies",
+      "parent_company": "Ttm Technologies INC",
+      "total_pounds_recent": 2911,
+      "yoy_pct_change": 4.8,
       "top_chemical": "Nitric acid",
       "city": "San Jose"
     },
     {
-      "slug": "western-digital-technologies-inc",
+      "slug": "equilon-san-jose-terminal",
       "state": "ca",
       "state_label": "California",
-      "name": "Western Digital Technologies INC",
-      "parent_company": "Western Digital CORP",
-      "total_pounds_recent": 6470,
-      "yoy_pct_change": 17.6,
-      "top_chemical": "N-Methyl-2-pyrrolidone",
+      "name": "Equilon San Jose Terminal",
+      "parent_company": "Shell Petroleum INC",
+      "total_pounds_recent": 1948,
+      "yoy_pct_change": 223.0,
+      "top_chemical": "Xylene (mixed isomers)",
       "city": "San Jose"
     },
     {
-      "slug": "ens-technology-llc",
+      "slug": "csl-operating-llc",
       "state": "ca",
       "state_label": "California",
-      "name": "Ens Technology LLC",
-      "parent_company": null,
-      "total_pounds_recent": 5272,
-      "yoy_pct_change": null,
+      "name": "Csl Operating LLC",
+      "parent_company": "Enpro Industries INC",
+      "total_pounds_recent": 1890,
+      "yoy_pct_change": -23.0,
       "top_chemical": "Nitric acid",
       "city": "Santa Clara"
+    },
+    {
+      "slug": "infinera-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Infinera Corp",
+      "parent_company": null,
+      "total_pounds_recent": 1209,
+      "yoy_pct_change": -68.1,
+      "top_chemical": "N-Methyl-2-pyrrolidone",
+      "city": "Sunnyvale"
     }
   ],
   "utilities": [],
@@ -464,5 +476,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

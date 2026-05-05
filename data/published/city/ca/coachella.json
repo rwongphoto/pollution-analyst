@@ -9,17 +9,17 @@
     "county_name": "Riverside",
     "county_fips": "06065"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
-    "utilities_serving": 3,
-    "total_releases_pounds": 36210,
-    "air_releases_pounds": 35986,
+    "utilities_serving": 1,
+    "total_releases_pounds": 26688,
+    "air_releases_pounds": 26688,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 224,
-    "yoy_pct_change": 10.2,
-    "long_arc_pct_change": 780.8,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": -26.3,
+    "long_arc_pct_change": 549.2,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 36210
+      },
+      {
+        "year": 2024,
+        "value": 26688
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 35986,
+      "current": 26688,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 35986
+          "year": 2024,
+          "value": 26688
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 224,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 224
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1423181,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 5.5,
-      "long_arc_pct_change": -32.9,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Imperial Western Products INC",
       "parent_company": "Denali Water Solutions",
-      "total_pounds_recent": 34065,
-      "yoy_pct_change": 8.3,
+      "total_pounds_recent": 25113,
+      "yoy_pct_change": -26.3,
       "top_chemical": "Ammonia",
       "city": "Coachella"
     },
@@ -212,15 +216,15 @@
       "state_label": "California",
       "name": "Armtec Defense Technologies",
       "parent_company": "Transdigm INC",
-      "total_pounds_recent": 2145,
-      "yoy_pct_change": 51.9,
+      "total_pounds_recent": 1575,
+      "yoy_pct_change": -26.6,
       "top_chemical": "Xylene (mixed isomers)",
       "city": "Coachella"
     }
   ],
   "water": {
-    "utilities_count": 3,
-    "population_served_total": 43665,
+    "utilities_count": 1,
+    "population_served_total": 43590,
     "violations_5yr_total": 5,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
@@ -233,26 +237,6 @@
         "name": "Coachella Water Authority",
         "pwsid": "CA3310007",
         "population_served": 43590,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "rodriguez-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Rodriguez Mhp",
-        "pwsid": "090600040",
-        "population_served": 45,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "desert-rose-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Desert Rose Mhp",
-        "pwsid": "090600039",
-        "population_served": 30,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -335,5 +319,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

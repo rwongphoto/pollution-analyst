@@ -9,17 +9,17 @@
     "county_name": "Riverside",
     "county_fips": "06065"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
-    "utilities_serving": 4,
-    "total_releases_pounds": 404,
-    "air_releases_pounds": 404,
+    "utilities_serving": 2,
+    "total_releases_pounds": 248,
+    "air_releases_pounds": 248,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
-    "yoy_pct_change": -56.7,
-    "long_arc_pct_change": -96.0,
+    "yoy_pct_change": -38.5,
+    "long_arc_pct_change": -97.5,
     "long_arc_baseline_year": 2014,
     "history": [
       {
@@ -61,6 +61,10 @@
       {
         "year": 2023,
         "value": 404
+      },
+      {
+        "year": 2024,
+        "value": 248
       }
     ]
   },
@@ -68,15 +72,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 404,
+      "current": 248,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 404
+          "year": 2024,
+          "value": 248
         }
       ]
     },
@@ -87,10 +91,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -102,10 +106,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -113,10 +117,10 @@
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1423181,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 5.5,
-      "long_arc_pct_change": -32.9,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -185,8 +189,8 @@
       "state_label": "California",
       "name": "Abbott Cardiovascular Systems INC",
       "parent_company": "Abbott Laboratories",
-      "total_pounds_recent": 395,
-      "yoy_pct_change": -56.2,
+      "total_pounds_recent": 241,
+      "yoy_pct_change": -39.0,
       "top_chemical": "Methanol",
       "city": "Temecula"
     },
@@ -196,16 +200,16 @@
       "state_label": "California",
       "name": "Steris INC",
       "parent_company": "Steris CORP",
-      "total_pounds_recent": 9,
-      "yoy_pct_change": -71.4,
+      "total_pounds_recent": 8,
+      "yoy_pct_change": -16.7,
       "top_chemical": "Ethylene oxide",
       "city": "Temecula"
     }
   ],
   "water": {
-    "utilities_count": 4,
-    "population_served_total": 175815,
-    "violations_5yr_total": 14,
+    "utilities_count": 2,
+    "population_served_total": 146267,
+    "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
     "utilities_with_unresolved": 0,
@@ -217,26 +221,6 @@
         "name": "Rancho California Water District",
         "pwsid": "CA3310038",
         "population_served": 146147,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "pechanga",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Pechanga",
-        "pwsid": "090605013",
-        "population_served": 29100,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "warner-springs-estates",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Warner Springs Estates",
-        "pwsid": "CA3702354",
-        "population_served": 448,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -329,5 +313,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "Riverside",
     "county_fips": "06065"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 1,
-    "total_releases_pounds": 109,
-    "air_releases_pounds": 1,
-    "water_releases_pounds": 10,
-    "land_releases_pounds": 98,
-    "yoy_pct_change": -23.8,
-    "long_arc_pct_change": 26.9,
+    "total_releases_pounds": 125,
+    "air_releases_pounds": 9,
+    "water_releases_pounds": 30,
+    "land_releases_pounds": 86,
+    "yoy_pct_change": 15.5,
+    "long_arc_pct_change": 45.3,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -72,11 +72,15 @@
       },
       {
         "year": 2022,
-        "value": 143
+        "value": 142
       },
       {
         "year": 2023,
-        "value": 109
+        "value": 108
+      },
+      {
+        "year": 2024,
+        "value": 125
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 1,
+      "current": 9,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1
+          "year": 2024,
+          "value": 9
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 10,
+      "current": 30,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 10
+          "year": 2024,
+          "value": 30
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 98,
+      "current": 86,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 98
+          "year": 2024,
+          "value": 86
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1423181,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 5.5,
-      "long_arc_pct_change": -32.9,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,20 +205,20 @@
       "state_label": "California",
       "name": "Central Wire",
       "parent_company": "Central Wire INC",
-      "total_pounds_recent": 108,
-      "yoy_pct_change": -23.9,
+      "total_pounds_recent": 116,
+      "yoy_pct_change": 7.4,
       "top_chemical": "Nickel",
       "city": "Perris"
     },
     {
-      "slug": "cemex-perris-plant",
+      "slug": "all-american-asphalt",
       "state": "ca",
       "state_label": "California",
-      "name": "Cemex Perris Plant",
-      "parent_company": "Cemex INC",
-      "total_pounds_recent": 1,
-      "yoy_pct_change": 0.0,
-      "top_chemical": "Lead  And Lead Compounds",
+      "name": "All American Asphalt",
+      "parent_company": null,
+      "total_pounds_recent": 9,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead compounds",
       "city": "Perris"
     }
   ],
@@ -315,5 +319,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

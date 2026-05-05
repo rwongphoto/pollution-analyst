@@ -7,16 +7,16 @@
     "fips": "06107",
     "population": 473446
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 35228,
+      "current": 4383,
       "units": "lb",
-      "yoy_pct_change": -2.6,
-      "long_arc_pct_change": 4.5,
+      "yoy_pct_change": -87.6,
+      "long_arc_pct_change": -87.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,6 +74,10 @@
         {
           "year": 2023,
           "value": 35228
+        },
+        {
+          "year": 2024,
+          "value": 4383
         }
       ]
     },
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 579183,
+      "current": 342367,
       "units": "lb",
-      "yoy_pct_change": -57.6,
-      "long_arc_pct_change": 4013.3,
+      "yoy_pct_change": -40.9,
+      "long_arc_pct_change": 2331.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 579183
+        },
+        {
+          "year": 2024,
+          "value": 342367
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 419035,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -6.8,
-      "long_arc_pct_change": -1.5,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -286,19 +298,19 @@
       "state_label": "California",
       "name": "Saputo Cheese USA INC.",
       "parent_company": "Saputo INC",
-      "total_pounds_recent": 268323,
-      "yoy_pct_change": -6.8,
+      "total_pounds_recent": 139853,
+      "yoy_pct_change": -43.0,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Tulare"
     },
     {
-      "slug": "saputo-cheese-usa-inc",
+      "slug": "lactalis-heritage-dairy-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Saputo Cheese USA INC.",
-      "parent_company": "Saputo INC",
-      "total_pounds_recent": 245346,
-      "yoy_pct_change": -49.1,
+      "name": "Lactalis Heritage Dairy INC.",
+      "parent_company": "Lactalis Cheese & Dairy Holding INC",
+      "total_pounds_recent": 113120,
+      "yoy_pct_change": null,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Tulare"
     },
@@ -308,8 +320,63 @@
       "state_label": "California",
       "name": "California Dairies INC Visalia",
       "parent_company": "California Dairies INC",
-      "total_pounds_recent": 40581,
-      "yoy_pct_change": -14.5,
+      "total_pounds_recent": 34884,
+      "yoy_pct_change": -14.0,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Visalia"
+    },
+    {
+      "slug": "saputo-cheese-usa-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Saputo Cheese USA INC.",
+      "parent_company": "Saputo INC",
+      "total_pounds_recent": 24403,
+      "yoy_pct_change": -90.9,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Tulare"
+    },
+    {
+      "slug": "bluescope-buildings-n-a-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Bluescope Buildings N.A. INC",
+      "parent_company": "Bluescope Buildings North America INC",
+      "total_pounds_recent": 11273,
+      "yoy_pct_change": -0.8,
+      "top_chemical": "Chromium",
+      "city": "Visalia"
+    },
+    {
+      "slug": "nutrien-ag-solutions",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Nutrien AG Solutions",
+      "parent_company": "Nutrien US Topco LLC",
+      "total_pounds_recent": 8428,
+      "yoy_pct_change": 89.7,
+      "top_chemical": "Zinc compounds",
+      "city": "Alpaugh"
+    },
+    {
+      "slug": "voltage-multipliers-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Voltage Multipliers INC.",
+      "parent_company": null,
+      "total_pounds_recent": 7186,
+      "yoy_pct_change": -0.5,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Visalia"
+    },
+    {
+      "slug": "actus-nutrition-visalia",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Actus Nutrition - Visalia",
+      "parent_company": "Milk Specialties Global",
+      "total_pounds_recent": 2577,
+      "yoy_pct_change": 14.9,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Visalia"
     },
@@ -319,54 +386,10 @@
       "state_label": "California",
       "name": "Gfp Ethanol LLC Dba Calgren Renewable Fuels",
       "parent_company": "Gfp Ethanol LLC",
-      "total_pounds_recent": 33835,
-      "yoy_pct_change": 0.0,
+      "total_pounds_recent": 2430,
+      "yoy_pct_change": -92.8,
       "top_chemical": "Acetaldehyde",
       "city": "Pixley"
-    },
-    {
-      "slug": "bluescope-buildings-n-a-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Bluescope Buildings N.A. INC",
-      "parent_company": "Bluescope Buildings North America INC",
-      "total_pounds_recent": 11360,
-      "yoy_pct_change": -6.9,
-      "top_chemical": "Chromium",
-      "city": "Visalia"
-    },
-    {
-      "slug": "voltage-multipliers-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Voltage Multipliers INC.",
-      "parent_company": null,
-      "total_pounds_recent": 7223,
-      "yoy_pct_change": -3.8,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Visalia"
-    },
-    {
-      "slug": "nutrien-ag-solutions",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Nutrien AG Solutions",
-      "parent_company": "Nutrien US Topco LLC",
-      "total_pounds_recent": 4443,
-      "yoy_pct_change": 10.3,
-      "top_chemical": "Zinc compounds",
-      "city": "Alpaugh"
-    },
-    {
-      "slug": "actus-nutrition-visalia",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Actus Nutrition - Visalia",
-      "parent_company": "Milk Specialties Global",
-      "total_pounds_recent": 2244,
-      "yoy_pct_change": -12.3,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Visalia"
     },
     {
       "slug": "kawneer-co-inc",
@@ -374,21 +397,10 @@
       "state_label": "California",
       "name": "Kawneer CO INC",
       "parent_company": "Arconic CORP",
-      "total_pounds_recent": 606,
-      "yoy_pct_change": 2425.0,
+      "total_pounds_recent": 2069,
+      "yoy_pct_change": 241.4,
       "top_chemical": "Xylene (mixed isomers)",
       "city": "Visalia"
-    },
-    {
-      "slug": "mcwane-plant-industrial",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Mcwane Plant & Industrial",
-      "parent_company": "Mcwane INC",
-      "total_pounds_recent": 327,
-      "yoy_pct_change": 11.8,
-      "top_chemical": "Nickel",
-      "city": "Exeter"
     }
   ],
   "utilities": [],
@@ -464,5 +476,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

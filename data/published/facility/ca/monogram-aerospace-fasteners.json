@@ -13,16 +13,16 @@
     "lat": 33.984033,
     "lng": -118.140555
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 2052,
-    "air_releases_pounds": 0.07,
+    "total_releases_pounds": 3382,
+    "air_releases_pounds": 0.18,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 2052,
+    "land_releases_pounds": 3382,
     "chemicals_reported": 4,
-    "yoy_pct_change": -58.5,
-    "long_arc_pct_change": 257.0,
+    "yoy_pct_change": 64.8,
+    "long_arc_pct_change": 488.5,
     "long_arc_baseline_year": 2014,
     "history": [
       {
@@ -64,15 +64,70 @@
       {
         "year": 2023,
         "value": 2052
+      },
+      {
+        "year": 2024,
+        "value": 3382
       }
     ]
   },
   "chemicals": [
     {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1832,
+      "history": [
+        {
+          "year": 2015,
+          "value": 750
+        },
+        {
+          "year": 2016,
+          "value": 136
+        },
+        {
+          "year": 2017,
+          "value": 193
+        },
+        {
+          "year": 2018,
+          "value": 178
+        },
+        {
+          "year": 2019,
+          "value": 201
+        },
+        {
+          "year": 2020,
+          "value": 306
+        },
+        {
+          "year": 2021,
+          "value": 378
+        },
+        {
+          "year": 2022,
+          "value": 234
+        },
+        {
+          "year": 2023,
+          "value": 302
+        },
+        {
+          "year": 2024,
+          "value": 1832
+        }
+      ],
+      "yoy_pct_change": 506.8,
+      "long_arc_pct_change": 144.3,
+      "long_arc_baseline_year": 2015
+    },
+    {
       "chemical": "Nitric acid",
       "cas": "7697-37-2",
       "category": "general",
-      "total_pounds_recent": 775,
+      "total_pounds_recent": 894,
       "history": [
         {
           "year": 2015,
@@ -109,17 +164,21 @@
         {
           "year": 2023,
           "value": 775
+        },
+        {
+          "year": 2024,
+          "value": 894
         }
       ],
-      "yoy_pct_change": -52.2,
-      "long_arc_pct_change": 210.0,
+      "yoy_pct_change": 15.3,
+      "long_arc_pct_change": 257.5,
       "long_arc_baseline_year": 2015
     },
     {
       "chemical": "Nickel",
       "cas": "7440-02-0",
       "category": "carcinogen",
-      "total_pounds_recent": 724,
+      "total_pounds_recent": 398,
       "history": [
         {
           "year": 2014,
@@ -160,64 +219,21 @@
         {
           "year": 2023,
           "value": 724
+        },
+        {
+          "year": 2024,
+          "value": 398
         }
       ],
-      "yoy_pct_change": -72.7,
-      "long_arc_pct_change": 44.8,
+      "yoy_pct_change": -45.0,
+      "long_arc_pct_change": -20.3,
       "long_arc_baseline_year": 2014
-    },
-    {
-      "chemical": "Chromium",
-      "cas": "7440-47-3",
-      "category": "respiratory",
-      "total_pounds_recent": 302,
-      "history": [
-        {
-          "year": 2015,
-          "value": 750
-        },
-        {
-          "year": 2016,
-          "value": 136
-        },
-        {
-          "year": 2017,
-          "value": 193
-        },
-        {
-          "year": 2018,
-          "value": 178
-        },
-        {
-          "year": 2019,
-          "value": 201
-        },
-        {
-          "year": 2020,
-          "value": 306
-        },
-        {
-          "year": 2021,
-          "value": 378
-        },
-        {
-          "year": 2022,
-          "value": 234
-        },
-        {
-          "year": 2023,
-          "value": 302
-        }
-      ],
-      "yoy_pct_change": 29.2,
-      "long_arc_pct_change": -59.7,
-      "long_arc_baseline_year": 2015
     },
     {
       "chemical": "Lead  And Lead Compounds",
       "cas": "N420",
       "category": "pbt",
-      "total_pounds_recent": 251,
+      "total_pounds_recent": 257,
       "history": [
         {
           "year": 2014,
@@ -258,10 +274,14 @@
         {
           "year": 2023,
           "value": 251
+        },
+        {
+          "year": 2024,
+          "value": 257
         }
       ],
-      "yoy_pct_change": -43.5,
-      "long_arc_pct_change": 235.7,
+      "yoy_pct_change": 2.7,
+      "long_arc_pct_change": 244.7,
       "long_arc_baseline_year": 2014
     }
   ],
@@ -335,5 +355,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
-    "utilities_serving": 15,
-    "total_releases_pounds": 259646,
+    "utilities_serving": 8,
+    "total_releases_pounds": 254722,
     "air_releases_pounds": 2,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 259644,
-    "yoy_pct_change": 32.6,
-    "long_arc_pct_change": 607.0,
+    "land_releases_pounds": 254720,
+    "yoy_pct_change": -1.9,
+    "long_arc_pct_change": 593.6,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 259646
+      },
+      {
+        "year": 2024,
+        "value": 254722
       }
     ]
   },
@@ -88,10 +92,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 2
         }
       ]
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 259644,
+      "current": 254720,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 259644
+          "year": 2024,
+          "value": 254720
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,19 +205,19 @@
       "state_label": "California",
       "name": "M. Argueso & CO. INC.",
       "parent_company": "Paramelt USA",
-      "total_pounds_recent": 259646,
-      "yoy_pct_change": 32.6,
+      "total_pounds_recent": 254722,
+      "yoy_pct_change": -1.9,
       "top_chemical": "4,4'-Isopropylidenediphenol",
       "city": "Rosemead"
     }
   ],
   "water": {
-    "utilities_count": 15,
-    "population_served_total": 225761,
-    "violations_5yr_total": 27,
+    "utilities_count": 8,
+    "population_served_total": 152369,
+    "violations_5yr_total": 21,
     "health_based_5yr_total": 1,
-    "unresolved_total": 4,
-    "utilities_with_unresolved": 2,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
     "utilities": [
       {
         "slug": "golden-sands-mobile-home-park",
@@ -223,16 +227,6 @@
         "pwsid": "CA1900649",
         "population_served": 450,
         "health_based_violations_5yr": 1,
-        "unresolved": true
-      },
-      {
-        "slug": "cal-american-water-co",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cal American Water Co",
-        "pwsid": "CA5610040",
-        "population_served": 66809,
-        "health_based_violations_5yr": 0,
         "unresolved": true
       },
       {
@@ -302,66 +296,6 @@
         "name": "Amarillo Mutual Water Company",
         "pwsid": "CA1910002",
         "population_served": 3134,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cal-american-wc-las-posas-estates",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cal American Wc - Las Posas Estates",
-        "pwsid": "CA5610081",
-        "population_served": 2039,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cal-american-water-company-piru",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cal American Water Company - Piru",
-        "pwsid": "CA5610021",
-        "population_served": 2003,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cal-american-wc-rio-plaza",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cal American Wc - Rio Plaza",
-        "pwsid": "CA5610010",
-        "population_served": 1709,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cal-american-yerba-buena",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cal American - Yerba Buena",
-        "pwsid": "CA5610006",
-        "population_served": 690,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "sce-big-creek-powerhouse-1",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Sce/Big Creek Powerhouse 1",
-        "pwsid": "CA1009111",
-        "population_served": 104,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "sce-bishop-creek-plant-4",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Sce Bishop Creek Plant 4",
-        "pwsid": "CA1400078",
-        "population_served": 38,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -444,5 +378,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "Kern",
     "county_fips": "06029"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 4,
-    "total_releases_pounds": 10131,
-    "air_releases_pounds": 2151,
+    "total_releases_pounds": 20999,
+    "air_releases_pounds": 3112,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 7981,
-    "yoy_pct_change": 71.5,
-    "long_arc_pct_change": 11164.3,
+    "land_releases_pounds": 17887,
+    "yoy_pct_change": 107.3,
+    "long_arc_pct_change": 23247.4,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -57,6 +57,10 @@
       {
         "year": 2023,
         "value": 10131
+      },
+      {
+        "year": 2024,
+        "value": 20999
       }
     ]
   },
@@ -64,15 +68,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 2151,
+      "current": 3112,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 2151
+          "year": 2024,
+          "value": 3112
         }
       ]
     },
@@ -83,10 +87,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -94,25 +98,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 7981,
+      "current": 17887,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 7981
+          "year": 2024,
+          "value": 17887
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 19338265,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 0.0,
-      "long_arc_pct_change": -20.5,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -181,8 +185,8 @@
       "state_label": "California",
       "name": "Elk CO Of Texas LLC",
       "parent_company": "G Holdings INC",
-      "total_pounds_recent": 7194,
-      "yoy_pct_change": 229.9,
+      "total_pounds_recent": 17214,
+      "yoy_pct_change": 139.3,
       "top_chemical": "Nickel compounds",
       "city": "Shafter"
     },
@@ -192,8 +196,8 @@
       "state_label": "California",
       "name": "Building Materials Manufacturing LLC",
       "parent_company": "G Holdings INC",
-      "total_pounds_recent": 2937,
-      "yoy_pct_change": -21.2,
+      "total_pounds_recent": 3786,
+      "yoy_pct_change": 28.9,
       "top_chemical": "Formaldehyde",
       "city": "Shafter"
     }
@@ -325,5 +329,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

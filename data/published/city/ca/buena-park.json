@@ -9,17 +9,17 @@
     "county_name": "Orange",
     "county_fips": "06059"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
-    "utilities_serving": 2,
-    "total_releases_pounds": 337,
-    "air_releases_pounds": 331,
-    "water_releases_pounds": 0.4,
-    "land_releases_pounds": 6,
-    "yoy_pct_change": 30584.2,
-    "long_arc_pct_change": 108680.3,
+    "utilities_serving": 1,
+    "total_releases_pounds": 281,
+    "air_releases_pounds": 279,
+    "water_releases_pounds": 0.8,
+    "land_releases_pounds": 1,
+    "yoy_pct_change": -16.6,
+    "long_arc_pct_change": 90595.2,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 337
+      },
+      {
+        "year": 2024,
+        "value": 281
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 331,
+      "current": 279,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 331
+          "year": 2024,
+          "value": 279
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 0,
+      "current": 1,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 0
+          "year": 2024,
+          "value": 1
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 6,
+      "current": 1,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 6
+          "year": 2024,
+          "value": 1
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2636013,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": 39.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Hanson-Loran CO INC",
       "parent_company": "Hanson-Loran Co INC",
-      "total_pounds_recent": 331,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 279,
+      "yoy_pct_change": -15.6,
       "top_chemical": "Certain glycol ethers",
       "city": "Buena Park"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "Alloy Die Casting CO",
       "parent_company": null,
-      "total_pounds_recent": 6,
-      "yoy_pct_change": 635.3,
+      "total_pounds_recent": 2,
+      "yoy_pct_change": -71.2,
       "top_chemical": "Copper",
       "city": "Buena Park"
     },
@@ -223,15 +227,15 @@
       "state_label": "California",
       "name": "Leach International",
       "parent_company": "Transdigm INC",
-      "total_pounds_recent": 0.25,
-      "yoy_pct_change": 0.0,
+      "total_pounds_recent": 0.27,
+      "yoy_pct_change": 6.4,
       "top_chemical": "Lead",
       "city": "Buena Park"
     }
   ],
   "water": {
-    "utilities_count": 2,
-    "population_served_total": 82053,
+    "utilities_count": 1,
+    "population_served_total": 81998,
     "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
@@ -244,16 +248,6 @@
         "name": "City Of Buena Park",
         "pwsid": "CA3010003",
         "population_served": 81998,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "meadowlark-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Meadowlark Mobile Home Park",
-        "pwsid": "MT0000082",
-        "population_served": 55,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -336,5 +330,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 18,
     "utilities_serving": 0,
-    "total_releases_pounds": 1186489,
-    "air_releases_pounds": 966778,
-    "water_releases_pounds": 630,
-    "land_releases_pounds": 219081,
-    "yoy_pct_change": -16.4,
-    "long_arc_pct_change": 8.4,
+    "total_releases_pounds": 1215672,
+    "air_releases_pounds": 1058113,
+    "water_releases_pounds": 409,
+    "land_releases_pounds": 157150,
+    "yoy_pct_change": 2.5,
+    "long_arc_pct_change": 11.1,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 1186489
+      },
+      {
+        "year": 2024,
+        "value": 1215672
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 966778,
+      "current": 1058113,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 966778
+          "year": 2024,
+          "value": 1058113
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 630,
+      "current": 409,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 630
+          "year": 2024,
+          "value": 409
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 219081,
+      "current": 157150,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 219081
+          "year": 2024,
+          "value": 157150
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Tesoro Los Angeles Refinery-Carson Operations",
       "parent_company": "Marathon Petroleum CORP",
-      "total_pounds_recent": 955769,
-      "yoy_pct_change": -21.1,
+      "total_pounds_recent": 1019431,
+      "yoy_pct_change": 6.7,
       "top_chemical": "Ammonia",
       "city": "Carson"
     },
@@ -212,20 +216,9 @@
       "state_label": "California",
       "name": "Phillips 66 Los Angeles Refinery Carson Plant",
       "parent_company": "Phillips 66 Co",
-      "total_pounds_recent": 104025,
-      "yoy_pct_change": -2.8,
-      "top_chemical": "Carbonyl sulfide",
-      "city": "Carson"
-    },
-    {
-      "slug": "huck-international-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Huck International INC",
-      "parent_company": "Howmet Aerospace INC",
-      "total_pounds_recent": 36056,
-      "yoy_pct_change": 660267.8,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "total_pounds_recent": 104736,
+      "yoy_pct_change": 0.7,
+      "top_chemical": "Sulfuric acid (acid aerosols including mists, vapors, gas, fog, and other airborne forms of any particle size)",
       "city": "Carson"
     },
     {
@@ -234,8 +227,8 @@
       "state_label": "California",
       "name": "Equilon Carson Terminal",
       "parent_company": "Shell Petroleum INC",
-      "total_pounds_recent": 23511,
-      "yoy_pct_change": 21.1,
+      "total_pounds_recent": 23257,
+      "yoy_pct_change": -1.1,
       "top_chemical": "Xylene (mixed isomers)",
       "city": "Carson"
     },
@@ -245,21 +238,10 @@
       "state_label": "California",
       "name": "Ineos Polypropylene LLC",
       "parent_company": "Ineos USA LLC",
-      "total_pounds_recent": 22100,
-      "yoy_pct_change": 12.2,
+      "total_pounds_recent": 19031,
+      "yoy_pct_change": -13.9,
       "top_chemical": "Propylene",
       "city": "Carson"
-    },
-    {
-      "slug": "valmont-coatings-calwest-galvanizing",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Valmont Coatings Calwest Galvanizing",
-      "parent_company": "Valmont Industries INC",
-      "total_pounds_recent": 18070,
-      "yoy_pct_change": 51.3,
-      "top_chemical": "Zinc compounds",
-      "city": "Long Beach"
     },
     {
       "slug": "linde-inc",
@@ -267,8 +249,8 @@
       "state_label": "California",
       "name": "Linde INC",
       "parent_company": "Linde INC",
-      "total_pounds_recent": 6560,
-      "yoy_pct_change": -58.5,
+      "total_pounds_recent": 11484,
+      "yoy_pct_change": 75.1,
       "top_chemical": "Ammonia",
       "city": "Carson"
     },
@@ -278,20 +260,20 @@
       "state_label": "California",
       "name": "Air Products & Chemicals INC.",
       "parent_company": "Air Products & Chemicals INC",
-      "total_pounds_recent": 4806,
-      "yoy_pct_change": -48.6,
-      "top_chemical": "Ammonia",
+      "total_pounds_recent": 11372,
+      "yoy_pct_change": 136.6,
+      "top_chemical": "Methanol",
       "city": "Carson"
     },
     {
-      "slug": "johnson-laminating-coating-inc",
+      "slug": "eco-services-operations-corp",
       "state": "ca",
       "state_label": "California",
-      "name": "Johnson Laminating & Coating INC.",
-      "parent_company": null,
-      "total_pounds_recent": 3986,
-      "yoy_pct_change": -12.3,
-      "top_chemical": "Toluene",
+      "name": "Eco Services Operations Corp",
+      "parent_company": "Ecovyst INC",
+      "total_pounds_recent": 7972,
+      "yoy_pct_change": 227.1,
+      "top_chemical": "Sulfuric acid (acid aerosols including mists, vapors, gas, fog, and other airborne forms of any particle size)",
       "city": "Carson"
     },
     {
@@ -300,10 +282,32 @@
       "state_label": "California",
       "name": "Olympus Terminals LLC",
       "parent_company": "Olympus Terminals LLC",
-      "total_pounds_recent": 3548,
-      "yoy_pct_change": 32.0,
+      "total_pounds_recent": 4581,
+      "yoy_pct_change": 29.1,
       "top_chemical": "Toluene",
       "city": "Carson"
+    },
+    {
+      "slug": "johnson-laminating-coating-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Johnson Laminating & Coating INC.",
+      "parent_company": null,
+      "total_pounds_recent": 4066,
+      "yoy_pct_change": 2.0,
+      "top_chemical": "Toluene",
+      "city": "Carson"
+    },
+    {
+      "slug": "ips-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ips Corp",
+      "parent_company": "Ips CORP",
+      "total_pounds_recent": 3577,
+      "yoy_pct_change": 23.9,
+      "top_chemical": "Dichloromethane",
+      "city": "Gardena"
     }
   ],
   "water": {
@@ -392,5 +396,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

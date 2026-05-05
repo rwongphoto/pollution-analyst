@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 12,
     "utilities_serving": 1,
-    "total_releases_pounds": 79867,
-    "air_releases_pounds": 12363,
-    "water_releases_pounds": 9,
-    "land_releases_pounds": 67494,
-    "yoy_pct_change": -16.9,
-    "long_arc_pct_change": -65.9,
+    "total_releases_pounds": 79484,
+    "air_releases_pounds": 13672,
+    "water_releases_pounds": 0.17,
+    "land_releases_pounds": 65812,
+    "yoy_pct_change": -0.5,
+    "long_arc_pct_change": -66.0,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 79867
+      },
+      {
+        "year": 2024,
+        "value": 79484
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 12363,
+      "current": 13672,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 12363
+          "year": 2024,
+          "value": 13672
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 9,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 9
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 67494,
+      "current": 65812,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 67494
+          "year": 2024,
+          "value": 65812
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,10 +205,21 @@
       "state_label": "California",
       "name": "US Ecology Vernon INC.",
       "parent_company": "Republic Services INC",
-      "total_pounds_recent": 65342,
-      "yoy_pct_change": -18.5,
+      "total_pounds_recent": 59522,
+      "yoy_pct_change": -8.9,
       "top_chemical": "Copper  And Copper Compounds",
       "city": "Vernon"
+    },
+    {
+      "slug": "evonik-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Evonik Corp",
+      "parent_company": "Evonik CORP",
+      "total_pounds_recent": 7643,
+      "yoy_pct_change": 90.3,
+      "top_chemical": "4,4'-Isopropylidenediphenol",
+      "city": "Los Angeles"
     },
     {
       "slug": "owens-brockway-glass-container-inc-plant-23",
@@ -212,8 +227,8 @@
       "state_label": "California",
       "name": "Owens-Brockway Glass Container INC Plant 23",
       "parent_company": "O-I Glass INC",
-      "total_pounds_recent": 5068,
-      "yoy_pct_change": -11.1,
+      "total_pounds_recent": 6472,
+      "yoy_pct_change": 27.7,
       "top_chemical": "Ammonia",
       "city": "Vernon"
     },
@@ -223,21 +238,10 @@
       "state_label": "California",
       "name": "Arcadia INC.",
       "parent_company": "Dmc Global INC",
-      "total_pounds_recent": 4467,
-      "yoy_pct_change": -1.2,
+      "total_pounds_recent": 4593,
+      "yoy_pct_change": 2.8,
       "top_chemical": "Certain glycol ethers",
       "city": "Vernon"
-    },
-    {
-      "slug": "evonik-corp",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Evonik Corp",
-      "parent_company": "Evonik CORP",
-      "total_pounds_recent": 4017,
-      "yoy_pct_change": -14.6,
-      "top_chemical": "Methyl isobutyl ketone",
-      "city": "Los Angeles"
     },
     {
       "slug": "exxonmobil-oil-corp-vernon-terminal",
@@ -245,8 +249,8 @@
       "state_label": "California",
       "name": "Exxonmobil Oil Corp Vernon Terminal",
       "parent_company": "Exxon Mobil CORP",
-      "total_pounds_recent": 487,
-      "yoy_pct_change": 3.4,
+      "total_pounds_recent": 649,
+      "yoy_pct_change": 33.3,
       "top_chemical": "n-Hexane",
       "city": "Vernon"
     },
@@ -256,8 +260,8 @@
       "state_label": "California",
       "name": "Atlas Galvanizing LLC",
       "parent_company": null,
-      "total_pounds_recent": 214,
-      "yoy_pct_change": -2.9,
+      "total_pounds_recent": 364,
+      "yoy_pct_change": 69.9,
       "top_chemical": "Zinc compounds",
       "city": "Vernon"
     },
@@ -267,8 +271,8 @@
       "state_label": "California",
       "name": "Nucor Warehouse Systems",
       "parent_company": "Nucor CORP",
-      "total_pounds_recent": 93,
-      "yoy_pct_change": 20.8,
+      "total_pounds_recent": 120,
+      "yoy_pct_change": 29.0,
       "top_chemical": "Manganese",
       "city": "Los Angeles"
     },
@@ -278,9 +282,20 @@
       "state_label": "California",
       "name": "Sterigenics US LLC La 50Th",
       "parent_company": "Sotera Health LLC",
-      "total_pounds_recent": 76,
-      "yoy_pct_change": -23.2,
+      "total_pounds_recent": 43,
+      "yoy_pct_change": -43.4,
       "top_chemical": "Ethylene oxide",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "national-ready-mix-concrete-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "National Ready Mix Concrete CO.",
+      "parent_company": "National Cement",
+      "total_pounds_recent": 37,
+      "yoy_pct_change": -9.0,
+      "top_chemical": "Lead compounds",
       "city": "Los Angeles"
     },
     {
@@ -289,21 +304,10 @@
       "state_label": "California",
       "name": "Sterigenics-Los Angeles Facility",
       "parent_company": "Sotera Health LLC",
-      "total_pounds_recent": 55,
-      "yoy_pct_change": -16.7,
+      "total_pounds_recent": 35,
+      "yoy_pct_change": -36.4,
       "top_chemical": "Ethylene oxide",
       "city": "Vernon"
-    },
-    {
-      "slug": "national-ready-mix-concrete-co",
-      "state": "ca",
-      "state_label": "California",
-      "name": "National Ready Mix Concrete CO.",
-      "parent_company": "National Cement",
-      "total_pounds_recent": 41,
-      "yoy_pct_change": -21.8,
-      "top_chemical": "Lead compounds",
-      "city": "Los Angeles"
     }
   ],
   "water": {
@@ -403,5 +407,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

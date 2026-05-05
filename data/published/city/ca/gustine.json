@@ -9,17 +9,17 @@
     "county_name": "Merced",
     "county_fips": "06047"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
-    "utilities_serving": 2,
-    "total_releases_pounds": 80542,
+    "utilities_serving": 1,
+    "total_releases_pounds": 6648,
     "air_releases_pounds": 0,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 80542,
-    "yoy_pct_change": 20.1,
-    "long_arc_pct_change": 68.4,
+    "land_releases_pounds": 6648,
+    "yoy_pct_change": -91.7,
+    "long_arc_pct_change": -86.1,
     "long_arc_baseline_year": 2015,
     "history": [
       {
@@ -57,6 +57,10 @@
       {
         "year": 2023,
         "value": 80542
+      },
+      {
+        "year": 2024,
+        "value": 6648
       }
     ]
   },
@@ -68,10 +72,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -83,10 +87,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -94,25 +98,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 80542,
+      "current": 6648,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 80542
+          "year": 2024,
+          "value": 6648
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 583191,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 20.4,
-      "long_arc_pct_change": 48.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -181,15 +185,15 @@
       "state_label": "California",
       "name": "Saputo Cheese USA INC",
       "parent_company": "Saputo INC",
-      "total_pounds_recent": 80542,
-      "yoy_pct_change": 20.1,
+      "total_pounds_recent": 6648,
+      "yoy_pct_change": -91.7,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Gustine"
     }
   ],
   "water": {
-    "utilities_count": 2,
-    "population_served_total": 6230,
+    "utilities_count": 1,
+    "population_served_total": 6110,
     "violations_5yr_total": 2,
     "health_based_5yr_total": 1,
     "unresolved_total": 2,
@@ -204,16 +208,6 @@
         "population_served": 6110,
         "health_based_violations_5yr": 1,
         "unresolved": true
-      },
-      {
-        "slug": "fisherman-s-bend-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Fisherman's Bend Mhp",
-        "pwsid": "CA5000058",
-        "population_served": 120,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
       }
     ]
   },
@@ -294,5 +288,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

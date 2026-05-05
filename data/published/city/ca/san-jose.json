@@ -9,74 +9,78 @@
     "county_name": "Santa Clara",
     "county_fips": "06085"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 18,
-    "utilities_serving": 69,
-    "total_releases_pounds": 122051,
-    "air_releases_pounds": 17396,
-    "water_releases_pounds": 11,
-    "land_releases_pounds": 104645,
-    "yoy_pct_change": -25.8,
-    "long_arc_pct_change": -4.2,
+    "facilities_in_city": 17,
+    "utilities_serving": 11,
+    "total_releases_pounds": 437605,
+    "air_releases_pounds": 624,
+    "water_releases_pounds": 16,
+    "land_releases_pounds": 436965,
+    "yoy_pct_change": 370.4,
+    "long_arc_pct_change": 1234.1,
     "long_arc_baseline_year": 2010,
     "history": [
       {
         "year": 2010,
-        "value": 127459
+        "value": 32801
       },
       {
         "year": 2011,
-        "value": 100539
+        "value": 17818
       },
       {
         "year": 2012,
-        "value": 106133
+        "value": 22915
       },
       {
         "year": 2013,
-        "value": 30538
+        "value": 20669
       },
       {
         "year": 2014,
-        "value": 49331
+        "value": 39464
       },
       {
         "year": 2015,
-        "value": 101229
+        "value": 69582
       },
       {
         "year": 2016,
-        "value": 197755
+        "value": 169924
       },
       {
         "year": 2017,
-        "value": 87486
+        "value": 58587
       },
       {
         "year": 2018,
-        "value": 204304
+        "value": 175174
       },
       {
         "year": 2019,
-        "value": 70411
+        "value": 46447
       },
       {
         "year": 2020,
-        "value": 224892
+        "value": 185363
       },
       {
         "year": 2021,
-        "value": 301997
+        "value": 264067
       },
       {
         "year": 2022,
-        "value": 164594
+        "value": 133937
       },
       {
         "year": 2023,
-        "value": 122051
+        "value": 93032
+      },
+      {
+        "year": 2024,
+        "value": 437605
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 17396,
+      "current": 624,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 17396
+          "year": 2024,
+          "value": 624
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 11,
+      "current": 16,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 11
+          "year": 2024,
+          "value": 16
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 104645,
+      "current": 436965,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 104645
+          "year": 2024,
+          "value": 436965
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2123248,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 6.0,
-      "long_arc_pct_change": -31.3,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,47 +200,25 @@
   ],
   "facilities": [
     {
-      "slug": "gorilla-circuits",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Gorilla Circuits",
-      "parent_company": "Gorilla Circuits",
-      "total_pounds_recent": 73200,
-      "yoy_pct_change": 38.8,
-      "top_chemical": "Copper",
-      "city": "San Jose"
-    },
-    {
-      "slug": "lumileds-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Lumileds LLC",
-      "parent_company": "Lumileds USA Holding CORP",
-      "total_pounds_recent": 27070,
-      "yoy_pct_change": -10.2,
-      "top_chemical": "Ammonia",
-      "city": "San Jose"
-    },
-    {
       "slug": "clean-harbors-san-jose-llc",
       "state": "ca",
       "state_label": "California",
       "name": "Clean Harbors San Jose LLC",
       "parent_company": "Clean Harbors INC",
-      "total_pounds_recent": 9156,
-      "yoy_pct_change": -87.2,
-      "top_chemical": "Nitric acid",
+      "total_pounds_recent": 358921,
+      "yoy_pct_change": 3820.0,
+      "top_chemical": "Lead  And Lead Compounds",
       "city": "San Jose"
     },
     {
-      "slug": "western-digital-technologies-inc",
+      "slug": "gorilla-circuits",
       "state": "ca",
       "state_label": "California",
-      "name": "Western Digital Technologies INC",
-      "parent_company": "Western Digital CORP",
-      "total_pounds_recent": 6470,
-      "yoy_pct_change": 17.6,
-      "top_chemical": "N-Methyl-2-pyrrolidone",
+      "name": "Gorilla Circuits",
+      "parent_company": "Gorilla Circuits",
+      "total_pounds_recent": 72800,
+      "yoy_pct_change": -0.5,
+      "top_chemical": "Copper",
       "city": "San Jose"
     },
     {
@@ -245,19 +227,8 @@
       "state_label": "California",
       "name": "Ttm Technologies",
       "parent_company": "Ttm Technologies INC",
-      "total_pounds_recent": 2777,
-      "yoy_pct_change": 54.3,
-      "top_chemical": "Nitric acid",
-      "city": "San Jose"
-    },
-    {
-      "slug": "quantumclean",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Quantumclean",
-      "parent_company": "Quantum Global Technologies LLC",
-      "total_pounds_recent": 1950,
-      "yoy_pct_change": 290.0,
+      "total_pounds_recent": 2911,
+      "yoy_pct_change": 4.8,
       "top_chemical": "Nitric acid",
       "city": "San Jose"
     },
@@ -267,8 +238,8 @@
       "state_label": "California",
       "name": "Equilon San Jose Terminal",
       "parent_company": "Shell Petroleum INC",
-      "total_pounds_recent": 603,
-      "yoy_pct_change": -11.7,
+      "total_pounds_recent": 1948,
+      "yoy_pct_change": 223.0,
       "top_chemical": "Xylene (mixed isomers)",
       "city": "San Jose"
     },
@@ -278,20 +249,20 @@
       "state_label": "California",
       "name": "Babbitt Bearing CO INC",
       "parent_company": null,
-      "total_pounds_recent": 334,
-      "yoy_pct_change": 18.9,
+      "total_pounds_recent": 312,
+      "yoy_pct_change": -6.6,
       "top_chemical": "Lead compounds",
       "city": "San Jose"
     },
     {
-      "slug": "sanmina-bldg-2",
+      "slug": "western-digital-technologies-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Sanmina - Bldg # 2",
-      "parent_company": "Sanmina CORP",
-      "total_pounds_recent": 212,
-      "yoy_pct_change": -35.3,
-      "top_chemical": "Lead compounds",
+      "name": "Western Digital Technologies INC",
+      "parent_company": "Western Digital CORP",
+      "total_pounds_recent": 221,
+      "yoy_pct_change": -96.6,
+      "top_chemical": "N-Methyl-2-pyrrolidone",
       "city": "San Jose"
     },
     {
@@ -300,30 +271,53 @@
       "state_label": "California",
       "name": "Sanmina-Plant # 1",
       "parent_company": "Sanmina CORP",
-      "total_pounds_recent": 112,
-      "yoy_pct_change": 58.3,
+      "total_pounds_recent": 128,
+      "yoy_pct_change": 14.4,
       "top_chemical": "Copper  And Copper Compounds",
+      "city": "San Jose"
+    },
+    {
+      "slug": "burke-industries-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Burke Industries INC",
+      "parent_company": "Mannington Mills INC",
+      "total_pounds_recent": 93,
+      "yoy_pct_change": -7.2,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "San Jose"
+    },
+    {
+      "slug": "hill-brothers-chemical-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Hill Brothers Chemical CO",
+      "parent_company": "Hill Brothers Chemical Co",
+      "total_pounds_recent": 80,
+      "yoy_pct_change": 385.3,
+      "top_chemical": "Ammonia",
+      "city": "San Jose"
+    },
+    {
+      "slug": "quantumscape-building-2",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Quantumscape - Building 2",
+      "parent_company": null,
+      "total_pounds_recent": 74,
+      "yoy_pct_change": null,
+      "top_chemical": "Lithium bis[(trifluoromethyl)sulfonyl] azanide",
       "city": "San Jose"
     }
   ],
   "water": {
-    "utilities_count": 69,
-    "population_served_total": 3389570,
-    "violations_5yr_total": 16,
-    "health_based_5yr_total": 7,
-    "unresolved_total": 8,
-    "utilities_with_unresolved": 4,
+    "utilities_count": 11,
+    "population_served_total": 1383776,
+    "violations_5yr_total": 9,
+    "health_based_5yr_total": 6,
+    "unresolved_total": 5,
+    "utilities_with_unresolved": 3,
     "utilities": [
-      {
-        "slug": "bella-lago-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Bella Lago Mobile Home Park",
-        "pwsid": "CA1700610",
-        "population_served": 152,
-        "health_based_violations_5yr": 1,
-        "unresolved": true
-      },
       {
         "slug": "roseview-heights-mutual-water-company",
         "state": "ca",
@@ -355,102 +349,12 @@
         "unresolved": false
       },
       {
-        "slug": "cws-bakersfield",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws - Bakersfield",
-        "pwsid": "CA1510003",
-        "population_served": 267881,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-stockton",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service - Stockton",
-        "pwsid": "CA3910001",
-        "population_served": 176266,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "bakersfield-city-of",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Bakersfield, City Of",
-        "pwsid": "CA1510031",
-        "population_served": 160144,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-co-ela",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service Co. - Ela",
-        "pwsid": "CA1910036",
-        "population_served": 152474,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-visalia",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws - Visalia",
-        "pwsid": "CA5410016",
-        "population_served": 148496,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-co-dominguez",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service Co. - Dominguez",
-        "pwsid": "CA1910033",
-        "population_served": 143996,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cwsc-salinas",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cwsc Salinas",
-        "pwsid": "CA2710010",
-        "population_served": 123679,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cal-water-service-co-chico",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cal-Water Service Co.-Chico",
-        "pwsid": "CA0410002",
-        "population_served": 114925,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
         "slug": "great-oaks-wc-inc",
         "state": "ca",
         "state_label": "California",
         "name": "Great Oaks Wc Inc",
         "pwsid": "CA4310022",
         "population_served": 110088,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-san-mateo",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service - San Mateo",
-        "pwsid": "CA4110008",
-        "population_served": 102348,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -465,62 +369,12 @@
         "unresolved": false
       },
       {
-        "slug": "california-water-service-co-herm-redo",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service Co. - Herm/Redo",
-        "pwsid": "CA1910134",
-        "population_served": 96853,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-co-palos-ver",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service Co. - Palos Ver",
-        "pwsid": "CA1910104",
-        "population_served": 71452,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
         "slug": "cwsc-los-altos-suburban",
         "state": "ca",
         "state_label": "California",
         "name": "Cwsc Los Altos Suburban",
         "pwsid": "CA4310001",
         "population_served": 69973,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-s-san-francisco",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service-S San Francisco",
-        "pwsid": "CA4110009",
-        "population_served": 64146,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-bear-gulch",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service - Bear Gulch",
-        "pwsid": "CA4110006",
-        "population_served": 61431,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-livermore",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service - Livermore",
-        "pwsid": "CA0110003",
-        "population_served": 60414,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -535,66 +389,6 @@
         "unresolved": false
       },
       {
-        "slug": "hawthorne-city-water-dept",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Hawthorne-City Water Dept.",
-        "pwsid": "CA1910047",
-        "population_served": 44718,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-san-carlos",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service - San Carlos",
-        "pwsid": "CA4110007",
-        "population_served": 35344,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-selma",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws - Selma",
-        "pwsid": "CA1010024",
-        "population_served": 26517,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-north-garden",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws - North Garden",
-        "pwsid": "CA1510055",
-        "population_served": 22762,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-co-westlake",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service Co - Westlake",
-        "pwsid": "CA5610016",
-        "population_served": 19533,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-co-travis-afb",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service Co.-Travis Afb",
-        "pwsid": "CA4810701",
-        "population_served": 18111,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
         "slug": "cupertino",
         "state": "ca",
         "state_label": "California",
@@ -605,382 +399,12 @@
         "unresolved": false
       },
       {
-        "slug": "cwsc-king-city",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cwsc King City",
-        "pwsid": "CA2710009",
-        "population_served": 16334,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cal-water-service-co-marysville",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cal-Water Service Co.-Marysville",
-        "pwsid": "CA5810001",
-        "population_served": 12419,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cal-water-service-co-oroville",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cal-Water Service Co.-Oroville",
-        "pwsid": "CA0410005",
-        "population_served": 11106,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-co-dixon",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service Co. - Dixon",
-        "pwsid": "CA4810002",
-        "population_served": 10623,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cal-water-service-co-willows",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cal-Water Service Co.-Willows",
-        "pwsid": "CA1110003",
-        "population_served": 7240,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cwsc-salinas-hills",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cwsc Salinas Hills",
-        "pwsid": "CA2710012",
-        "population_served": 5293,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "commerce-city-water-dept",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Commerce-City, Water Dept.",
-        "pwsid": "CA1910050",
-        "population_served": 4205,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "tesoro-viejo-master-mwc-inc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Tesoro Viejo Master Mwc, Inc.",
-        "pwsid": "CA2010017",
-        "population_served": 3885,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cwsc-oak-hills",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cwsc Oak Hills",
-        "pwsid": "CA2710019",
-        "population_served": 3161,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-kernville",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws - Kernville",
-        "pwsid": "CA1510033",
-        "population_served": 2572,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "lucerne-water-co-cal-water-service",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Lucerne Water Co. - Cal Water Service",
-        "pwsid": "CA1710005",
-        "population_served": 2129,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cwsc-las-lomas",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cwsc Las Lomas",
-        "pwsid": "CA2710013",
-        "population_served": 2084,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cal-water-service-co-hamilton-city",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cal-Water Service Co.-Hamilton City",
-        "pwsid": "CA1110002",
-        "population_served": 1799,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-co-lancaster",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service Co.-Lancaster",
-        "pwsid": "CA1910010",
-        "population_served": 1387,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-southlake-system",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws Southlake System",
-        "pwsid": "CA1510039",
-        "population_served": 1112,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "westfield-garden-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Westfield Garden Mobile Home Park",
-        "pwsid": "TX1011947",
-        "population_served": 942,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-co-lake-hughes",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service Co-Lake Hughes",
-        "pwsid": "CA1910242",
-        "population_served": 929,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "california-water-service-co-leona-valley",
-        "state": "ca",
-        "state_label": "California",
-        "name": "California Water Service Co-Leona Valley",
-        "pwsid": "CA1910243",
-        "population_served": 878,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-lower-bodfish-water-system",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws - Lower Bodfish Water System",
-        "pwsid": "CA1510056",
-        "population_served": 736,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-tulco-water-company",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws - Tulco Water Company",
-        "pwsid": "CA5410041",
-        "population_served": 716,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cedar-grove-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cedar Grove Mobile Home Park",
-        "pwsid": "TX0500043",
-        "population_served": 595,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "mission-oaks-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Mission Oaks Mobile Home Park",
-        "pwsid": "CA3510006",
-        "population_served": 550,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "riverbend-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Riverbend Mhp",
-        "pwsid": "OK3007232",
-        "population_served": 500,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "armstrong-valley-cal-water-service-puc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Armstrong Valley-Cal Water Service (Puc)",
-        "pwsid": "CA4910018",
-        "population_served": 473,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "coast-springs-cal-water-service-puc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Coast Springs - Cal. Water Service (Puc)",
-        "pwsid": "CA2110007",
-        "population_served": 388,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-upper-bodfish-water-system",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws - Upper Bodfish Water System",
-        "pwsid": "CA1510026",
-        "population_served": 307,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
         "slug": "mt-pleasant-water-users-association",
         "state": "ca",
         "state_label": "California",
         "name": "Mt. Pleasant Water Users Association",
         "pwsid": "CA4300563",
         "population_served": 300,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-lakeland",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws - Lakeland",
-        "pwsid": "CA1510049",
-        "population_served": 294,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-onyx-water-system",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws-Onyx Water System",
-        "pwsid": "CA1510043",
-        "population_served": 284,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-split-mountain-water-system",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws-Split Mountain Water System",
-        "pwsid": "CA1500407",
-        "population_served": 226,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "longhorn-mobile-home-community",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Longhorn Mobile Home Community",
-        "pwsid": "TX1010587",
-        "population_served": 220,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-fremont-valley",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws - Fremont Valley",
-        "pwsid": "CA1500333",
-        "population_served": 167,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-mullen-water-company",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws - Mullen Water Company",
-        "pwsid": "CA5400935",
-        "population_served": 138,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cws-grand-oaks-water-system",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cws-Grand Oaks Water System",
-        "pwsid": "CA1500374",
-        "population_served": 122,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "rancho-del-paradiso-cal-water-svc-puc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Rancho Del Paradiso-Cal Water Svc (Puc)",
-        "pwsid": "CA4900514",
-        "population_served": 94,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "lake-san-antonio-mhp-ws",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Lake San Antonio Mhp Ws",
-        "pwsid": "CA2701906",
-        "population_served": 84,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "hawkins-water-co-cal-water-service-puc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Hawkins Water Co-Cal Water Service (Puc)",
-        "pwsid": "CA4900546",
-        "population_served": 81,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "noel-heights-cal-water-service-puc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Noel Heights-Cal Water Service (Puc)",
-        "pwsid": "CA4900785",
-        "population_served": 79,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -1083,5 +507,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

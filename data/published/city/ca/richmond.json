@@ -9,17 +9,17 @@
     "county_name": "Contra Costa",
     "county_fips": "06013"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 10,
     "utilities_serving": 0,
-    "total_releases_pounds": 590767,
-    "air_releases_pounds": 403318,
-    "water_releases_pounds": 44436,
-    "land_releases_pounds": 143013,
-    "yoy_pct_change": -3.3,
-    "long_arc_pct_change": -20.0,
+    "total_releases_pounds": 813378,
+    "air_releases_pounds": 463702,
+    "water_releases_pounds": 15831,
+    "land_releases_pounds": 333844,
+    "yoy_pct_change": 37.7,
+    "long_arc_pct_change": 10.1,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 590767
+      },
+      {
+        "year": 2024,
+        "value": 813378
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 403318,
+      "current": 463702,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 403318
+          "year": 2024,
+          "value": 463702
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 44436,
+      "current": 15831,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 44436
+          "year": 2024,
+          "value": 15831
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 143013,
+      "current": 333844,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 143013
+          "year": 2024,
+          "value": 333844
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 82261234,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 11.9,
-      "long_arc_pct_change": 109.1,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,20 +205,9 @@
       "state_label": "California",
       "name": "Chevron Products CO Richmond Refinery",
       "parent_company": "Chevron CORP",
-      "total_pounds_recent": 571149,
-      "yoy_pct_change": -2.8,
+      "total_pounds_recent": 806300,
+      "yoy_pct_change": 41.2,
       "top_chemical": "Ammonia",
-      "city": "Richmond"
-    },
-    {
-      "slug": "chemtrade-west-us-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Chemtrade West US LLC",
-      "parent_company": "Chemtrade Holdco US INC",
-      "total_pounds_recent": 15935,
-      "yoy_pct_change": 2115.6,
-      "top_chemical": "Mixture",
       "city": "Richmond"
     },
     {
@@ -223,31 +216,9 @@
       "state_label": "California",
       "name": "Phillips 66 Richmond Terminal",
       "parent_company": "Phillips 66 Co",
-      "total_pounds_recent": 1451,
-      "yoy_pct_change": -72.5,
-      "top_chemical": "Xylene (mixed isomers)",
-      "city": "Richmond"
-    },
-    {
-      "slug": "chevron-richmond-technology-center",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Chevron Richmond Technology Center",
-      "parent_company": "Chevron CORP",
-      "total_pounds_recent": 902,
-      "yoy_pct_change": -87.1,
-      "top_chemical": "n-Hexane",
-      "city": "Richmond"
-    },
-    {
-      "slug": "bio-rad-laboratories-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Bio-Rad Laboratories INC",
-      "parent_company": "Bio-Rad Laboratories INC",
-      "total_pounds_recent": 826,
-      "yoy_pct_change": -91.4,
-      "top_chemical": "Methanol",
+      "total_pounds_recent": 2426,
+      "yoy_pct_change": 67.2,
+      "top_chemical": "Toluene",
       "city": "Richmond"
     },
     {
@@ -256,9 +227,64 @@
       "state_label": "California",
       "name": "Brenntag Pacific INC.",
       "parent_company": "Brenntag North America INC",
-      "total_pounds_recent": 500,
-      "yoy_pct_change": 0.0,
+      "total_pounds_recent": 2200,
+      "yoy_pct_change": 340.0,
       "top_chemical": "Ethylene glycol",
+      "city": "Richmond"
+    },
+    {
+      "slug": "chevron-richmond-technology-center",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Chevron Richmond Technology Center",
+      "parent_company": "Chevron CORP",
+      "total_pounds_recent": 948,
+      "yoy_pct_change": 5.1,
+      "top_chemical": "n-Hexane",
+      "city": "Richmond"
+    },
+    {
+      "slug": "chemtrade-west-us-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Chemtrade West US LLC",
+      "parent_company": "Chemtrade Holdco US INC",
+      "total_pounds_recent": 805,
+      "yoy_pct_change": -95.0,
+      "top_chemical": "Sulfuric acid (acid aerosols including mists, vapors, gas, fog, and other airborne forms of any particle size)",
+      "city": "Richmond"
+    },
+    {
+      "slug": "bio-rad-laboratories-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Bio-Rad Laboratories INC",
+      "parent_company": "Bio-Rad Laboratories INC",
+      "total_pounds_recent": 689,
+      "yoy_pct_change": -16.6,
+      "top_chemical": "Methanol",
+      "city": "Richmond"
+    },
+    {
+      "slug": "zygo-corp-extreme-precision-optics",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Zygo Corp Extreme Precision Optics",
+      "parent_company": "Ametek INC",
+      "total_pounds_recent": 4,
+      "yoy_pct_change": 66633.3,
+      "top_chemical": "Lead",
+      "city": "Richmond"
+    },
+    {
+      "slug": "gold-bond-building-products-richmond",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Gold Bond Building Products - Richmond",
+      "parent_company": "Spangler Cos INC",
+      "total_pounds_recent": 3,
+      "yoy_pct_change": 1211.5,
+      "top_chemical": "Manganese",
       "city": "Richmond"
     },
     {
@@ -267,8 +293,8 @@
       "state_label": "California",
       "name": "Parker Hannifin Corp Veriflo Div Richmond",
       "parent_company": "Parker Hannifin CORP",
-      "total_pounds_recent": 3,
-      "yoy_pct_change": 32.5,
+      "total_pounds_recent": 2,
+      "yoy_pct_change": -23.4,
       "top_chemical": "Chromium",
       "city": "Richmond"
     },
@@ -278,31 +304,9 @@
       "state_label": "California",
       "name": "Safety-Kleen Systems INC",
       "parent_company": "Clean Harbors INC",
-      "total_pounds_recent": 0.81,
-      "yoy_pct_change": 70.5,
+      "total_pounds_recent": 0.36,
+      "yoy_pct_change": -55.6,
       "top_chemical": "Zinc compounds",
-      "city": "Richmond"
-    },
-    {
-      "slug": "gold-bond-building-products-richmond",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Gold Bond Building Products - Richmond",
-      "parent_company": "Spangler Cos INC",
-      "total_pounds_recent": 0.26,
-      "yoy_pct_change": 30.0,
-      "top_chemical": "Lead compounds",
-      "city": "Richmond"
-    },
-    {
-      "slug": "zygo-corp-extreme-precision-optics",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Zygo Corp Extreme Precision Optics",
-      "parent_company": "Ametek INC",
-      "total_pounds_recent": 0.01,
-      "yoy_pct_change": -90.3,
-      "top_chemical": "Lead",
       "city": "Richmond"
     }
   ],
@@ -392,5 +396,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

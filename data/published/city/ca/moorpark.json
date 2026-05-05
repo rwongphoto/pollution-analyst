@@ -9,22 +9,42 @@
     "county_name": "Ventura",
     "county_fips": "06111"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 5,
-    "total_releases_pounds": 10,
-    "air_releases_pounds": 10,
+    "total_releases_pounds": 15,
+    "air_releases_pounds": 0,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 0,
+    "land_releases_pounds": 15,
     "yoy_pct_change": null,
-    "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2023,
+    "long_arc_pct_change": 413.8,
+    "long_arc_baseline_year": 2011,
     "history": [
       {
-        "year": 2023,
-        "value": 10
+        "year": 2011,
+        "value": 3
+      },
+      {
+        "year": 2015,
+        "value": 4
+      },
+      {
+        "year": 2016,
+        "value": 4
+      },
+      {
+        "year": 2017,
+        "value": 4
+      },
+      {
+        "year": 2018,
+        "value": 4
+      },
+      {
+        "year": 2024,
+        "value": 15
       }
     ]
   },
@@ -32,15 +52,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 10,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 10
+          "year": 2024,
+          "value": 0
         }
       ]
     },
@@ -51,10 +71,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -62,25 +82,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 0,
+      "current": 15,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 0
+          "year": 2024,
+          "value": 15
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 987448,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 2.2,
-      "long_arc_pct_change": -13.8,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -144,14 +164,14 @@
   ],
   "facilities": [
     {
-      "slug": "pentair-water-pool-spa",
+      "slug": "national-ready-mix-concrete-co",
       "state": "ca",
       "state_label": "California",
-      "name": "Pentair Water Pool & Spa",
-      "parent_company": "Pentair INC",
-      "total_pounds_recent": 10,
+      "name": "National Ready Mix Concrete CO .",
+      "parent_company": "National Cement",
+      "total_pounds_recent": 15,
       "yoy_pct_change": null,
-      "top_chemical": "Phenol",
+      "top_chemical": "Lead compounds",
       "city": "Moorpark"
     }
   ],
@@ -292,5 +312,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

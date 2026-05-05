@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
-    "utilities_serving": 8,
-    "total_releases_pounds": 8655,
-    "air_releases_pounds": 8655,
+    "utilities_serving": 7,
+    "total_releases_pounds": 9159,
+    "air_releases_pounds": 9159,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
-    "yoy_pct_change": 38.8,
-    "long_arc_pct_change": 107.5,
+    "yoy_pct_change": 5.8,
+    "long_arc_pct_change": 119.5,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 8655
+      },
+      {
+        "year": 2024,
+        "value": 9159
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 8655,
+      "current": 9159,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 8655
+          "year": 2024,
+          "value": 9159
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -118,10 +122,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -129,10 +133,10 @@
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,30 +205,20 @@
       "state_label": "California",
       "name": "The Gill Corp",
       "parent_company": "The Gill CORP",
-      "total_pounds_recent": 8655,
-      "yoy_pct_change": 38.8,
+      "total_pounds_recent": 9159,
+      "yoy_pct_change": 5.8,
       "top_chemical": "Phenol",
       "city": "El Monte"
     }
   ],
   "water": {
-    "utilities_count": 8,
-    "population_served_total": 289546,
-    "violations_5yr_total": 74,
-    "health_based_5yr_total": 44,
-    "unresolved_total": 48,
-    "utilities_with_unresolved": 5,
+    "utilities_count": 7,
+    "population_served_total": 289512,
+    "violations_5yr_total": 38,
+    "health_based_5yr_total": 8,
+    "unresolved_total": 12,
+    "utilities_with_unresolved": 4,
     "utilities": [
-      {
-        "slug": "sunny-road-water-system",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Sunny Road Water System",
-        "pwsid": "CA3901213",
-        "population_served": 34,
-        "health_based_violations_5yr": 36,
-        "unresolved": true
-      },
       {
         "slug": "sterling-mutual-water-company",
         "state": "ca",
@@ -374,5 +368,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

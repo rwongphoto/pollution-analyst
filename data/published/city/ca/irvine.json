@@ -9,22 +9,22 @@
     "county_name": "Orange",
     "county_fips": "06059"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 8,
-    "utilities_serving": 15,
-    "total_releases_pounds": 2606,
-    "air_releases_pounds": 43,
-    "water_releases_pounds": 1,
-    "land_releases_pounds": 2562,
-    "yoy_pct_change": 317.0,
-    "long_arc_pct_change": 6840.1,
+    "facilities_in_city": 9,
+    "utilities_serving": 1,
+    "total_releases_pounds": 2197,
+    "air_releases_pounds": 166,
+    "water_releases_pounds": 3,
+    "land_releases_pounds": 2027,
+    "yoy_pct_change": -15.7,
+    "long_arc_pct_change": 872.2,
     "long_arc_baseline_year": 2010,
     "history": [
       {
         "year": 2010,
-        "value": 38
+        "value": 226
       },
       {
         "year": 2011,
@@ -32,43 +32,43 @@
       },
       {
         "year": 2012,
-        "value": 142
+        "value": 849
       },
       {
         "year": 2013,
-        "value": 109
+        "value": 124
       },
       {
         "year": 2014,
-        "value": 494
+        "value": 876
       },
       {
         "year": 2015,
-        "value": 621
+        "value": 643
       },
       {
         "year": 2016,
-        "value": 1765
+        "value": 3032
       },
       {
         "year": 2017,
-        "value": 3558
+        "value": 6891
       },
       {
         "year": 2018,
-        "value": 3799
+        "value": 4515
       },
       {
         "year": 2019,
-        "value": 3760
+        "value": 6713
       },
       {
         "year": 2020,
-        "value": 348
+        "value": 1293
       },
       {
         "year": 2021,
-        "value": 588
+        "value": 2466
       },
       {
         "year": 2022,
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 2606
+      },
+      {
+        "year": 2024,
+        "value": 2197
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 43,
+      "current": 166,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 43
+          "year": 2024,
+          "value": 166
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 1,
+      "current": 3,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1
+          "year": 2024,
+          "value": 3
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 2562,
+      "current": 2027,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 2562
+          "year": 2024,
+          "value": 2027
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2636013,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": 39.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,19 +205,19 @@
       "state_label": "California",
       "name": "Sdc Technologies INC",
       "parent_company": null,
-      "total_pounds_recent": 1345,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 829,
+      "yoy_pct_change": -38.3,
       "top_chemical": "n-Butyl alcohol",
       "city": "Irvine"
     },
     {
-      "slug": "ati-forged-products",
+      "slug": "pcc-rollmet-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Ati Forged Products",
-      "parent_company": "Ati INC",
-      "total_pounds_recent": 810,
-      "yoy_pct_change": 251.4,
+      "name": "Pcc Rollmet INC",
+      "parent_company": "Berkshire Hathaway INC",
+      "total_pounds_recent": 825,
+      "yoy_pct_change": null,
       "top_chemical": "Nickel",
       "city": "Irvine"
     },
@@ -223,8 +227,8 @@
       "state_label": "California",
       "name": "Mitsubishi Chemical Carbon Fiber & Composites INC",
       "parent_company": "Mitsubishi Chemical America INC",
-      "total_pounds_recent": 360,
-      "yoy_pct_change": 7.5,
+      "total_pounds_recent": 263,
+      "yoy_pct_change": -26.9,
       "top_chemical": "Tetrabromobisphenol A",
       "city": "Irvine"
     },
@@ -234,9 +238,20 @@
       "state_label": "California",
       "name": "Applied Medical Resources Corp",
       "parent_company": "Applied Medical Resources CORP",
-      "total_pounds_recent": 36,
-      "yoy_pct_change": 718.9,
+      "total_pounds_recent": 143,
+      "yoy_pct_change": 293.9,
       "top_chemical": "Ethylene oxide",
+      "city": "Irvine"
+    },
+    {
+      "slug": "ati-forged-products",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ati Forged Products",
+      "parent_company": "Ati INC",
+      "total_pounds_recent": 81,
+      "yoy_pct_change": -90.1,
+      "top_chemical": "Nickel",
       "city": "Irvine"
     },
     {
@@ -246,7 +261,7 @@
       "name": "National Ready Mix Concrete CO .",
       "parent_company": "National Cement",
       "total_pounds_recent": 29,
-      "yoy_pct_change": -19.7,
+      "yoy_pct_change": 1.0,
       "top_chemical": "Lead compounds",
       "city": "Irvine"
     },
@@ -257,7 +272,7 @@
       "name": "Shur-Lok CO",
       "parent_company": "Berkshire Hathaway INC",
       "total_pounds_recent": 20,
-      "yoy_pct_change": 48.0,
+      "yoy_pct_change": 3.9,
       "top_chemical": "Nickel",
       "city": "Irvine"
     },
@@ -267,8 +282,8 @@
       "state_label": "California",
       "name": "Irvine Plant 21",
       "parent_company": "Mcc Development CORP",
-      "total_pounds_recent": 7,
-      "yoy_pct_change": 0.9,
+      "total_pounds_recent": 6,
+      "yoy_pct_change": -3.7,
       "top_chemical": "Lead compounds",
       "city": "Irvine"
     },
@@ -278,50 +293,20 @@
       "state_label": "California",
       "name": "Holliday Rock - Irvine Facility",
       "parent_company": "Holliday Rock Co INC",
-      "total_pounds_recent": 0.09,
-      "yoy_pct_change": 9.4,
+      "total_pounds_recent": 0.11,
+      "yoy_pct_change": 15.1,
       "top_chemical": "Lead  And Lead Compounds",
       "city": "Irvine"
     }
   ],
   "water": {
-    "utilities_count": 15,
-    "population_served_total": 448371,
-    "violations_5yr_total": 78,
-    "health_based_5yr_total": 37,
-    "unresolved_total": 48,
-    "utilities_with_unresolved": 4,
+    "utilities_count": 1,
+    "population_served_total": 444800,
+    "violations_5yr_total": 4,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
     "utilities": [
-      {
-        "slug": "resthaven-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Resthaven Mobile Home Park",
-        "pwsid": "CA4000654",
-        "population_served": 99,
-        "health_based_violations_5yr": 33,
-        "unresolved": true
-      },
-      {
-        "slug": "saint-marie-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Saint Marie Mobile Home Park",
-        "pwsid": "CA4200842",
-        "population_served": 320,
-        "health_based_violations_5yr": 3,
-        "unresolved": true
-      },
-      {
-        "slug": "twin-creeks-mobile-and-rv-village",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Twin Creeks Mobile And Rv Village",
-        "pwsid": "CA1700580",
-        "population_served": 50,
-        "health_based_violations_5yr": 1,
-        "unresolved": true
-      },
       {
         "slug": "irvine-ranch-water-district",
         "state": "ca",
@@ -329,116 +314,6 @@
         "name": "Irvine Ranch Water District",
         "pwsid": "CA3010092",
         "population_served": 444800,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "big-basin-water-company",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Big Basin Water Company",
-        "pwsid": "CA4410001",
-        "population_served": 1120,
-        "health_based_violations_5yr": 0,
-        "unresolved": true
-      },
-      {
-        "slug": "cabana-holiday-ws",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cabana Holiday Ws",
-        "pwsid": "CA2700522",
-        "population_served": 506,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "arbor-mobile-home-park-ws",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Arbor Mobile Home Park Ws",
-        "pwsid": "CA3900831",
-        "population_served": 340,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "riverdale-estates",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Riverdale Estates",
-        "pwsid": "CA3301040",
-        "population_served": 300,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "dot-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Dot Mhp",
-        "pwsid": "CO0119501",
-        "population_served": 229,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "table-rock-mobile-estates-south",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Table Rock Mobile Estates (South)",
-        "pwsid": "OR4101052",
-        "population_served": 150,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "thirty-twenty-estates",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Thirty-Twenty Estates",
-        "pwsid": "MN1620019",
-        "population_served": 125,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "monett-village",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Monett Village",
-        "pwsid": "MO5048177",
-        "population_served": 112,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "alturas-fillmore-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Alturas Fillmore Mhp",
-        "pwsid": "CA5601106",
-        "population_served": 99,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "boardwalk-mhc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Boardwalk Mhc",
-        "pwsid": "WI4690405",
-        "population_served": 71,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "table-rock-mobile-estates-north",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Table Rock Mobile Estates (North)",
-        "pwsid": "OR4101540",
-        "population_served": 50,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -521,5 +396,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

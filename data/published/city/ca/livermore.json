@@ -9,19 +9,23 @@
     "county_name": "Alameda",
     "county_fips": "06001"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 1,
-    "utilities_serving": 5,
-    "total_releases_pounds": 182,
-    "air_releases_pounds": 182,
+    "facilities_in_city": 2,
+    "utilities_serving": 2,
+    "total_releases_pounds": 220,
+    "air_releases_pounds": 183,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 0,
-    "yoy_pct_change": 3093.0,
-    "long_arc_pct_change": -98.2,
-    "long_arc_baseline_year": 2017,
+    "land_releases_pounds": 37,
+    "yoy_pct_change": 21.0,
+    "long_arc_pct_change": 19927.3,
+    "long_arc_baseline_year": 2010,
     "history": [
+      {
+        "year": 2010,
+        "value": 1
+      },
       {
         "year": 2017,
         "value": 9878
@@ -40,15 +44,19 @@
       },
       {
         "year": 2021,
-        "value": 8
+        "value": 9
       },
       {
         "year": 2022,
-        "value": 6
+        "value": 7
       },
       {
         "year": 2023,
         "value": 182
+      },
+      {
+        "year": 2024,
+        "value": 220
       }
     ]
   },
@@ -56,15 +64,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 182,
+      "current": 183,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 182
+          "year": 2024,
+          "value": 183
         }
       ]
     },
@@ -75,10 +83,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -86,25 +94,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 0,
+      "current": 37,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 0
+          "year": 2024,
+          "value": 37
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1270727,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 33.9,
-      "long_arc_pct_change": 87.5,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -173,15 +181,26 @@
       "state_label": "California",
       "name": "Gillig",
       "parent_company": null,
-      "total_pounds_recent": 182,
-      "yoy_pct_change": 3093.0,
+      "total_pounds_recent": 183,
+      "yoy_pct_change": 0.5,
       "top_chemical": "Methyl methacrylate",
+      "city": "Livermore"
+    },
+    {
+      "slug": "u-s-doe-lawrence-livermore-national-laboratory",
+      "state": "ca",
+      "state_label": "California",
+      "name": "U.S. Doe Lawrence Livermore National Laboratory",
+      "parent_company": "US Department Of Energy",
+      "total_pounds_recent": 37,
+      "yoy_pct_change": null,
+      "top_chemical": "Mercury",
       "city": "Livermore"
     }
   ],
   "water": {
-    "utilities_count": 5,
-    "population_served_total": 39130,
+    "utilities_count": 2,
+    "population_served_total": 38932,
     "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
@@ -194,36 +213,6 @@
         "name": "City Of Livermore",
         "pwsid": "CA0110011",
         "population_served": 38892,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cc-farms-llc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cc Farms, Llc.",
-        "pwsid": "CA1009232",
-        "population_served": 82,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "doubletree-ranch-water-system",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Doubletree Ranch Water System",
-        "pwsid": "CA0707615",
-        "population_served": 66,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "b-g-mobile-home-park-llc-ws",
-        "state": "ca",
-        "state_label": "California",
-        "name": "B&G Mobile Home Park Llc Ws",
-        "pwsid": "CA3900586",
-        "population_served": 50,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -316,5 +305,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "Solano",
     "county_fips": "06095"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
-    "utilities_serving": 12,
-    "total_releases_pounds": 168,
+    "utilities_serving": 10,
+    "total_releases_pounds": 972,
     "air_releases_pounds": 2,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 166,
-    "yoy_pct_change": 74.9,
-    "long_arc_pct_change": -19.1,
+    "land_releases_pounds": 971,
+    "yoy_pct_change": 478.0,
+    "long_arc_pct_change": 367.5,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 168
+      },
+      {
+        "year": 2024,
+        "value": 972
       }
     ]
   },
@@ -88,10 +92,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 2
         }
       ]
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 166,
+      "current": 971,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 166
+          "year": 2024,
+          "value": 971
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 21426967,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 8.7,
-      "long_arc_pct_change": 601.7,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,14 +200,14 @@
   ],
   "facilities": [
     {
-      "slug": "court-galvanizing-inc",
+      "slug": "all-weather-insulated-panels",
       "state": "ca",
       "state_label": "California",
-      "name": "Court Galvanizing INC.",
-      "parent_company": null,
-      "total_pounds_recent": 104,
-      "yoy_pct_change": 901.9,
-      "top_chemical": "Zinc compounds",
+      "name": "All Weather Insulated Panels",
+      "parent_company": "Kingspan Group Public LTD Co",
+      "total_pounds_recent": 787,
+      "yoy_pct_change": 78600.0,
+      "top_chemical": "Diisocyanates",
       "city": "Vacaville"
     },
     {
@@ -212,30 +216,30 @@
       "state_label": "California",
       "name": "Duravent INC.",
       "parent_company": "Duravent INC",
-      "total_pounds_recent": 63,
-      "yoy_pct_change": -25.5,
+      "total_pounds_recent": 95,
+      "yoy_pct_change": 49.8,
       "top_chemical": "Chromium",
       "city": "Vacaville"
     },
     {
-      "slug": "all-weather-insulated-panels",
+      "slug": "court-galvanizing-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "All Weather Insulated Panels",
-      "parent_company": "Kingspan Group Public LTD Co",
-      "total_pounds_recent": 1,
-      "yoy_pct_change": 0.0,
-      "top_chemical": "Diisocyanates",
+      "name": "Court Galvanizing INC.",
+      "parent_company": null,
+      "total_pounds_recent": 91,
+      "yoy_pct_change": -12.9,
+      "top_chemical": "Zinc compounds",
       "city": "Vacaville"
     }
   ],
   "water": {
-    "utilities_count": 12,
-    "population_served_total": 37568,
-    "violations_5yr_total": 74,
-    "health_based_5yr_total": 70,
-    "unresolved_total": 46,
-    "utilities_with_unresolved": 5,
+    "utilities_count": 10,
+    "population_served_total": 37233,
+    "violations_5yr_total": 69,
+    "health_based_5yr_total": 65,
+    "unresolved_total": 45,
+    "utilities_with_unresolved": 4,
     "utilities": [
       {
         "slug": "suisun-solano-water-authority",
@@ -255,16 +259,6 @@
         "pwsid": "CA4810025",
         "population_served": 89,
         "health_based_violations_5yr": 23,
-        "unresolved": true
-      },
-      {
-        "slug": "riverside-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Riverside Mobile Home Park",
-        "pwsid": "CA3900762",
-        "population_served": 55,
-        "health_based_violations_5yr": 5,
         "unresolved": true
       },
       {
@@ -314,16 +308,6 @@
         "name": "Sid - Elmira",
         "pwsid": "CA4810011",
         "population_served": 290,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "imperial-manor-mobilehome-community",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Imperial Manor Mobilehome Community",
-        "pwsid": "CA3400190",
-        "population_served": 280,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -436,5 +420,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "Kern",
     "county_fips": "06029"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 3,
-    "total_releases_pounds": 22466,
-    "air_releases_pounds": 22055,
-    "water_releases_pounds": 257,
-    "land_releases_pounds": 154,
-    "yoy_pct_change": -11.4,
-    "long_arc_pct_change": 4793.4,
+    "total_releases_pounds": 44134,
+    "air_releases_pounds": 43677,
+    "water_releases_pounds": 351,
+    "land_releases_pounds": 106,
+    "yoy_pct_change": 96.5,
+    "long_arc_pct_change": 9513.1,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 22466
+      },
+      {
+        "year": 2024,
+        "value": 44134
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 22055,
+      "current": 43677,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 22055
+          "year": 2024,
+          "value": 43677
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 257,
+      "current": 351,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 257
+          "year": 2024,
+          "value": 351
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 154,
+      "current": 106,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 154
+          "year": 2024,
+          "value": 106
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 19338265,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 0.0,
-      "long_arc_pct_change": -20.5,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "National Cement CO Of California INC",
       "parent_company": "National Cement",
-      "total_pounds_recent": 22466,
-      "yoy_pct_change": -11.4,
+      "total_pounds_recent": 44134,
+      "yoy_pct_change": 96.5,
       "top_chemical": "Ammonia",
       "city": "Lebec"
     }
@@ -271,5 +275,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

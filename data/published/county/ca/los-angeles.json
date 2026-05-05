@@ -7,16 +7,16 @@
     "fips": "06037",
     "population": 9936690
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 2181532,
+      "current": 2185214,
       "units": "lb",
-      "yoy_pct_change": -12.2,
-      "long_arc_pct_change": -17.9,
+      "yoy_pct_change": 0.2,
+      "long_arc_pct_change": -17.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 2181532
+        },
+        {
+          "year": 2024,
+          "value": 2185214
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 1706961,
+      "current": 1707826,
       "units": "lb",
-      "yoy_pct_change": -10.7,
-      "long_arc_pct_change": 115.6,
+      "yoy_pct_change": 0.1,
+      "long_arc_pct_change": 115.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 1706961
+        },
+        {
+          "year": 2024,
+          "value": 1707826
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 4669164,
+      "current": 4478361,
       "units": "lb",
-      "yoy_pct_change": 6.6,
-      "long_arc_pct_change": 114.1,
+      "yoy_pct_change": -4.1,
+      "long_arc_pct_change": 105.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 4669164
+        },
+        {
+          "year": 2024,
+          "value": 4478361
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -286,8 +298,8 @@
       "state_label": "California",
       "name": "Chevron Products CO. Div Of Chevron USA INC.",
       "parent_company": "Chevron CORP",
-      "total_pounds_recent": 2072450,
-      "yoy_pct_change": -1.9,
+      "total_pounds_recent": 1922171,
+      "yoy_pct_change": -7.3,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "El Segundo"
     },
@@ -297,8 +309,8 @@
       "state_label": "California",
       "name": "Ecobat Resources California INC.",
       "parent_company": "Ecobat LLC",
-      "total_pounds_recent": 2035830,
-      "yoy_pct_change": 12.7,
+      "total_pounds_recent": 1799106,
+      "yoy_pct_change": -11.6,
       "top_chemical": "Lead  And Lead Compounds",
       "city": "City Of Industry"
     },
@@ -308,21 +320,43 @@
       "state_label": "California",
       "name": "Tesoro Los Angeles Refinery-Carson Operations",
       "parent_company": "Marathon Petroleum CORP",
-      "total_pounds_recent": 955769,
-      "yoy_pct_change": -21.1,
+      "total_pounds_recent": 1019431,
+      "yoy_pct_change": 6.7,
       "top_chemical": "Ammonia",
       "city": "Carson"
     },
     {
-      "slug": "air-products-manufacturing-llc",
+      "slug": "clean-harbors-wilmington-llc",
       "state": "ca",
       "state_label": "California",
-      "name": "Air Products Manufacturing LLC",
-      "parent_company": "Air Products & Chemicals INC",
-      "total_pounds_recent": 485788,
-      "yoy_pct_change": 267.2,
-      "top_chemical": "Asbestos (friable)",
-      "city": "Paramount"
+      "name": "Clean Harbors Wilmington LLC",
+      "parent_company": "Clean Harbors INC",
+      "total_pounds_recent": 334276,
+      "yoy_pct_change": 304.1,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Wilmington"
+    },
+    {
+      "slug": "berg-lacquer-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Berg Lacquer CO",
+      "parent_company": "Berg Lacquer Co",
+      "total_pounds_recent": 316346,
+      "yoy_pct_change": 67.2,
+      "top_chemical": "Methanol",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "torrance-refining-co-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Torrance Refining CO LLC",
+      "parent_company": "Pbf Energy INC",
+      "total_pounds_recent": 293691,
+      "yoy_pct_change": 21.7,
+      "top_chemical": "Hydrogen cyanide",
+      "city": "Torrance"
     },
     {
       "slug": "phillips-66-los-angeles-refinery-wilmington-plant",
@@ -330,8 +364,8 @@
       "state_label": "California",
       "name": "Phillips 66 Los Angeles Refinery Wilmington Plant",
       "parent_company": "Phillips 66 Co",
-      "total_pounds_recent": 285628,
-      "yoy_pct_change": 5.5,
+      "total_pounds_recent": 274270,
+      "yoy_pct_change": -4.0,
       "top_chemical": "Hydrogen cyanide",
       "city": "Wilmington"
     },
@@ -341,128 +375,36 @@
       "state_label": "California",
       "name": "M. Argueso & CO. INC.",
       "parent_company": "Paramelt USA",
-      "total_pounds_recent": 259646,
-      "yoy_pct_change": 32.6,
+      "total_pounds_recent": 254722,
+      "yoy_pct_change": -1.9,
       "top_chemical": "4,4'-Isopropylidenediphenol",
       "city": "Rosemead"
     },
     {
-      "slug": "torrance-refining-co-llc",
+      "slug": "alloys-cleaning-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Torrance Refining CO LLC",
-      "parent_company": "Pbf Energy INC",
-      "total_pounds_recent": 241272,
-      "yoy_pct_change": -32.8,
-      "top_chemical": "Ammonia",
-      "city": "Torrance"
-    },
-    {
-      "slug": "berg-lacquer-co",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Berg Lacquer CO",
-      "parent_company": "Berg Lacquer Co",
-      "total_pounds_recent": 189191,
-      "yoy_pct_change": 516.5,
-      "top_chemical": "Methanol",
+      "name": "Alloys Cleaning INC",
+      "parent_company": null,
+      "total_pounds_recent": 221042,
+      "yoy_pct_change": 14410.8,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Los Angeles"
     },
     {
-      "slug": "ultramar-inc-wilmington-refinery",
+      "slug": "george-industries",
       "state": "ca",
       "state_label": "California",
-      "name": "Ultramar INC Wilmington Refinery",
-      "parent_company": "Valero Energy CORP",
-      "total_pounds_recent": 153489,
-      "yoy_pct_change": -3.9,
-      "top_chemical": "Ammonia",
-      "city": "Wilmington"
-    },
-    {
-      "slug": "us-borax-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "US Borax INC.",
-      "parent_company": "Rio Tinto America INC",
-      "total_pounds_recent": 118889,
-      "yoy_pct_change": 50.8,
-      "top_chemical": "Zinc compounds",
-      "city": "Wilmington"
+      "name": "George Industries",
+      "parent_company": "Valmont Industries INC",
+      "total_pounds_recent": 200905,
+      "yoy_pct_change": 900.2,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Los Angeles"
     }
   ],
   "utilities": [],
-  "flags": [
-    {
-      "type": "long_arc_shift",
-      "severity": "regression",
-      "label": "Total TRI releases",
-      "summary": "Total TRI releases at Los Angeles County have risen 52% since 2010 (through 2023).",
-      "magnitude_pct": 52.0,
-      "magnitude_abs": 2929251.4,
-      "baseline_year": 2010,
-      "recent_year": 2023,
-      "units": "lb",
-      "history": [
-        {
-          "year": 2010,
-          "value": 5628406
-        },
-        {
-          "year": 2011,
-          "value": 7402375
-        },
-        {
-          "year": 2012,
-          "value": 7224527
-        },
-        {
-          "year": 2013,
-          "value": 5627440
-        },
-        {
-          "year": 2014,
-          "value": 7402855
-        },
-        {
-          "year": 2015,
-          "value": 6382615
-        },
-        {
-          "year": 2016,
-          "value": 7907460
-        },
-        {
-          "year": 2017,
-          "value": 8587490
-        },
-        {
-          "year": 2018,
-          "value": 9463679
-        },
-        {
-          "year": 2019,
-          "value": 9372469
-        },
-        {
-          "year": 2020,
-          "value": 8121522
-        },
-        {
-          "year": 2021,
-          "value": 9027026
-        },
-        {
-          "year": 2022,
-          "value": 8777955
-        },
-        {
-          "year": 2023,
-          "value": 8557657
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 9936690,
     "pct_low_income": 13.7,
@@ -534,5 +476,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

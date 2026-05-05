@@ -9,17 +9,17 @@
     "county_name": "San Bernardino",
     "county_fips": "06071"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 5,
     "utilities_serving": 12,
-    "total_releases_pounds": 2205,
-    "air_releases_pounds": 40,
+    "total_releases_pounds": 1517,
+    "air_releases_pounds": 58,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 2164,
-    "yoy_pct_change": 14.2,
-    "long_arc_pct_change": 2148.1,
+    "land_releases_pounds": 1459,
+    "yoy_pct_change": -31.1,
+    "long_arc_pct_change": 1446.7,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -52,11 +52,11 @@
       },
       {
         "year": 2017,
-        "value": 156
+        "value": 262
       },
       {
         "year": 2018,
-        "value": 9731
+        "value": 9745
       },
       {
         "year": 2019,
@@ -64,19 +64,23 @@
       },
       {
         "year": 2020,
-        "value": 3837
+        "value": 3881
       },
       {
         "year": 2021,
-        "value": 3686
+        "value": 3684
       },
       {
         "year": 2022,
-        "value": 1931
+        "value": 1929
       },
       {
         "year": 2023,
-        "value": 2205
+        "value": 2202
+      },
+      {
+        "year": 2024,
+        "value": 1517
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 40,
+      "current": 58,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 40
+          "year": 2024,
+          "value": 58
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 2164,
+      "current": 1459,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 2164
+          "year": 2024,
+          "value": 1459
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 9779299,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -6.6,
-      "long_arc_pct_change": -7.3,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Farmdale Creamery LLC",
       "parent_company": null,
-      "total_pounds_recent": 2163,
-      "yoy_pct_change": 13.6,
+      "total_pounds_recent": 1459,
+      "yoy_pct_change": -32.5,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "San Bernardino"
     },
@@ -212,20 +216,20 @@
       "state_label": "California",
       "name": "San Bernardino Steel",
       "parent_company": "The Herrick CORP",
-      "total_pounds_recent": 38,
-      "yoy_pct_change": 51.4,
+      "total_pounds_recent": 52,
+      "yoy_pct_change": 35.8,
       "top_chemical": "Manganese",
       "city": "San Bernardino"
     },
     {
-      "slug": "robertson-s-ready-mix-san-bernardino-plant-12",
+      "slug": "us-forest-service-air-tanker-base",
       "state": "ca",
       "state_label": "California",
-      "name": "Robertson'S Ready Mix San Bernardino Plant 12",
-      "parent_company": "Mcc Development CORP",
-      "total_pounds_recent": 2,
-      "yoy_pct_change": 25.3,
-      "top_chemical": "Lead compounds",
+      "name": "US Forest Service Air Tanker Base",
+      "parent_company": "US Department Of Agriculture",
+      "total_pounds_recent": 5,
+      "yoy_pct_change": null,
+      "top_chemical": "Ammonia",
       "city": "San Bernardino"
     },
     {
@@ -234,8 +238,8 @@
       "state_label": "California",
       "name": "Thermal Solutions Manufacturing INC.",
       "parent_company": "Thermal Solutions Manufacturing INC",
-      "total_pounds_recent": 1,
-      "yoy_pct_change": 129.2,
+      "total_pounds_recent": 0.89,
+      "yoy_pct_change": -19.1,
       "top_chemical": "Lead",
       "city": "San Bernardino"
     },
@@ -246,7 +250,7 @@
       "name": "Holliday Rock - San Bernardino Facility",
       "parent_company": "Holliday Rock Co INC",
       "total_pounds_recent": 0.06,
-      "yoy_pct_change": 20.0,
+      "yoy_pct_change": 6.7,
       "top_chemical": "Lead  And Lead Compounds",
       "city": "San Bernardino"
     }
@@ -458,5 +462,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

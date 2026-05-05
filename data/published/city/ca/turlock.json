@@ -9,17 +9,17 @@
     "county_name": "Stanislaus",
     "county_fips": "06099"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 5,
-    "utilities_serving": 6,
-    "total_releases_pounds": 72926,
-    "air_releases_pounds": 1925,
+    "facilities_in_city": 4,
+    "utilities_serving": 4,
+    "total_releases_pounds": 60618,
+    "air_releases_pounds": 743,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 71001,
-    "yoy_pct_change": 17.8,
-    "long_arc_pct_change": 1901.3,
+    "land_releases_pounds": 59875,
+    "yoy_pct_change": -6.2,
+    "long_arc_pct_change": 1563.5,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -28,43 +28,47 @@
       },
       {
         "year": 2014,
-        "value": 14677
+        "value": 11785
       },
       {
         "year": 2015,
-        "value": 30008
+        "value": 28172
       },
       {
         "year": 2016,
-        "value": 29501
+        "value": 27507
       },
       {
         "year": 2017,
-        "value": 30869
+        "value": 28937
       },
       {
         "year": 2018,
-        "value": 26801
+        "value": 24850
       },
       {
         "year": 2019,
-        "value": 34944
+        "value": 30112
       },
       {
         "year": 2020,
-        "value": 43516
+        "value": 31602
       },
       {
         "year": 2021,
-        "value": 57321
+        "value": 46841
       },
       {
         "year": 2022,
-        "value": 61931
+        "value": 55903
       },
       {
         "year": 2023,
-        "value": 72926
+        "value": 64616
+      },
+      {
+        "year": 2024,
+        "value": 60618
       }
     ]
   },
@@ -72,15 +76,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 1925,
+      "current": 743,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1925
+          "year": 2024,
+          "value": 743
         }
       ]
     },
@@ -91,10 +95,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -102,25 +106,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 71001,
+      "current": 59875,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 71001
+          "year": 2024,
+          "value": 59875
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1582022,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.2,
-      "long_arc_pct_change": 6.3,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -189,8 +193,8 @@
       "state_label": "California",
       "name": "California Dairies INC Turlock",
       "parent_company": "California Dairies INC",
-      "total_pounds_recent": 44519,
-      "yoy_pct_change": 7.5,
+      "total_pounds_recent": 44921,
+      "yoy_pct_change": 0.9,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Turlock"
     },
@@ -200,19 +204,19 @@
       "state_label": "California",
       "name": "Dairy Farmers Of America INC",
       "parent_company": "Dairy Farmers Of America INC",
-      "total_pounds_recent": 12206,
-      "yoy_pct_change": 12.1,
+      "total_pounds_recent": 12114,
+      "yoy_pct_change": -0.8,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Turlock"
     },
     {
-      "slug": "super-store-industries-turlock-dairy-div",
+      "slug": "central-valley-cheese",
       "state": "ca",
       "state_label": "California",
-      "name": "Super Store Industries Turlock Dairy Div",
-      "parent_company": "Super Store Industries",
-      "total_pounds_recent": 8310,
-      "yoy_pct_change": 37.9,
+      "name": "Central Valley Cheese",
+      "parent_company": "Lactalis Cheese & Dairy Holding INC",
+      "total_pounds_recent": 2840,
+      "yoy_pct_change": -5.0,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Turlock"
     },
@@ -222,41 +226,20 @@
       "state_label": "California",
       "name": "Foster Turkey Products Ftp-1",
       "parent_company": "Foster Farms LLC",
-      "total_pounds_recent": 4901,
-      "yoy_pct_change": 509.6,
-      "top_chemical": "Ammonia",
-      "city": "Turlock"
-    },
-    {
-      "slug": "central-valley-cheese",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Central Valley Cheese",
-      "parent_company": "Lactalis Cheese & Dairy Holding INC",
-      "total_pounds_recent": 2990,
-      "yoy_pct_change": 7.0,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "total_pounds_recent": 743,
+      "yoy_pct_change": -84.8,
+      "top_chemical": "Peracetic acid",
       "city": "Turlock"
     }
   ],
   "water": {
-    "utilities_count": 6,
-    "population_served_total": 73176,
-    "violations_5yr_total": 10,
-    "health_based_5yr_total": 1,
-    "unresolved_total": 6,
-    "utilities_with_unresolved": 1,
+    "utilities_count": 4,
+    "population_served_total": 72952,
+    "violations_5yr_total": 4,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
     "utilities": [
-      {
-        "slug": "country-club-county-wd",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Country Club County Wd",
-        "pwsid": "CA2400128",
-        "population_served": 64,
-        "health_based_violations_5yr": 1,
-        "unresolved": true
-      },
       {
         "slug": "turlock-city-of",
         "state": "ca",
@@ -274,16 +257,6 @@
         "name": "Tid/ La Grange Water System",
         "pwsid": "CA5000010",
         "population_served": 195,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "comunidad-nuevo-lago-inc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Comunidad Nuevo Lago, Inc",
-        "pwsid": "CA1000244",
-        "population_served": 160,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -386,5 +359,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

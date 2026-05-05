@@ -9,17 +9,17 @@
     "county_name": "Fresno",
     "county_fips": "06019"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
-    "utilities_serving": 4,
-    "total_releases_pounds": 3272,
-    "air_releases_pounds": 3244,
+    "utilities_serving": 2,
+    "total_releases_pounds": 4047,
+    "air_releases_pounds": 4010,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 28,
-    "yoy_pct_change": -7.9,
-    "long_arc_pct_change": 365.9,
+    "land_releases_pounds": 38,
+    "yoy_pct_change": 23.7,
+    "long_arc_pct_change": 476.3,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 3272
+      },
+      {
+        "year": 2024,
+        "value": 4047
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 3244,
+      "current": 4010,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 3244
+          "year": 2024,
+          "value": 4010
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 28,
+      "current": 38,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 28
+          "year": 2024,
+          "value": 38
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1007117,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 0.6,
-      "long_arc_pct_change": -34.5,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,19 +205,19 @@
       "state_label": "California",
       "name": "Guardian Industries LLC",
       "parent_company": "Koch INC",
-      "total_pounds_recent": 3272,
-      "yoy_pct_change": -7.9,
+      "total_pounds_recent": 4047,
+      "yoy_pct_change": 23.7,
       "top_chemical": "Ammonia",
       "city": "Kingsburg"
     }
   ],
   "water": {
-    "utilities_count": 4,
-    "population_served_total": 13851,
-    "violations_5yr_total": 39,
+    "utilities_count": 2,
+    "population_served_total": 13595,
+    "violations_5yr_total": 31,
     "health_based_5yr_total": 0,
-    "unresolved_total": 25,
-    "utilities_with_unresolved": 3,
+    "unresolved_total": 19,
+    "utilities_with_unresolved": 2,
     "utilities": [
       {
         "slug": "kingsburg-city-of",
@@ -224,26 +228,6 @@
         "population_served": 13540,
         "health_based_violations_5yr": 0,
         "unresolved": true
-      },
-      {
-        "slug": "fairway-mutual-water-co",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Fairway Mutual Water Co",
-        "pwsid": "CA5403084",
-        "population_served": 150,
-        "health_based_violations_5yr": 0,
-        "unresolved": true
-      },
-      {
-        "slug": "kings-river-estates-mutual-water-company",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Kings River Estates Mutual Water Company",
-        "pwsid": "CA5400536",
-        "population_served": 106,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
       },
       {
         "slug": "viking-rv-park",
@@ -334,5 +318,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 1,
-    "total_releases_pounds": 606,
-    "air_releases_pounds": 101,
-    "water_releases_pounds": 8,
-    "land_releases_pounds": 497,
-    "yoy_pct_change": -47.0,
-    "long_arc_pct_change": -88.1,
+    "total_releases_pounds": 713,
+    "air_releases_pounds": 351,
+    "water_releases_pounds": 4,
+    "land_releases_pounds": 357,
+    "yoy_pct_change": 17.6,
+    "long_arc_pct_change": -86.0,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 606
+      },
+      {
+        "year": 2024,
+        "value": 713
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 101,
+      "current": 351,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 101
+          "year": 2024,
+          "value": 351
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 8,
+      "current": 4,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 8
+          "year": 2024,
+          "value": 4
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 497,
+      "current": 357,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 497
+          "year": 2024,
+          "value": 357
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Solventum Orthodontics Corp",
       "parent_company": "Solventum US LLC",
-      "total_pounds_recent": 505,
-      "yoy_pct_change": -18.7,
+      "total_pounds_recent": 361,
+      "yoy_pct_change": -28.5,
       "top_chemical": "Chromium",
       "city": "Monrovia"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "3M CO - Monrovia Tape",
       "parent_company": "3M Co",
-      "total_pounds_recent": 101,
-      "yoy_pct_change": -80.6,
+      "total_pounds_recent": 351,
+      "yoy_pct_change": 247.8,
       "top_chemical": "Toluene",
       "city": "Monrovia"
     }
@@ -315,5 +319,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

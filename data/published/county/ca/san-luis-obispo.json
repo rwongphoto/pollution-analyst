@@ -7,16 +7,16 @@
     "fips": "06079",
     "population": 281712
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 2060,
+      "current": 1131,
       "units": "lb",
-      "yoy_pct_change": -80.4,
-      "long_arc_pct_change": -94.9,
+      "yoy_pct_change": -45.1,
+      "long_arc_pct_change": -97.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 2060
+        },
+        {
+          "year": 2024,
+          "value": 1131
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 71,
+      "current": 0,
       "units": "lb",
-      "yoy_pct_change": -43.9,
-      "long_arc_pct_change": -64.1,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 71
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 20062,
+      "current": 25072,
       "units": "lb",
-      "yoy_pct_change": -55.3,
-      "long_arc_pct_change": -75.8,
+      "yoy_pct_change": 25.0,
+      "long_arc_pct_change": -69.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 20062
+        },
+        {
+          "year": 2024,
+          "value": 25072
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 224468,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -94.2,
-      "long_arc_pct_change": -96.6,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -287,8 +299,8 @@
       "name": "Joslyn Sunbank CO LLC",
       "parent_company": "Eaton CORP",
       "total_pounds_recent": 12370,
-      "yoy_pct_change": -37.1,
-      "top_chemical": "Nickel  And Nickel Compounds",
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Nickel compounds",
       "city": "Paso Robles"
     },
     {
@@ -297,8 +309,8 @@
       "state_label": "California",
       "name": "U.S. Army National Guard Camp San Luis Obispo Ranges",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 4742,
-      "yoy_pct_change": -42.6,
+      "total_pounds_recent": 9091,
+      "yoy_pct_change": 91.7,
       "top_chemical": "Lead",
       "city": "San Luis Obispo"
     },
@@ -308,8 +320,8 @@
       "state_label": "California",
       "name": "U.S. Army National Guard Camp Roberts Ranges",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 2668,
-      "yoy_pct_change": -83.5,
+      "total_pounds_recent": 3368,
+      "yoy_pct_change": 26.3,
       "top_chemical": "Lead",
       "city": "Camp Roberts"
     },
@@ -319,21 +331,10 @@
       "state_label": "California",
       "name": "Promega Corp",
       "parent_company": "Promega CORP",
-      "total_pounds_recent": 1323,
-      "yoy_pct_change": -43.2,
+      "total_pounds_recent": 1126,
+      "yoy_pct_change": -14.9,
       "top_chemical": "Dichloromethane",
       "city": "San Luis Obispo"
-    },
-    {
-      "slug": "phillips-66-co-santa-maria-refinery",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Phillips 66 Co-Santa Maria Refinery",
-      "parent_company": "Phillips 66 Co",
-      "total_pounds_recent": 815,
-      "yoy_pct_change": -90.2,
-      "top_chemical": "Hydrogen sulfide",
-      "city": "Arroyo Grande"
     },
     {
       "slug": "rantec-power-systems-inc",
@@ -341,8 +342,8 @@
       "state_label": "California",
       "name": "Rantec Power Systems INC",
       "parent_company": "Rps Holdings INC",
-      "total_pounds_recent": 275,
-      "yoy_pct_change": -6.8,
+      "total_pounds_recent": 248,
+      "yoy_pct_change": -9.8,
       "top_chemical": "Lead",
       "city": "Los Osos"
     }
@@ -353,11 +354,11 @@
       "type": "long_arc_shift",
       "severity": "improvement",
       "label": "Total TRI releases",
-      "summary": "Total TRI releases at San Luis Obispo County have more than three-quarters since 2010 (through 2023).",
-      "magnitude_pct": -82.0,
-      "magnitude_abs": -101074.6,
+      "summary": "Total TRI releases at San Luis Obispo County have more than three-quarters since 2010 (through 2024).",
+      "magnitude_pct": -78.7,
+      "magnitude_abs": -97064.7,
       "baseline_year": 2010,
-      "recent_year": 2023,
+      "recent_year": 2024,
       "units": "lb",
       "history": [
         {
@@ -415,144 +416,10 @@
         {
           "year": 2023,
           "value": 22193
-        }
-      ]
-    },
-    {
-      "type": "long_arc_shift",
-      "severity": "improvement",
-      "label": "Greenhouse gas emissions",
-      "summary": "Greenhouse gas emissions at San Luis Obispo County have more than three-quarters since 2010 (through 2023).",
-      "magnitude_pct": -96.6,
-      "magnitude_abs": -6339969.0,
-      "baseline_year": 2010,
-      "recent_year": 2023,
-      "units": "mtCO2e",
-      "history": [
-        {
-          "year": 2010,
-          "value": 6564437
         },
         {
-          "year": 2011,
-          "value": 6874780
-        },
-        {
-          "year": 2012,
-          "value": 6873661
-        },
-        {
-          "year": 2013,
-          "value": 7260656
-        },
-        {
-          "year": 2014,
-          "value": 7119186
-        },
-        {
-          "year": 2015,
-          "value": 5423760
-        },
-        {
-          "year": 2016,
-          "value": 5489097
-        },
-        {
-          "year": 2017,
-          "value": 5349766
-        },
-        {
-          "year": 2018,
-          "value": 5122729
-        },
-        {
-          "year": 2019,
-          "value": 4775796
-        },
-        {
-          "year": 2020,
-          "value": 4537408
-        },
-        {
-          "year": 2021,
-          "value": 3911733
-        },
-        {
-          "year": 2022,
-          "value": 3867641
-        },
-        {
-          "year": 2023,
-          "value": 224468
-        }
-      ]
-    },
-    {
-      "type": "ghg_step",
-      "severity": "drop",
-      "label": "Greenhouse gas emissions",
-      "summary": "GHG emissions in San Luis Obispo County fell 94% year over year (3.9M mtCO\u2082e \u2192 224k mtCO\u2082e) \u2014 typical of a fuel switch or unit shutdown.",
-      "magnitude_pct": -94.2,
-      "magnitude_abs": -3643172.5,
-      "baseline_year": 2022,
-      "recent_year": 2023,
-      "units": "mtCO2e",
-      "history": [
-        {
-          "year": 2010,
-          "value": 6564437
-        },
-        {
-          "year": 2011,
-          "value": 6874780
-        },
-        {
-          "year": 2012,
-          "value": 6873661
-        },
-        {
-          "year": 2013,
-          "value": 7260656
-        },
-        {
-          "year": 2014,
-          "value": 7119186
-        },
-        {
-          "year": 2015,
-          "value": 5423760
-        },
-        {
-          "year": 2016,
-          "value": 5489097
-        },
-        {
-          "year": 2017,
-          "value": 5349766
-        },
-        {
-          "year": 2018,
-          "value": 5122729
-        },
-        {
-          "year": 2019,
-          "value": 4775796
-        },
-        {
-          "year": 2020,
-          "value": 4537408
-        },
-        {
-          "year": 2021,
-          "value": 3911733
-        },
-        {
-          "year": 2022,
-          "value": 3867641
-        },
-        {
-          "year": 2023,
-          "value": 224468
+          "year": 2024,
+          "value": 26203
         }
       ]
     }
@@ -628,5 +495,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

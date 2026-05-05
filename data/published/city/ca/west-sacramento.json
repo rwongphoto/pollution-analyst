@@ -9,17 +9,17 @@
     "county_name": "Yolo",
     "county_fips": "06113"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 2,
+    "facilities_in_city": 1,
     "utilities_serving": 1,
-    "total_releases_pounds": 6355,
-    "air_releases_pounds": 32,
+    "total_releases_pounds": 22,
+    "air_releases_pounds": 22,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 6323,
-    "yoy_pct_change": 3.6,
-    "long_arc_pct_change": 21813.8,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": 0.0,
+    "long_arc_pct_change": -24.1,
     "long_arc_baseline_year": 2020,
     "history": [
       {
@@ -32,11 +32,15 @@
       },
       {
         "year": 2022,
-        "value": 6132
+        "value": 19
       },
       {
         "year": 2023,
-        "value": 6355
+        "value": 22
+      },
+      {
+        "year": 2024,
+        "value": 22
       }
     ]
   },
@@ -44,15 +48,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 32,
+      "current": 22,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 32
+          "year": 2024,
+          "value": 22
         }
       ]
     },
@@ -63,10 +67,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -74,25 +78,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 6323,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 6323
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 124481,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 25.5,
-      "long_arc_pct_change": -14.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -156,24 +160,13 @@
   ],
   "facilities": [
     {
-      "slug": "nor-cal-beverage-co-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Nor-Cal Beverage CO INC",
-      "parent_company": "Nor-Cal Beverage Co INC",
-      "total_pounds_recent": 6333,
-      "yoy_pct_change": 3.6,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "West Sacramento"
-    },
-    {
       "slug": "veritiv-operating-co-ca515-west-sacramento",
       "state": "ca",
       "state_label": "California",
       "name": "Veritiv Operating CO - Ca515 West Sacramento",
       "parent_company": "Veritiv Operating Co",
       "total_pounds_recent": 22,
-      "yoy_pct_change": 15.8,
+      "yoy_pct_change": 0.0,
       "top_chemical": "Diisocyanates",
       "city": "West Sacramento"
     }
@@ -275,5 +268,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "Orange",
     "county_fips": "06059"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
-    "utilities_serving": 9,
-    "total_releases_pounds": 29477,
-    "air_releases_pounds": 3516,
+    "utilities_serving": 1,
+    "total_releases_pounds": 34565,
+    "air_releases_pounds": 2832,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 25961,
-    "yoy_pct_change": -40.2,
-    "long_arc_pct_change": 1024.4,
+    "land_releases_pounds": 31732,
+    "yoy_pct_change": 17.3,
+    "long_arc_pct_change": 1218.4,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 29477
+      },
+      {
+        "year": 2024,
+        "value": 34565
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 3516,
+      "current": 2832,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 3516
+          "year": 2024,
+          "value": 2832
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 25961,
+      "current": 31732,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 25961
+          "year": 2024,
+          "value": 31732
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2636013,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": 39.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,9 +205,9 @@
       "state_label": "California",
       "name": "Newport Fab LLC (Dba Towerjazz)",
       "parent_company": "Newport Fab LLC (Dba Towerjazz)",
-      "total_pounds_recent": 28046,
-      "yoy_pct_change": -42.3,
-      "top_chemical": "Ammonia",
+      "total_pounds_recent": 32712,
+      "yoy_pct_change": 16.6,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Newport Beach"
     },
     {
@@ -212,16 +216,16 @@
       "state_label": "California",
       "name": "Hixson Metal Finishing",
       "parent_company": "Hmf Group INC",
-      "total_pounds_recent": 1431,
-      "yoy_pct_change": 123.8,
+      "total_pounds_recent": 1853,
+      "yoy_pct_change": 29.4,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Newport Beach"
     }
   ],
   "water": {
-    "utilities_count": 9,
-    "population_served_total": 69858,
-    "violations_5yr_total": 5,
+    "utilities_count": 1,
+    "population_served_total": 68572,
+    "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
     "utilities_with_unresolved": 0,
@@ -233,86 +237,6 @@
         "name": "City Of Newport Beach",
         "pwsid": "CA3010023",
         "population_served": 68572,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "forest-glen-estates-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Forest Glen Estates Mhp",
-        "pwsid": "GA0350004",
-        "population_served": 367,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "mountain-view-mobile-estates-llc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Mountain View Mobile Estates, Llc",
-        "pwsid": "CA4900798",
-        "population_served": 250,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "tamarron-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Tamarron Mobile Home Park",
-        "pwsid": "CA5500193",
-        "population_served": 225,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "sharp-s-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Sharp's Mobile Home Park",
-        "pwsid": "FL3491726",
-        "population_served": 179,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "columbia-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Columbia Mobile Home Park",
-        "pwsid": "CA5500149",
-        "population_served": 89,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "lake-mahopac-condo",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Lake Mahopac Condo",
-        "pwsid": "NY3920317",
-        "population_served": 75,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "barcelona-apartments",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Barcelona Apartments",
-        "pwsid": "FL2161337",
-        "population_served": 56,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "minerva-mhp-llc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Minerva Mhp, Llc",
-        "pwsid": "FL3531198",
-        "population_served": 45,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -395,5 +319,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

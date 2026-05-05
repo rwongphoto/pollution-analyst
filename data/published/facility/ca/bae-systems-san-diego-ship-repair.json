@@ -13,18 +13,26 @@
     "lat": 32.692676,
     "lng": -117.142736
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 364243,
-    "air_releases_pounds": 5,
+    "total_releases_pounds": 29639,
+    "air_releases_pounds": 1,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 364238,
-    "chemicals_reported": 3,
-    "yoy_pct_change": 1123.6,
-    "long_arc_pct_change": 1123.6,
-    "long_arc_baseline_year": 2022,
+    "land_releases_pounds": 29638,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -91.9,
+    "long_arc_pct_change": 830.0,
+    "long_arc_baseline_year": 2020,
     "history": [
+      {
+        "year": 2020,
+        "value": 3187
+      },
+      {
+        "year": 2021,
+        "value": 591
+      },
       {
         "year": 2022,
         "value": 29769
@@ -32,6 +40,10 @@
       {
         "year": 2023,
         "value": 364243
+      },
+      {
+        "year": 2024,
+        "value": 29639
       }
     ]
   },
@@ -40,7 +52,7 @@
       "chemical": "Aluminum oxide (fibrous forms)",
       "cas": "1344-28-1",
       "category": "general",
-      "total_pounds_recent": 325518,
+      "total_pounds_recent": 29198,
       "history": [
         {
           "year": 2022,
@@ -49,37 +61,30 @@
         {
           "year": 2023,
           "value": 325518
-        }
-      ],
-      "yoy_pct_change": 14195.9,
-      "long_arc_pct_change": null,
-      "long_arc_baseline_year": 2022
-    },
-    {
-      "chemical": "Lead",
-      "cas": "7439-92-1",
-      "category": "pbt",
-      "total_pounds_recent": 28078,
-      "history": [
-        {
-          "year": 2022,
-          "value": 262
         },
         {
-          "year": 2023,
-          "value": 28078
+          "year": 2024,
+          "value": 29198
         }
       ],
-      "yoy_pct_change": 10612.6,
-      "long_arc_pct_change": null,
+      "yoy_pct_change": -91.0,
+      "long_arc_pct_change": 1182.3,
       "long_arc_baseline_year": 2022
     },
     {
       "chemical": "Copper",
       "cas": "7440-50-8",
       "category": "general",
-      "total_pounds_recent": 10647,
+      "total_pounds_recent": 441,
       "history": [
+        {
+          "year": 2020,
+          "value": 225
+        },
+        {
+          "year": 2021,
+          "value": 388
+        },
         {
           "year": 2022,
           "value": 21664
@@ -87,23 +92,27 @@
         {
           "year": 2023,
           "value": 10647
+        },
+        {
+          "year": 2024,
+          "value": 441
         }
       ],
-      "yoy_pct_change": -50.9,
-      "long_arc_pct_change": -50.9,
-      "long_arc_baseline_year": 2022
+      "yoy_pct_change": -95.9,
+      "long_arc_pct_change": 95.7,
+      "long_arc_baseline_year": 2020
     }
   ],
   "flags": [
     {
       "type": "release_shift",
-      "severity": "surge",
+      "severity": "drop",
       "label": "Aluminum oxide (fibrous forms)",
-      "summary": "Aluminum oxide (fibrous forms) releases at Bae Systems San Diego Ship Repair rose from 2k lb to 326k lb (143.0\u00d7) between 2022 and 2023.",
-      "magnitude_pct": 14195.9,
-      "magnitude_abs": 323241.0,
-      "baseline_year": 2022,
-      "recent_year": 2023,
+      "summary": "Aluminum oxide (fibrous forms) releases at Bae Systems San Diego Ship Repair fell from 326k lb to 29k lb (91% lower) between 2023 and 2024.",
+      "magnitude_pct": -91.0,
+      "magnitude_abs": -296320.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
       "units": "lb",
       "history": [
         {
@@ -113,6 +122,31 @@
         {
           "year": 2023,
           "value": 325518
+        },
+        {
+          "year": 2024,
+          "value": 29198
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0007439921",
+      "summary": "0007439921 releases at Bae Systems San Diego Ship Repair fell from 28k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -28077.8,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 262
+        },
+        {
+          "year": 2023,
+          "value": 28078
         }
       ]
     },
@@ -120,11 +154,11 @@
       "type": "release_shift",
       "severity": "drop",
       "label": "Copper",
-      "summary": "Copper releases at Bae Systems San Diego Ship Repair fell from 22k lb to 11k lb (51% lower) between 2022 and 2023.",
-      "magnitude_pct": -50.9,
-      "magnitude_abs": -11017.0,
-      "baseline_year": 2022,
-      "recent_year": 2023,
+      "summary": "Copper releases at Bae Systems San Diego Ship Repair fell from 11k lb to 441 lb (96% lower) between 2023 and 2024.",
+      "magnitude_pct": -95.9,
+      "magnitude_abs": -10206.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
       "units": "lb",
       "history": [
         {
@@ -142,6 +176,10 @@
         {
           "year": 2023,
           "value": 10647
+        },
+        {
+          "year": 2024,
+          "value": 441
         }
       ]
     }
@@ -215,5 +253,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

@@ -13,16 +13,16 @@
     "lat": 32.729499,
     "lng": -117.20886
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 17053,
+    "total_releases_pounds": 545,
     "air_releases_pounds": 0,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 17053,
+    "land_releases_pounds": 545,
     "chemicals_reported": 1,
-    "yoy_pct_change": -12.8,
-    "long_arc_pct_change": 303.1,
+    "yoy_pct_change": -96.8,
+    "long_arc_pct_change": -87.1,
     "long_arc_baseline_year": 2011,
     "history": [
       {
@@ -60,6 +60,10 @@
       {
         "year": 2023,
         "value": 17053
+      },
+      {
+        "year": 2024,
+        "value": 545
       }
     ]
   },
@@ -68,7 +72,7 @@
       "chemical": "Lead",
       "cas": "7439-92-1",
       "category": "pbt",
-      "total_pounds_recent": 17053,
+      "total_pounds_recent": 545,
       "history": [
         {
           "year": 2011,
@@ -105,14 +109,72 @@
         {
           "year": 2023,
           "value": 17053
+        },
+        {
+          "year": 2024,
+          "value": 545
         }
       ],
-      "yoy_pct_change": -12.8,
-      "long_arc_pct_change": 303.1,
+      "yoy_pct_change": -96.8,
+      "long_arc_pct_change": -87.1,
       "long_arc_baseline_year": 2011
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Lead",
+      "summary": "Lead releases at US Cbp Border Patrol Firearms Range Be # Ca0180 fell from 17k lb to 545 lb (97% lower) between 2023 and 2024.",
+      "magnitude_pct": -96.8,
+      "magnitude_abs": -16508.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2011,
+          "value": 4230
+        },
+        {
+          "year": 2015,
+          "value": 28251
+        },
+        {
+          "year": 2016,
+          "value": 38800
+        },
+        {
+          "year": 2017,
+          "value": 46071
+        },
+        {
+          "year": 2018,
+          "value": 46071
+        },
+        {
+          "year": 2020,
+          "value": 10067
+        },
+        {
+          "year": 2021,
+          "value": 18087
+        },
+        {
+          "year": 2022,
+          "value": 19557
+        },
+        {
+          "year": 2023,
+          "value": 17053
+        },
+        {
+          "year": 2024,
+          "value": 545
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 3289701,
     "pct_low_income": 10.6,
@@ -182,5 +244,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

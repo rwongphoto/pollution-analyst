@@ -9,17 +9,17 @@
     "county_name": "Merced",
     "county_fips": "06047"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 1,
-    "total_releases_pounds": 121847,
-    "air_releases_pounds": 55455,
+    "total_releases_pounds": 155277,
+    "air_releases_pounds": 66542,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 66392,
-    "yoy_pct_change": -16.2,
-    "long_arc_pct_change": 615.9,
+    "land_releases_pounds": 88735,
+    "yoy_pct_change": 27.4,
+    "long_arc_pct_change": 812.3,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 121847
+      },
+      {
+        "year": 2024,
+        "value": 155277
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 55455,
+      "current": 66542,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 55455
+          "year": 2024,
+          "value": 66542
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 66392,
+      "current": 88735,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 66392
+          "year": 2024,
+          "value": 88735
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 583191,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 20.4,
-      "long_arc_pct_change": 48.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Foster Farms Livingston Complex",
       "parent_company": "Foster Farms LLC",
-      "total_pounds_recent": 121847,
-      "yoy_pct_change": -16.2,
+      "total_pounds_recent": 155277,
+      "yoy_pct_change": 27.4,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Livingston"
     }
@@ -304,5 +308,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

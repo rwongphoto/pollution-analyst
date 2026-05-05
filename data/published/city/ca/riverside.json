@@ -9,17 +9,17 @@
     "county_name": "Riverside",
     "county_fips": "06065"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 6,
-    "utilities_serving": 7,
-    "total_releases_pounds": 23319,
-    "air_releases_pounds": 19280,
+    "facilities_in_city": 8,
+    "utilities_serving": 6,
+    "total_releases_pounds": 24851,
+    "air_releases_pounds": 16630,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 4039,
-    "yoy_pct_change": 7.1,
-    "long_arc_pct_change": -78.3,
+    "land_releases_pounds": 8221,
+    "yoy_pct_change": 6.6,
+    "long_arc_pct_change": -76.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -56,15 +56,15 @@
       },
       {
         "year": 2018,
-        "value": 26079
+        "value": 28919
       },
       {
         "year": 2019,
-        "value": 22430
+        "value": 24499
       },
       {
         "year": 2020,
-        "value": 19509
+        "value": 21377
       },
       {
         "year": 2021,
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 23319
+      },
+      {
+        "year": 2024,
+        "value": 24851
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 19280,
+      "current": 16630,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 19280
+          "year": 2024,
+          "value": 16630
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 4039,
+      "current": 8221,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 4039
+          "year": 2024,
+          "value": 8221
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1423181,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 5.5,
-      "long_arc_pct_change": -32.9,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,20 +205,9 @@
       "state_label": "California",
       "name": "Newbasis LLC",
       "parent_company": null,
-      "total_pounds_recent": 17782,
-      "yoy_pct_change": 10.1,
+      "total_pounds_recent": 9460,
+      "yoy_pct_change": -46.8,
       "top_chemical": "Styrene",
-      "city": "Riverside"
-    },
-    {
-      "slug": "stremicks-heritage-foods",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Stremicks Heritage Foods",
-      "parent_company": "Dairy Farmers Of America INC",
-      "total_pounds_recent": 4013,
-      "yoy_pct_change": -5.8,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Riverside"
     },
     {
@@ -223,20 +216,31 @@
       "state_label": "California",
       "name": "Airgas Specialty Products-Riverside Ca",
       "parent_company": "Airgas INC",
-      "total_pounds_recent": 829,
-      "yoy_pct_change": -1.3,
+      "total_pounds_recent": 6501,
+      "yoy_pct_change": 684.2,
       "top_chemical": "Ammonia",
       "city": "Riverside"
     },
     {
-      "slug": "plz-corp",
+      "slug": "stremicks-heritage-foods",
       "state": "ca",
       "state_label": "California",
-      "name": "Plz Corp.",
-      "parent_company": "Plz CORP",
-      "total_pounds_recent": 550,
+      "name": "Stremicks Heritage Foods",
+      "parent_company": "Dairy Farmers Of America INC",
+      "total_pounds_recent": 4381,
+      "yoy_pct_change": 9.2,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Riverside"
+    },
+    {
+      "slug": "ralphs-grocery-co-riverside-distribution",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ralphs Grocery Co-Riverside Distribution",
+      "parent_company": "The Kroger Co",
+      "total_pounds_recent": 2919,
       "yoy_pct_change": null,
-      "top_chemical": "Certain glycol ethers",
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Riverside"
     },
     {
@@ -245,9 +249,31 @@
       "state_label": "California",
       "name": "Carpenter CO",
       "parent_company": "Carpenter Co",
-      "total_pounds_recent": 142,
-      "yoy_pct_change": -72.4,
-      "top_chemical": "Toluene diisocyanate (mixed isomers)",
+      "total_pounds_recent": 941,
+      "yoy_pct_change": 560.8,
+      "top_chemical": "Diisocyanates",
+      "city": "Riverside"
+    },
+    {
+      "slug": "plz-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Plz Corp.",
+      "parent_company": "Plz CORP",
+      "total_pounds_recent": 545,
+      "yoy_pct_change": -0.9,
+      "top_chemical": "Certain glycol ethers",
+      "city": "Riverside"
+    },
+    {
+      "slug": "osi-riverside",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Osi-Riverside",
+      "parent_company": "Osi Group LLC",
+      "total_pounds_recent": 100,
+      "yoy_pct_change": null,
+      "top_chemical": "Ammonia",
       "city": "Riverside"
     },
     {
@@ -257,14 +283,14 @@
       "name": "Morgan Truck Body LLC Mca",
       "parent_company": "Jb Poindexter & Co INC",
       "total_pounds_recent": 3,
-      "yoy_pct_change": null,
+      "yoy_pct_change": 7.2,
       "top_chemical": "Chromium",
       "city": "Riverside"
     }
   ],
   "water": {
-    "utilities_count": 7,
-    "population_served_total": 402209,
+    "utilities_count": 6,
+    "population_served_total": 402159,
     "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
@@ -317,16 +343,6 @@
         "name": "Harmony Haven",
         "pwsid": "CA3301055",
         "population_served": 54,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "magnolia-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Magnolia Park",
-        "pwsid": "OK4001470",
-        "population_served": 50,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -419,5 +435,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

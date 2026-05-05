@@ -9,16 +9,16 @@
     "county_name": "Madera",
     "county_fips": "06039"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 3,
-    "total_releases_pounds": 42,
-    "air_releases_pounds": 21,
+    "total_releases_pounds": 70,
+    "air_releases_pounds": 24,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 21,
-    "yoy_pct_change": -100.0,
+    "land_releases_pounds": 47,
+    "yoy_pct_change": 66.6,
     "long_arc_pct_change": -100.0,
     "long_arc_baseline_year": 2010,
     "history": [
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 42
+      },
+      {
+        "year": 2024,
+        "value": 70
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 21,
+      "current": 24,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 21
+          "year": 2024,
+          "value": 24
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 21,
+      "current": 47,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 21
+          "year": 2024,
+          "value": 47
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 184315,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.8,
-      "long_arc_pct_change": 39.2,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,9 +205,9 @@
       "state_label": "California",
       "name": "Certainteed LLC",
       "parent_company": "Saint-Gobain CORP",
-      "total_pounds_recent": 35,
-      "yoy_pct_change": -100.0,
-      "top_chemical": "Lead",
+      "total_pounds_recent": 59,
+      "yoy_pct_change": 69.3,
+      "top_chemical": "Chromium  and Chromium Compounds(except for chromite ore mined in the Transvaal Region)",
       "city": "Chowchilla"
     },
     {
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "Oldcastle Precast INC",
       "parent_company": "Crh Americas INC",
-      "total_pounds_recent": 7,
-      "yoy_pct_change": 252.4,
+      "total_pounds_recent": 11,
+      "yoy_pct_change": 53.9,
       "top_chemical": "Lead compounds",
       "city": "Chowchilla"
     }
@@ -335,5 +339,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

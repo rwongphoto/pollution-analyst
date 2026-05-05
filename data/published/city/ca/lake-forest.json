@@ -9,17 +9,17 @@
     "county_name": "Orange",
     "county_fips": "06059"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
-    "utilities_serving": 2,
-    "total_releases_pounds": 1845,
-    "air_releases_pounds": 1725,
-    "water_releases_pounds": 0.2,
-    "land_releases_pounds": 120,
-    "yoy_pct_change": -10.6,
-    "long_arc_pct_change": -14.3,
+    "utilities_serving": 1,
+    "total_releases_pounds": 1233,
+    "air_releases_pounds": 1230,
+    "water_releases_pounds": 0.08,
+    "land_releases_pounds": 3,
+    "yoy_pct_change": -33.1,
+    "long_arc_pct_change": -42.7,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 1845
+      },
+      {
+        "year": 2024,
+        "value": 1233
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 1725,
+      "current": 1230,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1725
+          "year": 2024,
+          "value": 1230
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 120,
+      "current": 3,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 120
+          "year": 2024,
+          "value": 3
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2636013,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": 39.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Oakley INC",
       "parent_company": "Essilorluxottica USA INC",
-      "total_pounds_recent": 1753,
-      "yoy_pct_change": -11.3,
+      "total_pounds_recent": 1211,
+      "yoy_pct_change": -30.9,
       "top_chemical": "N-Methyl-2-pyrrolidone",
       "city": "Foothill Ranch"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "Dynacast INC",
       "parent_company": "Form Technologies",
-      "total_pounds_recent": 89,
-      "yoy_pct_change": 5.0,
+      "total_pounds_recent": 20,
+      "yoy_pct_change": -77.5,
       "top_chemical": "Copper",
       "city": "Lake Forest"
     },
@@ -224,29 +228,19 @@
       "name": "Robertson'S Ready Mix Lake Forest Plant 18",
       "parent_company": "Mcc Development CORP",
       "total_pounds_recent": 3,
-      "yoy_pct_change": -2.3,
+      "yoy_pct_change": -1.9,
       "top_chemical": "Lead compounds",
       "city": "Foothill Ranch"
     }
   ],
   "water": {
-    "utilities_count": 2,
-    "population_served_total": 51980,
-    "violations_5yr_total": 10,
-    "health_based_5yr_total": 9,
-    "unresolved_total": 6,
-    "utilities_with_unresolved": 1,
+    "utilities_count": 1,
+    "population_served_total": 51800,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
     "utilities": [
-      {
-        "slug": "ortega-oaks-rv-park-campground",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Ortega Oaks Rv Park&Campground",
-        "pwsid": "CA3301482",
-        "population_served": 180,
-        "health_based_violations_5yr": 9,
-        "unresolved": true
-      },
       {
         "slug": "el-toro-water-district",
         "state": "ca",
@@ -336,5 +330,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

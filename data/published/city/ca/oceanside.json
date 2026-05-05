@@ -9,17 +9,17 @@
     "county_name": "San Diego",
     "county_fips": "06073"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 1,
-    "total_releases_pounds": 1292,
-    "air_releases_pounds": 902,
+    "total_releases_pounds": 1009,
+    "air_releases_pounds": 704,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 390,
-    "yoy_pct_change": -70.8,
-    "long_arc_pct_change": 66.3,
+    "land_releases_pounds": 305,
+    "yoy_pct_change": -21.9,
+    "long_arc_pct_change": 29.8,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 1292
+      },
+      {
+        "year": 2024,
+        "value": 1009
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 902,
+      "current": 704,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 902
+          "year": 2024,
+          "value": 704
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 390,
+      "current": 305,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 390
+          "year": 2024,
+          "value": 305
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 7595135,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -12.3,
-      "long_arc_pct_change": -25.7,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Hydranautics",
       "parent_company": "Nitto Denko Avecia INC",
-      "total_pounds_recent": 1292,
-      "yoy_pct_change": -70.8,
+      "total_pounds_recent": 1008,
+      "yoy_pct_change": -21.9,
       "top_chemical": "N,N-Dimethylformamide",
       "city": "Oceanside"
     },
@@ -212,9 +216,9 @@
       "state_label": "California",
       "name": "Westlake Royal Roofing - Oceanside",
       "parent_company": "Westlake CORP",
-      "total_pounds_recent": 0.5,
-      "yoy_pct_change": -50.0,
-      "top_chemical": "Manganese  And Manganese Compounds",
+      "total_pounds_recent": 0.8,
+      "yoy_pct_change": 60.0,
+      "top_chemical": "Manganese compounds",
       "city": "Oceanside"
     }
   ],
@@ -315,5 +319,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

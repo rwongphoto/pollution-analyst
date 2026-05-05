@@ -13,16 +13,16 @@
     "lat": 37.521488,
     "lng": -122.021308
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 145748,
-    "air_releases_pounds": 20,
-    "water_releases_pounds": 0.14,
-    "land_releases_pounds": 145728,
-    "chemicals_reported": 4,
-    "yoy_pct_change": -5.8,
-    "long_arc_pct_change": -42.4,
+    "total_releases_pounds": 806499,
+    "air_releases_pounds": 16,
+    "water_releases_pounds": 0.36,
+    "land_releases_pounds": 806482,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 453.4,
+    "long_arc_pct_change": 218.9,
     "long_arc_baseline_year": 2019,
     "history": [
       {
@@ -44,6 +44,10 @@
       {
         "year": 2023,
         "value": 145748
+      },
+      {
+        "year": 2024,
+        "value": 806499
       }
     ]
   },
@@ -52,7 +56,7 @@
       "chemical": "Ethylene glycol",
       "cas": "107-21-1",
       "category": "respiratory",
-      "total_pounds_recent": 141652,
+      "total_pounds_recent": 797735,
       "history": [
         {
           "year": 2019,
@@ -73,17 +77,21 @@
         {
           "year": 2023,
           "value": 141652
+        },
+        {
+          "year": 2024,
+          "value": 797735
         }
       ],
-      "yoy_pct_change": -7.3,
-      "long_arc_pct_change": -22.0,
+      "yoy_pct_change": 463.2,
+      "long_arc_pct_change": 339.4,
       "long_arc_baseline_year": 2019
     },
     {
       "chemical": "Zinc compounds",
       "cas": "N982",
       "category": "general",
-      "total_pounds_recent": 2809,
+      "total_pounds_recent": 6419,
       "history": [
         {
           "year": 2021,
@@ -96,30 +104,22 @@
         {
           "year": 2023,
           "value": 2809
+        },
+        {
+          "year": 2024,
+          "value": 6419
         }
       ],
-      "yoy_pct_change": 151.0,
-      "long_arc_pct_change": 182.4,
+      "yoy_pct_change": 128.5,
+      "long_arc_pct_change": 545.3,
       "long_arc_baseline_year": 2021
     },
     {
       "chemical": "Polycyclic aromatic compounds",
       "cas": "N590",
       "category": "pbt",
-      "total_pounds_recent": 1252,
+      "total_pounds_recent": 2263,
       "history": [
-        {
-          "year": 2018,
-          "value": 64
-        },
-        {
-          "year": 2019,
-          "value": 37
-        },
-        {
-          "year": 2020,
-          "value": 35
-        },
         {
           "year": 2021,
           "value": 1153
@@ -131,17 +131,21 @@
         {
           "year": 2023,
           "value": 1252
+        },
+        {
+          "year": 2024,
+          "value": 2263
         }
       ],
-      "yoy_pct_change": 54.7,
-      "long_arc_pct_change": 1856.1,
-      "long_arc_baseline_year": 2018
+      "yoy_pct_change": 80.7,
+      "long_arc_pct_change": 96.2,
+      "long_arc_baseline_year": 2021
     },
     {
       "chemical": "Benzo[g,h,i]perylene",
       "cas": "191-24-2",
       "category": "pbt",
-      "total_pounds_recent": 35,
+      "total_pounds_recent": 74,
       "history": [
         {
           "year": 2021,
@@ -154,14 +158,135 @@
         {
           "year": 2023,
           "value": 35
+        },
+        {
+          "year": 2024,
+          "value": 74
         }
       ],
-      "yoy_pct_change": 211.9,
-      "long_arc_pct_change": 139.9,
+      "yoy_pct_change": 108.4,
+      "long_arc_pct_change": 399.9,
       "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 9,
+      "history": [
+        {
+          "year": 2010,
+          "value": 20
+        },
+        {
+          "year": 2011,
+          "value": 23
+        },
+        {
+          "year": 2012,
+          "value": 28
+        },
+        {
+          "year": 2013,
+          "value": 18
+        },
+        {
+          "year": 2014,
+          "value": 16
+        },
+        {
+          "year": 2015,
+          "value": 10
+        },
+        {
+          "year": 2016,
+          "value": 16
+        },
+        {
+          "year": 2017,
+          "value": 256
+        },
+        {
+          "year": 2024,
+          "value": 9
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -55.6,
+      "long_arc_baseline_year": 2010
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Ethylene glycol",
+      "summary": "Ethylene glycol releases at Safety-Kleen INC rose from 142k lb to 798k lb (5.6\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 463.2,
+      "magnitude_abs": 656083.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.8
+        },
+        {
+          "year": 2011,
+          "value": 0.8
+        },
+        {
+          "year": 2012,
+          "value": 0.8
+        },
+        {
+          "year": 2013,
+          "value": 2
+        },
+        {
+          "year": 2014,
+          "value": 5
+        },
+        {
+          "year": 2015,
+          "value": 5
+        },
+        {
+          "year": 2016,
+          "value": 5
+        },
+        {
+          "year": 2018,
+          "value": 56
+        },
+        {
+          "year": 2019,
+          "value": 181542
+        },
+        {
+          "year": 2020,
+          "value": 210542
+        },
+        {
+          "year": 2021,
+          "value": 284932
+        },
+        {
+          "year": 2022,
+          "value": 152769
+        },
+        {
+          "year": 2023,
+          "value": 141652
+        },
+        {
+          "year": 2024,
+          "value": 797735
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 1663823,
     "pct_low_income": 9.2,
@@ -231,5 +356,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

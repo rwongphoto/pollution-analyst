@@ -9,17 +9,17 @@
     "county_name": "San Diego",
     "county_fips": "06073"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 4,
     "utilities_serving": 1,
-    "total_releases_pounds": 2033,
-    "air_releases_pounds": 10,
-    "water_releases_pounds": 1,
-    "land_releases_pounds": 2022,
-    "yoy_pct_change": 6.7,
-    "long_arc_pct_change": 304.1,
+    "total_releases_pounds": 2267,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 5,
+    "land_releases_pounds": 2262,
+    "yoy_pct_change": 11.6,
+    "long_arc_pct_change": 350.8,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 2033
+      },
+      {
+        "year": 2024,
+        "value": 2267
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 10,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 10
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 1,
+      "current": 5,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1
+          "year": 2024,
+          "value": 5
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 2022,
+      "current": 2262,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 2022
+          "year": 2024,
+          "value": 2262
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 7595135,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -12.3,
-      "long_arc_pct_change": -25.7,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,20 +205,9 @@
       "state_label": "California",
       "name": "Somacis INC",
       "parent_company": null,
-      "total_pounds_recent": 951,
-      "yoy_pct_change": -14.8,
+      "total_pounds_recent": 926,
+      "yoy_pct_change": -2.6,
       "top_chemical": "Nitric acid",
-      "city": "Poway"
-    },
-    {
-      "slug": "teledyne-instruments-inc-dba-teledyne-rd-instruments",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Teledyne Instruments INC. Dba Teledyne Rd Instruments",
-      "parent_company": "Teledyne Technologies INC",
-      "total_pounds_recent": 483,
-      "yoy_pct_change": 5.7,
-      "top_chemical": "Lead compounds",
       "city": "Poway"
     },
     {
@@ -223,9 +216,20 @@
       "state_label": "California",
       "name": "K-Tube Corp",
       "parent_company": "Cook Group INC",
-      "total_pounds_recent": 466,
-      "yoy_pct_change": 81.5,
+      "total_pounds_recent": 836,
+      "yoy_pct_change": 79.2,
       "top_chemical": "Chromium  and Chromium Compounds(except for chromite ore mined in the Transvaal Region)",
+      "city": "Poway"
+    },
+    {
+      "slug": "teledyne-instruments-inc-dba-teledyne-rd-instruments",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Teledyne Instruments INC. Dba Teledyne Rd Instruments",
+      "parent_company": "Teledyne Technologies INC",
+      "total_pounds_recent": 404,
+      "yoy_pct_change": -16.4,
+      "top_chemical": "Lead compounds",
       "city": "Poway"
     },
     {
@@ -234,8 +238,8 @@
       "state_label": "California",
       "name": "Mitsubishi Chemical Carbon Fiber & Composites I",
       "parent_company": "Mitsubishi Chemical America INC",
-      "total_pounds_recent": 132,
-      "yoy_pct_change": 76.7,
+      "total_pounds_recent": 101,
+      "yoy_pct_change": -23.5,
       "top_chemical": "Tetrabromobisphenol A",
       "city": "Poway"
     }
@@ -337,5 +341,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -208,7 +208,7 @@ function UtilitiesSection({ data }: { data: CountyPagePayload }) {
         <table className="tbl">
           <thead>
             <tr>
-              <th>Utility</th>
+              <th>Water system</th>
               <th>PWSID</th>
               <th className="right">Population served</th>
               <th className="right">Health-based · 5yr</th>

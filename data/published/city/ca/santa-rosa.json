@@ -9,17 +9,17 @@
     "county_name": "Sonoma",
     "county_fips": "06097"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
-    "utilities_serving": 41,
-    "total_releases_pounds": 17022,
-    "air_releases_pounds": 11,
+    "utilities_serving": 36,
+    "total_releases_pounds": 93,
+    "air_releases_pounds": 10,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 17011,
-    "yoy_pct_change": 0.1,
-    "long_arc_pct_change": 14085.1,
+    "land_releases_pounds": 83,
+    "yoy_pct_change": -99.5,
+    "long_arc_pct_change": -22.3,
     "long_arc_baseline_year": 2011,
     "history": [
       {
@@ -73,6 +73,10 @@
       {
         "year": 2023,
         "value": 17022
+      },
+      {
+        "year": 2024,
+        "value": 93
       }
     ]
   },
@@ -80,15 +84,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 11,
+      "current": 10,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 11
+          "year": 2024,
+          "value": 10
         }
       ]
     },
@@ -99,10 +103,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -110,25 +114,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 17011,
+      "current": 83,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 17011
+          "year": 2024,
+          "value": 83
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 117873,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 67.6,
-      "long_arc_pct_change": -38.0,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -192,25 +196,25 @@
   ],
   "facilities": [
     {
-      "slug": "keysight-technologies-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Keysight Technologies INC",
-      "parent_company": "Keysight Technologies INC",
-      "total_pounds_recent": 16961,
-      "yoy_pct_change": 0.1,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Santa Rosa"
-    },
-    {
       "slug": "itt-cannon-llc-dba-biw-connector-systems",
       "state": "ca",
       "state_label": "California",
       "name": "Itt Cannon LLC Dba Biw Connector Systems",
       "parent_company": "Itt CORP",
-      "total_pounds_recent": 60,
-      "yoy_pct_change": -7.7,
-      "top_chemical": "Lead  And Lead Compounds",
+      "total_pounds_recent": 83,
+      "yoy_pct_change": 38.3,
+      "top_chemical": "Lead compounds",
+      "city": "Santa Rosa"
+    },
+    {
+      "slug": "keysight-technologies-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Keysight Technologies INC",
+      "parent_company": "Keysight Technologies INC",
+      "total_pounds_recent": 10,
+      "yoy_pct_change": -99.9,
+      "top_chemical": "Nitric acid",
       "city": "Santa Rosa"
     },
     {
@@ -219,19 +223,19 @@
       "state_label": "California",
       "name": "Bodean CO INC",
       "parent_company": "Crh Americas INC",
-      "total_pounds_recent": 1,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 0.23,
+      "yoy_pct_change": -79.1,
       "top_chemical": "Polycyclic aromatic compounds",
       "city": "Santa Rosa"
     }
   ],
   "water": {
-    "utilities_count": 41,
-    "population_served_total": 186211,
-    "violations_5yr_total": 67,
-    "health_based_5yr_total": 22,
-    "unresolved_total": 33,
-    "utilities_with_unresolved": 13,
+    "utilities_count": 36,
+    "population_served_total": 185723,
+    "violations_5yr_total": 58,
+    "health_based_5yr_total": 19,
+    "unresolved_total": 30,
+    "utilities_with_unresolved": 12,
     "utilities": [
       {
         "slug": "sonoma-county-csa-41-jenner",
@@ -241,16 +245,6 @@
         "pwsid": "CA4900532",
         "population_served": 406,
         "health_based_violations_5yr": 10,
-        "unresolved": true
-      },
-      {
-        "slug": "indian-creek-trailer-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Indian Creek Trailer Park",
-        "pwsid": "CA5303002",
-        "population_served": 43,
-        "health_based_violations_5yr": 3,
         "unresolved": true
       },
       {
@@ -464,16 +458,6 @@
         "unresolved": false
       },
       {
-        "slug": "caspar-south-service-company",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Caspar South Service Company",
-        "pwsid": "CA2300610",
-        "population_served": 188,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
         "slug": "shamrock-mobile-home-park",
         "state": "ca",
         "state_label": "California",
@@ -494,16 +478,6 @@
         "unresolved": true
       },
       {
-        "slug": "kashia",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Kashia",
-        "pwsid": "090600135",
-        "population_served": 153,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
         "slug": "end-o-valley-mutual-water-company",
         "state": "ca",
         "state_label": "California",
@@ -520,16 +494,6 @@
         "name": "Wilshire Heights Mutual Water Company",
         "pwsid": "CA4900573",
         "population_served": 70,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "blue-lakes-village",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Blue Lakes Village",
-        "pwsid": "CA1700596",
-        "population_served": 65,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -600,16 +564,6 @@
         "name": "Crystals",
         "pwsid": "CA4901595",
         "population_served": 40,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "evergreen-retreat-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Evergreen Retreat Mhp",
-        "pwsid": "WA5324164",
-        "population_served": 39,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -722,5 +676,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

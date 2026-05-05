@@ -9,17 +9,17 @@
     "county_name": "Alameda",
     "county_fips": "06001"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 0,
-    "total_releases_pounds": 940861,
-    "air_releases_pounds": 44,
+    "total_releases_pounds": 845102,
+    "air_releases_pounds": 40,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 940817,
-    "yoy_pct_change": 8.3,
-    "long_arc_pct_change": 201.7,
+    "land_releases_pounds": 845062,
+    "yoy_pct_change": -10.2,
+    "long_arc_pct_change": 171.0,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 940861
+      },
+      {
+        "year": 2024,
+        "value": 845102
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 44,
+      "current": 40,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 44
+          "year": 2024,
+          "value": 40
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 940817,
+      "current": 845062,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 940817
+          "year": 2024,
+          "value": 845062
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1270727,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 33.9,
-      "long_arc_pct_change": 87.5,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "US Pipe & Foundry CO LLC",
       "parent_company": "Quikrete Holdings",
-      "total_pounds_recent": 940861,
-      "yoy_pct_change": 8.3,
+      "total_pounds_recent": 845102,
+      "yoy_pct_change": -10.2,
       "top_chemical": "Zinc compounds",
       "city": "Union City"
     }
@@ -293,5 +297,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

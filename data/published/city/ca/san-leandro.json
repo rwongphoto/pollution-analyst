@@ -9,17 +9,17 @@
     "county_name": "Alameda",
     "county_fips": "06001"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 2,
-    "utilities_serving": 1,
-    "total_releases_pounds": 12090,
-    "air_releases_pounds": 20,
-    "water_releases_pounds": 45,
-    "land_releases_pounds": 12025,
-    "yoy_pct_change": -7.2,
-    "long_arc_pct_change": 573.4,
+    "facilities_in_city": 1,
+    "utilities_serving": 0,
+    "total_releases_pounds": 2170,
+    "air_releases_pounds": 21,
+    "water_releases_pounds": 15,
+    "land_releases_pounds": 2134,
+    "yoy_pct_change": 18.6,
+    "long_arc_pct_change": 20.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -40,43 +40,47 @@
       },
       {
         "year": 2014,
-        "value": 1707
+        "value": 652
       },
       {
         "year": 2015,
-        "value": 1587
+        "value": 718
       },
       {
         "year": 2016,
-        "value": 1850
+        "value": 729
       },
       {
         "year": 2017,
-        "value": 8959
+        "value": 7662
       },
       {
         "year": 2018,
-        "value": 6998
+        "value": 2038
       },
       {
         "year": 2019,
-        "value": 7705
+        "value": 2837
       },
       {
         "year": 2020,
-        "value": 17026
+        "value": 9535
       },
       {
         "year": 2021,
-        "value": 8851
+        "value": 291
       },
       {
         "year": 2022,
-        "value": 13030
+        "value": 198
       },
       {
         "year": 2023,
-        "value": 12090
+        "value": 1830
+      },
+      {
+        "year": 2024,
+        "value": 2170
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 20,
+      "current": 21,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 20
+          "year": 2024,
+          "value": 21
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 45,
+      "current": 15,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 45
+          "year": 2024,
+          "value": 15
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 12025,
+      "current": 2134,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 12025
+          "year": 2024,
+          "value": 2134
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1270727,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 33.9,
-      "long_arc_pct_change": 87.5,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,47 +200,25 @@
   ],
   "facilities": [
     {
-      "slug": "safeway-milk-plant",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Safeway Milk Plant",
-      "parent_company": "Safeway INC",
-      "total_pounds_recent": 10260,
-      "yoy_pct_change": -20.0,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "San Leandro"
-    },
-    {
       "slug": "pcc-structurals-san-leandro",
       "state": "ca",
       "state_label": "California",
       "name": "Pcc Structurals-San Leandro",
       "parent_company": "Berkshire Hathaway INC",
-      "total_pounds_recent": 1830,
-      "yoy_pct_change": 825.2,
+      "total_pounds_recent": 2170,
+      "yoy_pct_change": 18.6,
       "top_chemical": "Nickel",
       "city": "San Leandro"
     }
   ],
   "water": {
-    "utilities_count": 1,
-    "population_served_total": 420,
+    "utilities_count": 0,
+    "population_served_total": 0,
     "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
     "utilities_with_unresolved": 0,
-    "utilities": [
-      {
-        "slug": "santa-rosa-mobile-estates",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Santa Rosa Mobile Estates",
-        "pwsid": "CA4900796",
-        "population_served": 420,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      }
-    ]
+    "utilities": []
   },
   "flags": [],
   "equity": {
@@ -315,5 +297,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

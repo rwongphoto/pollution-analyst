@@ -7,16 +7,16 @@
     "fips": "06059",
     "population": 3175227
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 219934,
+      "current": 145678,
       "units": "lb",
-      "yoy_pct_change": -2.1,
-      "long_arc_pct_change": -36.7,
+      "yoy_pct_change": -33.8,
+      "long_arc_pct_change": -58.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 219934
+        },
+        {
+          "year": 2024,
+          "value": 145678
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 79,
+      "current": 63,
       "units": "lb",
-      "yoy_pct_change": -73.7,
-      "long_arc_pct_change": -81.0,
+      "yoy_pct_change": -19.9,
+      "long_arc_pct_change": -84.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 79
+        },
+        {
+          "year": 2024,
+          "value": 63
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 207137,
+      "current": 236911,
       "units": "lb",
-      "yoy_pct_change": -26.2,
-      "long_arc_pct_change": -25.2,
+      "yoy_pct_change": 14.4,
+      "long_arc_pct_change": -14.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 207137
+        },
+        {
+          "year": 2024,
+          "value": 236911
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2636013,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": 39.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -286,8 +298,8 @@
       "state_label": "California",
       "name": "Xerxes Corp",
       "parent_company": "Mattr CORP USA",
-      "total_pounds_recent": 155167,
-      "yoy_pct_change": -3.2,
+      "total_pounds_recent": 84826,
+      "yoy_pct_change": -45.3,
       "top_chemical": "Styrene",
       "city": "Anaheim"
     },
@@ -297,21 +309,10 @@
       "state_label": "California",
       "name": "Howmet Global Fastening Systems INC.",
       "parent_company": "Howmet Aerospace INC",
-      "total_pounds_recent": 52529,
-      "yoy_pct_change": -14.0,
+      "total_pounds_recent": 44995,
+      "yoy_pct_change": -14.3,
       "top_chemical": "Nitric acid",
       "city": "Fullerton"
-    },
-    {
-      "slug": "newport-fab-llc-dba-towerjazz",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Newport Fab LLC (Dba Towerjazz)",
-      "parent_company": "Newport Fab LLC (Dba Towerjazz)",
-      "total_pounds_recent": 28046,
-      "yoy_pct_change": -42.3,
-      "top_chemical": "Ammonia",
-      "city": "Newport Beach"
     },
     {
       "slug": "continuous-coating-corp",
@@ -319,10 +320,21 @@
       "state_label": "California",
       "name": "Continuous Coating Corp",
       "parent_company": "Usg CORP",
-      "total_pounds_recent": 27827,
-      "yoy_pct_change": 27.7,
+      "total_pounds_recent": 37093,
+      "yoy_pct_change": 33.3,
       "top_chemical": "Zinc compounds",
       "city": "Orange"
+    },
+    {
+      "slug": "newport-fab-llc-dba-towerjazz",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Newport Fab LLC (Dba Towerjazz)",
+      "parent_company": "Newport Fab LLC (Dba Towerjazz)",
+      "total_pounds_recent": 32712,
+      "yoy_pct_change": 16.6,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Newport Beach"
     },
     {
       "slug": "newport-laminates-inc",
@@ -330,21 +342,32 @@
       "state_label": "California",
       "name": "Newport Laminates INC",
       "parent_company": null,
-      "total_pounds_recent": 23508,
-      "yoy_pct_change": -6.9,
+      "total_pounds_recent": 21828,
+      "yoy_pct_change": -7.1,
       "top_chemical": "Styrene",
       "city": "Santa Ana"
     },
     {
-      "slug": "stremicks-heritage-foods",
+      "slug": "brasstech-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Stremicks Heritage Foods",
-      "parent_company": "Dairy Farmers Of America INC",
-      "total_pounds_recent": 16887,
-      "yoy_pct_change": 24.9,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "name": "Brasstech INC.",
+      "parent_company": "Masco CORP",
+      "total_pounds_recent": 19905,
+      "yoy_pct_change": 547.2,
+      "top_chemical": "Copper",
       "city": "Santa Ana"
+    },
+    {
+      "slug": "arrowhead-products-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Arrowhead Products Corp",
+      "parent_company": "Summa Holdings INC",
+      "total_pounds_recent": 14937,
+      "yoy_pct_change": 1425.5,
+      "top_chemical": "Lead compounds",
+      "city": "Los Alamitos"
     },
     {
       "slug": "triumph-processing-embee-div",
@@ -352,9 +375,20 @@
       "state_label": "California",
       "name": "Triumph Processing-Embee Div",
       "parent_company": "Triumph Group INC",
-      "total_pounds_recent": 10914,
-      "yoy_pct_change": -26.9,
-      "top_chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
+      "total_pounds_recent": 13539,
+      "yoy_pct_change": 24.1,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Santa Ana"
+    },
+    {
+      "slug": "cherry-aerospace",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Cherry Aerospace",
+      "parent_company": "Berkshire Hathaway INC",
+      "total_pounds_recent": 12553,
+      "yoy_pct_change": 85.9,
+      "top_chemical": "Nickel",
       "city": "Santa Ana"
     },
     {
@@ -363,31 +397,9 @@
       "state_label": "California",
       "name": "Hood Manufacturing INC",
       "parent_company": null,
-      "total_pounds_recent": 10785,
-      "yoy_pct_change": -6.3,
+      "total_pounds_recent": 10044,
+      "yoy_pct_change": -6.9,
       "top_chemical": "Styrene",
-      "city": "Santa Ana"
-    },
-    {
-      "slug": "ttm-technologies-n-a-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Ttm Technologies N.A. LLC",
-      "parent_company": "Ttm Technologies INC",
-      "total_pounds_recent": 9007,
-      "yoy_pct_change": -71.2,
-      "top_chemical": "Certain glycol ethers",
-      "city": "Santa Ana"
-    },
-    {
-      "slug": "behr-process-corp-garry-yale",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Behr Process Corp - Garry & Yale",
-      "parent_company": "Masco CORP",
-      "total_pounds_recent": 8899,
-      "yoy_pct_change": -22.9,
-      "top_chemical": "Ethylene glycol",
       "city": "Santa Ana"
     }
   ],
@@ -464,5 +476,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

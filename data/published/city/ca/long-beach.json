@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 16,
-    "utilities_serving": 2,
-    "total_releases_pounds": 25363,
-    "air_releases_pounds": 6720,
-    "water_releases_pounds": 26,
-    "land_releases_pounds": 18616,
-    "yoy_pct_change": -1.7,
-    "long_arc_pct_change": -12.1,
+    "facilities_in_city": 14,
+    "utilities_serving": 1,
+    "total_releases_pounds": 22900,
+    "air_releases_pounds": 6925,
+    "water_releases_pounds": 7,
+    "land_releases_pounds": 15968,
+    "yoy_pct_change": -5.7,
+    "long_arc_pct_change": -20.6,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -68,15 +68,19 @@
       },
       {
         "year": 2021,
-        "value": 48766
+        "value": 47365
       },
       {
         "year": 2022,
-        "value": 25805
+        "value": 21322
       },
       {
         "year": 2023,
-        "value": 25363
+        "value": 24292
+      },
+      {
+        "year": 2024,
+        "value": 22900
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 6720,
+      "current": 6925,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 6720
+          "year": 2024,
+          "value": 6925
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 26,
+      "current": 7,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 26
+          "year": 2024,
+          "value": 7
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 18616,
+      "current": 15968,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 18616
+          "year": 2024,
+          "value": 15968
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "U.S. Navy San Clemente Island",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 11606,
-      "yoy_pct_change": 53.4,
+      "total_pounds_recent": 11732,
+      "yoy_pct_change": 1.1,
       "top_chemical": "Lead",
       "city": "San Clemente Island"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "Tesoro East Hynes Terminal",
       "parent_company": "Marathon Petroleum CORP",
-      "total_pounds_recent": 4626,
-      "yoy_pct_change": 6.1,
+      "total_pounds_recent": 4403,
+      "yoy_pct_change": -4.8,
       "top_chemical": "Toluene",
       "city": "Long Beach"
     },
@@ -223,9 +227,9 @@
       "state_label": "California",
       "name": "Tesoro Marine Terminal 2",
       "parent_company": "Marathon Petroleum CORP",
-      "total_pounds_recent": 2197,
-      "yoy_pct_change": -43.0,
-      "top_chemical": "Toluene",
+      "total_pounds_recent": 2049,
+      "yoy_pct_change": -6.7,
+      "top_chemical": "Xylene (mixed isomers)",
       "city": "Long Beach"
     },
     {
@@ -234,31 +238,9 @@
       "state_label": "California",
       "name": "Tabc INC",
       "parent_company": "Toyota Motor North America INC",
-      "total_pounds_recent": 1719,
-      "yoy_pct_change": -15.1,
+      "total_pounds_recent": 1655,
+      "yoy_pct_change": -3.7,
       "top_chemical": "Zinc compounds",
-      "city": "Long Beach"
-    },
-    {
-      "slug": "hexpol-long-beach",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Hexpol Long Beach",
-      "parent_company": "Hexpol Holdings INC",
-      "total_pounds_recent": 1647,
-      "yoy_pct_change": 76.0,
-      "top_chemical": "Zinc compounds",
-      "city": "Long Beach"
-    },
-    {
-      "slug": "cunico-corp-a-bwxt-co",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Cunico Corp A Bwxt CO",
-      "parent_company": "Bwx Technologies INC",
-      "total_pounds_recent": 1065,
-      "yoy_pct_change": -76.2,
-      "top_chemical": "Nickel compounds",
       "city": "Long Beach"
     },
     {
@@ -267,9 +249,20 @@
       "state_label": "California",
       "name": "Aviation Repair Solutions INC",
       "parent_company": null,
-      "total_pounds_recent": 636,
-      "yoy_pct_change": 2.8,
-      "top_chemical": "Lead compounds",
+      "total_pounds_recent": 731,
+      "yoy_pct_change": 15.0,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Long Beach"
+    },
+    {
+      "slug": "hexpol-long-beach",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Hexpol Long Beach",
+      "parent_company": "Hexpol Holdings INC",
+      "total_pounds_recent": 702,
+      "yoy_pct_change": -57.4,
+      "top_chemical": "Zinc compounds",
       "city": "Long Beach"
     },
     {
@@ -278,8 +271,19 @@
       "state_label": "California",
       "name": "Olympus Terminals LLC",
       "parent_company": "Olympus Terminals LLC",
-      "total_pounds_recent": 594,
-      "yoy_pct_change": 1.3,
+      "total_pounds_recent": 633,
+      "yoy_pct_change": 6.5,
+      "top_chemical": "Toluene",
+      "city": "Long Beach"
+    },
+    {
+      "slug": "petrodiamond-terminal-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Petrodiamond Terminal CO",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 482,
+      "yoy_pct_change": 7.4,
       "top_chemical": "Xylene (mixed isomers)",
       "city": "Long Beach"
     },
@@ -289,41 +293,31 @@
       "state_label": "California",
       "name": "Certified Alloy Products INC",
       "parent_company": "Doncasters LTD",
-      "total_pounds_recent": 540,
-      "yoy_pct_change": -8.3,
-      "top_chemical": "Nickel",
+      "total_pounds_recent": 316,
+      "yoy_pct_change": -41.4,
+      "top_chemical": "Chromium",
       "city": "Long Beach"
     },
     {
-      "slug": "petrodiamond-terminal-co",
+      "slug": "ribost-terminal-llc-dba-world-oil-terminals-long-beach",
       "state": "ca",
       "state_label": "California",
-      "name": "Petrodiamond Terminal CO",
-      "parent_company": "Mcc Development CORP",
-      "total_pounds_recent": 449,
-      "yoy_pct_change": -19.4,
-      "top_chemical": "Toluene",
+      "name": "Ribost Terminal LLC Dba World Oil Terminals - Long Beach",
+      "parent_company": "World Oil CORP",
+      "total_pounds_recent": 169,
+      "yoy_pct_change": -35.6,
+      "top_chemical": "n-Hexane",
       "city": "Long Beach"
     }
   ],
   "water": {
-    "utilities_count": 2,
-    "population_served_total": 466792,
-    "violations_5yr_total": 48,
-    "health_based_5yr_total": 3,
-    "unresolved_total": 24,
-    "utilities_with_unresolved": 1,
+    "utilities_count": 1,
+    "population_served_total": 466772,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
     "utilities": [
-      {
-        "slug": "robinson-s-corner-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Robinson's Corner Mhp",
-        "pwsid": "CA0400021",
-        "population_served": 20,
-        "health_based_violations_5yr": 3,
-        "unresolved": true
-      },
       {
         "slug": "long-beach-utilities-department",
         "state": "ca",
@@ -413,5 +407,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

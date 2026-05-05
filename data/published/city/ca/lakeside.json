@@ -9,17 +9,17 @@
     "county_name": "San Diego",
     "county_fips": "06073"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
-    "utilities_serving": 2,
-    "total_releases_pounds": 2,
-    "air_releases_pounds": 0.5,
-    "water_releases_pounds": 0,
-    "land_releases_pounds": 1,
-    "yoy_pct_change": 375.0,
-    "long_arc_pct_change": 216.7,
+    "utilities_serving": 1,
+    "total_releases_pounds": 4,
+    "air_releases_pounds": 0.55,
+    "water_releases_pounds": 0.03,
+    "land_releases_pounds": 4,
+    "yoy_pct_change": 117.1,
+    "long_arc_pct_change": 587.5,
     "long_arc_baseline_year": 2015,
     "history": [
       {
@@ -57,6 +57,10 @@
       {
         "year": 2023,
         "value": 2
+      },
+      {
+        "year": 2024,
+        "value": 4
       }
     ]
   },
@@ -64,15 +68,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 0,
+      "current": 1,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 0
+          "year": 2024,
+          "value": 1
         }
       ]
     },
@@ -83,10 +87,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -94,25 +98,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 1,
+      "current": 4,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1
+          "year": 2024,
+          "value": 4
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 7595135,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -12.3,
-      "long_arc_pct_change": -25.7,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -181,15 +185,15 @@
       "state_label": "California",
       "name": "Oldcastle Precast INC",
       "parent_company": "Crh Americas INC",
-      "total_pounds_recent": 2,
-      "yoy_pct_change": 375.0,
+      "total_pounds_recent": 4,
+      "yoy_pct_change": 117.1,
       "top_chemical": "Lead compounds",
       "city": "Lakeside"
     }
   ],
   "water": {
-    "utilities_count": 2,
-    "population_served_total": 36671,
+    "utilities_count": 1,
+    "population_served_total": 35500,
     "violations_5yr_total": 6,
     "health_based_5yr_total": 0,
     "unresolved_total": 1,
@@ -204,16 +208,6 @@
         "population_served": 35500,
         "health_based_violations_5yr": 0,
         "unresolved": true
-      },
-      {
-        "slug": "barona-north",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Barona North",
-        "pwsid": "090600118",
-        "population_served": 1171,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
       }
     ]
   },
@@ -294,5 +288,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

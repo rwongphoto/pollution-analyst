@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
-    "utilities_serving": 2,
-    "total_releases_pounds": 2149430,
-    "air_releases_pounds": 239657,
-    "water_releases_pounds": 1705351,
-    "land_releases_pounds": 204423,
-    "yoy_pct_change": -0.2,
-    "long_arc_pct_change": 102.8,
+    "utilities_serving": 1,
+    "total_releases_pounds": 1932374,
+    "air_releases_pounds": 196845,
+    "water_releases_pounds": 1706906,
+    "land_releases_pounds": 28624,
+    "yoy_pct_change": -10.1,
+    "long_arc_pct_change": 82.4,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 2149430
+      },
+      {
+        "year": 2024,
+        "value": 1932374
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 239657,
+      "current": 196845,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 239657
+          "year": 2024,
+          "value": 196845
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 1705351,
+      "current": 1706906,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1705351
+          "year": 2024,
+          "value": 1706906
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 204423,
+      "current": 28624,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 204423
+          "year": 2024,
+          "value": 28624
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Chevron Products CO. Div Of Chevron USA INC.",
       "parent_company": "Chevron CORP",
-      "total_pounds_recent": 2072450,
-      "yoy_pct_change": -1.9,
+      "total_pounds_recent": 1922171,
+      "yoy_pct_change": -7.3,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "El Segundo"
     },
@@ -212,9 +216,9 @@
       "state_label": "California",
       "name": "Air Liquide Large Industries U.S. LP - El Segundo",
       "parent_company": "American Air Liquide Holdings INC",
-      "total_pounds_recent": 76870,
-      "yoy_pct_change": 83.4,
-      "top_chemical": "Zinc compounds",
+      "total_pounds_recent": 9921,
+      "yoy_pct_change": -87.1,
+      "top_chemical": "n-Hexane",
       "city": "El Segundo"
     },
     {
@@ -223,15 +227,15 @@
       "state_label": "California",
       "name": "The Boeing CO",
       "parent_company": "The Boeing Co",
-      "total_pounds_recent": 110,
-      "yoy_pct_change": -46.6,
+      "total_pounds_recent": 282,
+      "yoy_pct_change": 156.6,
       "top_chemical": "Lead  And Lead Compounds",
       "city": "El Segundo"
     }
   ],
   "water": {
-    "utilities_count": 2,
-    "population_served_total": 16630,
+    "utilities_count": 1,
+    "population_served_total": 16445,
     "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
@@ -244,16 +248,6 @@
         "name": "El Segundo-City, Water Dept.",
         "pwsid": "CA1910040",
         "population_served": 16445,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "shady-oaks-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Shady Oaks Mobile Home Park",
-        "pwsid": "ME0001009",
-        "population_served": 185,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -336,5 +330,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

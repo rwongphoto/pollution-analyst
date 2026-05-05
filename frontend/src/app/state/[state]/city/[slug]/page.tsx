@@ -37,7 +37,7 @@ export async function generateMetadata({
   const { state, slug } = await params;
   const data = await loadCityHub(state, slug);
   return pageMeta({
-    title: `${data.place.name} Pollution & Water Quality | Pollution Analyst.ai`,
+    title: `${data.place.name} Pollution | Pollution Analyst.ai`,
     description: `${data.place.name}, ${data.place.state_label} — ${data.totals.facilities_in_city} TRI facilities in the city, ${data.totals.utilities_serving} public water systems serving residents, with EPA equity context.`,
     path: `/state/${state}/city/${slug}`,
   });
@@ -259,48 +259,82 @@ function WaterSection({ data }: { data: CityHubPayload }) {
           ))}
         </div>
 
-        <table className="tbl">
-          <thead>
-            <tr>
-              <th>Utility</th>
-              <th>PWSID</th>
-              <th className="right">Population served</th>
-              <th className="right">Health-based · 5yr</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            {w.utilities.map((u) => (
-              <tr key={u.slug}>
-                <td className="name">
-                  <Link href={`/state/${u.state}/water/${u.slug}`}>{u.name}</Link>
-                </td>
-                <td className="num-mono">{u.pwsid}</td>
-                <td className="right num-mono">{u.population_served.toLocaleString()}</td>
-                <td
-                  className={`right num-mono ${
-                    u.health_based_violations_5yr === 0
-                      ? "delta-up"
-                      : u.health_based_violations_5yr >= 3
-                      ? "delta-down"
-                      : "delta-flat"
-                  }`}
-                >
-                  {u.health_based_violations_5yr}
-                </td>
-                <td>
-                  {u.unresolved ? (
-                    <span className="chip low">UNRESOLVED</span>
-                  ) : (
-                    <span className="muted">In compliance</span>
-                  )}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        {(() => {
+          // Only surface utilities worth attention — health-based violation count
+          // > 0 OR currently unresolved. Compliant systems with zero recorded
+          // health-based violations fold into a footnote so the table doesn't
+          // become a long roster of mobile-home parks with clean records.
+          const flagged = w.utilities.filter(
+            (u) => u.health_based_violations_5yr > 0 || u.unresolved,
+          );
+          const compliantCount = w.utilities.length - flagged.length;
+          if (flagged.length === 0) {
+            return (
+              <p className="muted" style={{ maxWidth: "62ch" }}>
+                Every public water system serving this city is in compliance with
+                no recorded health-based SDWIS violations in the past 5 years.
+                The {w.utilities.length} system{w.utilities.length === 1 ? "" : "s"} on
+                record are not individually tabulated here; click through any
+                utility to see its full record.
+              </p>
+            );
+          }
+          return (
+            <>
+              <table className="tbl">
+                <thead>
+                  <tr>
+                    <th>Water system</th>
+                    <th>PWSID</th>
+                    <th className="right">Population served</th>
+                    <th className="right">Health-based · 5yr</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {flagged.map((u) => (
+                    <tr key={u.slug}>
+                      <td className="name">
+                        <Link href={`/state/${u.state}/water/${u.slug}`}>{u.name}</Link>
+                      </td>
+                      <td className="num-mono">{u.pwsid}</td>
+                      <td className="right num-mono">{u.population_served.toLocaleString()}</td>
+                      <td
+                        className={`right num-mono ${
+                          u.health_based_violations_5yr === 0
+                            ? "delta-up"
+                            : u.health_based_violations_5yr >= 3
+                            ? "delta-down"
+                            : "delta-flat"
+                        }`}
+                      >
+                        {u.health_based_violations_5yr}
+                      </td>
+                      <td>
+                        {u.unresolved ? (
+                          <span className="chip low">UNRESOLVED</span>
+                        ) : (
+                          <span className="muted">Returned to compliance</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              {compliantCount > 0 ? (
+                <p className="muted" style={{ fontSize: 12.5, marginTop: 14, maxWidth: "62ch" }}>
+                  Showing the {flagged.length} {flagged.length === 1 ? "system" : "systems"} with
+                  recorded health-based or unresolved violations.{" "}
+                  {compliantCount} additional {compliantCount === 1 ? "system is" : "systems are"} in
+                  compliance with no recorded health-based violations in the past
+                  5 years and {compliantCount === 1 ? "is" : "are"} not individually tabulated.
+                </p>
+              ) : null}
+            </>
+          );
+        })()}
         <p className="muted" style={{ fontSize: 12.5, marginTop: 14, maxWidth: "62ch" }}>
-          A public water system is the regulated entity, not the city. Some systems serve multiple cities; some cities are served by multiple systems. Each row links to that system&apos;s compliance history.
+          A <strong>public water system</strong> is the regulated entity, not the city. EPA&apos;s SDWIS definition covers anything serving 25+ people for 60+ days a year or with 15+ service connections — that includes municipal utilities (City of Stockton), water districts, mobile home parks operating their own wells, schools, and small private subdivisions. Each system is independently monitored. Some systems serve multiple cities; some cities are served by many systems.
         </p>
       </div>
     </section>

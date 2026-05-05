@@ -9,30 +9,30 @@
     "county_name": "San Diego",
     "county_fips": "06073"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 36,
-    "utilities_serving": 15,
-    "total_releases_pounds": 587949,
-    "air_releases_pounds": 170032,
+    "facilities_in_city": 35,
+    "utilities_serving": 4,
+    "total_releases_pounds": 276288,
+    "air_releases_pounds": 174567,
     "water_releases_pounds": 3,
-    "land_releases_pounds": 417914,
-    "yoy_pct_change": 89.6,
-    "long_arc_pct_change": 126.9,
+    "land_releases_pounds": 101718,
+    "yoy_pct_change": -53.0,
+    "long_arc_pct_change": 6.6,
     "long_arc_baseline_year": 2010,
     "history": [
       {
         "year": 2010,
-        "value": 259120
+        "value": 259119
       },
       {
         "year": 2011,
-        "value": 177190
+        "value": 177189
       },
       {
         "year": 2012,
-        "value": 399262
+        "value": 399261
       },
       {
         "year": 2013,
@@ -44,39 +44,43 @@
       },
       {
         "year": 2015,
-        "value": 335764
+        "value": 335697
       },
       {
         "year": 2016,
-        "value": 444595
+        "value": 444519
       },
       {
         "year": 2017,
-        "value": 360070
+        "value": 359991
       },
       {
         "year": 2018,
-        "value": 249919
+        "value": 249836
       },
       {
         "year": 2019,
-        "value": 224997
+        "value": 224910
       },
       {
         "year": 2020,
-        "value": 235110
+        "value": 238596
       },
       {
         "year": 2021,
-        "value": 252179
+        "value": 252155
       },
       {
         "year": 2022,
-        "value": 310153
+        "value": 309880
       },
       {
         "year": 2023,
-        "value": 587949
+        "value": 587890
+      },
+      {
+        "year": 2024,
+        "value": 276288
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 170032,
+      "current": 174567,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 170032
+          "year": 2024,
+          "value": 174567
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 3
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 417914,
+      "current": 101718,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 417914
+          "year": 2024,
+          "value": 101718
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 7595135,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -12.3,
-      "long_arc_pct_change": -25.7,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,25 +200,47 @@
   ],
   "facilities": [
     {
-      "slug": "bae-systems-san-diego-ship-repair",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Bae Systems San Diego Ship Repair",
-      "parent_company": "Bae Systems INC",
-      "total_pounds_recent": 364243,
-      "yoy_pct_change": 1123.6,
-      "top_chemical": "Aluminum oxide (fibrous forms)",
-      "city": "San Diego"
-    },
-    {
       "slug": "general-dynamics-nassco",
       "state": "ca",
       "state_label": "California",
       "name": "General Dynamics (Nassco)",
       "parent_company": "General Dynamics CORP",
-      "total_pounds_recent": 158158,
-      "yoy_pct_change": -13.2,
+      "total_pounds_recent": 128010,
+      "yoy_pct_change": -19.1,
       "top_chemical": "Xylene (mixed isomers)",
+      "city": "San Diego"
+    },
+    {
+      "slug": "polypeptide-laboratories-san-diego",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Polypeptide Laboratories San Diego",
+      "parent_company": "Polypeptide Laboratories INC",
+      "total_pounds_recent": 30445,
+      "yoy_pct_change": 9689.4,
+      "top_chemical": "N,N-Dimethylformamide",
+      "city": "San Diego"
+    },
+    {
+      "slug": "bae-systems-san-diego-ship-repair",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Bae Systems San Diego Ship Repair",
+      "parent_company": "Bae Systems INC",
+      "total_pounds_recent": 29639,
+      "yoy_pct_change": -91.9,
+      "top_chemical": "Aluminum oxide (fibrous forms)",
+      "city": "San Diego"
+    },
+    {
+      "slug": "honeywell-industrial-safety",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Honeywell Industrial Safety",
+      "parent_company": "Honeywell International INC",
+      "total_pounds_recent": 25807,
+      "yoy_pct_change": null,
+      "top_chemical": "Toluene diisocyanate (mixed isomers)",
       "city": "San Diego"
     },
     {
@@ -223,19 +249,8 @@
       "state_label": "California",
       "name": "US Marine Corps Air Station Miramar",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 23431,
-      "yoy_pct_change": 20.5,
-      "top_chemical": "Lead",
-      "city": "San Diego"
-    },
-    {
-      "slug": "us-cbp-border-patrol-firearms-range-be-ca0180",
-      "state": "ca",
-      "state_label": "California",
-      "name": "US Cbp Border Patrol Firearms Range Be # Ca0180",
-      "parent_company": "US Department Of Homeland Security",
-      "total_pounds_recent": 17053,
-      "yoy_pct_change": -12.8,
+      "total_pounds_recent": 25356,
+      "yoy_pct_change": 8.2,
       "top_chemical": "Lead",
       "city": "San Diego"
     },
@@ -245,42 +260,9 @@
       "state_label": "California",
       "name": "Integrated Dna Technologies",
       "parent_company": "Danaher CORP",
-      "total_pounds_recent": 7616,
-      "yoy_pct_change": -22.2,
+      "total_pounds_recent": 10730,
+      "yoy_pct_change": 40.9,
       "top_chemical": "Acetonitrile",
-      "city": "San Diego"
-    },
-    {
-      "slug": "us-naval-submarine-base-san-diego",
-      "state": "ca",
-      "state_label": "California",
-      "name": "US Naval Submarine Base San Diego",
-      "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 4879,
-      "yoy_pct_change": 3.6,
-      "top_chemical": "Xylene (mixed isomers)",
-      "city": "San Diego"
-    },
-    {
-      "slug": "solar-turbines-inc-harbor-drive",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Solar Turbines INC Harbor Drive",
-      "parent_company": "Caterpillar INC",
-      "total_pounds_recent": 4257,
-      "yoy_pct_change": -21.8,
-      "top_chemical": "Nickel",
-      "city": "San Diego"
-    },
-    {
-      "slug": "saint-gobain-solar-gard-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Saint Gobain Solar Gard LLC",
-      "parent_company": "Saint-Gobain CORP",
-      "total_pounds_recent": 2319,
-      "yoy_pct_change": 30.9,
-      "top_chemical": "Toluene",
       "city": "San Diego"
     },
     {
@@ -289,30 +271,52 @@
       "state_label": "California",
       "name": "Sherwin-Williams CO",
       "parent_company": "The Sherwin-Williams Co",
-      "total_pounds_recent": 1260,
-      "yoy_pct_change": -34.5,
+      "total_pounds_recent": 6237,
+      "yoy_pct_change": 395.1,
       "top_chemical": "Zinc compounds",
       "city": "San Diego"
     },
     {
-      "slug": "san-diego-galvanizing-inc",
+      "slug": "kyocera-international-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "San Diego Galvanizing INC",
-      "parent_company": null,
-      "total_pounds_recent": 928,
-      "yoy_pct_change": 1244.9,
-      "top_chemical": "Zinc compounds",
+      "name": "Kyocera International INC",
+      "parent_company": "Kyocera International INC",
+      "total_pounds_recent": 4814,
+      "yoy_pct_change": 3067.3,
+      "top_chemical": "Cyanide compounds",
+      "city": "San Diego"
+    },
+    {
+      "slug": "solar-turbines-inc-harbor-drive",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Solar Turbines INC Harbor Drive",
+      "parent_company": "Caterpillar INC",
+      "total_pounds_recent": 3860,
+      "yoy_pct_change": -9.3,
+      "top_chemical": "Nickel",
+      "city": "San Diego"
+    },
+    {
+      "slug": "us-naval-submarine-base-san-diego",
+      "state": "ca",
+      "state_label": "California",
+      "name": "US Naval Submarine Base San Diego",
+      "parent_company": "US Department Of Defense",
+      "total_pounds_recent": 2337,
+      "yoy_pct_change": -52.1,
+      "top_chemical": "Xylene (mixed isomers)",
       "city": "San Diego"
     }
   ],
   "water": {
-    "utilities_count": 15,
-    "population_served_total": 1424278,
-    "violations_5yr_total": 48,
-    "health_based_5yr_total": 15,
-    "unresolved_total": 15,
-    "utilities_with_unresolved": 3,
+    "utilities_count": 4,
+    "population_served_total": 1422722,
+    "violations_5yr_total": 41,
+    "health_based_5yr_total": 13,
+    "unresolved_total": 10,
+    "utilities_with_unresolved": 1,
     "utilities": [
       {
         "slug": "butterfield-ranch",
@@ -323,16 +327,6 @@
         "population_served": 353,
         "health_based_violations_5yr": 13,
         "unresolved": true
-      },
-      {
-        "slug": "cottonwood-ridge-manufactured-housing-co",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cottonwood Ridge Manufactured Housing Co",
-        "pwsid": "CA4500107",
-        "population_served": 205,
-        "health_based_violations_5yr": 2,
-        "unresolved": false
       },
       {
         "slug": "san-diego-city-of",
@@ -351,106 +345,6 @@
         "name": "Nas North Island & Nab Coronado",
         "pwsid": "CA3710750",
         "population_served": 36990,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "stoneybrooke-village-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Stoneybrooke Village Mhp",
-        "pwsid": "OH7802912",
-        "population_served": 332,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "northcrest-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Northcrest Mobile Home Park",
-        "pwsid": "CA0800552",
-        "population_served": 250,
-        "health_based_violations_5yr": 0,
-        "unresolved": true
-      },
-      {
-        "slug": "hidden-valley-owner-llc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Hidden Valley Owner Llc",
-        "pwsid": "MT0000035",
-        "population_served": 200,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "pine-grove-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Pine Grove Mobile Home Park",
-        "pwsid": "CA0800800",
-        "population_served": 142,
-        "health_based_violations_5yr": 0,
-        "unresolved": true
-      },
-      {
-        "slug": "port-of-call-west",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Port Of Call - West",
-        "pwsid": "MI0040491",
-        "population_served": 105,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "tall-timber-travel-trailer-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Tall Timber Travel Trailer Park",
-        "pwsid": "FL3421528",
-        "population_served": 95,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "suncrest-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Suncrest Mhp",
-        "pwsid": "NC0111148",
-        "population_served": 65,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "chalet-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Chalet Mobile Home Park",
-        "pwsid": "ID5070012",
-        "population_served": 60,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "suntree-hollow-mobile-home-court",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Suntree Hollow Mobile Home Court",
-        "pwsid": "ID5070049",
-        "population_served": 60,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "hardyville-on-the-river",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Hardyville On The River",
-        "pwsid": "AZ0408342",
-        "population_served": 42,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -543,5 +437,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

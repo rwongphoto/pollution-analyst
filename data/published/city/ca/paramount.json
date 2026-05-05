@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 6,
     "utilities_serving": 1,
-    "total_releases_pounds": 599635,
-    "air_releases_pounds": 3110,
-    "water_releases_pounds": 1,
-    "land_releases_pounds": 596525,
-    "yoy_pct_change": 189.5,
-    "long_arc_pct_change": 1415.9,
+    "total_releases_pounds": 152101,
+    "air_releases_pounds": 4332,
+    "water_releases_pounds": 2,
+    "land_releases_pounds": 147767,
+    "yoy_pct_change": -74.6,
+    "long_arc_pct_change": 284.5,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 599635
+      },
+      {
+        "year": 2024,
+        "value": 152101
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 3110,
+      "current": 4332,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 3110
+          "year": 2024,
+          "value": 4332
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 1,
+      "current": 2,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1
+          "year": 2024,
+          "value": 2
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 596525,
+      "current": 147767,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 596525
+          "year": 2024,
+          "value": 147767
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,25 +200,25 @@
   ],
   "facilities": [
     {
-      "slug": "air-products-manufacturing-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Air Products Manufacturing LLC",
-      "parent_company": "Air Products & Chemicals INC",
-      "total_pounds_recent": 485788,
-      "yoy_pct_change": 267.2,
-      "top_chemical": "Asbestos (friable)",
-      "city": "Paramount"
-    },
-    {
       "slug": "press-forge-co",
       "state": "ca",
       "state_label": "California",
       "name": "Press Forge CO",
       "parent_company": "Berkshire Hathaway INC",
-      "total_pounds_recent": 112491,
-      "yoy_pct_change": 52.7,
+      "total_pounds_recent": 102294,
+      "yoy_pct_change": -9.1,
       "top_chemical": "Nickel",
+      "city": "Paramount"
+    },
+    {
+      "slug": "air-products-manufacturing-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Air Products Manufacturing LLC",
+      "parent_company": "Air Products & Chemicals INC",
+      "total_pounds_recent": 49357,
+      "yoy_pct_change": -89.8,
+      "top_chemical": "Asbestos (friable)",
       "city": "Paramount"
     },
     {
@@ -223,8 +227,8 @@
       "state_label": "California",
       "name": "Aerocraft Heat Treating CO. INC",
       "parent_company": "Berkshire Hathaway INC",
-      "total_pounds_recent": 1291,
-      "yoy_pct_change": 15.9,
+      "total_pounds_recent": 398,
+      "yoy_pct_change": -69.2,
       "top_chemical": "Nickel",
       "city": "Paramount"
     },
@@ -234,8 +238,8 @@
       "state_label": "California",
       "name": "Carlton Forge Works",
       "parent_company": "Berkshire Hathaway INC",
-      "total_pounds_recent": 36,
-      "yoy_pct_change": 56.5,
+      "total_pounds_recent": 31,
+      "yoy_pct_change": -13.9,
       "top_chemical": "Nickel",
       "city": "Paramount"
     },
@@ -245,8 +249,8 @@
       "state_label": "California",
       "name": "Ace Clearwater Enterprises INC",
       "parent_company": null,
-      "total_pounds_recent": 25,
-      "yoy_pct_change": 150.9,
+      "total_pounds_recent": 16,
+      "yoy_pct_change": -36.4,
       "top_chemical": "Lead",
       "city": "Paramount"
     },
@@ -256,8 +260,8 @@
       "state_label": "California",
       "name": "Paramount Plant 23",
       "parent_company": "Mcc Development CORP",
-      "total_pounds_recent": 5,
-      "yoy_pct_change": 25.6,
+      "total_pounds_recent": 4,
+      "yoy_pct_change": -0.9,
       "top_chemical": "Lead compounds",
       "city": "Paramount"
     }
@@ -359,5 +363,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

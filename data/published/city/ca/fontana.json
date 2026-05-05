@@ -9,17 +9,17 @@
     "county_name": "San Bernardino",
     "county_fips": "06071"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 12,
     "utilities_serving": 1,
-    "total_releases_pounds": 18444,
-    "air_releases_pounds": 3667,
-    "water_releases_pounds": 13,
-    "land_releases_pounds": 14764,
-    "yoy_pct_change": -94.2,
-    "long_arc_pct_change": 171.4,
+    "total_releases_pounds": 14428,
+    "air_releases_pounds": 1851,
+    "water_releases_pounds": 18,
+    "land_releases_pounds": 12559,
+    "yoy_pct_change": -21.8,
+    "long_arc_pct_change": 112.3,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 18444
+      },
+      {
+        "year": 2024,
+        "value": 14428
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 3667,
+      "current": 1851,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 3667
+          "year": 2024,
+          "value": 1851
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 13,
+      "current": 18,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 13
+          "year": 2024,
+          "value": 18
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 14764,
+      "current": 12559,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 14764
+          "year": 2024,
+          "value": 12559
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 9779299,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -6.6,
-      "long_arc_pct_change": -7.3,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Sierra Aluminum CO Plant II",
       "parent_company": "Sierra Aluminum Co",
-      "total_pounds_recent": 8606,
-      "yoy_pct_change": -97.1,
+      "total_pounds_recent": 7583,
+      "yoy_pct_change": -11.9,
       "top_chemical": "Chromium  and Chromium Compounds(except for chromite ore mined in the Transvaal Region)",
       "city": "Fontana"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "Pacific Forge INC.",
       "parent_company": "Avis Industrial CORP",
-      "total_pounds_recent": 3302,
-      "yoy_pct_change": -72.5,
+      "total_pounds_recent": 3626,
+      "yoy_pct_change": 9.8,
       "top_chemical": "Chromium",
       "city": "Fontana"
     },
@@ -223,20 +227,9 @@
       "state_label": "California",
       "name": "Forged Metals INC",
       "parent_company": "Howmet Aerospace INC",
-      "total_pounds_recent": 2585,
-      "yoy_pct_change": -9.9,
+      "total_pounds_recent": 1169,
+      "yoy_pct_change": -54.8,
       "top_chemical": "Nickel",
-      "city": "Fontana"
-    },
-    {
-      "slug": "urethane-polymers-international",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Urethane Polymers International",
-      "parent_company": "Garland Industries INC",
-      "total_pounds_recent": 2098,
-      "yoy_pct_change": 55.8,
-      "top_chemical": "1,2,4-Trimethylbenzene",
       "city": "Fontana"
     },
     {
@@ -245,20 +238,20 @@
       "state_label": "California",
       "name": "Tst INC. Dba Timco Dba Tande M Industries",
       "parent_company": "Tst INC",
-      "total_pounds_recent": 1483,
-      "yoy_pct_change": -4.1,
+      "total_pounds_recent": 1091,
+      "yoy_pct_change": -26.4,
       "top_chemical": "Manganese",
       "city": "Fontana"
     },
     {
-      "slug": "continental-coatings-co-inc",
+      "slug": "urethane-polymers-international",
       "state": "ca",
       "state_label": "California",
-      "name": "Continental Coatings CO. INC",
-      "parent_company": "Yung Chi America",
-      "total_pounds_recent": 205,
-      "yoy_pct_change": -27.2,
-      "top_chemical": "Certain glycol ethers",
+      "name": "Urethane Polymers International",
+      "parent_company": "Garland Industries INC",
+      "total_pounds_recent": 472,
+      "yoy_pct_change": -77.5,
+      "top_chemical": "1,2,4-Trimethylbenzene",
       "city": "Fontana"
     },
     {
@@ -267,20 +260,20 @@
       "state_label": "California",
       "name": "James Hardie Building Products Fontana",
       "parent_company": "James Hardie Building Products INC",
-      "total_pounds_recent": 144,
-      "yoy_pct_change": -70.1,
+      "total_pounds_recent": 335,
+      "yoy_pct_change": 132.5,
       "top_chemical": "Lead  And Lead Compounds",
       "city": "Fontana"
     },
     {
-      "slug": "robertson-s-ready-mix-fontana-plant-4",
+      "slug": "continental-coatings-co-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Robertson'S Ready Mix Fontana Plant 4",
-      "parent_company": "Mcc Development CORP",
-      "total_pounds_recent": 13,
-      "yoy_pct_change": -4.9,
-      "top_chemical": "Lead compounds",
+      "name": "Continental Coatings CO. INC",
+      "parent_company": "Yung Chi America",
+      "total_pounds_recent": 73,
+      "yoy_pct_change": -64.3,
+      "top_chemical": "Xylene (mixed isomers)",
       "city": "Fontana"
     },
     {
@@ -289,8 +282,19 @@
       "state_label": "California",
       "name": "Oldcastle Precast INC",
       "parent_company": "Crh Americas INC",
-      "total_pounds_recent": 5,
-      "yoy_pct_change": -49.5,
+      "total_pounds_recent": 64,
+      "yoy_pct_change": 1214.9,
+      "top_chemical": "Barium compounds (except for barium sulfate (CAS No. 7727-43-7))",
+      "city": "Fontana"
+    },
+    {
+      "slug": "robertson-s-ready-mix-fontana-plant-4",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Robertson'S Ready Mix Fontana Plant 4",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 11,
+      "yoy_pct_change": -21.1,
       "top_chemical": "Lead compounds",
       "city": "Fontana"
     },
@@ -300,8 +304,8 @@
       "state_label": "California",
       "name": "Building Materials Manufacturing LLC",
       "parent_company": "G Holdings INC",
-      "total_pounds_recent": 1,
-      "yoy_pct_change": -31.7,
+      "total_pounds_recent": 2,
+      "yoy_pct_change": 44.0,
       "top_chemical": "Benzo[g,h,i]perylene",
       "city": "Fontana"
     }
@@ -403,5 +407,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

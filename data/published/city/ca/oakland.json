@@ -9,17 +9,17 @@
     "county_name": "Alameda",
     "county_fips": "06001"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
-    "utilities_serving": 5,
-    "total_releases_pounds": 89,
-    "air_releases_pounds": 82,
+    "utilities_serving": 2,
+    "total_releases_pounds": 318,
+    "air_releases_pounds": 81,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 7,
-    "yoy_pct_change": -23.7,
-    "long_arc_pct_change": -97.4,
+    "land_releases_pounds": 237,
+    "yoy_pct_change": 258.9,
+    "long_arc_pct_change": -90.8,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 89
+      },
+      {
+        "year": 2024,
+        "value": 318
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 82,
+      "current": 81,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 82
+          "year": 2024,
+          "value": 81
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 7,
+      "current": 237,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 7
+          "year": 2024,
+          "value": 237
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1270727,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 33.9,
-      "long_arc_pct_change": 87.5,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,25 +200,25 @@
   ],
   "facilities": [
     {
-      "slug": "chemical-compounding-co",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Chemical Compounding CO",
-      "parent_company": null,
-      "total_pounds_recent": 55,
-      "yoy_pct_change": -5.2,
-      "top_chemical": "Nitric acid",
-      "city": "Oakland"
-    },
-    {
       "slug": "pacific-galvanizing-inc",
       "state": "ca",
       "state_label": "California",
       "name": "Pacific Galvanizing INC.",
       "parent_company": null,
-      "total_pounds_recent": 19,
-      "yoy_pct_change": 41.4,
+      "total_pounds_recent": 249,
+      "yoy_pct_change": 1237.7,
       "top_chemical": "Zinc compounds",
+      "city": "Oakland"
+    },
+    {
+      "slug": "chemical-compounding-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Chemical Compounding CO",
+      "parent_company": null,
+      "total_pounds_recent": 49,
+      "yoy_pct_change": -10.9,
+      "top_chemical": "Nitric acid",
       "city": "Oakland"
     },
     {
@@ -223,30 +227,20 @@
       "state_label": "California",
       "name": "Transene CO Oakland",
       "parent_company": "Transene Co INC",
-      "total_pounds_recent": 15,
-      "yoy_pct_change": -66.7,
+      "total_pounds_recent": 20,
+      "yoy_pct_change": 33.3,
       "top_chemical": "Nitric acid",
       "city": "Oakland"
     }
   ],
   "water": {
-    "utilities_count": 5,
-    "population_served_total": 1444562,
-    "violations_5yr_total": 6,
-    "health_based_5yr_total": 5,
-    "unresolved_total": 4,
-    "utilities_with_unresolved": 1,
+    "utilities_count": 2,
+    "population_served_total": 1444200,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
     "utilities": [
-      {
-        "slug": "camp-loma-mar",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Camp Loma Mar",
-        "pwsid": "CA4100529",
-        "population_served": 208,
-        "health_based_violations_5yr": 5,
-        "unresolved": true
-      },
       {
         "slug": "east-bay-mud",
         "state": "ca",
@@ -264,26 +258,6 @@
         "name": "Alameda Point",
         "pwsid": "CA0110016",
         "population_served": 1400,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "brand-water-company",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Brand Water Company",
-        "pwsid": "CA4900587",
-        "population_served": 112,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "point-cabrillo-highlands",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Point Cabrillo Highlands",
-        "pwsid": "CA2300668",
-        "population_served": 42,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -366,5 +340,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

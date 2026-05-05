@@ -9,17 +9,17 @@
     "county_name": "Stanislaus",
     "county_fips": "06099"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
-    "utilities_serving": 2,
-    "total_releases_pounds": 12125,
-    "air_releases_pounds": 11314,
+    "utilities_serving": 1,
+    "total_releases_pounds": 18302,
+    "air_releases_pounds": 17232,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 811,
-    "yoy_pct_change": -23.6,
-    "long_arc_pct_change": -63.5,
+    "land_releases_pounds": 1070,
+    "yoy_pct_change": 50.9,
+    "long_arc_pct_change": -44.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 12125
+      },
+      {
+        "year": 2024,
+        "value": 18302
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 11314,
+      "current": 17232,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 11314
+          "year": 2024,
+          "value": 17232
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 811,
+      "current": 1070,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 811
+          "year": 2024,
+          "value": 1070
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1582022,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.2,
-      "long_arc_pct_change": 6.3,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Silgan Container Manufacturing Corp.",
       "parent_company": "Silgan Holdings INC",
-      "total_pounds_recent": 6474,
-      "yoy_pct_change": -11.4,
+      "total_pounds_recent": 16032,
+      "yoy_pct_change": 147.6,
       "top_chemical": "Xylene (mixed isomers)",
       "city": "Riverbank"
     },
@@ -212,30 +216,20 @@
       "state_label": "California",
       "name": "Thunderbolt Wood Treating",
       "parent_company": null,
-      "total_pounds_recent": 5651,
-      "yoy_pct_change": -33.9,
+      "total_pounds_recent": 2270,
+      "yoy_pct_change": -59.8,
       "top_chemical": "Ammonia",
       "city": "Riverbank"
     }
   ],
   "water": {
-    "utilities_count": 2,
-    "population_served_total": 24884,
-    "violations_5yr_total": 34,
-    "health_based_5yr_total": 34,
-    "unresolved_total": 33,
-    "utilities_with_unresolved": 2,
+    "utilities_count": 1,
+    "population_served_total": 24834,
+    "violations_5yr_total": 3,
+    "health_based_5yr_total": 3,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
     "utilities": [
-      {
-        "slug": "century-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Century Mobile Home Park",
-        "pwsid": "CA3900579",
-        "population_served": 50,
-        "health_based_violations_5yr": 31,
-        "unresolved": true
-      },
       {
         "slug": "riverbank-city-of",
         "state": "ca",
@@ -325,5 +319,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

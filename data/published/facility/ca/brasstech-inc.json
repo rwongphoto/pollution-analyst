@@ -5,33 +5,37 @@
     "slug": "brasstech-inc",
     "name": "Brasstech INC.",
     "parent_company": "Masco CORP",
-    "address": "311 E ALTON AVE",
+    "address": "1301 E. WILSHIRE AVENUE",
     "city": "Santa Ana",
     "county": "Orange County",
     "county_slug": "orange",
-    "naics_label": "331529 \u00b7 Primary Metals",
-    "lat": 33.705124,
-    "lng": -117.864077
+    "naics_label": "332323 \u00b7 Fabricated Metals",
+    "lat": 33.729133,
+    "lng": -117.85314
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 1976,
-    "air_releases_pounds": 0,
-    "water_releases_pounds": 0.14,
-    "land_releases_pounds": 1976,
+    "total_releases_pounds": 19905,
+    "air_releases_pounds": 0.28,
+    "water_releases_pounds": 0.08,
+    "land_releases_pounds": 19905,
     "chemicals_reported": 1,
-    "yoy_pct_change": 22.5,
-    "long_arc_pct_change": 22.5,
+    "yoy_pct_change": 547.2,
+    "long_arc_pct_change": 168.9,
     "long_arc_baseline_year": 2022,
     "history": [
       {
         "year": 2022,
-        "value": 1613
+        "value": 7402
       },
       {
         "year": 2023,
-        "value": 1976
+        "value": 3076
+      },
+      {
+        "year": 2024,
+        "value": 19905
       }
     ]
   },
@@ -40,23 +44,53 @@
       "chemical": "Copper",
       "cas": "7440-50-8",
       "category": "general",
-      "total_pounds_recent": 1976,
+      "total_pounds_recent": 19905,
       "history": [
         {
           "year": 2022,
-          "value": 1613
+          "value": 7402
         },
         {
           "year": 2023,
-          "value": 1976
+          "value": 3076
+        },
+        {
+          "year": 2024,
+          "value": 19905
         }
       ],
-      "yoy_pct_change": 22.5,
-      "long_arc_pct_change": 22.5,
+      "yoy_pct_change": 547.2,
+      "long_arc_pct_change": 168.9,
       "long_arc_baseline_year": 2022
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Copper",
+      "summary": "Copper releases at Brasstech INC. rose from 3k lb to 20k lb (6.5\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 547.2,
+      "magnitude_abs": 16829.8,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 7402
+        },
+        {
+          "year": 2023,
+          "value": 3076
+        },
+        {
+          "year": 2024,
+          "value": 19905
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 3175227,
     "pct_low_income": 9.7,
@@ -126,5 +160,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

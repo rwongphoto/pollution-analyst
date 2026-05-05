@@ -7,16 +7,16 @@
     "fips": "06073",
     "population": 3289701
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 293424,
+      "current": 216062,
       "units": "lb",
-      "yoy_pct_change": -8.4,
-      "long_arc_pct_change": -8.9,
+      "yoy_pct_change": -26.4,
+      "long_arc_pct_change": -32.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 293424
+        },
+        {
+          "year": 2024,
+          "value": 216062
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 110004,
+      "current": 86008,
       "units": "lb",
-      "yoy_pct_change": 111.5,
-      "long_arc_pct_change": 127.5,
+      "yoy_pct_change": -21.8,
+      "long_arc_pct_change": 77.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 110004
+        },
+        {
+          "year": 2024,
+          "value": 86008
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 950866,
+      "current": 511610,
       "units": "lb",
-      "yoy_pct_change": -26.1,
-      "long_arc_pct_change": 40.5,
+      "yoy_pct_change": -46.2,
+      "long_arc_pct_change": -24.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 950866
+        },
+        {
+          "year": 2024,
+          "value": 511610
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 7595135,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -12.3,
-      "long_arc_pct_change": -25.7,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -286,21 +298,10 @@
       "state_label": "California",
       "name": "US Marine Corps Mcb Camp Pendleton",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 561630,
-      "yoy_pct_change": -48.3,
-      "top_chemical": "Copper",
+      "total_pounds_recent": 414898,
+      "yoy_pct_change": -26.1,
+      "top_chemical": "Lead  And Lead Compounds",
       "city": "Camp Pendleton"
-    },
-    {
-      "slug": "bae-systems-san-diego-ship-repair",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Bae Systems San Diego Ship Repair",
-      "parent_company": "Bae Systems INC",
-      "total_pounds_recent": 364243,
-      "yoy_pct_change": 1123.6,
-      "top_chemical": "Aluminum oxide (fibrous forms)",
-      "city": "San Diego"
     },
     {
       "slug": "general-dynamics-nassco",
@@ -308,21 +309,10 @@
       "state_label": "California",
       "name": "General Dynamics (Nassco)",
       "parent_company": "General Dynamics CORP",
-      "total_pounds_recent": 158158,
-      "yoy_pct_change": -13.2,
+      "total_pounds_recent": 128010,
+      "yoy_pct_change": -19.1,
       "top_chemical": "Xylene (mixed isomers)",
       "city": "San Diego"
-    },
-    {
-      "slug": "sumitomo-electric-interconnect-products-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Sumitomo Electric Interconnect Products INC",
-      "parent_company": "Sumitomo Electric USA Holdings INC",
-      "total_pounds_recent": 71620,
-      "yoy_pct_change": -28.3,
-      "top_chemical": "Ethylene glycol",
-      "city": "San Marcos"
     },
     {
       "slug": "gkn-aerospace-chem-tronics-inc",
@@ -330,8 +320,8 @@
       "state_label": "California",
       "name": "Gkn Aerospace Chem-Tronics INC",
       "parent_company": "Gkn Aerospace US Holdings LLC (Delaware Llc)",
-      "total_pounds_recent": 50378,
-      "yoy_pct_change": -35.2,
+      "total_pounds_recent": 55864,
+      "yoy_pct_change": 10.9,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "El Cajon"
     },
@@ -341,9 +331,53 @@
       "state_label": "California",
       "name": "U.S. Naval Air Station North Island",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 41878,
-      "yoy_pct_change": 9.1,
+      "total_pounds_recent": 37593,
+      "yoy_pct_change": -10.2,
       "top_chemical": "Methyl isobutyl ketone",
+      "city": "San Diego"
+    },
+    {
+      "slug": "polypeptide-laboratories-san-diego",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Polypeptide Laboratories San Diego",
+      "parent_company": "Polypeptide Laboratories INC",
+      "total_pounds_recent": 30445,
+      "yoy_pct_change": 9689.4,
+      "top_chemical": "N,N-Dimethylformamide",
+      "city": "San Diego"
+    },
+    {
+      "slug": "bae-systems-san-diego-ship-repair",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Bae Systems San Diego Ship Repair",
+      "parent_company": "Bae Systems INC",
+      "total_pounds_recent": 29639,
+      "yoy_pct_change": -91.9,
+      "top_chemical": "Aluminum oxide (fibrous forms)",
+      "city": "San Diego"
+    },
+    {
+      "slug": "honeywell-industrial-safety",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Honeywell Industrial Safety",
+      "parent_company": "Honeywell International INC",
+      "total_pounds_recent": 25807,
+      "yoy_pct_change": null,
+      "top_chemical": "Toluene diisocyanate (mixed isomers)",
+      "city": "San Diego"
+    },
+    {
+      "slug": "us-marine-corps-air-station-miramar",
+      "state": "ca",
+      "state_label": "California",
+      "name": "US Marine Corps Air Station Miramar",
+      "parent_company": "US Department Of Defense",
+      "total_pounds_recent": 25356,
+      "yoy_pct_change": 8.2,
+      "top_chemical": "Lead",
       "city": "San Diego"
     },
     {
@@ -352,32 +386,10 @@
       "state_label": "California",
       "name": "US Navy Silver Strand Training Complex (Sstc)",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 24496,
-      "yoy_pct_change": 11.2,
+      "total_pounds_recent": 21173,
+      "yoy_pct_change": -13.6,
       "top_chemical": "Lead  And Lead Compounds",
       "city": "Coronado"
-    },
-    {
-      "slug": "us-marine-corps-air-station-miramar",
-      "state": "ca",
-      "state_label": "California",
-      "name": "US Marine Corps Air Station Miramar",
-      "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 23431,
-      "yoy_pct_change": 20.5,
-      "top_chemical": "Lead",
-      "city": "San Diego"
-    },
-    {
-      "slug": "us-cbp-border-patrol-firearms-range-be-ca0180",
-      "state": "ca",
-      "state_label": "California",
-      "name": "US Cbp Border Patrol Firearms Range Be # Ca0180",
-      "parent_company": "US Department Of Homeland Security",
-      "total_pounds_recent": 17053,
-      "yoy_pct_change": -12.8,
-      "top_chemical": "Lead",
-      "city": "San Diego"
     },
     {
       "slug": "integrated-dna-technologies",
@@ -385,8 +397,8 @@
       "state_label": "California",
       "name": "Integrated Dna Technologies",
       "parent_company": "Danaher CORP",
-      "total_pounds_recent": 7616,
-      "yoy_pct_change": -22.2,
+      "total_pounds_recent": 10730,
+      "yoy_pct_change": 40.9,
       "top_chemical": "Acetonitrile",
       "city": "San Diego"
     }
@@ -464,5 +476,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

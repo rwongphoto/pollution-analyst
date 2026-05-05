@@ -9,17 +9,17 @@
     "county_name": "Riverside",
     "county_fips": "06065"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
-    "utilities_serving": 7,
-    "total_releases_pounds": 5,
-    "air_releases_pounds": 1,
-    "water_releases_pounds": 4,
+    "utilities_serving": 6,
+    "total_releases_pounds": 3,
+    "air_releases_pounds": 0.84,
+    "water_releases_pounds": 2,
     "land_releases_pounds": 0,
-    "yoy_pct_change": 25.0,
-    "long_arc_pct_change": -97.5,
+    "yoy_pct_change": -43.2,
+    "long_arc_pct_change": -98.6,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -73,6 +73,10 @@
       {
         "year": 2023,
         "value": 5
+      },
+      {
+        "year": 2024,
+        "value": 3
       }
     ]
   },
@@ -84,10 +88,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 1
         }
       ]
@@ -95,15 +99,15 @@
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 4,
+      "current": 2,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 4
+          "year": 2024,
+          "value": 2
         }
       ]
     },
@@ -114,10 +118,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -125,10 +129,10 @@
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1423181,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 5.5,
-      "long_arc_pct_change": -32.9,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -197,19 +201,19 @@
       "state_label": "California",
       "name": "Mccrometer",
       "parent_company": null,
-      "total_pounds_recent": 5,
-      "yoy_pct_change": 25.0,
+      "total_pounds_recent": 3,
+      "yoy_pct_change": -43.2,
       "top_chemical": "Nickel",
       "city": "Hemet"
     }
   ],
   "water": {
-    "utilities_count": 7,
-    "population_served_total": 88540,
-    "violations_5yr_total": 22,
+    "utilities_count": 6,
+    "population_served_total": 88360,
+    "violations_5yr_total": 21,
     "health_based_5yr_total": 2,
-    "unresolved_total": 3,
-    "utilities_with_unresolved": 2,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
     "utilities": [
       {
         "slug": "lake-hemet-mwd",
@@ -260,16 +264,6 @@
         "population_served": 237,
         "health_based_violations_5yr": 0,
         "unresolved": false
-      },
-      {
-        "slug": "oak-glen-domestic-water",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Oak Glen Domestic Water",
-        "pwsid": "CA3600185",
-        "population_served": 180,
-        "health_based_violations_5yr": 0,
-        "unresolved": true
       },
       {
         "slug": "bautista-cc-no-36",
@@ -360,5 +354,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

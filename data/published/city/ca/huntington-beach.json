@@ -9,34 +9,34 @@
     "county_name": "Orange",
     "county_fips": "06059"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 5,
-    "utilities_serving": 5,
-    "total_releases_pounds": 149,
-    "air_releases_pounds": 8,
+    "facilities_in_city": 7,
+    "utilities_serving": 3,
+    "total_releases_pounds": 2514,
+    "air_releases_pounds": 2280,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 141,
-    "yoy_pct_change": -54.6,
-    "long_arc_pct_change": -98.5,
+    "land_releases_pounds": 234,
+    "yoy_pct_change": 1583.1,
+    "long_arc_pct_change": -76.8,
     "long_arc_baseline_year": 2010,
     "history": [
       {
         "year": 2010,
-        "value": 9878
+        "value": 10836
       },
       {
         "year": 2011,
-        "value": 12844
+        "value": 13846
       },
       {
         "year": 2012,
-        "value": 11549
+        "value": 12459
       },
       {
         "year": 2013,
-        "value": 11072
+        "value": 11909
       },
       {
         "year": 2014,
@@ -44,15 +44,15 @@
       },
       {
         "year": 2015,
-        "value": 9688
+        "value": 10816
       },
       {
         "year": 2016,
-        "value": 9283
+        "value": 10245
       },
       {
         "year": 2017,
-        "value": 7571
+        "value": 8556
       },
       {
         "year": 2018,
@@ -60,7 +60,7 @@
       },
       {
         "year": 2019,
-        "value": 2150
+        "value": 3097
       },
       {
         "year": 2020,
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 149
+      },
+      {
+        "year": 2024,
+        "value": 2514
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 8,
+      "current": 2280,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 8
+          "year": 2024,
+          "value": 2280
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 141,
+      "current": 234,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 141
+          "year": 2024,
+          "value": 234
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2636013,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": 39.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,25 +200,25 @@
   ],
   "facilities": [
     {
+      "slug": "chevron-huntington-beach-terminal",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Chevron Huntington Beach Terminal",
+      "parent_company": "Chevron CORP",
+      "total_pounds_recent": 2416,
+      "yoy_pct_change": null,
+      "top_chemical": "Xylene (mixed isomers)",
+      "city": "Huntington Beach"
+    },
+    {
       "slug": "newlight-technologies-inc",
       "state": "ca",
       "state_label": "California",
       "name": "Newlight Technologies INC",
       "parent_company": null,
-      "total_pounds_recent": 128,
-      "yoy_pct_change": -50.0,
+      "total_pounds_recent": 79,
+      "yoy_pct_change": -38.3,
       "top_chemical": "Nitric acid",
-      "city": "Huntington Beach"
-    },
-    {
-      "slug": "tiodize-co-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Tiodize CO INC",
-      "parent_company": null,
-      "total_pounds_recent": 15,
-      "yoy_pct_change": 5120.7,
-      "top_chemical": "Lead",
       "city": "Huntington Beach"
     },
     {
@@ -223,9 +227,31 @@
       "state_label": "California",
       "name": "Laird Coatings Corp",
       "parent_company": null,
-      "total_pounds_recent": 5,
-      "yoy_pct_change": -67.8,
-      "top_chemical": "Xylene (mixed isomers)",
+      "total_pounds_recent": 9,
+      "yoy_pct_change": null,
+      "top_chemical": "Toluene",
+      "city": "Huntington Beach"
+    },
+    {
+      "slug": "laird-coatings-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Laird Coatings Corp",
+      "parent_company": null,
+      "total_pounds_recent": 8,
+      "yoy_pct_change": 53.9,
+      "top_chemical": "n-Butyl alcohol",
+      "city": "Huntington Beach"
+    },
+    {
+      "slug": "tiodize-co-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Tiodize CO INC",
+      "parent_company": null,
+      "total_pounds_recent": 1,
+      "yoy_pct_change": -92.4,
+      "top_chemical": "Lead",
       "city": "Huntington Beach"
     },
     {
@@ -234,8 +260,8 @@
       "state_label": "California",
       "name": "Cambro Manufacturing CO Clay Ave. Facility",
       "parent_company": "Cambro Manufacturing Co",
-      "total_pounds_recent": 0.87,
-      "yoy_pct_change": -98.4,
+      "total_pounds_recent": 0.71,
+      "yoy_pct_change": -18.4,
       "top_chemical": "Diisocyanates",
       "city": "Huntington Beach"
     },
@@ -252,8 +278,8 @@
     }
   ],
   "water": {
-    "utilities_count": 5,
-    "population_served_total": 202655,
+    "utilities_count": 3,
+    "population_served_total": 201976,
     "violations_5yr_total": 19,
     "health_based_5yr_total": 7,
     "unresolved_total": 4,
@@ -286,26 +312,6 @@
         "name": "South Midway City Mutual Water Co.",
         "pwsid": "CA3000825",
         "population_served": 891,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "hidden-hollow-mhc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Hidden Hollow Mhc",
-        "pwsid": "AZ0403362",
-        "population_served": 400,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "r-k-weiman-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "R&K Weiman Mhp",
-        "pwsid": "TX1012019",
-        "population_served": 279,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -388,5 +394,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

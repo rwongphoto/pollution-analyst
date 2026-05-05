@@ -9,30 +9,30 @@
     "county_name": "Ventura",
     "county_fips": "06111"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 2,
+    "facilities_in_city": 1,
     "utilities_serving": 2,
-    "total_releases_pounds": 9865,
-    "air_releases_pounds": 239,
+    "total_releases_pounds": 9430,
+    "air_releases_pounds": 140,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 9626,
-    "yoy_pct_change": -9.8,
-    "long_arc_pct_change": -79.9,
+    "land_releases_pounds": 9290,
+    "yoy_pct_change": 3838.9,
+    "long_arc_pct_change": 22.8,
     "long_arc_baseline_year": 2010,
     "history": [
       {
         "year": 2010,
-        "value": 49053
+        "value": 7676
       },
       {
         "year": 2011,
-        "value": 49312
+        "value": 6089
       },
       {
         "year": 2012,
-        "value": 12296
+        "value": 12286
       },
       {
         "year": 2013,
@@ -56,27 +56,31 @@
       },
       {
         "year": 2018,
-        "value": 34769
+        "value": 5769
       },
       {
         "year": 2019,
-        "value": 45948
+        "value": 2462
       },
       {
         "year": 2020,
-        "value": 49472
+        "value": 2153
       },
       {
         "year": 2021,
-        "value": 11368
+        "value": 3251
       },
       {
         "year": 2022,
-        "value": 10938
+        "value": 1347
       },
       {
         "year": 2023,
-        "value": 9865
+        "value": 239
+      },
+      {
+        "year": 2024,
+        "value": 9430
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 239,
+      "current": 140,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 239
+          "year": 2024,
+          "value": 140
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 9626,
+      "current": 9290,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 9626
+          "year": 2024,
+          "value": 9290
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 987448,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 2.2,
-      "long_arc_pct_change": -13.8,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,25 +200,14 @@
   ],
   "facilities": [
     {
-      "slug": "baxalta-us-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Baxalta US INC",
-      "parent_company": "Baxalta US INC",
-      "total_pounds_recent": 9626,
-      "yoy_pct_change": 0.4,
-      "top_chemical": "Ethylene glycol",
-      "city": "Thousand Oaks"
-    },
-    {
       "slug": "skyworks-solutions-inc",
       "state": "ca",
       "state_label": "California",
       "name": "Skyworks Solutions INC.",
       "parent_company": "Skyworks Solutions INC",
-      "total_pounds_recent": 239,
-      "yoy_pct_change": -82.2,
-      "top_chemical": "Ammonia",
+      "total_pounds_recent": 9430,
+      "yoy_pct_change": 3838.9,
+      "top_chemical": "N-Methyl-2-pyrrolidone",
       "city": "Newbury Park"
     }
   ],
@@ -325,5 +318,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

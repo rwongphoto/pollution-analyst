@@ -9,17 +9,17 @@
     "county_name": "Santa Cruz",
     "county_fips": "06087"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
-    "utilities_serving": 8,
+    "utilities_serving": 4,
     "total_releases_pounds": 0.03,
     "air_releases_pounds": 0.0,
     "water_releases_pounds": 0.0,
-    "land_releases_pounds": 0.02,
-    "yoy_pct_change": -3.2,
-    "long_arc_pct_change": 233.3,
+    "land_releases_pounds": 0.03,
+    "yoy_pct_change": 3.3,
+    "long_arc_pct_change": 244.4,
     "long_arc_baseline_year": 2016,
     "history": [
       {
@@ -53,6 +53,10 @@
       {
         "year": 2023,
         "value": 0.03
+      },
+      {
+        "year": 2024,
+        "value": 0.03
       }
     ]
   },
@@ -64,10 +68,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -79,10 +83,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -94,10 +98,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -105,10 +109,10 @@
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 51157,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 4.9,
-      "long_arc_pct_change": -62.0,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -178,29 +182,19 @@
       "name": "Granite Rock CO Santa Cruz Con",
       "parent_company": "Granite Rock Co",
       "total_pounds_recent": 0.03,
-      "yoy_pct_change": -3.2,
+      "yoy_pct_change": 3.3,
       "top_chemical": "Lead",
       "city": "Santa Cruz"
     }
   ],
   "water": {
-    "utilities_count": 8,
-    "population_served_total": 96344,
-    "violations_5yr_total": 38,
-    "health_based_5yr_total": 26,
-    "unresolved_total": 33,
-    "utilities_with_unresolved": 4,
+    "utilities_count": 4,
+    "population_served_total": 95336,
+    "violations_5yr_total": 9,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 4,
+    "utilities_with_unresolved": 2,
     "utilities": [
-      {
-        "slug": "riverview-mobile-home-estates",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Riverview Mobile Home Estates",
-        "pwsid": "CA5000090",
-        "population_served": 540,
-        "health_based_violations_5yr": 23,
-        "unresolved": true
-      },
       {
         "slug": "rountree-facility-prev-sheriff-s-rehab",
         "state": "ca",
@@ -208,16 +202,6 @@
         "name": "Rountree Facility(Prev. Sheriff's Rehab)",
         "pwsid": "CA4400762",
         "population_served": 235,
-        "health_based_violations_5yr": 1,
-        "unresolved": true
-      },
-      {
-        "slug": "pond-derosa-oaks-wc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Pond-Derosa Oaks Wc",
-        "pwsid": "CA2701553",
-        "population_served": 216,
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -248,26 +232,6 @@
         "name": "Davenport County Sanitation",
         "pwsid": "CA4400571",
         "population_served": 350,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "woods-the-mendocino",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Woods, The (Mendocino)",
-        "pwsid": "CA2300667",
-        "population_served": 157,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "summerhill-mhp-ws",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Summerhill Mhp Ws",
-        "pwsid": "CA2700792",
-        "population_served": 95,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -350,5 +314,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

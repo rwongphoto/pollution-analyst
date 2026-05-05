@@ -9,17 +9,17 @@
     "county_name": "Orange",
     "county_fips": "06059"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 4,
-    "utilities_serving": 2,
-    "total_releases_pounds": 10665,
-    "air_releases_pounds": 8410,
-    "water_releases_pounds": 10,
-    "land_releases_pounds": 2245,
-    "yoy_pct_change": -9.2,
-    "long_arc_pct_change": 17.6,
+    "utilities_serving": 1,
+    "total_releases_pounds": 13491,
+    "air_releases_pounds": 3155,
+    "water_releases_pounds": 3,
+    "land_releases_pounds": 10333,
+    "yoy_pct_change": 26.5,
+    "long_arc_pct_change": 48.8,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 10665
+      },
+      {
+        "year": 2024,
+        "value": 13491
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 8410,
+      "current": 3155,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 8410
+          "year": 2024,
+          "value": 3155
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 10,
+      "current": 3,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 10
+          "year": 2024,
+          "value": 3
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 2245,
+      "current": 10333,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 2245
+          "year": 2024,
+          "value": 10333
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2636013,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": 39.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,13 +200,24 @@
   ],
   "facilities": [
     {
+      "slug": "air-industries-co-a-pcc-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Air Industries CO A Pcc CO",
+      "parent_company": "Berkshire Hathaway INC",
+      "total_pounds_recent": 8167,
+      "yoy_pct_change": 404.2,
+      "top_chemical": "Nickel",
+      "city": "Garden Grove"
+    },
+    {
       "slug": "gkn-aerospace-transparency-systems-inc",
       "state": "ca",
       "state_label": "California",
       "name": "Gkn Aerospace Transparency Systems INC.",
       "parent_company": "Gkn Aerospace US Holdings LLC (Delaware Llc)",
-      "total_pounds_recent": 7295,
-      "yoy_pct_change": 7499.0,
+      "total_pounds_recent": 2753,
+      "yoy_pct_change": -62.3,
       "top_chemical": "Methyl methacrylate",
       "city": "Garden Grove"
     },
@@ -212,20 +227,9 @@
       "state_label": "California",
       "name": "Holcim Solutions & Products US LLC",
       "parent_company": "Holcim Participations (Us) INC",
-      "total_pounds_recent": 1700,
-      "yoy_pct_change": -73.6,
+      "total_pounds_recent": 1562,
+      "yoy_pct_change": -8.1,
       "top_chemical": "Toluene diisocyanate (mixed isomers)",
-      "city": "Garden Grove"
-    },
-    {
-      "slug": "air-industries-co-a-pcc-co",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Air Industries CO A Pcc CO",
-      "parent_company": "Berkshire Hathaway INC",
-      "total_pounds_recent": 1620,
-      "yoy_pct_change": -68.6,
-      "top_chemical": "Chromium",
       "city": "Garden Grove"
     },
     {
@@ -234,15 +238,15 @@
       "state_label": "California",
       "name": "Goodwin CO.",
       "parent_company": "Goodwin Co",
-      "total_pounds_recent": 50,
-      "yoy_pct_change": 0.0,
+      "total_pounds_recent": 1010,
+      "yoy_pct_change": 1920.0,
       "top_chemical": "Methanol",
       "city": "Garden Grove"
     }
   ],
   "water": {
-    "utilities_count": 2,
-    "population_served_total": 174601,
+    "utilities_count": 1,
+    "population_served_total": 174226,
     "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
@@ -255,16 +259,6 @@
         "name": "City Of Garden Grove",
         "pwsid": "CA3010062",
         "population_served": 174226,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "spirit-mountain-utility-company",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Spirit Mountain Utility Company",
-        "pwsid": "NV0000221",
-        "population_served": 375,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -347,5 +341,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

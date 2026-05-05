@@ -9,17 +9,17 @@
     "county_name": "San Bernardino",
     "county_fips": "06071"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 4,
     "utilities_serving": 2,
-    "total_releases_pounds": 367456,
-    "air_releases_pounds": 29959,
+    "total_releases_pounds": 31594,
+    "air_releases_pounds": 29441,
     "water_releases_pounds": 0.01,
-    "land_releases_pounds": 337497,
-    "yoy_pct_change": 910.6,
-    "long_arc_pct_change": 354.7,
+    "land_releases_pounds": 2152,
+    "yoy_pct_change": -91.4,
+    "long_arc_pct_change": -60.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 367456
+      },
+      {
+        "year": 2024,
+        "value": 31594
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 29959,
+      "current": 29441,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 29959
+          "year": 2024,
+          "value": 29441
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 337497,
+      "current": 2152,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 337497
+          "year": 2024,
+          "value": 2152
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 9779299,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -6.6,
-      "long_arc_pct_change": -7.3,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,9 +205,9 @@
       "state_label": "California",
       "name": "Cemex Construction Materials Pacific LLC",
       "parent_company": "Cemex INC",
-      "total_pounds_recent": 361937,
-      "yoy_pct_change": 1187.1,
-      "top_chemical": "Chromium",
+      "total_pounds_recent": 25437,
+      "yoy_pct_change": -93.0,
+      "top_chemical": "Ammonia",
       "city": "Victorville"
     },
     {
@@ -212,20 +216,9 @@
       "state_label": "California",
       "name": "Sherwin-Williams CO",
       "parent_company": "The Sherwin-Williams Co",
-      "total_pounds_recent": 5381,
-      "yoy_pct_change": 10.4,
-      "top_chemical": "Xylene (mixed isomers)",
-      "city": "Victorville"
-    },
-    {
-      "slug": "federal-correctional-complex-victorville",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Federal Correctional Complex Victorville",
-      "parent_company": "US Department Of Justice",
-      "total_pounds_recent": 73,
-      "yoy_pct_change": -97.8,
-      "top_chemical": "Lead",
+      "total_pounds_recent": 6040,
+      "yoy_pct_change": 12.2,
+      "top_chemical": "Methanol",
       "city": "Victorville"
     },
     {
@@ -234,8 +227,19 @@
       "state_label": "California",
       "name": "Church & Dwight CO. INC.",
       "parent_company": "Church & Dwight Co INC",
-      "total_pounds_recent": 65,
-      "yoy_pct_change": 22.5,
+      "total_pounds_recent": 63,
+      "yoy_pct_change": -2.7,
+      "top_chemical": "Lead",
+      "city": "Victorville"
+    },
+    {
+      "slug": "federal-correctional-complex-victorville",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Federal Correctional Complex Victorville",
+      "parent_company": "US Department Of Justice",
+      "total_pounds_recent": 54,
+      "yoy_pct_change": -26.2,
       "top_chemical": "Lead",
       "city": "Victorville"
     }
@@ -347,5 +351,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -7,16 +7,16 @@
     "fips": "06089",
     "population": 181852
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 194315,
+      "current": 155952,
       "units": "lb",
-      "yoy_pct_change": -2.5,
-      "long_arc_pct_change": 211.5,
+      "yoy_pct_change": -19.7,
+      "long_arc_pct_change": 150.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 194315
+        },
+        {
+          "year": 2024,
+          "value": 155952
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 1,
+      "current": 0,
       "units": "lb",
-      "yoy_pct_change": -79.5,
-      "long_arc_pct_change": -99.9,
+      "yoy_pct_change": -97.1,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 1
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 20298,
+      "current": 32353,
       "units": "lb",
-      "yoy_pct_change": 724.8,
-      "long_arc_pct_change": -50.7,
+      "yoy_pct_change": 59.4,
+      "long_arc_pct_change": -21.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 20298
+        },
+        {
+          "year": 2024,
+          "value": 32353
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 658558,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -14.5,
-      "long_arc_pct_change": 131.6,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -286,8 +298,8 @@
       "state_label": "California",
       "name": "Knauf Insulation INC.",
       "parent_company": "Knauf Insulation",
-      "total_pounds_recent": 214475,
-      "yoy_pct_change": 6.4,
+      "total_pounds_recent": 188014,
+      "yoy_pct_change": -12.3,
       "top_chemical": "Ammonia",
       "city": "Shasta Lake"
     },
@@ -297,8 +309,8 @@
       "state_label": "California",
       "name": "J.F. Shea Construction INC Fawndale Rock & Asphalt",
       "parent_company": "Jf Shea Co INC",
-      "total_pounds_recent": 98,
-      "yoy_pct_change": -28.4,
+      "total_pounds_recent": 227,
+      "yoy_pct_change": 130.5,
       "top_chemical": "Lead compounds",
       "city": "Redding"
     },
@@ -308,8 +320,8 @@
       "state_label": "California",
       "name": "J.F. Shea Construction INC. Aggregate Products",
       "parent_company": "Jf Shea Co INC",
-      "total_pounds_recent": 25,
-      "yoy_pct_change": 70.3,
+      "total_pounds_recent": 54,
+      "yoy_pct_change": 114.3,
       "top_chemical": "Lead compounds",
       "city": "Redding"
     },
@@ -319,9 +331,9 @@
       "state_label": "California",
       "name": "Calportland Redding Cement Plant",
       "parent_company": "Taiheiyo Cement USA INC",
-      "total_pounds_recent": 15,
-      "yoy_pct_change": -68.2,
-      "top_chemical": "Mercury compounds",
+      "total_pounds_recent": 9,
+      "yoy_pct_change": -36.7,
+      "top_chemical": "Mercury  And Mercury Compounds",
       "city": "Redding"
     },
     {
@@ -330,8 +342,8 @@
       "state_label": "California",
       "name": "Sierra Pacific Industries Anderson Div",
       "parent_company": "Sierra Pacific Industries",
-      "total_pounds_recent": 0.4,
-      "yoy_pct_change": 34.7,
+      "total_pounds_recent": 0.32,
+      "yoy_pct_change": -20.3,
       "top_chemical": "Dioxin and dioxin-like compounds",
       "city": "Anderson"
     },
@@ -345,6 +357,17 @@
       "yoy_pct_change": 0.0,
       "top_chemical": "Dioxin and dioxin-like compounds",
       "city": "Burney"
+    },
+    {
+      "slug": "cook-concrete-products",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Cook Concrete Products",
+      "parent_company": "Crh Americas INC",
+      "total_pounds_recent": 0.25,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead compounds",
+      "city": "Redding"
     }
   ],
   "utilities": [],
@@ -353,11 +376,11 @@
       "type": "long_arc_shift",
       "severity": "regression",
       "label": "Total TRI releases",
-      "summary": "Total TRI releases at Shasta County have more than doubled since 2010 (through 2023).",
-      "magnitude_pct": 103.8,
-      "magnitude_abs": 109305.8,
+      "summary": "Total TRI releases at Shasta County have risen 79% since 2010 (through 2024).",
+      "magnitude_pct": 78.8,
+      "magnitude_abs": 82997.3,
       "baseline_year": 2010,
-      "recent_year": 2023,
+      "recent_year": 2024,
       "units": "lb",
       "history": [
         {
@@ -415,75 +438,10 @@
         {
           "year": 2023,
           "value": 214614
-        }
-      ]
-    },
-    {
-      "type": "long_arc_shift",
-      "severity": "regression",
-      "label": "Greenhouse gas emissions",
-      "summary": "Greenhouse gas emissions at Shasta County have more than doubled since 2010 (through 2023).",
-      "magnitude_pct": 131.6,
-      "magnitude_abs": 374263.7,
-      "baseline_year": 2010,
-      "recent_year": 2023,
-      "units": "mtCO2e",
-      "history": [
-        {
-          "year": 2010,
-          "value": 284294
         },
         {
-          "year": 2011,
-          "value": 498320
-        },
-        {
-          "year": 2012,
-          "value": 503320
-        },
-        {
-          "year": 2013,
-          "value": 550200
-        },
-        {
-          "year": 2014,
-          "value": 543084
-        },
-        {
-          "year": 2015,
-          "value": 579514
-        },
-        {
-          "year": 2016,
-          "value": 445299
-        },
-        {
-          "year": 2017,
-          "value": 470910
-        },
-        {
-          "year": 2018,
-          "value": 545824
-        },
-        {
-          "year": 2019,
-          "value": 546467
-        },
-        {
-          "year": 2020,
-          "value": 578659
-        },
-        {
-          "year": 2021,
-          "value": 645912
-        },
-        {
-          "year": 2022,
-          "value": 770443
-        },
-        {
-          "year": 2023,
-          "value": 658558
+          "year": 2024,
+          "value": 188305
         }
       ]
     }
@@ -559,5 +517,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

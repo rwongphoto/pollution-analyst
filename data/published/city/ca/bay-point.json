@@ -9,17 +9,17 @@
     "county_name": "Contra Costa",
     "county_fips": "06013"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 0,
-    "total_releases_pounds": 168428,
-    "air_releases_pounds": 1126,
-    "water_releases_pounds": 121,
-    "land_releases_pounds": 167182,
-    "yoy_pct_change": 53.9,
-    "long_arc_pct_change": 326.4,
+    "total_releases_pounds": 202778,
+    "air_releases_pounds": 1218,
+    "water_releases_pounds": 97,
+    "land_releases_pounds": 201463,
+    "yoy_pct_change": 20.4,
+    "long_arc_pct_change": 413.3,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 168428
+      },
+      {
+        "year": 2024,
+        "value": 202778
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 1126,
+      "current": 1218,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1126
+          "year": 2024,
+          "value": 1218
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 121,
+      "current": 97,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 121
+          "year": 2024,
+          "value": 97
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 167182,
+      "current": 201463,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 167182
+          "year": 2024,
+          "value": 201463
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 82261234,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 11.9,
-      "long_arc_pct_change": 109.1,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Shell Catalysts & Technologies - Pittsburg",
       "parent_company": "Shell Petroleum INC",
-      "total_pounds_recent": 168391,
-      "yoy_pct_change": 55.3,
+      "total_pounds_recent": 202730,
+      "yoy_pct_change": 20.4,
       "top_chemical": "Molybdenum trioxide",
       "city": "Pittsburg"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "Henkel US Operations Corp",
       "parent_company": "Henkel Of America INC",
-      "total_pounds_recent": 37,
-      "yoy_pct_change": -96.4,
+      "total_pounds_recent": 48,
+      "yoy_pct_change": 30.0,
       "top_chemical": "Aluminum (fume or dust)",
       "city": "Bay Point"
     }
@@ -304,5 +308,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

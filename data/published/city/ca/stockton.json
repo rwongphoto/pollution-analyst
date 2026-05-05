@@ -9,17 +9,17 @@
     "county_name": "San Joaquin",
     "county_fips": "06077"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 7,
-    "utilities_serving": 69,
-    "total_releases_pounds": 1372,
-    "air_releases_pounds": 1243,
-    "water_releases_pounds": 0.2,
-    "land_releases_pounds": 128,
-    "yoy_pct_change": -2.9,
-    "long_arc_pct_change": 1865.7,
+    "facilities_in_city": 8,
+    "utilities_serving": 48,
+    "total_releases_pounds": 3812,
+    "air_releases_pounds": 1233,
+    "water_releases_pounds": 0.18,
+    "land_releases_pounds": 2579,
+    "yoy_pct_change": 177.9,
+    "long_arc_pct_change": 5361.8,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 1372
+      },
+      {
+        "year": 2024,
+        "value": 3812
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 1243,
+      "current": 1233,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1243
+          "year": 2024,
+          "value": 1233
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 128,
+      "current": 2579,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 128
+          "year": 2024,
+          "value": 2579
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1008482,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 46.5,
-      "long_arc_pct_change": -1.7,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,13 +200,24 @@
   ],
   "facilities": [
     {
+      "slug": "schuff-steel-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Schuff Steel CO",
+      "parent_company": "Innovate CORP",
+      "total_pounds_recent": 2334,
+      "yoy_pct_change": 3187.3,
+      "top_chemical": "Manganese",
+      "city": "Stockton"
+    },
+    {
       "slug": "tesoro-stockton-terminal",
       "state": "ca",
       "state_label": "California",
       "name": "Tesoro - Stockton Terminal",
       "parent_company": "Marathon Petroleum CORP",
-      "total_pounds_recent": 1141,
-      "yoy_pct_change": 2.6,
+      "total_pounds_recent": 1355,
+      "yoy_pct_change": 18.7,
       "top_chemical": "Toluene",
       "city": "Stockton"
     },
@@ -212,20 +227,9 @@
       "state_label": "California",
       "name": "Concrete INC",
       "parent_company": "Knife River CORP",
-      "total_pounds_recent": 117,
-      "yoy_pct_change": -26.4,
+      "total_pounds_recent": 83,
+      "yoy_pct_change": -29.1,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Stockton"
-    },
-    {
-      "slug": "schuff-steel-co",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Schuff Steel CO",
-      "parent_company": "Innovate CORP",
-      "total_pounds_recent": 71,
-      "yoy_pct_change": -35.1,
-      "top_chemical": "Manganese",
       "city": "Stockton"
     },
     {
@@ -234,8 +238,8 @@
       "state_label": "California",
       "name": "Stockton Steel",
       "parent_company": "The Herrick CORP",
-      "total_pounds_recent": 31,
-      "yoy_pct_change": 46.9,
+      "total_pounds_recent": 29,
+      "yoy_pct_change": -8.3,
       "top_chemical": "Manganese",
       "city": "Stockton"
     },
@@ -256,9 +260,20 @@
       "state_label": "California",
       "name": "Oldcastle Pacific Stockton",
       "parent_company": "Crh Americas INC",
-      "total_pounds_recent": 0.23,
-      "yoy_pct_change": -51.8,
+      "total_pounds_recent": 0.21,
+      "yoy_pct_change": -7.5,
       "top_chemical": "Lead compounds",
+      "city": "Stockton"
+    },
+    {
+      "slug": "7-11-materials-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "7/11 Materials INC",
+      "parent_company": null,
+      "total_pounds_recent": 0.14,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead",
       "city": "Stockton"
     },
     {
@@ -267,30 +282,20 @@
       "state_label": "California",
       "name": "Custom Building Products - Sckc Stockton Ca",
       "parent_company": "Quikrete Holdings",
-      "total_pounds_recent": 0.06,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 0.08,
+      "yoy_pct_change": 31.0,
       "top_chemical": "Lead",
       "city": "Stockton"
     }
   ],
   "water": {
-    "utilities_count": 69,
-    "population_served_total": 223456,
-    "violations_5yr_total": 288,
-    "health_based_5yr_total": 128,
-    "unresolved_total": 106,
-    "utilities_with_unresolved": 14,
+    "utilities_count": 48,
+    "population_served_total": 220461,
+    "violations_5yr_total": 90,
+    "health_based_5yr_total": 79,
+    "unresolved_total": 72,
+    "utilities_with_unresolved": 6,
     "utilities": [
-      {
-        "slug": "quiet-oaks-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Quiet Oaks Mobile Home Park",
-        "pwsid": "CA3701341",
-        "population_served": 120,
-        "health_based_violations_5yr": 43,
-        "unresolved": true
-      },
       {
         "slug": "fremont-one",
         "state": "ca",
@@ -342,46 +347,6 @@
         "unresolved": true
       },
       {
-        "slug": "peppermint-creek-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Peppermint Creek Mhp",
-        "pwsid": "CA5500116",
-        "population_served": 280,
-        "health_based_violations_5yr": 1,
-        "unresolved": true
-      },
-      {
-        "slug": "capell-valley-estates",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Capell Valley Estates",
-        "pwsid": "CA2800543",
-        "population_served": 208,
-        "health_based_violations_5yr": 1,
-        "unresolved": true
-      },
-      {
-        "slug": "western-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Western Mobile Home Park",
-        "pwsid": "CA4900791",
-        "population_served": 178,
-        "health_based_violations_5yr": 1,
-        "unresolved": true
-      },
-      {
-        "slug": "plaza-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Plaza Mobile Home Park",
-        "pwsid": "CA4900787",
-        "population_served": 169,
-        "health_based_violations_5yr": 1,
-        "unresolved": true
-      },
-      {
         "slug": "a1-winstons-mobile-home-park",
         "state": "ca",
         "state_label": "California",
@@ -390,16 +355,6 @@
         "population_served": 75,
         "health_based_violations_5yr": 1,
         "unresolved": true
-      },
-      {
-        "slug": "gold-beach-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Gold Beach Park",
-        "pwsid": "CA0900102",
-        "population_served": 134,
-        "health_based_violations_5yr": 2,
-        "unresolved": false
       },
       {
         "slug": "big-wheel-mobile-home-park",
@@ -542,32 +497,12 @@
         "unresolved": false
       },
       {
-        "slug": "rough-ready-village",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Rough & Ready Village",
-        "pwsid": "CA2900530",
-        "population_served": 268,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
         "slug": "clements-water-works-43",
         "state": "ca",
         "state_label": "California",
         "name": "Clements Water Works #43",
         "pwsid": "CA3900504",
         "population_served": 264,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "cal-20-village-and-meadow-pointe-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Cal 20 Village And Meadow Pointe Park",
-        "pwsid": "CA1700595",
-        "population_served": 255,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -622,32 +557,12 @@
         "unresolved": false
       },
       {
-        "slug": "casa-de-amigos-manufactured-housing-comm",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Casa De Amigos Manufactured Housing Comm",
-        "pwsid": "CA5000060",
-        "population_served": 204,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
         "slug": "san-juan-vista",
         "state": "ca",
         "state_label": "California",
         "name": "San Juan Vista",
         "pwsid": "CA3901215",
         "population_served": 201,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "bethel-island-mhc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Bethel Island Mhc",
-        "pwsid": "CA0707575",
-        "population_served": 185,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -692,16 +607,6 @@
         "unresolved": false
       },
       {
-        "slug": "security-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Security Mhp",
-        "pwsid": "CO0121750",
-        "population_served": 150,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
         "slug": "fairway-estates-pws-csa-18",
         "state": "ca",
         "state_label": "California",
@@ -710,16 +615,6 @@
         "population_served": 149,
         "health_based_violations_5yr": 0,
         "unresolved": false
-      },
-      {
-        "slug": "mulberry-mhp",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Mulberry Mhp",
-        "pwsid": "CA5000072",
-        "population_served": 148,
-        "health_based_violations_5yr": 0,
-        "unresolved": true
       },
       {
         "slug": "corral-hollow-pws",
@@ -752,16 +647,6 @@
         "unresolved": false
       },
       {
-        "slug": "amberwood-estates-llc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Amberwood Estates, Llc",
-        "pwsid": "CA4500200",
-        "population_served": 120,
-        "health_based_violations_5yr": 0,
-        "unresolved": true
-      },
-      {
         "slug": "spring-creek-estates-pws",
         "state": "ca",
         "state_label": "California",
@@ -780,16 +665,6 @@
         "population_served": 112,
         "health_based_violations_5yr": 0,
         "unresolved": false
-      },
-      {
-        "slug": "del-rio-east-hoa-water-system",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Del Rio East Hoa Water System",
-        "pwsid": "CA5000099",
-        "population_served": 110,
-        "health_based_violations_5yr": 0,
-        "unresolved": true
       },
       {
         "slug": "walnut-acres",
@@ -817,16 +692,6 @@
         "state_label": "California",
         "name": "Cherry Lane Trailer Park",
         "pwsid": "CA3900983",
-        "population_served": 100,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "desert-mobile-home-estates",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Desert Mobile Home Estates",
-        "pwsid": "OR4101138",
         "population_served": 100,
         "health_based_violations_5yr": 0,
         "unresolved": false
@@ -862,46 +727,6 @@
         "unresolved": false
       },
       {
-        "slug": "mary-lou-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Mary Lou Mobile Home Park",
-        "pwsid": "CA1000265",
-        "population_served": 68,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "evergreen-mobile-estates",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Evergreen Mobile Estates",
-        "pwsid": "CA4900728",
-        "population_served": 65,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "forest-point-mhc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Forest Point Mhc",
-        "pwsid": "CA0300024",
-        "population_served": 62,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "oakmont-water-system",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Oakmont Water System",
-        "pwsid": "CA4300526",
-        "population_served": 61,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
         "slug": "almond-park-water-system",
         "state": "ca",
         "state_label": "California",
@@ -918,26 +743,6 @@
         "name": "El Rio Mobile Home Park",
         "pwsid": "CA3900569",
         "population_served": 60,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "reno-sahara-trailer-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Reno Sahara Trailer Park",
-        "pwsid": "NV0000701",
-        "population_served": 60,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "15th-avenue",
-        "state": "ca",
-        "state_label": "California",
-        "name": "15Th Avenue",
-        "pwsid": "CA1600293",
-        "population_served": 50,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -1050,5 +855,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

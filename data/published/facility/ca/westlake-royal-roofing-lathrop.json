@@ -13,16 +13,16 @@
     "lat": 37.855524,
     "lng": -121.279844
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 409,
+    "total_releases_pounds": 3581,
     "air_releases_pounds": 0,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 409,
-    "chemicals_reported": 1,
-    "yoy_pct_change": 20.3,
-    "long_arc_pct_change": -54.2,
+    "land_releases_pounds": 3581,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 775.6,
+    "long_arc_pct_change": 301.1,
     "long_arc_baseline_year": 2015,
     "history": [
       {
@@ -60,15 +60,46 @@
       {
         "year": 2023,
         "value": 409
+      },
+      {
+        "year": 2024,
+        "value": 3581
       }
     ]
   },
   "chemicals": [
     {
+      "chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
+      "cas": "N090",
+      "category": "respiratory",
+      "total_pounds_recent": 3199,
+      "history": [
+        {
+          "year": 2015,
+          "value": 880
+        },
+        {
+          "year": 2018,
+          "value": 60
+        },
+        {
+          "year": 2021,
+          "value": 1927
+        },
+        {
+          "year": 2024,
+          "value": 3199
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 263.6,
+      "long_arc_baseline_year": 2015
+    },
+    {
       "chemical": "Lead",
       "cas": "7439-92-1",
       "category": "pbt",
-      "total_pounds_recent": 409,
+      "total_pounds_recent": 382,
       "history": [
         {
           "year": 2019,
@@ -89,10 +120,14 @@
         {
           "year": 2023,
           "value": 409
+        },
+        {
+          "year": 2024,
+          "value": 382
         }
       ],
-      "yoy_pct_change": 20.3,
-      "long_arc_pct_change": 137.8,
+      "yoy_pct_change": -6.6,
+      "long_arc_pct_change": 122.1,
       "long_arc_baseline_year": 2019
     }
   ],
@@ -166,5 +201,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

@@ -3,67 +3,75 @@
     "state": "ca",
     "state_label": "California",
     "slug": "phenomenex-inc",
-    "name": "Phenomenex INC.",
+    "name": "Phenomenex INC",
     "parent_company": "Danaher CORP",
-    "address": "431 AMAPOLA",
+    "address": "411 MADRID AVE.",
     "city": "Torrance",
     "county": "Los Angeles County",
     "county_slug": "los-angeles",
     "naics_label": "334516 \u00b7 Computers and Electronic Products",
-    "lat": 33.843951,
-    "lng": -118.323543
+    "lat": 33.844302,
+    "lng": -118.324727
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 1344,
-    "air_releases_pounds": 834,
+    "total_releases_pounds": 554,
+    "air_releases_pounds": 554,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 510,
-    "chemicals_reported": 1,
-    "yoy_pct_change": -79.1,
-    "long_arc_pct_change": 64.0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -99.3,
+    "long_arc_pct_change": -69.2,
     "long_arc_baseline_year": 2013,
     "history": [
       {
         "year": 2013,
-        "value": 819
+        "value": 1801
       },
       {
         "year": 2014,
-        "value": 1834
+        "value": 1793
       },
       {
         "year": 2015,
-        "value": 1111
+        "value": 2974
       },
       {
         "year": 2016,
-        "value": 1192
+        "value": 2366
       },
       {
         "year": 2017,
-        "value": 1873
+        "value": 29560
+      },
+      {
+        "year": 2018,
+        "value": 48515
       },
       {
         "year": 2019,
-        "value": 768
+        "value": 15010
       },
       {
         "year": 2020,
-        "value": 588
+        "value": 8163
       },
       {
         "year": 2021,
-        "value": 564
+        "value": 30558
       },
       {
         "year": 2022,
-        "value": 6436
+        "value": 52451
       },
       {
         "year": 2023,
-        "value": 1344
+        "value": 84819
+      },
+      {
+        "year": 2024,
+        "value": 554
       }
     ]
   },
@@ -72,55 +80,290 @@
       "chemical": "Methanol",
       "cas": "67-56-1",
       "category": "respiratory",
-      "total_pounds_recent": 1344,
+      "total_pounds_recent": 510,
       "history": [
         {
           "year": 2013,
-          "value": 791
+          "value": 1656
         },
         {
           "year": 2014,
-          "value": 1792
+          "value": 1599
         },
         {
           "year": 2015,
-          "value": 1062
+          "value": 2831
         },
         {
           "year": 2016,
-          "value": 1142
+          "value": 2285
         },
         {
           "year": 2017,
-          "value": 1842
+          "value": 20867
+        },
+        {
+          "year": 2018,
+          "value": 34850
         },
         {
           "year": 2019,
-          "value": 755
+          "value": 514
         },
         {
           "year": 2020,
-          "value": 575
+          "value": 4456
         },
         {
           "year": 2021,
-          "value": 551
+          "value": 14730
         },
         {
           "year": 2022,
-          "value": 4230
+          "value": 38324
         },
         {
           "year": 2023,
-          "value": 1344
+          "value": 35524
+        },
+        {
+          "year": 2024,
+          "value": 510
         }
       ],
-      "yoy_pct_change": -68.2,
-      "long_arc_pct_change": 69.8,
+      "yoy_pct_change": -98.6,
+      "long_arc_pct_change": -69.2,
+      "long_arc_baseline_year": 2013
+    },
+    {
+      "chemical": "Acetonitrile",
+      "cas": "75-05-8",
+      "category": "respiratory",
+      "total_pounds_recent": 44,
+      "history": [
+        {
+          "year": 2013,
+          "value": 20
+        },
+        {
+          "year": 2014,
+          "value": 22
+        },
+        {
+          "year": 2015,
+          "value": 10
+        },
+        {
+          "year": 2016,
+          "value": 12
+        },
+        {
+          "year": 2017,
+          "value": 2292
+        },
+        {
+          "year": 2018,
+          "value": 3410
+        },
+        {
+          "year": 2019,
+          "value": 6342
+        },
+        {
+          "year": 2021,
+          "value": 6242
+        },
+        {
+          "year": 2022,
+          "value": 14127
+        },
+        {
+          "year": 2023,
+          "value": 13045
+        },
+        {
+          "year": 2024,
+          "value": 44
+        }
+      ],
+      "yoy_pct_change": -99.7,
+      "long_arc_pct_change": 118.9,
       "long_arc_baseline_year": 2013
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Methanol",
+      "summary": "Methanol releases at Phenomenex INC fell from 36k lb to 510 lb (99% lower) between 2023 and 2024.",
+      "magnitude_pct": -98.6,
+      "magnitude_abs": -35014.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2013,
+          "value": 1656
+        },
+        {
+          "year": 2014,
+          "value": 1599
+        },
+        {
+          "year": 2015,
+          "value": 2831
+        },
+        {
+          "year": 2016,
+          "value": 2285
+        },
+        {
+          "year": 2017,
+          "value": 20867
+        },
+        {
+          "year": 2018,
+          "value": 34850
+        },
+        {
+          "year": 2019,
+          "value": 514
+        },
+        {
+          "year": 2020,
+          "value": 4456
+        },
+        {
+          "year": 2021,
+          "value": 14730
+        },
+        {
+          "year": 2022,
+          "value": 38324
+        },
+        {
+          "year": 2023,
+          "value": 35524
+        },
+        {
+          "year": 2024,
+          "value": 510
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0000108883",
+      "summary": "0000108883 releases at Phenomenex INC fell from 26k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -26092.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2013,
+          "value": 51
+        },
+        {
+          "year": 2014,
+          "value": 39
+        },
+        {
+          "year": 2015,
+          "value": 30
+        },
+        {
+          "year": 2016,
+          "value": 8
+        },
+        {
+          "year": 2017,
+          "value": 2982
+        },
+        {
+          "year": 2018,
+          "value": 10255
+        },
+        {
+          "year": 2019,
+          "value": 8154
+        },
+        {
+          "year": 2020,
+          "value": 3707
+        },
+        {
+          "year": 2021,
+          "value": 9586
+        },
+        {
+          "year": 2023,
+          "value": 26092
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Acetonitrile",
+      "summary": "Acetonitrile releases at Phenomenex INC fell from 13k lb to 44 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -99.7,
+      "magnitude_abs": -13001.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2013,
+          "value": 20
+        },
+        {
+          "year": 2014,
+          "value": 22
+        },
+        {
+          "year": 2015,
+          "value": 10
+        },
+        {
+          "year": 2016,
+          "value": 12
+        },
+        {
+          "year": 2017,
+          "value": 2292
+        },
+        {
+          "year": 2018,
+          "value": 3410
+        },
+        {
+          "year": 2019,
+          "value": 6342
+        },
+        {
+          "year": 2021,
+          "value": 6242
+        },
+        {
+          "year": 2022,
+          "value": 14127
+        },
+        {
+          "year": 2023,
+          "value": 13045
+        },
+        {
+          "year": 2024,
+          "value": 44
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 9936690,
     "pct_low_income": 13.7,
@@ -190,5 +433,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

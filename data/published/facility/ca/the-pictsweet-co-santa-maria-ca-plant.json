@@ -13,22 +13,18 @@
     "lat": 34.944524,
     "lng": -120.46
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 3076,
-    "air_releases_pounds": 3076,
+    "total_releases_pounds": 26631,
+    "air_releases_pounds": 26631,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
     "chemicals_reported": 1,
-    "yoy_pct_change": -21.1,
-    "long_arc_pct_change": 412.7,
-    "long_arc_baseline_year": 2011,
+    "yoy_pct_change": 765.8,
+    "long_arc_pct_change": 25.3,
+    "long_arc_baseline_year": 2012,
     "history": [
-      {
-        "year": 2011,
-        "value": 600
-      },
       {
         "year": 2012,
         "value": 21250
@@ -68,6 +64,10 @@
       {
         "year": 2023,
         "value": 3076
+      },
+      {
+        "year": 2024,
+        "value": 26631
       }
     ]
   },
@@ -76,7 +76,69 @@
       "chemical": "Ammonia",
       "cas": "7664-41-7",
       "category": "general",
-      "total_pounds_recent": 3076,
+      "total_pounds_recent": 26631,
+      "history": [
+        {
+          "year": 2012,
+          "value": 21250
+        },
+        {
+          "year": 2014,
+          "value": 5300
+        },
+        {
+          "year": 2015,
+          "value": 17000
+        },
+        {
+          "year": 2017,
+          "value": 13100
+        },
+        {
+          "year": 2018,
+          "value": 25800
+        },
+        {
+          "year": 2019,
+          "value": 27000
+        },
+        {
+          "year": 2020,
+          "value": 4100
+        },
+        {
+          "year": 2021,
+          "value": 25540
+        },
+        {
+          "year": 2022,
+          "value": 3901
+        },
+        {
+          "year": 2023,
+          "value": 3076
+        },
+        {
+          "year": 2024,
+          "value": 26631
+        }
+      ],
+      "yoy_pct_change": 765.8,
+      "long_arc_pct_change": 25.3,
+      "long_arc_baseline_year": 2012
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Ammonia",
+      "summary": "Ammonia releases at The Pictsweet CO - Santa Maria Ca Plant rose from 3k lb to 27k lb (8.7\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 765.8,
+      "magnitude_abs": 23555.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
       "history": [
         {
           "year": 2011,
@@ -121,14 +183,14 @@
         {
           "year": 2023,
           "value": 3076
+        },
+        {
+          "year": 2024,
+          "value": 26631
         }
-      ],
-      "yoy_pct_change": -21.1,
-      "long_arc_pct_change": 412.7,
-      "long_arc_baseline_year": 2011
+      ]
     }
   ],
-  "flags": [],
   "equity": {
     "population": 445213,
     "pct_low_income": 13.5,
@@ -198,5 +260,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

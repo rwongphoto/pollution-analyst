@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
-    "utilities_serving": 6,
-    "total_releases_pounds": 2,
-    "air_releases_pounds": 0.95,
+    "utilities_serving": 3,
+    "total_releases_pounds": 3,
+    "air_releases_pounds": 1,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 0.86,
-    "yoy_pct_change": 2.1,
-    "long_arc_pct_change": -44.1,
+    "land_releases_pounds": 1,
+    "yoy_pct_change": 53.8,
+    "long_arc_pct_change": -14.0,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 2
+      },
+      {
+        "year": 2024,
+        "value": 3
       }
     ]
   },
@@ -88,10 +92,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 1
         }
       ]
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -118,10 +122,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 1
         }
       ]
@@ -129,10 +133,10 @@
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,30 +205,20 @@
       "state_label": "California",
       "name": "Pasadena Plant 14",
       "parent_company": "Mcc Development CORP",
-      "total_pounds_recent": 2,
-      "yoy_pct_change": 2.1,
+      "total_pounds_recent": 3,
+      "yoy_pct_change": 53.8,
       "top_chemical": "Lead compounds",
       "city": "Pasadena"
     }
   ],
   "water": {
-    "utilities_count": 6,
-    "population_served_total": 192298,
-    "violations_5yr_total": 44,
-    "health_based_5yr_total": 29,
-    "unresolved_total": 30,
-    "utilities_with_unresolved": 1,
+    "utilities_count": 3,
+    "population_served_total": 191556,
+    "violations_5yr_total": 14,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
     "utilities": [
-      {
-        "slug": "lake-morena-views-mwc",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Lake Morena Views Mwc",
-        "pwsid": "CA3700924",
-        "population_served": 360,
-        "health_based_violations_5yr": 29,
-        "unresolved": true
-      },
       {
         "slug": "pasadena-water-and-power",
         "state": "ca",
@@ -252,26 +246,6 @@
         "name": "Kinneloa Irrigation Dist.",
         "pwsid": "CA1910035",
         "population_served": 1960,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "acorn-village-mobile-home-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Acorn Village Mobile Home Park",
-        "pwsid": "TX1012333",
-        "population_served": 192,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "tolas-waterworks-co-op",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Tolas Waterworks Co Op",
-        "pwsid": "NV0000055",
-        "population_served": 190,
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -354,5 +328,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

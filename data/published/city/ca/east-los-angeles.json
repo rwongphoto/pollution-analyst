@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 0,
-    "total_releases_pounds": 20694,
-    "air_releases_pounds": 1682,
+    "total_releases_pounds": 201241,
+    "air_releases_pounds": 1216,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 19012,
-    "yoy_pct_change": 1205.6,
-    "long_arc_pct_change": 1142.1,
+    "land_releases_pounds": 200025,
+    "yoy_pct_change": 872.5,
+    "long_arc_pct_change": 11979.3,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 20694
+      },
+      {
+        "year": 2024,
+        "value": 201241
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 1682,
+      "current": 1216,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1682
+          "year": 2024,
+          "value": 1216
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 19012,
+      "current": 200025,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 19012
+          "year": 2024,
+          "value": 200025
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "George Industries",
       "parent_company": "Valmont Industries INC",
-      "total_pounds_recent": 20086,
-      "yoy_pct_change": 1935.1,
+      "total_pounds_recent": 200905,
+      "yoy_pct_change": 900.2,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "Los Angeles"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "Polychemie INC",
       "parent_company": "Snf Holding Co",
-      "total_pounds_recent": 608,
-      "yoy_pct_change": 1.7,
+      "total_pounds_recent": 336,
+      "yoy_pct_change": -44.7,
       "top_chemical": "Formaldehyde",
       "city": "Los Angeles"
     }
@@ -304,5 +308,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

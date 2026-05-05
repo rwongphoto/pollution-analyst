@@ -9,17 +9,17 @@
     "county_name": "Riverside",
     "county_fips": "06065"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
     "utilities_serving": 3,
-    "total_releases_pounds": 82481,
-    "air_releases_pounds": 82472,
+    "total_releases_pounds": 71284,
+    "air_releases_pounds": 71276,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 9,
-    "yoy_pct_change": -20.7,
-    "long_arc_pct_change": -41.7,
+    "land_releases_pounds": 8,
+    "yoy_pct_change": -13.6,
+    "long_arc_pct_change": -49.7,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 82481
+      },
+      {
+        "year": 2024,
+        "value": 71284
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 82472,
+      "current": 71276,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 82472
+          "year": 2024,
+          "value": 71276
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 9,
+      "current": 8,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 9
+          "year": 2024,
+          "value": 8
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 1423181,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 5.5,
-      "long_arc_pct_change": -32.9,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Metal Container Corp-Mira Loma Can Plant",
       "parent_company": "Anheuser-Busch Cos LLC",
-      "total_pounds_recent": 80482,
-      "yoy_pct_change": -21.4,
+      "total_pounds_recent": 70001,
+      "yoy_pct_change": -13.0,
       "top_chemical": "n-Butyl alcohol",
       "city": "Jurupa Valley"
     },
@@ -212,9 +216,9 @@
       "state_label": "California",
       "name": "Dura Coat Products INC (Axalta Coating Systems)",
       "parent_company": "Axalta Coating Systems LLC",
-      "total_pounds_recent": 1989,
-      "yoy_pct_change": 25.5,
-      "top_chemical": "Zinc compounds",
+      "total_pounds_recent": 1274,
+      "yoy_pct_change": -35.9,
+      "top_chemical": "Certain glycol ethers",
       "city": "Riverside"
     },
     {
@@ -223,8 +227,8 @@
       "state_label": "California",
       "name": "Riverside Plant 1",
       "parent_company": "Mcc Development CORP",
-      "total_pounds_recent": 10,
-      "yoy_pct_change": -21.6,
+      "total_pounds_recent": 9,
+      "yoy_pct_change": -8.7,
       "top_chemical": "Lead compounds",
       "city": "Riverside"
     }
@@ -346,5 +350,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

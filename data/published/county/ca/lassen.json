@@ -7,16 +7,16 @@
     "fips": "06035",
     "population": 31873
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 0,
       "units": "lb",
-      "yoy_pct_change": 0.0,
-      "long_arc_pct_change": -21.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -73,6 +73,10 @@
         },
         {
           "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 28872,
+      "current": 8258,
       "units": "lb",
-      "yoy_pct_change": 39.0,
-      "long_arc_pct_change": 6176.6,
+      "yoy_pct_change": -71.4,
+      "long_arc_pct_change": 1695.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,6 +216,10 @@
         {
           "year": 2023,
           "value": 28872
+        },
+        {
+          "year": 2024,
+          "value": 8258
         }
       ]
     }
@@ -219,20 +231,9 @@
       "state_label": "California",
       "name": "U.S Army Sierra Army Depot",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 28499,
-      "yoy_pct_change": 39.7,
-      "top_chemical": "Methanol",
-      "city": "Herlong"
-    },
-    {
-      "slug": "federal-bureau-of-prisons-fci-herlong",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Federal Bureau Of Prisons Fci Herlong",
-      "parent_company": "US Department Of Justice",
-      "total_pounds_recent": 374,
-      "yoy_pct_change": 0.0,
-      "top_chemical": "Lead",
+      "total_pounds_recent": 8258,
+      "yoy_pct_change": -71.0,
+      "top_chemical": "Xylene (mixed isomers)",
       "city": "Herlong"
     }
   ],
@@ -309,5 +310,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:51Z"
+  "_published_at": "2026-05-05T07:08:03Z"
 }

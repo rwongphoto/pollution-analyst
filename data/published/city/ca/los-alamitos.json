@@ -9,17 +9,17 @@
     "county_name": "Orange",
     "county_fips": "06059"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 0,
-    "total_releases_pounds": 979,
-    "air_releases_pounds": 5,
-    "water_releases_pounds": 0,
-    "land_releases_pounds": 974,
-    "yoy_pct_change": -2.9,
-    "long_arc_pct_change": -5.1,
+    "total_releases_pounds": 14937,
+    "air_releases_pounds": 40,
+    "water_releases_pounds": 15,
+    "land_releases_pounds": 14882,
+    "yoy_pct_change": 1425.5,
+    "long_arc_pct_change": 1347.4,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 979
+      },
+      {
+        "year": 2024,
+        "value": 14937
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 5,
+      "current": 40,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 5
+          "year": 2024,
+          "value": 40
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 0,
+      "current": 15,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 0
+          "year": 2024,
+          "value": 15
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 974,
+      "current": 14882,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 974
+          "year": 2024,
+          "value": 14882
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2636013,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": 39.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Arrowhead Products Corp",
       "parent_company": "Summa Holdings INC",
-      "total_pounds_recent": 979,
-      "yoy_pct_change": -2.9,
+      "total_pounds_recent": 14937,
+      "yoy_pct_change": 1425.5,
       "top_chemical": "Lead compounds",
       "city": "Los Alamitos"
     }
@@ -293,5 +297,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

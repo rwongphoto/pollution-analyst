@@ -9,17 +9,17 @@
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 4,
-    "utilities_serving": 9,
-    "total_releases_pounds": 21282,
-    "air_releases_pounds": 14515,
+    "utilities_serving": 8,
+    "total_releases_pounds": 35845,
+    "air_releases_pounds": 31877,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 6767,
-    "yoy_pct_change": -32.7,
-    "long_arc_pct_change": -30.9,
+    "land_releases_pounds": 3968,
+    "yoy_pct_change": 68.4,
+    "long_arc_pct_change": 16.4,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 21282
+      },
+      {
+        "year": 2024,
+        "value": 35845
       }
     ]
   },
@@ -84,15 +88,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 14515,
+      "current": 31877,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 14515
+          "year": 2024,
+          "value": 31877
         }
       ]
     },
@@ -103,10 +107,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +118,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 6767,
+      "current": 3968,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 6767
+          "year": 2024,
+          "value": 3968
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 203237635,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": -4.3,
-      "long_arc_pct_change": 18.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Usaf Plant 42 Site 4 Northrop Grumman Systems Corp",
       "parent_company": "Northrop Grumman CORP",
-      "total_pounds_recent": 11512,
-      "yoy_pct_change": -54.5,
+      "total_pounds_recent": 20274,
+      "yoy_pct_change": 76.1,
       "top_chemical": "sec-Butyl alcohol",
       "city": "Palmdale"
     },
@@ -212,9 +216,9 @@
       "state_label": "California",
       "name": "Lockheed Martin Aeronautics CO",
       "parent_company": "Lockheed Martin CORP",
-      "total_pounds_recent": 9677,
-      "yoy_pct_change": 55.8,
-      "top_chemical": "Toluene",
+      "total_pounds_recent": 14781,
+      "yoy_pct_change": 52.7,
+      "top_chemical": "Copper",
       "city": "Palmdale"
     },
     {
@@ -223,8 +227,8 @@
       "state_label": "California",
       "name": "Holliday Rock-Palmdale",
       "parent_company": "Holliday Rock Co INC",
-      "total_pounds_recent": 92,
-      "yoy_pct_change": 1.9,
+      "total_pounds_recent": 783,
+      "yoy_pct_change": 755.9,
       "top_chemical": "Aluminum (fume or dust)",
       "city": "Littlerock"
     },
@@ -234,14 +238,14 @@
       "state_label": "California",
       "name": "Palmdale Plant 39",
       "parent_company": "Mcc Development CORP",
-      "total_pounds_recent": 0.91,
-      "yoy_pct_change": 1.2,
+      "total_pounds_recent": 6,
+      "yoy_pct_change": 565.4,
       "top_chemical": "Lead compounds",
       "city": "Palmdale"
     }
   ],
   "water": {
-    "utilities_count": 9,
+    "utilities_count": 8,
     "population_served_total": 130538,
     "violations_5yr_total": 10,
     "health_based_5yr_total": 2,
@@ -315,16 +319,6 @@
         "name": "Shadow Acres Mutual Water Company",
         "pwsid": "CA1900301",
         "population_served": 450,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "antelope-valley-e-kern-wtr-agy-rosamond",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Antelope Valley E Kern Wtr Agy-Rosamond",
-        "pwsid": "CA1510053",
-        "population_served": 0,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -417,5 +411,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

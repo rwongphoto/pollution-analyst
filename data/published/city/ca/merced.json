@@ -9,17 +9,17 @@
     "county_name": "Merced",
     "county_fips": "06047"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
     "utilities_serving": 4,
-    "total_releases_pounds": 71306,
-    "air_releases_pounds": 61474,
-    "water_releases_pounds": 5,
-    "land_releases_pounds": 9828,
-    "yoy_pct_change": -19.3,
-    "long_arc_pct_change": 143.9,
+    "total_releases_pounds": 58541,
+    "air_releases_pounds": 57940,
+    "water_releases_pounds": 0.8,
+    "land_releases_pounds": 600,
+    "yoy_pct_change": -17.9,
+    "long_arc_pct_change": 100.3,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 71306
+      },
+      {
+        "year": 2024,
+        "value": 58541
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 61474,
+      "current": 57940,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 61474
+          "year": 2024,
+          "value": 57940
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 5,
+      "current": 1,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 5
+          "year": 2024,
+          "value": 1
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 9828,
+      "current": 600,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 9828
+          "year": 2024,
+          "value": 600
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 583191,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 20.4,
-      "long_arc_pct_change": 48.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -201,8 +205,8 @@
       "state_label": "California",
       "name": "Fineline Industries LLC",
       "parent_company": "Correct Craft Holding Co LLC",
-      "total_pounds_recent": 61230,
-      "yoy_pct_change": -29.3,
+      "total_pounds_recent": 56425,
+      "yoy_pct_change": -7.8,
       "top_chemical": "Styrene",
       "city": "Merced"
     },
@@ -212,8 +216,8 @@
       "state_label": "California",
       "name": "Greif Packaging LLC",
       "parent_company": "Greif INC",
-      "total_pounds_recent": 10071,
-      "yoy_pct_change": 472.3,
+      "total_pounds_recent": 2115,
+      "yoy_pct_change": -79.0,
       "top_chemical": "Certain glycol ethers",
       "city": "Merced"
     },
@@ -223,8 +227,8 @@
       "state_label": "California",
       "name": "O'Keeffe",
       "parent_company": "Okeeffe'S INC",
-      "total_pounds_recent": 6,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 0.8,
+      "yoy_pct_change": -86.2,
       "top_chemical": "Acrylamide",
       "city": "Merced"
     }
@@ -356,5 +360,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

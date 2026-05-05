@@ -9,74 +9,78 @@
     "county_name": "Santa Clara",
     "county_fips": "06085"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 10,
+    "facilities_in_city": 7,
     "utilities_serving": 2,
-    "total_releases_pounds": 54843,
-    "air_releases_pounds": 7986,
-    "water_releases_pounds": 1,
-    "land_releases_pounds": 46856,
-    "yoy_pct_change": 243.3,
-    "long_arc_pct_change": 449.4,
+    "total_releases_pounds": 7392,
+    "air_releases_pounds": 4734,
+    "water_releases_pounds": 0.11,
+    "land_releases_pounds": 2658,
+    "yoy_pct_change": -84.0,
+    "long_arc_pct_change": 6.8,
     "long_arc_baseline_year": 2010,
     "history": [
       {
         "year": 2010,
-        "value": 9982
+        "value": 6922
       },
       {
         "year": 2011,
-        "value": 14393
+        "value": 14315
       },
       {
         "year": 2012,
-        "value": 17613
+        "value": 15425
       },
       {
         "year": 2013,
-        "value": 14209
+        "value": 14097
       },
       {
         "year": 2014,
-        "value": 8674
+        "value": 8139
       },
       {
         "year": 2015,
-        "value": 15290
+        "value": 14810
       },
       {
         "year": 2016,
-        "value": 8630
+        "value": 8341
       },
       {
         "year": 2017,
-        "value": 30951
+        "value": 30728
       },
       {
         "year": 2018,
-        "value": 42388
+        "value": 39259
       },
       {
         "year": 2019,
-        "value": 96029
+        "value": 94426
       },
       {
         "year": 2020,
-        "value": 38530
+        "value": 37361
       },
       {
         "year": 2021,
-        "value": 34854
+        "value": 30201
       },
       {
         "year": 2022,
-        "value": 15977
+        "value": 11201
       },
       {
         "year": 2023,
-        "value": 54843
+        "value": 46095
+      },
+      {
+        "year": 2024,
+        "value": 7392
       }
     ]
   },
@@ -84,55 +88,55 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 7986,
+      "current": 4734,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 7986
+          "year": 2024,
+          "value": 4734
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 1,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 46856,
+      "current": 2658,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 46856
+          "year": 2024,
+          "value": 2658
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 2123248,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 6.0,
-      "long_arc_pct_change": -31.3,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,69 +200,14 @@
   ],
   "facilities": [
     {
-      "slug": "streamline-circuits",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Streamline Circuits",
-      "parent_company": "Summit Interconnect Intermediate INC",
-      "total_pounds_recent": 21888,
-      "yoy_pct_change": 1976.5,
-      "top_chemical": "Copper  And Copper Compounds",
-      "city": "Santa Clara"
-    },
-    {
-      "slug": "apct-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Apct INC",
-      "parent_company": "Advancedpcb Holdings INC",
-      "total_pounds_recent": 14643,
-      "yoy_pct_change": 6807.1,
-      "top_chemical": "Nitric acid",
-      "city": "Santa Clara"
-    },
-    {
-      "slug": "ens-technology-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Ens Technology LLC",
-      "parent_company": null,
-      "total_pounds_recent": 5272,
-      "yoy_pct_change": null,
-      "top_chemical": "Nitric acid",
-      "city": "Santa Clara"
-    },
-    {
       "slug": "agilent-technologies-inc",
       "state": "ca",
       "state_label": "California",
       "name": "Agilent Technologies INC",
       "parent_company": "Agilent Technologies INC",
-      "total_pounds_recent": 4259,
-      "yoy_pct_change": -0.0,
+      "total_pounds_recent": 4218,
+      "yoy_pct_change": -1.0,
       "top_chemical": "Acetonitrile",
-      "city": "Santa Clara"
-    },
-    {
-      "slug": "harbor-electronics-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Harbor Electronics, INC.",
-      "parent_company": "Technoprobe US Holding LLC",
-      "total_pounds_recent": 3434,
-      "yoy_pct_change": -27.4,
-      "top_chemical": "Copper compounds",
-      "city": "Santa Clara"
-    },
-    {
-      "slug": "ttm-technologies-n-a-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Ttm Technologies N.A. LLC",
-      "parent_company": "Ttm Technologies INC",
-      "total_pounds_recent": 2513,
-      "yoy_pct_change": -55.7,
-      "top_chemical": "Certain glycol ethers",
       "city": "Santa Clara"
     },
     {
@@ -267,9 +216,31 @@
       "state_label": "California",
       "name": "Csl Operating LLC",
       "parent_company": "Enpro Industries INC",
-      "total_pounds_recent": 2456,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 1890,
+      "yoy_pct_change": -23.0,
       "top_chemical": "Nitric acid",
+      "city": "Santa Clara"
+    },
+    {
+      "slug": "streamline-circuits",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Streamline Circuits",
+      "parent_company": "Summit Interconnect Intermediate INC",
+      "total_pounds_recent": 530,
+      "yoy_pct_change": -97.6,
+      "top_chemical": "Formaldehyde",
+      "city": "Santa Clara"
+    },
+    {
+      "slug": "ttm-technologies-n-a-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ttm Technologies N.A. LLC",
+      "parent_company": "Ttm Technologies INC",
+      "total_pounds_recent": 305,
+      "yoy_pct_change": -87.9,
+      "top_chemical": "Lead  And Lead Compounds",
       "city": "Santa Clara"
     },
     {
@@ -278,20 +249,20 @@
       "state_label": "California",
       "name": "Cirexx International",
       "parent_company": null,
-      "total_pounds_recent": 334,
-      "yoy_pct_change": 667900.0,
+      "total_pounds_recent": 250,
+      "yoy_pct_change": -25.1,
       "top_chemical": "Copper",
       "city": "Santa Clara"
     },
     {
-      "slug": "california-paperboard",
+      "slug": "apct-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "California Paperboard",
-      "parent_company": "Greif INC",
-      "total_pounds_recent": 42,
-      "yoy_pct_change": -4.6,
-      "top_chemical": "Lead",
+      "name": "Apct INC",
+      "parent_company": "Advancedpcb Holdings INC",
+      "total_pounds_recent": 198,
+      "yoy_pct_change": -98.6,
+      "top_chemical": "Copper  And Copper Compounds",
       "city": "Santa Clara"
     },
     {
@@ -413,5 +384,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }

@@ -9,74 +9,74 @@
     "county_name": "Yolo",
     "county_fips": "06113"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 2,
-    "utilities_serving": 9,
-    "total_releases_pounds": 44650,
-    "air_releases_pounds": 42866,
+    "facilities_in_city": 1,
+    "utilities_serving": 8,
+    "total_releases_pounds": 1872,
+    "air_releases_pounds": 30,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 1784,
-    "yoy_pct_change": -42.0,
-    "long_arc_pct_change": -21.6,
-    "long_arc_baseline_year": 2010,
+    "land_releases_pounds": 1842,
+    "yoy_pct_change": 3.2,
+    "long_arc_pct_change": 87.2,
+    "long_arc_baseline_year": 2011,
     "history": [
       {
-        "year": 2010,
-        "value": 56970
-      },
-      {
         "year": 2011,
-        "value": 72454
+        "value": 1000
       },
       {
         "year": 2012,
-        "value": 73357
+        "value": 1000
       },
       {
         "year": 2013,
-        "value": 87116
+        "value": 755
       },
       {
         "year": 2014,
-        "value": 96765
+        "value": 1250
       },
       {
         "year": 2015,
-        "value": 98464
+        "value": 1250
       },
       {
         "year": 2016,
-        "value": 103946
+        "value": 89
       },
       {
         "year": 2017,
-        "value": 111431
+        "value": 74
       },
       {
         "year": 2018,
-        "value": 99232
+        "value": 72
       },
       {
         "year": 2019,
-        "value": 81934
+        "value": 72
       },
       {
         "year": 2020,
-        "value": 74700
+        "value": 68
       },
       {
         "year": 2021,
-        "value": 91384
+        "value": 2122
       },
       {
         "year": 2022,
-        "value": 76922
+        "value": 2302
       },
       {
         "year": 2023,
-        "value": 44650
+        "value": 1814
+      },
+      {
+        "year": 2024,
+        "value": 1872
       }
     ]
   },
@@ -84,15 +84,15 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 42866,
+      "current": 30,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 42866
+          "year": 2024,
+          "value": 30
         }
       ]
     },
@@ -103,10 +103,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -114,25 +114,25 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 1784,
+      "current": 1842,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
-          "value": 1784
+          "year": 2024,
+          "value": 1842
         }
       ]
     },
     {
       "pathway": "ghg",
       "label": "Greenhouse gases (GHGRP large emitters)",
-      "current": 124481,
+      "current": 0,
       "units": "metric tons CO\u2082e",
-      "yoy_pct_change": 25.5,
-      "long_arc_pct_change": -14.4,
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,31 +196,20 @@
   ],
   "facilities": [
     {
-      "slug": "truck-accessories-group-dba-tag-west",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Truck Accessories Group Dba Tag West",
-      "parent_company": "Jb Poindexter & Co INC",
-      "total_pounds_recent": 42836,
-      "yoy_pct_change": -42.6,
-      "top_chemical": "Styrene",
-      "city": "Woodland"
-    },
-    {
       "slug": "watts-regulator-co",
       "state": "ca",
       "state_label": "California",
       "name": "Watts Regulator CO.",
       "parent_company": "Watts Water Technologies",
-      "total_pounds_recent": 1814,
-      "yoy_pct_change": -21.2,
+      "total_pounds_recent": 1872,
+      "yoy_pct_change": 3.2,
       "top_chemical": "Chromium",
       "city": "Woodland"
     }
   ],
   "water": {
-    "utilities_count": 9,
-    "population_served_total": 65361,
+    "utilities_count": 8,
+    "population_served_total": 65306,
     "violations_5yr_total": 218,
     "health_based_5yr_total": 33,
     "unresolved_total": 218,
@@ -293,16 +282,6 @@
         "name": "Yolo Co Housing Authority-El Rio Villa",
         "pwsid": "CA5700615",
         "population_served": 432,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      },
-      {
-        "slug": "finnlees-trailer-park",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Finnlees Trailer Park",
-        "pwsid": "CA3900705",
-        "population_served": 55,
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -395,5 +374,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T06:24:54Z"
+  "_published_at": "2026-05-05T07:08:06Z"
 }
