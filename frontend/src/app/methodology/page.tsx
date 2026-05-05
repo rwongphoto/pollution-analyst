@@ -7,7 +7,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { pageMeta, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
-  title: "Pollution Trend Methodology | Pollution Analyst.ai",
+  title: "Pollution Trend Methodology | Pollution Analyst",
   description:
     "How we measure pollution trends across federal data sources — TRI, SDWIS, the USEPA-clone EJ disparity mirror — plus our pollutant taxonomy, equity-overlay stance, and per-source caveats.",
   path: "/methodology",
@@ -21,7 +21,7 @@ export default function MethodologyPage() {
       {
         "@type": "Organization",
         "@id": `${SITE_URL}/#org`,
-        name: "Pollution Analyst.ai",
+        name: "Pollution Analyst",
         url: `${SITE_URL}/`,
         description:
           "Pollution trend intelligence built from federal public data.",
@@ -37,7 +37,7 @@ export default function MethodologyPage() {
         "@type": "Article",
         headline: "Pollution Trend Methodology",
         description:
-          "Methodology, source-by-source caveats, equity-overlay stance, and pollutant taxonomy used by Pollution Analyst.ai.",
+          "Methodology, source-by-source caveats, equity-overlay stance, and pollutant taxonomy used by Pollution Analyst.",
         url: pageUrl,
         author: { "@id": `${SITE_URL}/#org` },
         publisher: { "@id": `${SITE_URL}/#org` },
@@ -59,7 +59,7 @@ export default function MethodologyPage() {
           <div className="wrap">
             <h1>Pollution Trend Methodology</h1>
             <p className="lede">
-              Pollution Analyst.ai is built around three commitments:{" "}
+              Pollution Analyst is built around three commitments:{" "}
               <strong>plain English</strong> for readers,{" "}
               <strong>federal-only data</strong> with explicit attribution, and{" "}
               <strong>equity context paired with releases</strong> rather than hidden.

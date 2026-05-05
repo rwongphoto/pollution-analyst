@@ -39,7 +39,7 @@ export async function generateMetadata({
   const { state, slug } = await params;
   const data = await loadFacility(state, slug);
   return pageMeta({
-    title: `${data.facility.name} — TRI Releases | Pollution Analyst.ai`,
+    title: `${data.facility.name} — TRI Releases | Pollution Analyst`,
     description: `${data.facility.name} reported ${poundsFormat(data.totals.total_releases_pounds)} of TRI-tracked toxic releases in ${data.reporting_year}. ${data.totals.chemicals_reported} chemicals; equity context from EJScreen.`,
     path: `/state/${state}/facility/${slug}`,
   });

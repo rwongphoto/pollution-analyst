@@ -38,7 +38,7 @@ export async function generateMetadata({
   const { state, slug } = await params;
   const data = await loadCityHub(state, slug);
   return pageMeta({
-    title: `${data.place.name} Pollution | Pollution Analyst.ai`,
+    title: `${data.place.name} Pollution | Pollution Analyst`,
     description: `${data.place.name}, ${data.place.state_label} — ${data.totals.facilities_in_city} TRI facilities in the city, ${data.totals.utilities_serving} public water systems serving residents, with EPA equity context.`,
     path: `/state/${state}/city/${slug}`,
   });

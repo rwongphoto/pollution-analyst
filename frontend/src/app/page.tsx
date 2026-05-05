@@ -12,7 +12,7 @@ import type { FeaturedEntity } from "@/lib/types";
 const HOME_DESCRIPTION =
   "Pollution trend intelligence built from federal public data — facility releases, drinking-water violations, and equity context at county and entity scale.";
 
-const HOME_TITLE = "Pollution Trend Intelligence | Pollution Analyst.ai";
+const HOME_TITLE = "Pollution Trend Intelligence | Pollution Analyst";
 
 export const metadata: Metadata = {
   title: HOME_TITLE,
@@ -57,7 +57,7 @@ function HomeHero({ totals, briefingLabel }: {
               Federal pollution data — what&apos;s actually <em>changing</em>, and who lives next to it
             </h1>
             <p className="lead lede">
-              Pollution Analyst.ai turns EPA&apos;s public datasets into <strong>tracked trends</strong>, facility-level histories, and county-level overviews — paired with EPA&apos;s own equity indexes so the population context is visible, not buried.
+              Pollution Analyst turns EPA&apos;s public datasets into <strong>tracked trends</strong>, facility-level histories, and county-level overviews — paired with EPA&apos;s own equity indexes so the population context is visible, not buried.
             </p>
             <div className="actions">
               <Link href="/state/ca/county/kern" className="btn btn-primary">
@@ -341,7 +341,7 @@ export default async function HomePage() {
         "@type": "WebSite",
         "@id": `${SITE_URL}/#website`,
         url: `${SITE_URL}/`,
-        name: "Pollution Analyst.ai",
+        name: "Pollution Analyst",
         description: HOME_DESCRIPTION,
         publisher: { "@id": `${SITE_URL}/#org` },
         inLanguage: "en-US",
@@ -349,7 +349,7 @@ export default async function HomePage() {
       {
         "@type": "Organization",
         "@id": `${SITE_URL}/#org`,
-        name: "Pollution Analyst.ai",
+        name: "Pollution Analyst",
         url: `${SITE_URL}/`,
         description: HOME_DESCRIPTION,
       },

@@ -55,7 +55,7 @@ export async function generateMetadata({
   const data = await loadWaterUtility(state, slug);
   const city = cityDisplayName(data.utility, slug);
   return pageMeta({
-    title: `${data.utility.name} Water Quality | Pollution Analyst.ai`,
+    title: `${data.utility.name} Water Quality | Pollution Analyst`,
     description: `${data.utility.name} (PWSID ${data.utility.pwsid}) — drinking water serving ${city}, ${data.utility.state_label}. ${data.utility.population_served.toLocaleString()} people served. SDWIS violation history and contaminant detail.`,
     path: `/state/${state}/water/${slug}`,
   });

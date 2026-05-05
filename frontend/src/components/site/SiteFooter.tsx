@@ -32,7 +32,7 @@ export function SiteFooter({ briefingLabel }: { briefingLabel?: string }) {
           </nav>
         </div>
         <div className="legal">
-          <span>© {new Date().getFullYear()} Pollution Analyst.ai</span>
+          <span>© {new Date().getFullYear()} Pollution Analyst</span>
           <span>Built on federal public-domain data{briefingLabel ? ` · ${briefingLabel}` : ""}</span>
         </div>
       </div>
