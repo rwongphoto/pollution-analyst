@@ -220,7 +220,73 @@
     "pct_people_of_color": 91.4,
     "pct_under_5": 5.7,
     "pct_over_64": 6.9,
-    "ej_indexes": [],
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 54.3,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 40.3,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 38.2,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 10.0,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 1.0,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 31.4,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 43.1,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 52.6,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 37.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 27.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 18.4,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 77.4,
+        "pct_state": null
+      }
+    ],
     "disparity_scores": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -275,7 +341,7 @@
         "score": 29.1
       }
     ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Soledad, California (Census place block groups)"
   },
   "sources": [
@@ -290,5 +356,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T07:08:06Z"
+  "_published_at": "2026-05-05T07:48:59Z"
 }

@@ -15,6 +15,7 @@ import {
 } from "@/lib/data";
 import {
   disparityLanguage,
+  equityIndexLanguage,
   isEquityStub,
   longArcLanguage,
   magnitudeLanguage,
@@ -213,6 +214,36 @@ function EquitySection({ data }: { data: FacilityPagePayload }) {
             </div>
           ))}
         </div>
+
+        {(e.ej_indexes?.length ?? 0) > 0 && (
+          <table className="tbl" style={{ marginBottom: 24 }}>
+            <caption style={{ captionSide: "top", textAlign: "left", padding: "0 0 12px", fontSize: 13, color: "var(--ink-3)" }}>
+              National percentile · vs all US block groups (population-weighted; ranked against the national EJScreen indicator distribution)
+            </caption>
+            <thead>
+              <tr>
+                <th>Indicator</th>
+                <th className="right">National percentile</th>
+                <th>Reading</th>
+              </tr>
+            </thead>
+            <tbody>
+              {e.ej_indexes.map((row) => (
+                <tr key={row.label}>
+                  <td className="name">{row.label}</td>
+                  <td
+                    className={`right num-mono ${
+                      row.pct_us >= 80 ? "delta-down" : row.pct_us >= 60 ? "delta-flat" : "delta-up"
+                    }`}
+                  >
+                    {row.pct_us.toFixed(0)}
+                  </td>
+                  <td className="muted">{equityIndexLanguage(row.pct_us)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
 
         {(e.disparity_scores?.length ?? 0) > 0 && (
           <table className="tbl">

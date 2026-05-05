@@ -159,7 +159,73 @@
     "pct_people_of_color": 67.6,
     "pct_under_5": 6.7,
     "pct_over_64": 14.8,
-    "ej_indexes": [],
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 90.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 98.2,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 68.6,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 81.0,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 40.8,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 70.4,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 42.0,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 72.8,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 61.9,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 76.7,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 27.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 92.6,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.8,
+        "pct_state": null
+      }
+    ],
     "disparity_scores": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -214,7 +280,7 @@
         "score": 1.3
       }
     ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Riverside County, CA (facility's containing county; 3-mile buffer aggregation is a future iteration)"
   },
   "source": {
@@ -222,5 +288,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T07:08:03Z"
+  "_published_at": "2026-05-05T07:48:56Z"
 }

@@ -190,13 +190,16 @@ def _build_equity(
     geography_label: str,
     demographics: object | None,
     disparity_scores: list | None,
-    source: str = "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    percentiles: list | None = None,
+    source: str = "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
 ) -> dict:
-    """Real equity overlay — Census ACS demographics + USEPA-clone EJ
-    disparity scores. Falls back to stub-shaped fields when demographics is
-    None (e.g. ACS endpoint failed) or disparity_scores is empty.
+    """Three-layer equity overlay — Census ACS demographics (lead) + national
+    percentiles per environmental indicator (mid) + USEPA-clone EJ disparity
+    scores (tail). Falls back to stub-shaped fields when demographics is None
+    (e.g. ACS endpoint failed) and both percentile + disparity layers are
+    empty.
     """
-    if demographics is None and not disparity_scores:
+    if demographics is None and not disparity_scores and not percentiles:
         return _stub_equity(geography_label, population)
     return {
         "population": population,
@@ -204,7 +207,10 @@ def _build_equity(
         "pct_people_of_color": getattr(demographics, "pct_people_of_color", None),
         "pct_under_5": getattr(demographics, "pct_under_5", None),
         "pct_over_64": getattr(demographics, "pct_over_64", None),
-        "ej_indexes": [],  # original EJScreen retired by EPA
+        "ej_indexes": [
+            {"label": p.label, "pct_us": p.pct_us, "pct_state": None}
+            for p in (percentiles or [])
+        ],
         "disparity_scores": [
             {"label": d.label, "score": d.score} for d in (disparity_scores or [])
         ],
@@ -221,6 +227,7 @@ def publish_facility(
     chem_history: dict[str, dict[int, float]] | None = None,
     county_demographics: object | None = None,
     county_disparity_scores: list | None = None,
+    county_percentiles: list | None = None,
     county_population: int = 0,
     flags: list | None = None,
 ) -> Path:
@@ -293,6 +300,7 @@ def publish_facility(
             ),
             demographics=county_demographics,
             disparity_scores=county_disparity_scores,
+            percentiles=county_percentiles,
         ),
         "source": {
             "label": "EPA Toxics Release Inventory",
@@ -346,16 +354,19 @@ def publish_water(
     util: UtilityAgg,
     state_demographics: object | None = None,
     state_disparity_scores: list | None = None,
+    state_percentiles: list | None = None,
     state_population: int = 0,
     state_label: str = "",
     county_fips: str | None = None,
     county_demographics: object | None = None,
     county_disparity_scores: list | None = None,
+    county_percentiles: list | None = None,
     county_population: int = 0,
     county_name: str | None = None,
     place_fips: str | None = None,
     place_demographics: object | None = None,
     place_disparity_scores: list | None = None,
+    place_percentiles: list | None = None,
     place_name: str | None = None,
     flags: list | None = None,
 ) -> Path:
@@ -440,6 +451,7 @@ def publish_water(
                 ),
                 demographics=place_demographics,
                 disparity_scores=place_disparity_scores,
+                percentiles=place_percentiles,
             )
             if place_fips and place_demographics and place_disparity_scores
             else _build_equity(
@@ -450,6 +462,7 @@ def publish_water(
                 ),
                 demographics=county_demographics,
                 disparity_scores=county_disparity_scores,
+                percentiles=county_percentiles,
             )
             if county_fips and county_demographics
             else _build_equity(
@@ -460,6 +473,7 @@ def publish_water(
                 ),
                 demographics=state_demographics,
                 disparity_scores=state_disparity_scores,
+                percentiles=state_percentiles,
             )
         ),
         "source": {
@@ -493,6 +507,7 @@ def publish_city_hub(
     year: int,
     place_demographics: object | None,
     place_disparity_scores: list | None,
+    place_percentiles: list | None,
     place_population: int,
     county_name: str | None,
     county_fips: str | None,
@@ -603,6 +618,7 @@ def publish_city_hub(
             geography_label=f"{place_name}, {_state_label(state_slug)} (Census place block groups)",
             demographics=place_demographics,
             disparity_scores=place_disparity_scores,
+            percentiles=place_percentiles,
         ),
         "sources": [
             {
@@ -647,6 +663,7 @@ def publish_county(
     medium_history: dict[str, dict[int, float]] | None = None,
     demographics: object | None = None,
     disparity_scores: list | None = None,
+    percentiles: list | None = None,
     ghg_history: dict[int, float] | None = None,
     flags: list | None = None,
 ) -> Path:
@@ -683,6 +700,7 @@ def publish_county(
             geography_label=f"All block groups in {county.name} County, {county.state_abbr}",
             demographics=demographics,
             disparity_scores=disparity_scores,
+            percentiles=percentiles,
         ),
         "sources": [
             {
@@ -756,6 +774,7 @@ def publish_state(
     county_populations: dict[str, int] | None = None,
     demographics: object | None = None,
     disparity_scores: list | None = None,
+    percentiles: list | None = None,
     ghg_history: dict[int, float] | None = None,
     flags: list | None = None,
 ) -> Path:
@@ -843,6 +862,7 @@ def publish_state(
             geography_label=f"All {state.name} block groups",
             demographics=demographics,
             disparity_scores=disparity_scores,
+            percentiles=percentiles,
         ),
         "sources": [
             {

@@ -298,7 +298,73 @@
     "pct_people_of_color": 96.7,
     "pct_under_5": 5.6,
     "pct_over_64": 14.6,
-    "ej_indexes": [],
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 96.1,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 98.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 87.0,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 95.5,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 62.6,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 96.1,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 73.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 98.8,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 86.3,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 95.4,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 27.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 98.0,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.7,
+        "pct_state": null
+      }
+    ],
     "disparity_scores": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -353,7 +419,7 @@
         "score": 7.2
       }
     ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "El Monte, California (Census place block groups)"
   },
   "sources": [
@@ -368,5 +434,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T07:08:06Z"
+  "_published_at": "2026-05-05T07:48:59Z"
 }

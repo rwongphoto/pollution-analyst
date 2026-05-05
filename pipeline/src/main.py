@@ -208,6 +208,26 @@ def run_state(
     except Exception as exc:  # noqa: BLE001
         logging.warning("EJScreen place aggregate failed for %s: %s", state.abbr, exc)
         place_disparity = {}
+
+    # --- National percentile rankings (raw EJScreen indicators ranked
+    # against the national distribution of all US block groups). Reads
+    # blockgroupstats.rda from USEPA-clone/EJAM-open. Same geography
+    # rollups as the disparity scores, but a different upstream file. ---
+    try:
+        state_percentiles = ejscreen.aggregate_state_percentiles(state.abbr)
+    except Exception as exc:  # noqa: BLE001
+        logging.warning("EJScreen state percentiles failed for %s: %s", state.abbr, exc)
+        state_percentiles = []
+    try:
+        county_percentiles = ejscreen.aggregate_county_percentiles(state.abbr)
+    except Exception as exc:  # noqa: BLE001
+        logging.warning("EJScreen county percentiles failed for %s: %s", state.abbr, exc)
+        county_percentiles = {}
+    try:
+        place_percentiles = ejscreen.aggregate_places_percentiles(state.abbr, bg_to_place)
+    except Exception as exc:  # noqa: BLE001
+        logging.warning("EJScreen place percentiles failed for %s: %s", state.abbr, exc)
+        place_percentiles = {}
     try:
         place_demos = get_place_demographics(state.fips)
     except Exception as exc:  # noqa: BLE001
@@ -318,6 +338,7 @@ def run_state(
         county_populations=county_pops,
         demographics=state_demo,
         disparity_scores=state_disparity,
+        percentiles=state_percentiles,
         ghg_history=ghg_state_history,
         flags=state_flags,
     )
@@ -331,6 +352,7 @@ def run_state(
             population=county_pops.get(c.fips, 0),
             demographics=county_demos.get(c.fips),
             disparity_scores=county_disparity.get(c.fips, []),
+            percentiles=county_percentiles.get(c.fips, []),
             ghg_history=ghg_county_history.get(c.fips),
             flags=county_flags.get(c.fips, []),
         )
@@ -341,6 +363,7 @@ def run_state(
             chem_history=chem_history.get(f.facility_id),
             county_demographics=county_demos.get(f.county_fips),
             county_disparity_scores=county_disparity.get(f.county_fips, []),
+            county_percentiles=county_percentiles.get(f.county_fips, []),
             county_population=county_pops.get(f.county_fips, 0),
             flags=facility_flags_map.get(f.facility_id, []),
         ))
@@ -357,16 +380,19 @@ def run_state(
             u,
             state_demographics=state_demo,
             state_disparity_scores=state_disparity,
+            state_percentiles=state_percentiles,
             state_population=state.population,
             state_label=state.name,
             county_fips=cfips,
             county_demographics=county_demos.get(cfips) if cfips else None,
             county_disparity_scores=county_disparity.get(cfips, []) if cfips else None,
+            county_percentiles=county_percentiles.get(cfips, []) if cfips else None,
             county_population=county_pops.get(cfips, 0) if cfips else 0,
             county_name=_county_name_from_fips(cfips, state.abbr) if cfips else None,
             place_fips=place_fips,
             place_demographics=place_demos.get(place_fips) if place_fips else None,
             place_disparity_scores=place_disparity.get(place_fips, []) if place_fips else None,
+            place_percentiles=place_percentiles.get(place_fips, []) if place_fips else None,
             place_name=place_fips_to_name.get(place_fips) if place_fips else None,
             flags=utility_flags.get(u.pwsid, []),
         ))
@@ -459,6 +485,7 @@ def run_state(
             year=year,
             place_demographics=place_demos.get(pf),
             place_disparity_scores=place_disparity.get(pf, []),
+            place_percentiles=place_percentiles.get(pf, []),
             place_population=place_pop,
             county_name=_county_name_from_fips(county_fips_for_place, state.abbr) if county_fips_for_place else None,
             county_fips=county_fips_for_place,

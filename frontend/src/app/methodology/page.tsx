@@ -158,7 +158,7 @@ export default function MethodologyPage() {
                   <strong>Demographic context (lead).</strong> Census ACS 2018&ndash;2022 (5-year): population total + share low-income / people of color / under age 5 / over age 64. Always rendered. This is the &ldquo;who lives here&rdquo; surface — the most legible to readers and the most defensible methodologically.
                 </li>
                 <li>
-                  <strong>National percentiles, per environmental indicator</strong> <em>(layer pending raw-indicator ingest)</em>. Each indicator (PM2.5, ozone, NO₂, diesel particulate, RSEI toxic releases, lead-paint risk, NPL/RMP/TSDF/NPDES proximity) ranked against the national distribution of all US block groups, population-weighted. Rendered as &ldquo;in the highest 10% nationally&rdquo; — the framing EPA&apos;s original EJScreen used. Computed in-pipeline rather than read from the deprecated EPA file. Until this lands, the overlay is layers (1) and (3) only.
+                  <strong>National percentiles, per environmental indicator.</strong> Each indicator (PM2.5, ozone, NO₂, diesel particulate, RSEI toxic releases, lead-paint risk, NPL/RMP/TSDF/NPDES proximity) ranked against the national distribution of all US block groups, population-weighted. Rendered as &ldquo;in the highest 10% nationally&rdquo; — the framing EPA&apos;s original EJScreen used. Computed in-pipeline against the raw indicator block-group table from <code>USEPA-clone/EJAM-open/data/blockgroupstats.rda</code>; the same upstream EPA team maintains both this and the disparity-score file.
                 </li>
                 <li>
                   <strong>EJ disparity scores (statistical detail).</strong> EPA&apos;s newer disparity-score metric, sourced from the <code>USEPA-clone/ejamdata</code> GitHub mirror that the open-source EJAM package consumes. Population-weighted to state, county, and city. Centered on <strong>100 = the population-weighted reference burden</strong>; higher = greater disparate exposure. ~150 is widely considered notable; 200+ is severe. Surfaced as a table at the bottom of the equity section so readers who want the formal stat can read it directly.
@@ -285,11 +285,16 @@ export default function MethodologyPage() {
                 <strong>Status.</strong> EPA retired the public-facing EJScreen tool and its prebuilt CSV exports in 2025. The underlying block-group tables are still maintained by the same EPA team that built EJAM (the open-source successor), published via the <a href="https://github.com/USEPA-clone/ejamdata" target="_blank" rel="noreferrer"><code>USEPA-clone/ejamdata</code></a> GitHub repo. We pull <code>data/bgej.arrow</code> directly and aggregate to state, county, and place by population-weighted mean.
               </p>
               <p>
-                <strong>What we currently render.</strong> EPA&apos;s newer EJ disparity-score metric, per environmental indicator (PM2.5, ozone, NO₂, diesel particulate, RSEI toxic releases, lead-paint risk, NPL/RMP/TSDF/NPDES proximity, USTs, drinking-water non-compliance). Disparity score is centered on 100 = population-weighted reference burden; higher = greater disparate exposure.
+                <strong>What we currently render.</strong> Two-layer environmental burden, per indicator (PM2.5, ozone, NO₂, diesel particulate, RSEI toxic releases, lead-paint risk, NPL/RMP/TSDF/NPDES proximity, USTs, drinking-water non-compliance):
               </p>
-              <p>
-                <strong>What&apos;s pending.</strong> National percentile ranks per indicator — what the original EJScreen showed. Computable in-pipeline once we ingest the raw indicator columns from the same upstream repo. Until that lands, the on-page overlay is demographics + disparity scores only; the prose explicitly tags this as a work-in-progress rather than papering over it.
-              </p>
+              <ul>
+                <li>
+                  <strong>National percentile</strong> — population-weighted mean of the indicator for the geography, ranked against the national CDF of all US block-group means. Computed in-pipeline from the raw indicator table at <code>USEPA-clone/EJAM-open/data/blockgroupstats.rda</code>. Mirrors the framing EPA&apos;s original EJScreen tool used.
+                </li>
+                <li>
+                  <strong>EJ disparity score</strong> — EPA&apos;s newer metric centered on 100 = population-weighted reference burden; higher = greater disparate exposure. Sourced from <code>bgej.arrow</code> in the same upstream repo.
+                </li>
+              </ul>
               <p>
                 <strong>Cadence.</strong> Underlying indicators update on their source cadence (ACS 5-year, NATA modeling cycle, AQS rollups). The <code>USEPA-clone/ejamdata</code> Arrow file is refreshed when EPA pushes a new compilation; we re-pull on demand.
               </p>

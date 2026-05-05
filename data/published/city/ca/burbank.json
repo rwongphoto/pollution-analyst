@@ -4,79 +4,27 @@
     "state_label": "California",
     "slug": "burbank",
     "name": "Burbank",
-    "fips": "0608954",
-    "population": 106389,
+    "fips": "0608968",
+    "population": 5234,
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 3,
-    "utilities_serving": 0,
-    "total_releases_pounds": 5717,
-    "air_releases_pounds": 150,
-    "water_releases_pounds": 0.02,
-    "land_releases_pounds": 5567,
-    "yoy_pct_change": 69.5,
-    "long_arc_pct_change": 2858201.5,
-    "long_arc_baseline_year": 2010,
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
     "history": [
       {
-        "year": 2010,
-        "value": 0.2
-      },
-      {
-        "year": 2012,
-        "value": 889
-      },
-      {
-        "year": 2013,
-        "value": 921
-      },
-      {
-        "year": 2014,
-        "value": 7297
-      },
-      {
-        "year": 2015,
-        "value": 1146
-      },
-      {
-        "year": 2016,
-        "value": 1062
-      },
-      {
-        "year": 2017,
-        "value": 601
-      },
-      {
-        "year": 2018,
-        "value": 3469
-      },
-      {
-        "year": 2019,
-        "value": 7313
-      },
-      {
-        "year": 2020,
-        "value": 9007
-      },
-      {
-        "year": 2021,
-        "value": 6067
-      },
-      {
-        "year": 2022,
-        "value": 1713
-      },
-      {
-        "year": 2023,
-        "value": 3374
-      },
-      {
         "year": 2024,
-        "value": 5717
+        "value": 0
       }
     ]
   },
@@ -84,7 +32,7 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 150,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
@@ -92,7 +40,7 @@
       "history": [
         {
           "year": 2024,
-          "value": 150
+          "value": 0
         }
       ]
     },
@@ -114,7 +62,7 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 5567,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
@@ -122,7 +70,7 @@
       "history": [
         {
           "year": 2024,
-          "value": 5567
+          "value": 0
         }
       ]
     },
@@ -194,98 +142,141 @@
       ]
     }
   ],
-  "facilities": [
-    {
-      "slug": "senior-aerospace-inc-ssp-div",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Senior Aerospace INC Ssp Div",
-      "parent_company": "Senior Operations LLC",
-      "total_pounds_recent": 5610,
-      "yoy_pct_change": 68.1,
-      "top_chemical": "Lead",
-      "city": "Burbank"
-    },
-    {
-      "slug": "bandy-manufacturing-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Bandy Manufacturing LLC",
-      "parent_company": "Novaria Group",
-      "total_pounds_recent": 89,
-      "yoy_pct_change": 174.8,
-      "top_chemical": "Copper",
-      "city": "Burbank"
-    },
-    {
-      "slug": "hydro-aire-aerospace-corp",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Hydro-Aire Aerospace Corp.",
-      "parent_company": "Crane Co",
-      "total_pounds_recent": 18,
-      "yoy_pct_change": 413.4,
-      "top_chemical": "Lead",
-      "city": "Burbank"
-    }
-  ],
+  "facilities": [],
   "water": {
-    "utilities_count": 0,
-    "population_served_total": 0,
-    "violations_5yr_total": 0,
+    "utilities_count": 1,
+    "population_served_total": 105603,
+    "violations_5yr_total": 24,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
     "utilities_with_unresolved": 0,
-    "utilities": []
+    "utilities": [
+      {
+        "slug": "burbank-city-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Burbank-City, Water Dept.",
+        "pwsid": "CA1910179",
+        "population_served": 105603,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
   },
   "flags": [],
   "equity": {
-    "population": 106389,
-    "pct_low_income": 10.7,
-    "pct_people_of_color": 44.8,
-    "pct_under_5": 5.8,
-    "pct_over_64": 15.7,
-    "ej_indexes": [],
-    "disparity_scores": [
+    "population": 5234,
+    "pct_low_income": 4.5,
+    "pct_people_of_color": 55.2,
+    "pct_under_5": 4.1,
+    "pct_over_64": 8.6,
+    "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
-        "score": 113.4
+        "pct_us": 90.1,
+        "pct_state": null
       },
       {
         "label": "Ozone",
-        "score": 120.9
+        "pct_us": 66.7,
+        "pct_state": null
       },
       {
         "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 95.9
+        "pct_us": 64.6,
+        "pct_state": null
       },
       {
         "label": "Diesel particulate",
-        "score": 103.9
+        "pct_us": 88.2,
+        "pct_state": null
       },
       {
         "label": "Toxic releases (RSEI)",
-        "score": 61.4
+        "pct_us": 13.2,
+        "pct_state": null
       },
       {
         "label": "Traffic proximity",
-        "score": 118.2
+        "pct_us": 98.9,
+        "pct_state": null
       },
       {
         "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 86.5
+        "pct_us": 90.9,
+        "pct_state": null
       },
       {
         "label": "Superfund site proximity",
-        "score": 122.2
+        "pct_us": 94.4,
+        "pct_state": null
       },
       {
         "label": "RMP-facility proximity",
-        "score": 56.9
+        "pct_us": 52.2,
+        "pct_state": null
       },
       {
         "label": "Hazardous-waste site proximity",
-        "score": 117.5
+        "pct_us": 97.3,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 27.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 13.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 121.7
+      },
+      {
+        "label": "Ozone",
+        "score": 45.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 83.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 117.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 18.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 131.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 112.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 125.7
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 69.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 129.8
       },
       {
         "label": "Underground storage tanks",
@@ -293,14 +284,14 @@
       },
       {
         "label": "NPDES wastewater proximity",
-        "score": 110.6
+        "score": 17.4
       },
       {
         "label": "Drinking-water non-compliance",
         "score": 0.0
       }
     ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Burbank, California (Census place block groups)"
   },
   "sources": [
@@ -315,5 +306,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T07:08:06Z"
+  "_published_at": "2026-05-05T07:48:59Z"
 }

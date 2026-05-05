@@ -145,8 +145,8 @@ Deferred (AQS-dependent or facility-join-dependent): `smoke_days`, `naaqs_exceed
 Three-layer composition, demographics-leading, per the plan's post-EJScreen-deprecation rewrite:
 
 1. **Demographic context.** Census ACS 2018-2022: population total + share low-income / people of color / under 5 / over 64. Always rendered.
-2. **EJ disparity scores.** USEPA-clone `bgej.arrow`, population-weighted to state / county / city. Higher = greater disparate burden; 100 = reference.
-3. **National percentiles.** *Pending.* Computed in-pipeline once raw indicator columns are ingested. Will render between (1) and (2) on the page once available.
+2. **National percentiles, per environmental indicator.** Population-weighted geography mean ranked against the national CDF of all US block-group means. Computed in-pipeline from `USEPA-clone/EJAM-open/data/blockgroupstats.rda`. Mirrors the framing EPA's original EJScreen used.
+3. **EJ disparity scores.** USEPA-clone `bgej.arrow`, population-weighted to state / county / city. Higher = greater disparate burden; 100 = reference.
 
 Rendered on state, county, city hub, facility (county-as-proxy), and water-utility (place-as-proxy if matched, else county) pages. Facility-level uses containing-county equity until 3-mile-buffer aggregation lands.
 
@@ -179,7 +179,6 @@ Rendered on state, county, city hub, facility (county-as-proxy), and water-utili
 ## Open Areas
 
 - **AQS / NATA ingest.** The Tier-3 neighborhood surface depends on this; the criteria-air pathway tile is stubbed and not yet emitting.
-- **National-percentile equity layer.** Indicator-rank-against-all-US-block-groups computation, planned to slot between demographic context and EJ disparity scores.
 - **TRI ↔ GHGRP facility-ID join.** Unlocks facility-level `ghg_step` flags.
 - **Sustained-shift / streak-break flags.** Need a monthly cadence; TRI is annual-native.
 - **Cross-state expansion.** Pipeline is parameterized on state slug; bulk-CSV cache is keyed per state. Adding a state is registration + ACS + TIGER fetch.
