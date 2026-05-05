@@ -98,6 +98,11 @@ def _county_cache_path(state_abbr: str) -> Path:
     return RAW_ROOT / "cdc_places" / f"county_{state_abbr.upper()}.csv"
 
 
+def _us_county_cache_path() -> Path:
+    """Nationwide county subset, used to compute the national-mean comparator."""
+    return RAW_ROOT / "cdc_places" / "county_US.csv"
+
+
 def _place_cache_path(state_abbr: str) -> Path:
     return RAW_ROOT / "cdc_places" / f"place_{state_abbr.upper()}.csv"
 
@@ -126,6 +131,11 @@ def _is_place_year_cached(state_abbr: str) -> bool:
     return p.exists() and p.stat().st_size > 0
 
 
+def _is_us_county_cached() -> bool:
+    p = _us_county_cache_path()
+    return p.exists() and p.stat().st_size > 0
+
+
 # ---- Public API ---------------------------------------------------------
 
 def fetch_state_counties(state: State, cache_only: bool = False) -> list[PlacesReading]:
@@ -151,6 +161,33 @@ def fetch_state_counties(state: State, cache_only: bool = False) -> list[PlacesR
     log.info(
         "CDC PLACES %s counties: %d readings across %d locations",
         state.abbr, len(readings), len({r.location_id for r in readings}),
+    )
+    return readings
+
+
+def fetch_us_counties(cache_only: bool = False) -> list[PlacesReading]:
+    """Return PLACES county-level readings for every US county, v1 measures
+    only. Used to compute the national-mean comparator that pairs with the
+    state-mean on each tile.
+
+    ~3,200 counties × 5 measures × 2 strats ≈ 32k rows, ~6 MB CSV. Cached
+    once per pipeline run — same file serves every state's publish loop.
+    """
+    if cache_only and not _is_us_county_cached():
+        return []
+    params = {
+        "$where": f"measureid in ({_MEASURE_IDS_SOQL})",
+        "$select": (
+            "year,stateabbr,locationname,locationid,measureid,"
+            "data_value_type,data_value,totalpop18plus"
+        ),
+        "$limit": "200000",
+    }
+    body = _fetch(URL_COUNTY, params, _us_county_cache_path())
+    readings = list(_collapse_rows(body))
+    log.info(
+        "CDC PLACES US counties: %d readings across %d locations",
+        len(readings), len({r.location_id for r in readings}),
     )
     return readings
 
@@ -248,6 +285,14 @@ class StateMeans:
     on each tile ('+38% vs CA mean'). Built from county readings; place
     readings would over-weight metros if used for the same purpose."""
     by_measure: dict[str, float] = field(default_factory=dict)
+
+
+def us_means_from_counties(readings: list[PlacesReading]) -> StateMeans:
+    """Population-weighted mean across every US county (alias of
+    ``state_means_from_counties`` — same population-weighted-of-age-adjusted
+    methodology, just over the full national county roster). Returned in
+    the same ``StateMeans`` shape so callers can use the two interchangeably."""
+    return state_means_from_counties(readings)
 
 
 def state_means_from_counties(readings: list[PlacesReading]) -> StateMeans:

@@ -23,21 +23,20 @@ function pillStyle(cls: HealthIndicator["vs_state_class"]) {
   }
 }
 
-function compareLabel(h: HealthIndicator, geographyLabel: string): string {
-  if (h.vs_state_pct == null) return "—";
-  const sign = h.vs_state_pct > 0 ? "+" : "";
-  const pp = h.vs_state_pp != null ? ` (${h.vs_state_pp > 0 ? "+" : ""}${h.vs_state_pp.toFixed(1)} pp)` : "";
-  return `${sign}${h.vs_state_pct.toFixed(0)}% vs ${geographyLabel}${pp}`;
+function comparePill(pct: number | null, geographyLabel: string): string {
+  if (pct == null) return `— vs ${geographyLabel}`;
+  const sign = pct > 0 ? "+" : "";
+  return `${sign}${pct.toFixed(0)}% vs ${geographyLabel}`;
 }
 
 export function HealthIndicators({
   indicators,
   scopeLabel,
-  comparatorLabel,
+  stateLabel,
 }: {
   indicators: HealthIndicator[];
   scopeLabel: "County" | "City";
-  comparatorLabel: string; // e.g. "California mean"
+  stateLabel: string; // e.g. "California" — used as "California mean" comparator
 }) {
   if (!indicators || indicators.length === 0) return null;
   const sourceLabels = Array.from(new Set(indicators.map((h) => h.source)));
@@ -61,7 +60,8 @@ export function HealthIndicators({
           style={{ gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))" }}
         >
           {indicators.map((h) => {
-            const { color, bg } = pillStyle(h.vs_state_class);
+            const stateStyle = pillStyle(h.vs_state_class);
+            const usStyle = pillStyle(h.vs_us_class);
             return (
               <div
                 key={h.measure_key}
@@ -86,11 +86,14 @@ export function HealthIndicators({
                     %
                   </span>
                 </h3>
-                <p
+                <div
                   className="meta-mono"
                   style={{
                     margin: "8px 0 0",
-                    fontSize: 12,
+                    fontSize: 11.5,
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 4,
                   }}
                 >
                   <span
@@ -98,14 +101,28 @@ export function HealthIndicators({
                       display: "inline-block",
                       padding: "3px 8px",
                       borderRadius: 999,
-                      background: bg,
-                      color,
+                      background: stateStyle.bg,
+                      color: stateStyle.color,
                       fontWeight: 600,
+                      width: "fit-content",
                     }}
                   >
-                    {compareLabel(h, comparatorLabel)}
+                    {comparePill(h.vs_state_pct, `${stateLabel} mean`)}
                   </span>
-                </p>
+                  <span
+                    style={{
+                      display: "inline-block",
+                      padding: "3px 8px",
+                      borderRadius: 999,
+                      background: usStyle.bg,
+                      color: usStyle.color,
+                      fontWeight: 600,
+                      width: "fit-content",
+                    }}
+                  >
+                    {comparePill(h.vs_us_pct, "US mean")}
+                  </span>
+                </div>
                 <p
                   className="muted"
                   style={{ marginTop: 12, fontSize: 11.5, lineHeight: 1.4 }}
@@ -124,7 +141,7 @@ export function HealthIndicators({
             maxWidth: "70ch",
           }}
         >
-          PLACES uses BRFSS-modeled small-area estimates, not individual records. Crude prevalence shown above is the local rate as published; the comparator is age-adjusted vs the {comparatorLabel.toLowerCase()} so geographies with different age structures stay apples-to-apples. Sources: <a href="https://www.cdc.gov/places/" target="_blank" rel="noreferrer">{sourceLabels.join(", ")}</a>.
+          PLACES uses BRFSS-modeled small-area estimates, not individual records. Crude prevalence shown above is the local rate as published; comparators are age-adjusted vs the {stateLabel} mean and the US mean — both population-weighted across counties — so geographies with different age structures stay apples-to-apples. Sources: <a href="https://www.cdc.gov/places/" target="_blank" rel="noreferrer">{sourceLabels.join(", ")}</a>.
         </p>
       </div>
     </section>

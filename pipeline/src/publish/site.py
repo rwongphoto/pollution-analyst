@@ -283,10 +283,27 @@ def _vs_state_class(pct: float | None) -> str:
     return "neutral"
 
 
+def _compare_to_baseline(
+    cmp_basis: float | None, baseline: float | None,
+) -> tuple[float | None, float | None, str]:
+    """Return ``(pp, pct, class)`` deltas vs a baseline rate.
+
+    Both inputs are age-adjusted prevalence (so the comparison is
+    apples-to-apples regardless of local age structure). Returns ``(None,
+    None, "neutral")`` when either side is missing or the baseline is
+    zero — the tile renders without a comparator pill in that case."""
+    if cmp_basis is None or baseline is None or baseline <= 0:
+        return None, None, "neutral"
+    pp = round(cmp_basis - baseline, 2)
+    pct = round((cmp_basis - baseline) / baseline * 100, 1)
+    return pp, pct, _vs_state_class(pct)
+
+
 def _health_indicators(
     *,
     measures: list,                                # list[cdc_places.PlacesReading]
     state_means: dict[str, float],                 # measure_key -> state pop-weighted mean (age-adjusted)
+    us_means: dict[str, float] | None = None,      # measure_key -> US pop-weighted mean (age-adjusted)
     release_label: str,
 ) -> list[dict]:
     """Render PLACES readings as ``HealthIndicator`` payload entries.
@@ -294,39 +311,42 @@ def _health_indicators(
     Tile order is deterministic (mirrors ``cdc_places.V1_MEASURES``) so
     readers comparing two pages see the same column order. ``measures``
     is one geography's worth of readings — county or place — keyed by
-    ``measure_key``.
+    ``measure_key``. Each tile carries TWO comparators: state mean (the
+    immediate same-state context — answers 'how does this place compare
+    to others in the same state?') and US mean (the broader national
+    context — answers 'is this place's profile typical of America, or
+    an outlier in either direction?').
     """
     if not measures:
         return []
     from ..ingest.cdc_places import V1_MEASURES, measure_for_key  # local import — pipeline-only
 
     by_key = {r.measure_key: r for r in measures}
+    us_means = us_means or {}
     out: list[dict] = []
     for spec in V1_MEASURES:
         r = by_key.get(spec.key)
         if r is None or r.crude is None:
             continue
         m = measure_for_key(spec.key)
-        sm = state_means.get(spec.key)
-        # Comparator: pp = age_adjusted - state_mean; pct = relative %.
-        # We use age-adjusted both sides so the comparison is apples-to-
-        # apples regardless of local age structure.
         cmp_basis = r.age_adjusted if r.age_adjusted is not None else r.crude
-        if sm is not None and sm > 0 and cmp_basis is not None:
-            pp = round(cmp_basis - sm, 2)
-            pct = round((cmp_basis - sm) / sm * 100, 1)
-        else:
-            pp = None
-            pct = None
+        sm = state_means.get(spec.key)
+        um = us_means.get(spec.key)
+        s_pp, s_pct, s_cls = _compare_to_baseline(cmp_basis, sm)
+        u_pp, u_pct, u_cls = _compare_to_baseline(cmp_basis, um)
         out.append({
             "measure_key": spec.key,
             "label": m.label,
             "crude": round(r.crude, 1),
             "age_adjusted": round(r.age_adjusted, 1) if r.age_adjusted is not None else None,
             "state_mean": round(sm, 1) if sm is not None else None,
-            "vs_state_pp": pp,
-            "vs_state_pct": pct,
-            "vs_state_class": _vs_state_class(pct),
+            "us_mean": round(um, 1) if um is not None else None,
+            "vs_state_pp": s_pp,
+            "vs_state_pct": s_pct,
+            "vs_state_class": s_cls,
+            "vs_us_pp": u_pp,
+            "vs_us_pct": u_pct,
+            "vs_us_class": u_cls,
             "source": release_label,
             "vintage_year": r.year,
         })

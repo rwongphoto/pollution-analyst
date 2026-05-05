@@ -294,13 +294,15 @@ def run_state(
 
     # --- CDC PLACES (co-located health indicators) ---
     # Modeled small-area prevalence per county and Census place. Pulled
-    # via Socrata-filtered subset (~120 KB / state for counties, a few MB
-    # for places) — light enough to fetch every cycle. ``health_county``
-    # / ``health_place`` map location_id → measure_key → PlacesReading.
+    # via Socrata-filtered subsets — ~120 KB / state for in-state
+    # counties, ~3 MB for in-state places, ~6 MB for the nationwide
+    # county pull that backs the US-mean comparator. ``health_county`` /
+    # ``health_place`` map location_id → measure_key → PlacesReading.
     health_release_label = "CDC PLACES · 2025 release · BRFSS 2022-2023"
     health_county_by_loc: dict = {}
     health_place_by_loc: dict = {}
     health_state_means: dict[str, float] = {}
+    health_us_means: dict[str, float] = {}
     if not skip_health:
         try:
             county_readings = cdc_places.fetch_state_counties(
@@ -319,6 +321,13 @@ def run_state(
             health_place_by_loc = cdc_places.by_location(place_readings)
         except Exception as exc:  # noqa: BLE001
             logging.warning("CDC PLACES place fetch failed for %s: %s", state.abbr, exc)
+        try:
+            us_readings = cdc_places.fetch_us_counties(cache_only=history_cache_only)
+            health_us_means = (
+                cdc_places.us_means_from_counties(us_readings).by_measure
+            )
+        except Exception as exc:  # noqa: BLE001
+            logging.warning("CDC PLACES US fetch failed: %s", exc)
 
     # --- Flags (anomaly engine) ---
     # Detected per-entity here, between aggregate and publish, so each
@@ -587,6 +596,7 @@ def run_state(
             health_indicators=publish_site._health_indicators(
                 measures=list(health_county_by_loc.get(cfips, {}).values()),
                 state_means=health_state_means,
+                us_means=health_us_means,
                 release_label=health_release_label,
             ),
             flags=county_flags.get(cfips, []),
@@ -735,6 +745,7 @@ def run_state(
             health_indicators=publish_site._health_indicators(
                 measures=list(health_place_by_loc.get(pf, {}).values()),
                 state_means=health_state_means,
+                us_means=health_us_means,
                 release_label=health_release_label,
             ),
             flags=city_flags,

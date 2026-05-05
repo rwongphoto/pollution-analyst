@@ -478,7 +478,7 @@ export default async function CountyPage({
         <HealthIndicators
           indicators={data.health_indicators ?? []}
           scopeLabel="County"
-          comparatorLabel={`${data.county.state_label} mean`}
+          stateLabel={data.county.state_label}
         />
         <CityDirectory data={data} />
         <SourcesFooter data={data} />

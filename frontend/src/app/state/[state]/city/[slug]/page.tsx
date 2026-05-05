@@ -510,7 +510,7 @@ export default async function CityHubPage({
         <HealthIndicators
           indicators={data.health_indicators ?? []}
           scopeLabel="City"
-          comparatorLabel={`${data.place.state_label} mean`}
+          stateLabel={data.place.state_label}
         />
         <SourcesFooter data={data} />
       </main>

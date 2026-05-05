@@ -110,12 +110,16 @@ export interface HealthIndicator {
   crude: number;              // local prevalence %
   age_adjusted: number | null;
   state_mean: number | null;  // age-adjusted state mean comparator
-  // Pre-computed comparator deltas. pp = percentage-point delta vs state
-  // mean; pct = relative percent difference (+38% etc). Class is the
-  // editorial color bucket the tile renders.
+  us_mean: number | null;     // age-adjusted national mean comparator
+  // Pre-computed comparator deltas vs state and vs US. pp = percentage-
+  // point delta; pct = relative percent difference (+38% etc). Class is
+  // the editorial color bucket each comparator renders against.
   vs_state_pp: number | null;
   vs_state_pct: number | null;
   vs_state_class: "worse" | "elevated" | "neutral" | "better";
+  vs_us_pp: number | null;
+  vs_us_pct: number | null;
+  vs_us_class: "worse" | "elevated" | "neutral" | "better";
   source: string;             // "CDC PLACES · 2025 release"
   vintage_year: number;       // BRFSS data year (2022 / 2023)
 }
