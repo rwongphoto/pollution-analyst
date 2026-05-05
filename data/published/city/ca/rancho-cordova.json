@@ -1,0 +1,418 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "rancho-cordova",
+    "name": "Rancho Cordova",
+    "fips": "0659444",
+    "population": 79128,
+    "county_name": "Sacramento",
+    "county_fips": "06067"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 12,
+    "total_releases_pounds": 7279,
+    "air_releases_pounds": 7276,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 3,
+    "yoy_pct_change": 145.8,
+    "long_arc_pct_change": 221.8,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 2262
+      },
+      {
+        "year": 2011,
+        "value": 3948
+      },
+      {
+        "year": 2012,
+        "value": 3137
+      },
+      {
+        "year": 2013,
+        "value": 2156
+      },
+      {
+        "year": 2014,
+        "value": 3265
+      },
+      {
+        "year": 2015,
+        "value": 3856
+      },
+      {
+        "year": 2016,
+        "value": 3125
+      },
+      {
+        "year": 2017,
+        "value": 3741
+      },
+      {
+        "year": 2018,
+        "value": 11009
+      },
+      {
+        "year": 2019,
+        "value": 4367
+      },
+      {
+        "year": 2020,
+        "value": 4975
+      },
+      {
+        "year": 2021,
+        "value": 3786
+      },
+      {
+        "year": 2022,
+        "value": 2962
+      },
+      {
+        "year": 2023,
+        "value": 7279
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 7276,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 7276
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 3,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2147517,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 36.8,
+      "long_arc_pct_change": -18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2631103
+        },
+        {
+          "year": 2011,
+          "value": 2430972
+        },
+        {
+          "year": 2012,
+          "value": 2786310
+        },
+        {
+          "year": 2013,
+          "value": 2837952
+        },
+        {
+          "year": 2014,
+          "value": 2759010
+        },
+        {
+          "year": 2015,
+          "value": 2884900
+        },
+        {
+          "year": 2016,
+          "value": 2704954
+        },
+        {
+          "year": 2017,
+          "value": 2314836
+        },
+        {
+          "year": 2018,
+          "value": 2541006
+        },
+        {
+          "year": 2019,
+          "value": 2161396
+        },
+        {
+          "year": 2020,
+          "value": 2429126
+        },
+        {
+          "year": 2021,
+          "value": 2573534
+        },
+        {
+          "year": 2022,
+          "value": 1569286
+        },
+        {
+          "year": 2023,
+          "value": 2147517
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "ampac-fine-chemicals-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ampac Fine Chemicals LLC",
+      "parent_company": "Ampac Fine Chemicals LLC",
+      "total_pounds_recent": 7279,
+      "yoy_pct_change": 145.8,
+      "top_chemical": "Acetonitrile",
+      "city": "Rancho Cordova"
+    }
+  ],
+  "water": {
+    "utilities_count": 12,
+    "population_served_total": 134193,
+    "violations_5yr_total": 52,
+    "health_based_5yr_total": 45,
+    "unresolved_total": 46,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "golden-state-water-co-robbins",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden State Water Co. - Robbins",
+        "pwsid": "CA5100107",
+        "population_served": 205,
+        "health_based_violations_5yr": 24,
+        "unresolved": true
+      },
+      {
+        "slug": "golden-state-water-company-south-shore",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden State Water Company - South Shore",
+        "pwsid": "CA1700519",
+        "population_served": 30,
+        "health_based_violations_5yr": 21,
+        "unresolved": true
+      },
+      {
+        "slug": "golden-state-water-co-cordova",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden State Water Co. - Cordova",
+        "pwsid": "CA3410015",
+        "population_served": 47161,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "golden-state-water-company-simi-valley",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden State Water Company - Simi Valley",
+        "pwsid": "CA5610059",
+        "population_served": 45128,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "golden-state-water-company-bay-point",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden State Water Company - Bay Point",
+        "pwsid": "CA0710002",
+        "population_served": 23731,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "golden-state-water-co-arden-water-serv",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden State Water Co - Arden Water Serv",
+        "pwsid": "CA3410003",
+        "population_served": 5658,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "golden-state-water-co-clearlake-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden State Water Co.-Clearlake System",
+        "pwsid": "CA1710002",
+        "population_served": 4644,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "golden-state-water-company-nipomo",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden State Water Company - Nipomo",
+        "pwsid": "CA4010018",
+        "population_served": 4506,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "golden-state-water-company-cypress-ridge",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden State Water Company-Cypress Ridge",
+        "pwsid": "CA4010040",
+        "population_served": 2026,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "golden-state-water-company-lake-marie",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden State Water Company - Lake Marie",
+        "pwsid": "CA4210022",
+        "population_served": 545,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "hometown-colonial-estates-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hometown Colonial Estates Llc",
+        "pwsid": "CA3400217",
+        "population_served": 400,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "golden-state-water-co-san-juan-oaks",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden State Water Co - San Juan Oaks",
+        "pwsid": "CA3510008",
+        "population_served": 159,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 79128,
+    "pct_low_income": 11.6,
+    "pct_people_of_color": 53.9,
+    "pct_under_5": 7.0,
+    "pct_over_64": 12.1,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 146.1
+      },
+      {
+        "label": "Ozone",
+        "score": 135.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 91.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 93.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 19.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 106.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 47.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 147.3
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 43.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 123.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 38.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Rancho Cordova, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

@@ -1,0 +1,344 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "tulare",
+    "name": "Tulare",
+    "fips": "0680644",
+    "population": 69261,
+    "county_name": "Tulare",
+    "county_fips": "06107"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 4,
+    "total_releases_pounds": 513778,
+    "air_releases_pounds": 109,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 513669,
+    "yoy_pct_change": -33.3,
+    "long_arc_pct_change": 4267.4,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 11764
+      },
+      {
+        "year": 2015,
+        "value": 1724339
+      },
+      {
+        "year": 2016,
+        "value": 1873866
+      },
+      {
+        "year": 2017,
+        "value": 1821635
+      },
+      {
+        "year": 2018,
+        "value": 1783139
+      },
+      {
+        "year": 2019,
+        "value": 1789059
+      },
+      {
+        "year": 2020,
+        "value": 380789
+      },
+      {
+        "year": 2021,
+        "value": 421116
+      },
+      {
+        "year": 2022,
+        "value": 769865
+      },
+      {
+        "year": 2023,
+        "value": 513778
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 109,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 109
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 513669,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 513669
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 419035,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -6.8,
+      "long_arc_pct_change": -1.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 425541
+        },
+        {
+          "year": 2011,
+          "value": 593790
+        },
+        {
+          "year": 2012,
+          "value": 643675
+        },
+        {
+          "year": 2013,
+          "value": 621767
+        },
+        {
+          "year": 2014,
+          "value": 475132
+        },
+        {
+          "year": 2015,
+          "value": 452651
+        },
+        {
+          "year": 2016,
+          "value": 453370
+        },
+        {
+          "year": 2017,
+          "value": 452301
+        },
+        {
+          "year": 2018,
+          "value": 455797
+        },
+        {
+          "year": 2019,
+          "value": 453626
+        },
+        {
+          "year": 2020,
+          "value": 427394
+        },
+        {
+          "year": 2021,
+          "value": 454665
+        },
+        {
+          "year": 2022,
+          "value": 449817
+        },
+        {
+          "year": 2023,
+          "value": 419035
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "saputo-cheese-usa-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Saputo Cheese USA INC.",
+      "parent_company": "Saputo INC",
+      "total_pounds_recent": 268323,
+      "yoy_pct_change": -6.8,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Tulare"
+    },
+    {
+      "slug": "saputo-cheese-usa-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Saputo Cheese USA INC.",
+      "parent_company": "Saputo INC",
+      "total_pounds_recent": 245346,
+      "yoy_pct_change": -49.1,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Tulare"
+    },
+    {
+      "slug": "land-o-lakes-tulare-dairy",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Land O Lakes - Tulare Dairy",
+      "parent_company": "Land O Lakes INC",
+      "total_pounds_recent": 109,
+      "yoy_pct_change": 1.9,
+      "top_chemical": "Ammonia",
+      "city": "Tulare"
+    }
+  ],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 74320,
+    "violations_5yr_total": 23,
+    "health_based_5yr_total": 12,
+    "unresolved_total": 18,
+    "utilities_with_unresolved": 3,
+    "utilities": [
+      {
+        "slug": "woodville-public-utility-dist",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Woodville Public Utility Dist",
+        "pwsid": "CA5410025",
+        "population_served": 1740,
+        "health_based_violations_5yr": 11,
+        "unresolved": true
+      },
+      {
+        "slug": "okieville-highland-acres-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Okieville Highland Acres Mwc",
+        "pwsid": "CA5403217",
+        "population_served": 300,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "tulare-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Tulare, City Of",
+        "pwsid": "CA5410015",
+        "population_served": 72241,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "ali-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ali Mutual Water Co",
+        "pwsid": "CA5403144",
+        "population_served": 39,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 69261,
+    "pct_low_income": 17.5,
+    "pct_people_of_color": 71.7,
+    "pct_under_5": 9.6,
+    "pct_over_64": 9.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 203.0
+      },
+      {
+        "label": "Ozone",
+        "score": 200.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 156.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 181.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 23.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 119.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 73.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 190.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 136.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 158.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Tulare, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

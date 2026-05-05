@@ -1,0 +1,427 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "ontario",
+    "name": "Ontario",
+    "fips": "0653896",
+    "population": 176326,
+    "county_name": "San Bernardino",
+    "county_fips": "06071"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 11,
+    "utilities_serving": 3,
+    "total_releases_pounds": 18659,
+    "air_releases_pounds": 13123,
+    "water_releases_pounds": 0.0,
+    "land_releases_pounds": 5536,
+    "yoy_pct_change": -95.7,
+    "long_arc_pct_change": 24.4,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 14998
+      },
+      {
+        "year": 2011,
+        "value": 3172
+      },
+      {
+        "year": 2012,
+        "value": 10887
+      },
+      {
+        "year": 2013,
+        "value": 42543
+      },
+      {
+        "year": 2014,
+        "value": 40766
+      },
+      {
+        "year": 2015,
+        "value": 57396
+      },
+      {
+        "year": 2016,
+        "value": 45434
+      },
+      {
+        "year": 2017,
+        "value": 45914
+      },
+      {
+        "year": 2018,
+        "value": 45378
+      },
+      {
+        "year": 2019,
+        "value": 46226
+      },
+      {
+        "year": 2020,
+        "value": 42798
+      },
+      {
+        "year": 2021,
+        "value": 42765
+      },
+      {
+        "year": 2022,
+        "value": 436261
+      },
+      {
+        "year": 2023,
+        "value": 18659
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 13123,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 13123
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 5536,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 5536
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 9779299,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -6.6,
+      "long_arc_pct_change": -7.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10552170
+        },
+        {
+          "year": 2011,
+          "value": 9345778
+        },
+        {
+          "year": 2012,
+          "value": 12082882
+        },
+        {
+          "year": 2013,
+          "value": 11371200
+        },
+        {
+          "year": 2014,
+          "value": 11908909
+        },
+        {
+          "year": 2015,
+          "value": 10657991
+        },
+        {
+          "year": 2016,
+          "value": 10438970
+        },
+        {
+          "year": 2017,
+          "value": 9782427
+        },
+        {
+          "year": 2018,
+          "value": 9213305
+        },
+        {
+          "year": 2019,
+          "value": 9502197
+        },
+        {
+          "year": 2020,
+          "value": 9773926
+        },
+        {
+          "year": 2021,
+          "value": 9914249
+        },
+        {
+          "year": 2022,
+          "value": 10471311
+        },
+        {
+          "year": 2023,
+          "value": 9779299
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "new-indy-containerboard-ontario-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "New-Indy Containerboard Ontario LLC",
+      "parent_company": "New-Indy Containerboard LLC",
+      "total_pounds_recent": 6524,
+      "yoy_pct_change": -98.5,
+      "top_chemical": "Ammonia",
+      "city": "Ontario"
+    },
+    {
+      "slug": "sherwin-williams-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sherwin-Williams CO",
+      "parent_company": "The Sherwin-Williams Co",
+      "total_pounds_recent": 5457,
+      "yoy_pct_change": null,
+      "top_chemical": "Triglycidyl isocyanurate",
+      "city": "Ontario"
+    },
+    {
+      "slug": "linde-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Linde INC",
+      "parent_company": "Linde INC",
+      "total_pounds_recent": 3007,
+      "yoy_pct_change": 29.1,
+      "top_chemical": "Ammonia",
+      "city": "Ontario"
+    },
+    {
+      "slug": "hudson-technologies-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Hudson Technologies CO",
+      "parent_company": "Hudson Technologies INC",
+      "total_pounds_recent": 2925,
+      "yoy_pct_change": 13.6,
+      "top_chemical": "Chlorodifluoromethane (HCFC-22)",
+      "city": "Ontario"
+    },
+    {
+      "slug": "prc-composites-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Prc Composites LLC",
+      "parent_company": null,
+      "total_pounds_recent": 500,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Styrene",
+      "city": "Ontario"
+    },
+    {
+      "slug": "sterigenics-ontario-facility",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sterigenics-Ontario Facility",
+      "parent_company": "Sotera Health LLC",
+      "total_pounds_recent": 208,
+      "yoy_pct_change": -21.5,
+      "top_chemical": "Ethylene oxide",
+      "city": "Ontario"
+    },
+    {
+      "slug": "elite-comfort-solutions",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Elite Comfort Solutions",
+      "parent_company": "Leggett & Platt INC",
+      "total_pounds_recent": 28,
+      "yoy_pct_change": -99.3,
+      "top_chemical": "Toluene diisocyanate (mixed isomers)",
+      "city": "Ontario"
+    },
+    {
+      "slug": "l-p-financial-services-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "L&P Financial Services CO.",
+      "parent_company": "Leggett & Platt INC",
+      "total_pounds_recent": 5,
+      "yoy_pct_change": -14.9,
+      "top_chemical": "Diisocyanates",
+      "city": "Ontario"
+    },
+    {
+      "slug": "summit-machine-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Summit Machine LLC",
+      "parent_company": "Berkshire Hathaway INC",
+      "total_pounds_recent": 3,
+      "yoy_pct_change": 200.0,
+      "top_chemical": "Nickel",
+      "city": "Ontario"
+    },
+    {
+      "slug": "net-shapes-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Net Shapes INC",
+      "parent_company": null,
+      "total_pounds_recent": 2,
+      "yoy_pct_change": 21.7,
+      "top_chemical": "Chromium",
+      "city": "Ontario"
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 185010,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "ontario-municipal-utilities-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ontario Municipal Utilities Company",
+        "pwsid": "CA3610034",
+        "population_served": 185010,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "chino-basin-desalter-auth-desalter-2",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Chino Basin Desalter Auth. - Desalter 2",
+        "pwsid": "CA3310083",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "chino-basin-desalter-auth-desalter-1",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Chino Basin Desalter Auth. - Desalter 1",
+        "pwsid": "CA3610075",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 176326,
+    "pct_low_income": 12.9,
+    "pct_people_of_color": 86.1,
+    "pct_under_5": 6.8,
+    "pct_over_64": 10.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 205.6
+      },
+      {
+        "label": "Ozone",
+        "score": 210.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 178.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 202.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 142.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 193.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 94.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 19.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 164.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 197.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 101.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Ontario, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

@@ -308,13 +308,84 @@
       "state_label": "California",
       "name": "Humboldt Sawmill CO & Cogeneration Plant",
       "parent_company": "Mendocino Cos",
-      "total_pounds_recent": 1,
+      "total_pounds_recent": 0.72,
       "yoy_pct_change": 0.0,
       "top_chemical": "Lead",
       "city": "Scotia"
     }
   ],
   "utilities": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "regression",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Humboldt County have risen 59% since 2010 (through 2023).",
+      "magnitude_pct": 59.0,
+      "magnitude_abs": 65875.6,
+      "baseline_year": 2010,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 111625
+        },
+        {
+          "year": 2011,
+          "value": 132369
+        },
+        {
+          "year": 2012,
+          "value": 127791
+        },
+        {
+          "year": 2013,
+          "value": 93315
+        },
+        {
+          "year": 2014,
+          "value": 97824
+        },
+        {
+          "year": 2015,
+          "value": 106902
+        },
+        {
+          "year": 2016,
+          "value": 125635
+        },
+        {
+          "year": 2017,
+          "value": 65332
+        },
+        {
+          "year": 2018,
+          "value": 73258
+        },
+        {
+          "year": 2019,
+          "value": 108029
+        },
+        {
+          "year": 2020,
+          "value": 124791
+        },
+        {
+          "year": 2021,
+          "value": 161350
+        },
+        {
+          "year": 2022,
+          "value": 149686
+        },
+        {
+          "year": 2023,
+          "value": 177501
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 136132,
     "pct_low_income": 19.8,
@@ -386,5 +457,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T05:28:31Z"
+  "_published_at": "2026-05-05T06:24:51Z"
 }

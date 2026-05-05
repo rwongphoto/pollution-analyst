@@ -1,0 +1,257 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "sheridan",
+    "name": "Sheridan",
+    "fips": "0671414",
+    "population": 1397,
+    "county_name": "Placer",
+    "county_fips": "06061"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 0,
+    "total_releases_pounds": 255,
+    "air_releases_pounds": 255,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": 0.0,
+    "long_arc_pct_change": 0.0,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 255
+      },
+      {
+        "year": 2021,
+        "value": 255
+      },
+      {
+        "year": 2022,
+        "value": 255
+      },
+      {
+        "year": 2023,
+        "value": 255
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 255,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 255
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 174078,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -46.1,
+      "long_arc_pct_change": -31.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 255492
+        },
+        {
+          "year": 2011,
+          "value": 150453
+        },
+        {
+          "year": 2012,
+          "value": 317187
+        },
+        {
+          "year": 2013,
+          "value": 298223
+        },
+        {
+          "year": 2014,
+          "value": 305412
+        },
+        {
+          "year": 2015,
+          "value": 366722
+        },
+        {
+          "year": 2016,
+          "value": 249686
+        },
+        {
+          "year": 2017,
+          "value": 99733
+        },
+        {
+          "year": 2018,
+          "value": 191093
+        },
+        {
+          "year": 2019,
+          "value": 178262
+        },
+        {
+          "year": 2020,
+          "value": 183190
+        },
+        {
+          "year": 2021,
+          "value": 284570
+        },
+        {
+          "year": 2022,
+          "value": 323229
+        },
+        {
+          "year": 2023,
+          "value": 174078
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "alpha-dyno-nobel",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Alpha/Dyno Nobel",
+      "parent_company": "Dyno Nobel INC",
+      "total_pounds_recent": 255,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Ammonia",
+      "city": "Lincoln"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 1397,
+    "pct_low_income": 1.4,
+    "pct_people_of_color": 38.8,
+    "pct_under_5": 11.2,
+    "pct_over_64": 6.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 114.1
+      },
+      {
+        "label": "Ozone",
+        "score": 110.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 16.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 46.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 8.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 22.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 35.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 46.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 26.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 53.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Sheridan, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

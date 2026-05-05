@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { NotableSignals } from "@/components/site/AnomalyCard";
 import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
 import { HeroChart, MediaSplitBar } from "@/components/site/HeroChart";
@@ -288,6 +289,10 @@ export default async function FacilityPage({
           ]}
         />
         <FacilityHero data={data} />
+        <NotableSignals
+          flags={data.flags ?? []}
+          emptyLabel="No notable signals at this facility for the current reporting year. See chemicals and equity context below for the full picture."
+        />
         <ChemicalsSection chemicals={data.chemicals} />
         <EquitySection data={data} />
         <SourceFooter data={data} />

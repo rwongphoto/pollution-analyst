@@ -1,0 +1,396 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "richmond",
+    "name": "Richmond",
+    "fips": "0660620",
+    "population": 115619,
+    "county_name": "Contra Costa",
+    "county_fips": "06013"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 10,
+    "utilities_serving": 0,
+    "total_releases_pounds": 590767,
+    "air_releases_pounds": 403318,
+    "water_releases_pounds": 44436,
+    "land_releases_pounds": 143013,
+    "yoy_pct_change": -3.3,
+    "long_arc_pct_change": -20.0,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 738698
+      },
+      {
+        "year": 2011,
+        "value": 629049
+      },
+      {
+        "year": 2012,
+        "value": 718482
+      },
+      {
+        "year": 2013,
+        "value": 733962
+      },
+      {
+        "year": 2014,
+        "value": 958772
+      },
+      {
+        "year": 2015,
+        "value": 989097
+      },
+      {
+        "year": 2016,
+        "value": 1391907
+      },
+      {
+        "year": 2017,
+        "value": 770157
+      },
+      {
+        "year": 2018,
+        "value": 1057476
+      },
+      {
+        "year": 2019,
+        "value": 730662
+      },
+      {
+        "year": 2020,
+        "value": 659737
+      },
+      {
+        "year": 2021,
+        "value": 540717
+      },
+      {
+        "year": 2022,
+        "value": 610935
+      },
+      {
+        "year": 2023,
+        "value": 590767
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 403318,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 403318
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 44436,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 44436
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 143013,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 143013
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 82261234,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 11.9,
+      "long_arc_pct_change": 109.1,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 39334407
+        },
+        {
+          "year": 2011,
+          "value": 72107992
+        },
+        {
+          "year": 2012,
+          "value": 112182316
+        },
+        {
+          "year": 2013,
+          "value": 121967587
+        },
+        {
+          "year": 2014,
+          "value": 132848440
+        },
+        {
+          "year": 2015,
+          "value": 108103922
+        },
+        {
+          "year": 2016,
+          "value": 98070792
+        },
+        {
+          "year": 2017,
+          "value": 110415618
+        },
+        {
+          "year": 2018,
+          "value": 106301016
+        },
+        {
+          "year": 2019,
+          "value": 104918059
+        },
+        {
+          "year": 2020,
+          "value": 81791851
+        },
+        {
+          "year": 2021,
+          "value": 77078427
+        },
+        {
+          "year": 2022,
+          "value": 73485085
+        },
+        {
+          "year": 2023,
+          "value": 82261234
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "chevron-products-co-richmond-refinery",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Chevron Products CO Richmond Refinery",
+      "parent_company": "Chevron CORP",
+      "total_pounds_recent": 571149,
+      "yoy_pct_change": -2.8,
+      "top_chemical": "Ammonia",
+      "city": "Richmond"
+    },
+    {
+      "slug": "chemtrade-west-us-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Chemtrade West US LLC",
+      "parent_company": "Chemtrade Holdco US INC",
+      "total_pounds_recent": 15935,
+      "yoy_pct_change": 2115.6,
+      "top_chemical": "Mixture",
+      "city": "Richmond"
+    },
+    {
+      "slug": "phillips-66-richmond-terminal",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Phillips 66 Richmond Terminal",
+      "parent_company": "Phillips 66 Co",
+      "total_pounds_recent": 1451,
+      "yoy_pct_change": -72.5,
+      "top_chemical": "Xylene (mixed isomers)",
+      "city": "Richmond"
+    },
+    {
+      "slug": "chevron-richmond-technology-center",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Chevron Richmond Technology Center",
+      "parent_company": "Chevron CORP",
+      "total_pounds_recent": 902,
+      "yoy_pct_change": -87.1,
+      "top_chemical": "n-Hexane",
+      "city": "Richmond"
+    },
+    {
+      "slug": "bio-rad-laboratories-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Bio-Rad Laboratories INC",
+      "parent_company": "Bio-Rad Laboratories INC",
+      "total_pounds_recent": 826,
+      "yoy_pct_change": -91.4,
+      "top_chemical": "Methanol",
+      "city": "Richmond"
+    },
+    {
+      "slug": "brenntag-pacific-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Brenntag Pacific INC.",
+      "parent_company": "Brenntag North America INC",
+      "total_pounds_recent": 500,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Ethylene glycol",
+      "city": "Richmond"
+    },
+    {
+      "slug": "parker-hannifin-corp-veriflo-div-richmond",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Parker Hannifin Corp Veriflo Div Richmond",
+      "parent_company": "Parker Hannifin CORP",
+      "total_pounds_recent": 3,
+      "yoy_pct_change": 32.5,
+      "top_chemical": "Chromium",
+      "city": "Richmond"
+    },
+    {
+      "slug": "safety-kleen-systems-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Safety-Kleen Systems INC",
+      "parent_company": "Clean Harbors INC",
+      "total_pounds_recent": 0.81,
+      "yoy_pct_change": 70.5,
+      "top_chemical": "Zinc compounds",
+      "city": "Richmond"
+    },
+    {
+      "slug": "gold-bond-building-products-richmond",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Gold Bond Building Products - Richmond",
+      "parent_company": "Spangler Cos INC",
+      "total_pounds_recent": 0.26,
+      "yoy_pct_change": 30.0,
+      "top_chemical": "Lead compounds",
+      "city": "Richmond"
+    },
+    {
+      "slug": "zygo-corp-extreme-precision-optics",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Zygo Corp Extreme Precision Optics",
+      "parent_company": "Ametek INC",
+      "total_pounds_recent": 0.01,
+      "yoy_pct_change": -90.3,
+      "top_chemical": "Lead",
+      "city": "Richmond"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 115619,
+    "pct_low_income": 14.3,
+    "pct_people_of_color": 82.5,
+    "pct_under_5": 6.0,
+    "pct_over_64": 14.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 185.8
+      },
+      {
+        "label": "Ozone",
+        "score": 6.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 135.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 161.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 146.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 173.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 138.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 160.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 142.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 187.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 196.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Richmond, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

@@ -1,0 +1,647 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "los-angeles",
+    "name": "Los Angeles",
+    "fips": "0644000",
+    "population": 3881041,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 55,
+    "utilities_serving": 25,
+    "total_releases_pounds": 1129984,
+    "air_releases_pounds": 539064,
+    "water_releases_pounds": 191,
+    "land_releases_pounds": 590730,
+    "yoy_pct_change": 44.7,
+    "long_arc_pct_change": 112.7,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 531243
+      },
+      {
+        "year": 2011,
+        "value": 400852
+      },
+      {
+        "year": 2012,
+        "value": 473164
+      },
+      {
+        "year": 2013,
+        "value": 643086
+      },
+      {
+        "year": 2014,
+        "value": 705178
+      },
+      {
+        "year": 2015,
+        "value": 675292
+      },
+      {
+        "year": 2016,
+        "value": 840009
+      },
+      {
+        "year": 2017,
+        "value": 743386
+      },
+      {
+        "year": 2018,
+        "value": 907172
+      },
+      {
+        "year": 2019,
+        "value": 1013658
+      },
+      {
+        "year": 2020,
+        "value": 691251
+      },
+      {
+        "year": 2021,
+        "value": 686113
+      },
+      {
+        "year": 2022,
+        "value": 780816
+      },
+      {
+        "year": 2023,
+        "value": 1129984
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 539064,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 539064
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 191,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 191
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 590730,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 590730
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "phillips-66-los-angeles-refinery-wilmington-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Phillips 66 Los Angeles Refinery Wilmington Plant",
+      "parent_company": "Phillips 66 Co",
+      "total_pounds_recent": 285628,
+      "yoy_pct_change": 5.5,
+      "top_chemical": "Hydrogen cyanide",
+      "city": "Wilmington"
+    },
+    {
+      "slug": "berg-lacquer-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Berg Lacquer CO",
+      "parent_company": "Berg Lacquer Co",
+      "total_pounds_recent": 189191,
+      "yoy_pct_change": 516.5,
+      "top_chemical": "Methanol",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "ultramar-inc-wilmington-refinery",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ultramar INC Wilmington Refinery",
+      "parent_company": "Valero Energy CORP",
+      "total_pounds_recent": 153489,
+      "yoy_pct_change": -3.9,
+      "top_chemical": "Ammonia",
+      "city": "Wilmington"
+    },
+    {
+      "slug": "us-borax-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "US Borax INC.",
+      "parent_company": "Rio Tinto America INC",
+      "total_pounds_recent": 118889,
+      "yoy_pct_change": 50.8,
+      "top_chemical": "Zinc compounds",
+      "city": "Wilmington"
+    },
+    {
+      "slug": "alert-plating-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Alert Plating CO",
+      "parent_company": null,
+      "total_pounds_recent": 85149,
+      "yoy_pct_change": 810.2,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Sun Valley"
+    },
+    {
+      "slug": "anheuser-busch-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Anheuser-Busch LLC",
+      "parent_company": "Anheuser-Busch Cos LLC",
+      "total_pounds_recent": 85054,
+      "yoy_pct_change": 30.6,
+      "top_chemical": "Ammonia",
+      "city": "Van Nuys"
+    },
+    {
+      "slug": "clean-harbors-wilmington-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Clean Harbors Wilmington LLC",
+      "parent_company": "Clean Harbors INC",
+      "total_pounds_recent": 82719,
+      "yoy_pct_change": null,
+      "top_chemical": "Ethylene glycol",
+      "city": "Wilmington"
+    },
+    {
+      "slug": "baxalta-us-inc-part-of-the-takeda-group",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Baxalta US INC. Part Of The Takeda Group",
+      "parent_company": "Baxalta US INC",
+      "total_pounds_recent": 33069,
+      "yoy_pct_change": -50.2,
+      "top_chemical": "Peracetic acid",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "air-products-chemicals-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Air Products & Chemicals INC.",
+      "parent_company": "Air Products & Chemicals INC",
+      "total_pounds_recent": 21365,
+      "yoy_pct_change": 7.6,
+      "top_chemical": "Methanol",
+      "city": "Wilmington"
+    },
+    {
+      "slug": "fabri-cote",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Fabri Cote",
+      "parent_company": "Fenner INC",
+      "total_pounds_recent": 12463,
+      "yoy_pct_change": 3.5,
+      "top_chemical": "Toluene",
+      "city": "Los Angeles"
+    }
+  ],
+  "water": {
+    "utilities_count": 25,
+    "population_served_total": 7846769,
+    "violations_5yr_total": 39,
+    "health_based_5yr_total": 34,
+    "unresolved_total": 34,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "kern-mobile-estates-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Kern Mobile Estates Llc",
+        "pwsid": "CA1500571",
+        "population_served": 73,
+        "health_based_violations_5yr": 34,
+        "unresolved": true
+      },
+      {
+        "slug": "los-angeles-city-dept-of-water-power",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Los Angeles-City, Dept. Of Water & Power",
+        "pwsid": "CA1910067",
+        "population_served": 7751132,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "santa-monica-city-water-division",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Santa Monica-City, Water Division",
+        "pwsid": "CA1910146",
+        "population_served": 89947,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "lake-park-village-condominiums",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lake Park Village Condominiums",
+        "pwsid": "MI0002277",
+        "population_served": 900,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "quail-hill-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Quail Hill Mobile Home Park",
+        "pwsid": "CO0121633",
+        "population_served": 878,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "woodshire-east-mobile-home-park-ltd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Woodshire East Mobile Home Park Ltd",
+        "pwsid": "CO0103853",
+        "population_served": 751,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "vista-village-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Vista Village Mhp",
+        "pwsid": "CO0107810",
+        "population_served": 750,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "glenwood-mobile-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Glenwood Mobile Estates",
+        "pwsid": "CA1400030",
+        "population_served": 468,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "mountain-view-trailer-court",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mountain View Trailer Court",
+        "pwsid": "CA1400099",
+        "population_served": 320,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "brookview-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Brookview Mhp",
+        "pwsid": "WI6320316",
+        "population_served": 300,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "muscatine-mhp-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Muscatine Mhp Llc",
+        "pwsid": "IA7000601",
+        "population_served": 245,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "stonegate-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Stonegate Mobile Home Park",
+        "pwsid": "CA4900795",
+        "population_served": 196,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "grove-estates-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Grove Estates Mhp",
+        "pwsid": "GA2250003",
+        "population_served": 162,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "suburban-estates-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Suburban Estates Mhp",
+        "pwsid": "MI0040177",
+        "population_served": 150,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fire-suppression-camp-19",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fire Suppression Camp #19",
+        "pwsid": "CA1900901",
+        "population_served": 125,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "california-conservation-camp-14",
+        "state": "ca",
+        "state_label": "California",
+        "name": "California Conservation Camp #14",
+        "pwsid": "CA1900007",
+        "population_served": 107,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "country-view-mobile-home-community-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Country View Mobile Home Community Llc",
+        "pwsid": "WI1130248",
+        "population_served": 80,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "golden-valley-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden Valley Mobile Home Park",
+        "pwsid": "WI6320484",
+        "population_served": 80,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "los-angeles-city-of-power-plant-2",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Los Angeles, City Of - Power Plant #2",
+        "pwsid": "CA1900542",
+        "population_served": 44,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "control-gorge-power-plant-ladwp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Control Gorge Power Plant Ladwp",
+        "pwsid": "CA1400155",
+        "population_served": 32,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "los-angeles-city-of-power-plant-1",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Los Angeles, City Of - Power Plant #1",
+        "pwsid": "CA1900555",
+        "population_served": 29,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "ladwp-independence",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ladwp - Independence",
+        "pwsid": "CA1410002",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "ladwp-lone-pine",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ladwp - Lone Pine",
+        "pwsid": "CA1410003",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "ladwp-big-pine",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ladwp - Big Pine",
+        "pwsid": "CA1410004",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "ladwp-manzanar",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ladwp - Manzanar",
+        "pwsid": "CA1410510",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 3881041,
+    "pct_low_income": 16.6,
+    "pct_people_of_color": 71.9,
+    "pct_under_5": 5.3,
+    "pct_over_64": 13.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 182.5
+      },
+      {
+        "label": "Ozone",
+        "score": 173.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 162.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 178.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 110.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 184.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 136.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 120.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 152.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 189.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 143.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.1
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Los Angeles, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

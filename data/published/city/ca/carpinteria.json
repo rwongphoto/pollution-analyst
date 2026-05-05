@@ -1,0 +1,318 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "carpinteria",
+    "name": "Carpinteria",
+    "fips": "0611446",
+    "population": 13187,
+    "county_name": "Santa Barbara",
+    "county_fips": "06083"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 2,
+    "total_releases_pounds": 234,
+    "air_releases_pounds": 234,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": -42.5,
+    "long_arc_pct_change": -11.5,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 265
+      },
+      {
+        "year": 2011,
+        "value": 20
+      },
+      {
+        "year": 2012,
+        "value": 265
+      },
+      {
+        "year": 2013,
+        "value": 510
+      },
+      {
+        "year": 2014,
+        "value": 510
+      },
+      {
+        "year": 2015,
+        "value": 289
+      },
+      {
+        "year": 2016,
+        "value": 310
+      },
+      {
+        "year": 2017,
+        "value": 414
+      },
+      {
+        "year": 2018,
+        "value": 474
+      },
+      {
+        "year": 2019,
+        "value": 588
+      },
+      {
+        "year": 2020,
+        "value": 521
+      },
+      {
+        "year": 2021,
+        "value": 501
+      },
+      {
+        "year": 2022,
+        "value": 408
+      },
+      {
+        "year": 2023,
+        "value": 234
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 234,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 234
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 160035,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 0.2,
+      "long_arc_pct_change": -83.1,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 946092
+        },
+        {
+          "year": 2011,
+          "value": 1021695
+        },
+        {
+          "year": 2012,
+          "value": 1016640
+        },
+        {
+          "year": 2013,
+          "value": 1055203
+        },
+        {
+          "year": 2014,
+          "value": 1199129
+        },
+        {
+          "year": 2015,
+          "value": 577119
+        },
+        {
+          "year": 2016,
+          "value": 460139
+        },
+        {
+          "year": 2017,
+          "value": 327044
+        },
+        {
+          "year": 2018,
+          "value": 296296
+        },
+        {
+          "year": 2019,
+          "value": 245702
+        },
+        {
+          "year": 2020,
+          "value": 167505
+        },
+        {
+          "year": 2021,
+          "value": 149099
+        },
+        {
+          "year": 2022,
+          "value": 159713
+        },
+        {
+          "year": 2023,
+          "value": 160035
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "nusil-technology-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Nusil Technology LLC",
+      "parent_company": "Avantor Performance Materials INC",
+      "total_pounds_recent": 234,
+      "yoy_pct_change": -42.5,
+      "top_chemical": "Xylene (mixed isomers)",
+      "city": "Carpinteria"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 16062,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "carpinteria-valley-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Carpinteria Valley Water District",
+        "pwsid": "CA4210001",
+        "population_served": 15996,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "naples",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Naples",
+        "pwsid": "CA4200721",
+        "population_served": 66,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 13187,
+    "pct_low_income": 5.4,
+    "pct_people_of_color": 49.5,
+    "pct_under_5": 5.0,
+    "pct_over_64": 21.6,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 50.7
+      },
+      {
+        "label": "Ozone",
+        "score": 54.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 81.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 34.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 5.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 79.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 55.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 94.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 98.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Carpinteria, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

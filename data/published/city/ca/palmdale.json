@@ -1,0 +1,421 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "palmdale",
+    "name": "Palmdale",
+    "fips": "0655156",
+    "population": 166895,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 4,
+    "utilities_serving": 9,
+    "total_releases_pounds": 21282,
+    "air_releases_pounds": 14515,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 6767,
+    "yoy_pct_change": -32.7,
+    "long_arc_pct_change": -30.9,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 30796
+      },
+      {
+        "year": 2011,
+        "value": 16108
+      },
+      {
+        "year": 2012,
+        "value": 19644
+      },
+      {
+        "year": 2013,
+        "value": 16553
+      },
+      {
+        "year": 2014,
+        "value": 25120
+      },
+      {
+        "year": 2015,
+        "value": 24180
+      },
+      {
+        "year": 2016,
+        "value": 33587
+      },
+      {
+        "year": 2017,
+        "value": 20341
+      },
+      {
+        "year": 2018,
+        "value": 23360
+      },
+      {
+        "year": 2019,
+        "value": 25006
+      },
+      {
+        "year": 2020,
+        "value": 14852
+      },
+      {
+        "year": 2021,
+        "value": 12650
+      },
+      {
+        "year": 2022,
+        "value": 31629
+      },
+      {
+        "year": 2023,
+        "value": 21282
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 14515,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 14515
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 6767,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6767
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "usaf-plant-42-site-4-northrop-grumman-systems-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Usaf Plant 42 Site 4 Northrop Grumman Systems Corp",
+      "parent_company": "Northrop Grumman CORP",
+      "total_pounds_recent": 11512,
+      "yoy_pct_change": -54.5,
+      "top_chemical": "sec-Butyl alcohol",
+      "city": "Palmdale"
+    },
+    {
+      "slug": "lockheed-martin-aeronautics-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Lockheed Martin Aeronautics CO",
+      "parent_company": "Lockheed Martin CORP",
+      "total_pounds_recent": 9677,
+      "yoy_pct_change": 55.8,
+      "top_chemical": "Toluene",
+      "city": "Palmdale"
+    },
+    {
+      "slug": "holliday-rock-palmdale",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Holliday Rock-Palmdale",
+      "parent_company": "Holliday Rock Co INC",
+      "total_pounds_recent": 92,
+      "yoy_pct_change": 1.9,
+      "top_chemical": "Aluminum (fume or dust)",
+      "city": "Littlerock"
+    },
+    {
+      "slug": "palmdale-plant-39",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Palmdale Plant 39",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 0.91,
+      "yoy_pct_change": 1.2,
+      "top_chemical": "Lead compounds",
+      "city": "Palmdale"
+    }
+  ],
+  "water": {
+    "utilities_count": 9,
+    "population_served_total": 130538,
+    "violations_5yr_total": 10,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 6,
+    "utilities_with_unresolved": 3,
+    "utilities": [
+      {
+        "slug": "sunnyside-farms-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sunnyside Farms Mutual Water Company",
+        "pwsid": "CA1900146",
+        "population_served": 436,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "alpine-springs-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Alpine Springs Mobile Home Park",
+        "pwsid": "CA1900942",
+        "population_served": 175,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "palmdale-water-dist",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Palmdale Water Dist.",
+        "pwsid": "CA1910102",
+        "population_served": 126804,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "white-fence-farms-mwc-no-1",
+        "state": "ca",
+        "state_label": "California",
+        "name": "White Fence Farms Mwc No. 1",
+        "pwsid": "CA1910249",
+        "population_served": 1518,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "el-dorado-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "El Dorado Mutual Water Co.",
+        "pwsid": "CA1900803",
+        "population_served": 660,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "westside-park-mutual-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Westside Park Mutual Water",
+        "pwsid": "CA1900102",
+        "population_served": 495,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "shadow-acres-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shadow Acres Mutual Water Company",
+        "pwsid": "CA1900301",
+        "population_served": 450,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "antelope-valley-e-kern-wtr-agy-rosamond",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Antelope Valley E Kern Wtr Agy-Rosamond",
+        "pwsid": "CA1510053",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "antelope-valley-east-kern-water-agency",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Antelope Valley East Kern Water Agency",
+        "pwsid": "CA1910045",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 166895,
+    "pct_low_income": 14.1,
+    "pct_people_of_color": 82.4,
+    "pct_under_5": 7.6,
+    "pct_over_64": 10.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 171.6
+      },
+      {
+        "label": "Ozone",
+        "score": 209.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 142.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 56.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 164.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 91.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 53.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 22.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 157.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 14.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 2.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Palmdale, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

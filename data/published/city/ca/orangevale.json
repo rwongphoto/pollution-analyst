@@ -1,0 +1,244 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "orangevale",
+    "name": "Orangevale",
+    "fips": "0654092",
+    "population": 35852,
+    "county_name": "Sacramento",
+    "county_fips": "06067"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2147517,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 36.8,
+      "long_arc_pct_change": -18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2631103
+        },
+        {
+          "year": 2011,
+          "value": 2430972
+        },
+        {
+          "year": 2012,
+          "value": 2786310
+        },
+        {
+          "year": 2013,
+          "value": 2837952
+        },
+        {
+          "year": 2014,
+          "value": 2759010
+        },
+        {
+          "year": 2015,
+          "value": 2884900
+        },
+        {
+          "year": 2016,
+          "value": 2704954
+        },
+        {
+          "year": 2017,
+          "value": 2314836
+        },
+        {
+          "year": 2018,
+          "value": 2541006
+        },
+        {
+          "year": 2019,
+          "value": 2161396
+        },
+        {
+          "year": 2020,
+          "value": 2429126
+        },
+        {
+          "year": 2021,
+          "value": 2573534
+        },
+        {
+          "year": 2022,
+          "value": 1569286
+        },
+        {
+          "year": 2023,
+          "value": 2147517
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 16861,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "orange-vale-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Orange Vale Water Company",
+        "pwsid": "CA3410016",
+        "population_served": 16861,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 35852,
+    "pct_low_income": 9.3,
+    "pct_people_of_color": 25.700000000000003,
+    "pct_under_5": 5.4,
+    "pct_over_64": 20.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 78.4
+      },
+      {
+        "label": "Ozone",
+        "score": 73.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 34.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 58.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 8.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 51.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 33.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 58.7
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 33.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 66.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 16.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Orangevale, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

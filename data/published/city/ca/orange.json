@@ -1,84 +1,362 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "orange",
-    "name": "City Of Orange",
-    "pwsid": "CA3010027",
-    "population_served": 120770,
-    "primary_source": "purchased",
-    "cities_served": [
-      "Orange"
+    "name": "Orange",
+    "fips": "0653980",
+    "population": 138728,
+    "county_name": "Orange",
+    "county_fips": "06059"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 11,
+    "utilities_serving": 4,
+    "total_releases_pounds": 36220,
+    "air_releases_pounds": 2410,
+    "water_releases_pounds": 6,
+    "land_releases_pounds": 33803,
+    "yoy_pct_change": -22.2,
+    "long_arc_pct_change": -29.8,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 51591
+      },
+      {
+        "year": 2011,
+        "value": 80043
+      },
+      {
+        "year": 2012,
+        "value": 62676
+      },
+      {
+        "year": 2013,
+        "value": 43677
+      },
+      {
+        "year": 2014,
+        "value": 96858
+      },
+      {
+        "year": 2015,
+        "value": 78835
+      },
+      {
+        "year": 2016,
+        "value": 68215
+      },
+      {
+        "year": 2017,
+        "value": 79918
+      },
+      {
+        "year": 2018,
+        "value": 90524
+      },
+      {
+        "year": 2019,
+        "value": 80979
+      },
+      {
+        "year": 2020,
+        "value": 23864
+      },
+      {
+        "year": 2021,
+        "value": 18676
+      },
+      {
+        "year": 2022,
+        "value": 46536
+      },
+      {
+        "year": 2023,
+        "value": 36220
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 2410,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2410
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 6,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 33803,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 33803
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2636013,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -7.1,
+      "long_arc_pct_change": 39.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1891416
+        },
+        {
+          "year": 2011,
+          "value": 2010676
+        },
+        {
+          "year": 2012,
+          "value": 2081823
+        },
+        {
+          "year": 2013,
+          "value": 1784150
+        },
+        {
+          "year": 2014,
+          "value": 1820320
+        },
+        {
+          "year": 2015,
+          "value": 1720197
+        },
+        {
+          "year": 2016,
+          "value": 1621230
+        },
+        {
+          "year": 2017,
+          "value": 1620028
+        },
+        {
+          "year": 2018,
+          "value": 1469841
+        },
+        {
+          "year": 2019,
+          "value": 1518950
+        },
+        {
+          "year": 2020,
+          "value": 1820021
+        },
+        {
+          "year": 2021,
+          "value": 2740139
+        },
+        {
+          "year": 2022,
+          "value": 2836147
+        },
+        {
+          "year": 2023,
+          "value": 2636013
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "continuous-coating-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Continuous Coating Corp",
+      "parent_company": "Usg CORP",
+      "total_pounds_recent": 27827,
+      "yoy_pct_change": 27.7,
+      "top_chemical": "Zinc compounds",
+      "city": "Orange"
+    },
+    {
+      "slug": "anillo-industries-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Anillo Industries INC.",
+      "parent_company": "Novaria Group",
+      "total_pounds_recent": 3192,
+      "yoy_pct_change": 60.6,
+      "top_chemical": "Chromium",
+      "city": "Orange"
+    },
+    {
+      "slug": "summit-interconnect-inc-orange",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Summit Interconnect INC. Orange",
+      "parent_company": "Summit Interconnect Intermediate INC",
+      "total_pounds_recent": 2685,
+      "yoy_pct_change": -86.8,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Orange"
+    },
+    {
+      "slug": "cytec-solvay-composite-materials-orange",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Cytec Solvay Composite Materials Orange",
+      "parent_company": "Syensqo Holding INC",
+      "total_pounds_recent": 1591,
+      "yoy_pct_change": 23.0,
+      "top_chemical": "Methanol",
+      "city": "Orange"
+    },
+    {
+      "slug": "kerr-dental-materials-center",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Kerr Dental Materials Center",
+      "parent_company": "Envista Holdings CORP",
+      "total_pounds_recent": 500,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Methanol",
+      "city": "Orange"
+    },
+    {
+      "slug": "statek-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Statek Corp",
+      "parent_company": "Technicorp International II",
+      "total_pounds_recent": 255,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Ammonia",
+      "city": "Orange"
+    },
+    {
+      "slug": "commercial-metal-forming",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Commercial Metal Forming",
+      "parent_company": "Commercial Metal Forming",
+      "total_pounds_recent": 47,
+      "yoy_pct_change": 1.4,
+      "top_chemical": "Manganese",
+      "city": "Orange"
+    },
+    {
+      "slug": "ducommun-aerostructures-inc-orange-facility",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ducommun Aerostructures INC Orange Facility",
+      "parent_company": "Ducommun INC",
+      "total_pounds_recent": 43,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Tetrachloroethylene",
+      "city": "Orange"
+    },
+    {
+      "slug": "apct-anaheim",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Apct Anaheim",
+      "parent_company": "Advancedpcb Holdings INC",
+      "total_pounds_recent": 43,
+      "yoy_pct_change": 1.8,
+      "top_chemical": "Copper",
+      "city": "Orange"
+    },
+    {
+      "slug": "fxi-inc-orange",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Fxi INC. - Orange",
+      "parent_company": "Fxi INC",
+      "total_pounds_recent": 19,
+      "yoy_pct_change": -92.9,
+      "top_chemical": "Toluene diisocyanate (mixed isomers)",
+      "city": "Orange"
+    }
+  ],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 124342,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "orange",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Orange",
+        "pwsid": "CA3010027",
+        "population_served": 120770,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "east-orange-county-wd-rz",
+        "state": "ca",
+        "state_label": "California",
+        "name": "East Orange County Wd - Rz",
+        "pwsid": "CA3010068",
+        "population_served": 3464,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "countryside-village",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Countryside Village",
+        "pwsid": "ID5420014",
+        "population_served": 108,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
+        "slug": "east-orange-county-wd-wz",
+        "state": "ca",
+        "state_label": "California",
+        "name": "East Orange County Wd - Wz",
+        "pwsid": "CA3010093",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 138728,
     "pct_low_income": 9.2,
@@ -141,12 +419,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Orange, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Orange, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

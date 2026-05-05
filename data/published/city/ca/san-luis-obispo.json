@@ -1,0 +1,518 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "san-luis-obispo",
+    "name": "San Luis Obispo",
+    "fips": "0668154",
+    "population": 47529,
+    "county_name": "San Luis Obispo",
+    "county_fips": "06079"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 22,
+    "total_releases_pounds": 1323,
+    "air_releases_pounds": 1323,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": -43.2,
+    "long_arc_pct_change": 19.6,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 1106
+      },
+      {
+        "year": 2011,
+        "value": 1557
+      },
+      {
+        "year": 2012,
+        "value": 1804
+      },
+      {
+        "year": 2013,
+        "value": 1808
+      },
+      {
+        "year": 2014,
+        "value": 2537
+      },
+      {
+        "year": 2015,
+        "value": 2229
+      },
+      {
+        "year": 2016,
+        "value": 1573
+      },
+      {
+        "year": 2017,
+        "value": 2166
+      },
+      {
+        "year": 2018,
+        "value": 1936
+      },
+      {
+        "year": 2019,
+        "value": 1816
+      },
+      {
+        "year": 2020,
+        "value": 2788
+      },
+      {
+        "year": 2021,
+        "value": 1854
+      },
+      {
+        "year": 2022,
+        "value": 2330
+      },
+      {
+        "year": 2023,
+        "value": 1323
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 1323,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1323
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 224468,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -94.2,
+      "long_arc_pct_change": -96.6,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 6564437
+        },
+        {
+          "year": 2011,
+          "value": 6874780
+        },
+        {
+          "year": 2012,
+          "value": 6873661
+        },
+        {
+          "year": 2013,
+          "value": 7260656
+        },
+        {
+          "year": 2014,
+          "value": 7119186
+        },
+        {
+          "year": 2015,
+          "value": 5423760
+        },
+        {
+          "year": 2016,
+          "value": 5489097
+        },
+        {
+          "year": 2017,
+          "value": 5349766
+        },
+        {
+          "year": 2018,
+          "value": 5122729
+        },
+        {
+          "year": 2019,
+          "value": 4775796
+        },
+        {
+          "year": 2020,
+          "value": 4537408
+        },
+        {
+          "year": 2021,
+          "value": 3911733
+        },
+        {
+          "year": 2022,
+          "value": 3867641
+        },
+        {
+          "year": 2023,
+          "value": 224468
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "promega-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Promega Corp",
+      "parent_company": "Promega CORP",
+      "total_pounds_recent": 1323,
+      "yoy_pct_change": -43.2,
+      "top_chemical": "Dichloromethane",
+      "city": "San Luis Obispo"
+    }
+  ],
+  "water": {
+    "utilities_count": 22,
+    "population_served_total": 69920,
+    "violations_5yr_total": 73,
+    "health_based_5yr_total": 35,
+    "unresolved_total": 38,
+    "utilities_with_unresolved": 3,
+    "utilities": [
+      {
+        "slug": "higuera-apartments",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Higuera Apartments",
+        "pwsid": "CA4000563",
+        "population_served": 30,
+        "health_based_violations_5yr": 33,
+        "unresolved": true
+      },
+      {
+        "slug": "lopez-project",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lopez Project",
+        "pwsid": "CA4010022",
+        "population_served": 1569,
+        "health_based_violations_5yr": 2,
+        "unresolved": false
+      },
+      {
+        "slug": "san-luis-obispo-water-department",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Luis Obispo Water Department",
+        "pwsid": "CA4010009",
+        "population_served": 47788,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "california-mens-colony",
+        "state": "ca",
+        "state_label": "California",
+        "name": "California Mens Colony",
+        "pwsid": "CA4010830",
+        "population_served": 15000,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "slo-cwwd-no-23-santa-margarita",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Slo Cwwd No. 23 - Santa Margarita",
+        "pwsid": "CA4010024",
+        "population_served": 1291,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "slocsa-10a-cayucos",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Slocsa #10A - Cayucos",
+        "pwsid": "CA4010901",
+        "population_served": 1200,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "slo-csa-no-16-shandon",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Slo Csa No. 16 - Shandon",
+        "pwsid": "CA4010028",
+        "population_served": 1085,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "laureate-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Laureate Water Company",
+        "pwsid": "CA4000206",
+        "population_served": 700,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "santa-ysabel-ranch-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Santa Ysabel Ranch Mwc",
+        "pwsid": "CA4000802",
+        "population_served": 344,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "gran-cielo-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Gran Cielo Mutual Water Company",
+        "pwsid": "CA4000853",
+        "population_served": 139,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "irish-hills-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Irish Hills Mutual Water Co",
+        "pwsid": "CA4000203",
+        "population_served": 135,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "callender-grove-mutual-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Callender Grove Mutual Water",
+        "pwsid": "CA4000805",
+        "population_served": 126,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "las-ventanas-ranch",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Las Ventanas Ranch",
+        "pwsid": "CA4000815",
+        "population_served": 108,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "baron-canyon-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Baron Canyon Mutual Water Co.",
+        "pwsid": "CA4000214",
+        "population_served": 81,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "afuera-de-chorro-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Afuera De Chorro Water Company",
+        "pwsid": "CA4000744",
+        "population_served": 79,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "avila-valley-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Avila Valley Mutual Water Co",
+        "pwsid": "CA4000716",
+        "population_served": 75,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "monte-sereno-mutual-benefit-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Monte Sereno Mutual Benefit Water",
+        "pwsid": "CA4000808",
+        "population_served": 65,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "anza-vineyard-estates-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Anza Vineyard Estates Mutual Water Co",
+        "pwsid": "CA4000834",
+        "population_served": 60,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "bear-valley-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bear Valley Water Company",
+        "pwsid": "CA4000660",
+        "population_served": 45,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "slo-csa-no-10-cayucos-wtp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Slo Csa No. 10 - Cayucos Wtp",
+        "pwsid": "CA4010025",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "chorro-valley-pipeline-slo-county",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Chorro Valley Pipeline - Slo County",
+        "pwsid": "CA4010030",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "nacimiento-water-project",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Nacimiento Water Project",
+        "pwsid": "CA4010080",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 47529,
+    "pct_low_income": 31.5,
+    "pct_people_of_color": 29.599999999999994,
+    "pct_under_5": 2.9,
+    "pct_over_64": 13.5,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 100.2
+      },
+      {
+        "label": "Ozone",
+        "score": 17.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 98.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 26.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 7.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 113.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 85.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 92.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 118.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "San Luis Obispo, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

@@ -1,0 +1,191 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "grimes",
+    "name": "Grimes",
+    "fips": "0631288",
+    "population": 355,
+    "county_name": "Colusa",
+    "county_fips": "06011"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1352459,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 18.5,
+      "long_arc_pct_change": 580.8,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 198669
+        },
+        {
+          "year": 2011,
+          "value": 1161309
+        },
+        {
+          "year": 2012,
+          "value": 1420586
+        },
+        {
+          "year": 2013,
+          "value": 1409361
+        },
+        {
+          "year": 2014,
+          "value": 1333133
+        },
+        {
+          "year": 2015,
+          "value": 1772640
+        },
+        {
+          "year": 2016,
+          "value": 1312423
+        },
+        {
+          "year": 2017,
+          "value": 1135583
+        },
+        {
+          "year": 2018,
+          "value": 1355683
+        },
+        {
+          "year": 2019,
+          "value": 1325999
+        },
+        {
+          "year": 2020,
+          "value": 1336750
+        },
+        {
+          "year": 2021,
+          "value": 1029118
+        },
+        {
+          "year": 2022,
+          "value": 1141558
+        },
+        {
+          "year": 2023,
+          "value": 1352459
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 512,
+    "violations_5yr_total": 63,
+    "health_based_5yr_total": 50,
+    "unresolved_total": 54,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "colusa-co-wwd-1-grimes",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Colusa Co. Wwd #1 - Grimes",
+        "pwsid": "CA0600008",
+        "population_served": 512,
+        "health_based_violations_5yr": 50,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 355,
+    "pct_low_income": 45.6,
+    "pct_people_of_color": 36.1,
+    "pct_under_5": 9.9,
+    "pct_over_64": 18.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Grimes, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

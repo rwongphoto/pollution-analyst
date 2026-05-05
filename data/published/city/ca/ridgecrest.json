@@ -1,0 +1,328 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "ridgecrest",
+    "name": "Ridgecrest",
+    "fips": "0660704",
+    "population": 28118,
+    "county_name": "Kern",
+    "county_fips": "06029"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 3,
+    "total_releases_pounds": 6181,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 6181,
+    "yoy_pct_change": 183.4,
+    "long_arc_pct_change": -30.8,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 8926
+      },
+      {
+        "year": 2011,
+        "value": 9801
+      },
+      {
+        "year": 2012,
+        "value": 3530
+      },
+      {
+        "year": 2013,
+        "value": 3201
+      },
+      {
+        "year": 2014,
+        "value": 3009
+      },
+      {
+        "year": 2015,
+        "value": 3318
+      },
+      {
+        "year": 2016,
+        "value": 2687
+      },
+      {
+        "year": 2017,
+        "value": 5793
+      },
+      {
+        "year": 2018,
+        "value": 3758
+      },
+      {
+        "year": 2019,
+        "value": 4016
+      },
+      {
+        "year": 2020,
+        "value": 3195
+      },
+      {
+        "year": 2021,
+        "value": 3235
+      },
+      {
+        "year": 2022,
+        "value": 2181
+      },
+      {
+        "year": 2023,
+        "value": 6181
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 6181,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6181
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 19338265,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": -20.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 24319068
+        },
+        {
+          "year": 2011,
+          "value": 25430438
+        },
+        {
+          "year": 2012,
+          "value": 28790354
+        },
+        {
+          "year": 2013,
+          "value": 30917389
+        },
+        {
+          "year": 2014,
+          "value": 32629015
+        },
+        {
+          "year": 2015,
+          "value": 31201499
+        },
+        {
+          "year": 2016,
+          "value": 24504861
+        },
+        {
+          "year": 2017,
+          "value": 23481775
+        },
+        {
+          "year": 2018,
+          "value": 22803774
+        },
+        {
+          "year": 2019,
+          "value": 21845403
+        },
+        {
+          "year": 2020,
+          "value": 21171085
+        },
+        {
+          "year": 2021,
+          "value": 20324599
+        },
+        {
+          "year": 2022,
+          "value": 19333774
+        },
+        {
+          "year": 2023,
+          "value": 19338265
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "u-s-dod-naws-china-lake",
+      "state": "ca",
+      "state_label": "California",
+      "name": "U.S. Dod Naws China Lake",
+      "parent_company": "US Department Of Defense",
+      "total_pounds_recent": 6181,
+      "yoy_pct_change": 183.4,
+      "top_chemical": "Lead",
+      "city": "China Lake"
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 41650,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "indian-wells-valley-w-d",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Indian Wells Valley W.D.",
+        "pwsid": "CA1510017",
+        "population_served": 41580,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "owens-peak-south",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Owens Peak South",
+        "pwsid": "CA1502659",
+        "population_served": 45,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "hometown-water-association",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hometown Water Association",
+        "pwsid": "CA1500564",
+        "population_served": 25,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 28118,
+    "pct_low_income": 10.6,
+    "pct_people_of_color": 34.900000000000006,
+    "pct_under_5": 7.5,
+    "pct_over_64": 13.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 74.8
+      },
+      {
+        "label": "Ozone",
+        "score": 120.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 105.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 49.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 6.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 34.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 47.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 67.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Ridgecrest, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

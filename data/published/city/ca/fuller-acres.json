@@ -1,0 +1,244 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "fuller-acres",
+    "name": "Fuller Acres",
+    "fips": "0627190",
+    "population": 717,
+    "county_name": "Kern",
+    "county_fips": "06029"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 0,
+    "total_releases_pounds": 4857,
+    "air_releases_pounds": 4812,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 46,
+    "yoy_pct_change": -24.7,
+    "long_arc_pct_change": -39.5,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 8023
+      },
+      {
+        "year": 2011,
+        "value": 8511
+      },
+      {
+        "year": 2012,
+        "value": 6647
+      },
+      {
+        "year": 2013,
+        "value": 7436
+      },
+      {
+        "year": 2014,
+        "value": 6488
+      },
+      {
+        "year": 2015,
+        "value": 14305
+      },
+      {
+        "year": 2016,
+        "value": 19072
+      },
+      {
+        "year": 2017,
+        "value": 26329
+      },
+      {
+        "year": 2018,
+        "value": 7317
+      },
+      {
+        "year": 2019,
+        "value": 16238
+      },
+      {
+        "year": 2020,
+        "value": 8223
+      },
+      {
+        "year": 2021,
+        "value": 7638
+      },
+      {
+        "year": 2022,
+        "value": 6452
+      },
+      {
+        "year": 2023,
+        "value": 4857
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 4812,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 4812
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 46,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 46
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 19338265,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": -20.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 24319068
+        },
+        {
+          "year": 2011,
+          "value": 25430438
+        },
+        {
+          "year": 2012,
+          "value": 28790354
+        },
+        {
+          "year": 2013,
+          "value": 30917389
+        },
+        {
+          "year": 2014,
+          "value": 32629015
+        },
+        {
+          "year": 2015,
+          "value": 31201499
+        },
+        {
+          "year": 2016,
+          "value": 24504861
+        },
+        {
+          "year": 2017,
+          "value": 23481775
+        },
+        {
+          "year": 2018,
+          "value": 22803774
+        },
+        {
+          "year": 2019,
+          "value": 21845403
+        },
+        {
+          "year": 2020,
+          "value": 21171085
+        },
+        {
+          "year": 2021,
+          "value": 20324599
+        },
+        {
+          "year": 2022,
+          "value": 19333774
+        },
+        {
+          "year": 2023,
+          "value": 19338265
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "kern-energy",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Kern Energy",
+      "parent_company": "Casey Co",
+      "total_pounds_recent": 4857,
+      "yoy_pct_change": -24.7,
+      "top_chemical": "Xylene (mixed isomers)",
+      "city": "Bakersfield"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 717,
+    "pct_low_income": 53.3,
+    "pct_people_of_color": 91.8,
+    "pct_under_5": 4.5,
+    "pct_over_64": 13.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Fuller Acres, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

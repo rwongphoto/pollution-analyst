@@ -1,0 +1,193 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "tulelake",
+    "name": "Tulelake",
+    "fips": "0680686",
+    "population": 811,
+    "county_name": "Modoc",
+    "county_fips": "06049"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 27698,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 81.6,
+      "long_arc_pct_change": -41.2,
+      "baseline_year": 2012,
+      "history": [
+        {
+          "year": 2012,
+          "value": 47142
+        },
+        {
+          "year": 2013,
+          "value": 43344
+        },
+        {
+          "year": 2014,
+          "value": 44827
+        },
+        {
+          "year": 2015,
+          "value": 45668
+        },
+        {
+          "year": 2016,
+          "value": 52615
+        },
+        {
+          "year": 2017,
+          "value": 29314
+        },
+        {
+          "year": 2018,
+          "value": 37280
+        },
+        {
+          "year": 2019,
+          "value": 33495
+        },
+        {
+          "year": 2020,
+          "value": 26294
+        },
+        {
+          "year": 2021,
+          "value": 36354
+        },
+        {
+          "year": 2022,
+          "value": 15256
+        },
+        {
+          "year": 2023,
+          "value": 27698
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 1485,
+    "violations_5yr_total": 12,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 5,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "tulelake-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Tulelake, City Of",
+        "pwsid": "CA4710010",
+        "population_served": 856,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "newell-county-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Newell County Water District",
+        "pwsid": "CA2500801",
+        "population_served": 629,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 811,
+    "pct_low_income": 37.2,
+    "pct_people_of_color": 46.6,
+    "pct_under_5": 8.6,
+    "pct_over_64": 19.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Tulelake, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

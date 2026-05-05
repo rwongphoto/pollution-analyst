@@ -1,0 +1,450 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "oxnard",
+    "name": "Oxnard",
+    "fips": "0654652",
+    "population": 202279,
+    "county_name": "Ventura",
+    "county_fips": "06111"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 13,
+    "total_releases_pounds": 31457,
+    "air_releases_pounds": 30877,
+    "water_releases_pounds": 28,
+    "land_releases_pounds": 551,
+    "yoy_pct_change": -3.8,
+    "long_arc_pct_change": 153.6,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 12406
+      },
+      {
+        "year": 2011,
+        "value": 21510
+      },
+      {
+        "year": 2012,
+        "value": 45504
+      },
+      {
+        "year": 2013,
+        "value": 40950
+      },
+      {
+        "year": 2014,
+        "value": 41130
+      },
+      {
+        "year": 2015,
+        "value": 24834
+      },
+      {
+        "year": 2016,
+        "value": 25903
+      },
+      {
+        "year": 2017,
+        "value": 22950
+      },
+      {
+        "year": 2018,
+        "value": 23345
+      },
+      {
+        "year": 2019,
+        "value": 22777
+      },
+      {
+        "year": 2020,
+        "value": 22273
+      },
+      {
+        "year": 2021,
+        "value": 26839
+      },
+      {
+        "year": 2022,
+        "value": 32691
+      },
+      {
+        "year": 2023,
+        "value": 31457
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 30877,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 30877
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 28,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 28
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 551,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 551
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 987448,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 2.2,
+      "long_arc_pct_change": -13.8,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1145930
+        },
+        {
+          "year": 2011,
+          "value": 1091427
+        },
+        {
+          "year": 2012,
+          "value": 1350006
+        },
+        {
+          "year": 2013,
+          "value": 1534151
+        },
+        {
+          "year": 2014,
+          "value": 1307389
+        },
+        {
+          "year": 2015,
+          "value": 1410967
+        },
+        {
+          "year": 2016,
+          "value": 1096169
+        },
+        {
+          "year": 2017,
+          "value": 1232457
+        },
+        {
+          "year": 2018,
+          "value": 1067186
+        },
+        {
+          "year": 2019,
+          "value": 1083825
+        },
+        {
+          "year": 2020,
+          "value": 1322352
+        },
+        {
+          "year": 2021,
+          "value": 1083403
+        },
+        {
+          "year": 2022,
+          "value": 966618
+        },
+        {
+          "year": 2023,
+          "value": 987448
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "the-procter-gamble-paper-product-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "The Procter & Gamble Paper Product CO",
+      "parent_company": "The Procter & Gamble Co",
+      "total_pounds_recent": 16697,
+      "yoy_pct_change": -6.9,
+      "top_chemical": "Ammonia",
+      "city": "Oxnard"
+    },
+    {
+      "slug": "new-indy-oxnard-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "New-Indy Oxnard LLC",
+      "parent_company": "New-Indy Containerboard LLC",
+      "total_pounds_recent": 14695,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Ammonia",
+      "city": "Oxnard"
+    },
+    {
+      "slug": "aluminum-precision-products-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Aluminum Precision Products INC.",
+      "parent_company": "Aluminum Precision Products INC",
+      "total_pounds_recent": 65,
+      "yoy_pct_change": -4.6,
+      "top_chemical": "Copper",
+      "city": "Oxnard"
+    }
+  ],
+  "water": {
+    "utilities_count": 13,
+    "population_served_total": 212540,
+    "violations_5yr_total": 21,
+    "health_based_5yr_total": 4,
+    "unresolved_total": 12,
+    "utilities_with_unresolved": 5,
+    "utilities": [
+      {
+        "slug": "vineyard-avenue-acres-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Vineyard Avenue Acres Mwc",
+        "pwsid": "CA5610029",
+        "population_served": 1820,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "vineyard-ave-estates-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Vineyard Ave Estates Mwc",
+        "pwsid": "CA5610056",
+        "population_served": 1200,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "siesta-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Siesta Mobile Home Park",
+        "pwsid": "CA5602109",
+        "population_served": 160,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "navalair-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Navalair Mobile Home Park",
+        "pwsid": "CA5602110",
+        "population_served": 160,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "oxnard-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oxnard Water Dept",
+        "pwsid": "CA5610007",
+        "population_served": 200232,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "channel-islands-beach-csd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Channel Islands Beach Csd",
+        "pwsid": "CA5610039",
+        "population_served": 4560,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "garden-acres-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Garden Acres Mutual Water Co",
+        "pwsid": "CA5602108",
+        "population_served": 1335,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "dempsey-road-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Dempsey Road Mutual Water Co",
+        "pwsid": "CA5610001",
+        "population_served": 990,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "nyeland-acres-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Nyeland Acres Mutual Water Co",
+        "pwsid": "CA5602111",
+        "population_served": 975,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "cloverdale-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cloverdale Mutual Water Co.",
+        "pwsid": "CA5610068",
+        "population_served": 455,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "strickland-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Strickland Mutual Water Company",
+        "pwsid": "CA5602117",
+        "population_served": 429,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "cypress-mutual-water-co-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cypress Mutual Water Co Inc",
+        "pwsid": "CA5602103",
+        "population_served": 224,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "united-wtr-cons-dist",
+        "state": "ca",
+        "state_label": "California",
+        "name": "United Wtr Cons Dist",
+        "pwsid": "CA5610046",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 202279,
+    "pct_low_income": 10.7,
+    "pct_people_of_color": 86.7,
+    "pct_under_5": 7.5,
+    "pct_over_64": 10.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 118.1
+      },
+      {
+        "label": "Ozone",
+        "score": 89.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 84.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 170.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 37.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 162.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 96.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 150.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 215.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 167.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 187.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Oxnard, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

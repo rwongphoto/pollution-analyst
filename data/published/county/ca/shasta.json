@@ -330,7 +330,7 @@
       "state_label": "California",
       "name": "Sierra Pacific Industries Anderson Div",
       "parent_company": "Sierra Pacific Industries",
-      "total_pounds_recent": 0,
+      "total_pounds_recent": 0.4,
       "yoy_pct_change": 34.7,
       "top_chemical": "Dioxin and dioxin-like compounds",
       "city": "Anderson"
@@ -341,13 +341,153 @@
       "state_label": "California",
       "name": "Sierra Pacific Industries Burney Div",
       "parent_company": "Sierra Pacific Industries",
-      "total_pounds_recent": 0,
+      "total_pounds_recent": 0.3,
       "yoy_pct_change": 0.0,
       "top_chemical": "Dioxin and dioxin-like compounds",
       "city": "Burney"
     }
   ],
   "utilities": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "regression",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Shasta County have more than doubled since 2010 (through 2023).",
+      "magnitude_pct": 103.8,
+      "magnitude_abs": 109305.8,
+      "baseline_year": 2010,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 105308
+        },
+        {
+          "year": 2011,
+          "value": 61536
+        },
+        {
+          "year": 2012,
+          "value": 91226
+        },
+        {
+          "year": 2013,
+          "value": 97174
+        },
+        {
+          "year": 2014,
+          "value": 212535
+        },
+        {
+          "year": 2015,
+          "value": 214282
+        },
+        {
+          "year": 2016,
+          "value": 283993
+        },
+        {
+          "year": 2017,
+          "value": 254562
+        },
+        {
+          "year": 2018,
+          "value": 187329
+        },
+        {
+          "year": 2019,
+          "value": 212982
+        },
+        {
+          "year": 2020,
+          "value": 201878
+        },
+        {
+          "year": 2021,
+          "value": 217834
+        },
+        {
+          "year": 2022,
+          "value": 201780
+        },
+        {
+          "year": 2023,
+          "value": 214614
+        }
+      ]
+    },
+    {
+      "type": "long_arc_shift",
+      "severity": "regression",
+      "label": "Greenhouse gas emissions",
+      "summary": "Greenhouse gas emissions at Shasta County have more than doubled since 2010 (through 2023).",
+      "magnitude_pct": 131.6,
+      "magnitude_abs": 374263.7,
+      "baseline_year": 2010,
+      "recent_year": 2023,
+      "units": "mtCO2e",
+      "history": [
+        {
+          "year": 2010,
+          "value": 284294
+        },
+        {
+          "year": 2011,
+          "value": 498320
+        },
+        {
+          "year": 2012,
+          "value": 503320
+        },
+        {
+          "year": 2013,
+          "value": 550200
+        },
+        {
+          "year": 2014,
+          "value": 543084
+        },
+        {
+          "year": 2015,
+          "value": 579514
+        },
+        {
+          "year": 2016,
+          "value": 445299
+        },
+        {
+          "year": 2017,
+          "value": 470910
+        },
+        {
+          "year": 2018,
+          "value": 545824
+        },
+        {
+          "year": 2019,
+          "value": 546467
+        },
+        {
+          "year": 2020,
+          "value": 578659
+        },
+        {
+          "year": 2021,
+          "value": 645912
+        },
+        {
+          "year": 2022,
+          "value": 770443
+        },
+        {
+          "year": 2023,
+          "value": 658558
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 181852,
     "pct_low_income": 13.3,
@@ -419,5 +559,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T05:28:31Z"
+  "_published_at": "2026-05-05T06:24:51Z"
 }

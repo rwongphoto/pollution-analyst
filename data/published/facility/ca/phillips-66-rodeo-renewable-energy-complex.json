@@ -359,18 +359,6 @@
       "total_pounds_recent": 6283,
       "history": [
         {
-          "year": 2010,
-          "value": 283
-        },
-        {
-          "year": 2013,
-          "value": 304
-        },
-        {
-          "year": 2014,
-          "value": 114
-        },
-        {
           "year": 2015,
           "value": 155627
         },
@@ -408,8 +396,8 @@
         }
       ],
       "yoy_pct_change": -92.5,
-      "long_arc_pct_change": 2120.1,
-      "long_arc_baseline_year": 2010
+      "long_arc_pct_change": -96.0,
+      "long_arc_baseline_year": 2015
     },
     {
       "chemical": "Xylene (mixed isomers)",
@@ -613,6 +601,130 @@
       "long_arc_baseline_year": 2010
     }
   ],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Molybdenum trioxide",
+      "summary": "Molybdenum trioxide at Phillips 66 Rodeo Renewable Energy Complex have more than three-quarters since 2012 (through 2023).",
+      "magnitude_pct": -99.8,
+      "magnitude_abs": -96439.0,
+      "baseline_year": 2012,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2012,
+          "value": 96627
+        },
+        {
+          "year": 2013,
+          "value": 72
+        },
+        {
+          "year": 2014,
+          "value": 116
+        },
+        {
+          "year": 2015,
+          "value": 13428
+        },
+        {
+          "year": 2016,
+          "value": 103941
+        },
+        {
+          "year": 2017,
+          "value": 36987
+        },
+        {
+          "year": 2018,
+          "value": 3860
+        },
+        {
+          "year": 2019,
+          "value": 45850
+        },
+        {
+          "year": 2020,
+          "value": 23202
+        },
+        {
+          "year": 2021,
+          "value": 1782
+        },
+        {
+          "year": 2022,
+          "value": 106
+        },
+        {
+          "year": 2023,
+          "value": 188
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Copper compounds",
+      "summary": "Copper compounds releases at Phillips 66 Rodeo Renewable Energy Complex fell from 84k lb to 6k lb (92% lower) between 2022 and 2023.",
+      "magnitude_pct": -92.5,
+      "magnitude_abs": -77317.0,
+      "baseline_year": 2022,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 283
+        },
+        {
+          "year": 2013,
+          "value": 304
+        },
+        {
+          "year": 2014,
+          "value": 114
+        },
+        {
+          "year": 2015,
+          "value": 155627
+        },
+        {
+          "year": 2016,
+          "value": 128538
+        },
+        {
+          "year": 2017,
+          "value": 133378
+        },
+        {
+          "year": 2018,
+          "value": 97862
+        },
+        {
+          "year": 2019,
+          "value": 64285
+        },
+        {
+          "year": 2020,
+          "value": 103657
+        },
+        {
+          "year": 2021,
+          "value": 16628
+        },
+        {
+          "year": 2022,
+          "value": 83600
+        },
+        {
+          "year": 2023,
+          "value": 6283
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 1162648,
     "pct_low_income": 8.3,
@@ -682,5 +794,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T05:28:31Z"
+  "_published_at": "2026-05-05T06:24:51Z"
 }

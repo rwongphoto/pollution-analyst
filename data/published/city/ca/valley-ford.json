@@ -1,0 +1,191 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "valley-ford",
+    "name": "Valley Ford",
+    "fips": "0681778",
+    "population": 0,
+    "county_name": "Sonoma",
+    "county_fips": "06097"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 117873,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 67.6,
+      "long_arc_pct_change": -38.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 190188
+        },
+        {
+          "year": 2011,
+          "value": 184825
+        },
+        {
+          "year": 2012,
+          "value": 189951
+        },
+        {
+          "year": 2013,
+          "value": 175436
+        },
+        {
+          "year": 2014,
+          "value": 78299
+        },
+        {
+          "year": 2015,
+          "value": 71514
+        },
+        {
+          "year": 2016,
+          "value": 87893
+        },
+        {
+          "year": 2017,
+          "value": 85263
+        },
+        {
+          "year": 2018,
+          "value": 67507
+        },
+        {
+          "year": 2019,
+          "value": 76010
+        },
+        {
+          "year": 2020,
+          "value": 80123
+        },
+        {
+          "year": 2021,
+          "value": 69027
+        },
+        {
+          "year": 2022,
+          "value": 70347
+        },
+        {
+          "year": 2023,
+          "value": 117873
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 88,
+    "violations_5yr_total": 78,
+    "health_based_5yr_total": 77,
+    "unresolved_total": 78,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "valley-ford-water-association",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Valley Ford Water Association",
+        "pwsid": "CA4900568",
+        "population_served": 88,
+        "health_based_violations_5yr": 77,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Valley Ford, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

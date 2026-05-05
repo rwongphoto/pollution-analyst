@@ -1,143 +1,233 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "livingston",
-    "name": "City Of Livingston",
-    "pwsid": "CA2410004",
-    "population_served": 14894,
-    "primary_source": "groundwater",
-    "cities_served": [
-      "Livingston"
+    "name": "Livingston",
+    "fips": "0642006",
+    "population": 14344,
+    "county_name": "Merced",
+    "county_fips": "06047"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 1,
+    "total_releases_pounds": 121847,
+    "air_releases_pounds": 55455,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 66392,
+    "yoy_pct_change": -16.2,
+    "long_arc_pct_change": 615.9,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 17020
+      },
+      {
+        "year": 2011,
+        "value": 68023
+      },
+      {
+        "year": 2012,
+        "value": 201231
+      },
+      {
+        "year": 2013,
+        "value": 157260
+      },
+      {
+        "year": 2014,
+        "value": 106726
+      },
+      {
+        "year": 2015,
+        "value": 22123
+      },
+      {
+        "year": 2016,
+        "value": 24685
+      },
+      {
+        "year": 2017,
+        "value": 29878
+      },
+      {
+        "year": 2018,
+        "value": 21602
+      },
+      {
+        "year": 2019,
+        "value": 81328
+      },
+      {
+        "year": 2020,
+        "value": 101112
+      },
+      {
+        "year": 2021,
+        "value": 149688
+      },
+      {
+        "year": 2022,
+        "value": 145478
+      },
+      {
+        "year": 2023,
+        "value": 121847
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 5,
-    "health_based_violations_5yr": 3,
-    "unresolved_violations": 4,
-    "contaminants_with_violations": 3,
-    "years_since_last_violation": 2
-  },
-  "violations": [
+  "pathways": [
     {
-      "year": 2024,
-      "contaminant": "Contaminant 5200",
-      "contaminant_code": "5200",
-      "severity": "monitoring",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": true,
-      "description": "Reporting failure"
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 55455,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 55455
+        }
+      ]
     },
     {
-      "year": 2024,
-      "contaminant": "Contaminant 5200",
-      "contaminant_code": "5200",
-      "severity": "health_based",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": true,
-      "description": "Treatment technique violation"
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
     },
     {
-      "year": 2023,
-      "contaminant": "Contaminant 2414",
-      "contaminant_code": "2414",
-      "severity": "health_based",
-      "rule": "Lead and Copper Rule",
-      "is_unresolved": true,
-      "description": "Maximum contaminant level exceeded"
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 66392,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 66392
+        }
+      ]
     },
     {
-      "year": 2023,
-      "contaminant": "Contaminant 2414",
-      "contaminant_code": "2414",
-      "severity": "health_based",
-      "rule": "Lead and Copper Rule",
-      "is_unresolved": true,
-      "description": "Maximum contaminant level exceeded"
-    },
-    {
-      "year": 2021,
-      "contaminant": "Beryllium",
-      "contaminant_code": "1040",
-      "severity": "monitoring",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": false,
-      "description": "Failure to monitor as scheduled; returned to compliance"
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 583191,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 20.4,
+      "long_arc_pct_change": 48.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 393049
+        },
+        {
+          "year": 2011,
+          "value": 529644
+        },
+        {
+          "year": 2012,
+          "value": 449972
+        },
+        {
+          "year": 2013,
+          "value": 427004
+        },
+        {
+          "year": 2014,
+          "value": 481617
+        },
+        {
+          "year": 2015,
+          "value": 483755
+        },
+        {
+          "year": 2016,
+          "value": 431830
+        },
+        {
+          "year": 2017,
+          "value": 410857
+        },
+        {
+          "year": 2018,
+          "value": 426721
+        },
+        {
+          "year": 2019,
+          "value": 429000
+        },
+        {
+          "year": 2020,
+          "value": 489730
+        },
+        {
+          "year": 2021,
+          "value": 485827
+        },
+        {
+          "year": 2022,
+          "value": 484331
+        },
+        {
+          "year": 2023,
+          "value": 583191
+        }
+      ]
     }
   ],
-  "metrics": {
-    "violations_history": [
+  "facilities": [
+    {
+      "slug": "foster-farms-livingston-complex",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Foster Farms Livingston Complex",
+      "parent_company": "Foster Farms LLC",
+      "total_pounds_recent": 121847,
+      "yoy_pct_change": -16.2,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Livingston"
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 14894,
+    "violations_5yr_total": 5,
+    "health_based_5yr_total": 3,
+    "unresolved_total": 4,
+    "utilities_with_unresolved": 1,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 1
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 2
-      },
-      {
-        "year": 2024,
-        "value": 2
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 2
-      },
-      {
-        "year": 2024,
-        "value": 1
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": [
-      {
-        "contaminant": "Contaminant 5200",
-        "count": 2
-      },
-      {
-        "contaminant": "Contaminant 2414",
-        "count": 2
-      },
-      {
-        "contaminant": "Beryllium",
-        "count": 1
+        "slug": "livingston",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Livingston",
+        "pwsid": "CA2410004",
+        "population_served": 14894,
+        "health_based_violations_5yr": 3,
+        "unresolved": true
       }
     ]
   },
+  "flags": [],
   "equity": {
     "population": 14344,
     "pct_low_income": 16.6,
@@ -200,12 +290,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Livingston, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Livingston, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

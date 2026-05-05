@@ -1,0 +1,318 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "san-marcos",
+    "name": "San Marcos",
+    "fips": "0668196",
+    "population": 94360,
+    "county_name": "San Diego",
+    "county_fips": "06073"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 2,
+    "total_releases_pounds": 71620,
+    "air_releases_pounds": 70200,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1420,
+    "yoy_pct_change": -28.3,
+    "long_arc_pct_change": 146.8,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 29020
+      },
+      {
+        "year": 2011,
+        "value": 28660
+      },
+      {
+        "year": 2012,
+        "value": 29910
+      },
+      {
+        "year": 2013,
+        "value": 18445
+      },
+      {
+        "year": 2014,
+        "value": 30055
+      },
+      {
+        "year": 2015,
+        "value": 35900
+      },
+      {
+        "year": 2016,
+        "value": 49359
+      },
+      {
+        "year": 2017,
+        "value": 75565
+      },
+      {
+        "year": 2018,
+        "value": 46720
+      },
+      {
+        "year": 2019,
+        "value": 84350
+      },
+      {
+        "year": 2020,
+        "value": 55330
+      },
+      {
+        "year": 2021,
+        "value": 82520
+      },
+      {
+        "year": 2022,
+        "value": 99861
+      },
+      {
+        "year": 2023,
+        "value": 71620
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 70200,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 70200
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 1420,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1420
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 7595135,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -12.3,
+      "long_arc_pct_change": -25.7,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10219954
+        },
+        {
+          "year": 2011,
+          "value": 9884760
+        },
+        {
+          "year": 2012,
+          "value": 12931462
+        },
+        {
+          "year": 2013,
+          "value": 12221300
+        },
+        {
+          "year": 2014,
+          "value": 10897222
+        },
+        {
+          "year": 2015,
+          "value": 11370550
+        },
+        {
+          "year": 2016,
+          "value": 9593361
+        },
+        {
+          "year": 2017,
+          "value": 9826483
+        },
+        {
+          "year": 2018,
+          "value": 7109175
+        },
+        {
+          "year": 2019,
+          "value": 6685448
+        },
+        {
+          "year": 2020,
+          "value": 8200455
+        },
+        {
+          "year": 2021,
+          "value": 8018625
+        },
+        {
+          "year": 2022,
+          "value": 8662769
+        },
+        {
+          "year": 2023,
+          "value": 7595135
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "sumitomo-electric-interconnect-products-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sumitomo Electric Interconnect Products INC",
+      "parent_company": "Sumitomo Electric USA Holdings INC",
+      "total_pounds_recent": 71620,
+      "yoy_pct_change": -28.3,
+      "top_chemical": "Ethylene glycol",
+      "city": "San Marcos"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 113596,
+    "violations_5yr_total": 142,
+    "health_based_5yr_total": 13,
+    "unresolved_total": 142,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "ocotillo-oasis-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ocotillo Oasis, Llc",
+        "pwsid": "CA3700291",
+        "population_served": 96,
+        "health_based_violations_5yr": 13,
+        "unresolved": true
+      },
+      {
+        "slug": "vallecitos-wd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Vallecitos Wd",
+        "pwsid": "CA3710002",
+        "population_served": 113500,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 94360,
+    "pct_low_income": 9.7,
+    "pct_people_of_color": 56.6,
+    "pct_under_5": 7.6,
+    "pct_over_64": 13.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 138.9
+      },
+      {
+        "label": "Ozone",
+        "score": 89.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 68.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 87.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 30.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 107.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 21.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 57.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 128.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 100.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "San Marcos, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

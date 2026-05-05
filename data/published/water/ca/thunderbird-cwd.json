@@ -1,0 +1,183 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "thunderbird-cwd",
+    "name": "Thunderbird Cwd",
+    "pwsid": "CA3600306",
+    "population_served": 2098,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Apple Valley"
+    ]
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 3,
+    "health_based_violations_5yr": 1,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Beryllium",
+      "contaminant_code": "1040",
+      "severity": "health_based",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Maximum contaminant level exceeded"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 2
+      },
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 2
+      },
+      {
+        "contaminant": "Beryllium",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Beryllium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3600306"
+      }
+    }
+  ],
+  "equity": {
+    "population": 75603,
+    "pct_low_income": 17.0,
+    "pct_people_of_color": 54.9,
+    "pct_under_5": 8.0,
+    "pct_over_64": 16.5,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 151.8
+      },
+      {
+        "label": "Ozone",
+        "score": 179.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 94.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 82.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 33.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 70.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 35.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 45.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 82.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 97.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 128.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 6.1
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Apple Valley, California (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T06:24:52Z"
+}

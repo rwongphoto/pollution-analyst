@@ -1,0 +1,448 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "rosemead",
+    "name": "Rosemead",
+    "fips": "0662896",
+    "population": 51043,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 15,
+    "total_releases_pounds": 259646,
+    "air_releases_pounds": 2,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 259644,
+    "yoy_pct_change": 32.6,
+    "long_arc_pct_change": 607.0,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 36726
+      },
+      {
+        "year": 2011,
+        "value": 82711
+      },
+      {
+        "year": 2012,
+        "value": 46189
+      },
+      {
+        "year": 2013,
+        "value": 57177
+      },
+      {
+        "year": 2014,
+        "value": 56988
+      },
+      {
+        "year": 2015,
+        "value": 59818
+      },
+      {
+        "year": 2016,
+        "value": 30783
+      },
+      {
+        "year": 2017,
+        "value": 83386
+      },
+      {
+        "year": 2018,
+        "value": 161128
+      },
+      {
+        "year": 2019,
+        "value": 376290
+      },
+      {
+        "year": 2020,
+        "value": 211407
+      },
+      {
+        "year": 2021,
+        "value": 143051
+      },
+      {
+        "year": 2022,
+        "value": 195803
+      },
+      {
+        "year": 2023,
+        "value": 259646
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 2,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 259644,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 259644
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "m-argueso-co-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "M. Argueso & CO. INC.",
+      "parent_company": "Paramelt USA",
+      "total_pounds_recent": 259646,
+      "yoy_pct_change": 32.6,
+      "top_chemical": "4,4'-Isopropylidenediphenol",
+      "city": "Rosemead"
+    }
+  ],
+  "water": {
+    "utilities_count": 15,
+    "population_served_total": 225761,
+    "violations_5yr_total": 27,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 4,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "golden-sands-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden Sands Mobile Home Park",
+        "pwsid": "CA1900649",
+        "population_served": 450,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "cal-american-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cal American Water Co",
+        "pwsid": "CA5610040",
+        "population_served": 66809,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "cal-am-water-company-san-marino",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cal/Am Water Company - San Marino",
+        "pwsid": "CA1910139",
+        "population_served": 47995,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "san-gabriel-county-wd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Gabriel County Wd",
+        "pwsid": "CA1910144",
+        "population_served": 39345,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "cal-am-water-company-duarte",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cal-Am Water Company - Duarte",
+        "pwsid": "CA1910186",
+        "population_served": 24773,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "cal-am-water-company-baldwin-hills",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cal/Am Water Company - Baldwin Hills",
+        "pwsid": "CA1910052",
+        "population_served": 20724,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "cal-am-water-company-east-pasadena",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cal-Am Water Company - East Pasadena",
+        "pwsid": "CA1910020",
+        "population_served": 9949,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "bellflower-municipal-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bellflower Municipal Water System",
+        "pwsid": "CA1910018",
+        "population_served": 5999,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "amarillo-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Amarillo Mutual Water Company",
+        "pwsid": "CA1910002",
+        "population_served": 3134,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "cal-american-wc-las-posas-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cal American Wc - Las Posas Estates",
+        "pwsid": "CA5610081",
+        "population_served": 2039,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "cal-american-water-company-piru",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cal American Water Company - Piru",
+        "pwsid": "CA5610021",
+        "population_served": 2003,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "cal-american-wc-rio-plaza",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cal American Wc - Rio Plaza",
+        "pwsid": "CA5610010",
+        "population_served": 1709,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "cal-american-yerba-buena",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cal American - Yerba Buena",
+        "pwsid": "CA5610006",
+        "population_served": 690,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sce-big-creek-powerhouse-1",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sce/Big Creek Powerhouse 1",
+        "pwsid": "CA1009111",
+        "population_served": 104,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sce-bishop-creek-plant-4",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sce Bishop Creek Plant 4",
+        "pwsid": "CA1400078",
+        "population_served": 38,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 51043,
+    "pct_low_income": 12.6,
+    "pct_people_of_color": 96.2,
+    "pct_under_5": 3.7,
+    "pct_over_64": 18.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 233.7
+      },
+      {
+        "label": "Ozone",
+        "score": 235.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 187.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 230.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 148.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 235.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 184.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 238.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 199.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 232.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 235.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Rosemead, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

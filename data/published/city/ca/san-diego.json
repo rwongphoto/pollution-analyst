@@ -1,0 +1,547 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "san-diego",
+    "name": "San Diego",
+    "fips": "0666000",
+    "population": 1383987,
+    "county_name": "San Diego",
+    "county_fips": "06073"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 36,
+    "utilities_serving": 15,
+    "total_releases_pounds": 587949,
+    "air_releases_pounds": 170032,
+    "water_releases_pounds": 3,
+    "land_releases_pounds": 417914,
+    "yoy_pct_change": 89.6,
+    "long_arc_pct_change": 126.9,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 259120
+      },
+      {
+        "year": 2011,
+        "value": 177190
+      },
+      {
+        "year": 2012,
+        "value": 399262
+      },
+      {
+        "year": 2013,
+        "value": 826892
+      },
+      {
+        "year": 2014,
+        "value": 241467
+      },
+      {
+        "year": 2015,
+        "value": 335764
+      },
+      {
+        "year": 2016,
+        "value": 444595
+      },
+      {
+        "year": 2017,
+        "value": 360070
+      },
+      {
+        "year": 2018,
+        "value": 249919
+      },
+      {
+        "year": 2019,
+        "value": 224997
+      },
+      {
+        "year": 2020,
+        "value": 235110
+      },
+      {
+        "year": 2021,
+        "value": 252179
+      },
+      {
+        "year": 2022,
+        "value": 310153
+      },
+      {
+        "year": 2023,
+        "value": 587949
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 170032,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 170032
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 3,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 417914,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 417914
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 7595135,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -12.3,
+      "long_arc_pct_change": -25.7,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10219954
+        },
+        {
+          "year": 2011,
+          "value": 9884760
+        },
+        {
+          "year": 2012,
+          "value": 12931462
+        },
+        {
+          "year": 2013,
+          "value": 12221300
+        },
+        {
+          "year": 2014,
+          "value": 10897222
+        },
+        {
+          "year": 2015,
+          "value": 11370550
+        },
+        {
+          "year": 2016,
+          "value": 9593361
+        },
+        {
+          "year": 2017,
+          "value": 9826483
+        },
+        {
+          "year": 2018,
+          "value": 7109175
+        },
+        {
+          "year": 2019,
+          "value": 6685448
+        },
+        {
+          "year": 2020,
+          "value": 8200455
+        },
+        {
+          "year": 2021,
+          "value": 8018625
+        },
+        {
+          "year": 2022,
+          "value": 8662769
+        },
+        {
+          "year": 2023,
+          "value": 7595135
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "bae-systems-san-diego-ship-repair",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Bae Systems San Diego Ship Repair",
+      "parent_company": "Bae Systems INC",
+      "total_pounds_recent": 364243,
+      "yoy_pct_change": 1123.6,
+      "top_chemical": "Aluminum oxide (fibrous forms)",
+      "city": "San Diego"
+    },
+    {
+      "slug": "general-dynamics-nassco",
+      "state": "ca",
+      "state_label": "California",
+      "name": "General Dynamics (Nassco)",
+      "parent_company": "General Dynamics CORP",
+      "total_pounds_recent": 158158,
+      "yoy_pct_change": -13.2,
+      "top_chemical": "Xylene (mixed isomers)",
+      "city": "San Diego"
+    },
+    {
+      "slug": "us-marine-corps-air-station-miramar",
+      "state": "ca",
+      "state_label": "California",
+      "name": "US Marine Corps Air Station Miramar",
+      "parent_company": "US Department Of Defense",
+      "total_pounds_recent": 23431,
+      "yoy_pct_change": 20.5,
+      "top_chemical": "Lead",
+      "city": "San Diego"
+    },
+    {
+      "slug": "us-cbp-border-patrol-firearms-range-be-ca0180",
+      "state": "ca",
+      "state_label": "California",
+      "name": "US Cbp Border Patrol Firearms Range Be # Ca0180",
+      "parent_company": "US Department Of Homeland Security",
+      "total_pounds_recent": 17053,
+      "yoy_pct_change": -12.8,
+      "top_chemical": "Lead",
+      "city": "San Diego"
+    },
+    {
+      "slug": "integrated-dna-technologies",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Integrated Dna Technologies",
+      "parent_company": "Danaher CORP",
+      "total_pounds_recent": 7616,
+      "yoy_pct_change": -22.2,
+      "top_chemical": "Acetonitrile",
+      "city": "San Diego"
+    },
+    {
+      "slug": "us-naval-submarine-base-san-diego",
+      "state": "ca",
+      "state_label": "California",
+      "name": "US Naval Submarine Base San Diego",
+      "parent_company": "US Department Of Defense",
+      "total_pounds_recent": 4879,
+      "yoy_pct_change": 3.6,
+      "top_chemical": "Xylene (mixed isomers)",
+      "city": "San Diego"
+    },
+    {
+      "slug": "solar-turbines-inc-harbor-drive",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Solar Turbines INC Harbor Drive",
+      "parent_company": "Caterpillar INC",
+      "total_pounds_recent": 4257,
+      "yoy_pct_change": -21.8,
+      "top_chemical": "Nickel",
+      "city": "San Diego"
+    },
+    {
+      "slug": "saint-gobain-solar-gard-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Saint Gobain Solar Gard LLC",
+      "parent_company": "Saint-Gobain CORP",
+      "total_pounds_recent": 2319,
+      "yoy_pct_change": 30.9,
+      "top_chemical": "Toluene",
+      "city": "San Diego"
+    },
+    {
+      "slug": "sherwin-williams-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sherwin-Williams CO",
+      "parent_company": "The Sherwin-Williams Co",
+      "total_pounds_recent": 1260,
+      "yoy_pct_change": -34.5,
+      "top_chemical": "Zinc compounds",
+      "city": "San Diego"
+    },
+    {
+      "slug": "san-diego-galvanizing-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "San Diego Galvanizing INC",
+      "parent_company": null,
+      "total_pounds_recent": 928,
+      "yoy_pct_change": 1244.9,
+      "top_chemical": "Zinc compounds",
+      "city": "San Diego"
+    }
+  ],
+  "water": {
+    "utilities_count": 15,
+    "population_served_total": 1424278,
+    "violations_5yr_total": 48,
+    "health_based_5yr_total": 15,
+    "unresolved_total": 15,
+    "utilities_with_unresolved": 3,
+    "utilities": [
+      {
+        "slug": "butterfield-ranch",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Butterfield Ranch",
+        "pwsid": "CA3701184",
+        "population_served": 353,
+        "health_based_violations_5yr": 13,
+        "unresolved": true
+      },
+      {
+        "slug": "cottonwood-ridge-manufactured-housing-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cottonwood Ridge Manufactured Housing Co",
+        "pwsid": "CA4500107",
+        "population_served": 205,
+        "health_based_violations_5yr": 2,
+        "unresolved": false
+      },
+      {
+        "slug": "san-diego-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Diego, City Of",
+        "pwsid": "CA3710020",
+        "population_served": 1385379,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "nas-north-island-nab-coronado",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Nas North Island & Nab Coronado",
+        "pwsid": "CA3710750",
+        "population_served": 36990,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "stoneybrooke-village-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Stoneybrooke Village Mhp",
+        "pwsid": "OH7802912",
+        "population_served": 332,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "northcrest-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Northcrest Mobile Home Park",
+        "pwsid": "CA0800552",
+        "population_served": 250,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "hidden-valley-owner-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hidden Valley Owner Llc",
+        "pwsid": "MT0000035",
+        "population_served": 200,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "pine-grove-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Pine Grove Mobile Home Park",
+        "pwsid": "CA0800800",
+        "population_served": 142,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "port-of-call-west",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Port Of Call - West",
+        "pwsid": "MI0040491",
+        "population_served": 105,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "tall-timber-travel-trailer-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Tall Timber Travel Trailer Park",
+        "pwsid": "FL3421528",
+        "population_served": 95,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "suncrest-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Suncrest Mhp",
+        "pwsid": "NC0111148",
+        "population_served": 65,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "chalet-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Chalet Mobile Home Park",
+        "pwsid": "ID5070012",
+        "population_served": 60,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "suntree-hollow-mobile-home-court",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Suntree Hollow Mobile Home Court",
+        "pwsid": "ID5070049",
+        "population_served": 60,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "hardyville-on-the-river",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hardyville On The River",
+        "pwsid": "AZ0408342",
+        "population_served": 42,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "san-diego-county-water-authority",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Diego County Water Authority",
+        "pwsid": "CA3710042",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1383987,
+    "pct_low_income": 11.4,
+    "pct_people_of_color": 58.5,
+    "pct_under_5": 5.2,
+    "pct_over_64": 13.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 141.0
+      },
+      {
+        "label": "Ozone",
+        "score": 86.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 95.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 120.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 26.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 137.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 60.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 71.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 139.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 111.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "San Diego, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

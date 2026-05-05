@@ -1,0 +1,395 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "rialto",
+    "name": "Rialto",
+    "fips": "0660466",
+    "population": 103873,
+    "county_name": "San Bernardino",
+    "county_fips": "06071"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 8,
+    "utilities_serving": 2,
+    "total_releases_pounds": 21783,
+    "air_releases_pounds": 3903,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 17880,
+    "yoy_pct_change": 227.4,
+    "long_arc_pct_change": 404.2,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 4320
+      },
+      {
+        "year": 2011,
+        "value": 4042
+      },
+      {
+        "year": 2012,
+        "value": 3793
+      },
+      {
+        "year": 2013,
+        "value": 3632
+      },
+      {
+        "year": 2014,
+        "value": 3972
+      },
+      {
+        "year": 2015,
+        "value": 5403
+      },
+      {
+        "year": 2016,
+        "value": 5686
+      },
+      {
+        "year": 2017,
+        "value": 6011
+      },
+      {
+        "year": 2018,
+        "value": 6237
+      },
+      {
+        "year": 2019,
+        "value": 28209
+      },
+      {
+        "year": 2020,
+        "value": 13369
+      },
+      {
+        "year": 2021,
+        "value": 5313
+      },
+      {
+        "year": 2022,
+        "value": 6653
+      },
+      {
+        "year": 2023,
+        "value": 21783
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 3903,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3903
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 17880,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 17880
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 9779299,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -6.6,
+      "long_arc_pct_change": -7.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10552170
+        },
+        {
+          "year": 2011,
+          "value": 9345778
+        },
+        {
+          "year": 2012,
+          "value": 12082882
+        },
+        {
+          "year": 2013,
+          "value": 11371200
+        },
+        {
+          "year": 2014,
+          "value": 11908909
+        },
+        {
+          "year": 2015,
+          "value": 10657991
+        },
+        {
+          "year": 2016,
+          "value": 10438970
+        },
+        {
+          "year": 2017,
+          "value": 9782427
+        },
+        {
+          "year": 2018,
+          "value": 9213305
+        },
+        {
+          "year": 2019,
+          "value": 9502197
+        },
+        {
+          "year": 2020,
+          "value": 9773926
+        },
+        {
+          "year": 2021,
+          "value": 9914249
+        },
+        {
+          "year": 2022,
+          "value": 10471311
+        },
+        {
+          "year": 2023,
+          "value": 9779299
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "lippert-components",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Lippert Components",
+      "parent_company": "Lci Industries",
+      "total_pounds_recent": 16934,
+      "yoy_pct_change": 8083.5,
+      "top_chemical": "Chromium",
+      "city": "Rialto"
+    },
+    {
+      "slug": "dura-technologies-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Dura Technologies INC",
+      "parent_company": "Rdhc Group INC",
+      "total_pounds_recent": 2332,
+      "yoy_pct_change": -38.0,
+      "top_chemical": "Styrene",
+      "city": "Bloomington"
+    },
+    {
+      "slug": "tesoro-colton-terminal",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Tesoro - Colton Terminal",
+      "parent_company": "Marathon Petroleum CORP",
+      "total_pounds_recent": 1563,
+      "yoy_pct_change": -9.6,
+      "top_chemical": "Toluene",
+      "city": "Bloomington"
+    },
+    {
+      "slug": "westlake-royal-roofing-rialto",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Westlake Royal Roofing - Rialto",
+      "parent_company": "Westlake CORP",
+      "total_pounds_recent": 941,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Chromium  and Chromium Compounds(except for chromite ore mined in the Transvaal Region)",
+      "city": "Rialto"
+    },
+    {
+      "slug": "rialto-plant-24",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Rialto Plant 24",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 12,
+      "yoy_pct_change": -6.9,
+      "top_chemical": "Lead compounds",
+      "city": "Rialto"
+    },
+    {
+      "slug": "american-handforge",
+      "state": "ca",
+      "state_label": "California",
+      "name": "American Handforge",
+      "parent_company": "Berkshire Hathaway INC",
+      "total_pounds_recent": 1,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Copper",
+      "city": "Rialto"
+    },
+    {
+      "slug": "holliday-rock-co-inc-colton-concrete",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Holliday Rock CO. INC. - Colton Concrete",
+      "parent_company": "Holliday Rock Co INC",
+      "total_pounds_recent": 0.09,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Rialto"
+    },
+    {
+      "slug": "rialto-concrete-products-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Rialto Concrete Products INC",
+      "parent_company": null,
+      "total_pounds_recent": 0.05,
+      "yoy_pct_change": 11.4,
+      "top_chemical": "Lead",
+      "city": "Rialto"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 158951,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "west-valley-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "West Valley Water District",
+        "pwsid": "CA3610004",
+        "population_served": 104498,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rialto-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rialto, City Of",
+        "pwsid": "CA3610038",
+        "population_served": 54453,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 103873,
+    "pct_low_income": 13.0,
+    "pct_people_of_color": 91.0,
+    "pct_under_5": 7.7,
+    "pct_over_64": 9.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 215.7
+      },
+      {
+        "label": "Ozone",
+        "score": 226.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 201.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 213.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 106.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 194.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 101.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 214.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 188.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 200.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 186.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Rialto, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

@@ -16,10 +16,10 @@
   "reporting_year": 2023,
   "briefing_label": "TRI 2023 reporting year",
   "totals": {
-    "total_releases_pounds": 0,
-    "air_releases_pounds": 0,
+    "total_releases_pounds": 0.3,
+    "air_releases_pounds": 0.1,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 0,
+    "land_releases_pounds": 0.2,
     "chemicals_reported": 2,
     "yoy_pct_change": -100.0,
     "long_arc_pct_change": -100.0,
@@ -79,7 +79,7 @@
       },
       {
         "year": 2023,
-        "value": 0
+        "value": 0.3
       }
     ]
   },
@@ -88,7 +88,7 @@
       "chemical": "Benzo[g,h,i]perylene",
       "cas": "191-24-2",
       "category": "pbt",
-      "total_pounds_recent": 0,
+      "total_pounds_recent": 0.2,
       "history": [
         {
           "year": 2010,
@@ -144,7 +144,7 @@
         },
         {
           "year": 2023,
-          "value": 0
+          "value": 0.2
         }
       ],
       "yoy_pct_change": -97.2,
@@ -155,7 +155,7 @@
       "chemical": "Polycyclic aromatic compounds",
       "cas": "N590",
       "category": "pbt",
-      "total_pounds_recent": 0,
+      "total_pounds_recent": 0.1,
       "history": [
         {
           "year": 2010,
@@ -211,12 +211,213 @@
         },
         {
           "year": 2023,
-          "value": 0
+          "value": 0.1
         }
       ],
       "yoy_pct_change": -97.1,
       "long_arc_pct_change": -99.4,
       "long_arc_baseline_year": 2010
+    }
+  ],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total reported releases",
+      "summary": "Total reported releases at Phillips 66 Carbon Plant have more than three-quarters since 2010 (through 2023).",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -91453.4,
+      "baseline_year": 2010,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 91454
+        },
+        {
+          "year": 2011,
+          "value": 92283
+        },
+        {
+          "year": 2012,
+          "value": 75260
+        },
+        {
+          "year": 2013,
+          "value": 71007
+        },
+        {
+          "year": 2014,
+          "value": 91451
+        },
+        {
+          "year": 2015,
+          "value": 80281
+        },
+        {
+          "year": 2016,
+          "value": 90297
+        },
+        {
+          "year": 2017,
+          "value": 74730
+        },
+        {
+          "year": 2018,
+          "value": 92963
+        },
+        {
+          "year": 2019,
+          "value": 84497
+        },
+        {
+          "year": 2020,
+          "value": 86063
+        },
+        {
+          "year": 2021,
+          "value": 90894
+        },
+        {
+          "year": 2022,
+          "value": 88669
+        },
+        {
+          "year": 2023,
+          "value": 0.3
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0007647010",
+      "summary": "0007647010 releases at Phillips 66 Carbon Plant fell from 68k lb to 0 lb (100% lower) between 2022 and 2023.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -68207.2,
+      "baseline_year": 2022,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 70127
+        },
+        {
+          "year": 2011,
+          "value": 70774
+        },
+        {
+          "year": 2012,
+          "value": 57743
+        },
+        {
+          "year": 2013,
+          "value": 54411
+        },
+        {
+          "year": 2014,
+          "value": 70360
+        },
+        {
+          "year": 2015,
+          "value": 61763
+        },
+        {
+          "year": 2016,
+          "value": 69473
+        },
+        {
+          "year": 2017,
+          "value": 57487
+        },
+        {
+          "year": 2018,
+          "value": 71517
+        },
+        {
+          "year": 2019,
+          "value": 65016
+        },
+        {
+          "year": 2020,
+          "value": 66215
+        },
+        {
+          "year": 2021,
+          "value": 69919
+        },
+        {
+          "year": 2022,
+          "value": 68207
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0007664939",
+      "summary": "0007664939 releases at Phillips 66 Carbon Plant fell from 20k lb to 0 lb (100% lower) between 2022 and 2023.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -20369.0,
+      "baseline_year": 2022,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 20944
+        },
+        {
+          "year": 2011,
+          "value": 21137
+        },
+        {
+          "year": 2012,
+          "value": 17246
+        },
+        {
+          "year": 2013,
+          "value": 16251
+        },
+        {
+          "year": 2014,
+          "value": 21014
+        },
+        {
+          "year": 2015,
+          "value": 18446
+        },
+        {
+          "year": 2016,
+          "value": 20747
+        },
+        {
+          "year": 2017,
+          "value": 17167
+        },
+        {
+          "year": 2018,
+          "value": 21355
+        },
+        {
+          "year": 2019,
+          "value": 19413
+        },
+        {
+          "year": 2020,
+          "value": 19772
+        },
+        {
+          "year": 2021,
+          "value": 20880
+        },
+        {
+          "year": 2022,
+          "value": 20369
+        }
+      ]
     }
   ],
   "equity": {
@@ -288,5 +489,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "_published_at": "2026-05-05T06:24:51Z"
 }

@@ -87,6 +87,43 @@ def load_places(state_fips: str) -> list[tuple[Place, object]]:
     return out
 
 
+def assign_facilities_to_places(
+    facility_points: list[tuple[str, float, float]],
+    state_fips: str,
+) -> dict[str, list[str]]:
+    """Map facility_id → place_fips by point-in-polygon containment.
+
+    facility_points: [(facility_id, lat, lng), ...]. Returns {place_fips:
+    [facility_id, ...]}; facilities outside any place polygon (rural /
+    unincorporated) are silently dropped from the result. Uses STRtree for
+    O(log n) candidate lookup, same as build_bg_to_place.
+    """
+    from shapely.geometry import Point  # noqa: PLC0415
+    from shapely.strtree import STRtree
+
+    place_pairs = load_places(state_fips)
+    if not place_pairs:
+        return {}
+    place_geoms = [g for _, g in place_pairs]
+    place_fips_list = [p.fips for p, _ in place_pairs]
+    tree = STRtree(place_geoms)
+
+    out: dict[str, list[str]] = {}
+    for fac_id, lat, lng in facility_points:
+        if lat is None or lng is None:
+            continue
+        pt = Point(lng, lat)  # shapely is (x, y) = (lng, lat)
+        for idx in tree.query(pt):
+            try:
+                idx_int = int(idx)
+            except (TypeError, ValueError):
+                continue
+            if 0 <= idx_int < len(place_geoms) and place_geoms[idx_int].contains(pt):
+                out.setdefault(place_fips_list[idx_int], []).append(fac_id)
+                break
+    return out
+
+
 def build_bg_to_place(state_fips: str) -> dict[str, str]:
     """Return {bgfips: place_fips}. Cached on disk after first build."""
     cache = _tiger_dir() / f"bg_to_place_{state_fips}.json"

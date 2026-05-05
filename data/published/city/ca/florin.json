@@ -1,0 +1,288 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "florin",
+    "name": "Florin",
+    "fips": "0624498",
+    "population": 49992,
+    "county_name": "Sacramento",
+    "county_fips": "06067"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 0,
+    "total_releases_pounds": 0.44,
+    "air_releases_pounds": 0.44,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": 3936.4,
+    "long_arc_pct_change": 353.1,
+    "long_arc_baseline_year": 2015,
+    "history": [
+      {
+        "year": 2015,
+        "value": 0.1
+      },
+      {
+        "year": 2016,
+        "value": 0.05
+      },
+      {
+        "year": 2017,
+        "value": 0.1
+      },
+      {
+        "year": 2018,
+        "value": 0.09
+      },
+      {
+        "year": 2019,
+        "value": 0.09
+      },
+      {
+        "year": 2020,
+        "value": 0.08
+      },
+      {
+        "year": 2021,
+        "value": 0.1
+      },
+      {
+        "year": 2022,
+        "value": 0.01
+      },
+      {
+        "year": 2023,
+        "value": 0.44
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2147517,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 36.8,
+      "long_arc_pct_change": -18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2631103
+        },
+        {
+          "year": 2011,
+          "value": 2430972
+        },
+        {
+          "year": 2012,
+          "value": 2786310
+        },
+        {
+          "year": 2013,
+          "value": 2837952
+        },
+        {
+          "year": 2014,
+          "value": 2759010
+        },
+        {
+          "year": 2015,
+          "value": 2884900
+        },
+        {
+          "year": 2016,
+          "value": 2704954
+        },
+        {
+          "year": 2017,
+          "value": 2314836
+        },
+        {
+          "year": 2018,
+          "value": 2541006
+        },
+        {
+          "year": 2019,
+          "value": 2161396
+        },
+        {
+          "year": 2020,
+          "value": 2429126
+        },
+        {
+          "year": 2021,
+          "value": 2573534
+        },
+        {
+          "year": 2022,
+          "value": 1569286
+        },
+        {
+          "year": 2023,
+          "value": 2147517
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "quikrete-sacramento-ca-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Quikrete - Sacramento Ca Plant",
+      "parent_company": "Quikrete Holdings",
+      "total_pounds_recent": 0.33,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead",
+      "city": "Sacramento"
+    },
+    {
+      "slug": "forterra-pipe-precast-florin-rd",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Forterra Pipe & Precast - Florin Rd",
+      "parent_company": "Quikrete Holdings",
+      "total_pounds_recent": 0.11,
+      "yoy_pct_change": 900.0,
+      "top_chemical": "Lead",
+      "city": "Sacramento"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 49992,
+    "pct_low_income": 18.4,
+    "pct_people_of_color": 84.8,
+    "pct_under_5": 6.6,
+    "pct_over_64": 13.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 226.1
+      },
+      {
+        "label": "Ozone",
+        "score": 203.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 142.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 169.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 33.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 189.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 47.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 181.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 207.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 204.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 219.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Florin, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

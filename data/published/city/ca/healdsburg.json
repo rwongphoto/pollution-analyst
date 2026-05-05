@@ -1,0 +1,284 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "healdsburg",
+    "name": "Healdsburg",
+    "fips": "0633056",
+    "population": 11481,
+    "county_name": "Sonoma",
+    "county_fips": "06097"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 5,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 117873,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 67.6,
+      "long_arc_pct_change": -38.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 190188
+        },
+        {
+          "year": 2011,
+          "value": 184825
+        },
+        {
+          "year": 2012,
+          "value": 189951
+        },
+        {
+          "year": 2013,
+          "value": 175436
+        },
+        {
+          "year": 2014,
+          "value": 78299
+        },
+        {
+          "year": 2015,
+          "value": 71514
+        },
+        {
+          "year": 2016,
+          "value": 87893
+        },
+        {
+          "year": 2017,
+          "value": 85263
+        },
+        {
+          "year": 2018,
+          "value": 67507
+        },
+        {
+          "year": 2019,
+          "value": 76010
+        },
+        {
+          "year": 2020,
+          "value": 80123
+        },
+        {
+          "year": 2021,
+          "value": 69027
+        },
+        {
+          "year": 2022,
+          "value": 70347
+        },
+        {
+          "year": 2023,
+          "value": 117873
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 5,
+    "population_served_total": 11619,
+    "violations_5yr_total": 10,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "healdsburg-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Healdsburg, City Of",
+        "pwsid": "CA4910005",
+        "population_served": 10985,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "colonial-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Colonial Park",
+        "pwsid": "CA4900721",
+        "population_served": 342,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rio-lindo-adventist-academy",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rio Lindo Adventist Academy",
+        "pwsid": "CA4900577",
+        "population_served": 178,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "russian-river-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Russian River Mutual Water Co.",
+        "pwsid": "CA4900665",
+        "population_served": 87,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "alexander-valley-acres-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Alexander Valley Acres Water Company",
+        "pwsid": "CA4900646",
+        "population_served": 27,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 11481,
+    "pct_low_income": 10.8,
+    "pct_people_of_color": 34.400000000000006,
+    "pct_under_5": 3.3,
+    "pct_over_64": 27.6,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 85.4
+      },
+      {
+        "label": "Ozone",
+        "score": 7.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 77.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 19.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 2.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 45.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 64.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 14.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 62.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 11.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 3.8
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Healdsburg, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

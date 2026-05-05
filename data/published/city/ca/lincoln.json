@@ -1,84 +1,254 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "lincoln",
-    "name": "City Of Lincoln",
-    "pwsid": "CA3110004",
-    "population_served": 54538,
-    "primary_source": "purchased",
-    "cities_served": [
-      "Lincoln"
+    "name": "Lincoln",
+    "fips": "0641474",
+    "population": 50131,
+    "county_name": "Placer",
+    "county_fips": "06061"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 2,
+    "total_releases_pounds": 23764,
+    "air_releases_pounds": 21330,
+    "water_releases_pounds": 33,
+    "land_releases_pounds": 2401,
+    "yoy_pct_change": 2.7,
+    "long_arc_pct_change": 156.2,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 9277
+      },
+      {
+        "year": 2011,
+        "value": 22628
+      },
+      {
+        "year": 2012,
+        "value": 23313
+      },
+      {
+        "year": 2013,
+        "value": 27899
+      },
+      {
+        "year": 2014,
+        "value": 29540
+      },
+      {
+        "year": 2015,
+        "value": 27843
+      },
+      {
+        "year": 2016,
+        "value": 16674
+      },
+      {
+        "year": 2017,
+        "value": 50261
+      },
+      {
+        "year": 2018,
+        "value": 11873
+      },
+      {
+        "year": 2019,
+        "value": 667
+      },
+      {
+        "year": 2020,
+        "value": 21030
+      },
+      {
+        "year": 2021,
+        "value": 23014
+      },
+      {
+        "year": 2022,
+        "value": 23131
+      },
+      {
+        "year": 2023,
+        "value": 23764
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 21330,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 21330
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 33,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 33
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 2401,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2401
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 174078,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -46.1,
+      "long_arc_pct_change": -31.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 255492
+        },
+        {
+          "year": 2011,
+          "value": 150453
+        },
+        {
+          "year": 2012,
+          "value": 317187
+        },
+        {
+          "year": 2013,
+          "value": 298223
+        },
+        {
+          "year": 2014,
+          "value": 305412
+        },
+        {
+          "year": 2015,
+          "value": 366722
+        },
+        {
+          "year": 2016,
+          "value": 249686
+        },
+        {
+          "year": 2017,
+          "value": 99733
+        },
+        {
+          "year": 2018,
+          "value": 191093
+        },
+        {
+          "year": 2019,
+          "value": 178262
+        },
+        {
+          "year": 2020,
+          "value": 183190
+        },
+        {
+          "year": 2021,
+          "value": 284570
+        },
+        {
+          "year": 2022,
+          "value": 323229
+        },
+        {
+          "year": 2023,
+          "value": 174078
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "sierra-pacific-industries-lincoln-div",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sierra Pacific Industries Lincoln Div",
+      "parent_company": "Sierra Pacific Industries",
+      "total_pounds_recent": 21323,
+      "yoy_pct_change": -3.9,
+      "top_chemical": "Ammonia",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "gladding-mcbean",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Gladding Mcbean",
+      "parent_company": "Pacific Coast Building Products INC",
+      "total_pounds_recent": 2441,
+      "yoy_pct_change": 156.7,
+      "top_chemical": "Barium  And Barium Compounds",
+      "city": "Lincoln"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 54574,
+    "violations_5yr_total": 2,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "evergreen-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Evergreen Mobile Home Park",
+        "pwsid": "CA2400084",
+        "population_served": 36,
+        "health_based_violations_5yr": 2,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
+        "slug": "lincoln",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Lincoln",
+        "pwsid": "CA3110004",
+        "population_served": 54538,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 50131,
     "pct_low_income": 8.0,
@@ -141,12 +311,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Lincoln, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Lincoln, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

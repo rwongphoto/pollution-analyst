@@ -1,0 +1,354 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "escondido",
+    "name": "Escondido",
+    "fips": "0622804",
+    "population": 151114,
+    "county_name": "San Diego",
+    "county_fips": "06073"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 6,
+    "total_releases_pounds": 5,
+    "air_releases_pounds": 3,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2,
+    "yoy_pct_change": 37.4,
+    "long_arc_pct_change": 309.4,
+    "long_arc_baseline_year": 2011,
+    "history": [
+      {
+        "year": 2011,
+        "value": 1
+      },
+      {
+        "year": 2012,
+        "value": 2
+      },
+      {
+        "year": 2013,
+        "value": 2
+      },
+      {
+        "year": 2014,
+        "value": 4
+      },
+      {
+        "year": 2015,
+        "value": 6
+      },
+      {
+        "year": 2016,
+        "value": 6
+      },
+      {
+        "year": 2017,
+        "value": 8
+      },
+      {
+        "year": 2018,
+        "value": 8
+      },
+      {
+        "year": 2019,
+        "value": 5
+      },
+      {
+        "year": 2020,
+        "value": 4
+      },
+      {
+        "year": 2021,
+        "value": 5
+      },
+      {
+        "year": 2022,
+        "value": 4
+      },
+      {
+        "year": 2023,
+        "value": 5
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 3,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 2,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 7595135,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -12.3,
+      "long_arc_pct_change": -25.7,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10219954
+        },
+        {
+          "year": 2011,
+          "value": 9884760
+        },
+        {
+          "year": 2012,
+          "value": 12931462
+        },
+        {
+          "year": 2013,
+          "value": 12221300
+        },
+        {
+          "year": 2014,
+          "value": 10897222
+        },
+        {
+          "year": 2015,
+          "value": 11370550
+        },
+        {
+          "year": 2016,
+          "value": 9593361
+        },
+        {
+          "year": 2017,
+          "value": 9826483
+        },
+        {
+          "year": 2018,
+          "value": 7109175
+        },
+        {
+          "year": 2019,
+          "value": 6685448
+        },
+        {
+          "year": 2020,
+          "value": 8200455
+        },
+        {
+          "year": 2021,
+          "value": 8018625
+        },
+        {
+          "year": 2022,
+          "value": 8662769
+        },
+        {
+          "year": 2023,
+          "value": 7595135
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "escondido-plant-36",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Escondido Plant 36",
+      "parent_company": null,
+      "total_pounds_recent": 5,
+      "yoy_pct_change": 37.4,
+      "top_chemical": "Lead compounds",
+      "city": "Escondido"
+    }
+  ],
+  "water": {
+    "utilities_count": 6,
+    "population_served_total": 171869,
+    "violations_5yr_total": 29,
+    "health_based_5yr_total": 3,
+    "unresolved_total": 8,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "oakvale-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oakvale Park",
+        "pwsid": "CA3700962",
+        "population_served": 260,
+        "health_based_violations_5yr": 3,
+        "unresolved": true
+      },
+      {
+        "slug": "escondido-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Escondido, City Of",
+        "pwsid": "CA3710006",
+        "population_served": 137044,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rincon-del-diablo-mwd-id-1",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rincon Del Diablo Mwd (Id-1)",
+        "pwsid": "CA3710018",
+        "population_served": 30757,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rincon-del-diablo-mwd-id-a",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rincon Del Diablo Mwd (Id-A)",
+        "pwsid": "CA3710044",
+        "population_served": 3275,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "del-dios-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Del Dios Mutual Water Company",
+        "pwsid": "CA3700866",
+        "population_served": 330,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "anza-rv-resort",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Anza Rv Resort",
+        "pwsid": "CA3301355",
+        "population_served": 203,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 151114,
+    "pct_low_income": 13.2,
+    "pct_people_of_color": 65.1,
+    "pct_under_5": 6.3,
+    "pct_over_64": 14.1,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 171.6
+      },
+      {
+        "label": "Ozone",
+        "score": 146.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 104.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 121.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 20.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 136.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 58.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 14.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 146.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 123.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Escondido, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

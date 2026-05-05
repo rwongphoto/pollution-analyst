@@ -142,18 +142,6 @@
       "total_pounds_recent": 2276,
       "history": [
         {
-          "year": 2010,
-          "value": 12
-        },
-        {
-          "year": 2011,
-          "value": 44
-        },
-        {
-          "year": 2012,
-          "value": 7
-        },
-        {
           "year": 2014,
           "value": 22372
         },
@@ -187,8 +175,8 @@
         }
       ],
       "yoy_pct_change": -51.4,
-      "long_arc_pct_change": 18706.5,
-      "long_arc_baseline_year": 2010
+      "long_arc_pct_change": -89.8,
+      "long_arc_baseline_year": 2014
     },
     {
       "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
@@ -244,18 +232,6 @@
       "total_pounds_recent": 1500,
       "history": [
         {
-          "year": 2010,
-          "value": 2
-        },
-        {
-          "year": 2011,
-          "value": 2
-        },
-        {
-          "year": 2012,
-          "value": 2
-        },
-        {
           "year": 2014,
           "value": 2863
         },
@@ -297,8 +273,31 @@
         }
       ],
       "yoy_pct_change": -29.3,
-      "long_arc_pct_change": 74900.0,
-      "long_arc_baseline_year": 2010
+      "long_arc_pct_change": -47.6,
+      "long_arc_baseline_year": 2014
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "N100",
+      "summary": "N100 releases at Clean Harbors San Jose LLC fell from 65k lb to 0 lb (100% lower) between 2022 and 2023.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -64762.1,
+      "baseline_year": 2022,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 86267
+        },
+        {
+          "year": 2022,
+          "value": 64762
+        }
+      ]
     }
   ],
   "equity": {
@@ -370,5 +369,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "_published_at": "2026-05-05T06:24:51Z"
 }

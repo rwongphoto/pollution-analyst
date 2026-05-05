@@ -1,0 +1,319 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "monrovia",
+    "name": "Monrovia",
+    "fips": "0648648",
+    "population": 37656,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 1,
+    "total_releases_pounds": 606,
+    "air_releases_pounds": 101,
+    "water_releases_pounds": 8,
+    "land_releases_pounds": 497,
+    "yoy_pct_change": -47.0,
+    "long_arc_pct_change": -88.1,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 5106
+      },
+      {
+        "year": 2011,
+        "value": 6634
+      },
+      {
+        "year": 2012,
+        "value": 6002
+      },
+      {
+        "year": 2013,
+        "value": 6435
+      },
+      {
+        "year": 2014,
+        "value": 6710
+      },
+      {
+        "year": 2015,
+        "value": 9192
+      },
+      {
+        "year": 2016,
+        "value": 3686
+      },
+      {
+        "year": 2017,
+        "value": 4226
+      },
+      {
+        "year": 2018,
+        "value": 4441
+      },
+      {
+        "year": 2019,
+        "value": 3880
+      },
+      {
+        "year": 2020,
+        "value": 3309
+      },
+      {
+        "year": 2021,
+        "value": 1788
+      },
+      {
+        "year": 2022,
+        "value": 1143
+      },
+      {
+        "year": 2023,
+        "value": 606
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 101,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 101
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 8,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 8
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 497,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 497
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "solventum-orthodontics-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Solventum Orthodontics Corp",
+      "parent_company": "Solventum US LLC",
+      "total_pounds_recent": 505,
+      "yoy_pct_change": -18.7,
+      "top_chemical": "Chromium",
+      "city": "Monrovia"
+    },
+    {
+      "slug": "3m-co-monrovia-tape",
+      "state": "ca",
+      "state_label": "California",
+      "name": "3M CO - Monrovia Tape",
+      "parent_company": "3M Co",
+      "total_pounds_recent": 101,
+      "yoy_pct_change": -80.6,
+      "top_chemical": "Toluene",
+      "city": "Monrovia"
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 37931,
+    "violations_5yr_total": 4,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 3,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "monrovia-city-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Monrovia-City, Water Dept.",
+        "pwsid": "CA1910090",
+        "population_served": 37931,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 37656,
+    "pct_low_income": 10.1,
+    "pct_people_of_color": 70.7,
+    "pct_under_5": 5.8,
+    "pct_over_64": 12.6,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 159.9
+      },
+      {
+        "label": "Ozone",
+        "score": 168.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 116.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 150.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 89.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 156.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 117.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 159.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 113.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 157.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 160.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 146.4
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Monrovia, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

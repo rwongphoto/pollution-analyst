@@ -1,84 +1,223 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "gustine",
-    "name": "City Of Gustine",
-    "pwsid": "CA2410003",
-    "population_served": 6110,
-    "primary_source": "groundwater",
-    "cities_served": [
-      "Gustine"
+    "name": "Gustine",
+    "fips": "0631568",
+    "population": 6122,
+    "county_name": "Merced",
+    "county_fips": "06047"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 2,
+    "total_releases_pounds": 80542,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 80542,
+    "yoy_pct_change": 20.1,
+    "long_arc_pct_change": 68.4,
+    "long_arc_baseline_year": 2015,
+    "history": [
+      {
+        "year": 2015,
+        "value": 47839
+      },
+      {
+        "year": 2016,
+        "value": 53921
+      },
+      {
+        "year": 2017,
+        "value": 44837
+      },
+      {
+        "year": 2018,
+        "value": 62275
+      },
+      {
+        "year": 2019,
+        "value": 62897
+      },
+      {
+        "year": 2020,
+        "value": 55902
+      },
+      {
+        "year": 2021,
+        "value": 62977
+      },
+      {
+        "year": 2022,
+        "value": 67081
+      },
+      {
+        "year": 2023,
+        "value": 80542
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2024-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 2,
-    "health_based_violations_5yr": 1,
-    "unresolved_violations": 2,
-    "contaminants_with_violations": 1,
-    "years_since_last_violation": 2
-  },
-  "violations": [
+  "pathways": [
     {
-      "year": 2024,
-      "contaminant": "Contaminant 5200",
-      "contaminant_code": "5200",
-      "severity": "health_based",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": true,
-      "description": "Treatment technique violation"
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
     },
     {
-      "year": 2024,
-      "contaminant": "Contaminant 5200",
-      "contaminant_code": "5200",
-      "severity": "monitoring",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": true,
-      "description": "Reporting failure"
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 80542,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 80542
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 583191,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 20.4,
+      "long_arc_pct_change": 48.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 393049
+        },
+        {
+          "year": 2011,
+          "value": 529644
+        },
+        {
+          "year": 2012,
+          "value": 449972
+        },
+        {
+          "year": 2013,
+          "value": 427004
+        },
+        {
+          "year": 2014,
+          "value": 481617
+        },
+        {
+          "year": 2015,
+          "value": 483755
+        },
+        {
+          "year": 2016,
+          "value": 431830
+        },
+        {
+          "year": 2017,
+          "value": 410857
+        },
+        {
+          "year": 2018,
+          "value": 426721
+        },
+        {
+          "year": 2019,
+          "value": 429000
+        },
+        {
+          "year": 2020,
+          "value": 489730
+        },
+        {
+          "year": 2021,
+          "value": 485827
+        },
+        {
+          "year": 2022,
+          "value": 484331
+        },
+        {
+          "year": 2023,
+          "value": 583191
+        }
+      ]
     }
   ],
-  "metrics": {
-    "violations_history": [
+  "facilities": [
+    {
+      "slug": "saputo-cheese-usa-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Saputo Cheese USA INC",
+      "parent_company": "Saputo INC",
+      "total_pounds_recent": 80542,
+      "yoy_pct_change": 20.1,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Gustine"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 6230,
+    "violations_5yr_total": 2,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
       {
-        "year": 2024,
-        "value": 2
+        "slug": "gustine",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Gustine",
+        "pwsid": "CA2410003",
+        "population_served": 6110,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "health_based_history": [
-      {
-        "year": 2024,
-        "value": 1
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": [
-      {
-        "contaminant": "Contaminant 5200",
-        "count": 2
+        "slug": "fisherman-s-bend-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fisherman's Bend Mhp",
+        "pwsid": "CA5000058",
+        "population_served": 120,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
     ]
   },
+  "flags": [],
   "equity": {
     "population": 6122,
     "pct_low_income": 4.1,
@@ -141,12 +280,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Gustine, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Gustine, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

@@ -1,0 +1,274 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "laguna-hills",
+    "name": "Laguna Hills",
+    "fips": "0639220",
+    "population": 31170,
+    "county_name": "Imperial",
+    "county_fips": "06025"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 4,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 728245,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 38.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 526150
+        },
+        {
+          "year": 2011,
+          "value": 608976
+        },
+        {
+          "year": 2012,
+          "value": 691669
+        },
+        {
+          "year": 2013,
+          "value": 765059
+        },
+        {
+          "year": 2014,
+          "value": 728808
+        },
+        {
+          "year": 2015,
+          "value": 633026
+        },
+        {
+          "year": 2016,
+          "value": 695108
+        },
+        {
+          "year": 2017,
+          "value": 702173
+        },
+        {
+          "year": 2018,
+          "value": 531458
+        },
+        {
+          "year": 2019,
+          "value": 528253
+        },
+        {
+          "year": 2020,
+          "value": 523069
+        },
+        {
+          "year": 2021,
+          "value": 680811
+        },
+        {
+          "year": 2022,
+          "value": 728009
+        },
+        {
+          "year": 2023,
+          "value": 728245
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 170959,
+    "violations_5yr_total": 8,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 3,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "date-gardens-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Date Gardens Mobile Home Park",
+        "pwsid": "CA1300575",
+        "population_served": 202,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "moulton-niguel-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Moulton Niguel Water District",
+        "pwsid": "CA3010073",
+        "population_served": 170236,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "el-dorado-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "El Dorado Mobile Home Park",
+        "pwsid": "CA3400121",
+        "population_served": 318,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "el-dorado-west-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "El Dorado West Mhp",
+        "pwsid": "CA3400122",
+        "population_served": 203,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 31170,
+    "pct_low_income": 8.3,
+    "pct_people_of_color": 44.4,
+    "pct_under_5": 6.0,
+    "pct_over_64": 19.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 95.4
+      },
+      {
+        "label": "Ozone",
+        "score": 90.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 62.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 81.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 44.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 93.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 11.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 68.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 40.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 93.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 36.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Laguna Hills, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

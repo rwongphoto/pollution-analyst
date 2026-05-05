@@ -1,0 +1,168 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "herlong",
+    "name": "Herlong",
+    "fips": "0633336",
+    "population": 1280,
+    "county_name": "Lassen",
+    "county_fips": "06035"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 1,
+    "total_releases_pounds": 28499,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 28499,
+    "yoy_pct_change": 39.7,
+    "long_arc_pct_change": 141.5,
+    "long_arc_baseline_year": 2015,
+    "history": [
+      {
+        "year": 2015,
+        "value": 11800
+      },
+      {
+        "year": 2016,
+        "value": 492
+      },
+      {
+        "year": 2017,
+        "value": 26933
+      },
+      {
+        "year": 2018,
+        "value": 373756
+      },
+      {
+        "year": 2019,
+        "value": 141463
+      },
+      {
+        "year": 2020,
+        "value": 142531
+      },
+      {
+        "year": 2021,
+        "value": 38719
+      },
+      {
+        "year": 2022,
+        "value": 20402
+      },
+      {
+        "year": 2023,
+        "value": 28499
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 28499,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 28499
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "u-s-army-sierra-army-depot",
+      "state": "ca",
+      "state_label": "California",
+      "name": "U.S Army Sierra Army Depot",
+      "parent_company": "US Department Of Defense",
+      "total_pounds_recent": 28499,
+      "yoy_pct_change": 39.7,
+      "top_chemical": "Methanol",
+      "city": "Herlong"
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 2114,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "herlong-public-utility-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Herlong Public Utility District",
+        "pwsid": "CA1805007",
+        "population_served": 2114,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1280,
+    "pct_low_income": 17.4,
+    "pct_people_of_color": 67.3,
+    "pct_under_5": 3.0,
+    "pct_over_64": 4.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Herlong, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

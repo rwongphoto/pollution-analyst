@@ -1,0 +1,161 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "rough-ready-village",
+    "name": "Rough & Ready Village",
+    "pwsid": "CA2900530",
+    "population_served": 268,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Stockton"
+    ]
+  },
+  "reporting_period": {
+    "start": "2023-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 3
+  },
+  "violations": [
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2023,
+        "value": 2
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 320030,
+    "pct_low_income": 15.6,
+    "pct_people_of_color": 82.4,
+    "pct_under_5": 7.3,
+    "pct_over_64": 12.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 215.1
+      },
+      {
+        "label": "Ozone",
+        "score": 192.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 136.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 180.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 71.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 150.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 86.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 151.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 188.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 177.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 178.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 110.2
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Stockton, California (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T06:24:52Z"
+}

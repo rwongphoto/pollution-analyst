@@ -1,0 +1,174 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "sutter-creek",
+    "name": "Sutter Creek",
+    "fips": "0677392",
+    "population": 2659,
+    "county_name": "Amador",
+    "county_fips": "06005"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 6,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 6,
+    "population_served_total": 23588,
+    "violations_5yr_total": 9,
+    "health_based_5yr_total": 4,
+    "unresolved_total": 4,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "awa-ione",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Awa, Ione",
+        "pwsid": "CA0310002",
+        "population_served": 7227,
+        "health_based_violations_5yr": 4,
+        "unresolved": true
+      },
+      {
+        "slug": "awa-buckhorn-plant",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Awa Buckhorn Plant",
+        "pwsid": "CA0310012",
+        "population_served": 8791,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "awa-tanner",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Awa, Tanner",
+        "pwsid": "CA0310003",
+        "population_served": 4940,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "awa-camanche-village",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Awa - Camanche Village",
+        "pwsid": "CA0310021",
+        "population_served": 2402,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "awa-la-mel-heights-3",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Awa La Mel Heights #3",
+        "pwsid": "CA0310019",
+        "population_served": 188,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sutter-pines-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sutter Pines Mhp",
+        "pwsid": "CA0300011",
+        "population_served": 40,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 2659,
+    "pct_low_income": 6.6,
+    "pct_people_of_color": 18.599999999999994,
+    "pct_under_5": 3.8,
+    "pct_over_64": 28.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Sutter Creek, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

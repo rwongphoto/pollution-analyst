@@ -1,0 +1,227 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "willits",
+    "name": "Willits",
+    "fips": "0685600",
+    "population": 4968,
+    "county_name": null,
+    "county_fips": null
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 6,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 6,
+    "population_served_total": 10742,
+    "violations_5yr_total": 6,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 4,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "ridgewood-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ridgewood Water System",
+        "pwsid": "CA2300708",
+        "population_served": 265,
+        "health_based_violations_5yr": 1,
+        "unresolved": false
+      },
+      {
+        "slug": "willits-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Willits, City Of",
+        "pwsid": "CA2310004",
+        "population_served": 6175,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "brooktrails-township-csd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Brooktrails Township Csd",
+        "pwsid": "CA2310009",
+        "population_served": 3632,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "pine-mountain-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Pine Mountain Mutual Water Co.",
+        "pwsid": "CA2300591",
+        "population_served": 310,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "mitomkai-tribal-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mitomkai Tribal Water System",
+        "pwsid": "090605120",
+        "population_served": 300,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "original-sherwood-valley-rancheria",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Original Sherwood Valley Rancheria",
+        "pwsid": "090605021",
+        "population_served": 60,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 4968,
+    "pct_low_income": 16.8,
+    "pct_people_of_color": 29.599999999999994,
+    "pct_under_5": 7.0,
+    "pct_over_64": 29.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 102.1
+      },
+      {
+        "label": "Ozone",
+        "score": 3.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 33.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 2.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 0.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 21.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 76.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 51.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Willits, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

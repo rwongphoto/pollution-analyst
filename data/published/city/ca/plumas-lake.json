@@ -1,119 +1,214 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "plumas-lake",
     "name": "Plumas Lake",
-    "pwsid": "CA5805001",
-    "population_served": 10464,
-    "primary_source": "groundwater",
-    "cities_served": [
-      "Olivehurst"
+    "fips": "0657829",
+    "population": 8301,
+    "county_name": "Yuba",
+    "county_fips": "06115"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 117829,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 50.0,
+      "long_arc_pct_change": -17.8,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 143352
+        },
+        {
+          "year": 2011,
+          "value": 183077
+        },
+        {
+          "year": 2012,
+          "value": 134793
+        },
+        {
+          "year": 2013,
+          "value": 191163
+        },
+        {
+          "year": 2014,
+          "value": 237988
+        },
+        {
+          "year": 2015,
+          "value": 88662
+        },
+        {
+          "year": 2016,
+          "value": 35039
+        },
+        {
+          "year": 2017,
+          "value": 26316
+        },
+        {
+          "year": 2018,
+          "value": 11656
+        },
+        {
+          "year": 2019,
+          "value": 97292
+        },
+        {
+          "year": 2020,
+          "value": 105008
+        },
+        {
+          "year": 2021,
+          "value": 88636
+        },
+        {
+          "year": 2022,
+          "value": 78541
+        },
+        {
+          "year": 2023,
+          "value": 117829
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 135,
+    "violations_5yr_total": 2,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "feather-river-manor",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Feather River Manor",
+        "pwsid": "CA5800851",
+        "population_served": 35,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
+        "slug": "fairway-downs-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fairway Downs Mutual Water Co",
+        "pwsid": "CA5800572",
+        "population_served": 100,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
-    "population": 17416,
-    "pct_low_income": 11.2,
-    "pct_people_of_color": 58.5,
-    "pct_under_5": 9.2,
-    "pct_over_64": 11.3,
+    "population": 8301,
+    "pct_low_income": 3.5,
+    "pct_people_of_color": 46.7,
+    "pct_under_5": 9.4,
+    "pct_over_64": 6.3,
     "ej_indexes": [],
     "disparity_scores": [
       {
         "label": "PM2.5 (fine particulate)",
-        "score": 186.6
+        "score": 126.6
       },
       {
         "label": "Ozone",
-        "score": 168.0
+        "score": 115.0
       },
       {
         "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 110.4
+        "score": 71.1
       },
       {
         "label": "Diesel particulate",
-        "score": 106.1
+        "score": 58.3
       },
       {
         "label": "Toxic releases (RSEI)",
-        "score": 10.5
+        "score": 8.3
       },
       {
         "label": "Traffic proximity",
-        "score": 96.0
+        "score": 35.5
       },
       {
         "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 75.9
+        "score": 0.0
       },
       {
         "label": "Superfund site proximity",
@@ -121,11 +216,11 @@
       },
       {
         "label": "RMP-facility proximity",
-        "score": 145.6
+        "score": 86.0
       },
       {
         "label": "Hazardous-waste site proximity",
-        "score": 96.4
+        "score": 30.6
       },
       {
         "label": "Underground storage tanks",
@@ -133,7 +228,7 @@
       },
       {
         "label": "NPDES wastewater proximity",
-        "score": 167.3
+        "score": 108.0
       },
       {
         "label": "Drinking-water non-compliance",
@@ -141,12 +236,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Olivehurst, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Plumas Lake, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:33Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

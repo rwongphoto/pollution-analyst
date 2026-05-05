@@ -1,0 +1,207 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "claremont",
+    "name": "Claremont",
+    "fips": "0613756",
+    "population": 36891,
+    "county_name": "Inyo",
+    "county_fips": "06027"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 4,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 1789,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "sonora-water-resources-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sonora Water Resources, Inc",
+        "pwsid": "CA5510024",
+        "population_served": 1154,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sierra-water-resources-sierra-city",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sierra Water Resources - Sierra City",
+        "pwsid": "CA4600017",
+        "population_served": 324,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "owens-valley-water-resources-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Owens Valley Water Resources, Inc.",
+        "pwsid": "CA1400005",
+        "population_served": 311,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "three-valleys-mwd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Three Valleys Mwd",
+        "pwsid": "CA1910041",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 36891,
+    "pct_low_income": 5.9,
+    "pct_people_of_color": 52.2,
+    "pct_under_5": 4.1,
+    "pct_over_64": 20.5,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 112.2
+      },
+      {
+        "label": "Ozone",
+        "score": 116.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 87.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 105.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 53.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 104.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 72.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 77.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 99.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 80.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Claremont, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

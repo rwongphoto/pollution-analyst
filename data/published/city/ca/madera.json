@@ -1,84 +1,566 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "madera",
-    "name": "City Of Madera",
-    "pwsid": "CA2010002",
-    "population_served": 66560,
-    "primary_source": "groundwater",
-    "cities_served": [
-      "Madera"
+    "name": "Madera",
+    "fips": "0645022",
+    "population": 66784,
+    "county_name": "Madera",
+    "county_fips": "06039"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 4,
+    "utilities_serving": 31,
+    "total_releases_pounds": 79150,
+    "air_releases_pounds": 77027,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2123,
+    "yoy_pct_change": -18.5,
+    "long_arc_pct_change": 127.7,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 34767
+      },
+      {
+        "year": 2011,
+        "value": 30220
+      },
+      {
+        "year": 2012,
+        "value": 37361
+      },
+      {
+        "year": 2013,
+        "value": 50938
+      },
+      {
+        "year": 2014,
+        "value": 77454
+      },
+      {
+        "year": 2015,
+        "value": 62904
+      },
+      {
+        "year": 2016,
+        "value": 54801
+      },
+      {
+        "year": 2017,
+        "value": 57635
+      },
+      {
+        "year": 2018,
+        "value": 65739
+      },
+      {
+        "year": 2019,
+        "value": 59746
+      },
+      {
+        "year": 2020,
+        "value": 67232
+      },
+      {
+        "year": 2021,
+        "value": 68729
+      },
+      {
+        "year": 2022,
+        "value": 97095
+      },
+      {
+        "year": 2023,
+        "value": 79150
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 77027,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 77027
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 2123,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2123
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 184315,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.8,
+      "long_arc_pct_change": 39.2,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 132399
+        },
+        {
+          "year": 2011,
+          "value": 556756
+        },
+        {
+          "year": 2012,
+          "value": 235947
+        },
+        {
+          "year": 2013,
+          "value": 153553
+        },
+        {
+          "year": 2014,
+          "value": 162447
+        },
+        {
+          "year": 2015,
+          "value": 226499
+        },
+        {
+          "year": 2016,
+          "value": 192122
+        },
+        {
+          "year": 2017,
+          "value": 233714
+        },
+        {
+          "year": 2018,
+          "value": 216918
+        },
+        {
+          "year": 2019,
+          "value": 265999
+        },
+        {
+          "year": 2020,
+          "value": 233603
+        },
+        {
+          "year": 2021,
+          "value": 234132
+        },
+        {
+          "year": 2022,
+          "value": 193639
+        },
+        {
+          "year": 2023,
+          "value": 184315
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "florestone-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Florestone LLC",
+      "parent_company": "American Bath Group LLC",
+      "total_pounds_recent": 72000,
+      "yoy_pct_change": -21.1,
+      "top_chemical": "Styrene",
+      "city": "Madera"
+    },
+    {
+      "slug": "oldcastle-infrastructure-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Oldcastle Infrastructure INC.",
+      "parent_company": "Crh Americas INC",
+      "total_pounds_recent": 5078,
+      "yoy_pct_change": 11.3,
+      "top_chemical": "Styrene",
+      "city": "Madera"
+    },
+    {
+      "slug": "nutra-blend-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Nutra Blend LLC",
+      "parent_company": "Land O Lakes INC",
+      "total_pounds_recent": 1992,
+      "yoy_pct_change": 65.7,
+      "top_chemical": "Zinc compounds",
+      "city": "Madera"
+    },
+    {
+      "slug": "moore-quality-galvanizing",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Moore Quality Galvanizing",
+      "parent_company": null,
+      "total_pounds_recent": 80,
+      "yoy_pct_change": 29.0,
+      "top_chemical": "Zinc compounds",
+      "city": "Madera"
+    }
+  ],
+  "water": {
+    "utilities_count": 31,
+    "population_served_total": 88990,
+    "violations_5yr_total": 441,
+    "health_based_5yr_total": 275,
+    "unresolved_total": 316,
+    "utilities_with_unresolved": 10,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "madera-co-md1-hidden-lake-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Madera Co Md1-Hidden Lake Estates",
+        "pwsid": "CA2000544",
+        "population_served": 162,
+        "health_based_violations_5yr": 70,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "md-42-still-meadow",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 42 Still Meadow",
+        "pwsid": "CA2000737",
+        "population_served": 100,
+        "health_based_violations_5yr": 67,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "md-24-teaford-meadow-lakes",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 24 Teaford Meadow Lakes",
+        "pwsid": "CA2000552",
+        "population_served": 150,
+        "health_based_violations_5yr": 49,
+        "unresolved": true
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "madera-co-sa16-sumner-hill",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Madera Co Sa16 Sumner Hill",
+        "pwsid": "CA2000729",
+        "population_served": 135,
+        "health_based_violations_5yr": 47,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "md-08-north-fork-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 08 North Fork Water System",
+        "pwsid": "CA2000561",
+        "population_served": 264,
+        "health_based_violations_5yr": 34,
+        "unresolved": true
       },
       {
-        "year": 2026,
-        "value": 0
+        "slug": "md-07-marina-view-heights",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 07 Marina View Heights",
+        "pwsid": "CA2000551",
+        "population_served": 200,
+        "health_based_violations_5yr": 5,
+        "unresolved": true
+      },
+      {
+        "slug": "md-05-mountain-ranches",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 05 Mountain Ranches",
+        "pwsid": "CA2000549",
+        "population_served": 239,
+        "health_based_violations_5yr": 3,
+        "unresolved": true
+      },
+      {
+        "slug": "madera",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Madera",
+        "pwsid": "CA2010002",
+        "population_served": 66560,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "madera-valley-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Madera Valley Water Company",
+        "pwsid": "CA2010010",
+        "population_served": 6494,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "madera-co-md10a-madera-ranchos",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Madera Co Md10A-Madera Ranchos",
+        "pwsid": "CA2010008",
+        "population_served": 3172,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "madera-co-csa-22c-gunner-ranch",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Madera Co Csa 22C Gunner Ranch",
+        "pwsid": "CA2010019",
+        "population_served": 3050,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "madera-co-sa3-parksdale",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Madera Co Sa3-Parksdale",
+        "pwsid": "CA2010006",
+        "population_served": 1789,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "madera-co-cmd19-parkwood",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Madera Co Cmd19-Parkwood",
+        "pwsid": "CA2010004",
+        "population_served": 1637,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "madera-co-sa1-indian-lakes",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Madera Co Sa1-Indian Lakes",
+        "pwsid": "CA2010011",
+        "population_served": 1562,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "md-33-fairmead",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 33 Fairmead",
+        "pwsid": "CA2000554",
+        "population_served": 568,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "madera-mh-rv-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Madera Mh & Rv Park",
+        "pwsid": "CA2000595",
+        "population_served": 450,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "md-73-quartz-mountain",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 73 Quartz Mountain",
+        "pwsid": "CA2000690",
+        "population_served": 375,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "md-37-la-vina",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 37 La Vina",
+        "pwsid": "CA2000728",
+        "population_served": 350,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "md-46-ahwahnee-resorts",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 46 Ahwahnee Resorts",
+        "pwsid": "CA2000293",
+        "population_served": 300,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "md-63-meadow-springs-ranch",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 63 Meadow Springs Ranch",
+        "pwsid": "CA2000757",
+        "population_served": 300,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "md-95-ranchos-west",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 95 Ranchos West",
+        "pwsid": "CA2000692",
+        "population_served": 150,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "md-60-dillon-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 60 Dillon Estates",
+        "pwsid": "CA2000849",
+        "population_served": 150,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "md-40-sunset-ridge-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 40 Sunset Ridge Estates",
+        "pwsid": "CA2000851",
+        "population_served": 150,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "bonadelle-ranchos-no-2-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bonadelle Ranchos No. 2  Mutual Water Co",
+        "pwsid": "CA2000529",
+        "population_served": 142,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "md-43-miami-creek-knolls",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 43 Miami Creek Knolls",
+        "pwsid": "CA2000557",
+        "population_served": 100,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sa-14-chuk-chanse-subdivision",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sa 14 Chuk Chanse Subdivision",
+        "pwsid": "CA2000724",
+        "population_served": 100,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sandy-creek-village-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sandy Creek Village Mhp",
+        "pwsid": "CA1000260",
+        "population_served": 89,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "md-36-eastin-arcola",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 36 Eastin Arcola",
+        "pwsid": "CA2000727",
+        "population_served": 84,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "md-58-sierra-highlands",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 58 Sierra Highlands",
+        "pwsid": "CA2000865",
+        "population_served": 75,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "md-28-ripperdan-self-help",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 28 Ripperdan Self Help",
+        "pwsid": "CA2000553",
+        "population_served": 48,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "md-85-valeta",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Md 85 Valeta",
+        "pwsid": "CA2000511",
+        "population_served": 45,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 66784,
     "pct_low_income": 27.7,
@@ -141,12 +623,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Madera, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Madera, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

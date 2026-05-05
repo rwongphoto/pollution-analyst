@@ -1,0 +1,207 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "banning",
+    "name": "Banning",
+    "fips": "0603820",
+    "population": 29929,
+    "county_name": null,
+    "county_fips": null
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 4,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 48980,
+    "violations_5yr_total": 24,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 6,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "banning-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Banning, City Of",
+        "pwsid": "CA3310006",
+        "population_served": 31680,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "morongo",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Morongo",
+        "pwsid": "090600142",
+        "population_served": 16000,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "high-valleys-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "High Valleys Water District",
+        "pwsid": "CA3301775",
+        "population_served": 733,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "banning-hts-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Banning Hts. Mutual Water Co.",
+        "pwsid": "CA3301031",
+        "population_served": 567,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 29929,
+    "pct_low_income": 18.9,
+    "pct_people_of_color": 64.9,
+    "pct_under_5": 6.1,
+    "pct_over_64": 27.6,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 151.5
+      },
+      {
+        "label": "Ozone",
+        "score": 201.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 99.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 110.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 37.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 132.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 108.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 90.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 198.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Banning, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

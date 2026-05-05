@@ -1,84 +1,233 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "shasta-lake",
-    "name": "City Of Shasta Lake",
-    "pwsid": "CA4510006",
-    "population_served": 10657,
-    "primary_source": "surface_water",
-    "cities_served": [
-      "Shasta Lake"
+    "name": "Shasta Lake",
+    "fips": "0671225",
+    "population": 10361,
+    "county_name": "Shasta",
+    "county_fips": "06089"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 1,
+    "total_releases_pounds": 214475,
+    "air_releases_pounds": 194177,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 20298,
+    "yoy_pct_change": 6.4,
+    "long_arc_pct_change": 162.4,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 81724
+      },
+      {
+        "year": 2011,
+        "value": 61086
+      },
+      {
+        "year": 2012,
+        "value": 61132
+      },
+      {
+        "year": 2013,
+        "value": 57802
+      },
+      {
+        "year": 2014,
+        "value": 155706
+      },
+      {
+        "year": 2015,
+        "value": 185500
+      },
+      {
+        "year": 2016,
+        "value": 209858
+      },
+      {
+        "year": 2017,
+        "value": 177018
+      },
+      {
+        "year": 2018,
+        "value": 179799
+      },
+      {
+        "year": 2019,
+        "value": 195462
+      },
+      {
+        "year": 2020,
+        "value": 199219
+      },
+      {
+        "year": 2021,
+        "value": 210393
+      },
+      {
+        "year": 2022,
+        "value": 201581
+      },
+      {
+        "year": 2023,
+        "value": 214475
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 194177,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 194177
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 20298,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 20298
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 658558,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -14.5,
+      "long_arc_pct_change": 131.6,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 284294
+        },
+        {
+          "year": 2011,
+          "value": 498320
+        },
+        {
+          "year": 2012,
+          "value": 503320
+        },
+        {
+          "year": 2013,
+          "value": 550200
+        },
+        {
+          "year": 2014,
+          "value": 543084
+        },
+        {
+          "year": 2015,
+          "value": 579514
+        },
+        {
+          "year": 2016,
+          "value": 445299
+        },
+        {
+          "year": 2017,
+          "value": 470910
+        },
+        {
+          "year": 2018,
+          "value": 545824
+        },
+        {
+          "year": 2019,
+          "value": 546467
+        },
+        {
+          "year": 2020,
+          "value": 578659
+        },
+        {
+          "year": 2021,
+          "value": 645912
+        },
+        {
+          "year": 2022,
+          "value": 770443
+        },
+        {
+          "year": 2023,
+          "value": 658558
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "knauf-insulation-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Knauf Insulation INC.",
+      "parent_company": "Knauf Insulation",
+      "total_pounds_recent": 214475,
+      "yoy_pct_change": 6.4,
+      "top_chemical": "Ammonia",
+      "city": "Shasta Lake"
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 10657,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
+        "slug": "shasta-lake",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Shasta Lake",
+        "pwsid": "CA4510006",
+        "population_served": 10657,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 10361,
     "pct_low_income": 18.1,
@@ -141,12 +290,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Shasta Lake, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Shasta Lake, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:33Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

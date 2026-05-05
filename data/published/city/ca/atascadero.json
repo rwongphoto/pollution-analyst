@@ -1,0 +1,264 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "atascadero",
+    "name": "Atascadero",
+    "fips": "0603064",
+    "population": 29758,
+    "county_name": "San Luis Obispo",
+    "county_fips": "06079"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 3,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 224468,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -94.2,
+      "long_arc_pct_change": -96.6,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 6564437
+        },
+        {
+          "year": 2011,
+          "value": 6874780
+        },
+        {
+          "year": 2012,
+          "value": 6873661
+        },
+        {
+          "year": 2013,
+          "value": 7260656
+        },
+        {
+          "year": 2014,
+          "value": 7119186
+        },
+        {
+          "year": 2015,
+          "value": 5423760
+        },
+        {
+          "year": 2016,
+          "value": 5489097
+        },
+        {
+          "year": 2017,
+          "value": 5349766
+        },
+        {
+          "year": 2018,
+          "value": 5122729
+        },
+        {
+          "year": 2019,
+          "value": 4775796
+        },
+        {
+          "year": 2020,
+          "value": 4537408
+        },
+        {
+          "year": 2021,
+          "value": 3911733
+        },
+        {
+          "year": 2022,
+          "value": 3867641
+        },
+        {
+          "year": 2023,
+          "value": 224468
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 35158,
+    "violations_5yr_total": 7,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 1,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "atascadero-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Atascadero Mutual Water Co",
+        "pwsid": "CA4010002",
+        "population_served": 30618,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "atascadero-state-hospital",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Atascadero State Hospital",
+        "pwsid": "CA4010832",
+        "population_served": 4100,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "garden-farms-c-w-d",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Garden Farms C.W.D.",
+        "pwsid": "CA4000507",
+        "population_served": 440,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 29758,
+    "pct_low_income": 8.8,
+    "pct_people_of_color": 29.900000000000006,
+    "pct_under_5": 5.4,
+    "pct_over_64": 17.6,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 81.5
+      },
+      {
+        "label": "Ozone",
+        "score": 30.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 57.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 21.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 2.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 57.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 36.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 38.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Atascadero, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

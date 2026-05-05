@@ -1,84 +1,309 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "anderson",
-    "name": "City Of Anderson",
-    "pwsid": "CA4510001",
-    "population_served": 11147,
-    "primary_source": "groundwater",
-    "cities_served": [
-      "Anderson"
+    "name": "Anderson",
+    "fips": "0602042",
+    "population": 11267,
+    "county_name": "Shasta",
+    "county_fips": "06089"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 9,
+    "total_releases_pounds": 0.4,
+    "air_releases_pounds": 0.4,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": 34.7,
+    "long_arc_pct_change": 166.7,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 0.15
+      },
+      {
+        "year": 2011,
+        "value": 0.15
+      },
+      {
+        "year": 2012,
+        "value": 0.42
+      },
+      {
+        "year": 2013,
+        "value": 0.14
+      },
+      {
+        "year": 2014,
+        "value": 0.15
+      },
+      {
+        "year": 2015,
+        "value": 0.19
+      },
+      {
+        "year": 2016,
+        "value": 69940
+      },
+      {
+        "year": 2017,
+        "value": 73031
+      },
+      {
+        "year": 2018,
+        "value": 2753
+      },
+      {
+        "year": 2019,
+        "value": 13052
+      },
+      {
+        "year": 2021,
+        "value": 0.36
+      },
+      {
+        "year": 2022,
+        "value": 0.3
+      },
+      {
+        "year": 2023,
+        "value": 0.4
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2024-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 2,
-    "health_based_violations_5yr": 1,
-    "unresolved_violations": 2,
-    "contaminants_with_violations": 1,
-    "years_since_last_violation": 2
-  },
-  "violations": [
+  "pathways": [
     {
-      "year": 2024,
-      "contaminant": "Contaminant 5200",
-      "contaminant_code": "5200",
-      "severity": "health_based",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": true,
-      "description": "Treatment technique violation"
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
     },
     {
-      "year": 2024,
-      "contaminant": "Contaminant 5200",
-      "contaminant_code": "5200",
-      "severity": "monitoring",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": true,
-      "description": "Reporting failure"
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 658558,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -14.5,
+      "long_arc_pct_change": 131.6,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 284294
+        },
+        {
+          "year": 2011,
+          "value": 498320
+        },
+        {
+          "year": 2012,
+          "value": 503320
+        },
+        {
+          "year": 2013,
+          "value": 550200
+        },
+        {
+          "year": 2014,
+          "value": 543084
+        },
+        {
+          "year": 2015,
+          "value": 579514
+        },
+        {
+          "year": 2016,
+          "value": 445299
+        },
+        {
+          "year": 2017,
+          "value": 470910
+        },
+        {
+          "year": 2018,
+          "value": 545824
+        },
+        {
+          "year": 2019,
+          "value": 546467
+        },
+        {
+          "year": 2020,
+          "value": 578659
+        },
+        {
+          "year": 2021,
+          "value": 645912
+        },
+        {
+          "year": 2022,
+          "value": 770443
+        },
+        {
+          "year": 2023,
+          "value": 658558
+        }
+      ]
     }
   ],
-  "metrics": {
-    "violations_history": [
+  "facilities": [
+    {
+      "slug": "sierra-pacific-industries-anderson-div",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sierra Pacific Industries Anderson Div",
+      "parent_company": "Sierra Pacific Industries",
+      "total_pounds_recent": 0.4,
+      "yoy_pct_change": 34.7,
+      "top_chemical": "Dioxin and dioxin-like compounds",
+      "city": "Anderson"
+    }
+  ],
+  "water": {
+    "utilities_count": 9,
+    "population_served_total": 21596,
+    "violations_5yr_total": 11,
+    "health_based_5yr_total": 5,
+    "unresolved_total": 10,
+    "utilities_with_unresolved": 5,
+    "utilities": [
       {
-        "year": 2024,
-        "value": 2
+        "slug": "anderson",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Anderson",
+        "pwsid": "CA4510001",
+        "population_served": 11147,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "el-rio-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "El Rio Estates",
+        "pwsid": "CA4500246",
+        "population_served": 434,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "health_based_history": [
-      {
-        "year": 2024,
-        "value": 1
+        "slug": "tucker-oaks-east-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Tucker Oaks East Water District",
+        "pwsid": "CA4500303",
+        "population_served": 95,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "village-green",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Village Green",
+        "pwsid": "CA4500194",
+        "population_served": 90,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": [
+        "slug": "lone-tree-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lone Tree Mobile Home Park",
+        "pwsid": "CA4500062",
+        "population_served": 85,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
       {
-        "contaminant": "Contaminant 5200",
-        "count": 2
+        "slug": "clear-creek-csd-anderson",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Clear Creek Csd-Anderson",
+        "pwsid": "CA4510016",
+        "population_served": 8900,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "balls-ferry-fishing-resort",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Balls Ferry Fishing Resort",
+        "pwsid": "CA4500054",
+        "population_served": 408,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "verde-vale-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Verde Vale Water Company",
+        "pwsid": "CA4500007",
+        "population_served": 356,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sienna-ridge-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sienna Ridge Estates",
+        "pwsid": "ID1280246",
+        "population_served": 81,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
     ]
   },
+  "flags": [],
   "equity": {
     "population": 11267,
     "pct_low_income": 19.1,
@@ -141,12 +366,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Anderson, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Anderson, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:33Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

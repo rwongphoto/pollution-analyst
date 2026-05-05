@@ -1,0 +1,407 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "south-gate",
+    "name": "South Gate",
+    "fips": "0673080",
+    "population": 92381,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 11,
+    "utilities_serving": 1,
+    "total_releases_pounds": 42088,
+    "air_releases_pounds": 3075,
+    "water_releases_pounds": 19,
+    "land_releases_pounds": 38995,
+    "yoy_pct_change": 18.6,
+    "long_arc_pct_change": 584.5,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 6148
+      },
+      {
+        "year": 2011,
+        "value": 6837
+      },
+      {
+        "year": 2012,
+        "value": 9360
+      },
+      {
+        "year": 2013,
+        "value": 7065
+      },
+      {
+        "year": 2014,
+        "value": 101505
+      },
+      {
+        "year": 2015,
+        "value": 104785
+      },
+      {
+        "year": 2016,
+        "value": 121724
+      },
+      {
+        "year": 2017,
+        "value": 108864
+      },
+      {
+        "year": 2018,
+        "value": 131705
+      },
+      {
+        "year": 2019,
+        "value": 134954
+      },
+      {
+        "year": 2020,
+        "value": 112920
+      },
+      {
+        "year": 2021,
+        "value": 216174
+      },
+      {
+        "year": 2022,
+        "value": 35483
+      },
+      {
+        "year": 2023,
+        "value": 42088
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 3075,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3075
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 19,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 19
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 38995,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 38995
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "techni-cast-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Techni-Cast Corp",
+      "parent_company": null,
+      "total_pounds_recent": 14517,
+      "yoy_pct_change": 4.2,
+      "top_chemical": "Copper",
+      "city": "South Gate"
+    },
+    {
+      "slug": "shultz-steel-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Shultz Steel CO",
+      "parent_company": "Berkshire Hathaway INC",
+      "total_pounds_recent": 9247,
+      "yoy_pct_change": 56.9,
+      "top_chemical": "Nickel",
+      "city": "South Gate"
+    },
+    {
+      "slug": "saputo-cheese-usa-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Saputo Cheese USA INC",
+      "parent_company": "Saputo INC",
+      "total_pounds_recent": 8569,
+      "yoy_pct_change": 20.2,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "South Gate"
+    },
+    {
+      "slug": "pacific-alloy-castings",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Pacific Alloy Castings",
+      "parent_company": null,
+      "total_pounds_recent": 6261,
+      "yoy_pct_change": 18.6,
+      "top_chemical": "Chromium",
+      "city": "South Gate"
+    },
+    {
+      "slug": "tesoro-vinvale-terminal",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Tesoro - Vinvale Terminal",
+      "parent_company": "Marathon Petroleum CORP",
+      "total_pounds_recent": 2306,
+      "yoy_pct_change": 7.0,
+      "top_chemical": "Toluene",
+      "city": "South Gate"
+    },
+    {
+      "slug": "lunday-thagard-co-dba-world-oil-refining",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Lunday-Thagard CO Dba World Oil Refining",
+      "parent_company": "World Oil CORP",
+      "total_pounds_recent": 1157,
+      "yoy_pct_change": 9.9,
+      "top_chemical": "Naphthalene",
+      "city": "South Gate"
+    },
+    {
+      "slug": "titan-terminal-transport",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Titan Terminal & Transport",
+      "parent_company": null,
+      "total_pounds_recent": 12,
+      "yoy_pct_change": -33.4,
+      "top_chemical": "Methanol",
+      "city": "South Gate"
+    },
+    {
+      "slug": "griswold-industries-dba-soundcast",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Griswold Industries Dba Soundcast",
+      "parent_company": "Griswold Industries",
+      "total_pounds_recent": 7,
+      "yoy_pct_change": -7.4,
+      "top_chemical": "Chromium",
+      "city": "South Gate"
+    },
+    {
+      "slug": "smarkchem-industries-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Smarkchem Industries INC.",
+      "parent_company": null,
+      "total_pounds_recent": 5,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Certain glycol ethers",
+      "city": "South Gate"
+    },
+    {
+      "slug": "hughes-bros-aircrafters-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Hughes Bros Aircrafters INC",
+      "parent_company": null,
+      "total_pounds_recent": 4,
+      "yoy_pct_change": 7.7,
+      "top_chemical": "Lead",
+      "city": "South Gate"
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 76443,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "south-gate-city-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "South Gate-City, Water Dept.",
+        "pwsid": "CA1910152",
+        "population_served": 76443,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 92381,
+    "pct_low_income": 13.7,
+    "pct_people_of_color": 97.4,
+    "pct_under_5": 6.1,
+    "pct_over_64": 11.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 240.0
+      },
+      {
+        "label": "Ozone",
+        "score": 211.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 214.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 235.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 200.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 232.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 200.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 231.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 241.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 243.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 211.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "South Gate, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

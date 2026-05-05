@@ -1,0 +1,832 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "bakersfield",
+    "name": "Bakersfield",
+    "fips": "0603526",
+    "population": 404321,
+    "county_name": "Kern",
+    "county_fips": "06029"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 5,
+    "utilities_serving": 49,
+    "total_releases_pounds": 5614,
+    "air_releases_pounds": 3079,
+    "water_releases_pounds": 616,
+    "land_releases_pounds": 1919,
+    "yoy_pct_change": 88.4,
+    "long_arc_pct_change": -22.4,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 7231
+      },
+      {
+        "year": 2011,
+        "value": 7884
+      },
+      {
+        "year": 2012,
+        "value": 8067
+      },
+      {
+        "year": 2013,
+        "value": 8461
+      },
+      {
+        "year": 2014,
+        "value": 11058
+      },
+      {
+        "year": 2015,
+        "value": 9580
+      },
+      {
+        "year": 2016,
+        "value": 11148
+      },
+      {
+        "year": 2017,
+        "value": 33304
+      },
+      {
+        "year": 2018,
+        "value": 13009
+      },
+      {
+        "year": 2019,
+        "value": 11664
+      },
+      {
+        "year": 2020,
+        "value": 11241
+      },
+      {
+        "year": 2021,
+        "value": 3789
+      },
+      {
+        "year": 2022,
+        "value": 2980
+      },
+      {
+        "year": 2023,
+        "value": 5614
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 3079,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3079
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 616,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 616
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 1919,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1919
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 19338265,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": -20.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 24319068
+        },
+        {
+          "year": 2011,
+          "value": 25430438
+        },
+        {
+          "year": 2012,
+          "value": 28790354
+        },
+        {
+          "year": 2013,
+          "value": 30917389
+        },
+        {
+          "year": 2014,
+          "value": 32629015
+        },
+        {
+          "year": 2015,
+          "value": 31201499
+        },
+        {
+          "year": 2016,
+          "value": 24504861
+        },
+        {
+          "year": 2017,
+          "value": 23481775
+        },
+        {
+          "year": 2018,
+          "value": 22803774
+        },
+        {
+          "year": 2019,
+          "value": 21845403
+        },
+        {
+          "year": 2020,
+          "value": 21171085
+        },
+        {
+          "year": 2021,
+          "value": 20324599
+        },
+        {
+          "year": 2022,
+          "value": 19333774
+        },
+        {
+          "year": 2023,
+          "value": 19338265
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "ennis-flint-bakersfield",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ennis-Flint Bakersfield",
+      "parent_company": "Ppg Industries INC",
+      "total_pounds_recent": 2243,
+      "yoy_pct_change": -11.3,
+      "top_chemical": "Methanol",
+      "city": "Bakersfield"
+    },
+    {
+      "slug": "dorf-ketal-energy-services-llc-bakersfield-site",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Dorf Ketal Energy Services LLC - Bakersfield Site",
+      "parent_company": "Dorf Ketal Chemical",
+      "total_pounds_recent": 1559,
+      "yoy_pct_change": null,
+      "top_chemical": "Methanol",
+      "city": "Bakersfield"
+    },
+    {
+      "slug": "hoover-treated-wood-products-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Hoover Treated Wood Products INC.",
+      "parent_company": "Graham Holdings Co",
+      "total_pounds_recent": 1241,
+      "yoy_pct_change": null,
+      "top_chemical": "Copper compounds",
+      "city": "Bakersfield"
+    },
+    {
+      "slug": "championx-bakersfield",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Championx-Bakersfield",
+      "parent_company": "Championx CORP",
+      "total_pounds_recent": 571,
+      "yoy_pct_change": 26.3,
+      "top_chemical": "Methanol",
+      "city": "Bakersfield"
+    },
+    {
+      "slug": "holliday-rock-co-bakersfield",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Holliday Rock CO - Bakersfield",
+      "parent_company": "Holliday Rock Co INC",
+      "total_pounds_recent": 0.1,
+      "yoy_pct_change": -16.0,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Bakersfield"
+    }
+  ],
+  "water": {
+    "utilities_count": 49,
+    "population_served_total": 136262,
+    "violations_5yr_total": 198,
+    "health_based_5yr_total": 174,
+    "unresolved_total": 164,
+    "utilities_with_unresolved": 16,
+    "utilities": [
+      {
+        "slug": "san-joaquin-estates-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Joaquin Estates Mutual Water Company",
+        "pwsid": "CA1500575",
+        "population_served": 165,
+        "health_based_violations_5yr": 32,
+        "unresolved": true
+      },
+      {
+        "slug": "mettler-county-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mettler County Water District",
+        "pwsid": "CA1500401",
+        "population_served": 90,
+        "health_based_violations_5yr": 29,
+        "unresolved": true
+      },
+      {
+        "slug": "brock-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Brock Mutual Water Company",
+        "pwsid": "CA1500409",
+        "population_served": 462,
+        "health_based_violations_5yr": 19,
+        "unresolved": true
+      },
+      {
+        "slug": "wilson-road-water-community",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Wilson Road Water Community",
+        "pwsid": "CA1500494",
+        "population_served": 66,
+        "health_based_violations_5yr": 19,
+        "unresolved": true
+      },
+      {
+        "slug": "oildale-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oildale Mwc",
+        "pwsid": "CA1510015",
+        "population_served": 44899,
+        "health_based_violations_5yr": 16,
+        "unresolved": true
+      },
+      {
+        "slug": "east-wilson-road-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "East Wilson Road Water Company",
+        "pwsid": "CA1502699",
+        "population_served": 35,
+        "health_based_violations_5yr": 12,
+        "unresolved": true
+      },
+      {
+        "slug": "wini-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Wini Mutual Water Company",
+        "pwsid": "CA1503526",
+        "population_served": 29,
+        "health_based_violations_5yr": 10,
+        "unresolved": true
+      },
+      {
+        "slug": "el-adobe-poa-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "El Adobe Poa, Inc.",
+        "pwsid": "CA1500493",
+        "population_served": 200,
+        "health_based_violations_5yr": 6,
+        "unresolved": true
+      },
+      {
+        "slug": "gooselake-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Gooselake Water Company",
+        "pwsid": "CA1500584",
+        "population_served": 90,
+        "health_based_violations_5yr": 5,
+        "unresolved": true
+      },
+      {
+        "slug": "east-niles-csd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "East Niles Csd",
+        "pwsid": "CA1510006",
+        "population_served": 32517,
+        "health_based_violations_5yr": 4,
+        "unresolved": true
+      },
+      {
+        "slug": "riverdale-village",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Riverdale Village",
+        "pwsid": "CA1500452",
+        "population_served": 750,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "manon-manor-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Manon Manor Mutual Water Company",
+        "pwsid": "CA1500535",
+        "population_served": 200,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "oasis-property-owners-association",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oasis Property Owners Association",
+        "pwsid": "CA1500585",
+        "population_served": 100,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "wegis-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Wegis Mutual Water Company",
+        "pwsid": "CA1502600",
+        "population_served": 64,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "round-mountain-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Round Mountain Water Company",
+        "pwsid": "CA1500561",
+        "population_served": 50,
+        "health_based_violations_5yr": 16,
+        "unresolved": false
+      },
+      {
+        "slug": "ranchos-del-rio",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ranchos Del Rio",
+        "pwsid": "CA1500553",
+        "population_served": 62,
+        "health_based_violations_5yr": 2,
+        "unresolved": false
+      },
+      {
+        "slug": "vaughn-wc-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Vaughn Wc Inc",
+        "pwsid": "CA1510029",
+        "population_served": 37189,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "greenfield-county-wd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Greenfield County Wd",
+        "pwsid": "CA1510024",
+        "population_served": 11590,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "lerdo-sheriff-s-facility",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lerdo Sheriff S Facility",
+        "pwsid": "CA1502320",
+        "population_served": 2800,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "victory-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Victory Mutual Water Company",
+        "pwsid": "CA1500231",
+        "population_served": 849,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "mountain-mesa-wc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mountain Mesa Wc",
+        "pwsid": "CA1510042",
+        "population_served": 777,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "stockdale-annex-mutual-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Stockdale Annex Mutual Water",
+        "pwsid": "CA1500211",
+        "population_served": 433,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "stockdale-ranchos-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Stockdale Ranchos Mutual Water Co",
+        "pwsid": "CA1500557",
+        "population_served": 393,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "enos-lane-public-utility-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Enos Lane Public Utility District",
+        "pwsid": "CA1500544",
+        "population_served": 365,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "stockdale-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Stockdale Mutual Water Co.",
+        "pwsid": "CA1500349",
+        "population_served": 200,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "mustang-mutual-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mustang Mutual Water System",
+        "pwsid": "CA1500555",
+        "population_served": 200,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "allen-road-mutual-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Allen Road Mutual Water System",
+        "pwsid": "CA1500483",
+        "population_served": 195,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "athal-mutual-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Athal Mutual Water System",
+        "pwsid": "CA1500289",
+        "population_served": 150,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "hart-creek-estates-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hart Creek Estates Mutual Water Co.",
+        "pwsid": "CA1503329",
+        "population_served": 148,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "maher-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Maher Mutual Water Company",
+        "pwsid": "CA1500378",
+        "population_served": 140,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "harvest-moon-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Harvest Moon Mutual Water Co",
+        "pwsid": "CA1500546",
+        "population_served": 138,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "long-canyon-water-company-corp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Long Canyon Water Company Corp.",
+        "pwsid": "CA1500578",
+        "population_served": 122,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "st-clair-ranchos-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "St. Clair Ranchos Mutual Water Co.",
+        "pwsid": "CA1500507",
+        "population_served": 105,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "uplands-of-the-kern-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Uplands Of The Kern Mutual Water Company",
+        "pwsid": "CA1500593",
+        "population_served": 80,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "town-country-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Town & Country Water Company",
+        "pwsid": "CA1502663",
+        "population_served": 73,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "hart-flat-bear-mutual-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hart Flat Bear Mutual Water",
+        "pwsid": "CA1500556",
+        "population_served": 56,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "the-anne-sippi-clinic-riverside-ranch",
+        "state": "ca",
+        "state_label": "California",
+        "name": "The Anne Sippi Clinic-Riverside Ranch",
+        "pwsid": "CA1503509",
+        "population_served": 51,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "agape-mutual-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Agape Mutual Water System",
+        "pwsid": "CA1500543",
+        "population_served": 50,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "gosford-road-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Gosford Road Water Company",
+        "pwsid": "CA1502622",
+        "population_served": 50,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "panama-road-property-owners-assoc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Panama Road Property Owners Assoc",
+        "pwsid": "CA1502465",
+        "population_served": 45,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "choctaw-valley-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Choctaw Valley Mutual Water Co.",
+        "pwsid": "CA1500599",
+        "population_served": 44,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "kranenburg-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Kranenburg Water System",
+        "pwsid": "CA1500560",
+        "population_served": 42,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "riverview-homeowners-association",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Riverview Homeowners Association",
+        "pwsid": "CA1502750",
+        "population_served": 40,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "heath-brimhall-p-o-a",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Heath Brimhall P.O.A.",
+        "pwsid": "CA1502629",
+        "population_served": 39,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "nord-road-water-association",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Nord Road Water Association",
+        "pwsid": "CA1502383",
+        "population_served": 32,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "meadows-of-the-kern-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Meadows Of The Kern Mutual Water Company",
+        "pwsid": "CA1502645",
+        "population_served": 32,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "north-kranenburg-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "North Kranenburg Ws",
+        "pwsid": "CA1503669",
+        "population_served": 28,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "schweikart-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Schweikart Water System",
+        "pwsid": "CA1502545",
+        "population_served": 27,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "kern-county-water-agency",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Kern County Water Agency",
+        "pwsid": "CA1510040",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 404321,
+    "pct_low_income": 16.5,
+    "pct_people_of_color": 70.2,
+    "pct_under_5": 7.9,
+    "pct_over_64": 10.5,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 199.6
+      },
+      {
+        "label": "Ozone",
+        "score": 197.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 151.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 184.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 35.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 153.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 64.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 152.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 158.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Bakersfield, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

@@ -1,0 +1,144 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "bridgeport",
+    "name": "Bridgeport",
+    "fips": "0608240",
+    "population": 408,
+    "county_name": "Mono",
+    "county_fips": "06051"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 3,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 2148,
+    "violations_5yr_total": 35,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 13,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "bridgeport-pud",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bridgeport Pud",
+        "pwsid": "CA2610003",
+        "population_served": 524,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "usmc-mtn-warfare-trng-ctr-bridgeport",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Usmc/Mtn Warfare Trng Ctr - Bridgeport",
+        "pwsid": "CA2610700",
+        "population_served": 1200,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "usmc-housing-coleville",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Usmc - Housing Coleville",
+        "pwsid": "CA2610701",
+        "population_served": 424,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 408,
+    "pct_low_income": 9.2,
+    "pct_people_of_color": 56.4,
+    "pct_under_5": 7.1,
+    "pct_over_64": 14.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Bridgeport, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

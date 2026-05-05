@@ -1,0 +1,293 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "el-cerrito",
+    "name": "El Cerrito",
+    "fips": "0621810",
+    "population": 5328,
+    "county_name": "Riverside",
+    "county_fips": "06065"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 0,
+    "total_releases_pounds": 286,
+    "air_releases_pounds": 66,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 221,
+    "yoy_pct_change": 332.6,
+    "long_arc_pct_change": -90.8,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 3107
+      },
+      {
+        "year": 2011,
+        "value": 3177
+      },
+      {
+        "year": 2012,
+        "value": 2316
+      },
+      {
+        "year": 2013,
+        "value": 2299
+      },
+      {
+        "year": 2014,
+        "value": 53
+      },
+      {
+        "year": 2015,
+        "value": 66
+      },
+      {
+        "year": 2016,
+        "value": 67
+      },
+      {
+        "year": 2017,
+        "value": 74
+      },
+      {
+        "year": 2018,
+        "value": 74
+      },
+      {
+        "year": 2019,
+        "value": 70
+      },
+      {
+        "year": 2020,
+        "value": 62
+      },
+      {
+        "year": 2021,
+        "value": 69
+      },
+      {
+        "year": 2022,
+        "value": 66
+      },
+      {
+        "year": 2023,
+        "value": 286
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 66,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 66
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 221,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 221
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1423181,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 5.5,
+      "long_arc_pct_change": -32.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2119572
+        },
+        {
+          "year": 2011,
+          "value": 2071756
+        },
+        {
+          "year": 2012,
+          "value": 2504412
+        },
+        {
+          "year": 2013,
+          "value": 2055202
+        },
+        {
+          "year": 2014,
+          "value": 2278890
+        },
+        {
+          "year": 2015,
+          "value": 1724152
+        },
+        {
+          "year": 2016,
+          "value": 1136501
+        },
+        {
+          "year": 2017,
+          "value": 1541844
+        },
+        {
+          "year": 2018,
+          "value": 1842670
+        },
+        {
+          "year": 2019,
+          "value": 1290190
+        },
+        {
+          "year": 2020,
+          "value": 1523660
+        },
+        {
+          "year": 2021,
+          "value": 1665711
+        },
+        {
+          "year": 2022,
+          "value": 1349415
+        },
+        {
+          "year": 2023,
+          "value": 1423181
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "3m-co-corona",
+      "state": "ca",
+      "state_label": "California",
+      "name": "3M CO - Corona",
+      "parent_company": "3M Co",
+      "total_pounds_recent": 286,
+      "yoy_pct_change": 332.6,
+      "top_chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
+      "city": "Corona"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 5328,
+    "pct_low_income": 9.0,
+    "pct_people_of_color": 60.8,
+    "pct_under_5": 2.3,
+    "pct_over_64": 9.6,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 121.2
+      },
+      {
+        "label": "Ozone",
+        "score": 125.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 81.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 96.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 81.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 106.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 37.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 43.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 98.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 70.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "El Cerrito, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

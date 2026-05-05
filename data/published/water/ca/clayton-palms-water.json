@@ -1,0 +1,161 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "clayton-palms-water",
+    "name": "Clayton Palms Water",
+    "pwsid": "CA0707603",
+    "population_served": 549,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Clayton"
+    ]
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA0707603"
+      }
+    }
+  ],
+  "equity": {
+    "population": 11070,
+    "pct_low_income": 1.7,
+    "pct_people_of_color": 31.900000000000006,
+    "pct_under_5": 5.7,
+    "pct_over_64": 16.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 63.2
+      },
+      {
+        "label": "Ozone",
+        "score": 30.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 32.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 21.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 25.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 30.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 12.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 54.3
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 40.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 48.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 17.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Clayton, California (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T06:24:51Z"
+}

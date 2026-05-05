@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { NotableSignals } from "@/components/site/AnomalyCard";
 import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
 import { HeroChart } from "@/components/site/HeroChart";
@@ -55,7 +56,7 @@ export async function generateMetadata({
   return pageMeta({
     title: `${city} Water Quality | Pollution Analyst.ai`,
     description: `${city} drinking water — served by ${data.utility.name} (PWSID ${data.utility.pwsid}, ${data.utility.population_served.toLocaleString()} people). SDWIS violation history and contaminant detail.`,
-    path: `/state/${state}/city/${slug}`,
+    path: `/state/${state}/water/${slug}`,
   });
 }
 
@@ -335,7 +336,7 @@ export default async function WaterPage({
   const city = cityDisplayName(data.utility, slug);
   return (
     <>
-      <SiteHeader active="city" />
+      <SiteHeader active="water" />
       <main>
         <Crumbs
           items={[
@@ -344,6 +345,11 @@ export default async function WaterPage({
           ]}
         />
         <WaterHero data={data} slug={slug} />
+        <NotableSignals
+          flags={data.flags ?? []}
+          title="Active signals"
+          emptyLabel="No SDWIS health-based or unresolved violations on the record. Contaminant detail and equity context below."
+        />
         <TopContaminantsSection data={data} />
         <ViolationsSection violations={data.violations} />
         <EquitySection data={data} />

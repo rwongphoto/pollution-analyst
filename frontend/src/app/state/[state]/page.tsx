@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { NotableSignals } from "@/components/site/AnomalyCard";
 import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
 import { HeroChart } from "@/components/site/HeroChart";
@@ -275,7 +276,7 @@ function UtilitiesSection({ data }: { data: StatePagePayload }) {
             {data.top_utilities.map((u) => (
               <tr key={u.slug}>
                 <td className="name">
-                  <Link href={`/state/${u.state}/city/${u.slug}`}>{u.name}</Link>
+                  <Link href={`/state/${u.state}/water/${u.slug}`}>{u.name}</Link>
                 </td>
                 <td className="num-mono">{u.pwsid}</td>
                 <td className="right num-mono">{u.population_served.toLocaleString()}</td>
@@ -467,6 +468,11 @@ export default async function StatePage({
       <main>
         <Crumbs items={[{ label: data.state.name }]} />
         <StateHero data={data} />
+        <NotableSignals
+          flags={data.flags ?? []}
+          title="Notable signals at the state level"
+          emptyLabel="No state-level long-arc signals crossed the threshold this reporting year. Counties and facilities below."
+        />
         <PathwaysSection pathways={data.pathways} />
         <CountiesSection data={data} />
         <FacilitiesSection data={data} />

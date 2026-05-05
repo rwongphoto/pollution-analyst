@@ -1,0 +1,178 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "riverdale-public-utility-district",
+    "name": "Riverdale Public Utility District",
+    "pwsid": "CA1010028",
+    "population_served": 2756,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Riverdale"
+    ]
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 2,
+    "unresolved_violations": 2,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Mercury (inorganic)",
+      "contaminant_code": "1025",
+      "severity": "health_based",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Maximum contaminant level exceeded"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Mercury (inorganic)",
+      "contaminant_code": "1025",
+      "severity": "health_based",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Maximum contaminant level exceeded"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Mercury (inorganic)",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Mercury (inorganic)",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (mercury (inorganic)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1010028"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Mercury (inorganic)",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (mercury (inorganic)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1010028"
+      }
+    }
+  ],
+  "equity": {
+    "population": 2756,
+    "pct_low_income": 13.9,
+    "pct_people_of_color": 81.9,
+    "pct_under_5": 5.0,
+    "pct_over_64": 7.9,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 264.0
+      },
+      {
+        "label": "Ozone",
+        "score": 248.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 75.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 149.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 45.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 21.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 185.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 53.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Riverdale, California (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T06:24:51Z"
+}

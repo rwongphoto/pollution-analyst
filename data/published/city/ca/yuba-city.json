@@ -1,84 +1,199 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "yuba-city",
-    "name": "City Of Yuba City",
-    "pwsid": "CA5110002",
-    "population_served": 70256,
-    "primary_source": "surface_water",
-    "cities_served": [
-      "Yuba City"
+    "name": "Yuba City",
+    "fips": "0686972",
+    "population": 69535,
+    "county_name": "Sutter",
+    "county_fips": "06101"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 4,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 917106,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -22.0,
+      "long_arc_pct_change": -11.1,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1031907
+        },
+        {
+          "year": 2011,
+          "value": 696822
+        },
+        {
+          "year": 2012,
+          "value": 710764
+        },
+        {
+          "year": 2013,
+          "value": 603502
+        },
+        {
+          "year": 2014,
+          "value": 657554
+        },
+        {
+          "year": 2015,
+          "value": 639004
+        },
+        {
+          "year": 2016,
+          "value": 163282
+        },
+        {
+          "year": 2017,
+          "value": 156656
+        },
+        {
+          "year": 2018,
+          "value": 402692
+        },
+        {
+          "year": 2019,
+          "value": 398756
+        },
+        {
+          "year": 2020,
+          "value": 439949
+        },
+        {
+          "year": 2021,
+          "value": 924837
+        },
+        {
+          "year": 2022,
+          "value": 1175376
+        },
+        {
+          "year": 2023,
+          "value": 917106
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 70671,
+    "violations_5yr_total": 2,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 1,
+    "utilities_with_unresolved": 1,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "yuba-city",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Yuba City",
+        "pwsid": "CA5110002",
+        "population_served": 70256,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "wildewood-east-mutual",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Wildewood East Mutual",
+        "pwsid": "CA5101009",
+        "population_served": 350,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "yuba-apartment-homes",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Yuba Apartment Homes",
+        "pwsid": "CA5102025",
+        "population_served": 40,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
       },
       {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
+        "slug": "whispering-pines-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Whispering Pines Mobile Home Park",
+        "pwsid": "CA5800827",
+        "population_served": 25,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 69535,
     "pct_low_income": 13.7,
@@ -141,12 +256,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Yuba City, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Yuba City, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:33Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

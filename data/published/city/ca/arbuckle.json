@@ -1,0 +1,244 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "arbuckle",
+    "name": "Arbuckle",
+    "fips": "0602420",
+    "population": 3072,
+    "county_name": "Colusa",
+    "county_fips": "06011"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1352459,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 18.5,
+      "long_arc_pct_change": 580.8,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 198669
+        },
+        {
+          "year": 2011,
+          "value": 1161309
+        },
+        {
+          "year": 2012,
+          "value": 1420586
+        },
+        {
+          "year": 2013,
+          "value": 1409361
+        },
+        {
+          "year": 2014,
+          "value": 1333133
+        },
+        {
+          "year": 2015,
+          "value": 1772640
+        },
+        {
+          "year": 2016,
+          "value": 1312423
+        },
+        {
+          "year": 2017,
+          "value": 1135583
+        },
+        {
+          "year": 2018,
+          "value": 1355683
+        },
+        {
+          "year": 2019,
+          "value": 1325999
+        },
+        {
+          "year": 2020,
+          "value": 1336750
+        },
+        {
+          "year": 2021,
+          "value": 1029118
+        },
+        {
+          "year": 2022,
+          "value": 1141558
+        },
+        {
+          "year": 2023,
+          "value": 1352459
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 2778,
+    "violations_5yr_total": 4,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "arbuckle-public-utility-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Arbuckle Public Utility District",
+        "pwsid": "CA0610001",
+        "population_served": 2778,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 3072,
+    "pct_low_income": 1.8,
+    "pct_people_of_color": 79.4,
+    "pct_under_5": 5.8,
+    "pct_over_64": 10.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 204.5
+      },
+      {
+        "label": "Ozone",
+        "score": 150.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 116.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 40.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 15.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 83.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 109.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 51.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 30.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Arbuckle, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

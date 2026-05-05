@@ -1,84 +1,237 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "los-banos",
-    "name": "City Of Los Banos",
-    "pwsid": "CA2410005",
-    "population_served": 47419,
-    "primary_source": "groundwater",
-    "cities_served": [
-      "Los Banos"
+    "name": "Los Banos",
+    "fips": "0644028",
+    "population": 45560,
+    "county_name": "Merced",
+    "county_fips": "06047"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 3,
+    "total_releases_pounds": 33914,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 33914,
+    "yoy_pct_change": 9.1,
+    "long_arc_pct_change": 192.9,
+    "long_arc_baseline_year": 2014,
+    "history": [
+      {
+        "year": 2014,
+        "value": 11579
+      },
+      {
+        "year": 2015,
+        "value": 18331
+      },
+      {
+        "year": 2016,
+        "value": 13293
+      },
+      {
+        "year": 2017,
+        "value": 14059
+      },
+      {
+        "year": 2018,
+        "value": 1422
+      },
+      {
+        "year": 2019,
+        "value": 2641
+      },
+      {
+        "year": 2020,
+        "value": 13671
+      },
+      {
+        "year": 2021,
+        "value": 16392
+      },
+      {
+        "year": 2022,
+        "value": 31094
+      },
+      {
+        "year": 2023,
+        "value": 33914
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2024-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 2,
-    "health_based_violations_5yr": 1,
-    "unresolved_violations": 2,
-    "contaminants_with_violations": 1,
-    "years_since_last_violation": 2
-  },
-  "violations": [
+  "pathways": [
     {
-      "year": 2024,
-      "contaminant": "Contaminant 5200",
-      "contaminant_code": "5200",
-      "severity": "health_based",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": true,
-      "description": "Treatment technique violation"
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
     },
     {
-      "year": 2024,
-      "contaminant": "Contaminant 5200",
-      "contaminant_code": "5200",
-      "severity": "monitoring",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": true,
-      "description": "Reporting failure"
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 33914,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 33914
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 583191,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 20.4,
+      "long_arc_pct_change": 48.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 393049
+        },
+        {
+          "year": 2011,
+          "value": 529644
+        },
+        {
+          "year": 2012,
+          "value": 449972
+        },
+        {
+          "year": 2013,
+          "value": 427004
+        },
+        {
+          "year": 2014,
+          "value": 481617
+        },
+        {
+          "year": 2015,
+          "value": 483755
+        },
+        {
+          "year": 2016,
+          "value": 431830
+        },
+        {
+          "year": 2017,
+          "value": 410857
+        },
+        {
+          "year": 2018,
+          "value": 426721
+        },
+        {
+          "year": 2019,
+          "value": 429000
+        },
+        {
+          "year": 2020,
+          "value": 489730
+        },
+        {
+          "year": 2021,
+          "value": 485827
+        },
+        {
+          "year": 2022,
+          "value": 484331
+        },
+        {
+          "year": 2023,
+          "value": 583191
+        }
+      ]
     }
   ],
-  "metrics": {
-    "violations_history": [
+  "facilities": [
+    {
+      "slug": "california-dairies-inc-los-banos",
+      "state": "ca",
+      "state_label": "California",
+      "name": "California Dairies INC Los Banos",
+      "parent_company": "California Dairies INC",
+      "total_pounds_recent": 33914,
+      "yoy_pct_change": 9.1,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Los Banos"
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 48604,
+    "violations_5yr_total": 13,
+    "health_based_5yr_total": 9,
+    "unresolved_total": 11,
+    "utilities_with_unresolved": 3,
+    "utilities": [
       {
-        "year": 2024,
-        "value": 2
+        "slug": "san-luis-hills",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Luis Hills",
+        "pwsid": "CA2400209",
+        "population_served": 779,
+        "health_based_violations_5yr": 7,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "los-banos",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Los Banos",
+        "pwsid": "CA2410005",
+        "population_served": 47419,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "health_based_history": [
-      {
-        "year": 2024,
-        "value": 1
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": [
-      {
-        "contaminant": "Contaminant 5200",
-        "count": 2
+        "slug": "volta-community-sd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Volta Community Sd",
+        "pwsid": "CA2400201",
+        "population_served": 406,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       }
     ]
   },
+  "flags": [],
   "equity": {
     "population": 45560,
     "pct_low_income": 15.0,
@@ -141,12 +294,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Los Banos, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Los Banos, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

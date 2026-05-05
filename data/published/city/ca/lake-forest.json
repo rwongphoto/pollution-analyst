@@ -1,0 +1,340 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "lake-forest",
+    "name": "Lake Forest",
+    "fips": "0639496",
+    "population": 85583,
+    "county_name": "Orange",
+    "county_fips": "06059"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 2,
+    "total_releases_pounds": 1845,
+    "air_releases_pounds": 1725,
+    "water_releases_pounds": 0.2,
+    "land_releases_pounds": 120,
+    "yoy_pct_change": -10.6,
+    "long_arc_pct_change": -14.3,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 2152
+      },
+      {
+        "year": 2011,
+        "value": 2183
+      },
+      {
+        "year": 2012,
+        "value": 1742
+      },
+      {
+        "year": 2013,
+        "value": 1490
+      },
+      {
+        "year": 2014,
+        "value": 1270
+      },
+      {
+        "year": 2015,
+        "value": 525
+      },
+      {
+        "year": 2016,
+        "value": 1232
+      },
+      {
+        "year": 2017,
+        "value": 1337
+      },
+      {
+        "year": 2018,
+        "value": 1423
+      },
+      {
+        "year": 2019,
+        "value": 4711
+      },
+      {
+        "year": 2020,
+        "value": 3384
+      },
+      {
+        "year": 2021,
+        "value": 1868
+      },
+      {
+        "year": 2022,
+        "value": 2063
+      },
+      {
+        "year": 2023,
+        "value": 1845
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 1725,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1725
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 120,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 120
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2636013,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -7.1,
+      "long_arc_pct_change": 39.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1891416
+        },
+        {
+          "year": 2011,
+          "value": 2010676
+        },
+        {
+          "year": 2012,
+          "value": 2081823
+        },
+        {
+          "year": 2013,
+          "value": 1784150
+        },
+        {
+          "year": 2014,
+          "value": 1820320
+        },
+        {
+          "year": 2015,
+          "value": 1720197
+        },
+        {
+          "year": 2016,
+          "value": 1621230
+        },
+        {
+          "year": 2017,
+          "value": 1620028
+        },
+        {
+          "year": 2018,
+          "value": 1469841
+        },
+        {
+          "year": 2019,
+          "value": 1518950
+        },
+        {
+          "year": 2020,
+          "value": 1820021
+        },
+        {
+          "year": 2021,
+          "value": 2740139
+        },
+        {
+          "year": 2022,
+          "value": 2836147
+        },
+        {
+          "year": 2023,
+          "value": 2636013
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "oakley-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Oakley INC",
+      "parent_company": "Essilorluxottica USA INC",
+      "total_pounds_recent": 1753,
+      "yoy_pct_change": -11.3,
+      "top_chemical": "N-Methyl-2-pyrrolidone",
+      "city": "Foothill Ranch"
+    },
+    {
+      "slug": "dynacast-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Dynacast INC",
+      "parent_company": "Form Technologies",
+      "total_pounds_recent": 89,
+      "yoy_pct_change": 5.0,
+      "top_chemical": "Copper",
+      "city": "Lake Forest"
+    },
+    {
+      "slug": "robertson-s-ready-mix-lake-forest-plant-18",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Robertson'S Ready Mix Lake Forest Plant 18",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 3,
+      "yoy_pct_change": -2.3,
+      "top_chemical": "Lead compounds",
+      "city": "Foothill Ranch"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 51980,
+    "violations_5yr_total": 10,
+    "health_based_5yr_total": 9,
+    "unresolved_total": 6,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "ortega-oaks-rv-park-campground",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ortega Oaks Rv Park&Campground",
+        "pwsid": "CA3301482",
+        "population_served": 180,
+        "health_based_violations_5yr": 9,
+        "unresolved": true
+      },
+      {
+        "slug": "el-toro-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "El Toro Water District",
+        "pwsid": "CA3010079",
+        "population_served": 51800,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 85583,
+    "pct_low_income": 7.3,
+    "pct_people_of_color": 51.1,
+    "pct_under_5": 5.6,
+    "pct_over_64": 14.1,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 111.7
+      },
+      {
+        "label": "Ozone",
+        "score": 108.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 76.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 78.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 62.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 98.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 10.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 96.2
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 58.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 108.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 27.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Lake Forest, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

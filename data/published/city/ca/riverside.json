@@ -1,0 +1,423 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "riverside",
+    "name": "Riverside",
+    "fips": "0662000",
+    "population": 316076,
+    "county_name": "Riverside",
+    "county_fips": "06065"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 6,
+    "utilities_serving": 7,
+    "total_releases_pounds": 23319,
+    "air_releases_pounds": 19280,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 4039,
+    "yoy_pct_change": 7.1,
+    "long_arc_pct_change": -78.3,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 107476
+      },
+      {
+        "year": 2011,
+        "value": 72114
+      },
+      {
+        "year": 2012,
+        "value": 99152
+      },
+      {
+        "year": 2013,
+        "value": 55911
+      },
+      {
+        "year": 2014,
+        "value": 14070
+      },
+      {
+        "year": 2015,
+        "value": 25475
+      },
+      {
+        "year": 2016,
+        "value": 16459
+      },
+      {
+        "year": 2017,
+        "value": 21368
+      },
+      {
+        "year": 2018,
+        "value": 26079
+      },
+      {
+        "year": 2019,
+        "value": 22430
+      },
+      {
+        "year": 2020,
+        "value": 19509
+      },
+      {
+        "year": 2021,
+        "value": 21340
+      },
+      {
+        "year": 2022,
+        "value": 21767
+      },
+      {
+        "year": 2023,
+        "value": 23319
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 19280,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 19280
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 4039,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 4039
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1423181,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 5.5,
+      "long_arc_pct_change": -32.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2119572
+        },
+        {
+          "year": 2011,
+          "value": 2071756
+        },
+        {
+          "year": 2012,
+          "value": 2504412
+        },
+        {
+          "year": 2013,
+          "value": 2055202
+        },
+        {
+          "year": 2014,
+          "value": 2278890
+        },
+        {
+          "year": 2015,
+          "value": 1724152
+        },
+        {
+          "year": 2016,
+          "value": 1136501
+        },
+        {
+          "year": 2017,
+          "value": 1541844
+        },
+        {
+          "year": 2018,
+          "value": 1842670
+        },
+        {
+          "year": 2019,
+          "value": 1290190
+        },
+        {
+          "year": 2020,
+          "value": 1523660
+        },
+        {
+          "year": 2021,
+          "value": 1665711
+        },
+        {
+          "year": 2022,
+          "value": 1349415
+        },
+        {
+          "year": 2023,
+          "value": 1423181
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "newbasis-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Newbasis LLC",
+      "parent_company": null,
+      "total_pounds_recent": 17782,
+      "yoy_pct_change": 10.1,
+      "top_chemical": "Styrene",
+      "city": "Riverside"
+    },
+    {
+      "slug": "stremicks-heritage-foods",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Stremicks Heritage Foods",
+      "parent_company": "Dairy Farmers Of America INC",
+      "total_pounds_recent": 4013,
+      "yoy_pct_change": -5.8,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Riverside"
+    },
+    {
+      "slug": "airgas-specialty-products-riverside-ca",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Airgas Specialty Products-Riverside Ca",
+      "parent_company": "Airgas INC",
+      "total_pounds_recent": 829,
+      "yoy_pct_change": -1.3,
+      "top_chemical": "Ammonia",
+      "city": "Riverside"
+    },
+    {
+      "slug": "plz-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Plz Corp.",
+      "parent_company": "Plz CORP",
+      "total_pounds_recent": 550,
+      "yoy_pct_change": null,
+      "top_chemical": "Certain glycol ethers",
+      "city": "Riverside"
+    },
+    {
+      "slug": "carpenter-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Carpenter CO",
+      "parent_company": "Carpenter Co",
+      "total_pounds_recent": 142,
+      "yoy_pct_change": -72.4,
+      "top_chemical": "Toluene diisocyanate (mixed isomers)",
+      "city": "Riverside"
+    },
+    {
+      "slug": "morgan-truck-body-llc-mca",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Morgan Truck Body LLC Mca",
+      "parent_company": "Jb Poindexter & Co INC",
+      "total_pounds_recent": 3,
+      "yoy_pct_change": null,
+      "top_chemical": "Chromium",
+      "city": "Riverside"
+    }
+  ],
+  "water": {
+    "utilities_count": 7,
+    "population_served_total": 402209,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "riverside-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Riverside, City Of",
+        "pwsid": "CA3310031",
+        "population_served": 298398,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "western-mwd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Western Mwd",
+        "pwsid": "CA3310049",
+        "population_served": 86062,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "western-mwd-murrieta-division",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Western Mwd - Murrieta Division",
+        "pwsid": "CA3310036",
+        "population_served": 17453,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "western-mwd-id-a-rainbow",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Western Mwd (Id A - Rainbow)",
+        "pwsid": "CA3310076",
+        "population_served": 192,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "harmony-haven",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Harmony Haven",
+        "pwsid": "CA3301055",
+        "population_served": 54,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "magnolia-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Magnolia Park",
+        "pwsid": "OK4001470",
+        "population_served": 50,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "western-mwd-arlington",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Western Mwd (Arlington)",
+        "pwsid": "CA3310075",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 316076,
+    "pct_low_income": 12.8,
+    "pct_people_of_color": 72.7,
+    "pct_under_5": 6.1,
+    "pct_over_64": 11.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 183.4
+      },
+      {
+        "label": "Ozone",
+        "score": 189.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 152.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 177.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 94.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 164.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 95.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 150.1
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 134.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 163.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 166.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Riverside, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

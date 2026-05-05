@@ -24,19 +24,22 @@ export const metadata: Metadata = {
 
 const KIND_LABEL: Record<FeaturedEntity["kind"], string> = {
   facility: "TRI FACILITY",
-  city: "CITY · PUBLIC WATER SYSTEM",
+  water: "PUBLIC WATER SYSTEM",
+  city: "CITY",
   county: "COUNTY",
 };
 
 const KIND_HREF: Record<FeaturedEntity["kind"], (e: FeaturedEntity) => string> = {
   facility: (e) => `/state/${e.state}/facility/${e.slug}`,
+  water: (e) => `/state/${e.state}/water/${e.slug}`,
   city: (e) => `/state/${e.state}/city/${e.slug}`,
   county: (e) => `/state/${e.state}/county/${e.slug}`,
 };
 
 const KIND_COLOR: Record<FeaturedEntity["kind"], string> = {
   facility: "#FF6B6B",
-  city: "#22D3EE",
+  water: "#22D3EE",
+  city: "#6FCF97",
   county: "#A78BFA",
 };
 
@@ -311,13 +314,13 @@ function HomeCTA() {
         </p>
         <div style={{ marginTop: 32, display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap" }}>
           <Link href="/state/ca/county/kern" className="btn btn-primary">
-            Browse Harris County <Ic.arrow s={14} />
+            Browse Kern County <Ic.arrow s={14} />
           </Link>
           <Link href="/state/ca/facility/chevron-products-co-richmond-refinery" className="btn btn-ghost">
-            ExxonMobil Baytown
+            Chevron Richmond Refinery
           </Link>
-          <Link href="/state/mi/city/flint" className="btn btn-ghost">
-            Flint, Michigan water
+          <Link href="/state/ca/city/stockton" className="btn btn-ghost">
+            Stockton city hub
           </Link>
         </div>
         <p className="muted" style={{ fontSize: 12, marginTop: 18 }}>

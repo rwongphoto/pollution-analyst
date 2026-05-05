@@ -1,0 +1,315 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "burbank",
+    "name": "Burbank",
+    "fips": "0608954",
+    "population": 106389,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 0,
+    "total_releases_pounds": 3374,
+    "air_releases_pounds": 153,
+    "water_releases_pounds": 0.01,
+    "land_releases_pounds": 3221,
+    "yoy_pct_change": 97.0,
+    "long_arc_pct_change": 1686670.5,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 0.2
+      },
+      {
+        "year": 2012,
+        "value": 889
+      },
+      {
+        "year": 2013,
+        "value": 921
+      },
+      {
+        "year": 2014,
+        "value": 7297
+      },
+      {
+        "year": 2015,
+        "value": 1146
+      },
+      {
+        "year": 2016,
+        "value": 1062
+      },
+      {
+        "year": 2017,
+        "value": 601
+      },
+      {
+        "year": 2018,
+        "value": 3469
+      },
+      {
+        "year": 2019,
+        "value": 7313
+      },
+      {
+        "year": 2020,
+        "value": 9007
+      },
+      {
+        "year": 2021,
+        "value": 6067
+      },
+      {
+        "year": 2022,
+        "value": 1713
+      },
+      {
+        "year": 2023,
+        "value": 3374
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 153,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 153
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 3221,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3221
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "senior-aerospace-inc-ssp-div",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Senior Aerospace INC Ssp Div",
+      "parent_company": "Senior Operations LLC",
+      "total_pounds_recent": 3338,
+      "yoy_pct_change": 98.0,
+      "top_chemical": "Lead",
+      "city": "Burbank"
+    },
+    {
+      "slug": "bandy-manufacturing-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Bandy Manufacturing LLC",
+      "parent_company": "Novaria Group",
+      "total_pounds_recent": 32,
+      "yoy_pct_change": null,
+      "top_chemical": "Copper",
+      "city": "Burbank"
+    },
+    {
+      "slug": "hydro-aire-aerospace-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Hydro-Aire Aerospace Corp.",
+      "parent_company": "Crane Co",
+      "total_pounds_recent": 4,
+      "yoy_pct_change": -87.1,
+      "top_chemical": "Lead",
+      "city": "Burbank"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 106389,
+    "pct_low_income": 10.7,
+    "pct_people_of_color": 44.8,
+    "pct_under_5": 5.8,
+    "pct_over_64": 15.7,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 113.4
+      },
+      {
+        "label": "Ozone",
+        "score": 120.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 95.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 103.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 61.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 118.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 86.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 122.2
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 56.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 117.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 110.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Burbank, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

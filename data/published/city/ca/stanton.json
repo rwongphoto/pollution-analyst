@@ -1,0 +1,297 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "stanton",
+    "name": "Stanton",
+    "fips": "0673962",
+    "population": 38271,
+    "county_name": "Orange",
+    "county_fips": "06059"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 0,
+    "total_releases_pounds": 538,
+    "air_releases_pounds": 255,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 283,
+    "yoy_pct_change": -35.9,
+    "long_arc_pct_change": -65.1,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 1543
+      },
+      {
+        "year": 2011,
+        "value": 1427
+      },
+      {
+        "year": 2012,
+        "value": 1205
+      },
+      {
+        "year": 2013,
+        "value": 1255
+      },
+      {
+        "year": 2014,
+        "value": 1260
+      },
+      {
+        "year": 2015,
+        "value": 1260
+      },
+      {
+        "year": 2016,
+        "value": 672
+      },
+      {
+        "year": 2017,
+        "value": 648
+      },
+      {
+        "year": 2018,
+        "value": 632
+      },
+      {
+        "year": 2019,
+        "value": 780
+      },
+      {
+        "year": 2020,
+        "value": 695
+      },
+      {
+        "year": 2021,
+        "value": 1018
+      },
+      {
+        "year": 2022,
+        "value": 839
+      },
+      {
+        "year": 2023,
+        "value": 538
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 255,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 255
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 283,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 283
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2636013,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -7.1,
+      "long_arc_pct_change": 39.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1891416
+        },
+        {
+          "year": 2011,
+          "value": 2010676
+        },
+        {
+          "year": 2012,
+          "value": 2081823
+        },
+        {
+          "year": 2013,
+          "value": 1784150
+        },
+        {
+          "year": 2014,
+          "value": 1820320
+        },
+        {
+          "year": 2015,
+          "value": 1720197
+        },
+        {
+          "year": 2016,
+          "value": 1621230
+        },
+        {
+          "year": 2017,
+          "value": 1620028
+        },
+        {
+          "year": 2018,
+          "value": 1469841
+        },
+        {
+          "year": 2019,
+          "value": 1518950
+        },
+        {
+          "year": 2020,
+          "value": 1820021
+        },
+        {
+          "year": 2021,
+          "value": 2740139
+        },
+        {
+          "year": 2022,
+          "value": 2836147
+        },
+        {
+          "year": 2023,
+          "value": 2636013
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "all-metals-processing-of-orange-county-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "All Metals Processing Of Orange County LLC",
+      "parent_company": "Noble Aerospace LLC",
+      "total_pounds_recent": 538,
+      "yoy_pct_change": -35.9,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Stanton"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 38271,
+    "pct_low_income": 12.9,
+    "pct_people_of_color": 84.7,
+    "pct_under_5": 5.9,
+    "pct_over_64": 13.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 200.8
+      },
+      {
+        "label": "Ozone",
+        "score": 178.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 184.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 194.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 144.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 202.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 113.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 155.1
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 201.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 201.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 174.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Stanton, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

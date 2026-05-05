@@ -1,84 +1,245 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "livermore",
-    "name": "City Of Livermore",
-    "pwsid": "CA0110011",
-    "population_served": 38892,
-    "primary_source": "purchased",
-    "cities_served": [
-      "Livermore"
+    "name": "Livermore",
+    "fips": "0641992",
+    "population": 87154,
+    "county_name": "Alameda",
+    "county_fips": "06001"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 5,
+    "total_releases_pounds": 182,
+    "air_releases_pounds": 182,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": 3093.0,
+    "long_arc_pct_change": -98.2,
+    "long_arc_baseline_year": 2017,
+    "history": [
+      {
+        "year": 2017,
+        "value": 9878
+      },
+      {
+        "year": 2018,
+        "value": 14812
+      },
+      {
+        "year": 2019,
+        "value": 10550
+      },
+      {
+        "year": 2020,
+        "value": 4
+      },
+      {
+        "year": 2021,
+        "value": 8
+      },
+      {
+        "year": 2022,
+        "value": 6
+      },
+      {
+        "year": 2023,
+        "value": 182
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 182,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 182
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1270727,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 33.9,
+      "long_arc_pct_change": 87.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 677600
+        },
+        {
+          "year": 2011,
+          "value": 627975
+        },
+        {
+          "year": 2012,
+          "value": 661532
+        },
+        {
+          "year": 2013,
+          "value": 1083736
+        },
+        {
+          "year": 2014,
+          "value": 1444219
+        },
+        {
+          "year": 2015,
+          "value": 1703593
+        },
+        {
+          "year": 2016,
+          "value": 814895
+        },
+        {
+          "year": 2017,
+          "value": 829721
+        },
+        {
+          "year": 2018,
+          "value": 877374
+        },
+        {
+          "year": 2019,
+          "value": 860668
+        },
+        {
+          "year": 2020,
+          "value": 928206
+        },
+        {
+          "year": 2021,
+          "value": 624894
+        },
+        {
+          "year": 2022,
+          "value": 948758
+        },
+        {
+          "year": 2023,
+          "value": 1270727
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "gillig",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Gillig",
+      "parent_company": null,
+      "total_pounds_recent": 182,
+      "yoy_pct_change": 3093.0,
+      "top_chemical": "Methyl methacrylate",
+      "city": "Livermore"
+    }
+  ],
+  "water": {
+    "utilities_count": 5,
+    "population_served_total": 39130,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "livermore",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Livermore",
+        "pwsid": "CA0110011",
+        "population_served": 38892,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "cc-farms-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cc Farms, Llc.",
+        "pwsid": "CA1009232",
+        "population_served": 82,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "doubletree-ranch-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Doubletree Ranch Water System",
+        "pwsid": "CA0707615",
+        "population_served": 66,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "b-g-mobile-home-park-llc-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "B&G Mobile Home Park Llc Ws",
+        "pwsid": "CA3900586",
+        "population_served": 50,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
+        "slug": "zone-7-water-agency",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Zone 7 Water Agency",
+        "pwsid": "CA0110010",
+        "population_served": 40,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 87154,
     "pct_low_income": 4.3,
@@ -141,12 +302,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Livermore, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Livermore, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

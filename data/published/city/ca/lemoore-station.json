@@ -1,0 +1,244 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "lemoore-station",
+    "name": "Lemoore Station",
+    "fips": "0641166",
+    "population": 6403,
+    "county_name": "Kings",
+    "county_fips": "06031"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 0,
+    "total_releases_pounds": 570,
+    "air_releases_pounds": 195,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 375,
+    "yoy_pct_change": -13.2,
+    "long_arc_pct_change": -85.3,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 3872
+      },
+      {
+        "year": 2011,
+        "value": 14527
+      },
+      {
+        "year": 2012,
+        "value": 4174
+      },
+      {
+        "year": 2013,
+        "value": 1094
+      },
+      {
+        "year": 2014,
+        "value": 709
+      },
+      {
+        "year": 2015,
+        "value": 1242
+      },
+      {
+        "year": 2016,
+        "value": 837
+      },
+      {
+        "year": 2017,
+        "value": 907
+      },
+      {
+        "year": 2018,
+        "value": 824
+      },
+      {
+        "year": 2019,
+        "value": 755
+      },
+      {
+        "year": 2020,
+        "value": 483
+      },
+      {
+        "year": 2021,
+        "value": 438
+      },
+      {
+        "year": 2022,
+        "value": 656
+      },
+      {
+        "year": 2023,
+        "value": 570
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 195,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 195
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 375,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 375
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 205176,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -14.5,
+      "long_arc_pct_change": -60.8,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 522895
+        },
+        {
+          "year": 2011,
+          "value": 468094
+        },
+        {
+          "year": 2012,
+          "value": 385083
+        },
+        {
+          "year": 2013,
+          "value": 419095
+        },
+        {
+          "year": 2014,
+          "value": 488771
+        },
+        {
+          "year": 2015,
+          "value": 428018
+        },
+        {
+          "year": 2016,
+          "value": 290153
+        },
+        {
+          "year": 2017,
+          "value": 269662
+        },
+        {
+          "year": 2018,
+          "value": 257719
+        },
+        {
+          "year": 2019,
+          "value": 279380
+        },
+        {
+          "year": 2020,
+          "value": 213454
+        },
+        {
+          "year": 2021,
+          "value": 200489
+        },
+        {
+          "year": 2022,
+          "value": 240112
+        },
+        {
+          "year": 2023,
+          "value": 205176
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "us-dod-nas-lemoore-installation",
+      "state": "ca",
+      "state_label": "California",
+      "name": "US Dod Nas Lemoore (Installation)",
+      "parent_company": "US Department Of Defense",
+      "total_pounds_recent": 570,
+      "yoy_pct_change": -13.2,
+      "top_chemical": "Lead",
+      "city": "Lemoore"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 6403,
+    "pct_low_income": 10.2,
+    "pct_people_of_color": 53.9,
+    "pct_under_5": 7.6,
+    "pct_over_64": 0.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Lemoore Station, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

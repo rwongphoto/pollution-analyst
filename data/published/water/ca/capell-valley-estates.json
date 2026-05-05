@@ -1,0 +1,215 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "capell-valley-estates",
+    "name": "Capell Valley Estates",
+    "pwsid": "CA2800543",
+    "population_served": 208,
+    "primary_source": "surface_water",
+    "cities_served": [
+      "Stockton"
+    ]
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 3,
+    "health_based_violations_5yr": 1,
+    "unresolved_violations": 3,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 1080",
+      "contaminant_code": "1080",
+      "severity": "monitoring",
+      "rule": "Lead and Copper Rule",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "health_based",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Treatment technique violation"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Reporting failure"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 2
+      },
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 2
+      },
+      {
+        "contaminant": "Contaminant 1080",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 1080",
+      "summary": "Unresolved Lead and Copper Rule violation cited in 2025 (contaminant 1080).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2800543"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2800543"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2800543"
+      }
+    }
+  ],
+  "equity": {
+    "population": 320030,
+    "pct_low_income": 15.6,
+    "pct_people_of_color": 82.4,
+    "pct_under_5": 7.3,
+    "pct_over_64": 12.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 215.1
+      },
+      {
+        "label": "Ozone",
+        "score": 192.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 136.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 180.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 71.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 150.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 86.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 151.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 188.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 177.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 178.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 110.2
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Stockton, California (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T06:24:52Z"
+}

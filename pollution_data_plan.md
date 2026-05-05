@@ -1,12 +1,21 @@
-# Pollution Data Platform: Plan
+# Pollution Data Platform: Plan (Historical Design Playbook)
 
-> **Companion project to the crime trend site.** Reuses pipeline architecture, frontend stack, and page templates from `../crime-trend-data/`. Methodology stance and anomaly engine diverge in specific, deliberate ways documented below.
+> **This is the original design playbook.** Read it for *why* decisions were made. For what the site is *now*, read the canonical docs:
 >
-> Cross-references:
-> - [`../crime-trend-data/crime_trend_plan.md`](../crime-trend-data/crime_trend_plan.md): the design playbook this project descends from.
-> - [`../crime-trend-data/site_architecture.md`](../crime-trend-data/site_architecture.md): current state of the crime site (six cities live, 346 neighborhood pages, eight page types).
-> - [`../crime-trend-data/page_templates.md`](../crime-trend-data/page_templates.md): per-template structure to mirror where applicable.
-> - [`../crime-trend-data/llm_prose_notes.md`](../crime-trend-data/llm_prose_notes.md): LLM prose pattern (Sonnet 4.6, fact-validated) reusable as-is.
+> - [`site_architecture.md`](site_architecture.md) — routes, pipeline → page mapping, what's live (CA POC: 4,769 static pages across 5 page types).
+> - [`page_templates.md`](page_templates.md) — per-template section breakdowns.
+> - [`prose_strategy.md`](prose_strategy.md) — the no-LLM-in-POC, template-first stance.
+> - [`anomaly_engine_design.md`](anomaly_engine_design.md) — flag taxonomy, thresholds, calibration.
+>
+> Where this plan and the canonical docs disagree, the canonical docs win. This document has been amended once (May 2026) to add "Source Resilience" + the equity-overlay rewrite, but is otherwise preserved as the pre-launch rationale.
+>
+> **Companion project to the crime trend site.** Reuses pipeline architecture, frontend stack, and page-template patterns from `../crime-trend-data/`. Methodology stance and anomaly engine diverge in specific, deliberate ways documented below.
+>
+> Cross-references to the crime site:
+> - [`../crime-trend-data/crime_trend_plan.md`](../crime-trend-data/crime_trend_plan.md) — the design playbook this project descends from.
+> - [`../crime-trend-data/site_architecture.md`](../crime-trend-data/site_architecture.md) — current state of the crime site (six cities live, 346 neighborhood pages, eight page types).
+> - [`../crime-trend-data/page_templates.md`](../crime-trend-data/page_templates.md) — per-template structure mirrored here where applicable.
+> - [`../crime-trend-data/llm_prose_notes.md`](../crime-trend-data/llm_prose_notes.md) — LLM prose pattern (Sonnet 4.6, fact-validated) — deferred for our POC; see `prose_strategy.md`.
 
 ## Positioning
 
@@ -66,6 +75,35 @@ The big federal datasets, grouped by pollutant pathway, with programmatic-page p
 
 A composite of TRI + AQS + SDWIS + EJScreen gives three pollutant pathways (air monitors, facility releases, drinking water) plus the equity overlay. Richer foundation than the crime site's single-source-per-city model.
 
+## Source Resilience
+
+Federal data sources are stable in legal status but not in delivery. The POC has already had to route around two real disruptions; the site's architecture treats source attrition as an operating condition, not an exception.
+
+### EJScreen — EPA deprecated the public tool in 2025
+
+EPA retired the public-facing EJScreen web tool and its prebuilt CSV exports in 2025. The underlying block-group tables that powered it are still maintained by the same EPA team that built EJAM (the open-source successor), published via the **USEPA-clone GitHub organization**. Specifically:
+- `USEPA-clone/ejamdata` repo, `data/bgej.arrow` — block-group EJ disparity scores per environmental indicator.
+- Same repo, raw indicator columns — block-group values for PM2.5, ozone, NO₂, diesel particulate, RSEI, lead-paint risk, and proximity-to-hazard counts.
+
+The POC ingests `bgej.arrow` and aggregates to state / county / place by population-weighted mean (see [`pipeline/src/ingest/ejscreen.py`](pipeline/src/ingest/ejscreen.py)). The methodology page names this substitution explicitly — readers can verify the upstream file rather than trusting a pipeline-internal blob.
+
+Implication for the equity overlay framing: see "Demographic juxtaposition: flips" below.
+
+### Envirofacts — Bulk CSV is primary, API is fallback
+
+EPA's Envirofacts REST API rate-limits aggressively under burst, with little visibility into the throttle thresholds. For TRI specifically (and most other Envirofacts-fronted datasets) the **annual bulk-CSV release is the primary ingest path**; the API is reserved for incremental updates and ad-hoc lookups. This inverts the obvious "API-first" instinct but matches EPA's own published guidance: bulk downloads are designed to scale, the API is designed for human use of forms.
+
+Operational rules:
+- Pull the annual bulk CSV at the start of each ingest run; cache it locally in `data/raw/`.
+- Use the API only for the small set of records that change inter-release (re-statements, late filings).
+- During Envirofacts outages, use the `--history-cache-only` flag and retry the live update on the next scheduled run, not immediately.
+
+### Implications for site posture
+
+- Every source is treated as potentially substitutable. The pipeline isolates each source behind a single `pipeline/src/ingest/<source>.py` module so swapping the upstream URL never touches downstream code.
+- The methodology page documents the *source of record* per dataset, including any mirror or fallback in current use, so readers can reproduce the numbers without needing the pipeline.
+- New source dependencies require a written fallback plan before they ship.
+
 ## Data Rights & Attribution
 
 All data sources in scope are public-domain federal datasets. Reuse and redistribution rights are unrestricted; the operational rules are about API civility, not licensing.
@@ -84,11 +122,11 @@ No licensing, no royalties, no commercial-use restrictions. Attribution is not l
 
 These are API and rate-limit rules, not licensing. They mirror how the crime site handles DataSF, NYPD, OPD, etc.
 
+- **Bulk CSV is the primary ingest path** for every Envirofacts-fronted dataset (TRI, GHGRP, RCRA, Superfund, ECHO, FRS). The REST API rate-limits aggressively under burst with little throttle visibility. APIs are reserved for incremental updates and ad-hoc lookups. See "Source Resilience" above for the rationale.
 - **Register an app token** with each source where one is offered (EPA Socrata endpoints, AirNow API). Avoids unauthenticated rate limits.
 - **Identify the User-Agent.** Use a descriptive UA string with a contact URL. Standard courtesy and helps debug if the source blocks traffic.
 - **Respect rate limits.** AirNow specifically caps real-time queries; AQS bulk downloads are preferred for historical work.
-- **Use bulk downloads where available.** Most EPA sources publish annual / quarterly snapshots; pulling these is faster, cheaper, and lower-impact on EPA infrastructure than scraping APIs.
-- **Cache aggressively.** Re-ingest only when the source has actually updated (most are quarterly or annual).
+- **Cache aggressively.** Re-ingest only when the source has actually updated (most are quarterly or annual). The pipeline supports a `--history-cache-only` mode for use during upstream outages.
 - **AirNow attribution request.** AirNow asks for visible attribution and a link back when displaying real-time AQI. Not a license condition; honor it as standard practice.
 
 ### Attribution policy on the site
@@ -143,9 +181,21 @@ Three places where the crime site's stance does not transfer, with explicit reas
 
 The crime site **refuses** to overlay race or income with crime data. Reasons documented in [`../crime-trend-data/crime_trend_plan.md`](../crime-trend-data/crime_trend_plan.md) under "Demographic Stance".
 
-For pollution, the **opposite** is the legitimate, well-documented framing. Environmental justice analysis explicitly correlates pollution exposure with race and income. EPA itself publishes EJScreen for exactly this purpose. Refusing the overlay would *undermine* the value of the site.
+For pollution, the **opposite** is the legitimate, well-documented framing. Environmental justice analysis explicitly correlates pollution exposure with race and income. EPA itself publishes EJScreen (now via the USEPA-clone mirror — see "Source Resilience") for exactly this purpose. Refusing the overlay would *undermine* the value of the site.
 
 The methodology page must state this clearly: the demographic-juxtaposition rule is product-specific, not a personal voice rule. For pollution, equity overlay is encouraged and methodologically defensible. The crime site's reasons (correlation-as-causation, reporting bias, ecological fallacy) do not apply the same way to pollution exposure data, which is measured at the receptor, not police-reported.
+
+#### Equity overlay composition (post-EJScreen-deprecation)
+
+With EPA's public EJScreen tool gone, the site is now a primary-source compositor for the equity overlay rather than a re-presenter of EPA-blessed indexes. The overlay composes three layers, in order of prominence on the page:
+
+1. **Demographic context (lead).** Population total + share low-income / people of color / under 5 / over 64, sourced from Census ACS at the geography. This is the "who lives here" surface — the most legible to readers and the most defensible methodologically. Always rendered.
+2. **National percentile, per environmental indicator.** Each indicator (PM2.5, ozone, NO₂, diesel particulate, RSEI toxic releases, lead-paint risk, NPL/RMP/TSDF/NPDES proximity) is ranked against the national distribution of all US block groups, population-weighted. Rendered as "in the highest 10% nationally" — the framing EPA's original EJScreen used and the framing readers immediately understand. Computed by the pipeline rather than read from a deprecated EPA file.
+3. **EJ disparity score, per indicator (statistical).** EPA's newer disparity-score metric, centered on 100 (population-weighted reference burden), surfaced as a secondary table for readers who want the formal stat. The methodology page over-explains the framing: 100 = reference, 150+ = notable, 200+ = severe. This is what `bgej.arrow` ships from the USEPA-clone today, and what's currently rendered until the percentile layer ships.
+
+Per-page treatment: demographics in the hero of the equity section; percentile table mid-section as the "headline" environmental statistic; disparity-score table at the bottom as supplementary detail with the methodology link adjacent.
+
+This layering replaces the plan's earlier implication of "use EJScreen percentiles directly." We now show *more* than EJScreen ever did, with explicit attribution per layer.
 
 ### Anomaly engine: rewrite, do not port
 
@@ -289,14 +339,20 @@ To establish parallel discipline to the crime site:
 
 1. **Geographic launch scope.** National launch (~3,100 counties) is plausible from day one because federal data is national. Crime site went city-by-city; pollution likely starts national at Tier 2 (counties) and Tier 1 (facilities), with Tier 3 (neighborhoods) gated by polygon availability.
 2. **Naming / branding.** Companion to Public Analyst.ai, or distinct brand? If companion, what subdomain or routing? If distinct, separate domain entirely.
-3. **Equity overlay treatment.** EJScreen is pre-joined; do we surface its scores directly, or compute our own from underlying inputs for transparency?
+3. ~~**Equity overlay treatment.** EJScreen is pre-joined; do we surface its scores directly, or compute our own from underlying inputs for transparency?~~ **Resolved 2026-05.** EPA deprecated the public EJScreen tool in 2025. The overlay is now demographic context (lead) + national percentiles computed in-pipeline (mid) + EJ disparity scores from `USEPA-clone/ejamdata` (tail). See "Equity overlay composition" above.
 4. **Pollutant taxonomy depth.** How many top-level pollutant categories do we present, and at what aggregation level? Risk of overwhelming readers with chemistry.
 5. **Forecasting scope.** Prophet works on AQS time series. Forecasting TRI releases is editorially fraught (can't predict facility behavior). Which dimensions to forecast?
 6. **Interaction with crime site.** Do users moving between sites get a unified experience, or are they wholly separate brands?
 
 ## Status
 
-Planning. Directory created 2026-05-04. Repo not yet initialized. This document captures the rationale for the project shape; subsequent docs will mirror the crime site pattern (`*_mvp.md` for the launch one-pager, `site_architecture.md` once live, `page_templates.md` for per-template detail).
+**California POC live (2026-05).** See [`site_architecture.md`](site_architecture.md) for the canonical state of the site. Quick reference:
+
+- Pipeline ingests TRI / SDWIS / GHGRP / EJScreen-clone / ACS / TIGER for CA.
+- Frontend renders five programmatic page types under `/state/[state]/...` (state hub, county, **city hub** [place-anchored], TRI facility, **water utility** [PWS entity]) plus home and methodology.
+- Anomaly engine ships four flag types (`long_arc_shift`, `release_shift`, `violation_event`, `ghg_step`) calibrated against CA data — see [`anomaly_engine_design.md`](anomaly_engine_design.md).
+- Equity overlay = ACS demographics (lead) + EJ disparity scores (tail). National-percentile layer pending raw-indicator ingest.
+- No LLM prose layer (deterministic templates only — see [`prose_strategy.md`](prose_strategy.md)). No AQS / NATA. No archive / year-in-review yet.
 
 ## Next Steps (Rough Priority)
 

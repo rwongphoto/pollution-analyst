@@ -1,0 +1,217 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "fillmore",
+    "name": "Fillmore",
+    "fips": "0624092",
+    "population": 16455,
+    "county_name": "Inyo",
+    "county_fips": "06027"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 5,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 5,
+    "population_served_total": 16987,
+    "violations_5yr_total": 11,
+    "health_based_5yr_total": 3,
+    "unresolved_total": 7,
+    "utilities_with_unresolved": 3,
+    "utilities": [
+      {
+        "slug": "elkins-ranch",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Elkins Ranch",
+        "pwsid": "CA5601134",
+        "population_served": 150,
+        "health_based_violations_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "slug": "meadow-lake-apartments",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Meadow Lake Apartments",
+        "pwsid": "CA1400511",
+        "population_served": 22,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "fillmore-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fillmore Water Dept",
+        "pwsid": "CA5610002",
+        "population_served": 16419,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "fillmore-irrigation-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fillmore Irrigation Co",
+        "pwsid": "CA5601105",
+        "population_served": 353,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "san-cayetano-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Cayetano Mutual Water Co",
+        "pwsid": "CA5601116",
+        "population_served": 43,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 16455,
+    "pct_low_income": 6.8,
+    "pct_people_of_color": 77.3,
+    "pct_under_5": 6.8,
+    "pct_over_64": 12.5,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 65.9
+      },
+      {
+        "label": "Ozone",
+        "score": 199.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 99.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 56.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 13.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 96.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 119.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 202.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 37.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 145.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 204.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Fillmore, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

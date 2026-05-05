@@ -1,84 +1,303 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "clovis",
-    "name": "City Of Clovis",
-    "pwsid": "CA1010003",
-    "population_served": 130130,
-    "primary_source": "surface_water",
-    "cities_served": [
-      "Clovis"
+    "name": "Clovis",
+    "fips": "0614218",
+    "population": 120607,
+    "county_name": "Fresno",
+    "county_fips": "06019"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 8,
+    "total_releases_pounds": 10,
+    "air_releases_pounds": 10,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": 0.0,
+    "long_arc_pct_change": -9.1,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 11
+      },
+      {
+        "year": 2011,
+        "value": 11
+      },
+      {
+        "year": 2012,
+        "value": 11
+      },
+      {
+        "year": 2013,
+        "value": 11
+      },
+      {
+        "year": 2014,
+        "value": 11
+      },
+      {
+        "year": 2015,
+        "value": 11
+      },
+      {
+        "year": 2016,
+        "value": 11
+      },
+      {
+        "year": 2017,
+        "value": 10
+      },
+      {
+        "year": 2018,
+        "value": 10
+      },
+      {
+        "year": 2019,
+        "value": 10
+      },
+      {
+        "year": 2020,
+        "value": 10
+      },
+      {
+        "year": 2021,
+        "value": 10
+      },
+      {
+        "year": 2022,
+        "value": 10
+      },
+      {
+        "year": 2023,
+        "value": 10
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 10,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 10
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1007117,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 0.6,
+      "long_arc_pct_change": -34.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1537906
+        },
+        {
+          "year": 2011,
+          "value": 1584019
+        },
+        {
+          "year": 2012,
+          "value": 1453015
+        },
+        {
+          "year": 2013,
+          "value": 1578340
+        },
+        {
+          "year": 2014,
+          "value": 1983853
+        },
+        {
+          "year": 2015,
+          "value": 1999086
+        },
+        {
+          "year": 2016,
+          "value": 1032146
+        },
+        {
+          "year": 2017,
+          "value": 1039503
+        },
+        {
+          "year": 2018,
+          "value": 1108879
+        },
+        {
+          "year": 2019,
+          "value": 1054826
+        },
+        {
+          "year": 2020,
+          "value": 933361
+        },
+        {
+          "year": 2021,
+          "value": 962542
+        },
+        {
+          "year": 2022,
+          "value": 1000880
+        },
+        {
+          "year": 2023,
+          "value": 1007117
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "valley-chrome-plating-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Valley Chrome Plating INC.",
+      "parent_company": null,
+      "total_pounds_recent": 10,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Nickel  And Nickel Compounds",
+      "city": "Clovis"
+    }
+  ],
+  "water": {
+    "utilities_count": 8,
+    "population_served_total": 131647,
+    "violations_5yr_total": 188,
+    "health_based_5yr_total": 140,
+    "unresolved_total": 169,
+    "utilities_with_unresolved": 7,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "sierra-vista-association",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sierra Vista Association",
+        "pwsid": "CA5400964",
+        "population_served": 43,
+        "health_based_violations_5yr": 52,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "two-twenty-four-mobile-home-pk",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Two Twenty Four Mobile Home Pk",
+        "pwsid": "CA2000592",
+        "population_served": 35,
+        "health_based_violations_5yr": 49,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "keeler-community-service-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Keeler Community Service District",
+        "pwsid": "CA1400036",
+        "population_served": 66,
+        "health_based_violations_5yr": 21,
+        "unresolved": true
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "old-river-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Old River Mutual Water Company",
+        "pwsid": "CA1500096",
+        "population_served": 130,
+        "health_based_violations_5yr": 9,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "south-kern-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "South Kern Mutual Water Company",
+        "pwsid": "CA1500344",
+        "population_served": 32,
+        "health_based_violations_5yr": 7,
+        "unresolved": true
       },
       {
-        "year": 2026,
-        "value": 0
+        "slug": "shaver-lake-heights-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shaver Lake Heights Mwc",
+        "pwsid": "CA1010053",
+        "population_served": 836,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "las-deltas-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Las Deltas Mutual Water Company",
+        "pwsid": "CA1000054",
+        "population_served": 375,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "clovis",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Clovis",
+        "pwsid": "CA1010003",
+        "population_served": 130130,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 120607,
     "pct_low_income": 8.4,
@@ -141,12 +360,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Clovis, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Clovis, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

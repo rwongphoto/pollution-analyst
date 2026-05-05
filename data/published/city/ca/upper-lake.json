@@ -1,0 +1,154 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "upper-lake",
+    "name": "Upper Lake",
+    "fips": "0681358",
+    "population": 954,
+    "county_name": null,
+    "county_fips": null
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 4,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 1237,
+    "violations_5yr_total": 3,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 3,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "blue-lakes-improvement-club",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Blue Lakes Improvement Club",
+        "pwsid": "CA1700561",
+        "population_served": 90,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "upper-lake-county-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Upper Lake County Water District",
+        "pwsid": "CA1710009",
+        "population_served": 989,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "upper-lake-hardisty-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Upper Lake Hardisty System",
+        "pwsid": "090605025",
+        "population_served": 98,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "villa-blue-estates-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Villa Blue Estates Water District",
+        "pwsid": "CA1700579",
+        "population_served": 60,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 954,
+    "pct_low_income": 9.0,
+    "pct_people_of_color": 17.200000000000003,
+    "pct_under_5": 1.7,
+    "pct_over_64": 17.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Upper Lake, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

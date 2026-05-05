@@ -1,0 +1,351 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "azusa",
+    "name": "Azusa",
+    "fips": "0603386",
+    "population": 49704,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 4,
+    "utilities_serving": 2,
+    "total_releases_pounds": 7563,
+    "air_releases_pounds": 5201,
+    "water_releases_pounds": 0.3,
+    "land_releases_pounds": 2361,
+    "yoy_pct_change": 6.1,
+    "long_arc_pct_change": 56.5,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 4832
+      },
+      {
+        "year": 2011,
+        "value": 4774
+      },
+      {
+        "year": 2012,
+        "value": 4084
+      },
+      {
+        "year": 2013,
+        "value": 4387
+      },
+      {
+        "year": 2014,
+        "value": 4601
+      },
+      {
+        "year": 2015,
+        "value": 11262
+      },
+      {
+        "year": 2016,
+        "value": 4044
+      },
+      {
+        "year": 2017,
+        "value": 18038
+      },
+      {
+        "year": 2018,
+        "value": 5332
+      },
+      {
+        "year": 2019,
+        "value": 5898
+      },
+      {
+        "year": 2020,
+        "value": 16206
+      },
+      {
+        "year": 2021,
+        "value": 148886
+      },
+      {
+        "year": 2022,
+        "value": 7125
+      },
+      {
+        "year": 2023,
+        "value": 7563
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 5201,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 5201
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 2361,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2361
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "polynt-composites-usa-inc-azusa-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Polynt Composites USA INC. - Azusa Plant",
+      "parent_company": "Polynt Composites USA INC",
+      "total_pounds_recent": 7105,
+      "yoy_pct_change": 6.0,
+      "top_chemical": "Styrene",
+      "city": "Azusa"
+    },
+    {
+      "slug": "lindsey-manufacturing-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Lindsey Manufacturing CO",
+      "parent_company": null,
+      "total_pounds_recent": 250,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Styrene",
+      "city": "Azusa"
+    },
+    {
+      "slug": "veolia-es-technical-solutions-l-l-c",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Veolia Es Technical Solutions L.L.C.",
+      "parent_company": "Veolia North America",
+      "total_pounds_recent": 190,
+      "yoy_pct_change": 12.4,
+      "top_chemical": "Benzene",
+      "city": "Azusa"
+    },
+    {
+      "slug": "inwesco-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Inwesco INC",
+      "parent_company": "Crh Americas INC",
+      "total_pounds_recent": 18,
+      "yoy_pct_change": null,
+      "top_chemical": "Chromium",
+      "city": "Azusa"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 110079,
+    "violations_5yr_total": 3,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 3,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "the-river-community",
+        "state": "ca",
+        "state_label": "California",
+        "name": "The River Community",
+        "pwsid": "CA1900616",
+        "population_served": 35,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "azusa-light-and-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Azusa Light And Water",
+        "pwsid": "CA1910007",
+        "population_served": 110044,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 49704,
+    "pct_low_income": 13.2,
+    "pct_people_of_color": 85.4,
+    "pct_under_5": 5.9,
+    "pct_over_64": 11.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 192.4
+      },
+      {
+        "label": "Ozone",
+        "score": 201.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 162.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 167.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 106.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 182.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 130.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 182.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 165.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 189.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 83.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Azusa, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

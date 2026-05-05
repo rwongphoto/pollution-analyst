@@ -1,0 +1,379 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "santa-maria",
+    "name": "Santa Maria",
+    "fips": "0669196",
+    "population": 109543,
+    "county_name": "Santa Barbara",
+    "county_fips": "06083"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 7,
+    "total_releases_pounds": 29107,
+    "air_releases_pounds": 3157,
+    "water_releases_pounds": 18,
+    "land_releases_pounds": 25932,
+    "yoy_pct_change": -3.7,
+    "long_arc_pct_change": 160.3,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 11181
+      },
+      {
+        "year": 2011,
+        "value": 15577
+      },
+      {
+        "year": 2012,
+        "value": 38218
+      },
+      {
+        "year": 2013,
+        "value": 16690
+      },
+      {
+        "year": 2014,
+        "value": 25099
+      },
+      {
+        "year": 2015,
+        "value": 36216
+      },
+      {
+        "year": 2016,
+        "value": 17535
+      },
+      {
+        "year": 2017,
+        "value": 31840
+      },
+      {
+        "year": 2018,
+        "value": 45874
+      },
+      {
+        "year": 2019,
+        "value": 46869
+      },
+      {
+        "year": 2020,
+        "value": 28169
+      },
+      {
+        "year": 2021,
+        "value": 49595
+      },
+      {
+        "year": 2022,
+        "value": 30241
+      },
+      {
+        "year": 2023,
+        "value": 29107
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 3157,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3157
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 18,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 18
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 25932,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 25932
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 160035,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 0.2,
+      "long_arc_pct_change": -83.1,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 946092
+        },
+        {
+          "year": 2011,
+          "value": 1021695
+        },
+        {
+          "year": 2012,
+          "value": 1016640
+        },
+        {
+          "year": 2013,
+          "value": 1055203
+        },
+        {
+          "year": 2014,
+          "value": 1199129
+        },
+        {
+          "year": 2015,
+          "value": 577119
+        },
+        {
+          "year": 2016,
+          "value": 460139
+        },
+        {
+          "year": 2017,
+          "value": 327044
+        },
+        {
+          "year": 2018,
+          "value": 296296
+        },
+        {
+          "year": 2019,
+          "value": 245702
+        },
+        {
+          "year": 2020,
+          "value": 167505
+        },
+        {
+          "year": 2021,
+          "value": 149099
+        },
+        {
+          "year": 2022,
+          "value": 159713
+        },
+        {
+          "year": 2023,
+          "value": 160035
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "okonite-co-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Okonite CO INC",
+      "parent_company": "The Okonite Co INC",
+      "total_pounds_recent": 26031,
+      "yoy_pct_change": -1.2,
+      "top_chemical": "Zinc compounds",
+      "city": "Santa Maria"
+    },
+    {
+      "slug": "the-pictsweet-co-santa-maria-ca-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "The Pictsweet CO - Santa Maria Ca Plant",
+      "parent_company": "The Pictsweet Co",
+      "total_pounds_recent": 3076,
+      "yoy_pct_change": -21.1,
+      "top_chemical": "Ammonia",
+      "city": "Santa Maria"
+    }
+  ],
+  "water": {
+    "utilities_count": 7,
+    "population_served_total": 110059,
+    "violations_5yr_total": 143,
+    "health_based_5yr_total": 5,
+    "unresolved_total": 43,
+    "utilities_with_unresolved": 3,
+    "utilities": [
+      {
+        "slug": "ray-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ray Water Company",
+        "pwsid": "CA4200867",
+        "population_served": 40,
+        "health_based_violations_5yr": 3,
+        "unresolved": true
+      },
+      {
+        "slug": "aaa-kindness-care-home",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Aaa Kindness Care Home",
+        "pwsid": "CA4200969",
+        "population_served": 45,
+        "health_based_violations_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "slug": "santa-maria-utilities-department",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Santa Maria Utilities Department",
+        "pwsid": "CA4210011",
+        "population_served": 109477,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "foster-road-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Foster Road Mutual Water Company",
+        "pwsid": "CA4200556",
+        "population_served": 150,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "east-valley-farms-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "East Valley Farms Mutual Water Company",
+        "pwsid": "CA4200800",
+        "population_served": 142,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sisquoc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sisquoc",
+        "pwsid": "CA4200560",
+        "population_served": 135,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "las-colinas-road-water-assn",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Las Colinas Road & Water Assn",
+        "pwsid": "CA4400613",
+        "population_served": 70,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 109543,
+    "pct_low_income": 13.5,
+    "pct_people_of_color": 85.0,
+    "pct_under_5": 8.1,
+    "pct_over_64": 10.7,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 143.4
+      },
+      {
+        "label": "Ozone",
+        "score": 12.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 156.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 123.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 19.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 136.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 94.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 10.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 214.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 176.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 101.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 1.1
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Santa Maria, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

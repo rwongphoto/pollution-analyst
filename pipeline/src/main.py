@@ -18,6 +18,16 @@ import sys
 from . import states as states_mod
 from .aggregate.build import StateAgg, UtilityAgg, aggregate, aggregate_utilities
 from .config import DEFAULT_TRI_YEAR
+from .flags import (
+    Flag,
+    calibrate as flags_calibrate,
+    detect_ghg_step,
+    detect_long_arc_facility,
+    detect_long_arc_geo,
+    detect_release_shifts,
+    detect_violation_events,
+    summarize as flags_summarize,
+)
 from .ingest import ejscreen, ghgrp, sdwis, tri
 from .publish import site as publish_site
 from .spatial.acs import (
@@ -26,7 +36,7 @@ from .spatial.acs import (
     get_place_demographics,
     get_state_demographics,
 )
-from .spatial.places import build_bg_to_place, load_places
+from .spatial.places import assign_facilities_to_places, build_bg_to_place, load_places
 
 
 def _county_name_from_fips(fips: str, state_abbr: str) -> str | None:
@@ -54,7 +64,8 @@ def run_state(
     sdwis_since_year: int | None = 2020,
     skip_sdwis: bool = False,
     history_cache_only: bool = False,
-) -> tuple[StateAgg, dict, dict, dict[str, UtilityAgg]]:
+    no_flags: bool = False,
+) -> tuple[StateAgg, dict, dict, dict[str, UtilityAgg], dict]:
     state = states_mod.get(state_slug)
 
     # --- TRI ---
@@ -214,6 +225,90 @@ def run_state(
         place_name_to_fips = {}
         place_fips_to_name = {}
 
+    # --- Flags (anomaly engine) ---
+    # Detected per-entity here, between aggregate and publish, so each
+    # publish_* call writes the resulting Flag list into its JSON. Calibration
+    # logging on the side records counts per geography to flag misconfigured
+    # thresholds.
+    state_flags: list[Flag] = []
+    county_flags: dict[str, list[Flag]] = {}
+    facility_flags_map: dict[str, list[Flag]] = {}
+    utility_flags: dict[str, list[Flag]] = {}
+    if not no_flags:
+        # State long-arc on TRI total + per-medium + GHG.
+        for label, hist, units in [
+            ("Total TRI releases", history, "lb"),
+            ("TRI air releases", medium_history.get("AIR"), "lb"),
+            ("TRI water releases", medium_history.get("WATER"), "lb"),
+            ("TRI land + off-site releases", medium_history.get("LAND"), "lb"),
+            ("Greenhouse gas emissions", ghg_state_history, "mtCO2e"),
+        ]:
+            f = detect_long_arc_geo(
+                hist, label=label, pathway_units=units,
+                geography=state.name, recent_year=year,
+            )
+            if f is not None:
+                state_flags.append(f)
+        flags_summarize("state", state.slug, state_flags)
+        # County long-arc on total + GHG, plus county-level ghg_step (the
+        # only level v1 emits ghg_step at).
+        for c in counties.values():
+            cf: list[Flag] = []
+            cname = c.name + " County" if not c.name.endswith("County") else c.name
+            for label, hist, units in [
+                ("Total TRI releases", county_history.get(c.fips), "lb"),
+                ("Greenhouse gas emissions", ghg_county_history.get(c.fips), "mtCO2e"),
+            ]:
+                f = detect_long_arc_geo(
+                    hist, label=label, pathway_units=units,
+                    geography=cname, recent_year=year,
+                )
+                if f is not None:
+                    cf.append(f)
+            ghg = detect_ghg_step(
+                ghg_history=ghg_county_history.get(c.fips),
+                geography_label=cname, recent_year=year,
+            )
+            if ghg is not None:
+                cf.append(ghg)
+            if cf:
+                county_flags[c.fips] = cf
+                flags_summarize("county", f"{state.slug}/{c.fips}", cf)
+        # Facility long-arc + release_shift.
+        for f in facilities.values():
+            fac_chem_hist = chem_history.get(f.facility_id, {})
+            chem_names = {cid: ch.chemical for cid, ch in f.chemicals.items()}
+            # Synthesise facility-total history from the per-chem histories.
+            fac_total_hist: dict[int, float] = {}
+            for cid_hist in fac_chem_hist.values():
+                for y, v in cid_hist.items():
+                    fac_total_hist[y] = fac_total_hist.get(y, 0.0) + v
+            ff: list[Flag] = []
+            ff.extend(detect_long_arc_facility(
+                fac_history=fac_total_hist,
+                chem_histories=fac_chem_hist,
+                chem_names=chem_names,
+                facility_label=f.name,
+                recent_year=year,
+            ))
+            ff.extend(detect_release_shifts(
+                chem_histories=fac_chem_hist,
+                chem_names=chem_names,
+                facility_label=f.name,
+                recent_year=year,
+            ))
+            if ff:
+                facility_flags_map[f.facility_id] = ff
+                flags_summarize("facility", f"{state.slug}/{f.facility_id}", ff)
+        # Utility violation events.
+        for u in utilities.values():
+            uf = detect_violation_events(
+                pwsid=u.pwsid, utility_label=u.name, violations=u.violations,
+            )
+            if uf:
+                utility_flags[u.pwsid] = uf
+                flags_summarize("utility", f"{state.slug}/{u.pwsid}", uf)
+
     # --- Publish ---
     publish_site.publish_state(
         state, state_agg, counties, facilities, year,
@@ -224,6 +319,7 @@ def run_state(
         demographics=state_demo,
         disparity_scores=state_disparity,
         ghg_history=ghg_state_history,
+        flags=state_flags,
     )
     for c in counties.values():
         in_county = [f for f in facilities.values() if f.county_fips == c.fips]
@@ -236,21 +332,28 @@ def run_state(
             demographics=county_demos.get(c.fips),
             disparity_scores=county_disparity.get(c.fips, []),
             ghg_history=ghg_county_history.get(c.fips),
+            flags=county_flags.get(c.fips, []),
         )
+    facility_paths: set = set()
     for f in facilities.values():
-        publish_site.publish_facility(
+        facility_paths.add(publish_site.publish_facility(
             f, year,
             chem_history=chem_history.get(f.facility_id),
             county_demographics=county_demos.get(f.county_fips),
             county_disparity_scores=county_disparity.get(f.county_fips, []),
             county_population=county_pops.get(f.county_fips, 0),
-        )
+            flags=facility_flags_map.get(f.facility_id, []),
+        ))
+
+    # ---- Tier 1 entity: water utility (/water/[slug]) ------------------
+    # The PWS *as an entity* — compliance posture, MCL detail, EPA SDWIS
+    # deep-link. One per active CWS. Renamed from /city/[slug] to reflect
+    # what the page actually is.
+    water_paths: set = set()
     for u in utilities.values():
         cfips = utility_county_map.get(u.pwsid)
-        # Match utility city_name → place FIPS by uppercase name match.
-        # Skips when no place matches (unincorporated areas, regional utilities).
         place_fips = place_name_to_fips.get((u.city_name or "").strip().upper())
-        publish_site.publish_city(
+        water_paths.add(publish_site.publish_water(
             u,
             state_demographics=state_demo,
             state_disparity_scores=state_disparity,
@@ -265,9 +368,80 @@ def run_state(
             place_demographics=place_demos.get(place_fips) if place_fips else None,
             place_disparity_scores=place_disparity.get(place_fips, []) if place_fips else None,
             place_name=place_fips_to_name.get(place_fips) if place_fips else None,
-        )
+            flags=utility_flags.get(u.pwsid, []),
+        ))
 
-    return state_agg, counties, facilities, utilities
+    # ---- Tier 2 place: city hub (/city/[slug]) -------------------------
+    # True place-anchored aggregation. TRI facilities in the city polygon +
+    # utilities serving the city + GHG county-share + equity. Each utility
+    # row links to /water/[slug] for the entity-level deep dive.
+    fac_points = [(f.facility_id, f.lat, f.lng) for f in facilities.values()]
+    try:
+        place_to_facility_ids = assign_facilities_to_places(fac_points, state.fips)
+    except Exception as exc:  # noqa: BLE001
+        logging.warning("Place point-in-polygon failed for %s: %s", state.abbr, exc)
+        place_to_facility_ids = {}
+    place_to_utilities: dict[str, list] = {}
+    for u in utilities.values():
+        pf = place_name_to_fips.get((u.city_name or "").strip().upper())
+        if pf:
+            place_to_utilities.setdefault(pf, []).append(u)
+
+    city_paths: set = set()
+    # Build a city hub for any place with ≥1 facility or ≥1 utility — places
+    # with neither aren't worth a programmatic page.
+    eligible_places = set(place_to_facility_ids.keys()) | set(place_to_utilities.keys())
+    for pf in eligible_places:
+        place_name = place_fips_to_name.get(pf)
+        if not place_name:
+            continue
+        ids_in_place = place_to_facility_ids.get(pf, [])
+        facs_in_place = [facilities[fid] for fid in ids_in_place if fid in facilities]
+        utils_serving = place_to_utilities.get(pf, [])
+        # County for this place — pick the county-of-the-first-facility, or
+        # the SDWIS-resolved county of the first utility, else None.
+        county_fips_for_place = None
+        if facs_in_place:
+            county_fips_for_place = facs_in_place[0].county_fips
+        elif utils_serving:
+            county_fips_for_place = utility_county_map.get(utils_serving[0].pwsid)
+        place_pop = (
+            place_demos.get(pf).population
+            if pf in place_demos and hasattr(place_demos.get(pf), "population")
+            else 0
+        )
+        city_paths.add(publish_site.publish_city_hub(
+            state_slug=state.slug,
+            place_fips=pf,
+            place_name=place_name,
+            place_slug=publish_site.place_slug(place_name, pf),
+            facilities=facs_in_place,
+            utilities=utils_serving,
+            facilities_chem_history=chem_history,
+            year=year,
+            place_demographics=place_demos.get(pf),
+            place_disparity_scores=place_disparity.get(pf, []),
+            place_population=place_pop,
+            county_name=_county_name_from_fips(county_fips_for_place, state.abbr) if county_fips_for_place else None,
+            county_fips=county_fips_for_place,
+            county_ghg_history=ghg_county_history.get(county_fips_for_place) if county_fips_for_place else None,
+            flags=[],  # city-level flag detection deferred — same data shape as county for v2
+        ))
+
+    removed_fac = publish_site.cleanup_stale("facility", state.slug, facility_paths)
+    removed_water = publish_site.cleanup_stale("water", state.slug, water_paths)
+    removed_city = publish_site.cleanup_stale("city", state.slug, city_paths)
+    if removed_fac or removed_water or removed_city:
+        logging.info("cleanup: %s — removed %d facility, %d water, %d city files",
+                     state.slug, removed_fac, removed_water, removed_city)
+
+    flag_maps = {
+        "state": state_flags,
+        "counties": county_flags,
+        "facilities": facility_flags_map,
+        "utilities": utility_flags,
+    }
+    return state_agg, counties, facilities, utilities, flag_maps
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -287,6 +461,9 @@ def main(argv: list[str] | None = None) -> int:
     runp.add_argument("--history-cache-only", action="store_true",
                       help="For --history-from, skip any year not already in data/raw/envirofacts/. "
                            "Useful when EPA is slow.")
+    runp.add_argument("--no-flags", action="store_true",
+                      help="Skip the anomaly engine. Pages render without 'Notable signals' "
+                           "sections — useful for ingest-only dev runs.")
 
     args = p.parse_args(argv)
     if args.cmd != "run":
@@ -301,17 +478,26 @@ def main(argv: list[str] | None = None) -> int:
     counties_by_state: dict = {}
     facilities_by_state: dict = {}
     utilities_by_state: dict = {}
+    facility_flags_by_state: dict = {}
+    county_flags_by_state: dict = {}
+    utility_flags_by_state: dict = {}
+    state_flags_by_slug: dict = {}
     for slug in targets:
-        sa, counties, facilities, utilities = run_state(
+        sa, counties, facilities, utilities, flag_maps = run_state(
             slug, args.year, args.history_from,
             sdwis_since_year=args.sdwis_since,
             skip_sdwis=args.skip_sdwis,
             history_cache_only=args.history_cache_only,
+            no_flags=args.no_flags,
         )
         state_aggs[slug] = sa
         counties_by_state[slug] = counties
         facilities_by_state[slug] = facilities
         utilities_by_state[slug] = utilities
+        state_flags_by_slug[slug] = flag_maps["state"]
+        county_flags_by_state[slug] = flag_maps["counties"]
+        facility_flags_by_state[slug] = flag_maps["facilities"]
+        utility_flags_by_state[slug] = flag_maps["utilities"]
 
     publish_site.publish_home(
         states=[states_mod.get(s) for s in targets],
@@ -320,7 +506,28 @@ def main(argv: list[str] | None = None) -> int:
         counties_by_state=counties_by_state,
         year=args.year,
         utilities_by_state=utilities_by_state,
+        facility_flags=facility_flags_by_state,
+        county_flags=county_flags_by_state,
+        utility_flags=utility_flags_by_state,
     )
+
+    if not args.no_flags:
+        # Cross-state calibration roll-up — surfaces over-cap entities so
+        # thresholds in pipeline/src/flags/ can be tightened on the next run.
+        all_counts = {
+            "state": [len(v) for v in state_flags_by_slug.values()],
+            "county": [
+                len(v) for fmap in county_flags_by_state.values() for v in fmap.values()
+            ],
+            "facility": [
+                len(v) for fmap in facility_flags_by_state.values() for v in fmap.values()
+            ],
+            "utility": [
+                len(v) for fmap in utility_flags_by_state.values() for v in fmap.values()
+            ],
+        }
+        flags_calibrate(all_counts)
+
     logging.info("done — published JSON under data/published/")
     return 0
 

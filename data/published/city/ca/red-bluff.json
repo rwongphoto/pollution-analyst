@@ -1,116 +1,349 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "red-bluff",
-    "name": "City Of Red Bluff",
-    "pwsid": "CA5210004",
-    "population_served": 14710,
-    "primary_source": "groundwater",
-    "cities_served": [
-      "Red Bluff"
+    "name": "Red Bluff",
+    "fips": "0659892",
+    "population": 14576,
+    "county_name": "Shasta",
+    "county_fips": "06089"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 19,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2020-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 2,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 1,
-    "years_since_last_violation": 6
-  },
-  "violations": [
+  "pathways": [
     {
-      "year": 2020,
-      "contaminant": "Contaminant 8000",
-      "contaminant_code": "8000",
-      "severity": "monitoring",
-      "rule": "Revised Total Coliform Rule",
-      "is_unresolved": false,
-      "description": "Monitoring failure; returned to compliance"
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
     },
     {
-      "year": 2020,
-      "contaminant": "Contaminant 8000",
-      "contaminant_code": "8000",
-      "severity": "monitoring",
-      "rule": "Revised Total Coliform Rule",
-      "is_unresolved": false,
-      "description": "Monitoring failure; returned to compliance"
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 658558,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -14.5,
+      "long_arc_pct_change": 131.6,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 284294
+        },
+        {
+          "year": 2011,
+          "value": 498320
+        },
+        {
+          "year": 2012,
+          "value": 503320
+        },
+        {
+          "year": 2013,
+          "value": 550200
+        },
+        {
+          "year": 2014,
+          "value": 543084
+        },
+        {
+          "year": 2015,
+          "value": 579514
+        },
+        {
+          "year": 2016,
+          "value": 445299
+        },
+        {
+          "year": 2017,
+          "value": 470910
+        },
+        {
+          "year": 2018,
+          "value": 545824
+        },
+        {
+          "year": 2019,
+          "value": 546467
+        },
+        {
+          "year": 2020,
+          "value": 578659
+        },
+        {
+          "year": 2021,
+          "value": 645912
+        },
+        {
+          "year": 2022,
+          "value": 770443
+        },
+        {
+          "year": 2023,
+          "value": 658558
+        }
+      ]
     }
   ],
-  "metrics": {
-    "violations_history": [
+  "facilities": [],
+  "water": {
+    "utilities_count": 19,
+    "population_served_total": 15965,
+    "violations_5yr_total": 43,
+    "health_based_5yr_total": 10,
+    "unresolved_total": 25,
+    "utilities_with_unresolved": 12,
+    "utilities": [
       {
-        "year": 2020,
-        "value": 2
+        "slug": "surrey-village-water-co-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Surrey Village Water Co. Inc.",
+        "pwsid": "CA5200570",
+        "population_served": 163,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2021,
-        "value": 0
+        "slug": "mountain-valley-apts-rvp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mountain Valley Apts & Rvp",
+        "pwsid": "CA5200571",
+        "population_served": 131,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "modern-village-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Modern Village Mwc",
+        "pwsid": "CA5200545",
+        "population_served": 85,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "lassen-view-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lassen View Water District",
+        "pwsid": "CA5200548",
+        "population_served": 85,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "live-oak-acres-mwc-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Live Oak Acres Mwc Inc.",
+        "pwsid": "CA5200535",
+        "population_served": 80,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "howell-s-lakeside-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Howell's Lakeside  Water Co.",
+        "pwsid": "CA5200007",
+        "population_served": 75,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "health_based_history": [
-      {
-        "year": 2020,
-        "value": 0
+        "slug": "breese-subdivision-2",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Breese Subdivision 2",
+        "pwsid": "CA5200008",
+        "population_served": 75,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2021,
-        "value": 0
+        "slug": "little-avenue-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Little Avenue Water System",
+        "pwsid": "CA5200584",
+        "population_served": 53,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "pine-ridge-park-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Pine Ridge Park Estates",
+        "pwsid": "CA4500089",
+        "population_served": 44,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "antoinette-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Antoinette Mutual Water Co",
+        "pwsid": "CA5201140",
+        "population_served": 25,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "red-bluff",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Red Bluff",
+        "pwsid": "CA5210004",
+        "population_served": 14710,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "golden-meadows-csd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden Meadows Csd",
+        "pwsid": "CA5201147",
+        "population_served": 102,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": [
+        "slug": "wilson-acres-mutual-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Wilson Acres Mutual Water",
+        "pwsid": "CA5200014",
+        "population_served": 75,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
       {
-        "contaminant": "Contaminant 8000",
-        "count": 2
+        "slug": "reeds-creek-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Reeds Creek Estates",
+        "pwsid": "CA5200500",
+        "population_served": 70,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "golden-acres-trailer-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden Acres Trailer Park",
+        "pwsid": "CA5200514",
+        "population_served": 45,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rio-ranch-community-svcs-dist",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rio Ranch Community Svcs Dist",
+        "pwsid": "CA5200555",
+        "population_served": 44,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "womack-subdivision-m-w-c",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Womack Subdivision M.W.C.",
+        "pwsid": "CA5200013",
+        "population_served": 40,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "rancho-colorado-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rancho Colorado Ws",
+        "pwsid": "CA5200575",
+        "population_served": 36,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "juanita-court-mutual-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Juanita Court Mutual Water",
+        "pwsid": "CA5200588",
+        "population_served": 27,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
     ]
   },
+  "flags": [],
   "equity": {
     "population": 14576,
     "pct_low_income": 20.9,
@@ -173,12 +406,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Red Bluff, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Red Bluff, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:33Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

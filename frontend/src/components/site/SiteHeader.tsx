@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import { Brand } from "./Brand";
 
-type Active = "home" | "facility" | "city" | "county" | "state" | "method" | undefined;
+type Active = "home" | "facility" | "city" | "water" | "county" | "state" | "method" | undefined;
 
 const NAV: { key: Active; href: string; label: string }[] = [
   { key: "state", href: "/state/ca", label: "States" },

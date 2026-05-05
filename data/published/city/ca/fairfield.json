@@ -1,84 +1,319 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "fairfield",
-    "name": "City Of Fairfield",
-    "pwsid": "CA4810003",
-    "population_served": 120377,
-    "primary_source": "surface_water",
-    "cities_served": [
-      "Fairfield"
+    "name": "Fairfield",
+    "fips": "0623182",
+    "population": 119420,
+    "county_name": "Solano",
+    "county_fips": "06095"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 7,
+    "utilities_serving": 3,
+    "total_releases_pounds": 170188,
+    "air_releases_pounds": 161573,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 8615,
+    "yoy_pct_change": -5.9,
+    "long_arc_pct_change": 32.2,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 128692
+      },
+      {
+        "year": 2011,
+        "value": 125770
+      },
+      {
+        "year": 2012,
+        "value": 146196
+      },
+      {
+        "year": 2013,
+        "value": 140514
+      },
+      {
+        "year": 2014,
+        "value": 165807
+      },
+      {
+        "year": 2015,
+        "value": 195676
+      },
+      {
+        "year": 2016,
+        "value": 175680
+      },
+      {
+        "year": 2017,
+        "value": 183944
+      },
+      {
+        "year": 2018,
+        "value": 170154
+      },
+      {
+        "year": 2019,
+        "value": 190910
+      },
+      {
+        "year": 2020,
+        "value": 214299
+      },
+      {
+        "year": 2021,
+        "value": 193623
+      },
+      {
+        "year": 2022,
+        "value": 180926
+      },
+      {
+        "year": 2023,
+        "value": 170188
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2024-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 2,
-    "health_based_violations_5yr": 1,
-    "unresolved_violations": 2,
-    "contaminants_with_violations": 1,
-    "years_since_last_violation": 2
-  },
-  "violations": [
+  "pathways": [
     {
-      "year": 2024,
-      "contaminant": "Contaminant 5200",
-      "contaminant_code": "5200",
-      "severity": "monitoring",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": true,
-      "description": "Reporting failure"
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 161573,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 161573
+        }
+      ]
     },
     {
-      "year": 2024,
-      "contaminant": "Contaminant 5200",
-      "contaminant_code": "5200",
-      "severity": "health_based",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": true,
-      "description": "Treatment technique violation"
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 8615,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 8615
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 21426967,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 8.7,
+      "long_arc_pct_change": 601.7,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 3053378
+        },
+        {
+          "year": 2011,
+          "value": 19378912
+        },
+        {
+          "year": 2012,
+          "value": 3431414
+        },
+        {
+          "year": 2013,
+          "value": 20182696
+        },
+        {
+          "year": 2014,
+          "value": 19280075
+        },
+        {
+          "year": 2015,
+          "value": 21529646
+        },
+        {
+          "year": 2016,
+          "value": 19852789
+        },
+        {
+          "year": 2017,
+          "value": 18113471
+        },
+        {
+          "year": 2018,
+          "value": 22637915
+        },
+        {
+          "year": 2019,
+          "value": 18988895
+        },
+        {
+          "year": 2020,
+          "value": 20467750
+        },
+        {
+          "year": 2021,
+          "value": 20421166
+        },
+        {
+          "year": 2022,
+          "value": 19720166
+        },
+        {
+          "year": 2023,
+          "value": 21426967
+        }
+      ]
     }
   ],
-  "metrics": {
-    "violations_history": [
+  "facilities": [
+    {
+      "slug": "ball-metal-beverage-container-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ball Metal Beverage Container Corp",
+      "parent_company": "Ball CORP",
+      "total_pounds_recent": 87774,
+      "yoy_pct_change": -6.8,
+      "top_chemical": "Certain glycol ethers",
+      "city": "Fairfield"
+    },
+    {
+      "slug": "ardagh-metal-beverage-usa-inc-re-fairfield-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ardagh Metal Beverage USA INC Re: Fairfield Plant",
+      "parent_company": "Ardagh Holdings USA INC",
+      "total_pounds_recent": 62100,
+      "yoy_pct_change": -1.7,
+      "top_chemical": "Certain glycol ethers",
+      "city": "Fairfield"
+    },
+    {
+      "slug": "anheuser-busch-llc-fairfield-brewery",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Anheuser-Busch LLC - Fairfield Brewery",
+      "parent_company": "Anheuser-Busch Cos LLC",
+      "total_pounds_recent": 17056,
+      "yoy_pct_change": -15.7,
+      "top_chemical": "Ammonia",
+      "city": "Fairfield"
+    },
+    {
+      "slug": "univar-solutions-usa",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Univar Solutions USA",
+      "parent_company": "Univar Solutions USA INC",
+      "total_pounds_recent": 3151,
+      "yoy_pct_change": -1.8,
+      "top_chemical": "Toluene",
+      "city": "Fairfield"
+    },
+    {
+      "slug": "u-s-dod-usaf-travis-afb",
+      "state": "ca",
+      "state_label": "California",
+      "name": "U.S. Dod Usaf Travis Afb",
+      "parent_company": "US Department Of Defense",
+      "total_pounds_recent": 82,
+      "yoy_pct_change": -0.7,
+      "top_chemical": "Naphthalene",
+      "city": "Travis Afb"
+    },
+    {
+      "slug": "clorox-manufacturing-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Clorox Manufacturing CO",
+      "parent_company": "The Clorox Co",
+      "total_pounds_recent": 15,
+      "yoy_pct_change": -1.0,
+      "top_chemical": "Certain glycol ethers",
+      "city": "Fairfield"
+    },
+    {
+      "slug": "producers-dairy-foods-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Producers Dairy Foods INC",
+      "parent_company": "Shehady Family Foods LLC",
+      "total_pounds_recent": 10,
+      "yoy_pct_change": -50.0,
+      "top_chemical": "Nitric acid",
+      "city": "Fairfield"
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 120468,
+    "violations_5yr_total": 7,
+    "health_based_5yr_total": 6,
+    "unresolved_total": 7,
+    "utilities_with_unresolved": 2,
+    "utilities": [
       {
-        "year": 2024,
-        "value": 2
+        "slug": "robin-way-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Robin Way Water System",
+        "pwsid": "CA4900913",
+        "population_served": 66,
+        "health_based_violations_5yr": 5,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "fairfield",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Fairfield",
+        "pwsid": "CA4810003",
+        "population_served": 120377,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "health_based_history": [
-      {
-        "year": 2024,
-        "value": 1
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": [
-      {
-        "contaminant": "Contaminant 5200",
-        "count": 2
+        "slug": "cresta-mesa-parque",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cresta Mesa Parque",
+        "pwsid": "CA4800589",
+        "population_served": 25,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
     ]
   },
+  "flags": [],
   "equity": {
     "population": 119420,
     "pct_low_income": 9.2,
@@ -141,12 +376,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Fairfield, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Fairfield, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:33Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

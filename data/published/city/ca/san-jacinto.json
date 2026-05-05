@@ -1,0 +1,280 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "san-jacinto",
+    "name": "San Jacinto",
+    "fips": "0667112",
+    "population": 54077,
+    "county_name": "Riverside",
+    "county_fips": "06065"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 3,
+    "total_releases_pounds": 3,
+    "air_releases_pounds": 2,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2,
+    "yoy_pct_change": 8.0,
+    "long_arc_pct_change": 8.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 3
+      },
+      {
+        "year": 2023,
+        "value": 3
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 2,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 2,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1423181,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 5.5,
+      "long_arc_pct_change": -32.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2119572
+        },
+        {
+          "year": 2011,
+          "value": 2071756
+        },
+        {
+          "year": 2012,
+          "value": 2504412
+        },
+        {
+          "year": 2013,
+          "value": 2055202
+        },
+        {
+          "year": 2014,
+          "value": 2278890
+        },
+        {
+          "year": 2015,
+          "value": 1724152
+        },
+        {
+          "year": 2016,
+          "value": 1136501
+        },
+        {
+          "year": 2017,
+          "value": 1541844
+        },
+        {
+          "year": 2018,
+          "value": 1842670
+        },
+        {
+          "year": 2019,
+          "value": 1290190
+        },
+        {
+          "year": 2020,
+          "value": 1523660
+        },
+        {
+          "year": 2021,
+          "value": 1665711
+        },
+        {
+          "year": 2022,
+          "value": 1349415
+        },
+        {
+          "year": 2023,
+          "value": 1423181
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "robertsons-san-jacinto-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Robertsons San Jacinto Plant",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 3,
+      "yoy_pct_change": 8.0,
+      "top_chemical": "Lead compounds",
+      "city": "San Jacinto"
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 22450,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "san-jacinto-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Jacinto, City Of",
+        "pwsid": "CA3310032",
+        "population_served": 18950,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "soboba",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Soboba",
+        "pwsid": "090600151",
+        "population_served": 3000,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "golden-era-productions",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden Era Productions",
+        "pwsid": "CA3301280",
+        "population_served": 500,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 54077,
+    "pct_low_income": 17.1,
+    "pct_people_of_color": 75.6,
+    "pct_under_5": 6.3,
+    "pct_over_64": 11.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 187.7
+      },
+      {
+        "label": "Ozone",
+        "score": 214.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 139.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 132.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 34.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 81.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 51.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 141.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 18.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "San Jacinto, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

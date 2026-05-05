@@ -1,0 +1,479 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "oakdale",
+    "name": "Oakdale",
+    "fips": "0652694",
+    "population": 23120,
+    "county_name": "Stanislaus",
+    "county_fips": "06099"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 17,
+    "total_releases_pounds": 12500,
+    "air_releases_pounds": 4208,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 8292,
+    "yoy_pct_change": -53.9,
+    "long_arc_pct_change": -4.9,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 13139
+      },
+      {
+        "year": 2011,
+        "value": 12253
+      },
+      {
+        "year": 2012,
+        "value": 10041
+      },
+      {
+        "year": 2013,
+        "value": 11318
+      },
+      {
+        "year": 2014,
+        "value": 26070
+      },
+      {
+        "year": 2015,
+        "value": 30772
+      },
+      {
+        "year": 2016,
+        "value": 26683
+      },
+      {
+        "year": 2017,
+        "value": 5171
+      },
+      {
+        "year": 2018,
+        "value": 5409
+      },
+      {
+        "year": 2019,
+        "value": 4909
+      },
+      {
+        "year": 2020,
+        "value": 4617
+      },
+      {
+        "year": 2021,
+        "value": 10872
+      },
+      {
+        "year": 2022,
+        "value": 27137
+      },
+      {
+        "year": 2023,
+        "value": 12500
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 4208,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 4208
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 8292,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 8292
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1582022,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.2,
+      "long_arc_pct_change": 6.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1487732
+        },
+        {
+          "year": 2011,
+          "value": 1410143
+        },
+        {
+          "year": 2012,
+          "value": 1607223
+        },
+        {
+          "year": 2013,
+          "value": 1659097
+        },
+        {
+          "year": 2014,
+          "value": 1743275
+        },
+        {
+          "year": 2015,
+          "value": 1732483
+        },
+        {
+          "year": 2016,
+          "value": 1480312
+        },
+        {
+          "year": 2017,
+          "value": 1512036
+        },
+        {
+          "year": 2018,
+          "value": 1725074
+        },
+        {
+          "year": 2019,
+          "value": 1483353
+        },
+        {
+          "year": 2020,
+          "value": 1583759
+        },
+        {
+          "year": 2021,
+          "value": 1611476
+        },
+        {
+          "year": 2022,
+          "value": 1650989
+        },
+        {
+          "year": 2023,
+          "value": 1582022
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "conagra-foods-packaged-foods-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Conagra Foods Packaged Foods Llc.",
+      "parent_company": "Conagra Brands INC",
+      "total_pounds_recent": 8334,
+      "yoy_pct_change": -12.0,
+      "top_chemical": "Ammonia",
+      "city": "Oakdale"
+    },
+    {
+      "slug": "sonoco-metal-packaging-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sonoco Metal Packaging LLC",
+      "parent_company": "Sonoco Products Co",
+      "total_pounds_recent": 4166,
+      "yoy_pct_change": -76.4,
+      "top_chemical": "Xylene (mixed isomers)",
+      "city": "Oakdale"
+    }
+  ],
+  "water": {
+    "utilities_count": 17,
+    "population_served_total": 27067,
+    "violations_5yr_total": 4,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 3,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "oakdale-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oakdale, City Of",
+        "pwsid": "CA5010014",
+        "population_served": 23235,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "oid-oakdale-rural-water-system-1",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oid-Oakdale Rural Water System #1",
+        "pwsid": "CA5000433",
+        "population_served": 1570,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "heritage-hills-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Heritage Hills Mhp",
+        "pwsid": "PA6370041",
+        "population_served": 425,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "oid-51-sunset-oaks-10",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oid #51 - Sunset Oaks #10",
+        "pwsid": "CA5000317",
+        "population_served": 287,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "oid-46-sunset-oaks",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oid #46 - Sunset Oaks",
+        "pwsid": "CA5000014",
+        "population_served": 269,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "north-oaks-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "North Oaks Mutual Water Co",
+        "pwsid": "CA5000237",
+        "population_served": 234,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "tahama-village-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Tahama Village Mobile Home Park",
+        "pwsid": "CA3900602",
+        "population_served": 200,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "oid-22-williams-tract",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oid #22 - Williams Tract",
+        "pwsid": "CA5000015",
+        "population_served": 150,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "oid-45",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oid #45",
+        "pwsid": "CA5000013",
+        "population_served": 144,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "country-squire-mobile-estates-water-sy",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Country Squire Mobile Estates & Water Sy",
+        "pwsid": "CA3900607",
+        "population_served": 131,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "twin-cypress-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Twin Cypress Mobile Home Park",
+        "pwsid": "CA5000071",
+        "population_served": 112,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "4n-mobilehome-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "4N Mobilehome Park",
+        "pwsid": "CA5000082",
+        "population_served": 65,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "lone-pine-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lone Pine Mhp",
+        "pwsid": "CA5000049",
+        "population_served": 64,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "tully-mobile-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Tully Mobile Estates",
+        "pwsid": "CA5000067",
+        "population_served": 56,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "country-village-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Country Village Mobile Home Park",
+        "pwsid": "CA5800824",
+        "population_served": 50,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "country-leisure-mobile-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Country Leisure Mobile Estates",
+        "pwsid": "CA1100413",
+        "population_served": 40,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "pleasant-prairie-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Pleasant Prairie Mhp",
+        "pwsid": "WI2300117",
+        "population_served": 35,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 23120,
+    "pct_low_income": 13.0,
+    "pct_people_of_color": 41.1,
+    "pct_under_5": 7.6,
+    "pct_over_64": 13.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 115.3
+      },
+      {
+        "label": "Ozone",
+        "score": 108.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 52.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 66.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 44.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 46.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 47.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 79.5
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 43.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 85.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 31.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Oakdale, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

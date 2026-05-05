@@ -22,57 +22,9 @@
     "land_releases_pounds": 482688,
     "chemicals_reported": 14,
     "yoy_pct_change": 267.2,
-    "long_arc_pct_change": 3402.9,
-    "long_arc_baseline_year": 2010,
+    "long_arc_pct_change": 267.2,
+    "long_arc_baseline_year": 2022,
     "history": [
-      {
-        "year": 2010,
-        "value": 13868
-      },
-      {
-        "year": 2011,
-        "value": 7506
-      },
-      {
-        "year": 2012,
-        "value": 8653
-      },
-      {
-        "year": 2013,
-        "value": 5490
-      },
-      {
-        "year": 2014,
-        "value": 6841
-      },
-      {
-        "year": 2015,
-        "value": 3152
-      },
-      {
-        "year": 2016,
-        "value": 4857
-      },
-      {
-        "year": 2017,
-        "value": 3093
-      },
-      {
-        "year": 2018,
-        "value": 3182
-      },
-      {
-        "year": 2019,
-        "value": 6353
-      },
-      {
-        "year": 2020,
-        "value": 2412
-      },
-      {
-        "year": 2021,
-        "value": 3097
-      },
       {
         "year": 2022,
         "value": 132312
@@ -322,10 +274,6 @@
       "total_pounds_recent": 225,
       "history": [
         {
-          "year": 2012,
-          "value": 9
-        },
-        {
           "year": 2013,
           "value": 17
         },
@@ -347,7 +295,7 @@
         },
         {
           "year": 2018,
-          "value": 1
+          "value": 0.67
         },
         {
           "year": 2019,
@@ -371,8 +319,8 @@
         }
       ],
       "yoy_pct_change": 5892.6,
-      "long_arc_pct_change": 2486.9,
-      "long_arc_baseline_year": 2012
+      "long_arc_pct_change": 1258.2,
+      "long_arc_baseline_year": 2013
     },
     {
       "chemical": "1,2,4-Trimethylbenzene",
@@ -509,6 +457,50 @@
       "long_arc_baseline_year": 2010
     }
   ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Asbestos (friable)",
+      "summary": "Asbestos (friable) releases at Air Products Manufacturing LLC rose from 93k lb to 482k lb (5.2\u00d7) between 2022 and 2023.",
+      "magnitude_pct": 417.4,
+      "magnitude_abs": 388572.0,
+      "baseline_year": 2022,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 93088
+        },
+        {
+          "year": 2023,
+          "value": 481660
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Chromium",
+      "summary": "Chromium releases at Air Products Manufacturing LLC fell from 35k lb to 700 lb (98% lower) between 2022 and 2023.",
+      "magnitude_pct": -98.0,
+      "magnitude_abs": -34776.0,
+      "baseline_year": 2022,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 35476
+        },
+        {
+          "year": 2023,
+          "value": 700
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 9936690,
     "pct_low_income": 13.7,
@@ -578,5 +570,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "_published_at": "2026-05-05T06:24:51Z"
 }

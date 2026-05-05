@@ -1,0 +1,297 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "humboldt-hill",
+    "name": "Humboldt Hill",
+    "fips": "0634928",
+    "population": 3273,
+    "county_name": "Humboldt",
+    "county_fips": "06023"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 0,
+    "total_releases_pounds": 31432,
+    "air_releases_pounds": 31432,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": -7.1,
+    "long_arc_pct_change": 5314.2,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 581
+      },
+      {
+        "year": 2011,
+        "value": 35164
+      },
+      {
+        "year": 2012,
+        "value": 31054
+      },
+      {
+        "year": 2013,
+        "value": 26125
+      },
+      {
+        "year": 2014,
+        "value": 26605
+      },
+      {
+        "year": 2015,
+        "value": 35417
+      },
+      {
+        "year": 2016,
+        "value": 27564
+      },
+      {
+        "year": 2017,
+        "value": 33045
+      },
+      {
+        "year": 2018,
+        "value": 25918
+      },
+      {
+        "year": 2019,
+        "value": 30615
+      },
+      {
+        "year": 2020,
+        "value": 36650
+      },
+      {
+        "year": 2021,
+        "value": 41669
+      },
+      {
+        "year": 2022,
+        "value": 33826
+      },
+      {
+        "year": 2023,
+        "value": 31432
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 31432,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 31432
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 214599,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -5.5,
+      "long_arc_pct_change": -36.2,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 336567
+        },
+        {
+          "year": 2011,
+          "value": 216648
+        },
+        {
+          "year": 2012,
+          "value": 193173
+        },
+        {
+          "year": 2013,
+          "value": 187499
+        },
+        {
+          "year": 2014,
+          "value": 188608
+        },
+        {
+          "year": 2015,
+          "value": 213558
+        },
+        {
+          "year": 2016,
+          "value": 181612
+        },
+        {
+          "year": 2017,
+          "value": 208376
+        },
+        {
+          "year": 2018,
+          "value": 188666
+        },
+        {
+          "year": 2019,
+          "value": 199980
+        },
+        {
+          "year": 2020,
+          "value": 240850
+        },
+        {
+          "year": 2021,
+          "value": 269504
+        },
+        {
+          "year": 2022,
+          "value": 227175
+        },
+        {
+          "year": 2023,
+          "value": 214599
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "pg-e-humboldt-bay-power-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Pg&E Humboldt Bay Power Plant",
+      "parent_company": "Pacific Gas & Electric Co",
+      "total_pounds_recent": 31432,
+      "yoy_pct_change": -7.1,
+      "top_chemical": "Acetaldehyde",
+      "city": "Eureka"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 3273,
+    "pct_low_income": 12.2,
+    "pct_people_of_color": 36.5,
+    "pct_under_5": 1.4,
+    "pct_over_64": 22.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 93.0
+      },
+      {
+        "label": "Ozone",
+        "score": 0.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 11.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 20.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 37.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 44.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 65.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 60.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 53.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Humboldt Hill, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

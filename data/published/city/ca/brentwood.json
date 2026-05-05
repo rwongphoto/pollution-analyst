@@ -1,84 +1,209 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "brentwood",
     "name": "Brentwood",
-    "pwsid": "CA0710004",
-    "population_served": 64513,
-    "primary_source": "purchased",
-    "cities_served": [
-      "Brentwood"
+    "fips": "0608142",
+    "population": 64443,
+    "county_name": "Contra Costa",
+    "county_fips": "06013"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 5,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 82261234,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 11.9,
+      "long_arc_pct_change": 109.1,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 39334407
+        },
+        {
+          "year": 2011,
+          "value": 72107992
+        },
+        {
+          "year": 2012,
+          "value": 112182316
+        },
+        {
+          "year": 2013,
+          "value": 121967587
+        },
+        {
+          "year": 2014,
+          "value": 132848440
+        },
+        {
+          "year": 2015,
+          "value": 108103922
+        },
+        {
+          "year": 2016,
+          "value": 98070792
+        },
+        {
+          "year": 2017,
+          "value": 110415618
+        },
+        {
+          "year": 2018,
+          "value": 106301016
+        },
+        {
+          "year": 2019,
+          "value": 104918059
+        },
+        {
+          "year": 2020,
+          "value": 81791851
+        },
+        {
+          "year": 2021,
+          "value": 77078427
+        },
+        {
+          "year": 2022,
+          "value": 73485085
+        },
+        {
+          "year": 2023,
+          "value": 82261234
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 5,
+    "population_served_total": 65022,
+    "violations_5yr_total": 44,
+    "health_based_5yr_total": 36,
+    "unresolved_total": 44,
+    "utilities_with_unresolved": 4,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "country-villa-apts",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Country Villa Apts",
+        "pwsid": "CA5000218",
+        "population_served": 60,
+        "health_based_violations_5yr": 33,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "orwood-resort",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Orwood Resort",
+        "pwsid": "CA0707545",
+        "population_served": 350,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "sandy-point-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sandy Point Mobile Home Park",
+        "pwsid": "CA0707597",
+        "population_served": 67,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "colonia-santa-maria",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Colonia Santa Maria",
+        "pwsid": "CA0707517",
+        "population_served": 32,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
+        "slug": "brentwood",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Brentwood",
+        "pwsid": "CA0710004",
+        "population_served": 64513,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 64443,
     "pct_low_income": 6.9,
@@ -141,12 +266,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Brentwood, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Brentwood, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

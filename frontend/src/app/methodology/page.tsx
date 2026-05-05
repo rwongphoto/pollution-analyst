@@ -9,7 +9,7 @@ import { pageMeta, SITE_URL } from "@/lib/seo";
 export const metadata: Metadata = pageMeta({
   title: "Pollution Trend Methodology | Pollution Analyst.ai",
   description:
-    "How we measure pollution trends across federal data sources — TRI, SDWIS, EJScreen — plus our pollutant taxonomy, equity-overlay stance, and per-source caveats.",
+    "How we measure pollution trends across federal data sources — TRI, SDWIS, the USEPA-clone EJ disparity mirror — plus our pollutant taxonomy, equity-overlay stance, and per-source caveats.",
   path: "/methodology",
 });
 
@@ -69,6 +69,7 @@ export default function MethodologyPage() {
             <p className="meta-mono" style={{ color: "var(--fg-4)", marginTop: 18 }}>
               JUMP TO ·{" "}
               <a href="#taxonomy">Taxonomy</a> ·{" "}
+              <a href="#anomaly-engine">Anomaly engine</a> ·{" "}
               <a href="#equity">Equity overlay</a> ·{" "}
               <a href="#exclusions">Exclusions</a> ·{" "}
               <a href="#sources">Sources</a> ·{" "}
@@ -94,6 +95,40 @@ export default function MethodologyPage() {
               </ul>
             </section>
 
+            <section id="anomaly-engine">
+              <h2>Anomaly engine</h2>
+              <p>
+                Pollution data has different shapes from crime data. Crime is point-incident, monthly, with weak seasonality; pollution is annual (TRI, GHGRP), event-driven (SDWIS), or sparse-monitor (AQS, when it lands). The flag taxonomy reflects that. Four flag types ship today; two more (smoke days, NAAQS exceedance days) defer until air-monitor ingest is in.
+              </p>
+              <p>
+                A flag is <strong>editorial attention, not a regulatory finding</strong>. Where EPA has issued an enforcement action — SDWIS Tier 1 violations, ECHO actions — we link to the federal record so readers can verify the actual compliance posture rather than infer it from our card.
+              </p>
+              <h3 style={{ marginTop: 24 }}>Long-arc shift</h3>
+              <p>
+                Triggers when a geography&apos;s most-recent-year value differs from a baseline year (≥10 years prior) by ≥50%. Absolute floors keep the percent change meaningful: ≥50,000 lb baseline for TRI pathways, ≥100,000 mtCO₂e for GHG. Surfaced on facility, county, and state pages. Severity: <em>improvement</em> for declines, <em>regression</em> for rises.
+              </p>
+              <h3 style={{ marginTop: 24 }}>Release shift</h3>
+              <p>
+                Year-over-year facility × chemical TRI shift. Three combined floors against tiny-base noise: ≥50% change AND ≥10,000 lb absolute delta AND ≥1,000 lb prior-year baseline. Surfaced on facility pages only — YoY at county/state aggregation is too noisy to be editorial. Severity: <em>surge</em> or <em>drop</em>.
+              </p>
+              <h3 style={{ marginTop: 24 }}>Violation event</h3>
+              <p>
+                SDWIS health-based or unresolved violation. Event-driven, not statistical — the violation itself is the signal. Surfaced on water-utility pages with a link to the EPA SDWIS record. Severity ordering: <em>unresolved</em> &gt; <em>health-based within 1 year</em> &gt; <em>health-based within 5 years</em>. Monitoring failures and returned-to-compliance violations don&apos;t flag.
+              </p>
+              <h3 style={{ marginTop: 24 }}>GHG step</h3>
+              <p>
+                County-level GHGRP year-over-year shift, ≥30% with both years ≥10,000 mtCO₂e. Typically reflects industrial commissioning, decommissioning, or fuel switching. Facility-level deferred until a TRI↔GHGRP facility-ID join is built. Severity: <em>surge</em> or <em>drop</em>.
+              </p>
+              <h3 style={{ marginTop: 24 }}>Calibration commitment</h3>
+              <p>
+                Average flag count is targeted at: ≤3 per facility, ≤5 per county, ≤8 per state. Water utilities are uncapped — violation events are events, not anomalies. The first emission cycle intentionally runs lax thresholds; the engine logs per-geography counts so over-cap entities can drive a threshold tune before re-publishing.
+              </p>
+              <h3 style={{ marginTop: 24 }}>Deferred</h3>
+              <p>
+                <strong>Smoke days</strong> and <strong>NAAQS exceedance days</strong> require AQS air-monitor ingest, which is not yet in the pipeline. <strong>Sustained shift / streak break</strong> require a monthly cadence; TRI is annual. <strong>Cross-pathway flags</strong> (e.g., a high-TRI facility near a public water system with violations) wait until the individual lanes are calibrated. None of these are technical blockers — all are scope choices for v1.
+              </p>
+            </section>
+
             <section id="equity">
               <h2>Equity overlay (the deliberate inversion from our crime site)</h2>
               <p>
@@ -101,24 +136,44 @@ export default function MethodologyPage() {
               </p>
               <p>
                 For pollution, the opposite is the legitimate, well-documented framing.
-                <strong> Environmental justice analysis explicitly correlates pollution exposure with race and income.</strong> EPA itself publishes EJScreen for this purpose. Refusing the overlay would <em>undermine</em> the value of the site.
+                <strong> Environmental justice analysis explicitly correlates pollution exposure with race and income.</strong> EPA published EJScreen for exactly this purpose for over a decade. Refusing the overlay would <em>undermine</em> the value of the site.
               </p>
               <p>
                 The mechanism differs in two important ways:
               </p>
               <ul>
                 <li>
-                  <strong>Pollution is measured at the receptor or the source.</strong> A TRI release is reported by the facility under federal mandate; an EJScreen index pairs that release with the demographics of the surrounding block groups. Neither measurement is filtered through enforcement priorities.
+                  <strong>Pollution is measured at the receptor or the source.</strong> A TRI release is reported by the facility under federal mandate; an EJ index pairs that release with the demographics of the surrounding block groups. Neither measurement is filtered through enforcement priorities.
                 </li>
                 <li>
                   <strong>Concentration is the object of inquiry.</strong> The question on a pollution page is whether a population bears disproportionate exposure — that&apos;s an empirical question with an empirical answer, computed at federally defined geographies.
                 </li>
               </ul>
+              <h3 style={{ marginTop: 24 }}>Three layers, demographics-leading</h3>
               <p>
-                EJScreen indexes are percentile ranks (0–100) that pair an environmental indicator (PM2.5 concentration, air-toxics cancer risk, etc.) with a demographic indicator (low income, people of color) at the block-group level. EPA flags 80th-percentile-and-above as warranting closer examination; we mirror that threshold in our prose framing.
+                EPA retired the public-facing EJScreen tool in 2025. We&apos;re now a primary-source compositor for the equity overlay rather than a re-presenter of an EPA-blessed index. Every facility, county, city, and state page renders the overlay in three layers, in order of prominence:
+              </p>
+              <ol>
+                <li>
+                  <strong>Demographic context (lead).</strong> Census ACS 2018&ndash;2022 (5-year): population total + share low-income / people of color / under age 5 / over age 64. Always rendered. This is the &ldquo;who lives here&rdquo; surface — the most legible to readers and the most defensible methodologically.
+                </li>
+                <li>
+                  <strong>National percentiles, per environmental indicator</strong> <em>(layer pending raw-indicator ingest)</em>. Each indicator (PM2.5, ozone, NO₂, diesel particulate, RSEI toxic releases, lead-paint risk, NPL/RMP/TSDF/NPDES proximity) ranked against the national distribution of all US block groups, population-weighted. Rendered as &ldquo;in the highest 10% nationally&rdquo; — the framing EPA&apos;s original EJScreen used. Computed in-pipeline rather than read from the deprecated EPA file. Until this lands, the overlay is layers (1) and (3) only.
+                </li>
+                <li>
+                  <strong>EJ disparity scores (statistical detail).</strong> EPA&apos;s newer disparity-score metric, sourced from the <code>USEPA-clone/ejamdata</code> GitHub mirror that the open-source EJAM package consumes. Population-weighted to state, county, and city. Centered on <strong>100 = the population-weighted reference burden</strong>; higher = greater disparate exposure. ~150 is widely considered notable; 200+ is severe. Surfaced as a table at the bottom of the equity section so readers who want the formal stat can read it directly.
+                </li>
+              </ol>
+              <h3 style={{ marginTop: 24 }}>Why both percentile and disparity</h3>
+              <p>
+                Percentile and disparity score answer different questions. <strong>Percentile</strong> says &ldquo;how does this place rank against the country?&rdquo; — directly legible, easy to cite. <strong>Disparity score</strong> says &ldquo;does the population at this place bear more burden than a population-weighted reference?&rdquo; — a stronger statement about distributive equity, harder to compress into one phrase. Surfacing both lets the reader hold them up against each other.
+              </p>
+              <h3 style={{ marginTop: 24 }}>Geography preference (per-page)</h3>
+              <p>
+                Each page picks the tightest geography that has data available, in this preference order: Census Place (city) → containing County → State. Facility pages currently use the containing-county overlay as a proxy; a 3-mile-buffer aggregation is a future iteration.
               </p>
               <p>
-                We surface EJScreen indexes verbatim rather than recompute our own, so the source of every percentile is auditable against EPA&apos;s published reference data.
+                The methodology page tracks every substitution explicitly. The pipeline reads <a href="https://github.com/USEPA-clone/ejamdata" target="_blank" rel="noreferrer"><code>USEPA-clone/ejamdata</code></a> directly, so any reader can audit the raw block-group inputs against our computed rollups.
               </p>
             </section>
 
@@ -129,10 +184,10 @@ export default function MethodologyPage() {
                   <strong>Real-time alerting and AQI dashboards.</strong> AirNow already does that well. We are an analytics-and-narrative layer, not a hazard-of-the-hour service.
                 </li>
                 <li>
-                  <strong>Health diagnoses or medical advice.</strong> We reference exposure thresholds (NAAQS, MCLs, EJScreen percentiles); we do not interpret them for individual readers.
+                  <strong>Health diagnoses or medical advice.</strong> We reference exposure thresholds (NAAQS, MCLs, EJ disparity scores); we do not interpret them for individual readers.
                 </li>
                 <li>
-                  <strong>Per-individual exposure modeling.</strong> Our unit of analysis is aggregate (facility, utility, county). EJScreen and NATA are census-tract or block-group rollups; we do not model personal exposure.
+                  <strong>Per-individual exposure modeling.</strong> Our unit of analysis is aggregate (facility, utility, county, place). The block-group EJ data and NATA are tract / block-group rollups; we do not model personal exposure.
                 </li>
                 <li>
                   <strong>Speculative attribution to specific facilities</strong> beyond what TRI / ECHO publishes directly. We do not assert that a given facility caused a given health outcome; that exceeds what the data can support.
@@ -175,7 +230,7 @@ export default function MethodologyPage() {
                   <strong>Threshold-coverage gaps.</strong> Below-threshold facilities don&apos;t report. A county with a TRI total of zero may still have meaningful smaller emitters.
                 </li>
                 <li>
-                  <strong>Pounds, not concentrations.</strong> TRI tells you how much was released — not where it ended up or what people inhaled. We pair TRI with EJScreen for population-exposure context.
+                  <strong>Pounds, not concentrations.</strong> TRI tells you how much was released — not where it ended up or what people inhaled. We pair TRI with the EJ disparity overlay for population-exposure context.
                 </li>
                 <li>
                   <strong>Long-arc improvements are real.</strong> Multi-decade declines on the order of −30% to −60% reflect both Clean Air Act controls and the progressive electrification of heavy industry. We report the long arc explicitly because the year-over-year noise can hide it.
@@ -222,33 +277,43 @@ export default function MethodologyPage() {
             </section>
 
             <section id="ejscreen" style={{ borderTop: "1px solid var(--rule)", paddingTop: 36, marginTop: 36 }}>
-              <h2>EJScreen · environmental-justice screening tool</h2>
+              <h2>EJScreen · environmental-justice screening (post-2025 substitution)</h2>
               <p>
-                <strong>Owner.</strong> EPA Office of Environmental Justice & External Civil Rights.
+                <strong>Owner of original EJScreen.</strong> EPA Office of Environmental Justice & External Civil Rights.
               </p>
               <p>
-                <strong>What it is.</strong> Pre-joined environmental and demographic indicators at the block-group level (~245,000 block groups). Each EJ index pairs an environmental burden with a demographic indicator and reports a national and state percentile rank.
+                <strong>Status.</strong> EPA retired the public-facing EJScreen tool and its prebuilt CSV exports in 2025. The underlying block-group tables are still maintained by the same EPA team that built EJAM (the open-source successor), published via the <a href="https://github.com/USEPA-clone/ejamdata" target="_blank" rel="noreferrer"><code>USEPA-clone/ejamdata</code></a> GitHub repo. We pull <code>data/bgej.arrow</code> directly and aggregate to state, county, and place by population-weighted mean.
               </p>
               <p>
-                <strong>Cadence.</strong> Annual update, generally summer. Indicators update on their underlying source cadence (ACS 5-year, NATA modeling cycle, AQS rollups, etc.).
+                <strong>What we currently render.</strong> EPA&apos;s newer EJ disparity-score metric, per environmental indicator (PM2.5, ozone, NO₂, diesel particulate, RSEI toxic releases, lead-paint risk, NPL/RMP/TSDF/NPDES proximity, USTs, drinking-water non-compliance). Disparity score is centered on 100 = population-weighted reference burden; higher = greater disparate exposure.
+              </p>
+              <p>
+                <strong>What&apos;s pending.</strong> National percentile ranks per indicator — what the original EJScreen showed. Computable in-pipeline once we ingest the raw indicator columns from the same upstream repo. Until that lands, the on-page overlay is demographics + disparity scores only; the prose explicitly tags this as a work-in-progress rather than papering over it.
+              </p>
+              <p>
+                <strong>Cadence.</strong> Underlying indicators update on their source cadence (ACS 5-year, NATA modeling cycle, AQS rollups). The <code>USEPA-clone/ejamdata</code> Arrow file is refreshed when EPA pushes a new compilation; we re-pull on demand.
               </p>
               <p>
                 <strong>Caveats we surface.</strong>
               </p>
               <ul>
                 <li>
-                  <strong>Block-group rollup.</strong> EJScreen is not a personal exposure model. It rolls modeled exposure up to block groups and pairs that with ACS demographics. Inside a block group there is variation we do not capture.
+                  <strong>Block-group rollup.</strong> Not a personal exposure model. The underlying data rolls modeled exposure to block groups and pairs that with ACS demographics. Inside a block group there is variation we do not capture.
                 </li>
                 <li>
-                  <strong>Percentile, not absolute level.</strong> A 95th-percentile EJ index says &ldquo;in the highest 5% nationally,&rdquo; not &ldquo;X concentration above standard.&rdquo; The percentile is a comparative ranking. We always include the underlying indicator label.
+                  <strong>Disparity score, not absolute level.</strong> A score of 150 says &ldquo;the population here bears notably more burden than the population-weighted reference,&rdquo; not &ldquo;X concentration above standard.&rdquo; We always show the underlying indicator label and the &ldquo;reference burden&rdquo; framing on every page.
                 </li>
                 <li>
-                  <strong>Demographic indicators are paired, not stacked.</strong> EJScreen pairs each pollution indicator with each demographic indicator separately; it doesn&apos;t produce a single composite &ldquo;EJ score.&rdquo; We follow that convention on every page.
+                  <strong>Substitution is explicit.</strong> Every page that uses the overlay credits &ldquo;Census ACS 2018-2022 + USEPA-clone EJ disparity mirror&rdquo; in the source line, with a link back to the upstream Arrow file. Readers can verify our rollups against the raw block-group inputs without going through the pipeline.
+                </li>
+                <li>
+                  <strong>No source laundering.</strong> We do not relabel disparity scores as &ldquo;our index.&rdquo; The metric is EPA&apos;s; the population weighting and place/county/state aggregation are ours, and the pipeline code is open.
                 </li>
               </ul>
               <p>
                 <strong>Reference.</strong>{" "}
-                <a href="https://www.epa.gov/ejscreen" target="_blank" rel="noreferrer">EPA EJScreen</a>.
+                <a href="https://github.com/USEPA-clone/ejamdata" target="_blank" rel="noreferrer">USEPA-clone/ejamdata</a> (current source of truth) ·{" "}
+                <a href="https://www.epa.gov/ejscreen" target="_blank" rel="noreferrer">EPA EJScreen historical landing page</a> (deprecated 2025).
               </p>
             </section>
 

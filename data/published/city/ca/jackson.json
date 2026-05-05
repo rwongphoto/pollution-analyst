@@ -1,118 +1,112 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "jackson",
-    "name": "City Of Jackson",
-    "pwsid": "CA0310001",
-    "population_served": 5019,
-    "primary_source": "purchased",
-    "cities_served": [
-      "Jackson"
+    "name": "Jackson",
+    "fips": "0636980",
+    "population": 5004,
+    "county_name": "Amador",
+    "county_fips": "06005"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2022-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 4,
-    "health_based_violations_5yr": 4,
-    "unresolved_violations": 1,
-    "contaminants_with_violations": 1,
-    "years_since_last_violation": 4
-  },
-  "violations": [
+  "pathways": [
     {
-      "year": 2022,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": true,
-      "description": "Maximum contaminant level exceeded"
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
     },
     {
-      "year": 2022,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": false,
-      "description": "Maximum contaminant level exceeded; returned to compliance"
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
     },
     {
-      "year": 2022,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": false,
-      "description": "Maximum contaminant level exceeded; returned to compliance"
-    },
-    {
-      "year": 2022,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": false,
-      "description": "Maximum contaminant level exceeded; returned to compliance"
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
     }
   ],
-  "metrics": {
-    "violations_history": [
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 6819,
+    "violations_5yr_total": 4,
+    "health_based_5yr_total": 4,
+    "unresolved_total": 1,
+    "utilities_with_unresolved": 1,
+    "utilities": [
       {
-        "year": 2022,
-        "value": 4
+        "slug": "jackson",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Jackson",
+        "pwsid": "CA0310001",
+        "population_served": 5019,
+        "health_based_violations_5yr": 4,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "health_based_history": [
-      {
-        "year": 2022,
-        "value": 4
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": [
-      {
-        "contaminant": "Total Trihalomethanes (TTHM)",
-        "count": 4
+        "slug": "christian-valley-park-csd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Christian Valley Park Csd",
+        "pwsid": "CA3110034",
+        "population_served": 1800,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
     ]
   },
+  "flags": [],
   "equity": {
     "population": 5004,
     "pct_low_income": 9.3,
@@ -175,12 +169,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Jackson, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Jackson, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

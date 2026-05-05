@@ -1,0 +1,264 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "yucca-valley",
+    "name": "Yucca Valley",
+    "fips": "0687056",
+    "population": 21700,
+    "county_name": "San Bernardino",
+    "county_fips": "06071"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 3,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 9779299,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -6.6,
+      "long_arc_pct_change": -7.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10552170
+        },
+        {
+          "year": 2011,
+          "value": 9345778
+        },
+        {
+          "year": 2012,
+          "value": 12082882
+        },
+        {
+          "year": 2013,
+          "value": 11371200
+        },
+        {
+          "year": 2014,
+          "value": 11908909
+        },
+        {
+          "year": 2015,
+          "value": 10657991
+        },
+        {
+          "year": 2016,
+          "value": 10438970
+        },
+        {
+          "year": 2017,
+          "value": 9782427
+        },
+        {
+          "year": 2018,
+          "value": 9213305
+        },
+        {
+          "year": 2019,
+          "value": 9502197
+        },
+        {
+          "year": 2020,
+          "value": 9773926
+        },
+        {
+          "year": 2021,
+          "value": 9914249
+        },
+        {
+          "year": 2022,
+          "value": 10471311
+        },
+        {
+          "year": 2023,
+          "value": 9779299
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 31445,
+    "violations_5yr_total": 1,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 1,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "hi-desert-wd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hi Desert Wd",
+        "pwsid": "CA3610073",
+        "population_served": 26411,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "bighorn-desert-view-water-agency",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bighorn - Desert View Water Agency",
+        "pwsid": "CA3610009",
+        "population_served": 3916,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "bdvwa-goat-mountain-id",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bdvwa - Goat Mountain Id",
+        "pwsid": "CA3610060",
+        "population_served": 1118,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 21700,
+    "pct_low_income": 20.2,
+    "pct_people_of_color": 37.5,
+    "pct_under_5": 7.7,
+    "pct_over_64": 21.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 38.5
+      },
+      {
+        "label": "Ozone",
+        "score": 154.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 103.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 27.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 5.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 46.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 61.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 48.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Yucca Valley, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

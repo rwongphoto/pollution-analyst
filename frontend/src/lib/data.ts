@@ -9,6 +9,7 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 
 import type {
+  CityHubPayload,
   CountyPagePayload,
   FacilityPagePayload,
   HomePagePayload,
@@ -32,7 +33,11 @@ export async function loadFacility(state: string, slug: string): Promise<Facilit
 }
 
 export async function loadWaterUtility(state: string, slug: string): Promise<WaterUtilityPayload> {
-  return readJson<WaterUtilityPayload>(`city/${state}/${slug}.json`);
+  return readJson<WaterUtilityPayload>(`water/${state}/${slug}.json`);
+}
+
+export async function loadCityHub(state: string, slug: string): Promise<CityHubPayload> {
+  return readJson<CityHubPayload>(`city/${state}/${slug}.json`);
 }
 
 export async function loadCounty(state: string, slug: string): Promise<CountyPagePayload> {
@@ -61,6 +66,10 @@ export async function listFacilitySlugs(): Promise<{ state: string; slug: string
 }
 
 export async function listWaterSlugs(): Promise<{ state: string; slug: string }[]> {
+  return listEntitySlugs(path.join(DATA_ROOT, "water"));
+}
+
+export async function listCitySlugs(): Promise<{ state: string; slug: string }[]> {
   return listEntitySlugs(path.join(DATA_ROOT, "city"));
 }
 

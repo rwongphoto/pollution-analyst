@@ -1,84 +1,742 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "fresno",
-    "name": "City Of Fresno",
-    "pwsid": "CA1010007",
-    "population_served": 545716,
-    "primary_source": "surface_water",
-    "cities_served": [
-      "Fresno"
+    "name": "Fresno",
+    "fips": "0627000",
+    "population": 541528,
+    "county_name": "Fresno",
+    "county_fips": "06019"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 13,
+    "utilities_serving": 42,
+    "total_releases_pounds": 110792,
+    "air_releases_pounds": 25245,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 85547,
+    "yoy_pct_change": -11.0,
+    "long_arc_pct_change": 536.9,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 17395
+      },
+      {
+        "year": 2011,
+        "value": 16791
+      },
+      {
+        "year": 2012,
+        "value": 57406
+      },
+      {
+        "year": 2013,
+        "value": 42458
+      },
+      {
+        "year": 2014,
+        "value": 129980
+      },
+      {
+        "year": 2015,
+        "value": 189796
+      },
+      {
+        "year": 2016,
+        "value": 173110
+      },
+      {
+        "year": 2017,
+        "value": 73215
+      },
+      {
+        "year": 2018,
+        "value": 86187
+      },
+      {
+        "year": 2019,
+        "value": 81005
+      },
+      {
+        "year": 2020,
+        "value": 73821
+      },
+      {
+        "year": 2021,
+        "value": 88756
+      },
+      {
+        "year": 2022,
+        "value": 124536
+      },
+      {
+        "year": 2023,
+        "value": 110792
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 25245,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 25245
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 85547,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 85547
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1007117,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 0.6,
+      "long_arc_pct_change": -34.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1537906
+        },
+        {
+          "year": 2011,
+          "value": 1584019
+        },
+        {
+          "year": 2012,
+          "value": 1453015
+        },
+        {
+          "year": 2013,
+          "value": 1578340
+        },
+        {
+          "year": 2014,
+          "value": 1983853
+        },
+        {
+          "year": 2015,
+          "value": 1999086
+        },
+        {
+          "year": 2016,
+          "value": 1032146
+        },
+        {
+          "year": 2017,
+          "value": 1039503
+        },
+        {
+          "year": 2018,
+          "value": 1108879
+        },
+        {
+          "year": 2019,
+          "value": 1054826
+        },
+        {
+          "year": 2020,
+          "value": 933361
+        },
+        {
+          "year": 2021,
+          "value": 962542
+        },
+        {
+          "year": 2022,
+          "value": 1000880
+        },
+        {
+          "year": 2023,
+          "value": 1007117
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "e-j-gallo-winery-fresno",
+      "state": "ca",
+      "state_label": "California",
+      "name": "E & J Gallo Winery Fresno",
+      "parent_company": "Dry Creek CORP",
+      "total_pounds_recent": 34681,
+      "yoy_pct_change": -20.6,
+      "top_chemical": "Ammonia",
+      "city": "Fresno"
+    },
+    {
+      "slug": "california-dairies-inc-fresno",
+      "state": "ca",
+      "state_label": "California",
+      "name": "California Dairies INC Fresno",
+      "parent_company": "California Dairies INC",
+      "total_pounds_recent": 26849,
+      "yoy_pct_change": -14.2,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Fresno"
+    },
+    {
+      "slug": "california-natural-color",
+      "state": "ca",
+      "state_label": "California",
+      "name": "California Natural Color",
+      "parent_company": "E & J Gallo Winery",
+      "total_pounds_recent": 12105,
+      "yoy_pct_change": 3.5,
+      "top_chemical": "Ammonia",
+      "city": "Fresno"
+    },
+    {
+      "slug": "sanger-boats-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sanger Boats INC",
+      "parent_company": null,
+      "total_pounds_recent": 11131,
+      "yoy_pct_change": -38.0,
+      "top_chemical": "Styrene",
+      "city": "Fresno"
+    },
+    {
+      "slug": "producers-dairy-foods-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Producers Dairy Foods INC.",
+      "parent_company": "Shehady Family Foods LLC",
+      "total_pounds_recent": 10912,
+      "yoy_pct_change": 54462.0,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Fresno"
+    },
+    {
+      "slug": "modern-welding-co-of-california",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Modern Welding CO Of California",
+      "parent_company": "Modern Welding Co INC",
+      "total_pounds_recent": 6800,
+      "yoy_pct_change": -13.9,
+      "top_chemical": "Styrene",
+      "city": "Fresno"
+    },
+    {
+      "slug": "foster-farms-belgravia-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Foster Farms Belgravia Plant",
+      "parent_company": "Foster Farms LLC",
+      "total_pounds_recent": 4012,
+      "yoy_pct_change": 50.1,
+      "top_chemical": "Peracetic acid",
+      "city": "Fresno"
+    },
+    {
+      "slug": "fresno-cherry-avenue",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Fresno Cherry Avenue",
+      "parent_company": "Foster Farms LLC",
+      "total_pounds_recent": 2442,
+      "yoy_pct_change": -64.0,
+      "top_chemical": "Peracetic acid",
+      "city": "Fresno"
+    },
+    {
+      "slug": "betts-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Betts CO",
+      "parent_company": null,
+      "total_pounds_recent": 1264,
+      "yoy_pct_change": -6.4,
+      "top_chemical": "Chromium",
+      "city": "Fresno"
+    },
+    {
+      "slug": "excelsior-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Excelsior INC.",
+      "parent_company": "Ryerson Holding Co",
+      "total_pounds_recent": 564,
+      "yoy_pct_change": -51.6,
+      "top_chemical": "Manganese",
+      "city": "Fresno"
+    }
+  ],
+  "water": {
+    "utilities_count": 42,
+    "population_served_total": 630234,
+    "violations_5yr_total": 375,
+    "health_based_5yr_total": 157,
+    "unresolved_total": 218,
+    "utilities_with_unresolved": 20,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "shady-oaks-mobile-home-park-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shady Oaks Mobile Home Park Llc",
+        "pwsid": "CA2000828",
+        "population_served": 23,
+        "health_based_violations_5yr": 35,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "pappas-co-mendota",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Pappas & Co (Mendota)",
+        "pwsid": "CA1009039",
+        "population_served": 36,
+        "health_based_violations_5yr": 29,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "fcsa-34-millerton-new-town",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 34 - Millerton New Town",
+        "pwsid": "CA1000484",
+        "population_served": 1117,
+        "health_based_violations_5yr": 25,
+        "unresolved": true
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "fcsa-32-cantua-creek",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 32 - Cantua Creek",
+        "pwsid": "CA1000359",
+        "population_served": 462,
+        "health_based_violations_5yr": 20,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "fcsa-30-el-porvenir",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 30 - El Porvenir",
+        "pwsid": "CA1000019",
+        "population_served": 241,
+        "health_based_violations_5yr": 20,
+        "unresolved": true
       },
       {
-        "year": 2026,
-        "value": 0
+        "slug": "fcsa-49-five-points",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 49 - Five Points",
+        "pwsid": "CA1000546",
+        "population_served": 440,
+        "health_based_violations_5yr": 10,
+        "unresolved": true
+      },
+      {
+        "slug": "fcsa-10a-mansionette-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 10A - Mansionette Estates",
+        "pwsid": "CA1000554",
+        "population_served": 81,
+        "health_based_violations_5yr": 8,
+        "unresolved": true
+      },
+      {
+        "slug": "westside-harvesting",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Westside Harvesting",
+        "pwsid": "CA1009214",
+        "population_served": 72,
+        "health_based_violations_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "slug": "bakman-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bakman Water Company",
+        "pwsid": "CA1010001",
+        "population_served": 17393,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "riverstone-rootcreek-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Riverstone/Rootcreek Water District",
+        "pwsid": "CA2010016",
+        "population_served": 5507,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "bakman-water-rolling-hills",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bakman Water-Rolling Hills",
+        "pwsid": "CA2010009",
+        "population_served": 1107,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "fcwwd-42-alluvial-fancher",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcwwd 42/Alluvial & Fancher",
+        "pwsid": "CA1000078",
+        "population_served": 291,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "sunnyside-convalescent-hosp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sunnyside Convalescent Hosp",
+        "pwsid": "CA1000366",
+        "population_served": 275,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "wildwood-mobile-home-pk-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Wildwood Mobile Home Pk Inc",
+        "pwsid": "CA2000608",
+        "population_served": 106,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "john-hovannisian-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "John Hovannisian Water System",
+        "pwsid": "CA2000647",
+        "population_served": 80,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "elm-court",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Elm Court",
+        "pwsid": "CA1000277",
+        "population_served": 64,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "fresno",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Fresno",
+        "pwsid": "CA1010007",
+        "population_served": 545716,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "california-state-university-fresno",
+        "state": "ca",
+        "state_label": "California",
+        "name": "California State University Fresno",
+        "pwsid": "CA1010339",
+        "population_served": 41000,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "malaga-county-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Malaga County Water District",
+        "pwsid": "CA1010042",
+        "population_served": 5979,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "fcwwd-41-shaver-lake",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcwwd 41/Shaver Lake",
+        "pwsid": "CA1010017",
+        "population_served": 2722,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fcsa-47-quail-lake-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 47 - Quail Lake Estates",
+        "pwsid": "CA1010055",
+        "population_served": 1988,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "countryside-care-center",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Countryside Care Center",
+        "pwsid": "CA1000430",
+        "population_served": 1274,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "juvenile-justice-campus",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Juvenile Justice Campus",
+        "pwsid": "CA1000570",
+        "population_served": 565,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "fcsa-05-wildwood-island",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 05 - Wildwood Island",
+        "pwsid": "CA1000021",
+        "population_served": 417,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fcsa-39-a-and-b",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 39 - A And B",
+        "pwsid": "CA1000471",
+        "population_served": 395,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fcsa-44d-monte-verdi",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 44D - Monte Verdi",
+        "pwsid": "CA1000550",
+        "population_served": 350,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "easton-estates-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Easton Estates Water Company",
+        "pwsid": "CA1000018",
+        "population_served": 302,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "woodward-bluffs-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Woodward Bluffs Mhp",
+        "pwsid": "CA1000298",
+        "population_served": 300,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "belmont-water-corporation",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Belmont Water Corporation",
+        "pwsid": "CA1000004",
+        "population_served": 264,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "meadow-lakes-club",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Meadow Lakes Club",
+        "pwsid": "CA1000056",
+        "population_served": 240,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "fcwwd-40-shaver-springs",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcwwd 40 - Shaver Springs",
+        "pwsid": "CA1000042",
+        "population_served": 196,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fcwwd-38-sky-harbour",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcwwd 38/Sky Harbour",
+        "pwsid": "CA1000041",
+        "population_served": 185,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fcsa-43-raisin-city",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 43 - Raisin City",
+        "pwsid": "CA1000551",
+        "population_served": 182,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "manning-gardens-care-center-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Manning Gardens Care Center Inc",
+        "pwsid": "CA1000324",
+        "population_served": 170,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fcsa-10-cumorah-knolls",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 10 - Cumorah Knolls",
+        "pwsid": "CA1000039",
+        "population_served": 132,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fcwwd-37-mile-high",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcwwd 37/Mile High",
+        "pwsid": "CA1000040",
+        "population_served": 129,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fcsa-14-belmont-manor",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 14 - Belmont Manor",
+        "pwsid": "CA1000023",
+        "population_served": 115,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "britz-colusa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Britz/Colusa",
+        "pwsid": "CA1009023",
+        "population_served": 85,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "britz-five-points",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Britz/Five Points",
+        "pwsid": "CA1009179",
+        "population_served": 76,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "camden-trailer-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Camden Trailer Park",
+        "pwsid": "CA1000238",
+        "population_served": 75,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fcsa-34b-ventana-hills",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 34B - Ventana Hills",
+        "pwsid": "CA1000574",
+        "population_served": 48,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fcsa-44c-riverview-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fcsa 44C - Riverview Estates",
+        "pwsid": "CA1000555",
+        "population_served": 34,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 541528,
     "pct_low_income": 22.1,
@@ -141,12 +799,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Fresno, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Fresno, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

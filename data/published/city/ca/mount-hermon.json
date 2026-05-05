@@ -1,0 +1,244 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "mount-hermon",
+    "name": "Mount Hermon",
+    "fips": "0649796",
+    "population": 1174,
+    "county_name": "Santa Cruz",
+    "county_fips": "06087"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 51157,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 4.9,
+      "long_arc_pct_change": -62.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 134603
+        },
+        {
+          "year": 2011,
+          "value": 55707
+        },
+        {
+          "year": 2012,
+          "value": 54431
+        },
+        {
+          "year": 2013,
+          "value": 36165
+        },
+        {
+          "year": 2014,
+          "value": 63420
+        },
+        {
+          "year": 2015,
+          "value": 50156
+        },
+        {
+          "year": 2016,
+          "value": 77749
+        },
+        {
+          "year": 2017,
+          "value": 59453
+        },
+        {
+          "year": 2018,
+          "value": 50509
+        },
+        {
+          "year": 2019,
+          "value": 64770
+        },
+        {
+          "year": 2020,
+          "value": 47944
+        },
+        {
+          "year": 2021,
+          "value": 54625
+        },
+        {
+          "year": 2022,
+          "value": 48770
+        },
+        {
+          "year": 2023,
+          "value": 51157
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 1176,
+    "violations_5yr_total": 5,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "mt-hermon-association-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mt. Hermon Association, Inc.",
+        "pwsid": "CA4410008",
+        "population_served": 1176,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1174,
+    "pct_low_income": 0.0,
+    "pct_people_of_color": 12.400000000000006,
+    "pct_under_5": 4.6,
+    "pct_over_64": 26.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 35.5
+      },
+      {
+        "label": "Ozone",
+        "score": 2.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 4.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 2.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 1.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 26.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 38.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 39.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 33.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 5.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Mount Hermon, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

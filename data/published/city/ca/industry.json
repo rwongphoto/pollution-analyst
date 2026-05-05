@@ -1,0 +1,396 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "industry",
+    "name": "Industry",
+    "fips": "0636490",
+    "population": 234,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 20,
+    "utilities_serving": 0,
+    "total_releases_pounds": 2084494,
+    "air_releases_pounds": 6100,
+    "water_releases_pounds": 568,
+    "land_releases_pounds": 2077827,
+    "yoy_pct_change": 13.0,
+    "long_arc_pct_change": 283.6,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 543382
+      },
+      {
+        "year": 2011,
+        "value": 1731251
+      },
+      {
+        "year": 2012,
+        "value": 2832077
+      },
+      {
+        "year": 2013,
+        "value": 1271230
+      },
+      {
+        "year": 2014,
+        "value": 1421655
+      },
+      {
+        "year": 2015,
+        "value": 1148862
+      },
+      {
+        "year": 2016,
+        "value": 1630012
+      },
+      {
+        "year": 2017,
+        "value": 2122706
+      },
+      {
+        "year": 2018,
+        "value": 2659986
+      },
+      {
+        "year": 2019,
+        "value": 1905634
+      },
+      {
+        "year": 2020,
+        "value": 1838428
+      },
+      {
+        "year": 2021,
+        "value": 2034916
+      },
+      {
+        "year": 2022,
+        "value": 1844004
+      },
+      {
+        "year": 2023,
+        "value": 2084494
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 6100,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6100
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 568,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 568
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 2077827,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2077827
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "ecobat-resources-california-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ecobat Resources California INC.",
+      "parent_company": "Ecobat LLC",
+      "total_pounds_recent": 2035830,
+      "yoy_pct_change": 12.7,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "City Of Industry"
+    },
+    {
+      "slug": "tropicana-products-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Tropicana Products INC",
+      "parent_company": "Tropicana Products INC",
+      "total_pounds_recent": 10601,
+      "yoy_pct_change": 45.4,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "City Of Industry"
+    },
+    {
+      "slug": "dfa-dairy-brands-fluid-llc-dba-alta-dena-certified-dairy",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Dfa Dairy Brands Fluid LLC Dba Alta Dena Certified Dairy",
+      "parent_company": "Dairy Farmers Of America INC",
+      "total_pounds_recent": 8660,
+      "yoy_pct_change": -11.2,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "City Of Industry"
+    },
+    {
+      "slug": "ninth-ave-foods",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ninth Ave Foods",
+      "parent_company": "Heritage Distributing Co",
+      "total_pounds_recent": 7551,
+      "yoy_pct_change": -0.5,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "La Puente"
+    },
+    {
+      "slug": "dfa-dairy-brands-fluid-llc-dba-alta-dena-certified-dairy",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Dfa Dairy Brands Fluid LLC Dba Alta Dena Certified Dairy",
+      "parent_company": "Dairy Farmers Of America INC",
+      "total_pounds_recent": 6709,
+      "yoy_pct_change": 7.2,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "City Of Industry"
+    },
+    {
+      "slug": "custom-alloy-sales-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Custom Alloy Sales INC.",
+      "parent_company": "Custom Alloy Sales INC",
+      "total_pounds_recent": 4441,
+      "yoy_pct_change": 764.6,
+      "top_chemical": "Copper",
+      "city": "City Of Industry"
+    },
+    {
+      "slug": "teknor-apex-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Teknor Apex CO",
+      "parent_company": "Teknor Apex Co",
+      "total_pounds_recent": 4338,
+      "yoy_pct_change": 88.7,
+      "top_chemical": "Di(2-ethylhexyl) phthalate",
+      "city": "City Of Industry"
+    },
+    {
+      "slug": "natvar",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Natvar",
+      "parent_company": "Tekni-Plex INC",
+      "total_pounds_recent": 3934,
+      "yoy_pct_change": 593.8,
+      "top_chemical": "Di(2-ethylhexyl) phthalate",
+      "city": "City Of Industry"
+    },
+    {
+      "slug": "hexpol-city-of-industry",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Hexpol City Of Industry",
+      "parent_company": "Hexpol Holdings INC",
+      "total_pounds_recent": 788,
+      "yoy_pct_change": 141.0,
+      "top_chemical": "Zinc compounds",
+      "city": "City Of Industry"
+    },
+    {
+      "slug": "pac-foundries-industry",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Pac Foundries-Industry",
+      "parent_company": "Consolidated Precision Products CORP",
+      "total_pounds_recent": 484,
+      "yoy_pct_change": -71.5,
+      "top_chemical": "Nickel",
+      "city": "City Of Industry"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 234,
+    "pct_low_income": 12.7,
+    "pct_people_of_color": 72.2,
+    "pct_under_5": 12.4,
+    "pct_over_64": 17.9,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 197.4
+      },
+      {
+        "label": "Ozone",
+        "score": 198.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 175.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 190.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 133.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 195.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 135.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 195.5
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 189.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 193.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 197.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Industry, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

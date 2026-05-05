@@ -1,84 +1,285 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "merced",
-    "name": "City Of Merced",
-    "pwsid": "CA2410009",
-    "population_served": 93692,
-    "primary_source": "groundwater",
-    "cities_served": [
-      "Merced"
+    "name": "Merced",
+    "fips": "0646898",
+    "population": 87686,
+    "county_name": "Merced",
+    "county_fips": "06047"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 4,
+    "total_releases_pounds": 71306,
+    "air_releases_pounds": 61474,
+    "water_releases_pounds": 5,
+    "land_releases_pounds": 9828,
+    "yoy_pct_change": -19.3,
+    "long_arc_pct_change": 143.9,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 29232
+      },
+      {
+        "year": 2011,
+        "value": 26744
+      },
+      {
+        "year": 2012,
+        "value": 35343
+      },
+      {
+        "year": 2013,
+        "value": 43293
+      },
+      {
+        "year": 2014,
+        "value": 49073
+      },
+      {
+        "year": 2015,
+        "value": 53965
+      },
+      {
+        "year": 2016,
+        "value": 55019
+      },
+      {
+        "year": 2017,
+        "value": 47924
+      },
+      {
+        "year": 2018,
+        "value": 66656
+      },
+      {
+        "year": 2019,
+        "value": 18544
+      },
+      {
+        "year": 2020,
+        "value": 43447
+      },
+      {
+        "year": 2021,
+        "value": 103031
+      },
+      {
+        "year": 2022,
+        "value": 88309
+      },
+      {
+        "year": 2023,
+        "value": 71306
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 61474,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 61474
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 5,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 9828,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 9828
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 583191,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 20.4,
+      "long_arc_pct_change": 48.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 393049
+        },
+        {
+          "year": 2011,
+          "value": 529644
+        },
+        {
+          "year": 2012,
+          "value": 449972
+        },
+        {
+          "year": 2013,
+          "value": 427004
+        },
+        {
+          "year": 2014,
+          "value": 481617
+        },
+        {
+          "year": 2015,
+          "value": 483755
+        },
+        {
+          "year": 2016,
+          "value": 431830
+        },
+        {
+          "year": 2017,
+          "value": 410857
+        },
+        {
+          "year": 2018,
+          "value": 426721
+        },
+        {
+          "year": 2019,
+          "value": 429000
+        },
+        {
+          "year": 2020,
+          "value": 489730
+        },
+        {
+          "year": 2021,
+          "value": 485827
+        },
+        {
+          "year": 2022,
+          "value": 484331
+        },
+        {
+          "year": 2023,
+          "value": 583191
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "fineline-industries-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Fineline Industries LLC",
+      "parent_company": "Correct Craft Holding Co LLC",
+      "total_pounds_recent": 61230,
+      "yoy_pct_change": -29.3,
+      "top_chemical": "Styrene",
+      "city": "Merced"
+    },
+    {
+      "slug": "greif-packaging-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Greif Packaging LLC",
+      "parent_company": "Greif INC",
+      "total_pounds_recent": 10071,
+      "yoy_pct_change": 472.3,
+      "top_chemical": "Certain glycol ethers",
+      "city": "Merced"
+    },
+    {
+      "slug": "o-keeffe",
+      "state": "ca",
+      "state_label": "California",
+      "name": "O'Keeffe",
+      "parent_company": "Okeeffe'S INC",
+      "total_pounds_recent": 6,
+      "yoy_pct_change": null,
+      "top_chemical": "Acrylamide",
+      "city": "Merced"
+    }
+  ],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 96509,
+    "violations_5yr_total": 8,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 5,
+    "utilities_with_unresolved": 3,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "castle-airport",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Castle Airport",
+        "pwsid": "CA2410700",
+        "population_served": 1650,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "black-rascal-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Black Rascal Water Company",
+        "pwsid": "CA2400046",
+        "population_served": 367,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "merced",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Merced",
+        "pwsid": "CA2410009",
+        "population_served": 93692,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
+        "slug": "john-latoracca-correctional-facility",
+        "state": "ca",
+        "state_label": "California",
+        "name": "John Latoracca Correctional Facility",
+        "pwsid": "CA2400172",
+        "population_served": 800,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 87686,
     "pct_low_income": 25.2,
@@ -141,12 +342,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Merced, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Merced, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

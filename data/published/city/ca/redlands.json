@@ -1,0 +1,329 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "redlands",
+    "name": "Redlands",
+    "fips": "0659962",
+    "population": 73234,
+    "county_name": "San Bernardino",
+    "county_fips": "06071"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 2,
+    "total_releases_pounds": 45625,
+    "air_releases_pounds": 12,
+    "water_releases_pounds": 4,
+    "land_releases_pounds": 45610,
+    "yoy_pct_change": 217143.1,
+    "long_arc_pct_change": 20867.5,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 218
+      },
+      {
+        "year": 2011,
+        "value": 110531
+      },
+      {
+        "year": 2012,
+        "value": 169
+      },
+      {
+        "year": 2013,
+        "value": 127
+      },
+      {
+        "year": 2014,
+        "value": 175
+      },
+      {
+        "year": 2015,
+        "value": 202
+      },
+      {
+        "year": 2016,
+        "value": 160
+      },
+      {
+        "year": 2017,
+        "value": 195
+      },
+      {
+        "year": 2018,
+        "value": 133
+      },
+      {
+        "year": 2019,
+        "value": 92
+      },
+      {
+        "year": 2020,
+        "value": 31
+      },
+      {
+        "year": 2021,
+        "value": 37
+      },
+      {
+        "year": 2022,
+        "value": 21
+      },
+      {
+        "year": 2023,
+        "value": 45625
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 12,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 12
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 4,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 45610,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 45610
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 9779299,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -6.6,
+      "long_arc_pct_change": -7.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10552170
+        },
+        {
+          "year": 2011,
+          "value": 9345778
+        },
+        {
+          "year": 2012,
+          "value": 12082882
+        },
+        {
+          "year": 2013,
+          "value": 11371200
+        },
+        {
+          "year": 2014,
+          "value": 11908909
+        },
+        {
+          "year": 2015,
+          "value": 10657991
+        },
+        {
+          "year": 2016,
+          "value": 10438970
+        },
+        {
+          "year": 2017,
+          "value": 9782427
+        },
+        {
+          "year": 2018,
+          "value": 9213305
+        },
+        {
+          "year": 2019,
+          "value": 9502197
+        },
+        {
+          "year": 2020,
+          "value": 9773926
+        },
+        {
+          "year": 2021,
+          "value": 9914249
+        },
+        {
+          "year": 2022,
+          "value": 10471311
+        },
+        {
+          "year": 2023,
+          "value": 9779299
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "teledyne-battery-products",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Teledyne Battery Products",
+      "parent_company": "Teledyne Technologies INC",
+      "total_pounds_recent": 45616,
+      "yoy_pct_change": 585391.1,
+      "top_chemical": "Lead compounds",
+      "city": "Redlands"
+    },
+    {
+      "slug": "redlands-plant-3",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Redlands Plant 3",
+      "parent_company": null,
+      "total_pounds_recent": 10,
+      "yoy_pct_change": -26.0,
+      "top_chemical": "Lead compounds",
+      "city": "Redlands"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 78377,
+    "violations_5yr_total": 8,
+    "health_based_5yr_total": 7,
+    "unresolved_total": 8,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "fisherman-s-retreat",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fisherman's Retreat",
+        "pwsid": "CA3301267",
+        "population_served": 352,
+        "health_based_violations_5yr": 7,
+        "unresolved": true
+      },
+      {
+        "slug": "redlands-city-mud-water-div",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Redlands City Mud-Water Div",
+        "pwsid": "CA3610037",
+        "population_served": 78025,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 73234,
+    "pct_low_income": 8.6,
+    "pct_people_of_color": 56.0,
+    "pct_under_5": 6.4,
+    "pct_over_64": 15.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 133.3
+      },
+      {
+        "label": "Ozone",
+        "score": 145.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 91.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 131.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 50.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 120.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 73.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 101.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 91.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 114.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 134.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 3.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Redlands, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

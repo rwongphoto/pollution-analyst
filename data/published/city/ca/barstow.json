@@ -1,0 +1,339 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "barstow",
+    "name": "Barstow",
+    "fips": "0604030",
+    "population": 25235,
+    "county_name": "San Bernardino",
+    "county_fips": "06071"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 3,
+    "total_releases_pounds": 1062,
+    "air_releases_pounds": 3,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1058,
+    "yoy_pct_change": 84.7,
+    "long_arc_pct_change": -22.0,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 1361
+      },
+      {
+        "year": 2011,
+        "value": 1101
+      },
+      {
+        "year": 2012,
+        "value": 250
+      },
+      {
+        "year": 2013,
+        "value": 838
+      },
+      {
+        "year": 2014,
+        "value": 1471
+      },
+      {
+        "year": 2015,
+        "value": 2186
+      },
+      {
+        "year": 2016,
+        "value": 1756
+      },
+      {
+        "year": 2017,
+        "value": 790
+      },
+      {
+        "year": 2018,
+        "value": 922
+      },
+      {
+        "year": 2019,
+        "value": 2658
+      },
+      {
+        "year": 2020,
+        "value": 1236
+      },
+      {
+        "year": 2021,
+        "value": 1664
+      },
+      {
+        "year": 2022,
+        "value": 575
+      },
+      {
+        "year": 2023,
+        "value": 1062
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 3,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 1058,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1058
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 9779299,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -6.6,
+      "long_arc_pct_change": -7.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10552170
+        },
+        {
+          "year": 2011,
+          "value": 9345778
+        },
+        {
+          "year": 2012,
+          "value": 12082882
+        },
+        {
+          "year": 2013,
+          "value": 11371200
+        },
+        {
+          "year": 2014,
+          "value": 11908909
+        },
+        {
+          "year": 2015,
+          "value": 10657991
+        },
+        {
+          "year": 2016,
+          "value": 10438970
+        },
+        {
+          "year": 2017,
+          "value": 9782427
+        },
+        {
+          "year": 2018,
+          "value": 9213305
+        },
+        {
+          "year": 2019,
+          "value": 9502197
+        },
+        {
+          "year": 2020,
+          "value": 9773926
+        },
+        {
+          "year": 2021,
+          "value": 9914249
+        },
+        {
+          "year": 2022,
+          "value": 10471311
+        },
+        {
+          "year": 2023,
+          "value": 9779299
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "u-s-marine-corps-logistics-base-barstow-nebo-range",
+      "state": "ca",
+      "state_label": "California",
+      "name": "U.S. Marine Corps Logistics Base Barstow Nebo Range",
+      "parent_company": "US Department Of Defense",
+      "total_pounds_recent": 934,
+      "yoy_pct_change": 98.8,
+      "top_chemical": "Lead",
+      "city": "Barstow"
+    },
+    {
+      "slug": "marine-corps-logistics-base-barstow-yermo-annex",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Marine Corps Logistics Base Barstow Yermo Annex",
+      "parent_company": "US Department Of Defense",
+      "total_pounds_recent": 127,
+      "yoy_pct_change": 21.3,
+      "top_chemical": "Lead",
+      "city": "Barstow"
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 1364,
+    "violations_5yr_total": 92,
+    "health_based_5yr_total": 78,
+    "unresolved_total": 87,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "bar-len-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bar-Len Mwc",
+        "pwsid": "CA3600025",
+        "population_served": 126,
+        "health_based_violations_5yr": 69,
+        "unresolved": true
+      },
+      {
+        "slug": "hi-desert-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hi Desert Mwc",
+        "pwsid": "CA3600123",
+        "population_served": 112,
+        "health_based_violations_5yr": 9,
+        "unresolved": true
+      },
+      {
+        "slug": "usmc-nebo-barstow",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Usmc Nebo (Barstow)",
+        "pwsid": "CA3610701",
+        "population_served": 1126,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 25235,
+    "pct_low_income": 22.5,
+    "pct_people_of_color": 77.4,
+    "pct_under_5": 9.5,
+    "pct_over_64": 11.6,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 135.0
+      },
+      {
+        "label": "Ozone",
+        "score": 209.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 165.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 126.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 20.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 98.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 110.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 163.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 113.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 169.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 6.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Barstow, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

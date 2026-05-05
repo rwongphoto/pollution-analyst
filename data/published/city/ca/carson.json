@@ -1,0 +1,396 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "carson",
+    "name": "Carson",
+    "fips": "0611530",
+    "population": 94475,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 18,
+    "utilities_serving": 0,
+    "total_releases_pounds": 1186489,
+    "air_releases_pounds": 966778,
+    "water_releases_pounds": 630,
+    "land_releases_pounds": 219081,
+    "yoy_pct_change": -16.4,
+    "long_arc_pct_change": 8.4,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 1094288
+      },
+      {
+        "year": 2011,
+        "value": 1273803
+      },
+      {
+        "year": 2012,
+        "value": 1209718
+      },
+      {
+        "year": 2013,
+        "value": 1293045
+      },
+      {
+        "year": 2014,
+        "value": 1457564
+      },
+      {
+        "year": 2015,
+        "value": 1390604
+      },
+      {
+        "year": 2016,
+        "value": 1188516
+      },
+      {
+        "year": 2017,
+        "value": 949480
+      },
+      {
+        "year": 2018,
+        "value": 1338524
+      },
+      {
+        "year": 2019,
+        "value": 1673306
+      },
+      {
+        "year": 2020,
+        "value": 1406056
+      },
+      {
+        "year": 2021,
+        "value": 455190
+      },
+      {
+        "year": 2022,
+        "value": 1419696
+      },
+      {
+        "year": 2023,
+        "value": 1186489
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 966778,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 966778
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 630,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 630
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 219081,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 219081
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "tesoro-los-angeles-refinery-carson-operations",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Tesoro Los Angeles Refinery-Carson Operations",
+      "parent_company": "Marathon Petroleum CORP",
+      "total_pounds_recent": 955769,
+      "yoy_pct_change": -21.1,
+      "top_chemical": "Ammonia",
+      "city": "Carson"
+    },
+    {
+      "slug": "phillips-66-los-angeles-refinery-carson-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Phillips 66 Los Angeles Refinery Carson Plant",
+      "parent_company": "Phillips 66 Co",
+      "total_pounds_recent": 104025,
+      "yoy_pct_change": -2.8,
+      "top_chemical": "Carbonyl sulfide",
+      "city": "Carson"
+    },
+    {
+      "slug": "huck-international-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Huck International INC",
+      "parent_company": "Howmet Aerospace INC",
+      "total_pounds_recent": 36056,
+      "yoy_pct_change": 660267.8,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Carson"
+    },
+    {
+      "slug": "equilon-carson-terminal",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Equilon Carson Terminal",
+      "parent_company": "Shell Petroleum INC",
+      "total_pounds_recent": 23511,
+      "yoy_pct_change": 21.1,
+      "top_chemical": "Xylene (mixed isomers)",
+      "city": "Carson"
+    },
+    {
+      "slug": "ineos-polypropylene-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ineos Polypropylene LLC",
+      "parent_company": "Ineos USA LLC",
+      "total_pounds_recent": 22100,
+      "yoy_pct_change": 12.2,
+      "top_chemical": "Propylene",
+      "city": "Carson"
+    },
+    {
+      "slug": "valmont-coatings-calwest-galvanizing",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Valmont Coatings Calwest Galvanizing",
+      "parent_company": "Valmont Industries INC",
+      "total_pounds_recent": 18070,
+      "yoy_pct_change": 51.3,
+      "top_chemical": "Zinc compounds",
+      "city": "Long Beach"
+    },
+    {
+      "slug": "linde-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Linde INC",
+      "parent_company": "Linde INC",
+      "total_pounds_recent": 6560,
+      "yoy_pct_change": -58.5,
+      "top_chemical": "Ammonia",
+      "city": "Carson"
+    },
+    {
+      "slug": "air-products-chemicals-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Air Products & Chemicals INC.",
+      "parent_company": "Air Products & Chemicals INC",
+      "total_pounds_recent": 4806,
+      "yoy_pct_change": -48.6,
+      "top_chemical": "Ammonia",
+      "city": "Carson"
+    },
+    {
+      "slug": "johnson-laminating-coating-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Johnson Laminating & Coating INC.",
+      "parent_company": null,
+      "total_pounds_recent": 3986,
+      "yoy_pct_change": -12.3,
+      "top_chemical": "Toluene",
+      "city": "Carson"
+    },
+    {
+      "slug": "olympus-terminals-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Olympus Terminals LLC",
+      "parent_company": "Olympus Terminals LLC",
+      "total_pounds_recent": 3548,
+      "yoy_pct_change": 32.0,
+      "top_chemical": "Toluene",
+      "city": "Carson"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 94475,
+    "pct_low_income": 9.2,
+    "pct_people_of_color": 93.7,
+    "pct_under_5": 4.8,
+    "pct_over_64": 17.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 195.2
+      },
+      {
+        "label": "Ozone",
+        "score": 96.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 186.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 192.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 174.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 193.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 121.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 186.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 202.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 202.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 179.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Carson, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

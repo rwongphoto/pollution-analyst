@@ -1,0 +1,308 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "signal-hill",
+    "name": "Signal Hill",
+    "fips": "0671876",
+    "population": 11678,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 1,
+    "total_releases_pounds": 1473,
+    "air_releases_pounds": 1183,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 290,
+    "yoy_pct_change": 6.3,
+    "long_arc_pct_change": -17.6,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 1789
+      },
+      {
+        "year": 2011,
+        "value": 3451
+      },
+      {
+        "year": 2012,
+        "value": 1442
+      },
+      {
+        "year": 2013,
+        "value": 2660
+      },
+      {
+        "year": 2014,
+        "value": 1482
+      },
+      {
+        "year": 2015,
+        "value": 1822
+      },
+      {
+        "year": 2016,
+        "value": 1381
+      },
+      {
+        "year": 2017,
+        "value": 1675
+      },
+      {
+        "year": 2018,
+        "value": 1763
+      },
+      {
+        "year": 2019,
+        "value": 1709
+      },
+      {
+        "year": 2020,
+        "value": 1620
+      },
+      {
+        "year": 2021,
+        "value": 1185
+      },
+      {
+        "year": 2022,
+        "value": 1386
+      },
+      {
+        "year": 2023,
+        "value": 1473
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 1183,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1183
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 290,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 290
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "tesoro-hathaway-terminal",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Tesoro Hathaway Terminal",
+      "parent_company": "Marathon Petroleum CORP",
+      "total_pounds_recent": 1473,
+      "yoy_pct_change": 6.3,
+      "top_chemical": "Toluene",
+      "city": "Signal Hill"
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 11848,
+    "violations_5yr_total": 13,
+    "health_based_5yr_total": 11,
+    "unresolved_total": 3,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "signal-hill-city-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Signal Hill - City, Water Dept.",
+        "pwsid": "CA1910149",
+        "population_served": 11848,
+        "health_based_violations_5yr": 11,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 11678,
+    "pct_low_income": 9.5,
+    "pct_people_of_color": 76.9,
+    "pct_under_5": 4.2,
+    "pct_over_64": 11.5,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 175.8
+      },
+      {
+        "label": "Ozone",
+        "score": 99.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 155.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 166.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 160.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 172.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 81.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 127.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 179.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 179.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 161.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 177.6
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Signal Hill, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

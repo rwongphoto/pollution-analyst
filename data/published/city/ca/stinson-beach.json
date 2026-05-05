@@ -1,0 +1,191 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "stinson-beach",
+    "name": "Stinson Beach",
+    "fips": "0674172",
+    "population": 371,
+    "county_name": "Marin",
+    "county_fips": "06041"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 105881,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 14.8,
+      "long_arc_pct_change": -49.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 207598
+        },
+        {
+          "year": 2011,
+          "value": 178592
+        },
+        {
+          "year": 2012,
+          "value": 169734
+        },
+        {
+          "year": 2013,
+          "value": 116711
+        },
+        {
+          "year": 2014,
+          "value": 106592
+        },
+        {
+          "year": 2015,
+          "value": 109685
+        },
+        {
+          "year": 2016,
+          "value": 111087
+        },
+        {
+          "year": 2017,
+          "value": 145306
+        },
+        {
+          "year": 2018,
+          "value": 138367
+        },
+        {
+          "year": 2019,
+          "value": 165608
+        },
+        {
+          "year": 2020,
+          "value": 116837
+        },
+        {
+          "year": 2021,
+          "value": 99077
+        },
+        {
+          "year": 2022,
+          "value": 92192
+        },
+        {
+          "year": 2023,
+          "value": 105881
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 583,
+    "violations_5yr_total": 2,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "stinson-beach-county-wtr-dist",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Stinson Beach County Wtr Dist",
+        "pwsid": "CA2110004",
+        "population_served": 583,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 371,
+    "pct_low_income": 4.6,
+    "pct_people_of_color": 12.400000000000006,
+    "pct_under_5": 0.0,
+    "pct_over_64": 49.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Stinson Beach, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

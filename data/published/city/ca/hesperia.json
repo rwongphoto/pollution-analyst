@@ -1,0 +1,329 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "hesperia",
+    "name": "Hesperia",
+    "fips": "0633434",
+    "population": 99878,
+    "county_name": "San Bernardino",
+    "county_fips": "06071"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 2,
+    "total_releases_pounds": 2181,
+    "air_releases_pounds": 2179,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2,
+    "yoy_pct_change": 66.1,
+    "long_arc_pct_change": -29.9,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 3112
+      },
+      {
+        "year": 2011,
+        "value": 3124
+      },
+      {
+        "year": 2012,
+        "value": 3807
+      },
+      {
+        "year": 2013,
+        "value": 3610
+      },
+      {
+        "year": 2014,
+        "value": 3188
+      },
+      {
+        "year": 2015,
+        "value": 4113
+      },
+      {
+        "year": 2016,
+        "value": 3951
+      },
+      {
+        "year": 2017,
+        "value": 4401
+      },
+      {
+        "year": 2018,
+        "value": 3986
+      },
+      {
+        "year": 2019,
+        "value": 5795
+      },
+      {
+        "year": 2020,
+        "value": 4213
+      },
+      {
+        "year": 2021,
+        "value": 4018
+      },
+      {
+        "year": 2022,
+        "value": 1313
+      },
+      {
+        "year": 2023,
+        "value": 2181
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 2179,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2179
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 2,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 9779299,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -6.6,
+      "long_arc_pct_change": -7.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10552170
+        },
+        {
+          "year": 2011,
+          "value": 9345778
+        },
+        {
+          "year": 2012,
+          "value": 12082882
+        },
+        {
+          "year": 2013,
+          "value": 11371200
+        },
+        {
+          "year": 2014,
+          "value": 11908909
+        },
+        {
+          "year": 2015,
+          "value": 10657991
+        },
+        {
+          "year": 2016,
+          "value": 10438970
+        },
+        {
+          "year": 2017,
+          "value": 9782427
+        },
+        {
+          "year": 2018,
+          "value": 9213305
+        },
+        {
+          "year": 2019,
+          "value": 9502197
+        },
+        {
+          "year": 2020,
+          "value": 9773926
+        },
+        {
+          "year": 2021,
+          "value": 9914249
+        },
+        {
+          "year": 2022,
+          "value": 10471311
+        },
+        {
+          "year": 2023,
+          "value": 9779299
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "w-r-grace",
+      "state": "ca",
+      "state_label": "California",
+      "name": "W. R. Grace",
+      "parent_company": "W R Grace & Co",
+      "total_pounds_recent": 2178,
+      "yoy_pct_change": 66.2,
+      "top_chemical": "Methanol",
+      "city": "Hesperia"
+    },
+    {
+      "slug": "hesperia-plant-31",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Hesperia Plant 31",
+      "parent_company": null,
+      "total_pounds_recent": 3,
+      "yoy_pct_change": 13.4,
+      "top_chemical": "Lead compounds",
+      "city": "Hesperia"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 100894,
+    "violations_5yr_total": 7,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 5,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "calico-lake-homeowners",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Calico Lake Homeowners",
+        "pwsid": "CA3601036",
+        "population_served": 150,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "hesperia-wd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hesperia Wd",
+        "pwsid": "CA3610024",
+        "population_served": 100744,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 99878,
+    "pct_low_income": 18.1,
+    "pct_people_of_color": 70.9,
+    "pct_under_5": 8.0,
+    "pct_over_64": 9.9,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 186.3
+      },
+      {
+        "label": "Ozone",
+        "score": 212.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 99.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 133.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 55.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 105.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 45.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 6.2
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 96.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 139.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 155.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Hesperia, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

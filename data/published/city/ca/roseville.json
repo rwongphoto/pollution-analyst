@@ -1,84 +1,295 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "roseville",
-    "name": "City Of Roseville",
-    "pwsid": "CA3110008",
-    "population_served": 155612,
-    "primary_source": "surface_water",
-    "cities_served": [
-      "Roseville"
+    "name": "Roseville",
+    "fips": "0662938",
+    "population": 148879,
+    "county_name": "Placer",
+    "county_fips": "06061"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 5,
+    "total_releases_pounds": 4492,
+    "air_releases_pounds": 3097,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1395,
+    "yoy_pct_change": -22.8,
+    "long_arc_pct_change": -70.4,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 15176
+      },
+      {
+        "year": 2011,
+        "value": 13843
+      },
+      {
+        "year": 2012,
+        "value": 13398
+      },
+      {
+        "year": 2013,
+        "value": 10130
+      },
+      {
+        "year": 2014,
+        "value": 22739
+      },
+      {
+        "year": 2015,
+        "value": 24821
+      },
+      {
+        "year": 2016,
+        "value": 14848
+      },
+      {
+        "year": 2017,
+        "value": 13277
+      },
+      {
+        "year": 2018,
+        "value": 12585
+      },
+      {
+        "year": 2019,
+        "value": 10355
+      },
+      {
+        "year": 2020,
+        "value": 7942
+      },
+      {
+        "year": 2021,
+        "value": 5771
+      },
+      {
+        "year": 2022,
+        "value": 5818
+      },
+      {
+        "year": 2023,
+        "value": 4492
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 3097,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3097
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 1395,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1395
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 174078,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -46.1,
+      "long_arc_pct_change": -31.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 255492
+        },
+        {
+          "year": 2011,
+          "value": 150453
+        },
+        {
+          "year": 2012,
+          "value": 317187
+        },
+        {
+          "year": 2013,
+          "value": 298223
+        },
+        {
+          "year": 2014,
+          "value": 305412
+        },
+        {
+          "year": 2015,
+          "value": 366722
+        },
+        {
+          "year": 2016,
+          "value": 249686
+        },
+        {
+          "year": 2017,
+          "value": 99733
+        },
+        {
+          "year": 2018,
+          "value": 191093
+        },
+        {
+          "year": 2019,
+          "value": 178262
+        },
+        {
+          "year": 2020,
+          "value": 183190
+        },
+        {
+          "year": 2021,
+          "value": 284570
+        },
+        {
+          "year": 2022,
+          "value": 323229
+        },
+        {
+          "year": 2023,
+          "value": 174078
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "h-b-fuller-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "H.B. Fuller CO",
+      "parent_company": "Hb Fuller Co",
+      "total_pounds_recent": 3779,
+      "yoy_pct_change": -16.3,
+      "top_chemical": "Vinyl acetate",
+      "city": "Roseville"
+    },
+    {
+      "slug": "tsi-semiconductors-america-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Tsi Semiconductors America, LLC",
+      "parent_company": "Tsi Semiconductors LLC",
+      "total_pounds_recent": 475,
+      "yoy_pct_change": -63.5,
+      "top_chemical": "Hydrogen fluoride",
+      "city": "Roseville"
+    },
+    {
+      "slug": "robert-bosch-semiconductor-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Robert Bosch Semiconductor LLC",
+      "parent_company": null,
+      "total_pounds_recent": 238,
+      "yoy_pct_change": null,
+      "top_chemical": "Hydrogen fluoride",
+      "city": "Roseville"
+    }
+  ],
+  "water": {
+    "utilities_count": 5,
+    "population_served_total": 155825,
+    "violations_5yr_total": 3,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "shastina-mobile-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shastina Mobile Estates",
+        "pwsid": "CA4700884",
+        "population_served": 32,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "roseville",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Roseville",
+        "pwsid": "CA3110008",
+        "population_served": 155612,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "oaklane-mobile-village-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oaklane Mobile Village, Llc.",
+        "pwsid": "CA0900404",
+        "population_served": 75,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "gold-hill-mobilehome-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Gold Hill Mobilehome Park",
+        "pwsid": "CA3100043",
+        "population_served": 75,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
+        "slug": "rosecrest-mutual",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rosecrest Mutual",
+        "pwsid": "CA3100538",
+        "population_served": 31,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 148879,
     "pct_low_income": 6.3,
@@ -141,12 +352,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Roseville, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Roseville, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

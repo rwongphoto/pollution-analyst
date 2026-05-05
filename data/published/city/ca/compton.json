@@ -1,0 +1,351 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "compton",
+    "name": "Compton",
+    "fips": "0615044",
+    "population": 94822,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 4,
+    "utilities_serving": 2,
+    "total_releases_pounds": 10303,
+    "air_releases_pounds": 197,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 10105,
+    "yoy_pct_change": 8261.0,
+    "long_arc_pct_change": 3264.9,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 306
+      },
+      {
+        "year": 2011,
+        "value": 298
+      },
+      {
+        "year": 2012,
+        "value": 315
+      },
+      {
+        "year": 2013,
+        "value": 290
+      },
+      {
+        "year": 2014,
+        "value": 272
+      },
+      {
+        "year": 2015,
+        "value": 2924
+      },
+      {
+        "year": 2016,
+        "value": 2226
+      },
+      {
+        "year": 2017,
+        "value": 212
+      },
+      {
+        "year": 2018,
+        "value": 318
+      },
+      {
+        "year": 2019,
+        "value": 273
+      },
+      {
+        "year": 2020,
+        "value": 16160
+      },
+      {
+        "year": 2021,
+        "value": 25390
+      },
+      {
+        "year": 2022,
+        "value": 123
+      },
+      {
+        "year": 2023,
+        "value": 10303
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 197,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 197
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 10105,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 10105
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "alloy-processing",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Alloy Processing",
+      "parent_company": "Berkshire Hathaway INC",
+      "total_pounds_recent": 10087,
+      "yoy_pct_change": null,
+      "top_chemical": "Nitric acid",
+      "city": "Compton"
+    },
+    {
+      "slug": "demennokerdoon-dba-world-oil-recycling",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Demennokerdoon Dba World Oil Recycling",
+      "parent_company": "World Oil CORP",
+      "total_pounds_recent": 184,
+      "yoy_pct_change": 112.0,
+      "top_chemical": "Lead",
+      "city": "Compton"
+    },
+    {
+      "slug": "gardena-plant-25",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Gardena Plant 25",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 16,
+      "yoy_pct_change": -9.4,
+      "top_chemical": "Lead compounds",
+      "city": "Rosewood"
+    },
+    {
+      "slug": "owens-corning-roofing-asphalt-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Owens Corning Roofing & Asphalt LLC",
+      "parent_company": "Owens Corning",
+      "total_pounds_recent": 15,
+      "yoy_pct_change": -16.6,
+      "top_chemical": "Polycyclic aromatic compounds",
+      "city": "Compton"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 76377,
+    "violations_5yr_total": 2,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "compton-city-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Compton-City, Water Dept.",
+        "pwsid": "CA1910026",
+        "population_served": 74877,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "lynwood-park-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lynwood Park Mutual Water Co.",
+        "pwsid": "CA1910081",
+        "population_served": 1500,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 94822,
+    "pct_low_income": 17.7,
+    "pct_people_of_color": 99.2,
+    "pct_under_5": 7.3,
+    "pct_over_64": 10.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 249.5
+      },
+      {
+        "label": "Ozone",
+        "score": 177.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 228.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 245.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 233.6
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 243.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 200.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 227.1
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 239.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 254.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 215.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Compton, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

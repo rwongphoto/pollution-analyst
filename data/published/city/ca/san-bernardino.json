@@ -1,0 +1,462 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "san-bernardino",
+    "name": "San Bernardino",
+    "fips": "0665000",
+    "population": 221041,
+    "county_name": "San Bernardino",
+    "county_fips": "06071"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 5,
+    "utilities_serving": 12,
+    "total_releases_pounds": 2205,
+    "air_releases_pounds": 40,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2164,
+    "yoy_pct_change": 14.2,
+    "long_arc_pct_change": 2148.1,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 98
+      },
+      {
+        "year": 2011,
+        "value": 60
+      },
+      {
+        "year": 2012,
+        "value": 98
+      },
+      {
+        "year": 2013,
+        "value": 148
+      },
+      {
+        "year": 2014,
+        "value": 376
+      },
+      {
+        "year": 2015,
+        "value": 241
+      },
+      {
+        "year": 2016,
+        "value": 112
+      },
+      {
+        "year": 2017,
+        "value": 156
+      },
+      {
+        "year": 2018,
+        "value": 9731
+      },
+      {
+        "year": 2019,
+        "value": 6073
+      },
+      {
+        "year": 2020,
+        "value": 3837
+      },
+      {
+        "year": 2021,
+        "value": 3686
+      },
+      {
+        "year": 2022,
+        "value": 1931
+      },
+      {
+        "year": 2023,
+        "value": 2205
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 40,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 40
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 2164,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2164
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 9779299,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -6.6,
+      "long_arc_pct_change": -7.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10552170
+        },
+        {
+          "year": 2011,
+          "value": 9345778
+        },
+        {
+          "year": 2012,
+          "value": 12082882
+        },
+        {
+          "year": 2013,
+          "value": 11371200
+        },
+        {
+          "year": 2014,
+          "value": 11908909
+        },
+        {
+          "year": 2015,
+          "value": 10657991
+        },
+        {
+          "year": 2016,
+          "value": 10438970
+        },
+        {
+          "year": 2017,
+          "value": 9782427
+        },
+        {
+          "year": 2018,
+          "value": 9213305
+        },
+        {
+          "year": 2019,
+          "value": 9502197
+        },
+        {
+          "year": 2020,
+          "value": 9773926
+        },
+        {
+          "year": 2021,
+          "value": 9914249
+        },
+        {
+          "year": 2022,
+          "value": 10471311
+        },
+        {
+          "year": 2023,
+          "value": 9779299
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "farmdale-creamery-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Farmdale Creamery LLC",
+      "parent_company": null,
+      "total_pounds_recent": 2163,
+      "yoy_pct_change": 13.6,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "San Bernardino"
+    },
+    {
+      "slug": "san-bernardino-steel",
+      "state": "ca",
+      "state_label": "California",
+      "name": "San Bernardino Steel",
+      "parent_company": "The Herrick CORP",
+      "total_pounds_recent": 38,
+      "yoy_pct_change": 51.4,
+      "top_chemical": "Manganese",
+      "city": "San Bernardino"
+    },
+    {
+      "slug": "robertson-s-ready-mix-san-bernardino-plant-12",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Robertson'S Ready Mix San Bernardino Plant 12",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 2,
+      "yoy_pct_change": 25.3,
+      "top_chemical": "Lead compounds",
+      "city": "San Bernardino"
+    },
+    {
+      "slug": "thermal-solutions-manufacturing-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Thermal Solutions Manufacturing INC.",
+      "parent_company": "Thermal Solutions Manufacturing INC",
+      "total_pounds_recent": 1,
+      "yoy_pct_change": 129.2,
+      "top_chemical": "Lead",
+      "city": "San Bernardino"
+    },
+    {
+      "slug": "holliday-rock-san-bernardino-facility",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Holliday Rock - San Bernardino Facility",
+      "parent_company": "Holliday Rock Co INC",
+      "total_pounds_recent": 0.06,
+      "yoy_pct_change": 20.0,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "San Bernardino"
+    }
+  ],
+  "water": {
+    "utilities_count": 12,
+    "population_served_total": 377910,
+    "violations_5yr_total": 154,
+    "health_based_5yr_total": 109,
+    "unresolved_total": 119,
+    "utilities_with_unresolved": 5,
+    "utilities": [
+      {
+        "slug": "csa-70-f-morongo",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Csa 70-F Morongo",
+        "pwsid": "CA3600226",
+        "population_served": 300,
+        "health_based_violations_5yr": 55,
+        "unresolved": true
+      },
+      {
+        "slug": "csa-70-w-3-hacienda",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Csa 70 W-3 Hacienda",
+        "pwsid": "CA3600114",
+        "population_served": 611,
+        "health_based_violations_5yr": 54,
+        "unresolved": true
+      },
+      {
+        "slug": "san-bernardino-city",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Bernardino City",
+        "pwsid": "CA3610039",
+        "population_served": 214665,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "san-bernardino-valley-wd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Bernardino Valley Wd",
+        "pwsid": "CA3610019",
+        "population_served": 109608,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sbdno-county-service-area-64",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sbdno County Service Area 64",
+        "pwsid": "CA3610121",
+        "population_served": 14911,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "muscoy-mwc-no-1",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Muscoy Mwc No. 1",
+        "pwsid": "CA3610031",
+        "population_served": 13000,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "sbdno-county-service-area-70j",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sbdno County Service Area 70J",
+        "pwsid": "CA3610125",
+        "population_served": 12843,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "glen-helen-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Glen Helen Water System",
+        "pwsid": "CA3600108",
+        "population_served": 5900,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "gilbert-street-complex",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Gilbert Street Complex",
+        "pwsid": "CA3600215",
+        "population_served": 3833,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "sbdno-county-service-area-70-cedar-glen",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sbdno County Service Area 70 Cedar Glen",
+        "pwsid": "CA3610026",
+        "population_served": 1240,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "csa-42-oro-grande",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Csa 42 Oro Grande",
+        "pwsid": "CA3600220",
+        "population_served": 529,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "csa-70-w-4-pioneertown",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Csa 70 W-4 Pioneertown",
+        "pwsid": "CA3600196",
+        "population_served": 470,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 221041,
+    "pct_low_income": 20.2,
+    "pct_people_of_color": 86.2,
+    "pct_under_5": 7.5,
+    "pct_over_64": 9.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 228.8
+      },
+      {
+        "label": "Ozone",
+        "score": 244.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 205.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 223.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 94.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 215.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 140.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 236.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 191.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 205.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 209.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 3.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "San Bernardino, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

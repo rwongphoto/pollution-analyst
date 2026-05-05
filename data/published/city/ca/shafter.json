@@ -1,0 +1,329 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "shafter",
+    "name": "Shafter",
+    "fips": "0671106",
+    "population": 20162,
+    "county_name": "Kern",
+    "county_fips": "06029"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 4,
+    "total_releases_pounds": 10131,
+    "air_releases_pounds": 2151,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 7981,
+    "yoy_pct_change": 71.5,
+    "long_arc_pct_change": 11164.3,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 90
+      },
+      {
+        "year": 2011,
+        "value": 17
+      },
+      {
+        "year": 2012,
+        "value": 52
+      },
+      {
+        "year": 2018,
+        "value": 1895
+      },
+      {
+        "year": 2019,
+        "value": 2632
+      },
+      {
+        "year": 2020,
+        "value": 2926
+      },
+      {
+        "year": 2021,
+        "value": 7677
+      },
+      {
+        "year": 2022,
+        "value": 5909
+      },
+      {
+        "year": 2023,
+        "value": 10131
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 2151,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2151
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 7981,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 7981
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 19338265,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": -20.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 24319068
+        },
+        {
+          "year": 2011,
+          "value": 25430438
+        },
+        {
+          "year": 2012,
+          "value": 28790354
+        },
+        {
+          "year": 2013,
+          "value": 30917389
+        },
+        {
+          "year": 2014,
+          "value": 32629015
+        },
+        {
+          "year": 2015,
+          "value": 31201499
+        },
+        {
+          "year": 2016,
+          "value": 24504861
+        },
+        {
+          "year": 2017,
+          "value": 23481775
+        },
+        {
+          "year": 2018,
+          "value": 22803774
+        },
+        {
+          "year": 2019,
+          "value": 21845403
+        },
+        {
+          "year": 2020,
+          "value": 21171085
+        },
+        {
+          "year": 2021,
+          "value": 20324599
+        },
+        {
+          "year": 2022,
+          "value": 19333774
+        },
+        {
+          "year": 2023,
+          "value": 19338265
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "elk-co-of-texas-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Elk CO Of Texas LLC",
+      "parent_company": "G Holdings INC",
+      "total_pounds_recent": 7194,
+      "yoy_pct_change": 229.9,
+      "top_chemical": "Nickel compounds",
+      "city": "Shafter"
+    },
+    {
+      "slug": "building-materials-manufacturing-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Building Materials Manufacturing LLC",
+      "parent_company": "G Holdings INC",
+      "total_pounds_recent": 2937,
+      "yoy_pct_change": -21.2,
+      "top_chemical": "Formaldehyde",
+      "city": "Shafter"
+    }
+  ],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 24969,
+    "violations_5yr_total": 5,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 5,
+    "utilities_with_unresolved": 3,
+    "utilities": [
+      {
+        "slug": "shafter-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shafter, City Of",
+        "pwsid": "CA1510019",
+        "population_served": 21915,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "erskine-creek-wc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Erskine Creek Wc",
+        "pwsid": "CA1510009",
+        "population_served": 2500,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "lake-isabella-community-services-dist",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lake Isabella Community Services Dist",
+        "pwsid": "CA1503270",
+        "population_served": 500,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "llanas-camp-four-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Llanas Camp Four Water System",
+        "pwsid": "CA1502164",
+        "population_served": 54,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 20162,
+    "pct_low_income": 22.7,
+    "pct_people_of_color": 85.7,
+    "pct_under_5": 8.7,
+    "pct_over_64": 7.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 236.8
+      },
+      {
+        "label": "Ozone",
+        "score": 232.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 108.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 170.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 86.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 92.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 123.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 199.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 126.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Shafter, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

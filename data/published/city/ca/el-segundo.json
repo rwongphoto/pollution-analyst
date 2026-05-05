@@ -1,0 +1,340 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "el-segundo",
+    "name": "El Segundo",
+    "fips": "0622412",
+    "population": 17081,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 2,
+    "total_releases_pounds": 2149430,
+    "air_releases_pounds": 239657,
+    "water_releases_pounds": 1705351,
+    "land_releases_pounds": 204423,
+    "yoy_pct_change": -0.2,
+    "long_arc_pct_change": 102.8,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 1059683
+      },
+      {
+        "year": 2011,
+        "value": 1784423
+      },
+      {
+        "year": 2012,
+        "value": 918836
+      },
+      {
+        "year": 2013,
+        "value": 783250
+      },
+      {
+        "year": 2014,
+        "value": 1397201
+      },
+      {
+        "year": 2015,
+        "value": 895831
+      },
+      {
+        "year": 2016,
+        "value": 2189122
+      },
+      {
+        "year": 2017,
+        "value": 1159140
+      },
+      {
+        "year": 2018,
+        "value": 2134985
+      },
+      {
+        "year": 2019,
+        "value": 1725966
+      },
+      {
+        "year": 2020,
+        "value": 856341
+      },
+      {
+        "year": 2021,
+        "value": 2796345
+      },
+      {
+        "year": 2022,
+        "value": 2154522
+      },
+      {
+        "year": 2023,
+        "value": 2149430
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 239657,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 239657
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 1705351,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1705351
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 204423,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 204423
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "chevron-products-co-div-of-chevron-usa-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Chevron Products CO. Div Of Chevron USA INC.",
+      "parent_company": "Chevron CORP",
+      "total_pounds_recent": 2072450,
+      "yoy_pct_change": -1.9,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "El Segundo"
+    },
+    {
+      "slug": "air-liquide-large-industries-u-s-lp-el-segundo",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Air Liquide Large Industries U.S. LP - El Segundo",
+      "parent_company": "American Air Liquide Holdings INC",
+      "total_pounds_recent": 76870,
+      "yoy_pct_change": 83.4,
+      "top_chemical": "Zinc compounds",
+      "city": "El Segundo"
+    },
+    {
+      "slug": "the-boeing-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "The Boeing CO",
+      "parent_company": "The Boeing Co",
+      "total_pounds_recent": 110,
+      "yoy_pct_change": -46.6,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "El Segundo"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 16630,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "el-segundo-city-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "El Segundo-City, Water Dept.",
+        "pwsid": "CA1910040",
+        "population_served": 16445,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "shady-oaks-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shady Oaks Mobile Home Park",
+        "pwsid": "ME0001009",
+        "population_served": 185,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 17081,
+    "pct_low_income": 4.7,
+    "pct_people_of_color": 42.5,
+    "pct_under_5": 6.7,
+    "pct_over_64": 12.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 85.1
+      },
+      {
+        "label": "Ozone",
+        "score": 43.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 76.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 83.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 64.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 79.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 64.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 87.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 87.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 50.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "El Segundo, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

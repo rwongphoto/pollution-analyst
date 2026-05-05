@@ -1,0 +1,171 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "md-37-la-vina",
+    "name": "Md 37 La Vina",
+    "pwsid": "CA2000728",
+    "population_served": 350,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Madera"
+    ]
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 4,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 3,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 1028",
+      "contaminant_code": "1028",
+      "severity": "monitoring",
+      "rule": "Lead and Copper Rule",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 1032",
+      "contaminant_code": "1032",
+      "severity": "monitoring",
+      "rule": "Lead and Copper Rule",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 1032",
+      "contaminant_code": "1032",
+      "severity": "monitoring",
+      "rule": "Lead and Copper Rule",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 4
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 1032",
+        "count": 2
+      },
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 1
+      },
+      {
+        "contaminant": "Contaminant 1028",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 66784,
+    "pct_low_income": 27.7,
+    "pct_people_of_color": 87.9,
+    "pct_under_5": 9.3,
+    "pct_over_64": 8.7,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 270.5
+      },
+      {
+        "label": "Ozone",
+        "score": 261.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 191.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 245.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 211.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 160.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 104.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 191.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 173.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 21.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Madera, California (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T06:24:52Z"
+}

@@ -1,0 +1,226 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "east-quincy",
+    "name": "East Quincy",
+    "fips": "0621026",
+    "population": 2399,
+    "county_name": "Plumas",
+    "county_fips": "06063"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 0,
+    "total_releases_pounds": 17327,
+    "air_releases_pounds": 17327,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": -42.2,
+    "long_arc_pct_change": 2750220.8,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 0.63
+      },
+      {
+        "year": 2011,
+        "value": 11959
+      },
+      {
+        "year": 2013,
+        "value": 11690
+      },
+      {
+        "year": 2014,
+        "value": 8640
+      },
+      {
+        "year": 2015,
+        "value": 17396
+      },
+      {
+        "year": 2016,
+        "value": 16396
+      },
+      {
+        "year": 2017,
+        "value": 87059
+      },
+      {
+        "year": 2018,
+        "value": 35523
+      },
+      {
+        "year": 2019,
+        "value": 42702
+      },
+      {
+        "year": 2020,
+        "value": 29683
+      },
+      {
+        "year": 2021,
+        "value": 35115
+      },
+      {
+        "year": 2022,
+        "value": 29959
+      },
+      {
+        "year": 2023,
+        "value": 17327
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 17327,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 17327
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "sierra-pacific-industries-quincy-div",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sierra Pacific Industries Quincy Div",
+      "parent_company": "Sierra Pacific Industries",
+      "total_pounds_recent": 17327,
+      "yoy_pct_change": -42.2,
+      "top_chemical": "Ammonia",
+      "city": "Quincy"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 2399,
+    "pct_low_income": 14.4,
+    "pct_people_of_color": 23.900000000000006,
+    "pct_under_5": 4.8,
+    "pct_over_64": 16.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 99.3
+      },
+      {
+        "label": "Ozone",
+        "score": 90.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 16.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 1.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 2.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 63.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 34.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 15.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "East Quincy, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

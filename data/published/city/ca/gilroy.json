@@ -1,109 +1,295 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "gilroy",
-    "name": "City Of Gilroy",
-    "pwsid": "CA4310004",
-    "population_served": 59203,
-    "primary_source": "groundwater",
-    "cities_served": [
-      "Gilroy"
+    "name": "Gilroy",
+    "fips": "0629504",
+    "population": 58696,
+    "county_name": "Santa Clara",
+    "county_fips": "06085"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 12,
+    "total_releases_pounds": 0.04,
+    "air_releases_pounds": 0.01,
+    "water_releases_pounds": 0.04,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": -62.5,
+    "long_arc_pct_change": -62.5,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 0.12
+      },
+      {
+        "year": 2023,
+        "value": 0.04
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2022-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 3,
-    "health_based_violations_5yr": 3,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 1,
-    "years_since_last_violation": 4
-  },
-  "violations": [
+  "pathways": [
     {
-      "year": 2022,
-      "contaminant": "Beryllium",
-      "contaminant_code": "1040",
-      "severity": "health_based",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": false,
-      "description": "Maximum contaminant level exceeded; returned to compliance"
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
     },
     {
-      "year": 2022,
-      "contaminant": "Beryllium",
-      "contaminant_code": "1040",
-      "severity": "health_based",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": false,
-      "description": "Maximum contaminant level exceeded; returned to compliance"
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
     },
     {
-      "year": 2022,
-      "contaminant": "Beryllium",
-      "contaminant_code": "1040",
-      "severity": "health_based",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": false,
-      "description": "Maximum contaminant level exceeded; returned to compliance"
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2123248,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 6.0,
+      "long_arc_pct_change": -31.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 3089153
+        },
+        {
+          "year": 2011,
+          "value": 3135171
+        },
+        {
+          "year": 2012,
+          "value": 3745976
+        },
+        {
+          "year": 2013,
+          "value": 4063861
+        },
+        {
+          "year": 2014,
+          "value": 3612878
+        },
+        {
+          "year": 2015,
+          "value": 3818357
+        },
+        {
+          "year": 2016,
+          "value": 3472038
+        },
+        {
+          "year": 2017,
+          "value": 2967658
+        },
+        {
+          "year": 2018,
+          "value": 3031547
+        },
+        {
+          "year": 2019,
+          "value": 2932382
+        },
+        {
+          "year": 2020,
+          "value": 2193676
+        },
+        {
+          "year": 2021,
+          "value": 2181302
+        },
+        {
+          "year": 2022,
+          "value": 2002988
+        },
+        {
+          "year": 2023,
+          "value": 2123248
+        }
+      ]
     }
   ],
-  "metrics": {
-    "violations_history": [
+  "facilities": [
+    {
+      "slug": "calstone-gilroy-oldcastle-apg",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Calstone Gilroy-Oldcastle Apg",
+      "parent_company": "Crh Americas INC",
+      "total_pounds_recent": 0.04,
+      "yoy_pct_change": -62.5,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Gilroy"
+    }
+  ],
+  "water": {
+    "utilities_count": 12,
+    "population_served_total": 60156,
+    "violations_5yr_total": 16,
+    "health_based_5yr_total": 6,
+    "unresolved_total": 5,
+    "utilities_with_unresolved": 2,
+    "utilities": [
       {
-        "year": 2022,
-        "value": 3
+        "slug": "live-oak-creek-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Live Oak Creek Mutual Water Company",
+        "pwsid": "CA4300829",
+        "population_served": 30,
+        "health_based_violations_5yr": 2,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "los-ranchos-de-uvas-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Los Ranchos De Uvas Water Company",
+        "pwsid": "CA4300637",
+        "population_served": 58,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "gilroy",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Gilroy",
+        "pwsid": "CA4310004",
+        "population_served": 59203,
+        "health_based_violations_5yr": 3,
+        "unresolved": false
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "new-avenue-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "New Avenue Mutual Water Company",
+        "pwsid": "CA4300771",
+        "population_served": 305,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "health_based_history": [
-      {
-        "year": 2022,
-        "value": 3
+        "slug": "happy-acres-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Happy Acres Mwc",
+        "pwsid": "CA4300551",
+        "population_served": 220,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "golden-heights-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Golden Heights Mutual Water Company",
+        "pwsid": "CA4300992",
+        "population_served": 66,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "burchell-road-water-association",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Burchell Road Water Association",
+        "pwsid": "CA4300567",
+        "population_served": 65,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "quail-creek-estates-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Quail Creek Estates Mutual Water Company",
+        "pwsid": "CA4300979",
+        "population_served": 55,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": [
+        "slug": "valley-view-ranches",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Valley View Ranches",
+        "pwsid": "CA4300996",
+        "population_served": 45,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
       {
-        "contaminant": "Beryllium",
-        "count": 3
+        "slug": "emerald-valley-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Emerald Valley Mutual Water Company",
+        "pwsid": "CA4301004",
+        "population_served": 43,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "angelo-lane-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Angelo Lane Water Company",
+        "pwsid": "CA4300578",
+        "population_served": 41,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rucker-avenue-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rucker Avenue Mutual Water Co",
+        "pwsid": "CA4301410",
+        "population_served": 25,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
     ]
   },
+  "flags": [],
   "equity": {
     "population": 58696,
     "pct_low_income": 7.8,
@@ -166,12 +352,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Gilroy, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Gilroy, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:33Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

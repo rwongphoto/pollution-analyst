@@ -1,0 +1,403 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "corona",
+    "name": "Corona",
+    "fips": "0616350",
+    "population": 158346,
+    "county_name": "Riverside",
+    "county_fips": "06065"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 6,
+    "utilities_serving": 5,
+    "total_releases_pounds": 41,
+    "air_releases_pounds": 25,
+    "water_releases_pounds": 12,
+    "land_releases_pounds": 3,
+    "yoy_pct_change": 36.5,
+    "long_arc_pct_change": -54.9,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 90
+      },
+      {
+        "year": 2011,
+        "value": 23
+      },
+      {
+        "year": 2012,
+        "value": 26
+      },
+      {
+        "year": 2013,
+        "value": 575
+      },
+      {
+        "year": 2014,
+        "value": 1557
+      },
+      {
+        "year": 2015,
+        "value": 739
+      },
+      {
+        "year": 2016,
+        "value": 25837
+      },
+      {
+        "year": 2017,
+        "value": 26
+      },
+      {
+        "year": 2018,
+        "value": 31
+      },
+      {
+        "year": 2019,
+        "value": 30
+      },
+      {
+        "year": 2020,
+        "value": 31
+      },
+      {
+        "year": 2021,
+        "value": 27
+      },
+      {
+        "year": 2022,
+        "value": 30
+      },
+      {
+        "year": 2023,
+        "value": 41
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 25,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 25
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 12,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 12
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 3,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1423181,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 5.5,
+      "long_arc_pct_change": -32.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2119572
+        },
+        {
+          "year": 2011,
+          "value": 2071756
+        },
+        {
+          "year": 2012,
+          "value": 2504412
+        },
+        {
+          "year": 2013,
+          "value": 2055202
+        },
+        {
+          "year": 2014,
+          "value": 2278890
+        },
+        {
+          "year": 2015,
+          "value": 1724152
+        },
+        {
+          "year": 2016,
+          "value": 1136501
+        },
+        {
+          "year": 2017,
+          "value": 1541844
+        },
+        {
+          "year": 2018,
+          "value": 1842670
+        },
+        {
+          "year": 2019,
+          "value": 1290190
+        },
+        {
+          "year": 2020,
+          "value": 1523660
+        },
+        {
+          "year": 2021,
+          "value": 1665711
+        },
+        {
+          "year": 2022,
+          "value": 1349415
+        },
+        {
+          "year": 2023,
+          "value": 1423181
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "us-battery-mfg-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "US Battery Mfg CO",
+      "parent_company": "Palos Verdes Building CORP",
+      "total_pounds_recent": 18,
+      "yoy_pct_change": 325.8,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Corona"
+    },
+    {
+      "slug": "westlake-royal-roofing-corona",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Westlake Royal Roofing - Corona",
+      "parent_company": "Westlake CORP",
+      "total_pounds_recent": 16,
+      "yoy_pct_change": 12.2,
+      "top_chemical": "Manganese",
+      "city": "Corona"
+    },
+    {
+      "slug": "corona-plant-30",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Corona Plant 30",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 6,
+      "yoy_pct_change": -48.2,
+      "top_chemical": "Lead compounds",
+      "city": "Corona"
+    },
+    {
+      "slug": "quikrete-corona-ca-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Quikrete - Corona Ca Plant",
+      "parent_company": "Quikrete Holdings",
+      "total_pounds_recent": 0.9,
+      "yoy_pct_change": -9.9,
+      "top_chemical": "Lead",
+      "city": "Corona"
+    },
+    {
+      "slug": "vulcan-materials-co-corona",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Vulcan Materials CO Corona",
+      "parent_company": "Smyrna Ready Mix LLC",
+      "total_pounds_recent": 0.46,
+      "yoy_pct_change": null,
+      "top_chemical": "Polycyclic aromatic compounds",
+      "city": "Corona"
+    },
+    {
+      "slug": "brooks-instrument",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Brooks Instrument",
+      "parent_company": null,
+      "total_pounds_recent": 0.12,
+      "yoy_pct_change": null,
+      "top_chemical": "Chromium",
+      "city": "Corona"
+    }
+  ],
+  "water": {
+    "utilities_count": 5,
+    "population_served_total": 174518,
+    "violations_5yr_total": 22,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 6,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "glen-ivy-hot-springs",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Glen Ivy Hot Springs",
+        "pwsid": "CA3301294",
+        "population_served": 1087,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "corona-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Corona, City Of",
+        "pwsid": "CA3310037",
+        "population_served": 168575,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "home-gardens-county-wd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Home Gardens County Wd",
+        "pwsid": "CA3310018",
+        "population_served": 3095,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "california-institution-for-women",
+        "state": "ca",
+        "state_label": "California",
+        "name": "California Institution For Women",
+        "pwsid": "CA3610851",
+        "population_served": 1195,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "glen-eden-sun-club",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Glen Eden Sun Club",
+        "pwsid": "CA3301283",
+        "population_served": 566,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 158346,
+    "pct_low_income": 8.5,
+    "pct_people_of_color": 68.7,
+    "pct_under_5": 6.3,
+    "pct_over_64": 11.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 156.2
+      },
+      {
+        "label": "Ozone",
+        "score": 160.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 130.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 141.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 87.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 139.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 38.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 18.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 79.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 133.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 140.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Corona, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

@@ -1,0 +1,254 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "moraga",
+    "name": "Moraga",
+    "fips": "0649187",
+    "population": 16859,
+    "county_name": "Contra Costa",
+    "county_fips": "06013"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 82261234,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 11.9,
+      "long_arc_pct_change": 109.1,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 39334407
+        },
+        {
+          "year": 2011,
+          "value": 72107992
+        },
+        {
+          "year": 2012,
+          "value": 112182316
+        },
+        {
+          "year": 2013,
+          "value": 121967587
+        },
+        {
+          "year": 2014,
+          "value": 132848440
+        },
+        {
+          "year": 2015,
+          "value": 108103922
+        },
+        {
+          "year": 2016,
+          "value": 98070792
+        },
+        {
+          "year": 2017,
+          "value": 110415618
+        },
+        {
+          "year": 2018,
+          "value": 106301016
+        },
+        {
+          "year": 2019,
+          "value": 104918059
+        },
+        {
+          "year": 2020,
+          "value": 81791851
+        },
+        {
+          "year": 2021,
+          "value": 77078427
+        },
+        {
+          "year": 2022,
+          "value": 73485085
+        },
+        {
+          "year": 2023,
+          "value": 82261234
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 185,
+    "violations_5yr_total": 44,
+    "health_based_5yr_total": 36,
+    "unresolved_total": 26,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "bella-vista-water-sys",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bella Vista Water Sys",
+        "pwsid": "CA0707589",
+        "population_served": 93,
+        "health_based_violations_5yr": 35,
+        "unresolved": true
+      },
+      {
+        "slug": "rapid-river-mobilehome-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rapid River Mobilehome Park",
+        "pwsid": "CA4500203",
+        "population_served": 92,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 16859,
+    "pct_low_income": 7.8,
+    "pct_people_of_color": 37.8,
+    "pct_under_5": 5.2,
+    "pct_over_64": 21.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 79.2
+      },
+      {
+        "label": "Ozone",
+        "score": 11.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 15.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 37.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 37.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 59.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 32.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 64.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 35.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Moraga, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

@@ -1,0 +1,383 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "downey",
+    "name": "Downey",
+    "fips": "0619766",
+    "population": 113052,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 9,
+    "total_releases_pounds": 10841,
+    "air_releases_pounds": 6850,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 3991,
+    "yoy_pct_change": -29.2,
+    "long_arc_pct_change": 32.0,
+    "long_arc_baseline_year": 2014,
+    "history": [
+      {
+        "year": 2014,
+        "value": 8211
+      },
+      {
+        "year": 2015,
+        "value": 10001
+      },
+      {
+        "year": 2016,
+        "value": 9130
+      },
+      {
+        "year": 2017,
+        "value": 8714
+      },
+      {
+        "year": 2018,
+        "value": 8595
+      },
+      {
+        "year": 2019,
+        "value": 8769
+      },
+      {
+        "year": 2020,
+        "value": 11450
+      },
+      {
+        "year": 2021,
+        "value": 19121
+      },
+      {
+        "year": 2022,
+        "value": 15310
+      },
+      {
+        "year": 2023,
+        "value": 10841
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 6850,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6850
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 3991,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3991
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "k-f-fiberglass-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "K F Fiberglass INC",
+      "parent_company": null,
+      "total_pounds_recent": 6850,
+      "yoy_pct_change": -42.5,
+      "top_chemical": "Styrene",
+      "city": "Downey"
+    },
+    {
+      "slug": "rockview-dairies-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Rockview Dairies INC",
+      "parent_company": "Rockview Dairies INC",
+      "total_pounds_recent": 3991,
+      "yoy_pct_change": 17.8,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Downey"
+    }
+  ],
+  "water": {
+    "utilities_count": 9,
+    "population_served_total": 312793,
+    "violations_5yr_total": 4,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "downey-city-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Downey - City, Water Dept.",
+        "pwsid": "CA1910034",
+        "population_served": 110556,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "liberty-utilities-bellflower-norwalk",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Liberty Utilities - Bellflower-Norwalk",
+        "pwsid": "CA1910211",
+        "population_served": 72624,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "liberty-utilities-av-ranchos-corp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Liberty Utilities (Av Ranchos) Corp.",
+        "pwsid": "CA3610003",
+        "population_served": 64469,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "liberty-utilities-compton",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Liberty Utilities - Compton",
+        "pwsid": "CA1910021",
+        "population_served": 26371,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "liberty-utilities-lynwood",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Liberty Utilities - Lynwood",
+        "pwsid": "CA1910161",
+        "population_served": 24701,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "bell-gardens",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Bell Gardens",
+        "pwsid": "CA1910108",
+        "population_served": 11437,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "liberty-utilities-mesa-crest",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Liberty Utilities - Mesa Crest",
+        "pwsid": "CA1910241",
+        "population_served": 1619,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "liberty-yermo",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Liberty -Yermo",
+        "pwsid": "CA3610118",
+        "population_served": 861,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "liberty-bellview-heights",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Liberty-Bellview Heights",
+        "pwsid": "CA3600010",
+        "population_served": 155,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 113052,
+    "pct_low_income": 9.5,
+    "pct_people_of_color": 86.4,
+    "pct_under_5": 6.5,
+    "pct_over_64": 13.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 192.6
+      },
+      {
+        "label": "Ozone",
+        "score": 172.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 178.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 187.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 151.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 186.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 146.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 183.1
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 181.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 192.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 176.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Downey, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

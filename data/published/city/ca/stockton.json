@@ -1,233 +1,979 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "stockton",
-    "name": "City Of Stockton",
-    "pwsid": "CA3910012",
-    "population_served": 191302,
-    "primary_source": "surface_water",
-    "cities_served": [
-      "Stockton"
+    "name": "Stockton",
+    "fips": "0675000",
+    "population": 320030,
+    "county_name": "San Joaquin",
+    "county_fips": "06077"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 7,
+    "utilities_serving": 69,
+    "total_releases_pounds": 1372,
+    "air_releases_pounds": 1243,
+    "water_releases_pounds": 0.2,
+    "land_releases_pounds": 128,
+    "yoy_pct_change": -2.9,
+    "long_arc_pct_change": 1865.7,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 70
+      },
+      {
+        "year": 2011,
+        "value": 209
+      },
+      {
+        "year": 2012,
+        "value": 1250
+      },
+      {
+        "year": 2013,
+        "value": 1602
+      },
+      {
+        "year": 2014,
+        "value": 2183
+      },
+      {
+        "year": 2015,
+        "value": 2933
+      },
+      {
+        "year": 2016,
+        "value": 1059
+      },
+      {
+        "year": 2017,
+        "value": 6674
+      },
+      {
+        "year": 2018,
+        "value": 5719
+      },
+      {
+        "year": 2019,
+        "value": 506
+      },
+      {
+        "year": 2020,
+        "value": 5436
+      },
+      {
+        "year": 2021,
+        "value": 1481
+      },
+      {
+        "year": 2022,
+        "value": 1414
+      },
+      {
+        "year": 2023,
+        "value": 1372
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 15,
-    "health_based_violations_5yr": 10,
-    "unresolved_violations": 6,
-    "contaminants_with_violations": 3,
-    "years_since_last_violation": 2
-  },
-  "violations": [
+  "pathways": [
     {
-      "year": 2024,
-      "contaminant": "Beryllium",
-      "contaminant_code": "1040",
-      "severity": "monitoring",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": true,
-      "description": "Failure to monitor as scheduled"
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 1243,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1243
+        }
+      ]
     },
     {
-      "year": 2024,
-      "contaminant": "Beryllium",
-      "contaminant_code": "1040",
-      "severity": "monitoring",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": false,
-      "description": "Failure to monitor as scheduled; returned to compliance"
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
     },
     {
-      "year": 2024,
-      "contaminant": "Beryllium",
-      "contaminant_code": "1040",
-      "severity": "monitoring",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": true,
-      "description": "Failure to monitor as scheduled"
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 128,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 128
+        }
+      ]
     },
     {
-      "year": 2024,
-      "contaminant": "Beryllium",
-      "contaminant_code": "1040",
-      "severity": "monitoring",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": false,
-      "description": "Failure to monitor as scheduled; returned to compliance"
-    },
-    {
-      "year": 2023,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": true,
-      "description": "Maximum contaminant level exceeded"
-    },
-    {
-      "year": 2023,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": true,
-      "description": "Maximum contaminant level exceeded"
-    },
-    {
-      "year": 2023,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": false,
-      "description": "Maximum contaminant level exceeded; returned to compliance"
-    },
-    {
-      "year": 2023,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": false,
-      "description": "Maximum contaminant level exceeded; returned to compliance"
-    },
-    {
-      "year": 2023,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": false,
-      "description": "Maximum contaminant level exceeded; returned to compliance"
-    },
-    {
-      "year": 2023,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": true,
-      "description": "Maximum contaminant level exceeded"
-    },
-    {
-      "year": 2023,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": false,
-      "description": "Maximum contaminant level exceeded; returned to compliance"
-    },
-    {
-      "year": 2023,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": false,
-      "description": "Maximum contaminant level exceeded; returned to compliance"
-    },
-    {
-      "year": 2023,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": true,
-      "description": "Maximum contaminant level exceeded"
-    },
-    {
-      "year": 2023,
-      "contaminant": "Total Trihalomethanes (TTHM)",
-      "contaminant_code": "2950",
-      "severity": "health_based",
-      "rule": "Total Trihalomethanes Rule",
-      "is_unresolved": false,
-      "description": "Maximum contaminant level exceeded; returned to compliance"
-    },
-    {
-      "year": 2021,
-      "contaminant": "Contaminant 5000",
-      "contaminant_code": "5000",
-      "severity": "monitoring",
-      "rule": "Phase I/II/V Inorganic Chemical Rules",
-      "is_unresolved": false,
-      "description": "Failure to monitor as scheduled; returned to compliance"
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1008482,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 46.5,
+      "long_arc_pct_change": -1.7,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1025947
+        },
+        {
+          "year": 2011,
+          "value": 1388054
+        },
+        {
+          "year": 2012,
+          "value": 1055200
+        },
+        {
+          "year": 2013,
+          "value": 1385990
+        },
+        {
+          "year": 2014,
+          "value": 1657926
+        },
+        {
+          "year": 2015,
+          "value": 2004457
+        },
+        {
+          "year": 2016,
+          "value": 1400019
+        },
+        {
+          "year": 2017,
+          "value": 1151808
+        },
+        {
+          "year": 2018,
+          "value": 1506877
+        },
+        {
+          "year": 2019,
+          "value": 1295006
+        },
+        {
+          "year": 2020,
+          "value": 1036987
+        },
+        {
+          "year": 2021,
+          "value": 1213965
+        },
+        {
+          "year": 2022,
+          "value": 688199
+        },
+        {
+          "year": 2023,
+          "value": 1008482
+        }
+      ]
     }
   ],
-  "metrics": {
-    "violations_history": [
+  "facilities": [
+    {
+      "slug": "tesoro-stockton-terminal",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Tesoro - Stockton Terminal",
+      "parent_company": "Marathon Petroleum CORP",
+      "total_pounds_recent": 1141,
+      "yoy_pct_change": 2.6,
+      "top_chemical": "Toluene",
+      "city": "Stockton"
+    },
+    {
+      "slug": "concrete-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Concrete INC",
+      "parent_company": "Knife River CORP",
+      "total_pounds_recent": 117,
+      "yoy_pct_change": -26.4,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Stockton"
+    },
+    {
+      "slug": "schuff-steel-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Schuff Steel CO",
+      "parent_company": "Innovate CORP",
+      "total_pounds_recent": 71,
+      "yoy_pct_change": -35.1,
+      "top_chemical": "Manganese",
+      "city": "Stockton"
+    },
+    {
+      "slug": "stockton-steel",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Stockton Steel",
+      "parent_company": "The Herrick CORP",
+      "total_pounds_recent": 31,
+      "yoy_pct_change": 46.9,
+      "top_chemical": "Manganese",
+      "city": "Stockton"
+    },
+    {
+      "slug": "hj-baker-bro-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Hj Baker & Bro LLC",
+      "parent_company": "Hj Baker & Bro LLC",
+      "total_pounds_recent": 11,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Hydrogen sulfide",
+      "city": "Stockton"
+    },
+    {
+      "slug": "oldcastle-pacific-stockton",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Oldcastle Pacific Stockton",
+      "parent_company": "Crh Americas INC",
+      "total_pounds_recent": 0.23,
+      "yoy_pct_change": -51.8,
+      "top_chemical": "Lead compounds",
+      "city": "Stockton"
+    },
+    {
+      "slug": "custom-building-products-sckc-stockton-ca",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Custom Building Products - Sckc Stockton Ca",
+      "parent_company": "Quikrete Holdings",
+      "total_pounds_recent": 0.06,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead",
+      "city": "Stockton"
+    }
+  ],
+  "water": {
+    "utilities_count": 69,
+    "population_served_total": 223456,
+    "violations_5yr_total": 288,
+    "health_based_5yr_total": 128,
+    "unresolved_total": 106,
+    "utilities_with_unresolved": 14,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 1
+        "slug": "quiet-oaks-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Quiet Oaks Mobile Home Park",
+        "pwsid": "CA3701341",
+        "population_served": 120,
+        "health_based_violations_5yr": 43,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "fremont-one",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fremont One",
+        "pwsid": "CA3901474",
+        "population_served": 39,
+        "health_based_violations_5yr": 24,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 10
+        "slug": "san-joaquin-county-raymus-village",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Joaquin County-Raymus Village",
+        "pwsid": "CA3910014",
+        "population_served": 1086,
+        "health_based_violations_5yr": 19,
+        "unresolved": true
       },
       {
-        "year": 2024,
-        "value": 4
+        "slug": "cdcr-california-health-care-facility",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cdcr California Health Care Facility",
+        "pwsid": "CA3910803",
+        "population_served": 5551,
+        "health_based_violations_5yr": 16,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "stockton",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Stockton",
+        "pwsid": "CA3910012",
+        "population_served": 191302,
+        "health_based_violations_5yr": 10,
+        "unresolved": true
       },
       {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
+        "slug": "v-p-trailer-court-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "V & P Trailer Court Water System",
+        "pwsid": "CA3900732",
+        "population_served": 35,
+        "health_based_violations_5yr": 8,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "peppermint-creek-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Peppermint Creek Mhp",
+        "pwsid": "CA5500116",
+        "population_served": 280,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 10
+        "slug": "capell-valley-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Capell Valley Estates",
+        "pwsid": "CA2800543",
+        "population_served": 208,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "western-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Western Mobile Home Park",
+        "pwsid": "CA4900791",
+        "population_served": 178,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "plaza-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Plaza Mobile Home Park",
+        "pwsid": "CA4900787",
+        "population_served": 169,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": [
-      {
-        "contaminant": "Total Trihalomethanes (TTHM)",
-        "count": 10
+        "slug": "a1-winstons-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "A1 Winstons Mobile Home Park",
+        "pwsid": "CA3900606",
+        "population_served": 75,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "contaminant": "Beryllium",
-        "count": 4
+        "slug": "gold-beach-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Gold Beach Park",
+        "pwsid": "CA0900102",
+        "population_served": 134,
+        "health_based_violations_5yr": 2,
+        "unresolved": false
       },
       {
-        "contaminant": "Contaminant 5000",
-        "count": 1
+        "slug": "big-wheel-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Big Wheel Mobile Home Park",
+        "pwsid": "CA3900637",
+        "population_served": 120,
+        "health_based_violations_5yr": 1,
+        "unresolved": false
+      },
+      {
+        "slug": "san-joaquin-county-lincoln-village",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Joaquin County - Lincoln Village",
+        "pwsid": "CA3910010",
+        "population_served": 5841,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "san-joaquin-county-mokelumne-acres",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Joaquin County-Mokelumne Acres",
+        "pwsid": "CA3910017",
+        "population_served": 3802,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "san-joaquin-county-colonial-heights",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Joaquin County - Colonial Heights",
+        "pwsid": "CA3910002",
+        "population_served": 1841,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "oakwood-lake-water-district-subdivision",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oakwood Lake Water District-Subdivision",
+        "pwsid": "CA3910023",
+        "population_served": 1479,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fairoaks-pws-44",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fairoaks Pws #44",
+        "pwsid": "CA3901348",
+        "population_served": 1172,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "san-joaquin-county-thornton",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Joaquin County - Thornton",
+        "pwsid": "CA3910009",
+        "population_served": 964,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "san-joaquin-county-wilkinson-manor",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Joaquin County - Wilkinson Manor",
+        "pwsid": "CA3910024",
+        "population_served": 851,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "stockton-verde-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Stockton Verde Mobile Home Park",
+        "pwsid": "CA3910020",
+        "population_served": 711,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "morada-estates-n-pws-46",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Morada Estates N Pws #46",
+        "pwsid": "CA3901337",
+        "population_served": 426,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "bel-air-mobile-estate",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bel Air Mobile Estate",
+        "pwsid": "CA3900907",
+        "population_served": 325,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "santos-ranch-pws-5-csa-35",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Santos Ranch Pws #5-Csa #35",
+        "pwsid": "CA3901216",
+        "population_served": 320,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "san-joaquin-water-works-2",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Joaquin Water Works #2",
+        "pwsid": "CA3901092",
+        "population_served": 310,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "morada-estates-pws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Morada Estates Pws",
+        "pwsid": "CA3900722",
+        "population_served": 290,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rough-ready-village",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rough & Ready Village",
+        "pwsid": "CA2900530",
+        "population_served": 268,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "clements-water-works-43",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Clements Water Works #43",
+        "pwsid": "CA3900504",
+        "population_served": 264,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "cal-20-village-and-meadow-pointe-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cal 20 Village And Meadow Pointe Park",
+        "pwsid": "CA1700595",
+        "population_served": 255,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "shaded-terrace-pws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shaded Terrace Pws",
+        "pwsid": "CA3900720",
+        "population_served": 238,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "twin-oaks-mobile-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Twin Oaks Mobile Park",
+        "pwsid": "CA3901074",
+        "population_served": 238,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "king-island-trailer-park-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "King Island Trailer Park Water System",
+        "pwsid": "CA3901114",
+        "population_served": 236,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "elkhorn-estates-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Elkhorn Estates Water System",
+        "pwsid": "CA3900724",
+        "population_served": 234,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "acampo-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Acampo Water System",
+        "pwsid": "CA3901303",
+        "population_served": 231,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "casa-de-amigos-manufactured-housing-comm",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Casa De Amigos Manufactured Housing Comm",
+        "pwsid": "CA5000060",
+        "population_served": 204,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "san-juan-vista",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Juan Vista",
+        "pwsid": "CA3901215",
+        "population_served": 201,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "bethel-island-mhc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bethel Island Mhc",
+        "pwsid": "CA0707575",
+        "population_served": 185,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "caribou-mobile-park-pws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Caribou Mobile Park Pws",
+        "pwsid": "CA3900568",
+        "population_served": 180,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "gayla-manor-pws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Gayla Manor Pws",
+        "pwsid": "CA3900563",
+        "population_served": 178,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "par-country-estates-csa-16",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Par Country Estates Csa-16",
+        "pwsid": "CA3901172",
+        "population_served": 178,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rancho-san-joaquin-water-sys",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rancho San Joaquin Water Sys",
+        "pwsid": "CA3900558",
+        "population_served": 172,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "security-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Security Mhp",
+        "pwsid": "CO0121750",
+        "population_served": 150,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "fairway-estates-pws-csa-18",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fairway Estates Pws Csa-18",
+        "pwsid": "CA3901075",
+        "population_served": 149,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "mulberry-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mulberry Mhp",
+        "pwsid": "CA5000072",
+        "population_served": 148,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "corral-hollow-pws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Corral Hollow Pws",
+        "pwsid": "CA3900702",
+        "population_served": 145,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "mobile-villas-trailer-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mobile Villas Trailer Park",
+        "pwsid": "CA3901081",
+        "population_served": 130,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "wilkinson-manor-a-zone-pws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Wilkinson Manor A-Zone Pws",
+        "pwsid": "CA3901159",
+        "population_served": 125,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "amberwood-estates-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Amberwood Estates, Llc",
+        "pwsid": "CA4500200",
+        "population_served": 120,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "spring-creek-estates-pws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Spring Creek Estates Pws",
+        "pwsid": "CA3900927",
+        "population_served": 119,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "morada-manor-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Morada Manor Water System",
+        "pwsid": "CA3900523",
+        "population_served": 112,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "del-rio-east-hoa-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Del Rio East Hoa Water System",
+        "pwsid": "CA5000099",
+        "population_served": 110,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "walnut-acres",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Walnut Acres",
+        "pwsid": "CA3901113",
+        "population_served": 106,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "morada-acres-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Morada Acres Water System",
+        "pwsid": "CA3900512",
+        "population_served": 105,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "cherry-lane-trailer-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Cherry Lane Trailer Park",
+        "pwsid": "CA3900983",
+        "population_served": 100,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "desert-mobile-home-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Desert Mobile Home Estates",
+        "pwsid": "OR4101138",
+        "population_served": 100,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "maurland-manor-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Maurland Manor Water System",
+        "pwsid": "CA3900543",
+        "population_served": 92,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "wayside-motel-apartments-wtr-sys",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Wayside Motel Apartments Wtr Sys",
+        "pwsid": "CA3900835",
+        "population_served": 70,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sunnyside-estates-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sunnyside Estates Water System",
+        "pwsid": "CA3900714",
+        "population_served": 69,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "mary-lou-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mary Lou Mobile Home Park",
+        "pwsid": "CA1000265",
+        "population_served": 68,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "evergreen-mobile-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Evergreen Mobile Estates",
+        "pwsid": "CA4900728",
+        "population_served": 65,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "forest-point-mhc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Forest Point Mhc",
+        "pwsid": "CA0300024",
+        "population_served": 62,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "oakmont-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oakmont Water System",
+        "pwsid": "CA4300526",
+        "population_served": 61,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "almond-park-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Almond Park Water System",
+        "pwsid": "CA3900517",
+        "population_served": 60,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "el-rio-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "El Rio Mobile Home Park",
+        "pwsid": "CA3900569",
+        "population_served": 60,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "reno-sahara-trailer-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Reno Sahara Trailer Park",
+        "pwsid": "NV0000701",
+        "population_served": 60,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "15th-avenue",
+        "state": "ca",
+        "state_label": "California",
+        "name": "15Th Avenue",
+        "pwsid": "CA1600293",
+        "population_served": 50,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "stockton-east-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Stockton East Water District",
+        "pwsid": "CA3910006",
+        "population_served": 50,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "wine-country-apartments",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Wine Country Apartments",
+        "pwsid": "CA3900559",
+        "population_served": 40,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "enclave-at-the-delta",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Enclave At The Delta",
+        "pwsid": "CA3901304",
+        "population_served": 39,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
     ]
   },
+  "flags": [],
   "equity": {
     "population": 320030,
     "pct_low_income": 15.6,
@@ -290,12 +1036,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Stockton, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Stockton, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:33Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

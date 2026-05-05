@@ -1,131 +1,306 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "morgan-hill",
-    "name": "City Of Morgan Hill",
-    "pwsid": "CA4310006",
-    "population_served": 47374,
-    "primary_source": "groundwater",
-    "cities_served": [
-      "Morgann Hill"
+    "name": "Morgan Hill",
+    "fips": "0649278",
+    "population": 45291,
+    "county_name": "Santa Clara",
+    "county_fips": "06085"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 10,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2123248,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 6.0,
+      "long_arc_pct_change": -31.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 3089153
+        },
+        {
+          "year": 2011,
+          "value": 3135171
+        },
+        {
+          "year": 2012,
+          "value": 3745976
+        },
+        {
+          "year": 2013,
+          "value": 4063861
+        },
+        {
+          "year": 2014,
+          "value": 3612878
+        },
+        {
+          "year": 2015,
+          "value": 3818357
+        },
+        {
+          "year": 2016,
+          "value": 3472038
+        },
+        {
+          "year": 2017,
+          "value": 2967658
+        },
+        {
+          "year": 2018,
+          "value": 3031547
+        },
+        {
+          "year": 2019,
+          "value": 2932382
+        },
+        {
+          "year": 2020,
+          "value": 2193676
+        },
+        {
+          "year": 2021,
+          "value": 2181302
+        },
+        {
+          "year": 2022,
+          "value": 2002988
+        },
+        {
+          "year": 2023,
+          "value": 2123248
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 10,
+    "population_served_total": 506,
+    "violations_5yr_total": 20,
+    "health_based_5yr_total": 5,
+    "unresolved_total": 12,
+    "utilities_with_unresolved": 6,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "foothill-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Foothill Mutual Water Company",
+        "pwsid": "CA4300630",
+        "population_served": 36,
+        "health_based_violations_5yr": 2,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "hidden-acres-trailer-villa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hidden Acres Trailer Villa",
+        "pwsid": "CA4800564",
+        "population_served": 80,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "green-acres-mutual-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Green Acres Mutual Water",
+        "pwsid": "CA4300573",
+        "population_served": 53,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "rancho-de-lomas-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rancho De Lomas Mutual Water Company",
+        "pwsid": "CA4300848",
+        "population_served": 35,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "green-mountain-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Green Mountain Water Company",
+        "pwsid": "CA4300560",
+        "population_served": 80,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2026,
-        "value": 0
+        "slug": "uvas-pines-rv-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Uvas Pines Rv Park",
+        "pwsid": "CA4300999",
+        "population_served": 65,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sullivan-mutual-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sullivan Mutual Water",
+        "pwsid": "CA4300571",
+        "population_served": 53,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "stonebridge-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Stonebridge Mutual Water Co",
+        "pwsid": "CA4300787",
+        "population_served": 38,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "deer-hill-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Deer Hill Mutual Water Co",
+        "pwsid": "CA4300842",
+        "population_served": 36,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rockwood-estates-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rockwood Estates Mutual Water Company",
+        "pwsid": "CA4301013",
+        "population_served": 30,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
-    "population": 1916831,
-    "pct_low_income": 6.9,
-    "pct_people_of_color": 70.8,
-    "pct_under_5": 5.7,
-    "pct_over_64": 14.1,
+    "population": 45291,
+    "pct_low_income": 3.7,
+    "pct_people_of_color": 57.4,
+    "pct_under_5": 5.9,
+    "pct_over_64": 14.7,
     "ej_indexes": [],
     "disparity_scores": [
       {
         "label": "PM2.5 (fine particulate)",
-        "score": 134.9
+        "score": 105.1
       },
       {
         "label": "Ozone",
-        "score": 55.6
+        "score": 59.3
       },
       {
         "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 87.6
+        "score": 44.6
       },
       {
         "label": "Diesel particulate",
-        "score": 94.9
+        "score": 36.2
       },
       {
         "label": "Toxic releases (RSEI)",
-        "score": 23.3
+        "score": 8.5
       },
       {
         "label": "Traffic proximity",
-        "score": 133.3
+        "score": 65.2
       },
       {
         "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 59.2
+        "score": 31.1
       },
       {
         "label": "Superfund site proximity",
-        "score": 118.6
+        "score": 0.0
       },
       {
         "label": "RMP-facility proximity",
-        "score": 54.2
+        "score": 8.5
       },
       {
         "label": "Hazardous-waste site proximity",
-        "score": 134.0
+        "score": 72.8
       },
       {
         "label": "Underground storage tanks",
@@ -133,20 +308,27 @@
       },
       {
         "label": "NPDES wastewater proximity",
-        "score": 67.2
+        "score": 0.0
       },
       {
         "label": "Drinking-water non-compliance",
-        "score": 0.6
+        "score": 0.0
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Santa Clara, California (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+    "geography_label": "Morgan Hill, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:33Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

@@ -1,0 +1,726 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "santa-rosa",
+    "name": "Santa Rosa",
+    "fips": "0670098",
+    "population": 178221,
+    "county_name": "Sonoma",
+    "county_fips": "06097"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 41,
+    "total_releases_pounds": 17022,
+    "air_releases_pounds": 11,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 17011,
+    "yoy_pct_change": 0.1,
+    "long_arc_pct_change": 14085.1,
+    "long_arc_baseline_year": 2011,
+    "history": [
+      {
+        "year": 2011,
+        "value": 120
+      },
+      {
+        "year": 2012,
+        "value": 72
+      },
+      {
+        "year": 2013,
+        "value": 105
+      },
+      {
+        "year": 2014,
+        "value": 97
+      },
+      {
+        "year": 2015,
+        "value": 91
+      },
+      {
+        "year": 2016,
+        "value": 52
+      },
+      {
+        "year": 2017,
+        "value": 64
+      },
+      {
+        "year": 2018,
+        "value": 25641
+      },
+      {
+        "year": 2019,
+        "value": 681
+      },
+      {
+        "year": 2020,
+        "value": 1331
+      },
+      {
+        "year": 2021,
+        "value": 20165
+      },
+      {
+        "year": 2022,
+        "value": 17008
+      },
+      {
+        "year": 2023,
+        "value": 17022
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 11,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 11
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 17011,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 17011
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 117873,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 67.6,
+      "long_arc_pct_change": -38.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 190188
+        },
+        {
+          "year": 2011,
+          "value": 184825
+        },
+        {
+          "year": 2012,
+          "value": 189951
+        },
+        {
+          "year": 2013,
+          "value": 175436
+        },
+        {
+          "year": 2014,
+          "value": 78299
+        },
+        {
+          "year": 2015,
+          "value": 71514
+        },
+        {
+          "year": 2016,
+          "value": 87893
+        },
+        {
+          "year": 2017,
+          "value": 85263
+        },
+        {
+          "year": 2018,
+          "value": 67507
+        },
+        {
+          "year": 2019,
+          "value": 76010
+        },
+        {
+          "year": 2020,
+          "value": 80123
+        },
+        {
+          "year": 2021,
+          "value": 69027
+        },
+        {
+          "year": 2022,
+          "value": 70347
+        },
+        {
+          "year": 2023,
+          "value": 117873
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "keysight-technologies-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Keysight Technologies INC",
+      "parent_company": "Keysight Technologies INC",
+      "total_pounds_recent": 16961,
+      "yoy_pct_change": 0.1,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Santa Rosa"
+    },
+    {
+      "slug": "itt-cannon-llc-dba-biw-connector-systems",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Itt Cannon LLC Dba Biw Connector Systems",
+      "parent_company": "Itt CORP",
+      "total_pounds_recent": 60,
+      "yoy_pct_change": -7.7,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Santa Rosa"
+    },
+    {
+      "slug": "bodean-co-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Bodean CO INC",
+      "parent_company": "Crh Americas INC",
+      "total_pounds_recent": 1,
+      "yoy_pct_change": null,
+      "top_chemical": "Polycyclic aromatic compounds",
+      "city": "Santa Rosa"
+    }
+  ],
+  "water": {
+    "utilities_count": 41,
+    "population_served_total": 186211,
+    "violations_5yr_total": 67,
+    "health_based_5yr_total": 22,
+    "unresolved_total": 33,
+    "utilities_with_unresolved": 13,
+    "utilities": [
+      {
+        "slug": "sonoma-county-csa-41-jenner",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sonoma County Csa 41-Jenner",
+        "pwsid": "CA4900532",
+        "population_served": 406,
+        "health_based_violations_5yr": 10,
+        "unresolved": true
+      },
+      {
+        "slug": "indian-creek-trailer-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Indian Creek Trailer Park",
+        "pwsid": "CA5303002",
+        "population_served": 43,
+        "health_based_violations_5yr": 3,
+        "unresolved": true
+      },
+      {
+        "slug": "branger-mutual-water-company-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Branger Mutual Water Company, Inc.",
+        "pwsid": "CA4900545",
+        "population_served": 300,
+        "health_based_violations_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "slug": "park-royal-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Park Royal Mutual Water Company",
+        "pwsid": "CA4900553",
+        "population_served": 75,
+        "health_based_violations_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "slug": "mobile-home-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mobile Home Estates",
+        "pwsid": "CA4900720",
+        "population_served": 210,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "randal-s-ranchette-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Randal's Ranchette Mutual Water Company",
+        "pwsid": "CA4900599",
+        "population_served": 200,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "el-portal-mobile-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "El Portal Mobile Estates",
+        "pwsid": "CA4900799",
+        "population_served": 200,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "sunset-park-community",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sunset Park Community",
+        "pwsid": "CA4900794",
+        "population_served": 141,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "mark-west-meadows-mutual-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mark West Meadows Mutual Water",
+        "pwsid": "CA4900905",
+        "population_served": 20,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "santa-rosa-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Santa Rosa, City Of",
+        "pwsid": "CA4910009",
+        "population_served": 175396,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "penngrove-water-company-puc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Penngrove Water Company (Puc)",
+        "pwsid": "CA4910003",
+        "population_served": 1742,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sonoma-county-csa-41-fitch-mountain",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sonoma County Csa 41-Fitch Mountain",
+        "pwsid": "CA4910010",
+        "population_served": 1265,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "kenwood-village-water-company-puc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Kenwood Village Water Company (Puc)",
+        "pwsid": "CA4910025",
+        "population_served": 1029,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "canon-manor-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Canon Manor Water System",
+        "pwsid": "CA4910022",
+        "population_served": 805,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "willowside-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Willowside Mutual Water Company",
+        "pwsid": "CA4900561",
+        "population_served": 448,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "bennett-ridge-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bennett Ridge Mutual Water Company",
+        "pwsid": "CA4900585",
+        "population_served": 439,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sonoma-county-csa-41-salmon-creek",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sonoma County Csa 41-Salmon Creek",
+        "pwsid": "CA4900543",
+        "population_served": 427,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "leisure-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Leisure Mobile Home Park",
+        "pwsid": "CA4900832",
+        "population_served": 410,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "holland-heights-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Holland Heights Mutual Water Company",
+        "pwsid": "CA4900548",
+        "population_served": 300,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sonoma-county-csa-41-freestone",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sonoma County Csa 41-Freestone",
+        "pwsid": "CA4900549",
+        "population_served": 290,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "north-star-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "North Star Mobile Home Park",
+        "pwsid": "CA4900797",
+        "population_served": 221,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "james-court-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "James Court Water System",
+        "pwsid": "CA4901445",
+        "population_served": 208,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "yulupa-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Yulupa Mutual Water Company",
+        "pwsid": "CA4900660",
+        "population_served": 200,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "caspar-south-service-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Caspar South Service Company",
+        "pwsid": "CA2300610",
+        "population_served": 188,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "shamrock-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shamrock Mobile Home Park",
+        "pwsid": "CA4900723",
+        "population_served": 188,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "sonoma-mountain-county-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sonoma Mountain County Water District",
+        "pwsid": "CA4900580",
+        "population_served": 181,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "kashia",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Kashia",
+        "pwsid": "090600135",
+        "population_served": 153,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "end-o-valley-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "End-O-Valley Mutual Water Company",
+        "pwsid": "CA4900547",
+        "population_served": 129,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "wilshire-heights-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Wilshire Heights Mutual Water Company",
+        "pwsid": "CA4900573",
+        "population_served": 70,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "blue-lakes-village",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Blue Lakes Village",
+        "pwsid": "CA1700596",
+        "population_served": 65,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "melita-heights-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Melita Heights Mutual Water Company",
+        "pwsid": "CA4900551",
+        "population_served": 64,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "mark-west-acres-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mark West Acres Mwc",
+        "pwsid": "CA4900605",
+        "population_served": 61,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "delores-lane-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Delores Lane Water System",
+        "pwsid": "CA4901346",
+        "population_served": 59,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "athena-terrace-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Athena Terrace Mutual Water Company",
+        "pwsid": "CA4900673",
+        "population_served": 50,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "summit-view-ranch-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Summit View Ranch Mutual Water Co.",
+        "pwsid": "CA4900892",
+        "population_served": 45,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "west-water-company-puc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "West Water Company (Puc)",
+        "pwsid": "CA4900893",
+        "population_served": 40,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "crystals",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Crystals",
+        "pwsid": "CA4901595",
+        "population_served": 40,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "evergreen-retreat-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Evergreen Retreat Mhp",
+        "pwsid": "WA5324164",
+        "population_served": 39,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "corby-avenue-apartments",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Corby Avenue Apartments",
+        "pwsid": "CA4900858",
+        "population_served": 38,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "loch-haven-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Loch Haven Mutual Water Company",
+        "pwsid": "CA4900575",
+        "population_served": 26,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sonoma-county-water-agency",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sonoma County Water Agency",
+        "pwsid": "CA4910020",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 178221,
+    "pct_low_income": 10.0,
+    "pct_people_of_color": 46.4,
+    "pct_under_5": 5.3,
+    "pct_over_64": 18.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 105.2
+      },
+      {
+        "label": "Ozone",
+        "score": 7.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 103.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 63.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 4.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 104.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 52.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 12.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 95.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 4.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 2.6
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Santa Rosa, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

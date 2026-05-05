@@ -22,17 +22,9 @@
     "land_releases_pounds": 364238,
     "chemicals_reported": 3,
     "yoy_pct_change": 1123.6,
-    "long_arc_pct_change": 11329.4,
-    "long_arc_baseline_year": 2020,
+    "long_arc_pct_change": 1123.6,
+    "long_arc_baseline_year": 2022,
     "history": [
-      {
-        "year": 2020,
-        "value": 3187
-      },
-      {
-        "year": 2021,
-        "value": 591
-      },
       {
         "year": 2022,
         "value": 29769
@@ -60,7 +52,7 @@
         }
       ],
       "yoy_pct_change": 14195.9,
-      "long_arc_pct_change": 14195.9,
+      "long_arc_pct_change": null,
       "long_arc_baseline_year": 2022
     },
     {
@@ -79,7 +71,7 @@
         }
       ],
       "yoy_pct_change": 10612.6,
-      "long_arc_pct_change": 10612.6,
+      "long_arc_pct_change": null,
       "long_arc_baseline_year": 2022
     },
     {
@@ -87,6 +79,53 @@
       "cas": "7440-50-8",
       "category": "general",
       "total_pounds_recent": 10647,
+      "history": [
+        {
+          "year": 2022,
+          "value": 21664
+        },
+        {
+          "year": 2023,
+          "value": 10647
+        }
+      ],
+      "yoy_pct_change": -50.9,
+      "long_arc_pct_change": -50.9,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Aluminum oxide (fibrous forms)",
+      "summary": "Aluminum oxide (fibrous forms) releases at Bae Systems San Diego Ship Repair rose from 2k lb to 326k lb (143.0\u00d7) between 2022 and 2023.",
+      "magnitude_pct": 14195.9,
+      "magnitude_abs": 323241.0,
+      "baseline_year": 2022,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 2277
+        },
+        {
+          "year": 2023,
+          "value": 325518
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Copper",
+      "summary": "Copper releases at Bae Systems San Diego Ship Repair fell from 22k lb to 11k lb (51% lower) between 2022 and 2023.",
+      "magnitude_pct": -50.9,
+      "magnitude_abs": -11017.0,
+      "baseline_year": 2022,
+      "recent_year": 2023,
+      "units": "lb",
       "history": [
         {
           "year": 2020,
@@ -104,10 +143,7 @@
           "year": 2023,
           "value": 10647
         }
-      ],
-      "yoy_pct_change": -50.9,
-      "long_arc_pct_change": 4623.6,
-      "long_arc_baseline_year": 2020
+      ]
     }
   ],
   "equity": {
@@ -179,5 +215,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-05"
   },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "_published_at": "2026-05-05T06:24:51Z"
 }

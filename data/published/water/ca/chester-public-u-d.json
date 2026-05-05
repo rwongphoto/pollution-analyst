@@ -1,0 +1,210 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "chester-public-u-d",
+    "name": "Chester Public U.D.",
+    "pwsid": "CA3210009",
+    "population_served": 2187,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Chester"
+    ]
+  },
+  "reporting_period": {
+    "start": "2021-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 2,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 5
+  },
+  "violations": [
+    {
+      "year": 2021,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "health_based",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Maximum contaminant level exceeded; returned to compliance"
+    },
+    {
+      "year": 2021,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "health_based",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Maximum contaminant level exceeded; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2021,
+        "value": 2
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2021,
+        "value": 2
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 8000",
+      "summary": "Revised Total Coliform Rule health-based violation cited in 2021 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3210009"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 8000",
+      "summary": "Revised Total Coliform Rule health-based violation cited in 2021 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3210009"
+      }
+    }
+  ],
+  "equity": {
+    "population": 2271,
+    "pct_low_income": 9.0,
+    "pct_people_of_color": 17.400000000000006,
+    "pct_under_5": 6.3,
+    "pct_over_64": 35.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 85.1
+      },
+      {
+        "label": "Ozone",
+        "score": 83.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 38.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 0.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 3.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 61.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Chester, California (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T06:24:52Z"
+}

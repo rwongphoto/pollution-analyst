@@ -1,0 +1,304 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "covina",
+    "name": "Covina",
+    "fips": "0616742",
+    "population": 50717,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 7,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 7,
+    "population_served_total": 336030,
+    "violations_5yr_total": 2,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "suburban-water-systems-san-jose",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Suburban Water Systems-San Jose",
+        "pwsid": "CA1910205",
+        "population_served": 168843,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "suburban-water-systems-whittier",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Suburban Water Systems-Whittier",
+        "pwsid": "CA1910174",
+        "population_served": 66045,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "suburban-water-systems-la-mirada",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Suburban Water Systems-La Mirada",
+        "pwsid": "CA1910059",
+        "population_served": 56793,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "covina-city-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Covina-City, Water Dept.",
+        "pwsid": "CA1910127",
+        "population_served": 33300,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "suburban-water-systems-glendora",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Suburban Water Systems-Glendora",
+        "pwsid": "CA1910046",
+        "population_served": 5249,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "suburban-water-systems-sativa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Suburban Water Systems - Sativa",
+        "pwsid": "CA1910147",
+        "population_served": 4363,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "suburban-water-systems-covina-knolls",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Suburban Water Systems-Covina Knolls",
+        "pwsid": "CA1910200",
+        "population_served": 1437,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 50717,
+    "pct_low_income": 7.7,
+    "pct_people_of_color": 81.9,
+    "pct_under_5": 5.9,
+    "pct_over_64": 13.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 180.2
+      },
+      {
+        "label": "Ozone",
+        "score": 186.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 162.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 173.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 104.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 170.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 128.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 149.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 145.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 174.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 148.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Covina, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

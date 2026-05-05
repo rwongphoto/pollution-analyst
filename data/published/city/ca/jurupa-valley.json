@@ -1,0 +1,350 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "jurupa-valley",
+    "name": "Jurupa Valley",
+    "fips": "0637692",
+    "population": 105672,
+    "county_name": "Riverside",
+    "county_fips": "06065"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 3,
+    "total_releases_pounds": 82481,
+    "air_releases_pounds": 82472,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 9,
+    "yoy_pct_change": -20.7,
+    "long_arc_pct_change": -41.7,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 141585
+      },
+      {
+        "year": 2011,
+        "value": 132005
+      },
+      {
+        "year": 2012,
+        "value": 126822
+      },
+      {
+        "year": 2013,
+        "value": 119953
+      },
+      {
+        "year": 2014,
+        "value": 124863
+      },
+      {
+        "year": 2015,
+        "value": 131764
+      },
+      {
+        "year": 2016,
+        "value": 127103
+      },
+      {
+        "year": 2017,
+        "value": 98195
+      },
+      {
+        "year": 2018,
+        "value": 133928
+      },
+      {
+        "year": 2019,
+        "value": 133536
+      },
+      {
+        "year": 2020,
+        "value": 136441
+      },
+      {
+        "year": 2021,
+        "value": 129000
+      },
+      {
+        "year": 2022,
+        "value": 103994
+      },
+      {
+        "year": 2023,
+        "value": 82481
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 82472,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 82472
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 9,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 9
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1423181,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 5.5,
+      "long_arc_pct_change": -32.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2119572
+        },
+        {
+          "year": 2011,
+          "value": 2071756
+        },
+        {
+          "year": 2012,
+          "value": 2504412
+        },
+        {
+          "year": 2013,
+          "value": 2055202
+        },
+        {
+          "year": 2014,
+          "value": 2278890
+        },
+        {
+          "year": 2015,
+          "value": 1724152
+        },
+        {
+          "year": 2016,
+          "value": 1136501
+        },
+        {
+          "year": 2017,
+          "value": 1541844
+        },
+        {
+          "year": 2018,
+          "value": 1842670
+        },
+        {
+          "year": 2019,
+          "value": 1290190
+        },
+        {
+          "year": 2020,
+          "value": 1523660
+        },
+        {
+          "year": 2021,
+          "value": 1665711
+        },
+        {
+          "year": 2022,
+          "value": 1349415
+        },
+        {
+          "year": 2023,
+          "value": 1423181
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "metal-container-corp-mira-loma-can-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Metal Container Corp-Mira Loma Can Plant",
+      "parent_company": "Anheuser-Busch Cos LLC",
+      "total_pounds_recent": 80482,
+      "yoy_pct_change": -21.4,
+      "top_chemical": "n-Butyl alcohol",
+      "city": "Jurupa Valley"
+    },
+    {
+      "slug": "dura-coat-products-inc-axalta-coating-systems",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Dura Coat Products INC (Axalta Coating Systems)",
+      "parent_company": "Axalta Coating Systems LLC",
+      "total_pounds_recent": 1989,
+      "yoy_pct_change": 25.5,
+      "top_chemical": "Zinc compounds",
+      "city": "Riverside"
+    },
+    {
+      "slug": "riverside-plant-1",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Riverside Plant 1",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 10,
+      "yoy_pct_change": -21.6,
+      "top_chemical": "Lead compounds",
+      "city": "Riverside"
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 177768,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "jurupa-community-sd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Jurupa Community Sd",
+        "pwsid": "CA3310021",
+        "population_served": 135093,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rubidoux-community-sd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rubidoux Community Sd",
+        "pwsid": "CA3310044",
+        "population_served": 36827,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "santa-ana-river-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Santa Ana River Water Company",
+        "pwsid": "CA3310033",
+        "population_served": 5848,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 105672,
+    "pct_low_income": 10.3,
+    "pct_people_of_color": 81.5,
+    "pct_under_5": 6.6,
+    "pct_over_64": 11.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 192.9
+      },
+      {
+        "label": "Ozone",
+        "score": 197.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 152.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 190.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 112.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 168.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 91.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 171.5
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 168.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 174.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 186.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Jurupa Valley, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

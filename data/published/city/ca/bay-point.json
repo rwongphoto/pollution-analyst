@@ -1,0 +1,308 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "bay-point",
+    "name": "Bay Point",
+    "fips": "0604415",
+    "population": 24407,
+    "county_name": "Contra Costa",
+    "county_fips": "06013"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 0,
+    "total_releases_pounds": 168428,
+    "air_releases_pounds": 1126,
+    "water_releases_pounds": 121,
+    "land_releases_pounds": 167182,
+    "yoy_pct_change": 53.9,
+    "long_arc_pct_change": 326.4,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 39502
+      },
+      {
+        "year": 2011,
+        "value": 39369
+      },
+      {
+        "year": 2012,
+        "value": 60999
+      },
+      {
+        "year": 2013,
+        "value": 117622
+      },
+      {
+        "year": 2014,
+        "value": 84232
+      },
+      {
+        "year": 2015,
+        "value": 72958
+      },
+      {
+        "year": 2016,
+        "value": 116474
+      },
+      {
+        "year": 2017,
+        "value": 87192
+      },
+      {
+        "year": 2018,
+        "value": 120110
+      },
+      {
+        "year": 2019,
+        "value": 126247
+      },
+      {
+        "year": 2020,
+        "value": 116176
+      },
+      {
+        "year": 2021,
+        "value": 82247
+      },
+      {
+        "year": 2022,
+        "value": 109454
+      },
+      {
+        "year": 2023,
+        "value": 168428
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 1126,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1126
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 121,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 121
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 167182,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 167182
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 82261234,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 11.9,
+      "long_arc_pct_change": 109.1,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 39334407
+        },
+        {
+          "year": 2011,
+          "value": 72107992
+        },
+        {
+          "year": 2012,
+          "value": 112182316
+        },
+        {
+          "year": 2013,
+          "value": 121967587
+        },
+        {
+          "year": 2014,
+          "value": 132848440
+        },
+        {
+          "year": 2015,
+          "value": 108103922
+        },
+        {
+          "year": 2016,
+          "value": 98070792
+        },
+        {
+          "year": 2017,
+          "value": 110415618
+        },
+        {
+          "year": 2018,
+          "value": 106301016
+        },
+        {
+          "year": 2019,
+          "value": 104918059
+        },
+        {
+          "year": 2020,
+          "value": 81791851
+        },
+        {
+          "year": 2021,
+          "value": 77078427
+        },
+        {
+          "year": 2022,
+          "value": 73485085
+        },
+        {
+          "year": 2023,
+          "value": 82261234
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "shell-catalysts-technologies-pittsburg",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Shell Catalysts & Technologies - Pittsburg",
+      "parent_company": "Shell Petroleum INC",
+      "total_pounds_recent": 168391,
+      "yoy_pct_change": 55.3,
+      "top_chemical": "Molybdenum trioxide",
+      "city": "Pittsburg"
+    },
+    {
+      "slug": "henkel-us-operations-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Henkel US Operations Corp",
+      "parent_company": "Henkel Of America INC",
+      "total_pounds_recent": 37,
+      "yoy_pct_change": -96.4,
+      "top_chemical": "Aluminum (fume or dust)",
+      "city": "Bay Point"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 24407,
+    "pct_low_income": 14.3,
+    "pct_people_of_color": 87.8,
+    "pct_under_5": 7.4,
+    "pct_over_64": 9.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 214.5
+      },
+      {
+        "label": "Ozone",
+        "score": 97.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 102.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 112.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 105.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 144.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 116.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 192.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 217.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 192.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 159.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Bay Point, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

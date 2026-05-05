@@ -1,0 +1,308 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "corcoran",
+    "name": "Corcoran",
+    "fips": "0616224",
+    "population": 22808,
+    "county_name": "Kings",
+    "county_fips": "06031"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 1,
+    "total_releases_pounds": 17697,
+    "air_releases_pounds": 17697,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": -12.0,
+    "long_arc_pct_change": -69.1,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 57327
+      },
+      {
+        "year": 2011,
+        "value": 150846
+      },
+      {
+        "year": 2012,
+        "value": 57060
+      },
+      {
+        "year": 2013,
+        "value": 96205
+      },
+      {
+        "year": 2014,
+        "value": 90222
+      },
+      {
+        "year": 2015,
+        "value": 77719
+      },
+      {
+        "year": 2016,
+        "value": 68949
+      },
+      {
+        "year": 2017,
+        "value": 13690
+      },
+      {
+        "year": 2018,
+        "value": 47351
+      },
+      {
+        "year": 2019,
+        "value": 34625
+      },
+      {
+        "year": 2020,
+        "value": 20097
+      },
+      {
+        "year": 2021,
+        "value": 25795
+      },
+      {
+        "year": 2022,
+        "value": 20115
+      },
+      {
+        "year": 2023,
+        "value": 17697
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 17697,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 17697
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 205176,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -14.5,
+      "long_arc_pct_change": -60.8,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 522895
+        },
+        {
+          "year": 2011,
+          "value": 468094
+        },
+        {
+          "year": 2012,
+          "value": 385083
+        },
+        {
+          "year": 2013,
+          "value": 419095
+        },
+        {
+          "year": 2014,
+          "value": 488771
+        },
+        {
+          "year": 2015,
+          "value": 428018
+        },
+        {
+          "year": 2016,
+          "value": 290153
+        },
+        {
+          "year": 2017,
+          "value": 269662
+        },
+        {
+          "year": 2018,
+          "value": 257719
+        },
+        {
+          "year": 2019,
+          "value": 279380
+        },
+        {
+          "year": 2020,
+          "value": 213454
+        },
+        {
+          "year": 2021,
+          "value": 200489
+        },
+        {
+          "year": 2022,
+          "value": 240112
+        },
+        {
+          "year": 2023,
+          "value": 205176
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "jg-boswell-co-oil-mill",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Jg Boswell CO Oil Mill",
+      "parent_company": "Jg Boswell Co",
+      "total_pounds_recent": 17697,
+      "yoy_pct_change": -12.0,
+      "top_chemical": "n-Hexane",
+      "city": "Corcoran"
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 22808,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "corcoran-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Corcoran, City Of",
+        "pwsid": "CA1610004",
+        "population_served": 22808,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 22808,
+    "pct_low_income": 27.6,
+    "pct_people_of_color": 87.2,
+    "pct_under_5": 5.4,
+    "pct_over_64": 9.7,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 216.8
+      },
+      {
+        "label": "Ozone",
+        "score": 210.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 113.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 155.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 44.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 42.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 90.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 198.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 90.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 133.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Corcoran, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

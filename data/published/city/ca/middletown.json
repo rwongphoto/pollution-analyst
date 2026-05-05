@@ -1,0 +1,217 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "middletown",
+    "name": "Middletown",
+    "fips": "0647332",
+    "population": 1748,
+    "county_name": null,
+    "county_fips": null
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 5,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 5,
+    "population_served_total": 2557,
+    "violations_5yr_total": 29,
+    "health_based_5yr_total": 17,
+    "unresolved_total": 17,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "lazy-s-mobile-ranch",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lazy S Mobile Ranch",
+        "pwsid": "CA1700609",
+        "population_served": 73,
+        "health_based_violations_5yr": 16,
+        "unresolved": true
+      },
+      {
+        "slug": "callayomi-county-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Callayomi County Water District",
+        "pwsid": "CA1710013",
+        "population_served": 1598,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "middletown-rancheria-community-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Middletown Rancheria Community Water System",
+        "pwsid": "090600141",
+        "population_served": 487,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "anderson-springs-csd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Anderson Springs Csd",
+        "pwsid": "CA1700502",
+        "population_served": 373,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "mountain-of-attention-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mountain Of Attention Water",
+        "pwsid": "CA1700527",
+        "population_served": 26,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1748,
+    "pct_low_income": 4.7,
+    "pct_people_of_color": 35.599999999999994,
+    "pct_under_5": 1.0,
+    "pct_over_64": 11.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 91.2
+      },
+      {
+        "label": "Ozone",
+        "score": 26.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 32.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 1.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 1.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 50.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 43.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 24.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Middletown, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

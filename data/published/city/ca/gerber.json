@@ -1,0 +1,221 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "gerber",
+    "name": "Gerber",
+    "fips": "0629392",
+    "population": 1084,
+    "county_name": "Tehama",
+    "county_fips": "06103"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 4,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 94632,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 17.2,
+      "long_arc_pct_change": 231.7,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 28530
+        },
+        {
+          "year": 2011,
+          "value": 33605
+        },
+        {
+          "year": 2012,
+          "value": 93816
+        },
+        {
+          "year": 2013,
+          "value": 80307
+        },
+        {
+          "year": 2014,
+          "value": 77986
+        },
+        {
+          "year": 2015,
+          "value": 84822
+        },
+        {
+          "year": 2016,
+          "value": 75000
+        },
+        {
+          "year": 2017,
+          "value": 90934
+        },
+        {
+          "year": 2018,
+          "value": 70787
+        },
+        {
+          "year": 2019,
+          "value": 68413
+        },
+        {
+          "year": 2020,
+          "value": 85657
+        },
+        {
+          "year": 2021,
+          "value": 82881
+        },
+        {
+          "year": 2022,
+          "value": 80724
+        },
+        {
+          "year": 2023,
+          "value": 94632
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 2004,
+    "violations_5yr_total": 6,
+    "health_based_5yr_total": 3,
+    "unresolved_total": 6,
+    "utilities_with_unresolved": 3,
+    "utilities": [
+      {
+        "slug": "vista-grande-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Vista Grande Water System",
+        "pwsid": "CA5200012",
+        "population_served": 468,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "las-flores-water-works",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Las Flores Water Works",
+        "pwsid": "CA5200502",
+        "population_served": 191,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "mira-monte-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mira Monte Water Co.",
+        "pwsid": "CA5200560",
+        "population_served": 145,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "gerber-las-flores-csd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Gerber Las Flores Csd",
+        "pwsid": "CA5210002",
+        "population_served": 1200,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1084,
+    "pct_low_income": 31.5,
+    "pct_people_of_color": 83.7,
+    "pct_under_5": 0.0,
+    "pct_over_64": 27.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Gerber, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

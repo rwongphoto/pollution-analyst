@@ -1,0 +1,227 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "beverly-hills",
+    "name": "Beverly Hills",
+    "fips": "0606308",
+    "population": 32406,
+    "county_name": null,
+    "county_fips": null
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 6,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 6,
+    "population_served_total": 41102,
+    "violations_5yr_total": 10,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 4,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "beverly-hills-city-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Beverly Hills-City, Water Dept.",
+        "pwsid": "CA1910156",
+        "population_served": 40121,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "mountain-gate-estates-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mountain Gate Estates Mhp",
+        "pwsid": "AZ0404314",
+        "population_served": 400,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "paradise-ranch-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Paradise Ranch Mhp",
+        "pwsid": "CA1910099",
+        "population_served": 360,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "dillingham-ranch",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Dillingham Ranch",
+        "pwsid": "HI0000326",
+        "population_served": 100,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "foothill-estates-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Foothill Estates Mhp",
+        "pwsid": "CA3600386",
+        "population_served": 66,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "bashlors-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bashlors Mobile Home Park",
+        "pwsid": "GA0510138",
+        "population_served": 55,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 32406,
+    "pct_low_income": 10.2,
+    "pct_people_of_color": 26.799999999999997,
+    "pct_under_5": 2.6,
+    "pct_over_64": 24.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 83.7
+      },
+      {
+        "label": "Ozone",
+        "score": 79.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 74.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 83.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 50.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 81.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 66.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 9.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 41.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 86.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 69.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 70.2
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Beverly Hills, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

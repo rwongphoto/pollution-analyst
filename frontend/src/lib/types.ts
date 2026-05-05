@@ -17,6 +17,39 @@ export type PollutantPathway =
 
 export type Direction = "increase" | "decrease" | "flat";
 
+// ---- Anomaly engine flags ------------------------------------------------
+// Mirrors pipeline/src/flags/types.py. Emitted between aggregate and publish;
+// rendered as <AnomalyCard> in a "Notable signals" section on each template.
+
+export type FlagType =
+  | "long_arc_shift"
+  | "release_shift"
+  | "violation_event"
+  | "ghg_step";
+
+export type FlagSeverity =
+  | "improvement"
+  | "regression"
+  | "surge"
+  | "drop"
+  | "unresolved"
+  | "health_based_recent"
+  | "health_based_recent5y";
+
+export interface Flag {
+  type: FlagType;
+  severity: FlagSeverity;
+  label: string;
+  summary: string;
+  magnitude_pct: number | null;
+  magnitude_abs: number | null;
+  baseline_year: number | null;
+  recent_year: number;
+  units: string | null;
+  history: AnnualPoint[];
+  link?: { label: string; href: string };
+}
+
 // ---- Annual / monthly time series ----------------------------------------
 
 export interface AnnualPoint {
@@ -101,6 +134,7 @@ export interface FacilityPagePayload {
     history: AnnualPoint[]; // facility-total pounds per year, full multi-year span
   };
   chemicals: ChemicalRelease[]; // sorted by total_pounds_recent desc
+  flags: Flag[];                // "Notable signals" section, possibly empty
   equity: EquityOverlay;
   source: {
     label: string;        // "EPA Toxics Release Inventory"
@@ -150,12 +184,62 @@ export interface WaterUtilityPayload {
     health_based_history: AnnualPoint[]; // counts of health-based per year
     top_contaminants: { contaminant: string; count: number }[];
   };
+  flags: Flag[];
   equity: EquityOverlay;
   source: {
     label: string;
     url: string;
     retrieved: string;
   };
+  _published_at?: string;
+}
+
+// ---- Tier 2: City hub (place-anchored) ----------------------------------
+// /state/[state]/city/[slug] — the "is the environment here OK?" page for
+// a Census place. Aggregates TRI facilities in the place polygon, GHG
+// (county-share), water utilities serving the place, and equity. Distinct
+// from /state/[state]/water/[slug], which is the *entity* page for one
+// public water system.
+
+export interface CityHubPayload {
+  place: {
+    state: string;
+    state_label: string;
+    slug: string;
+    name: string;
+    fips: string;
+    population: number;
+    county_name: string | null;
+    county_fips: string | null;
+  };
+  reporting_year: number;
+  briefing_label: string;
+  totals: {
+    facilities_in_city: number;
+    utilities_serving: number;
+    total_releases_pounds: number;
+    air_releases_pounds: number;
+    water_releases_pounds: number;
+    land_releases_pounds: number;
+    yoy_pct_change: number | null;
+    long_arc_pct_change: number | null;
+    long_arc_baseline_year: number;
+    history: AnnualPoint[];
+  };
+  pathways: PollutantSummary[];
+  facilities: FacilitySummary[];
+  water: {
+    utilities_count: number;
+    population_served_total: number;
+    violations_5yr_total: number;
+    health_based_5yr_total: number;
+    unresolved_total: number;
+    utilities_with_unresolved: number;
+    utilities: UtilitySummary[];
+  };
+  flags: Flag[];
+  equity: EquityOverlay;
+  sources: { label: string; url: string; retrieved: string }[];
   _published_at?: string;
 }
 
@@ -209,6 +293,7 @@ export interface CountyPagePayload {
   pathways: PollutantSummary[]; // 3-5 top-level pollutants
   facilities: FacilitySummary[]; // top TRI facilities by pounds
   utilities: UtilitySummary[];   // water utilities serving the county
+  flags: Flag[];
   equity: EquityOverlay;
   sources: {
     label: string;
@@ -259,6 +344,7 @@ export interface StatePagePayload {
   counties_directory: { slug: string; name: string; facilities_count: number }[];
   top_facilities: FacilitySummary[];
   top_utilities: UtilitySummary[];
+  flags: Flag[];
   equity: EquityOverlay;
   sources: { label: string; url: string; retrieved: string }[];
   _published_at?: string;
@@ -267,7 +353,7 @@ export interface StatePagePayload {
 // ---- Home page ----------------------------------------------------------
 
 export interface FeaturedEntity {
-  kind: "facility" | "city" | "county";
+  kind: "facility" | "water" | "county" | "city";  // "water" = utility entity; "city" = place hub
   state: string;
   slug: string;
   name: string;
@@ -276,6 +362,7 @@ export interface FeaturedEntity {
   metric_label: string;
   metric_value: string;
   trend_24mo?: number[];
+  flag_type?: FlagType | null;
 }
 
 export interface HomePagePayload {

@@ -1,0 +1,294 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "seaside",
+    "name": "Seaside",
+    "fips": "0670742",
+    "population": 32291,
+    "county_name": "Monterey",
+    "county_fips": "06053"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0.09,
+    "air_releases_pounds": 0.08,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0.01,
+    "yoy_pct_change": -1.1,
+    "long_arc_pct_change": -37.6,
+    "long_arc_baseline_year": 2016,
+    "history": [
+      {
+        "year": 2016,
+        "value": 0.14
+      },
+      {
+        "year": 2017,
+        "value": 0.13
+      },
+      {
+        "year": 2018,
+        "value": 0.11
+      },
+      {
+        "year": 2019,
+        "value": 0.09
+      },
+      {
+        "year": 2020,
+        "value": 0.1
+      },
+      {
+        "year": 2021,
+        "value": 0.11
+      },
+      {
+        "year": 2022,
+        "value": 0.09
+      },
+      {
+        "year": 2023,
+        "value": 0.09
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2719935,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 3.8,
+      "long_arc_pct_change": -4.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2842912
+        },
+        {
+          "year": 2011,
+          "value": 2266389
+        },
+        {
+          "year": 2012,
+          "value": 3492702
+        },
+        {
+          "year": 2013,
+          "value": 3500952
+        },
+        {
+          "year": 2014,
+          "value": 3304939
+        },
+        {
+          "year": 2015,
+          "value": 3183819
+        },
+        {
+          "year": 2016,
+          "value": 2089147
+        },
+        {
+          "year": 2017,
+          "value": 1899151
+        },
+        {
+          "year": 2018,
+          "value": 2594395
+        },
+        {
+          "year": 2019,
+          "value": 2870803
+        },
+        {
+          "year": 2020,
+          "value": 2697688
+        },
+        {
+          "year": 2021,
+          "value": 2740957
+        },
+        {
+          "year": 2022,
+          "value": 2621580
+        },
+        {
+          "year": 2023,
+          "value": 2719935
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "granite-rock-co-monterey-branch-br341",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Granite Rock CO Monterey Branch Br341",
+      "parent_company": "Granite Rock Co",
+      "total_pounds_recent": 0.09,
+      "yoy_pct_change": -1.1,
+      "top_chemical": "Lead",
+      "city": "Seaside"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 3150,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "seaside-municipal-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Seaside Municipal Water System",
+        "pwsid": "CA2710018",
+        "population_served": 2800,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sunset-west-community-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sunset West Community Llc",
+        "pwsid": "CA1000378",
+        "population_served": 350,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 32291,
+    "pct_low_income": 13.0,
+    "pct_people_of_color": 69.5,
+    "pct_under_5": 6.6,
+    "pct_over_64": 13.7,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 53.7
+      },
+      {
+        "label": "Ozone",
+        "score": 1.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 96.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 43.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 8.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 116.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 104.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 168.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 6.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 109.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 70.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Seaside, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

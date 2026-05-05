@@ -1,0 +1,330 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "petaluma",
+    "name": "Petaluma",
+    "fips": "0656784",
+    "population": 59682,
+    "county_name": "Sonoma",
+    "county_fips": "06097"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 3,
+    "total_releases_pounds": 26082,
+    "air_releases_pounds": 25675,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 407,
+    "yoy_pct_change": 79.7,
+    "long_arc_pct_change": 10332.8,
+    "long_arc_baseline_year": 2012,
+    "history": [
+      {
+        "year": 2012,
+        "value": 250
+      },
+      {
+        "year": 2016,
+        "value": 5052
+      },
+      {
+        "year": 2017,
+        "value": 5447
+      },
+      {
+        "year": 2018,
+        "value": 5434
+      },
+      {
+        "year": 2019,
+        "value": 7142
+      },
+      {
+        "year": 2020,
+        "value": 11685
+      },
+      {
+        "year": 2021,
+        "value": 30987
+      },
+      {
+        "year": 2022,
+        "value": 14514
+      },
+      {
+        "year": 2023,
+        "value": 26082
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 25675,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 25675
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 407,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 407
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 117873,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 67.6,
+      "long_arc_pct_change": -38.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 190188
+        },
+        {
+          "year": 2011,
+          "value": 184825
+        },
+        {
+          "year": 2012,
+          "value": 189951
+        },
+        {
+          "year": 2013,
+          "value": 175436
+        },
+        {
+          "year": 2014,
+          "value": 78299
+        },
+        {
+          "year": 2015,
+          "value": 71514
+        },
+        {
+          "year": 2016,
+          "value": 87893
+        },
+        {
+          "year": 2017,
+          "value": 85263
+        },
+        {
+          "year": 2018,
+          "value": 67507
+        },
+        {
+          "year": 2019,
+          "value": 76010
+        },
+        {
+          "year": 2020,
+          "value": 80123
+        },
+        {
+          "year": 2021,
+          "value": 69027
+        },
+        {
+          "year": 2022,
+          "value": 70347
+        },
+        {
+          "year": 2023,
+          "value": 117873
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "lgc-biosearch-technologies-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Lgc Biosearch Technologies INC",
+      "parent_company": "Lgc Biosearch Technologies INC",
+      "total_pounds_recent": 25175,
+      "yoy_pct_change": 73.5,
+      "top_chemical": "Dichloromethane",
+      "city": "Petaluma"
+    },
+    {
+      "slug": "perdue-foods-llc-petaluma-poultry-processing-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Perdue Foods LLC - Petaluma Poultry Processing Plant",
+      "parent_company": "Perdue Farms INC",
+      "total_pounds_recent": 503,
+      "yoy_pct_change": 13289.7,
+      "top_chemical": "Peracetic acid",
+      "city": "Petaluma"
+    },
+    {
+      "slug": "clover-stornetta-farms-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Clover Stornetta Farms INC",
+      "parent_company": null,
+      "total_pounds_recent": 404,
+      "yoy_pct_change": null,
+      "top_chemical": "Peracetic acid",
+      "city": "Petaluma"
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 61310,
+    "violations_5yr_total": 2,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "u-s-coast-guard-training-center",
+        "state": "ca",
+        "state_label": "California",
+        "name": "U.S. Coast Guard Training Center",
+        "pwsid": "CA4910701",
+        "population_served": 469,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "petaluma-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Petaluma, City Of",
+        "pwsid": "CA4910006",
+        "population_served": 60781,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "boulevard-heights-mutual-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Boulevard Heights Mutual Water",
+        "pwsid": "CA4901071",
+        "population_served": 60,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 59682,
+    "pct_low_income": 5.9,
+    "pct_people_of_color": 30.799999999999997,
+    "pct_under_5": 5.6,
+    "pct_over_64": 19.6,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 70.2
+      },
+      {
+        "label": "Ozone",
+        "score": 3.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 45.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 19.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 17.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 50.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 34.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 55.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 26.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Petaluma, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

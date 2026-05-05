@@ -1,0 +1,298 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "manhattan-beach",
+    "name": "Manhattan Beach",
+    "fips": "0645400",
+    "population": 35123,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 2,
+    "total_releases_pounds": 250,
+    "air_releases_pounds": 250,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": 2400.0,
+    "long_arc_pct_change": -92.9,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 3527
+      },
+      {
+        "year": 2011,
+        "value": 3137
+      },
+      {
+        "year": 2012,
+        "value": 95
+      },
+      {
+        "year": 2015,
+        "value": 260
+      },
+      {
+        "year": 2016,
+        "value": 170
+      },
+      {
+        "year": 2017,
+        "value": 190
+      },
+      {
+        "year": 2020,
+        "value": 20
+      },
+      {
+        "year": 2022,
+        "value": 10
+      },
+      {
+        "year": 2023,
+        "value": 250
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 250,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 250
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "northrop-grumman-systems-corporation",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Northrop Grumman Systems Corporation",
+      "parent_company": "Northrop Grumman CORP",
+      "total_pounds_recent": 250,
+      "yoy_pct_change": 2400.0,
+      "top_chemical": "Methanol",
+      "city": "Manhattan Beach"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 32777,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "manhattan-beach-city-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Manhattan Beach-City, Water Dept.",
+        "pwsid": "CA1910083",
+        "population_served": 32697,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "camp-williams-resort-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Camp Williams-Resort Water",
+        "pwsid": "CA1900529",
+        "population_served": 80,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 35123,
+    "pct_low_income": 3.2,
+    "pct_people_of_color": 28.5,
+    "pct_under_5": 8.0,
+    "pct_over_64": 16.6,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 54.5
+      },
+      {
+        "label": "Ozone",
+        "score": 24.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 49.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 53.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 44.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 50.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 37.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 32.5
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 54.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 56.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 18.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Manhattan Beach, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

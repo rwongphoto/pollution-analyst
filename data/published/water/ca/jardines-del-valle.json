@@ -1,0 +1,202 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "jardines-del-valle",
+    "name": "Jardines Del Valle",
+    "pwsid": "CA4400664",
+    "population_served": 130,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Watsonville"
+    ]
+  },
+  "reporting_period": {
+    "start": "2022-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 2,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 4
+  },
+  "violations": [
+    {
+      "year": 2022,
+      "contaminant": "Total Trihalomethanes (TTHM)",
+      "contaminant_code": "2950",
+      "severity": "health_based",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": false,
+      "description": "Maximum contaminant level exceeded; returned to compliance"
+    },
+    {
+      "year": 2022,
+      "contaminant": "Total Trihalomethanes (TTHM)",
+      "contaminant_code": "2950",
+      "severity": "health_based",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": false,
+      "description": "Maximum contaminant level exceeded; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2022,
+        "value": 2
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2022,
+        "value": 2
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Total Trihalomethanes (TTHM)",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Total Trihalomethanes Rule health-based violation cited in 2022 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4400664"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Total Trihalomethanes Rule health-based violation cited in 2022 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4400664"
+      }
+    }
+  ],
+  "equity": {
+    "population": 52457,
+    "pct_low_income": 13.8,
+    "pct_people_of_color": 86.8,
+    "pct_under_5": 7.8,
+    "pct_over_64": 12.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 177.9
+      },
+      {
+        "label": "Ozone",
+        "score": 23.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 102.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 80.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 15.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 138.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 122.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 187.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 145.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 127.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Watsonville, California (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T06:24:52Z"
+}

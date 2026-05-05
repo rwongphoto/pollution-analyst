@@ -1,0 +1,373 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "santa-clarita",
+    "name": "Santa Clarita",
+    "fips": "0669088",
+    "population": 225850,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 6,
+    "utilities_serving": 2,
+    "total_releases_pounds": 45117,
+    "air_releases_pounds": 65,
+    "water_releases_pounds": 15,
+    "land_releases_pounds": 45037,
+    "yoy_pct_change": -67.3,
+    "long_arc_pct_change": -14.7,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 52866
+      },
+      {
+        "year": 2011,
+        "value": 104619
+      },
+      {
+        "year": 2012,
+        "value": 84371
+      },
+      {
+        "year": 2013,
+        "value": 63717
+      },
+      {
+        "year": 2014,
+        "value": 85197
+      },
+      {
+        "year": 2015,
+        "value": 65993
+      },
+      {
+        "year": 2016,
+        "value": 52347
+      },
+      {
+        "year": 2017,
+        "value": 58862
+      },
+      {
+        "year": 2018,
+        "value": 56361
+      },
+      {
+        "year": 2019,
+        "value": 64671
+      },
+      {
+        "year": 2020,
+        "value": 85200
+      },
+      {
+        "year": 2021,
+        "value": 156347
+      },
+      {
+        "year": 2022,
+        "value": 138141
+      },
+      {
+        "year": 2023,
+        "value": 45117
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 65,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 65
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 15,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 15
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 45037,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 45037
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "sgl-technic-inc-polycarbon-di-v",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sgl Technic INC Polycarbon Di V",
+      "parent_company": "Sgl Carbon LLC",
+      "total_pounds_recent": 44883,
+      "yoy_pct_change": -67.4,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Santa Clarita"
+    },
+    {
+      "slug": "novacap-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Novacap INC",
+      "parent_company": "Knowles CORP",
+      "total_pounds_recent": 185,
+      "yoy_pct_change": -26.6,
+      "top_chemical": "Lead compounds",
+      "city": "Valencia"
+    },
+    {
+      "slug": "aerospace-dynamics-international-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Aerospace Dynamics International INC.",
+      "parent_company": "Berkshire Hathaway INC",
+      "total_pounds_recent": 30,
+      "yoy_pct_change": 25.0,
+      "top_chemical": "Copper",
+      "city": "Valencia"
+    },
+    {
+      "slug": "avk-industrial-products",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Avk Industrial Products",
+      "parent_company": "Berkshire Hathaway INC",
+      "total_pounds_recent": 9,
+      "yoy_pct_change": -18.2,
+      "top_chemical": "Copper",
+      "city": "Valencia"
+    },
+    {
+      "slug": "valley-syncom-circuits-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Valley Syncom Circuits INC.",
+      "parent_company": null,
+      "total_pounds_recent": 5,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Copper  And Copper Compounds",
+      "city": "Santa Clarita"
+    },
+    {
+      "slug": "hasa-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Hasa INC",
+      "parent_company": "Hasa INC",
+      "total_pounds_recent": 5,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Chlorine",
+      "city": "Santa Clarita"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 344,
+    "violations_5yr_total": 6,
+    "health_based_5yr_total": 5,
+    "unresolved_total": 3,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "sleepy-valley-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sleepy Valley Water Company",
+        "pwsid": "CA1900903",
+        "population_served": 160,
+        "health_based_violations_5yr": 4,
+        "unresolved": true
+      },
+      {
+        "slug": "los-angeles-residential-community-founda",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Los Angeles Residential Community Founda",
+        "pwsid": "CA1900062",
+        "population_served": 184,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 225850,
+    "pct_low_income": 8.0,
+    "pct_people_of_color": 56.5,
+    "pct_under_5": 6.3,
+    "pct_over_64": 12.4,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 100.5
+      },
+      {
+        "label": "Ozone",
+        "score": 135.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 63.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 61.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 34.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 86.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 25.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 96.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 106.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 113.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Santa Clarita, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

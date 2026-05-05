@@ -1,84 +1,266 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "sunnyvale",
-    "name": "City Of Sunnyvale",
-    "pwsid": "CA4310014",
-    "population_served": 157566,
-    "primary_source": "purchased",
-    "cities_served": [
-      "Sunnyvale"
+    "name": "Sunnyvale",
+    "fips": "0677000",
+    "population": 154573,
+    "county_name": "Santa Clara",
+    "county_fips": "06085"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 4,
+    "utilities_serving": 1,
+    "total_releases_pounds": 39397,
+    "air_releases_pounds": 6480,
+    "water_releases_pounds": 3,
+    "land_releases_pounds": 32914,
+    "yoy_pct_change": 0.1,
+    "long_arc_pct_change": 3201.5,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 1193
+      },
+      {
+        "year": 2011,
+        "value": 6360
+      },
+      {
+        "year": 2012,
+        "value": 6807
+      },
+      {
+        "year": 2013,
+        "value": 10985
+      },
+      {
+        "year": 2014,
+        "value": 97309
+      },
+      {
+        "year": 2015,
+        "value": 18284
+      },
+      {
+        "year": 2016,
+        "value": 26223
+      },
+      {
+        "year": 2017,
+        "value": 27969
+      },
+      {
+        "year": 2018,
+        "value": 60084
+      },
+      {
+        "year": 2019,
+        "value": 75779
+      },
+      {
+        "year": 2020,
+        "value": 28193
+      },
+      {
+        "year": 2021,
+        "value": 81936
+      },
+      {
+        "year": 2022,
+        "value": 39364
+      },
+      {
+        "year": 2023,
+        "value": 39397
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 6480,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6480
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 3,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 32914,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 32914
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2123248,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 6.0,
+      "long_arc_pct_change": -31.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 3089153
+        },
+        {
+          "year": 2011,
+          "value": 3135171
+        },
+        {
+          "year": 2012,
+          "value": 3745976
+        },
+        {
+          "year": 2013,
+          "value": 4063861
+        },
+        {
+          "year": 2014,
+          "value": 3612878
+        },
+        {
+          "year": 2015,
+          "value": 3818357
+        },
+        {
+          "year": 2016,
+          "value": 3472038
+        },
+        {
+          "year": 2017,
+          "value": 2967658
+        },
+        {
+          "year": 2018,
+          "value": 3031547
+        },
+        {
+          "year": 2019,
+          "value": 2932382
+        },
+        {
+          "year": 2020,
+          "value": 2193676
+        },
+        {
+          "year": 2021,
+          "value": 2181302
+        },
+        {
+          "year": 2022,
+          "value": 2002988
+        },
+        {
+          "year": 2023,
+          "value": 2123248
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "sierra-circuits-inc-dba-sierra-proto-express",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sierra Circuits INC (Dba Sierra Proto Express)",
+      "parent_company": null,
+      "total_pounds_recent": 20181,
+      "yoy_pct_change": -5.4,
+      "top_chemical": "Copper compounds",
+      "city": "Sunnyvale"
+    },
+    {
+      "slug": "qualitek-inc-dba-westak",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Qualitek INC (Dba Westak)",
+      "parent_company": null,
+      "total_pounds_recent": 13853,
+      "yoy_pct_change": -10.1,
+      "top_chemical": "Ammonia",
+      "city": "Sunnyvale"
+    },
+    {
+      "slug": "infinera-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Infinera Corp",
+      "parent_company": null,
+      "total_pounds_recent": 3790,
+      "yoy_pct_change": 55.6,
+      "top_chemical": "N-Methyl-2-pyrrolidone",
+      "city": "Sunnyvale"
+    },
+    {
+      "slug": "northrop-grumman-systems-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Northrop Grumman Systems Corp",
+      "parent_company": "Northrop Grumman CORP",
+      "total_pounds_recent": 1573,
+      "yoy_pct_change": 715.6,
+      "top_chemical": "Ammonia",
+      "city": "Sunnyvale"
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 157566,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
+        "slug": "sunnyvale",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Sunnyvale",
+        "pwsid": "CA4310014",
+        "population_served": 157566,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 154573,
     "pct_low_income": 5.3,
@@ -141,12 +323,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Sunnyvale, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Sunnyvale, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:33Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

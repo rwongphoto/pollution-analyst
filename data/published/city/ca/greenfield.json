@@ -1,0 +1,274 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "greenfield",
+    "name": "Greenfield",
+    "fips": "0630987",
+    "population": 4417,
+    "county_name": "Monterey",
+    "county_fips": "06053"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 4,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2719935,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 3.8,
+      "long_arc_pct_change": -4.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2842912
+        },
+        {
+          "year": 2011,
+          "value": 2266389
+        },
+        {
+          "year": 2012,
+          "value": 3492702
+        },
+        {
+          "year": 2013,
+          "value": 3500952
+        },
+        {
+          "year": 2014,
+          "value": 3304939
+        },
+        {
+          "year": 2015,
+          "value": 3183819
+        },
+        {
+          "year": 2016,
+          "value": 2089147
+        },
+        {
+          "year": 2017,
+          "value": 1899151
+        },
+        {
+          "year": 2018,
+          "value": 2594395
+        },
+        {
+          "year": 2019,
+          "value": 2870803
+        },
+        {
+          "year": 2020,
+          "value": 2697688
+        },
+        {
+          "year": 2021,
+          "value": 2740957
+        },
+        {
+          "year": 2022,
+          "value": 2621580
+        },
+        {
+          "year": 2023,
+          "value": 2719935
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 19208,
+    "violations_5yr_total": 6,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 6,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "apple-ave-ws-02",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Apple Ave Ws #02",
+        "pwsid": "CA2701034",
+        "population_served": 75,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "greenfield-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Greenfield, City Of",
+        "pwsid": "CA2710008",
+        "population_served": 18967,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "arroyo-center-wc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Arroyo Center Wc",
+        "pwsid": "CA2701658",
+        "population_served": 130,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "pine-st-ws-01",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Pine St Ws #01",
+        "pwsid": "CA2701403",
+        "population_served": 36,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 4417,
+    "pct_low_income": 9.5,
+    "pct_people_of_color": 88.0,
+    "pct_under_5": 4.5,
+    "pct_over_64": 11.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 252.2
+      },
+      {
+        "label": "Ozone",
+        "score": 251.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 140.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 234.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 34.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 164.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 115.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 175.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 159.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Greenfield, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

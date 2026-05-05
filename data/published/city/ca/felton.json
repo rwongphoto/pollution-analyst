@@ -1,0 +1,276 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "felton",
+    "name": "Felton",
+    "fips": "0623826",
+    "population": 3701,
+    "county_name": "Santa Cruz",
+    "county_fips": "06087"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 3,
+    "total_releases_pounds": 145,
+    "air_releases_pounds": 145,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 145
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 145,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 145
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 51157,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 4.9,
+      "long_arc_pct_change": -62.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 134603
+        },
+        {
+          "year": 2011,
+          "value": 55707
+        },
+        {
+          "year": 2012,
+          "value": 54431
+        },
+        {
+          "year": 2013,
+          "value": 36165
+        },
+        {
+          "year": 2014,
+          "value": 63420
+        },
+        {
+          "year": 2015,
+          "value": 50156
+        },
+        {
+          "year": 2016,
+          "value": 77749
+        },
+        {
+          "year": 2017,
+          "value": 59453
+        },
+        {
+          "year": 2018,
+          "value": 50509
+        },
+        {
+          "year": 2019,
+          "value": 64770
+        },
+        {
+          "year": 2020,
+          "value": 47944
+        },
+        {
+          "year": 2021,
+          "value": 54625
+        },
+        {
+          "year": 2022,
+          "value": 48770
+        },
+        {
+          "year": 2023,
+          "value": 51157
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "felton-quarry",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Felton Quarry",
+      "parent_company": null,
+      "total_pounds_recent": 145,
+      "yoy_pct_change": null,
+      "top_chemical": "Polycyclic aromatic compounds",
+      "city": "Felton"
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 1303,
+    "violations_5yr_total": 21,
+    "health_based_5yr_total": 13,
+    "unresolved_total": 6,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "river-grove-mutual-water-assn",
+        "state": "ca",
+        "state_label": "California",
+        "name": "River Grove Mutual Water Assn",
+        "pwsid": "CA4400621",
+        "population_served": 54,
+        "health_based_violations_5yr": 12,
+        "unresolved": true
+      },
+      {
+        "slug": "big-redwood-park-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Big Redwood Park Water",
+        "pwsid": "CA4400526",
+        "population_served": 182,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "forest-lakes-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Forest Lakes Mwc",
+        "pwsid": "CA4410016",
+        "population_served": 1067,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 3701,
+    "pct_low_income": 4.2,
+    "pct_people_of_color": 18.200000000000003,
+    "pct_under_5": 3.5,
+    "pct_over_64": 20.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 39.9
+      },
+      {
+        "label": "Ozone",
+        "score": 2.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 0.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 2.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 1.6
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 24.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 38.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 37.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 30.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 6.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Felton, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

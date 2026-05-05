@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { NotableSignals } from "@/components/site/AnomalyCard";
 import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
 import { HeroChart } from "@/components/site/HeroChart";
@@ -218,7 +219,7 @@ function UtilitiesSection({ data }: { data: CountyPagePayload }) {
             {data.utilities.map((u) => (
               <tr key={u.slug}>
                 <td className="name">
-                  <Link href={`/state/${u.state}/city/${u.slug}`}>{u.name}</Link>
+                  <Link href={`/state/${u.state}/water/${u.slug}`}>{u.name}</Link>
                 </td>
                 <td className="num-mono">{u.pwsid}</td>
                 <td className="right num-mono">{u.population_served.toLocaleString()}</td>
@@ -364,6 +365,10 @@ export default async function CountyPage({
           ]}
         />
         <CountyHero data={data} />
+        <NotableSignals
+          flags={data.flags ?? []}
+          emptyLabel="No notable signals at the county level this reporting year. Pathway summary and top facilities below."
+        />
         <PathwaysSection pathways={data.pathways} />
         <FacilitiesSection data={data} />
         <UtilitiesSection data={data} />

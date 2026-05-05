@@ -1,84 +1,414 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "redding",
-    "name": "City Of Redding",
-    "pwsid": "CA4510005",
-    "population_served": 89628,
-    "primary_source": "surface_water",
-    "cities_served": [
-      "Redding"
+    "name": "Redding",
+    "fips": "0659920",
+    "population": 93327,
+    "county_name": "Shasta",
+    "county_fips": "06089"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 18,
+    "total_releases_pounds": 124,
+    "air_releases_pounds": 124,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": -18.8,
+    "long_arc_pct_change": 32.8,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 93
+      },
+      {
+        "year": 2011,
+        "value": 134
+      },
+      {
+        "year": 2012,
+        "value": 225
+      },
+      {
+        "year": 2013,
+        "value": 149
+      },
+      {
+        "year": 2014,
+        "value": 215
+      },
+      {
+        "year": 2015,
+        "value": 134
+      },
+      {
+        "year": 2016,
+        "value": 134
+      },
+      {
+        "year": 2017,
+        "value": 156
+      },
+      {
+        "year": 2018,
+        "value": 150
+      },
+      {
+        "year": 2019,
+        "value": 230
+      },
+      {
+        "year": 2020,
+        "value": 151
+      },
+      {
+        "year": 2021,
+        "value": 111
+      },
+      {
+        "year": 2022,
+        "value": 152
+      },
+      {
+        "year": 2023,
+        "value": 124
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 124,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 124
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 658558,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -14.5,
+      "long_arc_pct_change": 131.6,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 284294
+        },
+        {
+          "year": 2011,
+          "value": 498320
+        },
+        {
+          "year": 2012,
+          "value": 503320
+        },
+        {
+          "year": 2013,
+          "value": 550200
+        },
+        {
+          "year": 2014,
+          "value": 543084
+        },
+        {
+          "year": 2015,
+          "value": 579514
+        },
+        {
+          "year": 2016,
+          "value": 445299
+        },
+        {
+          "year": 2017,
+          "value": 470910
+        },
+        {
+          "year": 2018,
+          "value": 545824
+        },
+        {
+          "year": 2019,
+          "value": 546467
+        },
+        {
+          "year": 2020,
+          "value": 578659
+        },
+        {
+          "year": 2021,
+          "value": 645912
+        },
+        {
+          "year": 2022,
+          "value": 770443
+        },
+        {
+          "year": 2023,
+          "value": 658558
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "j-f-shea-construction-inc-fawndale-rock-asphalt",
+      "state": "ca",
+      "state_label": "California",
+      "name": "J.F. Shea Construction INC Fawndale Rock & Asphalt",
+      "parent_company": "Jf Shea Co INC",
+      "total_pounds_recent": 98,
+      "yoy_pct_change": -28.4,
+      "top_chemical": "Lead compounds",
+      "city": "Redding"
+    },
+    {
+      "slug": "j-f-shea-construction-inc-aggregate-products",
+      "state": "ca",
+      "state_label": "California",
+      "name": "J.F. Shea Construction INC. Aggregate Products",
+      "parent_company": "Jf Shea Co INC",
+      "total_pounds_recent": 25,
+      "yoy_pct_change": 70.3,
+      "top_chemical": "Lead compounds",
+      "city": "Redding"
+    }
+  ],
+  "water": {
+    "utilities_count": 18,
+    "population_served_total": 120823,
+    "violations_5yr_total": 35,
+    "health_based_5yr_total": 10,
+    "unresolved_total": 24,
+    "utilities_with_unresolved": 12,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "mountain-gate-c-s-d",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mountain Gate C.S.D.",
+        "pwsid": "CA4510002",
+        "population_served": 2227,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "shasta-csa-jones-valley-6",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shasta Csa - Jones Valley, #6",
+        "pwsid": "CA4510004",
+        "population_served": 2006,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "shasta-csa-french-gulch-11",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shasta Csa - French Gulch, #11",
+        "pwsid": "CA4500317",
+        "population_served": 419,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "shasta-csa-castella-3",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shasta Csa - Castella, #3",
+        "pwsid": "CA4500015",
+        "population_served": 333,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "shasta-csa-sugarloaf-2",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shasta Csa - Sugarloaf, #2",
+        "pwsid": "CA4500006",
+        "population_served": 274,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2026,
-        "value": 0
+        "slug": "shasta-co-csa-8-palo-cedro",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shasta Co Csa # 8 Palo Cedro",
+        "pwsid": "CA4500313",
+        "population_served": 261,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "lazy-landing-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lazy Landing Mobile Home Park",
+        "pwsid": "CA4500081",
+        "population_served": 250,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "shasta-csa-cragview-23",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shasta Csa - Cragview, #23",
+        "pwsid": "CA4500028",
+        "population_served": 248,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "shasta-co-csa-13-alpine-meadows",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Shasta Co Csa # 13 Alpine Meadows",
+        "pwsid": "CA4500314",
+        "population_served": 141,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "rio-vista-mobilehome-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rio Vista Mobilehome Estates",
+        "pwsid": "CA4500106",
+        "population_served": 26,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "redding",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Redding",
+        "pwsid": "CA4510005",
+        "population_served": 89628,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "bella-vista-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bella Vista Water District",
+        "pwsid": "CA4510014",
+        "population_served": 18612,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "centerville-c-s-d",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Centerville C.S.D.",
+        "pwsid": "CA4510011",
+        "population_served": 4151,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "redding-rancheria",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Redding Rancheria",
+        "pwsid": "090605083",
+        "population_served": 2015,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "clear-creek-mobile-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Clear Creek Mobile Park",
+        "pwsid": "CA4500066",
+        "population_served": 75,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "palisades-the",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Palisades, The",
+        "pwsid": "CA1100452",
+        "population_served": 62,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "covington-mill-a",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Covington Mill - A",
+        "pwsid": "CA5301103",
+        "population_served": 60,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "canyon-creek-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Canyon Creek Mhp",
+        "pwsid": "CA4500093",
+        "population_served": 35,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 93327,
     "pct_low_income": 14.1,
@@ -141,12 +471,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Redding, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Redding, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:33Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

@@ -1,0 +1,328 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "fortuna",
+    "name": "Fortuna",
+    "fips": "0625296",
+    "population": 12527,
+    "county_name": "Humboldt",
+    "county_fips": "06023"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 3,
+    "total_releases_pounds": 146068,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 146068,
+    "yoy_pct_change": 26.1,
+    "long_arc_pct_change": 35.9,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 107472
+      },
+      {
+        "year": 2011,
+        "value": 97205
+      },
+      {
+        "year": 2012,
+        "value": 96736
+      },
+      {
+        "year": 2013,
+        "value": 67189
+      },
+      {
+        "year": 2014,
+        "value": 71219
+      },
+      {
+        "year": 2015,
+        "value": 71485
+      },
+      {
+        "year": 2016,
+        "value": 98070
+      },
+      {
+        "year": 2017,
+        "value": 32287
+      },
+      {
+        "year": 2018,
+        "value": 47339
+      },
+      {
+        "year": 2019,
+        "value": 77414
+      },
+      {
+        "year": 2020,
+        "value": 88140
+      },
+      {
+        "year": 2021,
+        "value": 119680
+      },
+      {
+        "year": 2022,
+        "value": 115860
+      },
+      {
+        "year": 2023,
+        "value": 146068
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 146068,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 146068
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 214599,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -5.5,
+      "long_arc_pct_change": -36.2,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 336567
+        },
+        {
+          "year": 2011,
+          "value": 216648
+        },
+        {
+          "year": 2012,
+          "value": 193173
+        },
+        {
+          "year": 2013,
+          "value": 187499
+        },
+        {
+          "year": 2014,
+          "value": 188608
+        },
+        {
+          "year": 2015,
+          "value": 213558
+        },
+        {
+          "year": 2016,
+          "value": 181612
+        },
+        {
+          "year": 2017,
+          "value": 208376
+        },
+        {
+          "year": 2018,
+          "value": 188666
+        },
+        {
+          "year": 2019,
+          "value": 199980
+        },
+        {
+          "year": 2020,
+          "value": 240850
+        },
+        {
+          "year": 2021,
+          "value": 269504
+        },
+        {
+          "year": 2022,
+          "value": 227175
+        },
+        {
+          "year": 2023,
+          "value": 214599
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "crystal-creamery-inc-dba-humboldt-creamery",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Crystal Creamery INC. Dba Humboldt Creamery",
+      "parent_company": "Crystal Creamery INC",
+      "total_pounds_recent": 146068,
+      "yoy_pct_change": 26.1,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Fortuna"
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 12538,
+    "violations_5yr_total": 10,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 4,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "palmer-creek-csd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Palmer Creek Csd",
+        "pwsid": "CA1206004",
+        "population_served": 320,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "mill-creek-m-w-c",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mill Creek M.W.C.",
+        "pwsid": "CA1200547",
+        "population_served": 85,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "fortuna-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Fortuna, City Of",
+        "pwsid": "CA1210006",
+        "population_served": 12133,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 12527,
+    "pct_low_income": 14.6,
+    "pct_people_of_color": 29.900000000000006,
+    "pct_under_5": 7.4,
+    "pct_over_64": 16.5,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 101.6
+      },
+      {
+        "label": "Ozone",
+        "score": 0.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 58.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 13.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 17.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 52.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 86.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 103.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 82.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 109.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Fortuna, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

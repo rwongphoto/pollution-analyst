@@ -1,0 +1,255 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "fort-irwin",
+    "name": "Fort Irwin",
+    "fips": "0625114",
+    "population": 8967,
+    "county_name": "San Bernardino",
+    "county_fips": "06071"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 1,
+    "total_releases_pounds": 96542,
+    "air_releases_pounds": 2756,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 93786,
+    "yoy_pct_change": -64.2,
+    "long_arc_pct_change": -52.4,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 202703
+      },
+      {
+        "year": 2011,
+        "value": 174377
+      },
+      {
+        "year": 2012,
+        "value": 186407
+      },
+      {
+        "year": 2013,
+        "value": 251254
+      },
+      {
+        "year": 2014,
+        "value": 103453
+      },
+      {
+        "year": 2015,
+        "value": 109900
+      },
+      {
+        "year": 2016,
+        "value": 61495
+      },
+      {
+        "year": 2017,
+        "value": 183296
+      },
+      {
+        "year": 2018,
+        "value": 240262
+      },
+      {
+        "year": 2019,
+        "value": 230555
+      },
+      {
+        "year": 2020,
+        "value": 287119
+      },
+      {
+        "year": 2021,
+        "value": 97892
+      },
+      {
+        "year": 2022,
+        "value": 269634
+      },
+      {
+        "year": 2023,
+        "value": 96542
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 2756,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2756
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 93786,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 93786
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 9779299,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -6.6,
+      "long_arc_pct_change": -7.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10552170
+        },
+        {
+          "year": 2011,
+          "value": 9345778
+        },
+        {
+          "year": 2012,
+          "value": 12082882
+        },
+        {
+          "year": 2013,
+          "value": 11371200
+        },
+        {
+          "year": 2014,
+          "value": 11908909
+        },
+        {
+          "year": 2015,
+          "value": 10657991
+        },
+        {
+          "year": 2016,
+          "value": 10438970
+        },
+        {
+          "year": 2017,
+          "value": 9782427
+        },
+        {
+          "year": 2018,
+          "value": 9213305
+        },
+        {
+          "year": 2019,
+          "value": 9502197
+        },
+        {
+          "year": 2020,
+          "value": 9773926
+        },
+        {
+          "year": 2021,
+          "value": 9914249
+        },
+        {
+          "year": 2022,
+          "value": 10471311
+        },
+        {
+          "year": 2023,
+          "value": 9779299
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "us-army-fort-irwin-national-training-center",
+      "state": "ca",
+      "state_label": "California",
+      "name": "US Army Fort Irwin National Training Center",
+      "parent_company": "US Department Of Defense",
+      "total_pounds_recent": 96542,
+      "yoy_pct_change": -64.2,
+      "top_chemical": "Copper",
+      "city": "Fort Irwin"
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 15701,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "us-army-fort-irwin",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Us Army Fort Irwin",
+        "pwsid": "CA3610705",
+        "population_served": 15701,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 8967,
+    "pct_low_income": 11.6,
+    "pct_people_of_color": 49.1,
+    "pct_under_5": 9.1,
+    "pct_over_64": 0.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Fort Irwin, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

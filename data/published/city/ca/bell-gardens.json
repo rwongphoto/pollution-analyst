@@ -1,131 +1,269 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "bell-gardens",
-    "name": "City Of Bell Gardens",
-    "pwsid": "CA1910108",
-    "population_served": 11437,
-    "primary_source": "purchased",
-    "cities_served": [
-      "Downey"
+    "name": "Bell Gardens",
+    "fips": "0604996",
+    "population": 39263,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 0,
+    "total_releases_pounds": 239,
+    "air_releases_pounds": 116,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 123,
+    "yoy_pct_change": 0.0,
+    "long_arc_pct_change": -73.0,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 885
+      },
+      {
+        "year": 2011,
+        "value": 1584
+      },
+      {
+        "year": 2012,
+        "value": 1768
+      },
+      {
+        "year": 2013,
+        "value": 780
+      },
+      {
+        "year": 2014,
+        "value": 1202
+      },
+      {
+        "year": 2015,
+        "value": 840
+      },
+      {
+        "year": 2016,
+        "value": 70329
+      },
+      {
+        "year": 2017,
+        "value": 64643
+      },
+      {
+        "year": 2018,
+        "value": 38799
+      },
+      {
+        "year": 2019,
+        "value": 68568
+      },
+      {
+        "year": 2020,
+        "value": 6821
+      },
+      {
+        "year": 2021,
+        "value": 225
+      },
+      {
+        "year": 2022,
+        "value": 239
+      },
+      {
+        "year": 2023,
+        "value": 239
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 116,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 116
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 123,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 123
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "metal-surfaces-international-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Metal Surfaces International LLC",
+      "parent_company": null,
+      "total_pounds_recent": 239,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Nitric acid",
+      "city": "Bell Gardens"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
   },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
-  },
+  "flags": [],
   "equity": {
-    "population": 113052,
-    "pct_low_income": 9.5,
-    "pct_people_of_color": 86.4,
-    "pct_under_5": 6.5,
-    "pct_over_64": 13.2,
+    "population": 39263,
+    "pct_low_income": 23.6,
+    "pct_people_of_color": 98.1,
+    "pct_under_5": 7.8,
+    "pct_over_64": 9.3,
     "ej_indexes": [],
     "disparity_scores": [
       {
         "label": "PM2.5 (fine particulate)",
-        "score": 192.6
+        "score": 284.4
       },
       {
         "label": "Ozone",
-        "score": 172.5
+        "score": 256.8
       },
       {
         "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 178.0
+        "score": 251.3
       },
       {
         "label": "Diesel particulate",
-        "score": 187.7
+        "score": 278.7
       },
       {
         "label": "Toxic releases (RSEI)",
-        "score": 151.4
+        "score": 222.1
       },
       {
         "label": "Traffic proximity",
-        "score": 186.3
+        "score": 274.0
       },
       {
         "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 146.3
+        "score": 212.0
       },
       {
         "label": "Superfund site proximity",
-        "score": 183.1
+        "score": 277.0
       },
       {
         "label": "RMP-facility proximity",
-        "score": 181.4
+        "score": 286.1
       },
       {
         "label": "Hazardous-waste site proximity",
-        "score": 192.7
+        "score": 285.7
       },
       {
         "label": "Underground storage tanks",
@@ -133,7 +271,7 @@
       },
       {
         "label": "NPDES wastewater proximity",
-        "score": 176.6
+        "score": 264.8
       },
       {
         "label": "Drinking-water non-compliance",
@@ -141,12 +279,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Downey, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Bell Gardens, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

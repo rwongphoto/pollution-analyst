@@ -1,0 +1,308 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "menifee",
+    "name": "Menifee",
+    "fips": "0646842",
+    "population": 103680,
+    "county_name": "Riverside",
+    "county_fips": "06065"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 0,
+    "total_releases_pounds": 15,
+    "air_releases_pounds": 8,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 7,
+    "yoy_pct_change": -3.0,
+    "long_arc_pct_change": 183.9,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 5
+      },
+      {
+        "year": 2011,
+        "value": 6
+      },
+      {
+        "year": 2012,
+        "value": 6
+      },
+      {
+        "year": 2013,
+        "value": 10
+      },
+      {
+        "year": 2014,
+        "value": 10
+      },
+      {
+        "year": 2015,
+        "value": 10
+      },
+      {
+        "year": 2016,
+        "value": 11
+      },
+      {
+        "year": 2017,
+        "value": 11
+      },
+      {
+        "year": 2018,
+        "value": 14
+      },
+      {
+        "year": 2019,
+        "value": 14
+      },
+      {
+        "year": 2020,
+        "value": 13
+      },
+      {
+        "year": 2021,
+        "value": 14
+      },
+      {
+        "year": 2022,
+        "value": 15
+      },
+      {
+        "year": 2023,
+        "value": 15
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 8,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 8
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 7,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 7
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1423181,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 5.5,
+      "long_arc_pct_change": -32.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2119572
+        },
+        {
+          "year": 2011,
+          "value": 2071756
+        },
+        {
+          "year": 2012,
+          "value": 2504412
+        },
+        {
+          "year": 2013,
+          "value": 2055202
+        },
+        {
+          "year": 2014,
+          "value": 2278890
+        },
+        {
+          "year": 2015,
+          "value": 1724152
+        },
+        {
+          "year": 2016,
+          "value": 1136501
+        },
+        {
+          "year": 2017,
+          "value": 1541844
+        },
+        {
+          "year": 2018,
+          "value": 1842670
+        },
+        {
+          "year": 2019,
+          "value": 1290190
+        },
+        {
+          "year": 2020,
+          "value": 1523660
+        },
+        {
+          "year": 2021,
+          "value": 1665711
+        },
+        {
+          "year": 2022,
+          "value": 1349415
+        },
+        {
+          "year": 2023,
+          "value": 1423181
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "sun-city-plant-8",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sun City Plant 8",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 15,
+      "yoy_pct_change": -3.3,
+      "top_chemical": "Lead compounds",
+      "city": "Sun City"
+    },
+    {
+      "slug": "forterra-pipe-precast-riverside",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Forterra Pipe & Precast - Riverside",
+      "parent_company": "Quikrete Holdings",
+      "total_pounds_recent": 0.05,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead",
+      "city": "Sun City"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 103680,
+    "pct_low_income": 9.0,
+    "pct_people_of_color": 58.8,
+    "pct_under_5": 7.4,
+    "pct_over_64": 17.1,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 132.4
+      },
+      {
+        "label": "Ozone",
+        "score": 142.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 91.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 112.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 24.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 74.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 18.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 2.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 84.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 20.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Menifee, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

@@ -1,0 +1,297 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "union-city",
+    "name": "Union City",
+    "fips": "0681204",
+    "population": 69502,
+    "county_name": "Alameda",
+    "county_fips": "06001"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 0,
+    "total_releases_pounds": 940861,
+    "air_releases_pounds": 44,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 940817,
+    "yoy_pct_change": 8.3,
+    "long_arc_pct_change": 201.7,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 311900
+      },
+      {
+        "year": 2011,
+        "value": 251959
+      },
+      {
+        "year": 2012,
+        "value": 284839
+      },
+      {
+        "year": 2013,
+        "value": 350655
+      },
+      {
+        "year": 2014,
+        "value": 416859
+      },
+      {
+        "year": 2015,
+        "value": 355537
+      },
+      {
+        "year": 2016,
+        "value": 414935
+      },
+      {
+        "year": 2017,
+        "value": 454112
+      },
+      {
+        "year": 2018,
+        "value": 515316
+      },
+      {
+        "year": 2019,
+        "value": 434691
+      },
+      {
+        "year": 2020,
+        "value": 465608
+      },
+      {
+        "year": 2021,
+        "value": 1154502
+      },
+      {
+        "year": 2022,
+        "value": 869114
+      },
+      {
+        "year": 2023,
+        "value": 940861
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 44,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 44
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 940817,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 940817
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 1270727,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 33.9,
+      "long_arc_pct_change": 87.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 677600
+        },
+        {
+          "year": 2011,
+          "value": 627975
+        },
+        {
+          "year": 2012,
+          "value": 661532
+        },
+        {
+          "year": 2013,
+          "value": 1083736
+        },
+        {
+          "year": 2014,
+          "value": 1444219
+        },
+        {
+          "year": 2015,
+          "value": 1703593
+        },
+        {
+          "year": 2016,
+          "value": 814895
+        },
+        {
+          "year": 2017,
+          "value": 829721
+        },
+        {
+          "year": 2018,
+          "value": 877374
+        },
+        {
+          "year": 2019,
+          "value": 860668
+        },
+        {
+          "year": 2020,
+          "value": 928206
+        },
+        {
+          "year": 2021,
+          "value": 624894
+        },
+        {
+          "year": 2022,
+          "value": 948758
+        },
+        {
+          "year": 2023,
+          "value": 1270727
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "us-pipe-foundry-co-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "US Pipe & Foundry CO LLC",
+      "parent_company": "Quikrete Holdings",
+      "total_pounds_recent": 940861,
+      "yoy_pct_change": 8.3,
+      "top_chemical": "Zinc compounds",
+      "city": "Union City"
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 69502,
+    "pct_low_income": 6.6,
+    "pct_people_of_color": 85.7,
+    "pct_under_5": 4.8,
+    "pct_over_64": 17.9,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 151.6
+      },
+      {
+        "label": "Ozone",
+        "score": 29.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 85.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 112.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 59.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 127.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 45.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 149.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 146.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 78.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Union City, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

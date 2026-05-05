@@ -1,0 +1,340 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "pomona",
+    "name": "Pomona",
+    "fips": "0658072",
+    "population": 149831,
+    "county_name": "Los Angeles",
+    "county_fips": "06037"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 2,
+    "total_releases_pounds": 36612,
+    "air_releases_pounds": 36605,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 7,
+    "yoy_pct_change": -6.3,
+    "long_arc_pct_change": -17.0,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 44133
+      },
+      {
+        "year": 2011,
+        "value": 32147
+      },
+      {
+        "year": 2012,
+        "value": 27558
+      },
+      {
+        "year": 2013,
+        "value": 22135
+      },
+      {
+        "year": 2014,
+        "value": 25391
+      },
+      {
+        "year": 2015,
+        "value": 22395
+      },
+      {
+        "year": 2016,
+        "value": 25293
+      },
+      {
+        "year": 2017,
+        "value": 20681
+      },
+      {
+        "year": 2018,
+        "value": 20138
+      },
+      {
+        "year": 2019,
+        "value": 16970
+      },
+      {
+        "year": 2020,
+        "value": 22784
+      },
+      {
+        "year": 2021,
+        "value": 106382
+      },
+      {
+        "year": 2022,
+        "value": 39075
+      },
+      {
+        "year": 2023,
+        "value": 36612
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 36605,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 36605
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 7,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 7
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 203237635,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -4.3,
+      "long_arc_pct_change": 18.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 171714721
+        },
+        {
+          "year": 2011,
+          "value": 220361647
+        },
+        {
+          "year": 2012,
+          "value": 236780625
+        },
+        {
+          "year": 2013,
+          "value": 230968340
+        },
+        {
+          "year": 2014,
+          "value": 224380917
+        },
+        {
+          "year": 2015,
+          "value": 209587552
+        },
+        {
+          "year": 2016,
+          "value": 223974103
+        },
+        {
+          "year": 2017,
+          "value": 226974789
+        },
+        {
+          "year": 2018,
+          "value": 233793733
+        },
+        {
+          "year": 2019,
+          "value": 226200427
+        },
+        {
+          "year": 2020,
+          "value": 195972945
+        },
+        {
+          "year": 2021,
+          "value": 206297628
+        },
+        {
+          "year": 2022,
+          "value": 212347778
+        },
+        {
+          "year": 2023,
+          "value": 203237635
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "gb-manufacturing-inc-calif-acrylic-ind-inc-dba-cal-spas",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Gb Manufacturing INC Calif. Acrylic Ind. INC. (Dba Cal Spas)",
+      "parent_company": null,
+      "total_pounds_recent": 36599,
+      "yoy_pct_change": -6.3,
+      "top_chemical": "Styrene",
+      "city": "Pomona"
+    },
+    {
+      "slug": "pomona-plant-5",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Pomona Plant 5",
+      "parent_company": "Mcc Development CORP",
+      "total_pounds_recent": 11,
+      "yoy_pct_change": -25.5,
+      "top_chemical": "Lead compounds",
+      "city": "Pomona"
+    },
+    {
+      "slug": "skyline-steel-llc-geo-pomona",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Skyline Steel Llc. - Geo Pomona",
+      "parent_company": "Nucor CORP",
+      "total_pounds_recent": 2,
+      "yoy_pct_change": 40.8,
+      "top_chemical": "Manganese",
+      "city": "Pomona"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 181567,
+    "violations_5yr_total": 63,
+    "health_based_5yr_total": 6,
+    "unresolved_total": 59,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "calif-state-polytechnical-univ-pomona",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Calif State Polytechnical Univ - Pomona",
+        "pwsid": "CA1910022",
+        "population_served": 29854,
+        "health_based_violations_5yr": 6,
+        "unresolved": true
+      },
+      {
+        "slug": "pomona-city-water-dept",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Pomona - City, Water Dept.",
+        "pwsid": "CA1910126",
+        "population_served": 151713,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 149831,
+    "pct_low_income": 14.8,
+    "pct_people_of_color": 89.9,
+    "pct_under_5": 6.1,
+    "pct_over_64": 12.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 227.0
+      },
+      {
+        "label": "Ozone",
+        "score": 233.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 194.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 212.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 116.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 218.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 156.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 10.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 111.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 210.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 194.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Pomona, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

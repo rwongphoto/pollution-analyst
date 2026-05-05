@@ -1,0 +1,339 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "santee",
+    "name": "Santee",
+    "fips": "0670224",
+    "population": 59497,
+    "county_name": "San Diego",
+    "county_fips": "06073"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 3,
+    "total_releases_pounds": 2159,
+    "air_releases_pounds": 2159,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": 54.0,
+    "long_arc_pct_change": 44.8,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 1491
+      },
+      {
+        "year": 2011,
+        "value": 1295
+      },
+      {
+        "year": 2012,
+        "value": 1612
+      },
+      {
+        "year": 2013,
+        "value": 1469
+      },
+      {
+        "year": 2014,
+        "value": 2169
+      },
+      {
+        "year": 2015,
+        "value": 2947
+      },
+      {
+        "year": 2016,
+        "value": 2853
+      },
+      {
+        "year": 2017,
+        "value": 2463
+      },
+      {
+        "year": 2018,
+        "value": 3097
+      },
+      {
+        "year": 2019,
+        "value": 2174
+      },
+      {
+        "year": 2020,
+        "value": 2666
+      },
+      {
+        "year": 2021,
+        "value": 2387
+      },
+      {
+        "year": 2022,
+        "value": 1402
+      },
+      {
+        "year": 2023,
+        "value": 2159
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 2159,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2159
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 7595135,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -12.3,
+      "long_arc_pct_change": -25.7,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10219954
+        },
+        {
+          "year": 2011,
+          "value": 9884760
+        },
+        {
+          "year": 2012,
+          "value": 12931462
+        },
+        {
+          "year": 2013,
+          "value": 12221300
+        },
+        {
+          "year": 2014,
+          "value": 10897222
+        },
+        {
+          "year": 2015,
+          "value": 11370550
+        },
+        {
+          "year": 2016,
+          "value": 9593361
+        },
+        {
+          "year": 2017,
+          "value": 9826483
+        },
+        {
+          "year": 2018,
+          "value": 7109175
+        },
+        {
+          "year": 2019,
+          "value": 6685448
+        },
+        {
+          "year": 2020,
+          "value": 8200455
+        },
+        {
+          "year": 2021,
+          "value": 8018625
+        },
+        {
+          "year": 2022,
+          "value": 8662769
+        },
+        {
+          "year": 2023,
+          "value": 7595135
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "vision-systems-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Vision Systems INC.",
+      "parent_company": null,
+      "total_pounds_recent": 1426,
+      "yoy_pct_change": 1.7,
+      "top_chemical": "Certain glycol ethers",
+      "city": "Santee"
+    },
+    {
+      "slug": "california-crafted-marble-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "California Crafted Marble INC",
+      "parent_company": null,
+      "total_pounds_recent": 733,
+      "yoy_pct_change": null,
+      "top_chemical": "Styrene",
+      "city": "Santee"
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 94580,
+    "violations_5yr_total": 10,
+    "health_based_5yr_total": 8,
+    "unresolved_total": 10,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "barrett-lake-mh-and-rv-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Barrett Lake Mh And Rv Llc",
+        "pwsid": "CA3700041",
+        "population_served": 300,
+        "health_based_violations_5yr": 8,
+        "unresolved": true
+      },
+      {
+        "slug": "padre-dam-mwd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Padre Dam Mwd",
+        "pwsid": "CA3710037",
+        "population_served": 93980,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "heavenly-oaks",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Heavenly Oaks",
+        "pwsid": "CA3700071",
+        "population_served": 300,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 59497,
+    "pct_low_income": 8.4,
+    "pct_people_of_color": 33.599999999999994,
+    "pct_under_5": 6.1,
+    "pct_over_64": 15.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 89.5
+      },
+      {
+        "label": "Ozone",
+        "score": 85.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 54.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 56.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 19.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 75.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 23.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 60.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 82.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 17.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Santee, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

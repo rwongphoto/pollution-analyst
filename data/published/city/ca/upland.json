@@ -1,0 +1,360 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "upland",
+    "name": "Upland",
+    "fips": "0681344",
+    "population": 78847,
+    "county_name": "San Bernardino",
+    "county_fips": "06071"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 4,
+    "total_releases_pounds": 349,
+    "air_releases_pounds": 349,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": 75.2,
+    "long_arc_pct_change": 102.2,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 172
+      },
+      {
+        "year": 2011,
+        "value": 132
+      },
+      {
+        "year": 2012,
+        "value": 131
+      },
+      {
+        "year": 2013,
+        "value": 186
+      },
+      {
+        "year": 2014,
+        "value": 164
+      },
+      {
+        "year": 2015,
+        "value": 288
+      },
+      {
+        "year": 2016,
+        "value": 182
+      },
+      {
+        "year": 2017,
+        "value": 200
+      },
+      {
+        "year": 2018,
+        "value": 197
+      },
+      {
+        "year": 2019,
+        "value": 209
+      },
+      {
+        "year": 2020,
+        "value": 207
+      },
+      {
+        "year": 2021,
+        "value": 380
+      },
+      {
+        "year": 2022,
+        "value": 199
+      },
+      {
+        "year": 2023,
+        "value": 349
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 349,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 349
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 9779299,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -6.6,
+      "long_arc_pct_change": -7.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 10552170
+        },
+        {
+          "year": 2011,
+          "value": 9345778
+        },
+        {
+          "year": 2012,
+          "value": 12082882
+        },
+        {
+          "year": 2013,
+          "value": 11371200
+        },
+        {
+          "year": 2014,
+          "value": 11908909
+        },
+        {
+          "year": 2015,
+          "value": 10657991
+        },
+        {
+          "year": 2016,
+          "value": 10438970
+        },
+        {
+          "year": 2017,
+          "value": 9782427
+        },
+        {
+          "year": 2018,
+          "value": 9213305
+        },
+        {
+          "year": 2019,
+          "value": 9502197
+        },
+        {
+          "year": 2020,
+          "value": 9773926
+        },
+        {
+          "year": 2021,
+          "value": 9914249
+        },
+        {
+          "year": 2022,
+          "value": 10471311
+        },
+        {
+          "year": 2023,
+          "value": 9779299
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "holliday-rock-foothill",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Holliday Rock - Foothill",
+      "parent_company": "Holliday Rock Co INC",
+      "total_pounds_recent": 255,
+      "yoy_pct_change": 89.0,
+      "top_chemical": "Aluminum (fume or dust)",
+      "city": "Upland"
+    },
+    {
+      "slug": "holliday-rock-co-inc-campus",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Holliday Rock CO INC - Campus",
+      "parent_company": "Holliday Rock Co INC",
+      "total_pounds_recent": 94,
+      "yoy_pct_change": 46.4,
+      "top_chemical": "Aluminum (fume or dust)",
+      "city": "Upland"
+    },
+    {
+      "slug": "holliday-rock-co-mountain-view",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Holliday Rock CO - Mountain View",
+      "parent_company": "Holliday Rock Co INC",
+      "total_pounds_recent": 0.01,
+      "yoy_pct_change": 8.3,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Upland"
+    }
+  ],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 81817,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "upland-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Upland, City Of",
+        "pwsid": "CA3610050",
+        "population_served": 78376,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "san-antonio-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Antonio Water Company",
+        "pwsid": "CA3610085",
+        "population_served": 3441,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "water-facilities-authority-jpa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Water Facilities Authority-Jpa",
+        "pwsid": "CA3610006",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "west-end-consolidated-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "West End Consolidated Water Company",
+        "pwsid": "CA3610086",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 78847,
+    "pct_low_income": 10.5,
+    "pct_people_of_color": 65.1,
+    "pct_under_5": 5.1,
+    "pct_over_64": 15.1,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 149.3
+      },
+      {
+        "label": "Ozone",
+        "score": 155.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 124.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 144.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 81.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 138.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 57.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 108.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 138.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 16.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Upland, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

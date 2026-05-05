@@ -1,0 +1,302 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "menlo-park",
+    "name": "Menlo Park",
+    "fips": "0646870",
+    "population": 33324,
+    "county_name": "San Mateo",
+    "county_fips": "06081"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 2,
+    "total_releases_pounds": 6,
+    "air_releases_pounds": 6,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": -64.5,
+    "long_arc_pct_change": -99.5,
+    "long_arc_baseline_year": 2014,
+    "history": [
+      {
+        "year": 2014,
+        "value": 1250
+      },
+      {
+        "year": 2015,
+        "value": 122445
+      },
+      {
+        "year": 2016,
+        "value": 256636
+      },
+      {
+        "year": 2017,
+        "value": 189193
+      },
+      {
+        "year": 2018,
+        "value": 5742
+      },
+      {
+        "year": 2019,
+        "value": 1792
+      },
+      {
+        "year": 2020,
+        "value": 154834
+      },
+      {
+        "year": 2021,
+        "value": 73417
+      },
+      {
+        "year": 2022,
+        "value": 18
+      },
+      {
+        "year": 2023,
+        "value": 6
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 6,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 195024,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -31.2,
+      "long_arc_pct_change": -17.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 237413
+        },
+        {
+          "year": 2011,
+          "value": 177073
+        },
+        {
+          "year": 2012,
+          "value": 189790
+        },
+        {
+          "year": 2013,
+          "value": 216020
+        },
+        {
+          "year": 2014,
+          "value": 192243
+        },
+        {
+          "year": 2015,
+          "value": 183423
+        },
+        {
+          "year": 2016,
+          "value": 165580
+        },
+        {
+          "year": 2017,
+          "value": 172476
+        },
+        {
+          "year": 2018,
+          "value": 179894
+        },
+        {
+          "year": 2019,
+          "value": 210344
+        },
+        {
+          "year": 2020,
+          "value": 197581
+        },
+        {
+          "year": 2021,
+          "value": 203841
+        },
+        {
+          "year": 2022,
+          "value": 283514
+        },
+        {
+          "year": 2023,
+          "value": 195024
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "csbio",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Csbio",
+      "parent_company": "Csbio",
+      "total_pounds_recent": 6,
+      "yoy_pct_change": -64.5,
+      "top_chemical": "Acetonitrile",
+      "city": "Menlo Park"
+    }
+  ],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 22562,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "menlo-park-municipal-water",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Menlo Park Municipal Water",
+        "pwsid": "CA4110017",
+        "population_served": 22362,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "holiday-mobile-village",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Holiday Mobile Village",
+        "pwsid": "CA3400335",
+        "population_served": 200,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 33324,
+    "pct_low_income": 5.5,
+    "pct_people_of_color": 45.3,
+    "pct_under_5": 7.7,
+    "pct_over_64": 15.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 88.4
+      },
+      {
+        "label": "Ozone",
+        "score": 8.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 40.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 44.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 17.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 79.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 74.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 86.5
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 4.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 94.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 34.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Menlo Park, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

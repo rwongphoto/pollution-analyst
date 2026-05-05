@@ -1,0 +1,136 @@
+{
+  "utility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "tud-columbia-water-system",
+    "name": "Tud - Columbia Water System",
+    "pwsid": "CA5510013",
+    "population_served": 5463,
+    "primary_source": "surface_water",
+    "cities_served": [
+      "Sonora"
+    ]
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-05"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 4963,
+    "pct_low_income": 20.0,
+    "pct_people_of_color": 15.799999999999997,
+    "pct_under_5": 10.7,
+    "pct_over_64": 24.3,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 116.5
+      },
+      {
+        "label": "Ozone",
+        "score": 112.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 56.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 18.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 1.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 48.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 81.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 71.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Sonora, California (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-05"
+  },
+  "_published_at": "2026-05-05T06:24:52Z"
+}

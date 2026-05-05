@@ -1,0 +1,380 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "costa-mesa",
+    "name": "Costa Mesa",
+    "fips": "0616532",
+    "population": 111490,
+    "county_name": "Orange",
+    "county_fips": "06059"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 6,
+    "total_releases_pounds": 4236,
+    "air_releases_pounds": 0.26,
+    "water_releases_pounds": 2,
+    "land_releases_pounds": 4234,
+    "yoy_pct_change": 2978.0,
+    "long_arc_pct_change": -9.0,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 4653
+      },
+      {
+        "year": 2011,
+        "value": 2892
+      },
+      {
+        "year": 2012,
+        "value": 6020
+      },
+      {
+        "year": 2013,
+        "value": 8285
+      },
+      {
+        "year": 2014,
+        "value": 6168
+      },
+      {
+        "year": 2015,
+        "value": 6173
+      },
+      {
+        "year": 2016,
+        "value": 2747
+      },
+      {
+        "year": 2017,
+        "value": 4433
+      },
+      {
+        "year": 2018,
+        "value": 3581
+      },
+      {
+        "year": 2019,
+        "value": 2799
+      },
+      {
+        "year": 2020,
+        "value": 3307
+      },
+      {
+        "year": 2021,
+        "value": 101
+      },
+      {
+        "year": 2022,
+        "value": 138
+      },
+      {
+        "year": 2023,
+        "value": 4236
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 2,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 4234,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 4234
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2636013,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -7.1,
+      "long_arc_pct_change": 39.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1891416
+        },
+        {
+          "year": 2011,
+          "value": 2010676
+        },
+        {
+          "year": 2012,
+          "value": 2081823
+        },
+        {
+          "year": 2013,
+          "value": 1784150
+        },
+        {
+          "year": 2014,
+          "value": 1820320
+        },
+        {
+          "year": 2015,
+          "value": 1720197
+        },
+        {
+          "year": 2016,
+          "value": 1621230
+        },
+        {
+          "year": 2017,
+          "value": 1620028
+        },
+        {
+          "year": 2018,
+          "value": 1469841
+        },
+        {
+          "year": 2019,
+          "value": 1518950
+        },
+        {
+          "year": 2020,
+          "value": 1820021
+        },
+        {
+          "year": 2021,
+          "value": 2740139
+        },
+        {
+          "year": 2022,
+          "value": 2836147
+        },
+        {
+          "year": 2023,
+          "value": 2636013
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "griswold-industries",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Griswold Industries",
+      "parent_company": "Griswold Industries",
+      "total_pounds_recent": 4104,
+      "yoy_pct_change": 778713.9,
+      "top_chemical": "Nickel",
+      "city": "Costa Mesa"
+    },
+    {
+      "slug": "sanmina-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Sanmina Corp",
+      "parent_company": "Sanmina CORP",
+      "total_pounds_recent": 87,
+      "yoy_pct_change": 17.2,
+      "top_chemical": "Copper  And Copper Compounds",
+      "city": "Costa Mesa"
+    },
+    {
+      "slug": "advanced-micro-instruments-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Advanced Micro Instruments INC",
+      "parent_company": "Enpro Industries INC",
+      "total_pounds_recent": 45,
+      "yoy_pct_change": -28.6,
+      "top_chemical": "Lead",
+      "city": "Costa Mesa"
+    }
+  ],
+  "water": {
+    "utilities_count": 6,
+    "population_served_total": 110866,
+    "violations_5yr_total": 86,
+    "health_based_5yr_total": 54,
+    "unresolved_total": 86,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "pine-valley-trailer-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Pine Valley Trailer Park",
+        "pwsid": "CA3701961",
+        "population_served": 200,
+        "health_based_violations_5yr": 54,
+        "unresolved": true
+      },
+      {
+        "slug": "mesa-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mesa  Water District",
+        "pwsid": "CA3010004",
+        "population_served": 110000,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "lake-wohlford-resort",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lake Wohlford Resort",
+        "pwsid": "CA3700919",
+        "population_served": 250,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rolling-hills-community-llc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rolling Hills Community, Llc",
+        "pwsid": "NY3300992",
+        "population_served": 200,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "brookside-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Brookside Mobile Home Park",
+        "pwsid": "CA1400059",
+        "population_served": 126,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rustic-acres-mhp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rustic Acres Mhp",
+        "pwsid": "WI4430494",
+        "population_served": 90,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 111490,
+    "pct_low_income": 9.5,
+    "pct_people_of_color": 51.2,
+    "pct_under_5": 4.7,
+    "pct_over_64": 13.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 129.2
+      },
+      {
+        "label": "Ozone",
+        "score": 100.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 101.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 111.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 97.6
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 129.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 56.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 54.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 131.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 126.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Costa Mesa, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

@@ -1,0 +1,826 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "salinas",
+    "name": "Salinas",
+    "fips": "0664224",
+    "population": 162783,
+    "county_name": "Monterey",
+    "county_fips": "06053"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 56,
+    "total_releases_pounds": 0.05,
+    "air_releases_pounds": 0.04,
+    "water_releases_pounds": 0.0,
+    "land_releases_pounds": 0.01,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": -11.9,
+    "long_arc_baseline_year": 2016,
+    "history": [
+      {
+        "year": 2016,
+        "value": 0.06
+      },
+      {
+        "year": 2017,
+        "value": 0.07
+      },
+      {
+        "year": 2018,
+        "value": 0.06
+      },
+      {
+        "year": 2019,
+        "value": 0.03
+      },
+      {
+        "year": 2020,
+        "value": 0.04
+      },
+      {
+        "year": 2023,
+        "value": 0.05
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 2719935,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 3.8,
+      "long_arc_pct_change": -4.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2842912
+        },
+        {
+          "year": 2011,
+          "value": 2266389
+        },
+        {
+          "year": 2012,
+          "value": 3492702
+        },
+        {
+          "year": 2013,
+          "value": 3500952
+        },
+        {
+          "year": 2014,
+          "value": 3304939
+        },
+        {
+          "year": 2015,
+          "value": 3183819
+        },
+        {
+          "year": 2016,
+          "value": 2089147
+        },
+        {
+          "year": 2017,
+          "value": 1899151
+        },
+        {
+          "year": 2018,
+          "value": 2594395
+        },
+        {
+          "year": 2019,
+          "value": 2870803
+        },
+        {
+          "year": 2020,
+          "value": 2697688
+        },
+        {
+          "year": 2021,
+          "value": 2740957
+        },
+        {
+          "year": 2022,
+          "value": 2621580
+        },
+        {
+          "year": 2023,
+          "value": 2719935
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "granite-rock-co-salinas-concrete",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Granite Rock CO Salinas Concrete",
+      "parent_company": "Granite Rock Co",
+      "total_pounds_recent": 0.05,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead",
+      "city": "Salinas"
+    }
+  ],
+  "water": {
+    "utilities_count": 56,
+    "population_served_total": 64442,
+    "violations_5yr_total": 308,
+    "health_based_5yr_total": 251,
+    "unresolved_total": 287,
+    "utilities_with_unresolved": 30,
+    "utilities": [
+      {
+        "slug": "encinal-rd-ws-01",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Encinal Rd Ws #01",
+        "pwsid": "CA2701241",
+        "population_served": 91,
+        "health_based_violations_5yr": 52,
+        "unresolved": true
+      },
+      {
+        "slug": "moro-rd-ws-09",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Moro Rd Ws #09",
+        "pwsid": "CA2701926",
+        "population_served": 210,
+        "health_based_violations_5yr": 47,
+        "unresolved": true
+      },
+      {
+        "slug": "laguna-seca-wc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Laguna Seca Wc",
+        "pwsid": "CA2700612",
+        "population_served": 162,
+        "health_based_violations_5yr": 31,
+        "unresolved": true
+      },
+      {
+        "slug": "mccoy-rd-ws-05",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mccoy Rd  Ws #05",
+        "pwsid": "CA2701040",
+        "population_served": 92,
+        "health_based_violations_5yr": 30,
+        "unresolved": true
+      },
+      {
+        "slug": "oak-heights-w-r-co-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oak Heights W & R Co Inc",
+        "pwsid": "CA2700665",
+        "population_served": 105,
+        "health_based_violations_5yr": 22,
+        "unresolved": true
+      },
+      {
+        "slug": "el-camino-wc-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "El Camino Wc Inc",
+        "pwsid": "CA2702409",
+        "population_served": 133,
+        "health_based_violations_5yr": 19,
+        "unresolved": true
+      },
+      {
+        "slug": "spring-canyon-wa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Spring Canyon Wa",
+        "pwsid": "CA2700838",
+        "population_served": 90,
+        "health_based_violations_5yr": 13,
+        "unresolved": true
+      },
+      {
+        "slug": "corda-rd-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Corda Rd Ws",
+        "pwsid": "CA2701820",
+        "population_served": 54,
+        "health_based_violations_5yr": 8,
+        "unresolved": true
+      },
+      {
+        "slug": "prunedale-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Prunedale Mwc",
+        "pwsid": "CA2700702",
+        "population_served": 277,
+        "health_based_violations_5yr": 6,
+        "unresolved": true
+      },
+      {
+        "slug": "colonial-oak-wc-inc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Colonial Oak Wc Inc",
+        "pwsid": "CA2700534",
+        "population_served": 198,
+        "health_based_violations_5yr": 6,
+        "unresolved": true
+      },
+      {
+        "slug": "vierra-meadows-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Vierra Meadows Mwc",
+        "pwsid": "CA2702003",
+        "population_served": 65,
+        "health_based_violations_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "slug": "countryside-estates-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Countryside Estates Mwc",
+        "pwsid": "CA2702374",
+        "population_served": 243,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "paradise-rd-ws-09",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Paradise Rd Ws #09",
+        "pwsid": "CA2700682",
+        "population_served": 206,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "assisi-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Assisi Mwc",
+        "pwsid": "CA2700503",
+        "population_served": 126,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "san-miguel-ws-22",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Miguel Ws #22",
+        "pwsid": "CA2702073",
+        "population_served": 93,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "oak-manor-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Oak Manor Ws",
+        "pwsid": "CA2700509",
+        "population_served": 92,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "hidden-valley-wa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hidden Valley Wa",
+        "pwsid": "CA2700594",
+        "population_served": 87,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "harbor-view-wa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Harbor View Wa",
+        "pwsid": "CA2701498",
+        "population_served": 75,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "glenn-ave-ws-01",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Glenn Ave Ws #01",
+        "pwsid": "CA2700589",
+        "population_served": 73,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "vierra-knolls-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Vierra Knolls Mwc",
+        "pwsid": "CA2702055",
+        "population_served": 66,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "garlen-court-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Garlen Court Ws",
+        "pwsid": "CA2700686",
+        "population_served": 65,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "leafwood-community-wa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Leafwood Community Wa",
+        "pwsid": "CA2700624",
+        "population_served": 64,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "tierra-vista-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Tierra Vista Mwc",
+        "pwsid": "CA2701959",
+        "population_served": 54,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "pesante-rd-ws-06",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Pesante Rd Ws #06",
+        "pwsid": "CA2700691",
+        "population_served": 50,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "paradise-rd-ws-21",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Paradise Rd Ws #21",
+        "pwsid": "CA2701633",
+        "population_served": 48,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "foothill-wa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Foothill Wa",
+        "pwsid": "CA2702135",
+        "population_served": 46,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "alco-water-service",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Alco Water Service",
+        "pwsid": "CA2710001",
+        "population_served": 56253,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "tasco-spreckels-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Tasco Spreckels Water Company",
+        "pwsid": "CA2710023",
+        "population_served": 1772,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "gabilan-wc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Gabilan Wc",
+        "pwsid": "CA2700586",
+        "population_served": 535,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "hitchcock-rd-ws-01",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hitchcock Rd Ws #01",
+        "pwsid": "CA2702320",
+        "population_served": 360,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "pedrazzi-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Pedrazzi Mwc",
+        "pwsid": "CA2701364",
+        "population_served": 273,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "san-jerardo-coop-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Jerardo Coop Ws",
+        "pwsid": "CA2701904",
+        "population_served": 249,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "paradise-lake-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Paradise Lake Mutual Water Co.",
+        "pwsid": "CA2700674",
+        "population_served": 213,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rolling-hills-rancho-wa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rolling Hills Rancho Wa",
+        "pwsid": "CA2700713",
+        "population_served": 185,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "foothill-estates-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Foothill Estates Ws",
+        "pwsid": "CA2702198",
+        "population_served": 183,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "princes-camp-resort-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Princes Camp Resort Ws",
+        "pwsid": "CA2701355",
+        "population_served": 126,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "pesante-rd-ws-02",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Pesante Rd Ws #02",
+        "pwsid": "CA2700687",
+        "population_served": 120,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "bluffs-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bluffs Ws",
+        "pwsid": "CA2701740",
+        "population_served": 120,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "hidden-canyon-ranch-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hidden Canyon Ranch Mwc",
+        "pwsid": "CA2702554",
+        "population_served": 116,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "holly-hills-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Holly Hills Mwc",
+        "pwsid": "CA2701789",
+        "population_served": 108,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "rancho-borromeo-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rancho Borromeo Mwc",
+        "pwsid": "CA2700709",
+        "population_served": 100,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "robley-property-mws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Robley Property Mws",
+        "pwsid": "CA2701822",
+        "population_served": 92,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "mesa-del-toro-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mesa Del Toro Mwc",
+        "pwsid": "CA2701503",
+        "population_served": 90,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "iverson-jacks-apts-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Iverson & Jacks Apts Ws",
+        "pwsid": "CA2701068",
+        "population_served": 86,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "blackie-rd-ws-05",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Blackie Rd Ws #05",
+        "pwsid": "CA2700837",
+        "population_served": 78,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "z-ranch-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Z Ranch Mwc",
+        "pwsid": "CA2700731",
+        "population_served": 62,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "tierra-meadows-hoa-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Tierra Meadows Hoa Ws",
+        "pwsid": "CA2701367",
+        "population_served": 58,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "jost-post-wa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Jost Post Wa",
+        "pwsid": "CA2700535",
+        "population_served": 56,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "desmond-rd-ws-03",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Desmond Rd Ws #03",
+        "pwsid": "CA2700547",
+        "population_served": 56,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "tierra-verde-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Tierra Verde Mwc",
+        "pwsid": "CA2700775",
+        "population_served": 48,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "echo-valley-rd-ws-05",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Echo Valley Rd Ws #05",
+        "pwsid": "CA2701423",
+        "population_served": 45,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "mount-toro-ranchos-mwa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mount Toro Ranchos Mwa",
+        "pwsid": "CA2701935",
+        "population_served": 45,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "calera-canyon-heights-hoa",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Calera Canyon Heights Hoa",
+        "pwsid": "CA2700523",
+        "population_served": 40,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "berry-dr-ws-02",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Berry Dr Ws #02",
+        "pwsid": "CA2701897",
+        "population_served": 40,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "royal-sierra-estates-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Royal Sierra Estates Ws",
+        "pwsid": "CA2700970",
+        "population_served": 36,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "orchard-ln-ws-02",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Orchard Ln Ws #02",
+        "pwsid": "CA2700669",
+        "population_served": 32,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 162783,
+    "pct_low_income": 14.2,
+    "pct_people_of_color": 87.9,
+    "pct_under_5": 8.1,
+    "pct_over_64": 9.9,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 99.6
+      },
+      {
+        "label": "Ozone",
+        "score": 11.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 168.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 86.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 13.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 158.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 97.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 140.5
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 221.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 167.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 59.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Salinas, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

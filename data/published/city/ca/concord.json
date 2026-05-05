@@ -1,0 +1,346 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "concord",
+    "name": "Concord",
+    "fips": "0616000",
+    "population": 125007,
+    "county_name": "Contra Costa",
+    "county_fips": "06013"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 8,
+    "total_releases_pounds": 1,
+    "air_releases_pounds": 1,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": -75.0,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 4
+      },
+      {
+        "year": 2011,
+        "value": 2
+      },
+      {
+        "year": 2012,
+        "value": 5
+      },
+      {
+        "year": 2013,
+        "value": 3
+      },
+      {
+        "year": 2014,
+        "value": 3
+      },
+      {
+        "year": 2023,
+        "value": 1
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 1,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 82261234,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 11.9,
+      "long_arc_pct_change": 109.1,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 39334407
+        },
+        {
+          "year": 2011,
+          "value": 72107992
+        },
+        {
+          "year": 2012,
+          "value": 112182316
+        },
+        {
+          "year": 2013,
+          "value": 121967587
+        },
+        {
+          "year": 2014,
+          "value": 132848440
+        },
+        {
+          "year": 2015,
+          "value": 108103922
+        },
+        {
+          "year": 2016,
+          "value": 98070792
+        },
+        {
+          "year": 2017,
+          "value": 110415618
+        },
+        {
+          "year": 2018,
+          "value": 106301016
+        },
+        {
+          "year": 2019,
+          "value": 104918059
+        },
+        {
+          "year": 2020,
+          "value": 81791851
+        },
+        {
+          "year": 2021,
+          "value": 77078427
+        },
+        {
+          "year": 2022,
+          "value": 73485085
+        },
+        {
+          "year": 2023,
+          "value": 82261234
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "cemex-concord",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Cemex Concord",
+      "parent_company": "Cemex INC",
+      "total_pounds_recent": 1,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Concord"
+    }
+  ],
+  "water": {
+    "utilities_count": 8,
+    "population_served_total": 198877,
+    "violations_5yr_total": 4,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "river-ranch-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "River Ranch Mobile Home Park",
+        "pwsid": "CA5200510",
+        "population_served": 305,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "contra-costa-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Contra Costa Water District",
+        "pwsid": "CA0710003",
+        "population_served": 198000,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "mapache-trailer-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mapache Trailer Park",
+        "pwsid": "CA3900661",
+        "population_served": 275,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "lockeford-mobile-home-park-wtr-sys",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lockeford Mobile Home Park Wtr Sys",
+        "pwsid": "CA3900682",
+        "population_served": 123,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "dunrovin-mobile-home-village",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Dunrovin Mobile Home Village",
+        "pwsid": "CA0500068",
+        "population_served": 99,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "north-side-mobile-home-ranch",
+        "state": "ca",
+        "state_label": "California",
+        "name": "North Side Mobile Home Ranch",
+        "pwsid": "NE3115711",
+        "population_served": 74,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "randall-bold-water-treatment-plant",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Randall-Bold Water Treatment Plant",
+        "pwsid": "CA0710010",
+        "population_served": 1,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "ccwd-brentwood-wtp",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ccwd/Brentwood Wtp",
+        "pwsid": "CA0710011",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 125007,
+    "pct_low_income": 9.2,
+    "pct_people_of_color": 55.9,
+    "pct_under_5": 5.5,
+    "pct_over_64": 15.8,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 130.7
+      },
+      {
+        "label": "Ozone",
+        "score": 47.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 70.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 75.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 61.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 110.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 64.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 117.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 95.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 122.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 105.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Concord, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

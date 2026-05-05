@@ -1,84 +1,275 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "redwood-city",
-    "name": "City Of Redwood City",
-    "pwsid": "CA4110022",
-    "population_served": 92819,
-    "primary_source": "purchased",
-    "cities_served": [
-      "Redwood City"
+    "name": "Redwood City",
+    "fips": "0660102",
+    "population": 83077,
+    "county_name": "San Mateo",
+    "county_fips": "06081"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 3,
+    "total_releases_pounds": 635,
+    "air_releases_pounds": 9,
+    "water_releases_pounds": 0.02,
+    "land_releases_pounds": 626,
+    "yoy_pct_change": 32.7,
+    "long_arc_pct_change": -21.6,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 811
+      },
+      {
+        "year": 2011,
+        "value": 233
+      },
+      {
+        "year": 2012,
+        "value": 313
+      },
+      {
+        "year": 2013,
+        "value": 285
+      },
+      {
+        "year": 2014,
+        "value": 737
+      },
+      {
+        "year": 2015,
+        "value": 858
+      },
+      {
+        "year": 2016,
+        "value": 856
+      },
+      {
+        "year": 2017,
+        "value": 610
+      },
+      {
+        "year": 2018,
+        "value": 546
+      },
+      {
+        "year": 2019,
+        "value": 427
+      },
+      {
+        "year": 2020,
+        "value": 576
+      },
+      {
+        "year": 2021,
+        "value": 325
+      },
+      {
+        "year": 2022,
+        "value": 479
+      },
+      {
+        "year": 2023,
+        "value": 635
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 9,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 9
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 626,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 626
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 195024,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -31.2,
+      "long_arc_pct_change": -17.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 237413
+        },
+        {
+          "year": 2011,
+          "value": 177073
+        },
+        {
+          "year": 2012,
+          "value": 189790
+        },
+        {
+          "year": 2013,
+          "value": 216020
+        },
+        {
+          "year": 2014,
+          "value": 192243
+        },
+        {
+          "year": 2015,
+          "value": 183423
+        },
+        {
+          "year": 2016,
+          "value": 165580
+        },
+        {
+          "year": 2017,
+          "value": 172476
+        },
+        {
+          "year": 2018,
+          "value": 179894
+        },
+        {
+          "year": 2019,
+          "value": 210344
+        },
+        {
+          "year": 2020,
+          "value": 197581
+        },
+        {
+          "year": 2021,
+          "value": 203841
+        },
+        {
+          "year": 2022,
+          "value": 283514
+        },
+        {
+          "year": 2023,
+          "value": 195024
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "chemelex-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Chemelex LLC",
+      "parent_company": "Chemelex LLC",
+      "total_pounds_recent": 626,
+      "yoy_pct_change": 33.5,
+      "top_chemical": "Zinc compounds",
+      "city": "Redwood City"
+    },
+    {
+      "slug": "granite-rock-co-redwood-city",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Granite Rock CO Redwood City",
+      "parent_company": "Granite Rock Co",
+      "total_pounds_recent": 7,
+      "yoy_pct_change": 1.1,
+      "top_chemical": "Barium",
+      "city": "Redwood City"
+    },
+    {
+      "slug": "univar-solutions-usa",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Univar Solutions USA",
+      "parent_company": "Univar Solutions USA INC",
+      "total_pounds_recent": 2,
+      "yoy_pct_change": -16.7,
+      "top_chemical": "Nitric acid",
+      "city": "Redwood City"
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 93761,
+    "violations_5yr_total": 3,
+    "health_based_5yr_total": 3,
+    "unresolved_total": 1,
+    "utilities_with_unresolved": 1,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "county-service-area-7",
+        "state": "ca",
+        "state_label": "California",
+        "name": "County Service Area 7",
+        "pwsid": "CA4100509",
+        "population_served": 300,
+        "health_based_violations_5yr": 3,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "redwood-city",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Redwood City",
+        "pwsid": "CA4110022",
+        "population_served": 92819,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
+        "slug": "county-service-area-11",
+        "state": "ca",
+        "state_label": "California",
+        "name": "County Service Area 11",
+        "pwsid": "CA4100582",
+        "population_served": 642,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 83077,
     "pct_low_income": 6.4,
@@ -141,12 +332,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Redwood City, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Redwood City, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:33Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

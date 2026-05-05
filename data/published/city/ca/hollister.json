@@ -1,0 +1,498 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "hollister",
+    "name": "Hollister",
+    "fips": "0634120",
+    "population": 42093,
+    "county_name": "San Benito",
+    "county_fips": "06069"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 21,
+    "total_releases_pounds": 35799,
+    "air_releases_pounds": 1576,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 34223,
+    "yoy_pct_change": 367.7,
+    "long_arc_pct_change": 2677.2,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 1289
+      },
+      {
+        "year": 2011,
+        "value": 1164
+      },
+      {
+        "year": 2012,
+        "value": 1927
+      },
+      {
+        "year": 2013,
+        "value": 1609
+      },
+      {
+        "year": 2014,
+        "value": 1568
+      },
+      {
+        "year": 2015,
+        "value": 2253
+      },
+      {
+        "year": 2016,
+        "value": 926
+      },
+      {
+        "year": 2017,
+        "value": 981
+      },
+      {
+        "year": 2018,
+        "value": 1076
+      },
+      {
+        "year": 2019,
+        "value": 1316
+      },
+      {
+        "year": 2020,
+        "value": 1274
+      },
+      {
+        "year": 2021,
+        "value": 1425
+      },
+      {
+        "year": 2022,
+        "value": 7654
+      },
+      {
+        "year": 2023,
+        "value": 35799
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 1576,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1576
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 34223,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 34223
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 0,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -100.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 11485
+        },
+        {
+          "year": 2011,
+          "value": 11908
+        },
+        {
+          "year": 2012,
+          "value": 11235
+        },
+        {
+          "year": 2013,
+          "value": 16625
+        },
+        {
+          "year": 2014,
+          "value": 15472
+        },
+        {
+          "year": 2015,
+          "value": 19402
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "fujifilm-electronic-materials-usa-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Fujifilm Electronic Materials USA INC.",
+      "parent_company": "Fujifilm Holdings America CORP",
+      "total_pounds_recent": 29505,
+      "yoy_pct_change": 288.6,
+      "top_chemical": "N-Methyl-2-pyrrolidone",
+      "city": "Hollister"
+    },
+    {
+      "slug": "royal-circuit-solutions-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Royal Circuit Solutions INC.",
+      "parent_company": "Summit Interconnect Intermediate INC",
+      "total_pounds_recent": 5897,
+      "yoy_pct_change": 9395.8,
+      "top_chemical": "Copper  And Copper Compounds",
+      "city": "Hollister"
+    },
+    {
+      "slug": "pride-conveyance-systems",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Pride Conveyance Systems",
+      "parent_company": null,
+      "total_pounds_recent": 397,
+      "yoy_pct_change": null,
+      "top_chemical": "Chromium",
+      "city": "Hollister"
+    }
+  ],
+  "water": {
+    "utilities_count": 21,
+    "population_served_total": 53795,
+    "violations_5yr_total": 62,
+    "health_based_5yr_total": 15,
+    "unresolved_total": 37,
+    "utilities_with_unresolved": 11,
+    "utilities": [
+      {
+        "slug": "hollister-city-of",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hollister, City Of",
+        "pwsid": "CA3510001",
+        "population_served": 26017,
+        "health_based_violations_5yr": 5,
+        "unresolved": true
+      },
+      {
+        "slug": "rancho-san-joaquin-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rancho San Joaquin Mwc",
+        "pwsid": "CA3500581",
+        "population_served": 914,
+        "health_based_violations_5yr": 5,
+        "unresolved": true
+      },
+      {
+        "slug": "csa-no-31-stonegate-ws",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Csa No. 31 Stonegate Ws",
+        "pwsid": "CA3500006",
+        "population_served": 230,
+        "health_based_violations_5yr": 3,
+        "unresolved": true
+      },
+      {
+        "slug": "casa-de-fruta-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Casa De Fruta Water System",
+        "pwsid": "CA4300611",
+        "population_served": 250,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "san-justo-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Justo Mutual Water Company",
+        "pwsid": "CA3500550",
+        "population_served": 160,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "sunnyslope-county-water-dist",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sunnyslope County Water Dist",
+        "pwsid": "CA3510003",
+        "population_served": 24954,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "hollister-ranch-estates",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hollister Ranch Estates",
+        "pwsid": "CA3500904",
+        "population_served": 150,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "rosa-morada-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rosa Morada Mutual Water Company",
+        "pwsid": "CA3500549",
+        "population_served": 138,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "ashford-highlands-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Ashford Highlands Mwc",
+        "pwsid": "CA3500900",
+        "population_served": 132,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "dunneville-estates-csa-50",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Dunneville Estates Csa #50",
+        "pwsid": "CA3500910",
+        "population_served": 120,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "mcmahon-road-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Mcmahon Road Mutual Water Company",
+        "pwsid": "CA3500510",
+        "population_served": 102,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "comstock-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Comstock Mutual Water Company",
+        "pwsid": "CA3500912",
+        "population_served": 100,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "union-heights-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Union Heights Mwc",
+        "pwsid": "CA3500825",
+        "population_served": 98,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "vineyard-estates-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Vineyard Estates Mwc",
+        "pwsid": "CA3500579",
+        "population_served": 90,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "creekbridge-mutual-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Creekbridge Mutual Water Company",
+        "pwsid": "CA3500911",
+        "population_served": 69,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "valenzuela-water-system",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Valenzuela Water System",
+        "pwsid": "CA3500527",
+        "population_served": 55,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "casa-de-fruta-orchards",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Casa De Fruta Orchards",
+        "pwsid": "CA3500511",
+        "population_served": 53,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "venture-estates-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Venture Estates Mwc",
+        "pwsid": "CA3500552",
+        "population_served": 50,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "springwood-estates-mwc",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Springwood Estates Mwc",
+        "pwsid": "CA3500575",
+        "population_served": 50,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "whispering-pines-inn",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Whispering Pines Inn",
+        "pwsid": "CA3500810",
+        "population_served": 38,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "san-benito-county-water-district",
+        "state": "ca",
+        "state_label": "California",
+        "name": "San Benito County Water District",
+        "pwsid": "CA3510007",
+        "population_served": 25,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 42093,
+    "pct_low_income": 9.4,
+    "pct_people_of_color": 77.2,
+    "pct_under_5": 7.1,
+    "pct_over_64": 10.2,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 138.3
+      },
+      {
+        "label": "Ozone",
+        "score": 54.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 83.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 58.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 22.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 77.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 63.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 84.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 98.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Hollister, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

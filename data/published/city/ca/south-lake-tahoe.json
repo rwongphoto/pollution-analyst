@@ -1,0 +1,217 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "south-lake-tahoe",
+    "name": "South Lake Tahoe",
+    "fips": "0673108",
+    "population": 21346,
+    "county_name": "Alpine",
+    "county_fips": "06003"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 5,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 5,
+    "population_served_total": 107415,
+    "violations_5yr_total": 83,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 3,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "sierra-pines-mobile-home-park",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Sierra Pines Mobile Home Park",
+        "pwsid": "CA0202522",
+        "population_served": 70,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "tahoe-keys-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Tahoe Keys Water Company",
+        "pwsid": "CA0910015",
+        "population_served": 1420,
+        "health_based_violations_5yr": 1,
+        "unresolved": false
+      },
+      {
+        "slug": "south-tahoe-pud-main",
+        "state": "ca",
+        "state_label": "California",
+        "name": "South Tahoe Pud - Main",
+        "pwsid": "CA0910002",
+        "population_served": 100000,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "lukins-brothers-water-company",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lukins Brothers Water Company",
+        "pwsid": "CA0910007",
+        "population_served": 3277,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "lakeside-park-association",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Lakeside Park Association",
+        "pwsid": "CA0910019",
+        "population_served": 2648,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 21346,
+    "pct_low_income": 13.3,
+    "pct_people_of_color": 40.8,
+    "pct_under_5": 4.3,
+    "pct_over_64": 16.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 103.5
+      },
+      {
+        "label": "Ozone",
+        "score": 125.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 74.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 4.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 11.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 51.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 64.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 65.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 1.9
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "South Lake Tahoe, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}

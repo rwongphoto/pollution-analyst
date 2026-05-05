@@ -1,84 +1,266 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "pittsburg",
-    "name": "City Of Pittsburg",
-    "pwsid": "CA0710008",
-    "population_served": 62500,
-    "primary_source": "purchased",
-    "cities_served": [
-      "Pittsburg"
+    "name": "Pittsburg",
+    "fips": "0657456",
+    "population": 76419,
+    "county_name": "Contra Costa",
+    "county_fips": "06013"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 4,
+    "utilities_serving": 1,
+    "total_releases_pounds": 149142,
+    "air_releases_pounds": 10103,
+    "water_releases_pounds": 8,
+    "land_releases_pounds": 139032,
+    "yoy_pct_change": 169.6,
+    "long_arc_pct_change": 59.5,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 93533
+      },
+      {
+        "year": 2011,
+        "value": 100276
+      },
+      {
+        "year": 2012,
+        "value": 93773
+      },
+      {
+        "year": 2013,
+        "value": 86526
+      },
+      {
+        "year": 2014,
+        "value": 71128
+      },
+      {
+        "year": 2015,
+        "value": 69373
+      },
+      {
+        "year": 2016,
+        "value": 103367
+      },
+      {
+        "year": 2017,
+        "value": 62365
+      },
+      {
+        "year": 2018,
+        "value": 297136
+      },
+      {
+        "year": 2019,
+        "value": 59382
+      },
+      {
+        "year": 2020,
+        "value": 203602
+      },
+      {
+        "year": 2021,
+        "value": 33481
+      },
+      {
+        "year": 2022,
+        "value": 55320
+      },
+      {
+        "year": 2023,
+        "value": 149142
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 10103,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 10103
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 8,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 8
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 139032,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 139032
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 82261234,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 11.9,
+      "long_arc_pct_change": 109.1,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 39334407
+        },
+        {
+          "year": 2011,
+          "value": 72107992
+        },
+        {
+          "year": 2012,
+          "value": 112182316
+        },
+        {
+          "year": 2013,
+          "value": 121967587
+        },
+        {
+          "year": 2014,
+          "value": 132848440
+        },
+        {
+          "year": 2015,
+          "value": 108103922
+        },
+        {
+          "year": 2016,
+          "value": 98070792
+        },
+        {
+          "year": 2017,
+          "value": 110415618
+        },
+        {
+          "year": 2018,
+          "value": 106301016
+        },
+        {
+          "year": 2019,
+          "value": 104918059
+        },
+        {
+          "year": 2020,
+          "value": 81791851
+        },
+        {
+          "year": 2021,
+          "value": 77078427
+        },
+        {
+          "year": 2022,
+          "value": 73485085
+        },
+        {
+          "year": 2023,
+          "value": 82261234
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "corteva-agriscience-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Corteva Agriscience LLC",
+      "parent_company": "Corteva INC",
+      "total_pounds_recent": 131334,
+      "yoy_pct_change": 240.8,
+      "top_chemical": "Hydrochloric acid (acid aerosols including mists, vapors, gas, fog, and other airborne forms of any particle size)",
+      "city": "Pittsburg"
+    },
+    {
+      "slug": "uss-upi-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Uss-Upi LLC",
+      "parent_company": "US Steel CORP",
+      "total_pounds_recent": 16303,
+      "yoy_pct_change": 6.7,
+      "top_chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
+      "city": "Pittsburg"
+    },
+    {
+      "slug": "douglas-products-packaging-co",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Douglas Products & Packaging CO",
+      "parent_company": "Douglas Products & Packaging Co",
+      "total_pounds_recent": 1500,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Sulfuryl fluoride",
+      "city": "Pittsburg"
+    },
+    {
+      "slug": "hasa-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Hasa INC",
+      "parent_company": "Hasa INC",
+      "total_pounds_recent": 5,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Chlorine",
+      "city": "Pittsburg"
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 62500,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
+        "slug": "pittsburg",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Pittsburg",
+        "pwsid": "CA0710008",
+        "population_served": 62500,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 76419,
     "pct_low_income": 9.9,
@@ -141,12 +323,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Pittsburg, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Pittsburg, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

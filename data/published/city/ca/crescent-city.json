@@ -1,84 +1,162 @@
 {
-  "utility": {
+  "place": {
     "state": "ca",
     "state_label": "California",
     "slug": "crescent-city",
-    "name": "City Of Crescent City",
-    "pwsid": "CA0810001",
-    "population_served": 17262,
-    "primary_source": "groundwater",
-    "cities_served": [
-      "Crescent City"
+    "name": "Crescent City",
+    "fips": "0617022",
+    "population": 6379,
+    "county_name": "Del Norte",
+    "county_fips": "06015"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 7,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0
+      }
     ]
   },
-  "reporting_period": {
-    "start": "2021-01-01",
-    "end": "2026-05-05"
-  },
-  "briefing_label": "SDWIS through latest publish",
-  "totals": {
-    "violations_5yr": 0,
-    "health_based_violations_5yr": 0,
-    "unresolved_violations": 0,
-    "contaminants_with_violations": 0,
-    "years_since_last_violation": null
-  },
-  "violations": [],
-  "metrics": {
-    "violations_history": [
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 7,
+    "population_served_total": 20897,
+    "violations_5yr_total": 9,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 5,
+    "utilities_with_unresolved": 3,
+    "utilities": [
       {
-        "year": 2021,
-        "value": 0
+        "slug": "west-park-properties",
+        "state": "ca",
+        "state_label": "California",
+        "name": "West Park Properties",
+        "pwsid": "CA0800605",
+        "population_served": 112,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2022,
-        "value": 0
+        "slug": "rock-creek-mutual-water-co",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Rock Creek Mutual Water Co.",
+        "pwsid": "CA0800529",
+        "population_served": 60,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
       },
       {
-        "year": 2023,
-        "value": 0
+        "slug": "crescent-city",
+        "state": "ca",
+        "state_label": "California",
+        "name": "City Of Crescent City",
+        "pwsid": "CA0810001",
+        "population_served": 17262,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2024,
-        "value": 0
+        "slug": "bertsch-ocean-view-csd",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Bertsch Ocean View Csd",
+        "pwsid": "CA0810003",
+        "population_served": 2570,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2025,
-        "value": 0
+        "slug": "big-rock-c-s-d",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Big Rock C.S.D.",
+        "pwsid": "CA0800532",
+        "population_served": 650,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       },
       {
-        "year": 2026,
-        "value": 0
+        "slug": "hrc-c-s-d",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Hrc C.S.D.",
+        "pwsid": "CA0800556",
+        "population_served": 185,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "jed-smith-homeowners-assn",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Jed Smith Homeowners Assn.",
+        "pwsid": "CA0800825",
+        "population_served": 58,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
       }
-    ],
-    "health_based_history": [
-      {
-        "year": 2021,
-        "value": 0
-      },
-      {
-        "year": 2022,
-        "value": 0
-      },
-      {
-        "year": 2023,
-        "value": 0
-      },
-      {
-        "year": 2024,
-        "value": 0
-      },
-      {
-        "year": 2025,
-        "value": 0
-      },
-      {
-        "year": 2026,
-        "value": 0
-      }
-    ],
-    "top_contaminants": []
+    ]
   },
+  "flags": [],
   "equity": {
     "population": 6379,
     "pct_low_income": 22.7,
@@ -141,12 +219,19 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
-    "geography_label": "Crescent City, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "Crescent City, California (Census place block groups)"
   },
-  "source": {
-    "label": "EPA Safe Drinking Water Information System",
-    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-05"
-  },
-  "_published_at": "2026-05-05T05:28:32Z"
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
 }

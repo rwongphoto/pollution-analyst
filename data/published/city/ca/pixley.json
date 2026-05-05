@@ -1,0 +1,272 @@
+{
+  "place": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "pixley",
+    "name": "Pixley",
+    "fips": "0657512",
+    "population": 3811,
+    "county_name": "Tulare",
+    "county_fips": "06107"
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 1,
+    "total_releases_pounds": 33835,
+    "air_releases_pounds": 33835,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": 0.0,
+    "long_arc_pct_change": 18389.3,
+    "long_arc_baseline_year": 2015,
+    "history": [
+      {
+        "year": 2015,
+        "value": 183
+      },
+      {
+        "year": 2016,
+        "value": 183
+      },
+      {
+        "year": 2018,
+        "value": 0.34
+      },
+      {
+        "year": 2022,
+        "value": 33834
+      },
+      {
+        "year": 2023,
+        "value": 33835
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 33835,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 33835
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters)",
+      "current": 419035,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -6.8,
+      "long_arc_pct_change": -1.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 425541
+        },
+        {
+          "year": 2011,
+          "value": 593790
+        },
+        {
+          "year": 2012,
+          "value": 643675
+        },
+        {
+          "year": 2013,
+          "value": 621767
+        },
+        {
+          "year": 2014,
+          "value": 475132
+        },
+        {
+          "year": 2015,
+          "value": 452651
+        },
+        {
+          "year": 2016,
+          "value": 453370
+        },
+        {
+          "year": 2017,
+          "value": 452301
+        },
+        {
+          "year": 2018,
+          "value": 455797
+        },
+        {
+          "year": 2019,
+          "value": 453626
+        },
+        {
+          "year": 2020,
+          "value": 427394
+        },
+        {
+          "year": 2021,
+          "value": 454665
+        },
+        {
+          "year": 2022,
+          "value": 449817
+        },
+        {
+          "year": 2023,
+          "value": 419035
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "gfp-ethanol-llc-dba-calgren-renewable-fuels",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Gfp Ethanol LLC Dba Calgren Renewable Fuels",
+      "parent_company": "Gfp Ethanol LLC",
+      "total_pounds_recent": 33835,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Acetaldehyde",
+      "city": "Pixley"
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 2772,
+    "violations_5yr_total": 10,
+    "health_based_5yr_total": 6,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "pixley-public-util-dist",
+        "state": "ca",
+        "state_label": "California",
+        "name": "Pixley Public Util Dist",
+        "pwsid": "CA5410009",
+        "population_served": 2772,
+        "health_based_violations_5yr": 6,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 3811,
+    "pct_low_income": 26.1,
+    "pct_people_of_color": 93.7,
+    "pct_under_5": 11.7,
+    "pct_over_64": 9.0,
+    "ej_indexes": [],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 314.8
+      },
+      {
+        "label": "Ozone",
+        "score": 311.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 203.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 244.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 22.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 168.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 136.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 219.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ disparity mirror",
+    "geography_label": "Pixley, California (Census place block groups)"
+  },
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-05"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-05"
+    }
+  ],
+  "_published_at": "2026-05-05T06:24:54Z"
+}
