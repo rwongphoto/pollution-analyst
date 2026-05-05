@@ -38,7 +38,12 @@ from .spatial.acs import (
     get_state_demographics,
 )
 from .spatial.facility_buffer import compute_facility_buffer_demographics
-from .spatial.places import assign_facilities_to_places, build_bg_to_place, load_places
+from .spatial.places import (
+    assign_facilities_to_places,
+    build_bg_to_place,
+    build_place_to_county,
+    load_places,
+)
 
 
 def _county_name_from_fips(fips: str, state_abbr: str) -> str | None:
@@ -480,25 +485,35 @@ def run_state(
 
     # Second pass: derive each place's canonical county and filter utilities to
     # that county. Priority for the canonical county:
-    #   (a) majority county of facilities inside the place polygon — authoritative,
-    #       comes from centroid containment, not free-text fields.
-    #   (b) majority SDWIS county across the city_name candidates — only used when
-    #       the place has zero in-polygon facilities (bedroom communities).
+    #   (a) TIGER place polygon → county via majority block-group containment.
+    #       Authoritative spatial answer; doesn't depend on observed
+    #       facilities or utilities. Catches cases like South Pasadena (LA)
+    #       where the only utility candidate is HQ'd in Kern.
+    #   (b) Majority county of facilities inside the place polygon.
+    #   (c) Majority SDWIS county across the city_name candidates — only
+    #       used when (a) and (b) yield nothing.
+    try:
+        place_to_county_canonical = build_place_to_county(state.fips)
+    except Exception as exc:  # noqa: BLE001
+        logging.warning("Place→county build failed for %s: %s", state.abbr, exc)
+        place_to_county_canonical = {}
     from collections import Counter
     place_to_utilities: dict[str, list] = {}
     place_to_canonical_county: dict[str, str] = {}
     for pf in set(place_to_facility_ids.keys()) | set(place_to_utility_candidates.keys()):
-        counts: Counter[str] = Counter()
-        for fid in place_to_facility_ids.get(pf, []):
-            f = facilities.get(fid)
-            if f and f.county_fips:
-                counts[f.county_fips] += 1
-        if not counts:
-            for u in place_to_utility_candidates.get(pf, []):
-                cf = utility_county_map.get(u.pwsid)
-                if cf:
-                    counts[cf] += 1
-        canonical = counts.most_common(1)[0][0] if counts else None
+        canonical = place_to_county_canonical.get(pf)
+        if not canonical:
+            counts: Counter[str] = Counter()
+            for fid in place_to_facility_ids.get(pf, []):
+                f = facilities.get(fid)
+                if f and f.county_fips:
+                    counts[f.county_fips] += 1
+            if not counts:
+                for u in place_to_utility_candidates.get(pf, []):
+                    cf = utility_county_map.get(u.pwsid)
+                    if cf:
+                        counts[cf] += 1
+            canonical = counts.most_common(1)[0][0] if counts else None
         if canonical:
             place_to_canonical_county[pf] = canonical
             kept = [
@@ -674,13 +689,15 @@ def run_state(
         ids_in_place = place_to_facility_ids.get(pf, [])
         facs_in_place = [facilities[fid] for fid in ids_in_place if fid in facilities]
         utils_serving = place_to_utilities.get(pf, [])
-        # County for this place — pick the county-of-the-first-facility, or
-        # the SDWIS-resolved county of the first utility, else None.
-        county_fips_for_place = None
-        if facs_in_place:
-            county_fips_for_place = facs_in_place[0].county_fips
-        elif utils_serving:
-            county_fips_for_place = utility_county_map.get(utils_serving[0].pwsid)
+        # County for this place — prefer the spatial canonical (TIGER place
+        # polygon → county), falling back to facility/utility heuristics for
+        # places the spatial pass didn't resolve.
+        county_fips_for_place = place_to_canonical_county.get(pf)
+        if not county_fips_for_place:
+            if facs_in_place:
+                county_fips_for_place = facs_in_place[0].county_fips
+            elif utils_serving:
+                county_fips_for_place = utility_county_map.get(utils_serving[0].pwsid)
         place_pop = (
             place_demos.get(pf).population
             if pf in place_demos and hasattr(place_demos.get(pf), "population")

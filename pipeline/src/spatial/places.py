@@ -124,6 +124,30 @@ def assign_facilities_to_places(
     return out
 
 
+def build_place_to_county(state_fips: str) -> dict[str, str]:
+    """Return {place_fips: county_fips} via majority block-group containment.
+
+    A Census place can straddle counties; we pick the county that holds the
+    most of the place's block groups. Authoritative — doesn't depend on which
+    facilities or utilities happen to be observed inside the place. Cached on
+    disk after first build.
+    """
+    from collections import Counter
+
+    cache = _tiger_dir() / f"place_to_county_{state_fips}.json"
+    if cache.exists():
+        return json.loads(cache.read_text())
+    bg_to_place = build_bg_to_place(state_fips)
+    counts: dict[str, Counter[str]] = {}
+    for bgfips, pf in bg_to_place.items():
+        # Block group GEOID = state(2) + county(3) + tract(6) + bg(1).
+        county_fips = bgfips[:5]
+        counts.setdefault(pf, Counter())[county_fips] += 1
+    out = {pf: c.most_common(1)[0][0] for pf, c in counts.items()}
+    cache.write_text(json.dumps(out))
+    return out
+
+
 def build_bg_to_place(state_fips: str) -> dict[str, str]:
     """Return {bgfips: place_fips}. Cached on disk after first build."""
     cache = _tiger_dir() / f"bg_to_place_{state_fips}.json"
