@@ -11,6 +11,219 @@
   "briefing_label": "TRI 2024",
   "pathways": [
     {
+      "pathway": "criteria_air",
+      "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
+      "current": 5.479,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": -1.1,
+      "long_arc_pct_change": -39.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 8.984
+        },
+        {
+          "year": 2011,
+          "value": 9.191
+        },
+        {
+          "year": 2012,
+          "value": 6.961
+        },
+        {
+          "year": 2013,
+          "value": 9.177
+        },
+        {
+          "year": 2014,
+          "value": 7.9
+        },
+        {
+          "year": 2015,
+          "value": 8.703
+        },
+        {
+          "year": 2016,
+          "value": 8.037
+        },
+        {
+          "year": 2017,
+          "value": 13.379
+        },
+        {
+          "year": 2018,
+          "value": 14.666
+        },
+        {
+          "year": 2019,
+          "value": 5.461
+        },
+        {
+          "year": 2020,
+          "value": 12.741
+        },
+        {
+          "year": 2021,
+          "value": 8.445
+        },
+        {
+          "year": 2022,
+          "value": 6.038
+        },
+        {
+          "year": 2023,
+          "value": 5.541
+        },
+        {
+          "year": 2024,
+          "value": 5.479
+        }
+      ]
+    },
+    {
+      "pathway": "criteria_air",
+      "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
+      "current": 12.9,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": -12.2,
+      "long_arc_pct_change": -57.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 30.0
+        },
+        {
+          "year": 2011,
+          "value": 25.5
+        },
+        {
+          "year": 2012,
+          "value": 15.5
+        },
+        {
+          "year": 2013,
+          "value": 24.4
+        },
+        {
+          "year": 2014,
+          "value": 18.1
+        },
+        {
+          "year": 2015,
+          "value": 22.7
+        },
+        {
+          "year": 2016,
+          "value": 19.5
+        },
+        {
+          "year": 2017,
+          "value": 30.8
+        },
+        {
+          "year": 2018,
+          "value": 40.6
+        },
+        {
+          "year": 2019,
+          "value": 12.5
+        },
+        {
+          "year": 2020,
+          "value": 96.6
+        },
+        {
+          "year": 2021,
+          "value": 30.6
+        },
+        {
+          "year": 2022,
+          "value": 16.6
+        },
+        {
+          "year": 2023,
+          "value": 14.7
+        },
+        {
+          "year": 2024,
+          "value": 12.9
+        }
+      ]
+    },
+    {
+      "pathway": "criteria_air",
+      "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
+      "current": 0.072,
+      "units": "ppm",
+      "yoy_pct_change": 10.8,
+      "long_arc_pct_change": -26.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.098
+        },
+        {
+          "year": 2011,
+          "value": 0.075
+        },
+        {
+          "year": 2012,
+          "value": 0.076
+        },
+        {
+          "year": 2013,
+          "value": 0.067
+        },
+        {
+          "year": 2014,
+          "value": 0.071
+        },
+        {
+          "year": 2015,
+          "value": 0.081
+        },
+        {
+          "year": 2016,
+          "value": 0.077
+        },
+        {
+          "year": 2017,
+          "value": 0.078
+        },
+        {
+          "year": 2018,
+          "value": 0.069
+        },
+        {
+          "year": 2019,
+          "value": 0.066
+        },
+        {
+          "year": 2020,
+          "value": 0.073
+        },
+        {
+          "year": 2021,
+          "value": 0.072
+        },
+        {
+          "year": 2022,
+          "value": 0.061
+        },
+        {
+          "year": 2023,
+          "value": 0.065
+        },
+        {
+          "year": 2024,
+          "value": 0.072
+        }
+      ]
+    },
+    {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 0,
@@ -100,7 +313,81 @@
       "population": 777
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "Ozone 8-hour 4th-highest daily max",
+      "summary": "Ozone 8-hour 4th-highest daily max in Calaveras County reached 0.072 ppm in 2024, 3% above the EPA NAAQS of 0.07 ppm.",
+      "magnitude_pct": 2.9,
+      "magnitude_abs": 0.002,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": "ppm",
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.098
+        },
+        {
+          "year": 2011,
+          "value": 0.075
+        },
+        {
+          "year": 2012,
+          "value": 0.076
+        },
+        {
+          "year": 2013,
+          "value": 0.067
+        },
+        {
+          "year": 2014,
+          "value": 0.071
+        },
+        {
+          "year": 2015,
+          "value": 0.081
+        },
+        {
+          "year": 2016,
+          "value": 0.077
+        },
+        {
+          "year": 2017,
+          "value": 0.078
+        },
+        {
+          "year": 2018,
+          "value": 0.069
+        },
+        {
+          "year": 2019,
+          "value": 0.066
+        },
+        {
+          "year": 2020,
+          "value": 0.073
+        },
+        {
+          "year": 2021,
+          "value": 0.072
+        },
+        {
+          "year": 2022,
+          "value": 0.061
+        },
+        {
+          "year": 2023,
+          "value": 0.065
+        },
+        {
+          "year": 2024,
+          "value": 0.072
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 45674,
     "pct_low_income": 13.1,
@@ -238,5 +525,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T20:43:53Z"
+  "_published_at": "2026-05-05T21:42:46Z"
 }

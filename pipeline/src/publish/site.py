@@ -205,6 +205,67 @@ def _tri_pathways(
     return out
 
 
+_AQS_METRIC_ORDER = ("pm25_annual", "pm25_24hr", "ozone_8hr", "no2_annual")
+
+
+def _criteria_air_descriptor(metric_key: str, naaqs_label: str) -> str:
+    """Short tile subtitle for a criteria-air pathway."""
+    descriptor = {
+        "pm25_annual": "annual mean",
+        "pm25_24hr":   "24-hour 98th percentile",
+        "ozone_8hr":   "8-hour 4th-highest daily max",
+        "no2_annual":  "annual mean",
+    }.get(metric_key, "")
+    return f"{descriptor} (NAAQS {naaqs_label})" if descriptor else f"NAAQS {naaqs_label}"
+
+
+def _criteria_air_pathways(
+    *,
+    air_history: dict[str, dict[int, float]] | None,
+    year: int,
+) -> list[dict]:
+    """Build PollutantSummary dicts for the AQS criteria-air metrics.
+
+    ``air_history``: ``{metric_key: {year: monitor-mean}}``. Empty / absent
+    metrics are skipped — counties without a regulatory monitor for a given
+    pollutant get no tile rather than a fake "no data" placeholder.
+
+    Unlike TRI tiles, no material-baseline trim: AQS monitor readings are
+    continuous (~µg/m³ scale) so the early-year-noise problem that motivates
+    ``_pick_material_baseline`` doesn't apply.
+    """
+    if not air_history:
+        return []
+    from ..ingest.aqs import metric_for_key  # local import — pipeline-only dependency
+    out: list[dict] = []
+    for metric_key in _AQS_METRIC_ORDER:
+        hist_map = air_history.get(metric_key) or {}
+        if not hist_map:
+            continue
+        m = metric_for_key(metric_key)
+        latest_year = max(hist_map.keys())
+        current_year = year if year in hist_map else latest_year
+        current = hist_map[current_year]
+        history_pts = [{"year": y, "value": round(v, 3)} for y, v in sorted(hist_map.items())]
+        baseline_year = min(hist_map.keys())
+        long_arc = (
+            _yoy_pct_change(current, hist_map.get(baseline_year))
+            if len(hist_map) > 1 and baseline_year != current_year else None
+        )
+        yoy = _yoy_pct_change(current, hist_map.get(current_year - 1))
+        out.append({
+            "pathway": "criteria_air",
+            "label": f"{m.pollutant} {_criteria_air_descriptor(metric_key, m.naaqs_label)}",
+            "current": round(current, 3),
+            "units": m.units,
+            "yoy_pct_change": yoy,
+            "long_arc_pct_change": long_arc,
+            "baseline_year": baseline_year,
+            "history": history_pts,
+        })
+    return out
+
+
 def _stub_equity(geography_label: str, population: int) -> dict:
     """Placeholder EJScreen overlay — flagged so the frontend can render
     the section but the reader (and any downstream auditor) can see it's
@@ -569,6 +630,7 @@ def publish_city_hub(
     county_name: str | None,
     county_fips: str | None,
     county_ghg_history: dict[int, float] | None,
+    county_air_history: dict[str, dict[int, float]] | None = None,
     flags: list | None = None,
 ) -> Path:
     """Build the place-anchored city hub payload."""
@@ -600,11 +662,11 @@ def publish_city_hub(
         if len(in_city_history) > 1 else None
     )
 
-    # Pathways (TRI air/water/land + optional GHG-county-share footnoted).
-    # Per-medium per-place history is summed in main.py from each in-place
-    # facility's per-medium-per-year totals — gives the tile real YoY +
-    # long-arc when multi-year history is available.
-    pathways = _tri_pathways(
+    # Pathways: criteria_air (county-as-proxy for air monitors — places are
+    # too small to host their own AQS sites) followed by TRI air/water/land
+    # and optional GHG county-share. Per-medium per-place history is summed
+    # in main.py from each in-place facility's per-medium-per-year totals.
+    pathways = _criteria_air_pathways(air_history=county_air_history, year=year) + _tri_pathways(
         current_air=pounds_air,
         current_water=pounds_water,
         current_land=pounds_land,
@@ -725,12 +787,13 @@ def publish_county(
     disparity_scores: list | None = None,
     percentiles: list | None = None,
     ghg_history: dict[int, float] | None = None,
+    air_history: dict[str, dict[int, float]] | None = None,
     flags: list | None = None,
     cities_directory: list[dict] | None = None,
 ) -> Path:
     top = sorted(facilities_in_county, key=lambda f: f.pounds_total, reverse=True)[:COUNTY_TOP_FACILITIES]
     history_map = history or {year: county.pounds_total}
-    pathways = _tri_pathways(
+    pathways = _criteria_air_pathways(air_history=air_history, year=year) + _tri_pathways(
         current_air=county.pounds_air,
         current_water=county.pounds_water,
         current_land=county.pounds_land,
@@ -840,6 +903,7 @@ def publish_state(
     disparity_scores: list | None = None,
     percentiles: list | None = None,
     ghg_history: dict[int, float] | None = None,
+    air_history: dict[str, dict[int, float]] | None = None,
     flags: list | None = None,
 ) -> Path:
     facility_count = len(facilities)
@@ -891,7 +955,7 @@ def publish_state(
             "long_arc_pct_change": long_arc,
             "long_arc_baseline_year": baseline_year,
         },
-        "pathways": _tri_pathways(
+        "pathways": _criteria_air_pathways(air_history=air_history, year=year) + _tri_pathways(
             current_air=state_agg.pounds_air,
             current_water=state_agg.pounds_water,
             current_land=state_agg.pounds_land,

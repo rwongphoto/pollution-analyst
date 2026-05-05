@@ -89,6 +89,27 @@ def render_ghg_step(geography_label: str, prior: float, recent: float, pct: floa
     )
 
 
+def render_naaqs_exceedance(
+    pollutant: str,
+    geography_label: str,
+    metric_descriptor: str,
+    value: float,
+    naaqs: float,
+    units: str,
+    year: int,
+) -> str:
+    """e.g. 'PM2.5 annual mean in Kern County reached 10.1 µg/m³ in 2024,
+    12% above the EPA NAAQS of 9 µg/m³.'"""
+    pct_over = ((value - naaqs) / naaqs) * 100 if naaqs > 0 else 0
+    # ppm values are sub-1 (ozone NAAQS = 0.070), need 3 decimals to read.
+    fmt = ".3f" if units == "ppm" else ".1f"
+    return (
+        f"{pollutant} {metric_descriptor} in {geography_label} reached "
+        f"{value:{fmt}} {units} in {year}, {pct_over:.0f}% above the EPA NAAQS "
+        f"of {naaqs:g} {units}."
+    )
+
+
 def render(flag) -> str:
     """Polymorphic render helper — used when we have a Flag and want a fresh
     summary. Currently the summary is computed at detect-time and stored on

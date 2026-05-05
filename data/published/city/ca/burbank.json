@@ -4,43 +4,431 @@
     "state_label": "California",
     "slug": "burbank",
     "name": "Burbank",
-    "fips": "0608968",
-    "population": 5234,
+    "fips": "0608954",
+    "population": 106389,
     "county_name": "Los Angeles",
     "county_fips": "06037"
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 0,
-    "utilities_serving": 1,
-    "total_releases_pounds": 0,
-    "air_releases_pounds": 0,
-    "water_releases_pounds": 0,
-    "land_releases_pounds": 0,
-    "yoy_pct_change": null,
-    "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2024,
+    "facilities_in_city": 3,
+    "utilities_serving": 0,
+    "total_releases_pounds": 5717,
+    "air_releases_pounds": 150,
+    "water_releases_pounds": 0.02,
+    "land_releases_pounds": 5567,
+    "yoy_pct_change": 69.5,
+    "long_arc_pct_change": 2858201.5,
+    "long_arc_baseline_year": 2010,
     "history": [
       {
+        "year": 2010,
+        "value": 0.2
+      },
+      {
+        "year": 2012,
+        "value": 889
+      },
+      {
+        "year": 2013,
+        "value": 921
+      },
+      {
+        "year": 2014,
+        "value": 7297
+      },
+      {
+        "year": 2015,
+        "value": 1146
+      },
+      {
+        "year": 2016,
+        "value": 1062
+      },
+      {
+        "year": 2017,
+        "value": 601
+      },
+      {
+        "year": 2018,
+        "value": 3469
+      },
+      {
+        "year": 2019,
+        "value": 7313
+      },
+      {
+        "year": 2020,
+        "value": 9007
+      },
+      {
+        "year": 2021,
+        "value": 6067
+      },
+      {
+        "year": 2022,
+        "value": 1713
+      },
+      {
+        "year": 2023,
+        "value": 3374
+      },
+      {
         "year": 2024,
-        "value": 0
+        "value": 5717
       }
     ]
   },
   "pathways": [
     {
-      "pathway": "tri_air",
-      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 0,
-      "units": "lb",
-      "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "pathway": "criteria_air",
+      "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
+      "current": 10.856,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": 14.4,
+      "long_arc_pct_change": -45.7,
+      "baseline_year": 2010,
       "history": [
         {
+          "year": 2010,
+          "value": 19.998
+        },
+        {
+          "year": 2011,
+          "value": 11.325
+        },
+        {
+          "year": 2012,
+          "value": 10.646
+        },
+        {
+          "year": 2013,
+          "value": 11.198
+        },
+        {
+          "year": 2014,
+          "value": 13.579
+        },
+        {
+          "year": 2015,
+          "value": 10.795
+        },
+        {
+          "year": 2016,
+          "value": 10.536
+        },
+        {
+          "year": 2017,
+          "value": 11.242
+        },
+        {
+          "year": 2018,
+          "value": 11.598
+        },
+        {
+          "year": 2019,
+          "value": 9.659
+        },
+        {
+          "year": 2020,
+          "value": 12.901
+        },
+        {
+          "year": 2021,
+          "value": 11.692
+        },
+        {
+          "year": 2022,
+          "value": 10.662
+        },
+        {
+          "year": 2023,
+          "value": 9.491
+        },
+        {
           "year": 2024,
+          "value": 10.856
+        }
+      ]
+    },
+    {
+      "pathway": "criteria_air",
+      "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
+      "current": 31.808,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": 45.5,
+      "long_arc_pct_change": -47.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 60.033
+        },
+        {
+          "year": 2011,
+          "value": 31.55
+        },
+        {
+          "year": 2012,
+          "value": 26.625
+        },
+        {
+          "year": 2013,
+          "value": 25.494
+        },
+        {
+          "year": 2014,
+          "value": 33.928
+        },
+        {
+          "year": 2015,
+          "value": 32.039
+        },
+        {
+          "year": 2016,
+          "value": 25.875
+        },
+        {
+          "year": 2017,
+          "value": 29.73
+        },
+        {
+          "year": 2018,
+          "value": 30.93
+        },
+        {
+          "year": 2019,
+          "value": 23.31
+        },
+        {
+          "year": 2020,
+          "value": 39.783
+        },
+        {
+          "year": 2021,
+          "value": 34.053
+        },
+        {
+          "year": 2022,
+          "value": 21.845
+        },
+        {
+          "year": 2023,
+          "value": 21.856
+        },
+        {
+          "year": 2024,
+          "value": 31.808
+        }
+      ]
+    },
+    {
+      "pathway": "criteria_air",
+      "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
+      "current": 0.082,
+      "units": "ppm",
+      "yoy_pct_change": 0.5,
+      "long_arc_pct_change": -5.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.086
+        },
+        {
+          "year": 2011,
+          "value": 0.075
+        },
+        {
+          "year": 2012,
+          "value": 0.076
+        },
+        {
+          "year": 2013,
+          "value": 0.073
+        },
+        {
+          "year": 2014,
+          "value": 0.08
+        },
+        {
+          "year": 2015,
+          "value": 0.08
+        },
+        {
+          "year": 2016,
+          "value": 0.079
+        },
+        {
+          "year": 2017,
+          "value": 0.087
+        },
+        {
+          "year": 2018,
+          "value": 0.079
+        },
+        {
+          "year": 2019,
+          "value": 0.076
+        },
+        {
+          "year": 2020,
+          "value": 0.093
+        },
+        {
+          "year": 2021,
+          "value": 0.073
+        },
+        {
+          "year": 2022,
+          "value": 0.077
+        },
+        {
+          "year": 2023,
+          "value": 0.081
+        },
+        {
+          "year": 2024,
+          "value": 0.082
+        }
+      ]
+    },
+    {
+      "pathway": "criteria_air",
+      "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
+      "current": 12.279,
+      "units": "ppb",
+      "yoy_pct_change": 3.5,
+      "long_arc_pct_change": -61.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 31.928
+        },
+        {
+          "year": 2011,
+          "value": 18.232
+        },
+        {
+          "year": 2012,
+          "value": 17.579
+        },
+        {
+          "year": 2013,
+          "value": 16.569
+        },
+        {
+          "year": 2014,
+          "value": 16.215
+        },
+        {
+          "year": 2015,
+          "value": 15.826
+        },
+        {
+          "year": 2016,
+          "value": 15.372
+        },
+        {
+          "year": 2017,
+          "value": 15.119
+        },
+        {
+          "year": 2018,
+          "value": 14.53
+        },
+        {
+          "year": 2019,
+          "value": 13.548
+        },
+        {
+          "year": 2020,
+          "value": 13.497
+        },
+        {
+          "year": 2021,
+          "value": 13.497
+        },
+        {
+          "year": 2022,
+          "value": 13.549
+        },
+        {
+          "year": 2023,
+          "value": 11.86
+        },
+        {
+          "year": 2024,
+          "value": 12.279
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 150,
+      "units": "lb",
+      "yoy_pct_change": -2.1,
+      "long_arc_pct_change": null,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
           "value": 0
+        },
+        {
+          "year": 2012,
+          "value": 749
+        },
+        {
+          "year": 2013,
+          "value": 749
+        },
+        {
+          "year": 2014,
+          "value": 15
+        },
+        {
+          "year": 2015,
+          "value": 139
+        },
+        {
+          "year": 2016,
+          "value": 140
+        },
+        {
+          "year": 2017,
+          "value": 135
+        },
+        {
+          "year": 2018,
+          "value": 166
+        },
+        {
+          "year": 2019,
+          "value": 150
+        },
+        {
+          "year": 2020,
+          "value": 115
+        },
+        {
+          "year": 2021,
+          "value": 114
+        },
+        {
+          "year": 2022,
+          "value": 162
+        },
+        {
+          "year": 2023,
+          "value": 153
+        },
+        {
+          "year": 2024,
+          "value": 150
         }
       ]
     },
@@ -49,10 +437,62 @@
       "label": "TRI water releases (5.3)",
       "current": 0,
       "units": "lb",
-      "yoy_pct_change": null,
+      "yoy_pct_change": 175.0,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2010,
       "history": [
+        {
+          "year": 2010,
+          "value": 0
+        },
+        {
+          "year": 2012,
+          "value": 0
+        },
+        {
+          "year": 2013,
+          "value": 0
+        },
+        {
+          "year": 2014,
+          "value": 0
+        },
+        {
+          "year": 2015,
+          "value": 0
+        },
+        {
+          "year": 2016,
+          "value": 0
+        },
+        {
+          "year": 2017,
+          "value": 0
+        },
+        {
+          "year": 2018,
+          "value": 0
+        },
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
         {
           "year": 2024,
           "value": 0
@@ -62,15 +502,67 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 0,
+      "current": 5567,
       "units": "lb",
-      "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "yoy_pct_change": 72.8,
+      "long_arc_pct_change": -23.6,
+      "baseline_year": 2014,
       "history": [
         {
-          "year": 2024,
+          "year": 2010,
           "value": 0
+        },
+        {
+          "year": 2012,
+          "value": 141
+        },
+        {
+          "year": 2013,
+          "value": 172
+        },
+        {
+          "year": 2014,
+          "value": 7282
+        },
+        {
+          "year": 2015,
+          "value": 1007
+        },
+        {
+          "year": 2016,
+          "value": 922
+        },
+        {
+          "year": 2017,
+          "value": 466
+        },
+        {
+          "year": 2018,
+          "value": 3302
+        },
+        {
+          "year": 2019,
+          "value": 7163
+        },
+        {
+          "year": 2020,
+          "value": 8891
+        },
+        {
+          "year": 2021,
+          "value": 5952
+        },
+        {
+          "year": 2022,
+          "value": 1551
+        },
+        {
+          "year": 2023,
+          "value": 3221
+        },
+        {
+          "year": 2024,
+          "value": 5567
         }
       ]
     },
@@ -142,83 +634,112 @@
       ]
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "slug": "senior-aerospace-inc-ssp-div",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Senior Aerospace INC Ssp Div",
+      "parent_company": "Senior Operations LLC",
+      "total_pounds_recent": 5610,
+      "yoy_pct_change": 68.1,
+      "top_chemical": "Lead",
+      "city": "Burbank",
+      "lat": 34.201587,
+      "lng": -118.342392
+    },
+    {
+      "slug": "bandy-manufacturing-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Bandy Manufacturing LLC",
+      "parent_company": "Novaria Group",
+      "total_pounds_recent": 89,
+      "yoy_pct_change": 174.8,
+      "top_chemical": "Copper",
+      "city": "Burbank",
+      "lat": 34.206009,
+      "lng": -118.347554
+    },
+    {
+      "slug": "hydro-aire-aerospace-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Hydro-Aire Aerospace Corp.",
+      "parent_company": "Crane Co",
+      "total_pounds_recent": 18,
+      "yoy_pct_change": 413.4,
+      "top_chemical": "Lead",
+      "city": "Burbank",
+      "lat": 34.199205,
+      "lng": -118.343261
+    }
+  ],
   "water": {
-    "utilities_count": 1,
-    "population_served_total": 105603,
-    "violations_5yr_total": 24,
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
     "health_based_5yr_total": 0,
     "unresolved_total": 0,
     "utilities_with_unresolved": 0,
-    "utilities": [
-      {
-        "slug": "burbank-city-water-dept",
-        "state": "ca",
-        "state_label": "California",
-        "name": "Burbank-City, Water Dept.",
-        "pwsid": "CA1910179",
-        "population_served": 105603,
-        "health_based_violations_5yr": 0,
-        "unresolved": false
-      }
-    ]
+    "utilities": []
   },
   "flags": [],
   "equity": {
-    "population": 5234,
-    "pct_low_income": 4.5,
-    "pct_people_of_color": 55.2,
-    "pct_under_5": 4.1,
-    "pct_over_64": 8.6,
+    "population": 106389,
+    "pct_low_income": 10.7,
+    "pct_people_of_color": 44.8,
+    "pct_under_5": 5.8,
+    "pct_over_64": 15.7,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
-        "pct_us": 90.1,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 66.7,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 64.6,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 88.2,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 13.2,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 98.9,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
         "pct_us": 90.9,
         "pct_state": null
       },
       {
+        "label": "Ozone",
+        "pct_us": 98.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 78.7,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 84.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 49.7,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 96.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 82.4,
+        "pct_state": null
+      },
+      {
         "label": "Superfund site proximity",
-        "pct_us": 94.4,
+        "pct_us": 100.0,
         "pct_state": null
       },
       {
         "label": "RMP-facility proximity",
-        "pct_us": 52.2,
+        "pct_us": 47.2,
         "pct_state": null
       },
       {
         "label": "Hazardous-waste site proximity",
-        "pct_us": 97.3,
+        "pct_us": 95.0,
         "pct_state": null
       },
       {
@@ -228,7 +749,7 @@
       },
       {
         "label": "NPDES wastewater proximity",
-        "pct_us": 13.7,
+        "pct_us": 90.2,
         "pct_state": null
       },
       {
@@ -240,43 +761,43 @@
     "disparity_scores": [
       {
         "label": "PM2.5 (fine particulate)",
-        "score": 121.7
+        "score": 113.4
       },
       {
         "label": "Ozone",
-        "score": 45.5
+        "score": 120.9
       },
       {
         "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 83.7
+        "score": 95.9
       },
       {
         "label": "Diesel particulate",
-        "score": 117.7
+        "score": 103.9
       },
       {
         "label": "Toxic releases (RSEI)",
-        "score": 18.0
+        "score": 61.4
       },
       {
         "label": "Traffic proximity",
-        "score": 131.4
+        "score": 118.2
       },
       {
         "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 112.1
+        "score": 86.5
       },
       {
         "label": "Superfund site proximity",
-        "score": 125.7
+        "score": 122.2
       },
       {
         "label": "RMP-facility proximity",
-        "score": 69.9
+        "score": 56.9
       },
       {
         "label": "Hazardous-waste site proximity",
-        "score": 129.8
+        "score": 117.5
       },
       {
         "label": "Underground storage tanks",
@@ -284,7 +805,7 @@
       },
       {
         "label": "NPDES wastewater proximity",
-        "score": 17.4
+        "score": 110.6
       },
       {
         "label": "Drinking-water non-compliance",
@@ -306,5 +827,5 @@
       "retrieved": "2026-05-05"
     }
   ],
-  "_published_at": "2026-05-05T20:44:02Z"
+  "_published_at": "2026-05-05T21:42:53Z"
 }

@@ -10,6 +10,7 @@ function variantFor(s: FlagSeverity): "spike" | "drop" | "rare" {
     case "surge":
     case "unresolved":
     case "health_based_recent":
+    case "exceedance":
       return "spike";
     case "improvement":
     case "drop":
@@ -28,6 +29,7 @@ const SEVERITY_LABEL: Record<FlagSeverity, string> = {
   unresolved: "UNRESOLVED VIOLATION",
   health_based_recent: "RECENT HEALTH-BASED VIOLATION",
   health_based_recent5y: "HEALTH-BASED · 5-YEAR WINDOW",
+  exceedance: "NAAQS EXCEEDANCE",
 };
 
 const TYPE_LABEL: Record<FlagType, string> = {
@@ -35,6 +37,7 @@ const TYPE_LABEL: Record<FlagType, string> = {
   release_shift: "RELEASE SHIFT",
   violation_event: "SDWIS VIOLATION",
   ghg_step: "GHG STEP CHANGE",
+  naaqs_exceedance: "AIR QUALITY · NAAQS",
 };
 
 function chipColor(s: FlagSeverity): string {
@@ -43,6 +46,7 @@ function chipColor(s: FlagSeverity): string {
     case "surge":
     case "unresolved":
     case "health_based_recent":
+    case "exceedance":
       return "var(--red)";
     case "health_based_recent5y":
       return "var(--amber)";
@@ -82,6 +86,7 @@ export function AnomalyCard({ flag }: { flag: Flag }) {
 // Severity weights for client-side ordering — mirrors pipeline severity_weight().
 const SEVERITY_WEIGHT: Record<FlagSeverity, number> = {
   unresolved: 100,
+  exceedance: 90,
   regression: 80,
   surge: 70,
   health_based_recent: 60,

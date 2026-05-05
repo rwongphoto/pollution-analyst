@@ -10,6 +10,7 @@ FlagType = Literal[
     "release_shift",
     "violation_event",
     "ghg_step",
+    "naaqs_exceedance",
 ]
 
 FlagSeverity = Literal[
@@ -20,6 +21,7 @@ FlagSeverity = Literal[
     "unresolved",         # SDWIS unresolved violation
     "health_based_recent",   # SDWIS health-based within 1 year
     "health_based_recent5y", # SDWIS health-based within 5 years
+    "exceedance",         # AQS reading > NAAQS (current year)
 ]
 
 
@@ -60,6 +62,7 @@ class Flag:
 # editorial weight = sorted first.
 _SEVERITY_WEIGHT: dict[str, int] = {
     "unresolved": 100,
+    "exceedance": 90,
     "regression": 80,
     "surge": 70,
     "health_based_recent": 60,

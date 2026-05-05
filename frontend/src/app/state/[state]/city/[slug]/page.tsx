@@ -144,9 +144,13 @@ function PathwaysSection({ pathways }: { pathways: PollutantSummary[] }) {
           {pathways.map((p) => {
             const color = PATHWAY_COLOR[p.pathway];
             const valueLabel =
-              p.units === "lb" ? poundsFormat(p.current) : `${(p.current / 1_000_000).toFixed(1)}M ${p.units}`;
+              p.units === "lb"
+                ? poundsFormat(p.current)
+                : p.units.startsWith("metric tons")
+                ? `${(p.current / 1_000_000).toFixed(1)}M ${p.units}`
+                : `${p.current.toFixed(p.units === "ppm" ? 3 : 1)} ${p.units}`;
             return (
-              <div key={p.pathway} className="city-tile live" style={{ cursor: "default" }}>
+              <div key={`${p.pathway}-${p.label}`} className="city-tile live" style={{ cursor: "default" }}>
                 <div className="tile-meta">
                   <span style={{ color }}>{p.pathway.toUpperCase().replace("_", " ")}</span>
                   <span>SINCE {p.baseline_year}</span>

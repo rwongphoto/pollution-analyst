@@ -25,7 +25,8 @@ export type FlagType =
   | "long_arc_shift"
   | "release_shift"
   | "violation_event"
-  | "ghg_step";
+  | "ghg_step"
+  | "naaqs_exceedance";
 
 export type FlagSeverity =
   | "improvement"
@@ -34,7 +35,8 @@ export type FlagSeverity =
   | "drop"
   | "unresolved"
   | "health_based_recent"
-  | "health_based_recent5y";
+  | "health_based_recent5y"
+  | "exceedance";
 
 export interface Flag {
   type: FlagType;

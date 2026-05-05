@@ -24,11 +24,12 @@ from .flags import (
     detect_ghg_step,
     detect_long_arc_facility,
     detect_long_arc_geo,
+    detect_naaqs_exceedance,
     detect_release_shifts,
     detect_violation_events,
     summarize as flags_summarize,
 )
-from .ingest import ejscreen, ghgrp, sdwis, tri
+from .ingest import aqs, ejscreen, ghgrp, sdwis, tri
 from .publish import site as publish_site
 from .spatial.acs import (
     get_county_demographics,
@@ -64,6 +65,7 @@ def run_state(
     history_from: int | None = None,
     sdwis_since_year: int | None = 2020,
     skip_sdwis: bool = False,
+    skip_aqs: bool = False,
     history_cache_only: bool = False,
     no_flags: bool = False,
 ) -> tuple[StateAgg, dict, dict, dict[str, UtilityAgg], dict]:
@@ -209,6 +211,32 @@ def run_state(
         for fips, co2e in ghgrp.aggregate_county_totals(ghg_rows).items():
             ghg_county_history.setdefault(fips, {})[y] = co2e
 
+    # --- AQS (criteria-air monitor readings) ---
+    # State-level: per-metric annual mean across all in-state monitors.
+    # County-level: per-metric annual mean across in-county monitors only.
+    # Both keyed by metric_key ("pm25_annual" / "pm25_24hr" / "ozone_8hr" /
+    # "no2_annual"). Counties without a regulatory monitor for a given metric
+    # simply lack that key — the publish layer skips them rather than render
+    # zero/blank tiles.
+    air_state_history: dict[str, dict[int, float]] = {}
+    air_county_history: dict[str, dict[str, dict[int, float]]] = {}
+    if not skip_aqs:
+        aqs_years = [year] if history_from is None else list(range(history_from, year + 1))
+        for y in aqs_years:
+            try:
+                readings = aqs.fetch_state_year(state, y, cache_only=history_cache_only)
+            except Exception as exc:  # noqa: BLE001
+                logging.warning("AQS fetch failed for %s %d: %s", state.abbr, y, exc)
+                continue
+            if not readings:
+                continue
+            for metric_key, val in aqs.aggregate_state_year(readings).items():
+                air_state_history.setdefault(metric_key, {})[y] = val
+            for cfips, metric_map in aqs.aggregate_county_year(readings).items():
+                county_bucket = air_county_history.setdefault(cfips, {})
+                for metric_key, val in metric_map.items():
+                    county_bucket.setdefault(metric_key, {})[y] = val
+
     # --- EJScreen disparity scores (state + per-county + per-place) ---
     try:
         state_disparity = ejscreen.aggregate_state(state.abbr)
@@ -273,7 +301,8 @@ def run_state(
     facility_flags_map: dict[str, list[Flag]] = {}
     utility_flags: dict[str, list[Flag]] = {}
     if not no_flags:
-        # State long-arc on TRI total + per-medium + GHG.
+        # State long-arc on TRI total + per-medium + GHG, plus statewide
+        # NAAQS exceedance (rare but happens — e.g. statewide ozone).
         for label, hist, units in [
             ("Total TRI releases", history, "lb"),
             ("TRI air releases", medium_history.get("AIR"), "lb"),
@@ -287,9 +316,15 @@ def run_state(
             )
             if f is not None:
                 state_flags.append(f)
+        state_flags.extend(detect_naaqs_exceedance(
+            air_history=air_state_history,
+            geography_label=f"{state.name} statewide",
+            recent_year=year,
+        ))
         flags_summarize("state", state.slug, state_flags)
-        # County long-arc on total + GHG, plus county-level ghg_step (the
-        # only level v1 emits ghg_step at).
+        # County long-arc on total + GHG + AQS, county-level ghg_step, and
+        # NAAQS exceedance per criteria-air metric. ghg_step is the only
+        # level v1 emits ghg_step at.
         for c in counties.values():
             cf: list[Flag] = []
             cname = c.name + " County" if not c.name.endswith("County") else c.name
@@ -309,9 +344,30 @@ def run_state(
             )
             if ghg is not None:
                 cf.append(ghg)
+            cf.extend(detect_naaqs_exceedance(
+                air_history=air_county_history.get(c.fips),
+                geography_label=cname,
+                recent_year=year,
+            ))
             if cf:
                 county_flags[c.fips] = cf
                 flags_summarize("county", f"{state.slug}/{c.fips}", cf)
+        # NAAQS exceedance for counties with AQS data but no TRI footprint
+        # (rural / monitor-only counties). Without this loop they never enter
+        # the per-county flag detection above and lose their exceedance flag.
+        for cfips, hist in air_county_history.items():
+            if cfips in county_flags or cfips in counties:
+                continue
+            cname = _county_name_from_fips(cfips, state.abbr)
+            if not cname:
+                continue
+            label_full = cname + " County" if not cname.endswith("County") else cname
+            naaqs = detect_naaqs_exceedance(
+                air_history=hist, geography_label=label_full, recent_year=year,
+            )
+            if naaqs:
+                county_flags[cfips] = naaqs
+                flags_summarize("county", f"{state.slug}/{cfips}", naaqs)
         # Facility long-arc + release_shift.
         for f in facilities.values():
             fac_chem_hist = chem_history.get(f.facility_id, {})
@@ -358,6 +414,7 @@ def run_state(
         disparity_scores=state_disparity,
         percentiles=state_percentiles,
         ghg_history=ghg_state_history,
+        air_history=air_state_history,
         flags=state_flags,
     )
 
@@ -466,6 +523,7 @@ def run_state(
     all_county_fips.update(county_disparity.keys())
     all_county_fips.update(county_percentiles.keys())
     all_county_fips.update(ghg_county_history.keys())
+    all_county_fips.update(air_county_history.keys())
     all_county_fips.update(county_demos.keys())
     all_county_fips.update(county_pops.keys())
     county_paths: set = set()
@@ -496,6 +554,7 @@ def run_state(
             disparity_scores=county_disparity.get(cfips, []),
             percentiles=county_percentiles.get(cfips, []),
             ghg_history=ghg_county_history.get(cfips),
+            air_history=air_county_history.get(cfips),
             flags=county_flags.get(cfips, []),
             cities_directory=cities_by_county_fips.get(cfips, []),
         ))
@@ -638,6 +697,7 @@ def run_state(
             county_name=_county_name_from_fips(county_fips_for_place, state.abbr) if county_fips_for_place else None,
             county_fips=county_fips_for_place,
             county_ghg_history=ghg_county_history.get(county_fips_for_place) if county_fips_for_place else None,
+            county_air_history=air_county_history.get(county_fips_for_place) if county_fips_for_place else None,
             flags=city_flags,
         ))
 
@@ -670,6 +730,9 @@ def main(argv: list[str] | None = None) -> int:
                       help="Pull state-level totals back to this year for the long-arc chart.")
     runp.add_argument("--skip-sdwis", action="store_true",
                       help="Skip SDWIS ingest (TRI only).")
+    runp.add_argument("--skip-aqs", action="store_true",
+                      help="Skip AQS air-monitor ingest. Pages render without "
+                           "criteria_air pathway tiles or naaqs_exceedance flags.")
     runp.add_argument("--sdwis-since", type=int, default=2020,
                       help="Earliest year of SDWIS violations to keep.")
     runp.add_argument("--history-cache-only", action="store_true",
@@ -701,6 +764,7 @@ def main(argv: list[str] | None = None) -> int:
             slug, args.year, args.history_from,
             sdwis_since_year=args.sdwis_since,
             skip_sdwis=args.skip_sdwis,
+            skip_aqs=args.skip_aqs,
             history_cache_only=args.history_cache_only,
             no_flags=args.no_flags,
         )

@@ -1,6 +1,6 @@
 # Pollution Analyst.ai — Site Architecture
 
-**Status:** California POC live. One state ingested end-to-end (TRI, SDWIS, GHGRP, EJScreen-clone, ACS). Five programmatic page types render statically.
+**Status:** California POC live. One state ingested end-to-end (TRI, SDWIS, GHGRP, AQS, EJScreen-clone, ACS). Five programmatic page types render statically.
 
 **Companion docs:**
 - [`page_templates.md`](page_templates.md) — per-template section breakdowns.
@@ -14,22 +14,22 @@ Trend intelligence and narrative platform for environmental data — **not a rea
 
 - Analytics + storytelling layer on top of public-domain federal data.
 - Methodological discipline (transparent caveats, federal-only sourcing).
-- Programmatic SEO at scale via stacked place / entity surfaces — 4,769 pages rendered for CA alone.
-- Anomaly detection as encoded editorial judgment (four flag types calibrated against CA data).
+- Programmatic SEO at scale via stacked place / entity surfaces — 4,735 pages rendered for CA alone.
+- Anomaly detection as encoded editorial judgment (five flag types calibrated against CA data).
 - Deterministic template prose — no LLM in the loop. See [`prose_strategy.md`](prose_strategy.md).
 
 ## Live Coverage (CA POC)
 
 | Geography | Count | Source |
 |---|---|---|
-| State hub | 1 (CA) | TRI 2010–2023 + GHGRP 2010–2024 + SDWIS + EJScreen-clone |
-| County hubs | 44 | CA + TX stub |
-| City hubs (place-anchored) | 822 | CA Census places with ≥1 facility or ≥1 utility serving |
-| TRI facility entity pages | 822 | CA + TX stub |
-| SDWIS water utility entity pages | 3,071 | CA active CWSes + Flint MI demo |
+| State hub | 1 (CA) | TRI 2010–2024 + GHGRP 2010–2024 + AQS 2010–2024 + SDWIS + EJScreen-clone |
+| County hubs | 58 | every CA county with TRI / GHG / AQS / EJ data |
+| City hubs (place-anchored) | 820 | CA Census places with ≥1 facility or ≥1 utility serving |
+| TRI facility entity pages | 785 | CA only |
+| SDWIS water utility entity pages | 3,070 | CA active CWSes + Flint MI demo |
 | Methodology | 1 | static |
 
-Total static pages: **4,769** at last build.
+Total static pages: **4,735** at last build.
 
 ## Route Map
 
@@ -118,14 +118,14 @@ The cross-source common denominator. Used identically on every page where pathwa
 | `tri_water` | TRI 5.3 | lb |
 | `tri_land` | TRI land + off-site | lb |
 | `ghg` | GHGRP large emitters (Subpart A and below) | mtCO₂e |
-| `criteria_air` | AQS (deferred — no air-monitor ingest yet) | µg/m³, ppb |
+| `criteria_air` | AQS annual_conc_by_monitor (PM2.5 annual + 24-hr 98th, Ozone 8-hr 4th-max, NO₂ annual) | µg/m³, ppm, ppb |
 | `hazardous_air` | NATA / AirToxScreen (deferred) | µg/m³ |
 | `drinking_water` | SDWIS (event-based, no continuous metric on pathway tiles) | n/a |
 | `pesticide` | USGS NSP (deferred) | lb/county |
 
-Per-pathway color is consistent across every chart component. Hazardous air, criteria air, drinking water (continuous), and pesticide pathway tiles are stubbed in the type system but not yet emitted by the pipeline.
+Per-pathway color is consistent across every chart component. Hazardous air, drinking water (continuous), and pesticide pathway tiles are stubbed in the type system but not yet emitted by the pipeline. SO₂ / CO / Lead / PM10 are deliberately excluded from the v1 `criteria_air` set — rarely the editorial story outside of specific industrial contexts; can be added without changing the pathway shape.
 
-## Anomaly Engine (4 flag types)
+## Anomaly Engine (5 flag types)
 
 Per [`anomaly_engine_design.md`](anomaly_engine_design.md), v1 ships:
 
@@ -135,10 +135,11 @@ Per [`anomaly_engine_design.md`](anomaly_engine_design.md), v1 ships:
 | `release_shift` | TRI | facility × chemical | ≥50% YoY AND ≥10k lb absolute AND ≥1k lb prior |
 | `violation_event` | SDWIS | water utility | Health-based or unresolved violation |
 | `ghg_step` | GHGRP | county | ≥30% YoY AND both years ≥10k mtCO₂e |
+| `naaqs_exceedance` | AQS | county, state | Population-of-monitors mean for a NAAQS-relevant metric exceeds the standard in the most recent reporting year |
 
 Calibration target: 1–3 flags per geography on average. Rendered cap on the page UI is 4 (severity-weighted). Calibration counts log per publish run; thresholds tighten if average overshoots.
 
-Deferred (AQS-dependent or facility-join-dependent): `smoke_days`, `naaqs_exceedance`, facility-level `ghg_step`, `sustained_shift`, `streak_break`.
+Deferred (AirToxScreen- or facility-join-dependent): `smoke_days`, facility-level `ghg_step`, `sustained_shift`, `streak_break`.
 
 ## Equity Overlay
 
@@ -161,6 +162,7 @@ Rendered on state, county, city hub, facility (county-as-proxy), and water-utili
 ## Operational Cadence
 
 - **Annual ingest** for TRI (reporting year T published in T+1), GHGRP, ACS.
+- **Twice-yearly AQS refresh** — EPA republishes `annual_conc_by_monitor_YYYY.zip` in June (prior-year final) and December (summer/ozone update). Cache lives at `data/raw/aqs/`; one-time warm-up needs a non-`--history-cache-only` run before subsequent runs can stay cache-only.
 - **Continuous-but-cached SDWIS** — the violation table changes when EPA updates it; we re-pull on demand.
 - **Bulk CSV is the primary path** for every Envirofacts-fronted source. The REST API rate-limits aggressively; bulk downloads scale and are designed for this use. See plan §"Source Resilience".
 - **`--history-cache-only` mode** lets the pipeline run during EPA outages by reading whatever's already in `data/raw/`.
@@ -184,9 +186,8 @@ Rendered on state, county, city hub, facility (county-as-proxy), and water-utili
   - `/rankings/states` — across all ingested states. Trivially small (1 row today, 50 at full coverage) but high-traffic SEO surface — "most polluted states" is a real query.
 
   All three render at home-publish time by reading the union of state / county / city JSONs. Optional: scatter / strip-plot of percentile vs median income to make the correlation literally a chart, not just a table. Optional cross-link: "X ranks Yth nationally" on every per-place page header.
-- **AQS / NATA ingest.** The Tier-3 neighborhood surface depends on this; the criteria-air pathway tile is stubbed and not yet emitting.
+- **AirToxScreen (NATA successor) ingest.** Unlocks the `hazardous_air` pathway tile and the Tier-3 neighborhood surface (block-level cancer-risk + ambient HAP concentrations from `gaftp.epa.gov/rtrmodeling_public/AirToxScreen/2020/`). Annual cadence per EPA, ~1-2 weeks of work — modeled on the AQS ingest now in `pipeline/src/ingest/aqs.py`.
 - **TRI ↔ GHGRP facility-ID join.** Unlocks facility-level `ghg_step` flags.
 - **Sustained-shift / streak-break flags.** Need a monthly cadence; TRI is annual-native.
-- **Cross-state expansion.** Pipeline is parameterized on state slug; bulk-CSV cache is keyed per state. Adding a state is registration + ACS + TIGER fetch.
+- **Cross-state expansion.** Pipeline is parameterized on state slug; bulk-CSV cache is keyed per state. Adding a state is registration + ACS + TIGER fetch + a non-`--history-cache-only` warm-up run for AQS history.
 - **SDWIS `OWNER_TYPE_CODE` ingest + UI chip.** SDWIS classifies each PWS by owner type (`L` local government, `M` mixed, `N` Native American, `P` private, `S` state government, `F` federal). Currently we don't ingest this field and the city-hub / state water-system tables can't tell readers whether a row is "City of Stockton" (municipal) vs "Stockton Verde Mobile Home Park" (private). Two pieces of work: (1) extend `pipeline/src/ingest/sdwis.py:WaterSystem` + `aggregate/build.py:UtilityAgg` + the `UtilitySummary` payload to carry an `owner_type` field; (2) surface it as a chip in the water-system table cell, e.g. MUNICIPAL / PRIVATE / DISTRICT, so readers can mentally bucket without inferring from the name.
-- **TX demo stubs.** `data/published/{state,county,facility}/tx/` predate the real pipeline; either delete or pipe through proper TX ingest.
