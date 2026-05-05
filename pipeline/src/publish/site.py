@@ -726,6 +726,7 @@ def publish_county(
     percentiles: list | None = None,
     ghg_history: dict[int, float] | None = None,
     flags: list | None = None,
+    cities_directory: list[dict] | None = None,
 ) -> Path:
     top = sorted(facilities_in_county, key=lambda f: f.pounds_total, reverse=True)[:COUNTY_TOP_FACILITIES]
     history_map = history or {year: county.pounds_total}
@@ -754,6 +755,7 @@ def publish_county(
             for f in top
         ],
         "utilities": [],  # SDWIS ingest pending
+        "cities_directory": cities_directory or [],
         "flags": [f.to_payload() for f in (flags or [])],
         "equity": _build_equity(
             population=population,

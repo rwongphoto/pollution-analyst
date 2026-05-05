@@ -360,6 +360,103 @@ def run_state(
         ghg_history=ghg_state_history,
         flags=state_flags,
     )
+
+    # Place → facility / utility mappings, computed once and reused: the
+    # county-publish loop needs a "cities in this county" directory; the
+    # city-publish loop further down also consumes these. Lifted above
+    # publish_county so its directory has the same canonical-county logic
+    # the city-hub publish uses.
+    fac_points = [(f.facility_id, f.lat, f.lng) for f in facilities.values()]
+    try:
+        place_to_facility_ids = assign_facilities_to_places(fac_points, state.fips)
+    except Exception as exc:  # noqa: BLE001
+        logging.warning("Place point-in-polygon failed for %s: %s", state.abbr, exc)
+        place_to_facility_ids = {}
+    # First pass: candidate utilities per place by SDWIS city_name match.
+    # SDWIS city_name is unreliable on its own — it often records the operator's
+    # billing/HQ city, not the service area. We filter by county in the second
+    # pass below to drop matches like CA37/CA28/CA49 mobile-home parks landing
+    # under "Stockton" because their operator is HQ'd there.
+    place_to_utility_candidates: dict[str, list] = {}
+    for u in utilities.values():
+        pf = place_name_to_fips.get((u.city_name or "").strip().upper())
+        if pf:
+            place_to_utility_candidates.setdefault(pf, []).append(u)
+
+    # Second pass: derive each place's canonical county and filter utilities to
+    # that county. Priority for the canonical county:
+    #   (a) majority county of facilities inside the place polygon — authoritative,
+    #       comes from centroid containment, not free-text fields.
+    #   (b) majority SDWIS county across the city_name candidates — only used when
+    #       the place has zero in-polygon facilities (bedroom communities).
+    from collections import Counter
+    place_to_utilities: dict[str, list] = {}
+    place_to_canonical_county: dict[str, str] = {}
+    for pf in set(place_to_facility_ids.keys()) | set(place_to_utility_candidates.keys()):
+        counts: Counter[str] = Counter()
+        for fid in place_to_facility_ids.get(pf, []):
+            f = facilities.get(fid)
+            if f and f.county_fips:
+                counts[f.county_fips] += 1
+        if not counts:
+            for u in place_to_utility_candidates.get(pf, []):
+                cf = utility_county_map.get(u.pwsid)
+                if cf:
+                    counts[cf] += 1
+        canonical = counts.most_common(1)[0][0] if counts else None
+        if canonical:
+            place_to_canonical_county[pf] = canonical
+            kept = [
+                u for u in place_to_utility_candidates.get(pf, [])
+                if utility_county_map.get(u.pwsid) == canonical
+            ]
+            if kept:
+                place_to_utilities[pf] = kept
+        else:
+            # No county signal anywhere — keep candidates rather than drop
+            cands = place_to_utility_candidates.get(pf, [])
+            if cands:
+                place_to_utilities[pf] = cands
+
+    # Build "cities in this county" directory entries. Eligibility mirrors
+    # the city-hub publish criteria below: a place gets a programmatic page
+    # iff it has ≥1 facility OR ≥1 (county-filtered) utility.
+    cities_by_county_fips: dict[str, list[dict]] = {}
+    eligible_places_for_dir = set(place_to_facility_ids.keys()) | set(place_to_utilities.keys())
+    for pf in eligible_places_for_dir:
+        place_name = place_fips_to_name.get(pf)
+        if not place_name:
+            continue
+        cfips = place_to_canonical_county.get(pf)
+        if cfips is None:
+            ids = place_to_facility_ids.get(pf, [])
+            if ids:
+                first = facilities.get(ids[0])
+                if first:
+                    cfips = first.county_fips
+            if cfips is None:
+                utils = place_to_utilities.get(pf, [])
+                if utils:
+                    cfips = utility_county_map.get(utils[0].pwsid)
+        if not cfips:
+            continue
+        place_pop = (
+            place_demos.get(pf).population
+            if pf in place_demos and hasattr(place_demos.get(pf), "population")
+            else 0
+        )
+        cities_by_county_fips.setdefault(cfips, []).append({
+            "slug": publish_site.place_slug(place_name, pf),
+            "name": place_name,
+            "fips": pf,
+            "facilities_count": len(place_to_facility_ids.get(pf, [])),
+            "utilities_count": len(place_to_utilities.get(pf, [])),
+            "population": place_pop,
+        })
+    # Sort each county's directory alphabetically by city name.
+    for cfips in cities_by_county_fips:
+        cities_by_county_fips[cfips].sort(key=lambda e: e["name"].lower())
+
     # Publish every county with data from ANY upstream source — TRI, GHG,
     # EJ, ACS — not just counties with 2024 TRI rows. Without this, quiet
     # counties (Marin, Sierra, etc.) only get a stale page from an earlier
@@ -400,6 +497,7 @@ def run_state(
             percentiles=county_percentiles.get(cfips, []),
             ghg_history=ghg_county_history.get(cfips),
             flags=county_flags.get(cfips, []),
+            cities_directory=cities_by_county_fips.get(cfips, []),
         ))
     # 3-mile buffer demographics per facility — block-group-level pop-weighted
     # aggregation so the equity overlay describes who lives *near* the facility,
@@ -458,56 +556,10 @@ def run_state(
     # True place-anchored aggregation. TRI facilities in the city polygon +
     # utilities serving the city + GHG county-share + equity. Each utility
     # row links to /water/[slug] for the entity-level deep dive.
-    fac_points = [(f.facility_id, f.lat, f.lng) for f in facilities.values()]
-    try:
-        place_to_facility_ids = assign_facilities_to_places(fac_points, state.fips)
-    except Exception as exc:  # noqa: BLE001
-        logging.warning("Place point-in-polygon failed for %s: %s", state.abbr, exc)
-        place_to_facility_ids = {}
-    # First pass: candidate utilities per place by SDWIS city_name match.
-    # SDWIS city_name is unreliable on its own — it often records the operator's
-    # billing/HQ city, not the service area. We filter by county in the second
-    # pass below to drop matches like CA37/CA28/CA49 mobile-home parks landing
-    # under "Stockton" because their operator is HQ'd there.
-    place_to_utility_candidates: dict[str, list] = {}
-    for u in utilities.values():
-        pf = place_name_to_fips.get((u.city_name or "").strip().upper())
-        if pf:
-            place_to_utility_candidates.setdefault(pf, []).append(u)
-
-    # Second pass: derive each place's canonical county and filter utilities to
-    # that county. Priority for the canonical county:
-    #   (a) majority county of facilities inside the place polygon — authoritative,
-    #       comes from centroid containment, not free-text fields.
-    #   (b) majority SDWIS county across the city_name candidates — only used when
-    #       the place has zero in-polygon facilities (bedroom communities).
-    from collections import Counter
-    place_to_utilities: dict[str, list] = {}
-    for pf in set(place_to_facility_ids.keys()) | set(place_to_utility_candidates.keys()):
-        counts: Counter[str] = Counter()
-        for fid in place_to_facility_ids.get(pf, []):
-            f = facilities.get(fid)
-            if f and f.county_fips:
-                counts[f.county_fips] += 1
-        if not counts:
-            for u in place_to_utility_candidates.get(pf, []):
-                cf = utility_county_map.get(u.pwsid)
-                if cf:
-                    counts[cf] += 1
-        canonical = counts.most_common(1)[0][0] if counts else None
-        if canonical:
-            kept = [
-                u for u in place_to_utility_candidates.get(pf, [])
-                if utility_county_map.get(u.pwsid) == canonical
-            ]
-            if kept:
-                place_to_utilities[pf] = kept
-        else:
-            # No county signal anywhere — keep candidates rather than drop
-            cands = place_to_utility_candidates.get(pf, [])
-            if cands:
-                place_to_utilities[pf] = cands
-
+    # Place mappings (place_to_facility_ids / place_to_utilities /
+    # place_to_canonical_county) were computed above the county-publish
+    # loop so the cities_directory could share the same canonical-county
+    # resolution.
     city_paths: set = set()
     # Build a city hub for any place with ≥1 facility or ≥1 (filtered) utility — places
     # with neither aren't worth a programmatic page.

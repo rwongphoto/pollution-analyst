@@ -354,6 +354,57 @@ function EquitySection({ data }: { data: CountyPagePayload }) {
   );
 }
 
+function CityDirectory({ data }: { data: CountyPagePayload }) {
+  // Alphabetical link directory of every city in this county that has its
+  // own published page. Long-tail cities don't otherwise appear in the
+  // facilities table; without this section search engines have no
+  // crawlable internal link to them. Mirrors the state page's
+  // CountyDirectory pattern.
+  const dir = data.cities_directory ?? [];
+  if (dir.length === 0) return null;
+  return (
+    <section className="section" id="all-cities" style={{ borderTop: "1px solid var(--line)" }}>
+      <div className="wrap">
+        <div className="eyebrow">Browse</div>
+        <h2 className="h-display" style={{ fontSize: "clamp(22px,2.4vw,28px)", margin: "8px 0 6px" }}>
+          All {dir.length} {data.county.name} cities with TRI data
+        </h2>
+        <p className="muted" style={{ fontSize: 14, marginBottom: 24, maxWidth: "60ch" }}>
+          Pollution trends and {data.briefing_label} pages for every tracked city in this county. Alphabetical.
+        </p>
+        <ul
+          style={{
+            listStyle: "none",
+            padding: 0,
+            margin: 0,
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
+            gap: "6px 18px",
+          }}
+        >
+          {dir.map((c) => (
+            <li key={c.slug}>
+              <Link
+                href={`/state/${data.county.state}/city/${c.slug}`}
+                style={{
+                  fontSize: 14,
+                  color: "var(--fg-2)",
+                  display: "block",
+                  padding: "4px 0",
+                  borderBottom: "1px solid transparent",
+                }}
+              >
+                {c.name} pollution
+                <span className="muted" style={{ fontSize: 12, marginLeft: 6 }}>· {c.facilities_count} {c.facilities_count === 1 ? "facility" : "facilities"}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
 function SourcesFooter({ data }: { data: CountyPagePayload }) {
   return (
     <section className="section" style={{ paddingTop: 0 }}>
@@ -418,6 +469,7 @@ export default async function CountyPage({
         <FacilitiesSection data={data} />
         <UtilitiesSection data={data} />
         <EquitySection data={data} />
+        <CityDirectory data={data} />
         <SourcesFooter data={data} />
       </main>
       <SiteFooter briefingLabel={data.briefing_label} />

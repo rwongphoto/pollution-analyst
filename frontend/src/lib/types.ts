@@ -295,6 +295,18 @@ export interface CountyPagePayload {
   pathways: PollutantSummary[]; // 3-5 top-level pollutants
   facilities: FacilitySummary[]; // top TRI facilities by pounds
   utilities: UtilitySummary[];   // water utilities serving the county
+  // Alphabetical directory of every city in this county that has its own
+  // published page (≥1 facility OR ≥1 county-filtered utility). Mirrors
+  // the state page's counties_directory pattern — surfaces internal links
+  // to long-tail city hubs that don't otherwise appear on the page.
+  cities_directory?: {
+    slug: string;
+    name: string;
+    fips: string;
+    facilities_count: number;
+    utilities_count: number;
+    population: number;
+  }[];
   flags: Flag[];
   equity: EquityOverlay;
   sources: {
