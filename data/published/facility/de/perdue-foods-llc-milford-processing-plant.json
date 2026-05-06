@@ -1,0 +1,77 @@
+{
+  "facility": {
+    "state": "de",
+    "state_label": "Delaware",
+    "slug": "perdue-foods-llc-milford-processing-plant",
+    "name": "Perdue Foods LLC - Milford Processing Plant",
+    "parent_company": "Perdue Farms INC",
+    "address": "255 N REHOBOTH BLVD",
+    "city": "Milford",
+    "county": "Kent County",
+    "county_slug": "kent",
+    "naics_label": "311615 \u00b7 Food",
+    "lat": 38.921147,
+    "lng": -75.421987
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1705,
+    "air_releases_pounds": 1691,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 14,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -14.5,
+    "long_arc_pct_change": -14.5,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 1994
+      },
+      {
+        "year": 2024,
+        "value": 1705
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Peracetic acid",
+      "cas": "79-21-0",
+      "category": "general",
+      "total_pounds_recent": 1705,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1994
+        },
+        {
+          "year": 2024,
+          "value": 1705
+        }
+      ],
+      "yoy_pct_change": -14.5,
+      "long_arc_pct_change": -14.5,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 15368,
+    "pct_low_income": 26.9,
+    "pct_people_of_color": 38.7,
+    "pct_under_5": 6.7,
+    "pct_over_64": 23.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (10 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T14:39:13Z"
+}

@@ -60,6 +60,11 @@ VINTAGE = 2020
 STATE_TO_REGION: dict[str, str] = {
     "CA": "9",
     "TX": "6b",
+    "VT": "1",
+    "NH": "1",
+    "ME": "1",
+    "RI": "1",
+    "DE": "3",
     # Add more as states register: Region 1 = CT/ME/MA/NH/RI/VT,
     # 2 = NJ/NY, 3 = DE/DC/MD/PA/VA/WV, 4a = AL/FL/GA/KY, 4b = MS/NC/SC/TN,
     # 5a = IL/IN/MI, 5b = MN/OH/WI, 6a = AR/LA/NM, 6b = OK/TX, 7 = IA/KS/MO/NE,

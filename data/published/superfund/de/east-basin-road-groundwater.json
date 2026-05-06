@@ -1,0 +1,74 @@
+{
+  "site": {
+    "state": "de",
+    "state_label": "Delaware",
+    "slug": "east-basin-road-groundwater",
+    "name": "East Basin Road Groundwater",
+    "epa_id": "DEN000304044",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "New Castle County",
+    "county_slug": "new-castle",
+    "city": "New Castle",
+    "city_slug": null,
+    "address": "Intersection Of School Ln And Rte. 13/N Dupont Hwy.",
+    "zip": "19720",
+    "lat": 39.673092,
+    "lng": -75.597211
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "DE0000634",
+        "name": "Municipal Services Commission",
+        "slug": "municipal-services-commission",
+        "state": "de",
+        "distance_miles": 1.65,
+        "place_name": "New Castle",
+        "primary_source": "groundwater",
+        "population_served": 5549,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MD0070213",
+        "name": "Whispering Pines Mobile Home Park",
+        "slug": "whispering-pines-mobile-home-park",
+        "state": "de",
+        "distance_miles": 1.65,
+        "place_name": "New Castle",
+        "primary_source": "groundwater",
+        "population_served": 325,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1870,
+    "pct_low_income": 32.1,
+    "pct_people_of_color": 64.0,
+    "pct_under_5": 4.8,
+    "pct_over_64": 6.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T14:39:13Z"
+}

@@ -36,6 +36,46 @@ STATES: dict[str, State] = {
         population=29145505,
         counties_total=254,
     ),
+    "vt": State(
+        slug="vt",
+        abbr="VT",
+        name="Vermont",
+        fips="50",
+        population=643077,
+        counties_total=14,
+    ),
+    "nh": State(
+        slug="nh",
+        abbr="NH",
+        name="New Hampshire",
+        fips="33",
+        population=1377529,
+        counties_total=10,
+    ),
+    "me": State(
+        slug="me",
+        abbr="ME",
+        name="Maine",
+        fips="23",
+        population=1362359,
+        counties_total=16,
+    ),
+    "ri": State(
+        slug="ri",
+        abbr="RI",
+        name="Rhode Island",
+        fips="44",
+        population=1097379,
+        counties_total=5,
+    ),
+    "de": State(
+        slug="de",
+        abbr="DE",
+        name="Delaware",
+        fips="10",
+        population=989948,
+        counties_total=3,
+    ),
 }
 
 
