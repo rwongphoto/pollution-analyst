@@ -21,10 +21,11 @@ CENSUS_URL = "https://www2.census.gov/geo/docs/reference/codes2020/national_coun
 USER_AGENT = "PollutionAnalystAi/0.1 (+contact: ops@pollutionanalyst.ai)"
 
 _cache: dict[tuple[str, str], str] = {}
-# fips → full Census COUNTYNAME (e.g. "Aleutians East Borough", "Acadia
-# Parish", "Los Angeles County"). Lets callers display the native suffix
-# instead of the auto-appended " County" we used to glue on.
-_canonical_full_by_fips: dict[str, str] = {}
+# (state_abbr, fips) → full Census COUNTYNAME (e.g. "Aleutians East Borough",
+# "Acadia Parish", "Los Angeles County"). State-keyed so a stray TX FIPS in
+# an LA bucket doesn't resolve to "Harris County, LA" — the lookup must agree
+# on both halves of the (state, fips) pair.
+_canonical_full_by_state_fips: dict[tuple[str, str], str] = {}
 
 
 def _cache_path() -> Path:
@@ -99,7 +100,7 @@ def _load_table() -> None:
             fips = f"{statefp}{countyfp}"
             normalized = _normalize_county(county_name)
             _cache[(state_abbr.upper(), normalized)] = fips
-            _canonical_full_by_fips[fips] = county_name.strip()
+            _canonical_full_by_state_fips[(state_abbr.upper(), fips)] = county_name.strip()
 
 
 def lookup_fips(state_abbr: str, county_name: str) -> str | None:
@@ -132,11 +133,12 @@ def lookup_canonical_full(state_abbr: str, county_name: str) -> str | None:
     fips = lookup_fips(state_abbr, county_name)
     if not fips:
         return None
-    return _canonical_full_by_fips.get(fips)
+    return _canonical_full_by_state_fips.get((state_abbr.upper(), fips))
 
 
-def lookup_canonical_full_by_fips(fips: str) -> str | None:
-    """Like lookup_canonical_full but keyed on FIPS directly. Used by the
-    GHGRP/AQS/AirToxScreen-only path where TRI didn't supply a name."""
+def lookup_canonical_full_by_fips(state_abbr: str, fips: str) -> str | None:
+    """Like lookup_canonical_full but keyed on FIPS directly. Returns None
+    if the FIPS doesn't actually pair with state_abbr in the Census table —
+    guards against e.g. a stray TX FIPS getting fed in for an LA run."""
     _load_table()
-    return _canonical_full_by_fips.get(fips)
+    return _canonical_full_by_state_fips.get((state_abbr.upper(), fips))
