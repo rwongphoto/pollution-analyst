@@ -26,7 +26,7 @@ from typing import Any
 import httpx
 
 from ..config import RAW_ROOT
-from ..spatial.county_fips import lookup_county_canonical, lookup_fips
+from ..spatial.county_fips import lookup_canonical_full, lookup_fips
 from ..states import State
 
 log = logging.getLogger(__name__)
@@ -181,12 +181,11 @@ def _parse_csv(body: str, state: State) -> list[TriRow]:
         raw_county = row.get("7. COUNTY") or ""
         fips = lookup_fips(state.abbr, raw_county) or ""
         if fips:
-            # Use the canonical Census name (already suffix-stripped — no
-            # " Parish" / " Borough" / " Census Area" — and matches the
-            # canonical bare-county form used elsewhere in the pipeline).
-            # Falls back to the raw upstream form if the cache disagrees,
-            # which shouldn't happen since lookup_fips just succeeded.
-            county_name = lookup_county_canonical(state.abbr, raw_county) or _title(raw_county)
+            # Use the full Census COUNTYNAME with its native suffix —
+            # "Los Angeles County" (CA), "Aleutians East Borough" (AK),
+            # "Acadia Parish" (LA), "Anchorage Municipality" (AK).
+            # The display layer no longer auto-appends " County".
+            county_name = lookup_canonical_full(state.abbr, raw_county) or _title(raw_county)
         else:
             county_name = _title(raw_county)
             skipped_no_fips += 1

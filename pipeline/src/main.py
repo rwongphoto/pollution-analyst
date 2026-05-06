@@ -56,14 +56,12 @@ from .spatial.places import (
 
 
 def _county_name_from_fips(fips: str, state_abbr: str) -> str | None:
-    """Reverse-lookup a county name from its FIPS via the cached Census table."""
-    from .spatial.county_fips import _load_table, _cache  # noqa: SLF001
-    _load_table()
-    state_abbr = state_abbr.upper()
-    for (st, name_norm), f in _cache.items():
-        if st == state_abbr and f == fips:
-            return name_norm.title()
-    return None
+    """Reverse-lookup the full canonical Census name (with native suffix)
+    for a FIPS. Returns 'Aleutians East Borough', 'Acadia Parish',
+    'Los Angeles County' — the display layer doesn't have to glue on
+    " County" anymore, since the suffix is already correct per state."""
+    from .spatial.county_fips import lookup_canonical_full_by_fips  # noqa: PLC0415
+    return lookup_canonical_full_by_fips(fips)
 
 
 def configure_logging() -> None:

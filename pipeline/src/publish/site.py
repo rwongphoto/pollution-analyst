@@ -109,8 +109,32 @@ def cleanup_stale(subdir: str, state_slug: str, kept: set[Path]) -> int:
     return removed
 
 
+_COUNTY_SUFFIXES_LOWER = (
+    " city and borough",  # checked before " borough" so Juneau strips fully
+    " borough",
+    " parish",
+    " census area",
+    " municipality",
+    " municipio",
+    " county",
+)
+
+
+def _strip_county_suffix(name: str) -> str:
+    """Strip the canonical Census subdivision suffix from a county-equivalent
+    name. AK/LA/PR keep their native suffixes in display strings now, so the
+    slugifier needs to handle every form, not just ' county'.
+    """
+    s = name.strip()
+    low = s.lower()
+    for suffix in _COUNTY_SUFFIXES_LOWER:
+        if low.endswith(suffix):
+            return s[: -len(suffix)].rstrip()
+    return s
+
+
 def _county_slug(county_name: str, fips: str) -> str:
-    base = slugify(county_name.lower().replace(" county", "").strip())
+    base = slugify(_strip_county_suffix(county_name).lower())
     return base or f"fips-{fips}"
 
 
@@ -730,7 +754,7 @@ def build_county_peer_facts(
         out[cfips] = _PeerFacts(
             fips=cfips,
             state=state_slug,
-            name=c.name + " County" if not c.name.endswith("County") else c.name,
+            name=c.name,
             slug=_county_slug(c.name, cfips),
             population=county_pops.get(cfips, 0),
             facilities_count=len(in_county),
@@ -838,7 +862,7 @@ def publish_facility(
             "parent_company": fac.parent_company,
             "address": fac.address,
             "city": fac.city,
-            "county": fac.county_name + " County" if not fac.county_name.endswith("County") else fac.county_name,
+            "county": fac.county_name,
             "county_slug": _county_slug(fac.county_name, fac.county_fips),
             "naics_label": fac.naics_label or "NAICS code not in joined response",
             "lat": fac.lat,
@@ -989,11 +1013,7 @@ def publish_water(
     top_contaminants = sorted(by_contaminant.items(), key=lambda kv: kv[1], reverse=True)[:6]
     years_since_last = (current_year - last_violation_year) if last_violation_year else None
 
-    county_label = (
-        county_name + " County"
-        if county_name and not county_name.lower().endswith(" county")
-        else county_name
-    )
+    county_label = county_name  # arrives with its native Census suffix
     county_slug_value = (
         _county_slug(county_name, county_fips)
         if county_name and county_fips
@@ -1133,11 +1153,7 @@ def publish_superfund(
         if site.place_fips and site.place_name
         else None
     )
-    county_label = (
-        site.county_name + " County"
-        if site.county_name and not site.county_name.lower().endswith(" county")
-        else (site.county_name or None)
-    )
+    county_label = site.county_name or None  # native Census suffix already attached
 
     payload = {
         "site": {
@@ -1486,7 +1502,7 @@ def publish_county(
             "state": county.state_slug,
             "state_label": _state_label(county.state_slug),
             "slug": _county_slug(county.name, county.fips),
-            "name": county.name + " County" if not county.name.endswith("County") else county.name,
+            "name": county.name,
             "fips": county.fips,
             "population": population,
         },
@@ -1718,7 +1734,7 @@ def publish_state(
         "counties_directory": [
             {
                 "slug": _county_slug(c.name, c.fips),
-                "name": c.name + " County" if not c.name.endswith("County") else c.name,
+                "name": c.name,
                 "fips": c.fips,
                 "facilities_count": len(c.facility_ids),
                 "total_releases_pounds": _round_pounds(c.pounds_total),
@@ -1778,7 +1794,7 @@ def _county_summary(
         "slug": _county_slug(c.name, c.fips),
         "state": c.state_slug,
         "state_label": _state_label(c.state_slug),
-        "name": c.name + " County" if not c.name.endswith("County") else c.name,
+        "name": c.name,
         "fips": c.fips,
         "population": population,
         "facilities_count": len(c.facility_ids),
@@ -1809,6 +1825,7 @@ def publish_home(
     total_facilities = disk_totals["facilities"]
     total_counties = disk_totals["counties"]
     total_utilities = disk_totals["utilities"]
+    total_superfund = disk_totals["superfund"]
 
     featured: list[dict] = []
     # Pick the top facility nationally (by pounds) for the first card. If
@@ -1848,7 +1865,7 @@ def publish_home(
             "kind": "county",
             "state": top_county.state_slug,
             "slug": _county_slug(top_county.name, top_county.fips),
-            "name": top_county.name + " County",
+            "name": top_county.name,
             "state_label": _state_label(top_county.state_slug),
             "headline": headline,
             "metric_label": f"TRI releases · {year}",
@@ -1892,6 +1909,7 @@ def publish_home(
         "totals": {
             "facilities_tracked": total_facilities,
             "utilities_tracked": total_utilities,
+            "superfund_tracked": total_superfund,
             "counties_covered": total_counties,
             "chemicals_indexed": len(disk_chem_keys),
         },
@@ -1913,7 +1931,7 @@ def _aggregate_published_state_totals() -> tuple[dict[str, int], set[str]]:
     `data/published/facility/<slug>/*.json` once as a fallback.
     """
     state_dir = PUBLISHED_ROOT / "state"
-    totals = {"facilities": 0, "utilities": 0, "counties": 0}
+    totals = {"facilities": 0, "utilities": 0, "superfund": 0, "counties": 0}
     chem_keys: set[str] = set()
     if not state_dir.exists():
         return totals, chem_keys
@@ -1925,6 +1943,7 @@ def _aggregate_published_state_totals() -> tuple[dict[str, int], set[str]]:
         st_totals = data.get("totals") or {}
         totals["facilities"] += int(st_totals.get("facilities_tracked") or 0)
         totals["utilities"] += int(st_totals.get("utilities_tracked") or 0)
+        totals["superfund"] += int(st_totals.get("npl_sites_tracked") or 0)
         totals["counties"] += int(st_totals.get("counties_with_data") or 0)
         cas_list = data.get("_chem_cas")
         if cas_list:

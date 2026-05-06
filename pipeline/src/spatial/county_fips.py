@@ -21,6 +21,10 @@ CENSUS_URL = "https://www2.census.gov/geo/docs/reference/codes2020/national_coun
 USER_AGENT = "PollutionAnalystAi/0.1 (+contact: ops@pollutionanalyst.ai)"
 
 _cache: dict[tuple[str, str], str] = {}
+# fips → full Census COUNTYNAME (e.g. "Aleutians East Borough", "Acadia
+# Parish", "Los Angeles County"). Lets callers display the native suffix
+# instead of the auto-appended " County" we used to glue on.
+_canonical_full_by_fips: dict[str, str] = {}
 
 
 def _cache_path() -> Path:
@@ -95,6 +99,7 @@ def _load_table() -> None:
             fips = f"{statefp}{countyfp}"
             normalized = _normalize_county(county_name)
             _cache[(state_abbr.upper(), normalized)] = fips
+            _canonical_full_by_fips[fips] = county_name.strip()
 
 
 def lookup_fips(state_abbr: str, county_name: str) -> str | None:
@@ -104,9 +109,10 @@ def lookup_fips(state_abbr: str, county_name: str) -> str | None:
 
 
 def lookup_county_canonical(state_abbr: str, county_name: str) -> str | None:
-    """Return the canonical Census county name (e.g. 'Los Angeles') for the
-    raw TRI value. Useful when we want to display 'Los Angeles County'
-    rather than the upstream 'LOS ANGELES'.
+    """Return the canonical Census county name *without its suffix* (e.g.
+    'Los Angeles' for 'LOS ANGELES COUNTY'). Used by callers that want to
+    re-attach " County" themselves. Most callers want lookup_canonical_full
+    instead — that returns the native suffix (Borough / Parish / etc.).
     """
     _load_table()
     state_abbr = state_abbr.upper()
@@ -114,3 +120,23 @@ def lookup_county_canonical(state_abbr: str, county_name: str) -> str | None:
     if (state_abbr, normalized) not in _cache:
         return None
     return normalized.title()
+
+
+def lookup_canonical_full(state_abbr: str, county_name: str) -> str | None:
+    """Return the full Census COUNTYNAME with its native suffix
+    ('Aleutians East Borough', 'Acadia Parish', 'Los Angeles County').
+    Resolves the (state, raw) input through the same normalization as
+    lookup_fips, so EPA-style truncations and casing variants all map to
+    the canonical Census form.
+    """
+    fips = lookup_fips(state_abbr, county_name)
+    if not fips:
+        return None
+    return _canonical_full_by_fips.get(fips)
+
+
+def lookup_canonical_full_by_fips(fips: str) -> str | None:
+    """Like lookup_canonical_full but keyed on FIPS directly. Used by the
+    GHGRP/AQS/AirToxScreen-only path where TRI didn't supply a name."""
+    _load_table()
+    return _canonical_full_by_fips.get(fips)
