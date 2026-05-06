@@ -1100,6 +1100,8 @@ def publish_water(
 def publish_superfund(
     site: SuperfundSiteAgg,
     state_label: str = "",
+    buffer_demographics: object | None = None,
+    buffer_radius_miles: float = 1.0,
     county_demographics: object | None = None,
     county_disparity_scores: list | None = None,
     county_percentiles: list | None = None,
@@ -1112,9 +1114,13 @@ def publish_superfund(
 ) -> Path:
     """Write one NPL-site entity JSON.
 
-    Equity overlay falls through Place (TIGER) → County → State, same as
-    the water utility publisher. Sites in unincorporated areas (no
-    place_fips) skip directly to county.
+    Equity overlay falls through Buffer → Place (TIGER) → County → State.
+    When the 1-mile buffer hits, demographics are population-weighted
+    across the block groups whose centroid sits inside the buffer; this
+    is the EPA EJScreen "Define an Area" approach. Disparity-score and
+    national-percentile layers are dropped when buffer is the source —
+    those layers are aggregated at place/county scope today and pairing
+    them with buffer demographics would be inconsistent.
     """
     slug = _superfund_slug(site.name, site.epa_id)
     county_slug_value = (
@@ -1188,10 +1194,33 @@ def publish_superfund(
         "flags": [f.to_payload() for f in (flags or [])],
         "equity": (
             _build_equity(
+                population=(
+                    buffer_demographics.population
+                    if buffer_demographics is not None
+                    else 0
+                ),
+                geography_label=(
+                    f"Within {buffer_radius_miles:.0f} mile"
+                    f"{'s' if buffer_radius_miles != 1 else ''} of this site "
+                    f"({buffer_demographics.block_groups_in_buffer} Census block groups, "
+                    "population-weighted demographics)"
+                ),
+                demographics=buffer_demographics,
+                disparity_scores=None,
+                percentiles=None,
+                source=(
+                    f"Census ACS 2018-2022 block-group demographics, population-weighted "
+                    f"across the {buffer_radius_miles:.0f}-mile buffer around this site "
+                    "(from USEPA-clone/EJAM-open blockgroupstats)"
+                ),
+            )
+            if buffer_demographics is not None
+            else _build_equity(
                 population=place_population,
                 geography_label=(
                     f"{site.place_name}, {_state_label(site.state_slug)} "
-                    "(Census place; block-group disparity scores aggregated by centroid containment)"
+                    f"(no Census block groups within {buffer_radius_miles:.0f} mile — "
+                    "falling back to host city; disparity scores aggregated by centroid containment)"
                 ),
                 demographics=place_demographics,
                 disparity_scores=place_disparity_scores,
@@ -1202,7 +1231,8 @@ def publish_superfund(
                 population=county_population,
                 geography_label=(
                     f"{site.county_name} County, {_state_label(site.state_slug)} "
-                    "(NPL site's containing county — 1-mile-buffer aggregation pending tract data)"
+                    f"(no Census block groups within {buffer_radius_miles:.0f} mile and no host city — "
+                    "falling back to containing county)"
                 ),
                 demographics=county_demographics,
                 disparity_scores=county_disparity_scores,

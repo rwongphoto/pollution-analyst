@@ -774,8 +774,22 @@ def run_state(
         ))
 
     # ---- Tier 1 entity: Superfund / NPL site (/superfund/[slug]) -------
-    # One per NPL-relevant site. Equity overlay falls through Place →
-    # County → State, same as the water utility publisher.
+    # One per NPL-relevant site. Equity overlay falls through Buffer →
+    # Place → County → State. The 1-mile buffer is the standard EPA
+    # EJScreen "Define an Area" radius for site-specific overlays — it
+    # describes the population *immediately exposed* to the contaminated
+    # site rather than borrowing the host city's demographics.
+    sf_points_for_buffer = [
+        (sf.epa_id, sf.lat, sf.lng) for sf in superfund_sites_agg.values()
+    ]
+    try:
+        sf_buffer_demographics = compute_facility_buffer_demographics(
+            sf_points_for_buffer, state.fips, radius_miles=1.0,
+        )
+    except Exception as exc:  # noqa: BLE001
+        logging.warning("superfund buffer demographics failed for %s: %s", state.abbr, exc)
+        sf_buffer_demographics = {}
+
     superfund_paths: set = set()
     for sf in superfund_sites_agg.values():
         pf = sf.place_fips
@@ -788,6 +802,8 @@ def run_state(
         superfund_paths.add(publish_site.publish_superfund(
             sf,
             state_label=state.name,
+            buffer_demographics=sf_buffer_demographics.get(sf.epa_id),
+            buffer_radius_miles=1.0,
             county_demographics=county_demos.get(sf.county_fips),
             county_disparity_scores=county_disparity.get(sf.county_fips, []),
             county_percentiles=county_percentiles.get(sf.county_fips, []),
