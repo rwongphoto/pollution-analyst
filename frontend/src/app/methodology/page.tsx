@@ -7,7 +7,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { pageMeta, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
-  title: "Pollution Trend Methodology | Pollution Analyst",
+  title: "Pollution Analysis Methodology | Pollution Analyst",
   description:
     "How we measure pollution trends across federal data sources — TRI, SDWIS, the USEPA-clone EJ disparity mirror — plus our pollutant taxonomy, equity-overlay stance, and per-source caveats.",
   path: "/methodology",
@@ -35,7 +35,7 @@ export default function MethodologyPage() {
       },
       {
         "@type": "Article",
-        headline: "Pollution Trend Methodology",
+        headline: "Pollution Analysis Methodology",
         description:
           "Methodology, source-by-source caveats, equity-overlay stance, and pollutant taxonomy used by Pollution Analyst.",
         url: pageUrl,
@@ -57,7 +57,7 @@ export default function MethodologyPage() {
         <Crumbs items={[{ label: "Methodology" }]} />
         <div className="method-page">
           <div className="wrap">
-            <h1>Pollution Trend Methodology</h1>
+            <h1>Pollution Analysis Methodology</h1>
             <p className="lede">
               Pollution Analyst is built around three commitments:{" "}
               <strong>plain English</strong> for readers,{" "}
@@ -69,18 +69,18 @@ export default function MethodologyPage() {
             <p className="meta-mono" style={{ color: "var(--fg-4)", marginTop: 18 }}>
               JUMP TO ·{" "}
               <a href="#taxonomy">Taxonomy</a> ·{" "}
-              <a href="#anomaly-engine">Anomaly engine</a> ·{" "}
-              <a href="#equity">Equity overlay</a> ·{" "}
+              <a href="#anomaly-engine">Anomaly Engine</a> ·{" "}
+              <a href="#equity">Equity Overlay</a> ·{" "}
               <a href="#exclusions">Exclusions</a> ·{" "}
               <a href="#sources">Sources</a> ·{" "}
               <a href="#tri">TRI</a> ·{" "}
               <a href="#sdwis">SDWIS</a> ·{" "}
               <a href="#ejscreen">EJScreen</a> ·{" "}
-              <a href="#rights">Data rights</a>
+              <a href="#rights">Data Rights</a>
             </p>
 
             <section id="taxonomy">
-              <h2>Pollutant taxonomy</h2>
+              <h2>Pollutant Taxonomy</h2>
               <p>
                 Every page on this site uses the same top-level categorization, chosen so
                 cross-source comparisons remain coherent. New sources extend the taxonomy
@@ -96,30 +96,30 @@ export default function MethodologyPage() {
             </section>
 
             <section id="anomaly-engine">
-              <h2>Anomaly engine</h2>
+              <h2>Anomaly Engine</h2>
               <p>
                 Pollution data has different shapes from crime data. Crime is point-incident, monthly, with weak seasonality; pollution is annual (TRI, GHGRP), event-driven (SDWIS), or sparse-monitor (AQS, when it lands). The flag taxonomy reflects that. Four flag types ship today; two more (smoke days, NAAQS exceedance days) defer until air-monitor ingest is in.
               </p>
               <p>
                 A flag is <strong>editorial attention, not a regulatory finding</strong>. Where EPA has issued an enforcement action — SDWIS Tier 1 violations, ECHO actions — we link to the federal record so readers can verify the actual compliance posture rather than infer it from our card.
               </p>
-              <h3 style={{ marginTop: 24 }}>Long-arc shift</h3>
+              <h3 style={{ marginTop: 24 }}>Long-Arc Shift</h3>
               <p>
                 Triggers when a geography&apos;s most-recent-year value differs from a baseline year (≥10 years prior) by ≥50%. Absolute floors keep the percent change meaningful: ≥50,000 lb baseline for TRI pathways, ≥100,000 mtCO₂e for GHG. Surfaced on facility, county, and state pages. Severity: <em>improvement</em> for declines, <em>regression</em> for rises.
               </p>
-              <h3 style={{ marginTop: 24 }}>Release shift</h3>
+              <h3 style={{ marginTop: 24 }}>Release Shift</h3>
               <p>
                 Year-over-year facility × chemical TRI shift. Three combined floors against tiny-base noise: ≥50% change AND ≥10,000 lb absolute delta AND ≥1,000 lb prior-year baseline. Surfaced on facility pages only — YoY at county/state aggregation is too noisy to be editorial. Severity: <em>surge</em> or <em>drop</em>.
               </p>
-              <h3 style={{ marginTop: 24 }}>Violation event</h3>
+              <h3 style={{ marginTop: 24 }}>Violation Event</h3>
               <p>
                 SDWIS health-based or unresolved violation. Event-driven, not statistical — the violation itself is the signal. Surfaced on water-utility pages with a link to the EPA SDWIS record. Severity ordering: <em>unresolved</em> &gt; <em>health-based within 1 year</em> &gt; <em>health-based within 5 years</em>. Monitoring failures and returned-to-compliance violations don&apos;t flag.
               </p>
-              <h3 style={{ marginTop: 24 }}>GHG step</h3>
+              <h3 style={{ marginTop: 24 }}>GHG Step</h3>
               <p>
                 County-level GHGRP year-over-year shift, ≥30% with both years ≥10,000 mtCO₂e. Typically reflects industrial commissioning, decommissioning, or fuel switching. Facility-level deferred until a TRI↔GHGRP facility-ID join is built. Severity: <em>surge</em> or <em>drop</em>.
               </p>
-              <h3 style={{ marginTop: 24 }}>Calibration commitment</h3>
+              <h3 style={{ marginTop: 24 }}>Calibration Commitment</h3>
               <p>
                 Average flag count is targeted at: ≤3 per facility, ≤5 per county, ≤8 per state. Water utilities are uncapped — violation events are events, not anomalies. The first emission cycle intentionally runs lax thresholds; the engine logs per-geography counts so over-cap entities can drive a threshold tune before re-publishing.
               </p>
@@ -130,7 +130,7 @@ export default function MethodologyPage() {
             </section>
 
             <section id="equity">
-              <h2>Equity overlay (the deliberate inversion from our crime site)</h2>
+              <h2>Equity Overlay (The Deliberate Inversion From Our Crime Site)</h2>
               <p>
                 Our companion site, <a href="https://www.publicanalyst.ai" target="_blank" rel="noreferrer">Public Analyst.ai</a>, refuses to overlay race or income with neighborhood crime. The reasoning there is specific to crime: it&apos;s reported by police, subject to enforcement-pattern bias, and the juxtaposition reads correlation as causation regardless of authorial intent.
               </p>
@@ -149,7 +149,7 @@ export default function MethodologyPage() {
                   <strong>Concentration is the object of inquiry.</strong> The question on a pollution page is whether a population bears disproportionate exposure — that&apos;s an empirical question with an empirical answer, computed at federally defined geographies.
                 </li>
               </ul>
-              <h3 style={{ marginTop: 24 }}>Three layers, demographics-leading</h3>
+              <h3 style={{ marginTop: 24 }}>Three Layers, Demographics-Leading</h3>
               <p>
                 EPA retired the public-facing EJScreen tool in 2025. We&apos;re now a primary-source compositor for the equity overlay rather than a re-presenter of an EPA-blessed index. Every facility, county, city, and state page renders the overlay in three layers, in order of prominence:
               </p>
@@ -164,11 +164,11 @@ export default function MethodologyPage() {
                   <strong>EJ disparity scores (statistical detail).</strong> EPA&apos;s newer disparity-score metric, sourced from the <code>USEPA-clone/ejamdata</code> GitHub mirror that the open-source EJAM package consumes. Population-weighted to state, county, and city. Centered on <strong>100 = the population-weighted reference burden</strong>; higher = greater disparate exposure. ~150 is widely considered notable; 200+ is severe. Surfaced as a table at the bottom of the equity section so readers who want the formal stat can read it directly.
                 </li>
               </ol>
-              <h3 style={{ marginTop: 24 }}>Why both percentile and disparity</h3>
+              <h3 style={{ marginTop: 24 }}>Why Both Percentile And Disparity</h3>
               <p>
                 Percentile and disparity score answer different questions. <strong>Percentile</strong> says &ldquo;how does this place rank against the country?&rdquo; — directly legible, easy to cite. <strong>Disparity score</strong> says &ldquo;does the population at this place bear more burden than a population-weighted reference?&rdquo; — a stronger statement about distributive equity, harder to compress into one phrase. Surfacing both lets the reader hold them up against each other.
               </p>
-              <h3 style={{ marginTop: 24 }}>Geography preference (per-page)</h3>
+              <h3 style={{ marginTop: 24 }}>Geography Preference (Per-Page)</h3>
               <p>
                 Each page picks the tightest geography that has data available, in this preference order: Census Place (city) → containing County → State. Facility pages currently use the containing-county overlay as a proxy; a 3-mile-buffer aggregation is a future iteration.
               </p>
@@ -178,7 +178,7 @@ export default function MethodologyPage() {
             </section>
 
             <section id="exclusions">
-              <h2>What we deliberately exclude</h2>
+              <h2>What We Deliberately Exclude</h2>
               <ul>
                 <li>
                   <strong>Real-time alerting and AQI dashboards.</strong> AirNow already does that well. We are an analytics-and-narrative layer, not a hazard-of-the-hour service.
@@ -202,7 +202,7 @@ export default function MethodologyPage() {
             </section>
 
             <section id="sources">
-              <h2>Sources we currently use</h2>
+              <h2>Sources We Currently Use</h2>
               <p>
                 Every dataset on this site is a federal public-domain work (17 USC §105). We attribute the originating agency on every page; we do not relabel federal observations as proprietary.
               </p>
@@ -277,7 +277,7 @@ export default function MethodologyPage() {
             </section>
 
             <section id="ejscreen" style={{ borderTop: "1px solid var(--rule)", paddingTop: 36, marginTop: 36 }}>
-              <h2>EJScreen · environmental-justice screening (post-2025 substitution)</h2>
+              <h2>EJScreen · Environmental-Justice Screening (Post-2025 Substitution)</h2>
               <p>
                 <strong>Owner of original EJScreen.</strong> EPA Office of Environmental Justice & External Civil Rights.
               </p>
@@ -323,7 +323,7 @@ export default function MethodologyPage() {
             </section>
 
             <section id="health" style={{ borderTop: "1px solid var(--rule)", paddingTop: 36, marginTop: 36 }}>
-              <h2>Co-located health indicators · CDC PLACES</h2>
+              <h2>Co-Located Health Indicators · CDC PLACES</h2>
               <p>
                 <strong>What this section is.</strong> County and city pages render five chronic-disease prevalence estimates from CDC&apos;s Population Level Analysis and Community Estimates (PLACES) program — adult asthma, COPD, coronary heart disease, diabetes, and frequent mental distress. These sit immediately after the equity overlay so that pollution, demographics, and health-outcome context can be read together.
               </p>
@@ -380,7 +380,7 @@ export default function MethodologyPage() {
             </section>
 
             <section id="rights" style={{ borderTop: "1px solid var(--rule)", paddingTop: 36, marginTop: 36 }}>
-              <h2>Data rights and attribution</h2>
+              <h2>Data Rights And Attribution</h2>
               <p>
                 Every dataset on this site is a federal public-domain work under 17 USC §105. There is no licensing fee, royalty, or commercial-use restriction on the underlying observations. The operational rules are about API civility and attribution norms, not licensing.
               </p>

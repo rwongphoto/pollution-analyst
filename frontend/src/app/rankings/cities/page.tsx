@@ -11,7 +11,7 @@ import { pageMeta } from "@/lib/seo";
 import type { RankingTable } from "@/lib/types";
 
 export const metadata: Metadata = pageMeta({
-  title: "Most polluted cities — national rankings | Pollution Analyst",
+  title: "Most Polluted Cities — National Rankings | Pollution Analyst",
   description:
     "Top 10 most and least polluted cities nationally, ranked across PM2.5, lifetime cancer risk (AirToxScreen), and TRI air releases.",
   path: "/rankings/cities",

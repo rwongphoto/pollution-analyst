@@ -12,20 +12,20 @@ const SITE_DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Pollution Analyst — pollution trend intelligence",
+  title: "Pollution Analyst — Pollution Trend Intelligence",
   description: SITE_DESCRIPTION,
   applicationName: "Pollution Analyst",
   openGraph: {
     type: "website",
     siteName: "Pollution Analyst",
     locale: "en_US",
-    title: "Pollution Analyst — pollution trend intelligence",
+    title: "Pollution Analyst — Pollution Trend Intelligence",
     description: SITE_DESCRIPTION,
     url: "/",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pollution Analyst — pollution trend intelligence",
+    title: "Pollution Analyst — Pollution Trend Intelligence",
     description: SITE_DESCRIPTION,
   },
 };

@@ -11,7 +11,7 @@ import { pageMeta } from "@/lib/seo";
 import type { RankingTable } from "@/lib/types";
 
 export const metadata: Metadata = pageMeta({
-  title: "Most polluting facilities — national rankings | Pollution Analyst",
+  title: "Most Polluting Facilities — National Rankings | Pollution Analyst",
   description:
     "Most polluting industrial facilities nationally — ranked by total TRI releases and broken down by air, water, and land.",
   path: "/rankings/facilities",

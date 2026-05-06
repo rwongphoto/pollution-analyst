@@ -11,7 +11,7 @@ import { pageMeta } from "@/lib/seo";
 import type { RankingTable } from "@/lib/types";
 
 export const metadata: Metadata = pageMeta({
-  title: "Most polluted counties — national rankings | Pollution Analyst",
+  title: "Most Polluted Counties — National Rankings | Pollution Analyst",
   description:
     "Top 10 most and least polluted counties nationally, ranked across PM2.5, lifetime cancer risk (AirToxScreen), TRI air releases, and GHG emissions.",
   path: "/rankings/counties",

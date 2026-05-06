@@ -192,6 +192,9 @@ function CountiesSection({ data }: { data: StatePagePayload }) {
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
             {data.state.name} Counties With Most Chemical Releases
           </h2>
+          <p className="muted" style={{ margin: "8px 0 0", fontSize: 13 }}>
+            <Link href="/methodology#tri">Methodology &rarr;</Link>
+          </p>
         </div>
         <table className="tbl">
           <thead>
@@ -242,6 +245,9 @@ function FacilitiesSection({ data }: { data: StatePagePayload }) {
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
             The Largest Individual Emitters In {data.state.name}
           </h2>
+          <p className="muted" style={{ margin: "8px 0 0", fontSize: 13 }}>
+            <Link href="/methodology#tri">Methodology &rarr;</Link>
+          </p>
         </div>
         <table className="tbl">
           <thead>
@@ -291,6 +297,9 @@ function UtilitiesSection({ data }: { data: StatePagePayload }) {
           </h2>
           <p className="muted" style={{ fontSize: 14, marginTop: 10, maxWidth: "62ch" }}>
             Sorted to surface utilities serving the most people that still have an active health-based SDWIS violation on the record. Systems in compliance with no unresolved issues fall to the bottom of the ranking.
+          </p>
+          <p className="muted" style={{ margin: "8px 0 0", fontSize: 13 }}>
+            <Link href="/methodology#sdwis">Methodology &rarr;</Link>
           </p>
         </div>
         <table className="tbl">
@@ -383,8 +392,11 @@ function EquitySection({ data }: { data: StatePagePayload }) {
 
         {(e.ej_indexes?.length ?? 0) > 0 && (
           <div style={{ marginBottom: 32 }}>
-            <p className="meta-mono" style={{ fontSize: 12, color: "var(--ink-3)", marginBottom: 14 }}>
+            <p className="meta-mono" style={{ fontSize: 12, color: "var(--ink-3)", marginBottom: 6 }}>
               NATIONAL PERCENTILE · vs all US block groups (population-weighted; ranked against the national EJScreen indicator distribution)
+            </p>
+            <p className="muted" style={{ margin: "0 0 14px", fontSize: 13 }}>
+              <Link href="/methodology#equity">Methodology &rarr;</Link>
             </p>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 14 }}>
               {e.ej_indexes.map((row) => {
@@ -415,7 +427,8 @@ function EquitySection({ data }: { data: StatePagePayload }) {
         {(e.disparity_scores?.length ?? 0) > 0 && (
           <table className="tbl">
             <caption style={{ captionSide: "top", textAlign: "left", padding: "0 0 12px", fontSize: 13, color: "var(--ink-3)" }}>
-              EJ disparity scores · population-weighted, all state block groups (100 = national reference; higher = greater disparate burden)
+              EJ disparity scores · population-weighted, all state block groups (100 = national reference; higher = greater disparate burden){" "}
+              · <Link href="/methodology#equity">Methodology &rarr;</Link>
             </caption>
             <thead>
               <tr>

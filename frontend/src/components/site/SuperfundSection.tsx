@@ -53,6 +53,9 @@ export function SuperfundSection({
             cleanup objectives EPA has finalized. Federal-facility sites (defense, DOE,
             etc.) are flagged separately. Each link routes to a per-site page.
           </p>
+          <p className="muted" style={{ margin: "8px 0 0", fontSize: 13 }}>
+            <Link href="/methodology#sources">Methodology &rarr;</Link>
+          </p>
         </div>
         <table className="tbl">
           <thead>
