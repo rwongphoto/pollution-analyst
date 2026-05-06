@@ -16,17 +16,19 @@ export function SuperfundSection({
   geographyLabel,
   showHostCity = true,
   emptyLabel,
+  id,
 }: {
   sites: SuperfundSummary[];
   total?: number;            // total in scope; if > sites.length, render an overflow note
   geographyLabel: string;    // "California", "Alameda County", "Mountain View"
   showHostCity?: boolean;
   emptyLabel?: string;       // when no NPL sites — null hides the section entirely
+  id?: string;
 }) {
   if (sites.length === 0) {
     if (!emptyLabel) return null;
     return (
-      <section className="section">
+      <section className="section" id={id}>
         <div className="wrap">
           <div className="eyebrow">Superfund / NPL sites</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
@@ -41,7 +43,7 @@ export function SuperfundSection({
   }
   const overflow = total != null && total > sites.length ? total - sites.length : 0;
   return (
-    <section className="section">
+    <section className="section" id={id}>
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Superfund / NPL sites</div>

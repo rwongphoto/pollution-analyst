@@ -6,6 +6,7 @@ import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
 import { HeroChart, MediaSplitBar } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
+import { JumpStrip } from "@/components/site/JumpStrip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
@@ -95,6 +96,12 @@ function FacilityHero({ data }: { data: FacilityPagePayload }) {
             <Link href={`/state/${f.state}/county/${f.county_slug}`} className="btn btn-primary">
               See {f.county} <Ic.arrow s={14} />
             </Link>
+            <a href="#chemicals" className="btn btn-ghost">
+              Chemicals
+            </a>
+            <a href="#equity" className="btn btn-ghost">
+              Equity context
+            </a>
             <Link href="/methodology" className="btn btn-ghost">
               How we read TRI
             </Link>
@@ -142,7 +149,7 @@ function FacilityHero({ data }: { data: FacilityPagePayload }) {
 
 function ChemicalsSection({ chemicals }: { chemicals: ChemicalRelease[] }) {
   return (
-    <section className="section">
+    <section className="section" id="chemicals">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Chemicals reported · most recent year</div>
@@ -239,7 +246,7 @@ function EquitySection({ data }: { data: FacilityPagePayload }) {
 
 function SourceFooter({ data }: { data: FacilityPagePayload }) {
   return (
-    <section className="section" style={{ paddingTop: 0 }}>
+    <section className="section" id="sources" style={{ paddingTop: 0 }}>
       <div className="wrap">
         <div style={{ borderTop: "1px solid var(--rule)", paddingTop: 24, fontSize: 13, color: "var(--ink-3)" }}>
           <p>
@@ -350,9 +357,18 @@ export default async function FacilityPage({
           ]}
         />
         <FacilityHero data={data} />
+        <JumpStrip
+          items={[
+            { id: "signals", label: "Signals" },
+            { id: "chemicals", label: "Chemicals", show: data.chemicals.length > 0 },
+            { id: "equity", label: "Equity" },
+            { id: "sources", label: "Sources" },
+          ]}
+        />
         <NotableSignals
           flags={data.flags ?? []}
           emptyLabel="No notable signals at this facility for the current reporting year. See chemicals and equity context below for the full picture."
+          id="signals"
         />
         <ChemicalsSection chemicals={data.chemicals} />
         <EquitySection data={data} />

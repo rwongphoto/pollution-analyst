@@ -9,6 +9,7 @@ import { HealthIndicators } from "@/components/site/HealthIndicators";
 import { HeroChart } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
 import { InfoTip } from "@/components/site/InfoTip";
+import { JumpStrip } from "@/components/site/JumpStrip";
 import { RelatedPlaces } from "@/components/site/RelatedPlaces";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -124,6 +125,9 @@ function CityHero({ data }: { data: CityHubPayload }) {
                 Water systems
               </a>
             )}
+            <a href="#pathways" className="btn btn-ghost">
+              Pathways
+            </a>
             <a href="#equity" className="btn btn-ghost">
               Equity context
             </a>
@@ -151,7 +155,7 @@ function CityHero({ data }: { data: CityHubPayload }) {
 function PathwaysSection({ pathways, cityName }: { pathways: PollutantSummary[]; cityName: string }) {
   if (pathways.length === 0) return null;
   return (
-    <section className="section">
+    <section className="section" id="pathways">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Pollutant pathways</div>
@@ -497,7 +501,7 @@ function EquitySection({ data }: { data: CityHubPayload }) {
 
 function SourcesFooter({ data }: { data: CityHubPayload }) {
   return (
-    <section className="section" style={{ paddingTop: 0 }}>
+    <section className="section" id="sources" style={{ paddingTop: 0 }}>
       <div className="wrap">
         <div style={{ borderTop: "1px solid var(--rule)", paddingTop: 24, fontSize: 13, color: "var(--ink-3)" }}>
           <p style={{ marginBottom: 12 }}>
@@ -602,7 +606,20 @@ export default async function CityHubPage({
           ]}
         />
         <CityHero data={data} />
-        <NotableSignals flags={data.flags ?? []} />
+        <JumpStrip
+          items={[
+            { id: "signals", label: "Signals", show: (data.flags?.length ?? 0) > 0 },
+            { id: "pathways", label: "Pathways", show: data.pathways.length > 0 },
+            { id: "facilities", label: "Facilities", show: data.facilities.length > 0 },
+            { id: "water", label: "Water", show: data.water.utilities_count > 0 },
+            { id: "superfund", label: "Superfund", show: (data.superfund?.length ?? 0) > 0 },
+            { id: "equity", label: "Equity" },
+            { id: "health", label: "Health", show: (data.health_indicators?.length ?? 0) > 0 },
+            { id: "related", label: "Compare", show: (data.related_places?.length ?? 0) > 0 },
+            { id: "sources", label: "Sources" },
+          ]}
+        />
+        <NotableSignals flags={data.flags ?? []} id="signals" />
         <PathwaysSection pathways={data.pathways} cityName={data.place.name} />
         <FacilitiesSection data={data} />
         <WaterSection data={data} />
@@ -610,6 +627,7 @@ export default async function CityHubPage({
           sites={data.superfund ?? []}
           geographyLabel={data.place.name}
           showHostCity={false}
+          id="superfund"
         />
         <EquitySection data={data} />
         <HealthIndicators

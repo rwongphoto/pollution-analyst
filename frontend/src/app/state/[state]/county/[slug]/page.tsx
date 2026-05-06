@@ -10,6 +10,7 @@ import { HealthIndicators } from "@/components/site/HealthIndicators";
 import { HeroChart } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
 import { InfoTip } from "@/components/site/InfoTip";
+import { JumpStrip } from "@/components/site/JumpStrip";
 import { RelatedPlaces } from "@/components/site/RelatedPlaces";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -98,6 +99,9 @@ function CountyHero({ data }: { data: CountyPagePayload }) {
             <a href="#facilities" className="btn btn-primary">
               See top facilities <Ic.arrow s={14} />
             </a>
+            <a href="#pathways" className="btn btn-ghost">
+              Pathways
+            </a>
             <a href="#equity" className="btn btn-ghost">
               Equity context
             </a>
@@ -124,7 +128,7 @@ function CountyHero({ data }: { data: CountyPagePayload }) {
 
 function PathwaysSection({ pathways, countyName }: { pathways: PollutantSummary[]; countyName: string }) {
   return (
-    <section className="section">
+    <section className="section" id="pathways">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Pollutant pathways</div>
@@ -233,7 +237,7 @@ function FacilitiesSection({ data }: { data: CountyPagePayload }) {
 function UtilitiesSection({ data }: { data: CountyPagePayload }) {
   if (data.utilities.length === 0) return null;
   return (
-    <section className="section">
+    <section className="section" id="utilities">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Drinking-water systems</div>
@@ -447,7 +451,7 @@ function CityDirectory({ data }: { data: CountyPagePayload }) {
 
 function SourcesFooter({ data }: { data: CountyPagePayload }) {
   return (
-    <section className="section" style={{ paddingTop: 0 }}>
+    <section className="section" id="sources" style={{ paddingTop: 0 }}>
       <div className="wrap">
         <div style={{ borderTop: "1px solid var(--rule)", paddingTop: 24, fontSize: 13, color: "var(--ink-3)" }}>
           <p style={{ marginBottom: 12 }}><strong>Sources.</strong></p>
@@ -541,8 +545,23 @@ export default async function CountyPage({
           ]}
         />
         <CountyHero data={data} />
-        <NotableSignals flags={data.flags ?? []} />
-        <section className="section">
+        <JumpStrip
+          items={[
+            { id: "signals", label: "Signals", show: (data.flags?.length ?? 0) > 0 },
+            { id: "map", label: "Map" },
+            { id: "pathways", label: "Pathways" },
+            { id: "facilities", label: "Facilities" },
+            { id: "utilities", label: "Utilities", show: data.utilities.length > 0 },
+            { id: "superfund", label: "Superfund", show: (data.superfund?.length ?? 0) > 0 },
+            { id: "equity", label: "Equity" },
+            { id: "health", label: "Health", show: (data.health_indicators?.length ?? 0) > 0 },
+            { id: "all-cities", label: "All Cities", show: (data.cities_directory?.length ?? 0) > 0 },
+            { id: "related", label: "Compare", show: (data.related_places?.length ?? 0) > 0 },
+            { id: "sources", label: "Sources" },
+          ]}
+        />
+        <NotableSignals flags={data.flags ?? []} id="signals" />
+        <section className="section" id="map">
           <div className="wrap">
             <div style={{ marginBottom: 24 }}>
               <div className="eyebrow">Top facilities mapped</div>
@@ -569,6 +588,7 @@ export default async function CountyPage({
           total={data.superfund_total}
           geographyLabel={data.county.name}
           showHostCity
+          id="superfund"
         />
         <EquitySection data={data} />
         <HealthIndicators

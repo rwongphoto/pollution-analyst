@@ -7,6 +7,7 @@ import { EquityStub } from "@/components/site/EquityStub";
 import { HeroChart } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
 import { InfoTip } from "@/components/site/InfoTip";
+import { JumpStrip } from "@/components/site/JumpStrip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import {
@@ -107,8 +108,14 @@ function WaterHero({ data, slug }: { data: WaterUtilityPayload; slug: string }) 
             ) : null}
           </p>
           <div className="actions">
-            <Link href="/methodology#sdwis" className="btn btn-primary">
-              How we read SDWIS <Ic.arrow s={14} />
+            <a href="#violations" className="btn btn-primary">
+              Violation history <Ic.arrow s={14} />
+            </a>
+            <a href="#equity" className="btn btn-ghost">
+              Equity context
+            </a>
+            <Link href="/methodology#sdwis" className="btn btn-ghost">
+              How we read SDWIS
             </Link>
             <a href={`https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:${u.pwsid}`} target="_blank" rel="noreferrer" className="btn btn-ghost">
               EPA SDWIS record
@@ -171,7 +178,7 @@ function TopContaminantsSection({ data }: { data: WaterUtilityPayload }) {
   if (tops.length === 0) return null;
   const max = tops[0]?.count ?? 1;
   return (
-    <section className="section">
+    <section className="section" id="contaminants">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Most-cited contaminants</div>
@@ -197,7 +204,7 @@ function TopContaminantsSection({ data }: { data: WaterUtilityPayload }) {
 
 function ViolationsSection({ violations }: { violations: WaterUtilityPayload["violations"] }) {
   return (
-    <section className="section">
+    <section className="section" id="violations">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Violation history</div>
@@ -349,7 +356,7 @@ function EquitySection({ data }: { data: WaterUtilityPayload }) {
 
 function SourceFooter({ data }: { data: WaterUtilityPayload }) {
   return (
-    <section className="section" style={{ paddingTop: 0 }}>
+    <section className="section" id="sources" style={{ paddingTop: 0 }}>
       <div className="wrap">
         <div style={{ borderTop: "1px solid var(--rule)", paddingTop: 24, fontSize: 13, color: "var(--ink-3)" }}>
           <p>
@@ -454,10 +461,20 @@ export default async function WaterPage({
           ]}
         />
         <WaterHero data={data} slug={slug} />
+        <JumpStrip
+          items={[
+            { id: "signals", label: "Signals" },
+            { id: "contaminants", label: "Contaminants", show: (data.metrics?.top_contaminants?.length ?? 0) > 0 },
+            { id: "violations", label: "Violations" },
+            { id: "equity", label: "Equity" },
+            { id: "sources", label: "Sources" },
+          ]}
+        />
         <NotableSignals
           flags={data.flags ?? []}
           title="Active signals"
           emptyLabel="No SDWIS health-based or unresolved violations on the record. Contaminant detail and equity context below."
+          id="signals"
         />
         <TopContaminantsSection data={data} />
         <ViolationsSection violations={data.violations} />

@@ -7,6 +7,7 @@ import { ChemicalCell } from "@/components/site/ChemicalCell";
 import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
 import { Ic } from "@/components/site/icons";
+import { JumpStrip } from "@/components/site/JumpStrip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import {
@@ -110,6 +111,12 @@ function SuperfundHero({ data }: { data: SuperfundPayload }) {
                 See {s.county} <Ic.arrow s={14} />
               </Link>
             ) : null}
+            <a href="#contaminants" className="btn btn-ghost">
+              Contaminants
+            </a>
+            <a href="#equity" className="btn btn-ghost">
+              Equity context
+            </a>
             <Link href="/methodology" className="btn btn-ghost">
               How we read Superfund data
             </Link>
@@ -182,7 +189,7 @@ function ContaminantsSection({ data }: { data: SuperfundPayload }) {
   const conts = data.contaminants;
   if (!conts.length) {
     return (
-      <section className="section">
+      <section className="section" id="contaminants">
         <div className="wrap">
           <div style={{ marginBottom: 16 }}>
             <div className="eyebrow">Contaminants of concern</div>
@@ -205,7 +212,7 @@ function ContaminantsSection({ data }: { data: SuperfundPayload }) {
   const visible = conts.slice(0, VISIBLE);
   const hidden = conts.length - visible.length;
   return (
-    <section className="section">
+    <section className="section" id="contaminants">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Contaminants of concern · per EPA SEMS</div>
@@ -271,7 +278,7 @@ function WaterLinkageSection({ data }: { data: SuperfundPayload }) {
   const utils = wl.utilities;
   const radius = wl.radius_miles;
   return (
-    <section className="section section-tint">
+    <section className="section section-tint" id="water-linkage">
       <div className="wrap">
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Drinking-water linkage · SDWIS</div>
@@ -406,7 +413,7 @@ function EquitySection({ data }: { data: SuperfundPayload }) {
 
 function SourceFooter({ data }: { data: SuperfundPayload }) {
   return (
-    <section className="section" style={{ paddingTop: 0 }}>
+    <section className="section" id="sources" style={{ paddingTop: 0 }}>
       <div className="wrap">
         <div style={{ borderTop: "1px solid var(--rule)", paddingTop: 24, fontSize: 13, color: "var(--ink-3)" }}>
           <p>
@@ -532,9 +539,19 @@ export default async function SuperfundPage({
           ]}
         />
         <SuperfundHero data={data} />
+        <JumpStrip
+          items={[
+            { id: "signals", label: "Signals" },
+            { id: "contaminants", label: "Contaminants" },
+            { id: "water-linkage", label: "Water Linkage", show: data.water_linkage != null },
+            { id: "equity", label: "Equity" },
+            { id: "sources", label: "Sources" },
+          ]}
+        />
         <NotableSignals
           flags={data.flags ?? []}
           emptyLabel="No notable signals at this Superfund site for the current ingest. Cleanup-phase and SEMS-action flags are deferred to a follow-up engineering pass."
+          id="signals"
         />
         <ContaminantsSection data={data} />
         <WaterLinkageSection data={data} />

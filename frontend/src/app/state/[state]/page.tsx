@@ -8,6 +8,7 @@ import { EquityStub } from "@/components/site/EquityStub";
 import { HeroChart } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
 import { InfoTip } from "@/components/site/InfoTip";
+import { JumpStrip } from "@/components/site/JumpStrip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
@@ -101,6 +102,9 @@ function StateHero({ data }: { data: StatePagePayload }) {
             <a href="#facilities" className="btn btn-ghost">
               Top facilities
             </a>
+            <a href="#pathways" className="btn btn-ghost">
+              Pathways
+            </a>
             <a href="#equity" className="btn btn-ghost">
               Equity context
             </a>
@@ -127,7 +131,7 @@ function StateHero({ data }: { data: StatePagePayload }) {
 
 function PathwaysSection({ pathways, stateName }: { pathways: PollutantSummary[]; stateName: string }) {
   return (
-    <section className="section">
+    <section className="section" id="pathways">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Statewide pollutant pathways</div>
@@ -292,7 +296,7 @@ function FacilitiesSection({ data }: { data: StatePagePayload }) {
 function UtilitiesSection({ data }: { data: StatePagePayload }) {
   if (data.top_utilities.length === 0) return null;
   return (
-    <section className="section section-tint">
+    <section className="section section-tint" id="utilities">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Water utilities to watch</div>
@@ -519,7 +523,7 @@ function CountyDirectory({ data }: { data: StatePagePayload }) {
 
 function SourcesFooter({ data }: { data: StatePagePayload }) {
   return (
-    <section className="section" style={{ paddingTop: 0 }}>
+    <section className="section" id="sources" style={{ paddingTop: 0 }}>
       <div className="wrap">
         <div style={{ borderTop: "1px solid var(--rule)", paddingTop: 24, fontSize: 13, color: "var(--ink-3)" }}>
           <p style={{ marginBottom: 12 }}><strong>Sources.</strong></p>
@@ -604,11 +608,26 @@ export default async function StatePage({
       <main>
         <Crumbs items={[{ label: data.state.name }]} />
         <StateHero data={data} />
+        <JumpStrip
+          items={[
+            { id: "signals", label: "Signals", show: (data.flags?.length ?? 0) > 0 },
+            { id: "map", label: "Map" },
+            { id: "pathways", label: "Pathways" },
+            { id: "counties", label: "Counties" },
+            { id: "facilities", label: "Facilities" },
+            { id: "utilities", label: "Utilities", show: data.top_utilities.length > 0 },
+            { id: "superfund", label: "Superfund", show: (data.superfund?.length ?? 0) > 0 },
+            { id: "equity", label: "Equity" },
+            { id: "all-counties", label: "All Counties", show: (data.counties_directory?.length ?? 0) > 0 },
+            { id: "sources", label: "Sources" },
+          ]}
+        />
         <NotableSignals
           flags={data.flags ?? []}
           title="Notable Signals At The State Level"
+          id="signals"
         />
-        <section className="section">
+        <section className="section" id="map">
           <div className="wrap">
             <div style={{ marginBottom: 24 }}>
               <div className="eyebrow">Where the burden sits</div>
@@ -642,6 +661,7 @@ export default async function StatePage({
           total={data.totals.npl_sites_tracked}
           geographyLabel={data.state.name}
           showHostCity
+          id="superfund"
         />
         <EquitySection data={data} />
         <CountyDirectory data={data} />

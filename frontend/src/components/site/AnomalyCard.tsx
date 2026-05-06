@@ -100,11 +100,13 @@ export function NotableSignals({
   title = "Notable Signals",
   emptyLabel,
   cap = 4,
+  id,
 }: {
   flags: Flag[];
   title?: string;
   emptyLabel?: string;
   cap?: number;
+  id?: string;
 }) {
   if (flags.length === 0 && !emptyLabel) return null;
   // Sort severity-desc, then by absolute magnitude when present so the
@@ -117,7 +119,7 @@ export function NotableSignals({
   const visible = sorted.slice(0, cap);
   const hidden = sorted.length - visible.length;
   return (
-    <section className="section">
+    <section className="section" id={id}>
       <div className="wrap">
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Anomaly engine</div>
