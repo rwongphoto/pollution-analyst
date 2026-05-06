@@ -1,0 +1,163 @@
+{
+  "facility": {
+    "state": "ct",
+    "state_label": "Connecticut",
+    "slug": "gateway-terminal-llc",
+    "name": "Gateway Terminal LLC",
+    "parent_company": "Enstructure LLC",
+    "address": "400 WATERFRONT ST",
+    "city": "New Haven",
+    "county": "New Haven County",
+    "county_slug": "new-haven",
+    "naics_label": "424710 \u00b7 Petroleum Bulk Terminals",
+    "lat": 41.293615,
+    "lng": -72.902302
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 106,
+    "air_releases_pounds": 105,
+    "water_releases_pounds": 0.52,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -0.4,
+    "long_arc_pct_change": 25.5,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 84
+      },
+      {
+        "year": 2020,
+        "value": 46
+      },
+      {
+        "year": 2021,
+        "value": 67
+      },
+      {
+        "year": 2022,
+        "value": 53
+      },
+      {
+        "year": 2023,
+        "value": 106
+      },
+      {
+        "year": 2024,
+        "value": 106
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 85,
+      "history": [
+        {
+          "year": 2023,
+          "value": 83
+        },
+        {
+          "year": 2024,
+          "value": 85
+        }
+      ],
+      "yoy_pct_change": 1.4,
+      "long_arc_pct_change": 1.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Naphthalene",
+      "cas": "91-20-3",
+      "category": "carcinogen",
+      "total_pounds_recent": 21,
+      "history": [
+        {
+          "year": 2019,
+          "value": 16
+        },
+        {
+          "year": 2020,
+          "value": 41
+        },
+        {
+          "year": 2021,
+          "value": 61
+        },
+        {
+          "year": 2022,
+          "value": 50
+        },
+        {
+          "year": 2023,
+          "value": 22
+        },
+        {
+          "year": 2024,
+          "value": 21
+        }
+      ],
+      "yoy_pct_change": -7.2,
+      "long_arc_pct_change": 27.9,
+      "long_arc_baseline_year": 2019
+    },
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "N590",
+      "category": "pbt",
+      "total_pounds_recent": 0.15,
+      "history": [
+        {
+          "year": 2019,
+          "value": 0.1
+        },
+        {
+          "year": 2020,
+          "value": 0.1
+        },
+        {
+          "year": 2021,
+          "value": 0.1
+        },
+        {
+          "year": 2022,
+          "value": 0.1
+        },
+        {
+          "year": 2023,
+          "value": 0.1
+        },
+        {
+          "year": 2024,
+          "value": 0.15
+        }
+      ],
+      "yoy_pct_change": 46.0,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "EJScreen ingest pending \u2014 placeholder",
+    "geography_label": "New Haven County, CT (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T15:44:25Z"
+}

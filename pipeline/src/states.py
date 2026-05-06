@@ -76,6 +76,46 @@ STATES: dict[str, State] = {
         population=989948,
         counties_total=3,
     ),
+    "ct": State(
+        slug="ct",
+        abbr="CT",
+        name="Connecticut",
+        fips="09",
+        population=3605944,
+        counties_total=8,
+    ),
+    "hi": State(
+        slug="hi",
+        abbr="HI",
+        name="Hawaii",
+        fips="15",
+        population=1455271,
+        counties_total=5,
+    ),
+    "nv": State(
+        slug="nv",
+        abbr="NV",
+        name="Nevada",
+        fips="32",
+        population=3104614,
+        counties_total=17,
+    ),
+    "wv": State(
+        slug="wv",
+        abbr="WV",
+        name="West Virginia",
+        fips="54",
+        population=1793716,
+        counties_total=55,
+    ),
+    "ok": State(
+        slug="ok",
+        abbr="OK",
+        name="Oklahoma",
+        fips="40",
+        population=3959353,
+        counties_total=77,
+    ),
 }
 
 

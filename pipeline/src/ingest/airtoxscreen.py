@@ -64,11 +64,18 @@ STATE_TO_REGION: dict[str, str] = {
     "NH": "1",
     "ME": "1",
     "RI": "1",
+    "CT": "1",
     "DE": "3",
+    "WV": "3",
+    "HI": "9",
+    "NV": "9",
+    "OK": "6a",
     # Add more as states register: Region 1 = CT/ME/MA/NH/RI/VT,
     # 2 = NJ/NY, 3 = DE/DC/MD/PA/VA/WV, 4a = AL/FL/GA/KY, 4b = MS/NC/SC/TN,
-    # 5a = IL/IN/MI, 5b = MN/OH/WI, 6a = AR/LA/NM, 6b = OK/TX, 7 = IA/KS/MO/NE,
-    # 8 = CO/MT/ND/SD/UT/WY, 9 = AZ/CA/HI/NV, 10 = AK/ID/OR/WA.
+    # 5a = IL/IN/MI, 5b = MN/OH/WI, 6a = AR/LA/NM/OK, 6b = TX (verified
+    # 2026-05-06: Region6b XLSX is Texas-only; OK is in R6a contrary to the
+    # earlier comment), 7 = IA/KS/MO/NE, 8 = CO/MT/ND/SD/UT/WY,
+    # 9 = AZ/CA/HI/NV, 10 = AK/ID/OR/WA.
 }
 
 

@@ -1,0 +1,383 @@
+{
+  "place": {
+    "state": "ok",
+    "state_label": "Oklahoma",
+    "slug": "burlington",
+    "name": "Burlington",
+    "fips": "4010050",
+    "population": 183,
+    "county_name": "Alfalfa",
+    "county_fips": "40003"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 28.6,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 28.6
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.6004,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.6004
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1214,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1214
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2021)",
+      "current": 10205,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -71.0,
+      "long_arc_pct_change": -61.4,
+      "baseline_year": 2012,
+      "history": [
+        {
+          "year": 2012,
+          "value": 26423
+        },
+        {
+          "year": 2013,
+          "value": 56176
+        },
+        {
+          "year": 2014,
+          "value": 146254
+        },
+        {
+          "year": 2015,
+          "value": 131703
+        },
+        {
+          "year": 2016,
+          "value": 19835
+        },
+        {
+          "year": 2017,
+          "value": 20240
+        },
+        {
+          "year": 2018,
+          "value": 30827
+        },
+        {
+          "year": 2019,
+          "value": 24120
+        },
+        {
+          "year": 2020,
+          "value": 35190
+        },
+        {
+          "year": 2021,
+          "value": 10205
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 156,
+    "violations_5yr_total": 7,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "burlington",
+        "state": "ok",
+        "state_label": "Oklahoma",
+        "name": "Burlington",
+        "pwsid": "OK3000202",
+        "population_served": 156,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [],
+  "equity": {
+    "population": 183,
+    "pct_low_income": 18.8,
+    "pct_people_of_color": 18.599999999999994,
+    "pct_under_5": 9.8,
+    "pct_over_64": 14.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Burlington, Oklahoma (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.8,
+      "age_adjusted": 11.1,
+      "state_mean": 11.6,
+      "us_mean": 10.0,
+      "vs_state_pp": -0.47,
+      "vs_state_pct": -4.1,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.08,
+      "vs_us_pct": 10.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 6.5,
+      "age_adjusted": 5.9,
+      "state_mean": 7.2,
+      "us_mean": 5.5,
+      "vs_state_pp": -1.33,
+      "vs_state_pct": -18.4,
+      "vs_state_class": "better",
+      "vs_us_pp": 0.4,
+      "vs_us_pct": 7.3,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 6.7,
+      "age_adjusted": 5.3,
+      "state_mean": 6.4,
+      "us_mean": 5.3,
+      "vs_state_pp": -1.06,
+      "vs_state_pct": -16.7,
+      "vs_state_class": "better",
+      "vs_us_pp": -0.01,
+      "vs_us_pct": -0.2,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 10.2,
+      "age_adjusted": 9.1,
+      "state_mean": 11.6,
+      "us_mean": 10.5,
+      "vs_state_pp": -2.46,
+      "vs_state_pct": -21.3,
+      "vs_state_class": "better",
+      "vs_us_pp": -1.36,
+      "vs_us_pct": -13.0,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 16.3,
+      "age_adjusted": 17.3,
+      "state_mean": 18.6,
+      "us_mean": 16.8,
+      "vs_state_pp": -1.35,
+      "vs_state_pct": -7.2,
+      "vs_state_class": "better",
+      "vs_us_pp": 0.55,
+      "vs_us_pct": 3.3,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ok",
+      "slug": "aline",
+      "name": "Aline",
+      "population": 203,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ok",
+      "slug": "jet",
+      "name": "Jet",
+      "population": 251,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ok",
+      "slug": "goltry",
+      "name": "Goltry",
+      "population": 277,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ok",
+      "slug": "carmen",
+      "name": "Carmen",
+      "population": 313,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ok",
+      "slug": "reydon",
+      "name": "Reydon",
+      "population": 181,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ok",
+      "slug": "keyes",
+      "name": "Keyes",
+      "population": 186,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T16:24:11Z"
+}

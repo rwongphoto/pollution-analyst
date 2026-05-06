@@ -1,0 +1,79 @@
+{
+  "site": {
+    "state": "ok",
+    "state_label": "Oklahoma",
+    "slug": "wilcox-oil-company",
+    "name": "Wilcox Oil Company",
+    "epa_id": "OK0001010917",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Creek County",
+    "county_slug": "creek",
+    "city": "Creek County",
+    "city_slug": null,
+    "address": "West 221St Street South/Refinery Road",
+    "zip": "74010",
+    "lat": 35.840805,
+    "lng": -96.380193
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Benzo[A]Pyrene"
+  },
+  "contaminants": [
+    {
+      "name": "Benzo[A]Pyrene",
+      "media": "Solid Waste",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Solid Waste",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "OK2001910",
+        "name": "Bristow Municipal Authority",
+        "slug": "bristow-municipal-authority",
+        "state": "ok",
+        "distance_miles": 0.94,
+        "place_name": "Bristow",
+        "primary_source": "groundwater",
+        "population_served": 3700,
+        "health_based_5yr": 1,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1277,
+    "pct_low_income": 58.5,
+    "pct_people_of_color": 29.1,
+    "pct_under_5": 5.9,
+    "pct_over_64": 15.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:24:11Z"
+}

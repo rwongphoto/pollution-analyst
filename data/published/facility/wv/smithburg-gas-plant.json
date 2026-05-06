@@ -1,0 +1,130 @@
+{
+  "facility": {
+    "state": "wv",
+    "state_label": "West Virginia",
+    "slug": "smithburg-gas-plant",
+    "name": "Smithburg Gas Plant",
+    "parent_company": "Marathon Petroleum CORP",
+    "address": "253 SNOWBIRD ROAD",
+    "city": "West Union",
+    "county": "Doddridge County",
+    "county_slug": "doddridge",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 39.284717,
+    "lng": -80.733163
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 15004,
+    "air_releases_pounds": 15004,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 405.2,
+    "long_arc_pct_change": 1150.3,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 1200
+      },
+      {
+        "year": 2023,
+        "value": 2970
+      },
+      {
+        "year": 2024,
+        "value": 15004
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 15000,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1200
+        },
+        {
+          "year": 2023,
+          "value": 2960
+        },
+        {
+          "year": 2024,
+          "value": 15000
+        }
+      ],
+      "yoy_pct_change": 406.8,
+      "long_arc_pct_change": 1150.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 4,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6
+        },
+        {
+          "year": 2024,
+          "value": 4
+        }
+      ],
+      "yoy_pct_change": -33.3,
+      "long_arc_pct_change": -33.3,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Smithburg Gas Plant rose from 3k lb to 15k lb (5.1\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 406.8,
+      "magnitude_abs": 12040.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 1200
+        },
+        {
+          "year": 2023,
+          "value": 2960
+        },
+        {
+          "year": 2024,
+          "value": 15000
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 1152,
+    "pct_low_income": 28.2,
+    "pct_people_of_color": 1.8,
+    "pct_under_5": 4.2,
+    "pct_over_64": 18.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:07:26Z"
+}

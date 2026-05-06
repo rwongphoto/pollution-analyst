@@ -1,0 +1,127 @@
+{
+  "facility": {
+    "state": "ok",
+    "state_label": "Oklahoma",
+    "slug": "omega-gas-plant",
+    "name": "Omega Gas Plant",
+    "parent_company": "Marathon Petroleum CORP",
+    "address": "27400 N. 2740 RD",
+    "city": "Okarche",
+    "county": "Kingfisher County",
+    "county_slug": "kingfisher",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 35.754348,
+    "lng": -98.118487
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 7270,
+    "air_releases_pounds": 7270,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -44.2,
+    "long_arc_pct_change": -87.6,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 58560
+      },
+      {
+        "year": 2023,
+        "value": 13022
+      },
+      {
+        "year": 2024,
+        "value": 7270
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 7254,
+      "history": [
+        {
+          "year": 2022,
+          "value": 57050
+        },
+        {
+          "year": 2023,
+          "value": 13004
+        },
+        {
+          "year": 2024,
+          "value": 7254
+        }
+      ],
+      "yoy_pct_change": -44.2,
+      "long_arc_pct_change": -87.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 10,
+      "history": [
+        {
+          "year": 2023,
+          "value": 12
+        },
+        {
+          "year": 2024,
+          "value": 10
+        }
+      ],
+      "yoy_pct_change": -16.7,
+      "long_arc_pct_change": -16.7,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 6,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1064
+        },
+        {
+          "year": 2023,
+          "value": 6
+        },
+        {
+          "year": 2024,
+          "value": 6
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": -99.4,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 15290,
+    "pct_low_income": 12.2,
+    "pct_people_of_color": 25.599999999999994,
+    "pct_under_5": 7.5,
+    "pct_over_64": 16.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Kingfisher County, OK (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:24:10Z"
+}

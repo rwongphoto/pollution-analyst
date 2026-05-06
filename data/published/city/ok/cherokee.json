@@ -1,0 +1,416 @@
+{
+  "place": {
+    "state": "ok",
+    "state_label": "Oklahoma",
+    "slug": "cherokee",
+    "name": "Cherokee",
+    "fips": "4013750",
+    "population": 1556,
+    "county_name": "Alfalfa",
+    "county_fips": "40003"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 28.6,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 28.6
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.6004,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.6004
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1214,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1214
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2021)",
+      "current": 10205,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -71.0,
+      "long_arc_pct_change": -61.4,
+      "baseline_year": 2012,
+      "history": [
+        {
+          "year": 2012,
+          "value": 26423
+        },
+        {
+          "year": 2013,
+          "value": 56176
+        },
+        {
+          "year": 2014,
+          "value": 146254
+        },
+        {
+          "year": 2015,
+          "value": 131703
+        },
+        {
+          "year": 2016,
+          "value": 19835
+        },
+        {
+          "year": 2017,
+          "value": 20240
+        },
+        {
+          "year": 2018,
+          "value": 30827
+        },
+        {
+          "year": 2019,
+          "value": 24120
+        },
+        {
+          "year": 2020,
+          "value": 35190
+        },
+        {
+          "year": 2021,
+          "value": 10205
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 1630,
+    "violations_5yr_total": 7,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 5,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "cherokee",
+        "state": "ok",
+        "state_label": "Oklahoma",
+        "name": "Cherokee",
+        "pwsid": "OK2000208",
+        "population_served": 1630,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:OK2000208"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:OK2000208"
+      }
+    }
+  ],
+  "equity": {
+    "population": 1556,
+    "pct_low_income": 16.7,
+    "pct_people_of_color": 15.700000000000003,
+    "pct_under_5": 6.8,
+    "pct_over_64": 20.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Cherokee, Oklahoma (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.1,
+      "age_adjusted": 11.3,
+      "state_mean": 11.6,
+      "us_mean": 10.0,
+      "vs_state_pp": -0.27,
+      "vs_state_pct": -2.3,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.28,
+      "vs_us_pct": 12.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 7.9,
+      "age_adjusted": 6.6,
+      "state_mean": 7.2,
+      "us_mean": 5.5,
+      "vs_state_pp": -0.63,
+      "vs_state_pct": -8.7,
+      "vs_state_class": "better",
+      "vs_us_pp": 1.1,
+      "vs_us_pct": 20.0,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.6,
+      "age_adjusted": 5.9,
+      "state_mean": 6.4,
+      "us_mean": 5.3,
+      "vs_state_pp": -0.46,
+      "vs_state_pct": -7.2,
+      "vs_state_class": "better",
+      "vs_us_pp": 0.59,
+      "vs_us_pct": 11.1,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 12.0,
+      "age_adjusted": 9.8,
+      "state_mean": 11.6,
+      "us_mean": 10.5,
+      "vs_state_pp": -1.76,
+      "vs_state_pct": -15.2,
+      "vs_state_class": "better",
+      "vs_us_pp": -0.66,
+      "vs_us_pct": -6.3,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 16.5,
+      "age_adjusted": 17.9,
+      "state_mean": 18.6,
+      "us_mean": 16.8,
+      "vs_state_pp": -0.75,
+      "vs_state_pct": -4.0,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.15,
+      "vs_us_pct": 6.9,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ok",
+      "slug": "helena",
+      "name": "Helena",
+      "population": 1459,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ok",
+      "slug": "carmen",
+      "name": "Carmen",
+      "population": 313,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ok",
+      "slug": "goltry",
+      "name": "Goltry",
+      "population": 277,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ok",
+      "slug": "jet",
+      "name": "Jet",
+      "population": 251,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ok",
+      "slug": "hollis",
+      "name": "Hollis",
+      "population": 1552,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 30.8,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ok",
+      "slug": "hooker",
+      "name": "Hooker",
+      "population": 1561,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 35.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T16:24:12Z"
+}

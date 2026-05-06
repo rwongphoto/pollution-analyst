@@ -1,0 +1,149 @@
+{
+  "facility": {
+    "state": "ok",
+    "state_label": "Oklahoma",
+    "slug": "hickory-hills-gas-plant",
+    "name": "Hickory Hills Gas Plant",
+    "parent_company": "Targa Resources CORP",
+    "address": "8636 HIGHWAY 270",
+    "city": "Stuart",
+    "county": "Hughes County",
+    "county_slug": "hughes",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 34.909068,
+    "lng": -96.134974
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 5920,
+    "air_releases_pounds": 1730,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 4190,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 68.2,
+    "long_arc_pct_change": -57.3,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 13867
+      },
+      {
+        "year": 2023,
+        "value": 3520
+      },
+      {
+        "year": 2024,
+        "value": 5920
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2794,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2690
+        },
+        {
+          "year": 2024,
+          "value": 2794
+        }
+      ],
+      "yoy_pct_change": 3.9,
+      "long_arc_pct_change": 3.9,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1021,
+      "history": [
+        {
+          "year": 2024,
+          "value": 1021
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 930,
+      "history": [
+        {
+          "year": 2024,
+          "value": 930
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 671,
+      "history": [
+        {
+          "year": 2022,
+          "value": 255
+        },
+        {
+          "year": 2024,
+          "value": 671
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 163.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 504,
+      "history": [
+        {
+          "year": 2023,
+          "value": 830
+        },
+        {
+          "year": 2024,
+          "value": 504
+        }
+      ],
+      "yoy_pct_change": -39.3,
+      "long_arc_pct_change": -39.3,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 714,
+    "pct_low_income": 31.7,
+    "pct_people_of_color": 19.5,
+    "pct_under_5": 3.4,
+    "pct_over_64": 45.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:24:10Z"
+}

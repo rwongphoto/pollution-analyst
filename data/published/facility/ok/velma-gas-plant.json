@@ -1,0 +1,190 @@
+{
+  "facility": {
+    "state": "ok",
+    "state_label": "Oklahoma",
+    "slug": "velma-gas-plant",
+    "name": "Velma Gas Plant",
+    "parent_company": "Targa Resources CORP",
+    "address": "297685 OLD COUNTY HIGHWAY 7",
+    "city": "Velma",
+    "county": "Stephens County",
+    "county_slug": "stephens",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 34.452657,
+    "lng": -97.671384
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 62867,
+    "air_releases_pounds": 10662,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 52205,
+    "chemicals_reported": 6,
+    "yoy_pct_change": 965.8,
+    "long_arc_pct_change": 965.8,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 5899
+      },
+      {
+        "year": 2024,
+        "value": 62867
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 41752,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2651
+        },
+        {
+          "year": 2024,
+          "value": 41752
+        }
+      ],
+      "yoy_pct_change": 1475.2,
+      "long_arc_pct_change": 1475.2,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 6409,
+      "history": [
+        {
+          "year": 2022,
+          "value": 5
+        },
+        {
+          "year": 2024,
+          "value": 6409
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 5192,
+      "history": [
+        {
+          "year": 2023,
+          "value": 968
+        },
+        {
+          "year": 2024,
+          "value": 5192
+        }
+      ],
+      "yoy_pct_change": 436.4,
+      "long_arc_pct_change": 436.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 4296,
+      "history": [
+        {
+          "year": 2024,
+          "value": 4296
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 3786,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2280
+        },
+        {
+          "year": 2024,
+          "value": 3786
+        }
+      ],
+      "yoy_pct_change": 66.1,
+      "long_arc_pct_change": 66.1,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 1432,
+      "history": [
+        {
+          "year": 2024,
+          "value": 1432
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Velma Gas Plant rose from 3k lb to 42k lb (15.8\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 1475.2,
+      "magnitude_abs": 39101.5,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 5
+        },
+        {
+          "year": 2023,
+          "value": 2651
+        },
+        {
+          "year": 2024,
+          "value": 41752
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 740,
+    "pct_low_income": 48.8,
+    "pct_people_of_color": 25.1,
+    "pct_under_5": 4.1,
+    "pct_over_64": 7.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:24:10Z"
+}

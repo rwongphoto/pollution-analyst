@@ -1,0 +1,150 @@
+{
+  "facility": {
+    "state": "ok",
+    "state_label": "Oklahoma",
+    "slug": "grady-gas-plant",
+    "name": "Grady Gas Plant",
+    "parent_company": "Energy Transfer LP",
+    "address": "2333 COUNTY ROAD 1560",
+    "city": "Lindsay",
+    "county": "Grady County",
+    "county_slug": "grady",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 34.753956,
+    "lng": -97.700459
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 8182,
+    "air_releases_pounds": 5357,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2825,
+    "chemicals_reported": 4,
+    "yoy_pct_change": -28.5,
+    "long_arc_pct_change": -35.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 12670
+      },
+      {
+        "year": 2023,
+        "value": 11445
+      },
+      {
+        "year": 2024,
+        "value": 8182
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 5994,
+      "history": [
+        {
+          "year": 2022,
+          "value": 5450
+        },
+        {
+          "year": 2023,
+          "value": 7052
+        },
+        {
+          "year": 2024,
+          "value": 5994
+        }
+      ],
+      "yoy_pct_change": -15.0,
+      "long_arc_pct_change": 10.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 1011,
+      "history": [
+        {
+          "year": 2022,
+          "value": 790
+        },
+        {
+          "year": 2023,
+          "value": 1280
+        },
+        {
+          "year": 2024,
+          "value": 1011
+        }
+      ],
+      "yoy_pct_change": -21.0,
+      "long_arc_pct_change": 28.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 813,
+      "history": [
+        {
+          "year": 2022,
+          "value": 430
+        },
+        {
+          "year": 2023,
+          "value": 2219
+        },
+        {
+          "year": 2024,
+          "value": 813
+        }
+      ],
+      "yoy_pct_change": -63.4,
+      "long_arc_pct_change": 89.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 364,
+      "history": [
+        {
+          "year": 2023,
+          "value": 894
+        },
+        {
+          "year": 2024,
+          "value": 364
+        }
+      ],
+      "yoy_pct_change": -59.3,
+      "long_arc_pct_change": -59.3,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 55314,
+    "pct_low_income": 11.0,
+    "pct_people_of_color": 20.200000000000003,
+    "pct_under_5": 6.5,
+    "pct_over_64": 16.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Grady County, OK (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:24:09Z"
+}

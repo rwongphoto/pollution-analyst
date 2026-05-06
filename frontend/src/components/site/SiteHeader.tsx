@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
-import { LIVE_STATES } from "../../lib/states";
+import { LIVE_STATES_BY_REGION } from "../../lib/states";
 import { Brand } from "./Brand";
 
 type Active =
@@ -74,17 +74,22 @@ export function SiteHeader({ active }: { active?: Active }) {
               States
               <span className="caret" aria-hidden="true" />
             </button>
-            <div className="submenu" role="menu">
-              {LIVE_STATES.map((s) => (
-                <Link
-                  key={s.slug}
-                  href={`/state/${s.slug}`}
-                  role="menuitem"
-                  onClick={closeAll}
-                >
-                  <span>{s.name}</span>
-                  <span className="sub-meta">{s.abbr}</span>
-                </Link>
+            <div className="submenu submenu-mega" role="menu">
+              {LIVE_STATES_BY_REGION.map(({ region, states }) => (
+                <div key={region} className="mega-col">
+                  <div className="sm-section">{region}</div>
+                  {states.map((s) => (
+                    <Link
+                      key={s.slug}
+                      href={`/state/${s.slug}`}
+                      role="menuitem"
+                      onClick={closeAll}
+                    >
+                      <span>{s.name}</span>
+                      <span className="sub-meta">{s.abbr}</span>
+                    </Link>
+                  ))}
+                </div>
               ))}
             </div>
           </div>

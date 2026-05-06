@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "wv",
+    "state_label": "West Virginia",
+    "slug": "williams-ohio-valley-midstream-fort-beeler-gas-processing",
+    "name": "Williams Ohio Valley Midstream - Fort Beeler Gas Processing",
+    "parent_company": "The Williams Cos",
+    "address": "12681 WAYNESBURG PIKE ROAD",
+    "city": "Cameron",
+    "county": "Marshall County",
+    "county_slug": "marshall",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 39.880363,
+    "lng": -80.585665
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 9500,
+    "air_releases_pounds": 9500,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 43.7,
+    "long_arc_pct_change": 304.3,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 2350
+      },
+      {
+        "year": 2023,
+        "value": 6610
+      },
+      {
+        "year": 2024,
+        "value": 9500
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 5900,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1380
+        },
+        {
+          "year": 2023,
+          "value": 5200
+        },
+        {
+          "year": 2024,
+          "value": 5900
+        }
+      ],
+      "yoy_pct_change": 13.5,
+      "long_arc_pct_change": 327.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 3600,
+      "history": [
+        {
+          "year": 2022,
+          "value": 970
+        },
+        {
+          "year": 2023,
+          "value": 1410
+        },
+        {
+          "year": 2024,
+          "value": 3600
+        }
+      ],
+      "yoy_pct_change": 155.3,
+      "long_arc_pct_change": 271.1,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 948,
+    "pct_low_income": 7.3,
+    "pct_people_of_color": 0.3,
+    "pct_under_5": 5.5,
+    "pct_over_64": 30.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:07:26Z"
+}

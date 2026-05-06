@@ -1,0 +1,252 @@
+{
+  "utility": {
+    "state": "ok",
+    "state_label": "Oklahoma",
+    "slug": "ada",
+    "name": "Ada",
+    "pwsid": "OK2006201",
+    "population_served": 22600,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Ada"
+    ],
+    "county": "Pontotoc County",
+    "county_slug": "pontotoc",
+    "place_slug": "ada"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 3,
+    "health_based_violations_5yr": 1,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "health_based",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Treatment technique violation; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 2
+      },
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 2
+      },
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 5200",
+      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:OK2006201"
+      }
+    }
+  ],
+  "equity": {
+    "population": 16537,
+    "pct_low_income": 18.4,
+    "pct_people_of_color": 40.7,
+    "pct_under_5": 7.1,
+    "pct_over_64": 13.5,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 74.4,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 50.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 39.0,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 33.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 28.9,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 23.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 69.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 48.4,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 45.5,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 72.1,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 18.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 124.9
+      },
+      {
+        "label": "Ozone",
+        "score": 94.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 65.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 59.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 37.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 42.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 102.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 75.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 74.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 99.9
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 29.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Ada, Oklahoma (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:24:10Z"
+}

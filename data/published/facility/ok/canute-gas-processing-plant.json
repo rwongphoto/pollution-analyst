@@ -1,0 +1,104 @@
+{
+  "facility": {
+    "state": "ok",
+    "state_label": "Oklahoma",
+    "slug": "canute-gas-processing-plant",
+    "name": "Canute Gas Processing Plant",
+    "parent_company": "Energy Transfer LP",
+    "address": "11760 NORTH 2069 ROAD",
+    "city": "Canute",
+    "county": "Washita County",
+    "county_slug": "washita",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 35.407466,
+    "lng": -99.281641
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 2519,
+    "air_releases_pounds": 2413,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 106,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 84.7,
+    "long_arc_pct_change": 171.9,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 926
+      },
+      {
+        "year": 2023,
+        "value": 1364
+      },
+      {
+        "year": 2024,
+        "value": 2519
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1585,
+      "history": [
+        {
+          "year": 2022,
+          "value": 926
+        },
+        {
+          "year": 2023,
+          "value": 905
+        },
+        {
+          "year": 2024,
+          "value": 1585
+        }
+      ],
+      "yoy_pct_change": 75.1,
+      "long_arc_pct_change": 71.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 934,
+      "history": [
+        {
+          "year": 2023,
+          "value": 459
+        },
+        {
+          "year": 2024,
+          "value": 934
+        }
+      ],
+      "yoy_pct_change": 103.5,
+      "long_arc_pct_change": 103.5,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 1159,
+    "pct_low_income": 30.7,
+    "pct_people_of_color": 22.1,
+    "pct_under_5": 4.1,
+    "pct_over_64": 12.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:24:10Z"
+}

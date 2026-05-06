@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "ok",
+    "state_label": "Oklahoma",
+    "slug": "south-canadian-natural-gas-plant",
+    "name": "South Canadian Natural Gas Plant",
+    "parent_company": "Energy Transfer LP",
+    "address": "2321 S CALUMET RD.",
+    "city": "Calumet",
+    "county": "Canadian County",
+    "county_slug": "canadian",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 35.512394,
+    "lng": -98.114084
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 4583,
+    "air_releases_pounds": 2091,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2492,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -2.1,
+    "long_arc_pct_change": 21.6,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 3770
+      },
+      {
+        "year": 2023,
+        "value": 4680
+      },
+      {
+        "year": 2024,
+        "value": 4583
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 4583,
+      "history": [
+        {
+          "year": 2022,
+          "value": 3770
+        },
+        {
+          "year": 2023,
+          "value": 4680
+        },
+        {
+          "year": 2024,
+          "value": 4583
+        }
+      ],
+      "yoy_pct_change": -2.1,
+      "long_arc_pct_change": 21.6,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 156681,
+    "pct_low_income": 8.0,
+    "pct_people_of_color": 27.0,
+    "pct_under_5": 7.6,
+    "pct_over_64": 13.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Canadian County, OK (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:24:10Z"
+}
