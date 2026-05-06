@@ -14,8 +14,14 @@ import {
   loadSuperfund,
 } from "@/lib/data";
 import { isEquityStub } from "@/lib/prose";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { SuperfundPayload } from "@/lib/types";
+
+function superfundDescription(data: SuperfundPayload): string {
+  const s = data.site;
+  const where = [s.city, s.county, s.state_label].filter(Boolean).join(", ");
+  return `${s.name} (${s.npl_status}) in ${where}. ${data.totals.contaminants_count} contaminants of concern reported to EPA's Superfund Enterprise Management System.`;
+}
 
 export const dynamicParams = false;
 
@@ -33,10 +39,9 @@ export async function generateMetadata({
   const { state, slug } = await params;
   const data = await loadSuperfund(state, slug);
   const s = data.site;
-  const where = [s.city, s.county, s.state_label].filter(Boolean).join(", ");
   return pageMeta({
     title: `${s.name} — Superfund Site | Pollution Analyst`,
-    description: `${s.name} (${s.npl_status}) in ${where}. ${data.totals.contaminants_count} contaminants of concern reported to EPA's Superfund Enterprise Management System.`,
+    description: superfundDescription(data),
     path: `/state/${state}/superfund/${slug}`,
   });
 }
@@ -429,8 +434,83 @@ export default async function SuperfundPage({
   const { state, slug } = await params;
   const data = await loadSuperfund(state, slug);
   const s = data.site;
+  const stateUrl = `${SITE_URL}/state/${state}`;
+  const pageUrl = `${stateUrl}/superfund/${slug}`;
+  const description = superfundDescription(data);
+  const publishedAt = data._published_at ?? data.source.retrieved;
+  const breadcrumbItems: Array<{ "@type": "ListItem"; position: number; name: string; item: string }> = [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+    { "@type": "ListItem", position: 2, name: s.state_label, item: stateUrl },
+  ];
+  if (s.county && s.county_slug) {
+    breadcrumbItems.push({ "@type": "ListItem", position: breadcrumbItems.length + 1, name: s.county, item: `${stateUrl}/county/${s.county_slug}` });
+  }
+  if (s.city && s.city_slug) {
+    breadcrumbItems.push({ "@type": "ListItem", position: breadcrumbItems.length + 1, name: s.city, item: `${stateUrl}/city/${s.city_slug}` });
+  }
+  breadcrumbItems.push({ "@type": "ListItem", position: breadcrumbItems.length + 1, name: s.name, item: pageUrl });
+  const postalAddress: Record<string, string> = {
+    "@type": "PostalAddress",
+    addressRegion: state.toUpperCase(),
+    addressCountry: "US",
+  };
+  if (s.address) postalAddress.streetAddress = s.address;
+  if (s.city) postalAddress.addressLocality = s.city;
+  if (s.zip) postalAddress.postalCode = s.zip;
+  const place: Record<string, unknown> = {
+    "@type": "Place",
+    "@id": pageUrl,
+    name: s.name,
+    description,
+    url: pageUrl,
+    address: postalAddress,
+    identifier: {
+      "@type": "PropertyValue",
+      propertyID: "EPA ID",
+      value: s.epa_id,
+    },
+  };
+  if (s.lat != null && s.lng != null) {
+    place.geo = {
+      "@type": "GeoCoordinates",
+      latitude: s.lat,
+      longitude: s.lng,
+    };
+  }
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "BreadcrumbList", itemListElement: breadcrumbItems },
+      {
+        "@type": "Article",
+        mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+        headline: `${s.name} — Superfund Site | Pollution Analyst`,
+        description,
+        image: {
+          "@type": "ImageObject",
+          url: `${SITE_URL}/icon.png`,
+          width: 512,
+          height: 512,
+        },
+        datePublished: publishedAt,
+        dateModified: publishedAt,
+        publisher: {
+          "@type": "Organization",
+          "@id": `${SITE_URL}/#organization`,
+          name: "Pollution Analyst",
+          url: SITE_URL,
+          logo: { "@type": "ImageObject", url: `${SITE_URL}/icon.png` },
+        },
+      },
+      place,
+    ],
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <SiteHeader />
       <main>
         <Crumbs

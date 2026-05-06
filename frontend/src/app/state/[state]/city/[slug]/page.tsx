@@ -26,8 +26,20 @@ import {
 } from "@/lib/prose";
 import { getEjIndicatorRisk } from "@/lib/ejIndicatorRisk";
 import { getPathwayHealthRisk } from "@/lib/pathwayHealthRisk";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { CityHubPayload, PollutantSummary } from "@/lib/types";
+
+function cityDescription(data: CityHubPayload): string {
+  return `${data.place.name}, ${data.place.state_label} — ${data.totals.facilities_in_city} TRI facilities in the city, ${data.totals.utilities_serving} public water systems serving residents, with EPA equity context.`;
+}
+
+function countySlugFromName(countyName: string): string {
+  return countyName.toLowerCase().replace(/\s+county$/, "").replace(/\s+/g, "-");
+}
+
+function countyLabelFromName(countyName: string): string {
+  return /\s+county$/i.test(countyName) ? countyName : `${countyName} County`;
+}
 
 export const dynamicParams = false;
 
@@ -46,7 +58,7 @@ export async function generateMetadata({
   const data = await loadCityHub(state, slug);
   return pageMeta({
     title: `${data.place.name} ${data.place.state.toUpperCase()} Pollution | Pollution Analyst`,
-    description: `${data.place.name}, ${data.place.state_label} — ${data.totals.facilities_in_city} TRI facilities in the city, ${data.totals.utilities_serving} public water systems serving residents, with EPA equity context.`,
+    description: cityDescription(data),
     path: `/state/${state}/city/${slug}`,
   });
 }
@@ -514,23 +526,77 @@ export default async function CityHubPage({
 }) {
   const { state, slug } = await params;
   const data = await loadCityHub(state, slug);
+  const stateUrl = `${SITE_URL}/state/${state}`;
+  const pageUrl = `${stateUrl}/city/${slug}`;
+  const description = cityDescription(data);
+  const placeName = `${data.place.name}, ${data.place.state_label}`;
+  const countyName = data.place.county_name;
+  const countySlug = countyName ? countySlugFromName(countyName) : null;
+  const countyLabel = countyName ? countyLabelFromName(countyName) : null;
+  const countyUrl = countySlug ? `${stateUrl}/county/${countySlug}` : null;
+  const breadcrumbItems: Array<{ "@type": "ListItem"; position: number; name: string; item: string }> = [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+    { "@type": "ListItem", position: 2, name: data.place.state_label, item: stateUrl },
+  ];
+  if (countyLabel && countyUrl) {
+    breadcrumbItems.push({ "@type": "ListItem", position: breadcrumbItems.length + 1, name: countyLabel, item: countyUrl });
+  }
+  breadcrumbItems.push({ "@type": "ListItem", position: breadcrumbItems.length + 1, name: data.place.name, item: pageUrl });
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Place",
+        name: placeName,
+        url: pageUrl,
+        description,
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: data.place.name,
+          addressRegion: state.toUpperCase(),
+          addressCountry: "US",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: breadcrumbItems,
+      },
+      {
+        "@type": "Organization",
+        "@id": `${SITE_URL}/`,
+        name: "Pollution Analyst",
+        url: `${SITE_URL}/`,
+        logo: { "@type": "ImageObject", url: `${SITE_URL}/icon.png` },
+        description:
+          "Pollution trend intelligence built from federal public data. Methodology-first. Updated on each source's native cadence.",
+      },
+      {
+        "@type": "Article",
+        headline: `${placeName} Pollution`,
+        description,
+        image: `${SITE_URL}/icon.png`,
+        mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+        publisher: {
+          "@type": "Organization",
+          name: "Pollution Analyst",
+          url: SITE_URL,
+        },
+      },
+    ],
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <SiteHeader active="city" />
       <main>
         <Crumbs
           items={[
             { label: data.place.state_label, href: `/state/${state}` },
-            ...(data.place.county_name
-              ? [{
-                  label: /\s+county$/i.test(data.place.county_name)
-                    ? data.place.county_name
-                    : `${data.place.county_name} County`,
-                  href: `/state/${state}/county/${data.place.county_name
-                    .toLowerCase()
-                    .replace(/\s+county$/, "")
-                    .replace(/\s+/g, "-")}`,
-                }]
+            ...(countyLabel && countyUrl
+              ? [{ label: countyLabel, href: `/state/${state}/county/${countySlug}` }]
               : []),
             { label: data.place.name },
           ]}

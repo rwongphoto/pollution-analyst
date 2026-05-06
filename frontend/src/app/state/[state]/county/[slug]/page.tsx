@@ -30,8 +30,12 @@ import {
 } from "@/lib/prose";
 import { getEjIndicatorRisk } from "@/lib/ejIndicatorRisk";
 import { getPathwayHealthRisk } from "@/lib/pathwayHealthRisk";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { CountyPagePayload, PollutantSummary } from "@/lib/types";
+
+function countyDescription(data: CountyPagePayload): string {
+  return `${data.county.name} pollution data: TRI facility releases, hazardous air pollutants, GHG emissions, and equity context. ${data.facilities.length} top facilities tracked.`;
+}
 
 export const dynamicParams = false;
 
@@ -50,7 +54,7 @@ export async function generateMetadata({
   const data = await loadCounty(state, slug);
   return pageMeta({
     title: `${data.county.name}, ${data.county.state_label} Pollution Trends | Pollution Analyst`,
-    description: `${data.county.name} pollution data: TRI facility releases, hazardous air pollutants, GHG emissions, and equity context. ${data.facilities.length} top facilities tracked.`,
+    description: countyDescription(data),
     path: `/state/${state}/county/${slug}`,
   });
 }
@@ -470,8 +474,64 @@ export default async function CountyPage({
 }) {
   const { state, slug } = await params;
   const data = await loadCounty(state, slug);
+  const stateUrl = `${SITE_URL}/state/${state}`;
+  const pageUrl = `${stateUrl}/county/${slug}`;
+  const description = countyDescription(data);
+  const placeName = `${data.county.name}, ${data.county.state_label}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: data.county.state_label, item: stateUrl },
+          { "@type": "ListItem", position: 3, name: data.county.name, item: pageUrl },
+        ],
+      },
+      {
+        "@type": "Article",
+        mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+        headline: `${placeName} Pollution`,
+        description,
+        image: {
+          "@type": "ImageObject",
+          url: `${SITE_URL}/icon.png`,
+          width: 512,
+          height: 512,
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "Pollution Analyst",
+          logo: { "@type": "ImageObject", url: `${SITE_URL}/icon.png` },
+        },
+      },
+      {
+        "@type": "Place",
+        name: placeName,
+        description,
+        url: pageUrl,
+        address: {
+          "@type": "PostalAddress",
+          addressRegion: state.toUpperCase(),
+          addressCountry: "US",
+        },
+      },
+      {
+        "@type": "Organization",
+        "@id": `${SITE_URL}/`,
+        url: `${SITE_URL}/`,
+        name: "Pollution Analyst",
+        logo: { "@type": "ImageObject", url: `${SITE_URL}/icon.png` },
+      },
+    ],
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <SiteHeader active="county" />
       <main>
         <Crumbs

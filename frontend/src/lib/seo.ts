@@ -29,4 +29,4 @@ export function pageMeta(opts: {
 }
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.pollutionanalyst.ai";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.pollutionanalyst.com";

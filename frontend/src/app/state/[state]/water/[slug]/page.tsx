@@ -21,8 +21,12 @@ import {
   severityLabel,
 } from "@/lib/prose";
 import { getEjIndicatorRisk } from "@/lib/ejIndicatorRisk";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { WaterUtilityPayload } from "@/lib/types";
+
+function waterDescription(data: WaterUtilityPayload, city: string): string {
+  return `${data.utility.name} (PWSID ${data.utility.pwsid}) — drinking water serving ${city}, ${data.utility.state_label}. ${data.utility.population_served.toLocaleString()} people served. SDWIS violation history and contaminant detail.`;
+}
 
 export const dynamicParams = false;
 
@@ -58,7 +62,7 @@ export async function generateMetadata({
   const city = cityDisplayName(data.utility, slug);
   return pageMeta({
     title: `${data.utility.name} Water Quality | Pollution Analyst`,
-    description: `${data.utility.name} (PWSID ${data.utility.pwsid}) — drinking water serving ${city}, ${data.utility.state_label}. ${data.utility.population_served.toLocaleString()} people served. SDWIS violation history and contaminant detail.`,
+    description: waterDescription(data, city),
     path: `/state/${state}/water/${slug}`,
   });
 }
@@ -369,9 +373,62 @@ export default async function WaterPage({
 }) {
   const { state, slug } = await params;
   const data = await loadWaterUtility(state, slug);
-  const city = cityDisplayName(data.utility, slug);
+  const u = data.utility;
+  const city = cityDisplayName(u, slug);
+  const stateUrl = `${SITE_URL}/state/${state}`;
+  const pageUrl = `${stateUrl}/water/${slug}`;
+  const description = waterDescription(data, city);
+  const epaUrl = `https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:${u.pwsid}`;
+  const breadcrumbItems: Array<{ "@type": "ListItem"; position: number; name: string; item: string }> = [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+    { "@type": "ListItem", position: 2, name: u.state_label, item: stateUrl },
+  ];
+  if (u.county && u.county_slug) {
+    breadcrumbItems.push({ "@type": "ListItem", position: breadcrumbItems.length + 1, name: u.county, item: `${stateUrl}/county/${u.county_slug}` });
+  }
+  if (city && u.place_slug) {
+    breadcrumbItems.push({ "@type": "ListItem", position: breadcrumbItems.length + 1, name: city, item: `${stateUrl}/city/${u.place_slug}` });
+  }
+  breadcrumbItems.push({ "@type": "ListItem", position: breadcrumbItems.length + 1, name: u.name, item: pageUrl });
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: `${u.name} Water Quality — ${city}, ${u.state_label}`,
+        description,
+        image: { "@type": "ImageObject", url: `${SITE_URL}/icon.png` },
+        author: { "@type": "Organization", name: "Pollution Analyst" },
+        publisher: { "@type": "Organization", name: "Pollution Analyst" },
+        mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+      },
+      { "@type": "BreadcrumbList", itemListElement: breadcrumbItems },
+      {
+        "@type": "Organization",
+        "@id": pageUrl,
+        name: u.name,
+        url: pageUrl,
+        description,
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: city,
+          addressRegion: state.toUpperCase(),
+        },
+        identifier: {
+          "@type": "PropertyValue",
+          propertyID: "PWSID",
+          value: u.pwsid,
+        },
+        sameAs: [epaUrl],
+      },
+    ],
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <SiteHeader active="water" />
       <main>
         <Crumbs

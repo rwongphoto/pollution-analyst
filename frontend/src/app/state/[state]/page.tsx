@@ -25,8 +25,12 @@ import {
 } from "@/lib/prose";
 import { getEjIndicatorRisk } from "@/lib/ejIndicatorRisk";
 import { getPathwayHealthRisk } from "@/lib/pathwayHealthRisk";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { PollutantSummary, StatePagePayload } from "@/lib/types";
+
+function stateDescription(data: StatePagePayload): string {
+  return `${data.state.name} pollution data: ${data.totals.facilities_tracked.toLocaleString()} TRI facilities, ${data.totals.utilities_tracked.toLocaleString()} water utilities, ${data.totals.counties_with_data} counties tracked. Equity context from EJScreen.`;
+}
 
 export const dynamicParams = false;
 
@@ -45,7 +49,7 @@ export async function generateMetadata({
   const data = await loadState(state);
   return pageMeta({
     title: `${data.state.name} Pollution Trends | Pollution Analyst`,
-    description: `${data.state.name} pollution data: ${data.totals.facilities_tracked.toLocaleString()} TRI facilities, ${data.totals.utilities_tracked.toLocaleString()} water utilities, ${data.totals.counties_with_data} counties tracked. Equity context from EJScreen.`,
+    description: stateDescription(data),
     path: `/state/${state}`,
   });
 }
@@ -539,8 +543,63 @@ export default async function StatePage({
 }) {
   const { state } = await params;
   const data = await loadState(state);
+  const pageUrl = `${SITE_URL}/state/${data.state.slug}`;
+  const description = stateDescription(data);
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: `${SITE_URL}/`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: data.state.name,
+            item: pageUrl,
+          },
+        ],
+      },
+      {
+        "@type": "Article",
+        mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+        headline: `${data.state.name} Pollution`,
+        description,
+        image: `${SITE_URL}/icon.png`,
+        publisher: {
+          "@type": "Organization",
+          name: "Pollution Analyst",
+          url: SITE_URL,
+        },
+      },
+      {
+        "@type": "Organization",
+        "@id": `${SITE_URL}/`,
+        name: "Pollution Analyst",
+        url: `${SITE_URL}/`,
+        logo: { "@type": "ImageObject", url: `${SITE_URL}/icon.png` },
+        description:
+          "Pollution trend intelligence built from federal public data. Methodology-first. Updated on each source's native cadence.",
+      },
+      {
+        "@type": "Place",
+        name: data.state.name,
+        description,
+        url: pageUrl,
+      },
+    ],
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <SiteHeader active="state" />
       <main>
         <Crumbs items={[{ label: data.state.name }]} />

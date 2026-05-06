@@ -5,7 +5,7 @@ import { BackToTop } from "@/components/site/BackToTop";
 import "./globals.css";
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.pollutionanalyst.ai";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.pollutionanalyst.com";
 
 const SITE_DESCRIPTION =
   "Pollution trend intelligence built from federal public data — facility releases, drinking-water violations, and equity overlays at county and entity scale.";
