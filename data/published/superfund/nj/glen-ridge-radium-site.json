@@ -1,0 +1,87 @@
+{
+  "site": {
+    "state": "nj",
+    "state_label": "New Jersey",
+    "slug": "glen-ridge-radium-site",
+    "name": "Glen Ridge Radium Site",
+    "epa_id": "NJD980785646",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Essex",
+    "county_slug": "essex",
+    "city": "Glen Ridge",
+    "city_slug": "glen-ridge",
+    "address": "Carteret St",
+    "zip": "07028",
+    "lat": 40.788189,
+    "lng": -74.2125
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 3,
+    "primary_contaminant": "Lead"
+  },
+  "contaminants": [
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "03"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Radioactive",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Radium-226",
+      "media": "Soil",
+      "operable_units": [
+        "03"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NJ0705001",
+        "name": "East Orange Water Commission",
+        "slug": "east-orange-water-commission",
+        "state": "nj",
+        "distance_miles": 1.6,
+        "place_name": "East Orange",
+        "primary_source": "groundwater",
+        "population_served": 75000,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 36313,
+    "pct_low_income": 26.1,
+    "pct_people_of_color": 78.2,
+    "pct_under_5": 5.7,
+    "pct_over_64": 13.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (33 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:49:12Z"
+}

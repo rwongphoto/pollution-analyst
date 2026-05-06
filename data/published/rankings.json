@@ -1,11 +1,12 @@
 {
-  "_published_at": "2026-05-06T20:49:21Z",
+  "_published_at": "2026-05-06T21:49:19Z",
   "reporting_year": 2024,
   "states_covered": [
     "ak",
     "ar",
     "az",
     "ca",
+    "co",
     "ct",
     "de",
     "hi",
@@ -17,23 +18,28 @@
     "mt",
     "nd",
     "nh",
+    "nj",
     "nm",
     "nv",
     "ok",
     "or",
+    "pa",
     "ri",
     "sd",
     "tx",
     "ut",
+    "va",
     "vt",
     "wa",
     "wv",
     "wy"
   ],
   "counts": {
-    "counties": 1127,
-    "cities": 6395,
-    "facilities": 5715
+    "counties": 1412,
+    "cities": 7892,
+    "facilities": 7300,
+    "superfund": 984,
+    "states": 31
   },
   "counties": {
     "tables": [
@@ -127,6 +133,16 @@
           },
           {
             "rank": 9,
+            "state": "va",
+            "state_label": "Virginia",
+            "slug": "chesapeake-city",
+            "name": "Chesapeake city",
+            "population": 249377,
+            "value": 13.577,
+            "value_label": "13.577"
+          },
+          {
+            "rank": 10,
             "state": "tx",
             "state_label": "Texas",
             "slug": "gregg",
@@ -134,16 +150,6 @@
             "population": 124245,
             "value": 13.38,
             "value_label": "13.380"
-          },
-          {
-            "rank": 10,
-            "state": "ak",
-            "state_label": "Alaska",
-            "slug": "kenai-peninsula",
-            "name": "Kenai Peninsula Borough",
-            "population": 59235,
-            "value": 12.689,
-            "value_label": "12.689"
           }
         ]
       },
@@ -157,6 +163,16 @@
         "rows": [
           {
             "rank": 1,
+            "state": "co",
+            "state_label": "Colorado",
+            "slug": "park",
+            "name": "Park County",
+            "population": 17597,
+            "value": 1.673,
+            "value_label": "1.673"
+          },
+          {
+            "rank": 2,
             "state": "ak",
             "state_label": "Alaska",
             "slug": "denali",
@@ -166,7 +182,7 @@
             "value_label": "1.765"
           },
           {
-            "rank": 2,
+            "rank": 3,
             "state": "sd",
             "state_label": "South Dakota",
             "slug": "hughes",
@@ -176,7 +192,7 @@
             "value_label": "2.203"
           },
           {
-            "rank": 3,
+            "rank": 4,
             "state": "hi",
             "state_label": "Hawaii",
             "slug": "kauai",
@@ -186,7 +202,7 @@
             "value_label": "2.292"
           },
           {
-            "rank": 4,
+            "rank": 5,
             "state": "hi",
             "state_label": "Hawaii",
             "slug": "hawaii",
@@ -196,7 +212,7 @@
             "value_label": "2.407"
           },
           {
-            "rank": 5,
+            "rank": 6,
             "state": "wy",
             "state_label": "Wyoming",
             "slug": "albany",
@@ -206,7 +222,7 @@
             "value_label": "2.453"
           },
           {
-            "rank": 6,
+            "rank": 7,
             "state": "tx",
             "state_label": "Texas",
             "slug": "potter",
@@ -216,7 +232,7 @@
             "value_label": "2.470"
           },
           {
-            "rank": 7,
+            "rank": 8,
             "state": "wy",
             "state_label": "Wyoming",
             "slug": "carbon",
@@ -226,7 +242,7 @@
             "value_label": "2.567"
           },
           {
-            "rank": 8,
+            "rank": 9,
             "state": "wy",
             "state_label": "Wyoming",
             "slug": "washakie",
@@ -236,7 +252,7 @@
             "value_label": "2.636"
           },
           {
-            "rank": 9,
+            "rank": 10,
             "state": "id",
             "state_label": "Idaho",
             "slug": "jerome",
@@ -244,16 +260,6 @@
             "population": 24474,
             "value": 2.667,
             "value_label": "2.667"
-          },
-          {
-            "rank": 10,
-            "state": "az",
-            "state_label": "Arizona",
-            "slug": "apache",
-            "name": "Apache County",
-            "population": 66054,
-            "value": 2.696,
-            "value_label": "2.696"
           }
         ]
       },
@@ -617,6 +623,16 @@
           },
           {
             "rank": 3,
+            "state": "co",
+            "state_label": "Colorado",
+            "slug": "eagle",
+            "name": "Eagle County",
+            "population": 55650,
+            "value": 1.0,
+            "value_label": "1 lb"
+          },
+          {
+            "rank": 4,
             "state": "la",
             "state_label": "Louisiana",
             "slug": "west-carroll",
@@ -626,7 +642,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 4,
+            "rank": 5,
             "state": "md",
             "state_label": "Maryland",
             "slug": "st-mary-s",
@@ -636,7 +652,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 5,
+            "rank": 6,
             "state": "ok",
             "state_label": "Oklahoma",
             "slug": "jackson",
@@ -646,7 +662,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 6,
+            "rank": 7,
             "state": "tx",
             "state_label": "Texas",
             "slug": "dimmit",
@@ -656,7 +672,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 7,
+            "rank": 8,
             "state": "ut",
             "state_label": "Utah",
             "slug": "beaver",
@@ -666,32 +682,22 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 8,
-            "state": "id",
-            "state_label": "Idaho",
-            "slug": "blaine",
-            "name": "Blaine County",
-            "population": 24248,
-            "value": 2.0,
-            "value_label": "2 lb"
-          },
-          {
             "rank": 9,
-            "state": "ok",
-            "state_label": "Oklahoma",
-            "slug": "payne",
-            "name": "Payne County",
-            "population": 82058,
-            "value": 2.0,
-            "value_label": "2 lb"
+            "state": "va",
+            "state_label": "Virginia",
+            "slug": "lee",
+            "name": "Lee County",
+            "population": 22287,
+            "value": 1.0,
+            "value_label": "1 lb"
           },
           {
             "rank": 10,
-            "state": "or",
-            "state_label": "Oregon",
-            "slug": "hood-river",
-            "name": "Hood River County",
-            "population": 23965,
+            "state": "co",
+            "state_label": "Colorado",
+            "slug": "summit",
+            "name": "Summit County",
+            "population": 30955,
             "value": 2.0,
             "value_label": "2 lb"
           }
@@ -909,6 +915,17 @@
           },
           {
             "rank": 9,
+            "state": "va",
+            "state_label": "Virginia",
+            "slug": "chesapeake",
+            "name": "Chesapeake",
+            "county_name": "Chesapeake city",
+            "population": 249377,
+            "value": 13.577,
+            "value_label": "13.577"
+          },
+          {
+            "rank": 10,
             "state": "tx",
             "state_label": "Texas",
             "slug": "longview",
@@ -917,17 +934,6 @@
             "population": 82176,
             "value": 13.38,
             "value_label": "13.380"
-          },
-          {
-            "rank": 10,
-            "state": "ak",
-            "state_label": "Alaska",
-            "slug": "kenai",
-            "name": "Kenai",
-            "county_name": "Kenai Peninsula Borough",
-            "population": 7477,
-            "value": 12.689,
-            "value_label": "12.689"
           }
         ]
       },
@@ -941,6 +947,17 @@
         "rows": [
           {
             "rank": 1,
+            "state": "co",
+            "state_label": "Colorado",
+            "slug": "fairplay",
+            "name": "Fairplay",
+            "county_name": "Park County",
+            "population": 782,
+            "value": 1.673,
+            "value_label": "1.673"
+          },
+          {
+            "rank": 2,
             "state": "ak",
             "state_label": "Alaska",
             "slug": "healy",
@@ -951,7 +968,7 @@
             "value_label": "1.765"
           },
           {
-            "rank": 2,
+            "rank": 3,
             "state": "sd",
             "state_label": "South Dakota",
             "slug": "pierre",
@@ -962,7 +979,7 @@
             "value_label": "2.203"
           },
           {
-            "rank": 3,
+            "rank": 4,
             "state": "hi",
             "state_label": "Hawaii",
             "slug": "lihue",
@@ -973,7 +990,7 @@
             "value_label": "2.292"
           },
           {
-            "rank": 4,
+            "rank": 5,
             "state": "hi",
             "state_label": "Hawaii",
             "slug": "hilo",
@@ -984,7 +1001,7 @@
             "value_label": "2.407"
           },
           {
-            "rank": 5,
+            "rank": 6,
             "state": "wy",
             "state_label": "Wyoming",
             "slug": "laramie",
@@ -995,7 +1012,7 @@
             "value_label": "2.453"
           },
           {
-            "rank": 6,
+            "rank": 7,
             "state": "tx",
             "state_label": "Texas",
             "slug": "amarillo",
@@ -1006,7 +1023,7 @@
             "value_label": "2.470"
           },
           {
-            "rank": 7,
+            "rank": 8,
             "state": "wy",
             "state_label": "Wyoming",
             "slug": "rawlins",
@@ -1017,7 +1034,7 @@
             "value_label": "2.567"
           },
           {
-            "rank": 8,
+            "rank": 9,
             "state": "wy",
             "state_label": "Wyoming",
             "slug": "worland",
@@ -1028,7 +1045,7 @@
             "value_label": "2.636"
           },
           {
-            "rank": 9,
+            "rank": 10,
             "state": "id",
             "state_label": "Idaho",
             "slug": "jerome",
@@ -1037,17 +1054,6 @@
             "population": 12482,
             "value": 2.667,
             "value_label": "2.667"
-          },
-          {
-            "rank": 10,
-            "state": "az",
-            "state_label": "Arizona",
-            "slug": "eagar",
-            "name": "Eagar",
-            "county_name": "Apache",
-            "population": 4425,
-            "value": 2.696,
-            "value_label": "2.696"
           }
         ]
       },
@@ -1269,6 +1275,17 @@
           },
           {
             "rank": 9,
+            "state": "co",
+            "state_label": "Colorado",
+            "slug": "lake-city",
+            "name": "Lake City",
+            "county_name": "Hinsdale County",
+            "population": 465,
+            "value": 9.1,
+            "value_label": "9.1"
+          },
+          {
+            "rank": 10,
             "state": "ak",
             "state_label": "Alaska",
             "slug": "dillingham",
@@ -1277,17 +1294,6 @@
             "population": 2175,
             "value": 9.2,
             "value_label": "9.2"
-          },
-          {
-            "rank": 10,
-            "state": "ak",
-            "state_label": "Alaska",
-            "slug": "sitka",
-            "name": "Sitka",
-            "county_name": "Sitka City and Borough",
-            "population": 8462,
-            "value": 9.3,
-            "value_label": "9.3"
           }
         ]
       },
@@ -1378,6 +1384,17 @@
           },
           {
             "rank": 8,
+            "state": "va",
+            "state_label": "Virginia",
+            "slug": "covington",
+            "name": "Covington",
+            "county_name": "Covington city",
+            "population": 5722,
+            "value": 1897181.0,
+            "value_label": "1.9M lb"
+          },
+          {
+            "rank": 9,
             "state": "wv",
             "state_label": "West Virginia",
             "slug": "clarksburg",
@@ -1388,7 +1405,7 @@
             "value_label": "1.6M lb"
           },
           {
-            "rank": 9,
+            "rank": 10,
             "state": "tx",
             "state_label": "Texas",
             "slug": "texas-city",
@@ -1397,17 +1414,6 @@
             "population": 53084,
             "value": 1555794.0,
             "value_label": "1.6M lb"
-          },
-          {
-            "rank": 10,
-            "state": "la",
-            "state_label": "Louisiana",
-            "slug": "st-gabriel",
-            "name": "St. Gabriel",
-            "county_name": "Iberville Parish",
-            "population": 6526,
-            "value": 1543684.0,
-            "value_label": "1.5M lb"
           }
         ]
       },
@@ -1919,6 +1925,18 @@
         "rows": [
           {
             "rank": 1,
+            "state": "va",
+            "state_label": "Virginia",
+            "slug": "u-s-army-radford-army-ammunition-plant",
+            "name": "U.S. Army Radford Army Ammunition Plant",
+            "city": "Radford",
+            "county": "Montgomery County",
+            "value": 11221076.0,
+            "value_label": "11.2M lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 2,
             "state": "id",
             "state_label": "Idaho",
             "slug": "mccain-foods-usa-inc",
@@ -1930,7 +1948,7 @@
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           },
           {
-            "rank": 2,
+            "rank": 3,
             "state": "de",
             "state_label": "Delaware",
             "slug": "delaware-city-refinery",
@@ -1942,7 +1960,7 @@
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           },
           {
-            "rank": 3,
+            "rank": 4,
             "state": "ok",
             "state_label": "Oklahoma",
             "slug": "pryor-solae",
@@ -1954,7 +1972,7 @@
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           },
           {
-            "rank": 4,
+            "rank": 5,
             "state": "wa",
             "state_label": "Washington",
             "slug": "lamb-weston-inc-richland-facility",
@@ -1966,7 +1984,31 @@
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           },
           {
-            "rank": 5,
+            "rank": 6,
+            "state": "pa",
+            "state_label": "Pennsylvania",
+            "slug": "uss-clairton-plant",
+            "name": "Uss-Clairton Plant",
+            "city": "Clairton",
+            "county": "Allegheny County",
+            "value": 2438474.0,
+            "value_label": "2.4M lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 7,
+            "state": "nj",
+            "state_label": "New Jersey",
+            "slug": "phillips-66-co-bayway-refinery",
+            "name": "Phillips 66 Co-Bayway Refinery",
+            "city": "Linden",
+            "county": "Union County",
+            "value": 2279237.0,
+            "value_label": "2.3M lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 8,
             "state": "tx",
             "state_label": "Texas",
             "slug": "valero-refining-texas-l-p-houston-refinery",
@@ -1978,7 +2020,7 @@
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           },
           {
-            "rank": 6,
+            "rank": 9,
             "state": "me",
             "state_label": "Maine",
             "slug": "mccain-foods-usa-inc",
@@ -1990,7 +2032,7 @@
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           },
           {
-            "rank": 7,
+            "rank": 10,
             "state": "ca",
             "state_label": "California",
             "slug": "chevron-products-co-div-of-chevron-usa-inc",
@@ -1999,42 +2041,6 @@
             "county": "Los Angeles County",
             "value": 1706906.0,
             "value_label": "1.7M lb",
-            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
-          },
-          {
-            "rank": 8,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "pilgrim-s-pride-corp-mt-pleasant-complex",
-            "name": "Pilgrim'S Pride Corp Mt Pleasant Complex",
-            "city": "Mount Pleasant",
-            "county": "Titus County",
-            "value": 1648679.0,
-            "value_label": "1.6M lb",
-            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
-          },
-          {
-            "rank": 9,
-            "state": "la",
-            "state_label": "Louisiana",
-            "slug": "cf-industries-nitrogen-llc",
-            "name": "Cf Industries Nitrogen LLC",
-            "city": "Donaldsonville",
-            "county": "Ascension Parish",
-            "value": 1347682.0,
-            "value_label": "1.3M lb",
-            "top_chemical": "Ammonia"
-          },
-          {
-            "rank": 10,
-            "state": "ok",
-            "state_label": "Oklahoma",
-            "slug": "tyson-poultry-inc-broken-bow-processing-plant",
-            "name": "Tyson Poultry Inc-Broken Bow Processing Plant",
-            "city": "Broken Bow",
-            "county": "Mccurtain County",
-            "value": 1288254.0,
-            "value_label": "1.3M lb",
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           }
         ]
@@ -2164,6 +2170,2146 @@
             "value": 26768409.0,
             "value_label": "26.8M lb",
             "top_chemical": "Copper  And Copper Compounds"
+          }
+        ]
+      }
+    ]
+  },
+  "states": {
+    "tables": [
+      {
+        "lane": "tri_total",
+        "label": "Total TRI releases (air + water + land)",
+        "units": "lb",
+        "direction": "most",
+        "positive_only": true,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "ak",
+            "name": "Alaska",
+            "population": 733391,
+            "facilities_count": 41,
+            "value": 841755923.0,
+            "value_label": "841.8M lb"
+          },
+          {
+            "rank": 2,
+            "state": "tx",
+            "state_label": "Texas",
+            "slug": "tx",
+            "name": "Texas",
+            "population": 29145505,
+            "facilities_count": 1621,
+            "value": 280623271.0,
+            "value_label": "280.6M lb"
+          },
+          {
+            "rank": 3,
+            "state": "ut",
+            "state_label": "Utah",
+            "slug": "ut",
+            "name": "Utah",
+            "population": 3271616,
+            "facilities_count": 191,
+            "value": 248322493.0,
+            "value_label": "248.3M lb"
+          },
+          {
+            "rank": 4,
+            "state": "nv",
+            "state_label": "Nevada",
+            "slug": "nv",
+            "name": "Nevada",
+            "population": 3104614,
+            "facilities_count": 121,
+            "value": 162118428.0,
+            "value_label": "162.1M lb"
+          },
+          {
+            "rank": 5,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "la",
+            "name": "Louisiana",
+            "population": 4657757,
+            "facilities_count": 359,
+            "value": 127251954.0,
+            "value_label": "127.3M lb"
+          },
+          {
+            "rank": 6,
+            "state": "az",
+            "state_label": "Arizona",
+            "slug": "az",
+            "name": "Arizona",
+            "population": 7151502,
+            "facilities_count": 244,
+            "value": 117532784.0,
+            "value_label": "117.5M lb"
+          },
+          {
+            "rank": 7,
+            "state": "ar",
+            "state_label": "Arkansas",
+            "slug": "ar",
+            "name": "Arkansas",
+            "population": 3011524,
+            "facilities_count": 275,
+            "value": 75999463.0,
+            "value_label": "76.0M lb"
+          },
+          {
+            "rank": 8,
+            "state": "nd",
+            "state_label": "North Dakota",
+            "slug": "nd",
+            "name": "North Dakota",
+            "population": 779094,
+            "facilities_count": 78,
+            "value": 59351393.0,
+            "value_label": "59.4M lb"
+          },
+          {
+            "rank": 9,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "id",
+            "name": "Idaho",
+            "population": 1839106,
+            "facilities_count": 112,
+            "value": 50824577.0,
+            "value_label": "50.8M lb"
+          },
+          {
+            "rank": 10,
+            "state": "nm",
+            "state_label": "New Mexico",
+            "slug": "nm",
+            "name": "New Mexico",
+            "population": 2117522,
+            "facilities_count": 80,
+            "value": 48674222.0,
+            "value_label": "48.7M lb"
+          }
+        ]
+      },
+      {
+        "lane": "tri_total",
+        "label": "Total TRI releases (air + water + land)",
+        "units": "lb",
+        "direction": "least",
+        "positive_only": true,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "vt",
+            "state_label": "Vermont",
+            "slug": "vt",
+            "name": "Vermont",
+            "population": 643077,
+            "facilities_count": 28,
+            "value": 340045.0,
+            "value_label": "340k lb"
+          },
+          {
+            "rank": 2,
+            "state": "nh",
+            "state_label": "New Hampshire",
+            "slug": "nh",
+            "name": "New Hampshire",
+            "population": 1377529,
+            "facilities_count": 93,
+            "value": 404197.0,
+            "value_label": "404k lb"
+          },
+          {
+            "rank": 3,
+            "state": "ri",
+            "state_label": "Rhode Island",
+            "slug": "ri",
+            "name": "Rhode Island",
+            "population": 1097379,
+            "facilities_count": 63,
+            "value": 660935.0,
+            "value_label": "661k lb"
+          },
+          {
+            "rank": 4,
+            "state": "ct",
+            "state_label": "Connecticut",
+            "slug": "ct",
+            "name": "Connecticut",
+            "population": 3605944,
+            "facilities_count": 193,
+            "value": 2016194.0,
+            "value_label": "2.0M lb"
+          },
+          {
+            "rank": 5,
+            "state": "hi",
+            "state_label": "Hawaii",
+            "slug": "hi",
+            "name": "Hawaii",
+            "population": 1455271,
+            "facilities_count": 34,
+            "value": 2158676.0,
+            "value_label": "2.2M lb"
+          },
+          {
+            "rank": 6,
+            "state": "md",
+            "state_label": "Maryland",
+            "slug": "md",
+            "name": "Maryland",
+            "population": 6177224,
+            "facilities_count": 119,
+            "value": 2962385.0,
+            "value_label": "3.0M lb"
+          },
+          {
+            "rank": 7,
+            "state": "ma",
+            "state_label": "Massachusetts",
+            "slug": "ma",
+            "name": "Massachusetts",
+            "population": 7029917,
+            "facilities_count": 287,
+            "value": 4521759.0,
+            "value_label": "4.5M lb"
+          },
+          {
+            "rank": 8,
+            "state": "de",
+            "state_label": "Delaware",
+            "slug": "de",
+            "name": "Delaware",
+            "population": 989948,
+            "facilities_count": 39,
+            "value": 5554507.0,
+            "value_label": "5.6M lb"
+          },
+          {
+            "rank": 9,
+            "state": "sd",
+            "state_label": "South Dakota",
+            "slug": "sd",
+            "name": "South Dakota",
+            "population": 886667,
+            "facilities_count": 79,
+            "value": 7061380.0,
+            "value_label": "7.1M lb"
+          },
+          {
+            "rank": 10,
+            "state": "me",
+            "state_label": "Maine",
+            "slug": "me",
+            "name": "Maine",
+            "population": 1362359,
+            "facilities_count": 62,
+            "value": 7246867.0,
+            "value_label": "7.2M lb"
+          }
+        ]
+      },
+      {
+        "lane": "tri_air",
+        "label": "TRI air releases",
+        "units": "lb",
+        "direction": "most",
+        "positive_only": true,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "la",
+            "name": "Louisiana",
+            "population": 4657757,
+            "facilities_count": 359,
+            "value": 53200870.0,
+            "value_label": "53.2M lb"
+          },
+          {
+            "rank": 2,
+            "state": "tx",
+            "state_label": "Texas",
+            "slug": "tx",
+            "name": "Texas",
+            "population": 29145505,
+            "facilities_count": 1621,
+            "value": 52431356.0,
+            "value_label": "52.4M lb"
+          },
+          {
+            "rank": 3,
+            "state": "nd",
+            "state_label": "North Dakota",
+            "slug": "nd",
+            "name": "North Dakota",
+            "population": 779094,
+            "facilities_count": 78,
+            "value": 22517921.0,
+            "value_label": "22.5M lb"
+          },
+          {
+            "rank": 4,
+            "state": "ok",
+            "state_label": "Oklahoma",
+            "slug": "ok",
+            "name": "Oklahoma",
+            "population": 3959353,
+            "facilities_count": 275,
+            "value": 18077157.0,
+            "value_label": "18.1M lb"
+          },
+          {
+            "rank": 5,
+            "state": "ar",
+            "state_label": "Arkansas",
+            "slug": "ar",
+            "name": "Arkansas",
+            "population": 3011524,
+            "facilities_count": 275,
+            "value": 14491744.0,
+            "value_label": "14.5M lb"
+          },
+          {
+            "rank": 6,
+            "state": "va",
+            "state_label": "Virginia",
+            "slug": "va",
+            "name": "Virginia",
+            "population": 8631393,
+            "facilities_count": 331,
+            "value": 12248900.0,
+            "value_label": "12.2M lb"
+          },
+          {
+            "rank": 7,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "or",
+            "name": "Oregon",
+            "population": 4237256,
+            "facilities_count": 229,
+            "value": 11186741.0,
+            "value_label": "11.2M lb"
+          },
+          {
+            "rank": 8,
+            "state": "pa",
+            "state_label": "Pennsylvania",
+            "slug": "pa",
+            "name": "Pennsylvania",
+            "population": 13002700,
+            "facilities_count": 829,
+            "value": 10804383.0,
+            "value_label": "10.8M lb"
+          },
+          {
+            "rank": 9,
+            "state": "wv",
+            "state_label": "West Virginia",
+            "slug": "wv",
+            "name": "West Virginia",
+            "population": 1793716,
+            "facilities_count": 138,
+            "value": 6386089.0,
+            "value_label": "6.4M lb"
+          },
+          {
+            "rank": 10,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "ca",
+            "name": "California",
+            "population": 39538223,
+            "facilities_count": 852,
+            "value": 5830740.0,
+            "value_label": "5.8M lb"
+          }
+        ]
+      },
+      {
+        "lane": "tri_air",
+        "label": "TRI air releases",
+        "units": "lb",
+        "direction": "least",
+        "positive_only": true,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "vt",
+            "state_label": "Vermont",
+            "slug": "vt",
+            "name": "Vermont",
+            "population": 643077,
+            "facilities_count": 28,
+            "value": 49107.0,
+            "value_label": "49k lb"
+          },
+          {
+            "rank": 2,
+            "state": "nh",
+            "state_label": "New Hampshire",
+            "slug": "nh",
+            "name": "New Hampshire",
+            "population": 1377529,
+            "facilities_count": 93,
+            "value": 118756.0,
+            "value_label": "119k lb"
+          },
+          {
+            "rank": 3,
+            "state": "ri",
+            "state_label": "Rhode Island",
+            "slug": "ri",
+            "name": "Rhode Island",
+            "population": 1097379,
+            "facilities_count": 63,
+            "value": 224658.0,
+            "value_label": "225k lb"
+          },
+          {
+            "rank": 4,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "ak",
+            "name": "Alaska",
+            "population": 733391,
+            "facilities_count": 41,
+            "value": 387057.0,
+            "value_label": "387k lb"
+          },
+          {
+            "rank": 5,
+            "state": "ct",
+            "state_label": "Connecticut",
+            "slug": "ct",
+            "name": "Connecticut",
+            "population": 3605944,
+            "facilities_count": 193,
+            "value": 482969.0,
+            "value_label": "483k lb"
+          },
+          {
+            "rank": 6,
+            "state": "de",
+            "state_label": "Delaware",
+            "slug": "de",
+            "name": "Delaware",
+            "population": 989948,
+            "facilities_count": 39,
+            "value": 512464.0,
+            "value_label": "512k lb"
+          },
+          {
+            "rank": 7,
+            "state": "ma",
+            "state_label": "Massachusetts",
+            "slug": "ma",
+            "name": "Massachusetts",
+            "population": 7029917,
+            "facilities_count": 287,
+            "value": 645220.0,
+            "value_label": "645k lb"
+          },
+          {
+            "rank": 8,
+            "state": "md",
+            "state_label": "Maryland",
+            "slug": "md",
+            "name": "Maryland",
+            "population": 6177224,
+            "facilities_count": 119,
+            "value": 653400.0,
+            "value_label": "653k lb"
+          },
+          {
+            "rank": 9,
+            "state": "nv",
+            "state_label": "Nevada",
+            "slug": "nv",
+            "name": "Nevada",
+            "population": 3104614,
+            "facilities_count": 121,
+            "value": 781121.0,
+            "value_label": "781k lb"
+          },
+          {
+            "rank": 10,
+            "state": "nm",
+            "state_label": "New Mexico",
+            "slug": "nm",
+            "name": "New Mexico",
+            "population": 2117522,
+            "facilities_count": 80,
+            "value": 1174064.0,
+            "value_label": "1.2M lb"
+          }
+        ]
+      },
+      {
+        "lane": "tri_water",
+        "label": "TRI water releases",
+        "units": "lb",
+        "direction": "most",
+        "positive_only": true,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "tx",
+            "state_label": "Texas",
+            "slug": "tx",
+            "name": "Texas",
+            "population": 29145505,
+            "facilities_count": 1621,
+            "value": 16606522.0,
+            "value_label": "16.6M lb"
+          },
+          {
+            "rank": 2,
+            "state": "va",
+            "state_label": "Virginia",
+            "slug": "va",
+            "name": "Virginia",
+            "population": 8631393,
+            "facilities_count": 331,
+            "value": 13053207.0,
+            "value_label": "13.1M lb"
+          },
+          {
+            "rank": 3,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "la",
+            "name": "Louisiana",
+            "population": 4657757,
+            "facilities_count": 359,
+            "value": 11195560.0,
+            "value_label": "11.2M lb"
+          },
+          {
+            "rank": 4,
+            "state": "ar",
+            "state_label": "Arkansas",
+            "slug": "ar",
+            "name": "Arkansas",
+            "population": 3011524,
+            "facilities_count": 275,
+            "value": 7269510.0,
+            "value_label": "7.3M lb"
+          },
+          {
+            "rank": 5,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "id",
+            "name": "Idaho",
+            "population": 1839106,
+            "facilities_count": 112,
+            "value": 5743285.0,
+            "value_label": "5.7M lb"
+          },
+          {
+            "rank": 6,
+            "state": "pa",
+            "state_label": "Pennsylvania",
+            "slug": "pa",
+            "name": "Pennsylvania",
+            "population": 13002700,
+            "facilities_count": 829,
+            "value": 5327990.0,
+            "value_label": "5.3M lb"
+          },
+          {
+            "rank": 7,
+            "state": "ok",
+            "state_label": "Oklahoma",
+            "slug": "ok",
+            "name": "Oklahoma",
+            "population": 3959353,
+            "facilities_count": 275,
+            "value": 5115813.0,
+            "value_label": "5.1M lb"
+          },
+          {
+            "rank": 8,
+            "state": "de",
+            "state_label": "Delaware",
+            "slug": "de",
+            "name": "Delaware",
+            "population": 989948,
+            "facilities_count": 39,
+            "value": 4516355.0,
+            "value_label": "4.5M lb"
+          },
+          {
+            "rank": 9,
+            "state": "wa",
+            "state_label": "Washington",
+            "slug": "wa",
+            "name": "Washington",
+            "population": 7705281,
+            "facilities_count": 259,
+            "value": 3525310.0,
+            "value_label": "3.5M lb"
+          },
+          {
+            "rank": 10,
+            "state": "nj",
+            "state_label": "New Jersey",
+            "slug": "nj",
+            "name": "New Jersey",
+            "population": 9288994,
+            "facilities_count": 254,
+            "value": 3044364.0,
+            "value_label": "3.0M lb"
+          }
+        ]
+      },
+      {
+        "lane": "tri_water",
+        "label": "TRI water releases",
+        "units": "lb",
+        "direction": "least",
+        "positive_only": true,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "ri",
+            "state_label": "Rhode Island",
+            "slug": "ri",
+            "name": "Rhode Island",
+            "population": 1097379,
+            "facilities_count": 63,
+            "value": 261.0,
+            "value_label": "261 lb"
+          },
+          {
+            "rank": 2,
+            "state": "az",
+            "state_label": "Arizona",
+            "slug": "az",
+            "name": "Arizona",
+            "population": 7151502,
+            "facilities_count": 244,
+            "value": 307.0,
+            "value_label": "307 lb"
+          },
+          {
+            "rank": 3,
+            "state": "nh",
+            "state_label": "New Hampshire",
+            "slug": "nh",
+            "name": "New Hampshire",
+            "population": 1377529,
+            "facilities_count": 93,
+            "value": 342.0,
+            "value_label": "342 lb"
+          },
+          {
+            "rank": 4,
+            "state": "nv",
+            "state_label": "Nevada",
+            "slug": "nv",
+            "name": "Nevada",
+            "population": 3104614,
+            "facilities_count": 121,
+            "value": 649.0,
+            "value_label": "649 lb"
+          },
+          {
+            "rank": 5,
+            "state": "ma",
+            "state_label": "Massachusetts",
+            "slug": "ma",
+            "name": "Massachusetts",
+            "population": 7029917,
+            "facilities_count": 287,
+            "value": 2178.0,
+            "value_label": "2k lb"
+          },
+          {
+            "rank": 6,
+            "state": "wy",
+            "state_label": "Wyoming",
+            "slug": "wy",
+            "name": "Wyoming",
+            "population": 576851,
+            "facilities_count": 54,
+            "value": 4603.0,
+            "value_label": "5k lb"
+          },
+          {
+            "rank": 7,
+            "state": "ct",
+            "state_label": "Connecticut",
+            "slug": "ct",
+            "name": "Connecticut",
+            "population": 3605944,
+            "facilities_count": 193,
+            "value": 7524.0,
+            "value_label": "8k lb"
+          },
+          {
+            "rank": 8,
+            "state": "ut",
+            "state_label": "Utah",
+            "slug": "ut",
+            "name": "Utah",
+            "population": 3271616,
+            "facilities_count": 191,
+            "value": 93700.0,
+            "value_label": "94k lb"
+          },
+          {
+            "rank": 9,
+            "state": "md",
+            "state_label": "Maryland",
+            "slug": "md",
+            "name": "Maryland",
+            "population": 6177224,
+            "facilities_count": 119,
+            "value": 115711.0,
+            "value_label": "116k lb"
+          },
+          {
+            "rank": 10,
+            "state": "vt",
+            "state_label": "Vermont",
+            "slug": "vt",
+            "name": "Vermont",
+            "population": 643077,
+            "facilities_count": 28,
+            "value": 118494.0,
+            "value_label": "118k lb"
+          }
+        ]
+      },
+      {
+        "lane": "tri_land",
+        "label": "TRI land releases",
+        "units": "lb",
+        "direction": "most",
+        "positive_only": true,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "ak",
+            "name": "Alaska",
+            "population": 733391,
+            "facilities_count": 41,
+            "value": 840389181.0,
+            "value_label": "840.4M lb"
+          },
+          {
+            "rank": 2,
+            "state": "ut",
+            "state_label": "Utah",
+            "slug": "ut",
+            "name": "Utah",
+            "population": 3271616,
+            "facilities_count": 191,
+            "value": 245838801.0,
+            "value_label": "245.8M lb"
+          },
+          {
+            "rank": 3,
+            "state": "tx",
+            "state_label": "Texas",
+            "slug": "tx",
+            "name": "Texas",
+            "population": 29145505,
+            "facilities_count": 1621,
+            "value": 211585394.0,
+            "value_label": "211.6M lb"
+          },
+          {
+            "rank": 4,
+            "state": "nv",
+            "state_label": "Nevada",
+            "slug": "nv",
+            "name": "Nevada",
+            "population": 3104614,
+            "facilities_count": 121,
+            "value": 161336658.0,
+            "value_label": "161.3M lb"
+          },
+          {
+            "rank": 5,
+            "state": "az",
+            "state_label": "Arizona",
+            "slug": "az",
+            "name": "Arizona",
+            "population": 7151502,
+            "facilities_count": 244,
+            "value": 115968389.0,
+            "value_label": "116.0M lb"
+          },
+          {
+            "rank": 6,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "la",
+            "name": "Louisiana",
+            "population": 4657757,
+            "facilities_count": 359,
+            "value": 62855523.0,
+            "value_label": "62.9M lb"
+          },
+          {
+            "rank": 7,
+            "state": "ar",
+            "state_label": "Arkansas",
+            "slug": "ar",
+            "name": "Arkansas",
+            "population": 3011524,
+            "facilities_count": 275,
+            "value": 54238208.0,
+            "value_label": "54.2M lb"
+          },
+          {
+            "rank": 8,
+            "state": "nm",
+            "state_label": "New Mexico",
+            "slug": "nm",
+            "name": "New Mexico",
+            "population": 2117522,
+            "facilities_count": 80,
+            "value": 47293084.0,
+            "value_label": "47.3M lb"
+          },
+          {
+            "rank": 9,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "id",
+            "name": "Idaho",
+            "population": 1839106,
+            "facilities_count": 112,
+            "value": 39855087.0,
+            "value_label": "39.9M lb"
+          },
+          {
+            "rank": 10,
+            "state": "mt",
+            "state_label": "Montana",
+            "slug": "mt",
+            "name": "Montana",
+            "population": 1084225,
+            "facilities_count": 51,
+            "value": 39715173.0,
+            "value_label": "39.7M lb"
+          }
+        ]
+      },
+      {
+        "lane": "tri_land",
+        "label": "TRI land releases",
+        "units": "lb",
+        "direction": "least",
+        "positive_only": true,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "hi",
+            "state_label": "Hawaii",
+            "slug": "hi",
+            "name": "Hawaii",
+            "population": 1455271,
+            "facilities_count": 34,
+            "value": 129822.0,
+            "value_label": "130k lb"
+          },
+          {
+            "rank": 2,
+            "state": "vt",
+            "state_label": "Vermont",
+            "slug": "vt",
+            "name": "Vermont",
+            "population": 643077,
+            "facilities_count": 28,
+            "value": 172444.0,
+            "value_label": "172k lb"
+          },
+          {
+            "rank": 3,
+            "state": "nh",
+            "state_label": "New Hampshire",
+            "slug": "nh",
+            "name": "New Hampshire",
+            "population": 1377529,
+            "facilities_count": 93,
+            "value": 285100.0,
+            "value_label": "285k lb"
+          },
+          {
+            "rank": 4,
+            "state": "ri",
+            "state_label": "Rhode Island",
+            "slug": "ri",
+            "name": "Rhode Island",
+            "population": 1097379,
+            "facilities_count": 63,
+            "value": 436016.0,
+            "value_label": "436k lb"
+          },
+          {
+            "rank": 5,
+            "state": "de",
+            "state_label": "Delaware",
+            "slug": "de",
+            "name": "Delaware",
+            "population": 989948,
+            "facilities_count": 39,
+            "value": 525688.0,
+            "value_label": "526k lb"
+          },
+          {
+            "rank": 6,
+            "state": "ct",
+            "state_label": "Connecticut",
+            "slug": "ct",
+            "name": "Connecticut",
+            "population": 3605944,
+            "facilities_count": 193,
+            "value": 1525701.0,
+            "value_label": "1.5M lb"
+          },
+          {
+            "rank": 7,
+            "state": "md",
+            "state_label": "Maryland",
+            "slug": "md",
+            "name": "Maryland",
+            "population": 6177224,
+            "facilities_count": 119,
+            "value": 2193274.0,
+            "value_label": "2.2M lb"
+          },
+          {
+            "rank": 8,
+            "state": "me",
+            "state_label": "Maine",
+            "slug": "me",
+            "name": "Maine",
+            "population": 1362359,
+            "facilities_count": 62,
+            "value": 2754628.0,
+            "value_label": "2.8M lb"
+          },
+          {
+            "rank": 9,
+            "state": "ma",
+            "state_label": "Massachusetts",
+            "slug": "ma",
+            "name": "Massachusetts",
+            "population": 7029917,
+            "facilities_count": 287,
+            "value": 3874360.0,
+            "value_label": "3.9M lb"
+          },
+          {
+            "rank": 10,
+            "state": "sd",
+            "state_label": "South Dakota",
+            "slug": "sd",
+            "name": "South Dakota",
+            "population": 886667,
+            "facilities_count": 79,
+            "value": 4083373.0,
+            "value_label": "4.1M lb"
+          }
+        ]
+      },
+      {
+        "lane": "pm25_annual",
+        "label": "PM2.5 annual mean",
+        "units": "\u00b5g/m\u00b3",
+        "direction": "most",
+        "positive_only": false,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "tx",
+            "state_label": "Texas",
+            "slug": "tx",
+            "name": "Texas",
+            "population": 29145505,
+            "facilities_count": 1621,
+            "value": 9.361,
+            "value_label": "9.361"
+          },
+          {
+            "rank": 2,
+            "state": "ar",
+            "state_label": "Arkansas",
+            "slug": "ar",
+            "name": "Arkansas",
+            "population": 3011524,
+            "facilities_count": 275,
+            "value": 8.952,
+            "value_label": "8.952"
+          },
+          {
+            "rank": 3,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "la",
+            "name": "Louisiana",
+            "population": 4657757,
+            "facilities_count": 359,
+            "value": 8.445,
+            "value_label": "8.445"
+          },
+          {
+            "rank": 4,
+            "state": "ok",
+            "state_label": "Oklahoma",
+            "slug": "ok",
+            "name": "Oklahoma",
+            "population": 3959353,
+            "facilities_count": 275,
+            "value": 8.174,
+            "value_label": "8.174"
+          },
+          {
+            "rank": 5,
+            "state": "az",
+            "state_label": "Arizona",
+            "slug": "az",
+            "name": "Arizona",
+            "population": 7151502,
+            "facilities_count": 244,
+            "value": 7.712,
+            "value_label": "7.712"
+          },
+          {
+            "rank": 6,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "ca",
+            "name": "California",
+            "population": 39538223,
+            "facilities_count": 852,
+            "value": 7.667,
+            "value_label": "7.667"
+          },
+          {
+            "rank": 7,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "ak",
+            "name": "Alaska",
+            "population": 733391,
+            "facilities_count": 41,
+            "value": 7.258,
+            "value_label": "7.258"
+          },
+          {
+            "rank": 8,
+            "state": "pa",
+            "state_label": "Pennsylvania",
+            "slug": "pa",
+            "name": "Pennsylvania",
+            "population": 13002700,
+            "facilities_count": 829,
+            "value": 7.067,
+            "value_label": "7.067"
+          },
+          {
+            "rank": 9,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "id",
+            "name": "Idaho",
+            "population": 1839106,
+            "facilities_count": 112,
+            "value": 6.912,
+            "value_label": "6.912"
+          },
+          {
+            "rank": 10,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "or",
+            "name": "Oregon",
+            "population": 4237256,
+            "facilities_count": 229,
+            "value": 6.76,
+            "value_label": "6.760"
+          }
+        ]
+      },
+      {
+        "lane": "pm25_annual",
+        "label": "PM2.5 annual mean",
+        "units": "\u00b5g/m\u00b3",
+        "direction": "least",
+        "positive_only": false,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "hi",
+            "state_label": "Hawaii",
+            "slug": "hi",
+            "name": "Hawaii",
+            "population": 1455271,
+            "facilities_count": 34,
+            "value": 2.869,
+            "value_label": "2.869"
+          },
+          {
+            "rank": 2,
+            "state": "wy",
+            "state_label": "Wyoming",
+            "slug": "wy",
+            "name": "Wyoming",
+            "population": 576851,
+            "facilities_count": 54,
+            "value": 4.09,
+            "value_label": "4.090"
+          },
+          {
+            "rank": 3,
+            "state": "nh",
+            "state_label": "New Hampshire",
+            "slug": "nh",
+            "name": "New Hampshire",
+            "population": 1377529,
+            "facilities_count": 93,
+            "value": 4.918,
+            "value_label": "4.918"
+          },
+          {
+            "rank": 4,
+            "state": "me",
+            "state_label": "Maine",
+            "slug": "me",
+            "name": "Maine",
+            "population": 1362359,
+            "facilities_count": 62,
+            "value": 4.957,
+            "value_label": "4.957"
+          },
+          {
+            "rank": 5,
+            "state": "ri",
+            "state_label": "Rhode Island",
+            "slug": "ri",
+            "name": "Rhode Island",
+            "population": 1097379,
+            "facilities_count": 63,
+            "value": 4.979,
+            "value_label": "4.979"
+          },
+          {
+            "rank": 6,
+            "state": "vt",
+            "state_label": "Vermont",
+            "slug": "vt",
+            "name": "Vermont",
+            "population": 643077,
+            "facilities_count": 28,
+            "value": 5.274,
+            "value_label": "5.274"
+          },
+          {
+            "rank": 7,
+            "state": "nv",
+            "state_label": "Nevada",
+            "slug": "nv",
+            "name": "Nevada",
+            "population": 3104614,
+            "facilities_count": 121,
+            "value": 5.408,
+            "value_label": "5.408"
+          },
+          {
+            "rank": 8,
+            "state": "ma",
+            "state_label": "Massachusetts",
+            "slug": "ma",
+            "name": "Massachusetts",
+            "population": 7029917,
+            "facilities_count": 287,
+            "value": 5.741,
+            "value_label": "5.741"
+          },
+          {
+            "rank": 9,
+            "state": "co",
+            "state_label": "Colorado",
+            "slug": "co",
+            "name": "Colorado",
+            "population": 5773714,
+            "facilities_count": 226,
+            "value": 5.818,
+            "value_label": "5.818"
+          },
+          {
+            "rank": 10,
+            "state": "wa",
+            "state_label": "Washington",
+            "slug": "wa",
+            "name": "Washington",
+            "population": 7705281,
+            "facilities_count": 259,
+            "value": 5.822,
+            "value_label": "5.822"
+          }
+        ]
+      },
+      {
+        "lane": "cancer_risk",
+        "label": "Lifetime cancer risk (all pollutants)",
+        "units": "per million",
+        "direction": "most",
+        "positive_only": false,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "or",
+            "name": "Oregon",
+            "population": 4237256,
+            "facilities_count": 229,
+            "value": 43.2,
+            "value_label": "43.2"
+          },
+          {
+            "rank": 2,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "ca",
+            "name": "California",
+            "population": 39538223,
+            "facilities_count": 852,
+            "value": 36.1,
+            "value_label": "36.1"
+          },
+          {
+            "rank": 3,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "la",
+            "name": "Louisiana",
+            "population": 4657757,
+            "facilities_count": 359,
+            "value": 34.9,
+            "value_label": "34.9"
+          },
+          {
+            "rank": 4,
+            "state": "md",
+            "state_label": "Maryland",
+            "slug": "md",
+            "name": "Maryland",
+            "population": 6177224,
+            "facilities_count": 119,
+            "value": 32.9,
+            "value_label": "32.9"
+          },
+          {
+            "rank": 5,
+            "state": "tx",
+            "state_label": "Texas",
+            "slug": "tx",
+            "name": "Texas",
+            "population": 29145505,
+            "facilities_count": 1621,
+            "value": 32.7,
+            "value_label": "32.7"
+          },
+          {
+            "rank": 6,
+            "state": "ar",
+            "state_label": "Arkansas",
+            "slug": "ar",
+            "name": "Arkansas",
+            "population": 3011524,
+            "facilities_count": 275,
+            "value": 32.1,
+            "value_label": "32.1"
+          },
+          {
+            "rank": 7,
+            "state": "de",
+            "state_label": "Delaware",
+            "slug": "de",
+            "name": "Delaware",
+            "population": 989948,
+            "facilities_count": 39,
+            "value": 31.5,
+            "value_label": "31.5"
+          },
+          {
+            "rank": 8,
+            "state": "va",
+            "state_label": "Virginia",
+            "slug": "va",
+            "name": "Virginia",
+            "population": 8631393,
+            "facilities_count": 331,
+            "value": 31.5,
+            "value_label": "31.5"
+          },
+          {
+            "rank": 9,
+            "state": "pa",
+            "state_label": "Pennsylvania",
+            "slug": "pa",
+            "name": "Pennsylvania",
+            "population": 13002700,
+            "facilities_count": 829,
+            "value": 30.3,
+            "value_label": "30.3"
+          },
+          {
+            "rank": 10,
+            "state": "wa",
+            "state_label": "Washington",
+            "slug": "wa",
+            "name": "Washington",
+            "population": 7705281,
+            "facilities_count": 259,
+            "value": 30.0,
+            "value_label": "30.0"
+          }
+        ]
+      },
+      {
+        "lane": "cancer_risk",
+        "label": "Lifetime cancer risk (all pollutants)",
+        "units": "per million",
+        "direction": "least",
+        "positive_only": false,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "hi",
+            "state_label": "Hawaii",
+            "slug": "hi",
+            "name": "Hawaii",
+            "population": 1455271,
+            "facilities_count": 34,
+            "value": 16.2,
+            "value_label": "16.2"
+          },
+          {
+            "rank": 2,
+            "state": "wy",
+            "state_label": "Wyoming",
+            "slug": "wy",
+            "name": "Wyoming",
+            "population": 576851,
+            "facilities_count": 54,
+            "value": 16.4,
+            "value_label": "16.4"
+          },
+          {
+            "rank": 3,
+            "state": "sd",
+            "state_label": "South Dakota",
+            "slug": "sd",
+            "name": "South Dakota",
+            "population": 886667,
+            "facilities_count": 79,
+            "value": 19.4,
+            "value_label": "19.4"
+          },
+          {
+            "rank": 4,
+            "state": "mt",
+            "state_label": "Montana",
+            "slug": "mt",
+            "name": "Montana",
+            "population": 1084225,
+            "facilities_count": 51,
+            "value": 19.5,
+            "value_label": "19.5"
+          },
+          {
+            "rank": 5,
+            "state": "nd",
+            "state_label": "North Dakota",
+            "slug": "nd",
+            "name": "North Dakota",
+            "population": 779094,
+            "facilities_count": 78,
+            "value": 20.5,
+            "value_label": "20.5"
+          },
+          {
+            "rank": 6,
+            "state": "me",
+            "state_label": "Maine",
+            "slug": "me",
+            "name": "Maine",
+            "population": 1362359,
+            "facilities_count": 62,
+            "value": 20.9,
+            "value_label": "20.9"
+          },
+          {
+            "rank": 7,
+            "state": "vt",
+            "state_label": "Vermont",
+            "slug": "vt",
+            "name": "Vermont",
+            "population": 643077,
+            "facilities_count": 28,
+            "value": 21.5,
+            "value_label": "21.5"
+          },
+          {
+            "rank": 8,
+            "state": "ut",
+            "state_label": "Utah",
+            "slug": "ut",
+            "name": "Utah",
+            "population": 3271616,
+            "facilities_count": 191,
+            "value": 21.9,
+            "value_label": "21.9"
+          },
+          {
+            "rank": 9,
+            "state": "nm",
+            "state_label": "New Mexico",
+            "slug": "nm",
+            "name": "New Mexico",
+            "population": 2117522,
+            "facilities_count": 80,
+            "value": 22.7,
+            "value_label": "22.7"
+          },
+          {
+            "rank": 10,
+            "state": "nh",
+            "state_label": "New Hampshire",
+            "slug": "nh",
+            "name": "New Hampshire",
+            "population": 1377529,
+            "facilities_count": 93,
+            "value": 24.3,
+            "value_label": "24.3"
+          }
+        ]
+      },
+      {
+        "lane": "ghg",
+        "label": "Greenhouse gases (GHGRP)",
+        "units": "metric tons CO\u2082e",
+        "direction": "most",
+        "positive_only": true,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "tx",
+            "state_label": "Texas",
+            "slug": "tx",
+            "name": "Texas",
+            "population": 29145505,
+            "facilities_count": 1621,
+            "value": 2470828906.0,
+            "value_label": "2470.8M mtCO\u2082e"
+          },
+          {
+            "rank": 2,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "la",
+            "name": "Louisiana",
+            "population": 4657757,
+            "facilities_count": 359,
+            "value": 588677335.0,
+            "value_label": "588.7M mtCO\u2082e"
+          },
+          {
+            "rank": 3,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "ca",
+            "name": "California",
+            "population": 39538223,
+            "facilities_count": 852,
+            "value": 449608617.0,
+            "value_label": "449.6M mtCO\u2082e"
+          },
+          {
+            "rank": 4,
+            "state": "pa",
+            "state_label": "Pennsylvania",
+            "slug": "pa",
+            "name": "Pennsylvania",
+            "population": 13002700,
+            "facilities_count": 829,
+            "value": 195225668.0,
+            "value_label": "195.2M mtCO\u2082e"
+          },
+          {
+            "rank": 5,
+            "state": "ok",
+            "state_label": "Oklahoma",
+            "slug": "ok",
+            "name": "Oklahoma",
+            "population": 3959353,
+            "facilities_count": 275,
+            "value": 151203914.0,
+            "value_label": "151.2M mtCO\u2082e"
+          },
+          {
+            "rank": 6,
+            "state": "wa",
+            "state_label": "Washington",
+            "slug": "wa",
+            "name": "Washington",
+            "population": 7705281,
+            "facilities_count": 259,
+            "value": 134665182.0,
+            "value_label": "134.7M mtCO\u2082e"
+          },
+          {
+            "rank": 7,
+            "state": "co",
+            "state_label": "Colorado",
+            "slug": "co",
+            "name": "Colorado",
+            "population": 5773714,
+            "facilities_count": 226,
+            "value": 111499923.0,
+            "value_label": "111.5M mtCO\u2082e"
+          },
+          {
+            "rank": 8,
+            "state": "nj",
+            "state_label": "New Jersey",
+            "slug": "nj",
+            "name": "New Jersey",
+            "population": 9288994,
+            "facilities_count": 254,
+            "value": 89920466.0,
+            "value_label": "89.9M mtCO\u2082e"
+          },
+          {
+            "rank": 9,
+            "state": "wv",
+            "state_label": "West Virginia",
+            "slug": "wv",
+            "name": "West Virginia",
+            "population": 1793716,
+            "facilities_count": 138,
+            "value": 85108647.0,
+            "value_label": "85.1M mtCO\u2082e"
+          },
+          {
+            "rank": 10,
+            "state": "wy",
+            "state_label": "Wyoming",
+            "slug": "wy",
+            "name": "Wyoming",
+            "population": 576851,
+            "facilities_count": 54,
+            "value": 74120616.0,
+            "value_label": "74.1M mtCO\u2082e"
+          }
+        ]
+      },
+      {
+        "lane": "ghg",
+        "label": "Greenhouse gases (GHGRP)",
+        "units": "metric tons CO\u2082e",
+        "direction": "least",
+        "positive_only": true,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "vt",
+            "state_label": "Vermont",
+            "slug": "vt",
+            "name": "Vermont",
+            "population": 643077,
+            "facilities_count": 28,
+            "value": 991550.0,
+            "value_label": "992k mtCO\u2082e"
+          },
+          {
+            "rank": 2,
+            "state": "nh",
+            "state_label": "New Hampshire",
+            "slug": "nh",
+            "name": "New Hampshire",
+            "population": 1377529,
+            "facilities_count": 93,
+            "value": 3404630.0,
+            "value_label": "3.4M mtCO\u2082e"
+          },
+          {
+            "rank": 3,
+            "state": "ri",
+            "state_label": "Rhode Island",
+            "slug": "ri",
+            "name": "Rhode Island",
+            "population": 1097379,
+            "facilities_count": 63,
+            "value": 6302930.0,
+            "value_label": "6.3M mtCO\u2082e"
+          },
+          {
+            "rank": 4,
+            "state": "me",
+            "state_label": "Maine",
+            "slug": "me",
+            "name": "Maine",
+            "population": 1362359,
+            "facilities_count": 62,
+            "value": 6637238.0,
+            "value_label": "6.6M mtCO\u2082e"
+          },
+          {
+            "rank": 5,
+            "state": "sd",
+            "state_label": "South Dakota",
+            "slug": "sd",
+            "name": "South Dakota",
+            "population": 886667,
+            "facilities_count": 79,
+            "value": 6693552.0,
+            "value_label": "6.7M mtCO\u2082e"
+          },
+          {
+            "rank": 6,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "id",
+            "name": "Idaho",
+            "population": 1839106,
+            "facilities_count": 112,
+            "value": 11922568.0,
+            "value_label": "11.9M mtCO\u2082e"
+          },
+          {
+            "rank": 7,
+            "state": "hi",
+            "state_label": "Hawaii",
+            "slug": "hi",
+            "name": "Hawaii",
+            "population": 1455271,
+            "facilities_count": 34,
+            "value": 19402488.0,
+            "value_label": "19.4M mtCO\u2082e"
+          },
+          {
+            "rank": 8,
+            "state": "md",
+            "state_label": "Maryland",
+            "slug": "md",
+            "name": "Maryland",
+            "population": 6177224,
+            "facilities_count": 119,
+            "value": 20080376.0,
+            "value_label": "20.1M mtCO\u2082e"
+          },
+          {
+            "rank": 9,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "or",
+            "name": "Oregon",
+            "population": 4237256,
+            "facilities_count": 229,
+            "value": 22855261.0,
+            "value_label": "22.9M mtCO\u2082e"
+          },
+          {
+            "rank": 10,
+            "state": "de",
+            "state_label": "Delaware",
+            "slug": "de",
+            "name": "Delaware",
+            "population": 989948,
+            "facilities_count": 39,
+            "value": 26081505.0,
+            "value_label": "26.1M mtCO\u2082e"
+          }
+        ]
+      }
+    ]
+  },
+  "superfund": {
+    "tables": [
+      {
+        "lane": "contaminants",
+        "label": "Most contaminants reported",
+        "units": "distinct contaminants",
+        "direction": "most",
+        "rows": [
+          {
+            "rank": 1,
+            "state": "nj",
+            "state_label": "New Jersey",
+            "slug": "american-cyanamid-co",
+            "name": "American Cyanamid Co",
+            "city": "Finderne",
+            "city_slug": "finderne",
+            "county": "Somerset",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "primary_contaminant": "Benzene",
+            "value": 331.0,
+            "value_label": "331"
+          },
+          {
+            "rank": 2,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "mcclellan-air-force-base-ground-water-contamination",
+            "name": "Mcclellan Air Force Base (Ground Water Contamination)",
+            "city": "McClellan Park",
+            "city_slug": "mcclellan-park",
+            "county": "Sacramento County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": true,
+            "primary_contaminant": "Arsenic",
+            "value": 327.0,
+            "value_label": "327"
+          },
+          {
+            "rank": 3,
+            "state": "co",
+            "state_label": "Colorado",
+            "slug": "rocky-mountain-arsenal-usarmy",
+            "name": "Rocky Mountain Arsenal (Usarmy)",
+            "city": "Adams County",
+            "city_slug": null,
+            "county": "Adams",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": true,
+            "primary_contaminant": "Aldrin",
+            "value": 298.0,
+            "value_label": "298"
+          },
+          {
+            "rank": 4,
+            "state": "nh",
+            "state_label": "New Hampshire",
+            "slug": "pease-air-force-base",
+            "name": "Pease Air Force Base",
+            "city": "Portsmouth",
+            "city_slug": "portsmouth",
+            "county": "Rockingham County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": true,
+            "primary_contaminant": "Manganese",
+            "value": 286.0,
+            "value_label": "286"
+          },
+          {
+            "rank": 5,
+            "state": "co",
+            "state_label": "Colorado",
+            "slug": "lowry-landfill",
+            "name": "Lowry Landfill",
+            "city": "Unincorporated Arapahoe County",
+            "city_slug": null,
+            "county": "Arapahoe",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "primary_contaminant": "1,1,1-Trichloroethane",
+            "value": 267.0,
+            "value_label": "267"
+          },
+          {
+            "rank": 6,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "portland-harbor",
+            "name": "Portland Harbor",
+            "city": "Portland",
+            "city_slug": "portland",
+            "county": "Multnomah County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "primary_contaminant": "1,1-Dichloroethene",
+            "value": 259.0,
+            "value_label": "259"
+          },
+          {
+            "rank": 7,
+            "state": "ma",
+            "state_label": "Massachusetts",
+            "slug": "shpack-landfill",
+            "name": "Shpack Landfill",
+            "city": "Norton/Attleboro",
+            "city_slug": null,
+            "county": "Bristol County",
+            "npl_status": "Deleted from the Final NPL",
+            "is_federal_facility": false,
+            "primary_contaminant": "1,1-Dichloroethene",
+            "value": 230.0,
+            "value_label": "230"
+          },
+          {
+            "rank": 8,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "hunters-point-naval-shipyard",
+            "name": "Hunters Point Naval Shipyard",
+            "city": "San Francisco",
+            "city_slug": "san-francisco",
+            "county": "San Francisco County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": true,
+            "primary_contaminant": "Arsenic",
+            "value": 223.0,
+            "value_label": "223"
+          },
+          {
+            "rank": 9,
+            "state": "nj",
+            "state_label": "New Jersey",
+            "slug": "gems-landfill",
+            "name": "Gems Landfill",
+            "city": "Gloucester Township",
+            "city_slug": null,
+            "county": "Camden",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "primary_contaminant": "1,1,1-Trichloroethane",
+            "value": 211.0,
+            "value_label": "211"
+          },
+          {
+            "rank": 10,
+            "state": "me",
+            "state_label": "Maine",
+            "slug": "loring-air-force-base",
+            "name": "Loring Air Force Base",
+            "city": "Limestone",
+            "city_slug": null,
+            "county": "Aroostook County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": true,
+            "primary_contaminant": "Benzo[A]Anthracene",
+            "value": 202.0,
+            "value_label": "202"
+          },
+          {
+            "rank": 11,
+            "state": "ma",
+            "state_label": "Massachusetts",
+            "slug": "otis-air-national-guard-base-camp-edwards",
+            "name": "Otis Air National Guard Base/Camp Edwards",
+            "city": "Falmouth",
+            "city_slug": null,
+            "county": "Barnstable County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": true,
+            "primary_contaminant": "Trichloroethene",
+            "value": 191.0,
+            "value_label": "191"
+          },
+          {
+            "rank": 12,
+            "state": "tx",
+            "state_label": "Texas",
+            "slug": "motco-inc",
+            "name": "Motco, Inc.",
+            "city": "La Marque",
+            "city_slug": "la-marque",
+            "county": "Galveston County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "primary_contaminant": "1,1,2-Trichloroethane",
+            "value": 190.0,
+            "value_label": "190"
+          },
+          {
+            "rank": 13,
+            "state": "nd",
+            "state_label": "North Dakota",
+            "slug": "minot-landfill",
+            "name": "Minot Landfill",
+            "city": "Minot",
+            "city_slug": "minot",
+            "county": "Ward County",
+            "npl_status": "Deleted from the Final NPL",
+            "is_federal_facility": false,
+            "primary_contaminant": "1,2,4-Trimethylbenzene",
+            "value": 180.0,
+            "value_label": "180"
+          },
+          {
+            "rank": 14,
+            "state": "vt",
+            "state_label": "Vermont",
+            "slug": "parker-sanitary-landfill",
+            "name": "Parker Sanitary Landfill",
+            "city": "Lyndon",
+            "city_slug": null,
+            "county": "Caledonia County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "primary_contaminant": "1,1,1-Trichloroethane",
+            "value": 168.0,
+            "value_label": "168"
+          },
+          {
+            "rank": 15,
+            "state": "pa",
+            "state_label": "Pennsylvania",
+            "slug": "havertown-pcp",
+            "name": "Havertown Pcp",
+            "city": "Haverford",
+            "city_slug": null,
+            "county": "Delaware",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "primary_contaminant": "Arsenic",
+            "value": 164.0,
+            "value_label": "164"
+          },
+          {
+            "rank": 16,
+            "state": "ma",
+            "state_label": "Massachusetts",
+            "slug": "nyanza-chemical-waste-dump",
+            "name": "Nyanza Chemical Waste Dump",
+            "city": "Ashland",
+            "city_slug": null,
+            "county": "Middlesex County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "primary_contaminant": "Mercury",
+            "value": 159.0,
+            "value_label": "159"
+          },
+          {
+            "rank": 17,
+            "state": "md",
+            "state_label": "Maryland",
+            "slug": "aberdeen-proving-ground-edgewood-area",
+            "name": "Aberdeen Proving Ground (Edgewood Area)",
+            "city": "Edgewood",
+            "city_slug": "edgewood",
+            "county": "Harford County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": true,
+            "primary_contaminant": "Arsenic",
+            "value": 159.0,
+            "value_label": "159"
+          },
+          {
+            "rank": 18,
+            "state": "nj",
+            "state_label": "New Jersey",
+            "slug": "pjp-landfill",
+            "name": "Pjp Landfill",
+            "city": "Jersey City",
+            "city_slug": "jersey-city",
+            "county": "Hudson",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "primary_contaminant": "(E)-1,3-Dichloro-1-Propene",
+            "value": 157.0,
+            "value_label": "157"
+          },
+          {
+            "rank": 19,
+            "state": "va",
+            "state_label": "Virginia",
+            "slug": "naval-surface-warfare-center-dahlgren",
+            "name": "Naval Surface Warfare Center - Dahlgren",
+            "city": "Dahlgren Center",
+            "city_slug": "dahlgren-center",
+            "county": "King George",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": true,
+            "primary_contaminant": "Arsenic",
+            "value": 157.0,
+            "value_label": "157"
+          },
+          {
+            "rank": 20,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "idaho-national-engineering-laboratory-usdoe",
+            "name": "Idaho National Engineering Laboratory (Usdoe)",
+            "city": "Idaho Falls",
+            "city_slug": null,
+            "county": null,
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": true,
+            "primary_contaminant": "Lead",
+            "value": 155.0,
+            "value_label": "155"
+          }
+        ]
+      },
+      {
+        "lane": "water_linkage",
+        "label": "Most nearby groundwater utilities",
+        "units": "PWSes within 5 mi",
+        "direction": "most",
+        "rows": [
+          {
+            "rank": 1,
+            "state": "tx",
+            "state_label": "Texas",
+            "slug": "north-cavalcade-street",
+            "name": "North Cavalcade Street",
+            "city": "Houston",
+            "city_slug": "houston",
+            "county": "Harris County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "population_served": 1364236,
+            "value": 390.0,
+            "value_label": "390 utilities"
+          },
+          {
+            "rank": 2,
+            "state": "tx",
+            "state_label": "Texas",
+            "slug": "south-cavalcade-street",
+            "name": "South Cavalcade Street",
+            "city": "Houston",
+            "city_slug": "houston",
+            "county": "Harris County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "population_served": 1364236,
+            "value": 390.0,
+            "value_label": "390 utilities"
+          },
+          {
+            "rank": 3,
+            "state": "wa",
+            "state_label": "Washington",
+            "slug": "bremerton-gasworks",
+            "name": "Bremerton Gasworks",
+            "city": "Bremerton",
+            "city_slug": "bremerton",
+            "county": "Kitsap County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "population_served": 88804,
+            "value": 271.0,
+            "value_label": "271 utilities"
+          },
+          {
+            "rank": 4,
+            "state": "wa",
+            "state_label": "Washington",
+            "slug": "puget-sound-naval-shipyard-complex",
+            "name": "Puget Sound Naval Shipyard Complex",
+            "city": "Bremerton",
+            "city_slug": "bremerton",
+            "county": "Kitsap County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": true,
+            "population_served": 88804,
+            "value": 271.0,
+            "value_label": "271 utilities"
+          },
+          {
+            "rank": 5,
+            "state": "wa",
+            "state_label": "Washington",
+            "slug": "commencement-bay-south-tacoma-channel",
+            "name": "Commencement Bay, South Tacoma Channel",
+            "city": "Tacoma",
+            "city_slug": "tacoma",
+            "county": "Pierce County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "population_served": 121914,
+            "value": 126.0,
+            "value_label": "126 utilities"
+          },
+          {
+            "rank": 6,
+            "state": "wa",
+            "state_label": "Washington",
+            "slug": "commencement-bay-near-shore-tide-flats",
+            "name": "Commencement Bay, Near Shore/Tide Flats",
+            "city": "Tacoma",
+            "city_slug": "tacoma",
+            "county": "Pierce County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "population_served": 113987,
+            "value": 125.0,
+            "value_label": "125 utilities"
+          },
+          {
+            "rank": 7,
+            "state": "wa",
+            "state_label": "Washington",
+            "slug": "yakima-plating-co",
+            "name": "Yakima Plating Co.",
+            "city": "Yakima",
+            "city_slug": "yakima",
+            "county": "Yakima County",
+            "npl_status": "Deleted from the Final NPL",
+            "is_federal_facility": false,
+            "population_served": 69597,
+            "value": 89.0,
+            "value_label": "89 utilities"
+          },
+          {
+            "rank": 8,
+            "state": "wa",
+            "state_label": "Washington",
+            "slug": "pesticide-lab-yakima",
+            "name": "Pesticide Lab (Yakima)",
+            "city": "Yakima",
+            "city_slug": "yakima",
+            "county": "Yakima County",
+            "npl_status": "Deleted from the Final NPL",
+            "is_federal_facility": false,
+            "population_served": 63164,
+            "value": 88.0,
+            "value_label": "88 utilities"
+          },
+          {
+            "rank": 9,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "jibboom-junkyard",
+            "name": "Jibboom Junkyard",
+            "city": "Sacramento",
+            "city_slug": "sacramento",
+            "county": "Sacramento County",
+            "npl_status": "Deleted from the Final NPL",
+            "is_federal_facility": false,
+            "population_served": 68996,
+            "value": 59.0,
+            "value_label": "59 utilities"
+          },
+          {
+            "rank": 10,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "mccormick-baxter-creosoting-co",
+            "name": "Mccormick & Baxter Creosoting Co.",
+            "city": "Stockton",
+            "city_slug": "stockton",
+            "county": "San Joaquin County",
+            "npl_status": "Currently on the Final NPL",
+            "is_federal_facility": false,
+            "population_served": 18036,
+            "value": 58.0,
+            "value_label": "58 utilities"
           }
         ]
       }

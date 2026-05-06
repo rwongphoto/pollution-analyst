@@ -1,0 +1,222 @@
+{
+  "utility": {
+    "state": "va",
+    "state_label": "Virginia",
+    "slug": "monroe-bay-estates",
+    "name": "Monroe Bay Estates",
+    "pwsid": "VA4193640",
+    "population_served": 475,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Colonial Beach"
+    ],
+    "county": "Westmoreland County",
+    "county_slug": "westmoreland",
+    "place_slug": "colonial-beach"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Reporting failure"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:VA4193640"
+      }
+    }
+  ],
+  "equity": {
+    "population": 3895,
+    "pct_low_income": 27.7,
+    "pct_people_of_color": 18.5,
+    "pct_under_5": 5.3,
+    "pct_over_64": 26.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 6.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 13.9,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 22.7,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 14.0,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 1.6,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 69.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 69.3,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 19.7,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 63.3,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 88.1,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 8.2
+      },
+      {
+        "label": "Ozone",
+        "score": 31.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 25.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 18.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 16.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 1.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 70.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 80.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 24.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 71.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 103.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Colonial Beach, Virginia (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:30:20Z"
+}

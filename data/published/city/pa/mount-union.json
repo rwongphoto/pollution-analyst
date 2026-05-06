@@ -1,0 +1,466 @@
+{
+  "place": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "mount-union",
+    "name": "Mount Union",
+    "fips": "4251984",
+    "population": 2130,
+    "county_name": "Huntingdon County",
+    "county_fips": "42061"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.212,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.212
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.147,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.147
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 42298,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -24.9,
+      "long_arc_pct_change": 66.5,
+      "baseline_year": 2011,
+      "history": [
+        {
+          "year": 2011,
+          "value": 25406
+        },
+        {
+          "year": 2012,
+          "value": 4318
+        },
+        {
+          "year": 2013,
+          "value": 12754
+        },
+        {
+          "year": 2014,
+          "value": 24335
+        },
+        {
+          "year": 2015,
+          "value": 38230
+        },
+        {
+          "year": 2016,
+          "value": 35021
+        },
+        {
+          "year": 2017,
+          "value": 40416
+        },
+        {
+          "year": 2018,
+          "value": 67089
+        },
+        {
+          "year": 2019,
+          "value": 47221
+        },
+        {
+          "year": 2020,
+          "value": 35719
+        },
+        {
+          "year": 2021,
+          "value": 38297
+        },
+        {
+          "year": 2022,
+          "value": 56345
+        },
+        {
+          "year": 2023,
+          "value": 42298
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 5801,
+    "violations_5yr_total": 77,
+    "health_based_5yr_total": 5,
+    "unresolved_total": 15,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "mt-union-municipal-auth",
+        "state": "pa",
+        "state_label": "Pennsylvania",
+        "name": "Mt Union Municipal Auth",
+        "pwsid": "PA4310016",
+        "population_served": 5801,
+        "health_based_violations_5yr": 5,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Haloacetic Acids (HAA5)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2023 (haloacetic acids (haa5)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:PA4310016"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Beryllium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2022 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:PA4310016"
+      }
+    }
+  ],
+  "equity": {
+    "population": 2130,
+    "pct_low_income": 32.3,
+    "pct_people_of_color": 14.5,
+    "pct_under_5": 6.5,
+    "pct_over_64": 17.1,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 30.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 25.9,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 16.2,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 16.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 7.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 16.2,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 84.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 25.8,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 68.0,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 69.4,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 50.6
+      },
+      {
+        "label": "Ozone",
+        "score": 79.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 26.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 28.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 11.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 29.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 124.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 42.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 102.8
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 109.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 123.4
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Mount Union, Pennsylvania (Census place block groups)"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "pa",
+      "slug": "huntingdon",
+      "name": "Huntingdon",
+      "population": 6904,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 44.8,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "pa",
+      "slug": "orbisonia",
+      "name": "Orbisonia",
+      "population": 481,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "pa",
+      "slug": "saltillo",
+      "name": "Saltillo",
+      "population": 459,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "pa",
+      "slug": "three-springs",
+      "name": "Three Springs",
+      "population": 403,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 33.3,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "pa",
+      "slug": "leechburg",
+      "name": "Leechburg",
+      "population": 2138,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 52.7,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "pa",
+      "slug": "trainer",
+      "name": "Trainer",
+      "population": 1637,
+      "facilities_count": 1,
+      "total_releases_pounds": 247446,
+      "dominant_medium": "air",
+      "ej_pct_avg": 81.1,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+40 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T21:21:07Z"
+}

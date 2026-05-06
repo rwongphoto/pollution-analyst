@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "houston-gas-plant",
+    "name": "Houston Gas Plant",
+    "parent_company": "Marathon Petroleum CORP",
+    "address": "800 WESTERN AVE",
+    "city": "Washington",
+    "county": "Washington County",
+    "county_slug": "washington",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 40.256348,
+    "lng": -80.252342
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3096,
+    "air_releases_pounds": 3096,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -40.8,
+    "long_arc_pct_change": -41.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 5308
+      },
+      {
+        "year": 2023,
+        "value": 5228
+      },
+      {
+        "year": 2024,
+        "value": 3096
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 3070,
+      "history": [
+        {
+          "year": 2022,
+          "value": 5294
+        },
+        {
+          "year": 2023,
+          "value": 5214
+        },
+        {
+          "year": 2024,
+          "value": 3070
+        }
+      ],
+      "yoy_pct_change": -41.1,
+      "long_arc_pct_change": -42.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 26,
+      "history": [
+        {
+          "year": 2022,
+          "value": 14
+        },
+        {
+          "year": 2023,
+          "value": 14
+        },
+        {
+          "year": 2024,
+          "value": 26
+        }
+      ],
+      "yoy_pct_change": 85.7,
+      "long_arc_pct_change": 85.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 13251,
+    "pct_low_income": 17.7,
+    "pct_people_of_color": 5.3,
+    "pct_under_5": 5.6,
+    "pct_over_64": 21.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (10 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

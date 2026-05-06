@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "jackson-lake-plant",
+    "name": "Jackson Lake Plant",
+    "parent_company": "Summit Midstream CORP",
+    "address": "31405 COUNTY ROAD 10",
+    "city": "Weldona",
+    "county": "Morgan County",
+    "county_slug": "morgan",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 40.457306,
+    "lng": -103.956001
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 10801,
+    "air_releases_pounds": 236,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 10565,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 0.2,
+    "long_arc_pct_change": -40.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 18131
+      },
+      {
+        "year": 2023,
+        "value": 10783
+      },
+      {
+        "year": 2024,
+        "value": 10801
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 10801,
+      "history": [
+        {
+          "year": 2022,
+          "value": 18131
+        },
+        {
+          "year": 2023,
+          "value": 10783
+        },
+        {
+          "year": 2024,
+          "value": 10801
+        }
+      ],
+      "yoy_pct_change": 0.2,
+      "long_arc_pct_change": -40.4,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 29045,
+    "pct_low_income": 12.8,
+    "pct_people_of_color": 43.2,
+    "pct_under_5": 8.5,
+    "pct_over_64": 15.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Morgan County County, CO (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:44Z"
+}

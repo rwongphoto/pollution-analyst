@@ -1,0 +1,179 @@
+{
+  "facility": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "agilent-apothecary",
+    "name": "Agilent Apothecary",
+    "parent_company": "Agilent Technologies INC",
+    "address": "7051 EAGLE BLVD",
+    "city": "Frederick",
+    "county": "Weld County",
+    "county_slug": "weld",
+    "naics_label": "325412 \u00b7 Chemicals",
+    "lat": 40.102866,
+    "lng": -104.964807
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1248,
+    "air_releases_pounds": 1228,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 20,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -30.1,
+    "long_arc_pct_change": 6.0,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 1177
+      },
+      {
+        "year": 2020,
+        "value": 1262
+      },
+      {
+        "year": 2021,
+        "value": 1226
+      },
+      {
+        "year": 2022,
+        "value": 1411
+      },
+      {
+        "year": 2023,
+        "value": 1784
+      },
+      {
+        "year": 2024,
+        "value": 1248
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Acetonitrile",
+      "cas": "75-05-8",
+      "category": "respiratory",
+      "total_pounds_recent": 1002,
+      "history": [
+        {
+          "year": 2019,
+          "value": 835
+        },
+        {
+          "year": 2020,
+          "value": 911
+        },
+        {
+          "year": 2021,
+          "value": 980
+        },
+        {
+          "year": 2022,
+          "value": 1148
+        },
+        {
+          "year": 2023,
+          "value": 1434
+        },
+        {
+          "year": 2024,
+          "value": 1002
+        }
+      ],
+      "yoy_pct_change": -30.1,
+      "long_arc_pct_change": 20.1,
+      "long_arc_baseline_year": 2019
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 210,
+      "history": [
+        {
+          "year": 2019,
+          "value": 330
+        },
+        {
+          "year": 2020,
+          "value": 337
+        },
+        {
+          "year": 2021,
+          "value": 225
+        },
+        {
+          "year": 2022,
+          "value": 233
+        },
+        {
+          "year": 2023,
+          "value": 301
+        },
+        {
+          "year": 2024,
+          "value": 210
+        }
+      ],
+      "yoy_pct_change": -30.0,
+      "long_arc_pct_change": -36.3,
+      "long_arc_baseline_year": 2019
+    },
+    {
+      "chemical": "Pyridine",
+      "cas": "110-86-1",
+      "category": "carcinogen",
+      "total_pounds_recent": 35,
+      "history": [
+        {
+          "year": 2019,
+          "value": 12
+        },
+        {
+          "year": 2020,
+          "value": 14
+        },
+        {
+          "year": 2021,
+          "value": 21
+        },
+        {
+          "year": 2022,
+          "value": 31
+        },
+        {
+          "year": 2023,
+          "value": 50
+        },
+        {
+          "year": 2024,
+          "value": 35
+        }
+      ],
+      "yoy_pct_change": -30.1,
+      "long_arc_pct_change": 191.7,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 23541,
+    "pct_low_income": 13.2,
+    "pct_people_of_color": 30.0,
+    "pct_under_5": 8.2,
+    "pct_over_64": 10.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (13 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:44Z"
+}

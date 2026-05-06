@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "livanova",
+    "name": "Livanova",
+    "parent_company": null,
+    "address": "14401 W 65TH WAY",
+    "city": "Arvada",
+    "county": "Jefferson County",
+    "county_slug": "jefferson",
+    "naics_label": "339113 \u00b7 Miscellaneous Manufacturing",
+    "lat": 39.814165,
+    "lng": -105.160276
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 99,
+    "air_releases_pounds": 99,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 42.0,
+    "long_arc_pct_change": 23.6,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 80
+      },
+      {
+        "year": 2023,
+        "value": 70
+      },
+      {
+        "year": 2024,
+        "value": 99
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene oxide",
+      "cas": "75-21-8",
+      "category": "carcinogen",
+      "total_pounds_recent": 99,
+      "history": [
+        {
+          "year": 2022,
+          "value": 80
+        },
+        {
+          "year": 2023,
+          "value": 70
+        },
+        {
+          "year": 2024,
+          "value": 99
+        }
+      ],
+      "yoy_pct_change": 42.0,
+      "long_arc_pct_change": 23.6,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 56791,
+    "pct_low_income": 11.3,
+    "pct_people_of_color": 12.9,
+    "pct_under_5": 4.4,
+    "pct_over_64": 20.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (40 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:44Z"
+}

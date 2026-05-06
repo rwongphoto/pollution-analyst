@@ -1,0 +1,99 @@
+{
+  "site": {
+    "state": "nj",
+    "state_label": "New Jersey",
+    "slug": "w-r-grace-co-inc-wayne-interim-storage-site-usdoe",
+    "name": "W.R. Grace & Co., Inc./Wayne Interim Storage Site (Usdoe)",
+    "epa_id": "NJ1891837980",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": true,
+    "county": "Passaic",
+    "county_slug": "passaic",
+    "city": "Wayne Township",
+    "city_slug": null,
+    "address": "868 Black Oak Ridge Road",
+    "zip": "07470",
+    "lat": 40.969014,
+    "lng": -74.270327
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 3,
+    "primary_contaminant": "Radium-226"
+  },
+  "contaminants": [
+    {
+      "name": "Radium-226",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Thorium-232",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Uranium",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NJ1609001",
+        "name": "Pompton Lakes Mua",
+        "slug": "pompton-lakes-mua",
+        "state": "nj",
+        "distance_miles": 2.48,
+        "place_name": "Pompton Lakes",
+        "primary_source": "groundwater",
+        "population_served": 11435,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "NJ1425001",
+        "name": "Mountain Lakes Water Dep",
+        "slug": "mountain-lakes-water-dep",
+        "state": "nj",
+        "distance_miles": 2.96,
+        "place_name": "Riverdale",
+        "primary_source": "groundwater",
+        "population_served": 4012,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 10788,
+    "pct_low_income": 6.5,
+    "pct_people_of_color": 21.5,
+    "pct_under_5": 5.7,
+    "pct_over_64": 16.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (8 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:49:12Z"
+}

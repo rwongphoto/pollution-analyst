@@ -1,0 +1,154 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "etc-northeast-pipeline-galaxy-comp-sta",
+    "name": "Etc Northeast Pipeline/Galaxy Comp Sta",
+    "parent_company": "Energy Transfer Partners LP",
+    "address": "251 W ELDORADO RD",
+    "city": "Parker",
+    "county": "Butler County",
+    "county_slug": "butler",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 41.086107,
+    "lng": -79.757066
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 13217,
+    "air_releases_pounds": 5302,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 7915,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 27.7,
+    "long_arc_pct_change": 12.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 11801
+      },
+      {
+        "year": 2023,
+        "value": 10348
+      },
+      {
+        "year": 2024,
+        "value": 13217
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 8208,
+      "history": [
+        {
+          "year": 2022,
+          "value": 7510
+        },
+        {
+          "year": 2023,
+          "value": 6350
+        },
+        {
+          "year": 2024,
+          "value": 8208
+        }
+      ],
+      "yoy_pct_change": 29.3,
+      "long_arc_pct_change": 9.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 2167,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2200
+        },
+        {
+          "year": 2023,
+          "value": 1498
+        },
+        {
+          "year": 2024,
+          "value": 2167
+        }
+      ],
+      "yoy_pct_change": 44.7,
+      "long_arc_pct_change": -1.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 2027,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1401
+        },
+        {
+          "year": 2023,
+          "value": 1941
+        },
+        {
+          "year": 2024,
+          "value": 2027
+        }
+      ],
+      "yoy_pct_change": 4.4,
+      "long_arc_pct_change": 44.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 815,
+      "history": [
+        {
+          "year": 2022,
+          "value": 690
+        },
+        {
+          "year": 2023,
+          "value": 559
+        },
+        {
+          "year": 2024,
+          "value": 815
+        }
+      ],
+      "yoy_pct_change": 45.8,
+      "long_arc_pct_change": 18.2,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 966,
+    "pct_low_income": 30.3,
+    "pct_people_of_color": 8.6,
+    "pct_under_5": 3.9,
+    "pct_over_64": 25.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

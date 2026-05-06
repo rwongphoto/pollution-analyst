@@ -1,0 +1,226 @@
+{
+  "site": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "smeltertown-site",
+    "name": "Smeltertown Site",
+    "epa_id": "COD983769738",
+    "npl_status": "Proposed for NPL",
+    "is_active_npl": false,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Chaffee",
+    "county_slug": "chaffee",
+    "city": "Salida",
+    "city_slug": null,
+    "address": "9000 County Road #152",
+    "zip": "81201",
+    "lat": 38.554014,
+    "lng": -106.029046
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 4,
+    "primary_contaminant": "Arsenic"
+  },
+  "contaminants": [
+    {
+      "name": "Arsenic",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Benzo[A]Pyrene",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Dibenzo(A,H)Anthracene",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Dioxins (Chlorinated Dibenzodioxins)",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "CO0108600",
+        "name": "Mountain Vista Village",
+        "slug": "mountain-vista-village",
+        "state": "co",
+        "distance_miles": 2.37,
+        "place_name": "Salida",
+        "primary_source": "groundwater",
+        "population_served": 100,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "CO0108800",
+        "name": "Eastside Mhp",
+        "slug": "eastside-mhp",
+        "state": "co",
+        "distance_miles": 2.37,
+        "place_name": "Salida",
+        "primary_source": "groundwater",
+        "population_served": 40,
+        "health_based_5yr": 2,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 19564,
+    "pct_low_income": 11.8,
+    "pct_people_of_color": 15.400000000000006,
+    "pct_under_5": 5.0,
+    "pct_over_64": 26.3,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 0.3,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 68.9,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 46.5,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 0.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 1.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 12.2,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 59.4,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 68.8,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 50.7,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 50.9,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.8,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 0.0
+      },
+      {
+        "label": "Ozone",
+        "score": 87.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 55.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 0.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 0.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 14.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 51.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 36.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 46.6
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 48.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 33.5
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Chaffee County, Colorado (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:45Z"
+}

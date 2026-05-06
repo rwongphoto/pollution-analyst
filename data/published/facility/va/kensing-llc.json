@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "va",
+    "state_label": "Virginia",
+    "slug": "kensing-llc",
+    "name": "Kensing LLC",
+    "parent_company": "Kensing Holdings LLC",
+    "address": "914 E RANDOLPH RD",
+    "city": "Hopewell",
+    "county": "Hopewell (City)",
+    "county_slug": "hopewell-city",
+    "naics_label": "325613 \u00b7 Chemicals",
+    "lat": 37.290197,
+    "lng": -77.261695
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 2774,
+    "air_releases_pounds": 47,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2726,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -50.6,
+    "long_arc_pct_change": 517.1,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 449
+      },
+      {
+        "year": 2023,
+        "value": 5613
+      },
+      {
+        "year": 2024,
+        "value": 2774
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 2764,
+      "history": [
+        {
+          "year": 2022,
+          "value": 448
+        },
+        {
+          "year": 2023,
+          "value": 5605
+        },
+        {
+          "year": 2024,
+          "value": 2764
+        }
+      ],
+      "yoy_pct_change": -50.7,
+      "long_arc_pct_change": 517.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Chloroacetic acid",
+      "cas": "79-11-8",
+      "category": "respiratory",
+      "total_pounds_recent": 10,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2
+        },
+        {
+          "year": 2023,
+          "value": 8
+        },
+        {
+          "year": 2024,
+          "value": 10
+        }
+      ],
+      "yoy_pct_change": 18.0,
+      "long_arc_pct_change": 435.0,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 19992,
+    "pct_low_income": 45.6,
+    "pct_people_of_color": 50.9,
+    "pct_under_5": 6.7,
+    "pct_over_64": 16.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (15 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:30:20Z"
+}

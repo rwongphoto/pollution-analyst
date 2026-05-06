@@ -1,0 +1,67 @@
+{
+  "site": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "lansdowne-radiation-site",
+    "name": "Lansdowne Radiation Site",
+    "epa_id": "PAD980830921",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Delaware",
+    "county_slug": "delaware",
+    "city": "Lansdowne",
+    "city_slug": "lansdowne",
+    "address": "105/107 E Stratford Ave",
+    "zip": "19050",
+    "lat": 39.9413,
+    "lng": -75.2671
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Radioactive"
+  },
+  "contaminants": [
+    {
+      "name": "Radioactive",
+      "media": "Soil",
+      "operable_units": [
+        "01",
+        "02"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Radioactive",
+      "media": "Buildings/Structures",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 36138,
+    "pct_low_income": 36.8,
+    "pct_people_of_color": 77.6,
+    "pct_under_5": 6.0,
+    "pct_over_64": 12.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (23 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:07Z"
+}

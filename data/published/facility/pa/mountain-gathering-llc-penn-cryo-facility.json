@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "mountain-gathering-llc-penn-cryo-facility",
+    "name": "Mountain Gathering LLC - Penn Cryo Facility",
+    "parent_company": "Exxon Mobil CORP",
+    "address": "230 HICKS RD",
+    "city": "Renfrew",
+    "county": "Butler County",
+    "county_slug": "butler",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 40.813152,
+    "lng": -79.946954
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 547,
+    "air_releases_pounds": 547,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -0.2,
+    "long_arc_pct_change": 47.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 371
+      },
+      {
+        "year": 2023,
+        "value": 548
+      },
+      {
+        "year": 2024,
+        "value": 547
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 547,
+      "history": [
+        {
+          "year": 2022,
+          "value": 371
+        },
+        {
+          "year": 2023,
+          "value": 548
+        },
+        {
+          "year": 2024,
+          "value": 547
+        }
+      ],
+      "yoy_pct_change": -0.2,
+      "long_arc_pct_change": 47.4,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 7793,
+    "pct_low_income": 14.4,
+    "pct_people_of_color": 4.2,
+    "pct_under_5": 5.5,
+    "pct_over_64": 25.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (6 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

@@ -1,0 +1,130 @@
+{
+  "site": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "price-battery-lead-smelter",
+    "name": "Price Battery Lead Smelter",
+    "epa_id": "PAN000305679",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Berks",
+    "county_slug": "berks",
+    "city": "Hamburg",
+    "city_slug": "hamburg",
+    "address": "246 Grand Street",
+    "zip": "19526",
+    "lat": 40.549507,
+    "lng": -75.980228
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 8,
+    "primary_contaminant": "Antimony"
+  },
+  "contaminants": [
+    {
+      "name": "Antimony",
+      "media": "Soil",
+      "operable_units": [
+        "01",
+        "03"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Arsenic",
+      "media": "Soil",
+      "operable_units": [
+        "01",
+        "03"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "03",
+        "01"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Antimony",
+      "media": "Buildings/Structures",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Arsenic",
+      "media": "Buildings/Structures",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Buildings/Structures",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Sediment",
+      "operable_units": [
+        "03"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Metals",
+      "media": "Sediment",
+      "operable_units": [
+        "03"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "PA3060031",
+        "name": "Laurel Health Resources",
+        "slug": "laurel-health-resources",
+        "state": "pa",
+        "distance_miles": 0.48,
+        "place_name": "Hamburg",
+        "primary_source": "groundwater",
+        "population_served": 240,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 3410,
+    "pct_low_income": 25.2,
+    "pct_people_of_color": 5.0,
+    "pct_under_5": 5.1,
+    "pct_over_64": 16.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:07Z"
+}

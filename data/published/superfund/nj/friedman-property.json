@@ -1,0 +1,181 @@
+{
+  "site": {
+    "state": "nj",
+    "state_label": "New Jersey",
+    "slug": "friedman-property",
+    "name": "Friedman Property",
+    "epa_id": "NJD980532832",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Monmouth",
+    "county_slug": "monmouth",
+    "city": "Upper Freehold Twp",
+    "city_slug": null,
+    "address": "Intersection Of Rts 537 & 539",
+    "zip": "08514",
+    "lat": 40.1048,
+    "lng": -74.5077
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NJ1523001",
+        "name": "Collier Mills Mobile Home Park Inc",
+        "slug": "collier-mills-mobile-home-park-inc",
+        "state": "nj",
+        "distance_miles": 2.92,
+        "place_name": "New Egypt",
+        "primary_source": "groundwater",
+        "population_served": 100,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 643064,
+    "pct_low_income": 6.4,
+    "pct_people_of_color": 26.299999999999997,
+    "pct_under_5": 5.6,
+    "pct_over_64": 18.3,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 17.6,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 54.4,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 31.5,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 55.3,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 37.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 41.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 64.4,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 90.3,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 30.0,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 40.0,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 86.6,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 48.6,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 79.2,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 14.0
+      },
+      {
+        "label": "Ozone",
+        "score": 40.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 26.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 41.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 25.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 31.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 40.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 61.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 14.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 28.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 50.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 29.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 43.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Monmouth County, New Jersey (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:49:12Z"
+}

@@ -1,0 +1,84 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "lee-industries-inc",
+    "name": "Lee Industries INC.",
+    "parent_company": null,
+    "address": "50 W PINE ST",
+    "city": "Philipsburg",
+    "county": "Clearfield County",
+    "county_slug": "clearfield",
+    "naics_label": "332420 \u00b7 Fabricated Metals",
+    "lat": 40.896551,
+    "lng": -78.22448
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 50959,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 50959,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 50959
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 31887,
+      "history": [
+        {
+          "year": 2024,
+          "value": 31887
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 19072,
+      "history": [
+        {
+          "year": 2024,
+          "value": 19072
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 8644,
+    "pct_low_income": 30.5,
+    "pct_people_of_color": 15.9,
+    "pct_under_5": 3.9,
+    "pct_over_64": 18.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

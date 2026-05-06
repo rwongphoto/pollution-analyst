@@ -1,0 +1,62 @@
+{
+  "site": {
+    "state": "nj",
+    "state_label": "New Jersey",
+    "slug": "orange-valley-regional-ground-water-contamination",
+    "name": "Orange Valley Regional Ground Water Contamination",
+    "epa_id": "NJD002148799",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Essex",
+    "county_slug": "essex",
+    "city": "West Orange/Orange",
+    "city_slug": null,
+    "address": "Gist Place (Near North Day Street)",
+    "zip": "07051",
+    "lat": 40.779936,
+    "lng": -74.225267
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NJ0705001",
+        "name": "East Orange Water Commission",
+        "slug": "east-orange-water-commission",
+        "state": "nj",
+        "distance_miles": 1.25,
+        "place_name": "East Orange",
+        "primary_source": "groundwater",
+        "population_served": 75000,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 42443,
+    "pct_low_income": 35.8,
+    "pct_people_of_color": 88.8,
+    "pct_under_5": 8.0,
+    "pct_over_64": 13.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (34 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:49:12Z"
+}

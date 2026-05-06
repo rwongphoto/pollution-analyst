@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "willow-creek-gas-plant",
+    "name": "Willow Creek Gas Plant",
+    "parent_company": "The Williams Cos",
+    "address": "20219 COUNTY ROAD 5",
+    "city": "Rifle",
+    "county": "Rio Blanco County",
+    "county_slug": "rio-blanco",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 39.842049,
+    "lng": -108.229169
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 5060,
+    "air_releases_pounds": 3300,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1760,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -1.4,
+    "long_arc_pct_change": -18.9,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 6240
+      },
+      {
+        "year": 2023,
+        "value": 5130
+      },
+      {
+        "year": 2024,
+        "value": 5060
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 3650,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4130
+        },
+        {
+          "year": 2023,
+          "value": 3790
+        },
+        {
+          "year": 2024,
+          "value": 3650
+        }
+      ],
+      "yoy_pct_change": -3.7,
+      "long_arc_pct_change": -11.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 1410,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2110
+        },
+        {
+          "year": 2023,
+          "value": 1340
+        },
+        {
+          "year": 2024,
+          "value": 1410
+        }
+      ],
+      "yoy_pct_change": 5.2,
+      "long_arc_pct_change": -33.2,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 6511,
+    "pct_low_income": 12.9,
+    "pct_people_of_color": 17.599999999999994,
+    "pct_under_5": 6.4,
+    "pct_over_64": 16.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Rio Blanco County County, CO (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:44Z"
+}

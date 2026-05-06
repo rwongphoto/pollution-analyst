@@ -1,0 +1,193 @@
+{
+  "site": {
+    "state": "nj",
+    "state_label": "New Jersey",
+    "slug": "crown-vantage-landfill",
+    "name": "Crown Vantage Landfill",
+    "epa_id": "NJN000204492",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Hunterdon",
+    "county_slug": "hunterdon",
+    "city": "Alexandria Township",
+    "city_slug": null,
+    "address": "Adj. To Delaware River 1/2 Mi. South Of",
+    "zip": "08848",
+    "lat": 40.552028,
+    "lng": -75.078917
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 3,
+    "primary_contaminant": "Benzo[A]Pyrene"
+  },
+  "contaminants": [
+    {
+      "name": "Benzo[A]Pyrene",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Dibenzo(A,H)Anthracene",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 129099,
+    "pct_low_income": 3.7,
+    "pct_people_of_color": 17.0,
+    "pct_under_5": 5.2,
+    "pct_over_64": 19.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 29.9,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 41.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 30.1,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 52.1,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 75.8,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 28.9,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 63.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 72.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 49.0,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 41.1,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 67.7,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 45.2,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 79.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 15.7
+      },
+      {
+        "label": "Ozone",
+        "score": 26.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 16.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 27.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 33.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 15.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 26.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 21.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 17.6
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 18.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 24.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 22.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 24.1
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Hunterdon County, New Jersey (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:49:12Z"
+}

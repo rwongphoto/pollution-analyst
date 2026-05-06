@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "va",
+    "state_label": "Virginia",
+    "slug": "mylar-specialty-films-spruance",
+    "name": "Mylar Specialty Films Spruance",
+    "parent_company": "Mylar Specialty Films US LP",
+    "address": "5401A ROUTE 1",
+    "city": "Richmond",
+    "county": "Chesterfield County",
+    "county_slug": "chesterfield",
+    "naics_label": "325211 \u00b7 Chemicals",
+    "lat": 37.452127,
+    "lng": -77.441386
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 115301,
+    "air_releases_pounds": 115260,
+    "water_releases_pounds": 41,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 21.5,
+    "long_arc_pct_change": 53.3,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 75194
+      },
+      {
+        "year": 2023,
+        "value": 94880
+      },
+      {
+        "year": 2024,
+        "value": 115301
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 115301,
+      "history": [
+        {
+          "year": 2022,
+          "value": 75194
+        },
+        {
+          "year": 2023,
+          "value": 94880
+        },
+        {
+          "year": 2024,
+          "value": 115301
+        }
+      ],
+      "yoy_pct_change": 21.5,
+      "long_arc_pct_change": 53.3,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 44753,
+    "pct_low_income": 38.9,
+    "pct_people_of_color": 77.2,
+    "pct_under_5": 6.0,
+    "pct_over_64": 15.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (31 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:30:20Z"
+}

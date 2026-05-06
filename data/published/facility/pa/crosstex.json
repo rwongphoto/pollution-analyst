@@ -1,0 +1,77 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "crosstex",
+    "name": "Crosstex",
+    "parent_company": "Hufriedy Group",
+    "address": "534 VINE AVE",
+    "city": "Sharon",
+    "county": "Mercer County",
+    "county_slug": "mercer",
+    "naics_label": "339114 \u00b7 Miscellaneous Manufacturing",
+    "lat": 41.241199,
+    "lng": -80.507466
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 2,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -0.5,
+    "long_arc_pct_change": -0.5,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 2
+      },
+      {
+        "year": 2024,
+        "value": 2
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 2,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2
+        },
+        {
+          "year": 2024,
+          "value": 2
+        }
+      ],
+      "yoy_pct_change": -0.5,
+      "long_arc_pct_change": -0.5,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 29972,
+    "pct_low_income": 41.5,
+    "pct_people_of_color": 21.4,
+    "pct_under_5": 5.0,
+    "pct_over_64": 22.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (37 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

@@ -1,0 +1,74 @@
+{
+  "site": {
+    "state": "nj",
+    "state_label": "New Jersey",
+    "slug": "rolling-knolls-lf",
+    "name": "Rolling Knolls Lf",
+    "epa_id": "NJD980505192",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Morris",
+    "county_slug": "morris",
+    "city": "Green Village",
+    "city_slug": "green-village",
+    "address": "35 Britten Rd",
+    "zip": "07935",
+    "lat": 40.729528,
+    "lng": -74.447861
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NJ1417001",
+        "name": "Madison Water Dept",
+        "slug": "madison-water-dept",
+        "state": "nj",
+        "distance_miles": 2.52,
+        "place_name": "Madison",
+        "primary_source": "groundwater",
+        "population_served": 15820,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "PA2640052",
+        "name": "Paradise Point",
+        "slug": "paradise-point",
+        "state": "nj",
+        "distance_miles": 2.52,
+        "place_name": "Madison",
+        "primary_source": "groundwater",
+        "population_served": 300,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 2439,
+    "pct_low_income": 1.6,
+    "pct_people_of_color": 18.5,
+    "pct_under_5": 1.1,
+    "pct_over_64": 20.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:49:12Z"
+}

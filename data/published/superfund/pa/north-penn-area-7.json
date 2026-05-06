@@ -1,0 +1,167 @@
+{
+  "site": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "north-penn-area-7",
+    "name": "North Penn - Area 7",
+    "epa_id": "PAD002498632",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Montgomery",
+    "county_slug": "montgomery",
+    "city": "North Wales",
+    "city_slug": null,
+    "address": "Wissahickon Ave",
+    "zip": "19454",
+    "lat": 40.218061,
+    "lng": -75.278889
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 4,
+    "primary_contaminant": "Chloroethene (Vinyl Chloride)"
+  },
+  "contaminants": [
+    {
+      "name": "Chloroethene (Vinyl Chloride)",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Chromium",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Iron",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Trichloroethene",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "PA1090097",
+        "name": "Nwwa Olde Colonial Greene",
+        "slug": "nwwa-olde-colonial-greene",
+        "state": "pa",
+        "distance_miles": 0.53,
+        "place_name": "North Wales",
+        "primary_source": "groundwater",
+        "population_served": 900,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "PA1090098",
+        "name": "Nwwa Pine Run",
+        "slug": "nwwa-pine-run",
+        "state": "pa",
+        "distance_miles": 0.53,
+        "place_name": "North Wales",
+        "primary_source": "groundwater",
+        "population_served": 700,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "PA1090099",
+        "name": "Nwwa Durham Village",
+        "slug": "nwwa-durham-village",
+        "state": "pa",
+        "distance_miles": 0.53,
+        "place_name": "North Wales",
+        "primary_source": "groundwater",
+        "population_served": 160,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "PA1090101",
+        "name": "Nwwa Yorkshire Meadows",
+        "slug": "nwwa-yorkshire-meadows",
+        "state": "pa",
+        "distance_miles": 0.53,
+        "place_name": "North Wales",
+        "primary_source": "groundwater",
+        "population_served": 90,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "PA1090102",
+        "name": "Nwwa Hermitage",
+        "slug": "nwwa-hermitage",
+        "state": "pa",
+        "distance_miles": 0.53,
+        "place_name": "North Wales",
+        "primary_source": "groundwater",
+        "population_served": 75,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "PA1090050",
+        "name": "Quaker View Mobile Home Park",
+        "slug": "quaker-view-mobile-home-park",
+        "state": "pa",
+        "distance_miles": 1.63,
+        "place_name": "Lansdale",
+        "primary_source": "groundwater",
+        "population_served": 60,
+        "health_based_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "pwsid": "PA3060044",
+        "name": "Sittlers Mhp",
+        "slug": "sittlers-mhp",
+        "state": "pa",
+        "distance_miles": 1.63,
+        "place_name": "Lansdale",
+        "primary_source": "groundwater",
+        "population_served": 89,
+        "health_based_5yr": 3,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 9359,
+    "pct_low_income": 14.9,
+    "pct_people_of_color": 21.7,
+    "pct_under_5": 3.8,
+    "pct_over_64": 21.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:07Z"
+}

@@ -1,0 +1,134 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "veka-inc",
+    "name": "Veka INC",
+    "parent_company": "Veka Holdings",
+    "address": "100 VEKA DR",
+    "city": "Fombell",
+    "county": "Beaver County",
+    "county_slug": "beaver",
+    "naics_label": "326199 \u00b7 Plastics and Rubber",
+    "lat": 40.797892,
+    "lng": -80.172464
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 20799,
+    "air_releases_pounds": 20799,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 25.1,
+    "long_arc_pct_change": 25.1,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 16632
+      },
+      {
+        "year": 2024,
+        "value": 20799
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Dichloromethane",
+      "cas": "75-09-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 19194,
+      "history": [
+        {
+          "year": 2023,
+          "value": 15017
+        },
+        {
+          "year": 2024,
+          "value": 19194
+        }
+      ],
+      "yoy_pct_change": 27.8,
+      "long_arc_pct_change": 27.8,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Antimony compounds",
+      "cas": "N010",
+      "category": "respiratory",
+      "total_pounds_recent": 641,
+      "history": [
+        {
+          "year": 2023,
+          "value": 668
+        },
+        {
+          "year": 2024,
+          "value": 641
+        }
+      ],
+      "yoy_pct_change": -4.0,
+      "long_arc_pct_change": -4.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
+      "cas": "N090",
+      "category": "respiratory",
+      "total_pounds_recent": 591,
+      "history": [
+        {
+          "year": 2023,
+          "value": 573
+        },
+        {
+          "year": 2024,
+          "value": 591
+        }
+      ],
+      "yoy_pct_change": 3.1,
+      "long_arc_pct_change": 3.1,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Manganese compounds",
+      "cas": "N450",
+      "category": "respiratory",
+      "total_pounds_recent": 373,
+      "history": [
+        {
+          "year": 2023,
+          "value": 374
+        },
+        {
+          "year": 2024,
+          "value": 373
+        }
+      ],
+      "yoy_pct_change": -0.3,
+      "long_arc_pct_change": -0.3,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 8204,
+    "pct_low_income": 16.3,
+    "pct_people_of_color": 5.7,
+    "pct_under_5": 3.4,
+    "pct_over_64": 21.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

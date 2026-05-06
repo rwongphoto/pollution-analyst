@@ -1,0 +1,105 @@
+{
+  "site": {
+    "state": "nj",
+    "state_label": "New Jersey",
+    "slug": "matteo-sons-inc",
+    "name": "Matteo & Sons Inc.",
+    "epa_id": "NJD011770013",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Gloucester",
+    "county_slug": "gloucester",
+    "city": "Thorofare",
+    "city_slug": null,
+    "address": "1708 Us Rt. 130",
+    "zip": "08086",
+    "lat": 39.85559,
+    "lng": -75.1727
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 5,
+    "primary_contaminant": "Antimony"
+  },
+  "contaminants": [
+    {
+      "name": "Antimony",
+      "media": "Soil",
+      "operable_units": [
+        "02",
+        "01"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "01",
+        "02"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Aroclor 1254",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Aroclor 1260",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Zinc",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NJ0821001",
+        "name": "Westville Water Department",
+        "slug": "westville-water-department",
+        "state": "nj",
+        "distance_miles": 2.5,
+        "place_name": "Westville",
+        "primary_source": "groundwater",
+        "population_served": 6000,
+        "health_based_5yr": 4,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 6407,
+    "pct_low_income": 22.5,
+    "pct_people_of_color": 24.0,
+    "pct_under_5": 5.2,
+    "pct_over_64": 13.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (6 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:49:12Z"
+}

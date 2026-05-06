@@ -1,0 +1,131 @@
+{
+  "facility": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "wattenberg-gas-plant-anadarko-dj-gas-processing-llc",
+    "name": "Wattenberg Gas Plant/ Anadarko Dj Gas Processing LLC",
+    "parent_company": "Western Midstream Partners LP",
+    "address": "1909 POWHATON RD - EAST SIDE",
+    "city": "Aurora",
+    "county": "Adams County",
+    "county_slug": "adams",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 39.748583,
+    "lng": -104.678397
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 17090,
+    "air_releases_pounds": 2090,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 15000,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -56.0,
+    "long_arc_pct_change": -35.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 26588
+      },
+      {
+        "year": 2023,
+        "value": 38830
+      },
+      {
+        "year": 2024,
+        "value": 17090
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 7860,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6331
+        },
+        {
+          "year": 2023,
+          "value": 8711
+        },
+        {
+          "year": 2024,
+          "value": 7860
+        }
+      ],
+      "yoy_pct_change": -9.8,
+      "long_arc_pct_change": 24.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 7780,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6102
+        },
+        {
+          "year": 2023,
+          "value": 8530
+        },
+        {
+          "year": 2024,
+          "value": 7780
+        }
+      ],
+      "yoy_pct_change": -8.8,
+      "long_arc_pct_change": 27.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1450,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2379
+        },
+        {
+          "year": 2023,
+          "value": 2601
+        },
+        {
+          "year": 2024,
+          "value": 1450
+        }
+      ],
+      "yoy_pct_change": -44.3,
+      "long_arc_pct_change": -39.1,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 7193,
+    "pct_low_income": 10.8,
+    "pct_people_of_color": 49.3,
+    "pct_under_5": 10.4,
+    "pct_over_64": 8.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (4 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:44Z"
+}

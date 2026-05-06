@@ -1,0 +1,219 @@
+{
+  "facility": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "roggen-plant",
+    "name": "Roggen Plant",
+    "parent_company": "Phillips 66 Co",
+    "address": "35409 WELD COUNTY ROAD 18",
+    "city": "Roggen",
+    "county": "Weld County",
+    "county_slug": "weld",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 40.116622,
+    "lng": -104.387557
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 8462,
+    "air_releases_pounds": 7340,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1122,
+    "chemicals_reported": 7,
+    "yoy_pct_change": -4.6,
+    "long_arc_pct_change": 43.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 5919
+      },
+      {
+        "year": 2023,
+        "value": 8873
+      },
+      {
+        "year": 2024,
+        "value": 8462
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2880,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2952
+        },
+        {
+          "year": 2023,
+          "value": 2371
+        },
+        {
+          "year": 2024,
+          "value": 2880
+        }
+      ],
+      "yoy_pct_change": 21.5,
+      "long_arc_pct_change": -2.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 1960,
+      "history": [
+        {
+          "year": 2022,
+          "value": 237
+        },
+        {
+          "year": 2023,
+          "value": 2969
+        },
+        {
+          "year": 2024,
+          "value": 1960
+        }
+      ],
+      "yoy_pct_change": -34.0,
+      "long_arc_pct_change": 727.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1180,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1064
+        },
+        {
+          "year": 2023,
+          "value": 978
+        },
+        {
+          "year": 2024,
+          "value": 1180
+        }
+      ],
+      "yoy_pct_change": 20.7,
+      "long_arc_pct_change": 10.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 890,
+      "history": [
+        {
+          "year": 2022,
+          "value": 792
+        },
+        {
+          "year": 2023,
+          "value": 749
+        },
+        {
+          "year": 2024,
+          "value": 890
+        }
+      ],
+      "yoy_pct_change": 18.8,
+      "long_arc_pct_change": 12.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 855,
+      "history": [
+        {
+          "year": 2022,
+          "value": 738
+        },
+        {
+          "year": 2023,
+          "value": 1248
+        },
+        {
+          "year": 2024,
+          "value": 855
+        }
+      ],
+      "yoy_pct_change": -31.5,
+      "long_arc_pct_change": 15.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 560,
+      "history": [
+        {
+          "year": 2022,
+          "value": 29
+        },
+        {
+          "year": 2023,
+          "value": 558
+        },
+        {
+          "year": 2024,
+          "value": 560
+        }
+      ],
+      "yoy_pct_change": 0.4,
+      "long_arc_pct_change": 1858.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 137,
+      "history": [
+        {
+          "year": 2022,
+          "value": 107
+        },
+        {
+          "year": 2024,
+          "value": 137
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 27.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 331466,
+    "pct_low_income": 9.7,
+    "pct_people_of_color": 36.3,
+    "pct_under_5": 7.1,
+    "pct_over_64": 12.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Weld County County, CO (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:44Z"
+}

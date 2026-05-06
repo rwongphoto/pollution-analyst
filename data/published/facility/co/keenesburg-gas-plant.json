@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "keenesburg-gas-plant",
+    "name": "Keenesburg Gas Plant",
+    "parent_company": "The Williams Cos",
+    "address": "31633 CR 398",
+    "city": "Keenesburg",
+    "county": "Weld County",
+    "county_slug": "weld",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 40.142333,
+    "lng": -104.46069
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3040,
+    "air_releases_pounds": 2640,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 400,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 2.0,
+    "long_arc_pct_change": 80.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 1685
+      },
+      {
+        "year": 2023,
+        "value": 2980
+      },
+      {
+        "year": 2024,
+        "value": 3040
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2860,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1620
+        },
+        {
+          "year": 2023,
+          "value": 2760
+        },
+        {
+          "year": 2024,
+          "value": 2860
+        }
+      ],
+      "yoy_pct_change": 3.6,
+      "long_arc_pct_change": 76.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 180,
+      "history": [
+        {
+          "year": 2022,
+          "value": 65
+        },
+        {
+          "year": 2023,
+          "value": 220
+        },
+        {
+          "year": 2024,
+          "value": 180
+        }
+      ],
+      "yoy_pct_change": -18.2,
+      "long_arc_pct_change": 176.9,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 331466,
+    "pct_low_income": 9.7,
+    "pct_people_of_color": 36.3,
+    "pct_under_5": 7.1,
+    "pct_over_64": 12.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Weld County County, CO (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:44Z"
+}

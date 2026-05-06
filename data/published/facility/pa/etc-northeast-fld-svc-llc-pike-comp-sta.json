@@ -1,0 +1,127 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "etc-northeast-fld-svc-llc-pike-comp-sta",
+    "name": "Etc Northeast Fld Svc Llc/Pike Comp Sta",
+    "parent_company": "Energy Transfer LP",
+    "address": "282 TEETS RD",
+    "city": "Rochester",
+    "county": "Beaver County",
+    "county_slug": "beaver",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 40.74882,
+    "lng": -80.168744
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 4757,
+    "air_releases_pounds": 3393,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1365,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 16.7,
+    "long_arc_pct_change": -65.9,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 13970
+      },
+      {
+        "year": 2023,
+        "value": 4075
+      },
+      {
+        "year": 2024,
+        "value": 4757
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2569,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2710
+        },
+        {
+          "year": 2023,
+          "value": 2937
+        },
+        {
+          "year": 2024,
+          "value": 2569
+        }
+      ],
+      "yoy_pct_change": -12.6,
+      "long_arc_pct_change": -5.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 1177,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6606
+        },
+        {
+          "year": 2024,
+          "value": 1177
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -82.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "m-Xylene",
+      "cas": "108-38-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1012,
+      "history": [
+        {
+          "year": 2022,
+          "value": 250
+        },
+        {
+          "year": 2023,
+          "value": 1137
+        },
+        {
+          "year": 2024,
+          "value": 1012
+        }
+      ],
+      "yoy_pct_change": -11.0,
+      "long_arc_pct_change": 304.8,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 9361,
+    "pct_low_income": 10.9,
+    "pct_people_of_color": 3.2,
+    "pct_under_5": 6.6,
+    "pct_over_64": 18.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (6 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

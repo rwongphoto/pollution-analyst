@@ -1,0 +1,96 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "arbco-industries-inc",
+    "name": "Arbco Industries INC",
+    "parent_company": "Blue Wolf Capital",
+    "address": "BORLAND RD",
+    "city": "Export",
+    "county": "Westmoreland County",
+    "county_slug": "westmoreland",
+    "naics_label": "326199 \u00b7 Plastics and Rubber",
+    "lat": 40.424405,
+    "lng": -79.600695
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3115,
+    "air_releases_pounds": 3052,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 63,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -3.7,
+    "long_arc_pct_change": -3.7,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 3236
+      },
+      {
+        "year": 2024,
+        "value": 3115
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Phenol",
+      "cas": "108-95-2",
+      "category": "respiratory",
+      "total_pounds_recent": 3052,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3129
+        },
+        {
+          "year": 2024,
+          "value": 3052
+        }
+      ],
+      "yoy_pct_change": -2.5,
+      "long_arc_pct_change": -2.5,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 63,
+      "history": [
+        {
+          "year": 2023,
+          "value": 107
+        },
+        {
+          "year": 2024,
+          "value": 63
+        }
+      ],
+      "yoy_pct_change": -41.3,
+      "long_arc_pct_change": -41.3,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 12107,
+    "pct_low_income": 16.6,
+    "pct_people_of_color": 9.8,
+    "pct_under_5": 2.4,
+    "pct_over_64": 27.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (9 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

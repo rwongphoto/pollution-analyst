@@ -1,0 +1,104 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "bullen-cos",
+    "name": "Bullen Cos",
+    "parent_company": null,
+    "address": "1640 DELMAR DR",
+    "city": "Folcroft",
+    "county": "Delaware County",
+    "county_slug": "delaware",
+    "naics_label": "325611 \u00b7 Chemicals",
+    "lat": 39.894873,
+    "lng": -75.27784
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 768,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 768,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -29.7,
+    "long_arc_pct_change": -65.3,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 2211
+      },
+      {
+        "year": 2023,
+        "value": 1092
+      },
+      {
+        "year": 2024,
+        "value": 768
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nonylphenol Ethoxylates",
+      "cas": "N535",
+      "category": "general",
+      "total_pounds_recent": 727,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2211
+        },
+        {
+          "year": 2023,
+          "value": 957
+        },
+        {
+          "year": 2024,
+          "value": 727
+        }
+      ],
+      "yoy_pct_change": -24.0,
+      "long_arc_pct_change": -67.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Certain glycol ethers",
+      "cas": "N230",
+      "category": "respiratory",
+      "total_pounds_recent": 41,
+      "history": [
+        {
+          "year": 2023,
+          "value": 135
+        },
+        {
+          "year": 2024,
+          "value": 41
+        }
+      ],
+      "yoy_pct_change": -69.9,
+      "long_arc_pct_change": -69.9,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 156898,
+    "pct_low_income": 34.2,
+    "pct_people_of_color": 54.2,
+    "pct_under_5": 5.9,
+    "pct_over_64": 14.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (118 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

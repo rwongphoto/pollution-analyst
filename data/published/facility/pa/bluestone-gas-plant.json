@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "bluestone-gas-plant",
+    "name": "Bluestone Gas Plant",
+    "parent_company": "Marathon Petroleum CORP",
+    "address": "440 HARTMANN ROAD - JACKSON TOWNSHIP",
+    "city": "Evans City",
+    "county": "Butler County",
+    "county_slug": "butler",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 40.806527,
+    "lng": -80.079167
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 8318,
+    "air_releases_pounds": 8318,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 5.5,
+    "long_arc_pct_change": -24.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 11006
+      },
+      {
+        "year": 2023,
+        "value": 7885
+      },
+      {
+        "year": 2024,
+        "value": 8318
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 8296,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10842
+        },
+        {
+          "year": 2023,
+          "value": 7868
+        },
+        {
+          "year": 2024,
+          "value": 8296
+        }
+      ],
+      "yoy_pct_change": 5.4,
+      "long_arc_pct_change": -23.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 22,
+      "history": [
+        {
+          "year": 2022,
+          "value": 164
+        },
+        {
+          "year": 2023,
+          "value": 17
+        },
+        {
+          "year": 2024,
+          "value": 22
+        }
+      ],
+      "yoy_pct_change": 29.4,
+      "long_arc_pct_change": -86.6,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 7521,
+    "pct_low_income": 18.5,
+    "pct_people_of_color": 6.8,
+    "pct_under_5": 3.4,
+    "pct_over_64": 16.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (5 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

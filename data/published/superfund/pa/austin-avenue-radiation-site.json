@@ -1,0 +1,74 @@
+{
+  "site": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "austin-avenue-radiation-site",
+    "name": "Austin Avenue Radiation Site",
+    "epa_id": "PAD987341716",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Delaware",
+    "county_slug": "delaware",
+    "city": "East Lansdowne",
+    "city_slug": "east-lansdowne",
+    "address": "133 Austin Ave.",
+    "zip": "19050",
+    "lat": 39.943056,
+    "lng": -75.261944
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 3,
+    "primary_contaminant": "Radium-226"
+  },
+  "contaminants": [
+    {
+      "name": "Radium-226",
+      "media": "Debris",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Radium-226",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Thorium-230",
+      "media": "Debris",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 44615,
+    "pct_low_income": 38.9,
+    "pct_people_of_color": 83.1,
+    "pct_under_5": 7.6,
+    "pct_over_64": 12.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (28 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:07Z"
+}

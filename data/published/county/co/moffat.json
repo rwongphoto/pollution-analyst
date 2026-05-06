@@ -1,0 +1,819 @@
+{
+  "county": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "moffat",
+    "name": "Moffat County",
+    "fips": "08081",
+    "population": 13232
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "criteria_air",
+      "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
+      "current": 0.064,
+      "units": "ppm",
+      "yoy_pct_change": 1.6,
+      "long_arc_pct_change": 4.9,
+      "baseline_year": 2011,
+      "history": [
+        {
+          "year": 2011,
+          "value": 0.061
+        },
+        {
+          "year": 2012,
+          "value": 0.066
+        },
+        {
+          "year": 2013,
+          "value": 0.065
+        },
+        {
+          "year": 2014,
+          "value": 0.062
+        },
+        {
+          "year": 2015,
+          "value": 0.055
+        },
+        {
+          "year": 2016,
+          "value": 0.059
+        },
+        {
+          "year": 2017,
+          "value": 0.063
+        },
+        {
+          "year": 2018,
+          "value": 0.064
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 18.4,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 18.4
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.85,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.85
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.089,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.089
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 61831,
+      "units": "lb",
+      "yoy_pct_change": -29.5,
+      "long_arc_pct_change": -57.8,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 146521
+        },
+        {
+          "year": 2011,
+          "value": 133830
+        },
+        {
+          "year": 2012,
+          "value": 94859
+        },
+        {
+          "year": 2013,
+          "value": 117344
+        },
+        {
+          "year": 2014,
+          "value": 138335
+        },
+        {
+          "year": 2015,
+          "value": 87723
+        },
+        {
+          "year": 2016,
+          "value": 84418
+        },
+        {
+          "year": 2017,
+          "value": 91282
+        },
+        {
+          "year": 2018,
+          "value": 93739
+        },
+        {
+          "year": 2019,
+          "value": 98304
+        },
+        {
+          "year": 2020,
+          "value": 88245
+        },
+        {
+          "year": 2021,
+          "value": 89777
+        },
+        {
+          "year": 2022,
+          "value": 94688
+        },
+        {
+          "year": 2023,
+          "value": 87689
+        },
+        {
+          "year": 2024,
+          "value": 61831
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 169,
+      "units": "lb",
+      "yoy_pct_change": 3.0,
+      "long_arc_pct_change": null,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 388
+        },
+        {
+          "year": 2011,
+          "value": 515
+        },
+        {
+          "year": 2012,
+          "value": 222
+        },
+        {
+          "year": 2013,
+          "value": 204
+        },
+        {
+          "year": 2014,
+          "value": 106
+        },
+        {
+          "year": 2015,
+          "value": 118
+        },
+        {
+          "year": 2016,
+          "value": 115
+        },
+        {
+          "year": 2017,
+          "value": 112
+        },
+        {
+          "year": 2018,
+          "value": 122
+        },
+        {
+          "year": 2019,
+          "value": 558
+        },
+        {
+          "year": 2020,
+          "value": 118
+        },
+        {
+          "year": 2021,
+          "value": 87
+        },
+        {
+          "year": 2022,
+          "value": 79
+        },
+        {
+          "year": 2023,
+          "value": 164
+        },
+        {
+          "year": 2024,
+          "value": 169
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 1135579,
+      "units": "lb",
+      "yoy_pct_change": -8.4,
+      "long_arc_pct_change": -65.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 3293281
+        },
+        {
+          "year": 2011,
+          "value": 2652344
+        },
+        {
+          "year": 2012,
+          "value": 2456149
+        },
+        {
+          "year": 2013,
+          "value": 2502489
+        },
+        {
+          "year": 2014,
+          "value": 3127461
+        },
+        {
+          "year": 2015,
+          "value": 2248932
+        },
+        {
+          "year": 2016,
+          "value": 2624801
+        },
+        {
+          "year": 2017,
+          "value": 2120033
+        },
+        {
+          "year": 2018,
+          "value": 1976133
+        },
+        {
+          "year": 2019,
+          "value": 2233534
+        },
+        {
+          "year": 2020,
+          "value": 1508843
+        },
+        {
+          "year": 2021,
+          "value": 1461535
+        },
+        {
+          "year": 2022,
+          "value": 1809622
+        },
+        {
+          "year": 2023,
+          "value": 1239681
+        },
+        {
+          "year": 2024,
+          "value": 1135579
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 5306621,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -33.4,
+      "long_arc_pct_change": -46.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 9826601
+        },
+        {
+          "year": 2011,
+          "value": 9186085
+        },
+        {
+          "year": 2012,
+          "value": 9058174
+        },
+        {
+          "year": 2013,
+          "value": 8051967
+        },
+        {
+          "year": 2014,
+          "value": 9303145
+        },
+        {
+          "year": 2015,
+          "value": 8247133
+        },
+        {
+          "year": 2016,
+          "value": 8345126
+        },
+        {
+          "year": 2017,
+          "value": 8112049
+        },
+        {
+          "year": 2018,
+          "value": 7662430
+        },
+        {
+          "year": 2019,
+          "value": 8449503
+        },
+        {
+          "year": 2020,
+          "value": 7734397
+        },
+        {
+          "year": 2021,
+          "value": 7834072
+        },
+        {
+          "year": 2022,
+          "value": 7961979
+        },
+        {
+          "year": 2023,
+          "value": 5306621
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "tri-state-generation-transmission-craig-station",
+      "state": "co",
+      "state_label": "Colorado",
+      "name": "Tri-State Generation & Transmission-Craig Station",
+      "parent_company": null,
+      "total_pounds_recent": 627815,
+      "yoy_pct_change": -11.3,
+      "top_chemical": "Barium  And Barium Compounds",
+      "city": "Craig",
+      "lat": 40.500419,
+      "lng": -107.552915
+    },
+    {
+      "slug": "trapper-mining-inc",
+      "state": "co",
+      "state_label": "Colorado",
+      "name": "Trapper Mining INC.",
+      "parent_company": null,
+      "total_pounds_recent": 567734,
+      "yoy_pct_change": -7.9,
+      "top_chemical": "Barium  And Barium Compounds",
+      "city": "Craig",
+      "lat": 40.540783,
+      "lng": -107.553789
+    },
+    {
+      "slug": "skull-creek-dewpoint-plant",
+      "state": "co",
+      "state_label": "Colorado",
+      "name": "Skull Creek Dewpoint Plant",
+      "parent_company": "The Williams Cos",
+      "total_pounds_recent": 2030,
+      "yoy_pct_change": -40.6,
+      "top_chemical": "n-Hexane",
+      "city": "Craig",
+      "lat": 40.540783,
+      "lng": -107.553789
+    }
+  ],
+  "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [
+    {
+      "slug": "craig",
+      "name": "Craig",
+      "fips": "0817760",
+      "facilities_count": 0,
+      "utilities_count": 2,
+      "population": 9013
+    },
+    {
+      "slug": "dinosaur",
+      "name": "Dinosaur",
+      "fips": "0820495",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 495
+    }
+  ],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Moffat County have more than halved since 2010 (through 2024).",
+      "magnitude_pct": -65.2,
+      "magnitude_abs": -2242611.0,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 3440190
+        },
+        {
+          "year": 2011,
+          "value": 2786688
+        },
+        {
+          "year": 2012,
+          "value": 2551230
+        },
+        {
+          "year": 2013,
+          "value": 2620037
+        },
+        {
+          "year": 2014,
+          "value": 3265902
+        },
+        {
+          "year": 2015,
+          "value": 2336773
+        },
+        {
+          "year": 2016,
+          "value": 2709334
+        },
+        {
+          "year": 2017,
+          "value": 2211428
+        },
+        {
+          "year": 2018,
+          "value": 2069994
+        },
+        {
+          "year": 2019,
+          "value": 2332395
+        },
+        {
+          "year": 2020,
+          "value": 1597206
+        },
+        {
+          "year": 2021,
+          "value": 1551400
+        },
+        {
+          "year": 2022,
+          "value": 1904388
+        },
+        {
+          "year": 2023,
+          "value": 1327534
+        },
+        {
+          "year": 2024,
+          "value": 1197579
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 13232,
+    "pct_low_income": 14.8,
+    "pct_people_of_color": 21.599999999999994,
+    "pct_under_5": 6.4,
+    "pct_over_64": 15.2,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 3.1,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 62.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 36.2,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 2.8,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 58.6,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 15.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 55.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 38.1,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 68.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 70.6,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.6,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 3.3
+      },
+      {
+        "label": "Ozone",
+        "score": 102.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 45.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 5.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 62.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 19.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 49.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 43.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 58.9
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 79.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 92.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Moffat County County, CO"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.4,
+      "age_adjusted": 11.5,
+      "state_mean": 10.9,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.64,
+      "vs_state_pct": 5.9,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.48,
+      "vs_us_pct": 14.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 7.9,
+      "age_adjusted": 6.8,
+      "state_mean": 4.8,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.96,
+      "vs_state_pct": 40.5,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.3,
+      "vs_us_pct": 23.6,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.0,
+      "age_adjusted": 5.8,
+      "state_mean": 4.7,
+      "us_mean": 5.3,
+      "vs_state_pp": 1.09,
+      "vs_state_pct": 23.1,
+      "vs_state_class": "worse",
+      "vs_us_pp": 0.49,
+      "vs_us_pct": 9.2,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 10.8,
+      "age_adjusted": 9.2,
+      "state_mean": 8.0,
+      "us_mean": 10.5,
+      "vs_state_pp": 1.18,
+      "vs_state_pct": 14.7,
+      "vs_state_class": "elevated",
+      "vs_us_pp": -1.26,
+      "vs_us_pct": -12.0,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.9,
+      "age_adjusted": 19.0,
+      "state_mean": 16.4,
+      "us_mean": 16.8,
+      "vs_state_pp": 2.6,
+      "vs_state_pct": 15.9,
+      "vs_state_class": "worse",
+      "vs_us_pp": 2.25,
+      "vs_us_pct": 13.4,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "co",
+      "slug": "grand",
+      "name": "Grand County",
+      "population": 15724,
+      "facilities_count": 2,
+      "total_releases_pounds": 1730107,
+      "dominant_medium": "land",
+      "ej_pct_avg": 37.2,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "co",
+      "slug": "morgan",
+      "name": "Morgan County",
+      "population": 29045,
+      "facilities_count": 6,
+      "total_releases_pounds": 1173451,
+      "dominant_medium": "land",
+      "ej_pct_avg": 52.3,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 6 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "co",
+      "slug": "routt",
+      "name": "Routt County",
+      "population": 24944,
+      "facilities_count": 1,
+      "total_releases_pounds": 773087,
+      "dominant_medium": "land",
+      "ej_pct_avg": 37.1,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "co",
+      "slug": "lake",
+      "name": "Lake County",
+      "population": 7403,
+      "facilities_count": 1,
+      "total_releases_pounds": 3142584,
+      "dominant_medium": "land",
+      "ej_pct_avg": 43.6,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "co",
+      "slug": "clear-creek",
+      "name": "Clear Creek County",
+      "population": 9403,
+      "facilities_count": 1,
+      "total_releases_pounds": 4386662,
+      "dominant_medium": "land",
+      "ej_pct_avg": 44.1,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "co",
+      "slug": "pueblo",
+      "name": "Pueblo County",
+      "population": 168135,
+      "facilities_count": 11,
+      "total_releases_pounds": 1485006,
+      "dominant_medium": "land",
+      "ej_pct_avg": 62.1,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 11 facilities"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T21:37:43Z"
+}

@@ -1,0 +1,238 @@
+{
+  "facility": {
+    "state": "va",
+    "state_label": "Virginia",
+    "slug": "metalsa-roanoke-inc",
+    "name": "Metalsa Roanoke INC.",
+    "parent_company": "Metalsa Structural Products INC",
+    "address": "184 VISTA DR",
+    "city": "Roanoke",
+    "county": "Botetourt County",
+    "county_slug": "botetourt",
+    "naics_label": "336390 \u00b7 Transportation Equipment",
+    "lat": 37.360979,
+    "lng": -79.920578
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3159,
+    "air_releases_pounds": 3138,
+    "water_releases_pounds": 10,
+    "land_releases_pounds": 11,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -87.2,
+    "long_arc_pct_change": -58.9,
+    "long_arc_baseline_year": 2015,
+    "history": [
+      {
+        "year": 2015,
+        "value": 7691
+      },
+      {
+        "year": 2016,
+        "value": 2222
+      },
+      {
+        "year": 2017,
+        "value": 6966
+      },
+      {
+        "year": 2018,
+        "value": 4924
+      },
+      {
+        "year": 2019,
+        "value": 8901
+      },
+      {
+        "year": 2020,
+        "value": 706
+      },
+      {
+        "year": 2021,
+        "value": 15651
+      },
+      {
+        "year": 2022,
+        "value": 5
+      },
+      {
+        "year": 2023,
+        "value": 24685
+      },
+      {
+        "year": 2024,
+        "value": 3159
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 2894,
+      "history": [
+        {
+          "year": 2015,
+          "value": 7000
+        },
+        {
+          "year": 2016,
+          "value": 2211
+        },
+        {
+          "year": 2017,
+          "value": 6239
+        },
+        {
+          "year": 2018,
+          "value": 4409
+        },
+        {
+          "year": 2019,
+          "value": 7975
+        },
+        {
+          "year": 2020,
+          "value": 8
+        },
+        {
+          "year": 2021,
+          "value": 7687
+        },
+        {
+          "year": 2022,
+          "value": 5
+        },
+        {
+          "year": 2023,
+          "value": 22124
+        },
+        {
+          "year": 2024,
+          "value": 2894
+        }
+      ],
+      "yoy_pct_change": -86.9,
+      "long_arc_pct_change": -58.7,
+      "long_arc_baseline_year": 2015
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 265,
+      "history": [
+        {
+          "year": 2015,
+          "value": 653
+        },
+        {
+          "year": 2017,
+          "value": 700
+        },
+        {
+          "year": 2018,
+          "value": 495
+        },
+        {
+          "year": 2019,
+          "value": 892
+        },
+        {
+          "year": 2020,
+          "value": 698
+        },
+        {
+          "year": 2021,
+          "value": 7964
+        },
+        {
+          "year": 2023,
+          "value": 2562
+        },
+        {
+          "year": 2024,
+          "value": 265
+        }
+      ],
+      "yoy_pct_change": -89.7,
+      "long_arc_pct_change": -59.4,
+      "long_arc_baseline_year": 2015
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Manganese",
+      "summary": "Manganese releases at Metalsa Roanoke INC. fell from 22k lb to 3k lb (87% lower) between 2023 and 2024.",
+      "magnitude_pct": -86.9,
+      "magnitude_abs": -19229.7,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2015,
+          "value": 7000
+        },
+        {
+          "year": 2016,
+          "value": 2211
+        },
+        {
+          "year": 2017,
+          "value": 6239
+        },
+        {
+          "year": 2018,
+          "value": 4409
+        },
+        {
+          "year": 2019,
+          "value": 7975
+        },
+        {
+          "year": 2020,
+          "value": 8
+        },
+        {
+          "year": 2021,
+          "value": 7687
+        },
+        {
+          "year": 2022,
+          "value": 5
+        },
+        {
+          "year": 2023,
+          "value": 22124
+        },
+        {
+          "year": 2024,
+          "value": 2894
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 19596,
+    "pct_low_income": 23.9,
+    "pct_people_of_color": 19.9,
+    "pct_under_5": 3.5,
+    "pct_over_64": 25.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (11 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:30:20Z"
+}

@@ -1,0 +1,215 @@
+{
+  "facility": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "fort-lupton-gas-processing-plant",
+    "name": "Fort Lupton Gas Processing Plant",
+    "parent_company": "Western Midstream Partners LP",
+    "address": "16116 COUNTY ROAD 22",
+    "city": "Fort Lupton",
+    "county": "Weld County",
+    "county_slug": "weld",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 40.145406,
+    "lng": -104.751828
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 33380,
+    "air_releases_pounds": 31620,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1760,
+    "chemicals_reported": 7,
+    "yoy_pct_change": -15.1,
+    "long_arc_pct_change": 641.8,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 4500
+      },
+      {
+        "year": 2023,
+        "value": 39334
+      },
+      {
+        "year": 2024,
+        "value": 33380
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 20000,
+      "history": [
+        {
+          "year": 2023,
+          "value": 21436
+        },
+        {
+          "year": 2024,
+          "value": 20000
+        }
+      ],
+      "yoy_pct_change": -6.7,
+      "long_arc_pct_change": -6.7,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 6100,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2759
+        },
+        {
+          "year": 2023,
+          "value": 2945
+        },
+        {
+          "year": 2024,
+          "value": 6100
+        }
+      ],
+      "yoy_pct_change": 107.1,
+      "long_arc_pct_change": 121.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 2100,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1891
+        },
+        {
+          "year": 2024,
+          "value": 2100
+        }
+      ],
+      "yoy_pct_change": 11.1,
+      "long_arc_pct_change": 11.1,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2010,
+      "history": [
+        {
+          "year": 2022,
+          "value": 606
+        },
+        {
+          "year": 2023,
+          "value": 1875
+        },
+        {
+          "year": 2024,
+          "value": 2010
+        }
+      ],
+      "yoy_pct_change": 7.2,
+      "long_arc_pct_change": 231.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 1490,
+      "history": [
+        {
+          "year": 2022,
+          "value": 646
+        },
+        {
+          "year": 2023,
+          "value": 1878
+        },
+        {
+          "year": 2024,
+          "value": 1490
+        }
+      ],
+      "yoy_pct_change": -20.7,
+      "long_arc_pct_change": 130.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 1080,
+      "history": [
+        {
+          "year": 2022,
+          "value": 328
+        },
+        {
+          "year": 2023,
+          "value": 1592
+        },
+        {
+          "year": 2024,
+          "value": 1080
+        }
+      ],
+      "yoy_pct_change": -32.2,
+      "long_arc_pct_change": 229.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 600,
+      "history": [
+        {
+          "year": 2022,
+          "value": 161
+        },
+        {
+          "year": 2023,
+          "value": 1406
+        },
+        {
+          "year": 2024,
+          "value": 600
+        }
+      ],
+      "yoy_pct_change": -57.3,
+      "long_arc_pct_change": 272.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 331466,
+    "pct_low_income": 9.7,
+    "pct_people_of_color": 36.3,
+    "pct_under_5": 7.1,
+    "pct_over_64": 12.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Weld County County, CO (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:44Z"
+}

@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "knoll-inc",
+    "name": "Knoll INC",
+    "parent_company": "Knoll INC",
+    "address": "1235 WATER ST",
+    "city": "East Greenville",
+    "county": "Montgomery County",
+    "county_slug": "montgomery",
+    "naics_label": "337211 \u00b7 Furniture",
+    "lat": 40.412214,
+    "lng": -75.519603
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 904,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0.1,
+    "land_releases_pounds": 904,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -86.6,
+    "long_arc_pct_change": -87.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 7367
+      },
+      {
+        "year": 2023,
+        "value": 6735
+      },
+      {
+        "year": 2024,
+        "value": 904
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 904,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1137
+        },
+        {
+          "year": 2023,
+          "value": 904
+        },
+        {
+          "year": 2024,
+          "value": 904
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": -20.5,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 15980,
+    "pct_low_income": 16.2,
+    "pct_people_of_color": 11.2,
+    "pct_under_5": 6.6,
+    "pct_over_64": 19.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (11 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

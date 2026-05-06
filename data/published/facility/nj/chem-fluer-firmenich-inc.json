@@ -1,0 +1,234 @@
+{
+  "facility": {
+    "state": "nj",
+    "state_label": "New Jersey",
+    "slug": "chem-fluer-firmenich-inc",
+    "name": "Chem Fluer/Firmenich INC",
+    "parent_company": null,
+    "address": "150 FIRMENICH WAY",
+    "city": "Newark",
+    "county": "Essex County",
+    "county_slug": "essex",
+    "naics_label": "325199 \u00b7 Chemicals",
+    "lat": 40.699438,
+    "lng": -74.130148
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 176666,
+    "air_releases_pounds": 2305,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 174361,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 158.1,
+    "long_arc_pct_change": 1900.0,
+    "long_arc_baseline_year": 2015,
+    "history": [
+      {
+        "year": 2015,
+        "value": 8833
+      },
+      {
+        "year": 2016,
+        "value": 7375
+      },
+      {
+        "year": 2017,
+        "value": 8110
+      },
+      {
+        "year": 2018,
+        "value": 2746
+      },
+      {
+        "year": 2019,
+        "value": 60924
+      },
+      {
+        "year": 2020,
+        "value": 63233
+      },
+      {
+        "year": 2021,
+        "value": 550
+      },
+      {
+        "year": 2022,
+        "value": 567
+      },
+      {
+        "year": 2023,
+        "value": 68449
+      },
+      {
+        "year": 2024,
+        "value": 176666
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 176638,
+      "history": [
+        {
+          "year": 2019,
+          "value": 60905
+        },
+        {
+          "year": 2020,
+          "value": 63212
+        },
+        {
+          "year": 2021,
+          "value": 504
+        },
+        {
+          "year": 2022,
+          "value": 500
+        },
+        {
+          "year": 2023,
+          "value": 68397
+        },
+        {
+          "year": 2024,
+          "value": 176638
+        }
+      ],
+      "yoy_pct_change": 158.3,
+      "long_arc_pct_change": 190.0,
+      "long_arc_baseline_year": 2019
+    },
+    {
+      "chemical": "Dicyclopentadiene",
+      "cas": "77-73-6",
+      "category": "general",
+      "total_pounds_recent": 28,
+      "history": [
+        {
+          "year": 2019,
+          "value": 19
+        },
+        {
+          "year": 2020,
+          "value": 21
+        },
+        {
+          "year": 2021,
+          "value": 46
+        },
+        {
+          "year": 2022,
+          "value": 67
+        },
+        {
+          "year": 2023,
+          "value": 52
+        },
+        {
+          "year": 2024,
+          "value": 28
+        }
+      ],
+      "yoy_pct_change": -46.2,
+      "long_arc_pct_change": 47.4,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Methanol",
+      "summary": "Methanol releases at Chem Fluer/Firmenich INC rose from 68k lb to 177k lb (2.6\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 158.3,
+      "magnitude_abs": 108241.2,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 3392
+        },
+        {
+          "year": 2011,
+          "value": 3607
+        },
+        {
+          "year": 2012,
+          "value": 3292
+        },
+        {
+          "year": 2013,
+          "value": 3446
+        },
+        {
+          "year": 2014,
+          "value": 3075
+        },
+        {
+          "year": 2015,
+          "value": 8822
+        },
+        {
+          "year": 2016,
+          "value": 7349
+        },
+        {
+          "year": 2017,
+          "value": 8097
+        },
+        {
+          "year": 2018,
+          "value": 2746
+        },
+        {
+          "year": 2019,
+          "value": 60905
+        },
+        {
+          "year": 2020,
+          "value": 63212
+        },
+        {
+          "year": 2021,
+          "value": 504
+        },
+        {
+          "year": 2022,
+          "value": 500
+        },
+        {
+          "year": 2023,
+          "value": 68397
+        },
+        {
+          "year": 2024,
+          "value": 176638
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 200653,
+    "pct_low_income": 38.4,
+    "pct_people_of_color": 76.5,
+    "pct_under_5": 6.7,
+    "pct_over_64": 12.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (127 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:49:11Z"
+}

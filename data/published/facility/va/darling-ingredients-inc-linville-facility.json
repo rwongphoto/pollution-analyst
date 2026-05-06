@@ -1,0 +1,139 @@
+{
+  "facility": {
+    "state": "va",
+    "state_label": "Virginia",
+    "slug": "darling-ingredients-inc-linville-facility",
+    "name": "Darling Ingredients INC Linville Facility",
+    "parent_company": "Darling Ingredients INC",
+    "address": "6230 KRATZER RD",
+    "city": "Linville",
+    "county": "Rockingham County",
+    "county_slug": "rockingham",
+    "naics_label": "311613 \u00b7 Food",
+    "lat": 38.534414,
+    "lng": -78.836895
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 10321,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 10321,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -65.5,
+    "long_arc_pct_change": -29.9,
+    "long_arc_baseline_year": 2017,
+    "history": [
+      {
+        "year": 2017,
+        "value": 14725
+      },
+      {
+        "year": 2018,
+        "value": 20140
+      },
+      {
+        "year": 2019,
+        "value": 13704
+      },
+      {
+        "year": 2020,
+        "value": 16118
+      },
+      {
+        "year": 2021,
+        "value": 17500
+      },
+      {
+        "year": 2022,
+        "value": 35826
+      },
+      {
+        "year": 2023,
+        "value": 29945
+      },
+      {
+        "year": 2024,
+        "value": 10321
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chlorine",
+      "cas": "7782-50-5",
+      "category": "respiratory",
+      "total_pounds_recent": 10321,
+      "history": [
+        {
+          "year": 2024,
+          "value": 10321
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0010049044",
+      "summary": "0010049044 releases at Darling Ingredients INC Linville Facility fell from 30k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -29945.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2017,
+          "value": 14725
+        },
+        {
+          "year": 2018,
+          "value": 14839
+        },
+        {
+          "year": 2019,
+          "value": 12971
+        },
+        {
+          "year": 2020,
+          "value": 12915
+        },
+        {
+          "year": 2021,
+          "value": 17500
+        },
+        {
+          "year": 2022,
+          "value": 35826
+        },
+        {
+          "year": 2023,
+          "value": 29945
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 1943,
+    "pct_low_income": 32.0,
+    "pct_people_of_color": 8.2,
+    "pct_under_5": 10.7,
+    "pct_over_64": 22.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:30:20Z"
+}

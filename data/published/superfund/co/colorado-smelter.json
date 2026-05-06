@@ -1,0 +1,107 @@
+{
+  "site": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "colorado-smelter",
+    "name": "Colorado Smelter",
+    "epa_id": "CON000802700",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Pueblo",
+    "county_slug": "pueblo",
+    "city": "Pueblo",
+    "city_slug": "pueblo",
+    "address": "Interstate 25 And Santa Fe Avenue",
+    "zip": "81006",
+    "lat": 38.249106,
+    "lng": -104.60801
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 4,
+    "primary_contaminant": "Arsenic"
+  },
+  "contaminants": [
+    {
+      "name": "Arsenic",
+      "media": "Buildings/Structures",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Arsenic",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Buildings/Structures",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "CO0151050",
+        "name": "Avondale Wsd",
+        "slug": "avondale-wsd",
+        "state": "co",
+        "distance_miles": 1.45,
+        "place_name": "Pueblo",
+        "primary_source": "groundwater",
+        "population_served": 1615,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "CO0151400",
+        "name": "Baxter Water And Services",
+        "slug": "baxter-water-and-services",
+        "state": "co",
+        "distance_miles": 1.45,
+        "place_name": "Pueblo",
+        "primary_source": "groundwater",
+        "population_served": 350,
+        "health_based_5yr": 5,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 6529,
+    "pct_low_income": 53.7,
+    "pct_people_of_color": 61.1,
+    "pct_under_5": 5.6,
+    "pct_over_64": 17.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (8 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:45Z"
+}

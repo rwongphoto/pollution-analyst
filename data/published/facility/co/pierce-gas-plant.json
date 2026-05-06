@@ -1,0 +1,200 @@
+{
+  "facility": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "pierce-gas-plant",
+    "name": "Pierce Gas Plant",
+    "parent_company": "Rimrock Energy Partners LLC",
+    "address": "44588 WELD CR 29",
+    "city": "Pierce",
+    "county": "Weld County",
+    "county_slug": "weld",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 40.651024,
+    "lng": -104.791828
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1022,
+    "air_releases_pounds": 1022,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 6,
+    "yoy_pct_change": -25.1,
+    "long_arc_pct_change": 19.1,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 858
+      },
+      {
+        "year": 2023,
+        "value": 1365
+      },
+      {
+        "year": 2024,
+        "value": 1022
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 545,
+      "history": [
+        {
+          "year": 2022,
+          "value": 455
+        },
+        {
+          "year": 2023,
+          "value": 502
+        },
+        {
+          "year": 2024,
+          "value": 545
+        }
+      ],
+      "yoy_pct_change": 8.5,
+      "long_arc_pct_change": 19.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 172,
+      "history": [
+        {
+          "year": 2022,
+          "value": 142
+        },
+        {
+          "year": 2023,
+          "value": 156
+        },
+        {
+          "year": 2024,
+          "value": 172
+        }
+      ],
+      "yoy_pct_change": 9.7,
+      "long_arc_pct_change": 21.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 116,
+      "history": [
+        {
+          "year": 2022,
+          "value": 97
+        },
+        {
+          "year": 2023,
+          "value": 502
+        },
+        {
+          "year": 2024,
+          "value": 116
+        }
+      ],
+      "yoy_pct_change": -76.8,
+      "long_arc_pct_change": 19.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 79,
+      "history": [
+        {
+          "year": 2022,
+          "value": 66
+        },
+        {
+          "year": 2023,
+          "value": 103
+        },
+        {
+          "year": 2024,
+          "value": 79
+        }
+      ],
+      "yoy_pct_change": -23.1,
+      "long_arc_pct_change": 19.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 71,
+      "history": [
+        {
+          "year": 2022,
+          "value": 66
+        },
+        {
+          "year": 2023,
+          "value": 66
+        },
+        {
+          "year": 2024,
+          "value": 71
+        }
+      ],
+      "yoy_pct_change": 8.5,
+      "long_arc_pct_change": 8.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 39,
+      "history": [
+        {
+          "year": 2022,
+          "value": 32
+        },
+        {
+          "year": 2023,
+          "value": 36
+        },
+        {
+          "year": 2024,
+          "value": 39
+        }
+      ],
+      "yoy_pct_change": 8.5,
+      "long_arc_pct_change": 19.8,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 1018,
+    "pct_low_income": 13.0,
+    "pct_people_of_color": 25.5,
+    "pct_under_5": 7.0,
+    "pct_over_64": 19.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:44Z"
+}

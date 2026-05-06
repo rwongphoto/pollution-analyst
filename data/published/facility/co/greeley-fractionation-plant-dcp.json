@@ -1,0 +1,215 @@
+{
+  "facility": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "greeley-fractionation-plant-dcp",
+    "name": "Greeley Fractionation Plant - Dcp",
+    "parent_company": "Phillips 66 Co",
+    "address": "3009 WEST 49TH STREET",
+    "city": "Evans",
+    "county": "Weld County",
+    "county_slug": "weld",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 40.368093,
+    "lng": -104.698502
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 18856,
+    "air_releases_pounds": 1976,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 16880,
+    "chemicals_reported": 7,
+    "yoy_pct_change": 425.2,
+    "long_arc_pct_change": 174.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 6871
+      },
+      {
+        "year": 2023,
+        "value": 3591
+      },
+      {
+        "year": 2024,
+        "value": 18856
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 9917,
+      "history": [
+        {
+          "year": 2022,
+          "value": 3301
+        },
+        {
+          "year": 2023,
+          "value": 1632
+        },
+        {
+          "year": 2024,
+          "value": 9917
+        }
+      ],
+      "yoy_pct_change": 507.7,
+      "long_arc_pct_change": 200.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2735,
+      "history": [
+        {
+          "year": 2022,
+          "value": 780
+        },
+        {
+          "year": 2023,
+          "value": 438
+        },
+        {
+          "year": 2024,
+          "value": 2735
+        }
+      ],
+      "yoy_pct_change": 524.1,
+      "long_arc_pct_change": 250.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 2554,
+      "history": [
+        {
+          "year": 2022,
+          "value": 790
+        },
+        {
+          "year": 2023,
+          "value": 383
+        },
+        {
+          "year": 2024,
+          "value": 2554
+        }
+      ],
+      "yoy_pct_change": 567.6,
+      "long_arc_pct_change": 223.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 1701,
+      "history": [
+        {
+          "year": 2022,
+          "value": 380
+        },
+        {
+          "year": 2024,
+          "value": 1701
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 347.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 1167,
+      "history": [
+        {
+          "year": 2022,
+          "value": 840
+        },
+        {
+          "year": 2023,
+          "value": 516
+        },
+        {
+          "year": 2024,
+          "value": 1167
+        }
+      ],
+      "yoy_pct_change": 126.2,
+      "long_arc_pct_change": 38.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 494,
+      "history": [
+        {
+          "year": 2022,
+          "value": 732
+        },
+        {
+          "year": 2023,
+          "value": 622
+        },
+        {
+          "year": 2024,
+          "value": 494
+        }
+      ],
+      "yoy_pct_change": -20.6,
+      "long_arc_pct_change": -32.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 288,
+      "history": [
+        {
+          "year": 2022,
+          "value": 49
+        },
+        {
+          "year": 2024,
+          "value": 288
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 493.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 55647,
+    "pct_low_income": 37.9,
+    "pct_people_of_color": 53.0,
+    "pct_under_5": 6.3,
+    "pct_over_64": 9.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (39 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:44Z"
+}

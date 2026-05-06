@@ -1,0 +1,82 @@
+{
+  "site": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "hranica-landfill",
+    "name": "Hranica Landfill",
+    "epa_id": "PAD980508618",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Butler",
+    "county_slug": "butler",
+    "city": "Buffalo Township",
+    "city_slug": null,
+    "address": "Hranica Drive",
+    "zip": "16055",
+    "lat": 40.677219,
+    "lng": -79.749439
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 4,
+    "primary_contaminant": "Cadmium"
+  },
+  "contaminants": [
+    {
+      "name": "Cadmium",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Chromium",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 1088,
+    "pct_low_income": 5.8,
+    "pct_people_of_color": 4.8,
+    "pct_under_5": 4.0,
+    "pct_over_64": 15.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:07Z"
+}

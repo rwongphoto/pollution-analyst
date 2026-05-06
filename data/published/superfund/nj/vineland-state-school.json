@@ -1,0 +1,119 @@
+{
+  "site": {
+    "state": "nj",
+    "state_label": "New Jersey",
+    "slug": "vineland-state-school",
+    "name": "Vineland State School",
+    "epa_id": "NJD980529887",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Cumberland",
+    "county_slug": "cumberland",
+    "city": "Vineland",
+    "city_slug": "vineland",
+    "address": "East Landis Ave",
+    "zip": "08360",
+    "lat": 39.486111,
+    "lng": -74.991669
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 4,
+    "primary_contaminant": "Lead"
+  },
+  "contaminants": [
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Mercury",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "P,P'-Dde",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polycyclic Aromatic Hydrocarbons (Pahs)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NJ0105002",
+        "name": "Alpine Village",
+        "slug": "alpine-village",
+        "state": "nj",
+        "distance_miles": 1.49,
+        "place_name": "Vineland",
+        "primary_source": "groundwater",
+        "population_served": 70,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "NJ0614003",
+        "name": "Vineland Water & Sewer Utility",
+        "slug": "vineland-water-sewer-utility",
+        "state": "nj",
+        "distance_miles": 1.49,
+        "place_name": "Vineland",
+        "primary_source": "groundwater",
+        "population_served": 36250,
+        "health_based_5yr": 3,
+        "unresolved": true
+      },
+      {
+        "pwsid": "NJ0614005",
+        "name": "United Mobile Homes Of Vineland",
+        "slug": "united-mobile-homes-of-vineland",
+        "state": "nj",
+        "distance_miles": 1.49,
+        "place_name": "Vineland",
+        "primary_source": "groundwater",
+        "population_served": 1600,
+        "health_based_5yr": 15,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 4727,
+    "pct_low_income": 30.0,
+    "pct_people_of_color": 37.9,
+    "pct_under_5": 8.5,
+    "pct_over_64": 15.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:49:12Z"
+}

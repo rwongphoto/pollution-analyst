@@ -1,0 +1,351 @@
+{
+  "place": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "woodbury",
+    "name": "Woodbury",
+    "fips": "4286128",
+    "population": 391,
+    "county_name": "Bedford County",
+    "county_fips": "42009"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.1962,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.1962
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1526,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1526
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 45679,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 38.7,
+      "long_arc_pct_change": -27.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 63335
+        },
+        {
+          "year": 2011,
+          "value": 69824
+        },
+        {
+          "year": 2012,
+          "value": 75306
+        },
+        {
+          "year": 2013,
+          "value": 78102
+        },
+        {
+          "year": 2014,
+          "value": 59312
+        },
+        {
+          "year": 2015,
+          "value": 9226
+        },
+        {
+          "year": 2016,
+          "value": 15754
+        },
+        {
+          "year": 2017,
+          "value": 16879
+        },
+        {
+          "year": 2018,
+          "value": 16345
+        },
+        {
+          "year": 2019,
+          "value": 15381
+        },
+        {
+          "year": 2020,
+          "value": 11830
+        },
+        {
+          "year": 2021,
+          "value": 37476
+        },
+        {
+          "year": 2022,
+          "value": 32929
+        },
+        {
+          "year": 2023,
+          "value": 45679
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 295,
+    "violations_5yr_total": 14,
+    "health_based_5yr_total": 3,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "woodbury-water-authority",
+        "state": "pa",
+        "state_label": "Pennsylvania",
+        "name": "Woodbury Water Authority",
+        "pwsid": "PA4050023",
+        "population_served": 295,
+        "health_based_violations_5yr": 3,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0700",
+      "summary": "Unresolved Drinking water rule (140) violation cited in 2025 (contaminant 0700).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:PA4050023"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 1094",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2020 (contaminant 1094).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2020,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:PA4050023"
+      }
+    }
+  ],
+  "equity": {
+    "population": 391,
+    "pct_low_income": 37.3,
+    "pct_people_of_color": 12.0,
+    "pct_under_5": 16.4,
+    "pct_over_64": 13.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Woodbury, Pennsylvania (Census place block groups)"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "pa",
+      "slug": "defiance",
+      "name": "Defiance",
+      "population": 396,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "pa",
+      "slug": "saxton",
+      "name": "Saxton",
+      "population": 655,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "pa",
+      "slug": "hyndman",
+      "name": "Hyndman",
+      "population": 926,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 33.5,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "pa",
+      "slug": "claysburg",
+      "name": "Claysburg",
+      "population": 1178,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "pa",
+      "slug": "franklintown",
+      "name": "Franklintown",
+      "population": 392,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "pa",
+      "slug": "allensville",
+      "name": "Allensville",
+      "population": 392,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T21:21:07Z"
+}

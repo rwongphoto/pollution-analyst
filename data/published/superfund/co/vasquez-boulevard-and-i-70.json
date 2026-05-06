@@ -1,0 +1,66 @@
+{
+  "site": {
+    "state": "co",
+    "state_label": "Colorado",
+    "slug": "vasquez-boulevard-and-i-70",
+    "name": "Vasquez Boulevard And I-70",
+    "epa_id": "CO0002259588",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Denver",
+    "county_slug": "denver",
+    "city": "Denver",
+    "city_slug": "denver",
+    "address": "Vasquez Boulevard And 1-70",
+    "zip": "80216",
+    "lat": 39.791667,
+    "lng": -104.958333
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Arsenic"
+  },
+  "contaminants": [
+    {
+      "name": "Arsenic",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 4547,
+    "pct_low_income": 42.0,
+    "pct_people_of_color": 90.9,
+    "pct_under_5": 7.7,
+    "pct_over_64": 4.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:37:45Z"
+}

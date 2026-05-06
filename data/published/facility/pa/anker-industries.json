@@ -1,0 +1,111 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "anker-industries",
+    "name": "Anker Industries",
+    "parent_company": "Opta (Usa)",
+    "address": "938 LARIMER AVE",
+    "city": "Turtle Creek",
+    "county": "Allegheny County",
+    "county_slug": "allegheny",
+    "naics_label": "331313 \u00b7 Primary Metals",
+    "lat": 40.421202,
+    "lng": -79.816385
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1000,
+    "air_releases_pounds": 1000,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -50.0,
+    "long_arc_pct_change": -50.0,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 2000
+      },
+      {
+        "year": 2024,
+        "value": 1000
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Copper",
+      "cas": "7440-50-8",
+      "category": "general",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2023,
+          "value": 500
+        },
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 0.06,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0.08
+        },
+        {
+          "year": 2024,
+          "value": 0.06
+        }
+      ],
+      "yoy_pct_change": -25.0,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 66004,
+    "pct_low_income": 33.4,
+    "pct_people_of_color": 37.6,
+    "pct_under_5": 5.2,
+    "pct_over_64": 21.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (61 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

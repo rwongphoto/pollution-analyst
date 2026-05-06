@@ -1,0 +1,118 @@
+{
+  "facility": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "champion-carrier-corp",
+    "name": "Champion Carrier Corp.",
+    "parent_company": "Miller Industries INC",
+    "address": "2755 KIRILA RD",
+    "city": "Hermitage",
+    "county": "Mercer County",
+    "county_slug": "mercer",
+    "naics_label": "336211 \u00b7 Transportation Equipment",
+    "lat": 41.195223,
+    "lng": -80.468566
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 61660,
+    "air_releases_pounds": 76,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 61584,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 1421.3,
+    "long_arc_pct_change": 1421.3,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 4053
+      },
+      {
+        "year": 2024,
+        "value": 61660
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 53899,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1761
+        },
+        {
+          "year": 2024,
+          "value": 53899
+        }
+      ],
+      "yoy_pct_change": 2961.5,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 7761,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2293
+        },
+        {
+          "year": 2024,
+          "value": 7761
+        }
+      ],
+      "yoy_pct_change": 238.5,
+      "long_arc_pct_change": 238.5,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Chromium",
+      "summary": "Chromium releases at Champion Carrier Corp. rose from 2k lb to 54k lb (30.6\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 2961.5,
+      "magnitude_abs": 52138.1,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 1761
+        },
+        {
+          "year": 2024,
+          "value": 53899
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 20381,
+    "pct_low_income": 35.9,
+    "pct_people_of_color": 25.3,
+    "pct_under_5": 4.7,
+    "pct_over_64": 25.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (25 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:04Z"
+}

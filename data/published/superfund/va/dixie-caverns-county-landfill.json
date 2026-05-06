@@ -1,0 +1,193 @@
+{
+  "site": {
+    "state": "va",
+    "state_label": "Virginia",
+    "slug": "dixie-caverns-county-landfill",
+    "name": "Dixie Caverns County Landfill",
+    "epa_id": "VAD980552095",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Roanoke",
+    "county_slug": "roanoke",
+    "city": "Salem",
+    "city_slug": null,
+    "address": "Rte 778",
+    "zip": "24153",
+    "lat": 37.259719,
+    "lng": -80.193611
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 3,
+    "primary_contaminant": "Cadmium"
+  },
+  "contaminants": [
+    {
+      "name": "Cadmium",
+      "media": "Solid Waste",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Solid Waste",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Zinc",
+      "media": "Solid Waste",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 96653,
+    "pct_low_income": 7.1,
+    "pct_people_of_color": 16.0,
+    "pct_under_5": 5.7,
+    "pct_over_64": 21.7,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 14.9,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 7.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 32.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 34.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 89.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 38.9,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 50.6,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 73.8,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 51.8,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 59.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 25.9,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 12.0
+      },
+      {
+        "label": "Ozone",
+        "score": 19.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 27.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 28.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 39.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 29.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 29.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 52.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 37.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 38.8
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 18.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Roanoke County, Virginia (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:30:21Z"
+}

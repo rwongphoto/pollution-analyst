@@ -1,0 +1,191 @@
+{
+  "site": {
+    "state": "pa",
+    "state_label": "Pennsylvania",
+    "slug": "valmont-tce-site-former-valmont-industrial-park",
+    "name": "Valmont Tce Site   (Former - Valmont Industrial Park)",
+    "epa_id": "PAD982363970",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Luzerne",
+    "county_slug": "luzerne",
+    "city": "West Hazleton",
+    "city_slug": null,
+    "address": "Jaycee Drive",
+    "zip": "18201",
+    "lat": 40.967778,
+    "lng": -76.015556
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 10,
+    "primary_contaminant": "1,1,1-Trichloroethane"
+  },
+  "contaminants": [
+    {
+      "name": "1,1,1-Trichloroethane",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Chloroethene (Vinyl Chloride)",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Cis-1,2-Dichloroethene",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Trichloroethene",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "1,1,1-Trichloroethane",
+      "media": "Soil Gas",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "1,1-Dichloroethene",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "1,1-Dichloroethene",
+      "media": "Soil Gas",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Perfluorooctane Sulfonic Acid",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Perfluorooctanoic Acid (Pfoa)",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Trichloroethene",
+      "media": "Soil Gas",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "PA2401021",
+        "name": "Can Do Corporate Center",
+        "slug": "can-do-corporate-center",
+        "state": "pa",
+        "distance_miles": 2.54,
+        "place_name": "Hazleton",
+        "primary_source": "groundwater",
+        "population_served": 1291,
+        "health_based_5yr": 2,
+        "unresolved": false
+      },
+      {
+        "pwsid": "PA2408007",
+        "name": "Hca Delano Park Place",
+        "slug": "hca-delano-park-place",
+        "state": "pa",
+        "distance_miles": 2.54,
+        "place_name": "Hazleton",
+        "primary_source": "groundwater",
+        "population_served": 1017,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "PA2408011",
+        "name": "Hca Tomhicken",
+        "slug": "hca-tomhicken",
+        "state": "pa",
+        "distance_miles": 2.54,
+        "place_name": "Hazleton",
+        "primary_source": "groundwater",
+        "population_served": 125,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "PA2408012",
+        "name": "Hca Derringer Fern Glen",
+        "slug": "hca-derringer-fern-glen",
+        "state": "pa",
+        "distance_miles": 2.54,
+        "place_name": "Hazleton",
+        "primary_source": "groundwater",
+        "population_served": 275,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "PA2400048",
+        "name": "Conyngham Sugarloaf Joint Ma",
+        "slug": "conyngham-sugarloaf-joint-ma",
+        "state": "pa",
+        "distance_miles": 2.82,
+        "place_name": "Conyngham",
+        "primary_source": "groundwater",
+        "population_served": 3230,
+        "health_based_5yr": 4,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1358,
+    "pct_low_income": 40.1,
+    "pct_people_of_color": 26.8,
+    "pct_under_5": 4.5,
+    "pct_over_64": 25.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:21:07Z"
+}
