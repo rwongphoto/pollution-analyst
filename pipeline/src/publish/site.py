@@ -1667,6 +1667,15 @@ def publish_state(
         if len(history_map) > 1 else None
     )
 
+    # Cache the unique chemical fingerprints emitted by this state so
+    # publish_home() can union them across states without re-reading every
+    # facility JSON. CAS preferred; falls back to chemical name when CAS
+    # is missing (a few PFAS categories have no CAS).
+    chem_cas_keys: set[str] = set()
+    for fac in facilities.values():
+        for chem in fac.chemicals.values():
+            chem_cas_keys.add(chem.cas or chem.chemical)
+
     payload = {
         "state": {
             "slug": state.slug,
@@ -1737,6 +1746,7 @@ def publish_state(
                 "retrieved": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
             }
         ],
+        "_chem_cas": sorted(chem_cas_keys),
         "_published_at": _now_iso(),
     }
     out = PUBLISHED_ROOT / "state" / f"{state.slug}.json"
@@ -1791,9 +1801,14 @@ def publish_home(
     county_flags: dict[str, dict[str, list]] | None = None,
     utility_flags: dict[str, dict[str, list]] | None = None,
 ) -> Path:
-    total_facilities = sum(len(f) for f in facilities_by_state.values())
-    total_counties = sum(len(c) for c in counties_by_state.values())
-    total_utilities = sum(len(u) for u in (utilities_by_state or {}).values())
+    # Cumulative counts across every published state, not just the
+    # current run's targets. publish_state has already written fresh
+    # state.json files for current-run states by the time we get here,
+    # so reading from disk gives a unified view.
+    disk_totals, disk_chem_keys = _aggregate_published_state_totals()
+    total_facilities = disk_totals["facilities"]
+    total_counties = disk_totals["counties"]
+    total_utilities = disk_totals["utilities"]
 
     featured: list[dict] = []
     # Pick the top facility nationally (by pounds) for the first card. If
@@ -1878,7 +1893,7 @@ def publish_home(
             "facilities_tracked": total_facilities,
             "utilities_tracked": total_utilities,
             "counties_covered": total_counties,
-            "chemicals_indexed": _count_chemicals(facilities_by_state),
+            "chemicals_indexed": len(disk_chem_keys),
         },
         "featured": featured,
         "_published_at": _now_iso(),
@@ -1888,13 +1903,56 @@ def publish_home(
     return out
 
 
-def _count_chemicals(facilities_by_state: dict[str, dict[str, FacilityAgg]]) -> int:
-    seen: set[str] = set()
-    for fmap in facilities_by_state.values():
-        for f in fmap.values():
-            for chem in f.chemicals.values():
-                seen.add(chem.tri_chem_id)
-    return len(seen)
+def _aggregate_published_state_totals() -> tuple[dict[str, int], set[str]]:
+    """Sum facility/utility/county counts across every state.json on disk
+    and union each state's chemical fingerprint set.
+
+    publish_state writes `_chem_cas` so the chemical union can dedupe
+    across states without parsing facility JSONs. Legacy state.json
+    files written before that field existed are handled by walking
+    `data/published/facility/<slug>/*.json` once as a fallback.
+    """
+    state_dir = PUBLISHED_ROOT / "state"
+    totals = {"facilities": 0, "utilities": 0, "counties": 0}
+    chem_keys: set[str] = set()
+    if not state_dir.exists():
+        return totals, chem_keys
+    for path in sorted(state_dir.glob("*.json")):
+        try:
+            data = json.loads(path.read_text())
+        except (OSError, json.JSONDecodeError):
+            continue
+        st_totals = data.get("totals") or {}
+        totals["facilities"] += int(st_totals.get("facilities_tracked") or 0)
+        totals["utilities"] += int(st_totals.get("utilities_tracked") or 0)
+        totals["counties"] += int(st_totals.get("counties_with_data") or 0)
+        cas_list = data.get("_chem_cas")
+        if cas_list:
+            chem_keys.update(str(c) for c in cas_list)
+        else:
+            slug = (data.get("state") or {}).get("slug") or path.stem
+            chem_keys.update(_walk_state_facility_chem_keys(slug))
+    return totals, chem_keys
+
+
+def _walk_state_facility_chem_keys(state_slug: str) -> set[str]:
+    """Fallback for state.json files that predate the _chem_cas cache.
+    Reads each published facility JSON for the state and extracts a
+    CAS-or-name fingerprint per chemical."""
+    keys: set[str] = set()
+    fac_dir = PUBLISHED_ROOT / "facility" / state_slug
+    if not fac_dir.exists():
+        return keys
+    for fpath in fac_dir.glob("*.json"):
+        try:
+            data = json.loads(fpath.read_text())
+        except (OSError, json.JSONDecodeError):
+            continue
+        for chem in data.get("chemicals") or []:
+            key = chem.get("cas") or chem.get("chemical")
+            if key:
+                keys.add(str(key))
+    return keys
 
 
 def _top_flag(flags: list):
