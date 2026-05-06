@@ -7,8 +7,8 @@
     "fips": "06055",
     "population": 137384
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
@@ -280,7 +280,7 @@
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 0,
       "units": "lb",
-      "yoy_pct_change": -81.3,
+      "yoy_pct_change": -16.9,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -338,6 +338,10 @@
         },
         {
           "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -406,15 +410,19 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 679,
+      "current": 650,
       "units": "lb",
-      "yoy_pct_change": -4.5,
+      "yoy_pct_change": -4.3,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -473,6 +481,10 @@
         {
           "year": 2023,
           "value": 679
+        },
+        {
+          "year": 2024,
+          "value": 650
         }
       ]
     },
@@ -551,9 +563,9 @@
       "state_label": "California",
       "name": "Westlake Royal Stone LLC - Napa",
       "parent_company": "Westlake CORP",
-      "total_pounds_recent": 679,
-      "yoy_pct_change": -4.5,
-      "top_chemical": "Lead compounds",
+      "total_pounds_recent": 650,
+      "yoy_pct_change": -4.3,
+      "top_chemical": "Lead  And Lead Compounds",
       "city": "American Canyon",
       "lat": 38.211616,
       "lng": -122.261674
@@ -564,15 +576,30 @@
       "state_label": "California",
       "name": "Foley Products CO - Napa",
       "parent_company": "Foley Products Co LLC",
-      "total_pounds_recent": 0.04,
-      "yoy_pct_change": 2.3,
+      "total_pounds_recent": 0.05,
+      "yoy_pct_change": 17.8,
       "top_chemical": "Lead",
       "city": "American Canyon",
       "lat": 38.211505,
       "lng": -122.261961
+    },
+    {
+      "slug": "vulcan-materials-co-napa-quarry",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Vulcan Materials CO Napa Quarry",
+      "parent_company": "Vulcan Materials Co",
+      "total_pounds_recent": 0.0,
+      "yoy_pct_change": null,
+      "top_chemical": "Benzo[g,h,i]perylene",
+      "city": "Napa",
+      "lat": 38.269773,
+      "lng": -122.272008
     }
   ],
   "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
   "cities_directory": [
     {
       "slug": "american-canyon",
@@ -602,7 +629,7 @@
       "slug": "napa",
       "name": "Napa",
       "fips": "0650258",
-      "facilities_count": 0,
+      "facilities_count": 1,
       "utilities_count": 14,
       "population": 79233
     },
@@ -623,77 +650,7 @@
       "population": 3397
     }
   ],
-  "flags": [
-    {
-      "type": "ghg_step",
-      "severity": "drop",
-      "label": "Greenhouse gas emissions",
-      "summary": "GHG emissions in Napa County fell 52% year over year (95k mtCO\u2082e \u2192 46k mtCO\u2082e) \u2014 typical of a fuel switch or unit shutdown.",
-      "magnitude_pct": -52.1,
-      "magnitude_abs": -49667.5,
-      "baseline_year": 2022,
-      "recent_year": 2023,
-      "units": "mtCO2e",
-      "history": [
-        {
-          "year": 2010,
-          "value": 68418
-        },
-        {
-          "year": 2011,
-          "value": 71320
-        },
-        {
-          "year": 2012,
-          "value": 68627
-        },
-        {
-          "year": 2013,
-          "value": 66669
-        },
-        {
-          "year": 2014,
-          "value": 64314
-        },
-        {
-          "year": 2015,
-          "value": 52275
-        },
-        {
-          "year": 2016,
-          "value": 44543
-        },
-        {
-          "year": 2017,
-          "value": 40230
-        },
-        {
-          "year": 2018,
-          "value": 38389
-        },
-        {
-          "year": 2019,
-          "value": 105726
-        },
-        {
-          "year": 2020,
-          "value": 83920
-        },
-        {
-          "year": 2021,
-          "value": 101520
-        },
-        {
-          "year": 2022,
-          "value": 95267
-        },
-        {
-          "year": 2023,
-          "value": 45599
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 137384,
     "pct_low_income": 7.9,
@@ -910,11 +867,24 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "yolo",
+      "name": "Yolo County",
+      "population": 217141,
+      "facilities_count": 3,
+      "total_releases_pounds": 1894,
+      "dominant_medium": "land",
+      "ej_pct_avg": 63.5,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 3 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "tehama",
       "name": "Tehama County",
       "population": 65484,
       "facilities_count": 1,
-      "total_releases_pounds": 666,
+      "total_releases_pounds": 675,
       "dominant_medium": "land",
       "ej_pct_avg": 47.4,
       "relation": "peer",
@@ -923,11 +893,37 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "yuba",
+      "name": "Yuba County",
+      "population": 81705,
+      "facilities_count": 1,
+      "total_releases_pounds": 809,
+      "dominant_medium": "land",
+      "ej_pct_avg": 58.0,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "san-mateo",
+      "name": "San Mateo County",
+      "population": 754250,
+      "facilities_count": 5,
+      "total_releases_pounds": 436,
+      "dominant_medium": "land",
+      "ej_pct_avg": 56.4,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 5 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "siskiyou",
       "name": "Siskiyou County",
       "population": 44049,
       "facilities_count": 1,
-      "total_releases_pounds": 795,
+      "total_releases_pounds": 496,
       "dominant_medium": "land",
       "ej_pct_avg": 38.3,
       "relation": "peer",
@@ -940,50 +936,11 @@
       "name": "Mendocino County",
       "population": 91145,
       "facilities_count": 1,
-      "total_releases_pounds": 250,
+      "total_releases_pounds": 60,
       "dominant_medium": "land",
       "ej_pct_avg": 34.6,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 1 facility"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "yuba",
-      "name": "Yuba County",
-      "population": 81705,
-      "facilities_count": 1,
-      "total_releases_pounds": 2032,
-      "dominant_medium": "land",
-      "ej_pct_avg": 58.0,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 1 facility"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "san-mateo",
-      "name": "San Mateo County",
-      "population": 754250,
-      "facilities_count": 6,
-      "total_releases_pounds": 663,
-      "dominant_medium": "land",
-      "ej_pct_avg": 56.4,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 6 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "lassen",
-      "name": "Lassen County",
-      "population": 31873,
-      "facilities_count": 2,
-      "total_releases_pounds": 28873,
-      "dominant_medium": "land",
-      "ej_pct_avg": 42.6,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 2 facilities"
+      "relation": "contrast",
+      "reason": "Same scale, lighter equity burden (18 pct-pt EJ gap)"
     }
   ],
   "sources": [
@@ -993,5 +950,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

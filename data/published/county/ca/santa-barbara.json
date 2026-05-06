@@ -7,16 +7,16 @@
     "fips": "06083",
     "population": 445213
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 5.374,
+      "current": 5.262,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -15.5,
-      "long_arc_pct_change": -46.3,
+      "yoy_pct_change": -2.1,
+      "long_arc_pct_change": -47.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 5.374
+        },
+        {
+          "year": 2024,
+          "value": 5.262
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 14.36,
+      "current": 12.633,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 1.8,
-      "long_arc_pct_change": -24.2,
+      "yoy_pct_change": -12.0,
+      "long_arc_pct_change": -33.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,6 +145,10 @@
         {
           "year": 2023,
           "value": 14.36
+        },
+        {
+          "year": 2024,
+          "value": 12.633
         }
       ]
     },
@@ -149,8 +157,8 @@
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
       "current": 0.05,
       "units": "ppm",
-      "yoy_pct_change": -2.6,
-      "long_arc_pct_change": -22.0,
+      "yoy_pct_change": -1.8,
+      "long_arc_pct_change": -23.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 0.05
+        },
+        {
+          "year": 2024,
+          "value": 0.05
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 0.737,
+      "current": 1.027,
       "units": "ppb",
-      "yoy_pct_change": -39.8,
-      "long_arc_pct_change": -90.0,
+      "yoy_pct_change": 39.4,
+      "long_arc_pct_change": -86.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -275,6 +287,10 @@
         {
           "year": 2023,
           "value": 0.737
+        },
+        {
+          "year": 2024,
+          "value": 1.027
         }
       ]
     },
@@ -326,10 +342,10 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 5127,
+      "current": 26877,
       "units": "lb",
-      "yoy_pct_change": -7.0,
-      "long_arc_pct_change": -76.3,
+      "yoy_pct_change": 424.3,
+      "long_arc_pct_change": 24.4,
       "baseline_year": 2012,
       "history": [
         {
@@ -387,6 +403,10 @@
         {
           "year": 2023,
           "value": 5127
+        },
+        {
+          "year": 2024,
+          "value": 26877
         }
       ]
     },
@@ -395,7 +415,7 @@
       "label": "TRI water releases (5.3)",
       "current": 18,
       "units": "lb",
-      "yoy_pct_change": 20.0,
+      "yoy_pct_change": 0.0,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -454,16 +474,20 @@
         {
           "year": 2023,
           "value": 18
+        },
+        {
+          "year": 2024,
+          "value": 18
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 27513,
+      "current": 28640,
       "units": "lb",
-      "yoy_pct_change": 1.2,
-      "long_arc_pct_change": 126.1,
+      "yoy_pct_change": 4.1,
+      "long_arc_pct_change": 135.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -521,6 +545,10 @@
         {
           "year": 2023,
           "value": 27513
+        },
+        {
+          "year": 2024,
+          "value": 28640
         }
       ]
     },
@@ -594,17 +622,56 @@
   ],
   "facilities": [
     {
+      "slug": "the-pictsweet-co-santa-maria-ca-plant",
+      "state": "ca",
+      "state_label": "California",
+      "name": "The Pictsweet CO - Santa Maria Ca Plant",
+      "parent_company": "The Pictsweet Co",
+      "total_pounds_recent": 26631,
+      "yoy_pct_change": 765.8,
+      "top_chemical": "Ammonia",
+      "city": "Santa Maria",
+      "lat": 34.944524,
+      "lng": -120.46
+    },
+    {
       "slug": "okonite-co-inc",
       "state": "ca",
       "state_label": "California",
       "name": "Okonite CO INC",
       "parent_company": "The Okonite Co INC",
-      "total_pounds_recent": 26031,
-      "yoy_pct_change": -1.2,
+      "total_pounds_recent": 25586,
+      "yoy_pct_change": -1.7,
       "top_chemical": "Zinc compounds",
       "city": "Santa Maria",
       "lat": 34.907523,
       "lng": -120.453888
+    },
+    {
+      "slug": "raytheon-vision-systems",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Raytheon Vision Systems",
+      "parent_company": "Rtx CORP",
+      "total_pounds_recent": 1700,
+      "yoy_pct_change": 6071967.9,
+      "top_chemical": "Mercury  And Mercury Compounds",
+      "city": "Goleta",
+      "lat": 34.430499,
+      "lng": -119.863788
+    },
+    {
+      "slug": "raytheon-vision-systems",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Raytheon Vision Systems",
+      "parent_company": "Rtx CORP",
+      "total_pounds_recent": 700,
+      "yoy_pct_change": 538438.5,
+      "top_chemical": "Mercury  And Mercury Compounds",
+      "city": "Lompoc",
+      "lat": 34.663622,
+      "lng": -120.46056
     },
     {
       "slug": "us-dod-usaf-vandenberg-afb",
@@ -612,38 +679,12 @@
       "state_label": "California",
       "name": "US Dod Usaf Vandenberg Afb",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 3101,
-      "yoy_pct_change": 125.4,
-      "top_chemical": "Toluene",
+      "total_pounds_recent": 467,
+      "yoy_pct_change": -85.0,
+      "top_chemical": "Lead",
       "city": "Vandenberg Afb",
       "lat": 34.716872,
       "lng": -120.537737
-    },
-    {
-      "slug": "the-pictsweet-co-santa-maria-ca-plant",
-      "state": "ca",
-      "state_label": "California",
-      "name": "The Pictsweet CO - Santa Maria Ca Plant",
-      "parent_company": "The Pictsweet Co",
-      "total_pounds_recent": 3076,
-      "yoy_pct_change": -21.1,
-      "top_chemical": "Ammonia",
-      "city": "Santa Maria",
-      "lat": 34.944524,
-      "lng": -120.46
-    },
-    {
-      "slug": "nusil-technology-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Nusil Technology LLC",
-      "parent_company": "Avantor Performance Materials INC",
-      "total_pounds_recent": 234,
-      "yoy_pct_change": -42.5,
-      "top_chemical": "Xylene (mixed isomers)",
-      "city": "Carpinteria",
-      "lat": 34.388946,
-      "lng": -119.485225
     },
     {
       "slug": "fcc-lompoc",
@@ -651,41 +692,44 @@
       "state_label": "California",
       "name": "Fcc Lompoc",
       "parent_company": "US Department Of Justice",
-      "total_pounds_recent": 216,
-      "yoy_pct_change": -68.1,
+      "total_pounds_recent": 305,
+      "yoy_pct_change": 41.5,
       "top_chemical": "Lead",
       "city": "Lompoc",
       "lat": 34.676528,
       "lng": -120.505529
     },
     {
-      "slug": "raytheon-vision-systems",
+      "slug": "nusil-technology-llc",
       "state": "ca",
       "state_label": "California",
-      "name": "Raytheon Vision Systems",
-      "parent_company": "Rtx CORP",
-      "total_pounds_recent": 0.13,
-      "yoy_pct_change": -80.9,
-      "top_chemical": "Mercury  And Mercury Compounds",
-      "city": "Lompoc",
-      "lat": 34.663622,
-      "lng": -120.46056
-    },
-    {
-      "slug": "raytheon-vision-systems",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Raytheon Vision Systems",
-      "parent_company": "Rtx CORP",
-      "total_pounds_recent": 0.03,
-      "yoy_pct_change": -58.2,
-      "top_chemical": "Mercury  And Mercury Compounds",
-      "city": "Goleta",
-      "lat": 34.430499,
-      "lng": -119.863788
+      "name": "Nusil Technology LLC",
+      "parent_company": "Avantor Performance Materials INC",
+      "total_pounds_recent": 146,
+      "yoy_pct_change": -37.8,
+      "top_chemical": "Xylene (mixed isomers)",
+      "city": "Carpinteria",
+      "lat": 34.388946,
+      "lng": -119.485225
     }
   ],
   "utilities": [],
+  "superfund": [
+    {
+      "slug": "casmalia-resources",
+      "state": "ca",
+      "name": "Casmalia Resources",
+      "epa_id": "CAD020748125",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Casmalia",
+      "city_slug": null,
+      "primary_contaminant": "(Z)-1,3-Dichloro-1-Propene"
+    }
+  ],
+  "superfund_total": 1,
   "cities_directory": [
     {
       "slug": "buellton",
@@ -808,77 +852,7 @@
       "population": 3681
     }
   ],
-  "flags": [
-    {
-      "type": "long_arc_shift",
-      "severity": "improvement",
-      "label": "Greenhouse gas emissions",
-      "summary": "Greenhouse gas emissions at Santa Barbara County have more than three-quarters since 2010 (through 2023).",
-      "magnitude_pct": -83.1,
-      "magnitude_abs": -786057.3,
-      "baseline_year": 2010,
-      "recent_year": 2023,
-      "units": "mtCO2e",
-      "history": [
-        {
-          "year": 2010,
-          "value": 946092
-        },
-        {
-          "year": 2011,
-          "value": 1021695
-        },
-        {
-          "year": 2012,
-          "value": 1016640
-        },
-        {
-          "year": 2013,
-          "value": 1055203
-        },
-        {
-          "year": 2014,
-          "value": 1199129
-        },
-        {
-          "year": 2015,
-          "value": 577119
-        },
-        {
-          "year": 2016,
-          "value": 460139
-        },
-        {
-          "year": 2017,
-          "value": 327044
-        },
-        {
-          "year": 2018,
-          "value": 296296
-        },
-        {
-          "year": 2019,
-          "value": 245702
-        },
-        {
-          "year": 2020,
-          "value": 167505
-        },
-        {
-          "year": 2021,
-          "value": 149099
-        },
-        {
-          "year": 2022,
-          "value": 159713
-        },
-        {
-          "year": 2023,
-          "value": 160035
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 445213,
     "pct_low_income": 13.5,
@@ -1099,7 +1073,7 @@
       "name": "Monterey County",
       "population": 437609,
       "facilities_count": 5,
-      "total_releases_pounds": 28580,
+      "total_releases_pounds": 24485,
       "dominant_medium": "land",
       "ej_pct_avg": 53.7,
       "relation": "peer",
@@ -1111,12 +1085,12 @@
       "slug": "san-luis-obispo",
       "name": "San Luis Obispo County",
       "population": 281712,
-      "facilities_count": 6,
-      "total_releases_pounds": 22193,
+      "facilities_count": 5,
+      "total_releases_pounds": 26203,
       "dominant_medium": "land",
       "ej_pct_avg": 44.1,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 6 facilities"
+      "reason": "Similar TRI land profile \u00b7 5 facilities"
     },
     {
       "kind": "county",
@@ -1124,10 +1098,23 @@
       "slug": "san-benito",
       "name": "San Benito County",
       "population": 64753,
-      "facilities_count": 5,
-      "total_releases_pounds": 39153,
+      "facilities_count": 4,
+      "total_releases_pounds": 37428,
       "dominant_medium": "land",
       "ej_pct_avg": 44.3,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 4 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "imperial",
+      "name": "Imperial County",
+      "population": 179578,
+      "facilities_count": 5,
+      "total_releases_pounds": 262832,
+      "dominant_medium": "land",
+      "ej_pct_avg": 61.7,
       "relation": "peer",
       "reason": "Similar TRI land profile \u00b7 5 facilities"
     },
@@ -1137,25 +1124,12 @@
       "slug": "san-joaquin",
       "name": "San Joaquin County",
       "population": 779445,
-      "facilities_count": 25,
-      "total_releases_pounds": 49235,
+      "facilities_count": 28,
+      "total_releases_pounds": 89011,
       "dominant_medium": "land",
       "ej_pct_avg": 71.5,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 25 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "imperial",
-      "name": "Imperial County",
-      "population": 179578,
-      "facilities_count": 5,
-      "total_releases_pounds": 288653,
-      "dominant_medium": "land",
-      "ej_pct_avg": 61.7,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 5 facilities"
+      "reason": "Similar TRI land profile \u00b7 28 facilities"
     },
     {
       "kind": "county",
@@ -1163,8 +1137,8 @@
       "slug": "fresno",
       "name": "Fresno County",
       "population": 1008280,
-      "facilities_count": 26,
-      "total_releases_pounds": 391801,
+      "facilities_count": 28,
+      "total_releases_pounds": 366524,
       "dominant_medium": "land",
       "ej_pct_avg": 73.0,
       "relation": "contrast",
@@ -1178,5 +1152,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

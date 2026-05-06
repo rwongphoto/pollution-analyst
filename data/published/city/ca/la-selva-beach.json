@@ -9,8 +9,8 @@
     "county_name": "Santa Cruz",
     "county_fips": "06087"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 0,
     "utilities_serving": 2,
@@ -20,10 +20,10 @@
     "land_releases_pounds": 0,
     "yoy_pct_change": null,
     "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2023,
+    "long_arc_baseline_year": 2024,
     "history": [
       {
-        "year": 2023,
+        "year": 2024,
         "value": 0
       }
     ]
@@ -32,10 +32,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 5.313,
+      "current": 6.15,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 1.6,
-      "long_arc_pct_change": -32.8,
+      "yoy_pct_change": 15.8,
+      "long_arc_pct_change": -22.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -93,16 +93,20 @@
         {
           "year": 2023,
           "value": 5.313
+        },
+        {
+          "year": 2024,
+          "value": 6.15
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 13.9,
+      "current": 13.85,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -1.4,
-      "long_arc_pct_change": -22.3,
+      "yoy_pct_change": -0.4,
+      "long_arc_pct_change": -22.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -160,16 +164,20 @@
         {
           "year": 2023,
           "value": 13.9
+        },
+        {
+          "year": 2024,
+          "value": 13.85
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.051,
+      "current": 0.05,
       "units": "ppm",
-      "yoy_pct_change": 8.5,
-      "long_arc_pct_change": -10.5,
+      "yoy_pct_change": -2.0,
+      "long_arc_pct_change": -12.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -227,6 +235,10 @@
         {
           "year": 2023,
           "value": 0.051
+        },
+        {
+          "year": 2024,
+          "value": 0.05
         }
       ]
     },
@@ -297,10 +309,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -312,10 +324,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -327,10 +339,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -434,6 +446,7 @@
       }
     ]
   },
+  "superfund": [],
   "flags": [],
   "equity": {
     "population": 2320,
@@ -677,6 +690,19 @@
     {
       "kind": "city",
       "state": "ca",
+      "slug": "felton",
+      "name": "Felton",
+      "population": 3701,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 37.2,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
       "slug": "mount-hermon",
       "name": "Mount Hermon",
       "population": 1174,
@@ -686,19 +712,6 @@
       "ej_pct_avg": 39.9,
       "relation": "peer",
       "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
-      "slug": "boulder-creek",
-      "name": "Boulder Creek",
-      "population": 5492,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 32.3,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
@@ -720,8 +733,8 @@
       "name": "Irwindale",
       "population": 1343,
       "facilities_count": 5,
-      "total_releases_pounds": 1942,
-      "dominant_medium": "air",
+      "total_releases_pounds": 225,
+      "dominant_medium": "land",
       "ej_pct_avg": 81.8,
       "relation": "contrast",
       "reason": "Same scale, heavier equity burden (+41 pct-pt EJ gap)"
@@ -739,5 +752,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:11:00Z"
 }

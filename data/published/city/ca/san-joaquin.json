@@ -9,22 +9,26 @@
     "county_name": "Fresno",
     "county_fips": "06019"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 0,
+    "facilities_in_city": 1,
     "utilities_serving": 1,
-    "total_releases_pounds": 0,
-    "air_releases_pounds": 0,
+    "total_releases_pounds": 5924,
+    "air_releases_pounds": 5924,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
     "yoy_pct_change": null,
-    "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2023,
+    "long_arc_pct_change": 244.4,
+    "long_arc_baseline_year": 2021,
     "history": [
       {
-        "year": 2023,
-        "value": 0
+        "year": 2021,
+        "value": 1720
+      },
+      {
+        "year": 2024,
+        "value": 5924
       }
     ]
   },
@@ -32,10 +36,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 9.35,
+      "current": 10.063,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -14.3,
-      "long_arc_pct_change": -54.7,
+      "yoy_pct_change": 7.6,
+      "long_arc_pct_change": -51.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -93,16 +97,20 @@
         {
           "year": 2023,
           "value": 9.35
+        },
+        {
+          "year": 2024,
+          "value": 10.063
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 28.3,
+      "current": 31.308,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -18.2,
-      "long_arc_pct_change": -63.6,
+      "yoy_pct_change": 10.6,
+      "long_arc_pct_change": -59.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -160,16 +168,20 @@
         {
           "year": 2023,
           "value": 28.3
+        },
+        {
+          "year": 2024,
+          "value": 31.308
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.078,
+      "current": 0.083,
       "units": "ppm",
-      "yoy_pct_change": 4.2,
-      "long_arc_pct_change": -24.4,
+      "yoy_pct_change": 5.7,
+      "long_arc_pct_change": -20.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -227,16 +239,20 @@
         {
           "year": 2023,
           "value": 0.078
+        },
+        {
+          "year": 2024,
+          "value": 0.083
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 9.193,
+      "current": 8.541,
       "units": "ppb",
-      "yoy_pct_change": -12.5,
-      "long_arc_pct_change": -46.7,
+      "yoy_pct_change": -7.1,
+      "long_arc_pct_change": -50.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -294,6 +310,10 @@
         {
           "year": 2023,
           "value": 9.193
+        },
+        {
+          "year": 2024,
+          "value": 8.541
         }
       ]
     },
@@ -345,15 +365,19 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 0,
+      "current": 5924,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2021,
       "history": [
         {
-          "year": 2023,
+          "year": 2021,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 5924
         }
       ]
     },
@@ -364,10 +388,14 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2021,
       "history": [
         {
-          "year": 2023,
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -379,10 +407,14 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2021,
       "history": [
         {
-          "year": 2023,
+          "year": 2021,
+          "value": 1720
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -455,7 +487,21 @@
       ]
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "slug": "wilbur-ellis-co-rna",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Wilbur-Ellis CO Rna",
+      "parent_company": "Wilbur-Ellis Co LLC",
+      "total_pounds_recent": 5924,
+      "yoy_pct_change": null,
+      "top_chemical": "Zinc compounds",
+      "city": "San Joaquin",
+      "lat": 36.610193,
+      "lng": -120.194776
+    }
+  ],
   "water": {
     "utilities_count": 1,
     "population_served_total": 4060,
@@ -476,6 +522,7 @@
       }
     ]
   },
+  "superfund": [],
   "flags": [],
   "equity": {
     "population": 3725,
@@ -693,67 +740,67 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "auberry",
-      "name": "Auberry",
-      "population": 3032,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 41.3,
+      "slug": "kingsburg",
+      "name": "Kingsburg",
+      "population": 12490,
+      "facilities_count": 1,
+      "total_releases_pounds": 4047,
+      "dominant_medium": "air",
+      "ej_pct_avg": 64.3,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI air profile \u00b7 1 facility"
     },
     {
       "kind": "city",
       "state": "ca",
-      "slug": "riverdale",
-      "name": "Riverdale",
-      "population": 2756,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 44.9,
+      "slug": "del-rey",
+      "name": "Del Rey",
+      "population": 1491,
+      "facilities_count": 1,
+      "total_releases_pounds": 14657,
+      "dominant_medium": "air",
+      "ej_pct_avg": 60.6,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI air profile \u00b7 1 facility"
     },
     {
       "kind": "city",
       "state": "ca",
-      "slug": "huron",
-      "name": "Huron",
-      "population": 6260,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 44.6,
+      "slug": "sanger",
+      "name": "Sanger",
+      "population": 26553,
+      "facilities_count": 1,
+      "total_releases_pounds": 34,
+      "dominant_medium": "air",
+      "ej_pct_avg": 61.7,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI air profile \u00b7 1 facility"
     },
     {
       "kind": "city",
       "state": "ca",
-      "slug": "fowler",
-      "name": "Fowler",
-      "population": 6819,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 73.6,
+      "slug": "clovis",
+      "name": "Clovis",
+      "population": 120607,
+      "facilities_count": 1,
+      "total_releases_pounds": 10,
+      "dominant_medium": "air",
+      "ej_pct_avg": 68.2,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI air profile \u00b7 1 facility"
     },
     {
       "kind": "city",
       "state": "ca",
-      "slug": "jamestown",
-      "name": "Jamestown",
-      "population": 3742,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 42.8,
+      "slug": "avalon",
+      "name": "Avalon",
+      "population": 3441,
+      "facilities_count": 1,
+      "total_releases_pounds": 2634,
+      "dominant_medium": "air",
+      "ej_pct_avg": 38.6,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI air profile \u00b7 1 facility"
     },
     {
       "kind": "city",
@@ -761,9 +808,9 @@
       "slug": "commerce",
       "name": "Commerce",
       "population": 12253,
-      "facilities_count": 15,
-      "total_releases_pounds": 38662,
-      "dominant_medium": "air",
+      "facilities_count": 12,
+      "total_releases_pounds": 59905,
+      "dominant_medium": "land",
       "ej_pct_avg": 87.0,
       "relation": "contrast",
       "reason": "Same scale, heavier equity burden (+42 pct-pt EJ gap)"
@@ -781,5 +828,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:10:59Z"
 }

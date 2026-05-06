@@ -9,8 +9,8 @@
     "county_name": "Plumas",
     "county_fips": "06063"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 0,
     "utilities_serving": 2,
@@ -20,10 +20,10 @@
     "land_releases_pounds": 0,
     "yoy_pct_change": null,
     "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2023,
+    "long_arc_baseline_year": 2024,
     "history": [
       {
-        "year": 2023,
+        "year": 2024,
         "value": 0
       }
     ]
@@ -32,10 +32,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 12.537,
+      "current": 8.617,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 21.5,
-      "long_arc_pct_change": 33.4,
+      "yoy_pct_change": -31.3,
+      "long_arc_pct_change": -8.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -93,16 +93,20 @@
         {
           "year": 2023,
           "value": 12.537
+        },
+        {
+          "year": 2024,
+          "value": 8.617
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 28.125,
+      "current": 28.0,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 11.1,
-      "long_arc_pct_change": -29.7,
+      "yoy_pct_change": -0.4,
+      "long_arc_pct_change": -30.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -160,6 +164,10 @@
         {
           "year": 2023,
           "value": 28.125
+        },
+        {
+          "year": 2024,
+          "value": 28.0
         }
       ]
     },
@@ -230,10 +238,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -245,10 +253,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -260,10 +268,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -300,24 +308,8 @@
       }
     ]
   },
-  "flags": [
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2025,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3210004"
-      }
-    }
-  ],
+  "superfund": [],
+  "flags": [],
   "equity": {
     "population": 1368,
     "pct_low_income": 11.3,
@@ -603,8 +595,8 @@
       "name": "Irwindale",
       "population": 1343,
       "facilities_count": 5,
-      "total_releases_pounds": 1942,
-      "dominant_medium": "air",
+      "total_releases_pounds": 225,
+      "dominant_medium": "land",
       "ej_pct_avg": 81.8,
       "relation": "contrast",
       "reason": "Same scale, heavier equity burden (+39 pct-pt EJ gap)"
@@ -622,5 +614,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:10:59Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "San Joaquin",
     "county_fips": "06077"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 2,
+    "facilities_in_city": 3,
     "utilities_serving": 6,
     "total_releases_pounds": 257,
     "air_releases_pounds": 257,
-    "water_releases_pounds": 0,
+    "water_releases_pounds": 0.11,
     "land_releases_pounds": 0,
-    "yoy_pct_change": -49.4,
-    "long_arc_pct_change": 368.1,
+    "yoy_pct_change": 0.4,
+    "long_arc_pct_change": 369.8,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 257
+      },
+      {
+        "year": 2024,
+        "value": 257
       }
     ]
   },
@@ -84,10 +88,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 9.459,
+      "current": 9.137,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -2.7,
-      "long_arc_pct_change": -39.0,
+      "yoy_pct_change": -3.4,
+      "long_arc_pct_change": -41.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -145,16 +149,20 @@
         {
           "year": 2023,
           "value": 9.459
+        },
+        {
+          "year": 2024,
+          "value": 9.137
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 32.45,
+      "current": 31.1,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -5.0,
-      "long_arc_pct_change": -41.0,
+      "yoy_pct_change": -4.2,
+      "long_arc_pct_change": -43.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -212,16 +220,20 @@
         {
           "year": 2023,
           "value": 32.45
+        },
+        {
+          "year": 2024,
+          "value": 31.1
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.063,
+      "current": 0.068,
       "units": "ppm",
-      "yoy_pct_change": -2.3,
-      "long_arc_pct_change": -20.3,
+      "yoy_pct_change": 7.1,
+      "long_arc_pct_change": -14.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -279,16 +291,20 @@
         {
           "year": 2023,
           "value": 0.063
+        },
+        {
+          "year": 2024,
+          "value": 0.068
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 6.088,
+      "current": 6.374,
       "units": "ppb",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": -65.5,
+      "yoy_pct_change": 4.7,
+      "long_arc_pct_change": -63.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -346,6 +362,10 @@
         {
           "year": 2023,
           "value": 6.088
+        },
+        {
+          "year": 2024,
+          "value": 6.374
         }
       ]
     },
@@ -399,7 +419,7 @@
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 257,
       "units": "lb",
-      "yoy_pct_change": -49.4,
+      "yoy_pct_change": 0.3,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -457,6 +477,10 @@
         },
         {
           "year": 2023,
+          "value": 257
+        },
+        {
+          "year": 2024,
           "value": 257
         }
       ]
@@ -525,6 +549,10 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
@@ -591,6 +619,10 @@
         },
         {
           "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -671,7 +703,7 @@
       "name": "Leprino Foods CO",
       "parent_company": "Leprino Foods Co",
       "total_pounds_recent": 255,
-      "yoy_pct_change": -49.5,
+      "yoy_pct_change": 0.0,
       "top_chemical": "Nitric acid",
       "city": "Tracy",
       "lat": 37.754331,
@@ -684,11 +716,24 @@
       "name": "Leggett & Platt Urethane Div Branch 6014",
       "parent_company": "Leggett & Platt INC",
       "total_pounds_recent": 2,
-      "yoy_pct_change": -12.4,
+      "yoy_pct_change": 51.3,
       "top_chemical": "Diisocyanates",
       "city": "Tracy",
       "lat": 37.751332,
       "lng": -121.414799
+    },
+    {
+      "slug": "oldcastle-pacific-tracy-oldcastle-apg",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Oldcastle Pacific Tracy-Oldcastle Apg",
+      "parent_company": "Crh Americas INC",
+      "total_pounds_recent": 0.13,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Tracy",
+      "lat": 37.754103,
+      "lng": -121.41855
     }
   ],
   "water": {
@@ -761,72 +806,8 @@
       }
     ]
   },
-  "flags": [
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3900991"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3900991"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "health_based_recent5y",
-      "label": "Contaminant 8000",
-      "summary": "Revised Total Coliform Rule health-based violation cited in 2022 (contaminant 8000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2022,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3901031"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "health_based_recent5y",
-      "label": "Contaminant 8000",
-      "summary": "Revised Total Coliform Rule health-based violation cited in 2022 (contaminant 8000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2022,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3901031"
-      }
-    }
-  ],
+  "superfund": [],
+  "flags": [],
   "equity": {
     "population": 94027,
     "pct_low_income": 8.7,
@@ -1043,24 +1024,11 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "stockton",
-      "name": "Stockton",
-      "population": 320030,
-      "facilities_count": 7,
-      "total_releases_pounds": 1372,
-      "dominant_medium": "air",
-      "ej_pct_avg": 72.5,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 7 facilities"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
       "slug": "escalon",
       "name": "Escalon",
       "population": 7456,
       "facilities_count": 2,
-      "total_releases_pounds": 298,
+      "total_releases_pounds": 223,
       "dominant_medium": "land",
       "ej_pct_avg": 61.1,
       "relation": "peer",
@@ -1069,11 +1037,24 @@
     {
       "kind": "city",
       "state": "ca",
+      "slug": "stockton",
+      "name": "Stockton",
+      "population": 320030,
+      "facilities_count": 8,
+      "total_releases_pounds": 3812,
+      "dominant_medium": "land",
+      "ej_pct_avg": 72.5,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
       "slug": "french-camp",
       "name": "French Camp",
       "population": 3860,
       "facilities_count": 1,
-      "total_releases_pounds": 1088,
+      "total_releases_pounds": 31,
       "dominant_medium": "land",
       "ej_pct_avg": 73.8,
       "relation": "peer",
@@ -1082,28 +1063,28 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "manteca",
-      "name": "Manteca",
-      "population": 83897,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 68.7,
+      "slug": "lathrop",
+      "name": "Lathrop",
+      "population": 29633,
+      "facilities_count": 5,
+      "total_releases_pounds": 75137,
+      "dominant_medium": "land",
+      "ej_pct_avg": 70.2,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "ca",
-      "slug": "temecula",
-      "name": "Temecula",
-      "population": 110114,
-      "facilities_count": 2,
-      "total_releases_pounds": 404,
+      "slug": "redding",
+      "name": "Redding",
+      "population": 93327,
+      "facilities_count": 3,
+      "total_releases_pounds": 281,
       "dominant_medium": "air",
-      "ej_pct_avg": 55.4,
+      "ej_pct_avg": 57.9,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 2 facilities"
+      "reason": "Similar TRI air profile \u00b7 3 facilities"
     },
     {
       "kind": "city",
@@ -1112,7 +1093,7 @@
       "name": "Lompoc",
       "population": 44086,
       "facilities_count": 2,
-      "total_releases_pounds": 216,
+      "total_releases_pounds": 1005,
       "dominant_medium": "land",
       "ej_pct_avg": 36.3,
       "relation": "contrast",
@@ -1131,5 +1112,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:10:59Z"
 }

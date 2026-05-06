@@ -9,17 +9,17 @@
     "county_name": "Shasta",
     "county_fips": "06089"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 1,
-    "total_releases_pounds": 214475,
-    "air_releases_pounds": 194177,
+    "total_releases_pounds": 188014,
+    "air_releases_pounds": 155661,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 20298,
-    "yoy_pct_change": 6.4,
-    "long_arc_pct_change": 162.4,
+    "land_releases_pounds": 32353,
+    "yoy_pct_change": -12.3,
+    "long_arc_pct_change": 130.1,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 214475
+      },
+      {
+        "year": 2024,
+        "value": 188014
       }
     ]
   },
@@ -84,10 +88,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 7.135,
+      "current": 6.018,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 4.7,
-      "long_arc_pct_change": -24.7,
+      "yoy_pct_change": -15.7,
+      "long_arc_pct_change": -36.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -145,16 +149,20 @@
         {
           "year": 2023,
           "value": 7.135
+        },
+        {
+          "year": 2024,
+          "value": 6.018
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 25.6,
+      "current": 22.45,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 8.2,
-      "long_arc_pct_change": -26.9,
+      "yoy_pct_change": -12.3,
+      "long_arc_pct_change": -35.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -212,16 +220,20 @@
         {
           "year": 2023,
           "value": 25.6
+        },
+        {
+          "year": 2024,
+          "value": 22.45
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.063,
+      "current": 0.064,
       "units": "ppm",
-      "yoy_pct_change": -3.8,
-      "long_arc_pct_change": -17.5,
+      "yoy_pct_change": 1.7,
+      "long_arc_pct_change": -16.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -279,6 +291,10 @@
         {
           "year": 2023,
           "value": 0.063
+        },
+        {
+          "year": 2024,
+          "value": 0.064
         }
       ]
     },
@@ -330,10 +346,10 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 194177,
+      "current": 155661,
       "units": "lb",
-      "yoy_pct_change": -2.5,
-      "long_arc_pct_change": 378.4,
+      "yoy_pct_change": -19.8,
+      "long_arc_pct_change": 283.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -391,6 +407,10 @@
         {
           "year": 2023,
           "value": 194177
+        },
+        {
+          "year": 2024,
+          "value": 155661
         }
       ]
     },
@@ -458,16 +478,20 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 20298,
+      "current": 32353,
       "units": "lb",
-      "yoy_pct_change": 724.8,
-      "long_arc_pct_change": -50.7,
+      "yoy_pct_change": 59.4,
+      "long_arc_pct_change": -21.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -525,6 +549,10 @@
         {
           "year": 2023,
           "value": 20298
+        },
+        {
+          "year": 2024,
+          "value": 32353
         }
       ]
     },
@@ -603,8 +631,8 @@
       "state_label": "California",
       "name": "Knauf Insulation INC.",
       "parent_company": "Knauf Insulation",
-      "total_pounds_recent": 214475,
-      "yoy_pct_change": 6.4,
+      "total_pounds_recent": 188014,
+      "yoy_pct_change": -12.3,
       "top_chemical": "Ammonia",
       "city": "Shasta Lake",
       "lat": 40.658546,
@@ -631,77 +659,8 @@
       }
     ]
   },
-  "flags": [
-    {
-      "type": "long_arc_shift",
-      "severity": "regression",
-      "label": "Total TRI releases",
-      "summary": "Total TRI releases at Shasta Lake have more than doubled since 2010 (through 2023).",
-      "magnitude_pct": 162.4,
-      "magnitude_abs": 132750.2,
-      "baseline_year": 2010,
-      "recent_year": 2023,
-      "units": "lb",
-      "history": [
-        {
-          "year": 2010,
-          "value": 81724
-        },
-        {
-          "year": 2011,
-          "value": 61086
-        },
-        {
-          "year": 2012,
-          "value": 61132
-        },
-        {
-          "year": 2013,
-          "value": 57802
-        },
-        {
-          "year": 2014,
-          "value": 155706
-        },
-        {
-          "year": 2015,
-          "value": 185500
-        },
-        {
-          "year": 2016,
-          "value": 209858
-        },
-        {
-          "year": 2017,
-          "value": 177018
-        },
-        {
-          "year": 2018,
-          "value": 179799
-        },
-        {
-          "year": 2019,
-          "value": 195462
-        },
-        {
-          "year": 2020,
-          "value": 199219
-        },
-        {
-          "year": 2021,
-          "value": 210393
-        },
-        {
-          "year": 2022,
-          "value": 201581
-        },
-        {
-          "year": 2023,
-          "value": 214475
-        }
-      ]
-    }
-  ],
+  "superfund": [],
+  "flags": [],
   "equity": {
     "population": 10361,
     "pct_low_income": 18.1,
@@ -922,7 +881,7 @@
       "name": "Anderson",
       "population": 11267,
       "facilities_count": 1,
-      "total_releases_pounds": 0.4,
+      "total_releases_pounds": 0.32,
       "dominant_medium": "air",
       "ej_pct_avg": 57.6,
       "relation": "peer",
@@ -934,12 +893,12 @@
       "slug": "redding",
       "name": "Redding",
       "population": 93327,
-      "facilities_count": 2,
-      "total_releases_pounds": 124,
+      "facilities_count": 3,
+      "total_releases_pounds": 281,
       "dominant_medium": "air",
       "ej_pct_avg": 57.9,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 2 facilities"
+      "reason": "Similar TRI air profile \u00b7 3 facilities"
     },
     {
       "kind": "city",
@@ -974,7 +933,7 @@
       "name": "Williams",
       "population": 5539,
       "facilities_count": 1,
-      "total_releases_pounds": 118960,
+      "total_releases_pounds": 104334,
       "dominant_medium": "air",
       "ej_pct_avg": 43.7,
       "relation": "peer",
@@ -986,9 +945,9 @@
       "slug": "commerce",
       "name": "Commerce",
       "population": 12253,
-      "facilities_count": 15,
-      "total_releases_pounds": 38662,
-      "dominant_medium": "air",
+      "facilities_count": 12,
+      "total_releases_pounds": 59905,
+      "dominant_medium": "land",
       "ej_pct_avg": 87.0,
       "relation": "contrast",
       "reason": "Same scale, heavier equity burden (+39 pct-pt EJ gap)"
@@ -1006,5 +965,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:10:59Z"
 }

@@ -14,6 +14,7 @@ import type {
   FacilityPagePayload,
   HomePagePayload,
   StatePagePayload,
+  SuperfundPayload,
   WaterUtilityPayload,
 } from "./types";
 
@@ -34,6 +35,10 @@ export async function loadFacility(state: string, slug: string): Promise<Facilit
 
 export async function loadWaterUtility(state: string, slug: string): Promise<WaterUtilityPayload> {
   return readJson<WaterUtilityPayload>(`water/${state}/${slug}.json`);
+}
+
+export async function loadSuperfund(state: string, slug: string): Promise<SuperfundPayload> {
+  return readJson<SuperfundPayload>(`superfund/${state}/${slug}.json`);
 }
 
 export async function loadCityHub(state: string, slug: string): Promise<CityHubPayload> {
@@ -67,6 +72,10 @@ export async function listFacilitySlugs(): Promise<{ state: string; slug: string
 
 export async function listWaterSlugs(): Promise<{ state: string; slug: string }[]> {
   return listEntitySlugs(path.join(DATA_ROOT, "water"));
+}
+
+export async function listSuperfundSlugs(): Promise<{ state: string; slug: string }[]> {
+  return listEntitySlugs(path.join(DATA_ROOT, "superfund"));
 }
 
 export async function listCitySlugs(): Promise<{ state: string; slug: string }[]> {

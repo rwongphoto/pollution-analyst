@@ -1,0 +1,209 @@
+{
+  "site": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "sulphur-bank-mercury-mine",
+    "name": "Sulphur Bank Mercury Mine",
+    "epa_id": "CAD980893275",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Lake County",
+    "county_slug": "lake",
+    "city": "Clearlake Oaks",
+    "city_slug": null,
+    "address": "Sulphur Bank Road",
+    "zip": "95422",
+    "lat": 39.00555,
+    "lng": -122.6703
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 5,
+    "primary_contaminant": "Antimony"
+  },
+  "contaminants": [
+    {
+      "name": "Antimony",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Arsenic",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Mercury",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Mercury",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Thallium",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 68024,
+    "pct_low_income": 16.6,
+    "pct_people_of_color": 33.5,
+    "pct_under_5": 6.2,
+    "pct_over_64": 23.2,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 86.9,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 39.4,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 32.5,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 2.3,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 1.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 15.9,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 50.6,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 94.7,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.8,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 37.7,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 27.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 7.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 77.4,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 123.2
+      },
+      {
+        "label": "Ozone",
+        "score": 42.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 50.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 3.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 0.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 26.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 56.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 109.2
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 7.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 39.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 15.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Lake County, California (NPL site's containing county \u2014 1-mile-buffer aggregation pending tract data)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T04:10:59Z"
+}

@@ -9,17 +9,17 @@
     "county_name": "San Diego",
     "county_fips": "06073"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 5,
-    "total_releases_pounds": 5,
-    "air_releases_pounds": 3,
+    "total_releases_pounds": 3,
+    "air_releases_pounds": 2,
     "water_releases_pounds": 0,
     "land_releases_pounds": 2,
-    "yoy_pct_change": 37.4,
-    "long_arc_pct_change": 309.4,
+    "yoy_pct_change": -33.7,
+    "long_arc_pct_change": 171.3,
     "long_arc_baseline_year": 2011,
     "history": [
       {
@@ -73,6 +73,10 @@
       {
         "year": 2023,
         "value": 5
+      },
+      {
+        "year": 2024,
+        "value": 3
       }
     ]
   },
@@ -80,10 +84,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 8.323,
+      "current": 8.799,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -0.1,
-      "long_arc_pct_change": -42.6,
+      "yoy_pct_change": 5.7,
+      "long_arc_pct_change": -39.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 8.323
+        },
+        {
+          "year": 2024,
+          "value": 8.799
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 17.308,
+      "current": 19.564,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 4.1,
-      "long_arc_pct_change": -57.9,
+      "yoy_pct_change": 13.0,
+      "long_arc_pct_change": -52.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 17.308
+        },
+        {
+          "year": 2024,
+          "value": 19.564
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.068,
+      "current": 0.067,
       "units": "ppm",
-      "yoy_pct_change": 5.2,
-      "long_arc_pct_change": -5.7,
+      "yoy_pct_change": -1.6,
+      "long_arc_pct_change": -7.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -275,16 +287,20 @@
         {
           "year": 2023,
           "value": 0.068
+        },
+        {
+          "year": 2024,
+          "value": 0.067
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 8.853,
+      "current": 7.811,
       "units": "ppb",
-      "yoy_pct_change": 2.6,
-      "long_arc_pct_change": -54.3,
+      "yoy_pct_change": -11.8,
+      "long_arc_pct_change": -59.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -342,6 +358,10 @@
         {
           "year": 2023,
           "value": 8.853
+        },
+        {
+          "year": 2024,
+          "value": 7.811
         }
       ]
     },
@@ -393,9 +413,9 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 3,
+      "current": 2,
       "units": "lb",
-      "yoy_pct_change": 37.4,
+      "yoy_pct_change": -33.5,
       "long_arc_pct_change": null,
       "baseline_year": 2011,
       "history": [
@@ -450,6 +470,10 @@
         {
           "year": 2023,
           "value": 3
+        },
+        {
+          "year": 2024,
+          "value": 2
         }
       ]
     },
@@ -513,6 +537,10 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
@@ -521,7 +549,7 @@
       "label": "TRI land + off-site releases",
       "current": 2,
       "units": "lb",
-      "yoy_pct_change": 37.5,
+      "yoy_pct_change": -34.0,
       "long_arc_pct_change": null,
       "baseline_year": 2011,
       "history": [
@@ -575,6 +603,10 @@
         },
         {
           "year": 2023,
+          "value": 2
+        },
+        {
+          "year": 2024,
           "value": 2
         }
       ]
@@ -654,8 +686,8 @@
       "state_label": "California",
       "name": "Escondido Plant 36",
       "parent_company": null,
-      "total_pounds_recent": 5,
-      "yoy_pct_change": 37.4,
+      "total_pounds_recent": 3,
+      "yoy_pct_change": -33.7,
       "top_chemical": "Lead compounds",
       "city": "Escondido",
       "lat": 33.120695,
@@ -722,72 +754,8 @@
       }
     ]
   },
-  "flags": [
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 7000",
-      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2024 (contaminant 7000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3700866"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 1080",
-      "summary": "Unresolved Lead and Copper Rule violation cited in 2024 (contaminant 1080).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3700866"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Uranium",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (uranium).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3700962"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "health_based_recent5y",
-      "label": "Uranium",
-      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2024 (uranium).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3700962"
-      }
-    }
-  ],
+  "superfund": [],
+  "flags": [],
   "equity": {
     "population": 151114,
     "pct_low_income": 13.2,
@@ -1008,7 +976,7 @@
       "name": "Bostonia",
       "population": 16850,
       "facilities_count": 1,
-      "total_releases_pounds": 5,
+      "total_releases_pounds": 4,
       "dominant_medium": "air",
       "ej_pct_avg": 63.1,
       "relation": "peer",
@@ -1021,7 +989,7 @@
       "name": "Carlsbad",
       "population": 114745,
       "facilities_count": 2,
-      "total_releases_pounds": 15,
+      "total_releases_pounds": 17,
       "dominant_medium": "air",
       "ej_pct_avg": 58.6,
       "relation": "peer",
@@ -1030,11 +998,24 @@
     {
       "kind": "city",
       "state": "ca",
+      "slug": "vista",
+      "name": "Vista",
+      "population": 98392,
+      "facilities_count": 1,
+      "total_releases_pounds": 275,
+      "dominant_medium": "air",
+      "ej_pct_avg": 57.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
       "slug": "oceanside",
       "name": "Oceanside",
       "population": 173722,
       "facilities_count": 2,
-      "total_releases_pounds": 1292,
+      "total_releases_pounds": 1009,
       "dominant_medium": "air",
       "ej_pct_avg": 60.0,
       "relation": "peer",
@@ -1043,26 +1024,13 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "santee",
-      "name": "Santee",
-      "population": 59497,
-      "facilities_count": 2,
-      "total_releases_pounds": 2159,
-      "dominant_medium": "air",
-      "ej_pct_avg": 58.2,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 2 facilities"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
-      "slug": "murrieta",
-      "name": "Murrieta",
-      "population": 111899,
+      "slug": "pasadena",
+      "name": "Pasadena",
+      "population": 137554,
       "facilities_count": 1,
-      "total_releases_pounds": 8,
+      "total_releases_pounds": 3,
       "dominant_medium": "air",
-      "ej_pct_avg": 55.7,
+      "ej_pct_avg": 75.6,
       "relation": "peer",
       "reason": "Similar TRI air profile \u00b7 1 facility"
     },
@@ -1073,7 +1041,7 @@
       "name": "Lompoc",
       "population": 44086,
       "facilities_count": 2,
-      "total_releases_pounds": 216,
+      "total_releases_pounds": 1005,
       "dominant_medium": "land",
       "ej_pct_avg": 36.3,
       "relation": "contrast",
@@ -1092,5 +1060,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:10:59Z"
 }

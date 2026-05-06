@@ -9,22 +9,34 @@
     "county_name": "Napa",
     "county_fips": "06055"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 0,
+    "facilities_in_city": 1,
     "utilities_serving": 14,
-    "total_releases_pounds": 0,
-    "air_releases_pounds": 0,
+    "total_releases_pounds": 0.0,
+    "air_releases_pounds": 0.0,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
     "yoy_pct_change": null,
-    "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2023,
+    "long_arc_pct_change": -100.0,
+    "long_arc_baseline_year": 2012,
     "history": [
       {
-        "year": 2023,
-        "value": 0
+        "year": 2012,
+        "value": 7
+      },
+      {
+        "year": 2019,
+        "value": 0.44
+      },
+      {
+        "year": 2022,
+        "value": 0.28
+      },
+      {
+        "year": 2024,
+        "value": 0.0
       }
     ]
   },
@@ -301,10 +313,22 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2012,
       "history": [
         {
-          "year": 2023,
+          "year": 2012,
+          "value": 7
+        },
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -316,10 +340,22 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2012,
       "history": [
         {
-          "year": 2023,
+          "year": 2012,
+          "value": 0
+        },
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -331,10 +367,22 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2012,
       "history": [
         {
-          "year": 2023,
+          "year": 2012,
+          "value": 0
+        },
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -407,7 +455,21 @@
       ]
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "slug": "vulcan-materials-co-napa-quarry",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Vulcan Materials CO Napa Quarry",
+      "parent_company": "Vulcan Materials Co",
+      "total_pounds_recent": 0.0,
+      "yoy_pct_change": null,
+      "top_chemical": "Benzo[g,h,i]perylene",
+      "city": "Napa",
+      "lat": 38.269773,
+      "lng": -122.272008
+    }
+  ],
   "water": {
     "utilities_count": 14,
     "population_served_total": 87823,
@@ -558,264 +620,8 @@
       }
     ]
   },
-  "flags": [
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Beryllium",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2023 (beryllium).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2023,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2800530"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Asbestos",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2021 (asbestos).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2021,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2800530"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5000",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2025,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2800531"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 1080",
-      "summary": "Unresolved Lead and Copper Rule violation cited in 2025 (contaminant 1080).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2025,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2800531"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2800593"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2800593"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5000",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2025,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2801016"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5000",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2025,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2801016"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2801080"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2801080"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2810009"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2810009"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 8000",
-      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2024 (contaminant 8000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2810013"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 8000",
-      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2024 (contaminant 8000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2810013"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2810014"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2810014"
-      }
-    }
-  ],
+  "superfund": [],
+  "flags": [],
   "equity": {
     "population": 79233,
     "pct_low_income": 8.1,
@@ -1084,15 +890,15 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "bellflower",
-      "name": "Bellflower",
-      "population": 78352,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 83.9,
+      "slug": "florin",
+      "name": "Florin",
+      "population": 49992,
+      "facilities_count": 1,
+      "total_releases_pounds": 0.3,
+      "dominant_medium": "air",
+      "ej_pct_avg": 69.3,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI air profile \u00b7 1 facility"
     },
     {
       "kind": "city",
@@ -1101,7 +907,7 @@
       "name": "Lompoc",
       "population": 44086,
       "facilities_count": 2,
-      "total_releases_pounds": 216,
+      "total_releases_pounds": 1005,
       "dominant_medium": "land",
       "ej_pct_avg": 36.3,
       "relation": "contrast",
@@ -1120,5 +926,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:05Z"
+  "_published_at": "2026-05-06T04:10:59Z"
 }

@@ -87,6 +87,35 @@ def load_places(state_fips: str) -> list[tuple[Place, object]]:
     return out
 
 
+def place_centroids(state_fips: str) -> dict[str, tuple[float, float]]:
+    """Return ``{place_fips: (lat, lng)}`` from TIGER 2020 PLACE shapefile.
+
+    Uses pre-computed INTPTLAT / INTPTLON columns (internal point on the
+    polygon, guaranteed inside) so we don't recompute geometry on every
+    run. Used by Superfund water-linkage to map a PWS's served-city to a
+    coarse coordinate when SDWIS doesn't expose treatment-plant lat/lon.
+    """
+    import shapefile  # pyshp
+
+    _ensure_zip(state_fips, "PLACE")
+    shp_path = _tiger_dir() / f"tl_2020_{state_fips}_place.shp"
+    sf = shapefile.Reader(str(shp_path))
+    fields = [f[0] for f in sf.fields[1:]]
+    out: dict[str, tuple[float, float]] = {}
+    for sr in sf.iterShapeRecords():
+        rec = dict(zip(fields, sr.record))
+        place_fips = str(rec.get("GEOID") or "")
+        if not place_fips:
+            continue
+        try:
+            lat = float(rec.get("INTPTLAT") or "")
+            lng = float(rec.get("INTPTLON") or "")
+        except ValueError:
+            continue
+        out[place_fips] = (lat, lng)
+    return out
+
+
 def assign_facilities_to_places(
     facility_points: list[tuple[str, float, float]],
     state_fips: str,

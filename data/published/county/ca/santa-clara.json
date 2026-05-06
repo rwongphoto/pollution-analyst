@@ -7,16 +7,16 @@
     "fips": "06085",
     "population": 1916831
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 6.583,
+      "current": 6.653,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -23.1,
-      "long_arc_pct_change": -59.6,
+      "yoy_pct_change": 1.1,
+      "long_arc_pct_change": -59.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 6.583
+        },
+        {
+          "year": 2024,
+          "value": 6.653
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 21.433,
+      "current": 18.883,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -7.2,
-      "long_arc_pct_change": -61.0,
+      "yoy_pct_change": -11.9,
+      "long_arc_pct_change": -65.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 21.433
+        },
+        {
+          "year": 2024,
+          "value": 18.883
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.058,
+      "current": 0.037,
       "units": "ppm",
-      "yoy_pct_change": -8.3,
-      "long_arc_pct_change": 2.7,
+      "yoy_pct_change": -35.3,
+      "long_arc_pct_change": -33.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 0.058
+        },
+        {
+          "year": 2024,
+          "value": 0.037
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 10.909,
+      "current": 13.441,
       "units": "ppb",
-      "yoy_pct_change": -4.4,
-      "long_arc_pct_change": -56.5,
+      "yoy_pct_change": 23.2,
+      "long_arc_pct_change": -46.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -275,6 +287,10 @@
         {
           "year": 2023,
           "value": 10.909
+        },
+        {
+          "year": 2024,
+          "value": 13.441
         }
       ]
     },
@@ -326,10 +342,10 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 36291,
+      "current": 13288,
       "units": "lb",
-      "yoy_pct_change": -5.0,
-      "long_arc_pct_change": -86.6,
+      "yoy_pct_change": -63.4,
+      "long_arc_pct_change": -95.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -387,15 +403,19 @@
         {
           "year": 2023,
           "value": 36291
+        },
+        {
+          "year": 2024,
+          "value": 13288
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 15,
+      "current": 17,
       "units": "lb",
-      "yoy_pct_change": -53.4,
+      "yoy_pct_change": 16.6,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -454,16 +474,20 @@
         {
           "year": 2023,
           "value": 15
+        },
+        {
+          "year": 2024,
+          "value": 17
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 195543,
+      "current": 472756,
       "units": "lb",
-      "yoy_pct_change": -10.8,
-      "long_arc_pct_change": 185.3,
+      "yoy_pct_change": 141.8,
+      "long_arc_pct_change": 589.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -521,6 +545,10 @@
         {
           "year": 2023,
           "value": 195543
+        },
+        {
+          "year": 2024,
+          "value": 472756
         }
       ]
     },
@@ -594,43 +622,30 @@
   ],
   "facilities": [
     {
+      "slug": "clean-harbors-san-jose-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Clean Harbors San Jose LLC",
+      "parent_company": "Clean Harbors INC",
+      "total_pounds_recent": 358921,
+      "yoy_pct_change": 3820.0,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "San Jose",
+      "lat": 37.364996,
+      "lng": -121.88461
+    },
+    {
       "slug": "gorilla-circuits",
       "state": "ca",
       "state_label": "California",
       "name": "Gorilla Circuits",
       "parent_company": "Gorilla Circuits",
-      "total_pounds_recent": 73200,
-      "yoy_pct_change": 38.8,
+      "total_pounds_recent": 72800,
+      "yoy_pct_change": -0.5,
       "top_chemical": "Copper",
       "city": "San Jose",
       "lat": 37.371118,
       "lng": -121.897439
-    },
-    {
-      "slug": "lumileds-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Lumileds LLC",
-      "parent_company": "Lumileds USA Holding CORP",
-      "total_pounds_recent": 27070,
-      "yoy_pct_change": -10.2,
-      "top_chemical": "Ammonia",
-      "city": "San Jose",
-      "lat": 37.381879,
-      "lng": -121.935756
-    },
-    {
-      "slug": "streamline-circuits",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Streamline Circuits",
-      "parent_company": "Summit Interconnect Intermediate INC",
-      "total_pounds_recent": 21888,
-      "yoy_pct_change": 1976.5,
-      "top_chemical": "Copper  And Copper Compounds",
-      "city": "Santa Clara",
-      "lat": 37.36622,
-      "lng": -121.955608
     },
     {
       "slug": "sierra-circuits-inc-dba-sierra-proto-express",
@@ -638,25 +653,12 @@
       "state_label": "California",
       "name": "Sierra Circuits INC (Dba Sierra Proto Express)",
       "parent_company": null,
-      "total_pounds_recent": 20181,
-      "yoy_pct_change": -5.4,
-      "top_chemical": "Copper compounds",
+      "total_pounds_recent": 20964,
+      "yoy_pct_change": 3.9,
+      "top_chemical": "Copper  And Copper Compounds",
       "city": "Sunnyvale",
       "lat": 37.384378,
       "lng": -122.04895
-    },
-    {
-      "slug": "apct-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Apct INC",
-      "parent_company": "Advancedpcb Holdings INC",
-      "total_pounds_recent": 14643,
-      "yoy_pct_change": 6807.1,
-      "top_chemical": "Nitric acid",
-      "city": "Santa Clara",
-      "lat": 37.387084,
-      "lng": -121.944057
     },
     {
       "slug": "qualitek-inc-dba-westak",
@@ -664,67 +666,226 @@
       "state_label": "California",
       "name": "Qualitek INC (Dba Westak)",
       "parent_company": null,
-      "total_pounds_recent": 13853,
-      "yoy_pct_change": -10.1,
+      "total_pounds_recent": 13307,
+      "yoy_pct_change": -3.9,
       "top_chemical": "Ammonia",
       "city": "Sunnyvale",
       "lat": 37.407259,
       "lng": -121.991961
     },
     {
-      "slug": "lenthor-engineering",
+      "slug": "headway-technologies-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Lenthor Engineering",
-      "parent_company": null,
-      "total_pounds_recent": 10897,
-      "yoy_pct_change": -3.9,
-      "top_chemical": "Nickel",
+      "name": "Headway Technologies INC.",
+      "parent_company": "Sae Magnetics (Hk) LTD",
+      "total_pounds_recent": 4497,
+      "yoy_pct_change": 2.4,
+      "top_chemical": "N-Methyl-2-pyrrolidone",
       "city": "Milpitas",
-      "lat": 37.426584,
-      "lng": -121.897451
+      "lat": 37.427403,
+      "lng": -121.892501
     },
     {
-      "slug": "clean-harbors-san-jose-llc",
+      "slug": "agilent-technologies-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Clean Harbors San Jose LLC",
-      "parent_company": "Clean Harbors INC",
-      "total_pounds_recent": 9156,
-      "yoy_pct_change": -87.2,
+      "name": "Agilent Technologies INC",
+      "parent_company": "Agilent Technologies INC",
+      "total_pounds_recent": 4218,
+      "yoy_pct_change": -1.0,
+      "top_chemical": "Acetonitrile",
+      "city": "Santa Clara",
+      "lat": 37.323164,
+      "lng": -121.998221
+    },
+    {
+      "slug": "ttm-technologies",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Ttm Technologies",
+      "parent_company": "Ttm Technologies INC",
+      "total_pounds_recent": 2911,
+      "yoy_pct_change": 4.8,
       "top_chemical": "Nitric acid",
       "city": "San Jose",
-      "lat": 37.364996,
-      "lng": -121.88461
+      "lat": 37.302449,
+      "lng": -121.874909
     },
     {
-      "slug": "western-digital-technologies-inc",
+      "slug": "equilon-san-jose-terminal",
       "state": "ca",
       "state_label": "California",
-      "name": "Western Digital Technologies INC",
-      "parent_company": "Western Digital CORP",
-      "total_pounds_recent": 6470,
-      "yoy_pct_change": 17.6,
-      "top_chemical": "N-Methyl-2-pyrrolidone",
+      "name": "Equilon San Jose Terminal",
+      "parent_company": "Shell Petroleum INC",
+      "total_pounds_recent": 1948,
+      "yoy_pct_change": 223.0,
+      "top_chemical": "Xylene (mixed isomers)",
       "city": "San Jose",
-      "lat": 37.248608,
-      "lng": -121.792161
+      "lat": 37.395584,
+      "lng": -121.910233
     },
     {
-      "slug": "ens-technology-llc",
+      "slug": "csl-operating-llc",
       "state": "ca",
       "state_label": "California",
-      "name": "Ens Technology LLC",
-      "parent_company": null,
-      "total_pounds_recent": 5272,
-      "yoy_pct_change": null,
+      "name": "Csl Operating LLC",
+      "parent_company": "Enpro Industries INC",
+      "total_pounds_recent": 1890,
+      "yoy_pct_change": -23.0,
       "top_chemical": "Nitric acid",
       "city": "Santa Clara",
-      "lat": 37.379806,
-      "lng": -121.944823
+      "lat": 37.385519,
+      "lng": -121.944943
+    },
+    {
+      "slug": "infinera-corp",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Infinera Corp",
+      "parent_company": null,
+      "total_pounds_recent": 1209,
+      "yoy_pct_change": -68.1,
+      "top_chemical": "N-Methyl-2-pyrrolidone",
+      "city": "Sunnyvale",
+      "lat": 37.414555,
+      "lng": -122.021474
     }
   ],
   "utilities": [],
+  "superfund": [
+    {
+      "slug": "advanced-micro-devices-inc",
+      "state": "ca",
+      "name": "Advanced Micro Devices, Inc.",
+      "epa_id": "CAD048634059",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Sunnyvale",
+      "city_slug": "sunnyvale",
+      "primary_contaminant": "1,1,1-Trichloroethane"
+    },
+    {
+      "slug": "advanced-micro-devices-inc-building-915",
+      "state": "ca",
+      "name": "Advanced Micro Devices, Inc. (Building 915)",
+      "epa_id": "CAT080034234",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Sunnyvale",
+      "city_slug": "sunnyvale",
+      "primary_contaminant": "1,1,1-Trichloroethane"
+    },
+    {
+      "slug": "applied-materials",
+      "state": "ca",
+      "name": "Applied Materials",
+      "epa_id": "CAD042728840",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Santa Clara",
+      "city_slug": "santa-clara",
+      "primary_contaminant": "1,1,1-Trichloroethane"
+    },
+    {
+      "slug": "cts-printex-inc",
+      "state": "ca",
+      "name": "Cts Printex, Inc.",
+      "epa_id": "CAD009212838",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Mountain View",
+      "city_slug": "mountain-view",
+      "primary_contaminant": "1,1-Dichloroethane"
+    },
+    {
+      "slug": "fairchild-semiconductor-corp-mountain-view-plant",
+      "state": "ca",
+      "name": "Fairchild Semiconductor Corp. (Mountain View Plant)",
+      "epa_id": "CAD095989778",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Mountain View",
+      "city_slug": "mountain-view",
+      "primary_contaminant": "1,1,1-Trichloroethane"
+    },
+    {
+      "slug": "fairchild-semiconductor-corp-south-san-jose-plant",
+      "state": "ca",
+      "name": "Fairchild Semiconductor Corp. (South San Jose Plant)",
+      "epa_id": "CAD097012298",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "San Jose",
+      "city_slug": "san-jose",
+      "primary_contaminant": "1,1,2-Trichloro-1,2,2-Trifluoroethane"
+    },
+    {
+      "slug": "hewlett-packard-620-640-page-mill-road",
+      "state": "ca",
+      "name": "Hewlett-Packard (620-640 Page Mill Road)",
+      "epa_id": "CAD980884209",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Palo Alto",
+      "city_slug": "palo-alto",
+      "primary_contaminant": "1,1,1-Trichloroethane"
+    },
+    {
+      "slug": "intel-corp-mountain-view-plant",
+      "state": "ca",
+      "name": "Intel Corp. (Mountain View Plant)",
+      "epa_id": "CAD061620217",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Mountain View",
+      "city_slug": "mountain-view",
+      "primary_contaminant": "1,1,1-Trichloroethane"
+    },
+    {
+      "slug": "intel-magnetics",
+      "state": "ca",
+      "name": "Intel Magnetics",
+      "epa_id": "CAD092212497",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Santa Clara",
+      "city_slug": "santa-clara",
+      "primary_contaminant": "1,1,1-Trichloroethane"
+    },
+    {
+      "slug": "intersil-inc-siemens-components",
+      "state": "ca",
+      "name": "Intersil Inc./Siemens Components",
+      "epa_id": "CAD041472341",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Santa Clara",
+      "city_slug": "santa-clara",
+      "primary_contaminant": "1,1,1-Trichloroethane"
+    }
+  ],
+  "superfund_total": 23,
   "cities_directory": [
     {
       "slug": "gilroy",
@@ -754,7 +915,7 @@
       "slug": "milpitas",
       "name": "Milpitas",
       "fips": "0647766",
-      "facilities_count": 5,
+      "facilities_count": 2,
       "utilities_count": 2,
       "population": 79092
     },
@@ -778,7 +939,7 @@
       "slug": "san-jose",
       "name": "San Jose",
       "fips": "0668000",
-      "facilities_count": 18,
+      "facilities_count": 17,
       "utilities_count": 11,
       "population": 1001176
     },
@@ -786,7 +947,7 @@
       "slug": "san-martin",
       "name": "San Martin",
       "fips": "0668238",
-      "facilities_count": 0,
+      "facilities_count": 1,
       "utilities_count": 5,
       "population": 6289
     },
@@ -794,7 +955,7 @@
       "slug": "santa-clara",
       "name": "Santa Clara",
       "fips": "0669084",
-      "facilities_count": 10,
+      "facilities_count": 7,
       "utilities_count": 2,
       "population": 128058
     },
@@ -1043,12 +1204,51 @@
       "slug": "fresno",
       "name": "Fresno County",
       "population": 1008280,
-      "facilities_count": 26,
-      "total_releases_pounds": 391801,
+      "facilities_count": 28,
+      "total_releases_pounds": 366524,
       "dominant_medium": "land",
       "ej_pct_avg": 73.0,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 26 facilities"
+      "reason": "Similar TRI land profile \u00b7 28 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "san-diego",
+      "name": "San Diego County",
+      "population": 3289701,
+      "facilities_count": 54,
+      "total_releases_pounds": 813681,
+      "dominant_medium": "land",
+      "ej_pct_avg": 66.9,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 54 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "sacramento",
+      "name": "Sacramento County",
+      "population": 1579211,
+      "facilities_count": 14,
+      "total_releases_pounds": 800886,
+      "dominant_medium": "land",
+      "ej_pct_avg": 70.4,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 14 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "orange",
+      "name": "Orange County",
+      "population": 3175227,
+      "facilities_count": 78,
+      "total_releases_pounds": 382652,
+      "dominant_medium": "land",
+      "ej_pct_avg": 79.4,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 78 facilities"
     },
     {
       "kind": "county",
@@ -1057,7 +1257,7 @@
       "name": "Stanislaus County",
       "population": 552063,
       "facilities_count": 19,
-      "total_releases_pounds": 574701,
+      "total_releases_pounds": 248495,
       "dominant_medium": "land",
       "ej_pct_avg": 67.9,
       "relation": "peer",
@@ -1066,50 +1266,11 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "san-joaquin",
-      "name": "San Joaquin County",
-      "population": 779445,
-      "facilities_count": 25,
-      "total_releases_pounds": 49235,
-      "dominant_medium": "land",
-      "ej_pct_avg": 71.5,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 25 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "san-diego",
-      "name": "San Diego County",
-      "population": 3289701,
-      "facilities_count": 61,
-      "total_releases_pounds": 1354294,
-      "dominant_medium": "land",
-      "ej_pct_avg": 66.9,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 61 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "sacramento",
-      "name": "Sacramento County",
-      "population": 1579211,
-      "facilities_count": 13,
-      "total_releases_pounds": 765169,
-      "dominant_medium": "land",
-      "ej_pct_avg": 70.4,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 13 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
       "slug": "sonoma",
       "name": "Sonoma County",
       "population": 488436,
       "facilities_count": 9,
-      "total_releases_pounds": 46676,
+      "total_releases_pounds": 12004,
       "dominant_medium": "air",
       "ej_pct_avg": 48.1,
       "relation": "contrast",
@@ -1123,5 +1284,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

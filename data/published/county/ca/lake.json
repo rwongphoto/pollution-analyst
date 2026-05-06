@@ -7,16 +7,16 @@
     "fips": "06033",
     "population": 68024
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 4.123,
+      "current": 3.234,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -3.1,
-      "long_arc_pct_change": -4.5,
+      "yoy_pct_change": -21.6,
+      "long_arc_pct_change": -25.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 4.123
+        },
+        {
+          "year": 2024,
+          "value": 3.234
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 14.0,
+      "current": 6.9,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 38.6,
-      "long_arc_pct_change": 48.9,
+      "yoy_pct_change": -50.7,
+      "long_arc_pct_change": -26.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 14.0
+        },
+        {
+          "year": 2024,
+          "value": 6.9
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.048,
+      "current": 0.05,
       "units": "ppm",
-      "yoy_pct_change": -9.4,
-      "long_arc_pct_change": -22.6,
+      "yoy_pct_change": 4.2,
+      "long_arc_pct_change": -19.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,6 +216,10 @@
         {
           "year": 2023,
           "value": 0.048
+        },
+        {
+          "year": 2024,
+          "value": 0.05
         }
       ]
     },
@@ -259,9 +271,9 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 176,
+      "current": 227,
       "units": "lb",
-      "yoy_pct_change": -52.9,
+      "yoy_pct_change": 29.0,
       "long_arc_pct_change": null,
       "baseline_year": 2022,
       "history": [
@@ -272,6 +284,10 @@
         {
           "year": 2023,
           "value": 176
+        },
+        {
+          "year": 2024,
+          "value": 227
         }
       ]
     },
@@ -291,6 +307,10 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
@@ -309,6 +329,10 @@
         },
         {
           "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -388,8 +412,8 @@
       "state_label": "California",
       "name": "Granite Construction CO - Highway 175",
       "parent_company": "Granite Construction INC",
-      "total_pounds_recent": 176,
-      "yoy_pct_change": -52.9,
+      "total_pounds_recent": 227,
+      "yoy_pct_change": 29.0,
       "top_chemical": "Polycyclic aromatic compounds",
       "city": "Lakeport",
       "lat": 38.995772,
@@ -397,6 +421,22 @@
     }
   ],
   "utilities": [],
+  "superfund": [
+    {
+      "slug": "sulphur-bank-mercury-mine",
+      "state": "ca",
+      "name": "Sulphur Bank Mercury Mine",
+      "epa_id": "CAD980893275",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Clearlake Oaks",
+      "city_slug": null,
+      "primary_contaminant": "Antimony"
+    }
+  ],
+  "superfund_total": 1,
   "cities_directory": [
     {
       "slug": "clearlake",
@@ -688,37 +728,11 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "santa-cruz",
-      "name": "Santa Cruz County",
-      "population": 268571,
-      "facilities_count": 2,
-      "total_releases_pounds": 145,
-      "dominant_medium": "air",
-      "ej_pct_avg": 48.1,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 2 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "marin",
-      "name": "Marin County",
-      "population": 260485,
-      "facilities_count": 1,
-      "total_releases_pounds": 52,
-      "dominant_medium": "air",
-      "ej_pct_avg": 49.4,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 1 facility"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
       "slug": "tuolumne",
       "name": "Tuolumne County",
       "population": 54993,
       "facilities_count": 1,
-      "total_releases_pounds": 0.16,
+      "total_releases_pounds": 0.12,
       "dominant_medium": "air",
       "ej_pct_avg": 44.3,
       "relation": "peer",
@@ -731,7 +745,7 @@
       "name": "Plumas County",
       "population": 19650,
       "facilities_count": 2,
-      "total_releases_pounds": 17337,
+      "total_releases_pounds": 23733,
       "dominant_medium": "air",
       "ej_pct_avg": 39.0,
       "relation": "peer",
@@ -744,7 +758,7 @@
       "name": "Colusa County",
       "population": 21811,
       "facilities_count": 1,
-      "total_releases_pounds": 118960,
+      "total_releases_pounds": 104334,
       "dominant_medium": "air",
       "ej_pct_avg": 45.8,
       "relation": "peer",
@@ -753,12 +767,38 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "placer",
+      "name": "Placer County",
+      "population": 406608,
+      "facilities_count": 6,
+      "total_releases_pounds": 13998,
+      "dominant_medium": "air",
+      "ej_pct_avg": 59.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 6 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "sonoma",
+      "name": "Sonoma County",
+      "population": 488436,
+      "facilities_count": 9,
+      "total_releases_pounds": 12004,
+      "dominant_medium": "air",
+      "ej_pct_avg": 48.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 9 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "yolo",
       "name": "Yolo County",
       "population": 217141,
-      "facilities_count": 5,
-      "total_releases_pounds": 51005,
-      "dominant_medium": "air",
+      "facilities_count": 3,
+      "total_releases_pounds": 1894,
+      "dominant_medium": "land",
       "ej_pct_avg": 63.5,
       "relation": "contrast",
       "reason": "Same scale, heavier equity burden (+25 pct-pt EJ gap)"
@@ -771,5 +811,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

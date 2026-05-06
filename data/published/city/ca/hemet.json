@@ -9,17 +9,17 @@
     "county_name": "Riverside",
     "county_fips": "06065"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 6,
-    "total_releases_pounds": 5,
-    "air_releases_pounds": 1,
-    "water_releases_pounds": 4,
+    "total_releases_pounds": 3,
+    "air_releases_pounds": 0.84,
+    "water_releases_pounds": 2,
     "land_releases_pounds": 0,
-    "yoy_pct_change": 25.0,
-    "long_arc_pct_change": -97.5,
+    "yoy_pct_change": -43.2,
+    "long_arc_pct_change": -98.6,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -73,6 +73,10 @@
       {
         "year": 2023,
         "value": 5
+      },
+      {
+        "year": 2024,
+        "value": 3
       }
     ]
   },
@@ -80,10 +84,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 8.542,
+      "current": 9.199,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -0.1,
-      "long_arc_pct_change": -54.1,
+      "yoy_pct_change": 7.7,
+      "long_arc_pct_change": -50.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 8.542
+        },
+        {
+          "year": 2024,
+          "value": 9.199
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 22.317,
+      "current": 25.271,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -1.1,
-      "long_arc_pct_change": -53.7,
+      "yoy_pct_change": 13.2,
+      "long_arc_pct_change": -47.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 22.317
+        },
+        {
+          "year": 2024,
+          "value": 25.271
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.082,
+      "current": 0.086,
       "units": "ppm",
-      "yoy_pct_change": 4.0,
-      "long_arc_pct_change": -17.8,
+      "yoy_pct_change": 4.5,
+      "long_arc_pct_change": -14.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -275,16 +287,20 @@
         {
           "year": 2023,
           "value": 0.082
+        },
+        {
+          "year": 2024,
+          "value": 0.086
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 8.39,
+      "current": 9.192,
       "units": "ppb",
-      "yoy_pct_change": 13.4,
-      "long_arc_pct_change": -56.3,
+      "yoy_pct_change": 9.6,
+      "long_arc_pct_change": -52.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -342,6 +358,10 @@
         {
           "year": 2023,
           "value": 8.39
+        },
+        {
+          "year": 2024,
+          "value": 9.192
         }
       ]
     },
@@ -395,7 +415,7 @@
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 1,
       "units": "lb",
-      "yoy_pct_change": -75.0,
+      "yoy_pct_change": -16.0,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -450,15 +470,19 @@
         {
           "year": 2023,
           "value": 1
+        },
+        {
+          "year": 2024,
+          "value": 1
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 4,
+      "current": 2,
       "units": "lb",
-      "yoy_pct_change": null,
+      "yoy_pct_change": -50.0,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -513,6 +537,10 @@
         {
           "year": 2023,
           "value": 4
+        },
+        {
+          "year": 2024,
+          "value": 2
         }
       ]
     },
@@ -575,6 +603,10 @@
         },
         {
           "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -654,8 +686,8 @@
       "state_label": "California",
       "name": "Mccrometer",
       "parent_company": null,
-      "total_pounds_recent": 5,
-      "yoy_pct_change": 25.0,
+      "total_pounds_recent": 3,
+      "yoy_pct_change": -43.2,
       "top_chemical": "Nickel",
       "city": "Hemet",
       "lat": 33.729286,
@@ -732,72 +764,8 @@
       }
     ]
   },
-  "flags": [
-    {
-      "type": "violation_event",
-      "severity": "health_based_recent5y",
-      "label": "Contaminant 8000",
-      "summary": "Revised Total Coliform Rule health-based violation cited in 2022 (contaminant 8000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2022,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3310022"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "health_based_recent5y",
-      "label": "Contaminant 8000",
-      "summary": "Revised Total Coliform Rule health-based violation cited in 2022 (contaminant 8000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2022,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3310022"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 8000",
-      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2024 (contaminant 8000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3310801"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 7000",
-      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2024 (contaminant 7000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3310801"
-      }
-    }
-  ],
+  "superfund": [],
+  "flags": [],
   "equity": {
     "population": 89651,
     "pct_low_income": 17.4,
@@ -1014,26 +982,26 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "murrieta",
-      "name": "Murrieta",
-      "population": 111899,
+      "slug": "san-jacinto",
+      "name": "San Jacinto",
+      "population": 54077,
       "facilities_count": 1,
-      "total_releases_pounds": 8,
+      "total_releases_pounds": 4,
       "dominant_medium": "air",
-      "ej_pct_avg": 55.7,
+      "ej_pct_avg": 57.0,
       "relation": "peer",
       "reason": "Comparable release scale \u00b7 1 facility"
     },
     {
       "kind": "city",
       "state": "ca",
-      "slug": "san-jacinto",
-      "name": "San Jacinto",
-      "population": 54077,
+      "slug": "murrieta",
+      "name": "Murrieta",
+      "population": 111899,
       "facilities_count": 1,
-      "total_releases_pounds": 3,
+      "total_releases_pounds": 6,
       "dominant_medium": "air",
-      "ej_pct_avg": 57.0,
+      "ej_pct_avg": 55.7,
       "relation": "peer",
       "reason": "Comparable release scale \u00b7 1 facility"
     },
@@ -1070,7 +1038,7 @@
       "name": "Gilroy",
       "population": 58696,
       "facilities_count": 1,
-      "total_releases_pounds": 0.04,
+      "total_releases_pounds": 0.05,
       "dominant_medium": "water",
       "ej_pct_avg": 45.3,
       "relation": "peer",
@@ -1083,7 +1051,7 @@
       "name": "Lompoc",
       "population": 44086,
       "facilities_count": 2,
-      "total_releases_pounds": 216,
+      "total_releases_pounds": 1005,
       "dominant_medium": "land",
       "ej_pct_avg": 36.3,
       "relation": "contrast",
@@ -1102,5 +1070,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:10:59Z"
 }

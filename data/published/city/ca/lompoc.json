@@ -9,17 +9,17 @@
     "county_name": "Santa Barbara",
     "county_fips": "06083"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 5,
-    "total_releases_pounds": 216,
+    "total_releases_pounds": 1005,
     "air_releases_pounds": 0,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 216,
-    "yoy_pct_change": -68.1,
-    "long_arc_pct_change": -76.4,
+    "land_releases_pounds": 1005,
+    "yoy_pct_change": 366.1,
+    "long_arc_pct_change": 9.8,
     "long_arc_baseline_year": 2012,
     "history": [
       {
@@ -69,6 +69,10 @@
       {
         "year": 2023,
         "value": 216
+      },
+      {
+        "year": 2024,
+        "value": 1005
       }
     ]
   },
@@ -76,10 +80,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 5.374,
+      "current": 5.262,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -15.5,
-      "long_arc_pct_change": -46.3,
+      "yoy_pct_change": -2.1,
+      "long_arc_pct_change": -47.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -137,16 +141,20 @@
         {
           "year": 2023,
           "value": 5.374
+        },
+        {
+          "year": 2024,
+          "value": 5.262
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 14.36,
+      "current": 12.633,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 1.8,
-      "long_arc_pct_change": -24.2,
+      "yoy_pct_change": -12.0,
+      "long_arc_pct_change": -33.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -204,6 +212,10 @@
         {
           "year": 2023,
           "value": 14.36
+        },
+        {
+          "year": 2024,
+          "value": 12.633
         }
       ]
     },
@@ -212,8 +224,8 @@
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
       "current": 0.05,
       "units": "ppm",
-      "yoy_pct_change": -2.6,
-      "long_arc_pct_change": -22.0,
+      "yoy_pct_change": -1.8,
+      "long_arc_pct_change": -23.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -271,16 +283,20 @@
         {
           "year": 2023,
           "value": 0.05
+        },
+        {
+          "year": 2024,
+          "value": 0.05
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 0.737,
+      "current": 1.027,
       "units": "ppb",
-      "yoy_pct_change": -39.8,
-      "long_arc_pct_change": -90.0,
+      "yoy_pct_change": 39.4,
+      "long_arc_pct_change": -86.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -338,6 +354,10 @@
         {
           "year": 2023,
           "value": 0.737
+        },
+        {
+          "year": 2024,
+          "value": 1.027
         }
       ]
     },
@@ -442,6 +462,10 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
@@ -501,15 +525,19 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 216,
+      "current": 1005,
       "units": "lb",
-      "yoy_pct_change": -68.1,
+      "yoy_pct_change": 366.1,
       "long_arc_pct_change": null,
       "baseline_year": 2012,
       "history": [
@@ -560,6 +588,10 @@
         {
           "year": 2023,
           "value": 216
+        },
+        {
+          "year": 2024,
+          "value": 1005
         }
       ]
     },
@@ -633,30 +665,30 @@
   ],
   "facilities": [
     {
-      "slug": "fcc-lompoc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Fcc Lompoc",
-      "parent_company": "US Department Of Justice",
-      "total_pounds_recent": 216,
-      "yoy_pct_change": -68.1,
-      "top_chemical": "Lead",
-      "city": "Lompoc",
-      "lat": 34.676528,
-      "lng": -120.505529
-    },
-    {
       "slug": "raytheon-vision-systems",
       "state": "ca",
       "state_label": "California",
       "name": "Raytheon Vision Systems",
       "parent_company": "Rtx CORP",
-      "total_pounds_recent": 0.13,
-      "yoy_pct_change": -80.9,
+      "total_pounds_recent": 700,
+      "yoy_pct_change": 538438.5,
       "top_chemical": "Mercury  And Mercury Compounds",
       "city": "Lompoc",
       "lat": 34.663622,
       "lng": -120.46056
+    },
+    {
+      "slug": "fcc-lompoc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Fcc Lompoc",
+      "parent_company": "US Department Of Justice",
+      "total_pounds_recent": 305,
+      "yoy_pct_change": 41.5,
+      "top_chemical": "Lead",
+      "city": "Lompoc",
+      "lat": 34.676528,
+      "lng": -120.505529
     }
   ],
   "water": {
@@ -719,72 +751,8 @@
       }
     ]
   },
-  "flags": [
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5000",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4200822"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Arsenic",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2022 (arsenic).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2022,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4200822"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Asbestos",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (asbestos).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2025,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4200848"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Asbestos",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (asbestos).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2025,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4200848"
-      }
-    }
-  ],
+  "superfund": [],
+  "flags": [],
   "equity": {
     "population": 44086,
     "pct_low_income": 17.2,
@@ -1001,26 +969,26 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "santa-maria",
-      "name": "Santa Maria",
-      "population": 109543,
-      "facilities_count": 2,
-      "total_releases_pounds": 29107,
-      "dominant_medium": "land",
-      "ej_pct_avg": 51.3,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 2 facilities"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
       "slug": "goleta",
       "name": "Goleta",
       "population": 32640,
       "facilities_count": 1,
-      "total_releases_pounds": 0.03,
+      "total_releases_pounds": 1700,
       "dominant_medium": "land",
       "ej_pct_avg": 41.7,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "vandenberg-afb",
+      "name": "Vandenberg AFB",
+      "population": 3681,
+      "facilities_count": 1,
+      "total_releases_pounds": 467,
+      "dominant_medium": "land",
+      "ej_pct_avg": null,
       "relation": "peer",
       "reason": "Similar TRI land profile \u00b7 1 facility"
     },
@@ -1031,35 +999,35 @@
       "name": "Carpinteria",
       "population": 13187,
       "facilities_count": 1,
-      "total_releases_pounds": 234,
+      "total_releases_pounds": 146,
       "dominant_medium": "air",
       "ej_pct_avg": 50.7,
-      "relation": "peer",
-      "reason": "Comparable release scale \u00b7 1 facility"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
-      "slug": "vandenberg-afb",
-      "name": "Vandenberg AFB",
-      "population": 3681,
-      "facilities_count": 1,
-      "total_releases_pounds": 3101,
-      "dominant_medium": "air",
-      "ej_pct_avg": null,
       "relation": "peer",
       "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "ca",
-      "slug": "perris",
-      "name": "Perris",
-      "population": 78881,
+      "slug": "santa-maria",
+      "name": "Santa Maria",
+      "population": 109543,
       "facilities_count": 2,
-      "total_releases_pounds": 109,
+      "total_releases_pounds": 52217,
+      "dominant_medium": "air",
+      "ej_pct_avg": 51.3,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "florence-graham",
+      "name": "Florence-Graham",
+      "population": 63132,
+      "facilities_count": 2,
+      "total_releases_pounds": 1138,
       "dominant_medium": "land",
-      "ej_pct_avg": 59.1,
+      "ej_pct_avg": 84.8,
       "relation": "peer",
       "reason": "Similar TRI land profile \u00b7 2 facilities"
     },
@@ -1089,5 +1057,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:10:59Z"
 }

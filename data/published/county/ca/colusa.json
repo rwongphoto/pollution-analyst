@@ -7,16 +7,16 @@
     "fips": "06011",
     "population": 21811
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 10.358,
+      "current": 8.37,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 15.1,
-      "long_arc_pct_change": 26.3,
+      "yoy_pct_change": -19.2,
+      "long_arc_pct_change": 2.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 10.358
+        },
+        {
+          "year": 2024,
+          "value": 8.37
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 24.85,
+      "current": 18.0,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 35.8,
-      "long_arc_pct_change": -4.4,
+      "yoy_pct_change": -27.6,
+      "long_arc_pct_change": -30.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,6 +145,10 @@
         {
           "year": 2023,
           "value": 24.85
+        },
+        {
+          "year": 2024,
+          "value": 18.0
         }
       ]
     },
@@ -149,7 +157,7 @@
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
       "current": 0.059,
       "units": "ppm",
-      "yoy_pct_change": 3.5,
+      "yoy_pct_change": 0.0,
       "long_arc_pct_change": -16.9,
       "baseline_year": 2010,
       "history": [
@@ -208,6 +216,10 @@
         {
           "year": 2023,
           "value": 0.059
+        },
+        {
+          "year": 2024,
+          "value": 0.059
         }
       ]
     },
@@ -259,10 +271,10 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 118960,
+      "current": 104334,
       "units": "lb",
-      "yoy_pct_change": -51.2,
-      "long_arc_pct_change": 40.6,
+      "yoy_pct_change": -12.3,
+      "long_arc_pct_change": 23.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -320,6 +332,10 @@
         {
           "year": 2023,
           "value": 118960
+        },
+        {
+          "year": 2024,
+          "value": 104334
         }
       ]
     },
@@ -387,6 +403,10 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
@@ -453,6 +473,10 @@
         },
         {
           "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -532,8 +556,8 @@
       "state_label": "California",
       "name": "Latham Pool Products Inc-Ca",
       "parent_company": "Latham Pool Products INC",
-      "total_pounds_recent": 118960,
-      "yoy_pct_change": -51.2,
+      "total_pounds_recent": 104334,
+      "yoy_pct_change": -12.3,
       "top_chemical": "Styrene",
       "city": "Williams",
       "lat": 39.141238,
@@ -541,6 +565,8 @@
     }
   ],
   "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
   "cities_directory": [
     {
       "slug": "arbuckle",
@@ -591,146 +617,7 @@
       "population": 5539
     }
   ],
-  "flags": [
-    {
-      "type": "long_arc_shift",
-      "severity": "regression",
-      "label": "Greenhouse gas emissions",
-      "summary": "Greenhouse gas emissions at Colusa County have more than doubled since 2010 (through 2023).",
-      "magnitude_pct": 580.8,
-      "magnitude_abs": 1153790.2,
-      "baseline_year": 2010,
-      "recent_year": 2023,
-      "units": "mtCO2e",
-      "history": [
-        {
-          "year": 2010,
-          "value": 198669
-        },
-        {
-          "year": 2011,
-          "value": 1161309
-        },
-        {
-          "year": 2012,
-          "value": 1420586
-        },
-        {
-          "year": 2013,
-          "value": 1409361
-        },
-        {
-          "year": 2014,
-          "value": 1333133
-        },
-        {
-          "year": 2015,
-          "value": 1772640
-        },
-        {
-          "year": 2016,
-          "value": 1312423
-        },
-        {
-          "year": 2017,
-          "value": 1135583
-        },
-        {
-          "year": 2018,
-          "value": 1355683
-        },
-        {
-          "year": 2019,
-          "value": 1325999
-        },
-        {
-          "year": 2020,
-          "value": 1336750
-        },
-        {
-          "year": 2021,
-          "value": 1029118
-        },
-        {
-          "year": 2022,
-          "value": 1141558
-        },
-        {
-          "year": 2023,
-          "value": 1352459
-        }
-      ]
-    },
-    {
-      "type": "naaqs_exceedance",
-      "severity": "exceedance",
-      "label": "PM2.5 annual mean",
-      "summary": "PM2.5 annual mean in Colusa County reached 10.4 \u00b5g/m\u00b3 in 2023, 15% above the EPA NAAQS of 9 \u00b5g/m\u00b3.",
-      "magnitude_pct": 15.1,
-      "magnitude_abs": 1.358,
-      "baseline_year": null,
-      "recent_year": 2023,
-      "units": "\u00b5g/m\u00b3",
-      "history": [
-        {
-          "year": 2010,
-          "value": 8.202
-        },
-        {
-          "year": 2011,
-          "value": 6.4
-        },
-        {
-          "year": 2012,
-          "value": 8.076
-        },
-        {
-          "year": 2013,
-          "value": 7.22
-        },
-        {
-          "year": 2014,
-          "value": 6.831
-        },
-        {
-          "year": 2015,
-          "value": 7.575
-        },
-        {
-          "year": 2016,
-          "value": 5.447
-        },
-        {
-          "year": 2017,
-          "value": 6.073
-        },
-        {
-          "year": 2018,
-          "value": 11.131
-        },
-        {
-          "year": 2019,
-          "value": 6.591
-        },
-        {
-          "year": 2020,
-          "value": 19.41
-        },
-        {
-          "year": 2021,
-          "value": 11.291
-        },
-        {
-          "year": 2022,
-          "value": 8.995
-        },
-        {
-          "year": 2023,
-          "value": 10.358
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 21811,
     "pct_low_income": 10.9,
@@ -951,7 +838,7 @@
       "name": "Plumas County",
       "population": 19650,
       "facilities_count": 2,
-      "total_releases_pounds": 17337,
+      "total_releases_pounds": 23733,
       "dominant_medium": "air",
       "ej_pct_avg": 39.0,
       "relation": "peer",
@@ -963,12 +850,12 @@
       "slug": "shasta",
       "name": "Shasta County",
       "population": 181852,
-      "facilities_count": 6,
-      "total_releases_pounds": 214614,
+      "facilities_count": 7,
+      "total_releases_pounds": 188305,
       "dominant_medium": "air",
       "ej_pct_avg": 53.2,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 6 facilities"
+      "reason": "Similar TRI air profile \u00b7 7 facilities"
     },
     {
       "kind": "county",
@@ -976,38 +863,38 @@
       "slug": "madera",
       "name": "Madera County",
       "population": 157243,
-      "facilities_count": 8,
-      "total_releases_pounds": 177614,
+      "facilities_count": 9,
+      "total_releases_pounds": 148356,
       "dominant_medium": "air",
       "ej_pct_avg": 60.7,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 8 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "yolo",
-      "name": "Yolo County",
-      "population": 217141,
-      "facilities_count": 5,
-      "total_releases_pounds": 51005,
-      "dominant_medium": "air",
-      "ej_pct_avg": 63.5,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 5 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "sonoma",
-      "name": "Sonoma County",
-      "population": 488436,
-      "facilities_count": 9,
-      "total_releases_pounds": 46676,
-      "dominant_medium": "air",
-      "ej_pct_avg": 48.1,
-      "relation": "peer",
       "reason": "Similar TRI air profile \u00b7 9 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "merced",
+      "name": "Merced County",
+      "population": 282290,
+      "facilities_count": 12,
+      "total_releases_pounds": 275402,
+      "dominant_medium": "air",
+      "ej_pct_avg": 65.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 12 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "placer",
+      "name": "Placer County",
+      "population": 406608,
+      "facilities_count": 6,
+      "total_releases_pounds": 13998,
+      "dominant_medium": "air",
+      "ej_pct_avg": 59.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 6 facilities"
     },
     {
       "kind": "county",
@@ -1016,7 +903,7 @@
       "name": "Yuba County",
       "population": 81705,
       "facilities_count": 1,
-      "total_releases_pounds": 2032,
+      "total_releases_pounds": 809,
       "dominant_medium": "land",
       "ej_pct_avg": 58.0,
       "relation": "contrast",
@@ -1030,5 +917,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

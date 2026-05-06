@@ -229,6 +229,96 @@ export interface WaterUtilityPayload {
   _published_at?: string;
 }
 
+// ---- Superfund / NPL site (Tier 1 entity, /superfund/[slug]) -----------
+// Reframes EPA's procedural site record as a place-anchored narrative.
+// V1 hero is degraded relative to the §8 design — listing-date enrichment
+// is Phase 1.5 work; until that lands the hero leads with status + city/
+// county + federal-facility flag rather than "Listed YYYY — N years."
+
+// Roll-up summary used in state / county / city Superfund-section tables.
+// Lighter than the full SuperfundPayload — no contaminants list, no equity.
+// Live alongside FacilitySummary / UtilitySummary in shape and intent.
+export interface SuperfundSummary {
+  slug: string;
+  state: string;
+  name: string;
+  epa_id: string;
+  npl_status: string;            // verbatim from SEMS (e.g. 'Currently on the Final NPL')
+  is_active_npl: boolean;
+  is_deleted: boolean;
+  is_federal_facility: boolean;
+  city: string | null;           // host city display name (TIGER place when matched)
+  city_slug: string | null;      // TIGER place slug — present only when point-in-polygon resolved
+  primary_contaminant: string | null;
+}
+
+export interface SuperfundContaminant {
+  name: string;
+  media: string;            // 'Groundwater' | 'Soil' | 'Sediment' | 'Surface Water' | etc.
+  operable_units: string[]; // SEMS OU numbers (e.g. '02') — context only
+  citation_count: number;   // SEMS row count for this (name, media) pair
+}
+
+// Cross-source differentiator: SDWIS PWSes drawing groundwater within the
+// configured radius of an NPL site. Distance is computed from the site
+// lat/lon to the served-city's TIGER place centroid (SDWIS doesn't expose
+// well or treatment-plant lat/lon) — coarse on purpose. Empty list with
+// `radius_miles` set is itself a finding worth surfacing.
+export interface NearbyGroundwaterUtility {
+  pwsid: string;
+  name: string;
+  slug: string;
+  state: string;
+  distance_miles: number;
+  place_name: string;
+  primary_source: "groundwater" | "mixed" | "purchased" | "surface_water";
+  population_served: number;
+  health_based_5yr: number;
+  unresolved: boolean;
+}
+
+export interface SuperfundWaterLinkage {
+  radius_miles: number;
+  utilities: NearbyGroundwaterUtility[];
+}
+
+export interface SuperfundPayload {
+  site: {
+    state: string;
+    state_label: string;
+    slug: string;
+    name: string;
+    epa_id: string;          // e.g. 'CA2170023236' — URL-stable
+    npl_status: string;      // verbatim from SEMS (e.g. 'Currently on the Final NPL')
+    is_active_npl: boolean;
+    is_deleted: boolean;
+    is_federal_facility: boolean;
+    county: string | null;
+    county_slug: string | null;
+    city: string | null;     // TIGER place name when matched, else EPA-supplied label
+    city_slug: string | null;
+    address: string;
+    zip: string;
+    lat: number | null;
+    lng: number | null;
+  };
+  briefing_label: string;
+  totals: {
+    contaminants_count: number;
+    primary_contaminant: string | null; // most-cited COC name
+  };
+  contaminants: SuperfundContaminant[];  // sorted by citation_count desc
+  water_linkage?: SuperfundWaterLinkage;  // groundwater PWSes within the configured radius
+  flags: Flag[];                          // empty in v1; flag detection deferred
+  equity: EquityOverlay;
+  source: {
+    label: string;
+    url: string;
+    retrieved: string;
+  };
+  _published_at?: string;
+}
+
 // ---- Cross-link module: similar places within state --------------------
 // Surfaced at the bottom of county and city pages. The pipeline picks 5
 // pollution-profile peers + 1 deliberate contrast (similar scale, opposite
@@ -292,6 +382,7 @@ export interface CityHubPayload {
     utilities_with_unresolved: number;
     utilities: UtilitySummary[];
   };
+  superfund?: SuperfundSummary[]; // NPL sites in this place polygon
   flags: Flag[];
   equity: EquityOverlay;
   health_indicators?: HealthIndicator[];
@@ -352,6 +443,8 @@ export interface CountyPagePayload {
   pathways: PollutantSummary[]; // 3-5 top-level pollutants
   facilities: FacilitySummary[]; // top TRI facilities by pounds
   utilities: UtilitySummary[];   // water utilities serving the county
+  superfund?: SuperfundSummary[]; // top NPL sites in this county (capped 10)
+  superfund_total?: number;       // count of all NPL sites in county
   // Alphabetical directory of every city in this county that has its own
   // published page (≥1 facility OR ≥1 county-filtered utility). Mirrors
   // the state page's counties_directory pattern — surfaces internal links
@@ -404,6 +497,7 @@ export interface StatePagePayload {
   totals: {
     facilities_tracked: number;
     utilities_tracked: number;
+    npl_sites_tracked?: number;
     counties_with_data: number;
     total_releases_pounds: number;
     yoy_pct_change: number | null;
@@ -423,6 +517,7 @@ export interface StatePagePayload {
   }[];
   top_facilities: FacilitySummary[];
   top_utilities: UtilitySummary[];
+  superfund?: SuperfundSummary[]; // top NPL sites in this state (capped 10)
   flags: Flag[];
   equity: EquityOverlay;
   sources: { label: string; url: string; retrieved: string }[];
@@ -432,7 +527,7 @@ export interface StatePagePayload {
 // ---- Home page ----------------------------------------------------------
 
 export interface FeaturedEntity {
-  kind: "facility" | "water" | "county" | "city";  // "water" = utility entity; "city" = place hub
+  kind: "facility" | "water" | "county" | "city" | "superfund";  // "water" = utility entity; "city" = place hub; "superfund" = NPL site entity
   state: string;
   slug: string;
   name: string;

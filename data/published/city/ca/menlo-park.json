@@ -9,17 +9,17 @@
     "county_name": "San Mateo",
     "county_fips": "06081"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 1,
-    "total_releases_pounds": 6,
-    "air_releases_pounds": 6,
+    "total_releases_pounds": 1,
+    "air_releases_pounds": 1,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
-    "yoy_pct_change": -64.5,
-    "long_arc_pct_change": -99.5,
+    "yoy_pct_change": -78.3,
+    "long_arc_pct_change": -99.9,
     "long_arc_baseline_year": 2014,
     "history": [
       {
@@ -61,6 +61,10 @@
       {
         "year": 2023,
         "value": 6
+      },
+      {
+        "year": 2024,
+        "value": 1
       }
     ]
   },
@@ -68,10 +72,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 4.459,
+      "current": 5.235,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -34.4,
-      "long_arc_pct_change": -61.0,
+      "yoy_pct_change": 17.4,
+      "long_arc_pct_change": -54.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -129,16 +133,20 @@
         {
           "year": 2023,
           "value": 4.459
+        },
+        {
+          "year": 2024,
+          "value": 5.235
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 10.2,
+      "current": 14.4,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -48.7,
-      "long_arc_pct_change": -73.4,
+      "yoy_pct_change": 41.2,
+      "long_arc_pct_change": -62.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,16 +204,20 @@
         {
           "year": 2023,
           "value": 10.2
+        },
+        {
+          "year": 2024,
+          "value": 14.4
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.052,
+      "current": 0.038,
       "units": "ppm",
-      "yoy_pct_change": -1.9,
-      "long_arc_pct_change": 8.3,
+      "yoy_pct_change": -26.9,
+      "long_arc_pct_change": -20.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -263,16 +275,20 @@
         {
           "year": 2023,
           "value": 0.052
+        },
+        {
+          "year": 2024,
+          "value": 0.038
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 7.664,
+      "current": 9.06,
       "units": "ppb",
-      "yoy_pct_change": -8.9,
-      "long_arc_pct_change": -56.4,
+      "yoy_pct_change": 18.2,
+      "long_arc_pct_change": -48.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -330,6 +346,10 @@
         {
           "year": 2023,
           "value": 7.664
+        },
+        {
+          "year": 2024,
+          "value": 9.06
         }
       ]
     },
@@ -381,9 +401,9 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 6,
+      "current": 1,
       "units": "lb",
-      "yoy_pct_change": -64.5,
+      "yoy_pct_change": -78.3,
       "long_arc_pct_change": null,
       "baseline_year": 2014,
       "history": [
@@ -426,6 +446,10 @@
         {
           "year": 2023,
           "value": 6
+        },
+        {
+          "year": 2024,
+          "value": 1
         }
       ]
     },
@@ -477,6 +501,10 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
@@ -527,6 +555,10 @@
         },
         {
           "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -606,8 +638,8 @@
       "state_label": "California",
       "name": "Csbio",
       "parent_company": "Csbio",
-      "total_pounds_recent": 6,
-      "yoy_pct_change": -64.5,
+      "total_pounds_recent": 1,
+      "yoy_pct_change": -78.3,
       "top_chemical": "Acetonitrile",
       "city": "Menlo Park",
       "lat": 37.474794,
@@ -634,6 +666,7 @@
       }
     ]
   },
+  "superfund": [],
   "flags": [],
   "equity": {
     "population": 33324,
@@ -851,19 +884,6 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "san-carlos",
-      "name": "San Carlos",
-      "population": 30490,
-      "facilities_count": 1,
-      "total_releases_pounds": 1,
-      "dominant_medium": "land",
-      "ej_pct_avg": 54.1,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
       "slug": "foster-city",
       "name": "Foster City",
       "population": 33215,
@@ -903,13 +923,26 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "moorpark",
-      "name": "Moorpark",
-      "population": 36073,
+      "slug": "pacifica",
+      "name": "Pacifica",
+      "population": 38048,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 50.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "bell",
+      "name": "Bell",
+      "population": 33377,
       "facilities_count": 1,
-      "total_releases_pounds": 10,
+      "total_releases_pounds": 0.18,
       "dominant_medium": "air",
-      "ej_pct_avg": 55.1,
+      "ej_pct_avg": 86.3,
       "relation": "peer",
       "reason": "Similar TRI air profile \u00b7 1 facility"
     },
@@ -939,5 +972,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:10:59Z"
 }

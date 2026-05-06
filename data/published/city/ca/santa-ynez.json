@@ -9,8 +9,8 @@
     "county_name": "Santa Barbara",
     "county_fips": "06083"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 0,
     "utilities_serving": 7,
@@ -20,10 +20,10 @@
     "land_releases_pounds": 0,
     "yoy_pct_change": null,
     "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2023,
+    "long_arc_baseline_year": 2024,
     "history": [
       {
-        "year": 2023,
+        "year": 2024,
         "value": 0
       }
     ]
@@ -32,10 +32,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 5.374,
+      "current": 5.262,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -15.5,
-      "long_arc_pct_change": -46.3,
+      "yoy_pct_change": -2.1,
+      "long_arc_pct_change": -47.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -93,16 +93,20 @@
         {
           "year": 2023,
           "value": 5.374
+        },
+        {
+          "year": 2024,
+          "value": 5.262
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 14.36,
+      "current": 12.633,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 1.8,
-      "long_arc_pct_change": -24.2,
+      "yoy_pct_change": -12.0,
+      "long_arc_pct_change": -33.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -160,6 +164,10 @@
         {
           "year": 2023,
           "value": 14.36
+        },
+        {
+          "year": 2024,
+          "value": 12.633
         }
       ]
     },
@@ -168,8 +176,8 @@
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
       "current": 0.05,
       "units": "ppm",
-      "yoy_pct_change": -2.6,
-      "long_arc_pct_change": -22.0,
+      "yoy_pct_change": -1.8,
+      "long_arc_pct_change": -23.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -227,16 +235,20 @@
         {
           "year": 2023,
           "value": 0.05
+        },
+        {
+          "year": 2024,
+          "value": 0.05
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 0.737,
+      "current": 1.027,
       "units": "ppb",
-      "yoy_pct_change": -39.8,
-      "long_arc_pct_change": -90.0,
+      "yoy_pct_change": 39.4,
+      "long_arc_pct_change": -86.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -294,6 +306,10 @@
         {
           "year": 2023,
           "value": 0.737
+        },
+        {
+          "year": 2024,
+          "value": 1.027
         }
       ]
     },
@@ -349,10 +365,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -364,10 +380,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -379,10 +395,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -536,24 +552,8 @@
       }
     ]
   },
-  "flags": [
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5000",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4200612"
-      }
-    }
-  ],
+  "superfund": [],
+  "flags": [],
   "equity": {
     "population": 4716,
     "pct_low_income": 11.7,
@@ -838,9 +838,9 @@
       "slug": "commerce",
       "name": "Commerce",
       "population": 12253,
-      "facilities_count": 15,
-      "total_releases_pounds": 38662,
-      "dominant_medium": "air",
+      "facilities_count": 12,
+      "total_releases_pounds": 59905,
+      "dominant_medium": "land",
       "ej_pct_avg": 87.0,
       "relation": "contrast",
       "reason": "Same scale, heavier equity burden (+50 pct-pt EJ gap)"
@@ -858,5 +858,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:10:59Z"
 }

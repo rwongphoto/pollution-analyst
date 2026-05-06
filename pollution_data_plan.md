@@ -155,7 +155,7 @@ The single biggest structural difference from the crime site. Crime has one prog
 
 ### Tier 1: Entity pages
 
-One page per facility / utility / Superfund site. URL shape: `/facility/[state]/[slug]`, `/water/[state]/[utility-slug]`, `/superfund/[slug]`. Search intent is people Googling the name of the plant, refinery, or utility near them. **No analog on the crime site** because crime has no entity dimension.
+One page per facility / utility / Superfund site. URL shape: `/state/[state]/facility/[slug]`, `/state/[state]/water/[slug]`, `/state/[state]/superfund/[slug]` — state-prefixed for SEO containment and crawlable hierarchy; see [`site_architecture.md`](site_architecture.md) "Route Map" for the full list. Search intent is people Googling the name of the plant, refinery, or utility near them. **No analog on the crime site** because crime has no entity dimension.
 
 Approximate page count: ~25,000 (TRI) + ~12,000 (power plants) + ~150,000 (water systems) + ~1,300 (Superfund) = north of 180,000 entity pages, before filtering for activity.
 

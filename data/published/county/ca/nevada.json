@@ -7,16 +7,16 @@
     "fips": "06057",
     "population": 102322
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 4.76,
+      "current": 3.799,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -15.0,
-      "long_arc_pct_change": -34.3,
+      "yoy_pct_change": -20.2,
+      "long_arc_pct_change": -47.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 4.76
+        },
+        {
+          "year": 2024,
+          "value": 3.799
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 11.9,
+      "current": 11.1,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -48.1,
-      "long_arc_pct_change": -51.9,
+      "yoy_pct_change": -6.7,
+      "long_arc_pct_change": -55.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 11.9
+        },
+        {
+          "year": 2024,
+          "value": 11.1
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.063,
+      "current": 0.07,
       "units": "ppm",
-      "yoy_pct_change": -14.9,
-      "long_arc_pct_change": -26.5,
+      "yoy_pct_change": 11.1,
+      "long_arc_pct_change": -18.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,6 +216,10 @@
         {
           "year": 2023,
           "value": 0.063
+        },
+        {
+          "year": 2024,
+          "value": 0.07
         }
       ]
     },
@@ -379,6 +391,22 @@
   ],
   "facilities": [],
   "utilities": [],
+  "superfund": [
+    {
+      "slug": "lava-cap-mine",
+      "state": "ca",
+      "name": "Lava Cap Mine",
+      "epa_id": "CAD983618893",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Nevada City",
+      "city_slug": null,
+      "primary_contaminant": "Arsenic"
+    }
+  ],
+  "superfund_total": 1,
   "cities_directory": [
     {
       "slug": "floriston",
@@ -731,8 +759,8 @@
       "name": "Merced County",
       "population": 282290,
       "facilities_count": 12,
-      "total_releases_pounds": 351796,
-      "dominant_medium": "land",
+      "total_releases_pounds": 275402,
+      "dominant_medium": "air",
       "ej_pct_avg": 65.1,
       "relation": "contrast",
       "reason": "Same scale, heavier equity burden (+18 pct-pt EJ gap)"
@@ -745,5 +773,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

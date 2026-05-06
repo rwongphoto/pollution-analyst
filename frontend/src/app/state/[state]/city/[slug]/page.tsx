@@ -12,6 +12,7 @@ import { RelatedPlaces } from "@/components/site/RelatedPlaces";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
+import { SuperfundSection } from "@/components/site/SuperfundSection";
 import { listCitySlugs, loadCityHub } from "@/lib/data";
 import {
   disparityLanguage,
@@ -524,6 +525,11 @@ export default async function CityHubPage({
         <PathwaysSection pathways={data.pathways} />
         <FacilitiesSection data={data} />
         <WaterSection data={data} />
+        <SuperfundSection
+          sites={data.superfund ?? []}
+          geographyLabel={data.place.name}
+          showHostCity={false}
+        />
         <EquitySection data={data} />
         <HealthIndicators
           indicators={data.health_indicators ?? []}

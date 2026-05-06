@@ -16,7 +16,15 @@ import logging
 import sys
 
 from . import states as states_mod
-from .aggregate.build import CountyAgg, StateAgg, UtilityAgg, aggregate, aggregate_utilities
+from .aggregate.build import (
+    CountyAgg,
+    StateAgg,
+    SuperfundSiteAgg,
+    UtilityAgg,
+    aggregate,
+    aggregate_superfund,
+    aggregate_utilities,
+)
 from .config import DEFAULT_TRI_YEAR
 from .flags import (
     Flag,
@@ -29,7 +37,7 @@ from .flags import (
     detect_violation_events,
     summarize as flags_summarize,
 )
-from .ingest import airtoxscreen, aqs, cdc_places, ejscreen, ghgrp, sdwis, tri
+from .ingest import airtoxscreen, aqs, cdc_places, ejscreen, ghgrp, sdwis, superfund, tri
 from .publish import site as publish_site
 from .spatial.acs import (
     get_county_demographics,
@@ -73,6 +81,7 @@ def run_state(
     skip_aqs: bool = False,
     skip_airtox: bool = False,
     skip_health: bool = False,
+    skip_superfund: bool = False,
     history_cache_only: bool = False,
     no_flags: bool = False,
 ) -> tuple[StateAgg, dict, dict, dict[str, UtilityAgg], dict]:
@@ -182,6 +191,20 @@ def run_state(
                          state.abbr, len(utility_county_map), len(county_names))
         except Exception as exc:  # noqa: BLE001
             logging.warning("SDWIS county lookup failed for %s: %s", state.abbr, exc)
+
+    # --- Superfund (NPL sites) ---
+    superfund_sites_agg: dict[str, SuperfundSiteAgg] = {}
+    if not skip_superfund:
+        try:
+            sf_sites = superfund.fetch_npl_sites(state)
+            sf_site_ids = {s.site_id for s in sf_sites}
+            sf_conts = superfund.fetch_contaminants(sf_site_ids)
+            superfund_sites_agg = aggregate_superfund(
+                sf_sites, sf_conts,
+                state_slug=state.slug, state_fips=state.fips,
+            )
+        except Exception as exc:  # noqa: BLE001
+            logging.warning("Superfund ingest failed for %s: %s", state.abbr, exc)
 
     # --- Census ACS (populations + demographic shares) ---
     try:
@@ -325,6 +348,22 @@ def run_state(
         logging.warning("Place name index failed for %s: %s", state.abbr, exc)
         place_name_to_fips = {}
         place_fips_to_name = {}
+
+    # --- Superfund ↔ groundwater PWS linkage (3-mile buffer) ---
+    # Has to land after both aggregate_superfund and aggregate_utilities,
+    # plus place_name_to_fips, since it joins them spatially. Mutates
+    # SuperfundSiteAgg.water_linkage in place.
+    if superfund_sites_agg and utilities and place_name_to_fips:
+        try:
+            from .aggregate.build import attach_water_linkage
+            attach_water_linkage(
+                superfund_sites_agg, utilities,
+                state_fips=state.fips,
+                place_name_to_fips=place_name_to_fips,
+                radius_miles=3.0,
+            )
+        except Exception as exc:  # noqa: BLE001
+            logging.warning("Superfund water linkage failed for %s: %s", state.abbr, exc)
 
     # --- CDC PLACES (co-located health indicators) ---
     # Modeled small-area prevalence per county and Census place. Pulled
@@ -475,6 +514,17 @@ def run_state(
                 utility_flags[u.pwsid] = uf
                 flags_summarize("utility", f"{state.slug}/{u.pwsid}", uf)
 
+    # --- Superfund rollups (per-county, per-place) ----------------------
+    # Pre-compute groupings off `superfund_sites_agg` so each publish loop
+    # below can read them without re-grouping.
+    superfund_by_county: dict[str, list[SuperfundSiteAgg]] = {}
+    superfund_by_place: dict[str, list[SuperfundSiteAgg]] = {}
+    for sf in superfund_sites_agg.values():
+        if sf.county_fips:
+            superfund_by_county.setdefault(sf.county_fips, []).append(sf)
+        if sf.place_fips:
+            superfund_by_place.setdefault(sf.place_fips, []).append(sf)
+
     # --- Publish ---
     publish_site.publish_state(
         state, state_agg, counties, facilities, year,
@@ -489,6 +539,7 @@ def run_state(
         air_history=air_state_history,
         airtox_history=airtox_state,
         flags=state_flags,
+        superfund_sites=superfund_sites_agg,
     )
 
     # Place → facility / utility mappings, computed once and reused: the
@@ -661,6 +712,7 @@ def run_state(
             flags=county_flags.get(cfips, []),
             cities_directory=cities_by_county_fips.get(cfips, []),
             related_places=publish_site.pick_related_counties(cfips, county_peer_facts),
+            superfund_in_county=superfund_by_county.get(cfips, []),
         ))
     # 3-mile buffer demographics per facility — block-group-level pop-weighted
     # aggregation so the equity overlay describes who lives *near* the facility,
@@ -720,6 +772,32 @@ def run_state(
             flags=utility_flags.get(u.pwsid, []),
         ))
 
+    # ---- Tier 1 entity: Superfund / NPL site (/superfund/[slug]) -------
+    # One per NPL-relevant site. Equity overlay falls through Place →
+    # County → State, same as the water utility publisher.
+    superfund_paths: set = set()
+    for sf in superfund_sites_agg.values():
+        pf = sf.place_fips
+        place_demo = place_demos.get(pf) if pf else None
+        place_pop = (
+            place_demo.population
+            if place_demo is not None and hasattr(place_demo, "population")
+            else 0
+        )
+        superfund_paths.add(publish_site.publish_superfund(
+            sf,
+            state_label=state.name,
+            county_demographics=county_demos.get(sf.county_fips),
+            county_disparity_scores=county_disparity.get(sf.county_fips, []),
+            county_percentiles=county_percentiles.get(sf.county_fips, []),
+            county_population=county_pops.get(sf.county_fips, 0),
+            place_demographics=place_demo,
+            place_disparity_scores=place_disparity.get(pf, []) if pf else None,
+            place_percentiles=place_percentiles.get(pf, []) if pf else None,
+            place_population=place_pop,
+            flags=None,  # v1: Superfund flag detection deferred
+        ))
+
     # ---- Tier 2 place: city hub (/city/[slug]) -------------------------
     # True place-anchored aggregation. TRI facilities in the city polygon +
     # utilities serving the city + GHG county-share + equity. Each utility
@@ -742,9 +820,16 @@ def run_state(
         facilities=facilities,
     )
     city_paths: set = set()
-    # Build a city hub for any place with ≥1 facility or ≥1 (filtered) utility — places
-    # with neither aren't worth a programmatic page.
-    eligible_places = set(place_to_facility_ids.keys()) | set(place_to_utilities.keys())
+    # Build a city hub for any place with ≥1 facility, ≥1 (filtered) utility,
+    # or ≥1 NPL site — places with none of these aren't worth a programmatic
+    # page. The Superfund condition catches places like Alameda or Oroville
+    # whose programmatic surface is anchored on legacy contamination rather
+    # than on active TRI / SDWIS records.
+    eligible_places = (
+        set(place_to_facility_ids.keys())
+        | set(place_to_utilities.keys())
+        | set(superfund_by_place.keys())
+    )
     for pf in eligible_places:
         place_name = place_fips_to_name.get(pf)
         if not place_name:
@@ -761,6 +846,8 @@ def run_state(
                 county_fips_for_place = facs_in_place[0].county_fips
             elif utils_serving:
                 county_fips_for_place = utility_county_map.get(utils_serving[0].pwsid)
+            elif superfund_by_place.get(pf):
+                county_fips_for_place = superfund_by_place[pf][0].county_fips
         place_pop = (
             place_demos.get(pf).population
             if pf in place_demos and hasattr(place_demos.get(pf), "population")
@@ -831,15 +918,19 @@ def run_state(
             ),
             flags=city_flags,
             related_places=publish_site.pick_related_cities(pf, city_peer_facts),
+            superfund_in_place=superfund_by_place.get(pf, []),
         ))
 
     removed_fac = publish_site.cleanup_stale("facility", state.slug, facility_paths)
     removed_water = publish_site.cleanup_stale("water", state.slug, water_paths)
+    removed_superfund = publish_site.cleanup_stale("superfund", state.slug, superfund_paths)
     removed_city = publish_site.cleanup_stale("city", state.slug, city_paths)
     removed_county = publish_site.cleanup_stale("county", state.slug, county_paths)
-    if removed_fac or removed_water or removed_city or removed_county:
-        logging.info("cleanup: %s — removed %d facility, %d water, %d city, %d county files",
-                     state.slug, removed_fac, removed_water, removed_city, removed_county)
+    if removed_fac or removed_water or removed_superfund or removed_city or removed_county:
+        logging.info(
+            "cleanup: %s — removed %d facility, %d water, %d superfund, %d city, %d county files",
+            state.slug, removed_fac, removed_water, removed_superfund, removed_city, removed_county,
+        )
 
     flag_maps = {
         "state": state_flags,
@@ -873,6 +964,10 @@ def main(argv: list[str] | None = None) -> int:
     runp.add_argument("--skip-health", action="store_true",
                       help="Skip CDC PLACES ingest. County and city pages render "
                            "without the co-located health-indicators section.")
+    runp.add_argument("--skip-superfund", action="store_true",
+                      help="Skip Superfund / NPL site ingest. Entity pages "
+                           "and city/county/state Superfund roll-ups won't be "
+                           "written.")
     runp.add_argument("--sdwis-since", type=int, default=2020,
                       help="Earliest year of SDWIS violations to keep.")
     runp.add_argument("--history-cache-only", action="store_true",
@@ -907,6 +1002,7 @@ def main(argv: list[str] | None = None) -> int:
             skip_aqs=args.skip_aqs,
             skip_airtox=args.skip_airtox,
             skip_health=args.skip_health,
+            skip_superfund=args.skip_superfund,
             history_cache_only=args.history_cache_only,
             no_flags=args.no_flags,
         )

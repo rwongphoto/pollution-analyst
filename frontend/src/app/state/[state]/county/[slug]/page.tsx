@@ -13,6 +13,7 @@ import { RelatedPlaces } from "@/components/site/RelatedPlaces";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
+import { SuperfundSection } from "@/components/site/SuperfundSection";
 import {
   listCountySlugs,
   loadCounty,
@@ -490,6 +491,12 @@ export default async function CountyPage({
         <PathwaysSection pathways={data.pathways} />
         <FacilitiesSection data={data} />
         <UtilitiesSection data={data} />
+        <SuperfundSection
+          sites={data.superfund ?? []}
+          total={data.superfund_total}
+          geographyLabel={data.county.name}
+          showHostCity
+        />
         <EquitySection data={data} />
         <HealthIndicators
           indicators={data.health_indicators ?? []}

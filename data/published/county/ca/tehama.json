@@ -7,16 +7,16 @@
     "fips": "06103",
     "population": 65484
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 6.109,
+      "current": 5.934,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 4.0,
-      "long_arc_pct_change": 28.9,
+      "yoy_pct_change": -2.9,
+      "long_arc_pct_change": 25.2,
       "baseline_year": 2016,
       "history": [
         {
@@ -50,16 +50,20 @@
         {
           "year": 2023,
           "value": 6.109
+        },
+        {
+          "year": 2024,
+          "value": 5.934
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 15.3,
+      "current": 17.7,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -17.7,
-      "long_arc_pct_change": 2.7,
+      "yoy_pct_change": 15.7,
+      "long_arc_pct_change": 18.8,
       "baseline_year": 2016,
       "history": [
         {
@@ -93,16 +97,20 @@
         {
           "year": 2023,
           "value": 15.3
+        },
+        {
+          "year": 2024,
+          "value": 17.7
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.066,
+      "current": 0.06,
       "units": "ppm",
-      "yoy_pct_change": -2.9,
-      "long_arc_pct_change": -18.0,
+      "yoy_pct_change": -8.3,
+      "long_arc_pct_change": -24.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -160,6 +168,10 @@
         {
           "year": 2023,
           "value": 0.066
+        },
+        {
+          "year": 2024,
+          "value": 0.06
         }
       ]
     },
@@ -211,9 +223,9 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 333,
+      "current": 336,
       "units": "lb",
-      "yoy_pct_change": -19.7,
+      "yoy_pct_change": 0.9,
       "long_arc_pct_change": null,
       "baseline_year": 2013,
       "history": [
@@ -260,6 +272,10 @@
         {
           "year": 2023,
           "value": 333
+        },
+        {
+          "year": 2024,
+          "value": 336
         }
       ]
     },
@@ -315,15 +331,19 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 334,
+      "current": 339,
       "units": "lb",
-      "yoy_pct_change": -18.9,
+      "yoy_pct_change": 1.7,
       "long_arc_pct_change": null,
       "baseline_year": 2013,
       "history": [
@@ -370,6 +390,10 @@
         {
           "year": 2023,
           "value": 334
+        },
+        {
+          "year": 2024,
+          "value": 339
         }
       ]
     },
@@ -448,8 +472,8 @@
       "state_label": "California",
       "name": "Pacific Woodtech Corp",
       "parent_company": "Pacific Woodtech CORP",
-      "total_pounds_recent": 666,
-      "yoy_pct_change": -19.3,
+      "total_pounds_recent": 675,
+      "yoy_pct_change": 1.3,
       "top_chemical": "Phenol",
       "city": "Red Bluff",
       "lat": 40.12805,
@@ -457,6 +481,8 @@
     }
   ],
   "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
   "cities_directory": [
     {
       "slug": "corning",
@@ -756,39 +782,26 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "siskiyou",
-      "name": "Siskiyou County",
-      "population": 44049,
-      "facilities_count": 1,
-      "total_releases_pounds": 795,
-      "dominant_medium": "land",
-      "ej_pct_avg": 38.3,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 1 facility"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "mendocino",
-      "name": "Mendocino County",
-      "population": 91145,
-      "facilities_count": 1,
-      "total_releases_pounds": 250,
-      "dominant_medium": "land",
-      "ej_pct_avg": 34.6,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 1 facility"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
       "slug": "yuba",
       "name": "Yuba County",
       "population": 81705,
       "facilities_count": 1,
-      "total_releases_pounds": 2032,
+      "total_releases_pounds": 809,
       "dominant_medium": "land",
       "ej_pct_avg": 58.0,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "siskiyou",
+      "name": "Siskiyou County",
+      "population": 44049,
+      "facilities_count": 1,
+      "total_releases_pounds": 496,
+      "dominant_medium": "land",
+      "ej_pct_avg": 38.3,
       "relation": "peer",
       "reason": "Similar TRI land profile \u00b7 1 facility"
     },
@@ -798,25 +811,38 @@
       "slug": "napa",
       "name": "Napa County",
       "population": 137384,
-      "facilities_count": 2,
-      "total_releases_pounds": 679,
+      "facilities_count": 3,
+      "total_releases_pounds": 650,
       "dominant_medium": "land",
       "ej_pct_avg": 52.5,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 2 facilities"
+      "reason": "Similar TRI land profile \u00b7 3 facilities"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "san-mateo",
-      "name": "San Mateo County",
-      "population": 754250,
-      "facilities_count": 6,
-      "total_releases_pounds": 663,
+      "slug": "mendocino",
+      "name": "Mendocino County",
+      "population": 91145,
+      "facilities_count": 1,
+      "total_releases_pounds": 60,
       "dominant_medium": "land",
-      "ej_pct_avg": 56.4,
+      "ej_pct_avg": 34.6,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 6 facilities"
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "lassen",
+      "name": "Lassen County",
+      "population": 31873,
+      "facilities_count": 1,
+      "total_releases_pounds": 8258,
+      "dominant_medium": "land",
+      "ej_pct_avg": 42.6,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
     },
     {
       "kind": "county",
@@ -824,9 +850,9 @@
       "slug": "yolo",
       "name": "Yolo County",
       "population": 217141,
-      "facilities_count": 5,
-      "total_releases_pounds": 51005,
-      "dominant_medium": "air",
+      "facilities_count": 3,
+      "total_releases_pounds": 1894,
+      "dominant_medium": "land",
       "ej_pct_avg": 63.5,
       "relation": "contrast",
       "reason": "Same scale, heavier equity burden (+16 pct-pt EJ gap)"
@@ -839,5 +865,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

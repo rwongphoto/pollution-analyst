@@ -9,17 +9,17 @@
     "county_name": "Plumas",
     "county_fips": "06063"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 0,
-    "total_releases_pounds": 17327,
-    "air_releases_pounds": 17327,
+    "total_releases_pounds": 23672,
+    "air_releases_pounds": 23672,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
-    "yoy_pct_change": -42.2,
-    "long_arc_pct_change": 2750220.8,
+    "yoy_pct_change": 36.6,
+    "long_arc_pct_change": 3757288.4,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -73,6 +73,10 @@
       {
         "year": 2023,
         "value": 17327
+      },
+      {
+        "year": 2024,
+        "value": 23672
       }
     ]
   },
@@ -80,10 +84,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 12.537,
+      "current": 8.617,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 21.5,
-      "long_arc_pct_change": 33.4,
+      "yoy_pct_change": -31.3,
+      "long_arc_pct_change": -8.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 12.537
+        },
+        {
+          "year": 2024,
+          "value": 8.617
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 28.125,
+      "current": 28.0,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 11.1,
-      "long_arc_pct_change": -29.7,
+      "yoy_pct_change": -0.4,
+      "long_arc_pct_change": -30.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,6 +216,10 @@
         {
           "year": 2023,
           "value": 28.125
+        },
+        {
+          "year": 2024,
+          "value": 28.0
         }
       ]
     },
@@ -274,10 +286,10 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 17327,
+      "current": 23672,
       "units": "lb",
-      "yoy_pct_change": -42.2,
-      "long_arc_pct_change": 58.2,
+      "yoy_pct_change": 36.6,
+      "long_arc_pct_change": 116.1,
       "baseline_year": 2011,
       "history": [
         {
@@ -331,6 +343,10 @@
         {
           "year": 2023,
           "value": 17327
+        },
+        {
+          "year": 2024,
+          "value": 23672
         }
       ]
     },
@@ -393,6 +409,10 @@
         },
         {
           "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -457,6 +477,10 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     }
@@ -468,8 +492,8 @@
       "state_label": "California",
       "name": "Sierra Pacific Industries Quincy Div",
       "parent_company": "Sierra Pacific Industries",
-      "total_pounds_recent": 17327,
-      "yoy_pct_change": -42.2,
+      "total_pounds_recent": 23672,
+      "yoy_pct_change": 36.6,
       "top_chemical": "Ammonia",
       "city": "Quincy",
       "lat": 39.9392,
@@ -485,6 +509,7 @@
     "utilities_with_unresolved": 0,
     "utilities": []
   },
+  "superfund": [],
   "flags": [],
   "equity": {
     "population": 2399,
@@ -706,11 +731,11 @@
       "name": "Chester",
       "population": 2271,
       "facilities_count": 1,
-      "total_releases_pounds": 10,
-      "dominant_medium": "land",
+      "total_releases_pounds": 61,
+      "dominant_medium": "air",
       "ej_pct_avg": 38.6,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI air profile \u00b7 1 facility"
     },
     {
       "kind": "city",
@@ -754,13 +779,13 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "lakeview",
-      "name": "Lakeview",
-      "population": 2327,
+      "slug": "humboldt-hill",
+      "name": "Humboldt Hill",
+      "population": 3273,
       "facilities_count": 1,
-      "total_releases_pounds": 17495,
+      "total_releases_pounds": 25800,
       "dominant_medium": "air",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 38.7,
       "relation": "peer",
       "reason": "Similar TRI air profile \u00b7 1 facility"
     },
@@ -771,8 +796,8 @@
       "name": "Irwindale",
       "population": 1343,
       "facilities_count": 5,
-      "total_releases_pounds": 1942,
-      "dominant_medium": "air",
+      "total_releases_pounds": 225,
+      "dominant_medium": "land",
       "ej_pct_avg": 81.8,
       "relation": "contrast",
       "reason": "Same scale, heavier equity burden (+42 pct-pt EJ gap)"
@@ -790,5 +815,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:10:59Z"
 }

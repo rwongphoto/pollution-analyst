@@ -25,7 +25,14 @@ from ..config import (
 )
 from ..states import State
 from .._slug import slugify
-from ..aggregate.build import CountyAgg, FacilityAgg, FacilityChemical, StateAgg, UtilityAgg
+from ..aggregate.build import (
+    CountyAgg,
+    FacilityAgg,
+    FacilityChemical,
+    StateAgg,
+    SuperfundSiteAgg,
+    UtilityAgg,
+)
 
 
 def write_json(path: Path, payload: dict) -> None:
@@ -110,6 +117,17 @@ def _county_slug(county_name: str, fips: str) -> str:
 def _facility_slug(name: str, facility_id: str) -> str:
     base = slugify(name.lower())
     return base or f"tri-{facility_id.lower()}"
+
+
+def _superfund_slug(name: str, epa_id: str) -> str:
+    """URL slug for an NPL site. Mirrors `_facility_slug` shape — slugify
+    the EPA-published name; fall back to lowercased EPA Site ID on
+    pathologically short results.
+    """
+    base = slugify(name.lower())
+    if not base or len(base) < 3:
+        return epa_id.lower() or "unknown"
+    return base
 
 
 def utility_city_slug(name: str, pwsid: str) -> str:
@@ -1070,6 +1088,144 @@ def publish_water(
     return out
 
 
+# ---- Superfund / NPL site (Tier 1 entity, /superfund/[slug]) ------------
+#
+# One per NPL-relevant site (Final / Proposed / Deleted / Withdrawn). The
+# v1 hero is degraded relative to the §8 design — listing-date enrichment
+# is Phase 1.5 work; until that lands the hero leads with status + city/
+# county + federal-facility flag rather than "Listed YYYY — N years."
+# WaterLinkageSection / OperatorSection / RelatedSites / PhaseTimeline
+# are deliberately deferred.
+
+def publish_superfund(
+    site: SuperfundSiteAgg,
+    state_label: str = "",
+    county_demographics: object | None = None,
+    county_disparity_scores: list | None = None,
+    county_percentiles: list | None = None,
+    county_population: int = 0,
+    place_demographics: object | None = None,
+    place_disparity_scores: list | None = None,
+    place_percentiles: list | None = None,
+    place_population: int = 0,
+    flags: list | None = None,
+) -> Path:
+    """Write one NPL-site entity JSON.
+
+    Equity overlay falls through Place (TIGER) → County → State, same as
+    the water utility publisher. Sites in unincorporated areas (no
+    place_fips) skip directly to county.
+    """
+    slug = _superfund_slug(site.name, site.epa_id)
+    county_slug_value = (
+        _county_slug(site.county_name, site.county_fips)
+        if site.county_name and site.county_fips
+        else None
+    )
+    city_slug_value = (
+        place_slug(site.place_name, site.place_fips)
+        if site.place_fips and site.place_name
+        else None
+    )
+    county_label = (
+        site.county_name + " County"
+        if site.county_name and not site.county_name.lower().endswith(" county")
+        else (site.county_name or None)
+    )
+
+    payload = {
+        "site": {
+            "state": site.state_slug,
+            "state_label": state_label or _state_label(site.state_slug),
+            "slug": slug,
+            "name": site.name,
+            "epa_id": site.epa_id,
+            "npl_status": site.npl_status,
+            "is_active_npl": site.is_active_npl,
+            "is_deleted": site.is_deleted,
+            "is_federal_facility": site.is_federal_facility,
+            "county": county_label,
+            "county_slug": county_slug_value,
+            "city": site.place_name or site.city_name or None,
+            "city_slug": city_slug_value,
+            "address": site.street_address,
+            "zip": site.zip_code,
+            "lat": site.lat,
+            "lng": site.lng,
+        },
+        "briefing_label": "EPA Superfund SEMS through latest publish",
+        "totals": {
+            "contaminants_count": len(site.contaminants),
+            "primary_contaminant": site.primary_contaminant,
+        },
+        "contaminants": [
+            {
+                "name": c.name,
+                "media": c.media,
+                "operable_units": c.operable_units,
+                "citation_count": c.citation_count,
+            }
+            for c in site.contaminants
+        ],
+        "water_linkage": {
+            "radius_miles": 3.0,
+            "utilities": [
+                {
+                    "pwsid": u.pwsid,
+                    "name": u.name,
+                    "slug": utility_city_slug(u.name, u.pwsid),
+                    "state": u.state_slug,
+                    "distance_miles": u.distance_miles,
+                    "place_name": u.place_name,
+                    "primary_source": u.primary_source,
+                    "population_served": u.population_served,
+                    "health_based_5yr": u.health_based_5yr,
+                    "unresolved": u.unresolved,
+                }
+                for u in site.water_linkage
+            ],
+        },
+        "flags": [f.to_payload() for f in (flags or [])],
+        "equity": (
+            _build_equity(
+                population=place_population,
+                geography_label=(
+                    f"{site.place_name}, {_state_label(site.state_slug)} "
+                    "(Census place; block-group disparity scores aggregated by centroid containment)"
+                ),
+                demographics=place_demographics,
+                disparity_scores=place_disparity_scores,
+                percentiles=place_percentiles,
+            )
+            if site.place_fips and place_demographics and place_disparity_scores
+            else _build_equity(
+                population=county_population,
+                geography_label=(
+                    f"{site.county_name} County, {_state_label(site.state_slug)} "
+                    "(NPL site's containing county — 1-mile-buffer aggregation pending tract data)"
+                ),
+                demographics=county_demographics,
+                disparity_scores=county_disparity_scores,
+                percentiles=county_percentiles,
+            )
+            if site.county_fips and county_demographics
+            else _stub_equity(
+                geography_label=f"{_state_label(site.state_slug)} state-level (no place or county match)",
+                population=0,
+            )
+        ),
+        "source": {
+            "label": "EPA Superfund Enterprise Management System (SEMS)",
+            "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+            "retrieved": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        },
+        "_published_at": _now_iso(),
+    }
+    out = PUBLISHED_ROOT / "superfund" / site.state_slug / f"{slug}.json"
+    write_json(out, payload)
+    return out
+
+
 # ---- City hub (Tier 2 place, /city/[slug]) ------------------------------
 #
 # True place-aggregation: TRI in-city + GHG (county-share) + utilities
@@ -1100,6 +1256,7 @@ def publish_city_hub(
     health_indicators: list | None = None,
     flags: list | None = None,
     related_places: list[dict] | None = None,
+    superfund_in_place: list[SuperfundSiteAgg] | None = None,
 ) -> Path:
     """Build the place-anchored city hub payload."""
     # In-city totals (TRI). Sum facility-level pounds; identical to county
@@ -1206,6 +1363,13 @@ def publish_city_hub(
             **water_summary,
             "utilities": [_utility_summary(u) for u in sorted_utilities],
         },
+        "superfund": [
+            _superfund_summary(s)
+            for s in sorted(
+                superfund_in_place or [],
+                key=lambda s: (_superfund_status_rank(s), s.name),
+            )
+        ],
         "flags": [f.to_payload() for f in (flags or [])],
         "equity": _build_equity(
             population=place_population,
@@ -1267,8 +1431,13 @@ def publish_county(
     flags: list | None = None,
     cities_directory: list[dict] | None = None,
     related_places: list[dict] | None = None,
+    superfund_in_county: list[SuperfundSiteAgg] | None = None,
 ) -> Path:
     top = sorted(facilities_in_county, key=lambda f: f.pounds_total, reverse=True)[:COUNTY_TOP_FACILITIES]
+    sf_top = sorted(
+        superfund_in_county or [],
+        key=lambda s: (_superfund_status_rank(s), s.name),
+    )[:10]
     history_map = history or {year: county.pounds_total}
     pathways = (
         _criteria_air_pathways(air_history=air_history, year=year)
@@ -1299,6 +1468,8 @@ def publish_county(
             for f in top
         ],
         "utilities": [],  # SDWIS ingest pending
+        "superfund": [_superfund_summary(s) for s in sf_top],
+        "superfund_total": len(superfund_in_county or []),
         "cities_directory": cities_directory or [],
         "flags": [f.to_payload() for f in (flags or [])],
         "equity": _build_equity(
@@ -1335,6 +1506,46 @@ def _utility_summary(u: UtilityAgg) -> dict:
         "health_based_violations_5yr": u.health_based_5yr,
         "unresolved": u.unresolved > 0,
     }
+
+
+def _superfund_summary(agg: SuperfundSiteAgg) -> dict:
+    """Summary card used in state/county/city Superfund-section tables.
+    Mirrors the FacilitySummary / UtilitySummary shape — pre-computed slug,
+    enough metadata for the table row, no contaminant detail (lives on the
+    entity page).
+
+    ``city_slug`` only populates when the site landed inside a TIGER place
+    polygon (``place_fips``); otherwise the city cell renders unlinked.
+    """
+    return {
+        "slug": _superfund_slug(agg.name, agg.epa_id),
+        "state": agg.state_slug,
+        "name": agg.name,
+        "epa_id": agg.epa_id,
+        "npl_status": agg.npl_status,
+        "is_active_npl": agg.is_active_npl,
+        "is_deleted": agg.is_deleted,
+        "is_federal_facility": agg.is_federal_facility,
+        "city": agg.place_name or agg.city_name or None,
+        "city_slug": (
+            place_slug(agg.place_name, agg.place_fips)
+            if agg.place_fips and agg.place_name
+            else None
+        ),
+        "primary_contaminant": agg.primary_contaminant,
+    }
+
+
+def _superfund_status_rank(agg: SuperfundSiteAgg) -> int:
+    """Sort key: active NPL → Proposed → everything else (Deleted /
+    Withdrawn). Federal-facility status doesn't enter — it's a chip, not a
+    severity score.
+    """
+    if agg.is_active_npl:
+        return 0
+    if agg.npl_status == "Proposed for NPL":
+        return 1
+    return 2
 
 
 def _facility_summary(
@@ -1389,8 +1600,14 @@ def publish_state(
     air_history: dict[str, dict[int, float]] | None = None,
     airtox_history: dict[str, dict[int, float]] | None = None,
     flags: list | None = None,
+    superfund_sites: dict[str, SuperfundSiteAgg] | None = None,
 ) -> Path:
     facility_count = len(facilities)
+    sf_map = superfund_sites or {}
+    sf_top = sorted(
+        sf_map.values(),
+        key=lambda s: (_superfund_status_rank(s), s.name),
+    )[:10]
     top_counties = sorted(
         counties.values(), key=lambda c: c.pounds_total, reverse=True
     )[:STATE_TOP_COUNTIES]
@@ -1433,6 +1650,7 @@ def publish_state(
         "totals": {
             "facilities_tracked": facility_count,
             "utilities_tracked": len(util_map),
+            "npl_sites_tracked": len(sf_map),
             "counties_with_data": len(counties),
             "total_releases_pounds": round(state_agg.pounds_total),
             "yoy_pct_change": _yoy_pct_change(history_map.get(year), history_map.get(year - 1)),
@@ -1473,6 +1691,7 @@ def publish_state(
             for f in top_facilities
         ],
         "top_utilities": [_utility_summary(u) for u in top_utility_objs],
+        "superfund": [_superfund_summary(s) for s in sf_top],
         "flags": [f.to_payload() for f in (flags or [])],
         "equity": _build_equity(
             population=state.population,

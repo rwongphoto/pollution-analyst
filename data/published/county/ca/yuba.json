@@ -7,8 +7,8 @@
     "fips": "06115",
     "population": 81705
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "hazardous_air",
@@ -60,7 +60,7 @@
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 0,
       "units": "lb",
-      "yoy_pct_change": -100.0,
+      "yoy_pct_change": null,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -118,6 +118,10 @@
         },
         {
           "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -186,15 +190,19 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 2032,
+      "current": 809,
       "units": "lb",
-      "yoy_pct_change": 10.6,
+      "yoy_pct_change": -60.2,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -253,6 +261,10 @@
         {
           "year": 2023,
           "value": 2032
+        },
+        {
+          "year": 2024,
+          "value": 809
         }
       ]
     },
@@ -331,8 +343,8 @@
       "state_label": "California",
       "name": "U.S. Dod, Usaf, Beale Afb",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 2032,
-      "yoy_pct_change": 10.6,
+      "total_pounds_recent": 809,
+      "yoy_pct_change": -60.2,
       "top_chemical": "Lead",
       "city": "Beale Afb",
       "lat": 39.124871,
@@ -340,6 +352,8 @@
     }
   ],
   "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
   "cities_directory": [
     {
       "slug": "beale-afb",
@@ -398,77 +412,7 @@
       "population": 3702
     }
   ],
-  "flags": [
-    {
-      "type": "ghg_step",
-      "severity": "surge",
-      "label": "Greenhouse gas emissions",
-      "summary": "GHG emissions in Yuba County rose 50% year over year (79k mtCO\u2082e \u2192 118k mtCO\u2082e) \u2014 typical of new commissioning or expanded operations.",
-      "magnitude_pct": 50.0,
-      "magnitude_abs": 39288.2,
-      "baseline_year": 2022,
-      "recent_year": 2023,
-      "units": "mtCO2e",
-      "history": [
-        {
-          "year": 2010,
-          "value": 143352
-        },
-        {
-          "year": 2011,
-          "value": 183077
-        },
-        {
-          "year": 2012,
-          "value": 134793
-        },
-        {
-          "year": 2013,
-          "value": 191163
-        },
-        {
-          "year": 2014,
-          "value": 237988
-        },
-        {
-          "year": 2015,
-          "value": 88662
-        },
-        {
-          "year": 2016,
-          "value": 35039
-        },
-        {
-          "year": 2017,
-          "value": 26316
-        },
-        {
-          "year": 2018,
-          "value": 11656
-        },
-        {
-          "year": 2019,
-          "value": 97292
-        },
-        {
-          "year": 2020,
-          "value": 105008
-        },
-        {
-          "year": 2021,
-          "value": 88636
-        },
-        {
-          "year": 2022,
-          "value": 78541
-        },
-        {
-          "year": 2023,
-          "value": 117829
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 81705,
     "pct_low_income": 15.4,
@@ -689,7 +633,7 @@
       "name": "Tehama County",
       "population": 65484,
       "facilities_count": 1,
-      "total_releases_pounds": 666,
+      "total_releases_pounds": 675,
       "dominant_medium": "land",
       "ej_pct_avg": 47.4,
       "relation": "peer",
@@ -702,22 +646,9 @@
       "name": "Siskiyou County",
       "population": 44049,
       "facilities_count": 1,
-      "total_releases_pounds": 795,
+      "total_releases_pounds": 496,
       "dominant_medium": "land",
       "ej_pct_avg": 38.3,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 1 facility"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "mendocino",
-      "name": "Mendocino County",
-      "population": 91145,
-      "facilities_count": 1,
-      "total_releases_pounds": 250,
-      "dominant_medium": "land",
-      "ej_pct_avg": 34.6,
       "relation": "peer",
       "reason": "Similar TRI land profile \u00b7 1 facility"
     },
@@ -727,12 +658,25 @@
       "slug": "napa",
       "name": "Napa County",
       "population": 137384,
-      "facilities_count": 2,
-      "total_releases_pounds": 679,
+      "facilities_count": 3,
+      "total_releases_pounds": 650,
       "dominant_medium": "land",
       "ej_pct_avg": 52.5,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 2 facilities"
+      "reason": "Similar TRI land profile \u00b7 3 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "mendocino",
+      "name": "Mendocino County",
+      "population": 91145,
+      "facilities_count": 1,
+      "total_releases_pounds": 60,
+      "dominant_medium": "land",
+      "ej_pct_avg": 34.6,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
     },
     {
       "kind": "county",
@@ -740,12 +684,12 @@
       "slug": "lassen",
       "name": "Lassen County",
       "population": 31873,
-      "facilities_count": 2,
-      "total_releases_pounds": 28873,
+      "facilities_count": 1,
+      "total_releases_pounds": 8258,
       "dominant_medium": "land",
       "ej_pct_avg": 42.6,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 2 facilities"
+      "reason": "Similar TRI land profile \u00b7 1 facility"
     },
     {
       "kind": "county",
@@ -768,5 +712,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

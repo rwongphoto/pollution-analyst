@@ -34,6 +34,7 @@ Cross-state entry point. Hero + three featured entity cards (drawn from facility
 `KIND_HREF` map:
 - `facility` → `/state/[state]/facility/[slug]`
 - `water` → `/state/[state]/water/[slug]` (the PWS entity)
+- `superfund` → `/state/[state]/superfund/[slug]` (NPL site entity)
 - `city` → `/state/[state]/city/[slug]` (the place hub)
 - `county` → `/state/[state]/county/[slug]`
 
@@ -64,12 +65,13 @@ JSON-LD: `Organization` + `BreadcrumbList` + `Article` for SEO.
 
 | Section | Component | What it shows |
 |---|---|---|
-| `StateHero` | inline + `HeroChart` | Eyebrow, H1, lede. Headline pathway hero chart showing the lead pollutant's multi-decade history. Stats: facilities tracked · utilities tracked · counties with data · YoY · long-arc since baseline. |
+| `StateHero` | inline + `HeroChart` | Eyebrow, H1, lede. Headline pathway hero chart showing the lead pollutant's multi-decade history. Stats: facilities tracked · utilities tracked · NPL sites tracked · counties with data · YoY · long-arc since baseline. |
 | `NotableSignals` | shared | State-level long-arc flags. CA shows 0 by current threshold (correct — billion-lb totals don't move ≥50%). |
 | `PathwaysSection` | inline + `Sparkline` | One tile per pathway (TRI air / water / land + GHG): label, current, YoY, long-arc, sparkline, deterministic prose. |
 | `CountiesSection` | inline | Top-10 counties table: name, population, facilities, total releases, YoY, top chemical. Each name links to `/state/[state]/county/[slug]`. |
 | `FacilitiesSection` | inline | Top facilities table: name, city, top chemical, total releases, YoY. Each links to `/state/[state]/facility/[slug]`. |
 | `UtilitiesSection` | inline | Sorted to surface utilities serving the most people that still have an unresolved health-based violation. Compliant systems fall to the bottom. Each links to `/state/[state]/water/[slug]`. |
+| `SuperfundSection` | inline | Top in-state NPL sites table: name, host city, status (Final/Proposed/Deleted), primary contaminant, years on NPL. Each name links to `/state/[state]/superfund/[slug]`. |
 | `EquitySection` | inline + `EquityStub` | ACS demographics + EJ disparity scores at state level. Note that state percentiles wash out — drill down to county for sharper signal. |
 | `CountyDirectory` | inline | Alphabetical link grid of every county with TRI data. SEO surface for crawlable internal linking. |
 | `SourcesFooter` | inline | Per-source attribution + retrieval date. |
@@ -88,6 +90,7 @@ JSON-LD: `Organization` + `BreadcrumbList` + `Article` for SEO.
 | `PathwaysSection` | inline + `Sparkline` | Per-pathway tiles (TRI air/water/land + GHG county-share). |
 | `FacilitiesSection` | inline | Top-10 in-county facilities table. Links to facility entity pages. |
 | `UtilitiesSection` | inline | Public water utilities serving the county (when SDWIS county join has resolved). Links to `/state/[state]/water/[slug]`. |
+| `SuperfundSection` | inline | In-county NPL sites table: name, host city, status, primary contaminant, years on NPL. Links to `/state/[state]/superfund/[slug]`. |
 | `EquitySection` | inline + `EquityStub` | ACS county demographics + EJ disparity scores aggregated across county block groups. |
 | `RelatedPlaces` | shared | 5 pollution-profile peer counties + 1 deliberate contrast (similar scale, opposite EJ band). Picker lives in `pipeline/src/publish/site.py:pick_related_counties`. |
 | `SourcesFooter` | inline | Per-source attribution + retrieval. |
@@ -110,11 +113,12 @@ Pipeline build: TRI facilities are point-in-polygon-tested against TIGER 2020 pl
 | `PathwaysSection` | inline + `Sparkline` | TRI air/water/land tiles (current-year only — per-medium per-place history not reconstructed) + GHG county-share. |
 | `FacilitiesSection` | inline | In-city TRI facilities table. Hidden when zero facilities are inside the polygon. |
 | `WaterSection` | inline | Compliance-posture lede + 4-stat strip + utilities-serving table linking each row to `/state/[state]/water/[slug]`. Footer note: PWS is the regulated entity, not the city. |
+| `SuperfundSection` | inline | In-place NPL sites table (point-in-polygon-tested against TIGER 2020 place polygons, like facilities): name, status, primary contaminant, years on NPL. Links to `/state/[state]/superfund/[slug]`. |
 | `EquitySection` | inline + `EquityStub` | ACS place demographics + EJ disparity scores aggregated across the city's block groups. |
 | `RelatedPlaces` | shared | 4 same-county sibling cities + 1 statewide profile peer + 1 deliberate contrast. Same-county weighting prevents irrelevant matches (Lodi from Stockton, not Fontana). Picker: `pick_related_cities`. |
 | `SourcesFooter` | inline | TRI + SDWIS attribution. |
 
-Eligibility for a city hub: place must have ≥1 TRI facility OR ≥1 utility serving. Places with neither don't get a programmatic page.
+Eligibility for a city hub: place must have ≥1 TRI facility OR ≥1 utility serving OR ≥1 NPL site inside the polygon. Places with none of these don't get a programmatic page.
 
 ---
 
@@ -155,6 +159,34 @@ Slug derivation: `utility_city_slug()` strips redundant "City Of"/"Town Of" pref
 
 ---
 
+## 8. Superfund (NPL entity) — `/state/[state]/superfund/[slug]`
+
+**File:** `frontend/src/app/state/[state]/superfund/[slug]/page.tsx` (new)
+**Payload:** `superfund/<state>/<slug>.json` (`SuperfundPayload`, new)
+
+The Tier-1 NPL site entity page. Reframes EPA's procedural site record as a place-anchored narrative: how long this site has been in cleanup, what's in it, and whether anyone's drinking groundwater near it. Roughly 1,300 NPL sites nationally; ~100 in CA at v1.
+
+Slug derivation: `_superfund_slug()` mirrors [`_facility_slug` at `pipeline/src/publish/site.py:110`](pipeline/src/publish/site.py#L110) — `slugify(name.lower())`, with the EPA Site ID (e.g. `CAD980636781` lowercased) as collision-safe fallback when the slug is empty or under 3 chars. Pipeline emits `state`, `state_label`, `county`, `county_slug`, `city`, `city_slug`, `name`, `epa_site_id` on the payload so the page renders crumbs without re-deriving slugs at render time (the cleaner pattern already in use on `/water/[slug]`).
+
+| Section | Component | What it shows |
+|---|---|---|
+| `<Crumbs>` | shared | `state_label → county → city → site_name`, with `city` made optional like facility/water (NPL sites in unincorporated areas skip the city tier). Home auto-prepended by `Crumbs`. Example: `Home > California > Alameda County > Alameda > Alameda Naval Air Station`. |
+| `SuperfundHero` | inline + `PhaseTimeline` (compact) | Eyebrow (`NPL` / `Proposed` / `Deleted` / `Federal Facility` chip), H1 (site name), lede leading with **"Listed {year} — {N} years in cleanup, current phase: {phase}"**. Aside stat strip: year listed · years on NPL · current phase · last EPA action date · federal-facility flag. Hero visual is the compact (horizontal) cleanup phase timeline. |
+| `NotableSignals` | shared | Empty for v1 — flag detection (`stalled_cleanup`, `recently_deleted`, `5yr_review_overdue`) is deferred. Explicit empty-state line per the [calibration commitment](anomaly_engine_design.md). |
+| `CleanupPhaseSection` | inline + `PhaseTimeline` (expanded) | Vertical timeline of phase transitions: Listing → RI/FS → ROD → RD → RA → O&M → 5-Year Reviews → (Deletion). Each row: date, plain-English phase description, link to source document when SEMS publishes a URL. "X years between {phase A} and {phase B}" callouts where the gap exceeds the median. |
+| `ContaminantsSection` | inline + [`ChemicalCell`](frontend/src/components/site/ChemicalCell.tsx) | Contaminants of concern table. Each row wraps the contaminant name with `ChemicalCell` — the same pure-CSS hover tooltip used on State / County / City top-chemical cells, surfacing the agency-cited (IARC / EPA / ATSDR / NIOSH / OSHA / CDC) health-risk summary from [`chemicalHealthRisk.ts`](frontend/src/lib/chemicalHealthRisk.ts). Per row also: CAS, chemical category chip (carcinogen / neurotoxin / PBT / respiratory — reuses `pipeline/src/normalize/chemicals.py`), exposure-pathway tags (groundwater / soil / vapor / surface water). Names without a `chemicalHealthRisk` entry fall back to plain text per the existing component contract. |
+| `WaterLinkageSection` | inline | **Differentiator.** SDWIS PWSes drawing groundwater within N miles of the site (N=3 for v1, tunable). Per-PWS row: utility name, distance, source-water type, treatment notes, most recent health-based violation if any, link to `/state/[state]/water/[slug]`. Renders "no groundwater PWSes within {N} mi" empty-state when none match — empty result is itself a finding. |
+| `EquitySection` | inline + `EquityStub` | Three-tier preference: 1-mile buffer (when tract data lands) → host city → containing county. Same composition as facility/water: ACS demographics + national percentiles + EJ disparity. NPL proximity itself contributes to the national EJ pattern, so this section anchors why the page exists. |
+| `OperatorSection` *(v2)* | inline | PRP cross-link to active TRI facilities. *"PRP {Company X} currently operates {N} TRI-reporting facilities, releasing {Y} lb in {year}."* Gated on PRP-name normalization — table renders "operator data pending" until the join lands. |
+| `RelatedSites` | shared | 5 cross-link cards: similar NPL sites by primary contaminant class + industrial-source type + listing era. Same component shape as `RelatedPlaces`. |
+| `SourceFooter` | inline | SEMS / CERCLIS attribution + retrieval date + "what this is not" rider: we report EPA's published record, not site visit or current air/water sampling. |
+
+Eligibility for a Superfund entity page: presence on the EPA NPL (Final or Proposed). Deleted sites continue to render — historical accountability is part of the surface — with the `Deleted` chip.
+
+Open follow-ups tracked for v1 ingest: `chemicalHealthRisk.ts` extension to cover Superfund-specific COCs not in TRI's universe (asbestos, dioxins/furans, 1,4-dioxane, perchlorate, radium, plutonium-239 / strontium-90, creosote, MTBE).
+
+---
+
 ## Component Reference
 
 Reusable components in [`frontend/src/components/site/`](frontend/src/components/site/):
@@ -164,6 +196,7 @@ Reusable components in [`frontend/src/components/site/`](frontend/src/components
 | `Sparkline` | Home, State, County, City, Facility, AnomalyCard | 24-year inline SVG path. Per-pathway color. |
 | `HeroChart` | State, County, City, Facility, Water | Multi-year bar/line chart with per-medium media-split bar variant on Facility. |
 | `MediaSplitBar` | Facility | Stacked bar showing air/water/land split for the most recent year. |
+| `PhaseTimeline` | Superfund | Cleanup-phase timeline (Listing → RI/FS → ROD → RD → RA → O&M → 5YR → Deletion). `compact` variant (horizontal) for `SuperfundHero`; `expanded` variant (vertical) for `CleanupPhaseSection`. |
 | `AnomalyCard` | Inside `NotableSignals` | One card per `Flag`. Severity → spike/drop/rare CSS variant. Includes optional sparkline + external link. |
 | `NotableSignals` | All four templates | Section wrapper: severity-weighted sort, render cap 4, explicit empty-state. |
 | `RelatedPlaces` | County, City | 6-card cross-link grid: 5 pollution-profile peers + 1 deliberate contrast (same scale, opposite EJ band). Selection happens at publish time; the contrast slot is the editorial point — surfaces the wealth-pollution gap rather than echo-chamber navigation. |
@@ -185,6 +218,7 @@ Per [`prose_strategy.md`](prose_strategy.md), all customer-facing prose is templ
 | City hub | Hero, pathways, tables, water posture, equity | High-traffic cities only |
 | Facility | Hero, chemicals, equity, anomaly cards | None foreseen — entity content is structurally complete |
 | Water utility | Hero, contaminants, violations, equity, anomaly cards | None foreseen |
+| Superfund | Hero, cleanup-phase timeline, contaminants, water linkage, equity | None foreseen — entity content is structurally complete (mirrors Facility/Water posture) |
 | Methodology | All static prose | None foreseen — voice consistency / cite-ability matter here |
 
 When the LLM enters, the facts-validator pattern (lift from the crime site's [`pipeline/src/prose/validators.py`](../crime-trend-data/pipeline/src/prose/validators.py)) is non-negotiable. Every numeric and entity name in LLM output must appear verbatim in structured input, else drop and fall back to template.

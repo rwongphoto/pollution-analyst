@@ -9,8 +9,8 @@
     "county_name": "Amador",
     "county_fips": "06005"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 0,
     "utilities_serving": 1,
@@ -20,10 +20,10 @@
     "land_releases_pounds": 0,
     "yoy_pct_change": null,
     "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2023,
+    "long_arc_baseline_year": 2024,
     "history": [
       {
-        "year": 2023,
+        "year": 2024,
         "value": 0
       }
     ]
@@ -32,10 +32,10 @@
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.062,
+      "current": 0.072,
       "units": "ppm",
-      "yoy_pct_change": -3.1,
-      "long_arc_pct_change": -34.0,
+      "yoy_pct_change": 16.1,
+      "long_arc_pct_change": -23.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -93,6 +93,10 @@
         {
           "year": 2023,
           "value": 0.062
+        },
+        {
+          "year": 2024,
+          "value": 0.072
         }
       ]
     },
@@ -148,10 +152,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -163,10 +167,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -178,10 +182,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -208,40 +212,22 @@
       }
     ]
   },
-  "flags": [
+  "superfund": [
     {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Total Trihalomethanes (TTHM)",
-      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2022 (total trihalomethanes (tthm)).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2022,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA0310001"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "health_based_recent5y",
-      "label": "Total Trihalomethanes (TTHM)",
-      "summary": "Total Trihalomethanes Rule health-based violation cited in 2022 (total trihalomethanes (tthm)).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2022,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA0310001"
-      }
+      "slug": "argonaut-mine",
+      "state": "ca",
+      "name": "Argonaut Mine",
+      "epa_id": "CAD983650011",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Jackson",
+      "city_slug": "jackson",
+      "primary_contaminant": null
     }
   ],
+  "flags": [],
   "equity": {
     "population": 5004,
     "pct_low_income": 9.3,
@@ -546,5 +532,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:10:59Z"
 }

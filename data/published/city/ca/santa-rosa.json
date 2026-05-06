@@ -9,17 +9,17 @@
     "county_name": "Sonoma",
     "county_fips": "06097"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 3,
     "utilities_serving": 36,
-    "total_releases_pounds": 17022,
-    "air_releases_pounds": 11,
+    "total_releases_pounds": 93,
+    "air_releases_pounds": 10,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 17011,
-    "yoy_pct_change": 0.1,
-    "long_arc_pct_change": 14085.1,
+    "land_releases_pounds": 83,
+    "yoy_pct_change": -99.5,
+    "long_arc_pct_change": -22.3,
     "long_arc_baseline_year": 2011,
     "history": [
       {
@@ -73,6 +73,10 @@
       {
         "year": 2023,
         "value": 17022
+      },
+      {
+        "year": 2024,
+        "value": 93
       }
     ]
   },
@@ -80,10 +84,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 5.036,
+      "current": 3.399,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -21.0,
-      "long_arc_pct_change": -57.1,
+      "yoy_pct_change": -32.5,
+      "long_arc_pct_change": -71.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 5.036
+        },
+        {
+          "year": 2024,
+          "value": 3.399
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 16.6,
+      "current": 14.0,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -0.6,
-      "long_arc_pct_change": -54.9,
+      "yoy_pct_change": -15.7,
+      "long_arc_pct_change": -62.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 16.6
+        },
+        {
+          "year": 2024,
+          "value": 14.0
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.046,
+      "current": 0.039,
       "units": "ppm",
-      "yoy_pct_change": -8.0,
-      "long_arc_pct_change": -17.1,
+      "yoy_pct_change": -15.2,
+      "long_arc_pct_change": -29.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -275,16 +287,20 @@
         {
           "year": 2023,
           "value": 0.046
+        },
+        {
+          "year": 2024,
+          "value": 0.039
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 3.241,
+      "current": 4.428,
       "units": "ppb",
-      "yoy_pct_change": -11.6,
-      "long_arc_pct_change": -75.1,
+      "yoy_pct_change": 36.6,
+      "long_arc_pct_change": -65.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -342,6 +358,10 @@
         {
           "year": 2023,
           "value": 3.241
+        },
+        {
+          "year": 2024,
+          "value": 4.428
         }
       ]
     },
@@ -393,9 +413,9 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 11,
+      "current": 10,
       "units": "lb",
-      "yoy_pct_change": 11.2,
+      "yoy_pct_change": -7.9,
       "long_arc_pct_change": null,
       "baseline_year": 2011,
       "history": [
@@ -450,6 +470,10 @@
         {
           "year": 2023,
           "value": 11
+        },
+        {
+          "year": 2024,
+          "value": 10
         }
       ]
     },
@@ -513,17 +537,21 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 17011,
+      "current": 83,
       "units": "lb",
-      "yoy_pct_change": 0.1,
-      "long_arc_pct_change": -32.3,
-      "baseline_year": 2018,
+      "yoy_pct_change": -99.5,
+      "long_arc_pct_change": null,
+      "baseline_year": 2011,
       "history": [
         {
           "year": 2011,
@@ -576,6 +604,10 @@
         {
           "year": 2023,
           "value": 17011
+        },
+        {
+          "year": 2024,
+          "value": 83
         }
       ]
     },
@@ -649,30 +681,30 @@
   ],
   "facilities": [
     {
-      "slug": "keysight-technologies-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Keysight Technologies INC",
-      "parent_company": "Keysight Technologies INC",
-      "total_pounds_recent": 16961,
-      "yoy_pct_change": 0.1,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Santa Rosa",
-      "lat": 38.48371,
-      "lng": -122.712139
-    },
-    {
       "slug": "itt-cannon-llc-dba-biw-connector-systems",
       "state": "ca",
       "state_label": "California",
       "name": "Itt Cannon LLC Dba Biw Connector Systems",
       "parent_company": "Itt CORP",
-      "total_pounds_recent": 60,
-      "yoy_pct_change": -7.7,
-      "top_chemical": "Lead  And Lead Compounds",
+      "total_pounds_recent": 83,
+      "yoy_pct_change": 38.3,
+      "top_chemical": "Lead compounds",
       "city": "Santa Rosa",
       "lat": 38.449893,
       "lng": -122.735043
+    },
+    {
+      "slug": "keysight-technologies-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Keysight Technologies INC",
+      "parent_company": "Keysight Technologies INC",
+      "total_pounds_recent": 10,
+      "yoy_pct_change": -99.9,
+      "top_chemical": "Nitric acid",
+      "city": "Santa Rosa",
+      "lat": 38.48371,
+      "lng": -122.712139
     },
     {
       "slug": "bodean-co-inc",
@@ -680,8 +712,8 @@
       "state_label": "California",
       "name": "Bodean CO INC",
       "parent_company": "Crh Americas INC",
-      "total_pounds_recent": 1,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 0.23,
+      "yoy_pct_change": -79.1,
       "top_chemical": "Polycyclic aromatic compounds",
       "city": "Santa Rosa",
       "lat": 38.444279,
@@ -1058,360 +1090,8 @@
       }
     ]
   },
-  "flags": [
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Total Trihalomethanes (TTHM)",
-      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2021 (total trihalomethanes (tthm)).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2021,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900532"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Haloacetic Acids (HAA5)",
-      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2021 (haloacetic acids (haa5)).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2021,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900532"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900545"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900545"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2025,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900551"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5000",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900551"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Arsenic",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2021 (arsenic).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2021,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900553"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Arsenic",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2021 (arsenic).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2021,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900553"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 8000",
-      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2021 (contaminant 8000).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2021,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900580"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900599"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900599"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900720"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900720"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant ",
-      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2025 (contaminant ).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2025,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900723"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900794"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900794"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900799"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900799"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900905"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Contaminant 5200",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4900905"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Beryllium",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2020 (beryllium).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2020,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4901346"
-      }
-    },
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "Beryllium",
-      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2020 (beryllium).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2020,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4901346"
-      }
-    }
-  ],
+  "superfund": [],
+  "flags": [],
   "equity": {
     "population": 178221,
     "pct_low_income": 10.0,
@@ -1628,26 +1308,26 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "windsor",
-      "name": "Windsor",
-      "population": 26320,
+      "slug": "petaluma-center",
+      "name": "Petaluma Center",
+      "population": 849,
       "facilities_count": 1,
-      "total_releases_pounds": 1235,
+      "total_releases_pounds": 200,
       "dominant_medium": "land",
-      "ej_pct_avg": 43.7,
+      "ej_pct_avg": null,
       "relation": "peer",
       "reason": "Similar TRI land profile \u00b7 1 facility"
     },
     {
       "kind": "city",
       "state": "ca",
-      "slug": "petaluma-center",
-      "name": "Petaluma Center",
-      "population": 849,
+      "slug": "windsor",
+      "name": "Windsor",
+      "population": 26320,
       "facilities_count": 1,
-      "total_releases_pounds": 102,
+      "total_releases_pounds": 2581,
       "dominant_medium": "land",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 43.7,
       "relation": "peer",
       "reason": "Similar TRI land profile \u00b7 1 facility"
     },
@@ -1658,11 +1338,11 @@
       "name": "Petaluma",
       "population": 59682,
       "facilities_count": 3,
-      "total_releases_pounds": 26082,
+      "total_releases_pounds": 7053,
       "dominant_medium": "air",
       "ej_pct_avg": 43.9,
       "relation": "peer",
-      "reason": "Comparable release scale \u00b7 3 facilities"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
@@ -1680,15 +1360,15 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "modesto",
-      "name": "Modesto",
-      "population": 218308,
-      "facilities_count": 3,
-      "total_releases_pounds": 39858,
+      "slug": "perris",
+      "name": "Perris",
+      "population": 78881,
+      "facilities_count": 2,
+      "total_releases_pounds": 125,
       "dominant_medium": "land",
-      "ej_pct_avg": 66.8,
+      "ej_pct_avg": 59.1,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 3 facilities"
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
     },
     {
       "kind": "city",
@@ -1716,5 +1396,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:05Z"
+  "_published_at": "2026-05-06T04:11:00Z"
 }

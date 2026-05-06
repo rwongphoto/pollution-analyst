@@ -9,26 +9,22 @@
     "county_name": "Alameda",
     "county_fips": "06001"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 1,
+    "facilities_in_city": 0,
     "utilities_serving": 0,
-    "total_releases_pounds": 30,
+    "total_releases_pounds": 0,
     "air_releases_pounds": 0,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 30,
+    "land_releases_pounds": 0,
     "yoy_pct_change": null,
-    "long_arc_pct_change": -98.7,
-    "long_arc_baseline_year": 2021,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
     "history": [
       {
-        "year": 2021,
-        "value": 2250
-      },
-      {
-        "year": 2023,
-        "value": 30
+        "year": 2024,
+        "value": 0
       }
     ]
   },
@@ -36,10 +32,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 6.879,
+      "current": 6.691,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -16.0,
-      "long_arc_pct_change": -42.8,
+      "yoy_pct_change": -2.7,
+      "long_arc_pct_change": -44.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -97,16 +93,20 @@
         {
           "year": 2023,
           "value": 6.879
+        },
+        {
+          "year": 2024,
+          "value": 6.691
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 20.314,
+      "current": 17.043,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -6.5,
-      "long_arc_pct_change": -45.5,
+      "yoy_pct_change": -16.1,
+      "long_arc_pct_change": -54.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -164,16 +164,20 @@
         {
           "year": 2023,
           "value": 20.314
+        },
+        {
+          "year": 2024,
+          "value": 17.043
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.052,
+      "current": 0.037,
       "units": "ppm",
-      "yoy_pct_change": -0.5,
-      "long_arc_pct_change": -12.8,
+      "yoy_pct_change": -28.1,
+      "long_arc_pct_change": -37.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -231,16 +235,20 @@
         {
           "year": 2023,
           "value": 0.052
+        },
+        {
+          "year": 2024,
+          "value": 0.037
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 8.729,
+      "current": 10.653,
       "units": "ppb",
-      "yoy_pct_change": -18.3,
-      "long_arc_pct_change": -51.4,
+      "yoy_pct_change": 22.0,
+      "long_arc_pct_change": -40.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -298,6 +306,10 @@
         {
           "year": 2023,
           "value": 8.729
+        },
+        {
+          "year": 2024,
+          "value": 10.653
         }
       ]
     },
@@ -353,14 +365,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2021,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2021,
-          "value": 0
-        },
-        {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -372,14 +380,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2021,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2021,
-          "value": 0
-        },
-        {
-          "year": 2023,
+          "year": 2024,
           "value": 0
         }
       ]
@@ -387,19 +391,15 @@
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 30,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2021,
+      "baseline_year": 2024,
       "history": [
         {
-          "year": 2021,
-          "value": 2250
-        },
-        {
-          "year": 2023,
-          "value": 30
+          "year": 2024,
+          "value": 0
         }
       ]
     },
@@ -471,21 +471,7 @@
       ]
     }
   ],
-  "facilities": [
-    {
-      "slug": "us-coast-guard-base-alameda",
-      "state": "ca",
-      "state_label": "California",
-      "name": "US Coast Guard Base Alameda",
-      "parent_company": "US Department Of Homeland Security",
-      "total_pounds_recent": 30,
-      "yoy_pct_change": null,
-      "top_chemical": "Thiols, C8-20, \u03b3-\u03c9-perfluoro, telomers with acrylamide",
-      "city": "Alameda",
-      "lat": 37.76931,
-      "lng": -122.259887
-    }
-  ],
+  "facilities": [],
   "water": {
     "utilities_count": 0,
     "population_served_total": 0,
@@ -495,6 +481,21 @@
     "utilities_with_unresolved": 0,
     "utilities": []
   },
+  "superfund": [
+    {
+      "slug": "alameda-naval-air-station",
+      "state": "ca",
+      "name": "Alameda Naval Air Station",
+      "epa_id": "CA2170023236",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": true,
+      "city": "Alameda",
+      "city_slug": "alameda",
+      "primary_contaminant": "Chloroethene (Vinyl Chloride)"
+    }
+  ],
   "flags": [],
   "equity": {
     "population": 77565,
@@ -708,86 +709,7 @@
       "vintage_year": 2023
     }
   ],
-  "related_places": [
-    {
-      "kind": "city",
-      "state": "ca",
-      "slug": "berkeley",
-      "name": "Berkeley",
-      "population": 121385,
-      "facilities_count": 1,
-      "total_releases_pounds": 78,
-      "dominant_medium": "land",
-      "ej_pct_avg": 69.7,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 1 facility"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
-      "slug": "san-leandro",
-      "name": "San Leandro",
-      "population": 89723,
-      "facilities_count": 2,
-      "total_releases_pounds": 12090,
-      "dominant_medium": "land",
-      "ej_pct_avg": 61.8,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 2 facilities"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
-      "slug": "hayward",
-      "name": "Hayward",
-      "population": 160602,
-      "facilities_count": 5,
-      "total_releases_pounds": 11574,
-      "dominant_medium": "land",
-      "ej_pct_avg": 65.5,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 5 facilities"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
-      "slug": "newark",
-      "name": "Newark",
-      "population": 47470,
-      "facilities_count": 1,
-      "total_releases_pounds": 145748,
-      "dominant_medium": "land",
-      "ej_pct_avg": 65.9,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 1 facility"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
-      "slug": "rancho-santa-margarita",
-      "name": "Rancho Santa Margarita",
-      "population": 47702,
-      "facilities_count": 1,
-      "total_releases_pounds": 33,
-      "dominant_medium": "land",
-      "ej_pct_avg": 53.5,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 1 facility"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
-      "slug": "lompoc",
-      "name": "Lompoc",
-      "population": 44086,
-      "facilities_count": 2,
-      "total_releases_pounds": 216,
-      "dominant_medium": "land",
-      "ej_pct_avg": 36.3,
-      "relation": "contrast",
-      "reason": "Same scale, lighter equity burden (24 pct-pt EJ gap)"
-    }
-  ],
+  "related_places": [],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -800,5 +722,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:05Z"
+  "_published_at": "2026-05-06T04:11:00Z"
 }

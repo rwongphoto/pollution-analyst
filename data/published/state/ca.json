@@ -6,25 +6,26 @@
     "population": 39538223,
     "counties_total": 58
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_tracked": 890,
+    "facilities_tracked": 852,
     "utilities_tracked": 3071,
-    "counties_with_data": 43,
-    "total_releases_pounds": 36886027,
-    "yoy_pct_change": -16.1,
-    "long_arc_pct_change": 1.1,
+    "npl_sites_tracked": 117,
+    "counties_with_data": 42,
+    "total_releases_pounds": 36026212,
+    "yoy_pct_change": -2.3,
+    "long_arc_pct_change": -1.2,
     "long_arc_baseline_year": 2010
   },
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 7.823,
+      "current": 7.667,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -9.4,
-      "long_arc_pct_change": -45.4,
+      "yoy_pct_change": -2.0,
+      "long_arc_pct_change": -46.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -82,16 +83,20 @@
         {
           "year": 2023,
           "value": 7.823
+        },
+        {
+          "year": 2024,
+          "value": 7.667
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 22.611,
+      "current": 22.083,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -2.7,
-      "long_arc_pct_change": -50.8,
+      "yoy_pct_change": -2.3,
+      "long_arc_pct_change": -52.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -149,6 +154,10 @@
         {
           "year": 2023,
           "value": 22.611
+        },
+        {
+          "year": 2024,
+          "value": 22.083
         }
       ]
     },
@@ -157,8 +166,8 @@
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
       "current": 0.068,
       "units": "ppm",
-      "yoy_pct_change": -0.5,
-      "long_arc_pct_change": -14.0,
+      "yoy_pct_change": 0.1,
+      "long_arc_pct_change": -13.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -216,16 +225,20 @@
         {
           "year": 2023,
           "value": 0.068
+        },
+        {
+          "year": 2024,
+          "value": 0.068
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 8.404,
+      "current": 8.751,
       "units": "ppb",
-      "yoy_pct_change": -9.5,
-      "long_arc_pct_change": -51.3,
+      "yoy_pct_change": 4.1,
+      "long_arc_pct_change": -49.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -283,6 +296,10 @@
         {
           "year": 2023,
           "value": 8.404
+        },
+        {
+          "year": 2024,
+          "value": 8.751
         }
       ]
     },
@@ -334,10 +351,10 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 6049616,
+      "current": 5830740,
       "units": "lb",
-      "yoy_pct_change": -16.9,
-      "long_arc_pct_change": -32.5,
+      "yoy_pct_change": -3.6,
+      "long_arc_pct_change": -34.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -395,16 +412,20 @@
         {
           "year": 2023,
           "value": 6049616
+        },
+        {
+          "year": 2024,
+          "value": 5830740
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 3141579,
+      "current": 2949917,
       "units": "lb",
-      "yoy_pct_change": -11.7,
-      "long_arc_pct_change": 20.0,
+      "yoy_pct_change": -6.1,
+      "long_arc_pct_change": 12.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -462,16 +483,20 @@
         {
           "year": 2023,
           "value": 3141579
+        },
+        {
+          "year": 2024,
+          "value": 2949917
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 27694832,
+      "current": 27245555,
       "units": "lb",
-      "yoy_pct_change": -16.3,
-      "long_arc_pct_change": 11.3,
+      "yoy_pct_change": -1.6,
+      "long_arc_pct_change": 9.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -529,6 +554,10 @@
         {
           "year": 2023,
           "value": 27694832
+        },
+        {
+          "year": 2024,
+          "value": 27245555
         }
       ]
     },
@@ -602,28 +631,28 @@
   ],
   "top_counties": [
     {
-      "slug": "kern",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Kern County",
-      "fips": "06029",
-      "population": 906883,
-      "facilities_count": 31,
-      "total_releases_pounds": 9279575,
-      "yoy_pct_change": -35.4,
-      "top_chemical": "Selenium  And Selenium Compounds"
-    },
-    {
       "slug": "los-angeles",
       "state": "ca",
       "state_label": "California",
       "name": "Los Angeles County",
       "fips": "06037",
       "population": 9936690,
-      "facilities_count": 272,
-      "total_releases_pounds": 8557657,
-      "yoy_pct_change": -2.5,
+      "facilities_count": 250,
+      "total_releases_pounds": 8371400,
+      "yoy_pct_change": -2.2,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+    },
+    {
+      "slug": "kern",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Kern County",
+      "fips": "06029",
+      "population": 906883,
+      "facilities_count": 32,
+      "total_releases_pounds": 6644852,
+      "yoy_pct_change": -28.4,
+      "top_chemical": "Asbestos (friable)"
     },
     {
       "slug": "kings",
@@ -633,8 +662,8 @@
       "fips": "06031",
       "population": 152515,
       "facilities_count": 7,
-      "total_releases_pounds": 4057885,
-      "yoy_pct_change": -22.3,
+      "total_releases_pounds": 6114151,
+      "yoy_pct_change": 50.7,
       "top_chemical": "Asbestos (friable)"
     },
     {
@@ -644,9 +673,9 @@
       "name": "Alameda County",
       "fips": "06001",
       "population": 1663823,
-      "facilities_count": 27,
-      "total_releases_pounds": 2804150,
-      "yoy_pct_change": 20.5,
+      "facilities_count": 25,
+      "total_releases_pounds": 3400992,
+      "yoy_pct_change": 21.3,
       "top_chemical": "Zinc compounds"
     },
     {
@@ -656,9 +685,9 @@
       "name": "Contra Costa County",
       "fips": "06013",
       "population": 1162648,
-      "facilities_count": 32,
-      "total_releases_pounds": 2759487,
-      "yoy_pct_change": -3.8,
+      "facilities_count": 29,
+      "total_releases_pounds": 3013122,
+      "yoy_pct_change": 9.2,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
     },
     {
@@ -668,10 +697,22 @@
       "name": "San Bernardino County",
       "fips": "06071",
       "population": 2180563,
-      "facilities_count": 80,
-      "total_releases_pounds": 2446321,
-      "yoy_pct_change": 60.9,
+      "facilities_count": 82,
+      "total_releases_pounds": 2436807,
+      "yoy_pct_change": -0.4,
       "top_chemical": "Lead  And Lead Compounds"
+    },
+    {
+      "slug": "solano",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Solano County",
+      "fips": "06095",
+      "population": 450995,
+      "facilities_count": 15,
+      "total_releases_pounds": 886344,
+      "yoy_pct_change": 56.7,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
     },
     {
       "slug": "san-diego",
@@ -680,10 +721,10 @@
       "name": "San Diego County",
       "fips": "06073",
       "population": 3289701,
-      "facilities_count": 61,
-      "total_releases_pounds": 1354294,
-      "yoy_pct_change": -18.4,
-      "top_chemical": "Aluminum oxide (fibrous forms)"
+      "facilities_count": 54,
+      "total_releases_pounds": 813681,
+      "yoy_pct_change": -39.9,
+      "top_chemical": "Lead  And Lead Compounds"
     },
     {
       "slug": "sacramento",
@@ -692,34 +733,22 @@
       "name": "Sacramento County",
       "fips": "06067",
       "population": 1579211,
-      "facilities_count": 13,
-      "total_releases_pounds": 765169,
-      "yoy_pct_change": -3.1,
-      "top_chemical": "Copper compounds"
+      "facilities_count": 14,
+      "total_releases_pounds": 800886,
+      "yoy_pct_change": 4.7,
+      "top_chemical": "Methanol"
     },
     {
-      "slug": "tulare",
+      "slug": "santa-clara",
       "state": "ca",
       "state_label": "California",
-      "name": "Tulare County",
-      "fips": "06107",
-      "population": 473446,
-      "facilities_count": 13,
-      "total_releases_pounds": 614411,
-      "yoy_pct_change": -56.2,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
-    },
-    {
-      "slug": "stanislaus",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Stanislaus County",
-      "fips": "06099",
-      "population": 552063,
-      "facilities_count": 19,
-      "total_releases_pounds": 574701,
-      "yoy_pct_change": 4.1,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+      "name": "Santa Clara County",
+      "fips": "06085",
+      "population": 1916831,
+      "facilities_count": 32,
+      "total_releases_pounds": 486062,
+      "yoy_pct_change": 109.6,
+      "top_chemical": "Lead  And Lead Compounds"
     }
   ],
   "counties_directory": [
@@ -727,330 +756,323 @@
       "slug": "alameda",
       "name": "Alameda County",
       "fips": "06001",
-      "facilities_count": 27,
-      "total_releases_pounds": 2804150
+      "facilities_count": 25,
+      "total_releases_pounds": 3400992
     },
     {
       "slug": "colusa",
       "name": "Colusa County",
       "fips": "06011",
       "facilities_count": 1,
-      "total_releases_pounds": 118960
+      "total_releases_pounds": 104334
     },
     {
       "slug": "contra-costa",
       "name": "Contra Costa County",
       "fips": "06013",
-      "facilities_count": 32,
-      "total_releases_pounds": 2759487
+      "facilities_count": 29,
+      "total_releases_pounds": 3013122
     },
     {
       "slug": "fresno",
       "name": "Fresno County",
       "fips": "06019",
-      "facilities_count": 26,
-      "total_releases_pounds": 391801
+      "facilities_count": 28,
+      "total_releases_pounds": 366524
     },
     {
       "slug": "glenn",
       "name": "Glenn County",
       "fips": "06021",
       "facilities_count": 1,
-      "total_releases_pounds": 155880
+      "total_releases_pounds": 128125
     },
     {
       "slug": "humboldt",
       "name": "Humboldt County",
       "fips": "06023",
-      "facilities_count": 3,
-      "total_releases_pounds": 177501
+      "facilities_count": 2,
+      "total_releases_pounds": 96096
     },
     {
       "slug": "imperial",
       "name": "Imperial County",
       "fips": "06025",
       "facilities_count": 5,
-      "total_releases_pounds": 288653
+      "total_releases_pounds": 262832
     },
     {
       "slug": "kern",
       "name": "Kern County",
       "fips": "06029",
-      "facilities_count": 31,
-      "total_releases_pounds": 9279575
+      "facilities_count": 32,
+      "total_releases_pounds": 6644852
     },
     {
       "slug": "kings",
       "name": "Kings County",
       "fips": "06031",
       "facilities_count": 7,
-      "total_releases_pounds": 4057885
+      "total_releases_pounds": 6114151
     },
     {
       "slug": "lake",
       "name": "Lake County",
       "fips": "06033",
       "facilities_count": 1,
-      "total_releases_pounds": 176
+      "total_releases_pounds": 227
     },
     {
       "slug": "lassen",
       "name": "Lassen County",
       "fips": "06035",
-      "facilities_count": 2,
-      "total_releases_pounds": 28873
+      "facilities_count": 1,
+      "total_releases_pounds": 8258
     },
     {
       "slug": "los-angeles",
       "name": "Los Angeles County",
       "fips": "06037",
-      "facilities_count": 272,
-      "total_releases_pounds": 8557657
+      "facilities_count": 250,
+      "total_releases_pounds": 8371400
     },
     {
       "slug": "madera",
       "name": "Madera County",
       "fips": "06039",
-      "facilities_count": 8,
-      "total_releases_pounds": 177614
-    },
-    {
-      "slug": "marin",
-      "name": "Marin County",
-      "fips": "06041",
-      "facilities_count": 1,
-      "total_releases_pounds": 52
+      "facilities_count": 9,
+      "total_releases_pounds": 148356
     },
     {
       "slug": "mendocino",
       "name": "Mendocino County",
       "fips": "06045",
       "facilities_count": 1,
-      "total_releases_pounds": 250
+      "total_releases_pounds": 60
     },
     {
       "slug": "merced",
       "name": "Merced County",
       "fips": "06047",
       "facilities_count": 12,
-      "total_releases_pounds": 351796
+      "total_releases_pounds": 275402
     },
     {
       "slug": "monterey",
       "name": "Monterey County",
       "fips": "06053",
       "facilities_count": 5,
-      "total_releases_pounds": 28580
+      "total_releases_pounds": 24485
     },
     {
       "slug": "napa",
       "name": "Napa County",
       "fips": "06055",
-      "facilities_count": 2,
-      "total_releases_pounds": 679
+      "facilities_count": 3,
+      "total_releases_pounds": 650
     },
     {
       "slug": "orange",
       "name": "Orange County",
       "fips": "06059",
-      "facilities_count": 79,
-      "total_releases_pounds": 427150
+      "facilities_count": 78,
+      "total_releases_pounds": 382652
     },
     {
       "slug": "placer",
       "name": "Placer County",
       "fips": "06061",
-      "facilities_count": 8,
-      "total_releases_pounds": 28512
+      "facilities_count": 6,
+      "total_releases_pounds": 13998
     },
     {
       "slug": "plumas",
       "name": "Plumas County",
       "fips": "06063",
       "facilities_count": 2,
-      "total_releases_pounds": 17337
+      "total_releases_pounds": 23733
     },
     {
       "slug": "riverside",
       "name": "Riverside County",
       "fips": "06065",
-      "facilities_count": 36,
-      "total_releases_pounds": 163064
+      "facilities_count": 37,
+      "total_releases_pounds": 144629
     },
     {
       "slug": "sacramento",
       "name": "Sacramento County",
       "fips": "06067",
-      "facilities_count": 13,
-      "total_releases_pounds": 765169
+      "facilities_count": 14,
+      "total_releases_pounds": 800886
     },
     {
       "slug": "san-benito",
       "name": "San Benito County",
       "fips": "06069",
-      "facilities_count": 5,
-      "total_releases_pounds": 39153
+      "facilities_count": 4,
+      "total_releases_pounds": 37428
     },
     {
       "slug": "san-bernardino",
       "name": "San Bernardino County",
       "fips": "06071",
-      "facilities_count": 80,
-      "total_releases_pounds": 2446321
+      "facilities_count": 82,
+      "total_releases_pounds": 2436807
     },
     {
       "slug": "san-diego",
       "name": "San Diego County",
       "fips": "06073",
-      "facilities_count": 61,
-      "total_releases_pounds": 1354294
+      "facilities_count": 54,
+      "total_releases_pounds": 813681
     },
     {
       "slug": "san-joaquin",
       "name": "San Joaquin County",
       "fips": "06077",
-      "facilities_count": 25,
-      "total_releases_pounds": 49235
+      "facilities_count": 28,
+      "total_releases_pounds": 89011
     },
     {
       "slug": "san-luis-obispo",
       "name": "San Luis Obispo County",
       "fips": "06079",
-      "facilities_count": 6,
-      "total_releases_pounds": 22193
+      "facilities_count": 5,
+      "total_releases_pounds": 26203
     },
     {
       "slug": "san-mateo",
       "name": "San Mateo County",
       "fips": "06081",
-      "facilities_count": 6,
-      "total_releases_pounds": 663
+      "facilities_count": 5,
+      "total_releases_pounds": 436
     },
     {
       "slug": "santa-barbara",
       "name": "Santa Barbara County",
       "fips": "06083",
       "facilities_count": 7,
-      "total_releases_pounds": 32658
+      "total_releases_pounds": 55535
     },
     {
       "slug": "santa-clara",
       "name": "Santa Clara County",
       "fips": "06085",
-      "facilities_count": 38,
-      "total_releases_pounds": 231849
+      "facilities_count": 32,
+      "total_releases_pounds": 486062
     },
     {
       "slug": "santa-cruz",
       "name": "Santa Cruz County",
       "fips": "06087",
-      "facilities_count": 2,
-      "total_releases_pounds": 145
+      "facilities_count": 1,
+      "total_releases_pounds": 0.03
     },
     {
       "slug": "shasta",
       "name": "Shasta County",
       "fips": "06089",
-      "facilities_count": 6,
-      "total_releases_pounds": 214614
+      "facilities_count": 7,
+      "total_releases_pounds": 188305
     },
     {
       "slug": "siskiyou",
       "name": "Siskiyou County",
       "fips": "06093",
       "facilities_count": 1,
-      "total_releases_pounds": 795
+      "total_releases_pounds": 496
     },
     {
       "slug": "solano",
       "name": "Solano County",
       "fips": "06095",
       "facilities_count": 15,
-      "total_releases_pounds": 565656
+      "total_releases_pounds": 886344
     },
     {
       "slug": "sonoma",
       "name": "Sonoma County",
       "fips": "06097",
       "facilities_count": 9,
-      "total_releases_pounds": 46676
+      "total_releases_pounds": 12004
     },
     {
       "slug": "stanislaus",
       "name": "Stanislaus County",
       "fips": "06099",
       "facilities_count": 19,
-      "total_releases_pounds": 574701
+      "total_releases_pounds": 248495
     },
     {
       "slug": "tehama",
       "name": "Tehama County",
       "fips": "06103",
       "facilities_count": 1,
-      "total_releases_pounds": 666
+      "total_releases_pounds": 675
     },
     {
       "slug": "tulare",
       "name": "Tulare County",
       "fips": "06107",
-      "facilities_count": 13,
-      "total_releases_pounds": 614411
+      "facilities_count": 14,
+      "total_releases_pounds": 346750
     },
     {
       "slug": "tuolumne",
       "name": "Tuolumne County",
       "fips": "06109",
       "facilities_count": 1,
-      "total_releases_pounds": 0.16
+      "total_releases_pounds": 0.12
     },
     {
       "slug": "ventura",
       "name": "Ventura County",
       "fips": "06111",
       "facilities_count": 14,
-      "total_releases_pounds": 58158
+      "total_releases_pounds": 69516
     },
     {
       "slug": "yolo",
       "name": "Yolo County",
       "fips": "06113",
-      "facilities_count": 5,
-      "total_releases_pounds": 51005
+      "facilities_count": 3,
+      "total_releases_pounds": 1894
     },
     {
       "slug": "yuba",
       "name": "Yuba County",
       "fips": "06115",
       "facilities_count": 1,
-      "total_releases_pounds": 2032
+      "total_releases_pounds": 809
     }
   ],
   "top_facilities": [
-    {
-      "slug": "clean-harbors-buttonwillow-llc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Clean Harbors Buttonwillow LLC",
-      "parent_company": "Clean Harbors INC",
-      "total_pounds_recent": 8136896,
-      "yoy_pct_change": -38.0,
-      "top_chemical": "Selenium  And Selenium Compounds",
-      "city": "Buttonwillow",
-      "lat": 35.399622,
-      "lng": -119.548905
-    },
     {
       "slug": "chemical-waste-management-inc",
       "state": "ca",
       "state_label": "California",
       "name": "Chemical Waste Management INC",
       "parent_company": "Waste Management INC",
-      "total_pounds_recent": 4038278,
-      "yoy_pct_change": -22.3,
+      "total_pounds_recent": 6062449,
+      "yoy_pct_change": 50.1,
       "top_chemical": "Asbestos (friable)",
       "city": "Kettleman City",
       "lat": 35.961864,
       "lng": -120.012247
+    },
+    {
+      "slug": "clean-harbors-buttonwillow-llc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Clean Harbors Buttonwillow LLC",
+      "parent_company": "Clean Harbors INC",
+      "total_pounds_recent": 5348216,
+      "yoy_pct_change": -34.3,
+      "top_chemical": "Asbestos (friable)",
+      "city": "Buttonwillow",
+      "lat": 35.399622,
+      "lng": -119.548905
     },
     {
       "slug": "chevron-products-co-div-of-chevron-usa-inc",
@@ -1058,8 +1080,8 @@
       "state_label": "California",
       "name": "Chevron Products CO. Div Of Chevron USA INC.",
       "parent_company": "Chevron CORP",
-      "total_pounds_recent": 2072450,
-      "yoy_pct_change": -1.9,
+      "total_pounds_recent": 1922171,
+      "yoy_pct_change": -7.3,
       "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "city": "El Segundo",
       "lat": 33.91634,
@@ -1071,25 +1093,12 @@
       "state_label": "California",
       "name": "Ecobat Resources California INC.",
       "parent_company": "Ecobat LLC",
-      "total_pounds_recent": 2035830,
-      "yoy_pct_change": 12.7,
+      "total_pounds_recent": 1799106,
+      "yoy_pct_change": -11.6,
       "top_chemical": "Lead  And Lead Compounds",
       "city": "City Of Industry",
       "lat": 34.025335,
       "lng": -117.984046
-    },
-    {
-      "slug": "tesla-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Tesla INC",
-      "parent_company": "Tesla INC",
-      "total_pounds_recent": 1500510,
-      "yoy_pct_change": 45.7,
-      "top_chemical": "Zinc compounds",
-      "city": "Fremont",
-      "lat": 37.497103,
-      "lng": -121.948267
     },
     {
       "slug": "mp-mine-operations-llc",
@@ -1097,12 +1106,25 @@
       "state_label": "California",
       "name": "Mp Mine Operations LLC",
       "parent_company": null,
-      "total_pounds_recent": 1398112,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 1617941,
+      "yoy_pct_change": 15.7,
       "top_chemical": "Lead  And Lead Compounds",
       "city": "Mountain Pass",
       "lat": 35.473447,
       "lng": -115.528498
+    },
+    {
+      "slug": "tesla-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Tesla INC",
+      "parent_company": "Tesla INC",
+      "total_pounds_recent": 1607488,
+      "yoy_pct_change": 7.1,
+      "top_chemical": "Zinc compounds",
+      "city": "Fremont",
+      "lat": 37.497103,
+      "lng": -121.948267
     },
     {
       "slug": "tesoro-los-angeles-refinery-carson-operations",
@@ -1110,8 +1132,8 @@
       "state_label": "California",
       "name": "Tesoro Los Angeles Refinery-Carson Operations",
       "parent_company": "Marathon Petroleum CORP",
-      "total_pounds_recent": 955769,
-      "yoy_pct_change": -21.1,
+      "total_pounds_recent": 1019431,
+      "yoy_pct_change": 6.7,
       "top_chemical": "Ammonia",
       "city": "Carson",
       "lat": 33.803488,
@@ -1123,38 +1145,38 @@
       "state_label": "California",
       "name": "US Pipe & Foundry CO LLC",
       "parent_company": "Quikrete Holdings",
-      "total_pounds_recent": 940861,
-      "yoy_pct_change": 8.3,
+      "total_pounds_recent": 845102,
+      "yoy_pct_change": -10.2,
       "top_chemical": "Zinc compounds",
       "city": "Union City",
       "lat": 37.606024,
       "lng": -122.041167
     },
     {
-      "slug": "martinez-refining-co-llc",
+      "slug": "safety-kleen-inc",
       "state": "ca",
       "state_label": "California",
-      "name": "Martinez Refining CO LLC",
-      "parent_company": "Pbf Energy INC",
-      "total_pounds_recent": 857014,
-      "yoy_pct_change": -12.8,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Martinez",
-      "lat": 38.012459,
-      "lng": -122.106598
+      "name": "Safety-Kleen INC",
+      "parent_company": "Clean Harbors INC",
+      "total_pounds_recent": 806499,
+      "yoy_pct_change": 453.4,
+      "top_chemical": "Ethylene glycol",
+      "city": "Newark",
+      "lat": 37.521488,
+      "lng": -122.021308
     },
     {
-      "slug": "phillips-66-rodeo-renewable-energy-complex",
+      "slug": "chevron-products-co-richmond-refinery",
       "state": "ca",
       "state_label": "California",
-      "name": "Phillips 66 Rodeo Renewable Energy Complex",
-      "parent_company": "Phillips 66 Co",
-      "total_pounds_recent": 711446,
-      "yoy_pct_change": -8.0,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "Rodeo",
-      "lat": 38.049226,
-      "lng": -122.256529
+      "name": "Chevron Products CO Richmond Refinery",
+      "parent_company": "Chevron CORP",
+      "total_pounds_recent": 806300,
+      "yoy_pct_change": 41.2,
+      "top_chemical": "Ammonia",
+      "city": "Richmond",
+      "lat": 37.931187,
+      "lng": -122.390899
     }
   ],
   "top_utilities": [
@@ -1257,6 +1279,138 @@
       "population_served": 47419,
       "health_based_violations_5yr": 1,
       "unresolved": true
+    }
+  ],
+  "superfund": [
+    {
+      "slug": "advanced-micro-devices-inc",
+      "state": "ca",
+      "name": "Advanced Micro Devices, Inc.",
+      "epa_id": "CAD048634059",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Sunnyvale",
+      "city_slug": "sunnyvale",
+      "primary_contaminant": "1,1,1-Trichloroethane"
+    },
+    {
+      "slug": "advanced-micro-devices-inc-building-915",
+      "state": "ca",
+      "name": "Advanced Micro Devices, Inc. (Building 915)",
+      "epa_id": "CAT080034234",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Sunnyvale",
+      "city_slug": "sunnyvale",
+      "primary_contaminant": "1,1,1-Trichloroethane"
+    },
+    {
+      "slug": "aerojet-general-corp",
+      "state": "ca",
+      "name": "Aerojet General Corp.",
+      "epa_id": "CAD980358832",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Rancho Cordova",
+      "city_slug": null,
+      "primary_contaminant": "1,1,2-Trichloroethane"
+    },
+    {
+      "slug": "afterthought-mine",
+      "state": "ca",
+      "name": "Afterthought Mine",
+      "epa_id": "CAN000908808",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Bella Vista",
+      "city_slug": null,
+      "primary_contaminant": null
+    },
+    {
+      "slug": "alameda-naval-air-station",
+      "state": "ca",
+      "name": "Alameda Naval Air Station",
+      "epa_id": "CA2170023236",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": true,
+      "city": "Alameda",
+      "city_slug": "alameda",
+      "primary_contaminant": "Chloroethene (Vinyl Chloride)"
+    },
+    {
+      "slug": "alark-hard-chrome",
+      "state": "ca",
+      "name": "Alark Hard Chrome",
+      "epa_id": "CAD098229214",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Riverside",
+      "city_slug": "riverside",
+      "primary_contaminant": null
+    },
+    {
+      "slug": "amco-chemical",
+      "state": "ca",
+      "name": "Amco Chemical",
+      "epa_id": "CA0001576081",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Oakland",
+      "city_slug": "oakland",
+      "primary_contaminant": null
+    },
+    {
+      "slug": "applied-materials",
+      "state": "ca",
+      "name": "Applied Materials",
+      "epa_id": "CAD042728840",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Santa Clara",
+      "city_slug": "santa-clara",
+      "primary_contaminant": "1,1,1-Trichloroethane"
+    },
+    {
+      "slug": "argonaut-mine",
+      "state": "ca",
+      "name": "Argonaut Mine",
+      "epa_id": "CAD983650011",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Jackson",
+      "city_slug": "jackson",
+      "primary_contaminant": null
+    },
+    {
+      "slug": "atlas-asbestos-mine",
+      "state": "ca",
+      "name": "Atlas Asbestos Mine",
+      "epa_id": "CAD980496863",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Coalinga",
+      "city_slug": null,
+      "primary_contaminant": "Asbestos"
     }
   ],
   "flags": [],
@@ -1397,5 +1551,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:58Z"
+  "_published_at": "2026-05-06T04:10:51Z"
 }

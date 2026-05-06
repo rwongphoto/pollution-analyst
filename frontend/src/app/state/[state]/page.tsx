@@ -11,6 +11,7 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
 import { StateMap } from "@/components/site/StateMap";
+import { SuperfundSection } from "@/components/site/SuperfundSection";
 import { listStateSlugs, loadState } from "@/lib/data";
 import {
   disparityLanguage,
@@ -75,8 +76,11 @@ function StateHero({ data }: { data: StatePagePayload }) {
           <div className="eyebrow">State · {data.briefing_label}</div>
           <h1>{s.name} Pollution</h1>
           <p className="lead lede" style={{ maxWidth: "70ch" }}>
-            <strong>{t.facilities_tracked.toLocaleString()}</strong> TRI facilities and{" "}
-            <strong>{t.utilities_tracked.toLocaleString()}</strong> public water systems across{" "}
+            <strong>{t.facilities_tracked.toLocaleString()}</strong> TRI facilities,{" "}
+            <strong>{t.utilities_tracked.toLocaleString()}</strong> public water systems,{" "}
+            and{" "}
+            <strong>{(t.npl_sites_tracked ?? 0).toLocaleString()}</strong> Superfund / NPL sites
+            across{" "}
             <strong>{t.counties_with_data}</strong> counties.
             {" "}Statewide TRI releases {yoyLanguage} year over year ({pctSigned(t.yoy_pct_change)}). {longArc}
           </p>
@@ -544,6 +548,12 @@ export default async function StatePage({
         <CountiesSection data={data} />
         <FacilitiesSection data={data} />
         <UtilitiesSection data={data} />
+        <SuperfundSection
+          sites={data.superfund ?? []}
+          total={data.totals.npl_sites_tracked}
+          geographyLabel={data.state.name}
+          showHostCity
+        />
         <EquitySection data={data} />
         <CountyDirectory data={data} />
         <SourcesFooter data={data} />

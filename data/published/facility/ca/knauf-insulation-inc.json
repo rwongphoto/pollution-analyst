@@ -13,16 +13,16 @@
     "lat": 40.658546,
     "lng": -122.388369
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 214475,
-    "air_releases_pounds": 194177,
+    "total_releases_pounds": 188014,
+    "air_releases_pounds": 155661,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 20298,
-    "chemicals_reported": 2,
-    "yoy_pct_change": 6.4,
-    "long_arc_pct_change": 162.4,
+    "land_releases_pounds": 32353,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -12.3,
+    "long_arc_pct_change": 130.1,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -80,6 +80,10 @@
       {
         "year": 2023,
         "value": 214475
+      },
+      {
+        "year": 2024,
+        "value": 188014
       }
     ]
   },
@@ -88,12 +92,8 @@
       "chemical": "Ammonia",
       "cas": "7664-41-7",
       "category": "general",
-      "total_pounds_recent": 194221,
+      "total_pounds_recent": 156124,
       "history": [
-        {
-          "year": 2010,
-          "value": 40802
-        },
         {
           "year": 2011,
           "value": 61072
@@ -145,17 +145,40 @@
         {
           "year": 2023,
           "value": 194221
+        },
+        {
+          "year": 2024,
+          "value": 156124
         }
       ],
-      "yoy_pct_change": -2.5,
-      "long_arc_pct_change": 376.0,
+      "yoy_pct_change": -19.6,
+      "long_arc_pct_change": 282.6,
       "long_arc_baseline_year": 2010
     },
     {
-      "chemical": "Manganese  And Manganese Compounds",
+      "chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
+      "cas": "N090",
+      "category": "respiratory",
+      "total_pounds_recent": 16863,
+      "history": [
+        {
+          "year": 2014,
+          "value": 23706
+        },
+        {
+          "year": 2024,
+          "value": 16863
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -28.9,
+      "long_arc_baseline_year": 2014
+    },
+    {
+      "chemical": "Manganese compounds",
       "cas": "N450",
       "category": "respiratory",
-      "total_pounds_recent": 20254,
+      "total_pounds_recent": 15027,
       "history": [
         {
           "year": 2022,
@@ -164,153 +187,18 @@
         {
           "year": 2023,
           "value": 20254
+        },
+        {
+          "year": 2024,
+          "value": 15027
         }
       ],
-      "yoy_pct_change": 734.8,
-      "long_arc_pct_change": 734.8,
+      "yoy_pct_change": -25.8,
+      "long_arc_pct_change": 519.4,
       "long_arc_baseline_year": 2022
     }
   ],
-  "flags": [
-    {
-      "type": "long_arc_shift",
-      "severity": "regression",
-      "label": "Total reported releases",
-      "summary": "Total reported releases at Knauf Insulation INC. have more than doubled since 2010 (through 2023).",
-      "magnitude_pct": 162.4,
-      "magnitude_abs": 132750.2,
-      "baseline_year": 2010,
-      "recent_year": 2023,
-      "units": "lb",
-      "history": [
-        {
-          "year": 2010,
-          "value": 81724
-        },
-        {
-          "year": 2011,
-          "value": 61086
-        },
-        {
-          "year": 2012,
-          "value": 61132
-        },
-        {
-          "year": 2013,
-          "value": 57802
-        },
-        {
-          "year": 2014,
-          "value": 155706
-        },
-        {
-          "year": 2015,
-          "value": 185500
-        },
-        {
-          "year": 2016,
-          "value": 209858
-        },
-        {
-          "year": 2017,
-          "value": 177018
-        },
-        {
-          "year": 2018,
-          "value": 179799
-        },
-        {
-          "year": 2019,
-          "value": 195462
-        },
-        {
-          "year": 2020,
-          "value": 199219
-        },
-        {
-          "year": 2021,
-          "value": 210393
-        },
-        {
-          "year": 2022,
-          "value": 201581
-        },
-        {
-          "year": 2023,
-          "value": 214475
-        }
-      ]
-    },
-    {
-      "type": "release_shift",
-      "severity": "surge",
-      "label": "Manganese  And Manganese Compounds",
-      "summary": "Manganese  And Manganese Compounds releases at Knauf Insulation INC. rose from 2k lb to 20k lb (8.3\u00d7) between 2022 and 2023.",
-      "magnitude_pct": 734.8,
-      "magnitude_abs": 17827.8,
-      "baseline_year": 2022,
-      "recent_year": 2023,
-      "units": "lb",
-      "history": [
-        {
-          "year": 2010,
-          "value": 11
-        },
-        {
-          "year": 2011,
-          "value": 14
-        },
-        {
-          "year": 2012,
-          "value": 16
-        },
-        {
-          "year": 2013,
-          "value": 19
-        },
-        {
-          "year": 2014,
-          "value": 18
-        },
-        {
-          "year": 2015,
-          "value": 24
-        },
-        {
-          "year": 2016,
-          "value": 35
-        },
-        {
-          "year": 2017,
-          "value": 36
-        },
-        {
-          "year": 2018,
-          "value": 18
-        },
-        {
-          "year": 2019,
-          "value": 16
-        },
-        {
-          "year": 2020,
-          "value": 18
-        },
-        {
-          "year": 2021,
-          "value": 15
-        },
-        {
-          "year": 2022,
-          "value": 2426
-        },
-        {
-          "year": 2023,
-          "value": 20254
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 19308,
     "pct_low_income": 38.5,
@@ -327,5 +215,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-06"
   },
-  "_published_at": "2026-05-06T00:38:03Z"
+  "_published_at": "2026-05-06T04:10:57Z"
 }

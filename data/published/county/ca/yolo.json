@@ -7,16 +7,16 @@
     "fips": "06113",
     "population": 217141
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 7.98,
+      "current": 6.587,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -4.8,
-      "long_arc_pct_change": -21.8,
+      "yoy_pct_change": -17.4,
+      "long_arc_pct_change": -35.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 7.98
+        },
+        {
+          "year": 2024,
+          "value": 6.587
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 25.0,
+      "current": 17.85,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -12.9,
-      "long_arc_pct_change": -34.2,
+      "yoy_pct_change": -28.6,
+      "long_arc_pct_change": -53.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,6 +145,10 @@
         {
           "year": 2023,
           "value": 25.0
+        },
+        {
+          "year": 2024,
+          "value": 17.85
         }
       ]
     },
@@ -149,8 +157,8 @@
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
       "current": 0.064,
       "units": "ppm",
-      "yoy_pct_change": 0.8,
-      "long_arc_pct_change": -20.5,
+      "yoy_pct_change": -0.8,
+      "long_arc_pct_change": -21.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 0.064
+        },
+        {
+          "year": 2024,
+          "value": 0.064
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 3.361,
+      "current": 3.248,
       "units": "ppb",
-      "yoy_pct_change": -15.8,
-      "long_arc_pct_change": -69.1,
+      "yoy_pct_change": -3.4,
+      "long_arc_pct_change": -70.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -275,6 +287,10 @@
         {
           "year": 2023,
           "value": 3.361
+        },
+        {
+          "year": 2024,
+          "value": 3.248
         }
       ]
     },
@@ -326,10 +342,10 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 42898,
+      "current": 52,
       "units": "lb",
-      "yoy_pct_change": -42.6,
-      "long_arc_pct_change": -44.0,
+      "yoy_pct_change": -99.9,
+      "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
         {
@@ -387,6 +403,10 @@
         {
           "year": 2023,
           "value": 42898
+        },
+        {
+          "year": 2024,
+          "value": 52
         }
       ]
     },
@@ -454,17 +474,21 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 8107,
+      "current": 1842,
       "units": "lb",
-      "yoy_pct_change": -3.3,
-      "long_arc_pct_change": -3.3,
-      "baseline_year": 2022,
+      "yoy_pct_change": -77.3,
+      "long_arc_pct_change": null,
+      "baseline_year": 2010,
       "history": [
         {
           "year": 2010,
@@ -521,6 +545,10 @@
         {
           "year": 2023,
           "value": 8107
+        },
+        {
+          "year": 2024,
+          "value": 1842
         }
       ]
     },
@@ -594,39 +622,13 @@
   ],
   "facilities": [
     {
-      "slug": "truck-accessories-group-dba-tag-west",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Truck Accessories Group Dba Tag West",
-      "parent_company": "Jb Poindexter & Co INC",
-      "total_pounds_recent": 42836,
-      "yoy_pct_change": -42.6,
-      "top_chemical": "Styrene",
-      "city": "Woodland",
-      "lat": 38.68443,
-      "lng": -121.74312
-    },
-    {
-      "slug": "nor-cal-beverage-co-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Nor-Cal Beverage CO INC",
-      "parent_company": "Nor-Cal Beverage Co INC",
-      "total_pounds_recent": 6333,
-      "yoy_pct_change": 3.6,
-      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "city": "West Sacramento",
-      "lat": 38.563393,
-      "lng": -121.53995
-    },
-    {
       "slug": "watts-regulator-co",
       "state": "ca",
       "state_label": "California",
       "name": "Watts Regulator CO.",
       "parent_company": "Watts Water Technologies",
-      "total_pounds_recent": 1814,
-      "yoy_pct_change": -21.2,
+      "total_pounds_recent": 1872,
+      "yoy_pct_change": 3.2,
       "top_chemical": "Chromium",
       "city": "Woodland",
       "lat": 38.695369,
@@ -639,7 +641,7 @@
       "name": "Veritiv Operating CO - Ca515 West Sacramento",
       "parent_company": "Veritiv Operating Co",
       "total_pounds_recent": 22,
-      "yoy_pct_change": 15.8,
+      "yoy_pct_change": 0.0,
       "top_chemical": "Diisocyanates",
       "city": "West Sacramento",
       "lat": 38.55117,
@@ -651,8 +653,8 @@
       "state_label": "California",
       "name": "Pavestone - Winters Ca Plant",
       "parent_company": "Quikrete Holdings",
-      "total_pounds_recent": 0.17,
-      "yoy_pct_change": null,
+      "total_pounds_recent": 0.16,
+      "yoy_pct_change": -6.3,
       "top_chemical": "Lead",
       "city": "Winters",
       "lat": 38.539341,
@@ -660,6 +662,22 @@
     }
   ],
   "utilities": [],
+  "superfund": [
+    {
+      "slug": "frontier-fertilizer",
+      "state": "ca",
+      "name": "Frontier Fertilizer",
+      "epa_id": "CAD071530380",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Davis",
+      "city_slug": "davis",
+      "primary_contaminant": "1,1,2,2-Tetrachloroethane"
+    }
+  ],
+  "superfund_total": 1,
   "cities_directory": [
     {
       "slug": "davis",
@@ -689,7 +707,7 @@
       "slug": "west-sacramento",
       "name": "West Sacramento",
       "fips": "0684816",
-      "facilities_count": 2,
+      "facilities_count": 1,
       "utilities_count": 1,
       "population": 54163
     },
@@ -705,7 +723,7 @@
       "slug": "woodland",
       "name": "Woodland",
       "fips": "0686328",
-      "facilities_count": 2,
+      "facilities_count": 1,
       "utilities_count": 8,
       "population": 61227
     }
@@ -927,67 +945,67 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "sonoma",
-      "name": "Sonoma County",
-      "population": 488436,
-      "facilities_count": 9,
-      "total_releases_pounds": 46676,
-      "dominant_medium": "air",
-      "ej_pct_avg": 48.1,
+      "slug": "napa",
+      "name": "Napa County",
+      "population": 137384,
+      "facilities_count": 3,
+      "total_releases_pounds": 650,
+      "dominant_medium": "land",
+      "ej_pct_avg": 52.5,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 9 facilities"
+      "reason": "Similar TRI land profile \u00b7 3 facilities"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "placer",
-      "name": "Placer County",
-      "population": 406608,
-      "facilities_count": 8,
-      "total_releases_pounds": 28512,
-      "dominant_medium": "air",
-      "ej_pct_avg": 59.2,
+      "slug": "san-mateo",
+      "name": "San Mateo County",
+      "population": 754250,
+      "facilities_count": 5,
+      "total_releases_pounds": 436,
+      "dominant_medium": "land",
+      "ej_pct_avg": 56.4,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 8 facilities"
+      "reason": "Similar TRI land profile \u00b7 5 facilities"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "shasta",
-      "name": "Shasta County",
-      "population": 181852,
-      "facilities_count": 6,
-      "total_releases_pounds": 214614,
-      "dominant_medium": "air",
-      "ej_pct_avg": 53.2,
+      "slug": "yuba",
+      "name": "Yuba County",
+      "population": 81705,
+      "facilities_count": 1,
+      "total_releases_pounds": 809,
+      "dominant_medium": "land",
+      "ej_pct_avg": 58.0,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 6 facilities"
+      "reason": "Similar TRI land profile \u00b7 1 facility"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "madera",
-      "name": "Madera County",
-      "population": 157243,
-      "facilities_count": 8,
-      "total_releases_pounds": 177614,
-      "dominant_medium": "air",
-      "ej_pct_avg": 60.7,
+      "slug": "tehama",
+      "name": "Tehama County",
+      "population": 65484,
+      "facilities_count": 1,
+      "total_releases_pounds": 675,
+      "dominant_medium": "land",
+      "ej_pct_avg": 47.4,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 8 facilities"
+      "reason": "Similar TRI land profile \u00b7 1 facility"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "ventura",
-      "name": "Ventura County",
-      "population": 842009,
-      "facilities_count": 14,
-      "total_releases_pounds": 58158,
-      "dominant_medium": "air",
-      "ej_pct_avg": 61.1,
+      "slug": "san-luis-obispo",
+      "name": "San Luis Obispo County",
+      "population": 281712,
+      "facilities_count": 5,
+      "total_releases_pounds": 26203,
+      "dominant_medium": "land",
+      "ej_pct_avg": 44.1,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 14 facilities"
+      "reason": "Similar TRI land profile \u00b7 5 facilities"
     },
     {
       "kind": "county",
@@ -996,7 +1014,7 @@
       "name": "Mendocino County",
       "population": 91145,
       "facilities_count": 1,
-      "total_releases_pounds": 250,
+      "total_releases_pounds": 60,
       "dominant_medium": "land",
       "ej_pct_avg": 34.6,
       "relation": "contrast",
@@ -1010,5 +1028,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

@@ -13,16 +13,16 @@
     "lat": 37.418239,
     "lng": -120.850035
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 19479,
-    "air_releases_pounds": 19479,
+    "total_releases_pounds": 31163,
+    "air_releases_pounds": 12739,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 0,
-    "chemicals_reported": 4,
-    "yoy_pct_change": 731.0,
-    "long_arc_pct_change": -91.8,
+    "land_releases_pounds": 18424,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 60.0,
+    "long_arc_pct_change": -86.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -80,35 +80,63 @@
       {
         "year": 2023,
         "value": 19479
+      },
+      {
+        "year": 2024,
+        "value": 31163
       }
     ]
   },
   "chemicals": [
     {
-      "chemical": "Hydrogen sulfide",
-      "cas": "7783-06-4",
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
       "category": "general",
-      "total_pounds_recent": 14932,
+      "total_pounds_recent": 17105,
       "history": [
         {
-          "year": 2023,
-          "value": 14932
+          "year": 2010,
+          "value": 226474
+        },
+        {
+          "year": 2011,
+          "value": 181758
+        },
+        {
+          "year": 2012,
+          "value": 7960
+        },
+        {
+          "year": 2014,
+          "value": 42980
+        },
+        {
+          "year": 2015,
+          "value": 41829
+        },
+        {
+          "year": 2016,
+          "value": 45540
+        },
+        {
+          "year": 2017,
+          "value": 43864
+        },
+        {
+          "year": 2024,
+          "value": 17105
         }
       ],
       "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "long_arc_baseline_year": 2023
+      "long_arc_pct_change": -92.4,
+      "long_arc_baseline_year": 2010
     },
     {
       "chemical": "Ammonia",
       "cas": "7664-41-7",
       "category": "general",
-      "total_pounds_recent": 3537,
+      "total_pounds_recent": 10940,
       "history": [
-        {
-          "year": 2010,
-          "value": 10232
-        },
         {
           "year": 2011,
           "value": 2904
@@ -160,11 +188,34 @@
         {
           "year": 2023,
           "value": 3537
+        },
+        {
+          "year": 2024,
+          "value": 10940
         }
       ],
-      "yoy_pct_change": 163.2,
-      "long_arc_pct_change": -65.4,
+      "yoy_pct_change": 209.3,
+      "long_arc_pct_change": 6.9,
       "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "Hydrogen sulfide",
+      "cas": "7783-06-4",
+      "category": "general",
+      "total_pounds_recent": 2108,
+      "history": [
+        {
+          "year": 2023,
+          "value": 14932
+        },
+        {
+          "year": 2024,
+          "value": 2108
+        }
+      ],
+      "yoy_pct_change": -85.9,
+      "long_arc_pct_change": -85.9,
+      "long_arc_baseline_year": 2023
     },
     {
       "chemical": "Nitric acid",
@@ -172,10 +223,6 @@
       "category": "general",
       "total_pounds_recent": 1000,
       "history": [
-        {
-          "year": 2010,
-          "value": 442
-        },
         {
           "year": 2011,
           "value": 807
@@ -226,6 +273,10 @@
         },
         {
           "year": 2023,
+          "value": 1000
+        },
+        {
+          "year": 2024,
           "value": 1000
         }
       ],
@@ -286,84 +337,18 @@
         {
           "year": 2023,
           "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 10
         }
       ],
-      "yoy_pct_change": null,
+      "yoy_pct_change": 0.0,
       "long_arc_pct_change": 0.0,
       "long_arc_baseline_year": 2011
     }
   ],
-  "flags": [
-    {
-      "type": "long_arc_shift",
-      "severity": "improvement",
-      "label": "Total reported releases",
-      "summary": "Total reported releases at Hilmar Cheese CO have more than three-quarters since 2010 (through 2023).",
-      "magnitude_pct": -91.8,
-      "magnitude_abs": -217669.0,
-      "baseline_year": 2010,
-      "recent_year": 2023,
-      "units": "lb",
-      "history": [
-        {
-          "year": 2010,
-          "value": 237148
-        },
-        {
-          "year": 2011,
-          "value": 185479
-        },
-        {
-          "year": 2012,
-          "value": 11717
-        },
-        {
-          "year": 2013,
-          "value": 5188
-        },
-        {
-          "year": 2014,
-          "value": 51403
-        },
-        {
-          "year": 2015,
-          "value": 50206
-        },
-        {
-          "year": 2016,
-          "value": 53600
-        },
-        {
-          "year": 2017,
-          "value": 51796
-        },
-        {
-          "year": 2018,
-          "value": 9180
-        },
-        {
-          "year": 2019,
-          "value": 4696
-        },
-        {
-          "year": 2020,
-          "value": 6506
-        },
-        {
-          "year": 2021,
-          "value": 16398
-        },
-        {
-          "year": 2022,
-          "value": 2344
-        },
-        {
-          "year": 2023,
-          "value": 19479
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 7693,
     "pct_low_income": 36.3,
@@ -380,5 +365,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-06"
   },
-  "_published_at": "2026-05-06T00:38:03Z"
+  "_published_at": "2026-05-06T04:10:56Z"
 }

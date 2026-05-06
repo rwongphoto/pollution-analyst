@@ -13,16 +13,16 @@
     "lat": 34.645916,
     "lng": -118.067201
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 11512,
-    "air_releases_pounds": 11512,
+    "total_releases_pounds": 20274,
+    "air_releases_pounds": 20264,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 0,
-    "chemicals_reported": 1,
-    "yoy_pct_change": -54.5,
-    "long_arc_pct_change": -60.9,
+    "land_releases_pounds": 10,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 76.1,
+    "long_arc_pct_change": -31.1,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -80,6 +80,10 @@
       {
         "year": 2023,
         "value": 11512
+      },
+      {
+        "year": 2024,
+        "value": 20274
       }
     ]
   },
@@ -88,7 +92,7 @@
       "chemical": "sec-Butyl alcohol",
       "cas": "78-92-2",
       "category": "general",
-      "total_pounds_recent": 11512,
+      "total_pounds_recent": 10511,
       "history": [
         {
           "year": 2021,
@@ -101,24 +105,21 @@
         {
           "year": 2023,
           "value": 11512
+        },
+        {
+          "year": 2024,
+          "value": 10511
         }
       ],
-      "yoy_pct_change": 8.9,
-      "long_arc_pct_change": 0.6,
+      "yoy_pct_change": -8.7,
+      "long_arc_pct_change": -8.1,
       "long_arc_baseline_year": 2021
-    }
-  ],
-  "flags": [
+    },
     {
-      "type": "release_shift",
-      "severity": "drop",
-      "label": "0000108101",
-      "summary": "0000108101 releases at Usaf Plant 42 Site 4 Northrop Grumman Systems Corp fell from 15k lb to 0 lb (100% lower) between 2022 and 2023.",
-      "magnitude_pct": -100.0,
-      "magnitude_abs": -14753.0,
-      "baseline_year": 2022,
-      "recent_year": 2023,
-      "units": "lb",
+      "chemical": "Methyl isobutyl ketone",
+      "cas": "108-10-1",
+      "category": "carcinogen",
+      "total_pounds_recent": 9763,
       "history": [
         {
           "year": 2010,
@@ -167,10 +168,18 @@
         {
           "year": 2022,
           "value": 14753
+        },
+        {
+          "year": 2024,
+          "value": 9763
         }
-      ]
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -66.8,
+      "long_arc_baseline_year": 2010
     }
   ],
+  "flags": [],
   "equity": {
     "population": 19168,
     "pct_low_income": 38.6,
@@ -187,5 +196,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-06"
   },
-  "_published_at": "2026-05-06T00:38:03Z"
+  "_published_at": "2026-05-06T04:10:57Z"
 }

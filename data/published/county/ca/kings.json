@@ -7,16 +7,16 @@
     "fips": "06031",
     "population": 152515
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 11.264,
+      "current": 10.959,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -21.8,
-      "long_arc_pct_change": -41.7,
+      "yoy_pct_change": -2.7,
+      "long_arc_pct_change": -43.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 11.264
+        },
+        {
+          "year": 2024,
+          "value": 10.959
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 33.45,
+      "current": 32.95,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -20.8,
-      "long_arc_pct_change": -39.3,
+      "yoy_pct_change": -1.5,
+      "long_arc_pct_change": -40.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 33.45
+        },
+        {
+          "year": 2024,
+          "value": 32.95
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.075,
+      "current": 0.083,
       "units": "ppm",
-      "yoy_pct_change": 0.7,
-      "long_arc_pct_change": -28.1,
+      "yoy_pct_change": 9.9,
+      "long_arc_pct_change": -21.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 0.075
+        },
+        {
+          "year": 2024,
+          "value": 0.083
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 6.751,
+      "current": 7.164,
       "units": "ppb",
-      "yoy_pct_change": -18.9,
-      "long_arc_pct_change": -52.3,
+      "yoy_pct_change": 6.1,
+      "long_arc_pct_change": -49.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -275,6 +287,10 @@
         {
           "year": 2023,
           "value": 6.751
+        },
+        {
+          "year": 2024,
+          "value": 7.164
         }
       ]
     },
@@ -326,10 +342,10 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 21291,
+      "current": 61037,
       "units": "lb",
-      "yoy_pct_change": -15.4,
-      "long_arc_pct_change": -82.1,
+      "yoy_pct_change": 186.7,
+      "long_arc_pct_change": -48.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -387,6 +403,10 @@
         {
           "year": 2023,
           "value": 21291
+        },
+        {
+          "year": 2024,
+          "value": 61037
         }
       ]
     },
@@ -454,16 +474,20 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 4036594,
+      "current": 6053114,
       "units": "lb",
-      "yoy_pct_change": -22.3,
-      "long_arc_pct_change": -37.6,
+      "yoy_pct_change": 50.0,
+      "long_arc_pct_change": -6.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -521,6 +545,10 @@
         {
           "year": 2023,
           "value": 4036594
+        },
+        {
+          "year": 2024,
+          "value": 6053114
         }
       ]
     },
@@ -599,8 +627,8 @@
       "state_label": "California",
       "name": "Chemical Waste Management INC",
       "parent_company": "Waste Management INC",
-      "total_pounds_recent": 4038278,
-      "yoy_pct_change": -22.3,
+      "total_pounds_recent": 6062449,
+      "yoy_pct_change": 50.1,
       "top_chemical": "Asbestos (friable)",
       "city": "Kettleman City",
       "lat": 35.961864,
@@ -612,12 +640,25 @@
       "state_label": "California",
       "name": "Jg Boswell CO Oil Mill",
       "parent_company": "Jg Boswell Co",
-      "total_pounds_recent": 17697,
-      "yoy_pct_change": -12.0,
+      "total_pounds_recent": 49627,
+      "yoy_pct_change": 180.4,
       "top_chemical": "n-Hexane",
       "city": "Corcoran",
       "lat": 36.090822,
       "lng": -119.556308
+    },
+    {
+      "slug": "j-g-boswell-co-kings-tomato",
+      "state": "ca",
+      "state_label": "California",
+      "name": "J.G. Boswell CO - Kings Tomato",
+      "parent_company": "Jg Boswell Co",
+      "total_pounds_recent": 542,
+      "yoy_pct_change": 80.7,
+      "top_chemical": "Ammonia",
+      "city": "Corcoran",
+      "lat": 36.066251,
+      "lng": -119.571937
     },
     {
       "slug": "us-dod-nas-lemoore-installation",
@@ -625,8 +666,8 @@
       "state_label": "California",
       "name": "US Dod Nas Lemoore (Installation)",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 570,
-      "yoy_pct_change": -13.2,
+      "total_pounds_recent": 542,
+      "yoy_pct_change": -4.9,
       "top_chemical": "Lead",
       "city": "Lemoore",
       "lat": 36.25702,
@@ -638,38 +679,12 @@
       "state_label": "California",
       "name": "Leprino Foods CO",
       "parent_company": "Leprino Foods Co",
-      "total_pounds_recent": 510,
-      "yoy_pct_change": 2.0,
+      "total_pounds_recent": 505,
+      "yoy_pct_change": -1.0,
       "top_chemical": "Nitric acid",
       "city": "Lemoore",
       "lat": 36.298983,
       "lng": -119.811708
-    },
-    {
-      "slug": "j-g-boswell-co-kings-tomato",
-      "state": "ca",
-      "state_label": "California",
-      "name": "J.G. Boswell CO - Kings Tomato",
-      "parent_company": "Jg Boswell Co",
-      "total_pounds_recent": 300,
-      "yoy_pct_change": -53.4,
-      "top_chemical": "Ammonia",
-      "city": "Corcoran",
-      "lat": 36.066251,
-      "lng": -119.571937
-    },
-    {
-      "slug": "airgas-specialty-products-hanford-ca",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Airgas Specialty Products - Hanford Ca",
-      "parent_company": "Airgas INC",
-      "total_pounds_recent": 275,
-      "yoy_pct_change": 0.0,
-      "top_chemical": "Ammonia",
-      "city": "Hanford",
-      "lat": 36.278003,
-      "lng": -119.650544
     },
     {
       "slug": "leprino-foods-co",
@@ -678,14 +693,29 @@
       "name": "Leprino Foods CO",
       "parent_company": "Leprino Foods Co",
       "total_pounds_recent": 255,
-      "yoy_pct_change": -49.5,
+      "yoy_pct_change": 0.0,
       "top_chemical": "Nitric acid",
       "city": "Lemoore",
       "lat": 36.303223,
       "lng": -119.788566
+    },
+    {
+      "slug": "airgas-specialty-products-hanford-ca",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Airgas Specialty Products - Hanford Ca",
+      "parent_company": "Airgas INC",
+      "total_pounds_recent": 232,
+      "yoy_pct_change": -15.6,
+      "top_chemical": "Ammonia",
+      "city": "Hanford",
+      "lat": 36.278003,
+      "lng": -119.650544
     }
   ],
   "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
   "cities_directory": [
     {
       "slug": "armona",
@@ -744,215 +774,7 @@
       "population": 6403
     }
   ],
-  "flags": [
-    {
-      "type": "long_arc_shift",
-      "severity": "improvement",
-      "label": "Greenhouse gas emissions",
-      "summary": "Greenhouse gas emissions at Kings County have more than halved since 2010 (through 2023).",
-      "magnitude_pct": -60.8,
-      "magnitude_abs": -317719.1,
-      "baseline_year": 2010,
-      "recent_year": 2023,
-      "units": "mtCO2e",
-      "history": [
-        {
-          "year": 2010,
-          "value": 522895
-        },
-        {
-          "year": 2011,
-          "value": 468094
-        },
-        {
-          "year": 2012,
-          "value": 385083
-        },
-        {
-          "year": 2013,
-          "value": 419095
-        },
-        {
-          "year": 2014,
-          "value": 488771
-        },
-        {
-          "year": 2015,
-          "value": 428018
-        },
-        {
-          "year": 2016,
-          "value": 290153
-        },
-        {
-          "year": 2017,
-          "value": 269662
-        },
-        {
-          "year": 2018,
-          "value": 257719
-        },
-        {
-          "year": 2019,
-          "value": 279380
-        },
-        {
-          "year": 2020,
-          "value": 213454
-        },
-        {
-          "year": 2021,
-          "value": 200489
-        },
-        {
-          "year": 2022,
-          "value": 240112
-        },
-        {
-          "year": 2023,
-          "value": 205176
-        }
-      ]
-    },
-    {
-      "type": "naaqs_exceedance",
-      "severity": "exceedance",
-      "label": "PM2.5 annual mean",
-      "summary": "PM2.5 annual mean in Kings County reached 11.3 \u00b5g/m\u00b3 in 2023, 25% above the EPA NAAQS of 9 \u00b5g/m\u00b3.",
-      "magnitude_pct": 25.2,
-      "magnitude_abs": 2.264,
-      "baseline_year": null,
-      "recent_year": 2023,
-      "units": "\u00b5g/m\u00b3",
-      "history": [
-        {
-          "year": 2010,
-          "value": 19.334
-        },
-        {
-          "year": 2011,
-          "value": 16.198
-        },
-        {
-          "year": 2012,
-          "value": 15.641
-        },
-        {
-          "year": 2013,
-          "value": 17.92
-        },
-        {
-          "year": 2014,
-          "value": 16.119
-        },
-        {
-          "year": 2015,
-          "value": 25.932
-        },
-        {
-          "year": 2016,
-          "value": 15.109
-        },
-        {
-          "year": 2017,
-          "value": 16.871
-        },
-        {
-          "year": 2018,
-          "value": 17.707
-        },
-        {
-          "year": 2019,
-          "value": 12.174
-        },
-        {
-          "year": 2020,
-          "value": 18.062
-        },
-        {
-          "year": 2021,
-          "value": 15.231
-        },
-        {
-          "year": 2022,
-          "value": 14.403
-        },
-        {
-          "year": 2023,
-          "value": 11.264
-        }
-      ]
-    },
-    {
-      "type": "naaqs_exceedance",
-      "severity": "exceedance",
-      "label": "Ozone 8-hour 4th-highest daily max",
-      "summary": "Ozone 8-hour 4th-highest daily max in Kings County reached 0.075 ppm in 2023, 8% above the EPA NAAQS of 0.07 ppm.",
-      "magnitude_pct": 7.9,
-      "magnitude_abs": 0.005,
-      "baseline_year": null,
-      "recent_year": 2023,
-      "units": "ppm",
-      "history": [
-        {
-          "year": 2010,
-          "value": 0.105
-        },
-        {
-          "year": 2011,
-          "value": 0.083
-        },
-        {
-          "year": 2012,
-          "value": 0.081
-        },
-        {
-          "year": 2013,
-          "value": 0.08
-        },
-        {
-          "year": 2014,
-          "value": 0.081
-        },
-        {
-          "year": 2015,
-          "value": 0.078
-        },
-        {
-          "year": 2016,
-          "value": 0.08
-        },
-        {
-          "year": 2017,
-          "value": 0.081
-        },
-        {
-          "year": 2018,
-          "value": 0.079
-        },
-        {
-          "year": 2019,
-          "value": 0.073
-        },
-        {
-          "year": 2020,
-          "value": 0.08
-        },
-        {
-          "year": 2021,
-          "value": 0.074
-        },
-        {
-          "year": 2022,
-          "value": 0.075
-        },
-        {
-          "year": 2023,
-          "value": 0.075
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 152515,
     "pct_low_income": 16.2,
@@ -1169,11 +991,24 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "kern",
+      "name": "Kern County",
+      "population": 906883,
+      "facilities_count": 32,
+      "total_releases_pounds": 6644852,
+      "dominant_medium": "land",
+      "ej_pct_avg": 66.0,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 32 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "imperial",
       "name": "Imperial County",
       "population": 179578,
       "facilities_count": 5,
-      "total_releases_pounds": 288653,
+      "total_releases_pounds": 262832,
       "dominant_medium": "land",
       "ej_pct_avg": 61.7,
       "relation": "peer",
@@ -1182,41 +1017,28 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "tulare",
-      "name": "Tulare County",
-      "population": 473446,
-      "facilities_count": 13,
-      "total_releases_pounds": 614411,
-      "dominant_medium": "land",
-      "ej_pct_avg": 66.3,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 13 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "merced",
-      "name": "Merced County",
-      "population": 282290,
-      "facilities_count": 12,
-      "total_releases_pounds": 351796,
-      "dominant_medium": "land",
-      "ej_pct_avg": 65.1,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 12 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
       "slug": "alameda",
       "name": "Alameda County",
       "population": 1663823,
-      "facilities_count": 27,
-      "total_releases_pounds": 2804150,
+      "facilities_count": 25,
+      "total_releases_pounds": 3400992,
       "dominant_medium": "land",
       "ej_pct_avg": 66.8,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 27 facilities"
+      "reason": "Similar TRI land profile \u00b7 25 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "contra-costa",
+      "name": "Contra Costa County",
+      "population": 1162648,
+      "facilities_count": 29,
+      "total_releases_pounds": 3013122,
+      "dominant_medium": "land",
+      "ej_pct_avg": 65.9,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 29 facilities"
     },
     {
       "kind": "county",
@@ -1224,12 +1046,12 @@
       "slug": "sacramento",
       "name": "Sacramento County",
       "population": 1579211,
-      "facilities_count": 13,
-      "total_releases_pounds": 765169,
+      "facilities_count": 14,
+      "total_releases_pounds": 800886,
       "dominant_medium": "land",
       "ej_pct_avg": 70.4,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 13 facilities"
+      "reason": "Similar TRI land profile \u00b7 14 facilities"
     },
     {
       "kind": "county",
@@ -1238,7 +1060,7 @@
       "name": "Mendocino County",
       "population": 91145,
       "facilities_count": 1,
-      "total_releases_pounds": 250,
+      "total_releases_pounds": 60,
       "dominant_medium": "land",
       "ej_pct_avg": 34.6,
       "relation": "contrast",
@@ -1252,5 +1074,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "Ventura",
     "county_fips": "06111"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 0,
-    "total_releases_pounds": 99,
+    "total_releases_pounds": 1,
     "air_releases_pounds": 0,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 99,
-    "yoy_pct_change": -86.8,
-    "long_arc_pct_change": -98.2,
+    "land_releases_pounds": 1,
+    "yoy_pct_change": -98.8,
+    "long_arc_pct_change": -100.0,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,6 +77,10 @@
       {
         "year": 2023,
         "value": 99
+      },
+      {
+        "year": 2024,
+        "value": 1
       }
     ]
   },
@@ -84,10 +88,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 5.775,
+      "current": 5.844,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -15.3,
-      "long_arc_pct_change": -54.9,
+      "yoy_pct_change": 1.2,
+      "long_arc_pct_change": -54.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -145,16 +149,20 @@
         {
           "year": 2023,
           "value": 5.775
+        },
+        {
+          "year": 2024,
+          "value": 5.844
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 14.01,
+      "current": 12.3,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -5.7,
-      "long_arc_pct_change": -63.4,
+      "yoy_pct_change": -12.2,
+      "long_arc_pct_change": -67.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -212,16 +220,20 @@
         {
           "year": 2023,
           "value": 14.01
+        },
+        {
+          "year": 2024,
+          "value": 12.3
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.066,
+      "current": 0.065,
       "units": "ppm",
-      "yoy_pct_change": -5.5,
-      "long_arc_pct_change": -13.0,
+      "yoy_pct_change": -0.6,
+      "long_arc_pct_change": -13.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -279,16 +291,20 @@
         {
           "year": 2023,
           "value": 0.066
+        },
+        {
+          "year": 2024,
+          "value": 0.065
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 4.271,
+      "current": 5.152,
       "units": "ppb",
-      "yoy_pct_change": -18.4,
-      "long_arc_pct_change": -64.8,
+      "yoy_pct_change": 20.6,
+      "long_arc_pct_change": -57.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -346,6 +362,10 @@
         {
           "year": 2023,
           "value": 4.271
+        },
+        {
+          "year": 2024,
+          "value": 5.152
         }
       ]
     },
@@ -458,6 +478,10 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
@@ -525,15 +549,19 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 99,
+      "current": 1,
       "units": "lb",
-      "yoy_pct_change": -86.8,
+      "yoy_pct_change": -98.8,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -592,6 +620,10 @@
         {
           "year": 2023,
           "value": 99
+        },
+        {
+          "year": 2024,
+          "value": 1
         }
       ]
     },
@@ -670,9 +702,9 @@
       "state_label": "California",
       "name": "Valex Corp",
       "parent_company": "Reliance Steel & Aluminum Co",
-      "total_pounds_recent": 99,
-      "yoy_pct_change": -86.8,
-      "top_chemical": "Nickel",
+      "total_pounds_recent": 1,
+      "yoy_pct_change": -98.8,
+      "top_chemical": "Chromium compounds (except for chromite ore mined in the Transvaal Region)",
       "city": "Ventura",
       "lat": 34.248647,
       "lng": -119.205878
@@ -687,6 +719,7 @@
     "utilities_with_unresolved": 0,
     "utilities": []
   },
+  "superfund": [],
   "flags": [],
   "equity": {
     "population": 110358,
@@ -904,65 +937,65 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "thousand-oaks",
-      "name": "Thousand Oaks",
-      "population": 126532,
-      "facilities_count": 2,
-      "total_releases_pounds": 9865,
-      "dominant_medium": "land",
-      "ej_pct_avg": 56.2,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 2 facilities"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
-      "slug": "simi-valley",
-      "name": "Simi Valley",
-      "population": 126153,
-      "facilities_count": 1,
-      "total_releases_pounds": 250,
-      "dominant_medium": "air",
-      "ej_pct_avg": 55.4,
-      "relation": "peer",
-      "reason": "Comparable release scale \u00b7 1 facility"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
       "slug": "moorpark",
       "name": "Moorpark",
       "population": 36073,
       "facilities_count": 1,
-      "total_releases_pounds": 10,
-      "dominant_medium": "air",
+      "total_releases_pounds": 15,
+      "dominant_medium": "land",
       "ej_pct_avg": 55.1,
       "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
+      "reason": "Similar TRI land profile \u00b7 1 facility"
     },
     {
       "kind": "city",
       "state": "ca",
-      "slug": "el-rio",
-      "name": "El Rio",
-      "population": 6418,
+      "slug": "thousand-oaks",
+      "name": "Thousand Oaks",
+      "population": 126532,
       "facilities_count": 1,
-      "total_releases_pounds": 577,
-      "dominant_medium": "air",
-      "ej_pct_avg": 66.5,
+      "total_releases_pounds": 9430,
+      "dominant_medium": "land",
+      "ej_pct_avg": 56.2,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "santa-paula",
+      "name": "Santa Paula",
+      "population": 30788,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 55.2,
       "relation": "peer",
       "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "ca",
-      "slug": "berkeley",
-      "name": "Berkeley",
-      "population": 121385,
+      "slug": "port-hueneme",
+      "name": "Port Hueneme",
+      "population": 21847,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 65.0,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "santa-cruz",
+      "name": "Santa Cruz",
+      "population": 61367,
       "facilities_count": 1,
-      "total_releases_pounds": 78,
+      "total_releases_pounds": 0.03,
       "dominant_medium": "land",
-      "ej_pct_avg": 69.7,
+      "ej_pct_avg": 42.4,
       "relation": "peer",
       "reason": "Similar TRI land profile \u00b7 1 facility"
     },
@@ -973,7 +1006,7 @@
       "name": "Lompoc",
       "population": 44086,
       "facilities_count": 2,
-      "total_releases_pounds": 216,
+      "total_releases_pounds": 1005,
       "dominant_medium": "land",
       "ej_pct_avg": 36.3,
       "relation": "contrast",
@@ -992,5 +1025,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:11:00Z"
 }

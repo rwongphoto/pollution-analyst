@@ -13,15 +13,15 @@
     "lat": 33.749628,
     "lng": -118.27483
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023 reporting year",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
   "totals": {
-    "total_releases_pounds": 0.0,
+    "total_releases_pounds": 0.01,
     "air_releases_pounds": 0.0,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0.0,
     "chemicals_reported": 2,
-    "yoy_pct_change": 50.0,
+    "yoy_pct_change": 100.0,
     "long_arc_pct_change": null,
     "long_arc_baseline_year": 2019,
     "history": [
@@ -44,10 +44,33 @@
       {
         "year": 2023,
         "value": 0.0
+      },
+      {
+        "year": 2024,
+        "value": 0.01
       }
     ]
   },
   "chemicals": [
+    {
+      "chemical": "Mercury",
+      "cas": "7439-97-6",
+      "category": "pbt",
+      "total_pounds_recent": 0.0,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0.0
+        },
+        {
+          "year": 2024,
+          "value": 0.0
+        }
+      ],
+      "yoy_pct_change": 300.0,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    },
     {
       "chemical": "Polycyclic aromatic compounds",
       "cas": "N590",
@@ -65,26 +88,15 @@
         {
           "year": 2023,
           "value": 0.0
+        },
+        {
+          "year": 2024,
+          "value": 0.0
         }
       ],
       "yoy_pct_change": 0.0,
       "long_arc_pct_change": null,
       "long_arc_baseline_year": 2021
-    },
-    {
-      "chemical": "Mercury",
-      "cas": "7439-97-6",
-      "category": "pbt",
-      "total_pounds_recent": 0.0,
-      "history": [
-        {
-          "year": 2023,
-          "value": 0.0
-        }
-      ],
-      "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "long_arc_baseline_year": 2023
     }
   ],
   "flags": [],
@@ -104,5 +116,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-06"
   },
-  "_published_at": "2026-05-06T00:38:03Z"
+  "_published_at": "2026-05-06T04:10:57Z"
 }

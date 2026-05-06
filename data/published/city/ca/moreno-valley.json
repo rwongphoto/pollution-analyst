@@ -9,17 +9,17 @@
     "county_name": "Riverside",
     "county_fips": "06065"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 2,
     "utilities_serving": 1,
-    "total_releases_pounds": 36,
-    "air_releases_pounds": 29,
+    "total_releases_pounds": 24,
+    "air_releases_pounds": 18,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 7,
-    "yoy_pct_change": -7.8,
-    "long_arc_pct_change": 135.6,
+    "land_releases_pounds": 6,
+    "yoy_pct_change": -33.0,
+    "long_arc_pct_change": 57.8,
     "long_arc_baseline_year": 2013,
     "history": [
       {
@@ -65,6 +65,10 @@
       {
         "year": 2023,
         "value": 36
+      },
+      {
+        "year": 2024,
+        "value": 24
       }
     ]
   },
@@ -72,10 +76,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 8.542,
+      "current": 9.199,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -0.1,
-      "long_arc_pct_change": -54.1,
+      "yoy_pct_change": 7.7,
+      "long_arc_pct_change": -50.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -133,16 +137,20 @@
         {
           "year": 2023,
           "value": 8.542
+        },
+        {
+          "year": 2024,
+          "value": 9.199
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 22.317,
+      "current": 25.271,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -1.1,
-      "long_arc_pct_change": -53.7,
+      "yoy_pct_change": 13.2,
+      "long_arc_pct_change": -47.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -200,16 +208,20 @@
         {
           "year": 2023,
           "value": 22.317
+        },
+        {
+          "year": 2024,
+          "value": 25.271
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.082,
+      "current": 0.086,
       "units": "ppm",
-      "yoy_pct_change": 4.0,
-      "long_arc_pct_change": -17.8,
+      "yoy_pct_change": 4.5,
+      "long_arc_pct_change": -14.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -267,16 +279,20 @@
         {
           "year": 2023,
           "value": 0.082
+        },
+        {
+          "year": 2024,
+          "value": 0.086
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 8.39,
+      "current": 9.192,
       "units": "ppb",
-      "yoy_pct_change": 13.4,
-      "long_arc_pct_change": -56.3,
+      "yoy_pct_change": 9.6,
+      "long_arc_pct_change": -52.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -334,6 +350,10 @@
         {
           "year": 2023,
           "value": 8.39
+        },
+        {
+          "year": 2024,
+          "value": 9.192
         }
       ]
     },
@@ -385,9 +405,9 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 29,
+      "current": 18,
       "units": "lb",
-      "yoy_pct_change": -0.6,
+      "yoy_pct_change": -38.1,
       "long_arc_pct_change": null,
       "baseline_year": 2013,
       "history": [
@@ -434,6 +454,10 @@
         {
           "year": 2023,
           "value": 29
+        },
+        {
+          "year": 2024,
+          "value": 18
         }
       ]
     },
@@ -489,15 +513,19 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 7,
+      "current": 6,
       "units": "lb",
-      "yoy_pct_change": -28.6,
+      "yoy_pct_change": -12.6,
       "long_arc_pct_change": null,
       "baseline_year": 2013,
       "history": [
@@ -544,6 +572,10 @@
         {
           "year": 2023,
           "value": 7
+        },
+        {
+          "year": 2024,
+          "value": 6
         }
       ]
     },
@@ -617,30 +649,30 @@
   ],
   "facilities": [
     {
-      "slug": "wabash-national-l-p",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Wabash National L.P.",
-      "parent_company": "Wabash National CORP",
-      "total_pounds_recent": 21,
-      "yoy_pct_change": 16.7,
-      "top_chemical": "Manganese",
-      "city": "Moreno Valley",
-      "lat": 33.916776,
-      "lng": -117.275673
-    },
-    {
       "slug": "moreno-valley-plant-2",
       "state": "ca",
       "state_label": "California",
       "name": "Moreno Valley Plant 2",
       "parent_company": "Mcc Development CORP",
-      "total_pounds_recent": 15,
-      "yoy_pct_change": -28.6,
+      "total_pounds_recent": 13,
+      "yoy_pct_change": -12.6,
       "top_chemical": "Lead compounds",
       "city": "Moreno Valley",
       "lat": 33.911241,
       "lng": -117.279129
+    },
+    {
+      "slug": "wabash-national-l-p",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Wabash National L.P.",
+      "parent_company": "Wabash National CORP",
+      "total_pounds_recent": 11,
+      "yoy_pct_change": -47.6,
+      "top_chemical": "Manganese",
+      "city": "Moreno Valley",
+      "lat": 33.916776,
+      "lng": -117.275673
     }
   ],
   "water": {
@@ -663,24 +695,8 @@
       }
     ]
   },
-  "flags": [
-    {
-      "type": "violation_event",
-      "severity": "unresolved",
-      "label": "E. coli",
-      "summary": "Unresolved Drinking water rule (140) violation cited in 2025 (e. coli).",
-      "magnitude_pct": null,
-      "magnitude_abs": null,
-      "baseline_year": null,
-      "recent_year": 2025,
-      "units": null,
-      "history": [],
-      "link": {
-        "label": "EPA SDWIS record",
-        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3310004"
-      }
-    }
-  ],
+  "superfund": [],
+  "flags": [],
   "equity": {
     "population": 209578,
     "pct_low_income": 12.9,
@@ -901,7 +917,7 @@
       "name": "Menifee",
       "population": 103680,
       "facilities_count": 2,
-      "total_releases_pounds": 15,
+      "total_releases_pounds": 14,
       "dominant_medium": "air",
       "ej_pct_avg": 52.9,
       "relation": "peer",
@@ -910,26 +926,13 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "corona",
-      "name": "Corona",
-      "population": 158346,
-      "facilities_count": 6,
-      "total_releases_pounds": 41,
-      "dominant_medium": "air",
-      "ej_pct_avg": 71.1,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 6 facilities"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
-      "slug": "temecula",
-      "name": "Temecula",
-      "population": 110114,
+      "slug": "beaumont",
+      "name": "Beaumont",
+      "population": 53544,
       "facilities_count": 2,
-      "total_releases_pounds": 404,
+      "total_releases_pounds": 5,
       "dominant_medium": "air",
-      "ej_pct_avg": 55.4,
+      "ej_pct_avg": 59.6,
       "relation": "peer",
       "reason": "Similar TRI air profile \u00b7 2 facilities"
     },
@@ -940,7 +943,7 @@
       "name": "Murrieta",
       "population": 111899,
       "facilities_count": 1,
-      "total_releases_pounds": 8,
+      "total_releases_pounds": 6,
       "dominant_medium": "air",
       "ej_pct_avg": 55.7,
       "relation": "peer",
@@ -949,13 +952,26 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "chino",
-      "name": "Chino",
-      "population": 91008,
+      "slug": "temecula",
+      "name": "Temecula",
+      "population": 110114,
       "facilities_count": 2,
-      "total_releases_pounds": 52,
+      "total_releases_pounds": 248,
       "dominant_medium": "air",
-      "ej_pct_avg": 72.1,
+      "ej_pct_avg": 55.4,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "carlsbad",
+      "name": "Carlsbad",
+      "population": 114745,
+      "facilities_count": 2,
+      "total_releases_pounds": 17,
+      "dominant_medium": "air",
+      "ej_pct_avg": 58.6,
       "relation": "peer",
       "reason": "Similar TRI air profile \u00b7 2 facilities"
     },
@@ -985,5 +1001,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:11:00Z"
 }

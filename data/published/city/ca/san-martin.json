@@ -9,22 +9,26 @@
     "county_name": "Santa Clara",
     "county_fips": "06085"
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "totals": {
-    "facilities_in_city": 0,
+    "facilities_in_city": 1,
     "utilities_serving": 5,
-    "total_releases_pounds": 0,
-    "air_releases_pounds": 0,
-    "water_releases_pounds": 0,
+    "total_releases_pounds": 0.07,
+    "air_releases_pounds": 0.01,
+    "water_releases_pounds": 0.06,
     "land_releases_pounds": 0,
     "yoy_pct_change": null,
-    "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2023,
+    "long_arc_pct_change": -44.5,
+    "long_arc_baseline_year": 2022,
     "history": [
       {
-        "year": 2023,
-        "value": 0
+        "year": 2022,
+        "value": 0.13
+      },
+      {
+        "year": 2024,
+        "value": 0.07
       }
     ]
   },
@@ -32,10 +36,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 6.583,
+      "current": 6.653,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -23.1,
-      "long_arc_pct_change": -59.6,
+      "yoy_pct_change": 1.1,
+      "long_arc_pct_change": -59.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -93,16 +97,20 @@
         {
           "year": 2023,
           "value": 6.583
+        },
+        {
+          "year": 2024,
+          "value": 6.653
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 21.433,
+      "current": 18.883,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -7.2,
-      "long_arc_pct_change": -61.0,
+      "yoy_pct_change": -11.9,
+      "long_arc_pct_change": -65.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -160,16 +168,20 @@
         {
           "year": 2023,
           "value": 21.433
+        },
+        {
+          "year": 2024,
+          "value": 18.883
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.058,
+      "current": 0.037,
       "units": "ppm",
-      "yoy_pct_change": -8.3,
-      "long_arc_pct_change": 2.7,
+      "yoy_pct_change": -35.3,
+      "long_arc_pct_change": -33.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -227,16 +239,20 @@
         {
           "year": 2023,
           "value": 0.058
+        },
+        {
+          "year": 2024,
+          "value": 0.037
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 10.909,
+      "current": 13.441,
       "units": "ppb",
-      "yoy_pct_change": -4.4,
-      "long_arc_pct_change": -56.5,
+      "yoy_pct_change": 23.2,
+      "long_arc_pct_change": -46.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -294,6 +310,10 @@
         {
           "year": 2023,
           "value": 10.909
+        },
+        {
+          "year": 2024,
+          "value": 13.441
         }
       ]
     },
@@ -349,10 +369,14 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2022,
       "history": [
         {
-          "year": 2023,
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -364,10 +388,14 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2022,
       "history": [
         {
-          "year": 2023,
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -379,10 +407,14 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2023,
+      "baseline_year": 2022,
       "history": [
         {
-          "year": 2023,
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -455,7 +487,21 @@
       ]
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "slug": "calstone-san-martin-oldcastle-apg",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Calstone San Martin-Oldcastle Apg",
+      "parent_company": "Crh Americas INC",
+      "total_pounds_recent": 0.07,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "San Martin",
+      "lat": 37.092453,
+      "lng": -121.610617
+    }
+  ],
   "water": {
     "utilities_count": 5,
     "population_served_total": 961,
@@ -516,6 +562,7 @@
       }
     ]
   },
+  "superfund": [],
   "flags": [],
   "equity": {
     "population": 6289,
@@ -733,6 +780,19 @@
     {
       "kind": "city",
       "state": "ca",
+      "slug": "gilroy",
+      "name": "Gilroy",
+      "population": 58696,
+      "facilities_count": 1,
+      "total_releases_pounds": 0.05,
+      "dominant_medium": "water",
+      "ej_pct_avg": 45.3,
+      "relation": "peer",
+      "reason": "Similar TRI water profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
       "slug": "los-altos-hills",
       "name": "Los Altos Hills",
       "population": 8441,
@@ -772,28 +832,15 @@
     {
       "kind": "city",
       "state": "ca",
-      "slug": "los-gatos",
-      "name": "Los Gatos",
-      "population": 33093,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 53.6,
+      "slug": "selma",
+      "name": "Selma",
+      "population": 24576,
+      "facilities_count": 1,
+      "total_releases_pounds": 0.01,
+      "dominant_medium": "water",
+      "ej_pct_avg": 64.9,
       "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "city",
-      "state": "ca",
-      "slug": "huron",
-      "name": "Huron",
-      "population": 6260,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 44.6,
-      "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI water profile \u00b7 1 facility"
     },
     {
       "kind": "city",
@@ -801,9 +848,9 @@
       "slug": "commerce",
       "name": "Commerce",
       "population": 12253,
-      "facilities_count": 15,
-      "total_releases_pounds": 38662,
-      "dominant_medium": "air",
+      "facilities_count": 12,
+      "total_releases_pounds": 59905,
+      "dominant_medium": "land",
       "ej_pct_avg": 87.0,
       "relation": "contrast",
       "reason": "Same scale, heavier equity burden (+42 pct-pt EJ gap)"
@@ -821,5 +868,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:38:06Z"
+  "_published_at": "2026-05-06T04:11:00Z"
 }

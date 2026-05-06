@@ -7,16 +7,16 @@
     "fips": "06041",
     "population": 260485
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 5.361,
+      "current": 5.041,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -22.0,
-      "long_arc_pct_change": -46.7,
+      "yoy_pct_change": -6.0,
+      "long_arc_pct_change": -49.9,
       "baseline_year": 2011,
       "history": [
         {
@@ -70,16 +70,20 @@
         {
           "year": 2023,
           "value": 5.361
+        },
+        {
+          "year": 2024,
+          "value": 5.041
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 16.1,
+      "current": 14.7,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -19.1,
-      "long_arc_pct_change": -35.6,
+      "yoy_pct_change": -8.7,
+      "long_arc_pct_change": -41.2,
       "baseline_year": 2011,
       "history": [
         {
@@ -133,16 +137,20 @@
         {
           "year": 2023,
           "value": 16.1
+        },
+        {
+          "year": 2024,
+          "value": 14.7
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.05,
+      "current": 0.039,
       "units": "ppm",
-      "yoy_pct_change": -5.7,
-      "long_arc_pct_change": 11.1,
+      "yoy_pct_change": -22.0,
+      "long_arc_pct_change": -13.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -200,16 +208,20 @@
         {
           "year": 2023,
           "value": 0.05
+        },
+        {
+          "year": 2024,
+          "value": 0.039
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 5.592,
+      "current": 8.285,
       "units": "ppb",
-      "yoy_pct_change": -18.9,
-      "long_arc_pct_change": -65.8,
+      "yoy_pct_change": 48.2,
+      "long_arc_pct_change": -49.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -267,6 +279,10 @@
         {
           "year": 2023,
           "value": 5.592
+        },
+        {
+          "year": 2024,
+          "value": 8.285
         }
       ]
     },
@@ -318,9 +334,9 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 52,
+      "current": 0,
       "units": "lb",
-      "yoy_pct_change": -49.0,
+      "yoy_pct_change": null,
       "long_arc_pct_change": null,
       "baseline_year": 2016,
       "history": [
@@ -512,22 +528,10 @@
       ]
     }
   ],
-  "facilities": [
-    {
-      "slug": "lgc-biosearch-technologies-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Lgc Biosearch Technologies INC.",
-      "parent_company": "Lgc Biosearch Technologies INC",
-      "total_pounds_recent": 52,
-      "yoy_pct_change": -49.0,
-      "top_chemical": "Acetonitrile",
-      "city": "Novato",
-      "lat": 38.070846,
-      "lng": -122.531408
-    }
-  ],
+  "facilities": [],
   "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
   "cities_directory": [
     {
       "slug": "bolinas",
@@ -581,7 +585,7 @@
       "slug": "novato",
       "name": "Novato",
       "fips": "0652582",
-      "facilities_count": 1,
+      "facilities_count": 0,
       "utilities_count": 2,
       "population": 53055
     },
@@ -835,67 +839,67 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "santa-cruz",
-      "name": "Santa Cruz County",
-      "population": 268571,
-      "facilities_count": 2,
-      "total_releases_pounds": 145,
-      "dominant_medium": "air",
-      "ej_pct_avg": 48.1,
+      "slug": "butte",
+      "name": "Butte County",
+      "population": 213605,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 54.3,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 2 facilities"
+      "reason": "Comparable population"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "lake",
-      "name": "Lake County",
-      "population": 68024,
-      "facilities_count": 1,
-      "total_releases_pounds": 176,
-      "dominant_medium": "air",
-      "ej_pct_avg": 38.6,
+      "slug": "el-dorado",
+      "name": "El Dorado County",
+      "population": 191713,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.3,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 1 facility"
+      "reason": "Comparable population"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "tuolumne",
-      "name": "Tuolumne County",
-      "population": 54993,
-      "facilities_count": 1,
-      "total_releases_pounds": 0.16,
-      "dominant_medium": "air",
-      "ej_pct_avg": 44.3,
+      "slug": "nevada",
+      "name": "Nevada County",
+      "population": 102322,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.4,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 1 facility"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "plumas",
-      "name": "Plumas County",
-      "population": 19650,
-      "facilities_count": 2,
-      "total_releases_pounds": 17337,
-      "dominant_medium": "air",
-      "ej_pct_avg": 39.0,
+      "slug": "sutter",
+      "name": "Sutter County",
+      "population": 99101,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 60.7,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 2 facilities"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "yolo",
-      "name": "Yolo County",
-      "population": 217141,
-      "facilities_count": 5,
-      "total_releases_pounds": 51005,
-      "dominant_medium": "air",
-      "ej_pct_avg": 63.5,
+      "slug": "san-francisco",
+      "name": "San Francisco County",
+      "population": 851036,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 64.6,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 5 facilities"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "county",
@@ -903,8 +907,8 @@
       "slug": "fresno",
       "name": "Fresno County",
       "population": 1008280,
-      "facilities_count": 26,
-      "total_releases_pounds": 391801,
+      "facilities_count": 28,
+      "total_releases_pounds": 366524,
       "dominant_medium": "land",
       "ej_pct_avg": 73.0,
       "relation": "contrast",
@@ -918,5 +922,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

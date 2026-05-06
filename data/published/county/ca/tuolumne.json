@@ -7,16 +7,16 @@
     "fips": "06109",
     "population": 54993
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.067,
+      "current": 0.071,
       "units": "ppm",
-      "yoy_pct_change": 9.8,
-      "long_arc_pct_change": -25.6,
+      "yoy_pct_change": 6.0,
+      "long_arc_pct_change": -21.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,6 +74,10 @@
         {
           "year": 2023,
           "value": 0.067
+        },
+        {
+          "year": 2024,
+          "value": 0.071
         }
       ]
     },
@@ -127,7 +131,7 @@
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 0,
       "units": "lb",
-      "yoy_pct_change": -5.7,
+      "yoy_pct_change": -25.0,
       "long_arc_pct_change": null,
       "baseline_year": 2011,
       "history": [
@@ -181,6 +185,10 @@
         },
         {
           "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
           "value": 0
         }
       ]
@@ -245,6 +253,10 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
@@ -308,6 +320,10 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     }
@@ -319,8 +335,8 @@
       "state_label": "California",
       "name": "Spi Sonora Div",
       "parent_company": "Sierra Pacific Industries",
-      "total_pounds_recent": 0.16,
-      "yoy_pct_change": -5.7,
+      "total_pounds_recent": 0.12,
+      "yoy_pct_change": -25.0,
       "top_chemical": "Dioxin and dioxin-like compounds",
       "city": "Sonora",
       "lat": 37.962904,
@@ -328,6 +344,8 @@
     }
   ],
   "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
   "cities_directory": [
     {
       "slug": "cold-springs",
@@ -627,24 +645,11 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "marin",
-      "name": "Marin County",
-      "population": 260485,
-      "facilities_count": 1,
-      "total_releases_pounds": 52,
-      "dominant_medium": "air",
-      "ej_pct_avg": 49.4,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 1 facility"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
       "slug": "lake",
       "name": "Lake County",
       "population": 68024,
       "facilities_count": 1,
-      "total_releases_pounds": 176,
+      "total_releases_pounds": 227,
       "dominant_medium": "air",
       "ej_pct_avg": 38.6,
       "relation": "peer",
@@ -653,24 +658,11 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "santa-cruz",
-      "name": "Santa Cruz County",
-      "population": 268571,
-      "facilities_count": 2,
-      "total_releases_pounds": 145,
-      "dominant_medium": "air",
-      "ej_pct_avg": 48.1,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 2 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
       "slug": "colusa",
       "name": "Colusa County",
       "population": 21811,
       "facilities_count": 1,
-      "total_releases_pounds": 118960,
+      "total_releases_pounds": 104334,
       "dominant_medium": "air",
       "ej_pct_avg": 45.8,
       "relation": "peer",
@@ -683,7 +675,7 @@
       "name": "Plumas County",
       "population": 19650,
       "facilities_count": 2,
-      "total_releases_pounds": 17337,
+      "total_releases_pounds": 23733,
       "dominant_medium": "air",
       "ej_pct_avg": 39.0,
       "relation": "peer",
@@ -692,12 +684,38 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "shasta",
+      "name": "Shasta County",
+      "population": 181852,
+      "facilities_count": 7,
+      "total_releases_pounds": 188305,
+      "dominant_medium": "air",
+      "ej_pct_avg": 53.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 7 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "madera",
+      "name": "Madera County",
+      "population": 157243,
+      "facilities_count": 9,
+      "total_releases_pounds": 148356,
+      "dominant_medium": "air",
+      "ej_pct_avg": 60.7,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 9 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "yolo",
       "name": "Yolo County",
       "population": 217141,
-      "facilities_count": 5,
-      "total_releases_pounds": 51005,
-      "dominant_medium": "air",
+      "facilities_count": 3,
+      "total_releases_pounds": 1894,
+      "dominant_medium": "land",
       "ej_pct_avg": 63.5,
       "relation": "contrast",
       "reason": "Same scale, heavier equity burden (+19 pct-pt EJ gap)"
@@ -710,5 +728,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

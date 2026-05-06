@@ -7,16 +7,16 @@
     "fips": "06021",
     "population": 28657
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.06,
+      "current": 0.057,
       "units": "ppm",
-      "yoy_pct_change": -4.8,
-      "long_arc_pct_change": -18.9,
+      "yoy_pct_change": -5.0,
+      "long_arc_pct_change": -23.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,6 +74,10 @@
         {
           "year": 2023,
           "value": 0.06
+        },
+        {
+          "year": 2024,
+          "value": 0.057
         }
       ]
     },
@@ -125,10 +129,10 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 32078,
+      "current": 36253,
       "units": "lb",
-      "yoy_pct_change": -8.4,
-      "long_arc_pct_change": -2.9,
+      "yoy_pct_change": 13.0,
+      "long_arc_pct_change": 9.8,
       "baseline_year": 2019,
       "history": [
         {
@@ -186,6 +190,10 @@
         {
           "year": 2023,
           "value": 32078
+        },
+        {
+          "year": 2024,
+          "value": 36253
         }
       ]
     },
@@ -253,16 +261,20 @@
         {
           "year": 2023,
           "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 123802,
+      "current": 91872,
       "units": "lb",
-      "yoy_pct_change": 16.1,
-      "long_arc_pct_change": 262.9,
+      "yoy_pct_change": -25.8,
+      "long_arc_pct_change": 169.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -320,6 +332,10 @@
         {
           "year": 2023,
           "value": 123802
+        },
+        {
+          "year": 2024,
+          "value": 91872
         }
       ]
     }
@@ -331,8 +347,8 @@
       "state_label": "California",
       "name": "Johns Manville",
       "parent_company": "Berkshire Hathaway INC",
-      "total_pounds_recent": 155880,
-      "yoy_pct_change": 10.1,
+      "total_pounds_recent": 128125,
+      "yoy_pct_change": -17.8,
       "top_chemical": "Chromium  and Chromium Compounds(except for chromite ore mined in the Transvaal Region)",
       "city": "Willows",
       "lat": 39.538881,
@@ -340,6 +356,8 @@
     }
   ],
   "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
   "cities_directory": [
     {
       "slug": "artois",
@@ -586,12 +604,12 @@
       "slug": "humboldt",
       "name": "Humboldt County",
       "population": 136132,
-      "facilities_count": 3,
-      "total_releases_pounds": 177501,
+      "facilities_count": 2,
+      "total_releases_pounds": 96096,
       "dominant_medium": "land",
       "ej_pct_avg": 42.5,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 3 facilities"
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
     },
     {
       "kind": "county",
@@ -599,12 +617,25 @@
       "slug": "lassen",
       "name": "Lassen County",
       "population": 31873,
-      "facilities_count": 2,
-      "total_releases_pounds": 28873,
+      "facilities_count": 1,
+      "total_releases_pounds": 8258,
       "dominant_medium": "land",
       "ej_pct_avg": 42.6,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 2 facilities"
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "san-benito",
+      "name": "San Benito County",
+      "population": 64753,
+      "facilities_count": 4,
+      "total_releases_pounds": 37428,
+      "dominant_medium": "land",
+      "ej_pct_avg": 44.3,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 4 facilities"
     },
     {
       "kind": "county",
@@ -613,7 +644,7 @@
       "name": "Imperial County",
       "population": 179578,
       "facilities_count": 5,
-      "total_releases_pounds": 288653,
+      "total_releases_pounds": 262832,
       "dominant_medium": "land",
       "ej_pct_avg": 61.7,
       "relation": "peer",
@@ -622,28 +653,15 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "san-benito",
-      "name": "San Benito County",
-      "population": 64753,
+      "slug": "san-luis-obispo",
+      "name": "San Luis Obispo County",
+      "population": 281712,
       "facilities_count": 5,
-      "total_releases_pounds": 39153,
+      "total_releases_pounds": 26203,
       "dominant_medium": "land",
-      "ej_pct_avg": 44.3,
+      "ej_pct_avg": 44.1,
       "relation": "peer",
       "reason": "Similar TRI land profile \u00b7 5 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "yuba",
-      "name": "Yuba County",
-      "population": 81705,
-      "facilities_count": 1,
-      "total_releases_pounds": 2032,
-      "dominant_medium": "land",
-      "ej_pct_avg": 58.0,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 1 facility"
     },
     {
       "kind": "county",
@@ -666,5 +684,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }

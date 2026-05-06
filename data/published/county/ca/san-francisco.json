@@ -7,16 +7,16 @@
     "fips": "06075",
     "population": 851036
   },
-  "reporting_year": 2023,
-  "briefing_label": "TRI 2023",
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 6.423,
+      "current": 6.69,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -5.3,
-      "long_arc_pct_change": -51.7,
+      "yoy_pct_change": 4.2,
+      "long_arc_pct_change": -49.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,16 +74,20 @@
         {
           "year": 2023,
           "value": 6.423
+        },
+        {
+          "year": 2024,
+          "value": 6.69
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 19.7,
+      "current": 18.8,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 0.5,
-      "long_arc_pct_change": -44.2,
+      "yoy_pct_change": -4.6,
+      "long_arc_pct_change": -46.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -141,16 +145,20 @@
         {
           "year": 2023,
           "value": 19.7
+        },
+        {
+          "year": 2024,
+          "value": 18.8
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.041,
+      "current": 0.036,
       "units": "ppm",
-      "yoy_pct_change": -6.8,
-      "long_arc_pct_change": 0.0,
+      "yoy_pct_change": -12.2,
+      "long_arc_pct_change": -12.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -208,16 +216,20 @@
         {
           "year": 2023,
           "value": 0.041
+        },
+        {
+          "year": 2024,
+          "value": 0.036
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 7.535,
+      "current": 11.245,
       "units": "ppb",
-      "yoy_pct_change": -11.6,
-      "long_arc_pct_change": -62.8,
+      "yoy_pct_change": 49.2,
+      "long_arc_pct_change": -44.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -275,6 +287,10 @@
         {
           "year": 2023,
           "value": 7.535
+        },
+        {
+          "year": 2024,
+          "value": 11.245
         }
       ]
     },
@@ -558,6 +574,22 @@
   ],
   "facilities": [],
   "utilities": [],
+  "superfund": [
+    {
+      "slug": "hunters-point-naval-shipyard",
+      "state": "ca",
+      "name": "Hunters Point Naval Shipyard",
+      "epa_id": "CA1170090087",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": true,
+      "city": "San Francisco",
+      "city_slug": "san-francisco",
+      "primary_contaminant": "Arsenic"
+    }
+  ],
+  "superfund_total": 1,
   "cities_directory": [
     {
       "slug": "san-francisco",
@@ -785,6 +817,19 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "marin",
+      "name": "Marin County",
+      "population": 260485,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 49.4,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "butte",
       "name": "Butte County",
       "population": 213605,
@@ -837,24 +882,11 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "calaveras",
-      "name": "Calaveras County",
-      "population": 45674,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 44.2,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
       "slug": "san-luis-obispo",
       "name": "San Luis Obispo County",
       "population": 281712,
-      "facilities_count": 6,
-      "total_releases_pounds": 22193,
+      "facilities_count": 5,
+      "total_releases_pounds": 26203,
       "dominant_medium": "land",
       "ej_pct_avg": 44.1,
       "relation": "contrast",
@@ -868,5 +900,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:37:59Z"
+  "_published_at": "2026-05-06T04:10:52Z"
 }
