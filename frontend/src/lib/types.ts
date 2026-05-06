@@ -545,6 +545,7 @@ export interface HomePagePayload {
   totals: {
     facilities_tracked: number;
     utilities_tracked: number;
+    superfund_tracked: number;
     counties_covered: number;
     chemicals_indexed: number;
   };
@@ -575,6 +576,14 @@ export interface RankingRow {
   city?: string | null;
   county?: string | null;
   top_chemical?: string | null;
+  // State-only fields
+  facilities_count?: number;
+  // Superfund-only fields
+  city_slug?: string | null;
+  npl_status?: string | null;
+  is_federal_facility?: boolean;
+  primary_contaminant?: string | null;
+  population_served?: number;
 }
 
 export interface RankingTable {
@@ -598,9 +607,13 @@ export interface RankingsPayload {
     counties: number;
     cities: number;
     facilities: number;
+    superfund: number;
+    states: number;
   };
   counties: RankingsSurface;
   cities: RankingsSurface;
   facilities: RankingsSurface;
+  states: RankingsSurface;
+  superfund: RankingsSurface;
   _published_at?: string;
 }

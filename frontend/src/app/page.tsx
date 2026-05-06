@@ -5,7 +5,8 @@ import { Ic } from "@/components/site/icons";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
-import { listCitySlugs, loadCounty, loadHome } from "@/lib/data";
+import { USMapClient } from "@/components/site/USMapClient";
+import { listCitySlugs, loadCounty, loadHome, loadNationalCountyBurdens, loadStateMapSummaries } from "@/lib/data";
 import { SITE_URL } from "@/lib/seo";
 import type { FeaturedEntity } from "@/lib/types";
 
@@ -47,7 +48,7 @@ const KIND_COLOR: Record<FeaturedEntity["kind"], string> = {
 };
 
 function HomeHero({ totals, citiesTracked, briefingLabel }: {
-  totals: { facilities_tracked: number; utilities_tracked: number; counties_covered: number; chemicals_indexed: number };
+  totals: { facilities_tracked: number; utilities_tracked: number; superfund_tracked: number; counties_covered: number; chemicals_indexed: number };
   citiesTracked: number;
   briefingLabel: string;
 }) {
@@ -87,6 +88,10 @@ function HomeHero({ totals, citiesTracked, briefingLabel }: {
                 <span>{totals.utilities_tracked.toLocaleString()}</span>
               </li>
               <li className="meta-mono" style={{ display: "flex", justifyContent: "space-between" }}>
+                <span>SUPERFUND SITES</span>
+                <span>{(totals.superfund_tracked ?? 0).toLocaleString()}</span>
+              </li>
+              <li className="meta-mono" style={{ display: "flex", justifyContent: "space-between" }}>
                 <span>COUNTIES</span>
                 <span>{totals.counties_covered.toLocaleString()}</span>
               </li>
@@ -109,25 +114,25 @@ function HomeHero({ totals, citiesTracked, briefingLabel }: {
 function StartHereSection() {
   const surfaces = [
     {
-      label: "COUNTY",
-      title: "How polluted is your county?",
-      desc: "TRI factory releases, greenhouse-gas totals, EPA air-quality monitors, drinking-water violations, CDC asthma and cancer rates, and the demographics of who lives there — all on one page.",
-      href: "/state/ca/county/kern",
-      cta: "Open Kern County",
+      label: "COUNTY RANKINGS",
+      title: "Most Polluted Counties",
+      desc: "Top 10 nationally, ranked by PM2.5, lifetime cancer risk (AirToxScreen), TRI air releases, and greenhouse-gas emissions — one table per indicator.",
+      href: "/rankings/counties",
+      cta: "See county rankings",
     },
     {
-      label: "CITY",
-      title: "What about your city or town?",
-      desc: "The same pollution view, scoped to your specific place. Every Census place with a facility inside it or a public water system serving it.",
-      href: "/state/ca/city/stockton",
-      cta: "Open Stockton",
+      label: "CITY RANKINGS",
+      title: "Most Polluted Cities",
+      desc: "City-grain rankings on TRI air releases, plus the county-derived measures (PM2.5, AirToxScreen) attached to each city's containing county.",
+      href: "/rankings/cities",
+      cta: "See city rankings",
     },
     {
-      label: "FACILITY · UTILITY",
-      title: "Is this factory polluting? Is your water safe?",
-      desc: "One page per TRI facility — chemical-by-chemical release history with health-risk context. One page per public water system — every health-based violation, the population served, the contaminants found.",
-      href: "/state/ca/facility/chevron-products-co-richmond-refinery",
-      cta: "See Chevron Richmond",
+      label: "FACILITY RANKINGS",
+      title: "Most Polluting Facilities",
+      desc: "Industrial facilities reporting the largest TRI chemical releases — split into total, air, water, and land so you can see who tops each medium.",
+      href: "/rankings/facilities",
+      cta: "See facility rankings",
     },
   ];
   return (
@@ -136,10 +141,10 @@ function StartHereSection() {
         <div style={{ marginBottom: 40 }}>
           <div className="eyebrow">Where to start</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Pick The Question You Came In With
+            Most Polluted, At Every Scale
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
-            Pollution data lives at different scales because the questions do. Open the page that matches what you actually want to know — your county, your specific city, or a single factory or utility.
+            Pollution data lives at different scales because the questions do. Pick the ranking that matches what you actually want to know — counties, cities, or industrial facilities.
           </p>
         </div>
         <div className="cities-grid">
@@ -162,12 +167,44 @@ function StartHereSection() {
   );
 }
 
+function NationalMapSection({
+  burdens,
+  stateSummaries,
+  reportingYear,
+  statesCovered,
+}: {
+  burdens: { fips: string; total_releases_pounds: number }[];
+  stateSummaries: import("@/lib/data").StateMapSummary[];
+  reportingYear: number;
+  statesCovered: number;
+}) {
+  return (
+    <section className="section" id="map">
+      <div className="wrap">
+        <div style={{ marginBottom: 24 }}>
+          <div className="eyebrow">Where the pollution sits</div>
+          <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
+            National TRI Choropleth, County By County
+          </h2>
+          <p style={{ fontSize: 15, marginTop: 10, maxWidth: "62ch" }}>
+            Every published county shaded by its EPA Toxics Release Inventory total — pounds of toxic chemicals released to air, water, and land. Darker counties report more. Counties in states not yet ingested render as &ldquo;no TRI data&rdquo;.
+          </p>
+          <p className="muted" style={{ fontSize: 14, marginTop: 6, maxWidth: "62ch" }}>
+            Shaded by {reportingYear} TRI reporting-year totals across {statesCovered} ingested states. Hover a county for its state summary; click to open the state page.
+          </p>
+        </div>
+        <USMapClient burdens={burdens} stateSummaries={stateSummaries} />
+      </div>
+    </section>
+  );
+}
+
 function PrinciplesSection() {
   const items = [
-    { ic: Ic.trend,  t: "Trend, not totals", d: "TRI volumes are noisy year over year but tell a strong long-arc story. We surface the multi-decade direction, not just last year's number." },
-    { ic: Ic.shield, t: "Equity in plain sight", d: "EPA's EJScreen pairs pollution with population characteristics. We surface those indexes on every entity and county page — they're not buried in a footnote." },
-    { ic: Ic.layers, t: "Federal-only sources",  d: "EPA TRI and GHGRP for industrial releases, AQS for criteria air pollutants, AirToxScreen for hazardous-air cancer risk, SDWIS for drinking water, CDC PLACES for community health, Census ACS for demographics. All public-domain, all reproducible." },
-    { ic: Ic.doc,    t: "Methodology open",     d: "Every metric, every threshold, every caveat is on the methodology page. Read the rules; reproduce the numbers." },
+    { ic: Ic.trend,  t: "Trend, Not Totals", d: "TRI volumes are noisy year over year but tell a strong long-arc story. We surface the multi-decade direction, not just last year's number." },
+    { ic: Ic.shield, t: "Equity in Plain Sight", d: "EPA's EJScreen pairs pollution with population characteristics. We surface those indexes on every entity and county page — they're not buried in a footnote." },
+    { ic: Ic.layers, t: "Federal-Only Sources",  d: "EPA TRI and GHGRP for industrial releases, AQS for criteria air pollutants, AirToxScreen for hazardous-air cancer risk, SDWIS for drinking water, CDC PLACES for community health, Census ACS for demographics. All public-domain, all reproducible." },
+    { ic: Ic.doc,    t: "Methodology Open",     d: "Every metric, every threshold, every caveat is on the methodology page. Read the rules; reproduce the numbers." },
   ];
   return (
     <section className="section">
@@ -176,7 +213,7 @@ function PrinciplesSection() {
           <div>
             <div className="eyebrow">How it works</div>
             <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-              Four Principles
+              Four Principles For Federal Pollution Data
             </h2>
           </div>
           <p className="lead" style={{ margin: 0, maxWidth: "60ch" }}>
@@ -204,7 +241,7 @@ function FeaturedSection({ featured }: { featured: FeaturedEntity[] }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Featured this update</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Three Places To Start
+            Three Pollution Trends Worth A Read
           </h2>
         </div>
         <div className="anomaly-strip">
@@ -262,7 +299,7 @@ function EquityBand({
               className="h-display"
               style={{ fontSize: "clamp(32px,3.6vw,48px)", margin: "12px 0 18px", lineHeight: 1.05 }}
             >
-              Equity context, paired — <em className="h-italic">not buried</em>.
+              Environmental Justice Context On <em className="h-italic">Every Pollution Page</em>
             </h2>
             <p className="lead" style={{ margin: "0 0 24px", maxWidth: "48ch" }}>
               We pair every pollution surface with the population context — demographic shares, EPA-style national percentiles per indicator, and EJ disparity scores — so readers can see who lives next to the burden, not just the pounds released.
@@ -343,10 +380,12 @@ function HomeCTA() {
 }
 
 export default async function HomePage() {
-  const [data, kern, citySlugs] = await Promise.all([
+  const [data, kern, citySlugs, nationalBurdens, stateSummaries] = await Promise.all([
     loadHome(),
     loadCounty("ca", "kern"),
     listCitySlugs(),
+    loadNationalCountyBurdens(),
+    loadStateMapSummaries(),
   ]);
   const kernTopIndexes = [...kern.equity.ej_indexes]
     .sort((a, b) => b.pct_us - a.pct_us)
@@ -354,6 +393,7 @@ export default async function HomePage() {
     .map(({ label, pct_us }) => ({ label, pct_us }));
   const kernGeoLabel = `${kern.county.name}, ${kern.county.state.toUpperCase()}`;
   const citiesTracked = citySlugs.length;
+  const statesCovered = new Set(nationalBurdens.map((b) => b.fips.slice(0, 2))).size;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -387,6 +427,12 @@ export default async function HomePage() {
       <main>
         <HomeHero totals={data.totals} citiesTracked={citiesTracked} briefingLabel={data.briefing_label} />
         <StartHereSection />
+        <NationalMapSection
+          burdens={nationalBurdens}
+          stateSummaries={stateSummaries}
+          reportingYear={data.reporting_year}
+          statesCovered={statesCovered}
+        />
         <PrinciplesSection />
         <FeaturedSection featured={data.featured} />
         <EquityBand indexes={kernTopIndexes} geographyLabel={kernGeoLabel} />

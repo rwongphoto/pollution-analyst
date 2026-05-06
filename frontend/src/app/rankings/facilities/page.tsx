@@ -3,12 +3,27 @@ import Link from "next/link";
 
 import { Crumbs } from "@/components/site/Crumbs";
 import { InfoTip } from "@/components/site/InfoTip";
+import { JumpStrip } from "@/components/site/JumpStrip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { loadRankings } from "@/lib/data";
+import { buildRankingJumpItems } from "@/lib/rankingJump";
 import { LANE_METHODOLOGY, LANE_OVERRIDES } from "@/lib/rankingLanes";
 import { pageMeta } from "@/lib/seo";
 import type { RankingTable } from "@/lib/types";
+
+// Editorial caption per lane — facility tables are "most" only, so a single
+// key per lane is enough.
+const FACILITY_TABLE_CAPTIONS: Record<string, string> = {
+  tri_total:
+    "The 20 facilities reporting the largest total TRI footprint — air, water, and land disposal combined.",
+  tri_air:
+    "Facilities reporting the largest air releases — fugitive leaks plus smokestack emissions.",
+  tri_water:
+    "Facilities reporting the largest surface-water discharges to rivers, lakes, and other receiving streams.",
+  tri_land:
+    "Facilities reporting the largest land releases — on-site landfills, surface impoundments, and off-site disposal.",
+};
 
 export const metadata: Metadata = pageMeta({
   title: "Most Polluting Facilities — National Rankings | Pollution Analyst",
@@ -57,6 +72,8 @@ export default async function RankingsFacilitiesPage() {
           </div>
         </section>
 
+        <JumpStrip items={buildRankingJumpItems(tables)} />
+
         {tables.map((t, i) => (
           <FacilityRankingSection key={t.lane} table={t} tint={i % 2 === 1} />
         ))}
@@ -72,7 +89,7 @@ function FacilityRankingSection({ table, tint }: { table: RankingTable; tint: bo
   const tooltip = override?.tooltip;
   const methodologyHref = LANE_METHODOLOGY[table.lane] ?? "/methodology";
   return (
-    <section className={`section ${tint ? "section-tint" : ""}`}>
+    <section className={`section ${tint ? "section-tint" : ""}`} id={`${table.lane}-${table.direction}`}>
       <div className="wrap">
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Top {table.rows.length} most polluting facilities</div>
@@ -82,6 +99,11 @@ function FacilityRankingSection({ table, tint }: { table: RankingTable; tint: bo
               <InfoTip heading={tooltip.heading} body={tooltip.body} ariaLabel={`About ${displayLabel}`} />
             ) : null}
           </h2>
+          {FACILITY_TABLE_CAPTIONS[table.lane] ? (
+            <p className="muted" style={{ fontSize: 14, marginTop: 10, maxWidth: "62ch" }}>
+              {FACILITY_TABLE_CAPTIONS[table.lane]}
+            </p>
+          ) : null}
           <p className="muted" style={{ margin: "8px 0 0", fontSize: 13 }}>
             <Link href={methodologyHref}>Methodology &rarr;</Link>
           </p>

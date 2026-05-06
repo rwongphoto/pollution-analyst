@@ -313,11 +313,258 @@ def _facility_tables(facilities: list[tuple[str, dict]]) -> list[dict]:
     return tables
 
 
+# ---- States surface -----------------------------------------------------
+# State-grain rankings parallel the county lanes — same indicators rolled up
+# to the state level. Total TRI is read from `totals.total_releases_pounds`
+# rather than a pathway entry; everything else uses the existing pathway
+# label-prefix matcher. Pounds / metric-tons lanes set `positive_only` so
+# the "least" pool answers "of states with reported activity, who reports
+# the lowest releases?" rather than alphabetizing zero-activity states.
+
+STATE_LANES: tuple[_Lane, ...] = (
+    _Lane(
+        key="tri_total",
+        label="Total TRI releases (air + water + land)",
+        pathway="",  # special-cased: read from totals.total_releases_pounds
+        label_prefix="",
+        units="lb",
+        most_n=10,
+        least_n=10,
+        value_format="pounds",
+    ),
+    _Lane(
+        key="tri_air",
+        label="TRI air releases",
+        pathway="tri_air",
+        label_prefix="TRI air releases",
+        units="lb",
+        most_n=10,
+        least_n=10,
+        value_format="pounds",
+    ),
+    _Lane(
+        key="tri_water",
+        label="TRI water releases",
+        pathway="tri_water",
+        label_prefix="TRI water releases",
+        units="lb",
+        most_n=10,
+        least_n=10,
+        value_format="pounds",
+    ),
+    _Lane(
+        key="tri_land",
+        label="TRI land releases",
+        pathway="tri_land",
+        label_prefix="TRI land",
+        units="lb",
+        most_n=10,
+        least_n=10,
+        value_format="pounds",
+    ),
+    _Lane(
+        key="pm25_annual",
+        label="PM2.5 annual mean",
+        pathway="criteria_air",
+        label_prefix="PM2.5 annual mean",
+        units="µg/m³",
+        most_n=10,
+        least_n=10,
+        value_format="decimal3",
+    ),
+    _Lane(
+        key="cancer_risk",
+        label="Lifetime cancer risk (all pollutants)",
+        pathway="hazardous_air",
+        label_prefix="Lifetime cancer risk",
+        units="per million",
+        most_n=10,
+        least_n=10,
+        value_format="decimal1",
+    ),
+    _Lane(
+        key="ghg",
+        label="Greenhouse gases (GHGRP)",
+        pathway="ghg",
+        label_prefix="",
+        units="metric tons CO₂e",
+        most_n=10,
+        least_n=10,
+        value_format="metric_tons",
+    ),
+)
+
+
+def _state_rows(lane: _Lane, payloads: list[tuple[str, dict]]) -> list[dict]:
+    rows: list[dict] = []
+    for state_slug, p in payloads:
+        state = p.get("state") or {}
+        totals = p.get("totals") or {}
+        if lane.key == "tri_total":
+            v = totals.get("total_releases_pounds")
+        else:
+            entry = _pick_pathway(p, lane)
+            v = entry.get("current") if entry else None
+        if v is None:
+            continue
+        rows.append({
+            "state": state_slug,
+            "state_label": state.get("name") or state_slug.upper(),
+            "slug": state.get("slug") or state_slug,
+            "name": state.get("name") or state_slug.upper(),
+            "population": state.get("population", 0),
+            "facilities_count": totals.get("facilities_tracked", 0),
+            "value": float(v),
+            "value_label": _format_value(float(v), lane.value_format),
+        })
+    return rows
+
+
+def _build_state_tables(payloads: list[tuple[str, dict]]) -> list[dict]:
+    tables: list[dict] = []
+    for lane in STATE_LANES:
+        rows = _state_rows(lane, payloads)
+        if not rows:
+            continue
+        positive_only = lane.value_format in ("pounds", "metric_tons")
+        pool = [r for r in rows if r["value"] > 0] if positive_only else rows
+        most_sorted = sorted(pool, key=lambda r: r["value"], reverse=True)[: lane.most_n]
+        if most_sorted:
+            tables.append({
+                "lane": lane.key,
+                "label": lane.label,
+                "units": lane.units,
+                "direction": "most",
+                "positive_only": positive_only,
+                "rows": [{"rank": i + 1, **r} for i, r in enumerate(most_sorted)],
+            })
+        if lane.least_n:
+            least_sorted = sorted(pool, key=lambda r: r["value"])[: lane.least_n]
+            if least_sorted:
+                tables.append({
+                    "lane": lane.key,
+                    "label": lane.label,
+                    "units": lane.units,
+                    "direction": "least",
+                    "positive_only": positive_only,
+                    "rows": [{"rank": i + 1, **r} for i, r in enumerate(least_sorted)],
+                })
+    return tables
+
+
+# ---- Superfund surface --------------------------------------------------
+# NPL sites don't have a magnitude metric like TRI pounds — SEMS only reports
+# contaminants of concern (count + citation count) and operable units. The
+# rankable signals are therefore (a) chemical diversity (count of distinct
+# contaminants reported) and (b) downstream risk (count of nearby groundwater
+# PWSes from the water_linkage block). "Least" tables aren't meaningful here
+# — every NPL site is by definition contaminated; ranking the "least
+# contaminated" devolves into sites that simply have sparser SEMS records.
+
+def _superfund_rows_by_contaminants(payloads: list[tuple[str, dict]], top_n: int) -> list[dict]:
+    rows: list[dict] = []
+    for state_slug, p in payloads:
+        site = p.get("site") or {}
+        totals = p.get("totals") or {}
+        v = totals.get("contaminants_count")
+        if v is None or v <= 0:
+            continue
+        rows.append({
+            "state": state_slug,
+            "state_label": site.get("state_label") or state_slug.upper(),
+            "slug": site["slug"],
+            "name": site["name"],
+            "city": site.get("city"),
+            "city_slug": site.get("city_slug"),
+            "county": site.get("county"),
+            "npl_status": site.get("npl_status"),
+            "is_federal_facility": bool(site.get("is_federal_facility")),
+            "primary_contaminant": totals.get("primary_contaminant"),
+            "value": float(v),
+            "value_label": f"{int(v):,}",
+        })
+    rows.sort(key=lambda r: r["value"], reverse=True)
+    rows = rows[:top_n]
+    return [{"rank": i + 1, **r} for i, r in enumerate(rows)]
+
+
+def _superfund_rows_by_water_linkage(payloads: list[tuple[str, dict]], top_n: int) -> list[dict]:
+    rows: list[dict] = []
+    for state_slug, p in payloads:
+        site = p.get("site") or {}
+        linkage = (p.get("water_linkage") or {}).get("utilities") or []
+        v = len(linkage)
+        if v <= 0:
+            continue
+        # Population served across all nearby groundwater PWSes — a richer
+        # secondary metric than the raw utility count, surfaced in the row
+        # so the table can show "12 utilities · 84,000 people" rather than
+        # collapsing the human stake into a number alone.
+        pop_served = sum(int(u.get("population_served") or 0) for u in linkage)
+        rows.append({
+            "state": state_slug,
+            "state_label": site.get("state_label") or state_slug.upper(),
+            "slug": site["slug"],
+            "name": site["name"],
+            "city": site.get("city"),
+            "city_slug": site.get("city_slug"),
+            "county": site.get("county"),
+            "npl_status": site.get("npl_status"),
+            "is_federal_facility": bool(site.get("is_federal_facility")),
+            "population_served": pop_served,
+            "value": float(v),
+            "value_label": f"{int(v)} {'utility' if v == 1 else 'utilities'}",
+        })
+    rows.sort(key=lambda r: (r["value"], r.get("population_served", 0)), reverse=True)
+    rows = rows[:top_n]
+    return [{"rank": i + 1, **r} for i, r in enumerate(rows)]
+
+
+def _superfund_tables(superfund: list[tuple[str, dict]]) -> list[dict]:
+    """Build superfund ranking tables: contaminant diversity + nearby groundwater."""
+    tables: list[dict] = []
+    contam_rows = _superfund_rows_by_contaminants(superfund, top_n=20)
+    if contam_rows:
+        tables.append({
+            "lane": "contaminants",
+            "label": "Most contaminants reported",
+            "units": "distinct contaminants",
+            "direction": "most",
+            "rows": contam_rows,
+        })
+    water_rows = _superfund_rows_by_water_linkage(superfund, top_n=10)
+    if water_rows:
+        tables.append({
+            "lane": "water_linkage",
+            "label": "Most nearby groundwater utilities",
+            "units": "PWSes within 5 mi",
+            "direction": "most",
+            "rows": water_rows,
+        })
+    return tables
+
+
+def _read_state_files(root: Path) -> list[tuple[str, dict]]:
+    """Yield every (state_slug, payload) pair under data/published/state/.
+    State files live one level shallower than the per-entity directories."""
+    out: list[tuple[str, dict]] = []
+    if not root.exists():
+        return out
+    for jf in sorted(root.glob("*.json")):
+        try:
+            out.append((jf.stem, json.loads(jf.read_text())))
+        except Exception:  # noqa: BLE001
+            continue
+    return out
+
+
 def publish_rankings(year: int) -> Path:
-    """Read every county/city/facility published JSON and write rankings.json."""
+    """Read every county/city/facility/state/superfund published JSON and write rankings.json."""
     counties = _read_all(PUBLISHED_ROOT / "county")
     cities = _read_all(PUBLISHED_ROOT / "city")
     facilities = _read_all(PUBLISHED_ROOT / "facility")
+    superfund = _read_all(PUBLISHED_ROOT / "superfund")
+    states = _read_state_files(PUBLISHED_ROOT / "state")
 
     states_covered = sorted({s for s, _ in (counties + cities + facilities)})
 
@@ -329,6 +576,8 @@ def publish_rankings(year: int) -> Path:
             "counties": len(counties),
             "cities": len(cities),
             "facilities": len(facilities),
+            "superfund": len(superfund),
+            "states": len(states),
         },
         "counties": {
             "tables": _build_place_tables(counties, _county_rows, surface="counties"),
@@ -338,6 +587,12 @@ def publish_rankings(year: int) -> Path:
         },
         "facilities": {
             "tables": _facility_tables(facilities) if facilities else [],
+        },
+        "states": {
+            "tables": _build_state_tables(states) if states else [],
+        },
+        "superfund": {
+            "tables": _superfund_tables(superfund) if superfund else [],
         },
     }
 

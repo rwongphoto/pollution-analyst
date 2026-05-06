@@ -3,12 +3,32 @@ import Link from "next/link";
 
 import { Crumbs } from "@/components/site/Crumbs";
 import { InfoTip } from "@/components/site/InfoTip";
+import { JumpStrip } from "@/components/site/JumpStrip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { loadRankings } from "@/lib/data";
+import { buildRankingJumpItems } from "@/lib/rankingJump";
 import { LANE_METHODOLOGY, LANE_OVERRIDES } from "@/lib/rankingLanes";
 import { pageMeta } from "@/lib/seo";
 import type { RankingTable } from "@/lib/types";
+
+// Editorial caption per (lane, direction). PM2.5 / cancer risk are
+// county-grain measurements — the caption flags that explicitly so the
+// reader doesn't assume per-place monitor coverage.
+const CITY_TABLE_CAPTIONS: Record<string, string> = {
+  "pm25_annual:most":
+    "Cities with the highest annual PM2.5 concentrations — measured at the containing county's AQS monitors.",
+  "pm25_annual:least":
+    "Cities with the lowest annual PM2.5 concentrations — measured at the containing county's AQS monitors.",
+  "cancer_risk:most":
+    "Cities with the highest AirToxScreen-modeled lifetime cancer risk — using the containing county's value.",
+  "cancer_risk:least":
+    "Cities with the lowest AirToxScreen-modeled lifetime cancer risk — using the containing county's value.",
+  "tri_air:most":
+    "Cities whose industrial facilities reported the largest air releases under TRI.",
+  "tri_air:least":
+    "Cities with the smallest reported TRI air releases among those with reporting facilities.",
+};
 
 export const metadata: Metadata = pageMeta({
   title: "Most Polluted Cities — National Rankings | Pollution Analyst",
@@ -65,6 +85,8 @@ export default async function RankingsCitiesPage() {
           </div>
         </section>
 
+        <JumpStrip items={buildRankingJumpItems(tables)} />
+
         {tables.map((t) => (
           <RankingTableSection key={`${t.lane}-${t.direction}`} table={t} />
         ))}
@@ -81,7 +103,7 @@ function RankingTableSection({ table }: { table: RankingTable }) {
   const tooltip = override?.tooltip;
   const methodologyHref = LANE_METHODOLOGY[table.lane] ?? "/methodology";
   return (
-    <section className={`section ${isMost ? "" : "section-tint"}`}>
+    <section className={`section ${isMost ? "" : "section-tint"}`} id={`${table.lane}-${table.direction}`}>
       <div className="wrap">
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">
@@ -93,6 +115,14 @@ function RankingTableSection({ table }: { table: RankingTable }) {
               <InfoTip heading={tooltip.heading} body={tooltip.body} ariaLabel={`About ${displayLabel}`} />
             ) : null}
           </h2>
+          {(() => {
+            const caption = CITY_TABLE_CAPTIONS[`${table.lane}:${table.direction}`];
+            return caption ? (
+              <p className="muted" style={{ fontSize: 14, marginTop: 10, maxWidth: "62ch" }}>
+                {caption}
+              </p>
+            ) : null;
+          })()}
           <p className="muted" style={{ margin: "8px 0 0", fontSize: 13 }}>
             <Link href={methodologyHref}>Methodology &rarr;</Link>
           </p>

@@ -67,6 +67,89 @@ export async function loadState(state: string): Promise<StatePagePayload> {
   return readJson<StatePagePayload>(`state/${state}.json`);
 }
 
+export type StateMapSummary = {
+  fips: string;            // 2-char e.g. '06'
+  slug: string;            // 'ca'
+  name: string;            // 'California'
+  reporting_year: number;
+  facilities_tracked: number;
+  total_releases_pounds: number;
+  yoy_pct_change: number | null;
+  long_arc_pct_change: number | null;
+  long_arc_baseline_year: number;
+  counties_with_data: number;
+};
+
+// State-level summary for every ingested state. Used to power the homepage
+// US map's hover panel — keyed by 2-char state FIPS so the map can resolve
+// any hovered county to its state without an extra fetch.
+export async function loadStateMapSummaries(): Promise<StateMapSummary[]> {
+  const root = dataPath("state");
+  let files: string[] = [];
+  try {
+    files = await fs.readdir(root);
+  } catch {
+    return [];
+  }
+  const out: StateMapSummary[] = [];
+  await Promise.all(
+    files
+      .filter((f) => f.endsWith(".json"))
+      .map(async (f) => {
+        try {
+          const raw = await fs.readFile(root + "/" + f, "utf8");
+          const data = JSON.parse(raw) as StatePagePayload;
+          out.push({
+            fips: data.state.fips,
+            slug: data.state.slug,
+            name: data.state.name,
+            reporting_year: data.reporting_year,
+            facilities_tracked: data.totals.facilities_tracked,
+            total_releases_pounds: data.totals.total_releases_pounds,
+            yoy_pct_change: data.totals.yoy_pct_change,
+            long_arc_pct_change: data.totals.long_arc_pct_change,
+            long_arc_baseline_year: data.totals.long_arc_baseline_year,
+            counties_with_data: data.totals.counties_with_data,
+          });
+        } catch {
+          // skip unreadable / malformed state files
+        }
+      }),
+  );
+  return out;
+}
+
+export async function loadNationalCountyBurdens(): Promise<
+  { fips: string; total_releases_pounds: number }[]
+> {
+  const root = dataPath("state");
+  let files: string[] = [];
+  try {
+    files = await fs.readdir(root);
+  } catch {
+    return [];
+  }
+  const out: { fips: string; total_releases_pounds: number }[] = [];
+  await Promise.all(
+    files
+      .filter((f) => f.endsWith(".json"))
+      .map(async (f) => {
+        try {
+          const raw = await fs.readFile(root + "/" + f, "utf8");
+          const data = JSON.parse(raw) as StatePagePayload;
+          for (const c of data.counties_directory ?? []) {
+            if (c.fips && typeof c.total_releases_pounds === "number") {
+              out.push({ fips: c.fips, total_releases_pounds: c.total_releases_pounds });
+            }
+          }
+        } catch {
+          // skip unreadable / malformed state files
+        }
+      }),
+  );
+  return out;
+}
+
 export async function listStateSlugs(): Promise<{ state: string }[]> {
   const root = dataPath("state");
   let files: string[] = [];

@@ -53,6 +53,20 @@ export const LANE_OVERRIDES: Record<string, LaneOverride> = {
       body: "Greenhouse gases reported by large industrial emitters under EPA's Greenhouse Gas Reporting Program, in metric tons of CO₂ equivalent. Drives climate warming and the heat-related health effects that follow.",
     },
   },
+  contaminants: {
+    label: "Most Contaminants Reported",
+    tooltip: {
+      heading: "What this means",
+      body: "Distinct contaminants of concern logged for the site under EPA's Superfund Enterprise Management System (SEMS). A larger count signals a more chemically complex contamination footprint — not necessarily higher mass — across groundwater, soil, sediment, and surface-water media.",
+    },
+  },
+  water_linkage: {
+    label: "Most Nearby Groundwater Utilities",
+    tooltip: {
+      heading: "What this means",
+      body: "Public water systems drawing groundwater within roughly 5 miles of the NPL site. Distance is computed from site coordinates to served-city centroids — coarse on purpose. A non-zero count means downstream drinking-water exposure is at least geographically plausible.",
+    },
+  },
 };
 
 export const LANE_METHODOLOGY: Record<string, string> = {
@@ -63,4 +77,20 @@ export const LANE_METHODOLOGY: Record<string, string> = {
   tri_land: "/methodology#tri",
   tri_total: "/methodology#tri",
   ghg: "/methodology#taxonomy",
+  contaminants: "/methodology#superfund",
+  water_linkage: "/methodology#superfund",
+};
+
+// Short labels for the JumpStrip on each /rankings/* page. Most/least tables
+// for the same lane share one entry — the strip is per-metric, not per-table.
+export const LANE_JUMP_LABEL: Record<string, string> = {
+  tri_total: "Total TRI",
+  tri_air: "TRI Air",
+  tri_water: "TRI Water",
+  tri_land: "TRI Land",
+  pm25_annual: "PM2.5",
+  cancer_risk: "Cancer Risk",
+  ghg: "GHG",
+  contaminants: "Contaminants",
+  water_linkage: "Groundwater",
 };

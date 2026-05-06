@@ -18,6 +18,7 @@ type Active =
   | "rankings-counties"
   | "rankings-cities"
   | "rankings-facilities"
+  | "rankings-superfund"
   | undefined;
 
 export function SiteHeader({ active }: { active?: Active }) {
@@ -61,9 +62,6 @@ export function SiteHeader({ active }: { active?: Active }) {
             ref={statesRef}
             className={`nav-item ${statesOpen ? "open" : ""}`}
           >
-            {/* Parent button intentionally has no href — `/rankings/states`
-                is unbuilt. Swap to <Link href="/rankings/states"> when that
-                page ships. */}
             <button
               type="button"
               className={active === "state" || active === "rankings-states" ? "active" : ""}
@@ -75,6 +73,15 @@ export function SiteHeader({ active }: { active?: Active }) {
               <span className="caret" aria-hidden="true" />
             </button>
             <div className="submenu submenu-mega" role="menu">
+              <Link
+                href="/rankings/states"
+                role="menuitem"
+                className="mega-banner"
+                onClick={closeAll}
+              >
+                <span>All States Ranking</span>
+                <span className="sub-meta">national →</span>
+              </Link>
               {LIVE_STATES_BY_REGION.map(({ region, states }) => (
                 <div key={region} className="mega-col">
                   <div className="sm-section">{region}</div>
@@ -113,6 +120,13 @@ export function SiteHeader({ active }: { active?: Active }) {
             onClick={closeAll}
           >
             Facilities
+          </Link>
+          <Link
+            href="/rankings/superfund"
+            className={active === "rankings-superfund" ? "active" : ""}
+            onClick={closeAll}
+          >
+            Superfund
           </Link>
           <Link
             href="/methodology"

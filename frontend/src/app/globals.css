@@ -21,8 +21,8 @@
   --fg:           #E8ECF2;
   --fg-2:         #BFC6D4;
   --fg-3:         #8A93A6;
-  --fg-4:         #5C6478;
-  --fg-5:         #3D4456;
+  --fg-4:         #7A8294;
+  --fg-5:         #565D70;
 
   /* Accents — match map */
   --blue:         #3B82F6;
@@ -158,6 +158,8 @@ hr, .rule { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
 .site-nav .nav-item:hover .submenu-mega, .site-nav .nav-item.open .submenu-mega { display: grid; }
 .site-nav .submenu-mega .mega-col { display: flex; flex-direction: column; min-width: 0; }
 .site-nav .submenu-mega .mega-col .sm-section { padding: 4px 12px 6px; margin-bottom: 4px; border-bottom: 1px solid var(--line); }
+.site-nav .submenu-mega .mega-banner { grid-column: 1 / -1; padding: 10px 12px; margin-bottom: 6px; border-bottom: 1px solid var(--line); font-weight: 600; color: var(--fg); }
+.site-nav .submenu-mega .mega-banner:hover { background: var(--bg-3); }
 
 /* Mobile hamburger — hidden on desktop, revealed in the ≤640px block */
 .header-actions { display: flex; align-items: center; gap: 10px; }

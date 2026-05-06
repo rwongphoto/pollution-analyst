@@ -58,11 +58,22 @@ export function StateMap({ stateFips, stateName, topCounties, topFacilities, cou
   })();
 
   // Tier breakpoints derived from all known burden values for this state.
+  // Mapbox `step` expressions require strictly ascending stop values — with
+  // a small number of counties (DE=3, RI=4, HI=4) the quintile sampler
+  // produces duplicate stops, which makes the whole fill-color expression
+  // invalid and silently zeroes out the choropleth. Nudge each stop above
+  // the prior so the expression always validates.
   const breakpoints = (() => {
     const sorted = [...burdenByFips.values()].sort((a, b) => a - b);
     if (sorted.length === 0) return [0, 0, 0, 0, 0];
     const q = (p: number) => sorted[Math.floor(p * (sorted.length - 1))];
-    return [q(0.0), q(0.2), q(0.4), q(0.6), q(0.8)];
+    const raw = [q(0.0), q(0.2), q(0.4), q(0.6), q(0.8)];
+    const fixed: number[] = [];
+    for (let i = 0; i < raw.length; i++) {
+      const prior = i === 0 ? -Infinity : fixed[i - 1];
+      fixed.push(raw[i] > prior ? raw[i] : prior + 1);
+    }
+    return fixed;
   })();
 
   useEffect(() => {
