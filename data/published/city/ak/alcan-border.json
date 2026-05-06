@@ -6,8 +6,8 @@
     "name": "Alcan Border",
     "fips": "0201390",
     "population": 178,
-    "county_name": null,
-    "county_fips": ""
+    "county_name": "Southeast Fairbanks",
+    "county_fips": "02240"
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -33,6 +33,51 @@
     ]
   },
   "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 9.8,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 9.8
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.4188,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.4188
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1055,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1055
+        }
+      ]
+    },
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
@@ -133,6 +178,58 @@
     {
       "kind": "city",
       "state": "ak",
+      "slug": "tanacross",
+      "name": "Tanacross",
+      "population": 136,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "northway",
+      "name": "Northway",
+      "population": 252,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "eagle",
+      "name": "Eagle",
+      "population": 99,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "delta-junction",
+      "name": "Delta Junction",
+      "population": 1126,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
       "slug": "palmer",
       "name": "Palmer",
       "population": 6091,
@@ -155,58 +252,6 @@
       "ej_pct_avg": 28.4,
       "relation": "peer",
       "reason": "Similar TRI air profile \u00b7 1 facility"
-    },
-    {
-      "kind": "city",
-      "state": "ak",
-      "slug": "unalaska",
-      "name": "Unalaska",
-      "population": 4342,
-      "facilities_count": 2,
-      "total_releases_pounds": 3888,
-      "dominant_medium": "air",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 2 facilities"
-    },
-    {
-      "kind": "city",
-      "state": "ak",
-      "slug": "north-pole",
-      "name": "North Pole",
-      "population": 2816,
-      "facilities_count": 3,
-      "total_releases_pounds": 8230,
-      "dominant_medium": "air",
-      "ej_pct_avg": 51.2,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 3 facilities"
-    },
-    {
-      "kind": "city",
-      "state": "ak",
-      "slug": "badger",
-      "name": "Badger",
-      "population": 19182,
-      "facilities_count": 1,
-      "total_releases_pounds": 70,
-      "dominant_medium": "air",
-      "ej_pct_avg": 41.3,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 1 facility"
-    },
-    {
-      "kind": "city",
-      "state": "ak",
-      "slug": "valdez",
-      "name": "Valdez",
-      "population": 3935,
-      "facilities_count": 3,
-      "total_releases_pounds": 12253,
-      "dominant_medium": "air",
-      "ej_pct_avg": 37.0,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 3 facilities"
     }
   ],
   "sources": [
@@ -221,5 +266,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T19:01:50Z"
+  "_published_at": "2026-05-06T20:19:50Z"
 }

@@ -58,54 +58,270 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 0,
+      "current": 4536,
       "units": "lb",
-      "yoy_pct_change": null,
+      "yoy_pct_change": 26.5,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2010,
       "history": [
         {
+          "year": 2010,
+          "value": 4627
+        },
+        {
+          "year": 2011,
+          "value": 7494
+        },
+        {
+          "year": 2012,
+          "value": 2772
+        },
+        {
+          "year": 2013,
+          "value": 3565
+        },
+        {
+          "year": 2014,
+          "value": 3457
+        },
+        {
+          "year": 2015,
+          "value": 2675
+        },
+        {
+          "year": 2016,
+          "value": 3041
+        },
+        {
+          "year": 2017,
+          "value": 3701
+        },
+        {
+          "year": 2018,
+          "value": 2608
+        },
+        {
+          "year": 2019,
+          "value": 2714
+        },
+        {
+          "year": 2020,
+          "value": 2566
+        },
+        {
+          "year": 2021,
+          "value": 3572
+        },
+        {
+          "year": 2022,
+          "value": 4223
+        },
+        {
+          "year": 2023,
+          "value": 3585
+        },
+        {
           "year": 2024,
-          "value": 0
+          "value": 4536
         }
       ]
     },
     {
       "pathway": "tri_water",
       "label": "TRI water releases (5.3)",
-      "current": 0,
+      "current": 448060,
       "units": "lb",
-      "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "yoy_pct_change": 23.3,
+      "long_arc_pct_change": 148.6,
+      "baseline_year": 2010,
       "history": [
         {
+          "year": 2010,
+          "value": 180240
+        },
+        {
+          "year": 2011,
+          "value": 153538
+        },
+        {
+          "year": 2012,
+          "value": 568483
+        },
+        {
+          "year": 2013,
+          "value": 314490
+        },
+        {
+          "year": 2014,
+          "value": 580562
+        },
+        {
+          "year": 2015,
+          "value": 519821
+        },
+        {
+          "year": 2016,
+          "value": 413810
+        },
+        {
+          "year": 2017,
+          "value": 266880
+        },
+        {
+          "year": 2018,
+          "value": 232195
+        },
+        {
+          "year": 2019,
+          "value": 8173
+        },
+        {
+          "year": 2020,
+          "value": 1561
+        },
+        {
+          "year": 2021,
+          "value": 398289
+        },
+        {
+          "year": 2022,
+          "value": 499281
+        },
+        {
+          "year": 2023,
+          "value": 363383
+        },
+        {
           "year": 2024,
-          "value": 0
+          "value": 448060
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 0,
+      "current": 7995034,
       "units": "lb",
-      "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "yoy_pct_change": -0.5,
+      "long_arc_pct_change": 5.1,
+      "baseline_year": 2010,
       "history": [
         {
+          "year": 2010,
+          "value": 7605123
+        },
+        {
+          "year": 2011,
+          "value": 8280932
+        },
+        {
+          "year": 2012,
+          "value": 8874170
+        },
+        {
+          "year": 2013,
+          "value": 7432281
+        },
+        {
+          "year": 2014,
+          "value": 11483922
+        },
+        {
+          "year": 2015,
+          "value": 8117866
+        },
+        {
+          "year": 2016,
+          "value": 8883535
+        },
+        {
+          "year": 2017,
+          "value": 8955734
+        },
+        {
+          "year": 2018,
+          "value": 7711224
+        },
+        {
+          "year": 2019,
+          "value": 6087736
+        },
+        {
+          "year": 2020,
+          "value": 6016863
+        },
+        {
+          "year": 2021,
+          "value": 6073464
+        },
+        {
+          "year": 2022,
+          "value": 7476987
+        },
+        {
+          "year": 2023,
+          "value": 8039099
+        },
+        {
           "year": 2024,
-          "value": 0
+          "value": 7995034
         }
       ]
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "slug": "pogo-mine",
+      "state": "ak",
+      "state_label": "Alaska",
+      "name": "Pogo Mine",
+      "parent_company": "Northern Star LLC",
+      "total_pounds_recent": 8443631,
+      "yoy_pct_change": 0.5,
+      "top_chemical": "Arsenic compounds",
+      "city": "Delta Junction",
+      "lat": 64.079416,
+      "lng": -145.618177
+    },
+    {
+      "slug": "us-army-donnelly-training-area-ranges",
+      "state": "ak",
+      "state_label": "Alaska",
+      "name": "US Army Donnelly Training Area Ranges",
+      "parent_company": "US Department Of Defense",
+      "total_pounds_recent": 3054,
+      "yoy_pct_change": 103.5,
+      "top_chemical": "Lead",
+      "city": "Delta Junction",
+      "lat": 64.259205,
+      "lng": -146.091338
+    },
+    {
+      "slug": "manh-choh-mine-development",
+      "state": "ak",
+      "state_label": "Alaska",
+      "name": "Manh Choh Mine Development",
+      "parent_company": "Kinross Gold CORP (Usa) INC",
+      "total_pounds_recent": 945,
+      "yoy_pct_change": 231.9,
+      "top_chemical": "Ammonia",
+      "city": "Tok",
+      "lat": 62.739684,
+      "lng": -141.204606
+    }
+  ],
   "utilities": [],
   "superfund": [],
   "superfund_total": 0,
   "cities_directory": [
+    {
+      "slug": "alcan-border",
+      "name": "Alcan Border",
+      "fips": "0201390",
+      "facilities_count": 1,
+      "utilities_count": 0,
+      "population": 178
+    },
     {
       "slug": "delta-junction",
       "name": "Delta Junction",
@@ -336,73 +552,73 @@
     {
       "kind": "county",
       "state": "ak",
-      "slug": "chugach",
-      "name": "Chugach County",
-      "population": 7000,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 37.3,
+      "slug": "juneau",
+      "name": "Juneau County",
+      "population": 32108,
+      "facilities_count": 3,
+      "total_releases_pounds": 90105292,
+      "dominant_medium": "land",
+      "ej_pct_avg": 37.0,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI land profile \u00b7 3 facilities"
     },
     {
       "kind": "county",
       "state": "ak",
-      "slug": "prince-of-wales-hyder",
-      "name": "Prince Of Wales-Hyder County",
-      "population": 5799,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 30.9,
+      "slug": "denali",
+      "name": "Denali County",
+      "population": 2101,
+      "facilities_count": 2,
+      "total_releases_pounds": 620737,
+      "dominant_medium": "land",
+      "ej_pct_avg": 28.1,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
     },
     {
       "kind": "county",
       "state": "ak",
-      "slug": "kusilvak",
-      "name": "Kusilvak County",
-      "population": 8372,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 27.5,
+      "slug": "fairbanks-north-star",
+      "name": "Fairbanks North Star County",
+      "population": 96299,
+      "facilities_count": 10,
+      "total_releases_pounds": 18401437,
+      "dominant_medium": "land",
+      "ej_pct_avg": 51.0,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI land profile \u00b7 10 facilities"
     },
     {
       "kind": "county",
       "state": "ak",
-      "slug": "sitka-city-and",
-      "name": "Sitka City And County",
-      "population": 8462,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 38.5,
+      "slug": "northwest-arctic",
+      "name": "Northwest Arctic County",
+      "population": 7682,
+      "facilities_count": 2,
+      "total_releases_pounds": 723889912,
+      "dominant_medium": "land",
+      "ej_pct_avg": 32.5,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
     },
     {
       "kind": "county",
       "state": "ak",
-      "slug": "yukon-koyukuk",
-      "name": "Yukon-Koyukuk County",
-      "population": 5355,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 29.4,
+      "slug": "anchorage",
+      "name": "Anchorage County",
+      "population": 290674,
+      "facilities_count": 5,
+      "total_releases_pounds": 38739,
+      "dominant_medium": "land",
+      "ej_pct_avg": 56.0,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI land profile \u00b7 5 facilities"
     },
     {
       "kind": "county",
       "state": "ak",
-      "slug": "kodiak-island-borough",
-      "name": "Kodiak Island Borough County",
+      "slug": "kodiak-island",
+      "name": "Kodiak Island County",
       "population": 13065,
       "facilities_count": 1,
       "total_releases_pounds": 0.2,
@@ -419,5 +635,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T19:01:50Z"
+  "_published_at": "2026-05-06T20:19:50Z"
 }

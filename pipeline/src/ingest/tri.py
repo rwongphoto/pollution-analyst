@@ -26,7 +26,7 @@ from typing import Any
 import httpx
 
 from ..config import RAW_ROOT
-from ..spatial.county_fips import lookup_fips
+from ..spatial.county_fips import lookup_county_canonical, lookup_fips
 from ..states import State
 
 log = logging.getLogger(__name__)
@@ -178,9 +178,17 @@ def _parse_csv(body: str, state: State) -> list[TriRow]:
         facility_id = (row.get("3. FRS ID") or row.get("2. TRIFD") or "").strip()
         if not facility_id:
             continue
-        county_name = _title(row.get("7. COUNTY"))
-        fips = lookup_fips(state.abbr, row.get("7. COUNTY") or "") or ""
-        if not fips:
+        raw_county = row.get("7. COUNTY") or ""
+        fips = lookup_fips(state.abbr, raw_county) or ""
+        if fips:
+            # Use the canonical Census name (already suffix-stripped — no
+            # " Parish" / " Borough" / " Census Area" — and matches the
+            # canonical bare-county form used elsewhere in the pipeline).
+            # Falls back to the raw upstream form if the cache disagrees,
+            # which shouldn't happen since lookup_fips just succeeded.
+            county_name = lookup_county_canonical(state.abbr, raw_county) or _title(raw_county)
+        else:
+            county_name = _title(raw_county)
             skipped_no_fips += 1
 
         air = _sum_cols(row, _AIR_COLS)

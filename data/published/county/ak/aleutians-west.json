@@ -58,15 +58,71 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 0,
+      "current": 3888,
       "units": "lb",
-      "yoy_pct_change": null,
+      "yoy_pct_change": 75.0,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2010,
       "history": [
         {
+          "year": 2010,
+          "value": 3893
+        },
+        {
+          "year": 2011,
+          "value": 3893
+        },
+        {
+          "year": 2012,
+          "value": 6222
+        },
+        {
+          "year": 2013,
+          "value": 7405
+        },
+        {
+          "year": 2014,
+          "value": 1540
+        },
+        {
+          "year": 2015,
+          "value": 7749
+        },
+        {
+          "year": 2016,
+          "value": 23204
+        },
+        {
+          "year": 2017,
+          "value": 16871
+        },
+        {
+          "year": 2018,
+          "value": 20660
+        },
+        {
+          "year": 2019,
+          "value": 20069
+        },
+        {
+          "year": 2020,
+          "value": 20451
+        },
+        {
+          "year": 2021,
+          "value": 25561
+        },
+        {
+          "year": 2022,
+          "value": 2831
+        },
+        {
+          "year": 2023,
+          "value": 2221
+        },
+        {
           "year": 2024,
-          "value": 0
+          "value": 3888
         }
       ]
     },
@@ -77,8 +133,64 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2010,
       "history": [
+        {
+          "year": 2010,
+          "value": 0
+        },
+        {
+          "year": 2011,
+          "value": 0
+        },
+        {
+          "year": 2012,
+          "value": 0
+        },
+        {
+          "year": 2013,
+          "value": 0
+        },
+        {
+          "year": 2014,
+          "value": 0
+        },
+        {
+          "year": 2015,
+          "value": 0
+        },
+        {
+          "year": 2016,
+          "value": 0
+        },
+        {
+          "year": 2017,
+          "value": 0
+        },
+        {
+          "year": 2018,
+          "value": 0
+        },
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
         {
           "year": 2024,
           "value": 0
@@ -90,10 +202,66 @@
       "label": "TRI land + off-site releases",
       "current": 0,
       "units": "lb",
-      "yoy_pct_change": null,
+      "yoy_pct_change": -100.0,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2010,
       "history": [
+        {
+          "year": 2010,
+          "value": 165
+        },
+        {
+          "year": 2011,
+          "value": 165
+        },
+        {
+          "year": 2012,
+          "value": 451
+        },
+        {
+          "year": 2013,
+          "value": 127
+        },
+        {
+          "year": 2014,
+          "value": 65
+        },
+        {
+          "year": 2015,
+          "value": 5
+        },
+        {
+          "year": 2016,
+          "value": 0
+        },
+        {
+          "year": 2017,
+          "value": 6
+        },
+        {
+          "year": 2018,
+          "value": 1381
+        },
+        {
+          "year": 2019,
+          "value": 4897
+        },
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 241
+        },
+        {
+          "year": 2023,
+          "value": 26
+        },
         {
           "year": 2024,
           "value": 0
@@ -168,7 +336,34 @@
       ]
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "slug": "unisea-inc",
+      "state": "ak",
+      "state_label": "Alaska",
+      "name": "Unisea INC.",
+      "parent_company": "Unisea INC",
+      "total_pounds_recent": 3809,
+      "yoy_pct_change": 73.3,
+      "top_chemical": "Ammonia",
+      "city": "Dutch Harbor",
+      "lat": 53.883081,
+      "lng": -166.551457
+    },
+    {
+      "slug": "delta-western-llc-dutch-harbor-bulk-facility",
+      "state": "ak",
+      "state_label": "Alaska",
+      "name": "Delta Western LLC Dutch Harbor Bulk Facility",
+      "parent_company": "Northstar Energy LLC",
+      "total_pounds_recent": 79,
+      "yoy_pct_change": 60.8,
+      "top_chemical": "Lead compounds",
+      "city": "Dutch Harbor",
+      "lat": 53.890472,
+      "lng": -166.535932
+    }
+  ],
   "utilities": [],
   "superfund": [],
   "superfund_total": 0,
@@ -387,80 +582,80 @@
     {
       "kind": "county",
       "state": "ak",
-      "slug": "yukon-koyukuk",
-      "name": "Yukon-Koyukuk County",
-      "population": 5355,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 29.4,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "county",
-      "state": "ak",
-      "slug": "dillingham",
-      "name": "Dillingham County",
-      "population": 4854,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
+      "slug": "bethel",
+      "name": "Bethel County",
+      "population": 18538,
+      "facilities_count": 1,
+      "total_releases_pounds": 1620,
+      "dominant_medium": "air",
       "ej_pct_avg": 28.9,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI air profile \u00b7 1 facility"
     },
     {
       "kind": "county",
       "state": "ak",
-      "slug": "prince-of-wales-hyder",
-      "name": "Prince Of Wales-Hyder County",
-      "population": 5799,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 30.9,
+      "slug": "aleutians-east",
+      "name": "Aleutians East County",
+      "population": 3407,
+      "facilities_count": 2,
+      "total_releases_pounds": 186362,
+      "dominant_medium": "air",
+      "ej_pct_avg": 38.9,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
     },
     {
       "kind": "county",
       "state": "ak",
-      "slug": "southeast-fairbanks",
-      "name": "Southeast Fairbanks County",
-      "population": 6888,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 27.4,
+      "slug": "matanuska-susitna",
+      "name": "Matanuska-Susitna County",
+      "population": 108661,
+      "facilities_count": 1,
+      "total_releases_pounds": 956,
+      "dominant_medium": "air",
+      "ej_pct_avg": 34.2,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI air profile \u00b7 1 facility"
     },
     {
       "kind": "county",
       "state": "ak",
-      "slug": "chugach",
-      "name": "Chugach County",
-      "population": 7000,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 37.3,
+      "slug": "kenai-peninsula",
+      "name": "Kenai Peninsula County",
+      "population": 59235,
+      "facilities_count": 3,
+      "total_releases_pounds": 47071,
+      "dominant_medium": "air",
+      "ej_pct_avg": 31.6,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI air profile \u00b7 3 facilities"
     },
     {
       "kind": "county",
       "state": "ak",
-      "slug": "petersburg",
-      "name": "Petersburg County",
-      "population": 3374,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 41.6,
+      "slug": "valdez-cordova-census-area",
+      "name": "Valdez-Cordova Census Area County",
+      "population": 0,
+      "facilities_count": 3,
+      "total_releases_pounds": 12253,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Similar TRI air profile \u00b7 3 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ak",
+      "slug": "north-slope",
+      "name": "North Slope County",
+      "population": 10924,
+      "facilities_count": 2,
+      "total_releases_pounds": 0.6,
+      "dominant_medium": "air",
+      "ej_pct_avg": 27.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
     }
   ],
   "sources": [
@@ -470,5 +665,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T19:01:50Z"
+  "_published_at": "2026-05-06T20:19:50Z"
 }

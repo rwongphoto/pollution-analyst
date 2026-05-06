@@ -39,19 +39,45 @@ def _ensure_downloaded() -> Path:
     return p
 
 
+_CANONICAL_SUFFIXES = (
+    " COUNTY",
+    " PARISH",
+    " CITY AND BOROUGH",  # checked before " BOROUGH" so "JUNEAU CITY AND BOROUGH"
+    " BOROUGH",           # fully strips instead of leaving "JUNEAU CITY AND".
+    " CENSUS AREA",
+    " MUNICIPALITY",
+    " MUNICIPIO",
+)
+
+
 def _normalize_county(name: str) -> str:
     """Normalize TRI bulk county names to match Census's COUNTYNAME column.
 
     TRI uses bare uppercase ("LOS ANGELES"); Census uses title-case with
     "County" suffix ("Los Angeles County"). Some special names: City and
     Borough (AK), Parish (LA), Census Area (AK), Municipio (PR).
+
+    EPA's TRI bulk CSV historically capped the county column at 25 chars,
+    producing truncated forms like "ALEUTIANS WEST CENSUS ARE" or
+    "FAIRBANKS NORTH STAR BORO". Those still need to map to the canonical
+    Census name, so we have a 25-char fallback that strips a truncated
+    prefix of any canonical suffix.
     """
     s = (name or "").strip().upper()
-    # Strip common suffixes Census doesn't include in COUNTYNAME
-    for suffix in (" COUNTY", " PARISH", " BOROUGH", " CENSUS AREA",
-                   " CITY AND BOROUGH", " MUNICIPALITY", " MUNICIPIO"):
+    for suffix in _CANONICAL_SUFFIXES:
         if s.endswith(suffix):
-            s = s[: -len(suffix)]
+            return s[: -len(suffix)].strip()
+    # 25-char-truncation fallback (EPA TRI bulk historical export quirk).
+    # Only apply when the input is exactly 25 chars to avoid false positives
+    # on shorter names that happen to end with a substring like " BORO".
+    if len(s) == 25:
+        for suffix in _CANONICAL_SUFFIXES:
+            # Try every prefix of the suffix, longest first, length >=3 to
+            # avoid matching e.g. trailing " C" or " B" from unrelated names.
+            for cut in range(len(suffix) - 1, 2, -1):
+                partial = suffix[:cut]
+                if s.endswith(partial):
+                    return s[: -len(partial)].strip()
     return s.strip()
 
 
