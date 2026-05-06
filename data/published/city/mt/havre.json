@@ -1,0 +1,648 @@
+{
+  "place": {
+    "state": "mt",
+    "state_label": "Montana",
+    "slug": "havre",
+    "name": "Havre",
+    "fips": "3035050",
+    "population": 9332,
+    "county_name": "Hill",
+    "county_fips": "30041"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 4,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "criteria_air",
+      "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
+      "current": 3.884,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": -50.9,
+      "long_arc_pct_change": -50.9,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 7.905
+        },
+        {
+          "year": 2024,
+          "value": 3.884
+        }
+      ]
+    },
+    {
+      "pathway": "criteria_air",
+      "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
+      "current": 13.0,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": -68.9,
+      "long_arc_pct_change": -68.9,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 41.8
+        },
+        {
+          "year": 2024,
+          "value": 13.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 16.7,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 16.7
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.7268,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.7268
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0839,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0839
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 10190,
+    "violations_5yr_total": 67,
+    "health_based_5yr_total": 10,
+    "unresolved_total": 21,
+    "utilities_with_unresolved": 4,
+    "utilities": [
+      {
+        "slug": "havre-city-of",
+        "state": "mt",
+        "state_label": "Montana",
+        "name": "Havre  City Of",
+        "pwsid": "MT0000524",
+        "population_served": 9921,
+        "health_based_violations_5yr": 10,
+        "unresolved": true
+      },
+      {
+        "slug": "east-end-colony-inc",
+        "state": "mt",
+        "state_label": "Montana",
+        "name": "East End Colony Inc",
+        "pwsid": "MT0001780",
+        "population_served": 100,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "north-havre-county-water-dist",
+        "state": "mt",
+        "state_label": "Montana",
+        "name": "North Havre County Water Dist",
+        "pwsid": "MT0002988",
+        "population_served": 90,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "hilldale-colony",
+        "state": "mt",
+        "state_label": "Montana",
+        "name": "Hilldale Colony",
+        "pwsid": "MT0001774",
+        "population_served": 79,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0300",
+      "summary": "Unresolved Long Term 1 Enhanced SWTR violation cited in 2024 (contaminant 0300).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MT0000524"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0300",
+      "summary": "Unresolved Long Term 1 Enhanced SWTR violation cited in 2024 (contaminant 0300).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MT0000524"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0200",
+      "summary": "Unresolved Surface Water Treatment Rule violation cited in 2024 (contaminant 0200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MT0001774"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0200",
+      "summary": "Unresolved Surface Water Treatment Rule violation cited in 2024 (contaminant 0200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MT0001774"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Barium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2020 (barium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2020,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MT0001780"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Cadmium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2020 (cadmium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2020,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MT0001780"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0200",
+      "summary": "Unresolved Surface Water Treatment Rule violation cited in 2025 (contaminant 0200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MT0002988"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0200",
+      "summary": "Unresolved Surface Water Treatment Rule violation cited in 2024 (contaminant 0200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MT0002988"
+      }
+    }
+  ],
+  "equity": {
+    "population": 9332,
+    "pct_low_income": 15.1,
+    "pct_people_of_color": 22.900000000000006,
+    "pct_under_5": 8.0,
+    "pct_over_64": 16.9,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 2.6,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 1.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 67.2,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 13.5,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 0.6,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 19.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 78.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 84.8,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 14.5,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 3.3
+      },
+      {
+        "label": "Ozone",
+        "score": 33.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 83.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 18.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 0.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 25.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 84.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 2.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 69.1
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 16.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Havre, Montana (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 12.1,
+      "age_adjusted": 12.2,
+      "state_mean": 11.2,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.96,
+      "vs_state_pct": 8.5,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.18,
+      "vs_us_pct": 21.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 7.9,
+      "age_adjusted": 7.3,
+      "state_mean": 5.9,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.36,
+      "vs_state_pct": 22.9,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.8,
+      "vs_us_pct": 32.7,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 6.8,
+      "age_adjusted": 6.0,
+      "state_mean": 5.2,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.81,
+      "vs_state_pct": 15.6,
+      "vs_state_class": "worse",
+      "vs_us_pp": 0.69,
+      "vs_us_pct": 13.0,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 10.8,
+      "age_adjusted": 10.0,
+      "state_mean": 8.3,
+      "us_mean": 10.5,
+      "vs_state_pp": 1.7,
+      "vs_state_pct": 20.5,
+      "vs_state_class": "worse",
+      "vs_us_pp": -0.46,
+      "vs_us_pct": -4.4,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 20.1,
+      "age_adjusted": 20.6,
+      "state_mean": 18.5,
+      "us_mean": 16.8,
+      "vs_state_pp": 2.14,
+      "vs_state_pct": 11.6,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 3.85,
+      "vs_us_pct": 23.0,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "mt",
+      "slug": "rudyard",
+      "name": "Rudyard",
+      "population": 373,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mt",
+      "slug": "gildford",
+      "name": "Gildford",
+      "population": 166,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mt",
+      "slug": "hingham",
+      "name": "Hingham",
+      "population": 108,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mt",
+      "slug": "livingston",
+      "name": "Livingston",
+      "population": 8489,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mt",
+      "slug": "lockwood",
+      "name": "Lockwood",
+      "population": 7393,
+      "facilities_count": 2,
+      "total_releases_pounds": 201338,
+      "dominant_medium": "air",
+      "ej_pct_avg": 60.8,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+26 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "mt",
+      "slug": "miles-city",
+      "name": "Miles City",
+      "population": 8432,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.0,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T17:52:51Z"
+}

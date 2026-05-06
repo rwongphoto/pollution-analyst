@@ -1,0 +1,230 @@
+{
+  "facility": {
+    "state": "sd",
+    "state_label": "South Dakota",
+    "slug": "new-angus-llc",
+    "name": "New Angus LLC",
+    "parent_company": "White Oak Global Advisors LLC",
+    "address": "13 135TH STREET SW",
+    "city": "Aberdeen",
+    "county": "Brown County",
+    "county_slug": "brown",
+    "naics_label": "311611 \u00b7 Food",
+    "lat": 45.43064,
+    "lng": -98.526206
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 284575,
+    "air_releases_pounds": 23814,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 260761,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -23.0,
+    "long_arc_pct_change": 772.4,
+    "long_arc_baseline_year": 2016,
+    "history": [
+      {
+        "year": 2016,
+        "value": 32620
+      },
+      {
+        "year": 2017,
+        "value": 113339
+      },
+      {
+        "year": 2018,
+        "value": 89310
+      },
+      {
+        "year": 2019,
+        "value": 209053
+      },
+      {
+        "year": 2020,
+        "value": 204748
+      },
+      {
+        "year": 2021,
+        "value": 15055
+      },
+      {
+        "year": 2022,
+        "value": 38426
+      },
+      {
+        "year": 2023,
+        "value": 369353
+      },
+      {
+        "year": 2024,
+        "value": 284575
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 260761,
+      "history": [
+        {
+          "year": 2016,
+          "value": 21577
+        },
+        {
+          "year": 2017,
+          "value": 90694
+        },
+        {
+          "year": 2018,
+          "value": 73569
+        },
+        {
+          "year": 2019,
+          "value": 176631
+        },
+        {
+          "year": 2020,
+          "value": 170129
+        },
+        {
+          "year": 2021,
+          "value": 3401
+        },
+        {
+          "year": 2022,
+          "value": 6304
+        },
+        {
+          "year": 2023,
+          "value": 340700
+        },
+        {
+          "year": 2024,
+          "value": 260761
+        }
+      ],
+      "yoy_pct_change": -23.5,
+      "long_arc_pct_change": 1108.5,
+      "long_arc_baseline_year": 2016
+    },
+    {
+      "chemical": "Nitric acid",
+      "cas": "7697-37-2",
+      "category": "general",
+      "total_pounds_recent": 23814,
+      "history": [
+        {
+          "year": 2015,
+          "value": 7223
+        },
+        {
+          "year": 2016,
+          "value": 7223
+        },
+        {
+          "year": 2017,
+          "value": 14813
+        },
+        {
+          "year": 2018,
+          "value": 13339
+        },
+        {
+          "year": 2019,
+          "value": 20675
+        },
+        {
+          "year": 2020,
+          "value": 20289
+        },
+        {
+          "year": 2021,
+          "value": 11654
+        },
+        {
+          "year": 2022,
+          "value": 19813
+        },
+        {
+          "year": 2023,
+          "value": 18116
+        },
+        {
+          "year": 2024,
+          "value": 23814
+        }
+      ],
+      "yoy_pct_change": 31.5,
+      "long_arc_pct_change": 229.7,
+      "long_arc_baseline_year": 2015
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0000079210",
+      "summary": "0000079210 releases at New Angus LLC fell from 11k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -10537.7,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2015,
+          "value": 3818
+        },
+        {
+          "year": 2016,
+          "value": 3820
+        },
+        {
+          "year": 2017,
+          "value": 7832
+        },
+        {
+          "year": 2018,
+          "value": 2401
+        },
+        {
+          "year": 2019,
+          "value": 11747
+        },
+        {
+          "year": 2020,
+          "value": 14330
+        },
+        {
+          "year": 2022,
+          "value": 12308
+        },
+        {
+          "year": 2023,
+          "value": 10538
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 9834,
+    "pct_low_income": 29.3,
+    "pct_people_of_color": 21.8,
+    "pct_under_5": 7.8,
+    "pct_over_64": 9.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (8 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:07:18Z"
+}

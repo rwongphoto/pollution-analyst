@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "mt",
+    "state_label": "Montana",
+    "slug": "bakken-gas-plant",
+    "name": "Bakken Gas Plant",
+    "parent_company": "Kinder Morgan",
+    "address": "34538 COUNTY ROAD 130",
+    "city": "Sidney",
+    "county": "Richland County",
+    "county_slug": "richland",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 47.790806,
+    "lng": -104.264709
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 15000,
+    "air_releases_pounds": 750,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 14250,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 117.4,
+    "long_arc_pct_change": 300.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 3750
+      },
+      {
+        "year": 2023,
+        "value": 6900
+      },
+      {
+        "year": 2024,
+        "value": 15000
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 14250,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2500
+        },
+        {
+          "year": 2023,
+          "value": 6150
+        },
+        {
+          "year": 2024,
+          "value": 14250
+        }
+      ],
+      "yoy_pct_change": 131.7,
+      "long_arc_pct_change": 470.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 750,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1250
+        },
+        {
+          "year": 2023,
+          "value": 750
+        },
+        {
+          "year": 2024,
+          "value": 750
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": -40.0,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 11366,
+    "pct_low_income": 8.3,
+    "pct_people_of_color": 12.299999999999997,
+    "pct_under_5": 6.9,
+    "pct_over_64": 16.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Richland County, MT (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:52:50Z"
+}

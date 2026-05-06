@@ -1,0 +1,115 @@
+{
+  "facility": {
+    "state": "ut",
+    "state_label": "Utah",
+    "slug": "ibc-advanced-technologies-inc",
+    "name": "Ibc Advanced Technologies INC.",
+    "parent_company": null,
+    "address": "856 EAST UTAH VALLEY DRIVE",
+    "city": "American Fork",
+    "county": "Utah County",
+    "county_slug": "utah",
+    "naics_label": "325199 \u00b7 Chemicals",
+    "lat": 40.357972,
+    "lng": -111.774609
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 754,
+    "air_releases_pounds": 738,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 16,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 50.8,
+    "long_arc_pct_change": 25.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 600
+      },
+      {
+        "year": 2023,
+        "value": 500
+      },
+      {
+        "year": 2024,
+        "value": 754
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 438,
+      "history": [
+        {
+          "year": 2022,
+          "value": 600
+        },
+        {
+          "year": 2023,
+          "value": 500
+        },
+        {
+          "year": 2024,
+          "value": 438
+        }
+      ],
+      "yoy_pct_change": -12.4,
+      "long_arc_pct_change": -27.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 300,
+      "history": [
+        {
+          "year": 2024,
+          "value": 300
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Mercury compounds",
+      "cas": "N458",
+      "category": "pbt",
+      "total_pounds_recent": 16,
+      "history": [
+        {
+          "year": 2024,
+          "value": 16
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 64793,
+    "pct_low_income": 22.1,
+    "pct_people_of_color": 18.7,
+    "pct_under_5": 8.9,
+    "pct_over_64": 9.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (44 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:13:52Z"
+}

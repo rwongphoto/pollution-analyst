@@ -1,0 +1,127 @@
+{
+  "facility": {
+    "state": "wy",
+    "state_label": "Wyoming",
+    "slug": "pioneer-cryogenic-plant",
+    "name": "Pioneer Cryogenic Plant",
+    "parent_company": "Enterprise Products Operating LLC",
+    "address": "1241 WYOMING STATE HIGHWAY 240",
+    "city": "Opal",
+    "county": "Lincoln County",
+    "county_slug": "lincoln",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 41.921107,
+    "lng": -110.264272
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 15191,
+    "air_releases_pounds": 15110,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 81,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 303.4,
+    "long_arc_pct_change": 727.3,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 1836
+      },
+      {
+        "year": 2023,
+        "value": 3766
+      },
+      {
+        "year": 2024,
+        "value": 15191
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 10851,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1557
+        },
+        {
+          "year": 2023,
+          "value": 2690
+        },
+        {
+          "year": 2024,
+          "value": 10851
+        }
+      ],
+      "yoy_pct_change": 303.4,
+      "long_arc_pct_change": 596.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 2203,
+      "history": [
+        {
+          "year": 2023,
+          "value": 421
+        },
+        {
+          "year": 2024,
+          "value": 2203
+        }
+      ],
+      "yoy_pct_change": 423.3,
+      "long_arc_pct_change": 423.3,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2137,
+      "history": [
+        {
+          "year": 2022,
+          "value": 180
+        },
+        {
+          "year": 2023,
+          "value": 405
+        },
+        {
+          "year": 2024,
+          "value": 2137
+        }
+      ],
+      "yoy_pct_change": 427.7,
+      "long_arc_pct_change": 1089.3,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 823,
+    "pct_low_income": 14.0,
+    "pct_people_of_color": 4.0,
+    "pct_under_5": 1.0,
+    "pct_over_64": 17.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:46:16Z"
+}

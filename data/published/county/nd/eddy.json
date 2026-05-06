@@ -1,0 +1,427 @@
+{
+  "county": {
+    "state": "nd",
+    "state_label": "North Dakota",
+    "slug": "eddy",
+    "name": "Eddy County",
+    "fips": "38027",
+    "population": 2345
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.8286,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.8286
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0697,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0697
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [
+    {
+      "slug": "new-rockford",
+      "name": "New Rockford",
+      "fips": "3856620",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 1421
+    },
+    {
+      "slug": "sheyenne",
+      "name": "Sheyenne",
+      "fips": "3872580",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 222
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 2345,
+    "pct_low_income": 12.3,
+    "pct_people_of_color": 9.599999999999994,
+    "pct_under_5": 5.8,
+    "pct_over_64": 27.7,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 2.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 0.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 25.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 5.9,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 2.2,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 2.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 72.7,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 77.3,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 43.6,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 7.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.9,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 3.0
+      },
+      {
+        "label": "Ozone",
+        "score": 18.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 28.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 6.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 2.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 2.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 65.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 71.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 27.3
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 38.1
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Eddy County, ND"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.5,
+      "age_adjusted": 10.7,
+      "state_mean": 10.2,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.55,
+      "vs_state_pct": 5.4,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.68,
+      "vs_us_pct": 6.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 8.7,
+      "age_adjusted": 6.7,
+      "state_mean": 5.4,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.32,
+      "vs_state_pct": 24.5,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.2,
+      "vs_us_pct": 21.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.8,
+      "age_adjusted": 6.1,
+      "state_mean": 5.4,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.71,
+      "vs_state_pct": 13.2,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.79,
+      "vs_us_pct": 14.9,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 13.5,
+      "age_adjusted": 10.2,
+      "state_mean": 9.0,
+      "us_mean": 10.5,
+      "vs_state_pp": 1.17,
+      "vs_state_pct": 13.0,
+      "vs_state_class": "elevated",
+      "vs_us_pp": -0.26,
+      "vs_us_pct": -2.5,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 14.1,
+      "age_adjusted": 16.0,
+      "state_mean": 14.7,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.34,
+      "vs_state_pct": 9.1,
+      "vs_state_class": "elevated",
+      "vs_us_pp": -0.75,
+      "vs_us_pct": -4.5,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "nd",
+      "slug": "grant",
+      "name": "Grant County",
+      "population": 2320,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 25.7,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "nd",
+      "slug": "griggs",
+      "name": "Griggs County",
+      "population": 2309,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 26.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "nd",
+      "slug": "kidder",
+      "name": "Kidder County",
+      "population": 2391,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 23.5,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "nd",
+      "slug": "renville",
+      "name": "Renville County",
+      "population": 2282,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 27.2,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "nd",
+      "slug": "hettinger",
+      "name": "Hettinger County",
+      "population": 2477,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 29.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "nd",
+      "slug": "mercer",
+      "name": "Mercer County",
+      "population": 8366,
+      "facilities_count": 3,
+      "total_releases_pounds": 35208166,
+      "dominant_medium": "air",
+      "ej_pct_avg": 42.0,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+12 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T18:00:31Z"
+}

@@ -1,0 +1,203 @@
+{
+  "facility": {
+    "state": "wy",
+    "state_label": "Wyoming",
+    "slug": "echo-springs-gas-plant",
+    "name": "Echo Springs Gas Plant",
+    "parent_company": "The Williams Cos",
+    "address": "SECTION 1 19N 93W",
+    "city": "Carbon",
+    "county": "Carbon County",
+    "county_slug": "carbon",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 41.804743,
+    "lng": -107.241894
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 62860,
+    "air_releases_pounds": 14390,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 48470,
+    "chemicals_reported": 5,
+    "yoy_pct_change": -42.7,
+    "long_arc_pct_change": -50.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 125600
+      },
+      {
+        "year": 2023,
+        "value": 109687
+      },
+      {
+        "year": 2024,
+        "value": 62860
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 19200,
+      "history": [
+        {
+          "year": 2022,
+          "value": 41530
+        },
+        {
+          "year": 2023,
+          "value": 40680
+        },
+        {
+          "year": 2024,
+          "value": 19200
+        }
+      ],
+      "yoy_pct_change": -52.8,
+      "long_arc_pct_change": -53.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 17860,
+      "history": [
+        {
+          "year": 2022,
+          "value": 37180
+        },
+        {
+          "year": 2023,
+          "value": 27480
+        },
+        {
+          "year": 2024,
+          "value": 17860
+        }
+      ],
+      "yoy_pct_change": -35.0,
+      "long_arc_pct_change": -52.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 12500,
+      "history": [
+        {
+          "year": 2022,
+          "value": 16730
+        },
+        {
+          "year": 2023,
+          "value": 17350
+        },
+        {
+          "year": 2024,
+          "value": 12500
+        }
+      ],
+      "yoy_pct_change": -28.0,
+      "long_arc_pct_change": -25.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 11530,
+      "history": [
+        {
+          "year": 2022,
+          "value": 25960
+        },
+        {
+          "year": 2023,
+          "value": 20360
+        },
+        {
+          "year": 2024,
+          "value": 11530
+        }
+      ],
+      "yoy_pct_change": -43.4,
+      "long_arc_pct_change": -55.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 1770,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4200
+        },
+        {
+          "year": 2023,
+          "value": 3817
+        },
+        {
+          "year": 2024,
+          "value": 1770
+        }
+      ],
+      "yoy_pct_change": -53.6,
+      "long_arc_pct_change": -57.9,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Benzene",
+      "summary": "Benzene releases at Echo Springs Gas Plant fell from 41k lb to 19k lb (53% lower) between 2023 and 2024.",
+      "magnitude_pct": -52.8,
+      "magnitude_abs": -21480.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 41530
+        },
+        {
+          "year": 2023,
+          "value": 40680
+        },
+        {
+          "year": 2024,
+          "value": 19200
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 7848,
+    "pct_low_income": 30.5,
+    "pct_people_of_color": 31.1,
+    "pct_under_5": 5.4,
+    "pct_over_64": 14.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (8 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:46:16Z"
+}

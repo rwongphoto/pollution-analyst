@@ -1,0 +1,123 @@
+{
+  "facility": {
+    "state": "nd",
+    "state_label": "North Dakota",
+    "slug": "demicks-lake-gas-plant",
+    "name": "Demicks Lake Gas Plant",
+    "parent_company": "Oneok INC",
+    "address": "11242 33RD ST NW",
+    "city": "Watford City",
+    "county": "Mckenzie County",
+    "county_slug": "mckenzie",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 47.891489,
+    "lng": -103.390352
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 38128,
+    "air_releases_pounds": 4040,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 34088,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 46.1,
+    "long_arc_pct_change": 64.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 23197
+      },
+      {
+        "year": 2023,
+        "value": 26105
+      },
+      {
+        "year": 2024,
+        "value": 38128
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 35307,
+      "history": [
+        {
+          "year": 2022,
+          "value": 21758
+        },
+        {
+          "year": 2023,
+          "value": 24241
+        },
+        {
+          "year": 2024,
+          "value": 35307
+        }
+      ],
+      "yoy_pct_change": 45.7,
+      "long_arc_pct_change": 62.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 2771,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1439
+        },
+        {
+          "year": 2023,
+          "value": 1864
+        },
+        {
+          "year": 2024,
+          "value": 2771
+        }
+      ],
+      "yoy_pct_change": 48.6,
+      "long_arc_pct_change": 92.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 50,
+      "history": [
+        {
+          "year": 2024,
+          "value": 50
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 14081,
+    "pct_low_income": 13.4,
+    "pct_people_of_color": 24.700000000000003,
+    "pct_under_5": 8.6,
+    "pct_over_64": 8.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Mckenzie County, ND (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:00:31Z"
+}

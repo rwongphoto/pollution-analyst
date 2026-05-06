@@ -1,0 +1,111 @@
+{
+  "site": {
+    "state": "ut",
+    "state_label": "Utah",
+    "slug": "monticello-radioactively-contaminated-properties",
+    "name": "Monticello Radioactively Contaminated Properties",
+    "epa_id": "UTD980667208",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "San Juan County",
+    "county_slug": "san-juan",
+    "city": "Monticello",
+    "city_slug": "monticello",
+    "address": "9 N 3Rd E St",
+    "zip": "84535",
+    "lat": 37.871092,
+    "lng": -109.337034
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 3,
+    "primary_contaminant": "Radium-226"
+  },
+  "contaminants": [
+    {
+      "name": "Radium-226",
+      "media": "Solid Waste",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Radon-222",
+      "media": "Solid Waste",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Thorium-230",
+      "media": "Solid Waste",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "UTAH19013",
+        "name": "Eastland Special Service District",
+        "slug": "eastland-special-service-district",
+        "state": "ut",
+        "distance_miles": 0.2,
+        "place_name": "Monticello",
+        "primary_source": "groundwater",
+        "population_served": 90,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "UTAH19064",
+        "name": "Pack Creek Water Company",
+        "slug": "pack-creek-water-company",
+        "state": "ut",
+        "distance_miles": 0.2,
+        "place_name": "Monticello",
+        "primary_source": "groundwater",
+        "population_served": 75,
+        "health_based_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "pwsid": "UTAH19077",
+        "name": "Rockland Ranch",
+        "slug": "rockland-ranch",
+        "state": "ut",
+        "distance_miles": 0.2,
+        "place_name": "Monticello",
+        "primary_source": "groundwater",
+        "population_served": 175,
+        "health_based_5yr": 3,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 854,
+    "pct_low_income": 32.8,
+    "pct_people_of_color": 8.8,
+    "pct_under_5": 5.4,
+    "pct_over_64": 18.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:13:53Z"
+}

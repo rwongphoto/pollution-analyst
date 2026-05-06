@@ -1,0 +1,177 @@
+{
+  "facility": {
+    "state": "wy",
+    "state_label": "Wyoming",
+    "slug": "opal-gas-plant",
+    "name": "Opal Gas Plant",
+    "parent_company": "The Williams Cos",
+    "address": "1 MILE WEST OF OPAL HWY 30",
+    "city": "Opal",
+    "county": "Lincoln County",
+    "county_slug": "lincoln",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 41.771433,
+    "lng": -110.323986
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 93238,
+    "air_releases_pounds": 26987,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 66251,
+    "chemicals_reported": 5,
+    "yoy_pct_change": -13.1,
+    "long_arc_pct_change": -11.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 105645
+      },
+      {
+        "year": 2023,
+        "value": 107341
+      },
+      {
+        "year": 2024,
+        "value": 93238
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 30971,
+      "history": [
+        {
+          "year": 2022,
+          "value": 36176
+        },
+        {
+          "year": 2023,
+          "value": 36276
+        },
+        {
+          "year": 2024,
+          "value": 30971
+        }
+      ],
+      "yoy_pct_change": -14.6,
+      "long_arc_pct_change": -14.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 23076,
+      "history": [
+        {
+          "year": 2022,
+          "value": 25659
+        },
+        {
+          "year": 2023,
+          "value": 25772
+        },
+        {
+          "year": 2024,
+          "value": 23076
+        }
+      ],
+      "yoy_pct_change": -10.5,
+      "long_arc_pct_change": -10.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 19010,
+      "history": [
+        {
+          "year": 2022,
+          "value": 20417
+        },
+        {
+          "year": 2023,
+          "value": 20680
+        },
+        {
+          "year": 2024,
+          "value": 19010
+        }
+      ],
+      "yoy_pct_change": -8.1,
+      "long_arc_pct_change": -6.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 15173,
+      "history": [
+        {
+          "year": 2022,
+          "value": 17630
+        },
+        {
+          "year": 2023,
+          "value": 18612
+        },
+        {
+          "year": 2024,
+          "value": 15173
+        }
+      ],
+      "yoy_pct_change": -18.5,
+      "long_arc_pct_change": -13.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 5008,
+      "history": [
+        {
+          "year": 2022,
+          "value": 5762
+        },
+        {
+          "year": 2023,
+          "value": 6001
+        },
+        {
+          "year": 2024,
+          "value": 5008
+        }
+      ],
+      "yoy_pct_change": -16.5,
+      "long_arc_pct_change": -13.1,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 19794,
+    "pct_low_income": 7.1,
+    "pct_people_of_color": 8.599999999999994,
+    "pct_under_5": 7.3,
+    "pct_over_64": 18.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Lincoln County, WY (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:46:16Z"
+}

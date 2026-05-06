@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "nd",
+    "state_label": "North Dakota",
+    "slug": "aux-sable-midstream",
+    "name": "Aux Sable Midstream",
+    "parent_company": "Pembina Pipeline CORP",
+    "address": "6138 74TH AVE NW",
+    "city": "Palermo",
+    "county": "Mountrail County",
+    "county_slug": "mountrail",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 48.348227,
+    "lng": -102.224372
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 15396,
+    "air_releases_pounds": 15396,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -0.1,
+    "long_arc_pct_change": -0.3,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 15437
+      },
+      {
+        "year": 2023,
+        "value": 15405
+      },
+      {
+        "year": 2024,
+        "value": 15396
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 10376,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10395
+        },
+        {
+          "year": 2023,
+          "value": 10363
+        },
+        {
+          "year": 2024,
+          "value": 10376
+        }
+      ],
+      "yoy_pct_change": 0.1,
+      "long_arc_pct_change": -0.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 5020,
+      "history": [
+        {
+          "year": 2022,
+          "value": 5042
+        },
+        {
+          "year": 2023,
+          "value": 5042
+        },
+        {
+          "year": 2024,
+          "value": 5020
+        }
+      ],
+      "yoy_pct_change": -0.4,
+      "long_arc_pct_change": -0.4,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 9648,
+    "pct_low_income": 12.4,
+    "pct_people_of_color": 43.0,
+    "pct_under_5": 8.5,
+    "pct_over_64": 12.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Mountrail County, ND (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:00:31Z"
+}

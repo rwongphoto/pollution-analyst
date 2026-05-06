@@ -1,0 +1,123 @@
+{
+  "facility": {
+    "state": "mt",
+    "state_label": "Montana",
+    "slug": "big-sky-scientific-l-l-c",
+    "name": "Big Sky Scientific L.L.C.",
+    "parent_company": null,
+    "address": "13786 MT HIGHWAY 200",
+    "city": "Sun River",
+    "county": "Cascade County",
+    "county_slug": "cascade",
+    "naics_label": "339999 \u00b7 Miscellaneous Manufacturing",
+    "lat": 47.529578,
+    "lng": -111.727273
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 558482,
+    "air_releases_pounds": 558482,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 97.5,
+    "long_arc_pct_change": 66.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 335061
+      },
+      {
+        "year": 2023,
+        "value": 282773
+      },
+      {
+        "year": 2024,
+        "value": 558482
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 558482,
+      "history": [
+        {
+          "year": 2022,
+          "value": 335061
+        },
+        {
+          "year": 2023,
+          "value": 282773
+        },
+        {
+          "year": 2024,
+          "value": 558482
+        }
+      ],
+      "yoy_pct_change": 97.5,
+      "long_arc_pct_change": 66.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Methanol",
+      "summary": "Methanol releases at Big Sky Scientific L.L.C. rose from 283k lb to 558k lb between 2023 and 2024.",
+      "magnitude_pct": 97.5,
+      "magnitude_abs": 275709.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2019,
+          "value": 3217
+        },
+        {
+          "year": 2020,
+          "value": 4092
+        },
+        {
+          "year": 2021,
+          "value": 1360
+        },
+        {
+          "year": 2022,
+          "value": 335061
+        },
+        {
+          "year": 2023,
+          "value": 282773
+        },
+        {
+          "year": 2024,
+          "value": 558482
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 84423,
+    "pct_low_income": 13.6,
+    "pct_people_of_color": 16.5,
+    "pct_under_5": 6.4,
+    "pct_over_64": 19.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Cascade County, MT (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:52:50Z"
+}

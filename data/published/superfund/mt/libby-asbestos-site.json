@@ -1,0 +1,173 @@
+{
+  "site": {
+    "state": "mt",
+    "state_label": "Montana",
+    "slug": "libby-asbestos-site",
+    "name": "Libby Asbestos Site",
+    "epa_id": "MT0009083840",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Lincoln County",
+    "county_slug": "lincoln",
+    "city": "Libby",
+    "city_slug": "libby",
+    "address": "512 California Avenue",
+    "zip": "59923",
+    "lat": 48.391528,
+    "lng": -115.551111
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Asbestos"
+  },
+  "contaminants": [
+    {
+      "name": "Asbestos",
+      "media": "Soil",
+      "operable_units": [
+        "08",
+        "01",
+        "04",
+        "06",
+        "02",
+        "05",
+        "07"
+      ],
+      "citation_count": 7
+    },
+    {
+      "name": "Asbestos",
+      "media": "Buildings/Structures",
+      "operable_units": [
+        "06",
+        "07",
+        "08",
+        "04",
+        "05"
+      ],
+      "citation_count": 5
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MT0000275",
+        "name": "Pinewood Village",
+        "slug": "pinewood-village",
+        "state": "mt",
+        "distance_miles": 0.44,
+        "place_name": "Libby",
+        "primary_source": "groundwater",
+        "population_served": 160,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MT0000529",
+        "name": "Johnsons Mobile Home Park",
+        "slug": "johnsons-mobile-home-park",
+        "state": "mt",
+        "distance_miles": 0.44,
+        "place_name": "Libby",
+        "primary_source": "groundwater",
+        "population_served": 35,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MT0000540",
+        "name": "Emkayan Village Co Water And Sewer Dist",
+        "slug": "emkayan-village-co-water-and-sewer-dist",
+        "state": "mt",
+        "distance_miles": 0.44,
+        "place_name": "Libby",
+        "primary_source": "groundwater",
+        "population_served": 160,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MT0000553",
+        "name": "Rivers Edge Mobile Park  Libby",
+        "slug": "rivers-edge-mobile-park-libby",
+        "state": "mt",
+        "distance_miles": 0.44,
+        "place_name": "Libby",
+        "primary_source": "groundwater",
+        "population_served": 60,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MT0000554",
+        "name": "Posts Trailer Court",
+        "slug": "posts-trailer-court",
+        "state": "mt",
+        "distance_miles": 0.44,
+        "place_name": "Libby",
+        "primary_source": "groundwater",
+        "population_served": 45,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MT0001850",
+        "name": "High Country Park",
+        "slug": "high-country-park",
+        "state": "mt",
+        "distance_miles": 0.44,
+        "place_name": "Libby",
+        "primary_source": "groundwater",
+        "population_served": 76,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MT0004270",
+        "name": "Montana Christian College",
+        "slug": "montana-christian-college",
+        "state": "mt",
+        "distance_miles": 0.44,
+        "place_name": "Libby",
+        "primary_source": "groundwater",
+        "population_served": 105,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MT0005241",
+        "name": "Libby Creek Mobile Park Llc-Unapproved",
+        "slug": "libby-creek-mobile-park-llc-unapproved",
+        "state": "mt",
+        "distance_miles": 0.44,
+        "place_name": "Libby",
+        "primary_source": "groundwater",
+        "population_served": 35,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 2596,
+    "pct_low_income": 52.8,
+    "pct_people_of_color": 12.7,
+    "pct_under_5": 4.4,
+    "pct_over_64": 26.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:52:50Z"
+}

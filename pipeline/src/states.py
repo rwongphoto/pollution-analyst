@@ -156,6 +156,46 @@ STATES: dict[str, State] = {
         population=7151502,
         counties_total=15,
     ),
+    "wy": State(
+        slug="wy",
+        abbr="WY",
+        name="Wyoming",
+        fips="56",
+        population=576851,
+        counties_total=23,
+    ),
+    "mt": State(
+        slug="mt",
+        abbr="MT",
+        name="Montana",
+        fips="30",
+        population=1084225,
+        counties_total=56,
+    ),
+    "nd": State(
+        slug="nd",
+        abbr="ND",
+        name="North Dakota",
+        fips="38",
+        population=779094,
+        counties_total=53,
+    ),
+    "sd": State(
+        slug="sd",
+        abbr="SD",
+        name="South Dakota",
+        fips="46",
+        population=886667,
+        counties_total=66,
+    ),
+    "ut": State(
+        slug="ut",
+        abbr="UT",
+        name="Utah",
+        fips="49",
+        population=3271616,
+        counties_total=29,
+    ),
 }
 
 

@@ -1,0 +1,101 @@
+{
+  "facility": {
+    "state": "ut",
+    "state_label": "Utah",
+    "slug": "mona-pit-batch-plant",
+    "name": "Mona Pit & Batch Plant",
+    "parent_company": "Kilgore Cos LLC",
+    "address": "NORTH CANYON LANE",
+    "city": "Mona",
+    "county": "Juab County",
+    "county_slug": "juab",
+    "naics_label": "327320 \u00b7 Nonmetallic Mineral Product",
+    "lat": 39.850431,
+    "lng": -111.836287
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1,
+    "air_releases_pounds": 0.1,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -33.3,
+    "long_arc_pct_change": -40.0,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 2
+      },
+      {
+        "year": 2021,
+        "value": 0.9
+      },
+      {
+        "year": 2022,
+        "value": 0.8
+      },
+      {
+        "year": 2023,
+        "value": 2
+      },
+      {
+        "year": 2024,
+        "value": 1
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 1,
+      "history": [
+        {
+          "year": 2020,
+          "value": 2
+        },
+        {
+          "year": 2021,
+          "value": 0.9
+        },
+        {
+          "year": 2022,
+          "value": 0.8
+        },
+        {
+          "year": 2023,
+          "value": 2
+        },
+        {
+          "year": 2024,
+          "value": 1
+        }
+      ],
+      "yoy_pct_change": -33.3,
+      "long_arc_pct_change": -40.0,
+      "long_arc_baseline_year": 2020
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 11943,
+    "pct_low_income": 8.6,
+    "pct_people_of_color": 9.5,
+    "pct_under_5": 8.5,
+    "pct_over_64": 12.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Juab County, UT (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:13:52Z"
+}

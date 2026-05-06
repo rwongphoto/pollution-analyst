@@ -1,0 +1,92 @@
+{
+  "facility": {
+    "state": "ut",
+    "state_label": "Utah",
+    "slug": "otto-sons-west-jordan-div",
+    "name": "Otto & Sons West Jordan Div",
+    "parent_company": "Osi Group LLC",
+    "address": "4980 W 9470 S",
+    "city": "West Jordan",
+    "county": "Salt Lake County",
+    "county_slug": "salt-lake",
+    "naics_label": "311612 \u00b7 Food",
+    "lat": 40.580009,
+    "lng": -112.011052
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 2010,
+    "air_releases_pounds": 2000,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 10,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2011,
+    "history": [
+      {
+        "year": 2011,
+        "value": 5
+      },
+      {
+        "year": 2024,
+        "value": 2010
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 2000,
+      "history": [
+        {
+          "year": 2011,
+          "value": 5
+        },
+        {
+          "year": 2024,
+          "value": 2000
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2011
+    },
+    {
+      "chemical": "Mercury",
+      "cas": "7439-97-6",
+      "category": "pbt",
+      "total_pounds_recent": 10,
+      "history": [
+        {
+          "year": 2024,
+          "value": 10
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 102121,
+    "pct_low_income": 12.9,
+    "pct_people_of_color": 23.3,
+    "pct_under_5": 7.2,
+    "pct_over_64": 8.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (43 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:13:52Z"
+}

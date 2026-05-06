@@ -1,0 +1,430 @@
+{
+  "place": {
+    "state": "ut",
+    "state_label": "Utah",
+    "slug": "hatch",
+    "name": "Hatch",
+    "fips": "4933760",
+    "population": 131,
+    "county_name": "Garfield",
+    "county_fips": "49017"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "criteria_air",
+      "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
+      "current": 0.063,
+      "units": "ppm",
+      "yoy_pct_change": -8.7,
+      "long_arc_pct_change": 70.3,
+      "baseline_year": 2011,
+      "history": [
+        {
+          "year": 2011,
+          "value": 0.037
+        },
+        {
+          "year": 2012,
+          "value": 0.068
+        },
+        {
+          "year": 2013,
+          "value": 0.067
+        },
+        {
+          "year": 2014,
+          "value": 0.06
+        },
+        {
+          "year": 2015,
+          "value": 0.068
+        },
+        {
+          "year": 2017,
+          "value": 0.068
+        },
+        {
+          "year": 2018,
+          "value": 0.068
+        },
+        {
+          "year": 2019,
+          "value": 0.062
+        },
+        {
+          "year": 2020,
+          "value": 0.06
+        },
+        {
+          "year": 2021,
+          "value": 0.069
+        },
+        {
+          "year": 2022,
+          "value": 0.063
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 10.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.6042,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.6042
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0263,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0263
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 290,
+    "violations_5yr_total": 201,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 63,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "hatch-town-water-system",
+        "state": "ut",
+        "state_label": "Utah",
+        "name": "Hatch Town Water System",
+        "pwsid": "UTAH09005",
+        "population_served": 234,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "paunsaugunt-cliffs-ssd",
+        "state": "ut",
+        "state_label": "Utah",
+        "name": "Paunsaugunt Cliffs Ssd",
+        "pwsid": "UTAH09085",
+        "population_served": 56,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Xylenes (total)",
+      "summary": "Unresolved Arsenic Rule violation cited in 2022 (xylenes (total)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:UTAH09005"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Benzene",
+      "summary": "Unresolved Arsenic Rule violation cited in 2022 (benzene).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:UTAH09005"
+      }
+    }
+  ],
+  "equity": {
+    "population": 131,
+    "pct_low_income": 0.0,
+    "pct_people_of_color": 19.099999999999994,
+    "pct_under_5": 13.0,
+    "pct_over_64": 12.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Hatch, Utah (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.0,
+      "age_adjusted": 11.3,
+      "state_mean": 10.7,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.58,
+      "vs_state_pct": 5.4,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.28,
+      "vs_us_pct": 12.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 7.3,
+      "age_adjusted": 5.4,
+      "state_mean": 4.7,
+      "us_mean": 5.5,
+      "vs_state_pp": 0.69,
+      "vs_state_pct": 14.6,
+      "vs_state_class": "elevated",
+      "vs_us_pp": -0.1,
+      "vs_us_pct": -1.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.3,
+      "age_adjusted": 4.8,
+      "state_mean": 4.9,
+      "us_mean": 5.3,
+      "vs_state_pp": -0.06,
+      "vs_state_pct": -1.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.51,
+      "vs_us_pct": -9.6,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 11.7,
+      "age_adjusted": 8.0,
+      "state_mean": 8.8,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.83,
+      "vs_state_pct": -9.4,
+      "vs_state_class": "better",
+      "vs_us_pp": -2.46,
+      "vs_us_pct": -23.5,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 15.0,
+      "age_adjusted": 17.8,
+      "state_mean": 17.0,
+      "us_mean": 16.8,
+      "vs_state_pp": 0.79,
+      "vs_state_pct": 4.6,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.05,
+      "vs_us_pct": 6.3,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ut",
+      "slug": "cannonville",
+      "name": "Cannonville",
+      "population": 265,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ut",
+      "slug": "boulder",
+      "name": "Boulder",
+      "population": 352,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ut",
+      "slug": "tropic",
+      "name": "Tropic",
+      "population": 524,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ut",
+      "slug": "escalante",
+      "name": "Escalante",
+      "population": 657,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ut",
+      "slug": "bluff",
+      "name": "Bluff",
+      "population": 123,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ut",
+      "slug": "lynndyl",
+      "name": "Lynndyl",
+      "population": 119,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T18:13:53Z"
+}

@@ -1,0 +1,99 @@
+{
+  "facility": {
+    "state": "nd",
+    "state_label": "North Dakota",
+    "slug": "green-bison-soy-processing-llc",
+    "name": "Green Bison Soy Processing LLC",
+    "parent_company": "Archer Daniels Midland Co",
+    "address": "3349 94TH AVE SE",
+    "city": "Spiritwood",
+    "county": "Stutsman County",
+    "county_slug": "stutsman",
+    "naics_label": "311224 \u00b7 Food",
+    "lat": 46.929144,
+    "lng": -98.481763
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 364063,
+    "air_releases_pounds": 364029,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 34,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 1774.1,
+    "long_arc_pct_change": 1774.1,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 19426
+      },
+      {
+        "year": 2024,
+        "value": 364063
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 364063,
+      "history": [
+        {
+          "year": 2023,
+          "value": 19426
+        },
+        {
+          "year": 2024,
+          "value": 364063
+        }
+      ],
+      "yoy_pct_change": 1774.1,
+      "long_arc_pct_change": 1774.1,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Green Bison Soy Processing LLC rose from 19k lb to 364k lb (18.7\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 1774.1,
+      "magnitude_abs": 344637.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 19426
+        },
+        {
+          "year": 2024,
+          "value": 364063
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 21609,
+    "pct_low_income": 13.1,
+    "pct_people_of_color": 8.799999999999997,
+    "pct_under_5": 5.4,
+    "pct_over_64": 19.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Stutsman County, ND (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:00:31Z"
+}

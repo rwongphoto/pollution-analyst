@@ -1,0 +1,352 @@
+{
+  "place": {
+    "state": "ut",
+    "state_label": "Utah",
+    "slug": "elsinore",
+    "name": "Elsinore",
+    "fips": "4922650",
+    "population": 788,
+    "county_name": "Sevier",
+    "county_fips": "49041"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 3,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 10.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.6983,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.6983
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0444,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0444
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 1395,
+    "violations_5yr_total": 4,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "elsinore-town-water-system",
+        "state": "ut",
+        "state_label": "Utah",
+        "name": "Elsinore Town Water System",
+        "pwsid": "UTAH21007",
+        "population_served": 1105,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "brooklyn-ssd",
+        "state": "ut",
+        "state_label": "Utah",
+        "name": "Brooklyn Ssd",
+        "pwsid": "UTAH21004",
+        "population_served": 155,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "austin-ssd",
+        "state": "ut",
+        "state_label": "Utah",
+        "name": "Austin Ssd",
+        "pwsid": "UTAH21003",
+        "population_served": 135,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [],
+  "equity": {
+    "population": 788,
+    "pct_low_income": 10.2,
+    "pct_people_of_color": 18.400000000000006,
+    "pct_under_5": 8.0,
+    "pct_over_64": 33.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Elsinore, Utah (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.5,
+      "age_adjusted": 11.6,
+      "state_mean": 10.7,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.88,
+      "vs_state_pct": 8.2,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.58,
+      "vs_us_pct": 15.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 7.7,
+      "age_adjusted": 6.2,
+      "state_mean": 4.7,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.49,
+      "vs_state_pct": 31.6,
+      "vs_state_class": "worse",
+      "vs_us_pp": 0.7,
+      "vs_us_pct": 12.7,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.4,
+      "age_adjusted": 5.6,
+      "state_mean": 4.9,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.74,
+      "vs_state_pct": 15.2,
+      "vs_state_class": "worse",
+      "vs_us_pp": 0.29,
+      "vs_us_pct": 5.5,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 11.9,
+      "age_adjusted": 9.4,
+      "state_mean": 8.8,
+      "us_mean": 10.5,
+      "vs_state_pp": 0.57,
+      "vs_state_pct": 6.5,
+      "vs_state_class": "elevated",
+      "vs_us_pp": -1.06,
+      "vs_us_pct": -10.1,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.5,
+      "age_adjusted": 19.3,
+      "state_mean": 17.0,
+      "us_mean": 16.8,
+      "vs_state_pp": 2.29,
+      "vs_state_pct": 13.5,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.55,
+      "vs_us_pct": 15.2,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ut",
+      "slug": "annabella",
+      "name": "Annabella",
+      "population": 766,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ut",
+      "slug": "redmond",
+      "name": "Redmond",
+      "population": 846,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ut",
+      "slug": "central-valley",
+      "name": "Central Valley",
+      "population": 713,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ut",
+      "slug": "aurora",
+      "name": "Aurora",
+      "population": 898,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ut",
+      "slug": "green-river",
+      "name": "Green River",
+      "population": 788,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ut",
+      "slug": "hinckley",
+      "name": "Hinckley",
+      "population": 790,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 33.9,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T18:13:53Z"
+}

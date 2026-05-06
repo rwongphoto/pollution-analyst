@@ -37,14 +37,19 @@ export const LIVE_STATES: LiveState[] = [
   { slug: "ma", abbr: "MA", name: "Massachusetts", region: "Northeast" },
   { slug: "md", abbr: "MD", name: "Maryland", region: "Northeast" },
   { slug: "me", abbr: "ME", name: "Maine", region: "Northeast" },
+  { slug: "mt", abbr: "MT", name: "Montana", region: "Rocky Mountain" },
+  { slug: "nd", abbr: "ND", name: "North Dakota", region: "Rocky Mountain" },
   { slug: "nh", abbr: "NH", name: "New Hampshire", region: "Northeast" },
   { slug: "nm", abbr: "NM", name: "New Mexico", region: "Southwest" },
   { slug: "nv", abbr: "NV", name: "Nevada", region: "Rocky Mountain" },
   { slug: "ok", abbr: "OK", name: "Oklahoma", region: "Southwest" },
   { slug: "ri", abbr: "RI", name: "Rhode Island", region: "Northeast" },
+  { slug: "sd", abbr: "SD", name: "South Dakota", region: "Rocky Mountain" },
   { slug: "tx", abbr: "TX", name: "Texas", region: "Southwest" },
+  { slug: "ut", abbr: "UT", name: "Utah", region: "Rocky Mountain" },
   { slug: "vt", abbr: "VT", name: "Vermont", region: "Northeast" },
   { slug: "wv", abbr: "WV", name: "West Virginia", region: "South" },
+  { slug: "wy", abbr: "WY", name: "Wyoming", region: "Rocky Mountain" },
 ];
 
 // Regions in REGION_ORDER, omitting any with no live states. Each region's

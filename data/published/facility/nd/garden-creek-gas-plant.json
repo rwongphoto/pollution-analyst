@@ -1,0 +1,176 @@
+{
+  "facility": {
+    "state": "nd",
+    "state_label": "North Dakota",
+    "slug": "garden-creek-gas-plant",
+    "name": "Garden Creek Gas Plant",
+    "parent_company": "Oneok INC",
+    "address": "3007  121ST AVE NW",
+    "city": "Watford City",
+    "county": "Mckenzie County",
+    "county_slug": "mckenzie",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 47.848483,
+    "lng": -103.17618
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 6252,
+    "air_releases_pounds": 5544,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 708,
+    "chemicals_reported": 4,
+    "yoy_pct_change": -80.8,
+    "long_arc_pct_change": -73.2,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 23344
+      },
+      {
+        "year": 2023,
+        "value": 32635
+      },
+      {
+        "year": 2024,
+        "value": 6252
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 5824,
+      "history": [
+        {
+          "year": 2022,
+          "value": 18869
+        },
+        {
+          "year": 2023,
+          "value": 25169
+        },
+        {
+          "year": 2024,
+          "value": 5824
+        }
+      ],
+      "yoy_pct_change": -76.9,
+      "long_arc_pct_change": -69.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 276,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1621
+        },
+        {
+          "year": 2023,
+          "value": 1933
+        },
+        {
+          "year": 2024,
+          "value": 276
+        }
+      ],
+      "yoy_pct_change": -85.7,
+      "long_arc_pct_change": -83.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 127,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2855
+        },
+        {
+          "year": 2023,
+          "value": 5528
+        },
+        {
+          "year": 2024,
+          "value": 127
+        }
+      ],
+      "yoy_pct_change": -97.7,
+      "long_arc_pct_change": -95.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 25,
+      "history": [
+        {
+          "year": 2023,
+          "value": 5
+        },
+        {
+          "year": 2024,
+          "value": 25
+        }
+      ],
+      "yoy_pct_change": 400.0,
+      "long_arc_pct_change": 400.0,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Garden Creek Gas Plant fell from 25k lb to 6k lb (77% lower) between 2023 and 2024.",
+      "magnitude_pct": -76.9,
+      "magnitude_abs": -19344.8,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 18869
+        },
+        {
+          "year": 2023,
+          "value": 25169
+        },
+        {
+          "year": 2024,
+          "value": 5824
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 14081,
+    "pct_low_income": 13.4,
+    "pct_people_of_color": 24.700000000000003,
+    "pct_under_5": 8.6,
+    "pct_over_64": 8.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Mckenzie County, ND (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:00:31Z"
+}

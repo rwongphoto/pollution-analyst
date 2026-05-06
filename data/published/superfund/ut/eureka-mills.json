@@ -1,0 +1,199 @@
+{
+  "site": {
+    "state": "ut",
+    "state_label": "Utah",
+    "slug": "eureka-mills",
+    "name": "Eureka Mills",
+    "epa_id": "UT0002240158",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Juab County",
+    "county_slug": "juab",
+    "city": "Eureka",
+    "city_slug": "eureka",
+    "address": "1.25 Mile W Of The Utah-Juab County Line",
+    "zip": "84628",
+    "lat": 39.955556,
+    "lng": -112.115556
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Lead"
+  },
+  "contaminants": [
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "01",
+        "04"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Lead",
+      "media": "Solid Waste",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 2
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "UTAH12004",
+        "name": "Eureka Town",
+        "slug": "eureka-town",
+        "state": "ut",
+        "distance_miles": 0.23,
+        "place_name": "Eureka",
+        "primary_source": "groundwater",
+        "population_served": 760,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 11943,
+    "pct_low_income": 8.6,
+    "pct_people_of_color": 9.5,
+    "pct_under_5": 8.5,
+    "pct_over_64": 12.5,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 3.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 65.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 59.5,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 6.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 15.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 15.4,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 61.7,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 57.9,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 33.0,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.4,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 2.5
+      },
+      {
+        "label": "Ozone",
+        "score": 65.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 34.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 5.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 10.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 10.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 39.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 32.3
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 11.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 7.4
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Juab County, Utah (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:13:53Z"
+}

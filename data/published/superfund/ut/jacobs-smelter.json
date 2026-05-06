@@ -1,0 +1,187 @@
+{
+  "site": {
+    "state": "ut",
+    "state_label": "Utah",
+    "slug": "jacobs-smelter",
+    "name": "Jacobs Smelter",
+    "epa_id": "UT0002391472",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Tooele County",
+    "county_slug": "tooele",
+    "city": "Stockton",
+    "city_slug": null,
+    "address": "Near Intersection Of Smith & Johnson Sts",
+    "zip": "84071",
+    "lat": 40.422185,
+    "lng": -112.385736
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Arsenic"
+  },
+  "contaminants": [
+    {
+      "name": "Arsenic",
+      "media": "Soil",
+      "operable_units": [
+        "01",
+        "02"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "02",
+        "01"
+      ],
+      "citation_count": 2
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 74032,
+    "pct_low_income": 4.5,
+    "pct_people_of_color": 19.900000000000006,
+    "pct_under_5": 8.4,
+    "pct_over_64": 9.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 11.6,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 78.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 41.9,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 8.3,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 73.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 15.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 48.1,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 89.5,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 40.3,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 23.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 52.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 92.1,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.2,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 10.3
+      },
+      {
+        "label": "Ozone",
+        "score": 73.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 34.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 8.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 52.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 14.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 29.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 66.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 26.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 17.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 32.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 68.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 4.6
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Tooele County, Utah (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:13:53Z"
+}

@@ -1,0 +1,131 @@
+{
+  "facility": {
+    "state": "nd",
+    "state_label": "North Dakota",
+    "slug": "bear-creek-gas-plant",
+    "name": "Bear Creek Gas Plant",
+    "parent_company": "Oneok INC",
+    "address": "10570 2ND ST NW",
+    "city": "Killdeer",
+    "county": "Dunn County",
+    "county_slug": "dunn",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 47.444531,
+    "lng": -102.770383
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 20629,
+    "air_releases_pounds": 6315,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 14314,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 31.6,
+    "long_arc_pct_change": 23.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 16683
+      },
+      {
+        "year": 2023,
+        "value": 15673
+      },
+      {
+        "year": 2024,
+        "value": 20629
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 19259,
+      "history": [
+        {
+          "year": 2022,
+          "value": 14234
+        },
+        {
+          "year": 2023,
+          "value": 13357
+        },
+        {
+          "year": 2024,
+          "value": 19259
+        }
+      ],
+      "yoy_pct_change": 44.2,
+      "long_arc_pct_change": 35.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 1352,
+      "history": [
+        {
+          "year": 2022,
+          "value": 858
+        },
+        {
+          "year": 2023,
+          "value": 870
+        },
+        {
+          "year": 2024,
+          "value": 1352
+        }
+      ],
+      "yoy_pct_change": 55.5,
+      "long_arc_pct_change": 57.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 18,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10
+        },
+        {
+          "year": 2023,
+          "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 18
+        }
+      ],
+      "yoy_pct_change": 80.8,
+      "long_arc_pct_change": 88.9,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 4049,
+    "pct_low_income": 6.8,
+    "pct_people_of_color": 21.700000000000003,
+    "pct_under_5": 6.5,
+    "pct_over_64": 17.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Dunn County, ND (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:00:31Z"
+}

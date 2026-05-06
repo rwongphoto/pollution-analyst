@@ -1,0 +1,101 @@
+{
+  "facility": {
+    "state": "nd",
+    "state_label": "North Dakota",
+    "slug": "us-cbp-pembina-port-of-entry-nd0014",
+    "name": "US Cbp Pembina Port Of Entry Nd0014",
+    "parent_company": "US Department Of Homeland Security",
+    "address": "10980 INTERSTATE HWY 29",
+    "city": "Pembina",
+    "county": "Cass County",
+    "county_slug": "cass",
+    "naics_label": "922120 \u00b7 Other",
+    "lat": 48.999409,
+    "lng": -97.238456
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 121,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 121,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 450.0,
+    "long_arc_pct_change": 142.0,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 50
+      },
+      {
+        "year": 2021,
+        "value": 500
+      },
+      {
+        "year": 2022,
+        "value": 19
+      },
+      {
+        "year": 2023,
+        "value": 22
+      },
+      {
+        "year": 2024,
+        "value": 121
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 121,
+      "history": [
+        {
+          "year": 2019,
+          "value": 50
+        },
+        {
+          "year": 2021,
+          "value": 500
+        },
+        {
+          "year": 2022,
+          "value": 19
+        },
+        {
+          "year": 2023,
+          "value": 22
+        },
+        {
+          "year": 2024,
+          "value": 121
+        }
+      ],
+      "yoy_pct_change": 450.0,
+      "long_arc_pct_change": 142.0,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 186328,
+    "pct_low_income": 10.8,
+    "pct_people_of_color": 16.599999999999994,
+    "pct_under_5": 6.4,
+    "pct_over_64": 12.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Cass County, ND (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:00:31Z"
+}

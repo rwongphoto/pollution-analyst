@@ -1,0 +1,134 @@
+{
+  "facility": {
+    "state": "wy",
+    "state_label": "Wyoming",
+    "slug": "steamboat-processing-facility",
+    "name": "Steamboat Processing Facility",
+    "parent_company": "Western Midstream Partners LP",
+    "address": "68 CHEROKEE TRAIL",
+    "city": "Douglas",
+    "county": "Converse County",
+    "county_slug": "converse",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 42.790652,
+    "lng": -105.515615
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 7814,
+    "air_releases_pounds": 7814,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -98.7,
+    "long_arc_pct_change": -98.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 394367
+      },
+      {
+        "year": 2023,
+        "value": 606204
+      },
+      {
+        "year": 2024,
+        "value": 7814
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 7800,
+      "history": [
+        {
+          "year": 2022,
+          "value": 387564
+        },
+        {
+          "year": 2023,
+          "value": 595847
+        },
+        {
+          "year": 2024,
+          "value": 7800
+        }
+      ],
+      "yoy_pct_change": -98.7,
+      "long_arc_pct_change": -98.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 14,
+      "history": [
+        {
+          "year": 2022,
+          "value": 5579
+        },
+        {
+          "year": 2023,
+          "value": 8659
+        },
+        {
+          "year": 2024,
+          "value": 14
+        }
+      ],
+      "yoy_pct_change": -99.8,
+      "long_arc_pct_change": -99.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Steamboat Processing Facility fell from 596k lb to 8k lb (99% lower) between 2023 and 2024.",
+      "magnitude_pct": -98.7,
+      "magnitude_abs": -588047.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 387564
+        },
+        {
+          "year": 2023,
+          "value": 595847
+        },
+        {
+          "year": 2024,
+          "value": 7800
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 13729,
+    "pct_low_income": 11.0,
+    "pct_people_of_color": 11.900000000000006,
+    "pct_under_5": 6.7,
+    "pct_over_64": 17.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Converse County, WY (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:46:16Z"
+}
