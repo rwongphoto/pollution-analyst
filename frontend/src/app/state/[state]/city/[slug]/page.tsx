@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { NotableSignals } from "@/components/site/AnomalyCard";
+import { ChemicalCell } from "@/components/site/ChemicalCell";
 import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
 import { HealthIndicators } from "@/components/site/HealthIndicators";
@@ -206,7 +207,7 @@ function FacilitiesSection({ data }: { data: CityHubPayload }) {
                     </span>
                   ) : null}
                 </td>
-                <td>{f.top_chemical}</td>
+                <td><ChemicalCell name={f.top_chemical} /></td>
                 <td className="right num-mono">{poundsFormat(f.total_pounds_recent)}</td>
                 <td
                   className={`right num-mono ${

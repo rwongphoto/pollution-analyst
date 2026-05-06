@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { NotableSignals } from "@/components/site/AnomalyCard";
+import { ChemicalCell } from "@/components/site/ChemicalCell";
 import { CountyMap } from "@/components/site/CountyMap";
 import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
@@ -184,7 +185,7 @@ function FacilitiesSection({ data }: { data: CountyPagePayload }) {
                   {f.parent_company ? <span className="muted" style={{ display: "block", fontSize: 12 }}>{f.parent_company}</span> : null}
                 </td>
                 <td>{f.city}</td>
-                <td>{f.top_chemical}</td>
+                <td><ChemicalCell name={f.top_chemical} /></td>
                 <td className="right num-mono">{poundsFormat(f.total_pounds_recent)}</td>
                 <td
                   className={`right num-mono ${

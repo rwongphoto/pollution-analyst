@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { NotableSignals } from "@/components/site/AnomalyCard";
+import { ChemicalCell } from "@/components/site/ChemicalCell";
 import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
 import { HeroChart } from "@/components/site/HeroChart";
@@ -197,7 +198,7 @@ function CountiesSection({ data }: { data: StatePagePayload }) {
                 >
                   {pctSigned(c.yoy_pct_change)}
                 </td>
-                <td>{c.top_chemical}</td>
+                <td><ChemicalCell name={c.top_chemical} /></td>
               </tr>
             ))}
           </tbody>
@@ -235,7 +236,7 @@ function FacilitiesSection({ data }: { data: StatePagePayload }) {
                   {f.parent_company ? <span className="muted" style={{ display: "block", fontSize: 12 }}>{f.parent_company}</span> : null}
                 </td>
                 <td>{f.city}</td>
-                <td>{f.top_chemical}</td>
+                <td><ChemicalCell name={f.top_chemical} /></td>
                 <td className="right num-mono">{poundsFormat(f.total_pounds_recent)}</td>
                 <td
                   className={`right num-mono ${
