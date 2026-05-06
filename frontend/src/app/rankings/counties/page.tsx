@@ -2,11 +2,53 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Crumbs } from "@/components/site/Crumbs";
+import { InfoTip } from "@/components/site/InfoTip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { loadRankings } from "@/lib/data";
 import { pageMeta } from "@/lib/seo";
 import type { RankingTable } from "@/lib/types";
+
+const LANE_OVERRIDES: Record<
+  string,
+  { label: string; tooltip?: { heading: string; body: string } }
+> = {
+  pm25_annual: {
+    label: "PM2.5 Annual Mean",
+    tooltip: {
+      heading: "What is PM2.5?",
+      body: "Fine inhalable particles 2.5 micrometers or smaller — about 1/30th the width of a human hair. They travel deep into the lungs and into the bloodstream, and are linked to asthma, heart disease, stroke, and premature death.",
+    },
+  },
+  cancer_risk: {
+    label: "Lifetime Cancer Risk (All Pollutants)",
+    tooltip: {
+      heading: "What this means",
+      body: "EPA-modeled added cancer cases per million residents from a lifetime of breathing local air toxics (AirToxScreen). EPA flags 100-in-a-million as elevated.",
+    },
+  },
+  tri_air: {
+    label: "TRI Air Releases",
+    tooltip: {
+      heading: "What this means",
+      body: "Toxic chemicals reported by industrial facilities as released to the air — fugitive leaks plus smokestack emissions. Higher pounds means more inhaled exposure for nearby residents. Self-reported under EPA's Toxics Release Inventory.",
+    },
+  },
+  ghg: {
+    label: "Greenhouse Gases (GHGRP)",
+    tooltip: {
+      heading: "What this means",
+      body: "Greenhouse gases reported by large industrial emitters under EPA's Greenhouse Gas Reporting Program, in metric tons of CO₂ equivalent. Drives climate warming and the heat-related health effects that follow.",
+    },
+  },
+};
+
+const LANE_METHODOLOGY: Record<string, string> = {
+  pm25_annual: "/methodology#taxonomy",
+  cancer_risk: "/methodology#taxonomy",
+  tri_air: "/methodology#tri",
+  ghg: "/methodology#taxonomy",
+};
 
 export const metadata: Metadata = pageMeta({
   title: "Most polluted counties — national rankings | Pollution Analyst",
@@ -29,7 +71,7 @@ export default async function RankingsCountiesPage() {
           <div className="wrap">
             <div className="eyebrow">National rankings · {data.reporting_year}</div>
             <h1 className="h-display" style={{ fontSize: "clamp(32px,4vw,52px)", margin: "8px 0 16px" }}>
-              Most &amp; least polluted counties
+              Most &amp; Least Polluted Counties
             </h1>
             <p className="lede" style={{ maxWidth: "62ch" }}>
               One ranking per pollution indicator. Each table reads the same federal
@@ -63,6 +105,10 @@ export default async function RankingsCountiesPage() {
 
 function RankingTableSection({ table }: { table: RankingTable }) {
   const isMost = table.direction === "most";
+  const override = LANE_OVERRIDES[table.lane];
+  const displayLabel = override?.label ?? table.label;
+  const tooltip = override?.tooltip;
+  const methodologyHref = LANE_METHODOLOGY[table.lane] ?? "/methodology";
   return (
     <section className={`section ${isMost ? "" : "section-tint"}`}>
       <div className="wrap">
@@ -71,12 +117,18 @@ function RankingTableSection({ table }: { table: RankingTable }) {
             {isMost ? "Top 10 most" : "Top 10 least"} polluted counties
           </div>
           <h2 className="h-display" style={{ fontSize: "clamp(24px,2.6vw,34px)", margin: "8px 0 0" }}>
-            {table.label} <span className="muted">({table.units})</span>
+            {displayLabel} <span className="muted">({table.units})</span>
+            {tooltip ? (
+              <InfoTip heading={tooltip.heading} body={tooltip.body} ariaLabel={`About ${displayLabel}`} />
+            ) : null}
           </h2>
+          <p className="muted" style={{ margin: "8px 0 0", fontSize: 13 }}>
+            <Link href={methodologyHref}>Methodology &rarr;</Link>
+          </p>
         </div>
         <table className="tbl">
           <caption className="sr-only">
-            Counties ranked by {table.label.toLowerCase()} ({table.units}),{" "}
+            Counties ranked by {displayLabel.toLowerCase()} ({table.units}),{" "}
             {isMost ? "highest first" : "lowest first"}.
           </caption>
           <thead>
@@ -85,7 +137,7 @@ function RankingTableSection({ table }: { table: RankingTable }) {
               <th scope="col">County</th>
               <th scope="col">State</th>
               <th scope="col" className="right">Population</th>
-              <th scope="col" className="right">{table.label}</th>
+              <th scope="col" className="right">{displayLabel}</th>
             </tr>
           </thead>
           <tbody>
