@@ -1,13 +1,16 @@
 {
-  "_published_at": "2026-05-06T18:13:56Z",
+  "_published_at": "2026-05-06T19:25:48Z",
   "reporting_year": 2024,
   "states_covered": [
+    "ak",
     "ar",
     "az",
     "ca",
     "ct",
     "de",
     "hi",
+    "id",
+    "la",
     "ma",
     "md",
     "me",
@@ -17,18 +20,20 @@
     "nm",
     "nv",
     "ok",
+    "or",
     "ri",
     "sd",
     "tx",
     "ut",
     "vt",
+    "wa",
     "wv",
     "wy"
   ],
   "counts": {
-    "counties": 912,
-    "cities": 5138,
-    "facilities": 4752
+    "counties": 1127,
+    "cities": 6395,
+    "facilities": 5715
   },
   "counties": {
     "tables": [
@@ -42,6 +47,16 @@
         "rows": [
           {
             "rank": 1,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "power",
+            "name": "Power County",
+            "population": 7918,
+            "value": 22.854,
+            "value_label": "22.854"
+          },
+          {
+            "rank": 2,
             "state": "tx",
             "state_label": "Texas",
             "slug": "cameron",
@@ -51,7 +66,7 @@
             "value_label": "15.608"
           },
           {
-            "rank": 2,
+            "rank": 3,
             "state": "ca",
             "state_label": "California",
             "slug": "trinity",
@@ -61,7 +76,7 @@
             "value_label": "15.517"
           },
           {
-            "rank": 3,
+            "rank": 4,
             "state": "ar",
             "state_label": "Arkansas",
             "slug": "mississippi",
@@ -71,7 +86,17 @@
             "value_label": "15.465"
           },
           {
-            "rank": 4,
+            "rank": 5,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "harney",
+            "name": "Harney County",
+            "population": 7496,
+            "value": 15.46,
+            "value_label": "15.460"
+          },
+          {
+            "rank": 6,
             "state": "ar",
             "state_label": "Arkansas",
             "slug": "jefferson",
@@ -81,7 +106,7 @@
             "value_label": "14.993"
           },
           {
-            "rank": 5,
+            "rank": 7,
             "state": "ar",
             "state_label": "Arkansas",
             "slug": "miller",
@@ -91,7 +116,7 @@
             "value_label": "14.588"
           },
           {
-            "rank": 6,
+            "rank": 8,
             "state": "wv",
             "state_label": "West Virginia",
             "slug": "mercer",
@@ -101,7 +126,7 @@
             "value_label": "14.285"
           },
           {
-            "rank": 7,
+            "rank": 9,
             "state": "tx",
             "state_label": "Texas",
             "slug": "gregg",
@@ -111,34 +136,14 @@
             "value_label": "13.380"
           },
           {
-            "rank": 8,
-            "state": "ok",
-            "state_label": "Oklahoma",
-            "slug": "cherokee",
-            "name": "Cherokee County",
-            "population": 47412,
-            "value": 12.483,
-            "value_label": "12.483"
-          },
-          {
-            "rank": 9,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "marion",
-            "name": "Marion County",
-            "population": 9668,
-            "value": 12.179,
-            "value_label": "12.179"
-          },
-          {
             "rank": 10,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "montgomery",
-            "name": "Montgomery County",
-            "population": 629989,
-            "value": 12.105,
-            "value_label": "12.105"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "kenai-peninsula-borough",
+            "name": "Kenai Peninsula Borough County",
+            "population": 59235,
+            "value": 12.689,
+            "value_label": "12.689"
           }
         ]
       },
@@ -152,6 +157,16 @@
         "rows": [
           {
             "rank": 1,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "denali-borough",
+            "name": "Denali Borough County",
+            "population": 2101,
+            "value": 1.765,
+            "value_label": "1.765"
+          },
+          {
+            "rank": 2,
             "state": "sd",
             "state_label": "South Dakota",
             "slug": "hughes",
@@ -161,7 +176,7 @@
             "value_label": "2.203"
           },
           {
-            "rank": 2,
+            "rank": 3,
             "state": "hi",
             "state_label": "Hawaii",
             "slug": "kauai",
@@ -171,7 +186,7 @@
             "value_label": "2.292"
           },
           {
-            "rank": 3,
+            "rank": 4,
             "state": "hi",
             "state_label": "Hawaii",
             "slug": "hawaii",
@@ -181,7 +196,7 @@
             "value_label": "2.407"
           },
           {
-            "rank": 4,
+            "rank": 5,
             "state": "wy",
             "state_label": "Wyoming",
             "slug": "albany",
@@ -191,7 +206,7 @@
             "value_label": "2.453"
           },
           {
-            "rank": 5,
+            "rank": 6,
             "state": "tx",
             "state_label": "Texas",
             "slug": "potter",
@@ -201,7 +216,7 @@
             "value_label": "2.470"
           },
           {
-            "rank": 6,
+            "rank": 7,
             "state": "wy",
             "state_label": "Wyoming",
             "slug": "carbon",
@@ -211,7 +226,7 @@
             "value_label": "2.567"
           },
           {
-            "rank": 7,
+            "rank": 8,
             "state": "wy",
             "state_label": "Wyoming",
             "slug": "washakie",
@@ -221,7 +236,17 @@
             "value_label": "2.636"
           },
           {
-            "rank": 8,
+            "rank": 9,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "jerome",
+            "name": "Jerome County",
+            "population": 24474,
+            "value": 2.667,
+            "value_label": "2.667"
+          },
+          {
+            "rank": 10,
             "state": "az",
             "state_label": "Arizona",
             "slug": "apache",
@@ -229,26 +254,6 @@
             "population": 66054,
             "value": 2.696,
             "value_label": "2.696"
-          },
-          {
-            "rank": 9,
-            "state": "wy",
-            "state_label": "Wyoming",
-            "slug": "lincoln",
-            "name": "Lincoln County",
-            "population": 19794,
-            "value": 2.779,
-            "value_label": "2.779"
-          },
-          {
-            "rank": 10,
-            "state": "nm",
-            "state_label": "New Mexico",
-            "slug": "santa-fe",
-            "name": "Santa Fe County",
-            "population": 154481,
-            "value": 2.977,
-            "value_label": "2.977"
           }
         ]
       },
@@ -262,6 +267,26 @@
         "rows": [
           {
             "rank": 1,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "st-john-the-baptist-parish",
+            "name": "St. John The Baptist Parish County",
+            "population": 41986,
+            "value": 78.9,
+            "value_label": "78.9"
+          },
+          {
+            "rank": 2,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "clackamas",
+            "name": "Clackamas County",
+            "population": 420925,
+            "value": 77.3,
+            "value_label": "77.3"
+          },
+          {
+            "rank": 3,
             "state": "ca",
             "state_label": "California",
             "slug": "santa-cruz",
@@ -271,7 +296,7 @@
             "value_label": "70.0"
           },
           {
-            "rank": 2,
+            "rank": 4,
             "state": "ca",
             "state_label": "California",
             "slug": "butte",
@@ -281,7 +306,37 @@
             "value_label": "54.8"
           },
           {
-            "rank": 3,
+            "rank": 5,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "ascension-parish",
+            "name": "Ascension Parish County",
+            "population": 126973,
+            "value": 53.9,
+            "value_label": "53.9"
+          },
+          {
+            "rank": 6,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "multnomah",
+            "name": "Multnomah County",
+            "population": 808098,
+            "value": 51.9,
+            "value_label": "51.9"
+          },
+          {
+            "rank": 7,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "iberville-parish",
+            "name": "Iberville Parish County",
+            "population": 30210,
+            "value": 49.5,
+            "value_label": "49.5"
+          },
+          {
+            "rank": 8,
             "state": "ca",
             "state_label": "California",
             "slug": "sacramento",
@@ -291,7 +346,7 @@
             "value_label": "49.0"
           },
           {
-            "rank": 4,
+            "rank": 9,
             "state": "ca",
             "state_label": "California",
             "slug": "placer",
@@ -301,7 +356,7 @@
             "value_label": "48.1"
           },
           {
-            "rank": 5,
+            "rank": 10,
             "state": "tx",
             "state_label": "Texas",
             "slug": "jefferson",
@@ -309,56 +364,6 @@
             "population": 254942,
             "value": 48.0,
             "value_label": "48.0"
-          },
-          {
-            "rank": 6,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "gregg",
-            "name": "Gregg County",
-            "population": 124245,
-            "value": 47.6,
-            "value_label": "47.6"
-          },
-          {
-            "rank": 7,
-            "state": "ca",
-            "state_label": "California",
-            "slug": "yuba",
-            "name": "Yuba County",
-            "population": 81705,
-            "value": 47.0,
-            "value_label": "47.0"
-          },
-          {
-            "rank": 8,
-            "state": "ca",
-            "state_label": "California",
-            "slug": "sutter",
-            "name": "Sutter County",
-            "population": 99101,
-            "value": 45.7,
-            "value_label": "45.7"
-          },
-          {
-            "rank": 9,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "harrison",
-            "name": "Harrison County",
-            "population": 69098,
-            "value": 45.4,
-            "value_label": "45.4"
-          },
-          {
-            "rank": 10,
-            "state": "ca",
-            "state_label": "California",
-            "slug": "fresno",
-            "name": "Fresno County",
-            "population": 1008280,
-            "value": 44.5,
-            "value_label": "44.5"
           }
         ]
       },
@@ -372,103 +377,103 @@
         "rows": [
           {
             "rank": 1,
-            "state": "hi",
-            "state_label": "Hawaii",
-            "slug": "kalawao",
-            "name": "Kalawao County",
-            "population": 50,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "aleutians-east-borough",
+            "name": "Aleutians East Borough County",
+            "population": 3407,
+            "value": 7.2,
+            "value_label": "7.2"
           },
           {
             "rank": 2,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "blaine",
-            "name": "Blaine County",
-            "population": 7030,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "aleutians-west",
+            "name": "Aleutians West County",
+            "population": 5219,
+            "value": 7.4,
+            "value_label": "7.4"
           },
           {
             "rank": 3,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "chouteau",
-            "name": "Chouteau County",
-            "population": 5897,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "nome",
+            "name": "Nome County",
+            "population": 10018,
+            "value": 7.4,
+            "value_label": "7.4"
           },
           {
             "rank": 4,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "daniels",
-            "name": "Daniels County",
-            "population": 1535,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "kusilvak",
+            "name": "Kusilvak County",
+            "population": 8372,
+            "value": 7.8,
+            "value_label": "7.8"
           },
           {
             "rank": 5,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "deer-lodge",
-            "name": "Deer Lodge County",
-            "population": 9435,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "skagway",
+            "name": "Skagway County",
+            "population": 1303,
+            "value": 8.0,
+            "value_label": "8.0"
           },
           {
             "rank": 6,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "fergus",
-            "name": "Fergus County",
-            "population": 11496,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "north-slope-borough",
+            "name": "North Slope Borough County",
+            "population": 10924,
+            "value": 8.1,
+            "value_label": "8.1"
           },
           {
             "rank": 7,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "garfield",
-            "name": "Garfield County",
-            "population": 976,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "northwest-arctic-borough",
+            "name": "Northwest Arctic Borough County",
+            "population": 7682,
+            "value": 8.5,
+            "value_label": "8.5"
           },
           {
             "rank": 8,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "glacier",
-            "name": "Glacier County",
-            "population": 13781,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "bethel-census-area",
+            "name": "Bethel Census Area County",
+            "population": 18538,
+            "value": 8.9,
+            "value_label": "8.9"
           },
           {
             "rank": 9,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "golden-valley",
-            "name": "Golden Valley County",
-            "population": 841,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "lake-and-peninsula",
+            "name": "Lake And Peninsula County",
+            "population": 999,
+            "value": 9.0,
+            "value_label": "9.0"
           },
           {
             "rank": 10,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "liberty",
-            "name": "Liberty County",
-            "population": 1993,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "haines",
+            "name": "Haines County",
+            "population": 2079,
+            "value": 9.1,
+            "value_label": "9.1"
           }
         ]
       },
@@ -492,6 +497,16 @@
           },
           {
             "rank": 2,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "ascension-parish",
+            "name": "Ascension Parish County",
+            "population": 126973,
+            "value": 12433411.0,
+            "value_label": "12.4M lb"
+          },
+          {
+            "rank": 3,
             "state": "tx",
             "state_label": "Texas",
             "slug": "harris",
@@ -501,7 +516,37 @@
             "value_label": "10.9M lb"
           },
           {
-            "rank": 3,
+            "rank": 4,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "iberville-parish",
+            "name": "Iberville Parish County",
+            "population": 30210,
+            "value": 7437519.0,
+            "value_label": "7.4M lb"
+          },
+          {
+            "rank": 5,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "st-charles-parish",
+            "name": "St. Charles Parish County",
+            "population": 52191,
+            "value": 7340322.0,
+            "value_label": "7.3M lb"
+          },
+          {
+            "rank": 6,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "columbia",
+            "name": "Columbia County",
+            "population": 52865,
+            "value": 6361889.0,
+            "value_label": "6.4M lb"
+          },
+          {
+            "rank": 7,
             "state": "tx",
             "state_label": "Texas",
             "slug": "jefferson",
@@ -511,7 +556,7 @@
             "value_label": "6.2M lb"
           },
           {
-            "rank": 4,
+            "rank": 8,
             "state": "ok",
             "state_label": "Oklahoma",
             "slug": "garfield",
@@ -521,7 +566,17 @@
             "value_label": "6.1M lb"
           },
           {
-            "rank": 5,
+            "rank": 9,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "calcasieu-parish",
+            "name": "Calcasieu Parish County",
+            "population": 210770,
+            "value": 5409862.0,
+            "value_label": "5.4M lb"
+          },
+          {
+            "rank": 10,
             "state": "ok",
             "state_label": "Oklahoma",
             "slug": "mccurtain",
@@ -529,56 +584,6 @@
             "population": 31003,
             "value": 4233772.0,
             "value_label": "4.2M lb"
-          },
-          {
-            "rank": 6,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "harrison",
-            "name": "Harrison County",
-            "population": 69098,
-            "value": 3672322.0,
-            "value_label": "3.7M lb"
-          },
-          {
-            "rank": 7,
-            "state": "ar",
-            "state_label": "Arkansas",
-            "slug": "jefferson",
-            "name": "Jefferson County",
-            "population": 66934,
-            "value": 3551629.0,
-            "value_label": "3.6M lb"
-          },
-          {
-            "rank": 8,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "brazoria",
-            "name": "Brazoria County",
-            "population": 374600,
-            "value": 3144919.0,
-            "value_label": "3.1M lb"
-          },
-          {
-            "rank": 9,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "calhoun",
-            "name": "Calhoun County",
-            "population": 20127,
-            "value": 3084767.0,
-            "value_label": "3.1M lb"
-          },
-          {
-            "rank": 10,
-            "state": "ok",
-            "state_label": "Oklahoma",
-            "slug": "rogers",
-            "name": "Rogers County",
-            "population": 95870,
-            "value": 2693161.0,
-            "value_label": "2.7M lb"
           }
         ]
       },
@@ -592,6 +597,16 @@
         "rows": [
           {
             "rank": 1,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "north-slope-borough",
+            "name": "North Slope Borough County",
+            "population": 10924,
+            "value": 1.0,
+            "value_label": "1 lb"
+          },
+          {
+            "rank": 2,
             "state": "az",
             "state_label": "Arizona",
             "slug": "santa-cruz",
@@ -601,7 +616,17 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 2,
+            "rank": 3,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "west-carroll-parish",
+            "name": "West Carroll Parish County",
+            "population": 9800,
+            "value": 1.0,
+            "value_label": "1 lb"
+          },
+          {
+            "rank": 4,
             "state": "md",
             "state_label": "Maryland",
             "slug": "st-mary-s",
@@ -611,7 +636,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 3,
+            "rank": 5,
             "state": "ok",
             "state_label": "Oklahoma",
             "slug": "jackson",
@@ -621,7 +646,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 4,
+            "rank": 6,
             "state": "tx",
             "state_label": "Texas",
             "slug": "dimmit",
@@ -631,7 +656,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 5,
+            "rank": 7,
             "state": "ut",
             "state_label": "Utah",
             "slug": "beaver",
@@ -641,7 +666,17 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 6,
+            "rank": 8,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "blaine",
+            "name": "Blaine County",
+            "population": 24248,
+            "value": 2.0,
+            "value_label": "2 lb"
+          },
+          {
+            "rank": 9,
             "state": "ok",
             "state_label": "Oklahoma",
             "slug": "payne",
@@ -651,44 +686,14 @@
             "value_label": "2 lb"
           },
           {
-            "rank": 7,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "carson",
-            "name": "Carson County",
-            "population": 5801,
-            "value": 2.0,
-            "value_label": "2 lb"
-          },
-          {
-            "rank": 8,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "presidio",
-            "name": "Presidio County",
-            "population": 6168,
-            "value": 2.0,
-            "value_label": "2 lb"
-          },
-          {
-            "rank": 9,
-            "state": "nm",
-            "state_label": "New Mexico",
-            "slug": "los-alamos",
-            "name": "Los Alamos County",
-            "population": 19253,
-            "value": 3.0,
-            "value_label": "3 lb"
-          },
-          {
             "rank": 10,
-            "state": "ok",
-            "state_label": "Oklahoma",
-            "slug": "blaine",
-            "name": "Blaine County",
-            "population": 8661,
-            "value": 4.0,
-            "value_label": "4 lb"
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "hood-river",
+            "name": "Hood River County",
+            "population": 23965,
+            "value": 2.0,
+            "value_label": "2 lb"
           }
         ]
       },
@@ -762,6 +767,16 @@
           },
           {
             "rank": 7,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "calcasieu-parish",
+            "name": "Calcasieu Parish County",
+            "population": 210770,
+            "value": 131838791.0,
+            "value_label": "131.8M mtCO\u2082e"
+          },
+          {
+            "rank": 8,
             "state": "tx",
             "state_label": "Texas",
             "slug": "galveston",
@@ -771,34 +786,24 @@
             "value_label": "110.0M mtCO\u2082e"
           },
           {
-            "rank": 8,
-            "state": "ca",
-            "state_label": "California",
-            "slug": "contra-costa",
-            "name": "Contra Costa County",
-            "population": 1162648,
-            "value": 82261234.0,
-            "value_label": "82.3M mtCO\u2082e"
-          },
-          {
             "rank": 9,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "brazoria",
-            "name": "Brazoria County",
-            "population": 374600,
-            "value": 58249510.0,
-            "value_label": "58.2M mtCO\u2082e"
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "st-john-the-baptist-parish",
+            "name": "St. John The Baptist Parish County",
+            "population": 41986,
+            "value": 99040553.0,
+            "value_label": "99.0M mtCO\u2082e"
           },
           {
             "rank": 10,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "howard",
-            "name": "Howard County",
-            "population": 34488,
-            "value": 50272632.0,
-            "value_label": "50.3M mtCO\u2082e"
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "east-baton-rouge-parish",
+            "name": "East Baton Rouge Parish County",
+            "population": 454369,
+            "value": 92094027.0,
+            "value_label": "92.1M mtCO\u2082e"
           }
         ]
       }
@@ -816,6 +821,17 @@
         "rows": [
           {
             "rank": 1,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "american-falls",
+            "name": "American Falls",
+            "county_name": "Power",
+            "population": 4573,
+            "value": 22.854,
+            "value_label": "22.854"
+          },
+          {
+            "rank": 2,
             "state": "tx",
             "state_label": "Texas",
             "slug": "brownsville",
@@ -826,7 +842,7 @@
             "value_label": "15.608"
           },
           {
-            "rank": 2,
+            "rank": 3,
             "state": "ca",
             "state_label": "California",
             "slug": "weaverville",
@@ -837,7 +853,7 @@
             "value_label": "15.517"
           },
           {
-            "rank": 3,
+            "rank": 4,
             "state": "ar",
             "state_label": "Arkansas",
             "slug": "blytheville",
@@ -848,7 +864,18 @@
             "value_label": "15.465"
           },
           {
-            "rank": 4,
+            "rank": 5,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "burns",
+            "name": "Burns",
+            "county_name": "Harney",
+            "population": 2735,
+            "value": 15.46,
+            "value_label": "15.460"
+          },
+          {
+            "rank": 6,
             "state": "ar",
             "state_label": "Arkansas",
             "slug": "pine-bluff",
@@ -859,7 +886,7 @@
             "value_label": "14.993"
           },
           {
-            "rank": 5,
+            "rank": 7,
             "state": "ar",
             "state_label": "Arkansas",
             "slug": "texarkana",
@@ -870,7 +897,7 @@
             "value_label": "14.588"
           },
           {
-            "rank": 6,
+            "rank": 8,
             "state": "wv",
             "state_label": "West Virginia",
             "slug": "bluefield",
@@ -881,7 +908,7 @@
             "value_label": "14.285"
           },
           {
-            "rank": 7,
+            "rank": 9,
             "state": "tx",
             "state_label": "Texas",
             "slug": "longview",
@@ -892,37 +919,15 @@
             "value_label": "13.380"
           },
           {
-            "rank": 8,
-            "state": "ok",
-            "state_label": "Oklahoma",
-            "slug": "tahlequah",
-            "name": "Tahlequah",
-            "county_name": "Cherokee",
-            "population": 16389,
-            "value": 12.483,
-            "value_label": "12.483"
-          },
-          {
-            "rank": 9,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "jefferson",
-            "name": "Jefferson",
-            "county_name": "Marion",
-            "population": 2077,
-            "value": 12.179,
-            "value_label": "12.179"
-          },
-          {
             "rank": 10,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "the-woodlands",
-            "name": "The Woodlands",
-            "county_name": "Montgomery",
-            "population": 118402,
-            "value": 12.105,
-            "value_label": "12.105"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "kenai",
+            "name": "Kenai",
+            "county_name": "Kenai Peninsula",
+            "population": 7477,
+            "value": 12.689,
+            "value_label": "12.689"
           }
         ]
       },
@@ -936,6 +941,17 @@
         "rows": [
           {
             "rank": 1,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "healy",
+            "name": "Healy",
+            "county_name": "Denali",
+            "population": 865,
+            "value": 1.765,
+            "value_label": "1.765"
+          },
+          {
+            "rank": 2,
             "state": "sd",
             "state_label": "South Dakota",
             "slug": "pierre",
@@ -946,7 +962,7 @@
             "value_label": "2.203"
           },
           {
-            "rank": 2,
+            "rank": 3,
             "state": "hi",
             "state_label": "Hawaii",
             "slug": "lihue",
@@ -957,7 +973,7 @@
             "value_label": "2.292"
           },
           {
-            "rank": 3,
+            "rank": 4,
             "state": "hi",
             "state_label": "Hawaii",
             "slug": "hilo",
@@ -968,7 +984,7 @@
             "value_label": "2.407"
           },
           {
-            "rank": 4,
+            "rank": 5,
             "state": "wy",
             "state_label": "Wyoming",
             "slug": "laramie",
@@ -979,7 +995,7 @@
             "value_label": "2.453"
           },
           {
-            "rank": 5,
+            "rank": 6,
             "state": "tx",
             "state_label": "Texas",
             "slug": "amarillo",
@@ -990,7 +1006,7 @@
             "value_label": "2.470"
           },
           {
-            "rank": 6,
+            "rank": 7,
             "state": "wy",
             "state_label": "Wyoming",
             "slug": "rawlins",
@@ -1001,7 +1017,7 @@
             "value_label": "2.567"
           },
           {
-            "rank": 7,
+            "rank": 8,
             "state": "wy",
             "state_label": "Wyoming",
             "slug": "worland",
@@ -1012,7 +1028,18 @@
             "value_label": "2.636"
           },
           {
-            "rank": 8,
+            "rank": 9,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "jerome",
+            "name": "Jerome",
+            "county_name": "Jerome",
+            "population": 12482,
+            "value": 2.667,
+            "value_label": "2.667"
+          },
+          {
+            "rank": 10,
             "state": "az",
             "state_label": "Arizona",
             "slug": "eagar",
@@ -1021,28 +1048,6 @@
             "population": 4425,
             "value": 2.696,
             "value_label": "2.696"
-          },
-          {
-            "rank": 9,
-            "state": "wy",
-            "state_label": "Wyoming",
-            "slug": "kemmerer",
-            "name": "Kemmerer",
-            "county_name": "Lincoln",
-            "population": 2640,
-            "value": 2.779,
-            "value_label": "2.779"
-          },
-          {
-            "rank": 10,
-            "state": "nm",
-            "state_label": "New Mexico",
-            "slug": "santa-fe",
-            "name": "Santa Fe",
-            "county_name": "Santa Fe",
-            "population": 87617,
-            "value": 2.977,
-            "value_label": "2.977"
           }
         ]
       },
@@ -1056,6 +1061,28 @@
         "rows": [
           {
             "rank": 1,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "laplace",
+            "name": "Laplace",
+            "county_name": "St. John The Baptist",
+            "population": 28956,
+            "value": 78.9,
+            "value_label": "78.9"
+          },
+          {
+            "rank": 2,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "lake-oswego",
+            "name": "Lake Oswego",
+            "county_name": "Clackamas",
+            "population": 40457,
+            "value": 77.3,
+            "value_label": "77.3"
+          },
+          {
+            "rank": 3,
             "state": "ca",
             "state_label": "California",
             "slug": "santa-cruz",
@@ -1066,7 +1093,7 @@
             "value_label": "70.0"
           },
           {
-            "rank": 2,
+            "rank": 4,
             "state": "ca",
             "state_label": "California",
             "slug": "chico",
@@ -1077,7 +1104,40 @@
             "value_label": "54.8"
           },
           {
-            "rank": 3,
+            "rank": 5,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "prairieville",
+            "name": "Prairieville",
+            "county_name": "Ascension",
+            "population": 34215,
+            "value": 53.9,
+            "value_label": "53.9"
+          },
+          {
+            "rank": 6,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "portland",
+            "name": "Portland",
+            "county_name": "Multnomah",
+            "population": 646101,
+            "value": 51.9,
+            "value_label": "51.9"
+          },
+          {
+            "rank": 7,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "st-gabriel",
+            "name": "St. Gabriel",
+            "county_name": "Iberville",
+            "population": 6526,
+            "value": 49.5,
+            "value_label": "49.5"
+          },
+          {
+            "rank": 8,
             "state": "ca",
             "state_label": "California",
             "slug": "sacramento",
@@ -1088,7 +1148,7 @@
             "value_label": "49.0"
           },
           {
-            "rank": 4,
+            "rank": 9,
             "state": "ca",
             "state_label": "California",
             "slug": "roseville",
@@ -1099,7 +1159,7 @@
             "value_label": "48.1"
           },
           {
-            "rank": 5,
+            "rank": 10,
             "state": "tx",
             "state_label": "Texas",
             "slug": "beaumont",
@@ -1108,61 +1168,6 @@
             "population": 114573,
             "value": 48.0,
             "value_label": "48.0"
-          },
-          {
-            "rank": 6,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "longview",
-            "name": "Longview",
-            "county_name": "Gregg",
-            "population": 82176,
-            "value": 47.6,
-            "value_label": "47.6"
-          },
-          {
-            "rank": 7,
-            "state": "ca",
-            "state_label": "California",
-            "slug": "olivehurst",
-            "name": "Olivehurst",
-            "county_name": "Yuba",
-            "population": 17416,
-            "value": 47.0,
-            "value_label": "47.0"
-          },
-          {
-            "rank": 8,
-            "state": "ca",
-            "state_label": "California",
-            "slug": "yuba-city",
-            "name": "Yuba City",
-            "county_name": "Sutter",
-            "population": 69535,
-            "value": 45.7,
-            "value_label": "45.7"
-          },
-          {
-            "rank": 9,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "marshall",
-            "name": "Marshall",
-            "county_name": "Harrison",
-            "population": 23509,
-            "value": 45.4,
-            "value_label": "45.4"
-          },
-          {
-            "rank": 10,
-            "state": "ca",
-            "state_label": "California",
-            "slug": "fresno",
-            "name": "Fresno",
-            "county_name": "Fresno",
-            "population": 541528,
-            "value": 44.5,
-            "value_label": "44.5"
           }
         ]
       },
@@ -1176,113 +1181,113 @@
         "rows": [
           {
             "rank": 1,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "anaconda-deer-lodge-county",
-            "name": "Anaconda-Deer Lodge County",
-            "county_name": "Deer Lodge",
-            "population": 9435,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "akutan",
+            "name": "Akutan",
+            "county_name": "Aleutians East",
+            "population": 911,
+            "value": 7.2,
+            "value_label": "7.2"
           },
           {
             "rank": 2,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "fort-benton",
-            "name": "Fort Benton",
-            "county_name": "Chouteau",
-            "population": 1544,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "unalaska",
+            "name": "Unalaska",
+            "county_name": "Aleutians West",
+            "population": 4342,
+            "value": 7.4,
+            "value_label": "7.4"
           },
           {
             "rank": 3,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "big-timber",
-            "name": "Big Timber",
-            "county_name": "Sweet Grass",
-            "population": 1702,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "nome",
+            "name": "Nome",
+            "county_name": "Nome",
+            "population": 3710,
+            "value": 7.4,
+            "value_label": "7.4"
           },
           {
             "rank": 4,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "conrad",
-            "name": "Conrad",
-            "county_name": "Pondera",
-            "population": 2640,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "prudhoe-bay",
+            "name": "Prudhoe Bay",
+            "county_name": "North Slope",
+            "population": 1986,
+            "value": 8.1,
+            "value_label": "8.1"
           },
           {
             "rank": 5,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "choteau",
-            "name": "Choteau",
-            "county_name": "Teton",
-            "population": 1714,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "kotzebue",
+            "name": "Kotzebue",
+            "county_name": "Northwest Arctic",
+            "population": 3088,
+            "value": 8.5,
+            "value_label": "8.5"
           },
           {
             "rank": 6,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "chester",
-            "name": "Chester",
-            "county_name": "Liberty",
-            "population": 774,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "bethel",
+            "name": "Bethel",
+            "county_name": "Bethel",
+            "population": 6312,
+            "value": 8.9,
+            "value_label": "8.9"
           },
           {
             "rank": 7,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "chinook",
-            "name": "Chinook",
-            "county_name": "Blaine",
-            "population": 1488,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "kokhanok",
+            "name": "Kokhanok",
+            "county_name": "Lake And Peninsula",
+            "population": 115,
+            "value": 9.0,
+            "value_label": "9.0"
           },
           {
             "rank": 8,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "circle",
-            "name": "Circle",
-            "county_name": "Mccone",
-            "population": 483,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "haines",
+            "name": "Haines",
+            "county_name": "Haines",
+            "population": 1762,
+            "value": 9.1,
+            "value_label": "9.1"
           },
           {
             "rank": 9,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "livingston",
-            "name": "Livingston",
-            "county_name": "Park",
-            "population": 8489,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "dillingham",
+            "name": "Dillingham",
+            "county_name": "Dillingham",
+            "population": 2175,
+            "value": 9.2,
+            "value_label": "9.2"
           },
           {
             "rank": 10,
-            "state": "mt",
-            "state_label": "Montana",
-            "slug": "cut-bank",
-            "name": "Cut Bank",
-            "county_name": "Glacier",
-            "population": 3061,
-            "value": 10.0,
-            "value_label": "10.0"
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "sitka",
+            "name": "Sitka",
+            "county_name": "Sitka City And",
+            "population": 8462,
+            "value": 9.3,
+            "value_label": "9.3"
           }
         ]
       },
@@ -1296,6 +1301,17 @@
         "rows": [
           {
             "rank": 1,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "norco",
+            "name": "Norco",
+            "county_name": "St. Charles",
+            "population": 2848,
+            "value": 6360653.0,
+            "value_label": "6.4M lb"
+          },
+          {
+            "rank": 2,
             "state": "ok",
             "state_label": "Oklahoma",
             "slug": "enid",
@@ -1306,7 +1322,7 @@
             "value_label": "6.0M lb"
           },
           {
-            "rank": 2,
+            "rank": 3,
             "state": "tx",
             "state_label": "Texas",
             "slug": "baytown",
@@ -1317,7 +1333,29 @@
             "value_label": "4.3M lb"
           },
           {
-            "rank": 3,
+            "rank": 4,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "baton-rouge",
+            "name": "Baton Rouge",
+            "county_name": "East Baton Rouge",
+            "population": 225500,
+            "value": 3084838.0,
+            "value_label": "3.1M lb"
+          },
+          {
+            "rank": 5,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "bogalusa",
+            "name": "Bogalusa",
+            "county_name": "Washington",
+            "population": 10689,
+            "value": 2222025.0,
+            "value_label": "2.2M lb"
+          },
+          {
+            "rank": 6,
             "state": "ar",
             "state_label": "Arkansas",
             "slug": "ashdown",
@@ -1328,7 +1366,18 @@
             "value_label": "2.2M lb"
           },
           {
-            "rank": 4,
+            "rank": 7,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "brownsville",
+            "name": "Brownsville",
+            "county_name": "Ouachita",
+            "population": 4198,
+            "value": 2139046.0,
+            "value_label": "2.1M lb"
+          },
+          {
+            "rank": 8,
             "state": "wv",
             "state_label": "West Virginia",
             "slug": "clarksburg",
@@ -1339,7 +1388,7 @@
             "value_label": "1.6M lb"
           },
           {
-            "rank": 5,
+            "rank": 9,
             "state": "tx",
             "state_label": "Texas",
             "slug": "texas-city",
@@ -1350,59 +1399,15 @@
             "value_label": "1.6M lb"
           },
           {
-            "rank": 6,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "port-arthur",
-            "name": "Port Arthur",
-            "county_name": "Jefferson",
-            "population": 55897,
-            "value": 1528732.0,
-            "value_label": "1.5M lb"
-          },
-          {
-            "rank": 7,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "deer-park",
-            "name": "Deer Park",
-            "county_name": "Harris",
-            "population": 34046,
-            "value": 1447775.0,
-            "value_label": "1.4M lb"
-          },
-          {
-            "rank": 8,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "houston",
-            "name": "Houston",
-            "county_name": "Harris",
-            "population": 2296253,
-            "value": 1265908.0,
-            "value_label": "1.3M lb"
-          },
-          {
-            "rank": 9,
-            "state": "ca",
-            "state_label": "California",
-            "slug": "carson",
-            "name": "Carson",
-            "county_name": "Los Angeles",
-            "population": 94475,
-            "value": 1058113.0,
-            "value_label": "1.1M lb"
-          },
-          {
             "rank": 10,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "corpus-christi",
-            "name": "Corpus Christi",
-            "county_name": "Nueces",
-            "population": 317804,
-            "value": 1057558.0,
-            "value_label": "1.1M lb"
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "st-gabriel",
+            "name": "St. Gabriel",
+            "county_name": "Iberville",
+            "population": 6526,
+            "value": 1543684.0,
+            "value_label": "1.5M lb"
           }
         ]
       },
@@ -1416,6 +1421,17 @@
         "rows": [
           {
             "rank": 1,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "prudhoe-bay",
+            "name": "Prudhoe Bay",
+            "county_name": "North Slope",
+            "population": 1986,
+            "value": 1.0,
+            "value_label": "1 lb"
+          },
+          {
+            "rank": 2,
             "state": "az",
             "state_label": "Arizona",
             "slug": "peoria",
@@ -1426,7 +1442,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 2,
+            "rank": 3,
             "state": "az",
             "state_label": "Arizona",
             "slug": "scottsdale",
@@ -1437,7 +1453,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 3,
+            "rank": 4,
             "state": "az",
             "state_label": "Arizona",
             "slug": "stotonic-village",
@@ -1448,7 +1464,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 4,
+            "rank": 5,
             "state": "az",
             "state_label": "Arizona",
             "slug": "walnut-creek",
@@ -1459,7 +1475,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 5,
+            "rank": 6,
             "state": "ca",
             "state_label": "California",
             "slug": "cabazon",
@@ -1470,7 +1486,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 6,
+            "rank": 7,
             "state": "ca",
             "state_label": "California",
             "slug": "gardena",
@@ -1481,7 +1497,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 7,
+            "rank": 8,
             "state": "ca",
             "state_label": "California",
             "slug": "hemet",
@@ -1492,7 +1508,7 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 8,
+            "rank": 9,
             "state": "ca",
             "state_label": "California",
             "slug": "lakeside",
@@ -1503,24 +1519,13 @@
             "value_label": "1 lb"
           },
           {
-            "rank": 9,
+            "rank": 10,
             "state": "ca",
             "state_label": "California",
             "slug": "menlo-park",
             "name": "Menlo Park",
             "county_name": "San Mateo",
             "population": 33324,
-            "value": 1.0,
-            "value_label": "1 lb"
-          },
-          {
-            "rank": 10,
-            "state": "ca",
-            "state_label": "California",
-            "slug": "pasadena",
-            "name": "Pasadena",
-            "county_name": "Los Angeles",
-            "population": 137554,
             "value": 1.0,
             "value_label": "1 lb"
           }
@@ -1538,6 +1543,18 @@
         "rows": [
           {
             "rank": 1,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "red-dog-operations",
+            "name": "Red Dog Operations",
+            "city": "Kotzebue",
+            "county": "Northwest Arctic Borough County",
+            "value": 723889154.0,
+            "value_label": "723.9M lb",
+            "top_chemical": "Zinc compounds"
+          },
+          {
+            "rank": 2,
             "state": "ut",
             "state_label": "Utah",
             "slug": "kennecott-utah-copper-mine-concentrators-power-plant",
@@ -1549,7 +1566,19 @@
             "top_chemical": "Lead  And Lead Compounds"
           },
           {
-            "rank": 2,
+            "rank": 3,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "hecla-greens-creek-mining-co",
+            "name": "Hecla Greens Creek Mining CO",
+            "city": "Juneau",
+            "county": "Juneau City And Borough County",
+            "value": 87578803.0,
+            "value_label": "87.6M lb",
+            "top_chemical": "Barium compounds (except for barium sulfate (CAS No. 7727-43-7))"
+          },
+          {
+            "rank": 4,
             "state": "tx",
             "state_label": "Texas",
             "slug": "midway-gas-plant",
@@ -1561,7 +1590,7 @@
             "top_chemical": "Hydrogen sulfide"
           },
           {
-            "rank": 3,
+            "rank": 5,
             "state": "az",
             "state_label": "Arizona",
             "slug": "asarco-llc-ray-complex-hayden-smelter-concentrator",
@@ -1573,7 +1602,7 @@
             "top_chemical": "Zinc compounds"
           },
           {
-            "rank": 4,
+            "rank": 6,
             "state": "nv",
             "state_label": "Nevada",
             "slug": "nevada-gold-mines-llc-goldstrike-mines-inc",
@@ -1585,7 +1614,7 @@
             "top_chemical": "Arsenic compounds"
           },
           {
-            "rank": 5,
+            "rank": 7,
             "state": "ar",
             "state_label": "Arkansas",
             "slug": "elemental-environmental-solutions-llc",
@@ -1597,7 +1626,7 @@
             "top_chemical": "Cyanide compounds"
           },
           {
-            "rank": 6,
+            "rank": 8,
             "state": "nd",
             "state_label": "North Dakota",
             "slug": "basin-electric-antelope-valley-station",
@@ -1609,7 +1638,7 @@
             "top_chemical": "Ammonia"
           },
           {
-            "rank": 7,
+            "rank": 9,
             "state": "mt",
             "state_label": "Montana",
             "slug": "montana-resources-llc",
@@ -1621,7 +1650,7 @@
             "top_chemical": "Manganese  And Manganese Compounds"
           },
           {
-            "rank": 8,
+            "rank": 10,
             "state": "nv",
             "state_label": "Nevada",
             "slug": "nevada-gold-mines-llc-carlin-south-area",
@@ -1633,7 +1662,7 @@
             "top_chemical": "Arsenic compounds"
           },
           {
-            "rank": 9,
+            "rank": 11,
             "state": "az",
             "state_label": "Arizona",
             "slug": "freeport-mcmoran-miami-inc",
@@ -1645,7 +1674,7 @@
             "top_chemical": "Copper  And Copper Compounds"
           },
           {
-            "rank": 10,
+            "rank": 12,
             "state": "ut",
             "state_label": "Utah",
             "slug": "kennecott-utah-copper-smelter-refinery",
@@ -1657,7 +1686,19 @@
             "top_chemical": "Copper  And Copper Compounds"
           },
           {
-            "rank": 11,
+            "rank": 13,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "hecla-ltd-lucky-friday-mine-unit",
+            "name": "Hecla LTD Lucky Friday Mine Unit",
+            "city": "Mullan",
+            "county": "Shoshone County",
+            "value": 19603873.0,
+            "value_label": "19.6M lb",
+            "top_chemical": "Manganese  And Manganese Compounds"
+          },
+          {
+            "rank": 14,
             "state": "tx",
             "state_label": "Texas",
             "slug": "ascend-performance-materials-chocolate-bayou-plant",
@@ -1669,7 +1710,31 @@
             "top_chemical": "Ammonia"
           },
           {
-            "rank": 12,
+            "rank": 15,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "bayer-cropscience-lp",
+            "name": "Bayer Cropscience LP",
+            "city": "Luling",
+            "county": "St. Charles Parish County",
+            "value": 17792814.0,
+            "value_label": "17.8M lb",
+            "top_chemical": "Formaldehyde"
+          },
+          {
+            "rank": 16,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "fort-knox-mine",
+            "name": "Fort Knox Mine",
+            "city": "Fairbanks",
+            "county": "Fairbanks North Star Borough County",
+            "value": 17565671.0,
+            "value_label": "17.6M lb",
+            "top_chemical": "Manganese  And Manganese Compounds"
+          },
+          {
+            "rank": 17,
             "state": "nv",
             "state_label": "Nevada",
             "slug": "nevada-gold-mines-llc-turquoise-ridge",
@@ -1681,7 +1746,7 @@
             "top_chemical": "Arsenic compounds"
           },
           {
-            "rank": 13,
+            "rank": 18,
             "state": "tx",
             "state_label": "Texas",
             "slug": "ineos-nitriles-usa-llc-green-lake-plant",
@@ -1693,7 +1758,7 @@
             "top_chemical": "Acetonitrile"
           },
           {
-            "rank": 14,
+            "rank": 19,
             "state": "nv",
             "state_label": "Nevada",
             "slug": "robinson-nevada-mining-co",
@@ -1705,7 +1770,7 @@
             "top_chemical": "Lead  And Lead Compounds"
           },
           {
-            "rank": 15,
+            "rank": 20,
             "state": "az",
             "state_label": "Arizona",
             "slug": "pinto-valley-mine",
@@ -1715,66 +1780,6 @@
             "value": 14150619.0,
             "value_label": "14.2M lb",
             "top_chemical": "Copper  And Copper Compounds"
-          },
-          {
-            "rank": 16,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "tm-deer-park-services-lp",
-            "name": "Tm Deer Park Services LP",
-            "city": "Deer Park",
-            "county": "Harris County",
-            "value": 14065312.0,
-            "value_label": "14.1M lb",
-            "top_chemical": "Methanol"
-          },
-          {
-            "rank": 17,
-            "state": "nm",
-            "state_label": "New Mexico",
-            "slug": "eunice-gas-plant",
-            "name": "Eunice Gas Plant",
-            "city": "Eunice",
-            "county": "Lea County",
-            "value": 12222724.0,
-            "value_label": "12.2M lb",
-            "top_chemical": "Hydrogen sulfide"
-          },
-          {
-            "rank": 18,
-            "state": "nm",
-            "state_label": "New Mexico",
-            "slug": "dagger-draw-gas-plant",
-            "name": "Dagger Draw Gas Plant",
-            "city": "Artesia",
-            "county": "Eddy County",
-            "value": 12192537.0,
-            "value_label": "12.2M lb",
-            "top_chemical": "Hydrogen sulfide"
-          },
-          {
-            "rank": 19,
-            "state": "nd",
-            "state_label": "North Dakota",
-            "slug": "oneok-rockies-midstream-llc-grasslands-gas-plant",
-            "name": "Oneok Rockies Midstream LLC - Grasslands Gas Plant",
-            "city": "Alexander",
-            "county": "Mckenzie County",
-            "value": 12189956.0,
-            "value_label": "12.2M lb",
-            "top_chemical": "Hydrogen sulfide"
-          },
-          {
-            "rank": 20,
-            "state": "nv",
-            "state_label": "Nevada",
-            "slug": "nevada-gold-mines-llc-cortez-district",
-            "name": "Nevada Gold Mines Llc-Cortez District",
-            "city": "Crescent Valley",
-            "county": "Lander County",
-            "value": 11979679.0,
-            "value_label": "12.0M lb",
-            "top_chemical": "Lead  And Lead Compounds"
           }
         ]
       },
@@ -1798,6 +1803,30 @@
           },
           {
             "rank": 2,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "cf-industries-nitrogen-llc",
+            "name": "Cf Industries Nitrogen LLC",
+            "city": "Donaldsonville",
+            "county": "Ascension Parish County",
+            "value": 7685251.0,
+            "value_label": "7.7M lb",
+            "top_chemical": "Ammonia"
+          },
+          {
+            "rank": 3,
+            "state": "or",
+            "state_label": "Oregon",
+            "slug": "dyno-nobel-st-helens-plant",
+            "name": "Dyno Nobel- St.Helens Plant",
+            "city": "Deer Island",
+            "county": "Columbia County",
+            "value": 6239122.0,
+            "value_label": "6.2M lb",
+            "top_chemical": "Ammonia"
+          },
+          {
+            "rank": 4,
             "state": "ok",
             "state_label": "Oklahoma",
             "slug": "koch-fertilizer-enid-llc",
@@ -1809,7 +1838,31 @@
             "top_chemical": "Ammonia"
           },
           {
-            "rank": 3,
+            "rank": 5,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "shell-norco-chemical-plant",
+            "name": "Shell Norco Chemical Plant",
+            "city": "Norco",
+            "county": "St. Charles Parish County",
+            "value": 5659914.0,
+            "value_label": "5.7M lb",
+            "top_chemical": "Propylene"
+          },
+          {
+            "rank": 6,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "flopam-inc",
+            "name": "Flopam INC",
+            "city": "Plaquemine",
+            "county": "Iberville Parish County",
+            "value": 3954763.0,
+            "value_label": "4.0M lb",
+            "top_chemical": "Ammonia"
+          },
+          {
+            "rank": 7,
             "state": "ok",
             "state_label": "Oklahoma",
             "slug": "international-paper-co",
@@ -1821,7 +1874,19 @@
             "top_chemical": "Methanol"
           },
           {
-            "rank": 4,
+            "rank": 8,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "international-paper-co-mansfield-mill",
+            "name": "International Paper CO - Mansfield Mill",
+            "city": "Mansfield",
+            "county": "De Soto Parish County",
+            "value": 3445747.0,
+            "value_label": "3.4M lb",
+            "top_chemical": "Methanol"
+          },
+          {
+            "rank": 9,
             "state": "ar",
             "state_label": "Arkansas",
             "slug": "suzano-packaging",
@@ -1833,7 +1898,7 @@
             "top_chemical": "Methanol"
           },
           {
-            "rank": 5,
+            "rank": 10,
             "state": "ok",
             "state_label": "Oklahoma",
             "slug": "terra-nitrogen-l-p-verdigris-plant",
@@ -1843,66 +1908,6 @@
             "value": 2409432.0,
             "value_label": "2.4M lb",
             "top_chemical": "Ammonia"
-          },
-          {
-            "rank": 6,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "graphic-packaging-international-llc",
-            "name": "Graphic Packaging International LLC",
-            "city": "Queen City",
-            "county": "Cass County",
-            "value": 2328539.0,
-            "value_label": "2.3M lb",
-            "top_chemical": "Methanol"
-          },
-          {
-            "rank": 7,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "eastman-chemical-co-texas-operations",
-            "name": "Eastman Chemical CO Texas Operations",
-            "city": "Longview",
-            "county": "Harrison County",
-            "value": 2235957.0,
-            "value_label": "2.2M lb",
-            "top_chemical": "Ethylene"
-          },
-          {
-            "rank": 8,
-            "state": "ar",
-            "state_label": "Arkansas",
-            "slug": "domtar-a-w-llc-ashdown-mill",
-            "name": "Domtar A.W. LLC Ashdown Mill",
-            "city": "Ashdown",
-            "county": "Little River County",
-            "value": 2176833.0,
-            "value_label": "2.2M lb",
-            "top_chemical": "Methanol"
-          },
-          {
-            "rank": 9,
-            "state": "ar",
-            "state_label": "Arkansas",
-            "slug": "viskase-cos-inc",
-            "name": "Viskase Cos INC",
-            "city": "Osceola",
-            "county": "Mississippi County",
-            "value": 1839579.0,
-            "value_label": "1.8M lb",
-            "top_chemical": "Carbon disulfide"
-          },
-          {
-            "rank": 10,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "formosa-plastics-corp-texas",
-            "name": "Formosa Plastics Corp Texas",
-            "city": "Point Comfort",
-            "county": "Calhoun County",
-            "value": 1722896.0,
-            "value_label": "1.7M lb",
-            "top_chemical": "Ethylene"
           }
         ]
       },
@@ -1914,6 +1919,18 @@
         "rows": [
           {
             "rank": 1,
+            "state": "id",
+            "state_label": "Idaho",
+            "slug": "mccain-foods-usa-inc",
+            "name": "Mccain Foods USA INC.",
+            "city": "Burley",
+            "county": "Cassia County",
+            "value": 5618812.0,
+            "value_label": "5.6M lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 2,
             "state": "de",
             "state_label": "Delaware",
             "slug": "delaware-city-refinery",
@@ -1925,7 +1942,7 @@
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           },
           {
-            "rank": 2,
+            "rank": 3,
             "state": "ok",
             "state_label": "Oklahoma",
             "slug": "pryor-solae",
@@ -1937,7 +1954,19 @@
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           },
           {
-            "rank": 3,
+            "rank": 4,
+            "state": "wa",
+            "state_label": "Washington",
+            "slug": "lamb-weston-inc-richland-facility",
+            "name": "Lamb Weston INC Richland Facility",
+            "city": "Richland",
+            "county": "Benton County",
+            "value": 2848076.0,
+            "value_label": "2.8M lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 5,
             "state": "tx",
             "state_label": "Texas",
             "slug": "valero-refining-texas-l-p-houston-refinery",
@@ -1949,7 +1978,7 @@
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           },
           {
-            "rank": 4,
+            "rank": 6,
             "state": "me",
             "state_label": "Maine",
             "slug": "mccain-foods-usa-inc",
@@ -1961,7 +1990,7 @@
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           },
           {
-            "rank": 5,
+            "rank": 7,
             "state": "ca",
             "state_label": "California",
             "slug": "chevron-products-co-div-of-chevron-usa-inc",
@@ -1973,7 +2002,7 @@
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           },
           {
-            "rank": 6,
+            "rank": 8,
             "state": "tx",
             "state_label": "Texas",
             "slug": "pilgrim-s-pride-corp-mt-pleasant-complex",
@@ -1985,7 +2014,19 @@
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           },
           {
-            "rank": 7,
+            "rank": 9,
+            "state": "la",
+            "state_label": "Louisiana",
+            "slug": "cf-industries-nitrogen-llc",
+            "name": "Cf Industries Nitrogen LLC",
+            "city": "Donaldsonville",
+            "county": "Ascension Parish County",
+            "value": 1347682.0,
+            "value_label": "1.3M lb",
+            "top_chemical": "Ammonia"
+          },
+          {
+            "rank": 10,
             "state": "ok",
             "state_label": "Oklahoma",
             "slug": "tyson-poultry-inc-broken-bow-processing-plant",
@@ -1994,42 +2035,6 @@
             "county": "Mccurtain County",
             "value": 1288254.0,
             "value_label": "1.3M lb",
-            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
-          },
-          {
-            "rank": 8,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "valero-refining-texas-lp",
-            "name": "Valero Refining-Texas LP",
-            "city": "Texas City",
-            "county": "Galveston County",
-            "value": 1220015.0,
-            "value_label": "1.2M lb",
-            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
-          },
-          {
-            "rank": 9,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "sanderson-farms-palestine-processing",
-            "name": "Sanderson Farms Palestine Processing",
-            "city": "Palestine",
-            "county": "Anderson County",
-            "value": 1044819.0,
-            "value_label": "1.0M lb",
-            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
-          },
-          {
-            "rank": 10,
-            "state": "ar",
-            "state_label": "Arkansas",
-            "slug": "tyson-chicken-inc-hope-processing-plant",
-            "name": "Tyson Chicken INC. - Hope Processing Plant",
-            "city": "Hope",
-            "county": "Hempstead County",
-            "value": 959550.0,
-            "value_label": "960k lb",
             "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
           }
         ]
@@ -2042,6 +2047,18 @@
         "rows": [
           {
             "rank": 1,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "red-dog-operations",
+            "name": "Red Dog Operations",
+            "city": "Kotzebue",
+            "county": "Northwest Arctic Borough County",
+            "value": 723812260.0,
+            "value_label": "723.8M lb",
+            "top_chemical": "Zinc compounds"
+          },
+          {
+            "rank": 2,
             "state": "ut",
             "state_label": "Utah",
             "slug": "kennecott-utah-copper-mine-concentrators-power-plant",
@@ -2053,7 +2070,19 @@
             "top_chemical": "Lead  And Lead Compounds"
           },
           {
-            "rank": 2,
+            "rank": 3,
+            "state": "ak",
+            "state_label": "Alaska",
+            "slug": "hecla-greens-creek-mining-co",
+            "name": "Hecla Greens Creek Mining CO",
+            "city": "Juneau",
+            "county": "Juneau City And Borough County",
+            "value": 87556391.0,
+            "value_label": "87.6M lb",
+            "top_chemical": "Barium compounds (except for barium sulfate (CAS No. 7727-43-7))"
+          },
+          {
+            "rank": 4,
             "state": "tx",
             "state_label": "Texas",
             "slug": "midway-gas-plant",
@@ -2065,7 +2094,7 @@
             "top_chemical": "Hydrogen sulfide"
           },
           {
-            "rank": 3,
+            "rank": 5,
             "state": "az",
             "state_label": "Arizona",
             "slug": "asarco-llc-ray-complex-hayden-smelter-concentrator",
@@ -2077,7 +2106,7 @@
             "top_chemical": "Zinc compounds"
           },
           {
-            "rank": 4,
+            "rank": 6,
             "state": "nv",
             "state_label": "Nevada",
             "slug": "nevada-gold-mines-llc-goldstrike-mines-inc",
@@ -2089,7 +2118,7 @@
             "top_chemical": "Arsenic compounds"
           },
           {
-            "rank": 5,
+            "rank": 7,
             "state": "ar",
             "state_label": "Arkansas",
             "slug": "elemental-environmental-solutions-llc",
@@ -2101,7 +2130,7 @@
             "top_chemical": "Cyanide compounds"
           },
           {
-            "rank": 6,
+            "rank": 8,
             "state": "mt",
             "state_label": "Montana",
             "slug": "montana-resources-llc",
@@ -2113,7 +2142,7 @@
             "top_chemical": "Manganese  And Manganese Compounds"
           },
           {
-            "rank": 7,
+            "rank": 9,
             "state": "nv",
             "state_label": "Nevada",
             "slug": "nevada-gold-mines-llc-carlin-south-area",
@@ -2125,7 +2154,7 @@
             "top_chemical": "Arsenic compounds"
           },
           {
-            "rank": 8,
+            "rank": 10,
             "state": "az",
             "state_label": "Arizona",
             "slug": "freeport-mcmoran-miami-inc",
@@ -2135,30 +2164,6 @@
             "value": 26768409.0,
             "value_label": "26.8M lb",
             "top_chemical": "Copper  And Copper Compounds"
-          },
-          {
-            "rank": 9,
-            "state": "ut",
-            "state_label": "Utah",
-            "slug": "kennecott-utah-copper-smelter-refinery",
-            "name": "Kennecott Utah Copper Smelter & Refinery",
-            "city": "Magna",
-            "county": "Salt Lake County",
-            "value": 20986564.0,
-            "value_label": "21.0M lb",
-            "top_chemical": "Copper  And Copper Compounds"
-          },
-          {
-            "rank": 10,
-            "state": "tx",
-            "state_label": "Texas",
-            "slug": "ascend-performance-materials-chocolate-bayou-plant",
-            "name": "Ascend Performance Materials-Chocolate Bayou Plant",
-            "city": "Alvin",
-            "county": "Brazoria County",
-            "value": 18509786.0,
-            "value_label": "18.5M lb",
-            "top_chemical": "Ammonia"
           }
         ]
       }

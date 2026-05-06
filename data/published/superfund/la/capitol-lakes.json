@@ -1,0 +1,98 @@
+{
+  "site": {
+    "state": "la",
+    "state_label": "Louisiana",
+    "slug": "capitol-lakes",
+    "name": "Capitol Lakes",
+    "epa_id": "LAD980869440",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "East Baton Rouge County",
+    "county_slug": "east-baton-rouge",
+    "city": "Baton Rouge",
+    "city_slug": "baton-rouge",
+    "address": "Near Interstate 110 And Capitol Lake Drive",
+    "zip": "70802",
+    "lat": 30.460524,
+    "lng": -91.184992
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "LA1121008",
+        "name": "Wbr Public Utilities",
+        "slug": "wbr-public-utilities",
+        "state": "la",
+        "distance_miles": 1.76,
+        "place_name": "Port Allen",
+        "primary_source": "groundwater",
+        "population_served": 4329,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "LA1121014",
+        "name": "Port Allen Water System",
+        "slug": "port-allen-water-system",
+        "state": "la",
+        "distance_miles": 1.76,
+        "place_name": "Port Allen",
+        "primary_source": "groundwater",
+        "population_served": 6759,
+        "health_based_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "pwsid": "LA1121018",
+        "name": "West Baton Rouge Water Works District 2",
+        "slug": "west-baton-rouge-water-works-district-2",
+        "state": "la",
+        "distance_miles": 1.76,
+        "place_name": "Port Allen",
+        "primary_source": "groundwater",
+        "population_served": 13437,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "LA1121027",
+        "name": "Wbr District 4 -Section Road Winterville",
+        "slug": "wbr-district-4-section-road-winterville",
+        "state": "la",
+        "distance_miles": 1.76,
+        "place_name": "Port Allen",
+        "primary_source": "groundwater",
+        "population_served": 5571,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 4523,
+    "pct_low_income": 58.9,
+    "pct_people_of_color": 70.2,
+    "pct_under_5": 1.5,
+    "pct_over_64": 19.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (4 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:52:47Z"
+}

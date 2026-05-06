@@ -196,6 +196,46 @@ STATES: dict[str, State] = {
         population=3271616,
         counties_total=29,
     ),
+    "la": State(
+        slug="la",
+        abbr="LA",
+        name="Louisiana",
+        fips="22",
+        population=4657757,
+        counties_total=64,
+    ),
+    "ak": State(
+        slug="ak",
+        abbr="AK",
+        name="Alaska",
+        fips="02",
+        population=733391,
+        counties_total=30,
+    ),
+    "id": State(
+        slug="id",
+        abbr="ID",
+        name="Idaho",
+        fips="16",
+        population=1839106,
+        counties_total=44,
+    ),
+    "or": State(
+        slug="or",
+        abbr="OR",
+        name="Oregon",
+        fips="41",
+        population=4237256,
+        counties_total=36,
+    ),
+    "wa": State(
+        slug="wa",
+        abbr="WA",
+        name="Washington",
+        fips="53",
+        population=7705281,
+        counties_total=39,
+    ),
 }
 
 

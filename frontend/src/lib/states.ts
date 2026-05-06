@@ -28,12 +28,15 @@ export const REGION_ORDER: readonly Region[] = [
 ];
 
 export const LIVE_STATES: LiveState[] = [
+  { slug: "ak", abbr: "AK", name: "Alaska", region: "Pacific" },
   { slug: "ar", abbr: "AR", name: "Arkansas", region: "South" },
   { slug: "az", abbr: "AZ", name: "Arizona", region: "Southwest" },
   { slug: "ca", abbr: "CA", name: "California", region: "Pacific" },
   { slug: "ct", abbr: "CT", name: "Connecticut", region: "Northeast" },
   { slug: "de", abbr: "DE", name: "Delaware", region: "Northeast" },
   { slug: "hi", abbr: "HI", name: "Hawaii", region: "Pacific" },
+  { slug: "id", abbr: "ID", name: "Idaho", region: "Rocky Mountain" },
+  { slug: "la", abbr: "LA", name: "Louisiana", region: "South" },
   { slug: "ma", abbr: "MA", name: "Massachusetts", region: "Northeast" },
   { slug: "md", abbr: "MD", name: "Maryland", region: "Northeast" },
   { slug: "me", abbr: "ME", name: "Maine", region: "Northeast" },
@@ -43,11 +46,13 @@ export const LIVE_STATES: LiveState[] = [
   { slug: "nm", abbr: "NM", name: "New Mexico", region: "Southwest" },
   { slug: "nv", abbr: "NV", name: "Nevada", region: "Rocky Mountain" },
   { slug: "ok", abbr: "OK", name: "Oklahoma", region: "Southwest" },
+  { slug: "or", abbr: "OR", name: "Oregon", region: "Pacific" },
   { slug: "ri", abbr: "RI", name: "Rhode Island", region: "Northeast" },
   { slug: "sd", abbr: "SD", name: "South Dakota", region: "Rocky Mountain" },
   { slug: "tx", abbr: "TX", name: "Texas", region: "Southwest" },
   { slug: "ut", abbr: "UT", name: "Utah", region: "Rocky Mountain" },
   { slug: "vt", abbr: "VT", name: "Vermont", region: "Northeast" },
+  { slug: "wa", abbr: "WA", name: "Washington", region: "Pacific" },
   { slug: "wv", abbr: "WV", name: "West Virginia", region: "South" },
   { slug: "wy", abbr: "WY", name: "Wyoming", region: "Rocky Mountain" },
 ];

@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "la",
+    "state_label": "Louisiana",
+    "slug": "geismar-fractination-plant",
+    "name": "Geismar Fractination Plant",
+    "parent_company": "Energy Transfer LP",
+    "address": "10334 LOUISIANA HIGHWAY 75",
+    "city": "Geismar",
+    "county": "Ascension Parish County",
+    "county_slug": "ascension-parish",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 30.215685,
+    "lng": -91.044617
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 68419,
+    "air_releases_pounds": 67419,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1000,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 16.2,
+    "long_arc_pct_change": 17.6,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 58199
+      },
+      {
+        "year": 2023,
+        "value": 58892
+      },
+      {
+        "year": 2024,
+        "value": 68419
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Propylene",
+      "cas": "115-07-1",
+      "category": "general",
+      "total_pounds_recent": 59872,
+      "history": [
+        {
+          "year": 2022,
+          "value": 51097
+        },
+        {
+          "year": 2023,
+          "value": 51692
+        },
+        {
+          "year": 2024,
+          "value": 59872
+        }
+      ],
+      "yoy_pct_change": 15.8,
+      "long_arc_pct_change": 17.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylene",
+      "cas": "74-85-1",
+      "category": "general",
+      "total_pounds_recent": 8547,
+      "history": [
+        {
+          "year": 2022,
+          "value": 7102
+        },
+        {
+          "year": 2023,
+          "value": 7200
+        },
+        {
+          "year": 2024,
+          "value": 8547
+        }
+      ],
+      "yoy_pct_change": 18.7,
+      "long_arc_pct_change": 20.3,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 2821,
+    "pct_low_income": 0.9,
+    "pct_people_of_color": 38.6,
+    "pct_under_5": 13.4,
+    "pct_over_64": 5.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:52:46Z"
+}

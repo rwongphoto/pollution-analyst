@@ -1,0 +1,99 @@
+{
+  "facility": {
+    "state": "id",
+    "state_label": "Idaho",
+    "slug": "true-west-beef-llc",
+    "name": "True West Beef LLC",
+    "parent_company": "Agribeef Co",
+    "address": "6026 US HIGHWAY 93",
+    "city": "Jerome",
+    "county": "Jerome County",
+    "county_slug": "jerome",
+    "naics_label": "311611 \u00b7 Food",
+    "lat": 42.747359,
+    "lng": -114.435376
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 91738,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 91738,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 345.4,
+    "long_arc_pct_change": 345.4,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 20598
+      },
+      {
+        "year": 2024,
+        "value": 91738
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 91738,
+      "history": [
+        {
+          "year": 2023,
+          "value": 20598
+        },
+        {
+          "year": 2024,
+          "value": 91738
+        }
+      ],
+      "yoy_pct_change": 345.4,
+      "long_arc_pct_change": 345.4,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "summary": "Nitrate compounds (water dissociable; reportable only when in aqueous solution) releases at True West Beef LLC rose from 21k lb to 92k lb (4.5\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 345.4,
+      "magnitude_abs": 71140.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 20598
+        },
+        {
+          "year": 2024,
+          "value": 91738
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 24474,
+    "pct_low_income": 14.7,
+    "pct_people_of_color": 41.8,
+    "pct_under_5": 7.3,
+    "pct_over_64": 12.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Jerome County, ID (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:08:42Z"
+}

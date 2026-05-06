@@ -1,0 +1,231 @@
+{
+  "facility": {
+    "state": "wa",
+    "state_label": "Washington",
+    "slug": "pacific-aerospace-electronics",
+    "name": "Pacific Aerospace & Electronics",
+    "parent_company": "Qnnect",
+    "address": "434 OLDS STATION RD",
+    "city": "Wenatchee",
+    "county": "Chelan County",
+    "county_slug": "chelan",
+    "naics_label": "334417 \u00b7 Computers and Electronic Products",
+    "lat": 47.463032,
+    "lng": -120.32638
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 80955,
+    "air_releases_pounds": 34163,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 46792,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 178.0,
+    "long_arc_pct_change": 590.0,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 11733
+      },
+      {
+        "year": 2021,
+        "value": 1661
+      },
+      {
+        "year": 2022,
+        "value": 20436
+      },
+      {
+        "year": 2023,
+        "value": 29122
+      },
+      {
+        "year": 2024,
+        "value": 80955
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "1-Bromopropane",
+      "cas": "106-94-5",
+      "category": "carcinogen",
+      "total_pounds_recent": 46732,
+      "history": [
+        {
+          "year": 2022,
+          "value": 18751
+        },
+        {
+          "year": 2023,
+          "value": 28098
+        },
+        {
+          "year": 2024,
+          "value": 46732
+        }
+      ],
+      "yoy_pct_change": 66.3,
+      "long_arc_pct_change": 149.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Nitric acid",
+      "cas": "7697-37-2",
+      "category": "general",
+      "total_pounds_recent": 31904,
+      "history": [
+        {
+          "year": 2020,
+          "value": 11230
+        },
+        {
+          "year": 2024,
+          "value": 31904
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 184.1,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Lead compounds",
+      "cas": "N420",
+      "category": "pbt",
+      "total_pounds_recent": 1123,
+      "history": [
+        {
+          "year": 2013,
+          "value": 237
+        },
+        {
+          "year": 2014,
+          "value": 159
+        },
+        {
+          "year": 2015,
+          "value": 150
+        },
+        {
+          "year": 2016,
+          "value": 460
+        },
+        {
+          "year": 2017,
+          "value": 218
+        },
+        {
+          "year": 2018,
+          "value": 125
+        },
+        {
+          "year": 2020,
+          "value": 498
+        },
+        {
+          "year": 2021,
+          "value": 1656
+        },
+        {
+          "year": 2022,
+          "value": 1685
+        },
+        {
+          "year": 2023,
+          "value": 1024
+        },
+        {
+          "year": 2024,
+          "value": 1123
+        }
+      ],
+      "yoy_pct_change": 9.6,
+      "long_arc_pct_change": 373.6,
+      "long_arc_baseline_year": 2013
+    },
+    {
+      "chemical": "Cyanide compounds",
+      "cas": "N106",
+      "category": "respiratory",
+      "total_pounds_recent": 888,
+      "history": [
+        {
+          "year": 2024,
+          "value": 888
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "1,2-Butylene oxide",
+      "cas": "106-88-7",
+      "category": "carcinogen",
+      "total_pounds_recent": 308,
+      "history": [
+        {
+          "year": 2024,
+          "value": 308
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "1-Bromopropane",
+      "summary": "1-Bromopropane releases at Pacific Aerospace & Electronics rose from 28k lb to 47k lb between 2023 and 2024.",
+      "magnitude_pct": 66.3,
+      "magnitude_abs": 18634.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2020,
+          "value": 5
+        },
+        {
+          "year": 2021,
+          "value": 5
+        },
+        {
+          "year": 2022,
+          "value": 18751
+        },
+        {
+          "year": 2023,
+          "value": 28098
+        },
+        {
+          "year": 2024,
+          "value": 46732
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 27781,
+    "pct_low_income": 29.5,
+    "pct_people_of_color": 29.3,
+    "pct_under_5": 6.3,
+    "pct_over_64": 19.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (19 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:25:42Z"
+}

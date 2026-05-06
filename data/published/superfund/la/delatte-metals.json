@@ -1,0 +1,103 @@
+{
+  "site": {
+    "state": "la",
+    "state_label": "Louisiana",
+    "slug": "delatte-metals",
+    "name": "Delatte Metals",
+    "epa_id": "LAD052510344",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Tangipahoa County",
+    "county_slug": "tangipahoa",
+    "city": "Ponchatoula",
+    "city_slug": null,
+    "address": "1541 Weinberger Road",
+    "zip": "70454",
+    "lat": 30.4225,
+    "lng": -90.410833
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Lead"
+  },
+  "contaminants": [
+    {
+      "name": "Lead",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "LA1105019",
+        "name": "Pontchatoula Water System",
+        "slug": "pontchatoula-water-system",
+        "state": "la",
+        "distance_miles": 2.28,
+        "place_name": "Ponchatoula",
+        "primary_source": "groundwater",
+        "population_served": 6657,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "LA1105042",
+        "name": "La Casa Llc",
+        "slug": "la-casa-llc",
+        "state": "la",
+        "distance_miles": 2.28,
+        "place_name": "Ponchatoula",
+        "primary_source": "groundwater",
+        "population_served": 540,
+        "health_based_5yr": 4,
+        "unresolved": true
+      },
+      {
+        "pwsid": "LA1105102",
+        "name": "West Yellow Water Mh Park",
+        "slug": "west-yellow-water-mh-park",
+        "state": "la",
+        "distance_miles": 2.28,
+        "place_name": "Ponchatoula",
+        "primary_source": "groundwater",
+        "population_served": 174,
+        "health_based_5yr": 1,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 2749,
+    "pct_low_income": 22.7,
+    "pct_people_of_color": 13.3,
+    "pct_under_5": 12.0,
+    "pct_over_64": 10.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:52:47Z"
+}

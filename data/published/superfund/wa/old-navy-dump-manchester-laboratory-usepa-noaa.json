@@ -1,0 +1,167 @@
+{
+  "site": {
+    "state": "wa",
+    "state_label": "Washington",
+    "slug": "old-navy-dump-manchester-laboratory-usepa-noaa",
+    "name": "Old Navy Dump/Manchester Laboratory (Usepa/Noaa)",
+    "epa_id": "WA8680030931",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": true,
+    "county": "Kitsap County",
+    "county_slug": "kitsap",
+    "city": "Manchester",
+    "city_slug": null,
+    "address": "7411 Beach Dr E",
+    "zip": "98352",
+    "lat": 47.574443,
+    "lng": -122.548055
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 13,
+    "primary_contaminant": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin (Tcdd)"
+  },
+  "contaminants": [
+    {
+      "name": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin (Tcdd)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "2,4-Dimethylphenol",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Copper",
+      "media": "Leachate",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Copper",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Copper",
+      "media": "Surface Water",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Nickel",
+      "media": "Leachate",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Nickel",
+      "media": "Surface Water",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Leachate",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Zinc",
+      "media": "Leachate",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Zinc",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Zinc",
+      "media": "Surface Water",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "WA5350700",
+        "name": "Manchester Water District",
+        "slug": "manchester-water-district",
+        "state": "wa",
+        "distance_miles": 1.92,
+        "place_name": "Manchester",
+        "primary_source": "groundwater",
+        "population_served": 10475,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1610,
+    "pct_low_income": 25.2,
+    "pct_people_of_color": 25.2,
+    "pct_under_5": 1.5,
+    "pct_over_64": 16.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:25:44Z"
+}

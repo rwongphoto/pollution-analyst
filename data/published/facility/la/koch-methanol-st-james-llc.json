@@ -1,0 +1,179 @@
+{
+  "facility": {
+    "state": "la",
+    "state_label": "Louisiana",
+    "slug": "koch-methanol-st-james-llc",
+    "name": "Koch Methanol St. James LLC",
+    "parent_company": "Koch INC",
+    "address": "6856 LA HWY 3127",
+    "city": "Saint James",
+    "county": "St. James Parish County",
+    "county_slug": "st-james-parish",
+    "naics_label": "325199 \u00b7 Chemicals",
+    "lat": 29.97579,
+    "lng": -90.869088
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 218557,
+    "air_releases_pounds": 180390,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 38167,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 87.2,
+    "long_arc_pct_change": 188.5,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 75744
+      },
+      {
+        "year": 2022,
+        "value": 118582
+      },
+      {
+        "year": 2023,
+        "value": 116739
+      },
+      {
+        "year": 2024,
+        "value": 218557
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 126500,
+      "history": [
+        {
+          "year": 2021,
+          "value": 24920
+        },
+        {
+          "year": 2022,
+          "value": 47581
+        },
+        {
+          "year": 2023,
+          "value": 68765
+        },
+        {
+          "year": 2024,
+          "value": 126500
+        }
+      ],
+      "yoy_pct_change": 84.0,
+      "long_arc_pct_change": 407.6,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 92057,
+      "history": [
+        {
+          "year": 2021,
+          "value": 50824
+        },
+        {
+          "year": 2022,
+          "value": 71001
+        },
+        {
+          "year": 2023,
+          "value": 47974
+        },
+        {
+          "year": 2024,
+          "value": 92057
+        }
+      ],
+      "yoy_pct_change": 91.9,
+      "long_arc_pct_change": 81.1,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Ammonia",
+      "summary": "Ammonia releases at Koch Methanol St. James LLC rose from 69k lb to 126k lb between 2023 and 2024.",
+      "magnitude_pct": 84.0,
+      "magnitude_abs": 57735.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 24920
+        },
+        {
+          "year": 2022,
+          "value": 47581
+        },
+        {
+          "year": 2023,
+          "value": 68765
+        },
+        {
+          "year": 2024,
+          "value": 126500
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Methanol",
+      "summary": "Methanol releases at Koch Methanol St. James LLC rose from 48k lb to 92k lb between 2023 and 2024.",
+      "magnitude_pct": 91.9,
+      "magnitude_abs": 44083.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 50824
+        },
+        {
+          "year": 2022,
+          "value": 71001
+        },
+        {
+          "year": 2023,
+          "value": 47974
+        },
+        {
+          "year": 2024,
+          "value": 92057
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 471,
+    "pct_low_income": 60.3,
+    "pct_people_of_color": 87.7,
+    "pct_under_5": 0.0,
+    "pct_over_64": 21.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:52:46Z"
+}

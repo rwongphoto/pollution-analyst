@@ -1,0 +1,95 @@
+{
+  "site": {
+    "state": "wa",
+    "state_label": "Washington",
+    "slug": "northwest-transformer",
+    "name": "Northwest Transformer",
+    "epa_id": "WAD980833974",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Whatcom County",
+    "county_slug": "whatcom",
+    "city": "Everson",
+    "city_slug": null,
+    "address": "6882 Mission St",
+    "zip": "98247",
+    "lat": 48.8905,
+    "lng": -122.3534
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 1,
+    "primary_contaminant": "Polychlorinated Biphenyls (Pcbs)"
+  },
+  "contaminants": [
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 2
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "WA5324200",
+        "name": "Everson City Of",
+        "slug": "everson-city-of",
+        "state": "wa",
+        "distance_miles": 0.86,
+        "place_name": "Everson",
+        "primary_source": "groundwater",
+        "population_served": 3893,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "WA5329014",
+        "name": "Louie Joe Water Association",
+        "slug": "louie-joe-water-association",
+        "state": "wa",
+        "distance_miles": 0.86,
+        "place_name": "Everson",
+        "primary_source": "groundwater",
+        "population_served": 471,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "WA5332350",
+        "name": "Hemmi Road Water Association",
+        "slug": "hemmi-road-water-association",
+        "state": "wa",
+        "distance_miles": 0.86,
+        "place_name": "Everson",
+        "primary_source": "groundwater",
+        "population_served": 236,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 3230,
+    "pct_low_income": 26.8,
+    "pct_people_of_color": 35.6,
+    "pct_under_5": 7.8,
+    "pct_over_64": 12.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:25:44Z"
+}

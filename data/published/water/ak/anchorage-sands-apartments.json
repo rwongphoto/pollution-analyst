@@ -1,0 +1,222 @@
+{
+  "utility": {
+    "state": "ak",
+    "state_label": "Alaska",
+    "slug": "anchorage-sands-apartments",
+    "name": "Anchorage Sands Apartments",
+    "pwsid": "AK2211198",
+    "population_served": 160,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Anchorage"
+    ],
+    "county": "Anchorage County",
+    "county_slug": "anchorage",
+    "place_slug": "anchorage"
+  },
+  "reporting_period": {
+    "start": "2020-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 5
+  },
+  "violations": [
+    {
+      "year": 2021,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    },
+    {
+      "year": 2020,
+      "contaminant": "Beryllium",
+      "contaminant_code": "1040",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2020,
+        "value": 1
+      },
+      {
+        "year": 2021,
+        "value": 1
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2020,
+        "value": 0
+      },
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 1
+      },
+      {
+        "contaminant": "Beryllium",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 290674,
+    "pct_low_income": 9.6,
+    "pct_people_of_color": 44.8,
+    "pct_under_5": 7.0,
+    "pct_over_64": 12.0,
+    "ej_indexes": [
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 48.3,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 16.8,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 59.4,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 36.0,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 94.1,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 61.6,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 22.5,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 78.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 86.2,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 64.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 18.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 73.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 27.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 97.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 72.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 28.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 75.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 107.5
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Anchorage, Alaska (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:01:50Z"
+}

@@ -1,0 +1,205 @@
+{
+  "utility": {
+    "state": "id",
+    "state_label": "Idaho",
+    "slug": "shelley-city-of",
+    "name": "Shelley City Of",
+    "pwsid": "ID6060071",
+    "population_served": 4409,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Shelley"
+    ],
+    "county": "Bingham County",
+    "county_slug": "bingham",
+    "place_slug": "shelley"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 48253,
+    "pct_low_income": 10.4,
+    "pct_people_of_color": 26.5,
+    "pct_under_5": 8.1,
+    "pct_over_64": 14.5,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 6.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 57.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 36.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 18.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 17.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 20.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 61.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 42.8,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 49.1,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 19.0,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 86.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 8.6
+      },
+      {
+        "label": "Ozone",
+        "score": 106.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 45.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 26.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 17.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 24.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 68.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 1.5
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 40.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 3.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 45.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 22.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 17.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Bingham, Idaho (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:08:42Z"
+}

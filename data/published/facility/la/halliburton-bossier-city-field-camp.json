@@ -1,0 +1,143 @@
+{
+  "facility": {
+    "state": "la",
+    "state_label": "Louisiana",
+    "slug": "halliburton-bossier-city-field-camp",
+    "name": "Halliburton Bossier City Field Camp",
+    "parent_company": "Halliburton Energy Services INC",
+    "address": "4720 INDUSTRIAL EXT",
+    "city": "Bossier City",
+    "county": "Bossier Parish County",
+    "county_slug": "bossier-parish",
+    "naics_label": "325998 \u00b7 Chemicals",
+    "lat": 32.530157,
+    "lng": -93.666623
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3286,
+    "air_releases_pounds": 2656,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 630,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -46.8,
+    "long_arc_pct_change": -45.4,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 6021
+      },
+      {
+        "year": 2022,
+        "value": 8066
+      },
+      {
+        "year": 2023,
+        "value": 6172
+      },
+      {
+        "year": 2024,
+        "value": 3286
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 2236,
+      "history": [
+        {
+          "year": 2021,
+          "value": 4771
+        },
+        {
+          "year": 2022,
+          "value": 4727
+        },
+        {
+          "year": 2023,
+          "value": 4570
+        },
+        {
+          "year": 2024,
+          "value": 2236
+        }
+      ],
+      "yoy_pct_change": -51.1,
+      "long_arc_pct_change": -53.1,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Certain glycol ethers",
+      "cas": "N230",
+      "category": "respiratory",
+      "total_pounds_recent": 683,
+      "history": [
+        {
+          "year": 2022,
+          "value": 828
+        },
+        {
+          "year": 2023,
+          "value": 691
+        },
+        {
+          "year": 2024,
+          "value": 683
+        }
+      ],
+      "yoy_pct_change": -1.2,
+      "long_arc_pct_change": -17.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 367,
+      "history": [
+        {
+          "year": 2021,
+          "value": 673
+        },
+        {
+          "year": 2022,
+          "value": 2503
+        },
+        {
+          "year": 2023,
+          "value": 911
+        },
+        {
+          "year": 2024,
+          "value": 367
+        }
+      ],
+      "yoy_pct_change": -59.7,
+      "long_arc_pct_change": -45.5,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 27708,
+    "pct_low_income": 55.2,
+    "pct_people_of_color": 49.8,
+    "pct_under_5": 6.3,
+    "pct_over_64": 13.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (21 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:52:46Z"
+}

@@ -1,0 +1,270 @@
+{
+  "utility": {
+    "state": "or",
+    "state_label": "Oregon",
+    "slug": "north-plains-water-department",
+    "name": "North Plains Water Department",
+    "pwsid": "OR4100576",
+    "population_served": 3663,
+    "primary_source": "purchased",
+    "cities_served": [
+      "North Plains"
+    ],
+    "county": "Washington County",
+    "county_slug": "washington",
+    "place_slug": "north-plains"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 5,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Total Trihalomethanes (TTHM)",
+      "contaminant_code": "2950",
+      "severity": "monitoring",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 4
+      },
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 4
+      },
+      {
+        "contaminant": "Total Trihalomethanes (TTHM)",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:OR4100576"
+      }
+    }
+  ],
+  "equity": {
+    "population": 599541,
+    "pct_low_income": 8.2,
+    "pct_people_of_color": 37.3,
+    "pct_under_5": 5.9,
+    "pct_over_64": 14.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 92.9,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 10.4,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 56.0,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 77.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 58.7,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 67.8,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 40.7,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 78.2,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 74.8,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 74.2,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 47.4,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.4,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 96.1
+      },
+      {
+        "label": "Ozone",
+        "score": 4.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 59.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 76.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 59.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 66.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 28.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 13.3
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 75.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 74.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 52.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 42.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 13.2
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Washington, Oregon (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:15:42Z"
+}

@@ -1,0 +1,104 @@
+{
+  "facility": {
+    "state": "la",
+    "state_label": "Louisiana",
+    "slug": "enterprise-products-operating",
+    "name": "Enterprise Products Operating",
+    "parent_company": "Enterprise Products Operating LLC",
+    "address": "6225 HIGHWAY 996 LOOP",
+    "city": "Belle Rose",
+    "county": "Assumption Parish County",
+    "county_slug": "assumption-parish",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 30.008028,
+    "lng": -91.107536
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 5537,
+    "air_releases_pounds": 5537,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -35.9,
+    "long_arc_pct_change": 14.3,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 4846
+      },
+      {
+        "year": 2023,
+        "value": 8635
+      },
+      {
+        "year": 2024,
+        "value": 5537
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 5480,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4846
+        },
+        {
+          "year": 2023,
+          "value": 8000
+        },
+        {
+          "year": 2024,
+          "value": 5480
+        }
+      ],
+      "yoy_pct_change": -31.5,
+      "long_arc_pct_change": 13.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 57,
+      "history": [
+        {
+          "year": 2023,
+          "value": 635
+        },
+        {
+          "year": 2024,
+          "value": 57
+        }
+      ],
+      "yoy_pct_change": -91.0,
+      "long_arc_pct_change": -91.0,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 2420,
+    "pct_low_income": 30.5,
+    "pct_people_of_color": 48.3,
+    "pct_under_5": 10.7,
+    "pct_over_64": 14.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:52:46Z"
+}

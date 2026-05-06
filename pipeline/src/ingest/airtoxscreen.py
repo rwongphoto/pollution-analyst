@@ -80,6 +80,11 @@ STATE_TO_REGION: dict[str, str] = {
     "ND": "8",
     "SD": "8",
     "UT": "8",
+    "LA": "6a",
+    "AK": "10",
+    "ID": "10",
+    "OR": "10",
+    "WA": "10",
     # Add more as states register: Region 1 = CT/ME/MA/NH/RI/VT,
     # 2 = NJ/NY, 3 = DE/DC/MD/PA/VA/WV, 4a = AL/FL/GA/KY, 4b = MS/NC/SC/TN,
     # 5a = IL/IN/MI, 5b = MN/OH/WI, 6a = AR/LA/NM/OK, 6b = TX (verified

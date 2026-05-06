@@ -1,0 +1,213 @@
+{
+  "utility": {
+    "state": "wa",
+    "state_label": "Washington",
+    "slug": "aleck-bay-park-water-system",
+    "name": "Aleck Bay Park Water System",
+    "pwsid": "WA5301338",
+    "population_served": 40,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Lopez Island"
+    ],
+    "county": "San Juan County",
+    "county_slug": "san-juan",
+    "place_slug": null
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 0,
+    "pct_low_income": 11.0,
+    "pct_people_of_color": 12.700000000000003,
+    "pct_under_5": 3.2,
+    "pct_over_64": 34.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 9.2,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 0.9,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 2.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 25.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 30.2,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 1.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 44.0,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 53.2,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 7.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 91.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 8.0
+      },
+      {
+        "label": "Ozone",
+        "score": 2.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 2.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 21.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 23.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 0.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 29.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 33.4
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 25.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "San Juan, Washington (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:25:42Z"
+}

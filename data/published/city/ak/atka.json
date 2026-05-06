@@ -1,0 +1,351 @@
+{
+  "place": {
+    "state": "ak",
+    "state_label": "Alaska",
+    "slug": "atka",
+    "name": "Atka",
+    "fips": "0204210",
+    "population": 28,
+    "county_name": "Aleutians West",
+    "county_fips": "02016"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 7.4,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 7.4
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.252,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.252
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1008,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1008
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 67086,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 7.8,
+      "long_arc_pct_change": 86.1,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 36046
+        },
+        {
+          "year": 2011,
+          "value": 62313
+        },
+        {
+          "year": 2012,
+          "value": 64320
+        },
+        {
+          "year": 2013,
+          "value": 63683
+        },
+        {
+          "year": 2014,
+          "value": 73427
+        },
+        {
+          "year": 2015,
+          "value": 71103
+        },
+        {
+          "year": 2016,
+          "value": 69664
+        },
+        {
+          "year": 2017,
+          "value": 78505
+        },
+        {
+          "year": 2018,
+          "value": 74806
+        },
+        {
+          "year": 2019,
+          "value": 72773
+        },
+        {
+          "year": 2020,
+          "value": 67621
+        },
+        {
+          "year": 2021,
+          "value": 67480
+        },
+        {
+          "year": 2022,
+          "value": 62231
+        },
+        {
+          "year": 2023,
+          "value": 67086
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 50,
+    "violations_5yr_total": 144,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 38,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "atka",
+        "state": "ak",
+        "state_label": "Alaska",
+        "name": "Atka",
+        "pwsid": "AK2260058",
+        "population_served": 50,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Endrin",
+      "summary": "Unresolved Nitrate/Nitrite violation cited in 2025 (endrin).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AK2260058"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Lindane",
+      "summary": "Unresolved Nitrate/Nitrite violation cited in 2025 (lindane).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AK2260058"
+      }
+    }
+  ],
+  "equity": {
+    "population": 28,
+    "pct_low_income": 10.7,
+    "pct_people_of_color": 100.0,
+    "pct_under_5": 25.0,
+    "pct_over_64": 0.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Atka, Alaska (Census place block groups)"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "nikolski",
+      "name": "Nikolski",
+      "population": 12,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "adak",
+      "name": "Adak",
+      "population": 248,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "unalaska",
+      "name": "Unalaska",
+      "population": 4342,
+      "facilities_count": 2,
+      "total_releases_pounds": 3888,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "crooked-creek",
+      "name": "Crooked Creek",
+      "population": 28,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "karluk",
+      "name": "Karluk",
+      "population": 27,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "chignik-lake",
+      "name": "Chignik Lake",
+      "population": 30,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T19:01:50Z"
+}

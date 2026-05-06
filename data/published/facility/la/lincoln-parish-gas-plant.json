@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "la",
+    "state_label": "Louisiana",
+    "slug": "lincoln-parish-gas-plant",
+    "name": "Lincoln Parish Gas Plant",
+    "parent_company": "Energy Transfer LP",
+    "address": "400 ELLIOTT RD.",
+    "city": "Arcadia",
+    "county": "Lincoln Parish County",
+    "county_slug": "lincoln-parish",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.574268,
+    "lng": -92.855604
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 5807,
+    "air_releases_pounds": 3752,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2055,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 81.3,
+    "long_arc_pct_change": 88.5,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 3080
+      },
+      {
+        "year": 2023,
+        "value": 3203
+      },
+      {
+        "year": 2024,
+        "value": 5807
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 4386,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2210
+        },
+        {
+          "year": 2023,
+          "value": 2432
+        },
+        {
+          "year": 2024,
+          "value": 4386
+        }
+      ],
+      "yoy_pct_change": 80.3,
+      "long_arc_pct_change": 98.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 1421,
+      "history": [
+        {
+          "year": 2022,
+          "value": 870
+        },
+        {
+          "year": 2023,
+          "value": 771
+        },
+        {
+          "year": 2024,
+          "value": 1421
+        }
+      ],
+      "yoy_pct_change": 84.3,
+      "long_arc_pct_change": 63.3,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 48323,
+    "pct_low_income": 29.7,
+    "pct_people_of_color": 46.9,
+    "pct_under_5": 5.7,
+    "pct_over_64": 13.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Lincoln Parish County, LA (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:52:46Z"
+}

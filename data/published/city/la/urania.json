@@ -1,0 +1,365 @@
+{
+  "place": {
+    "state": "la",
+    "state_label": "Louisiana",
+    "slug": "urania",
+    "name": "Urania",
+    "fips": "2277490",
+    "population": 1219,
+    "county_name": null,
+    "county_fips": ""
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 1,
+    "total_releases_pounds": 56291,
+    "air_releases_pounds": 56291,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": 16.7,
+    "long_arc_pct_change": 34.5,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 41866
+      },
+      {
+        "year": 2021,
+        "value": 46735
+      },
+      {
+        "year": 2022,
+        "value": 49363
+      },
+      {
+        "year": 2023,
+        "value": 48219
+      },
+      {
+        "year": 2024,
+        "value": 56291
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 56291,
+      "units": "lb",
+      "yoy_pct_change": 16.7,
+      "long_arc_pct_change": 34.5,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 41866
+        },
+        {
+          "year": 2021,
+          "value": 46735
+        },
+        {
+          "year": 2022,
+          "value": 49363
+        },
+        {
+          "year": 2023,
+          "value": 48219
+        },
+        {
+          "year": 2024,
+          "value": 56291
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "lasalle-lumber-co-llc-urania-sawmill",
+      "state": "la",
+      "state_label": "Louisiana",
+      "name": "Lasalle Lumber CO LLC - Urania Sawmill",
+      "parent_company": "Hunt Forest Products LLC",
+      "total_pounds_recent": 56291,
+      "yoy_pct_change": 16.7,
+      "top_chemical": "Methanol",
+      "city": "Urania",
+      "lat": 31.86241,
+      "lng": -92.293032
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 784,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "urania-water-system",
+        "state": "la",
+        "state_label": "Louisiana",
+        "name": "Town Of Urania Water System",
+        "pwsid": "LA1059011",
+        "population_served": 784,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [],
+  "equity": {
+    "population": 1219,
+    "pct_low_income": 10.1,
+    "pct_people_of_color": 44.0,
+    "pct_under_5": 2.1,
+    "pct_over_64": 9.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Urania, Louisiana (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.9,
+      "age_adjusted": 11.0,
+      "state_mean": 10.3,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.65,
+      "vs_state_pct": 6.3,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.98,
+      "vs_us_pct": 9.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 12.4,
+      "age_adjusted": 10.7,
+      "state_mean": 7.5,
+      "us_mean": 5.5,
+      "vs_state_pp": 3.19,
+      "vs_state_pct": 42.5,
+      "vs_state_class": "worse",
+      "vs_us_pp": 5.2,
+      "vs_us_pct": 94.5,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 9.7,
+      "age_adjusted": 7.8,
+      "state_mean": 6.4,
+      "us_mean": 5.3,
+      "vs_state_pp": 1.42,
+      "vs_state_pct": 22.3,
+      "vs_state_class": "worse",
+      "vs_us_pp": 2.49,
+      "vs_us_pct": 46.9,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 16.4,
+      "age_adjusted": 14.0,
+      "state_mean": 13.4,
+      "us_mean": 10.5,
+      "vs_state_pp": 0.59,
+      "vs_state_pct": 4.4,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 3.54,
+      "vs_us_pct": 33.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 22.3,
+      "age_adjusted": 23.7,
+      "state_mean": 20.2,
+      "us_mean": 16.8,
+      "vs_state_pp": 3.5,
+      "vs_state_pct": 17.3,
+      "vs_state_class": "worse",
+      "vs_us_pp": 6.95,
+      "vs_us_pct": 41.5,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "la",
+      "slug": "baldwin",
+      "name": "Baldwin",
+      "population": 2065,
+      "facilities_count": 1,
+      "total_releases_pounds": 47026,
+      "dominant_medium": "air",
+      "ej_pct_avg": 38.6,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "la",
+      "slug": "dodson",
+      "name": "Dodson",
+      "population": 312,
+      "facilities_count": 1,
+      "total_releases_pounds": 48668,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "la",
+      "slug": "zwolle",
+      "name": "Zwolle",
+      "population": 1860,
+      "facilities_count": 1,
+      "total_releases_pounds": 20126,
+      "dominant_medium": "air",
+      "ej_pct_avg": 40.0,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "la",
+      "slug": "joyce",
+      "name": "Joyce",
+      "population": 184,
+      "facilities_count": 1,
+      "total_releases_pounds": 35734,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "la",
+      "slug": "bridge-city",
+      "name": "Bridge City",
+      "population": 6916,
+      "facilities_count": 1,
+      "total_releases_pounds": 119930,
+      "dominant_medium": "air",
+      "ej_pct_avg": 64.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "la",
+      "slug": "port-allen",
+      "name": "Port Allen",
+      "population": 4956,
+      "facilities_count": 1,
+      "total_releases_pounds": 18610,
+      "dominant_medium": "air",
+      "ej_pct_avg": 77.4,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T18:52:47Z"
+}

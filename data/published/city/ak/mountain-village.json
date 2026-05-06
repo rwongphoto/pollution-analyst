@@ -1,0 +1,320 @@
+{
+  "place": {
+    "state": "ak",
+    "state_label": "Alaska",
+    "slug": "mountain-village",
+    "name": "Mountain Village",
+    "fips": "0251180",
+    "population": 884,
+    "county_name": null,
+    "county_fips": null
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 850,
+    "violations_5yr_total": 188,
+    "health_based_5yr_total": 15,
+    "unresolved_total": 128,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "mountain-village-water-system",
+        "state": "ak",
+        "state_label": "Alaska",
+        "name": "Mountain Village Water System",
+        "pwsid": "AK2270150",
+        "population_served": 850,
+        "health_based_violations_5yr": 15,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AK2270150"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Arsenic",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (arsenic).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AK2270150"
+      }
+    }
+  ],
+  "equity": {
+    "population": 884,
+    "pct_low_income": 39.6,
+    "pct_people_of_color": 100.0,
+    "pct_under_5": 16.3,
+    "pct_over_64": 4.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Mountain Village, Alaska (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 14.9,
+      "age_adjusted": 14.7,
+      "state_mean": 10.6,
+      "us_mean": 10.0,
+      "vs_state_pp": 4.1,
+      "vs_state_pct": 38.7,
+      "vs_state_class": "worse",
+      "vs_us_pp": 4.68,
+      "vs_us_pct": 46.7,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 11.3,
+      "age_adjusted": 12.4,
+      "state_mean": 5.8,
+      "us_mean": 5.5,
+      "vs_state_pp": 6.63,
+      "vs_state_pct": 114.9,
+      "vs_state_class": "worse",
+      "vs_us_pp": 6.9,
+      "vs_us_pct": 125.5,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.3,
+      "age_adjusted": 9.9,
+      "state_mean": 5.5,
+      "us_mean": 5.3,
+      "vs_state_pp": 4.41,
+      "vs_state_pct": 80.3,
+      "vs_state_class": "worse",
+      "vs_us_pp": 4.59,
+      "vs_us_pct": 86.4,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 16.3,
+      "age_adjusted": 18.2,
+      "state_mean": 9.0,
+      "us_mean": 10.5,
+      "vs_state_pp": 9.21,
+      "vs_state_pct": 102.4,
+      "vs_state_class": "worse",
+      "vs_us_pp": 7.74,
+      "vs_us_pct": 74.0,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 24.9,
+      "age_adjusted": 23.7,
+      "state_mean": 16.3,
+      "us_mean": 16.8,
+      "vs_state_pp": 7.39,
+      "vs_state_pct": 45.3,
+      "vs_state_class": "worse",
+      "vs_us_pp": 6.95,
+      "vs_us_pct": 41.5,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "hoonah",
+      "name": "Hoonah",
+      "population": 896,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "togiak",
+      "name": "Togiak",
+      "population": 842,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "nunapitchuk",
+      "name": "Nunapitchuk",
+      "population": 827,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "savoonga",
+      "name": "Savoonga",
+      "population": 823,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "tuntutuliak",
+      "name": "Tuntutuliak",
+      "population": 820,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "denali-park",
+      "name": "Denali Park",
+      "population": 817,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T19:01:50Z"
+}

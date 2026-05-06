@@ -1,0 +1,181 @@
+{
+  "site": {
+    "state": "la",
+    "state_label": "Louisiana",
+    "slug": "sba-shipyard",
+    "name": "Sba Shipyard",
+    "epa_id": "LAD008434185",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Jefferson Davis County",
+    "county_slug": "jefferson-davis",
+    "city": "Jennings",
+    "city_slug": null,
+    "address": "END of State Hwy 3166 Adj to W Bank Mermentau",
+    "zip": "70546",
+    "lat": 30.160603,
+    "lng": -92.612236
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "LA1001005",
+        "name": "Village Of Mermentau Water System",
+        "slug": "mermentau-water-system",
+        "state": "la",
+        "distance_miles": 2.54,
+        "place_name": "Mermentau",
+        "primary_source": "groundwater",
+        "population_served": 780,
+        "health_based_5yr": 20,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 32277,
+    "pct_low_income": 16.0,
+    "pct_people_of_color": 23.0,
+    "pct_under_5": 6.3,
+    "pct_over_64": 16.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 39.2,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 17.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 33.1,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 14.1,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 78.7,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 10.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 62.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 69.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 36.6,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 28.7,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 51.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 26.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 78.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 48.9
+      },
+      {
+        "label": "Ozone",
+        "score": 12.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 41.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 20.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 41.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 13.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 67.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 53.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 33.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 31.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 53.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 29.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 10.4
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Jefferson Davis County, Louisiana (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:52:47Z"
+}

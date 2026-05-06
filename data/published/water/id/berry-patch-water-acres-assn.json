@@ -1,0 +1,237 @@
+{
+  "utility": {
+    "state": "id",
+    "state_label": "Idaho",
+    "slug": "berry-patch-water-acres-assn",
+    "name": "Berry Patch Water Acres Assn",
+    "pwsid": "ID1090109",
+    "population_served": 45,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Athol"
+    ],
+    "county": "Bonner County",
+    "county_slug": "bonner",
+    "place_slug": "athol"
+  },
+  "reporting_period": {
+    "start": "2021-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 5
+  },
+  "violations": [
+    {
+      "year": 2021,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2021,
+        "value": 1
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 47976,
+    "pct_low_income": 11.9,
+    "pct_people_of_color": 9.5,
+    "pct_under_5": 6.1,
+    "pct_over_64": 25.7,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 92.2,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 2.1,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 17.0,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 17.0,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 5.6,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 15.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 52.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 16.8,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 51.2,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 49.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 89.0,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 83.5
+      },
+      {
+        "label": "Ozone",
+        "score": 25.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 19.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 18.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 4.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 13.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 39.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 7.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 34.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 31.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 53.2
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Bonner, Idaho (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:08:42Z"
+}

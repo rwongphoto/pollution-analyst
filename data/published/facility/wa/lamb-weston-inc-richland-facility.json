@@ -1,0 +1,198 @@
+{
+  "facility": {
+    "state": "wa",
+    "state_label": "Washington",
+    "slug": "lamb-weston-inc-richland-facility",
+    "name": "Lamb Weston INC Richland Facility",
+    "parent_company": "Lamb Weston INC",
+    "address": "2013 SAINT ST",
+    "city": "Richland",
+    "county": "Benton County",
+    "county_slug": "benton",
+    "naics_label": "311411 \u00b7 Food",
+    "lat": 46.311174,
+    "lng": -119.29811
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3314985,
+    "air_releases_pounds": 15648,
+    "water_releases_pounds": 2848076,
+    "land_releases_pounds": 451261,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 17.8,
+    "long_arc_pct_change": 1039.5,
+    "long_arc_baseline_year": 2016,
+    "history": [
+      {
+        "year": 2016,
+        "value": 290906
+      },
+      {
+        "year": 2017,
+        "value": 612438
+      },
+      {
+        "year": 2018,
+        "value": 1534085
+      },
+      {
+        "year": 2019,
+        "value": 1947721
+      },
+      {
+        "year": 2020,
+        "value": 1684174
+      },
+      {
+        "year": 2021,
+        "value": 3752601
+      },
+      {
+        "year": 2022,
+        "value": 2888327
+      },
+      {
+        "year": 2023,
+        "value": 2813762
+      },
+      {
+        "year": 2024,
+        "value": 3314985
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 3299337,
+      "history": [
+        {
+          "year": 2016,
+          "value": 280171
+        },
+        {
+          "year": 2017,
+          "value": 612390
+        },
+        {
+          "year": 2018,
+          "value": 1534085
+        },
+        {
+          "year": 2019,
+          "value": 1947721
+        },
+        {
+          "year": 2020,
+          "value": 1662899
+        },
+        {
+          "year": 2021,
+          "value": 3745995
+        },
+        {
+          "year": 2022,
+          "value": 2859761
+        },
+        {
+          "year": 2023,
+          "value": 2783446
+        },
+        {
+          "year": 2024,
+          "value": 3299337
+        }
+      ],
+      "yoy_pct_change": 18.5,
+      "long_arc_pct_change": 1077.6,
+      "long_arc_baseline_year": 2016
+    },
+    {
+      "chemical": "Hydrogen sulfide",
+      "cas": "7783-06-4",
+      "category": "general",
+      "total_pounds_recent": 15648,
+      "history": [
+        {
+          "year": 2020,
+          "value": 7731
+        },
+        {
+          "year": 2021,
+          "value": 6606
+        },
+        {
+          "year": 2022,
+          "value": 15645
+        },
+        {
+          "year": 2023,
+          "value": 13795
+        },
+        {
+          "year": 2024,
+          "value": 15648
+        }
+      ],
+      "yoy_pct_change": 13.4,
+      "long_arc_pct_change": 102.4,
+      "long_arc_baseline_year": 2020
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0007664417",
+      "summary": "0007664417 releases at Lamb Weston INC Richland Facility fell from 17k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -16521.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2016,
+          "value": 10735
+        },
+        {
+          "year": 2017,
+          "value": 48
+        },
+        {
+          "year": 2020,
+          "value": 13544
+        },
+        {
+          "year": 2022,
+          "value": 12921
+        },
+        {
+          "year": 2023,
+          "value": 16521
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 30447,
+    "pct_low_income": 26.3,
+    "pct_people_of_color": 23.6,
+    "pct_under_5": 5.5,
+    "pct_over_64": 16.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (22 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:25:42Z"
+}

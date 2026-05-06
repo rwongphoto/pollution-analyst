@@ -1,0 +1,222 @@
+{
+  "utility": {
+    "state": "id",
+    "state_label": "Idaho",
+    "slug": "d-and-s-purple-sage-ranchettes",
+    "name": "D And S Purple Sage Ranchettes",
+    "pwsid": "ID3140092",
+    "population_served": 70,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Middleton"
+    ],
+    "county": "Canyon County",
+    "county_slug": "canyon",
+    "place_slug": "middleton"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Reporting failure"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:ID3140092"
+      }
+    }
+  ],
+  "equity": {
+    "population": 9614,
+    "pct_low_income": 9.8,
+    "pct_people_of_color": 20.099999999999994,
+    "pct_under_5": 6.7,
+    "pct_over_64": 14.9,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 89.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 40.6,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 46.8,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 46.0,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 31.0,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 25.8,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 26.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 18.2,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 62.7,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 97.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 89.3
+      },
+      {
+        "label": "Ozone",
+        "score": 73.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 45.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 46.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 30.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 27.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 13.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 19.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 41.9
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 96.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Middleton, Idaho (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:08:42Z"
+}

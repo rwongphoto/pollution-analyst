@@ -1,0 +1,205 @@
+{
+  "utility": {
+    "state": "id",
+    "state_label": "Idaho",
+    "slug": "avery-water-and-sewer-dist",
+    "name": "Avery Water And Sewer Dist",
+    "pwsid": "ID1400004",
+    "population_served": 114,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Avery"
+    ],
+    "county": "Shoshone County",
+    "county_slug": "shoshone",
+    "place_slug": null
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 13399,
+    "pct_low_income": 16.0,
+    "pct_people_of_color": 10.900000000000006,
+    "pct_under_5": 5.0,
+    "pct_over_64": 23.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 80.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 2.3,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 5.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 3.5,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 6.9,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 16.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 81.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 99.3,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 44.4,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 77.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.4,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 96.2
+      },
+      {
+        "label": "Ozone",
+        "score": 34.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 9.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 6.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 6.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 21.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 89.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 117.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 42.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 89.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 60.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Shoshone, Idaho (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:08:42Z"
+}

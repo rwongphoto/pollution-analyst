@@ -1,0 +1,84 @@
+{
+  "facility": {
+    "state": "wa",
+    "state_label": "Washington",
+    "slug": "safeway-inc",
+    "name": "Safeway INC",
+    "parent_company": "Safeway INC",
+    "address": "1723 124TH AVE NE",
+    "city": "Bellevue",
+    "county": "King County",
+    "county_slug": "king",
+    "naics_label": "311511 \u00b7 Food",
+    "lat": 47.625418,
+    "lng": -122.175158
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1862,
+    "air_releases_pounds": 5,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1857,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 1862
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 1857,
+      "history": [
+        {
+          "year": 2024,
+          "value": 1857
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Nitric acid",
+      "cas": "7697-37-2",
+      "category": "general",
+      "total_pounds_recent": 5,
+      "history": [
+        {
+          "year": 2024,
+          "value": 5
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 120881,
+    "pct_low_income": 14.1,
+    "pct_people_of_color": 55.9,
+    "pct_under_5": 5.2,
+    "pct_over_64": 13.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (80 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:25:42Z"
+}

@@ -1,0 +1,260 @@
+{
+  "utility": {
+    "state": "or",
+    "state_label": "Oregon",
+    "slug": "eden-park-homeowners",
+    "name": "Eden Park Homeowners",
+    "pwsid": "OR4100014",
+    "population_served": 60,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Independence"
+    ],
+    "county": "Linn County",
+    "county_slug": "linn",
+    "place_slug": "independence"
+  },
+  "reporting_period": {
+    "start": "2023-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 3,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 3
+  },
+  "violations": [
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Haloacetic Acids (HAA5)",
+      "contaminant_code": "2456",
+      "severity": "monitoring",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2023,
+        "value": 3
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 2
+      },
+      {
+        "contaminant": "Haloacetic Acids (HAA5)",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Haloacetic Acids (HAA5)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2023 (haloacetic acids (haa5)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:OR4100014"
+      }
+    }
+  ],
+  "equity": {
+    "population": 9981,
+    "pct_low_income": 10.0,
+    "pct_people_of_color": 44.3,
+    "pct_under_5": 7.0,
+    "pct_over_64": 9.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 89.4,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 3.3,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 24.7,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 19.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 50.7,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 21.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 40.0,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 67.6,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 51.9,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 60.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 41.1,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 148.2
+      },
+      {
+        "label": "Ozone",
+        "score": 9.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 40.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 35.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 83.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 38.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 45.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 106.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 80.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 94.4
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 67.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Independence, Oregon (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:15:42Z"
+}

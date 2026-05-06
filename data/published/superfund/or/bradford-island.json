@@ -1,0 +1,168 @@
+{
+  "site": {
+    "state": "or",
+    "state_label": "Oregon",
+    "slug": "bradford-island",
+    "name": "Bradford Island",
+    "epa_id": "ORSFN1002228",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": true,
+    "county": "Multnomah County",
+    "county_slug": "multnomah",
+    "city": "Cascade Locks",
+    "city_slug": null,
+    "address": "Star Route",
+    "zip": "97014",
+    "lat": 45.642344,
+    "lng": -121.935778
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 808098,
+    "pct_low_income": 12.2,
+    "pct_people_of_color": 32.599999999999994,
+    "pct_under_5": 5.0,
+    "pct_over_64": 14.1,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 98.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 19.9,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 69.2,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 92.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 77.2,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 82.9,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 73.1,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 69.8,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 89.5,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 86.5,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 82.2,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 53.6,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 93.4,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 111.8
+      },
+      {
+        "label": "Ozone",
+        "score": 11.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 76.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 102.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 86.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 88.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 65.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 69.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 98.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 92.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 73.6
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 51.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 105.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Multnomah County, Oregon (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:15:43Z"
+}

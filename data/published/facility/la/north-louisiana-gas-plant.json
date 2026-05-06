@@ -1,0 +1,146 @@
+{
+  "facility": {
+    "state": "la",
+    "state_label": "Louisiana",
+    "slug": "north-louisiana-gas-plant",
+    "name": "North Louisiana Gas Plant",
+    "parent_company": null,
+    "address": "1716 FRIENDSHIP RD",
+    "city": "Frierson",
+    "county": "De Soto Parish County",
+    "county_slug": "de-soto-parish",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.212395,
+    "lng": -93.652471
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 190964,
+    "air_releases_pounds": 190964,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 23651.7,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 5120
+      },
+      {
+        "year": 2023,
+        "value": 804
+      },
+      {
+        "year": 2024,
+        "value": 190964
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 122556,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1580
+        },
+        {
+          "year": 2023,
+          "value": 220
+        },
+        {
+          "year": 2024,
+          "value": 122556
+        }
+      ],
+      "yoy_pct_change": 55607.3,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 66000,
+      "history": [
+        {
+          "year": 2024,
+          "value": 66000
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2018,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1870
+        },
+        {
+          "year": 2023,
+          "value": 510
+        },
+        {
+          "year": 2024,
+          "value": 2018
+        }
+      ],
+      "yoy_pct_change": 295.7,
+      "long_arc_pct_change": 7.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 390,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1670
+        },
+        {
+          "year": 2023,
+          "value": 74
+        },
+        {
+          "year": 2024,
+          "value": 390
+        }
+      ],
+      "yoy_pct_change": 427.0,
+      "long_arc_pct_change": -76.6,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 984,
+    "pct_low_income": 37.6,
+    "pct_people_of_color": 28.8,
+    "pct_under_5": 5.1,
+    "pct_over_64": 22.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:52:46Z"
+}

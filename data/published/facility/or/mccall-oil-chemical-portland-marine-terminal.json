@@ -1,0 +1,84 @@
+{
+  "facility": {
+    "state": "or",
+    "state_label": "Oregon",
+    "slug": "mccall-oil-chemical-portland-marine-terminal",
+    "name": "Mccall Oil & Chemical Portland Marine Terminal",
+    "parent_company": "Mccall Enterprises INC",
+    "address": "5480 NW FRONT AVE.",
+    "city": "Portland",
+    "county": "Multnomah County",
+    "county_slug": "multnomah",
+    "naics_label": "424710 \u00b7 Petroleum Bulk Terminals",
+    "lat": 45.560707,
+    "lng": -122.734838
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3720,
+    "air_releases_pounds": 3720,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 3720
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "1,2,4-Trimethylbenzene",
+      "cas": "95-63-6",
+      "category": "general",
+      "total_pounds_recent": 2120,
+      "history": [
+        {
+          "year": 2024,
+          "value": 2120
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Naphthalene",
+      "cas": "91-20-3",
+      "category": "carcinogen",
+      "total_pounds_recent": 1600,
+      "history": [
+        {
+          "year": 2024,
+          "value": 1600
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 81394,
+    "pct_low_income": 22.1,
+    "pct_people_of_color": 33.2,
+    "pct_under_5": 5.5,
+    "pct_over_64": 11.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (60 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:15:42Z"
+}

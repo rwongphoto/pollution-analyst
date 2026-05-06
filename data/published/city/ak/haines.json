@@ -1,0 +1,490 @@
+{
+  "place": {
+    "state": "ak",
+    "state_label": "Alaska",
+    "slug": "haines",
+    "name": "Haines",
+    "fips": "0231050",
+    "population": 1762,
+    "county_name": "Haines",
+    "county_fips": "02100"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 9.1,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 9.1
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.3452,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.3452
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.107,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.107
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 2489,
+    "violations_5yr_total": 120,
+    "health_based_5yr_total": 12,
+    "unresolved_total": 50,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "haines-borough",
+        "state": "ak",
+        "state_label": "Alaska",
+        "name": "Haines Borough",
+        "pwsid": "AK2111566",
+        "population_served": 2376,
+        "health_based_violations_5yr": 11,
+        "unresolved": true
+      },
+      {
+        "slug": "chilkat-indian-village",
+        "state": "ak",
+        "state_label": "Alaska",
+        "name": "Chilkat Indian Village",
+        "pwsid": "AK2110562",
+        "population_served": 113,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7000",
+      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2025 (contaminant 7000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AK2110562"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7000",
+      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2025 (contaminant 7000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AK2110562"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AK2111566"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Haloacetic Acids (HAA5)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (haloacetic acids (haa5)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AK2111566"
+      }
+    }
+  ],
+  "equity": {
+    "population": 1762,
+    "pct_low_income": 5.2,
+    "pct_people_of_color": 30.599999999999994,
+    "pct_under_5": 8.5,
+    "pct_over_64": 19.3,
+    "ej_indexes": [
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 40.3,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 46.0,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 2.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 47.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 42.4,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.8,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 37.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 37.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 2.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 37.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 38.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 30.4
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Haines, Alaska (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.5,
+      "age_adjusted": 10.7,
+      "state_mean": 10.6,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.1,
+      "vs_state_pct": 0.9,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.68,
+      "vs_us_pct": 6.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 6.8,
+      "age_adjusted": 5.4,
+      "state_mean": 5.8,
+      "us_mean": 5.5,
+      "vs_state_pp": -0.37,
+      "vs_state_pct": -6.4,
+      "vs_state_class": "better",
+      "vs_us_pp": -0.1,
+      "vs_us_pct": -1.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.0,
+      "age_adjusted": 5.2,
+      "state_mean": 5.5,
+      "us_mean": 5.3,
+      "vs_state_pp": -0.29,
+      "vs_state_pct": -5.3,
+      "vs_state_class": "better",
+      "vs_us_pp": -0.11,
+      "vs_us_pct": -2.1,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 10.1,
+      "age_adjusted": 7.6,
+      "state_mean": 9.0,
+      "us_mean": 10.5,
+      "vs_state_pp": -1.39,
+      "vs_state_pct": -15.5,
+      "vs_state_class": "better",
+      "vs_us_pp": -2.86,
+      "vs_us_pct": -27.3,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 14.2,
+      "age_adjusted": 15.9,
+      "state_mean": 16.3,
+      "us_mean": 16.8,
+      "vs_state_pp": -0.41,
+      "vs_state_pct": -2.5,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.85,
+      "vs_us_pct": -5.1,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "dillingham",
+      "name": "Dillingham",
+      "population": 2175,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 28.8,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "north-pole",
+      "name": "North Pole",
+      "population": 2816,
+      "facilities_count": 3,
+      "total_releases_pounds": 8230,
+      "dominant_medium": "air",
+      "ej_pct_avg": 51.2,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+12 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "anchor-point",
+      "name": "Anchor Point",
+      "population": 2260,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "tok",
+      "name": "Tok",
+      "population": 1352,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 26.2,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "emmonak",
+      "name": "Emmonak",
+      "population": 1293,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ak",
+      "slug": "skagway",
+      "name": "Skagway",
+      "population": 1179,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T19:01:50Z"
+}

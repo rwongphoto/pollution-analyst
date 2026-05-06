@@ -1,0 +1,517 @@
+{
+  "county": {
+    "state": "or",
+    "state_label": "Oregon",
+    "slug": "hood-river",
+    "name": "Hood River County",
+    "fips": "41027",
+    "population": 23965
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 38.5,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 38.5
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.6223,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.6223
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1812,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1812
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 2,
+      "units": "lb",
+      "yoy_pct_change": -0.4,
+      "long_arc_pct_change": null,
+      "baseline_year": 2019,
+      "history": [
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 5
+        },
+        {
+          "year": 2022,
+          "value": 4
+        },
+        {
+          "year": 2023,
+          "value": 2
+        },
+        {
+          "year": 2024,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2019,
+      "history": [
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 3108,
+      "units": "lb",
+      "yoy_pct_change": -46.7,
+      "long_arc_pct_change": null,
+      "baseline_year": 2019,
+      "history": [
+        {
+          "year": 2019,
+          "value": 29
+        },
+        {
+          "year": 2020,
+          "value": 351
+        },
+        {
+          "year": 2021,
+          "value": 1843
+        },
+        {
+          "year": 2022,
+          "value": 6255
+        },
+        {
+          "year": 2023,
+          "value": 5830
+        },
+        {
+          "year": 2024,
+          "value": 3108
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "cardinal-glass",
+      "state": "or",
+      "state_label": "Oregon",
+      "name": "Cardinal Glass",
+      "parent_company": "Cardinal Glass Industries",
+      "total_pounds_recent": 3110,
+      "yoy_pct_change": -46.6,
+      "top_chemical": "Chromium",
+      "city": "Hood River",
+      "lat": 45.631611,
+      "lng": -121.517322
+    }
+  ],
+  "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [
+    {
+      "slug": "cascade-locks",
+      "name": "Cascade Locks",
+      "fips": "4111600",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 1418
+    },
+    {
+      "slug": "hood-river",
+      "name": "Hood River",
+      "fips": "4134900",
+      "facilities_count": 0,
+      "utilities_count": 3,
+      "population": 8292
+    },
+    {
+      "slug": "odell",
+      "name": "Odell",
+      "fips": "4154550",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 3003
+    },
+    {
+      "slug": "parkdale",
+      "name": "Parkdale",
+      "fips": "4156500",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 213
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 23965,
+    "pct_low_income": 6.6,
+    "pct_people_of_color": 37.5,
+    "pct_under_5": 6.2,
+    "pct_over_64": 17.1,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 95.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 9.9,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 21.1,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 21.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 30.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 26.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 63.7,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 57.5,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 27.9,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 58.3,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 18.1,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 97.9,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 118.0
+      },
+      {
+        "label": "Ozone",
+        "score": 26.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 28.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 26.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 26.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 29.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 67.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 3.3
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 62.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 31.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 55.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 18.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 66.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Hood River County, OR"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.3,
+      "age_adjusted": 11.3,
+      "state_mean": 11.9,
+      "us_mean": 10.0,
+      "vs_state_pp": -0.65,
+      "vs_state_pct": -5.4,
+      "vs_state_class": "better",
+      "vs_us_pp": 1.28,
+      "vs_us_pct": 12.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 6.4,
+      "age_adjusted": 5.4,
+      "state_mean": 5.8,
+      "us_mean": 5.5,
+      "vs_state_pp": -0.43,
+      "vs_state_pct": -7.4,
+      "vs_state_class": "better",
+      "vs_us_pp": -0.1,
+      "vs_us_pct": -1.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 6.4,
+      "age_adjusted": 5.1,
+      "state_mean": 5.3,
+      "us_mean": 5.3,
+      "vs_state_pp": -0.2,
+      "vs_state_pct": -3.8,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.21,
+      "vs_us_pct": -4.0,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 11.3,
+      "age_adjusted": 9.4,
+      "state_mean": 9.6,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.19,
+      "vs_state_pct": -2.0,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -1.06,
+      "vs_us_pct": -10.1,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 16.1,
+      "age_adjusted": 17.2,
+      "state_mean": 18.6,
+      "us_mean": 16.8,
+      "vs_state_pp": -1.39,
+      "vs_state_pct": -7.5,
+      "vs_state_class": "better",
+      "vs_us_pp": 0.45,
+      "vs_us_pct": 2.7,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "or",
+      "slug": "wasco",
+      "name": "Wasco County",
+      "population": 26639,
+      "facilities_count": 3,
+      "total_releases_pounds": 6590,
+      "dominant_medium": "land",
+      "ej_pct_avg": 49.2,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 3 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "or",
+      "slug": "tillamook",
+      "name": "Tillamook County",
+      "population": 27345,
+      "facilities_count": 2,
+      "total_releases_pounds": 266,
+      "dominant_medium": "land",
+      "ej_pct_avg": 27.2,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "or",
+      "slug": "benton",
+      "name": "Benton County",
+      "population": 95615,
+      "facilities_count": 4,
+      "total_releases_pounds": 18301,
+      "dominant_medium": "land",
+      "ej_pct_avg": 50.2,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 4 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "or",
+      "slug": "morrow",
+      "name": "Morrow County",
+      "population": 12140,
+      "facilities_count": 4,
+      "total_releases_pounds": 88038,
+      "dominant_medium": "land",
+      "ej_pct_avg": 40.5,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 4 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "or",
+      "slug": "deschutes",
+      "name": "Deschutes County",
+      "population": 199352,
+      "facilities_count": 7,
+      "total_releases_pounds": 76503,
+      "dominant_medium": "land",
+      "ej_pct_avg": 42.6,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 7 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "or",
+      "slug": "umatilla",
+      "name": "Umatilla County",
+      "population": 79904,
+      "facilities_count": 5,
+      "total_releases_pounds": 359453,
+      "dominant_medium": "land",
+      "ej_pct_avg": 46.2,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 5 facilities"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T19:15:42Z"
+}

@@ -1,0 +1,82 @@
+{
+  "site": {
+    "state": "ak",
+    "state_label": "Alaska",
+    "slug": "standard-steel-metals-salvage-yard-usdot",
+    "name": "Standard Steel & Metals Salvage Yard (Usdot)",
+    "epa_id": "AKD980978787",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": true,
+    "county": "Anchorage County",
+    "county_slug": "anchorage",
+    "city": "Anchorage",
+    "city_slug": "anchorage",
+    "address": "2400 Railroad Avenue",
+    "zip": "99501",
+    "lat": 61.2279,
+    "lng": -149.8324
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 4,
+    "primary_contaminant": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin (Tcdd)"
+  },
+  "contaminants": [
+    {
+      "name": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin (Tcdd)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Aroclor 1260",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 2908,
+    "pct_low_income": 47.5,
+    "pct_people_of_color": 88.7,
+    "pct_under_5": 7.7,
+    "pct_over_64": 6.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:01:50Z"
+}

@@ -1,0 +1,247 @@
+{
+  "utility": {
+    "state": "or",
+    "state_label": "Oregon",
+    "slug": "ridgewood-dist-improv-co",
+    "name": "Ridgewood Dist Improv Co",
+    "pwsid": "OR4100229",
+    "population_served": 90,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Corvallis"
+    ],
+    "county": "Benton County",
+    "county_slug": "benton",
+    "place_slug": "corvallis"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 2,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "health_based",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": true,
+      "description": "Maximum contaminant level exceeded"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "health_based",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Maximum contaminant level exceeded; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:OR4100229"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent",
+      "label": "Contaminant 8000",
+      "summary": "Revised Total Coliform Rule health-based violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:OR4100229"
+      }
+    }
+  ],
+  "equity": {
+    "population": 60050,
+    "pct_low_income": 26.4,
+    "pct_people_of_color": 25.599999999999994,
+    "pct_under_5": 3.7,
+    "pct_over_64": 13.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 89.2,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 1.2,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 23.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 35.3,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 41.0,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 46.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 56.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 65.8,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 61.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 78.2,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 66.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 146.0
+      },
+      {
+        "label": "Ozone",
+        "score": 8.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 41.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 62.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 66.6
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 76.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 63.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 105.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 100.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 94.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 107.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Corvallis, Oregon (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:15:42Z"
+}

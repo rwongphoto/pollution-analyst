@@ -1,0 +1,92 @@
+{
+  "facility": {
+    "state": "wa",
+    "state_label": "Washington",
+    "slug": "blue-origin-llc-blue-castings",
+    "name": "Blue Origin LLC (Blue Castings)",
+    "parent_company": "Blue Origin LLC",
+    "address": "18410 63RD AVENUE N.E.",
+    "city": "Arlington",
+    "county": "Snohomish County",
+    "county_slug": "snohomish",
+    "naics_label": "331512 \u00b7 Primary Metals",
+    "lat": 48.171506,
+    "lng": -122.146032
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 30,
+    "air_releases_pounds": 20,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 10,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 200.0,
+    "long_arc_pct_change": 200.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 10
+      },
+      {
+        "year": 2023,
+        "value": 10
+      },
+      {
+        "year": 2024,
+        "value": 30
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 15,
+      "history": [
+        {
+          "year": 2024,
+          "value": 15
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 15,
+      "history": [
+        {
+          "year": 2024,
+          "value": 15
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 26062,
+    "pct_low_income": 23.5,
+    "pct_people_of_color": 30.1,
+    "pct_under_5": 6.6,
+    "pct_over_64": 11.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (18 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:25:42Z"
+}

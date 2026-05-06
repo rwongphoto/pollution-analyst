@@ -1,0 +1,98 @@
+{
+  "site": {
+    "state": "wa",
+    "state_label": "Washington",
+    "slug": "old-inland-pit",
+    "name": "Old Inland Pit",
+    "epa_id": "WAD980982557",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Spokane County",
+    "county_slug": "spokane",
+    "city": "Spokane Valley",
+    "city_slug": "spokane-valley",
+    "address": "N Sullivan Rd & Kiernan Rd",
+    "zip": "99216",
+    "lat": 47.689719,
+    "lng": -117.1983
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "WA5311250",
+        "name": "Carnhope Irrigation District 7",
+        "slug": "carnhope-irrigation-district-7",
+        "state": "wa",
+        "distance_miles": 2.43,
+        "place_name": "Spokane Valley",
+        "primary_source": "groundwater",
+        "population_served": 1602,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "WA5321650",
+        "name": "East Spokane Water Dist 1",
+        "slug": "east-spokane-water-dist-1",
+        "state": "wa",
+        "distance_miles": 2.43,
+        "place_name": "Spokane Valley",
+        "primary_source": "groundwater",
+        "population_served": 4285,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "WA5335100",
+        "name": "Hutchinson Irrigation Dist #16",
+        "slug": "hutchinson-irrigation-dist-16",
+        "state": "wa",
+        "distance_miles": 2.43,
+        "place_name": "Spokane Valley",
+        "primary_source": "groundwater",
+        "population_served": 2209,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "WA5391450",
+        "name": "Vera Water & Power",
+        "slug": "vera-water-power",
+        "state": "wa",
+        "distance_miles": 2.43,
+        "place_name": "Spokane Valley",
+        "primary_source": "groundwater",
+        "population_served": 24692,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1014,
+    "pct_low_income": 40.5,
+    "pct_people_of_color": 7.2,
+    "pct_under_5": 0.0,
+    "pct_over_64": 23.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:25:44Z"
+}

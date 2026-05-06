@@ -1,0 +1,222 @@
+{
+  "utility": {
+    "state": "or",
+    "state_label": "Oregon",
+    "slug": "powers-city-of",
+    "name": "Powers, City Of",
+    "pwsid": "OR4100672",
+    "population_served": 712,
+    "primary_source": "surface_water",
+    "cities_served": [
+      "Powers"
+    ],
+    "county": "Coos County",
+    "county_slug": "coos",
+    "place_slug": "powers"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 2
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 64908,
+    "pct_low_income": 16.1,
+    "pct_people_of_color": 16.599999999999994,
+    "pct_under_5": 5.1,
+    "pct_over_64": 26.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 73.2,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 0.1,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 3.6,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 11.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 19.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 24.6,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 68.1,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 71.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 19.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 90.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 81.3
+      },
+      {
+        "label": "Ozone",
+        "score": 0.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 7.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 16.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 12.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 26.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 64.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 3.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 51.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 17.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 21.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Coos, Oregon (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:15:43Z"
+}

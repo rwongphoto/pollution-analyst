@@ -1,0 +1,84 @@
+{
+  "facility": {
+    "state": "or",
+    "state_label": "Oregon",
+    "slug": "wilbur-ellis-jefferson",
+    "name": "Wilbur Ellis Jefferson",
+    "parent_company": "Wilbur-Ellis Co LLC",
+    "address": "409 HAZEL ST",
+    "city": "Jefferson",
+    "county": "Marion County",
+    "county_slug": "marion",
+    "naics_label": "325314 \u00b7 Chemicals",
+    "lat": 44.71858,
+    "lng": -123.006167
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1185,
+    "air_releases_pounds": 1185,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 1185
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 1185,
+      "history": [
+        {
+          "year": 2024,
+          "value": 1185
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Pendimethalin",
+      "cas": "40487-42-1",
+      "category": "pbt",
+      "total_pounds_recent": 0.02,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0.02
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 5815,
+    "pct_low_income": 19.6,
+    "pct_people_of_color": 22.0,
+    "pct_under_5": 4.2,
+    "pct_over_64": 18.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (4 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:15:42Z"
+}

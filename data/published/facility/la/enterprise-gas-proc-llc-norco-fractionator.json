@@ -1,0 +1,142 @@
+{
+  "facility": {
+    "state": "la",
+    "state_label": "Louisiana",
+    "slug": "enterprise-gas-proc-llc-norco-fractionator",
+    "name": "Enterprise Gas Proc Llc/Norco Fractionator",
+    "parent_company": "Enterprise Products Operating LLC",
+    "address": "15608 AIRLINE HWY",
+    "city": "Norco",
+    "county": "St. Charles Parish County",
+    "county_slug": "st-charles-parish",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 30.002824,
+    "lng": -90.38966
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 11816,
+    "air_releases_pounds": 11816,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 4,
+    "yoy_pct_change": -2.6,
+    "long_arc_pct_change": 1442.3,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 766
+      },
+      {
+        "year": 2023,
+        "value": 12130
+      },
+      {
+        "year": 2024,
+        "value": 11816
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 6400,
+      "history": [
+        {
+          "year": 2023,
+          "value": 9100
+        },
+        {
+          "year": 2024,
+          "value": 6400
+        }
+      ],
+      "yoy_pct_change": -29.7,
+      "long_arc_pct_change": -29.7,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2666,
+      "history": [
+        {
+          "year": 2023,
+          "value": 160
+        },
+        {
+          "year": 2024,
+          "value": 2666
+        }
+      ],
+      "yoy_pct_change": 1566.2,
+      "long_arc_pct_change": 1566.2,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 2320,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2320
+        },
+        {
+          "year": 2024,
+          "value": 2320
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 430,
+      "history": [
+        {
+          "year": 2022,
+          "value": 516
+        },
+        {
+          "year": 2023,
+          "value": 550
+        },
+        {
+          "year": 2024,
+          "value": 430
+        }
+      ],
+      "yoy_pct_change": -21.8,
+      "long_arc_pct_change": -16.6,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 10437,
+    "pct_low_income": 26.6,
+    "pct_people_of_color": 23.3,
+    "pct_under_5": 6.6,
+    "pct_over_64": 15.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (8 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T18:52:46Z"
+}

@@ -1,0 +1,115 @@
+{
+  "facility": {
+    "state": "or",
+    "state_label": "Oregon",
+    "slug": "pcc-structurals-inc-lsbs",
+    "name": "Pcc Structurals INC. Lsbs",
+    "parent_company": "Berkshire Hathaway INC",
+    "address": "6667 SE JOHNSON CREEK BLVD",
+    "city": "Portland",
+    "county": "Clackamas County",
+    "county_slug": "clackamas",
+    "naics_label": "331529 \u00b7 Primary Metals",
+    "lat": 45.456046,
+    "lng": -122.594655
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 21,
+    "air_releases_pounds": 0.18,
+    "water_releases_pounds": 1,
+    "land_releases_pounds": 20,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 87.0,
+    "long_arc_pct_change": 87.0,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 11
+      },
+      {
+        "year": 2024,
+        "value": 21
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 16,
+      "history": [
+        {
+          "year": 2023,
+          "value": 8
+        },
+        {
+          "year": 2024,
+          "value": 16
+        }
+      ],
+      "yoy_pct_change": 89.2,
+      "long_arc_pct_change": 89.2,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 3,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2
+        },
+        {
+          "year": 2024,
+          "value": 3
+        }
+      ],
+      "yoy_pct_change": 33.0,
+      "long_arc_pct_change": 33.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Cobalt",
+      "cas": "7440-48-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 2,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0.55
+        },
+        {
+          "year": 2024,
+          "value": 2
+        }
+      ],
+      "yoy_pct_change": 288.7,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 149979,
+    "pct_low_income": 25.5,
+    "pct_people_of_color": 27.9,
+    "pct_under_5": 4.8,
+    "pct_over_64": 15.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (107 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:15:42Z"
+}

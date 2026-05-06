@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "or",
+    "state_label": "Oregon",
+    "slug": "high-purity-products",
+    "name": "High Purity Products",
+    "parent_company": "Cascade Columbia Distribution",
+    "address": "5740 NW FRONT AVE",
+    "city": "Portland",
+    "county": "Multnomah County",
+    "county_slug": "multnomah",
+    "naics_label": "424690 \u00b7 Chemical Wholesalers",
+    "lat": 45.561881,
+    "lng": -122.736334
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 6381,
+    "air_releases_pounds": 38,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 6343,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 437.1,
+    "long_arc_pct_change": -50.9,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 12993
+      },
+      {
+        "year": 2023,
+        "value": 1188
+      },
+      {
+        "year": 2024,
+        "value": 6381
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitric acid",
+      "cas": "7697-37-2",
+      "category": "general",
+      "total_pounds_recent": 4536,
+      "history": [
+        {
+          "year": 2022,
+          "value": 8847
+        },
+        {
+          "year": 2023,
+          "value": 1117
+        },
+        {
+          "year": 2024,
+          "value": 4536
+        }
+      ],
+      "yoy_pct_change": 305.9,
+      "long_arc_pct_change": -48.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Hydrogen fluoride",
+      "cas": "7664-39-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1845,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4146
+        },
+        {
+          "year": 2023,
+          "value": 71
+        },
+        {
+          "year": 2024,
+          "value": 1845
+        }
+      ],
+      "yoy_pct_change": 2507.2,
+      "long_arc_pct_change": -55.5,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 75434,
+    "pct_low_income": 22.4,
+    "pct_people_of_color": 34.0,
+    "pct_under_5": 4.8,
+    "pct_over_64": 11.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (57 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:15:42Z"
+}

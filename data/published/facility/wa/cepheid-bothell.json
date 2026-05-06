@@ -1,0 +1,194 @@
+{
+  "facility": {
+    "state": "wa",
+    "state_label": "Washington",
+    "slug": "cepheid-bothell",
+    "name": "Cepheid - Bothell",
+    "parent_company": "Danaher CORP",
+    "address": "1631 220TH ST SE",
+    "city": "Bothell",
+    "county": "Snohomish County",
+    "county_slug": "snohomish",
+    "naics_label": "325413 \u00b7 Chemicals",
+    "lat": 47.798437,
+    "lng": -122.20967
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 98935,
+    "air_releases_pounds": 1502,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 97433,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 181.7,
+    "long_arc_pct_change": 758.7,
+    "long_arc_baseline_year": 2017,
+    "history": [
+      {
+        "year": 2017,
+        "value": 11522
+      },
+      {
+        "year": 2018,
+        "value": 14747
+      },
+      {
+        "year": 2019,
+        "value": 14738
+      },
+      {
+        "year": 2020,
+        "value": 25992
+      },
+      {
+        "year": 2021,
+        "value": 103610
+      },
+      {
+        "year": 2022,
+        "value": 95685
+      },
+      {
+        "year": 2023,
+        "value": 35126
+      },
+      {
+        "year": 2024,
+        "value": 98935
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Acetonitrile",
+      "cas": "75-05-8",
+      "category": "respiratory",
+      "total_pounds_recent": 74119,
+      "history": [
+        {
+          "year": 2017,
+          "value": 11522
+        },
+        {
+          "year": 2018,
+          "value": 14747
+        },
+        {
+          "year": 2019,
+          "value": 14738
+        },
+        {
+          "year": 2020,
+          "value": 25992
+        },
+        {
+          "year": 2021,
+          "value": 67033
+        },
+        {
+          "year": 2022,
+          "value": 70410
+        },
+        {
+          "year": 2023,
+          "value": 35126
+        },
+        {
+          "year": 2024,
+          "value": 74119
+        }
+      ],
+      "yoy_pct_change": 111.0,
+      "long_arc_pct_change": 543.3,
+      "long_arc_baseline_year": 2017
+    },
+    {
+      "chemical": "Dichloromethane",
+      "cas": "75-09-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 24816,
+      "history": [
+        {
+          "year": 2021,
+          "value": 36577
+        },
+        {
+          "year": 2022,
+          "value": 15827
+        },
+        {
+          "year": 2024,
+          "value": 24816
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -32.2,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Acetonitrile",
+      "summary": "Acetonitrile releases at Cepheid - Bothell rose from 35k lb to 74k lb (2.1\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 111.0,
+      "magnitude_abs": 38993.1,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2017,
+          "value": 11522
+        },
+        {
+          "year": 2018,
+          "value": 14747
+        },
+        {
+          "year": 2019,
+          "value": 14738
+        },
+        {
+          "year": 2020,
+          "value": 25992
+        },
+        {
+          "year": 2021,
+          "value": 67033
+        },
+        {
+          "year": 2022,
+          "value": 70410
+        },
+        {
+          "year": 2023,
+          "value": 35126
+        },
+        {
+          "year": 2024,
+          "value": 74119
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 119858,
+    "pct_low_income": 11.2,
+    "pct_people_of_color": 42.0,
+    "pct_under_5": 6.5,
+    "pct_over_64": 11.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (78 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T19:25:42Z"
+}
