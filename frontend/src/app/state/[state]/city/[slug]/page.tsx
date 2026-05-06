@@ -34,12 +34,40 @@ function cityDescription(data: CityHubPayload): string {
   return `${data.place.name}, ${data.place.state_label} — ${data.totals.facilities_in_city} TRI facilities in the city, ${data.totals.utilities_serving} public water systems serving residents, with EPA equity context.`;
 }
 
+// Mirrors `_COUNTY_SUFFIXES_LOWER` in pipeline/src/publish/site.py. AK
+// (Borough / Census Area / City and Borough / Municipality), LA (Parish),
+// and PR (Municipio) carry native suffixes through the data; the publisher
+// strips them before slugifying, and the frontend has to match. Order is
+// significant: " city and borough" must come before " borough" so Juneau
+// strips fully.
+const COUNTY_SUFFIXES = [
+  " city and borough",
+  " borough",
+  " parish",
+  " census area",
+  " municipality",
+  " municipio",
+  " county",
+];
+
+function stripCountySuffix(name: string): string {
+  const low = name.toLowerCase();
+  for (const suffix of COUNTY_SUFFIXES) {
+    if (low.endsWith(suffix)) return name.slice(0, -suffix.length).trimEnd();
+  }
+  return name;
+}
+
 function countySlugFromName(countyName: string): string {
-  return countyName.toLowerCase().replace(/\s+county$/, "").replace(/\s+/g, "-");
+  return stripCountySuffix(countyName).toLowerCase().replace(/\s+/g, "-");
 }
 
 function countyLabelFromName(countyName: string): string {
-  return /\s+county$/i.test(countyName) ? countyName : `${countyName} County`;
+  const low = countyName.toLowerCase();
+  for (const suffix of COUNTY_SUFFIXES) {
+    if (low.endsWith(suffix)) return countyName;
+  }
+  return `${countyName} County`;
 }
 
 export const dynamicParams = false;
