@@ -31,8 +31,8 @@ export function RelatedPlaces({
   if (!places || places.length === 0) return null;
   const heading =
     scopeLabel === "County"
-      ? `Counties to compare in ${stateLabel}`
-      : `Cities to compare in ${stateLabel}`;
+      ? `Counties To Compare In ${stateLabel}`
+      : `Cities To Compare In ${stateLabel}`;
   const lede =
     scopeLabel === "County"
       ? "Five counties whose pollution profile most resembles this one — plus one deliberate contrast at similar scale but opposite equity burden, so the wealth-pollution gap stays on the page."

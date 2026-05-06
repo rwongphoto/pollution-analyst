@@ -7,6 +7,7 @@ import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
 import { HeroChart } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
+import { InfoTip } from "@/components/site/InfoTip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
@@ -22,6 +23,8 @@ import {
   pctSigned,
   poundsFormat,
 } from "@/lib/prose";
+import { getEjIndicatorRisk } from "@/lib/ejIndicatorRisk";
+import { getPathwayHealthRisk } from "@/lib/pathwayHealthRisk";
 import { pageMeta } from "@/lib/seo";
 import type { PollutantSummary, StatePagePayload } from "@/lib/types";
 
@@ -118,14 +121,14 @@ function StateHero({ data }: { data: StatePagePayload }) {
   );
 }
 
-function PathwaysSection({ pathways }: { pathways: PollutantSummary[] }) {
+function PathwaysSection({ pathways, stateName }: { pathways: PollutantSummary[]; stateName: string }) {
   return (
     <section className="section">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Statewide pollutant pathways</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            What this state releases, and how it&apos;s moved
+            {stateName} Pollutant Multi-Year Trends
           </h2>
         </div>
         <div className="cities-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
@@ -138,13 +141,17 @@ function PathwaysSection({ pathways }: { pathways: PollutantSummary[] }) {
                 ? `${(p.current / 1_000_000).toFixed(0)}M ${p.units}`
                 : `${p.current.toFixed(p.units === "ppm" ? 3 : p.units === "µg/m³" ? 2 : 1)} ${p.units}`;
             const hasTrend = p.history.length >= 2;
+            const tooltip = getPathwayHealthRisk(p.pathway, p.label);
             return (
               <div key={`${p.pathway}-${p.label}`} className="city-tile live" style={{ cursor: "default" }}>
                 <div className="tile-meta">
                   <span style={{ color }}>{p.pathway.toUpperCase().replace("_", " ")}</span>
                   <span>{hasTrend ? `SINCE ${p.baseline_year}` : `${p.baseline_year} VINTAGE`}</span>
                 </div>
-                <h3>{p.label}</h3>
+                <h3>
+                  {p.label}
+                  {tooltip ? <InfoTip heading="Health risk" body={tooltip} /> : null}
+                </h3>
                 {hasTrend ? (
                   <>
                     <p className="meta-mono" style={{ margin: "4px 0 12px", fontSize: 12 }}>
@@ -183,7 +190,7 @@ function CountiesSection({ data }: { data: StatePagePayload }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Top counties · TRI {data.reporting_year}</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Where releases concentrate in {data.state.name}
+            {data.state.name} Counties With Most Chemical Releases
           </h2>
         </div>
         <table className="tbl">
@@ -233,7 +240,7 @@ function FacilitiesSection({ data }: { data: StatePagePayload }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Top facilities · TRI {data.reporting_year}</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            The largest individual emitters in {data.state.name}
+            The Largest Individual Emitters In {data.state.name}
           </h2>
         </div>
         <table className="tbl">
@@ -280,7 +287,7 @@ function UtilitiesSection({ data }: { data: StatePagePayload }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Water utilities to watch</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Largest systems with unresolved health-based violations
+            Largest Water Systems With Unresolved Health-Based Violations
           </h2>
           <p className="muted" style={{ fontSize: 14, marginTop: 10, maxWidth: "62ch" }}>
             Sorted to surface utilities serving the most people that still have an active health-based SDWIS violation on the record. Systems in compliance with no unresolved issues fall to the bottom of the ranking.
@@ -345,7 +352,7 @@ function EquitySection({ data }: { data: StatePagePayload }) {
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Equity context · ACS 2018-2022 · USEPA-clone EJ disparity</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Statewide population characteristics
+            Statewide Population Characteristics
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             {e.geography_label}: <strong>{e.population.toLocaleString()}</strong> residents.
@@ -384,9 +391,13 @@ function EquitySection({ data }: { data: StatePagePayload }) {
                 const pct = row.pct_us;
                 const barColor = pct >= 90 ? "var(--red)" : pct >= 80 ? "var(--amber)" : pct >= 60 ? "var(--blue)" : "var(--green)";
                 const numColor = pct >= 80 ? "var(--red)" : pct >= 60 ? "var(--amber)" : "var(--fg-2)";
+                const tip = getEjIndicatorRisk(row.label);
                 return (
                   <li key={row.label} style={{ display: "grid", gridTemplateColumns: "1fr 60px 220px", gap: 12, alignItems: "center" }}>
-                    <span style={{ fontSize: 14, color: "var(--fg-2)" }}>{row.label}</span>
+                    <span style={{ fontSize: 14, color: "var(--fg-2)" }}>
+                      {row.label}
+                      {tip ? <InfoTip heading="Health risk" body={tip} /> : null}
+                    </span>
                     <span className="num-mono" style={{ textAlign: "right", color: numColor, fontSize: 14 }}>
                       {pct.toFixed(0)}
                     </span>
@@ -451,7 +462,7 @@ function CountyDirectory({ data }: { data: StatePagePayload }) {
       <div className="wrap">
         <div className="eyebrow">Browse</div>
         <h2 className="h-display" style={{ fontSize: "clamp(22px,2.4vw,28px)", margin: "8px 0 6px" }}>
-          All {dir.length} {data.state.name} counties with TRI data
+          All {dir.length} {data.state.name} Counties With TRI Data
         </h2>
         <p className="muted" style={{ fontSize: 14, marginBottom: 24, maxWidth: "60ch" }}>
           Pollution trends and {data.briefing_label} pages for every tracked county. Alphabetical.
@@ -523,16 +534,20 @@ export default async function StatePage({
         <StateHero data={data} />
         <NotableSignals
           flags={data.flags ?? []}
-          title="Notable signals at the state level"
+          title="Notable Signals At The State Level"
         />
         <section className="section">
           <div className="wrap">
             <div style={{ marginBottom: 24 }}>
               <div className="eyebrow">Where the burden sits</div>
               <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-                County-level TRI choropleth
+                County-Level TRI Choropleth
               </h2>
-              <p className="muted" style={{ fontSize: 14, marginTop: 10, maxWidth: "62ch" }}>
+              <p style={{ fontSize: 15, marginTop: 10, maxWidth: "62ch" }}>
+                A color-shaded map of pollution data. Darker counties report more pounds of toxic
+                chemicals released to the EPA&apos;s Toxics Release Inventory (TRI).
+              </p>
+              <p className="muted" style={{ fontSize: 14, marginTop: 6, maxWidth: "62ch" }}>
                 Shaded by total reported releases for {data.reporting_year}. Counties without a published
                 page render as &ldquo;no TRI data&rdquo;. Red dots mark this state&apos;s top emitters.
               </p>
@@ -546,7 +561,7 @@ export default async function StatePage({
             />
           </div>
         </section>
-        <PathwaysSection pathways={data.pathways} />
+        <PathwaysSection pathways={data.pathways} stateName={data.state.name} />
         <CountiesSection data={data} />
         <FacilitiesSection data={data} />
         <UtilitiesSection data={data} />

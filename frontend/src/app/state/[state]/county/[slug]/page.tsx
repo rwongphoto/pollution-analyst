@@ -9,6 +9,7 @@ import { EquityStub } from "@/components/site/EquityStub";
 import { HealthIndicators } from "@/components/site/HealthIndicators";
 import { HeroChart } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
+import { InfoTip } from "@/components/site/InfoTip";
 import { RelatedPlaces } from "@/components/site/RelatedPlaces";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -27,6 +28,8 @@ import {
   pctSigned,
   poundsFormat,
 } from "@/lib/prose";
+import { getEjIndicatorRisk } from "@/lib/ejIndicatorRisk";
+import { getPathwayHealthRisk } from "@/lib/pathwayHealthRisk";
 import { pageMeta } from "@/lib/seo";
 import type { CountyPagePayload, PollutantSummary } from "@/lib/types";
 
@@ -115,14 +118,14 @@ function CountyHero({ data }: { data: CountyPagePayload }) {
   );
 }
 
-function PathwaysSection({ pathways }: { pathways: PollutantSummary[] }) {
+function PathwaysSection({ pathways, countyName }: { pathways: PollutantSummary[]; countyName: string }) {
   return (
     <section className="section">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Pollutant pathways</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            What&apos;s being released here, and how it&apos;s moved
+            {countyName} Pollutant Multi-Year Trends
           </h2>
         </div>
         <div className="cities-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
@@ -135,13 +138,17 @@ function PathwaysSection({ pathways }: { pathways: PollutantSummary[] }) {
                 ? `${(p.current / 1_000_000).toFixed(1)}M ${p.units}`
                 : `${p.current.toFixed(p.units === "ppm" ? 3 : p.units === "µg/m³" ? 2 : 1)} ${p.units}`;
             const hasTrend = p.history.length >= 2;
+            const tooltip = getPathwayHealthRisk(p.pathway, p.label);
             return (
               <div key={`${p.pathway}-${p.label}`} className="city-tile live" style={{ cursor: "default" }}>
                 <div className="tile-meta">
                   <span style={{ color }}>{p.pathway.toUpperCase().replace("_", " ")}</span>
                   <span>{hasTrend ? `SINCE ${p.baseline_year}` : `${p.baseline_year} VINTAGE`}</span>
                 </div>
-                <h3>{p.label}</h3>
+                <h3>
+                  {p.label}
+                  {tooltip ? <InfoTip heading="Health risk" body={tooltip} /> : null}
+                </h3>
                 {hasTrend ? (
                   <>
                     <p className="meta-mono" style={{ margin: "4px 0 12px", fontSize: 12 }}>
@@ -180,7 +187,7 @@ function FacilitiesSection({ data }: { data: CountyPagePayload }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Top facilities · {data.reporting_year}</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Where the releases are concentrated
+            Where The Chemical Releases Are Concentrated
           </h2>
         </div>
         <table className="tbl">
@@ -227,7 +234,7 @@ function UtilitiesSection({ data }: { data: CountyPagePayload }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Drinking-water systems</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Public water utilities serving this county
+            Public Water Utilities Serving This County
           </h2>
         </div>
         <table className="tbl">
@@ -289,7 +296,7 @@ function EquitySection({ data }: { data: CountyPagePayload }) {
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Equity context · ACS 2018-2022 · USEPA-clone EJ disparity</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Who lives in this county
+            Who Lives In {data.county.name}
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             {e.geography_label}: <strong>{e.population.toLocaleString()}</strong> residents.
@@ -325,9 +332,13 @@ function EquitySection({ data }: { data: CountyPagePayload }) {
                 const pct = row.pct_us;
                 const barColor = pct >= 90 ? "var(--red)" : pct >= 80 ? "var(--amber)" : pct >= 60 ? "var(--blue)" : "var(--green)";
                 const numColor = pct >= 80 ? "var(--red)" : pct >= 60 ? "var(--amber)" : "var(--fg-2)";
+                const tip = getEjIndicatorRisk(row.label);
                 return (
                   <li key={row.label} style={{ display: "grid", gridTemplateColumns: "1fr 60px 220px", gap: 12, alignItems: "center" }}>
-                    <span style={{ fontSize: 14, color: "var(--fg-2)" }}>{row.label}</span>
+                    <span style={{ fontSize: 14, color: "var(--fg-2)" }}>
+                      {row.label}
+                      {tip ? <InfoTip heading="Health risk" body={tip} /> : null}
+                    </span>
                     <span className="num-mono" style={{ textAlign: "right", color: numColor, fontSize: 14 }}>
                       {pct.toFixed(0)}
                     </span>
@@ -392,7 +403,7 @@ function CityDirectory({ data }: { data: CountyPagePayload }) {
       <div className="wrap">
         <div className="eyebrow">Browse</div>
         <h2 className="h-display" style={{ fontSize: "clamp(22px,2.4vw,28px)", margin: "8px 0 6px" }}>
-          All {dir.length} {data.county.name} cities with TRI data
+          All {dir.length} {data.county.name} Cities With TRI Data
         </h2>
         <p className="muted" style={{ fontSize: 14, marginBottom: 24, maxWidth: "60ch" }}>
           Pollution trends and {data.briefing_label} pages for every tracked city in this county. Alphabetical.
@@ -476,7 +487,7 @@ export default async function CountyPage({
             <div style={{ marginBottom: 24 }}>
               <div className="eyebrow">Top facilities mapped</div>
               <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-                Where releases land in {data.county.name}
+                Where Chemicals Are Released In {data.county.name}
               </h2>
               <p className="muted" style={{ fontSize: 14, marginTop: 10, maxWidth: "62ch" }}>
                 Each red dot is one of the top TRI facilities. Size reflects {data.reporting_year} total
@@ -490,7 +501,7 @@ export default async function CountyPage({
             />
           </div>
         </section>
-        <PathwaysSection pathways={data.pathways} />
+        <PathwaysSection pathways={data.pathways} countyName={data.county.name} />
         <FacilitiesSection data={data} />
         <UtilitiesSection data={data} />
         <SuperfundSection

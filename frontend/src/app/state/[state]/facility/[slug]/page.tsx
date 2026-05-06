@@ -139,7 +139,7 @@ function ChemicalsSection({ chemicals }: { chemicals: ChemicalRelease[] }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Chemicals reported · most recent year</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            What this facility releases
+            What This Facility Releases
           </h2>
         </div>
         <div className="cities-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
@@ -194,7 +194,7 @@ function EquitySection({ data }: { data: FacilityPagePayload }) {
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Equity context · ACS 2018-2022 block-group demographics</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Who lives next to this facility
+            Who Lives Next To This Facility
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             {e.geography_label}: a population of <strong>{e.population.toLocaleString()}</strong>.{" "}

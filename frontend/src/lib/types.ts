@@ -583,6 +583,7 @@ export interface RankingTable {
   units: string;           // value units, e.g. "µg/m³"
   direction: RankingDirection;
   county_derived?: boolean; // true → ranking inherits a county-grain value
+  positive_only?: boolean;  // true → both pools filter zero-value places
   rows: RankingRow[];
 }
 

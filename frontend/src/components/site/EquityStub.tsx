@@ -17,7 +17,7 @@ export function EquityStub({
       <div className="wrap">
         <div className="eyebrow">Equity context</div>
         <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 16px" }}>
-          {scopeLabel} population characteristics
+          {scopeLabel} Population Characteristics
         </h2>
         <div
           style={{

@@ -182,7 +182,7 @@ function ContaminantsSection({ data }: { data: SuperfundPayload }) {
           <div style={{ marginBottom: 16 }}>
             <div className="eyebrow">Contaminants of concern</div>
             <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-              No contaminants of concern in EPA's published record
+              No Contaminants Of Concern In EPA's Published Record
             </h2>
           </div>
           <p className="lead" style={{ maxWidth: "62ch" }}>
@@ -205,7 +205,7 @@ function ContaminantsSection({ data }: { data: SuperfundPayload }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Contaminants of concern · per EPA SEMS</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            What's in this site
+            What's In This Site
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             Each row pairs a contaminant with the medium it was found in (the exposure pathway). Hover any
@@ -272,8 +272,8 @@ function WaterLinkageSection({ data }: { data: SuperfundPayload }) {
           <div className="eyebrow">Drinking-water linkage · SDWIS</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
             {utils.length === 0
-              ? `No groundwater PWSes serving communities within ${radius} miles`
-              : `Groundwater systems serving communities within ${radius} miles`}
+              ? `No Groundwater PWSes Serving Communities Within ${radius} Miles`
+              : `Groundwater Systems Serving Communities Within ${radius} Miles`}
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             {utils.length === 0 ? (
@@ -360,7 +360,7 @@ function EquitySection({ data }: { data: SuperfundPayload }) {
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Equity context · ACS 2018-2022 block-group demographics</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Who lives near this site
+            Who Lives Near This Site
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             {e.geography_label}: a population of <strong>{e.population.toLocaleString()}</strong>.{" "}

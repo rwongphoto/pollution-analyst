@@ -6,6 +6,7 @@ import { Crumbs } from "@/components/site/Crumbs";
 import { EquityStub } from "@/components/site/EquityStub";
 import { HeroChart } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
+import { InfoTip } from "@/components/site/InfoTip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import {
@@ -19,6 +20,7 @@ import {
   severityClass,
   severityLabel,
 } from "@/lib/prose";
+import { getEjIndicatorRisk } from "@/lib/ejIndicatorRisk";
 import { pageMeta } from "@/lib/seo";
 import type { WaterUtilityPayload } from "@/lib/types";
 
@@ -170,7 +172,7 @@ function TopContaminantsSection({ data }: { data: WaterUtilityPayload }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Most-cited contaminants</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            What this utility gets cited for
+            What This Utility Gets Cited For
           </h2>
         </div>
         <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12, maxWidth: "60ch" }}>
@@ -196,7 +198,7 @@ function ViolationsSection({ violations }: { violations: WaterUtilityPayload["vi
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Violation history</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            What&apos;s on the SDWIS record
+            What&apos;s On The SDWIS Record
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             Health-based violations exceed an MCL or treatment-technique standard. Monitoring violations are reporting failures with no measured exceedance — they tell you the system isn&apos;t fully transparent, not that the water is unsafe today.
@@ -247,7 +249,7 @@ function EquitySection({ data }: { data: WaterUtilityPayload }) {
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Equity context · ACS 2018-2022 · USEPA-clone EJ disparity</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Who drinks this water
+            Who Drinks This Water
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             {e.geography_label}: a service population of <strong>{e.population.toLocaleString()}</strong>.
@@ -283,9 +285,13 @@ function EquitySection({ data }: { data: WaterUtilityPayload }) {
                 const pct = row.pct_us;
                 const barColor = pct >= 90 ? "var(--red)" : pct >= 80 ? "var(--amber)" : pct >= 60 ? "var(--blue)" : "var(--green)";
                 const numColor = pct >= 80 ? "var(--red)" : pct >= 60 ? "var(--amber)" : "var(--fg-2)";
+                const tip = getEjIndicatorRisk(row.label);
                 return (
                   <li key={row.label} style={{ display: "grid", gridTemplateColumns: "1fr 60px 220px", gap: 12, alignItems: "center" }}>
-                    <span style={{ fontSize: 14, color: "var(--fg-2)" }}>{row.label}</span>
+                    <span style={{ fontSize: 14, color: "var(--fg-2)" }}>
+                      {row.label}
+                      {tip ? <InfoTip heading="Health risk" body={tip} /> : null}
+                    </span>
                     <span className="num-mono" style={{ textAlign: "right", color: numColor, fontSize: 14 }}>
                       {pct.toFixed(0)}
                     </span>

@@ -489,6 +489,68 @@ hr, .rule { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
   margin-bottom: 4px;
 }
 
+/* Inline (i) info-tooltip — shared across pathway cards, EJScreen indicators, etc. */
+.info-tip { position: relative; display: inline-flex; align-items: center; vertical-align: middle; cursor: help; outline: none; margin-left: 6px; }
+.info-tip__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--fg-4);
+  border-radius: 50%;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  color: var(--fg-4);
+  line-height: 1;
+  background: transparent;
+  transition: color var(--dur-fast) var(--ease-std), border-color var(--dur-fast) var(--ease-std);
+}
+.info-tip:hover .info-tip__icon,
+.info-tip:focus-visible .info-tip__icon { color: var(--blue-2); border-color: var(--blue-2); }
+.info-tip__pop {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translate(-50%, 2px);
+  width: 280px;
+  max-width: 80vw;
+  background: var(--bg-3);
+  color: var(--fg);
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-3);
+  padding: 10px 12px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: normal;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--dur-fast) var(--ease-std), transform var(--dur-fast) var(--ease-std), visibility 0s linear var(--dur-fast);
+  z-index: 30;
+  pointer-events: none;
+  text-align: left;
+}
+.info-tip:hover .info-tip__pop,
+.info-tip:focus-visible .info-tip__pop {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+  transition-delay: 0s;
+}
+.info-tip__heading {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg-4);
+  margin-bottom: 4px;
+}
+
 /* =========================================================
    NEIGHBORHOOD
    ========================================================= */

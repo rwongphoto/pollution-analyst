@@ -1,5 +1,5 @@
 {
-  "_published_at": "2026-05-06T04:43:17Z",
+  "_published_at": "2026-05-06T07:08:10Z",
   "reporting_year": 2024,
   "states_covered": [
     "ca"
@@ -17,6 +17,7 @@
         "units": "\u00b5g/m\u00b3",
         "direction": "most",
         "county_derived": true,
+        "positive_only": false,
         "rows": [
           {
             "rank": 1,
@@ -126,6 +127,7 @@
         "units": "\u00b5g/m\u00b3",
         "direction": "least",
         "county_derived": true,
+        "positive_only": false,
         "rows": [
           {
             "rank": 1,
@@ -235,6 +237,7 @@
         "units": "per million",
         "direction": "most",
         "county_derived": true,
+        "positive_only": false,
         "rows": [
           {
             "rank": 1,
@@ -344,6 +347,7 @@
         "units": "per million",
         "direction": "least",
         "county_derived": true,
+        "positive_only": false,
         "rows": [
           {
             "rank": 1,
@@ -453,6 +457,7 @@
         "units": "lb",
         "direction": "most",
         "county_derived": false,
+        "positive_only": true,
         "rows": [
           {
             "rank": 1,
@@ -557,11 +562,122 @@
         ]
       },
       {
+        "lane": "tri_air",
+        "label": "TRI air releases",
+        "units": "lb",
+        "direction": "least",
+        "county_derived": false,
+        "positive_only": true,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "san-mateo",
+            "name": "San Mateo County",
+            "population": 754250,
+            "value": 7.0,
+            "value_label": "7 lb"
+          },
+          {
+            "rank": 2,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "siskiyou",
+            "name": "Siskiyou County",
+            "population": 44049,
+            "value": 9.0,
+            "value_label": "9 lb"
+          },
+          {
+            "rank": 3,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "yolo",
+            "name": "Yolo County",
+            "population": 217141,
+            "value": 52.0,
+            "value_label": "52 lb"
+          },
+          {
+            "rank": 4,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "monterey",
+            "name": "Monterey County",
+            "population": 437609,
+            "value": 56.0,
+            "value_label": "56 lb"
+          },
+          {
+            "rank": 5,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "lake",
+            "name": "Lake County",
+            "population": 68024,
+            "value": 227.0,
+            "value_label": "227 lb"
+          },
+          {
+            "rank": 6,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "tehama",
+            "name": "Tehama County",
+            "population": 65484,
+            "value": 336.0,
+            "value_label": "336 lb"
+          },
+          {
+            "rank": 7,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "san-luis-obispo",
+            "name": "San Luis Obispo County",
+            "population": 281712,
+            "value": 1131.0,
+            "value_label": "1k lb"
+          },
+          {
+            "rank": 8,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "tulare",
+            "name": "Tulare County",
+            "population": 473446,
+            "value": 4383.0,
+            "value_label": "4k lb"
+          },
+          {
+            "rank": 9,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "san-benito",
+            "name": "San Benito County",
+            "population": 64753,
+            "value": 4571.0,
+            "value_label": "5k lb"
+          },
+          {
+            "rank": 10,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "sonoma",
+            "name": "Sonoma County",
+            "population": 488436,
+            "value": 8915.0,
+            "value_label": "9k lb"
+          }
+        ]
+      },
+      {
         "lane": "ghg",
         "label": "Greenhouse gases (GHGRP)",
         "units": "metric tons CO\u2082e",
         "direction": "most",
         "county_derived": true,
+        "positive_only": true,
         "rows": [
           {
             "rank": 1,
@@ -675,6 +791,7 @@
         "units": "\u00b5g/m\u00b3",
         "direction": "most",
         "county_derived": true,
+        "positive_only": false,
         "rows": [
           {
             "rank": 1,
@@ -794,6 +911,7 @@
         "units": "\u00b5g/m\u00b3",
         "direction": "least",
         "county_derived": true,
+        "positive_only": false,
         "rows": [
           {
             "rank": 1,
@@ -913,6 +1031,7 @@
         "units": "per million",
         "direction": "most",
         "county_derived": true,
+        "positive_only": false,
         "rows": [
           {
             "rank": 1,
@@ -1032,6 +1151,7 @@
         "units": "per million",
         "direction": "least",
         "county_derived": true,
+        "positive_only": false,
         "rows": [
           {
             "rank": 1,
@@ -1151,6 +1271,7 @@
         "units": "lb",
         "direction": "most",
         "county_derived": false,
+        "positive_only": true,
         "rows": [
           {
             "rank": 1,
@@ -1261,6 +1382,126 @@
             "population": 119420,
             "value": 147407.0,
             "value_label": "147k lb"
+          }
+        ]
+      },
+      {
+        "lane": "tri_air",
+        "label": "TRI air releases",
+        "units": "lb",
+        "direction": "least",
+        "county_derived": false,
+        "positive_only": true,
+        "rows": [
+          {
+            "rank": 1,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "cabazon",
+            "name": "Cabazon",
+            "county_name": "Riverside",
+            "population": 1946,
+            "value": 1.0,
+            "value_label": "1 lb"
+          },
+          {
+            "rank": 2,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "gardena",
+            "name": "Gardena",
+            "county_name": "Los Angeles",
+            "population": 60377,
+            "value": 1.0,
+            "value_label": "1 lb"
+          },
+          {
+            "rank": 3,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "hemet",
+            "name": "Hemet",
+            "county_name": "Riverside",
+            "population": 89651,
+            "value": 1.0,
+            "value_label": "1 lb"
+          },
+          {
+            "rank": 4,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "lakeside",
+            "name": "Lakeside",
+            "county_name": "San Diego",
+            "population": 21759,
+            "value": 1.0,
+            "value_label": "1 lb"
+          },
+          {
+            "rank": 5,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "menlo-park",
+            "name": "Menlo Park",
+            "county_name": "San Mateo",
+            "population": 33324,
+            "value": 1.0,
+            "value_label": "1 lb"
+          },
+          {
+            "rank": 6,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "pasadena",
+            "name": "Pasadena",
+            "county_name": "Los Angeles",
+            "population": 137554,
+            "value": 1.0,
+            "value_label": "1 lb"
+          },
+          {
+            "rank": 7,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "redondo-beach",
+            "name": "Redondo Beach",
+            "county_name": "Los Angeles",
+            "population": 70620,
+            "value": 1.0,
+            "value_label": "1 lb"
+          },
+          {
+            "rank": 8,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "thousand-palms",
+            "name": "Thousand Palms",
+            "county_name": "Riverside",
+            "population": 8242,
+            "value": 1.0,
+            "value_label": "1 lb"
+          },
+          {
+            "rank": 9,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "bostonia",
+            "name": "Bostonia",
+            "county_name": "San Diego",
+            "population": 16850,
+            "value": 2.0,
+            "value_label": "2 lb"
+          },
+          {
+            "rank": 10,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "escondido",
+            "name": "Escondido",
+            "county_name": "San Diego",
+            "population": 151114,
+            "value": 2.0,
+            "value_label": "2 lb"
           }
         ]
       }
@@ -1513,6 +1754,390 @@
             "value": 293691.0,
             "value_label": "294k lb",
             "top_chemical": "Hydrogen cyanide"
+          }
+        ]
+      },
+      {
+        "lane": "tri_air",
+        "label": "TRI air releases",
+        "units": "lb",
+        "direction": "most",
+        "rows": [
+          {
+            "rank": 1,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "tesoro-los-angeles-refinery-carson-operations",
+            "name": "Tesoro Los Angeles Refinery-Carson Operations",
+            "city": "Carson",
+            "county": "Los Angeles County",
+            "value": 903406.0,
+            "value_label": "903k lb",
+            "top_chemical": "Ammonia"
+          },
+          {
+            "rank": 2,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "chevron-products-co-richmond-refinery",
+            "name": "Chevron Products CO Richmond Refinery",
+            "city": "Richmond",
+            "county": "Contra Costa County",
+            "value": 458368.0,
+            "value_label": "458k lb",
+            "top_chemical": "Ammonia"
+          },
+          {
+            "rank": 3,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "phillips-66-los-angeles-refinery-wilmington-plant",
+            "name": "Phillips 66 Los Angeles Refinery Wilmington Plant",
+            "city": "Wilmington",
+            "county": "Los Angeles County",
+            "value": 269197.0,
+            "value_label": "269k lb",
+            "top_chemical": "Hydrogen cyanide"
+          },
+          {
+            "rank": 4,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "martinez-refining-co-llc",
+            "name": "Martinez Refining CO LLC",
+            "city": "Martinez",
+            "county": "Contra Costa County",
+            "value": 220690.0,
+            "value_label": "221k lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 5,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "torrance-refining-co-llc",
+            "name": "Torrance Refining CO LLC",
+            "city": "Torrance",
+            "county": "Los Angeles County",
+            "value": 220094.0,
+            "value_label": "220k lb",
+            "top_chemical": "Hydrogen cyanide"
+          },
+          {
+            "rank": 6,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "valero-refining-co-cali-fornia-benicia-refinery",
+            "name": "Valero Refining Co-Cali Fornia Benicia Refinery",
+            "city": "Benicia",
+            "county": "Solano County",
+            "value": 219927.0,
+            "value_label": "220k lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 7,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "chevron-products-co-div-of-chevron-usa-inc",
+            "name": "Chevron Products CO. Div Of Chevron USA INC.",
+            "city": "El Segundo",
+            "county": "Los Angeles County",
+            "value": 186940.0,
+            "value_label": "187k lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 8,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "knauf-insulation-inc",
+            "name": "Knauf Insulation INC.",
+            "city": "Shasta Lake",
+            "county": "Shasta County",
+            "value": 155661.0,
+            "value_label": "156k lb",
+            "top_chemical": "Ammonia"
+          },
+          {
+            "rank": 9,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "ultramar-inc-wilmington-refinery",
+            "name": "Ultramar INC Wilmington Refinery",
+            "city": "Wilmington",
+            "county": "Los Angeles County",
+            "value": 146723.0,
+            "value_label": "147k lb",
+            "top_chemical": "Ammonia"
+          },
+          {
+            "rank": 10,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "general-dynamics-nassco",
+            "name": "General Dynamics (Nassco)",
+            "city": "San Diego",
+            "county": "San Diego County",
+            "value": 127979.0,
+            "value_label": "128k lb",
+            "top_chemical": "Xylene (mixed isomers)"
+          }
+        ]
+      },
+      {
+        "lane": "tri_water",
+        "label": "TRI water releases",
+        "units": "lb",
+        "direction": "most",
+        "rows": [
+          {
+            "rank": 1,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "chevron-products-co-div-of-chevron-usa-inc",
+            "name": "Chevron Products CO. Div Of Chevron USA INC.",
+            "city": "El Segundo",
+            "county": "Los Angeles County",
+            "value": 1706906.0,
+            "value_label": "1.7M lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 2,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "valero-refining-co-cali-fornia-benicia-refinery",
+            "name": "Valero Refining Co-Cali Fornia Benicia Refinery",
+            "city": "Benicia",
+            "county": "Solano County",
+            "value": 490753.0,
+            "value_label": "491k lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 3,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "martinez-refining-co-llc",
+            "name": "Martinez Refining CO LLC",
+            "city": "Martinez",
+            "county": "Contra Costa County",
+            "value": 478341.0,
+            "value_label": "478k lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 4,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "phillips-66-rodeo-renewable-energy-complex",
+            "name": "Phillips 66 Rodeo Renewable Energy Complex",
+            "city": "Rodeo",
+            "county": "Contra Costa County",
+            "value": 140477.0,
+            "value_label": "140k lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 5,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "us-marine-corps-mcb-camp-pendleton",
+            "name": "US Marine Corps Mcb Camp Pendleton",
+            "city": "Camp Pendleton",
+            "county": "San Diego County",
+            "value": 86000.0,
+            "value_label": "86k lb",
+            "top_chemical": "Lead  And Lead Compounds"
+          },
+          {
+            "rank": 6,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "us-navy-naval-air-facility-el-centro",
+            "name": "US Navy Naval Air Facility El Centro",
+            "city": "El Centro",
+            "county": "Imperial County",
+            "value": 21000.0,
+            "value_label": "21k lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 7,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "chevron-products-co-richmond-refinery",
+            "name": "Chevron Products CO Richmond Refinery",
+            "city": "Richmond",
+            "county": "Contra Costa County",
+            "value": 15805.0,
+            "value_label": "16k lb",
+            "top_chemical": "Ammonia"
+          },
+          {
+            "rank": 8,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "tesoro-refining-marketing-co-llc",
+            "name": "Tesoro Refining & Marketing CO LLC",
+            "city": "Martinez",
+            "county": "Contra Costa County",
+            "value": 7403.0,
+            "value_label": "7k lb",
+            "top_chemical": "n-Hexane"
+          },
+          {
+            "rank": 9,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "hoover-treated-wood-products-inc",
+            "name": "Hoover Treated Wood Products INC.",
+            "city": "Bakersfield",
+            "county": "Kern County",
+            "value": 859.0,
+            "value_label": "859 lb",
+            "top_chemical": "Copper compounds"
+          },
+          {
+            "rank": 10,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "mecs-inc",
+            "name": "Mecs INC.",
+            "city": "Martinez",
+            "county": "Contra Costa County",
+            "value": 464.0,
+            "value_label": "464 lb",
+            "top_chemical": "Vanadium compounds"
+          }
+        ]
+      },
+      {
+        "lane": "tri_land",
+        "label": "TRI land releases",
+        "units": "lb",
+        "direction": "most",
+        "rows": [
+          {
+            "rank": 1,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "chemical-waste-management-inc",
+            "name": "Chemical Waste Management INC",
+            "city": "Kettleman City",
+            "county": "Kings County",
+            "value": 6052748.0,
+            "value_label": "6.1M lb",
+            "top_chemical": "Asbestos (friable)"
+          },
+          {
+            "rank": 2,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "clean-harbors-buttonwillow-llc",
+            "name": "Clean Harbors Buttonwillow LLC",
+            "city": "Buttonwillow",
+            "county": "Kern County",
+            "value": 5348006.0,
+            "value_label": "5.3M lb",
+            "top_chemical": "Asbestos (friable)"
+          },
+          {
+            "rank": 3,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "ecobat-resources-california-inc",
+            "name": "Ecobat Resources California INC.",
+            "city": "City Of Industry",
+            "county": "Los Angeles County",
+            "value": 1799092.0,
+            "value_label": "1.8M lb",
+            "top_chemical": "Lead  And Lead Compounds"
+          },
+          {
+            "rank": 4,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "mp-mine-operations-llc",
+            "name": "Mp Mine Operations LLC",
+            "city": "Mountain Pass",
+            "county": "San Bernardino County",
+            "value": 1600529.0,
+            "value_label": "1.6M lb",
+            "top_chemical": "Lead  And Lead Compounds"
+          },
+          {
+            "rank": 5,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "us-pipe-foundry-co-llc",
+            "name": "US Pipe & Foundry CO LLC",
+            "city": "Union City",
+            "county": "Alameda County",
+            "value": 845062.0,
+            "value_label": "845k lb",
+            "top_chemical": "Zinc compounds"
+          },
+          {
+            "rank": 6,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "safety-kleen-inc",
+            "name": "Safety-Kleen INC",
+            "city": "Newark",
+            "county": "Alameda County",
+            "value": 806482.0,
+            "value_label": "806k lb",
+            "top_chemical": "Ethylene glycol"
+          },
+          {
+            "rank": 7,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "procter-gamble-mfg-co",
+            "name": "Procter & Gamble Mfg. CO.",
+            "city": "Sacramento",
+            "county": "Sacramento County",
+            "value": 672930.0,
+            "value_label": "673k lb",
+            "top_chemical": "Methanol"
+          },
+          {
+            "rank": 8,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "new-carrot-farms-llc-dba-bolthouse-fresh-foods",
+            "name": "New Carrot Farms LLC Dba Bolthouse Fresh Foods",
+            "city": "Bakersfield",
+            "county": "Kern County",
+            "value": 508931.0,
+            "value_label": "509k lb",
+            "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)"
+          },
+          {
+            "rank": 9,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "corteva-agriscience-llc",
+            "name": "Corteva Agriscience LLC",
+            "city": "Pittsburg",
+            "county": "Contra Costa County",
+            "value": 368809.0,
+            "value_label": "369k lb",
+            "top_chemical": "Nitrapyrin"
+          },
+          {
+            "rank": 10,
+            "state": "ca",
+            "state_label": "California",
+            "slug": "clean-harbors-san-jose-llc",
+            "name": "Clean Harbors San Jose LLC",
+            "city": "San Jose",
+            "county": "Santa Clara County",
+            "value": 358921.0,
+            "value_label": "359k lb",
+            "top_chemical": "Lead  And Lead Compounds"
           }
         ]
       }

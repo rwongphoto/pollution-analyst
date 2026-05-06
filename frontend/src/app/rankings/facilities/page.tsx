@@ -2,22 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Crumbs } from "@/components/site/Crumbs";
+import { InfoTip } from "@/components/site/InfoTip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { loadRankings } from "@/lib/data";
+import { LANE_METHODOLOGY, LANE_OVERRIDES } from "@/lib/rankingLanes";
 import { pageMeta } from "@/lib/seo";
 import type { RankingTable } from "@/lib/types";
 
 export const metadata: Metadata = pageMeta({
   title: "Most polluting facilities — national rankings | Pollution Analyst",
   description:
-    "Top 20 most polluting industrial facilities nationally, ranked by total TRI releases (air + water + land).",
+    "Most polluting industrial facilities nationally — ranked by total TRI releases and broken down by air, water, and land.",
   path: "/rankings/facilities",
 });
 
 export default async function RankingsFacilitiesPage() {
   const data = await loadRankings();
-  const table = data.facilities.tables[0];
+  const tables = data.facilities.tables;
 
   return (
     <>
@@ -29,14 +31,16 @@ export default async function RankingsFacilitiesPage() {
           <div className="wrap">
             <div className="eyebrow">National rankings · {data.reporting_year}</div>
             <h1 className="h-display" style={{ fontSize: "clamp(32px,4vw,52px)", margin: "8px 0 16px" }}>
-              Most polluting facilities
+              Most Polluting Facilities
             </h1>
             <p className="lede" style={{ maxWidth: "62ch" }}>
-              The 20 industrial facilities reporting the largest total chemical
-              releases — air, water, and land combined — under the EPA Toxics
-              Release Inventory. Every facility on this list is by definition
-              an emitter; ranking the &ldquo;least polluting&rdquo; facility
-              isn&apos;t a meaningful question.{" "}
+              Industrial facilities reporting the largest chemical releases
+              under the EPA Toxics Release Inventory. The headline table sums
+              air, water, and land together; the three tables below split that
+              sum apart so you can see who tops each medium individually. Every
+              facility on this list is by definition an emitter; ranking the
+              &ldquo;least polluting&rdquo; facility isn&apos;t a meaningful
+              question.{" "}
               {data.states_covered.length === 1 ? (
                 <>
                   Only <strong>{data.states_covered[0].toUpperCase()}</strong> is
@@ -53,26 +57,38 @@ export default async function RankingsFacilitiesPage() {
           </div>
         </section>
 
-        {table ? <FacilityRankingSection table={table} /> : null}
+        {tables.map((t, i) => (
+          <FacilityRankingSection key={t.lane} table={t} tint={i % 2 === 1} />
+        ))}
       </main>
       <SiteFooter />
     </>
   );
 }
 
-function FacilityRankingSection({ table }: { table: RankingTable }) {
+function FacilityRankingSection({ table, tint }: { table: RankingTable; tint: boolean }) {
+  const override = LANE_OVERRIDES[table.lane];
+  const displayLabel = override?.label ?? table.label;
+  const tooltip = override?.tooltip;
+  const methodologyHref = LANE_METHODOLOGY[table.lane] ?? "/methodology";
   return (
-    <section className="section">
+    <section className={`section ${tint ? "section-tint" : ""}`}>
       <div className="wrap">
         <div style={{ marginBottom: 24 }}>
-          <div className="eyebrow">Top 20 most polluting facilities</div>
+          <div className="eyebrow">Top {table.rows.length} most polluting facilities</div>
           <h2 className="h-display" style={{ fontSize: "clamp(24px,2.6vw,34px)", margin: "8px 0 0" }}>
-            {table.label}
+            {displayLabel}
+            {tooltip ? (
+              <InfoTip heading={tooltip.heading} body={tooltip.body} ariaLabel={`About ${displayLabel}`} />
+            ) : null}
           </h2>
+          <p className="muted" style={{ margin: "8px 0 0", fontSize: 13 }}>
+            <Link href={methodologyHref}>Methodology &rarr;</Link>
+          </p>
         </div>
         <table className="tbl">
           <caption className="sr-only">
-            Industrial facilities ranked by total TRI releases (pounds), highest first.
+            Industrial facilities ranked by {displayLabel.toLowerCase()} (pounds), highest first.
           </caption>
           <thead>
             <tr>
@@ -82,7 +98,7 @@ function FacilityRankingSection({ table }: { table: RankingTable }) {
               <th scope="col">County</th>
               <th scope="col">State</th>
               <th scope="col">Top chemical</th>
-              <th scope="col" className="right">Total releases</th>
+              <th scope="col" className="right">Releases</th>
             </tr>
           </thead>
           <tbody>

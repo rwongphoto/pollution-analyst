@@ -33,6 +33,14 @@ Eventually, three surfaces are likely candidates. Each is gated by tier and traf
 
 Long-tail entity pages (small TRI facilities with quiet histories, small water systems with no violations), county pages with low population, neighborhood pages outside major metros — pure templates, indefinitely.
 
+## Header capitalization — Title Case across the site
+
+All section headings (h1, h2, h3) on customer-facing pages render in **Title Case** — every word's first letter capitalized. Applies to template-rendered headings (e.g. `{stateName} Pollutant Multi-Year Trends`) and to hand-authored headings on the methodology page. The eyebrow / kicker line above each heading stays in sentence case (often all-caps, monospace) so the visual hierarchy reads as eyebrow → Title-Case headline → body prose.
+
+Why: the site's audience includes the general public, not just researchers — Title-Case headlines read as definitive section titles instead of mid-sentence phrases. Sentence-case headings ("Where releases concentrate in California") were tested first and felt journalistic but disclaimer-y; Title Case ("California Counties With Most Chemical Releases") reads as a confident table-of-contents entry, which is closer to how ranking and reference sites work. No trailing periods on headers (already a rule below).
+
+Applies to: every `<h2>` / `<h3>` rendered by `frontend/src/app/**/*.tsx`, every section heading in template prose, and any future LLM-generated heading. Body prose, captions, and tile descriptions stay in sentence case.
+
 ## What stays deterministic regardless
 
 Even after LLM enters, these are template territory by rule:

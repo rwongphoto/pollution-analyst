@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Crumbs } from "@/components/site/Crumbs";
+import { InfoTip } from "@/components/site/InfoTip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { loadRankings } from "@/lib/data";
+import { LANE_METHODOLOGY, LANE_OVERRIDES } from "@/lib/rankingLanes";
 import { pageMeta } from "@/lib/seo";
 import type { RankingTable } from "@/lib/types";
 
@@ -30,7 +32,7 @@ export default async function RankingsCitiesPage() {
           <div className="wrap">
             <div className="eyebrow">National rankings · {data.reporting_year}</div>
             <h1 className="h-display" style={{ fontSize: "clamp(32px,4vw,52px)", margin: "8px 0 16px" }}>
-              Most &amp; least polluted cities
+              Most &amp; Least Polluted Cities
             </h1>
             <p className="lede" style={{ maxWidth: "62ch" }}>
               City-level rankings across the federal pollution corpus. TRI air
@@ -74,6 +76,10 @@ export default async function RankingsCitiesPage() {
 
 function RankingTableSection({ table }: { table: RankingTable }) {
   const isMost = table.direction === "most";
+  const override = LANE_OVERRIDES[table.lane];
+  const displayLabel = override?.label ?? table.label;
+  const tooltip = override?.tooltip;
+  const methodologyHref = LANE_METHODOLOGY[table.lane] ?? "/methodology";
   return (
     <section className={`section ${isMost ? "" : "section-tint"}`}>
       <div className="wrap">
@@ -82,17 +88,28 @@ function RankingTableSection({ table }: { table: RankingTable }) {
             {isMost ? "Top 10 most" : "Top 10 least"} polluted cities
           </div>
           <h2 className="h-display" style={{ fontSize: "clamp(24px,2.6vw,34px)", margin: "8px 0 0" }}>
-            {table.label} <span className="muted">({table.units})</span>
+            {displayLabel} <span className="muted">({table.units})</span>
+            {tooltip ? (
+              <InfoTip heading={tooltip.heading} body={tooltip.body} ariaLabel={`About ${displayLabel}`} />
+            ) : null}
           </h2>
+          <p className="muted" style={{ margin: "8px 0 0", fontSize: 13 }}>
+            <Link href={methodologyHref}>Methodology &rarr;</Link>
+          </p>
           {table.county_derived ? (
             <p className="muted" style={{ fontSize: 13, marginTop: 6 }}>
               County-grain measurement · cities shown are the largest in each county.
             </p>
           ) : null}
+          {table.positive_only && !isMost ? (
+            <p className="muted" style={{ fontSize: 13, marginTop: 6 }}>
+              Among cities with reported activity · cities with zero {displayLabel.toLowerCase()} are excluded so the ranking isn&apos;t filled with places that simply host no facilities.
+            </p>
+          ) : null}
         </div>
         <table className="tbl">
           <caption className="sr-only">
-            Cities ranked by {table.label.toLowerCase()} ({table.units}),{" "}
+            Cities ranked by {displayLabel.toLowerCase()} ({table.units}),{" "}
             {isMost ? "highest first" : "lowest first"}.
           </caption>
           <thead>
@@ -102,7 +119,7 @@ function RankingTableSection({ table }: { table: RankingTable }) {
               <th scope="col">County</th>
               <th scope="col">State</th>
               <th scope="col" className="right">Population</th>
-              <th scope="col" className="right">{table.label}</th>
+              <th scope="col" className="right">{displayLabel}</th>
             </tr>
           </thead>
           <tbody>

@@ -77,7 +77,10 @@ PLACE_LANES: tuple[_Lane, ...] = (
         label_prefix="TRI air releases",
         units="lb",
         most_n=10,
-        least_n=0,  # most counties/cities have zero — bottom block isn't editorial
+        # "Least" pool filters zeros (see _build_place_tables) so this answers
+        # "of places with TRI activity, who reports the lowest releases?"
+        # rather than alphabetizing the long tail of zero-emitter places.
+        least_n=10,
         value_format="pounds",
     ),
     _Lane(
@@ -222,11 +225,14 @@ def _build_place_tables(
             continue
         if surface == "cities" and lane.county_derived:
             rows = _dedupe_largest_per_county(rows)
-        # Most polluted: highest value first, exclude zeros for TRI/GHG so
-        # we don't fill the table with zero-emitter places when only a
-        # handful of facilities exist statewide.
-        most_pool = [r for r in rows if r["value"] > 0] if lane.value_format in ("pounds", "metric_tons") else rows
-        most_sorted = sorted(most_pool, key=lambda r: r["value"], reverse=True)[: lane.most_n]
+        # For pounds/metric-tons lanes, restrict both pools to positive values:
+        # most-polluted shouldn't be padded by zero-emitter places, and least-
+        # polluted answers the more interesting question — "of places with
+        # reported activity, who is lowest?" — instead of alphabetizing the
+        # long tail of places that simply host no facilities.
+        positive_only = lane.value_format in ("pounds", "metric_tons")
+        pool = [r for r in rows if r["value"] > 0] if positive_only else rows
+        most_sorted = sorted(pool, key=lambda r: r["value"], reverse=True)[: lane.most_n]
         if most_sorted:
             tables.append({
                 "lane": lane.key,
@@ -234,10 +240,11 @@ def _build_place_tables(
                 "units": lane.units,
                 "direction": "most",
                 "county_derived": lane.county_derived,
+                "positive_only": positive_only,
                 "rows": [{"rank": i + 1, **r} for i, r in enumerate(most_sorted)],
             })
         if lane.least_n:
-            least_sorted = sorted(rows, key=lambda r: r["value"])[: lane.least_n]
+            least_sorted = sorted(pool, key=lambda r: r["value"])[: lane.least_n]
             if least_sorted:
                 tables.append({
                     "lane": lane.key,
@@ -245,16 +252,23 @@ def _build_place_tables(
                     "units": lane.units,
                     "direction": "least",
                     "county_derived": lane.county_derived,
+                    "positive_only": positive_only,
                     "rows": [{"rank": i + 1, **r} for i, r in enumerate(least_sorted)],
                 })
     return tables
 
 
 def _facility_rows(payloads: list[tuple[str, dict]], top_n: int) -> list[dict]:
+    return _facility_rows_for_field(payloads, "total_releases_pounds", top_n)
+
+
+def _facility_rows_for_field(
+    payloads: list[tuple[str, dict]], field: str, top_n: int
+) -> list[dict]:
     rows: list[dict] = []
     for state_slug, p in payloads:
         totals = p.get("totals") or {}
-        v = totals.get("total_releases_pounds")
+        v = totals.get(field)
         if v is None or v <= 0:
             continue
         fac = p["facility"]
@@ -274,6 +288,29 @@ def _facility_rows(payloads: list[tuple[str, dict]], top_n: int) -> list[dict]:
     rows.sort(key=lambda r: r["value"], reverse=True)
     rows = rows[:top_n]
     return [{"rank": i + 1, **r} for i, r in enumerate(rows)]
+
+
+def _facility_tables(facilities: list[tuple[str, dict]]) -> list[dict]:
+    """Build the four facility ranking tables: total + per-medium (air/water/land)."""
+    specs = (
+        ("tri_total", "Total TRI releases (air + water + land)", "total_releases_pounds", 20),
+        ("tri_air", "TRI air releases", "air_releases_pounds", 10),
+        ("tri_water", "TRI water releases", "water_releases_pounds", 10),
+        ("tri_land", "TRI land releases", "land_releases_pounds", 10),
+    )
+    tables: list[dict] = []
+    for lane, label, field, top_n in specs:
+        rows = _facility_rows_for_field(facilities, field, top_n)
+        if not rows:
+            continue
+        tables.append({
+            "lane": lane,
+            "label": label,
+            "units": "lb",
+            "direction": "most",
+            "rows": rows,
+        })
+    return tables
 
 
 def publish_rankings(year: int) -> Path:
@@ -300,15 +337,7 @@ def publish_rankings(year: int) -> Path:
             "tables": _build_place_tables(cities, _city_rows, surface="cities"),
         },
         "facilities": {
-            "tables": [
-                {
-                    "lane": "tri_total",
-                    "label": "Total TRI releases (air + water + land)",
-                    "units": "lb",
-                    "direction": "most",
-                    "rows": _facility_rows(facilities, top_n=20),
-                }
-            ] if facilities else [],
+            "tables": _facility_tables(facilities) if facilities else [],
         },
     }
 

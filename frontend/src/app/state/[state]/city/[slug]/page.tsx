@@ -8,6 +8,7 @@ import { EquityStub } from "@/components/site/EquityStub";
 import { HealthIndicators } from "@/components/site/HealthIndicators";
 import { HeroChart } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
+import { InfoTip } from "@/components/site/InfoTip";
 import { RelatedPlaces } from "@/components/site/RelatedPlaces";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -23,6 +24,8 @@ import {
   pctSigned,
   poundsFormat,
 } from "@/lib/prose";
+import { getEjIndicatorRisk } from "@/lib/ejIndicatorRisk";
+import { getPathwayHealthRisk } from "@/lib/pathwayHealthRisk";
 import { pageMeta } from "@/lib/seo";
 import type { CityHubPayload, PollutantSummary } from "@/lib/types";
 
@@ -133,7 +136,7 @@ function CityHero({ data }: { data: CityHubPayload }) {
   );
 }
 
-function PathwaysSection({ pathways }: { pathways: PollutantSummary[] }) {
+function PathwaysSection({ pathways, cityName }: { pathways: PollutantSummary[]; cityName: string }) {
   if (pathways.length === 0) return null;
   return (
     <section className="section">
@@ -141,7 +144,7 @@ function PathwaysSection({ pathways }: { pathways: PollutantSummary[] }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Pollutant pathways</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            What&apos;s being released here
+            {cityName} Pollutant Multi-Year Trends
           </h2>
         </div>
         <div className="cities-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
@@ -154,13 +157,17 @@ function PathwaysSection({ pathways }: { pathways: PollutantSummary[] }) {
                 ? `${(p.current / 1_000_000).toFixed(1)}M ${p.units}`
                 : `${p.current.toFixed(p.units === "ppm" ? 3 : p.units === "µg/m³" ? 2 : 1)} ${p.units}`;
             const hasTrend = p.history.length >= 2;
+            const tooltip = getPathwayHealthRisk(p.pathway, p.label);
             return (
               <div key={`${p.pathway}-${p.label}`} className="city-tile live" style={{ cursor: "default" }}>
                 <div className="tile-meta">
                   <span style={{ color }}>{p.pathway.toUpperCase().replace("_", " ")}</span>
                   <span>{hasTrend ? `SINCE ${p.baseline_year}` : `${p.baseline_year} VINTAGE`}</span>
                 </div>
-                <h3>{p.label}</h3>
+                <h3>
+                  {p.label}
+                  {tooltip ? <InfoTip heading="Health risk" body={tooltip} /> : null}
+                </h3>
                 {hasTrend ? (
                   <>
                     <p className="meta-mono" style={{ margin: "4px 0 12px", fontSize: 12 }}>
@@ -200,7 +207,7 @@ function FacilitiesSection({ data }: { data: CityHubPayload }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Top facilities · TRI {data.reporting_year}</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Largest emitters inside the city
+            Largest Emitters Inside The City
           </h2>
         </div>
         <table className="tbl">
@@ -260,7 +267,7 @@ function WaterSection({ data }: { data: CityHubPayload }) {
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Drinking water · SDWIS</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Water systems serving {data.place.name}
+            Water Systems Serving {data.place.name}
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             {compliancePosture}
@@ -378,7 +385,7 @@ function EquitySection({ data }: { data: CityHubPayload }) {
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Equity context · ACS 2018-2022 · USEPA-clone EJ disparity</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Who lives in {data.place.name}
+            Who Lives In {data.place.name}
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             {e.geography_label}: <strong>{e.population.toLocaleString()}</strong> residents.
@@ -418,9 +425,13 @@ function EquitySection({ data }: { data: CityHubPayload }) {
                 const pct = row.pct_us;
                 const barColor = pct >= 90 ? "var(--red)" : pct >= 80 ? "var(--amber)" : pct >= 60 ? "var(--blue)" : "var(--green)";
                 const numColor = pct >= 80 ? "var(--red)" : pct >= 60 ? "var(--amber)" : "var(--fg-2)";
+                const tip = getEjIndicatorRisk(row.label);
                 return (
                   <li key={row.label} style={{ display: "grid", gridTemplateColumns: "1fr 60px 220px", gap: 12, alignItems: "center" }}>
-                    <span style={{ fontSize: 14, color: "var(--fg-2)" }}>{row.label}</span>
+                    <span style={{ fontSize: 14, color: "var(--fg-2)" }}>
+                      {row.label}
+                      {tip ? <InfoTip heading="Health risk" body={tip} /> : null}
+                    </span>
                     <span className="num-mono" style={{ textAlign: "right", color: numColor, fontSize: 14 }}>
                       {pct.toFixed(0)}
                     </span>
@@ -526,7 +537,7 @@ export default async function CityHubPage({
         />
         <CityHero data={data} />
         <NotableSignals flags={data.flags ?? []} />
-        <PathwaysSection pathways={data.pathways} />
+        <PathwaysSection pathways={data.pathways} cityName={data.place.name} />
         <FacilitiesSection data={data} />
         <WaterSection data={data} />
         <SuperfundSection

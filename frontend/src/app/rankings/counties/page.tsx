@@ -6,49 +6,9 @@ import { InfoTip } from "@/components/site/InfoTip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { loadRankings } from "@/lib/data";
+import { LANE_METHODOLOGY, LANE_OVERRIDES } from "@/lib/rankingLanes";
 import { pageMeta } from "@/lib/seo";
 import type { RankingTable } from "@/lib/types";
-
-const LANE_OVERRIDES: Record<
-  string,
-  { label: string; tooltip?: { heading: string; body: string } }
-> = {
-  pm25_annual: {
-    label: "PM2.5 Annual Mean",
-    tooltip: {
-      heading: "What is PM2.5?",
-      body: "Fine inhalable particles 2.5 micrometers or smaller — about 1/30th the width of a human hair. They travel deep into the lungs and into the bloodstream, and are linked to asthma, heart disease, stroke, and premature death.",
-    },
-  },
-  cancer_risk: {
-    label: "Lifetime Cancer Risk (All Pollutants)",
-    tooltip: {
-      heading: "What this means",
-      body: "EPA-modeled added cancer cases per million residents from a lifetime of breathing local air toxics (AirToxScreen). EPA flags 100-in-a-million as elevated.",
-    },
-  },
-  tri_air: {
-    label: "TRI Air Releases",
-    tooltip: {
-      heading: "What this means",
-      body: "Toxic chemicals reported by industrial facilities as released to the air — fugitive leaks plus smokestack emissions. Higher pounds means more inhaled exposure for nearby residents. Self-reported under EPA's Toxics Release Inventory.",
-    },
-  },
-  ghg: {
-    label: "Greenhouse Gases (GHGRP)",
-    tooltip: {
-      heading: "What this means",
-      body: "Greenhouse gases reported by large industrial emitters under EPA's Greenhouse Gas Reporting Program, in metric tons of CO₂ equivalent. Drives climate warming and the heat-related health effects that follow.",
-    },
-  },
-};
-
-const LANE_METHODOLOGY: Record<string, string> = {
-  pm25_annual: "/methodology#taxonomy",
-  cancer_risk: "/methodology#taxonomy",
-  tri_air: "/methodology#tri",
-  ghg: "/methodology#taxonomy",
-};
 
 export const metadata: Metadata = pageMeta({
   title: "Most polluted counties — national rankings | Pollution Analyst",
@@ -125,6 +85,11 @@ function RankingTableSection({ table }: { table: RankingTable }) {
           <p className="muted" style={{ margin: "8px 0 0", fontSize: 13 }}>
             <Link href={methodologyHref}>Methodology &rarr;</Link>
           </p>
+          {table.positive_only && !isMost ? (
+            <p className="muted" style={{ fontSize: 13, marginTop: 6 }}>
+              Among counties with reported activity · counties with zero {displayLabel.toLowerCase()} are excluded so the ranking isn&apos;t filled with places that simply host no facilities.
+            </p>
+          ) : null}
         </div>
         <table className="tbl">
           <caption className="sr-only">

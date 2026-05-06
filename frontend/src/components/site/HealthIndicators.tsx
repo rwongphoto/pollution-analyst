@@ -46,7 +46,7 @@ export function HealthIndicators({
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Health context</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 12px" }}>
-            Co-located health indicators
+            Co-Located Health Indicators
           </h2>
           <p className="lead" style={{ margin: 0, maxWidth: "62ch", fontSize: 15 }}>
             Modeled adult-prevalence estimates published by CDC PLACES, paired with this {scopeLabel.toLowerCase()}&apos;s pollution and demographic context. Comparisons are ecological, not causal — pollution and disease prevalence covary at the area level, but the data does not attribute any individual&apos;s diagnosis to local exposure.{" "}

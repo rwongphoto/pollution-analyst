@@ -136,7 +136,7 @@ function StartHereSection() {
         <div style={{ marginBottom: 40 }}>
           <div className="eyebrow">Where to start</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Pick the question you came in with
+            Pick The Question You Came In With
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             Pollution data lives at different scales because the questions do. Open the page that matches what you actually want to know — your county, your specific city, or a single factory or utility.
@@ -176,7 +176,7 @@ function PrinciplesSection() {
           <div>
             <div className="eyebrow">How it works</div>
             <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-              Four principles
+              Four Principles
             </h2>
           </div>
           <p className="lead" style={{ margin: 0, maxWidth: "60ch" }}>
@@ -204,7 +204,7 @@ function FeaturedSection({ featured }: { featured: FeaturedEntity[] }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Featured this update</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Three places to start
+            Three Places To Start
           </h2>
         </div>
         <div className="anomaly-strip">

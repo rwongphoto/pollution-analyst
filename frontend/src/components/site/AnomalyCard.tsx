@@ -97,7 +97,7 @@ const SEVERITY_WEIGHT: Record<FlagSeverity, number> = {
 
 export function NotableSignals({
   flags,
-  title = "Notable signals",
+  title = "Notable Signals",
   emptyLabel,
   cap = 4,
 }: {

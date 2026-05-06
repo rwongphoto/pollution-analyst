@@ -30,7 +30,7 @@ export function SuperfundSection({
         <div className="wrap">
           <div className="eyebrow">Superfund / NPL sites</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            No NPL sites in {geographyLabel}
+            No NPL Sites In {geographyLabel}
           </h2>
           <p className="muted" style={{ marginTop: 10, maxWidth: "62ch" }}>
             {emptyLabel}
@@ -46,7 +46,7 @@ export function SuperfundSection({
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Superfund / NPL sites</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Federal cleanup sites in {geographyLabel}
+            Federal Cleanup Sites In {geographyLabel}
           </h2>
           <p className="muted" style={{ fontSize: 14, marginTop: 10, maxWidth: "62ch" }}>
             Sites on EPA's Superfund National Priorities List, plus deleted sites whose
