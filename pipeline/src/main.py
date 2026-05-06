@@ -29,7 +29,7 @@ from .flags import (
     detect_violation_events,
     summarize as flags_summarize,
 )
-from .ingest import aqs, cdc_places, ejscreen, ghgrp, sdwis, tri
+from .ingest import airtoxscreen, aqs, cdc_places, ejscreen, ghgrp, sdwis, tri
 from .publish import site as publish_site
 from .spatial.acs import (
     get_county_demographics,
@@ -71,6 +71,7 @@ def run_state(
     sdwis_since_year: int | None = 2020,
     skip_sdwis: bool = False,
     skip_aqs: bool = False,
+    skip_airtox: bool = False,
     skip_health: bool = False,
     history_cache_only: bool = False,
     no_flags: bool = False,
@@ -242,6 +243,34 @@ def run_state(
                 county_bucket = air_county_history.setdefault(cfips, {})
                 for metric_key, val in metric_map.items():
                     county_bucket.setdefault(metric_key, {})[y] = val
+
+    # --- AirToxScreen (hazardous-air HAP exposure) ---
+    # Single-vintage snapshot (2020 published 2024-2025); EPA's cadence is
+    # ~3-4 years, not annual, so no per-year history. We emit the metric
+    # value at the vintage year and let publish layer render a single point.
+    # State-level: per-metric pop-weighted statewide block mean.
+    # County-level: per-metric pop-weighted block mean within the county.
+    # Both keyed by metric_key ("cancer_risk_total" / "formaldehyde_ambconc"
+    # / "benzene_ambconc"). Counties not covered by the source (no in-state
+    # rows) simply lack the keys and skip the pathway tile.
+    airtox_state: dict[str, dict[int, float]] = {}
+    airtox_county: dict[str, dict[str, dict[int, float]]] = {}
+    if not skip_airtox:
+        try:
+            atx_readings = airtoxscreen.fetch_state_year(
+                state, year=airtoxscreen.VINTAGE, cache_only=history_cache_only,
+            )
+        except Exception as exc:  # noqa: BLE001
+            logging.warning("AirToxScreen fetch failed for %s: %s", state.abbr, exc)
+            atx_readings = []
+        if atx_readings:
+            vintage = airtoxscreen.VINTAGE
+            for metric_key, val in airtoxscreen.aggregate_state_year(atx_readings).items():
+                airtox_state.setdefault(metric_key, {})[vintage] = val
+            for cfips, metric_map in airtoxscreen.aggregate_county_year(atx_readings).items():
+                county_bucket = airtox_county.setdefault(cfips, {})
+                for metric_key, val in metric_map.items():
+                    county_bucket.setdefault(metric_key, {})[vintage] = val
 
     # --- EJScreen disparity scores (state + per-county + per-place) ---
     try:
@@ -458,6 +487,7 @@ def run_state(
         percentiles=state_percentiles,
         ghg_history=ghg_state_history,
         air_history=air_state_history,
+        airtox_history=airtox_state,
         flags=state_flags,
     )
 
@@ -577,6 +607,7 @@ def run_state(
     all_county_fips.update(county_percentiles.keys())
     all_county_fips.update(ghg_county_history.keys())
     all_county_fips.update(air_county_history.keys())
+    all_county_fips.update(airtox_county.keys())
     all_county_fips.update(county_demos.keys())
     all_county_fips.update(county_pops.keys())
     county_paths: set = set()
@@ -608,6 +639,7 @@ def run_state(
             percentiles=county_percentiles.get(cfips, []),
             ghg_history=ghg_county_history.get(cfips),
             air_history=air_county_history.get(cfips),
+            airtox_history=airtox_county.get(cfips),
             health_indicators=publish_site._health_indicators(
                 measures=list(health_county_by_loc.get(cfips, {}).values()),
                 state_means=health_state_means,
@@ -764,6 +796,7 @@ def run_state(
             county_fips=county_fips_for_place,
             county_ghg_history=ghg_county_history.get(county_fips_for_place) if county_fips_for_place else None,
             county_air_history=air_county_history.get(county_fips_for_place) if county_fips_for_place else None,
+            county_airtox_history=airtox_county.get(county_fips_for_place) if county_fips_for_place else None,
             health_indicators=publish_site._health_indicators(
                 measures=list(health_place_by_loc.get(pf, {}).values()),
                 state_means=health_state_means,
@@ -805,6 +838,11 @@ def main(argv: list[str] | None = None) -> int:
     runp.add_argument("--skip-aqs", action="store_true",
                       help="Skip AQS air-monitor ingest. Pages render without "
                            "criteria_air pathway tiles or naaqs_exceedance flags.")
+    runp.add_argument("--skip-airtox", action="store_true",
+                      help="Skip AirToxScreen ingest. Pages render without "
+                           "hazardous_air pathway tiles. The 346 MB regional "
+                           "XLSX cache is one-time per vintage; this flag is "
+                           "useful for dev runs before the cache is warm.")
     runp.add_argument("--skip-health", action="store_true",
                       help="Skip CDC PLACES ingest. County and city pages render "
                            "without the co-located health-indicators section.")
@@ -840,6 +878,7 @@ def main(argv: list[str] | None = None) -> int:
             sdwis_since_year=args.sdwis_since,
             skip_sdwis=args.skip_sdwis,
             skip_aqs=args.skip_aqs,
+            skip_airtox=args.skip_airtox,
             skip_health=args.skip_health,
             history_cache_only=args.history_cache_only,
             no_flags=args.no_flags,

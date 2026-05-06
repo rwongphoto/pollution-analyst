@@ -266,6 +266,63 @@ def _criteria_air_pathways(
     return out
 
 
+_AIRTOX_METRIC_ORDER = ("cancer_risk_total", "formaldehyde_ambconc", "benzene_ambconc")
+
+
+def _hazardous_air_descriptor(metric_key: str) -> str:
+    """Short tile subtitle for a hazardous-air pathway. Mirrors the
+    criteria-air descriptor pattern; threshold label comes from MetricSpec."""
+    return {
+        "cancer_risk_total":     "all pollutants",
+        "formaldehyde_ambconc":  "ambient mean",
+        "benzene_ambconc":       "ambient mean",
+    }.get(metric_key, "")
+
+
+def _hazardous_air_pathways(
+    *,
+    airtox_history: dict[str, dict[int, float]] | None,
+    year: int,
+) -> list[dict]:
+    """Build PollutantSummary dicts for the AirToxScreen hazardous-air metrics.
+
+    ``airtox_history``: ``{metric_key: {vintage_year: pop-weighted mean}}``.
+    AirToxScreen is single-snapshot per vintage (EPA cadence ~3-4 years), so
+    the history map typically has one entry. We surface that as ``current``
+    with no YoY / long-arc trend lines — empty ``history`` array signals the
+    frontend to render the tile without the spark trail.
+    """
+    if not airtox_history:
+        return []
+    from ..ingest.airtoxscreen import metric_for_key  # noqa: PLC0415 — pipeline-only
+    out: list[dict] = []
+    for metric_key in _AIRTOX_METRIC_ORDER:
+        hist_map = airtox_history.get(metric_key) or {}
+        if not hist_map:
+            continue
+        m = metric_for_key(metric_key)
+        latest_year = max(hist_map.keys())
+        current = hist_map[latest_year]
+        precision = 1 if metric_key == "cancer_risk_total" else 4
+        history_pts = [
+            {"year": y, "value": round(v, precision)} for y, v in sorted(hist_map.items())
+        ]
+        descriptor = _hazardous_air_descriptor(metric_key)
+        head = f"{m.pollutant} {descriptor}".strip()
+        label = f"{head} ({m.threshold_label})"
+        out.append({
+            "pathway": "hazardous_air",
+            "label": label,
+            "current": round(current, precision),
+            "units": m.units,
+            "yoy_pct_change": None,
+            "long_arc_pct_change": None,
+            "baseline_year": latest_year,
+            "history": history_pts,
+        })
+    return out
+
+
 def _vs_state_class(pct: float | None) -> str:
     """Editorial color bucket for the 'vs state mean' comparison pill.
 
@@ -732,6 +789,7 @@ def publish_city_hub(
     county_fips: str | None,
     county_ghg_history: dict[int, float] | None,
     county_air_history: dict[str, dict[int, float]] | None = None,
+    county_airtox_history: dict[str, dict[int, float]] | None = None,
     health_indicators: list | None = None,
     flags: list | None = None,
 ) -> Path:
@@ -768,13 +826,17 @@ def publish_city_hub(
     # too small to host their own AQS sites) followed by TRI air/water/land
     # and optional GHG county-share. Per-medium per-place history is summed
     # in main.py from each in-place facility's per-medium-per-year totals.
-    pathways = _criteria_air_pathways(air_history=county_air_history, year=year) + _tri_pathways(
-        current_air=pounds_air,
-        current_water=pounds_water,
-        current_land=pounds_land,
-        medium_history=in_place_medium_history,
-        year=year,
-        ghg_history=county_ghg_history,
+    pathways = (
+        _criteria_air_pathways(air_history=county_air_history, year=year)
+        + _hazardous_air_pathways(airtox_history=county_airtox_history, year=year)
+        + _tri_pathways(
+            current_air=pounds_air,
+            current_water=pounds_water,
+            current_land=pounds_land,
+            medium_history=in_place_medium_history,
+            year=year,
+            ghg_history=county_ghg_history,
+        )
     )
 
     # Top facilities in the city.
@@ -891,19 +953,24 @@ def publish_county(
     percentiles: list | None = None,
     ghg_history: dict[int, float] | None = None,
     air_history: dict[str, dict[int, float]] | None = None,
+    airtox_history: dict[str, dict[int, float]] | None = None,
     health_indicators: list | None = None,
     flags: list | None = None,
     cities_directory: list[dict] | None = None,
 ) -> Path:
     top = sorted(facilities_in_county, key=lambda f: f.pounds_total, reverse=True)[:COUNTY_TOP_FACILITIES]
     history_map = history or {year: county.pounds_total}
-    pathways = _criteria_air_pathways(air_history=air_history, year=year) + _tri_pathways(
-        current_air=county.pounds_air,
-        current_water=county.pounds_water,
-        current_land=county.pounds_land,
-        medium_history=medium_history,
-        year=year,
-        ghg_history=ghg_history,
+    pathways = (
+        _criteria_air_pathways(air_history=air_history, year=year)
+        + _hazardous_air_pathways(airtox_history=airtox_history, year=year)
+        + _tri_pathways(
+            current_air=county.pounds_air,
+            current_water=county.pounds_water,
+            current_land=county.pounds_land,
+            medium_history=medium_history,
+            year=year,
+            ghg_history=ghg_history,
+        )
     )
     payload = {
         "county": {
@@ -1009,6 +1076,7 @@ def publish_state(
     percentiles: list | None = None,
     ghg_history: dict[int, float] | None = None,
     air_history: dict[str, dict[int, float]] | None = None,
+    airtox_history: dict[str, dict[int, float]] | None = None,
     flags: list | None = None,
 ) -> Path:
     facility_count = len(facilities)
@@ -1060,7 +1128,10 @@ def publish_state(
             "long_arc_pct_change": long_arc,
             "long_arc_baseline_year": baseline_year,
         },
-        "pathways": _criteria_air_pathways(air_history=air_history, year=year) + _tri_pathways(
+        "pathways": (
+            _criteria_air_pathways(air_history=air_history, year=year)
+            + _hazardous_air_pathways(airtox_history=airtox_history, year=year)
+        ) + _tri_pathways(
             current_air=state_agg.pounds_air,
             current_water=state_agg.pounds_water,
             current_land=state_agg.pounds_land,

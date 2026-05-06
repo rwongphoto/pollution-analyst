@@ -295,6 +295,51 @@
       ]
     },
     {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 36.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 36.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.6855,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.6855
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.2705,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.2705
+        }
+      ]
+    },
+    {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 145678,
@@ -742,14 +787,6 @@
       "population": 111490
     },
     {
-      "slug": "dana-point",
-      "name": "Dana Point",
-      "fips": "0617946",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 33025
-    },
-    {
       "slug": "fountain-valley",
       "name": "Fountain Valley",
       "fips": "0625380",
@@ -818,7 +855,7 @@
       "name": "Laguna Hills",
       "fips": "0639220",
       "facilities_count": 0,
-      "utilities_count": 2,
+      "utilities_count": 1,
       "population": 31170
     },
     {
@@ -870,14 +907,6 @@
       "population": 51797
     },
     {
-      "slug": "rancho-mission-viejo",
-      "name": "Rancho Mission Viejo",
-      "fips": "0659503",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 10697
-    },
-    {
       "slug": "rancho-santa-margarita",
       "name": "Rancho Santa Margarita",
       "fips": "0659587",
@@ -892,14 +921,6 @@
       "facilities_count": 0,
       "utilities_count": 1,
       "population": 64232
-    },
-    {
-      "slug": "san-juan-capistrano",
-      "name": "San Juan Capistrano",
-      "fips": "0668028",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 35099
     },
     {
       "slug": "santa-ana",
@@ -938,7 +959,7 @@
       "name": "Tustin",
       "fips": "0680854",
       "facilities_count": 0,
-      "utilities_count": 4,
+      "utilities_count": 1,
       "population": 79514
     },
     {
@@ -956,14 +977,6 @@
       "facilities_count": 0,
       "utilities_count": 2,
       "population": 90638
-    },
-    {
-      "slug": "yorba-linda",
-      "name": "Yorba Linda",
-      "fips": "0686832",
-      "facilities_count": 0,
-      "utilities_count": 2,
-      "population": 68035
     }
   ],
   "flags": [
@@ -1330,8 +1343,8 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-05"
+      "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-05T22:45:24Z"
+  "_published_at": "2026-05-06T00:02:34Z"
 }

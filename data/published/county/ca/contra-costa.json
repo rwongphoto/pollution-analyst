@@ -295,6 +295,51 @@
       ]
     },
     {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 30.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 30.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.4735,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.4735
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1616,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1616
+        }
+      ]
+    },
+    {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 914222,
@@ -710,14 +755,6 @@
   "utilities": [],
   "cities_directory": [
     {
-      "slug": "alamo",
-      "name": "Alamo",
-      "fips": "0600618",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 14355
-    },
-    {
       "slug": "antioch",
       "name": "Antioch",
       "fips": "0602252",
@@ -766,14 +803,6 @@
       "population": 125007
     },
     {
-      "slug": "danville",
-      "name": "Danville",
-      "fips": "0617988",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 43449
-    },
-    {
       "slug": "discovery-bay",
       "name": "Discovery Bay",
       "fips": "0619339",
@@ -806,14 +835,6 @@
       "population": 16859
     },
     {
-      "slug": "mountain-view",
-      "name": "Mountain View",
-      "fips": "0649651",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 2166
-    },
-    {
       "slug": "oakley",
       "name": "Oakley",
       "fips": "0653070",
@@ -822,28 +843,12 @@
       "population": 43525
     },
     {
-      "slug": "orinda",
-      "name": "Orinda",
-      "fips": "0654232",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 19477
-    },
-    {
       "slug": "pittsburg",
       "name": "Pittsburg",
       "fips": "0657456",
       "facilities_count": 3,
       "utilities_count": 1,
       "population": 76419
-    },
-    {
-      "slug": "pleasant-hill",
-      "name": "Pleasant Hill",
-      "fips": "0657764",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 34504
     },
     {
       "slug": "richmond",
@@ -860,14 +865,6 @@
       "facilities_count": 2,
       "utilities_count": 0,
       "population": 9334
-    },
-    {
-      "slug": "san-ramon",
-      "name": "San Ramon",
-      "fips": "0668378",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 86119
     },
     {
       "slug": "walnut-creek",
@@ -1095,8 +1092,8 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-05"
+      "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-05T22:45:24Z"
+  "_published_at": "2026-05-06T00:02:34Z"
 }

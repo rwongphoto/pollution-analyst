@@ -132,23 +132,37 @@ function PathwaysSection({ pathways }: { pathways: PollutantSummary[] }) {
                 ? poundsFormat(p.current)
                 : p.units.startsWith("metric tons")
                 ? `${(p.current / 1_000_000).toFixed(0)}M ${p.units}`
-                : `${p.current.toFixed(p.units === "ppm" ? 3 : 1)} ${p.units}`;
+                : `${p.current.toFixed(p.units === "ppm" ? 3 : p.units === "µg/m³" ? 2 : 1)} ${p.units}`;
+            const hasTrend = p.history.length >= 2;
             return (
               <div key={`${p.pathway}-${p.label}`} className="city-tile live" style={{ cursor: "default" }}>
                 <div className="tile-meta">
                   <span style={{ color }}>{p.pathway.toUpperCase().replace("_", " ")}</span>
-                  <span>SINCE {p.baseline_year}</span>
+                  <span>{hasTrend ? `SINCE ${p.baseline_year}` : `${p.baseline_year} VINTAGE`}</span>
                 </div>
                 <h3>{p.label}</h3>
-                <p className="meta-mono" style={{ margin: "4px 0 12px", fontSize: 12 }}>
-                  {valueLabel} · {pctSigned(p.yoy_pct_change)} YoY · {pctSigned(p.long_arc_pct_change)} since {p.baseline_year}
-                </p>
-                <div style={{ height: 50, marginBottom: 12 }}>
-                  <Sparkline values={p.history.map((h) => h.value)} years={p.history.map((h) => h.year)} width={260} height={50} color={color} strokeWidth={1.7} />
-                </div>
-                <p className="desc" style={{ fontSize: 12.5, lineHeight: 1.45 }}>
-                  {longArcLanguage(p.long_arc_pct_change, p.label, p.baseline_year)}
-                </p>
+                {hasTrend ? (
+                  <>
+                    <p className="meta-mono" style={{ margin: "4px 0 12px", fontSize: 12 }}>
+                      {valueLabel} · {pctSigned(p.yoy_pct_change)} YoY · {pctSigned(p.long_arc_pct_change)} since {p.baseline_year}
+                    </p>
+                    <div style={{ height: 50, marginBottom: 12 }}>
+                      <Sparkline values={p.history.map((h) => h.value)} years={p.history.map((h) => h.year)} width={260} height={50} color={color} strokeWidth={1.7} />
+                    </div>
+                    <p className="desc" style={{ fontSize: 12.5, lineHeight: 1.45 }}>
+                      {longArcLanguage(p.long_arc_pct_change, p.label, p.baseline_year)}
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <p className="meta-mono" style={{ margin: "4px 0 12px", fontSize: 12 }}>
+                      {valueLabel} · {p.baseline_year} vintage
+                    </p>
+                    <p className="desc" style={{ fontSize: 12.5, lineHeight: 1.45 }}>
+                      Single-vintage exposure modeling — EPA cadence is multi-year, so no trend line yet.
+                    </p>
+                  </>
+                )}
               </div>
             );
           })}

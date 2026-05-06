@@ -119,11 +119,11 @@ The cross-source common denominator. Used identically on every page where pathwa
 | `tri_land` | TRI land + off-site | lb |
 | `ghg` | GHGRP large emitters (Subpart A and below) | mtCO₂e |
 | `criteria_air` | AQS annual_conc_by_monitor (PM2.5 annual + 24-hr 98th, Ozone 8-hr 4th-max, NO₂ annual) | µg/m³, ppm, ppb |
-| `hazardous_air` | NATA / AirToxScreen (deferred) | µg/m³ |
+| `hazardous_air` | AirToxScreen 2020 (cancer-risk total + formaldehyde + benzene ambient) | per million, µg/m³ |
 | `drinking_water` | SDWIS (event-based, no continuous metric on pathway tiles) | n/a |
 | `pesticide` | USGS NSP (deferred) | lb/county |
 
-Per-pathway color is consistent across every chart component. Hazardous air, drinking water (continuous), and pesticide pathway tiles are stubbed in the type system but not yet emitted by the pipeline. SO₂ / CO / Lead / PM10 are deliberately excluded from the v1 `criteria_air` set — rarely the editorial story outside of specific industrial contexts; can be added without changing the pathway shape.
+Per-pathway color is consistent across every chart component. `hazardous_air` is single-vintage (2020) — EPA's AirToxScreen cadence is ~3-4 years, so the tile renders without a YoY/long-arc spark trail. Drinking water (continuous) and pesticide pathway tiles are stubbed in the type system but not yet emitted by the pipeline. SO₂ / CO / Lead / PM10 are deliberately excluded from the v1 `criteria_air` set — rarely the editorial story outside of specific industrial contexts; can be added without changing the pathway shape.
 
 ## Anomaly Engine (5 flag types)
 
@@ -139,7 +139,7 @@ Per [`anomaly_engine_design.md`](anomaly_engine_design.md), v1 ships:
 
 Calibration target: 1–3 flags per geography on average. Rendered cap on the page UI is 4 (severity-weighted). Calibration counts log per publish run; thresholds tighten if average overshoots.
 
-Deferred (AirToxScreen- or facility-join-dependent): `smoke_days`, facility-level `ghg_step`, `sustained_shift`, `streak_break`.
+Deferred (facility-join- or sub-annual-cadence-dependent): `smoke_days`, facility-level `ghg_step`, `sustained_shift`, `streak_break`. AirToxScreen-based flags (e.g. cancer-risk threshold) are an open follow-up — the source is now ingested but no flag detector reads it yet.
 
 ## Equity Overlay
 
@@ -163,6 +163,7 @@ Rendered on state, county, city hub, facility (county-as-proxy), and water-utili
 
 - **Annual ingest** for TRI (reporting year T published in T+1), GHGRP, ACS.
 - **Twice-yearly AQS refresh** — EPA republishes `annual_conc_by_monitor_YYYY.zip` in June (prior-year final) and December (summer/ozone update). Cache lives at `data/raw/aqs/`; one-time warm-up needs a non-`--history-cache-only` run before subsequent runs can stay cache-only.
+- **AirToxScreen vintage refresh** — EPA publishes a new vintage every ~3-4 years (2020 vintage released 2024-2025; prior was 2017). Cache lives at `data/raw/airtoxscreen/{vintage}/`; the regional cancer-by-pollutant XLSX is ~346 MB (R9), one-time per vintage. Bump `airtoxscreen.VINTAGE` and add the new region map when the next vintage lands.
 - **Continuous-but-cached SDWIS** — the violation table changes when EPA updates it; we re-pull on demand.
 - **Bulk CSV is the primary path** for every Envirofacts-fronted source. The REST API rate-limits aggressively; bulk downloads scale and are designed for this use. See plan §"Source Resilience".
 - **`--history-cache-only` mode** lets the pipeline run during EPA outages by reading whatever's already in `data/raw/`.
@@ -186,7 +187,6 @@ Rendered on state, county, city hub, facility (county-as-proxy), and water-utili
   - `/rankings/states` — across all ingested states. Trivially small (1 row today, 50 at full coverage) but high-traffic SEO surface — "most polluted states" is a real query.
 
   All three render at home-publish time by reading the union of state / county / city JSONs. Optional: scatter / strip-plot of percentile vs median income to make the correlation literally a chart, not just a table. Optional cross-link: "X ranks Yth nationally" on every per-place page header.
-- **AirToxScreen (NATA successor) ingest.** Unlocks the `hazardous_air` pathway tile and the Tier-3 neighborhood surface (block-level cancer-risk + ambient HAP concentrations from `gaftp.epa.gov/rtrmodeling_public/AirToxScreen/2020/`). Annual cadence per EPA, ~1-2 weeks of work — modeled on the AQS ingest now in `pipeline/src/ingest/aqs.py`.
 - **TRI ↔ GHGRP facility-ID join.** Unlocks facility-level `ghg_step` flags.
 - **Sustained-shift / streak-break flags.** Need a monthly cadence; TRI is annual-native.
 - **Cross-state expansion.** Pipeline is parameterized on state slug; bulk-CSV cache is keyed per state. Adding a state is registration + ACS + TIGER fetch + a non-`--history-cache-only` warm-up run for AQS history.
