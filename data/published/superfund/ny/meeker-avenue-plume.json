@@ -1,0 +1,66 @@
+{
+  "site": {
+    "state": "ny",
+    "state_label": "New York",
+    "slug": "meeker-avenue-plume",
+    "name": "Meeker Avenue Plume",
+    "epa_id": "NYN000203407",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Kings",
+    "county_slug": "kings",
+    "city": "New York",
+    "city_slug": "new-york",
+    "address": "Meeker Avenue",
+    "zip": "11222",
+    "lat": 40.725409,
+    "lng": -73.935904
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Tetrachloroethene"
+  },
+  "contaminants": [
+    {
+      "name": "Tetrachloroethene",
+      "media": "Soil Gas",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Trichloroethene",
+      "media": "Soil Gas",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 46299,
+    "pct_low_income": 22.7,
+    "pct_people_of_color": 36.2,
+    "pct_under_5": 5.4,
+    "pct_over_64": 9.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (52 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:59:42Z"
+}

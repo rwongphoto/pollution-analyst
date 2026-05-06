@@ -1,0 +1,74 @@
+{
+  "site": {
+    "state": "ny",
+    "state_label": "New York",
+    "slug": "kenmark-textile-corp",
+    "name": "Kenmark Textile Corp.",
+    "epa_id": "NYD075784165",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Suffolk",
+    "county_slug": "suffolk",
+    "city": "East Farmingdale",
+    "city_slug": "east-farmingdale",
+    "address": "921 Conklin St (P.O. Box 298)",
+    "zip": "11735",
+    "lat": 40.7384,
+    "lng": -73.4264
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NY2902821",
+        "name": "Farmingdale (V)",
+        "slug": "farmingdale-v",
+        "state": "ny",
+        "distance_miles": 1.13,
+        "place_name": "Farmingdale",
+        "primary_source": "groundwater",
+        "population_served": 8744,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "NY2902854",
+        "name": "South Farmingdale Wd",
+        "slug": "south-farmingdale-wd",
+        "state": "ny",
+        "distance_miles": 1.13,
+        "place_name": "Farmingdale",
+        "primary_source": "groundwater",
+        "population_served": 44700,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 7766,
+    "pct_low_income": 7.6,
+    "pct_people_of_color": 27.3,
+    "pct_under_5": 5.5,
+    "pct_over_64": 12.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (5 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:59:42Z"
+}

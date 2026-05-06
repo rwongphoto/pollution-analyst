@@ -1,0 +1,193 @@
+{
+  "site": {
+    "state": "ny",
+    "state_label": "New York",
+    "slug": "shenandoah-road-groundwater-contamination",
+    "name": "Shenandoah Road Groundwater Contamination",
+    "epa_id": "NYSFN0204269",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Dutchess",
+    "county_slug": "dutchess",
+    "city": "East Fishkill",
+    "city_slug": null,
+    "address": "Shenandoah Rd & Burbank Rd, Seymour Lane",
+    "zip": "12533",
+    "lat": 41.526111,
+    "lng": -73.792222
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 3,
+    "primary_contaminant": "Cis-1,2-Dichloroethene"
+  },
+  "contaminants": [
+    {
+      "name": "Cis-1,2-Dichloroethene",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Tetrachloroethene",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Trichloroethene",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 296467,
+    "pct_low_income": 8.6,
+    "pct_people_of_color": 31.299999999999997,
+    "pct_under_5": 4.8,
+    "pct_over_64": 18.4,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 34.4,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 32.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 22.2,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 38.8,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 21.5,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 32.8,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 68.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 89.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 46.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 64.9,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 41.1,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.8,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 34.8
+      },
+      {
+        "label": "Ozone",
+        "score": 40.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 26.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 41.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 19.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 32.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 58.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 75.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 4.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 41.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 54.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 33.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 19.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Dutchess County, New York (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:59:42Z"
+}

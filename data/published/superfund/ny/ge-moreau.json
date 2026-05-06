@@ -1,0 +1,131 @@
+{
+  "site": {
+    "state": "ny",
+    "state_label": "New York",
+    "slug": "ge-moreau",
+    "name": "Ge Moreau",
+    "epa_id": "NYD980528335",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Saratoga",
+    "county_slug": "saratoga",
+    "city": "South Glens Falls",
+    "city_slug": null,
+    "address": "Ft Edward & Wm St",
+    "zip": "12803",
+    "lat": 43.28305,
+    "lng": -73.629169
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 1,
+    "primary_contaminant": "Polychlorinated Biphenyls (Pcbs)"
+  },
+  "contaminants": [
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NY4500170",
+        "name": "South Glens Falls Village",
+        "slug": "south-glens-falls-village",
+        "state": "ny",
+        "distance_miles": 0.82,
+        "place_name": "South Glens Falls",
+        "primary_source": "mixed",
+        "population_served": 3900,
+        "health_based_5yr": 1,
+        "unresolved": false
+      },
+      {
+        "pwsid": "NY4501821",
+        "name": "White Pines South",
+        "slug": "white-pines-south",
+        "state": "ny",
+        "distance_miles": 2.1,
+        "place_name": "Glens Falls",
+        "primary_source": "groundwater",
+        "population_served": 40,
+        "health_based_5yr": 4,
+        "unresolved": true
+      },
+      {
+        "pwsid": "NY4510771",
+        "name": "Kayadeross Acres",
+        "slug": "kayadeross-acres",
+        "state": "ny",
+        "distance_miles": 2.1,
+        "place_name": "Glens Falls",
+        "primary_source": "mixed",
+        "population_served": 450,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "NY5621848",
+        "name": "Top Of The World",
+        "slug": "top-of-the-world",
+        "state": "ny",
+        "distance_miles": 2.1,
+        "place_name": "Glens Falls",
+        "primary_source": "groundwater",
+        "population_served": 132,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "NY5630038",
+        "name": "Balsam Crest Homeowners Assoc",
+        "slug": "balsam-crest-homeowners-assoc",
+        "state": "ny",
+        "distance_miles": 2.1,
+        "place_name": "Glens Falls",
+        "primary_source": "groundwater",
+        "population_served": 50,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "NY5718519",
+        "name": "Kingsbury Carriage Court",
+        "slug": "kingsbury-carriage-court",
+        "state": "ny",
+        "distance_miles": 2.82,
+        "place_name": "Hudson Falls",
+        "primary_source": "groundwater",
+        "population_served": 30,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 5300,
+    "pct_low_income": 27.6,
+    "pct_people_of_color": 6.5,
+    "pct_under_5": 3.7,
+    "pct_over_64": 15.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:59:42Z"
+}

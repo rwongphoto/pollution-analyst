@@ -1,0 +1,109 @@
+{
+  "facility": {
+    "state": "ny",
+    "state_label": "New York",
+    "slug": "niagara-refining",
+    "name": "Niagara Refining",
+    "parent_company": null,
+    "address": "5601 TRANSIT RD",
+    "city": "Depew",
+    "county": "Erie County",
+    "county_slug": "erie",
+    "naics_label": "331492 \u00b7 Primary Metals",
+    "lat": 42.907921,
+    "lng": -78.69682
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 22539,
+    "air_releases_pounds": 18889,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 3650,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -5.7,
+    "long_arc_pct_change": 97.5,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 11410
+      },
+      {
+        "year": 2020,
+        "value": 15896
+      },
+      {
+        "year": 2021,
+        "value": 13612
+      },
+      {
+        "year": 2022,
+        "value": 16333
+      },
+      {
+        "year": 2023,
+        "value": 23898
+      },
+      {
+        "year": 2024,
+        "value": 22539
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 22539,
+      "history": [
+        {
+          "year": 2019,
+          "value": 11410
+        },
+        {
+          "year": 2020,
+          "value": 15896
+        },
+        {
+          "year": 2021,
+          "value": 13612
+        },
+        {
+          "year": 2022,
+          "value": 16333
+        },
+        {
+          "year": 2023,
+          "value": 23898
+        },
+        {
+          "year": 2024,
+          "value": 22539
+        }
+      ],
+      "yoy_pct_change": -5.7,
+      "long_arc_pct_change": 97.5,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 69623,
+    "pct_low_income": 19.8,
+    "pct_people_of_color": 8.0,
+    "pct_under_5": 4.8,
+    "pct_over_64": 21.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (50 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:59:39Z"
+}

@@ -1,0 +1,677 @@
+{
+  "place": {
+    "state": "ny",
+    "state_label": "New York",
+    "slug": "amsterdam",
+    "name": "Amsterdam",
+    "fips": "3602066",
+    "population": 18244,
+    "county_name": "Montgomery County",
+    "county_fips": "36057"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 4,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.0311,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.0311
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1601,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1601
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 44873,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -0.5,
+      "long_arc_pct_change": 53.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 29225
+        },
+        {
+          "year": 2011,
+          "value": 28503
+        },
+        {
+          "year": 2012,
+          "value": 25561
+        },
+        {
+          "year": 2013,
+          "value": 52524
+        },
+        {
+          "year": 2014,
+          "value": 23764
+        },
+        {
+          "year": 2015,
+          "value": 23257
+        },
+        {
+          "year": 2016,
+          "value": 22433
+        },
+        {
+          "year": 2017,
+          "value": 22614
+        },
+        {
+          "year": 2018,
+          "value": 53668
+        },
+        {
+          "year": 2019,
+          "value": 50567
+        },
+        {
+          "year": 2020,
+          "value": 49028
+        },
+        {
+          "year": 2021,
+          "value": 39553
+        },
+        {
+          "year": 2022,
+          "value": 45112
+        },
+        {
+          "year": 2023,
+          "value": 44873
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 24462,
+    "violations_5yr_total": 190,
+    "health_based_5yr_total": 21,
+    "unresolved_total": 85,
+    "utilities_with_unresolved": 3,
+    "utilities": [
+      {
+        "slug": "amsterdam-t",
+        "state": "ny",
+        "state_label": "New York",
+        "name": "Amsterdam (T)",
+        "pwsid": "NY2811730",
+        "population_served": 3000,
+        "health_based_violations_5yr": 10,
+        "unresolved": true
+      },
+      {
+        "slug": "amsterdam-c",
+        "state": "ny",
+        "state_label": "New York",
+        "name": "Amsterdam (C)",
+        "pwsid": "NY2800136",
+        "population_served": 20700,
+        "health_based_violations_5yr": 3,
+        "unresolved": true
+      },
+      {
+        "slug": "florida-t-water-district",
+        "state": "ny",
+        "state_label": "New York",
+        "name": "Florida (T) Water District",
+        "pwsid": "NY2830029",
+        "population_served": 432,
+        "health_based_violations_5yr": 8,
+        "unresolved": false
+      },
+      {
+        "slug": "capstone-center-for-rehab-and-nursing",
+        "state": "ny",
+        "state_label": "New York",
+        "name": "Capstone Center For Rehab And Nursing",
+        "pwsid": "NY2810477",
+        "population_served": 330,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 1920",
+      "summary": "Unresolved Lead and Copper Rule violation cited in 2025 (contaminant 1920).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NY2800136"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 1920",
+      "summary": "Unresolved Lead and Copper Rule violation cited in 2025 (contaminant 1920).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NY2800136"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2024 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NY2810477"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Endrin",
+      "summary": "Unresolved Nitrate/Nitrite violation cited in 2022 (endrin).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NY2810477"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NY2811730"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Total Trihalomethanes Rule health-based violation cited in 2023 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NY2811730"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Total Trihalomethanes Rule health-based violation cited in 2022 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NY2830029"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Total Trihalomethanes Rule health-based violation cited in 2022 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NY2830029"
+      }
+    }
+  ],
+  "equity": {
+    "population": 18244,
+    "pct_low_income": 22.0,
+    "pct_people_of_color": 42.3,
+    "pct_under_5": 6.8,
+    "pct_over_64": 17.7,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 19.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 3.3,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 45.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 45.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 24.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 32.2,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 92.7,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 39.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 77.0,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 40.9,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 92.7,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 35.8
+      },
+      {
+        "label": "Ozone",
+        "score": 37.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 80.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 79.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 41.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 58.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 152.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 64.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 121.8
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 70.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 156.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Amsterdam, New York (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.1,
+      "age_adjusted": 11.1,
+      "state_mean": 10.4,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.73,
+      "vs_state_pct": 7.0,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.08,
+      "vs_us_pct": 10.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 8.2,
+      "age_adjusted": 7.2,
+      "state_mean": 5.2,
+      "us_mean": 5.5,
+      "vs_state_pp": 2.0,
+      "vs_state_pct": 38.5,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.7,
+      "vs_us_pct": 30.9,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.3,
+      "age_adjusted": 6.1,
+      "state_mean": 5.0,
+      "us_mean": 5.3,
+      "vs_state_pp": 1.09,
+      "vs_state_pct": 21.8,
+      "vs_state_class": "worse",
+      "vs_us_pp": 0.79,
+      "vs_us_pct": 14.9,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 12.5,
+      "age_adjusted": 11.1,
+      "state_mean": 9.9,
+      "us_mean": 10.5,
+      "vs_state_pp": 1.17,
+      "vs_state_pct": 11.8,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.64,
+      "vs_us_pct": 6.1,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.5,
+      "age_adjusted": 18.3,
+      "state_mean": 15.9,
+      "us_mean": 16.8,
+      "vs_state_pp": 2.44,
+      "vs_state_pct": 15.4,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.55,
+      "vs_us_pct": 9.3,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ny",
+      "slug": "canajoharie",
+      "name": "Canajoharie",
+      "population": 1916,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ny",
+      "slug": "st-johnsville",
+      "name": "St. Johnsville",
+      "population": 1771,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ny",
+      "slug": "palatine-bridge",
+      "name": "Palatine Bridge",
+      "population": 701,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ny",
+      "slug": "nelliston",
+      "name": "Nelliston",
+      "population": 693,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ny",
+      "slug": "scarsdale",
+      "name": "Scarsdale",
+      "population": 18061,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 61.9,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ny",
+      "slug": "port-washington",
+      "name": "Port Washington",
+      "population": 17015,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 68.2,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+22 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T21:59:42Z"
+}

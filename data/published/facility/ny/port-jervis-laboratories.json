@@ -1,0 +1,116 @@
+{
+  "facility": {
+    "state": "ny",
+    "state_label": "New York",
+    "slug": "port-jervis-laboratories",
+    "name": "Port Jervis Laboratories",
+    "parent_company": "Kdc US Holdings INC",
+    "address": "20 W KING ST",
+    "city": "Port Jervis",
+    "county": "Orange County",
+    "county_slug": "orange",
+    "naics_label": "325620 \u00b7 Chemicals",
+    "lat": 41.376148,
+    "lng": -74.698489
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1014,
+    "air_releases_pounds": 0.8,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1013,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -56.0,
+    "long_arc_pct_change": -47.0,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 1911
+      },
+      {
+        "year": 2022,
+        "value": 2658
+      },
+      {
+        "year": 2023,
+        "value": 2306
+      },
+      {
+        "year": 2024,
+        "value": 1014
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 848,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2253
+        },
+        {
+          "year": 2023,
+          "value": 2007
+        },
+        {
+          "year": 2024,
+          "value": 848
+        }
+      ],
+      "yoy_pct_change": -57.8,
+      "long_arc_pct_change": -62.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Certain glycol ethers",
+      "cas": "N230",
+      "category": "respiratory",
+      "total_pounds_recent": 166,
+      "history": [
+        {
+          "year": 2021,
+          "value": 1911
+        },
+        {
+          "year": 2022,
+          "value": 405
+        },
+        {
+          "year": 2023,
+          "value": 299
+        },
+        {
+          "year": 2024,
+          "value": 166
+        }
+      ],
+      "yoy_pct_change": -44.5,
+      "long_arc_pct_change": -91.3,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 11694,
+    "pct_low_income": 42.9,
+    "pct_people_of_color": 36.7,
+    "pct_under_5": 4.7,
+    "pct_over_64": 19.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (10 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:59:39Z"
+}

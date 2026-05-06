@@ -45,13 +45,17 @@ def _ensure_downloaded() -> Path:
 
 
 _CANONICAL_SUFFIXES = (
+    # Order matters — first match wins. " CITY AND BOROUGH" must precede
+    # " BOROUGH" (so "JUNEAU CITY AND BOROUGH" fully strips). " COUNTY"
+    # must precede " CITY" (so "JAMES CITY COUNTY" → "JAMES CITY", not "JAMES").
+    " CITY AND BOROUGH",
     " COUNTY",
     " PARISH",
-    " CITY AND BOROUGH",  # checked before " BOROUGH" so "JUNEAU CITY AND BOROUGH"
-    " BOROUGH",           # fully strips instead of leaving "JUNEAU CITY AND".
+    " BOROUGH",
     " CENSUS AREA",
     " MUNICIPALITY",
     " MUNICIPIO",
+    " CITY",  # VA independent cities ("Alexandria city", "Bristol city", etc.)
 )
 
 
@@ -60,7 +64,8 @@ def _normalize_county(name: str) -> str:
 
     TRI uses bare uppercase ("LOS ANGELES"); Census uses title-case with
     "County" suffix ("Los Angeles County"). Some special names: City and
-    Borough (AK), Parish (LA), Census Area (AK), Municipio (PR).
+    Borough (AK), Parish (LA), Census Area (AK), Municipio (PR), bare
+    "city" (VA independent cities).
 
     EPA's TRI bulk CSV historically capped the county column at 25 chars,
     producing truncated forms like "ALEUTIANS WEST CENSUS ARE" or

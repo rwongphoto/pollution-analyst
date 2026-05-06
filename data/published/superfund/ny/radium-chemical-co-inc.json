@@ -1,0 +1,66 @@
+{
+  "site": {
+    "state": "ny",
+    "state_label": "New York",
+    "slug": "radium-chemical-co-inc",
+    "name": "Radium Chemical Co., Inc.",
+    "epa_id": "NYD001667872",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Queens",
+    "county_slug": "queens",
+    "city": "New York",
+    "city_slug": "new-york",
+    "address": "66-06 27Th Street",
+    "zip": "11377",
+    "lat": 40.76,
+    "lng": -73.9025
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Radium"
+  },
+  "contaminants": [
+    {
+      "name": "Radium",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Radium",
+      "media": "Solid Waste",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 121384,
+    "pct_low_income": 28.5,
+    "pct_people_of_color": 62.6,
+    "pct_under_5": 5.3,
+    "pct_over_64": 15.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (93 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:59:42Z"
+}

@@ -1,0 +1,74 @@
+{
+  "site": {
+    "state": "ny",
+    "state_label": "New York",
+    "slug": "saint-gobain-performance-plastics",
+    "name": "Saint-Gobain Performance Plastics",
+    "epa_id": "NYD004986741",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Rensselaer",
+    "county_slug": "rensselaer",
+    "city": "Hoosick Falls",
+    "city_slug": "hoosick-falls",
+    "address": "14 McCaffrey Street",
+    "zip": "12090",
+    "lat": 42.8943,
+    "lng": -73.3566
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NY4100041",
+        "name": "Hoosick Falls (V) Pws",
+        "slug": "hoosick-falls-v-pws",
+        "state": "ny",
+        "distance_miles": 0.57,
+        "place_name": "Hoosick Falls",
+        "primary_source": "groundwater",
+        "population_served": 4925,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "NY4118153",
+        "name": "Hoosac Meadows Apartments",
+        "slug": "hoosac-meadows-apartments",
+        "state": "ny",
+        "distance_miles": 0.57,
+        "place_name": "Hoosick Falls",
+        "primary_source": "groundwater",
+        "population_served": 100,
+        "health_based_5yr": 2,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 3225,
+    "pct_low_income": 40.3,
+    "pct_people_of_color": 8.3,
+    "pct_under_5": 7.9,
+    "pct_over_64": 25.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:59:42Z"
+}

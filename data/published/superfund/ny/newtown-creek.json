@@ -1,0 +1,98 @@
+{
+  "site": {
+    "state": "ny",
+    "state_label": "New York",
+    "slug": "newtown-creek",
+    "name": "Newtown Creek",
+    "epa_id": "NYN000206282",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": null,
+    "county_slug": null,
+    "city": "New York",
+    "city_slug": "new-york",
+    "address": "South End Of Ivy Hill Road",
+    "zip": "11222",
+    "lat": 40.715192,
+    "lng": -73.930762
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 6,
+    "primary_contaminant": "C19-C36 Aliphatic Hydrocarbons"
+  },
+  "contaminants": [
+    {
+      "name": "C19-C36 Aliphatic Hydrocarbons",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Chlorinated Dioxins And Furans",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Copper",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polycyclic Aromatic Hydrocarbons (Pahs)",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 69261,
+    "pct_low_income": 36.7,
+    "pct_people_of_color": 59.1,
+    "pct_under_5": 5.4,
+    "pct_over_64": 9.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (64 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:59:42Z"
+}

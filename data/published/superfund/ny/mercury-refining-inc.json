@@ -1,0 +1,171 @@
+{
+  "site": {
+    "state": "ny",
+    "state_label": "New York",
+    "slug": "mercury-refining-inc",
+    "name": "Mercury Refining, Inc.",
+    "epa_id": "NYD048148175",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Albany",
+    "county_slug": "albany",
+    "city": "Roessleville",
+    "city_slug": "roessleville",
+    "address": "26 Railroad Ave",
+    "zip": "12205",
+    "lat": 42.689719,
+    "lng": -73.804169
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 9,
+    "primary_contaminant": "Aroclor 1260"
+  },
+  "contaminants": [
+    {
+      "name": "Aroclor 1260",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Benzo(K)Fluoranthene",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Benzo[A]Pyrene",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Mercury",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Mercury",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Mercury",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Methyl Mercury",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polycyclic Aromatic Hydrocarbons (Pahs)",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Vanadium",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NY0310353",
+        "name": "Tuscarora Mobile Village",
+        "slug": "tuscarora-mobile-village",
+        "state": "ny",
+        "distance_miles": 1.68,
+        "place_name": "Albany",
+        "primary_source": "groundwater",
+        "population_served": 75,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "NY4117261",
+        "name": "Homeroom Lofts",
+        "slug": "homeroom-lofts",
+        "state": "ny",
+        "distance_miles": 1.68,
+        "place_name": "Albany",
+        "primary_source": "groundwater",
+        "population_served": 62,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "NY4410705",
+        "name": "White Birch Mobile Home",
+        "slug": "white-birch-mobile-home",
+        "state": "ny",
+        "distance_miles": 1.68,
+        "place_name": "Albany",
+        "primary_source": "groundwater",
+        "population_served": 44,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "NY4505644",
+        "name": "Parkwood Village Apartments",
+        "slug": "parkwood-village-apartments",
+        "state": "ny",
+        "distance_miles": 1.68,
+        "place_name": "Albany",
+        "primary_source": "groundwater",
+        "population_served": 400,
+        "health_based_5yr": 47,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 8558,
+    "pct_low_income": 22.5,
+    "pct_people_of_color": 23.6,
+    "pct_under_5": 4.4,
+    "pct_over_64": 11.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:59:42Z"
+}

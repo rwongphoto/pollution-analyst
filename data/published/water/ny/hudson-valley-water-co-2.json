@@ -1,0 +1,213 @@
+{
+  "utility": {
+    "state": "ny",
+    "state_label": "New York",
+    "slug": "hudson-valley-water-co-2",
+    "name": "Hudson Valley Water Co #2",
+    "pwsid": "NY5503384",
+    "population_served": 225,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Woodbury"
+    ],
+    "county": "Ulster County",
+    "county_slug": "ulster",
+    "place_slug": "woodbury"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 9169,
+    "pct_low_income": 3.8,
+    "pct_people_of_color": 22.299999999999997,
+    "pct_under_5": 7.8,
+    "pct_over_64": 33.1,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 25.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 82.6,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 72.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 71.0,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 20.0,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 80.4,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 53.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 90.5,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 75.9,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 36.6,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 13.9
+      },
+      {
+        "label": "Ozone",
+        "score": 41.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 36.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 36.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 10.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 40.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 21.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 46.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 38.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 16.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 7.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Woodbury, New York (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T21:59:40Z"
+}
