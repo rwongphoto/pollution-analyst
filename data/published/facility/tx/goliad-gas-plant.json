@@ -1,0 +1,264 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "goliad-gas-plant",
+    "name": "Goliad Gas Plant",
+    "parent_company": "Phillips 66 Co",
+    "address": "2 W AIR BASE RD",
+    "city": "Goliad",
+    "county": "Goliad County",
+    "county_slug": "goliad",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 28.605537,
+    "lng": -97.647789
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 47200,
+    "air_releases_pounds": 38800,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 8400,
+    "chemicals_reported": 6,
+    "yoy_pct_change": 62.0,
+    "long_arc_pct_change": 8.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 43720
+      },
+      {
+        "year": 2023,
+        "value": 29134
+      },
+      {
+        "year": 2024,
+        "value": 47200
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 17500,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4560
+        },
+        {
+          "year": 2023,
+          "value": 1181
+        },
+        {
+          "year": 2024,
+          "value": 17500
+        }
+      ],
+      "yoy_pct_change": 1381.7,
+      "long_arc_pct_change": 283.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 15100,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4700
+        },
+        {
+          "year": 2023,
+          "value": 1501
+        },
+        {
+          "year": 2024,
+          "value": 15100
+        }
+      ],
+      "yoy_pct_change": 906.1,
+      "long_arc_pct_change": 221.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 10500,
+      "history": [
+        {
+          "year": 2022,
+          "value": 25500
+        },
+        {
+          "year": 2023,
+          "value": 7711
+        },
+        {
+          "year": 2024,
+          "value": 10500
+        }
+      ],
+      "yoy_pct_change": 36.2,
+      "long_arc_pct_change": -58.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 3030,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2600
+        },
+        {
+          "year": 2023,
+          "value": 1201
+        },
+        {
+          "year": 2024,
+          "value": 3030
+        }
+      ],
+      "yoy_pct_change": 152.2,
+      "long_arc_pct_change": 16.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 660,
+      "history": [
+        {
+          "year": 2024,
+          "value": 660
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 410,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1960
+        },
+        {
+          "year": 2023,
+          "value": 540
+        },
+        {
+          "year": 2024,
+          "value": 410
+        }
+      ],
+      "yoy_pct_change": -24.1,
+      "long_arc_pct_change": -79.1,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0000050000",
+      "summary": "0000050000 releases at Goliad Gas Plant fell from 17k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -17000.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 4400
+        },
+        {
+          "year": 2023,
+          "value": 17000
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Benzene",
+      "summary": "Benzene releases at Goliad Gas Plant rose from 1k lb to 18k lb (14.8\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 1381.7,
+      "magnitude_abs": 16318.9,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 4560
+        },
+        {
+          "year": 2023,
+          "value": 1181
+        },
+        {
+          "year": 2024,
+          "value": 17500
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Toluene",
+      "summary": "Toluene releases at Goliad Gas Plant rose from 2k lb to 15k lb (10.1\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 906.1,
+      "magnitude_abs": 13599.2,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 4700
+        },
+        {
+          "year": 2023,
+          "value": 1501
+        },
+        {
+          "year": 2024,
+          "value": 15100
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 7092,
+    "pct_low_income": 10.0,
+    "pct_people_of_color": 42.7,
+    "pct_under_5": 6.5,
+    "pct_over_64": 23.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Goliad County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

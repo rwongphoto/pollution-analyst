@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "thompsonville-gas-plant",
+    "name": "Thompsonville Gas Plant",
+    "parent_company": "Enterprise Products Operating LLC",
+    "address": "1202 S FM-649",
+    "city": "Mirando City",
+    "county": "Webb County",
+    "county_slug": "webb",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 27.460065,
+    "lng": -99.001587
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 15685,
+    "air_releases_pounds": 12500,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 3185,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 5.7,
+    "long_arc_pct_change": 22.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 12852
+      },
+      {
+        "year": 2023,
+        "value": 14845
+      },
+      {
+        "year": 2024,
+        "value": 15685
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 10063,
+      "history": [
+        {
+          "year": 2022,
+          "value": 9209
+        },
+        {
+          "year": 2023,
+          "value": 10187
+        },
+        {
+          "year": 2024,
+          "value": 10063
+        }
+      ],
+      "yoy_pct_change": -1.2,
+      "long_arc_pct_change": 9.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 5622,
+      "history": [
+        {
+          "year": 2022,
+          "value": 3643
+        },
+        {
+          "year": 2023,
+          "value": 3898
+        },
+        {
+          "year": 2024,
+          "value": 5622
+        }
+      ],
+      "yoy_pct_change": 44.2,
+      "long_arc_pct_change": 54.3,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 267282,
+    "pct_low_income": 21.4,
+    "pct_people_of_color": 96.7,
+    "pct_under_5": 8.7,
+    "pct_over_64": 9.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Webb County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

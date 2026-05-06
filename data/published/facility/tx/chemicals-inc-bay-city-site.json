@@ -1,0 +1,230 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "chemicals-inc-bay-city-site",
+    "name": "Chemicals INC Bay City Site",
+    "parent_company": "Chemicals INC",
+    "address": "8055 STATE HWY 60 S",
+    "city": "Bay City",
+    "county": "Matagorda County",
+    "county_slug": "matagorda",
+    "naics_label": "325199 \u00b7 Chemicals",
+    "lat": 28.908786,
+    "lng": -95.95569
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 60,
+    "air_releases_pounds": 60,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 45.1,
+    "long_arc_pct_change": 502.8,
+    "long_arc_baseline_year": 2014,
+    "history": [
+      {
+        "year": 2014,
+        "value": 10
+      },
+      {
+        "year": 2015,
+        "value": 10
+      },
+      {
+        "year": 2016,
+        "value": 22
+      },
+      {
+        "year": 2017,
+        "value": 24
+      },
+      {
+        "year": 2018,
+        "value": 49
+      },
+      {
+        "year": 2019,
+        "value": 36
+      },
+      {
+        "year": 2020,
+        "value": 56
+      },
+      {
+        "year": 2021,
+        "value": 64
+      },
+      {
+        "year": 2022,
+        "value": 92
+      },
+      {
+        "year": 2023,
+        "value": 42
+      },
+      {
+        "year": 2024,
+        "value": 60
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 31,
+      "history": [
+        {
+          "year": 2019,
+          "value": 20
+        },
+        {
+          "year": 2020,
+          "value": 26
+        },
+        {
+          "year": 2021,
+          "value": 31
+        },
+        {
+          "year": 2022,
+          "value": 43
+        },
+        {
+          "year": 2023,
+          "value": 21
+        },
+        {
+          "year": 2024,
+          "value": 31
+        }
+      ],
+      "yoy_pct_change": 49.1,
+      "long_arc_pct_change": 50.7,
+      "long_arc_baseline_year": 2019
+    },
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 21,
+      "history": [
+        {
+          "year": 2020,
+          "value": 15
+        },
+        {
+          "year": 2021,
+          "value": 23
+        },
+        {
+          "year": 2022,
+          "value": 30
+        },
+        {
+          "year": 2023,
+          "value": 14
+        },
+        {
+          "year": 2024,
+          "value": 21
+        }
+      ],
+      "yoy_pct_change": 46.3,
+      "long_arc_pct_change": 39.1,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Propylene oxide",
+      "cas": "75-56-9",
+      "category": "carcinogen",
+      "total_pounds_recent": 8,
+      "history": [
+        {
+          "year": 2014,
+          "value": 10
+        },
+        {
+          "year": 2015,
+          "value": 10
+        },
+        {
+          "year": 2016,
+          "value": 22
+        },
+        {
+          "year": 2017,
+          "value": 24
+        },
+        {
+          "year": 2018,
+          "value": 49
+        },
+        {
+          "year": 2019,
+          "value": 16
+        },
+        {
+          "year": 2020,
+          "value": 15
+        },
+        {
+          "year": 2021,
+          "value": 10
+        },
+        {
+          "year": 2022,
+          "value": 19
+        },
+        {
+          "year": 2023,
+          "value": 7
+        },
+        {
+          "year": 2024,
+          "value": 8
+        }
+      ],
+      "yoy_pct_change": 29.2,
+      "long_arc_pct_change": -15.1,
+      "long_arc_baseline_year": 2014
+    },
+    {
+      "chemical": "Maleic anhydride",
+      "cas": "108-31-6",
+      "category": "respiratory",
+      "total_pounds_recent": 0.04,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0.04
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 4196,
+    "pct_low_income": 54.1,
+    "pct_people_of_color": 77.8,
+    "pct_under_5": 10.8,
+    "pct_over_64": 9.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

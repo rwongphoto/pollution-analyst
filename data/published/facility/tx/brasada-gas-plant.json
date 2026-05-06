@@ -1,0 +1,177 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "brasada-gas-plant",
+    "name": "Brasada Gas Plant",
+    "parent_company": "Western Midstream Partners LP",
+    "address": "513 COCHINA RANCH RD",
+    "city": "Cotulla",
+    "county": "La Salle County",
+    "county_slug": "la-salle",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 28.421791,
+    "lng": -99.252772
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 15875,
+    "air_releases_pounds": 15347,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 528,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 71.6,
+    "long_arc_pct_change": -54.2,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 34651
+      },
+      {
+        "year": 2023,
+        "value": 9249
+      },
+      {
+        "year": 2024,
+        "value": 15875
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 6059,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4866
+        },
+        {
+          "year": 2023,
+          "value": 2234
+        },
+        {
+          "year": 2024,
+          "value": 6059
+        }
+      ],
+      "yoy_pct_change": 171.2,
+      "long_arc_pct_change": 24.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 4939,
+      "history": [
+        {
+          "year": 2022,
+          "value": 7385
+        },
+        {
+          "year": 2023,
+          "value": 1787
+        },
+        {
+          "year": 2024,
+          "value": 4939
+        }
+      ],
+      "yoy_pct_change": 176.3,
+      "long_arc_pct_change": -33.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 3518,
+      "history": [
+        {
+          "year": 2022,
+          "value": 7501
+        },
+        {
+          "year": 2023,
+          "value": 3508
+        },
+        {
+          "year": 2024,
+          "value": 3518
+        }
+      ],
+      "yoy_pct_change": 0.3,
+      "long_arc_pct_change": -53.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 1311,
+      "history": [
+        {
+          "year": 2022,
+          "value": 7223
+        },
+        {
+          "year": 2023,
+          "value": 1718
+        },
+        {
+          "year": 2024,
+          "value": 1311
+        }
+      ],
+      "yoy_pct_change": -23.7,
+      "long_arc_pct_change": -81.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 48,
+      "history": [
+        {
+          "year": 2022,
+          "value": 7034
+        },
+        {
+          "year": 2023,
+          "value": 0.33
+        },
+        {
+          "year": 2024,
+          "value": 48
+        }
+      ],
+      "yoy_pct_change": 14445.5,
+      "long_arc_pct_change": -99.3,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 4781,
+    "pct_low_income": 62.3,
+    "pct_people_of_color": 96.0,
+    "pct_under_5": 2.4,
+    "pct_over_64": 15.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

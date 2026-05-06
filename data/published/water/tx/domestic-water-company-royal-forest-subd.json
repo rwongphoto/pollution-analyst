@@ -1,0 +1,231 @@
+{
+  "utility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "domestic-water-company-royal-forest-subd",
+    "name": "Domestic Water Company Royal Forest Subd",
+    "pwsid": "TX1700037",
+    "population_served": 1667,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Conroe"
+    ],
+    "county": "Montgomery County",
+    "county_slug": "montgomery",
+    "place_slug": "conroe"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Chlorine",
+      "contaminant_code": "0999",
+      "severity": "monitoring",
+      "rule": "Disinfectants and Disinfection Byproducts (Stage 2)",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Chlorine",
+      "contaminant_code": "0999",
+      "severity": "monitoring",
+      "rule": "Disinfectants and Disinfection Byproducts (Stage 2)",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Chlorine",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Chlorine",
+      "summary": "Unresolved Disinfectants and Disinfection Byproducts (Stage 2) violation cited in 2025 (chlorine).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX1700037"
+      }
+    }
+  ],
+  "equity": {
+    "population": 92475,
+    "pct_low_income": 11.8,
+    "pct_people_of_color": 46.4,
+    "pct_under_5": 6.7,
+    "pct_over_64": 14.2,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 81.8,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 77.3,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 57.9,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 50.2,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 96.9,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 46.3,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 30.0,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 90.4,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 79.5,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 40.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 68.0,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 40.2,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 77.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 123.4
+      },
+      {
+        "label": "Ozone",
+        "score": 60.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 88.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 76.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 142.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 69.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 30.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 124.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 112.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 61.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 95.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 58.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 6.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Conroe, Texas (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:32Z"
+}

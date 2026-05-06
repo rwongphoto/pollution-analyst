@@ -1,0 +1,107 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "enf-kyle-technology-llc",
+    "name": "Enf (Kyle) Technology LLC",
+    "parent_company": null,
+    "address": "1550 KOHLERS XING",
+    "city": "Kyle",
+    "county": "Hays County",
+    "county_slug": "hays",
+    "naics_label": "325998 \u00b7 Chemicals",
+    "lat": 30.028116,
+    "lng": -97.86479
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 32780,
+    "air_releases_pounds": 2379,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 30401,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 245.5,
+    "long_arc_pct_change": 245.5,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 9487
+      },
+      {
+        "year": 2024,
+        "value": 32780
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 32780,
+      "history": [
+        {
+          "year": 2023,
+          "value": 9487
+        },
+        {
+          "year": 2024,
+          "value": 32780
+        }
+      ],
+      "yoy_pct_change": 245.5,
+      "long_arc_pct_change": 245.5,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Ammonia",
+      "summary": "Ammonia releases at Enf (Kyle) Technology LLC rose from 9k lb to 33k lb (3.5\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 245.5,
+      "magnitude_abs": 23293.2,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 476
+        },
+        {
+          "year": 2022,
+          "value": 1147
+        },
+        {
+          "year": 2023,
+          "value": 9487
+        },
+        {
+          "year": 2024,
+          "value": 32780
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 37576,
+    "pct_low_income": 29.3,
+    "pct_people_of_color": 56.9,
+    "pct_under_5": 7.1,
+    "pct_over_64": 8.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (14 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

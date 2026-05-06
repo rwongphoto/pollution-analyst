@@ -1,0 +1,223 @@
+{
+  "utility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "galveston-county-wcid-1",
+    "name": "Galveston County Wcid 1",
+    "pwsid": "TX0840001",
+    "population_served": 30399,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Dickinson"
+    ],
+    "county": "Galveston County",
+    "county_slug": "galveston",
+    "place_slug": "dickinson"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 3,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 3
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 3
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 21475,
+    "pct_low_income": 12.7,
+    "pct_people_of_color": 49.8,
+    "pct_under_5": 8.1,
+    "pct_over_64": 12.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 77.8,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 64.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 30.6,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 35.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 98.7,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 40.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 43.1,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 76.1,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 47.3,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 64.3,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 88.4,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.4,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 114.3
+      },
+      {
+        "label": "Ozone",
+        "score": 22.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 44.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 52.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 141.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 57.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 31.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 110.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 71.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 84.1
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 108.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 112.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Dickinson, Texas (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:31Z"
+}

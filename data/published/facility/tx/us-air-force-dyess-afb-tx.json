@@ -1,0 +1,84 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "us-air-force-dyess-afb-tx",
+    "name": "US Air Force Dyess Afb Tx",
+    "parent_company": "US Department Of Defense",
+    "address": "7 CES/CEIE 710 3RD ST",
+    "city": "Dyess Afb",
+    "county": "Taylor County",
+    "county_slug": "taylor",
+    "naics_label": "928110 \u00b7 Other",
+    "lat": 32.420448,
+    "lng": -99.841479
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 6561,
+    "air_releases_pounds": 43,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 6518,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 6561
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 3301,
+      "history": [
+        {
+          "year": 2024,
+          "value": 3301
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Naphthalene",
+      "cas": "91-20-3",
+      "category": "carcinogen",
+      "total_pounds_recent": 3260,
+      "history": [
+        {
+          "year": 2024,
+          "value": 3260
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 11823,
+    "pct_low_income": 39.8,
+    "pct_people_of_color": 38.2,
+    "pct_under_5": 8.4,
+    "pct_over_64": 6.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (9 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

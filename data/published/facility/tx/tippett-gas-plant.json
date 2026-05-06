@@ -1,0 +1,127 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "tippett-gas-plant",
+    "name": "Tippett Gas Plant",
+    "parent_company": "Energy Transfer LP",
+    "address": "5802 FM 1901",
+    "city": "Mc Camey",
+    "county": "Upton County",
+    "county_slug": "upton",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.035897,
+    "lng": -102.220812
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 15718,
+    "air_releases_pounds": 15718,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 32.9,
+    "long_arc_pct_change": 55.5,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 10109
+      },
+      {
+        "year": 2023,
+        "value": 11828
+      },
+      {
+        "year": 2024,
+        "value": 15718
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 14007,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6936
+        },
+        {
+          "year": 2024,
+          "value": 14007
+        }
+      ],
+      "yoy_pct_change": 101.9,
+      "long_arc_pct_change": 101.9,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1053,
+      "history": [
+        {
+          "year": 2022,
+          "value": 796
+        },
+        {
+          "year": 2023,
+          "value": 2466
+        },
+        {
+          "year": 2024,
+          "value": 1053
+        }
+      ],
+      "yoy_pct_change": -57.3,
+      "long_arc_pct_change": 32.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 658,
+      "history": [
+        {
+          "year": 2022,
+          "value": 880
+        },
+        {
+          "year": 2023,
+          "value": 508
+        },
+        {
+          "year": 2024,
+          "value": 658
+        }
+      ],
+      "yoy_pct_change": 29.6,
+      "long_arc_pct_change": -25.2,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 3284,
+    "pct_low_income": 20.3,
+    "pct_people_of_color": 59.7,
+    "pct_under_5": 8.1,
+    "pct_over_64": 16.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Upton County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

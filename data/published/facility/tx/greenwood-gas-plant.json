@@ -1,0 +1,192 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "greenwood-gas-plant",
+    "name": "Greenwood Gas Plant",
+    "parent_company": "Targa Resources CORP",
+    "address": "4801 FM 1379",
+    "city": "Midland",
+    "county": "Midland County",
+    "county_slug": "midland",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.978264,
+    "lng": -101.879606
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 83338,
+    "air_releases_pounds": 13093,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 70245,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 1027.9,
+    "long_arc_pct_change": 1027.9,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 7389
+      },
+      {
+        "year": 2024,
+        "value": 83338
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 59630,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2114
+        },
+        {
+          "year": 2024,
+          "value": 59630
+        }
+      ],
+      "yoy_pct_change": 2720.7,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 11964,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1268
+        },
+        {
+          "year": 2024,
+          "value": 11964
+        }
+      ],
+      "yoy_pct_change": 843.2,
+      "long_arc_pct_change": 843.2,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 8801,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3836
+        },
+        {
+          "year": 2024,
+          "value": 8801
+        }
+      ],
+      "yoy_pct_change": 129.4,
+      "long_arc_pct_change": 129.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 2189,
+      "history": [
+        {
+          "year": 2024,
+          "value": 2189
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 754,
+      "history": [
+        {
+          "year": 2023,
+          "value": 170
+        },
+        {
+          "year": 2024,
+          "value": 754
+        }
+      ],
+      "yoy_pct_change": 343.5,
+      "long_arc_pct_change": 343.5,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Greenwood Gas Plant rose from 2k lb to 60k lb (28.2\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 2720.7,
+      "magnitude_abs": 57516.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 2114
+        },
+        {
+          "year": 2024,
+          "value": 59630
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Toluene",
+      "summary": "Toluene releases at Greenwood Gas Plant rose from 1k lb to 12k lb (9.4\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 843.2,
+      "magnitude_abs": 10695.6,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 1268
+        },
+        {
+          "year": 2024,
+          "value": 11964
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 1829,
+    "pct_low_income": 0.7,
+    "pct_people_of_color": 0.8,
+    "pct_under_5": 8.5,
+    "pct_over_64": 4.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

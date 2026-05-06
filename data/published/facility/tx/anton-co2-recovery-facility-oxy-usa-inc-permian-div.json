@@ -1,0 +1,115 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "anton-co2-recovery-facility-oxy-usa-inc-permian-div",
+    "name": "Anton Co2 Recovery Facility - Oxy USA INC. (Permian Div",
+    "parent_company": "Occidental Petroleum CORP",
+    "address": "CR 330",
+    "city": "Abernathy",
+    "county": "Hale County",
+    "county_slug": "hale",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 33.839848,
+    "lng": -101.969812
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 17916,
+    "air_releases_pounds": 2244,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 15672,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 88.6,
+    "long_arc_pct_change": 60.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 11198
+      },
+      {
+        "year": 2023,
+        "value": 9499
+      },
+      {
+        "year": 2024,
+        "value": 17916
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 11138,
+      "history": [
+        {
+          "year": 2022,
+          "value": 11198
+        },
+        {
+          "year": 2023,
+          "value": 9499
+        },
+        {
+          "year": 2024,
+          "value": 11138
+        }
+      ],
+      "yoy_pct_change": 17.3,
+      "long_arc_pct_change": -0.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 5034,
+      "history": [
+        {
+          "year": 2024,
+          "value": 5034
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 1744,
+      "history": [
+        {
+          "year": 2024,
+          "value": 1744
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 32525,
+    "pct_low_income": 18.5,
+    "pct_people_of_color": 68.3,
+    "pct_under_5": 7.5,
+    "pct_over_64": 13.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Hale County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

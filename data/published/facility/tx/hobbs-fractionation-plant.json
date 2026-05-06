@@ -1,0 +1,173 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "hobbs-fractionation-plant",
+    "name": "Hobbs Fractionation Plant",
+    "parent_company": "Enterprise Products Operating LLC",
+    "address": "461 CR 237",
+    "city": "Seminole",
+    "county": "Gaines County",
+    "county_slug": "gaines",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.756441,
+    "lng": -102.949729
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3050,
+    "air_releases_pounds": 2705,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 345,
+    "chemicals_reported": 5,
+    "yoy_pct_change": -5.0,
+    "long_arc_pct_change": 173.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 1116
+      },
+      {
+        "year": 2023,
+        "value": 3210
+      },
+      {
+        "year": 2024,
+        "value": 3050
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1787,
+      "history": [
+        {
+          "year": 2022,
+          "value": 634
+        },
+        {
+          "year": 2023,
+          "value": 1624
+        },
+        {
+          "year": 2024,
+          "value": 1787
+        }
+      ],
+      "yoy_pct_change": 10.0,
+      "long_arc_pct_change": 181.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 862,
+      "history": [
+        {
+          "year": 2022,
+          "value": 222
+        },
+        {
+          "year": 2023,
+          "value": 851
+        },
+        {
+          "year": 2024,
+          "value": 862
+        }
+      ],
+      "yoy_pct_change": 1.3,
+      "long_arc_pct_change": 288.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 333,
+      "history": [
+        {
+          "year": 2022,
+          "value": 118
+        },
+        {
+          "year": 2023,
+          "value": 344
+        },
+        {
+          "year": 2024,
+          "value": 333
+        }
+      ],
+      "yoy_pct_change": -3.1,
+      "long_arc_pct_change": 181.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 54,
+      "history": [
+        {
+          "year": 2023,
+          "value": 379
+        },
+        {
+          "year": 2024,
+          "value": 54
+        }
+      ],
+      "yoy_pct_change": -85.8,
+      "long_arc_pct_change": -85.8,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 14,
+      "history": [
+        {
+          "year": 2022,
+          "value": 141
+        },
+        {
+          "year": 2023,
+          "value": 13
+        },
+        {
+          "year": 2024,
+          "value": 14
+        }
+      ],
+      "yoy_pct_change": 12.0,
+      "long_arc_pct_change": -89.9,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 21523,
+    "pct_low_income": 12.7,
+    "pct_people_of_color": 45.8,
+    "pct_under_5": 11.9,
+    "pct_over_64": 8.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Gaines County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

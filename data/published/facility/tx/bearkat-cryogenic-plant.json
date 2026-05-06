@@ -1,0 +1,215 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "bearkat-cryogenic-plant",
+    "name": "Bearkat Cryogenic Plant",
+    "parent_company": "Enlink Midstream Operating LP",
+    "address": "4696 RANCH RD 33",
+    "city": "Garden City",
+    "county": "Glasscock County",
+    "county_slug": "glasscock",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.961961,
+    "lng": -101.485028
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3413,
+    "air_releases_pounds": 713,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2700,
+    "chemicals_reported": 7,
+    "yoy_pct_change": -24.2,
+    "long_arc_pct_change": -39.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 5628
+      },
+      {
+        "year": 2023,
+        "value": 4503
+      },
+      {
+        "year": 2024,
+        "value": 3413
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1811,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2916
+        },
+        {
+          "year": 2023,
+          "value": 2371
+        },
+        {
+          "year": 2024,
+          "value": 1811
+        }
+      ],
+      "yoy_pct_change": -23.6,
+      "long_arc_pct_change": -37.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 1384,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2531
+        },
+        {
+          "year": 2023,
+          "value": 2015
+        },
+        {
+          "year": 2024,
+          "value": 1384
+        }
+      ],
+      "yoy_pct_change": -31.3,
+      "long_arc_pct_change": -45.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 155,
+      "history": [
+        {
+          "year": 2022,
+          "value": 122
+        },
+        {
+          "year": 2023,
+          "value": 70
+        },
+        {
+          "year": 2024,
+          "value": 155
+        }
+      ],
+      "yoy_pct_change": 121.4,
+      "long_arc_pct_change": 27.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 30,
+      "history": [
+        {
+          "year": 2022,
+          "value": 25
+        },
+        {
+          "year": 2023,
+          "value": 17
+        },
+        {
+          "year": 2024,
+          "value": 30
+        }
+      ],
+      "yoy_pct_change": 76.5,
+      "long_arc_pct_change": 20.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 16,
+      "history": [
+        {
+          "year": 2022,
+          "value": 14
+        },
+        {
+          "year": 2023,
+          "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 16
+        }
+      ],
+      "yoy_pct_change": 60.0,
+      "long_arc_pct_change": 14.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 10,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10
+        },
+        {
+          "year": 2023,
+          "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 10
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 7,
+      "history": [
+        {
+          "year": 2024,
+          "value": 7
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 242,
+    "pct_low_income": 16.1,
+    "pct_people_of_color": 16.5,
+    "pct_under_5": 5.4,
+    "pct_over_64": 24.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

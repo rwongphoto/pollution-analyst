@@ -1,0 +1,93 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "shell-lubricant",
+    "name": "Shell Lubricant",
+    "parent_company": "Shell Petroleum INC",
+    "address": "780 CLINTON DR",
+    "city": "Galena Park",
+    "county": "Harris County",
+    "county_slug": "harris",
+    "naics_label": "324191 \u00b7 Petroleum",
+    "lat": 29.732409,
+    "lng": -95.227392
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 18755,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 5,
+    "land_releases_pounds": 18750,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 12958.8,
+    "long_arc_pct_change": 368.9,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 4000
+      },
+      {
+        "year": 2022,
+        "value": 13068
+      },
+      {
+        "year": 2023,
+        "value": 144
+      },
+      {
+        "year": 2024,
+        "value": 18755
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 18755,
+      "history": [
+        {
+          "year": 2021,
+          "value": 4000
+        },
+        {
+          "year": 2022,
+          "value": 13068
+        },
+        {
+          "year": 2023,
+          "value": 144
+        },
+        {
+          "year": 2024,
+          "value": 18755
+        }
+      ],
+      "yoy_pct_change": 12958.8,
+      "long_arc_pct_change": 368.9,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 56477,
+    "pct_low_income": 48.2,
+    "pct_people_of_color": 93.1,
+    "pct_under_5": 8.4,
+    "pct_over_64": 8.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (40 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

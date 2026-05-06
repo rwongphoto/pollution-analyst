@@ -1,0 +1,442 @@
+{
+  "place": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "camp-wood",
+    "name": "Camp Wood",
+    "fips": "4812388",
+    "population": 970,
+    "county_name": "Real",
+    "county_fips": "48385"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.3293,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.3293
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0361,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0361
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 31844,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 14.5,
+      "long_arc_pct_change": 13.2,
+      "baseline_year": 2018,
+      "history": [
+        {
+          "year": 2018,
+          "value": 28134
+        },
+        {
+          "year": 2019,
+          "value": 28519
+        },
+        {
+          "year": 2020,
+          "value": 29230
+        },
+        {
+          "year": 2021,
+          "value": 26616
+        },
+        {
+          "year": 2022,
+          "value": 27818
+        },
+        {
+          "year": 2023,
+          "value": 31844
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 1515,
+    "violations_5yr_total": 35,
+    "health_based_5yr_total": 10,
+    "unresolved_total": 6,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "camp-wood",
+        "state": "tx",
+        "state_label": "Texas",
+        "name": "City Of Camp Wood",
+        "pwsid": "TX1930001",
+        "population_served": 1380,
+        "health_based_violations_5yr": 10,
+        "unresolved": true
+      },
+      {
+        "slug": "crown-mountain-wsc",
+        "state": "tx",
+        "state_label": "Texas",
+        "name": "Crown Mountain Wsc",
+        "pwsid": "TX1930020",
+        "population_served": 135,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0300",
+      "summary": "Unresolved Long Term 1 Enhanced SWTR violation cited in 2024 (contaminant 0300).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX1930001"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0300",
+      "summary": "Unresolved Long Term 1 Enhanced SWTR violation cited in 2024 (contaminant 0300).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX1930001"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7000",
+      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2025 (contaminant 7000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX1930020"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Chlorine",
+      "summary": "Unresolved Disinfectants and Disinfection Byproducts (Stage 2) violation cited in 2025 (chlorine).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX1930020"
+      }
+    }
+  ],
+  "equity": {
+    "population": 970,
+    "pct_low_income": 38.3,
+    "pct_people_of_color": 38.5,
+    "pct_under_5": 5.2,
+    "pct_over_64": 17.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Camp Wood, Texas (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 9.9,
+      "age_adjusted": 10.1,
+      "state_mean": 9.5,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.61,
+      "vs_state_pct": 6.4,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.08,
+      "vs_us_pct": 0.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 10.3,
+      "age_adjusted": 7.2,
+      "state_mean": 5.4,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.76,
+      "vs_state_pct": 32.4,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.7,
+      "vs_us_pct": 30.9,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 10.4,
+      "age_adjusted": 6.4,
+      "state_mean": 5.4,
+      "us_mean": 5.3,
+      "vs_state_pp": 1.02,
+      "vs_state_pct": 19.0,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.09,
+      "vs_us_pct": 20.5,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 19.4,
+      "age_adjusted": 13.1,
+      "state_mean": 12.3,
+      "us_mean": 10.5,
+      "vs_state_pp": 0.83,
+      "vs_state_pct": 6.8,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.64,
+      "vs_us_pct": 25.2,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 16.2,
+      "age_adjusted": 19.5,
+      "state_mean": 17.1,
+      "us_mean": 16.8,
+      "vs_state_pp": 2.44,
+      "vs_state_pct": 14.3,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.75,
+      "vs_us_pct": 16.4,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "leakey",
+      "name": "Leakey",
+      "population": 464,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "celeste",
+      "name": "Celeste",
+      "population": 974,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "campbell",
+      "name": "Campbell",
+      "population": 974,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "wink",
+      "name": "Wink",
+      "population": 978,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 37.2,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "louise",
+      "name": "Louise",
+      "population": 961,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "savoy",
+      "name": "Savoy",
+      "population": 961,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T13:59:37Z"
+}

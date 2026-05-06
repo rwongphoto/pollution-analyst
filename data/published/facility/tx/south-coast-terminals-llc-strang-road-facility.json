@@ -1,0 +1,227 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "south-coast-terminals-llc-strang-road-facility",
+    "name": "South Coast Terminals LLC Strang Road Facility",
+    "parent_company": "South Coast Terminals LLC",
+    "address": "10900 STRANG RD",
+    "city": "La Porte",
+    "county": "Harris County",
+    "county_slug": "harris",
+    "naics_label": "325998 \u00b7 Chemicals",
+    "lat": 29.70221,
+    "lng": -95.059928
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 136495,
+    "air_releases_pounds": 3175,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 133320,
+    "chemicals_reported": 5,
+    "yoy_pct_change": -47.0,
+    "long_arc_pct_change": 47.7,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 92400
+      },
+      {
+        "year": 2021,
+        "value": 151897
+      },
+      {
+        "year": 2022,
+        "value": 250802
+      },
+      {
+        "year": 2023,
+        "value": 257330
+      },
+      {
+        "year": 2024,
+        "value": 136495
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Maleic anhydride",
+      "cas": "108-31-6",
+      "category": "respiratory",
+      "total_pounds_recent": 134889,
+      "history": [
+        {
+          "year": 2020,
+          "value": 77800
+        },
+        {
+          "year": 2021,
+          "value": 121377
+        },
+        {
+          "year": 2022,
+          "value": 218052
+        },
+        {
+          "year": 2023,
+          "value": 226590
+        },
+        {
+          "year": 2024,
+          "value": 134889
+        }
+      ],
+      "yoy_pct_change": -40.5,
+      "long_arc_pct_change": 73.4,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 1144,
+      "history": [
+        {
+          "year": 2020,
+          "value": 9750
+        },
+        {
+          "year": 2021,
+          "value": 10750
+        },
+        {
+          "year": 2022,
+          "value": 10750
+        },
+        {
+          "year": 2023,
+          "value": 10750
+        },
+        {
+          "year": 2024,
+          "value": 1144
+        }
+      ],
+      "yoy_pct_change": -89.4,
+      "long_arc_pct_change": -88.3,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Naphthalene",
+      "cas": "91-20-3",
+      "category": "carcinogen",
+      "total_pounds_recent": 245,
+      "history": [
+        {
+          "year": 2024,
+          "value": 245
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 216,
+      "history": [
+        {
+          "year": 2024,
+          "value": 216
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 1,
+      "history": [
+        {
+          "year": 2020,
+          "value": 4850
+        },
+        {
+          "year": 2021,
+          "value": 19770
+        },
+        {
+          "year": 2022,
+          "value": 22000
+        },
+        {
+          "year": 2023,
+          "value": 19990
+        },
+        {
+          "year": 2024,
+          "value": 1
+        }
+      ],
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": -100.0,
+      "long_arc_baseline_year": 2020
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Ethylene glycol",
+      "summary": "Ethylene glycol releases at South Coast Terminals LLC Strang Road Facility fell from 20k lb to 1 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -19989.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2020,
+          "value": 4850
+        },
+        {
+          "year": 2021,
+          "value": 19770
+        },
+        {
+          "year": 2022,
+          "value": 22000
+        },
+        {
+          "year": 2023,
+          "value": 19990
+        },
+        {
+          "year": 2024,
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 19927,
+    "pct_low_income": 20.8,
+    "pct_people_of_color": 46.5,
+    "pct_under_5": 6.9,
+    "pct_over_64": 13.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (11 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

@@ -1,0 +1,120 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "afglobal-maass-rings-forge-lumberdale",
+    "name": "Afglobal Maass Rings & Forge Lumberdale",
+    "parent_company": "Afglobal CORP",
+    "address": "6202 LUMBERDALE RD",
+    "city": "Houston",
+    "county": "Harris County",
+    "county_slug": "harris",
+    "naics_label": "332112 \u00b7 Fabricated Metals",
+    "lat": 29.858588,
+    "lng": -95.484275
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 37,
+    "air_releases_pounds": 8,
+    "water_releases_pounds": 29,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -43.8,
+    "long_arc_pct_change": -66.2,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 110
+      },
+      {
+        "year": 2022,
+        "value": 66
+      },
+      {
+        "year": 2023,
+        "value": 66
+      },
+      {
+        "year": 2024,
+        "value": 37
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 22,
+      "history": [
+        {
+          "year": 2021,
+          "value": 65
+        },
+        {
+          "year": 2022,
+          "value": 39
+        },
+        {
+          "year": 2023,
+          "value": 40
+        },
+        {
+          "year": 2024,
+          "value": 22
+        }
+      ],
+      "yoy_pct_change": -45.4,
+      "long_arc_pct_change": -66.0,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 15,
+      "history": [
+        {
+          "year": 2021,
+          "value": 45
+        },
+        {
+          "year": 2022,
+          "value": 27
+        },
+        {
+          "year": 2023,
+          "value": 26
+        },
+        {
+          "year": 2024,
+          "value": 15
+        }
+      ],
+      "yoy_pct_change": -41.3,
+      "long_arc_pct_change": -66.6,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 127196,
+    "pct_low_income": 47.6,
+    "pct_people_of_color": 85.4,
+    "pct_under_5": 8.1,
+    "pct_over_64": 11.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (80 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

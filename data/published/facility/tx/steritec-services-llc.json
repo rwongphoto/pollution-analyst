@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "steritec-services-llc",
+    "name": "Steritec Services LLC",
+    "parent_company": null,
+    "address": "1705 ENTERPRISE ST",
+    "city": "Athens",
+    "county": "Henderson County",
+    "county_slug": "henderson",
+    "naics_label": "561910 \u00b7 Other",
+    "lat": 32.21786,
+    "lng": -95.828365
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 255,
+    "air_releases_pounds": 255,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 0.0,
+    "long_arc_pct_change": 1.6,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 251
+      },
+      {
+        "year": 2023,
+        "value": 255
+      },
+      {
+        "year": 2024,
+        "value": 255
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene oxide",
+      "cas": "75-21-8",
+      "category": "carcinogen",
+      "total_pounds_recent": 255,
+      "history": [
+        {
+          "year": 2022,
+          "value": 251
+        },
+        {
+          "year": 2023,
+          "value": 255
+        },
+        {
+          "year": 2024,
+          "value": 255
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 1.6,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 7625,
+    "pct_low_income": 47.0,
+    "pct_people_of_color": 48.1,
+    "pct_under_5": 2.6,
+    "pct_over_64": 21.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

@@ -1,0 +1,118 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "zinkpower-waco",
+    "name": "Zinkpower Waco",
+    "parent_company": "Zinkpower-Usa CORP",
+    "address": "7401 MARS DR",
+    "city": "Woodway",
+    "county": "Mclennan County",
+    "county_slug": "mclennan",
+    "naics_label": "332812 \u00b7 Fabricated Metals",
+    "lat": 31.490537,
+    "lng": -97.19068
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 23059,
+    "air_releases_pounds": 40,
+    "water_releases_pounds": 416,
+    "land_releases_pounds": 22603,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 93.3,
+    "long_arc_pct_change": 93.3,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 11928
+      },
+      {
+        "year": 2024,
+        "value": 23059
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 23057,
+      "history": [
+        {
+          "year": 2023,
+          "value": 11928
+        },
+        {
+          "year": 2024,
+          "value": 23057
+        }
+      ],
+      "yoy_pct_change": 93.3,
+      "long_arc_pct_change": 93.3,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 1,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0.04
+        },
+        {
+          "year": 2024,
+          "value": 1
+        }
+      ],
+      "yoy_pct_change": 4030.6,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Zinc compounds",
+      "summary": "Zinc compounds releases at Zinkpower Waco rose from 12k lb to 23k lb between 2023 and 2024.",
+      "magnitude_pct": 93.3,
+      "magnitude_abs": 11129.8,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 11928
+        },
+        {
+          "year": 2024,
+          "value": 23057
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 45858,
+    "pct_low_income": 31.3,
+    "pct_people_of_color": 42.4,
+    "pct_under_5": 6.2,
+    "pct_over_64": 16.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (26 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

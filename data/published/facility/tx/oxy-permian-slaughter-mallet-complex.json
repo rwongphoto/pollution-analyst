@@ -1,0 +1,169 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "oxy-permian-slaughter-mallet-complex",
+    "name": "Oxy Permian - Slaughter/Mallet Complex",
+    "parent_company": "Occidental Petroleum CORP",
+    "address": "4 MILES WEST OF SUNDOWN TX ON FM 301",
+    "city": "Sundown",
+    "county": "Hockley County",
+    "county_slug": "hockley",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 33.45917,
+    "lng": -102.488726
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 18169,
+    "air_releases_pounds": 12276,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 5893,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 15.8,
+    "long_arc_pct_change": 16.5,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 15600
+      },
+      {
+        "year": 2023,
+        "value": 15688
+      },
+      {
+        "year": 2024,
+        "value": 18169
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Hydrogen sulfide",
+      "cas": "7783-06-4",
+      "category": "general",
+      "total_pounds_recent": 8140,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6012
+        },
+        {
+          "year": 2023,
+          "value": 7336
+        },
+        {
+          "year": 2024,
+          "value": 8140
+        }
+      ],
+      "yoy_pct_change": 11.0,
+      "long_arc_pct_change": 35.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 6530,
+      "history": [
+        {
+          "year": 2022,
+          "value": 7078
+        },
+        {
+          "year": 2023,
+          "value": 5923
+        },
+        {
+          "year": 2024,
+          "value": 6530
+        }
+      ],
+      "yoy_pct_change": 10.2,
+      "long_arc_pct_change": -7.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 2230,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1806
+        },
+        {
+          "year": 2023,
+          "value": 1797
+        },
+        {
+          "year": 2024,
+          "value": 2230
+        }
+      ],
+      "yoy_pct_change": 24.1,
+      "long_arc_pct_change": 23.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 744,
+      "history": [
+        {
+          "year": 2022,
+          "value": 703
+        },
+        {
+          "year": 2023,
+          "value": 631
+        },
+        {
+          "year": 2024,
+          "value": 744
+        }
+      ],
+      "yoy_pct_change": 17.9,
+      "long_arc_pct_change": 5.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 525,
+      "history": [
+        {
+          "year": 2024,
+          "value": 525
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 1808,
+    "pct_low_income": 32.5,
+    "pct_people_of_color": 55.0,
+    "pct_under_5": 6.4,
+    "pct_over_64": 10.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

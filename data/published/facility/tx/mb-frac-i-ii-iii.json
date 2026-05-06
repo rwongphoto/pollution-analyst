@@ -1,0 +1,157 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "mb-frac-i-ii-iii",
+    "name": "Mb Frac I II & III",
+    "parent_company": "Energy Transfer LP",
+    "address": "9850 FM 1942",
+    "city": "Baytown",
+    "county": "Chambers County",
+    "county_slug": "chambers",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 29.855148,
+    "lng": -94.912777
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 7050,
+    "air_releases_pounds": 6147,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 903,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -79.6,
+    "long_arc_pct_change": -59.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 17207
+      },
+      {
+        "year": 2023,
+        "value": 34602
+      },
+      {
+        "year": 2024,
+        "value": 7050
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 5701,
+      "history": [
+        {
+          "year": 2022,
+          "value": 15989
+        },
+        {
+          "year": 2023,
+          "value": 33444
+        },
+        {
+          "year": 2024,
+          "value": 5701
+        }
+      ],
+      "yoy_pct_change": -83.0,
+      "long_arc_pct_change": -64.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 974,
+      "history": [
+        {
+          "year": 2022,
+          "value": 852
+        },
+        {
+          "year": 2023,
+          "value": 774
+        },
+        {
+          "year": 2024,
+          "value": 974
+        }
+      ],
+      "yoy_pct_change": 25.9,
+      "long_arc_pct_change": 14.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 375,
+      "history": [
+        {
+          "year": 2022,
+          "value": 366
+        },
+        {
+          "year": 2023,
+          "value": 384
+        },
+        {
+          "year": 2024,
+          "value": 375
+        }
+      ],
+      "yoy_pct_change": -2.3,
+      "long_arc_pct_change": 2.6,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Mb Frac I II & III fell from 33k lb to 6k lb (83% lower) between 2023 and 2024.",
+      "magnitude_pct": -83.0,
+      "magnitude_abs": -27743.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 15989
+        },
+        {
+          "year": 2023,
+          "value": 33444
+        },
+        {
+          "year": 2024,
+          "value": 5701
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 8260,
+    "pct_low_income": 13.7,
+    "pct_people_of_color": 27.1,
+    "pct_under_5": 8.1,
+    "pct_over_64": 10.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

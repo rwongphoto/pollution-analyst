@@ -1,0 +1,153 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "panther-gas-plant",
+    "name": "Panther Gas Plant",
+    "parent_company": "Energy Transfer LP",
+    "address": "17106 FM 1492",
+    "city": "Rankin",
+    "county": "Upton County",
+    "county_slug": "upton",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.223425,
+    "lng": -101.948217
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 6293,
+    "air_releases_pounds": 6293,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 19.1,
+    "long_arc_pct_change": 7.1,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 5874
+      },
+      {
+        "year": 2023,
+        "value": 5282
+      },
+      {
+        "year": 2024,
+        "value": 6293
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 4993,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2897
+        },
+        {
+          "year": 2023,
+          "value": 2427
+        },
+        {
+          "year": 2024,
+          "value": 4993
+        }
+      ],
+      "yoy_pct_change": 105.8,
+      "long_arc_pct_change": 72.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 650,
+      "history": [
+        {
+          "year": 2022,
+          "value": 105
+        },
+        {
+          "year": 2024,
+          "value": 650
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 517.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 365,
+      "history": [
+        {
+          "year": 2022,
+          "value": 72
+        },
+        {
+          "year": 2024,
+          "value": 365
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 407.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 258,
+      "history": [
+        {
+          "year": 2024,
+          "value": 258
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 27,
+      "history": [
+        {
+          "year": 2024,
+          "value": 27
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 3284,
+    "pct_low_income": 20.3,
+    "pct_people_of_color": 59.7,
+    "pct_under_5": 8.1,
+    "pct_over_64": 16.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Upton County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

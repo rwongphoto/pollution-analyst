@@ -1,0 +1,188 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "jeb-gas-plant",
+    "name": "Jeb Gas Plant",
+    "parent_company": "Targa Resources CORP",
+    "address": "8900 FM-1555",
+    "city": "Rankin",
+    "county": "Upton County",
+    "county_slug": "upton",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.35328,
+    "lng": -101.807416
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 79635,
+    "air_releases_pounds": 15230,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 64405,
+    "chemicals_reported": 6,
+    "yoy_pct_change": 75.8,
+    "long_arc_pct_change": 1638.8,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 4580
+      },
+      {
+        "year": 2023,
+        "value": 45310
+      },
+      {
+        "year": 2024,
+        "value": 79635
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 31014,
+      "history": [
+        {
+          "year": 2023,
+          "value": 27918
+        },
+        {
+          "year": 2024,
+          "value": 31014
+        }
+      ],
+      "yoy_pct_change": 11.1,
+      "long_arc_pct_change": 11.1,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 16686,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 16686
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 14681,
+      "history": [
+        {
+          "year": 2022,
+          "value": 460
+        },
+        {
+          "year": 2024,
+          "value": 14681
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 8694,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1390
+        },
+        {
+          "year": 2023,
+          "value": 9249
+        },
+        {
+          "year": 2024,
+          "value": 8694
+        }
+      ],
+      "yoy_pct_change": -6.0,
+      "long_arc_pct_change": 525.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 5760,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2390
+        },
+        {
+          "year": 2023,
+          "value": 6109
+        },
+        {
+          "year": 2024,
+          "value": 5760
+        }
+      ],
+      "yoy_pct_change": -5.7,
+      "long_arc_pct_change": 141.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 2800,
+      "history": [
+        {
+          "year": 2022,
+          "value": 190
+        },
+        {
+          "year": 2023,
+          "value": 2035
+        },
+        {
+          "year": 2024,
+          "value": 2800
+        }
+      ],
+      "yoy_pct_change": 37.6,
+      "long_arc_pct_change": 1373.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 3284,
+    "pct_low_income": 20.3,
+    "pct_people_of_color": 59.7,
+    "pct_under_5": 8.1,
+    "pct_over_64": 16.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Upton County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

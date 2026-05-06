@@ -1,0 +1,132 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "jv-industrial-freeport",
+    "name": "Jv Industrial Freeport",
+    "parent_company": "Jv Industrial Cos LTD",
+    "address": "217 COMMERCE ST",
+    "city": "Freeport",
+    "county": "Brazoria County",
+    "county_slug": "brazoria",
+    "naics_label": "332313 \u00b7 Fabricated Metals",
+    "lat": 29.002221,
+    "lng": -95.373772
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 11,
+    "air_releases_pounds": 11,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -97.5,
+    "long_arc_pct_change": -95.7,
+    "long_arc_baseline_year": 2015,
+    "history": [
+      {
+        "year": 2015,
+        "value": 254
+      },
+      {
+        "year": 2016,
+        "value": 252
+      },
+      {
+        "year": 2017,
+        "value": 0.07
+      },
+      {
+        "year": 2023,
+        "value": 434
+      },
+      {
+        "year": 2024,
+        "value": 11
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 6,
+      "history": [
+        {
+          "year": 2015,
+          "value": 96
+        },
+        {
+          "year": 2016,
+          "value": 96
+        },
+        {
+          "year": 2017,
+          "value": 0.04
+        },
+        {
+          "year": 2023,
+          "value": 202
+        },
+        {
+          "year": 2024,
+          "value": 6
+        }
+      ],
+      "yoy_pct_change": -97.0,
+      "long_arc_pct_change": -93.8,
+      "long_arc_baseline_year": 2015
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 5,
+      "history": [
+        {
+          "year": 2015,
+          "value": 108
+        },
+        {
+          "year": 2016,
+          "value": 107
+        },
+        {
+          "year": 2017,
+          "value": 0.03
+        },
+        {
+          "year": 2023,
+          "value": 232
+        },
+        {
+          "year": 2024,
+          "value": 5
+        }
+      ],
+      "yoy_pct_change": -97.8,
+      "long_arc_pct_change": -95.4,
+      "long_arc_baseline_year": 2015
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 13328,
+    "pct_low_income": 44.0,
+    "pct_people_of_color": 77.0,
+    "pct_under_5": 5.4,
+    "pct_over_64": 11.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (12 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

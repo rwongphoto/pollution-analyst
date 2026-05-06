@@ -1,0 +1,222 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "godley-gas-plant",
+    "name": "Godley Gas Plant",
+    "parent_company": "Energy Transfer LP",
+    "address": "8711 CR-916",
+    "city": "Godley",
+    "county": "Johnson County",
+    "county_slug": "johnson",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.499674,
+    "lng": -97.552364
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 92796,
+    "air_releases_pounds": 30878,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 61918,
+    "chemicals_reported": 6,
+    "yoy_pct_change": 71.3,
+    "long_arc_pct_change": 38.1,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 67190
+      },
+      {
+        "year": 2023,
+        "value": 54182
+      },
+      {
+        "year": 2024,
+        "value": 92796
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 64500,
+      "history": [
+        {
+          "year": 2022,
+          "value": 51672
+        },
+        {
+          "year": 2023,
+          "value": 34061
+        },
+        {
+          "year": 2024,
+          "value": 64500
+        }
+      ],
+      "yoy_pct_change": 89.4,
+      "long_arc_pct_change": 24.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 9148,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4544
+        },
+        {
+          "year": 2023,
+          "value": 6811
+        },
+        {
+          "year": 2024,
+          "value": 9148
+        }
+      ],
+      "yoy_pct_change": 34.3,
+      "long_arc_pct_change": 101.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 8480,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2110
+        },
+        {
+          "year": 2023,
+          "value": 5384
+        },
+        {
+          "year": 2024,
+          "value": 8480
+        }
+      ],
+      "yoy_pct_change": 57.5,
+      "long_arc_pct_change": 301.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 6748,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2921
+        },
+        {
+          "year": 2023,
+          "value": 4853
+        },
+        {
+          "year": 2024,
+          "value": 6748
+        }
+      ],
+      "yoy_pct_change": 39.0,
+      "long_arc_pct_change": 131.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 3220,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2143
+        },
+        {
+          "year": 2023,
+          "value": 2582
+        },
+        {
+          "year": 2024,
+          "value": 3220
+        }
+      ],
+      "yoy_pct_change": 24.7,
+      "long_arc_pct_change": 50.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 700,
+      "history": [
+        {
+          "year": 2023,
+          "value": 491
+        },
+        {
+          "year": 2024,
+          "value": 700
+        }
+      ],
+      "yoy_pct_change": 42.6,
+      "long_arc_pct_change": 42.6,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Godley Gas Plant rose from 34k lb to 64k lb between 2023 and 2024.",
+      "magnitude_pct": 89.4,
+      "magnitude_abs": 30439.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 51672
+        },
+        {
+          "year": 2023,
+          "value": 34061
+        },
+        {
+          "year": 2024,
+          "value": 64500
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 3318,
+    "pct_low_income": 18.7,
+    "pct_people_of_color": 16.0,
+    "pct_under_5": 9.2,
+    "pct_over_64": 10.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

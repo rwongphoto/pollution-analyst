@@ -1,0 +1,236 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "lippert-plant-241",
+    "name": "Lippert Plant 241",
+    "parent_company": "Lci Industries",
+    "address": "101 MUSHROOM ROAD",
+    "city": "Waxahachie",
+    "county": "Ellis County",
+    "county_slug": "ellis",
+    "naics_label": "326199 \u00b7 Plastics and Rubber",
+    "lat": 32.449214,
+    "lng": -96.837956
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 539,
+    "air_releases_pounds": 30,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 508,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 14.4,
+    "long_arc_pct_change": -99.0,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 56560
+      },
+      {
+        "year": 2011,
+        "value": 30037
+      },
+      {
+        "year": 2018,
+        "value": 29
+      },
+      {
+        "year": 2021,
+        "value": 612
+      },
+      {
+        "year": 2022,
+        "value": 81
+      },
+      {
+        "year": 2023,
+        "value": 471
+      },
+      {
+        "year": 2024,
+        "value": 539
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 207,
+      "history": [
+        {
+          "year": 2021,
+          "value": 398
+        },
+        {
+          "year": 2022,
+          "value": 47
+        },
+        {
+          "year": 2023,
+          "value": 184
+        },
+        {
+          "year": 2024,
+          "value": 207
+        }
+      ],
+      "yoy_pct_change": 12.7,
+      "long_arc_pct_change": -48.1,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 194,
+      "history": [
+        {
+          "year": 2018,
+          "value": 28
+        },
+        {
+          "year": 2021,
+          "value": 191
+        },
+        {
+          "year": 2022,
+          "value": 33
+        },
+        {
+          "year": 2023,
+          "value": 168
+        },
+        {
+          "year": 2024,
+          "value": 194
+        }
+      ],
+      "yoy_pct_change": 15.5,
+      "long_arc_pct_change": 583.6,
+      "long_arc_baseline_year": 2018
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 134,
+      "history": [
+        {
+          "year": 2021,
+          "value": 17
+        },
+        {
+          "year": 2022,
+          "value": 0.25
+        },
+        {
+          "year": 2023,
+          "value": 116
+        },
+        {
+          "year": 2024,
+          "value": 134
+        }
+      ],
+      "yoy_pct_change": 15.5,
+      "long_arc_pct_change": 696.0,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 4,
+      "history": [
+        {
+          "year": 2018,
+          "value": 1
+        },
+        {
+          "year": 2021,
+          "value": 6
+        },
+        {
+          "year": 2022,
+          "value": 0.66
+        },
+        {
+          "year": 2023,
+          "value": 3
+        },
+        {
+          "year": 2024,
+          "value": 4
+        }
+      ],
+      "yoy_pct_change": 15.5,
+      "long_arc_pct_change": 288.0,
+      "long_arc_baseline_year": 2018
+    }
+  ],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total reported releases",
+      "summary": "Total reported releases at Lippert Plant 241 have more than three-quarters since 2010 (through 2024).",
+      "magnitude_pct": -99.0,
+      "magnitude_abs": -56021.1,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 56560
+        },
+        {
+          "year": 2011,
+          "value": 30037
+        },
+        {
+          "year": 2018,
+          "value": 29
+        },
+        {
+          "year": 2021,
+          "value": 612
+        },
+        {
+          "year": 2022,
+          "value": 81
+        },
+        {
+          "year": 2023,
+          "value": 471
+        },
+        {
+          "year": 2024,
+          "value": 539
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 28637,
+    "pct_low_income": 15.7,
+    "pct_people_of_color": 38.6,
+    "pct_under_5": 7.3,
+    "pct_over_64": 15.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (15 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

@@ -1,0 +1,127 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "hess-seminole-gas-processing-plant",
+    "name": "Hess Seminole Gas Processing Plant",
+    "parent_company": "Occidental Petroleum CORP",
+    "address": "3.5 MI NW ON HWY 214 FROM INTX OF HWY 180 AND HWY 214",
+    "city": "Seminole",
+    "county": "Gaines County",
+    "county_slug": "gaines",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.718969,
+    "lng": -102.649613
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 27041,
+    "air_releases_pounds": 22687,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 4354,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -14.7,
+    "long_arc_pct_change": 3.6,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 26113
+      },
+      {
+        "year": 2023,
+        "value": 31691
+      },
+      {
+        "year": 2024,
+        "value": 27041
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Hydrogen sulfide",
+      "cas": "7783-06-4",
+      "category": "general",
+      "total_pounds_recent": 13300,
+      "history": [
+        {
+          "year": 2022,
+          "value": 15430
+        },
+        {
+          "year": 2023,
+          "value": 18432
+        },
+        {
+          "year": 2024,
+          "value": 13300
+        }
+      ],
+      "yoy_pct_change": -27.8,
+      "long_arc_pct_change": -13.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Propylene",
+      "cas": "115-07-1",
+      "category": "general",
+      "total_pounds_recent": 11000,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10616
+        },
+        {
+          "year": 2023,
+          "value": 10616
+        },
+        {
+          "year": 2024,
+          "value": 11000
+        }
+      ],
+      "yoy_pct_change": 3.6,
+      "long_arc_pct_change": 3.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 2741,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2643
+        },
+        {
+          "year": 2024,
+          "value": 2741
+        }
+      ],
+      "yoy_pct_change": 3.7,
+      "long_arc_pct_change": 3.7,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 9228,
+    "pct_low_income": 42.6,
+    "pct_people_of_color": 52.2,
+    "pct_under_5": 10.0,
+    "pct_over_64": 10.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

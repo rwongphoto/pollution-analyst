@@ -1,0 +1,104 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "dollarhide-gas-plant",
+    "name": "Dollarhide Gas Plant",
+    "parent_company": null,
+    "address": "22 M SW SH 115; 14 M W SH 128; 1.5 M N LSE RDS",
+    "city": "Andrews",
+    "county": "Andrews County",
+    "county_slug": "andrews",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.321952,
+    "lng": -102.524924
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 6312,
+    "air_releases_pounds": 6130,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 182,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -12.9,
+    "long_arc_pct_change": 18.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 5347
+      },
+      {
+        "year": 2023,
+        "value": 7243
+      },
+      {
+        "year": 2024,
+        "value": 6312
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Hydrogen sulfide",
+      "cas": "7783-06-4",
+      "category": "general",
+      "total_pounds_recent": 3959,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4220
+        },
+        {
+          "year": 2023,
+          "value": 7243
+        },
+        {
+          "year": 2024,
+          "value": 3959
+        }
+      ],
+      "yoy_pct_change": -45.3,
+      "long_arc_pct_change": -6.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2353,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1127
+        },
+        {
+          "year": 2024,
+          "value": 2353
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 108.8,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 12284,
+    "pct_low_income": 28.9,
+    "pct_people_of_color": 59.2,
+    "pct_under_5": 8.0,
+    "pct_over_64": 9.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (9 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

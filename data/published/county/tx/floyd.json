@@ -1,0 +1,427 @@
+{
+  "county": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "floyd",
+    "name": "Floyd County",
+    "fips": "48153",
+    "population": 5386
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.0317,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.0317
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0954,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0954
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [
+    {
+      "slug": "floydada",
+      "name": "Floydada",
+      "fips": "4826268",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 2670
+    },
+    {
+      "slug": "lockney",
+      "name": "Lockney",
+      "fips": "4843252",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 1720
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 5386,
+    "pct_low_income": 19.0,
+    "pct_people_of_color": 64.2,
+    "pct_under_5": 8.0,
+    "pct_over_64": 18.3,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 4.6,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 39.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 35.8,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 3.9,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 5.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 1.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 77.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 46.7,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 10.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 78.7,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 10.4
+      },
+      {
+        "label": "Ozone",
+        "score": 182.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 80.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 10.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 10.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 145.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 89.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 20.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 104.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Floyd County, TX"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 9.6,
+      "age_adjusted": 9.6,
+      "state_mean": 9.5,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.11,
+      "vs_state_pct": 1.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.42,
+      "vs_us_pct": -4.2,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 8.3,
+      "age_adjusted": 6.9,
+      "state_mean": 5.4,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.46,
+      "vs_state_pct": 26.8,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.4,
+      "vs_us_pct": 25.5,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.3,
+      "age_adjusted": 6.5,
+      "state_mean": 5.4,
+      "us_mean": 5.3,
+      "vs_state_pp": 1.12,
+      "vs_state_pct": 20.8,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.19,
+      "vs_us_pct": 22.4,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 17.0,
+      "age_adjusted": 14.4,
+      "state_mean": 12.3,
+      "us_mean": 10.5,
+      "vs_state_pp": 2.13,
+      "vs_state_pct": 17.4,
+      "vs_state_class": "worse",
+      "vs_us_pp": 3.94,
+      "vs_us_pct": 37.7,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.3,
+      "age_adjusted": 18.5,
+      "state_mean": 17.1,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.44,
+      "vs_state_pct": 8.4,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.75,
+      "vs_us_pct": 10.4,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "tx",
+      "slug": "hartley",
+      "name": "Hartley County",
+      "population": 5369,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 31.7,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "tx",
+      "slug": "haskell",
+      "name": "Haskell County",
+      "population": 5408,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 31.2,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "tx",
+      "slug": "delta",
+      "name": "Delta County",
+      "population": 5278,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 34.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "tx",
+      "slug": "hansford",
+      "name": "Hansford County",
+      "population": 5270,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 38.2,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "tx",
+      "slug": "lynn",
+      "name": "Lynn County",
+      "population": 5619,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 31.4,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "tx",
+      "slug": "calhoun",
+      "name": "Calhoun County",
+      "population": 20127,
+      "facilities_count": 6,
+      "total_releases_pounds": 18013577,
+      "dominant_medium": "land",
+      "ej_pct_avg": 58.5,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+28 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T13:59:25Z"
+}

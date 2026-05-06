@@ -1,0 +1,173 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "applied-cryo-technologies",
+    "name": "Applied Cryo Technologies",
+    "parent_company": "Plug Power INC",
+    "address": "7150 ALMEDA GENOA RD",
+    "city": "Houston",
+    "county": "Harris County",
+    "county_slug": "harris",
+    "naics_label": "332420 \u00b7 Fabricated Metals",
+    "lat": 29.620754,
+    "lng": -95.295616
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 104578,
+    "air_releases_pounds": 16,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 104562,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 2187.9,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 4571
+      },
+      {
+        "year": 2024,
+        "value": 104578
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 53631,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2203
+        },
+        {
+          "year": 2024,
+          "value": 53631
+        }
+      ],
+      "yoy_pct_change": 2334.5,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 27758,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1542
+        },
+        {
+          "year": 2024,
+          "value": 27758
+        }
+      ],
+      "yoy_pct_change": 1700.1,
+      "long_arc_pct_change": 1700.1,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Mixture",
+      "cas": "MIXTURE",
+      "category": "general",
+      "total_pounds_recent": 18450,
+      "history": [
+        {
+          "year": 2024,
+          "value": 18450
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 4739,
+      "history": [
+        {
+          "year": 2023,
+          "value": 826
+        },
+        {
+          "year": 2024,
+          "value": 4739
+        }
+      ],
+      "yoy_pct_change": 473.7,
+      "long_arc_pct_change": 473.7,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Chromium",
+      "summary": "Chromium releases at Applied Cryo Technologies rose from 2k lb to 54k lb (24.3\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 2334.5,
+      "magnitude_abs": 51428.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 2203
+        },
+        {
+          "year": 2024,
+          "value": 53631
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Nickel",
+      "summary": "Nickel releases at Applied Cryo Technologies rose from 2k lb to 28k lb (18.0\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 1700.1,
+      "magnitude_abs": 26216.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 1542
+        },
+        {
+          "year": 2024,
+          "value": 27758
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 51295,
+    "pct_low_income": 38.8,
+    "pct_people_of_color": 91.2,
+    "pct_under_5": 8.1,
+    "pct_over_64": 9.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (34 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

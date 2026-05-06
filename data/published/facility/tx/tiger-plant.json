@@ -1,0 +1,200 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "tiger-plant",
+    "name": "Tiger Plant",
+    "parent_company": "Enlink Midstream Operating LP",
+    "address": "31783 US HWY 285",
+    "city": "Orla",
+    "county": "Culberson County",
+    "county_slug": "culberson",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.678875,
+    "lng": -103.777646
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 11005,
+    "air_releases_pounds": 5329,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 5676,
+    "chemicals_reported": 6,
+    "yoy_pct_change": 30.4,
+    "long_arc_pct_change": 29.8,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 8477
+      },
+      {
+        "year": 2023,
+        "value": 8440
+      },
+      {
+        "year": 2024,
+        "value": 11005
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 5650,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4490
+        },
+        {
+          "year": 2023,
+          "value": 4929
+        },
+        {
+          "year": 2024,
+          "value": 5650
+        }
+      ],
+      "yoy_pct_change": 14.6,
+      "long_arc_pct_change": 25.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 4478,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2849
+        },
+        {
+          "year": 2023,
+          "value": 3290
+        },
+        {
+          "year": 2024,
+          "value": 4478
+        }
+      ],
+      "yoy_pct_change": 36.1,
+      "long_arc_pct_change": 57.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 734,
+      "history": [
+        {
+          "year": 2022,
+          "value": 151
+        },
+        {
+          "year": 2023,
+          "value": 133
+        },
+        {
+          "year": 2024,
+          "value": 734
+        }
+      ],
+      "yoy_pct_change": 451.9,
+      "long_arc_pct_change": 386.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 107,
+      "history": [
+        {
+          "year": 2022,
+          "value": 69
+        },
+        {
+          "year": 2023,
+          "value": 61
+        },
+        {
+          "year": 2024,
+          "value": 107
+        }
+      ],
+      "yoy_pct_change": 75.4,
+      "long_arc_pct_change": 55.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 26,
+      "history": [
+        {
+          "year": 2022,
+          "value": 19
+        },
+        {
+          "year": 2023,
+          "value": 17
+        },
+        {
+          "year": 2024,
+          "value": 26
+        }
+      ],
+      "yoy_pct_change": 52.9,
+      "long_arc_pct_change": 36.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 10,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10
+        },
+        {
+          "year": 2023,
+          "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 10
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 2181,
+    "pct_low_income": 22.2,
+    "pct_people_of_color": 88.6,
+    "pct_under_5": 9.9,
+    "pct_over_64": 21.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Culberson County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

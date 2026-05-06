@@ -1,0 +1,424 @@
+{
+  "place": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "merkel",
+    "name": "Merkel",
+    "fips": "4847796",
+    "population": 2646,
+    "county_name": "Taylor",
+    "county_fips": "48441"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 3,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.2885,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.2885
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0981,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0981
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2012)",
+      "current": 63332,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -35.7,
+      "long_arc_pct_change": -24.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 83298
+        },
+        {
+          "year": 2011,
+          "value": 98420
+        },
+        {
+          "year": 2012,
+          "value": 63332
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 7950,
+    "violations_5yr_total": 13,
+    "health_based_5yr_total": 3,
+    "unresolved_total": 3,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "blair-wsc",
+        "state": "tx",
+        "state_label": "Texas",
+        "name": "Blair Wsc",
+        "pwsid": "TX2210024",
+        "population_served": 957,
+        "health_based_violations_5yr": 3,
+        "unresolved": true
+      },
+      {
+        "slug": "merkel",
+        "state": "tx",
+        "state_label": "Texas",
+        "name": "City Of Merkel",
+        "pwsid": "TX2210002",
+        "population_served": 3573,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sun-wsc",
+        "state": "tx",
+        "state_label": "Texas",
+        "name": "Sun Wsc",
+        "pwsid": "TX2210015",
+        "population_served": 3420,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2024 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX2210015"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7500",
+      "summary": "Unresolved Volatile Organic Chemical Rule violation cited in 2021 (contaminant 7500).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX2210015"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Chlorine",
+      "summary": "Unresolved Disinfectants and Disinfection Byproducts (Stage 2) violation cited in 2023 (chlorine).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX2210024"
+      }
+    }
+  ],
+  "equity": {
+    "population": 2646,
+    "pct_low_income": 15.0,
+    "pct_people_of_color": 28.900000000000006,
+    "pct_under_5": 8.6,
+    "pct_over_64": 12.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Merkel, Texas (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.5,
+      "age_adjusted": 10.5,
+      "state_mean": 9.5,
+      "us_mean": 10.0,
+      "vs_state_pp": 1.01,
+      "vs_state_pct": 10.6,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.48,
+      "vs_us_pct": 4.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 8.6,
+      "age_adjusted": 7.4,
+      "state_mean": 5.4,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.96,
+      "vs_state_pct": 36.0,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.9,
+      "vs_us_pct": 34.5,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.3,
+      "age_adjusted": 6.0,
+      "state_mean": 5.4,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.62,
+      "vs_state_pct": 11.5,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.69,
+      "vs_us_pct": 13.0,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 13.8,
+      "age_adjusted": 11.7,
+      "state_mean": 12.3,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.57,
+      "vs_state_pct": -4.6,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.24,
+      "vs_us_pct": 11.9,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 19.2,
+      "age_adjusted": 20.3,
+      "state_mean": 17.1,
+      "us_mean": 16.8,
+      "vs_state_pp": 3.24,
+      "vs_state_pct": 19.0,
+      "vs_state_class": "worse",
+      "vs_us_pp": 3.55,
+      "vs_us_pct": 21.2,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "tye",
+      "name": "Tye",
+      "population": 1091,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 36.7,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "tuscola",
+      "name": "Tuscola",
+      "population": 697,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "buffalo-gap",
+      "name": "Buffalo Gap",
+      "population": 579,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "lawn",
+      "name": "Lawn",
+      "population": 411,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "bushland",
+      "name": "Bushland",
+      "population": 2640,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "stanton",
+      "name": "Stanton",
+      "population": 2667,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 37.0,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T13:59:37Z"
+}

@@ -1,0 +1,199 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "roberts-ranch-gas-plant",
+    "name": "Roberts Ranch Gas Plant",
+    "parent_company": "Phillips 66 Co",
+    "address": "14401 FM 3503",
+    "city": "Midland",
+    "county": "Midland County",
+    "county_slug": "midland",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.789554,
+    "lng": -102.247781
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 12948,
+    "air_releases_pounds": 11500,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1448,
+    "chemicals_reported": 7,
+    "yoy_pct_change": 162.1,
+    "long_arc_pct_change": 129.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 5636
+      },
+      {
+        "year": 2023,
+        "value": 4940
+      },
+      {
+        "year": 2024,
+        "value": 12948
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 4483,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1183
+        },
+        {
+          "year": 2024,
+          "value": 4483
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 279.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Hydrogen sulfide",
+      "cas": "7783-06-4",
+      "category": "general",
+      "total_pounds_recent": 3210,
+      "history": [
+        {
+          "year": 2024,
+          "value": 3210
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 1800,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2122
+        },
+        {
+          "year": 2024,
+          "value": 1800
+        }
+      ],
+      "yoy_pct_change": -15.2,
+      "long_arc_pct_change": -15.2,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 1507,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1380
+        },
+        {
+          "year": 2023,
+          "value": 1566
+        },
+        {
+          "year": 2024,
+          "value": 1507
+        }
+      ],
+      "yoy_pct_change": -3.8,
+      "long_arc_pct_change": 9.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1076,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1349
+        },
+        {
+          "year": 2023,
+          "value": 366
+        },
+        {
+          "year": 2024,
+          "value": 1076
+        }
+      ],
+      "yoy_pct_change": 194.0,
+      "long_arc_pct_change": -20.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 788,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1050
+        },
+        {
+          "year": 2023,
+          "value": 886
+        },
+        {
+          "year": 2024,
+          "value": 788
+        }
+      ],
+      "yoy_pct_change": -11.1,
+      "long_arc_pct_change": -25.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 84,
+      "history": [
+        {
+          "year": 2024,
+          "value": 84
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 169393,
+    "pct_low_income": 10.8,
+    "pct_people_of_color": 57.6,
+    "pct_under_5": 8.5,
+    "pct_over_64": 10.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Midland County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

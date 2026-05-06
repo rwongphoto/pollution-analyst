@@ -1,0 +1,188 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "silver-oak-facility",
+    "name": "Silver Oak Facility",
+    "parent_company": "Targa Resources CORP",
+    "address": "8402 CR 107",
+    "city": "Tuleta",
+    "county": "Bee County",
+    "county_slug": "bee",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 28.556041,
+    "lng": -97.856357
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 27802,
+    "air_releases_pounds": 5146,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 22656,
+    "chemicals_reported": 6,
+    "yoy_pct_change": -40.0,
+    "long_arc_pct_change": 146.2,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 11292
+      },
+      {
+        "year": 2023,
+        "value": 46362
+      },
+      {
+        "year": 2024,
+        "value": 27802
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 12548,
+      "history": [
+        {
+          "year": 2022,
+          "value": 7198
+        },
+        {
+          "year": 2023,
+          "value": 13224
+        },
+        {
+          "year": 2024,
+          "value": 12548
+        }
+      ],
+      "yoy_pct_change": -5.1,
+      "long_arc_pct_change": 74.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 4480,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2299
+        },
+        {
+          "year": 2023,
+          "value": 11403
+        },
+        {
+          "year": 2024,
+          "value": 4480
+        }
+      ],
+      "yoy_pct_change": -60.7,
+      "long_arc_pct_change": 94.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 3357,
+      "history": [
+        {
+          "year": 2023,
+          "value": 5305
+        },
+        {
+          "year": 2024,
+          "value": 3357
+        }
+      ],
+      "yoy_pct_change": -36.7,
+      "long_arc_pct_change": -36.7,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 3017,
+      "history": [
+        {
+          "year": 2023,
+          "value": 5857
+        },
+        {
+          "year": 2024,
+          "value": 3017
+        }
+      ],
+      "yoy_pct_change": -48.5,
+      "long_arc_pct_change": -48.5,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 2406,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1792
+        },
+        {
+          "year": 2023,
+          "value": 9703
+        },
+        {
+          "year": 2024,
+          "value": 2406
+        }
+      ],
+      "yoy_pct_change": -75.2,
+      "long_arc_pct_change": 34.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 1994,
+      "history": [
+        {
+          "year": 2023,
+          "value": 870
+        },
+        {
+          "year": 2024,
+          "value": 1994
+        }
+      ],
+      "yoy_pct_change": 129.2,
+      "long_arc_pct_change": 129.2,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 30977,
+    "pct_low_income": 20.0,
+    "pct_people_of_color": 70.2,
+    "pct_under_5": 5.4,
+    "pct_over_64": 12.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Bee County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

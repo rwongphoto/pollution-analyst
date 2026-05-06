@@ -1,0 +1,263 @@
+{
+  "utility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "east-garrett-wsc",
+    "name": "East Garrett Wsc",
+    "pwsid": "TX0700024",
+    "population_served": 1521,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Ennis"
+    ],
+    "county": "Ellis County",
+    "county_slug": "ellis",
+    "place_slug": "ennis"
+  },
+  "reporting_period": {
+    "start": "2023-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 2,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 3
+  },
+  "violations": [
+    {
+      "year": 2023,
+      "contaminant": "Chlorine",
+      "contaminant_code": "0999",
+      "severity": "monitoring",
+      "rule": "Disinfectants and Disinfection Byproducts (Stage 2)",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Chlorine",
+      "contaminant_code": "0999",
+      "severity": "monitoring",
+      "rule": "Disinfectants and Disinfection Byproducts (Stage 2)",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2023,
+        "value": 2
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Chlorine",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Chlorine",
+      "summary": "Unresolved Disinfectants and Disinfection Byproducts (Stage 2) violation cited in 2023 (chlorine).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX0700024"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Chlorine",
+      "summary": "Unresolved Disinfectants and Disinfection Byproducts (Stage 2) violation cited in 2023 (chlorine).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX0700024"
+      }
+    }
+  ],
+  "equity": {
+    "population": 20709,
+    "pct_low_income": 11.5,
+    "pct_people_of_color": 60.0,
+    "pct_under_5": 5.8,
+    "pct_over_64": 11.9,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 55.4,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 48.9,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 42.0,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 38.8,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 52.0,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 25.8,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 53.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 88.6,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 51.4,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 75.8,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 20.2,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 104.7
+      },
+      {
+        "label": "Ozone",
+        "score": 79.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 78.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 74.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 80.6
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 51.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 81.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 158.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 91.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 123.9
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 36.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 33.6
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Ennis, Texas (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:31Z"
+}

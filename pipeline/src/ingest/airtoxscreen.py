@@ -59,6 +59,7 @@ VINTAGE = 2020
 # CA sits cleanly in R9.
 STATE_TO_REGION: dict[str, str] = {
     "CA": "9",
+    "TX": "6b",
     # Add more as states register: Region 1 = CT/ME/MA/NH/RI/VT,
     # 2 = NJ/NY, 3 = DE/DC/MD/PA/VA/WV, 4a = AL/FL/GA/KY, 4b = MS/NC/SC/TN,
     # 5a = IL/IN/MI, 5b = MN/OH/WI, 6a = AR/LA/NM, 6b = OK/TX, 7 = IA/KS/MO/NE,
@@ -132,12 +133,22 @@ def _cache_dir() -> Path:
     return RAW_ROOT / "airtoxscreen" / str(VINTAGE)
 
 
+def _summaries_region(region: str) -> str:
+    """Pollutant-Summaries directory tag — unsplit even when Cancer is split.
+
+    EPA splits Region 5 + 6 into a/b halves for the per-pollutant Cancer XLSX
+    only; the Pollutant-Summaries hierarchy is unsplit (Region5/, Region6/),
+    so a state mapped to "5a" / "5b" / "6a" / "6b" must drop the suffix here.
+    """
+    return region.rstrip("ab")
+
+
 def _cancer_xlsx_path(region: str) -> Path:
     return _cache_dir() / f"Region{region}_CancerRisk_by_block_poll.xlsx"
 
 
 def _ambconc_zip_path(region: str, pollutant_token: str) -> Path:
-    return _cache_dir() / f"{pollutant_token}_AMBCONC_R{region}.zip"
+    return _cache_dir() / f"{pollutant_token}_AMBCONC_R{_summaries_region(region)}.zip"
 
 
 def _download(url: str, dest: Path, min_bytes: int) -> Path:
@@ -318,9 +329,10 @@ def _load_ambconc(
     if cache_only and not _is_cached(path, _AMBCONC_MIN_BYTES):
         return []
     if not _is_cached(path, _AMBCONC_MIN_BYTES):
+        sreg = _summaries_region(region)
         url = (
-            f"{GAFTP_BASE}/{VINTAGE}/Pollutant%20Summaries/Region{region}/"
-            f"{pollutant_token}_AMBCONC_R{region}.zip"
+            f"{GAFTP_BASE}/{VINTAGE}/Pollutant%20Summaries/Region{sreg}/"
+            f"{pollutant_token}_AMBCONC_R{sreg}.zip"
         )
         try:
             _download(url, path, _AMBCONC_MIN_BYTES)

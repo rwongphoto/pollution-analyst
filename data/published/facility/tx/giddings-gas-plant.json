@@ -1,0 +1,199 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "giddings-gas-plant",
+    "name": "Giddings Gas Plant",
+    "parent_company": "Phillips 66 Co",
+    "address": "3002 FM 448",
+    "city": "Giddings",
+    "county": "Fayette County",
+    "county_slug": "fayette",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 30.14,
+    "lng": -96.964599
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 36270,
+    "air_releases_pounds": 21040,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 15230,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 161.7,
+    "long_arc_pct_change": 7.5,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 33750
+      },
+      {
+        "year": 2023,
+        "value": 13861
+      },
+      {
+        "year": 2024,
+        "value": 36270
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 11800,
+      "history": [
+        {
+          "year": 2022,
+          "value": 9050
+        },
+        {
+          "year": 2023,
+          "value": 981
+        },
+        {
+          "year": 2024,
+          "value": 11800
+        }
+      ],
+      "yoy_pct_change": 1102.9,
+      "long_arc_pct_change": 30.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 10570,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1230
+        },
+        {
+          "year": 2023,
+          "value": 100
+        },
+        {
+          "year": 2024,
+          "value": 10570
+        }
+      ],
+      "yoy_pct_change": 10470.0,
+      "long_arc_pct_change": 759.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 6900,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1980
+        },
+        {
+          "year": 2023,
+          "value": 270
+        },
+        {
+          "year": 2024,
+          "value": 6900
+        }
+      ],
+      "yoy_pct_change": 2455.6,
+      "long_arc_pct_change": 248.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 5420,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2300
+        },
+        {
+          "year": 2023,
+          "value": 330
+        },
+        {
+          "year": 2024,
+          "value": 5420
+        }
+      ],
+      "yoy_pct_change": 1542.4,
+      "long_arc_pct_change": 135.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 1580,
+      "history": [
+        {
+          "year": 2022,
+          "value": 990
+        },
+        {
+          "year": 2023,
+          "value": 180
+        },
+        {
+          "year": 2024,
+          "value": 1580
+        }
+      ],
+      "yoy_pct_change": 777.8,
+      "long_arc_pct_change": 59.6,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0000050000",
+      "summary": "0000050000 releases at Giddings Gas Plant fell from 12k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -12000.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 17000
+        },
+        {
+          "year": 2023,
+          "value": 12000
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 2401,
+    "pct_low_income": 36.4,
+    "pct_people_of_color": 40.4,
+    "pct_under_5": 6.7,
+    "pct_over_64": 19.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

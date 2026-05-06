@@ -1,0 +1,220 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "nov-downhole-conroe",
+    "name": "Nov Downhole Conroe",
+    "parent_company": "Nov INC",
+    "address": "500 CONROE PARK W DR",
+    "city": "Conroe",
+    "county": "Montgomery County",
+    "county_slug": "montgomery",
+    "naics_label": "333132 \u00b7 Machinery",
+    "lat": 30.355485,
+    "lng": -95.455364
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 123919,
+    "air_releases_pounds": 1203,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 122716,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 672.1,
+    "long_arc_pct_change": 1817.7,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 6462
+      },
+      {
+        "year": 2021,
+        "value": 2306
+      },
+      {
+        "year": 2022,
+        "value": 1299
+      },
+      {
+        "year": 2023,
+        "value": 16050
+      },
+      {
+        "year": 2024,
+        "value": 123919
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Silver",
+      "cas": "7440-22-4",
+      "category": "general",
+      "total_pounds_recent": 57739,
+      "history": [
+        {
+          "year": 2024,
+          "value": 57739
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Copper",
+      "cas": "7440-50-8",
+      "category": "general",
+      "total_pounds_recent": 28364,
+      "history": [
+        {
+          "year": 2020,
+          "value": 293
+        },
+        {
+          "year": 2024,
+          "value": 28364
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 27912,
+      "history": [
+        {
+          "year": 2020,
+          "value": 5540
+        },
+        {
+          "year": 2021,
+          "value": 2194
+        },
+        {
+          "year": 2022,
+          "value": 1299
+        },
+        {
+          "year": 2023,
+          "value": 8304
+        },
+        {
+          "year": 2024,
+          "value": 27912
+        }
+      ],
+      "yoy_pct_change": 236.1,
+      "long_arc_pct_change": 403.8,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 9905,
+      "history": [
+        {
+          "year": 2016,
+          "value": 13
+        },
+        {
+          "year": 2017,
+          "value": 44
+        },
+        {
+          "year": 2018,
+          "value": 156
+        },
+        {
+          "year": 2019,
+          "value": 45
+        },
+        {
+          "year": 2020,
+          "value": 4
+        },
+        {
+          "year": 2024,
+          "value": 9905
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2016
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Nickel",
+      "summary": "Nickel releases at Nov Downhole Conroe rose from 8k lb to 28k lb (3.4\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 236.1,
+      "magnitude_abs": 19607.8,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2016,
+          "value": 19
+        },
+        {
+          "year": 2017,
+          "value": 9
+        },
+        {
+          "year": 2018,
+          "value": 11
+        },
+        {
+          "year": 2019,
+          "value": 20
+        },
+        {
+          "year": 2020,
+          "value": 5540
+        },
+        {
+          "year": 2021,
+          "value": 2194
+        },
+        {
+          "year": 2022,
+          "value": 1299
+        },
+        {
+          "year": 2023,
+          "value": 8304
+        },
+        {
+          "year": 2024,
+          "value": 27912
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 32717,
+    "pct_low_income": 38.1,
+    "pct_people_of_color": 50.6,
+    "pct_under_5": 7.0,
+    "pct_over_64": 14.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (21 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

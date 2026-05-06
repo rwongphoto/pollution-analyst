@@ -1,0 +1,140 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "raven-plant",
+    "name": "Raven Plant",
+    "parent_company": "Arcanum Infrastructure LLC",
+    "address": "9300 NEEDLEPOINT RD",
+    "city": "Baytown",
+    "county": "Harris County",
+    "county_slug": "harris",
+    "naics_label": "325199 \u00b7 Chemicals",
+    "lat": 29.813278,
+    "lng": -94.919785
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 14716,
+    "air_releases_pounds": 14716,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 15.7,
+    "long_arc_pct_change": 103.2,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 7244
+      },
+      {
+        "year": 2020,
+        "value": 34629
+      },
+      {
+        "year": 2021,
+        "value": 23152
+      },
+      {
+        "year": 2022,
+        "value": 20761
+      },
+      {
+        "year": 2023,
+        "value": 12723
+      },
+      {
+        "year": 2024,
+        "value": 14716
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene",
+      "cas": "74-85-1",
+      "category": "general",
+      "total_pounds_recent": 11382,
+      "history": [
+        {
+          "year": 2019,
+          "value": 7244
+        },
+        {
+          "year": 2020,
+          "value": 33401
+        },
+        {
+          "year": 2021,
+          "value": 17435
+        },
+        {
+          "year": 2022,
+          "value": 13681
+        },
+        {
+          "year": 2023,
+          "value": 7954
+        },
+        {
+          "year": 2024,
+          "value": 11382
+        }
+      ],
+      "yoy_pct_change": 43.1,
+      "long_arc_pct_change": 57.1,
+      "long_arc_baseline_year": 2019
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 3334,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1228
+        },
+        {
+          "year": 2021,
+          "value": 5717
+        },
+        {
+          "year": 2022,
+          "value": 7080
+        },
+        {
+          "year": 2023,
+          "value": 4769
+        },
+        {
+          "year": 2024,
+          "value": 3334
+        }
+      ],
+      "yoy_pct_change": -30.1,
+      "long_arc_pct_change": 171.4,
+      "long_arc_baseline_year": 2020
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 17699,
+    "pct_low_income": 12.7,
+    "pct_people_of_color": 46.9,
+    "pct_under_5": 5.4,
+    "pct_over_64": 13.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (6 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

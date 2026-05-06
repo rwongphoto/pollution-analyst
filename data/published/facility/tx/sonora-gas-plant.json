@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "sonora-gas-plant",
+    "name": "Sonora Gas Plant",
+    "parent_company": "Enterprise Products Operating LLC",
+    "address": "19 MI S OF SONORA ON HWY 277",
+    "city": "Sonora",
+    "county": "Sutton County",
+    "county_slug": "sutton",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 30.712795,
+    "lng": -100.637298
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1110,
+    "air_releases_pounds": 1110,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 53.4,
+    "long_arc_pct_change": -27.2,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 1524
+      },
+      {
+        "year": 2023,
+        "value": 723
+      },
+      {
+        "year": 2024,
+        "value": 1110
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1110,
+      "history": [
+        {
+          "year": 2022,
+          "value": 712
+        },
+        {
+          "year": 2023,
+          "value": 723
+        },
+        {
+          "year": 2024,
+          "value": 1110
+        }
+      ],
+      "yoy_pct_change": 53.4,
+      "long_arc_pct_change": 55.9,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 3345,
+    "pct_low_income": 16.6,
+    "pct_people_of_color": 76.4,
+    "pct_under_5": 15.2,
+    "pct_over_64": 13.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Sutton County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

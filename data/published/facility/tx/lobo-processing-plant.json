@@ -1,0 +1,219 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "lobo-processing-plant",
+    "name": "Lobo Processing Plant",
+    "parent_company": "Enlink Midstream Operating LP",
+    "address": "TAKE HIGHWAY 302 NE 6.25 MI TO SITE ON THE LEFT",
+    "city": "Mentone",
+    "county": "Loving County",
+    "county_slug": "loving",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.706511,
+    "lng": -103.598013
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 24860,
+    "air_releases_pounds": 12334,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 12526,
+    "chemicals_reported": 7,
+    "yoy_pct_change": 14.4,
+    "long_arc_pct_change": 22.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 20308
+      },
+      {
+        "year": 2023,
+        "value": 21733
+      },
+      {
+        "year": 2024,
+        "value": 24860
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 11519,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10934
+        },
+        {
+          "year": 2023,
+          "value": 11783
+        },
+        {
+          "year": 2024,
+          "value": 11519
+        }
+      ],
+      "yoy_pct_change": -2.2,
+      "long_arc_pct_change": 5.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 11260,
+      "history": [
+        {
+          "year": 2022,
+          "value": 8292
+        },
+        {
+          "year": 2023,
+          "value": 8853
+        },
+        {
+          "year": 2024,
+          "value": 11260
+        }
+      ],
+      "yoy_pct_change": 27.2,
+      "long_arc_pct_change": 35.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1909,
+      "history": [
+        {
+          "year": 2022,
+          "value": 146
+        },
+        {
+          "year": 2023,
+          "value": 147
+        },
+        {
+          "year": 2024,
+          "value": 1909
+        }
+      ],
+      "yoy_pct_change": 1198.6,
+      "long_arc_pct_change": 1207.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 113,
+      "history": [
+        {
+          "year": 2022,
+          "value": 67
+        },
+        {
+          "year": 2023,
+          "value": 67
+        },
+        {
+          "year": 2024,
+          "value": 113
+        }
+      ],
+      "yoy_pct_change": 68.7,
+      "long_arc_pct_change": 68.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 37,
+      "history": [
+        {
+          "year": 2022,
+          "value": 18
+        },
+        {
+          "year": 2023,
+          "value": 18
+        },
+        {
+          "year": 2024,
+          "value": 37
+        }
+      ],
+      "yoy_pct_change": 105.6,
+      "long_arc_pct_change": 105.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 12,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10
+        },
+        {
+          "year": 2023,
+          "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 12
+        }
+      ],
+      "yoy_pct_change": 20.0,
+      "long_arc_pct_change": 20.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 10,
+      "history": [
+        {
+          "year": 2023,
+          "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 10
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 96,
+    "pct_low_income": 5.2,
+    "pct_people_of_color": 5.200000000000003,
+    "pct_under_5": 5.2,
+    "pct_over_64": 35.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Loving County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

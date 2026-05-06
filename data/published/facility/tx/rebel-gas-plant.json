@@ -1,0 +1,195 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "rebel-gas-plant",
+    "name": "Rebel Gas Plant",
+    "parent_company": "Energy Transfer LP",
+    "address": "13788 HWY 158",
+    "city": "Garden City",
+    "county": "Glasscock County",
+    "county_slug": "glasscock",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.888039,
+    "lng": -101.706339
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 21185,
+    "air_releases_pounds": 21185,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 7,
+    "yoy_pct_change": 92.2,
+    "long_arc_pct_change": 40.5,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 15081
+      },
+      {
+        "year": 2023,
+        "value": 11020
+      },
+      {
+        "year": 2024,
+        "value": 21185
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 16327,
+      "history": [
+        {
+          "year": 2022,
+          "value": 13000
+        },
+        {
+          "year": 2023,
+          "value": 10563
+        },
+        {
+          "year": 2024,
+          "value": 16327
+        }
+      ],
+      "yoy_pct_change": 54.6,
+      "long_arc_pct_change": 25.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 3599,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1236
+        },
+        {
+          "year": 2023,
+          "value": 457
+        },
+        {
+          "year": 2024,
+          "value": 3599
+        }
+      ],
+      "yoy_pct_change": 687.7,
+      "long_arc_pct_change": 191.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 768,
+      "history": [
+        {
+          "year": 2022,
+          "value": 630
+        },
+        {
+          "year": 2024,
+          "value": 768
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 21.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 183,
+      "history": [
+        {
+          "year": 2024,
+          "value": 183
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 160,
+      "history": [
+        {
+          "year": 2022,
+          "value": 125
+        },
+        {
+          "year": 2024,
+          "value": 160
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 27.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 132,
+      "history": [
+        {
+          "year": 2022,
+          "value": 90
+        },
+        {
+          "year": 2024,
+          "value": 132
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 46.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 16,
+      "history": [
+        {
+          "year": 2024,
+          "value": 16
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 1068,
+    "pct_low_income": 5.2,
+    "pct_people_of_color": 36.1,
+    "pct_under_5": 6.0,
+    "pct_over_64": 12.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Glasscock County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

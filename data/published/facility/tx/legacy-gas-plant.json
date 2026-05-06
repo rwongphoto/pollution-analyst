@@ -1,0 +1,198 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "legacy-gas-plant",
+    "name": "Legacy Gas Plant",
+    "parent_company": "Targa Resources CORP",
+    "address": "2010 W COUNTY RD 320",
+    "city": "Midland",
+    "county": "Midland County",
+    "county_slug": "midland",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.674855,
+    "lng": -101.986317
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 113285,
+    "air_releases_pounds": 13350,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 99935,
+    "chemicals_reported": 6,
+    "yoy_pct_change": 134.3,
+    "long_arc_pct_change": 134.3,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 48358
+      },
+      {
+        "year": 2024,
+        "value": 113285
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 49325,
+      "history": [
+        {
+          "year": 2023,
+          "value": 28514
+        },
+        {
+          "year": 2024,
+          "value": 49325
+        }
+      ],
+      "yoy_pct_change": 73.0,
+      "long_arc_pct_change": 73.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 26133,
+      "history": [
+        {
+          "year": 2022,
+          "value": 19
+        },
+        {
+          "year": 2024,
+          "value": 26133
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 14995,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6268
+        },
+        {
+          "year": 2024,
+          "value": 14995
+        }
+      ],
+      "yoy_pct_change": 139.2,
+      "long_arc_pct_change": 139.2,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 11139,
+      "history": [
+        {
+          "year": 2022,
+          "value": 56
+        },
+        {
+          "year": 2024,
+          "value": 11139
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 8630,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6505
+        },
+        {
+          "year": 2024,
+          "value": 8630
+        }
+      ],
+      "yoy_pct_change": 32.7,
+      "long_arc_pct_change": 32.7,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 3063,
+      "history": [
+        {
+          "year": 2023,
+          "value": 7072
+        },
+        {
+          "year": 2024,
+          "value": 3063
+        }
+      ],
+      "yoy_pct_change": -56.7,
+      "long_arc_pct_change": -56.7,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Legacy Gas Plant rose from 29k lb to 49k lb between 2023 and 2024.",
+      "magnitude_pct": 73.0,
+      "magnitude_abs": 20811.5,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 145
+        },
+        {
+          "year": 2023,
+          "value": 28514
+        },
+        {
+          "year": 2024,
+          "value": 49325
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 169393,
+    "pct_low_income": 10.8,
+    "pct_people_of_color": 57.6,
+    "pct_under_5": 8.5,
+    "pct_over_64": 10.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Midland County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

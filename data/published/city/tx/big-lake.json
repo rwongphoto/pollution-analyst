@@ -1,0 +1,545 @@
+{
+  "place": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "big-lake",
+    "name": "Big Lake",
+    "fips": "4808212",
+    "population": 2977,
+    "county_name": "Reagan",
+    "county_fips": "48383"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.1749,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.1749
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1821,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1821
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 345361,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -5.1,
+      "long_arc_pct_change": 921.6,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 33805
+        },
+        {
+          "year": 2011,
+          "value": 39902
+        },
+        {
+          "year": 2012,
+          "value": 48177
+        },
+        {
+          "year": 2013,
+          "value": 48139
+        },
+        {
+          "year": 2014,
+          "value": 83099
+        },
+        {
+          "year": 2015,
+          "value": 122596
+        },
+        {
+          "year": 2020,
+          "value": 106752
+        },
+        {
+          "year": 2021,
+          "value": 343751
+        },
+        {
+          "year": 2022,
+          "value": 363891
+        },
+        {
+          "year": 2023,
+          "value": 345361
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 2965,
+    "violations_5yr_total": 6,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 1,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "reagan-county-wsd",
+        "state": "tx",
+        "state_label": "Texas",
+        "name": "Reagan County Wsd",
+        "pwsid": "TX1920007",
+        "population_served": 0,
+        "health_based_violations_5yr": 1,
+        "unresolved": false
+      },
+      {
+        "slug": "big-lake",
+        "state": "tx",
+        "state_label": "Texas",
+        "name": "City Of Big Lake",
+        "pwsid": "TX1920001",
+        "population_served": 2965,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7000",
+      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2025 (contaminant 7000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX1920001"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 5200",
+      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX1920007"
+      }
+    }
+  ],
+  "equity": {
+    "population": 2977,
+    "pct_low_income": 8.0,
+    "pct_people_of_color": 78.9,
+    "pct_under_5": 9.5,
+    "pct_over_64": 7.9,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 10.4,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 25.4,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 69.2,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 12.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 0.6,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 1.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 70.6,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 68.2,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 77.9,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 7.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 22.6
+      },
+      {
+        "label": "Ozone",
+        "score": 156.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 139.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 28.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 0.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 132.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 138.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 84.8
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Big Lake, Texas (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 9.0,
+      "age_adjusted": 8.9,
+      "state_mean": 9.5,
+      "us_mean": 10.0,
+      "vs_state_pp": -0.59,
+      "vs_state_pct": -6.2,
+      "vs_state_class": "better",
+      "vs_us_pp": -1.12,
+      "vs_us_pct": -11.2,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 5.5,
+      "age_adjusted": 5.2,
+      "state_mean": 5.4,
+      "us_mean": 5.5,
+      "vs_state_pp": -0.24,
+      "vs_state_pct": -4.4,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.3,
+      "vs_us_pct": -5.5,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 5.6,
+      "age_adjusted": 5.6,
+      "state_mean": 5.4,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.22,
+      "vs_state_pct": 4.1,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.29,
+      "vs_us_pct": 5.5,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 14.1,
+      "age_adjusted": 13.4,
+      "state_mean": 12.3,
+      "us_mean": 10.5,
+      "vs_state_pp": 1.13,
+      "vs_state_pct": 9.2,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.94,
+      "vs_us_pct": 28.1,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.1,
+      "age_adjusted": 17.1,
+      "state_mean": 17.1,
+      "us_mean": 16.8,
+      "vs_state_pp": 0.04,
+      "vs_state_pct": 0.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.35,
+      "vs_us_pct": 2.1,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "spearman",
+      "name": "Spearman",
+      "population": 2989,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 35.9,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "galena-park",
+      "name": "Galena Park",
+      "population": 10641,
+      "facilities_count": 2,
+      "total_releases_pounds": 34431,
+      "dominant_medium": "land",
+      "ej_pct_avg": 85.0,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+47 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "castroville",
+      "name": "Castroville",
+      "population": 2994,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "haskell",
+      "name": "Haskell",
+      "population": 2956,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 33.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "olney",
+      "name": "Olney",
+      "population": 3016,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 36.9,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "nocona",
+      "name": "Nocona",
+      "population": 3027,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 41.7,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T13:59:36Z"
+}

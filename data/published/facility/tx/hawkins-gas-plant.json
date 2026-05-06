@@ -1,0 +1,130 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "hawkins-gas-plant",
+    "name": "Hawkins Gas Plant",
+    "parent_company": "Merit Energy Co",
+    "address": "245 PR 7651",
+    "city": "Hawkins",
+    "county": "Wood County",
+    "county_slug": "wood",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.609835,
+    "lng": -95.199213
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 24166,
+    "air_releases_pounds": 4801,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 19365,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 100.6,
+    "long_arc_pct_change": 367.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 5175
+      },
+      {
+        "year": 2023,
+        "value": 12044
+      },
+      {
+        "year": 2024,
+        "value": 24166
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 19755,
+      "history": [
+        {
+          "year": 2023,
+          "value": 8310
+        },
+        {
+          "year": 2024,
+          "value": 19755
+        }
+      ],
+      "yoy_pct_change": 137.7,
+      "long_arc_pct_change": 137.7,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 4411,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4577
+        },
+        {
+          "year": 2023,
+          "value": 3734
+        },
+        {
+          "year": 2024,
+          "value": 4411
+        }
+      ],
+      "yoy_pct_change": 18.1,
+      "long_arc_pct_change": -3.6,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Benzene",
+      "summary": "Benzene releases at Hawkins Gas Plant rose from 8k lb to 20k lb (2.4\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 137.7,
+      "magnitude_abs": 11445.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 598
+        },
+        {
+          "year": 2023,
+          "value": 8310
+        },
+        {
+          "year": 2024,
+          "value": 19755
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 2561,
+    "pct_low_income": 40.4,
+    "pct_people_of_color": 47.7,
+    "pct_under_5": 5.0,
+    "pct_over_64": 12.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

@@ -1,0 +1,176 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "delaware-basin-gas-plant",
+    "name": "Delaware Basin Gas Plant",
+    "parent_company": "Enterprise Products Operating LLC",
+    "address": "1220 COUNTY ROAD 101",
+    "city": "Coyanosa",
+    "county": "Reeves County",
+    "county_slug": "reeves",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.280719,
+    "lng": -103.1101
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 20493,
+    "air_releases_pounds": 1630,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 18863,
+    "chemicals_reported": 4,
+    "yoy_pct_change": -54.4,
+    "long_arc_pct_change": 359.5,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 4460
+      },
+      {
+        "year": 2023,
+        "value": 44948
+      },
+      {
+        "year": 2024,
+        "value": 20493
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 8793,
+      "history": [
+        {
+          "year": 2023,
+          "value": 20480
+        },
+        {
+          "year": 2024,
+          "value": 8793
+        }
+      ],
+      "yoy_pct_change": -57.1,
+      "long_arc_pct_change": -57.1,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 5822,
+      "history": [
+        {
+          "year": 2022,
+          "value": 537
+        },
+        {
+          "year": 2023,
+          "value": 13050
+        },
+        {
+          "year": 2024,
+          "value": 5822
+        }
+      ],
+      "yoy_pct_change": -55.4,
+      "long_arc_pct_change": 983.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 3089,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2307
+        },
+        {
+          "year": 2023,
+          "value": 5681
+        },
+        {
+          "year": 2024,
+          "value": 3089
+        }
+      ],
+      "yoy_pct_change": -45.6,
+      "long_arc_pct_change": 33.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2789,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1268
+        },
+        {
+          "year": 2023,
+          "value": 5737
+        },
+        {
+          "year": 2024,
+          "value": 2789
+        }
+      ],
+      "yoy_pct_change": -51.4,
+      "long_arc_pct_change": 120.0,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Delaware Basin Gas Plant fell from 20k lb to 9k lb (57% lower) between 2023 and 2024.",
+      "magnitude_pct": -57.1,
+      "magnitude_abs": -11687.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 349
+        },
+        {
+          "year": 2023,
+          "value": 20480
+        },
+        {
+          "year": 2024,
+          "value": 8793
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 14022,
+    "pct_low_income": 21.0,
+    "pct_people_of_color": 79.4,
+    "pct_under_5": 5.4,
+    "pct_over_64": 12.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Reeves County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

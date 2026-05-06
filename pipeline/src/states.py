@@ -28,6 +28,14 @@ STATES: dict[str, State] = {
         population=39538223,
         counties_total=58,
     ),
+    "tx": State(
+        slug="tx",
+        abbr="TX",
+        name="Texas",
+        fips="48",
+        population=29145505,
+        counties_total=254,
+    ),
 }
 
 

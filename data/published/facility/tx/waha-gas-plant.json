@@ -1,0 +1,127 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "waha-gas-plant",
+    "name": "Waha Gas Plant",
+    "parent_company": "Energy Transfer LP",
+    "address": "2821 WAHA ROAD 79730",
+    "city": "Coyanosa",
+    "county": "Pecos County",
+    "county_slug": "pecos",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.26781,
+    "lng": -103.084909
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3628,
+    "air_releases_pounds": 3628,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -47.8,
+    "long_arc_pct_change": -32.8,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 5402
+      },
+      {
+        "year": 2023,
+        "value": 6945
+      },
+      {
+        "year": 2024,
+        "value": 3628
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 2073,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2600
+        },
+        {
+          "year": 2024,
+          "value": 2073
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -20.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 964,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1602
+        },
+        {
+          "year": 2023,
+          "value": 1167
+        },
+        {
+          "year": 2024,
+          "value": 964
+        }
+      ],
+      "yoy_pct_change": -17.4,
+      "long_arc_pct_change": -39.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 591,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1200
+        },
+        {
+          "year": 2023,
+          "value": 604
+        },
+        {
+          "year": 2024,
+          "value": 591
+        }
+      ],
+      "yoy_pct_change": -2.1,
+      "long_arc_pct_change": -50.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 15114,
+    "pct_low_income": 23.0,
+    "pct_people_of_color": 76.3,
+    "pct_under_5": 7.4,
+    "pct_over_64": 13.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Pecos County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

@@ -1,0 +1,222 @@
+{
+  "utility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "chinquapin-preparatory-school",
+    "name": "Chinquapin Preparatory School",
+    "pwsid": "TX1011209",
+    "population_served": 148,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Highlands"
+    ],
+    "county": "Harris County",
+    "county_slug": "harris",
+    "place_slug": "highlands"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": true,
+      "description": "OTHER"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7000",
+      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2025 (contaminant 7000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX1011209"
+      }
+    }
+  ],
+  "equity": {
+    "population": 7359,
+    "pct_low_income": 15.2,
+    "pct_people_of_color": 49.6,
+    "pct_under_5": 4.0,
+    "pct_over_64": 17.3,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 86.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 57.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 61.8,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 95.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 99.5,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 40.1,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 55.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 93.7,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 99.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 83.7,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 77.3,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 99.0,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.6,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 149.1
+      },
+      {
+        "label": "Ozone",
+        "score": 37.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 102.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 160.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 169.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 67.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 84.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 158.1
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 169.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 139.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 123.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 168.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 42.1
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Highlands, Texas (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:31Z"
+}

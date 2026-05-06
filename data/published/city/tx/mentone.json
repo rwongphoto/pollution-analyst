@@ -1,0 +1,407 @@
+{
+  "place": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "mentone",
+    "name": "Mentone",
+    "fips": "4847676",
+    "population": 15,
+    "county_name": "Loving",
+    "county_fips": "48301"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 3,
+    "utilities_serving": 1,
+    "total_releases_pounds": 38442,
+    "air_releases_pounds": 23456,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 14986,
+    "yoy_pct_change": -19.1,
+    "long_arc_pct_change": 1.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 37812
+      },
+      {
+        "year": 2023,
+        "value": 47507
+      },
+      {
+        "year": 2024,
+        "value": 38442
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 39.8,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 39.8
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.9876,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.9876
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.6776,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.6776
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 23456,
+      "units": "lb",
+      "yoy_pct_change": 7.6,
+      "long_arc_pct_change": 8.8,
+      "baseline_year": 2022,
+      "history": [
+        {
+          "year": 2022,
+          "value": 21553
+        },
+        {
+          "year": 2023,
+          "value": 21798
+        },
+        {
+          "year": 2024,
+          "value": 23456
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2022,
+      "history": [
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 14986,
+      "units": "lb",
+      "yoy_pct_change": -41.7,
+      "long_arc_pct_change": -7.8,
+      "baseline_year": 2022,
+      "history": [
+        {
+          "year": 2022,
+          "value": 16259
+        },
+        {
+          "year": 2023,
+          "value": 25709
+        },
+        {
+          "year": 2024,
+          "value": 14986
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 1291505,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 32.6,
+      "long_arc_pct_change": 438.1,
+      "baseline_year": 2018,
+      "history": [
+        {
+          "year": 2014,
+          "value": 37565
+        },
+        {
+          "year": 2015,
+          "value": 33960
+        },
+        {
+          "year": 2016,
+          "value": 26082
+        },
+        {
+          "year": 2017,
+          "value": 63340
+        },
+        {
+          "year": 2018,
+          "value": 240022
+        },
+        {
+          "year": 2019,
+          "value": 674060
+        },
+        {
+          "year": 2020,
+          "value": 794043
+        },
+        {
+          "year": 2021,
+          "value": 907857
+        },
+        {
+          "year": 2022,
+          "value": 973846
+        },
+        {
+          "year": 2023,
+          "value": 1291505
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "lobo-processing-plant",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "Lobo Processing Plant",
+      "parent_company": "Enlink Midstream Operating LP",
+      "total_pounds_recent": 24860,
+      "yoy_pct_change": 14.4,
+      "top_chemical": "n-Hexane",
+      "city": "Mentone",
+      "lat": 31.706511,
+      "lng": -103.598013
+    },
+    {
+      "slug": "tornado-gas-plant",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "Tornado Gas Plant",
+      "parent_company": "Marathon Petroleum CORP",
+      "total_pounds_recent": 10599,
+      "yoy_pct_change": -38.7,
+      "top_chemical": "n-Hexane",
+      "city": "Mentone",
+      "lat": 31.706511,
+      "lng": -103.598013
+    },
+    {
+      "slug": "loving-gas-plant",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "Loving Gas Plant",
+      "parent_company": "Targa Resources CORP",
+      "total_pounds_recent": 2983,
+      "yoy_pct_change": -64.8,
+      "top_chemical": "n-Hexane",
+      "city": "Mentone",
+      "lat": 31.706511,
+      "lng": -103.598013
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 165,
+    "violations_5yr_total": 80,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 3,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "loving-county-water-system",
+        "state": "tx",
+        "state_label": "Texas",
+        "name": "Loving County Water System",
+        "pwsid": "TX1510001",
+        "population_served": 165,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2022 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX1510001"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2022 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX1510001"
+      }
+    }
+  ],
+  "equity": {
+    "population": 15,
+    "pct_low_income": 0.0,
+    "pct_people_of_color": 0.0,
+    "pct_under_5": 0.0,
+    "pct_over_64": 33.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Mentone, Texas (Census place block groups)"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "quintana",
+      "name": "Quintana",
+      "population": 41,
+      "facilities_count": 1,
+      "total_releases_pounds": 24000,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "goldsmith",
+      "name": "Goldsmith",
+      "population": 234,
+      "facilities_count": 1,
+      "total_releases_pounds": 28471,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "sheridan",
+      "name": "Sheridan",
+      "population": 188,
+      "facilities_count": 1,
+      "total_releases_pounds": 12585,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "diboll",
+      "name": "Diboll",
+      "population": 4546,
+      "facilities_count": 3,
+      "total_releases_pounds": 74779,
+      "dominant_medium": "air",
+      "ej_pct_avg": 45.7,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 3 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "quail-creek",
+      "name": "Quail Creek",
+      "population": 1301,
+      "facilities_count": 1,
+      "total_releases_pounds": 44436,
+      "dominant_medium": "air",
+      "ej_pct_avg": 48.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "texline",
+      "name": "Texline",
+      "population": 485,
+      "facilities_count": 1,
+      "total_releases_pounds": 14450,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T13:59:37Z"
+}

@@ -1,0 +1,217 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "markwest-hidalgo-plant",
+    "name": "Markwest Hidalgo Plant",
+    "parent_company": "Marathon Petroleum CORP",
+    "address": "40351 FM 3541",
+    "city": "Orla",
+    "county": "Culberson County",
+    "county_slug": "culberson",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.828811,
+    "lng": -103.902302
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 285889,
+    "air_releases_pounds": 4532,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 281357,
+    "chemicals_reported": 7,
+    "yoy_pct_change": 293.5,
+    "long_arc_pct_change": 94.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 147050
+      },
+      {
+        "year": 2023,
+        "value": 72649
+      },
+      {
+        "year": 2024,
+        "value": 285889
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 167142,
+      "history": [
+        {
+          "year": 2023,
+          "value": 67061
+        },
+        {
+          "year": 2024,
+          "value": 167142
+        }
+      ],
+      "yoy_pct_change": 149.2,
+      "long_arc_pct_change": 149.2,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 55873,
+      "history": [
+        {
+          "year": 2022,
+          "value": 31969
+        },
+        {
+          "year": 2024,
+          "value": 55873
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 74.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 28223,
+      "history": [
+        {
+          "year": 2022,
+          "value": 15985
+        },
+        {
+          "year": 2024,
+          "value": 28223
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 76.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 15383,
+      "history": [
+        {
+          "year": 2022,
+          "value": 7991
+        },
+        {
+          "year": 2023,
+          "value": 5588
+        },
+        {
+          "year": 2024,
+          "value": 15383
+        }
+      ],
+      "yoy_pct_change": 175.3,
+      "long_arc_pct_change": 92.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 14317,
+      "history": [
+        {
+          "year": 2022,
+          "value": 7991
+        },
+        {
+          "year": 2024,
+          "value": 14317
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 79.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 2821,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1597
+        },
+        {
+          "year": 2024,
+          "value": 2821
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 76.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 2131,
+      "history": [
+        {
+          "year": 2024,
+          "value": 2131
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Ethylene glycol",
+      "summary": "Ethylene glycol releases at Markwest Hidalgo Plant rose from 67k lb to 167k lb (2.5\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 149.2,
+      "magnitude_abs": 100081.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 67061
+        },
+        {
+          "year": 2024,
+          "value": 167142
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 2181,
+    "pct_low_income": 22.2,
+    "pct_people_of_color": 88.6,
+    "pct_under_5": 9.9,
+    "pct_over_64": 21.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Culberson County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

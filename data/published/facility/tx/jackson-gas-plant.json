@@ -1,0 +1,228 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "jackson-gas-plant",
+    "name": "Jackson Gas Plant",
+    "parent_company": "Energy Transfer LP",
+    "address": "676 COUNTY ROAD 260",
+    "city": "Ganado",
+    "county": "Jackson County",
+    "county_slug": "jackson",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 29.107492,
+    "lng": -96.532395
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 97697,
+    "air_releases_pounds": 24639,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 73058,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 346.8,
+    "long_arc_pct_change": 37.5,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 71033
+      },
+      {
+        "year": 2023,
+        "value": 21866
+      },
+      {
+        "year": 2024,
+        "value": 97697
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 41445,
+      "history": [
+        {
+          "year": 2022,
+          "value": 34620
+        },
+        {
+          "year": 2023,
+          "value": 1080
+        },
+        {
+          "year": 2024,
+          "value": 41445
+        }
+      ],
+      "yoy_pct_change": 3737.5,
+      "long_arc_pct_change": 19.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 24686,
+      "history": [
+        {
+          "year": 2022,
+          "value": 13802
+        },
+        {
+          "year": 2023,
+          "value": 6777
+        },
+        {
+          "year": 2024,
+          "value": 24686
+        }
+      ],
+      "yoy_pct_change": 264.3,
+      "long_arc_pct_change": 78.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 14410,
+      "history": [
+        {
+          "year": 2022,
+          "value": 8802
+        },
+        {
+          "year": 2023,
+          "value": 11534
+        },
+        {
+          "year": 2024,
+          "value": 14410
+        }
+      ],
+      "yoy_pct_change": 24.9,
+      "long_arc_pct_change": 63.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 9237,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6809
+        },
+        {
+          "year": 2023,
+          "value": 170
+        },
+        {
+          "year": 2024,
+          "value": 9237
+        }
+      ],
+      "yoy_pct_change": 5333.5,
+      "long_arc_pct_change": 35.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 7919,
+      "history": [
+        {
+          "year": 2022,
+          "value": 5900
+        },
+        {
+          "year": 2023,
+          "value": 2305
+        },
+        {
+          "year": 2024,
+          "value": 7919
+        }
+      ],
+      "yoy_pct_change": 243.6,
+      "long_arc_pct_change": 34.2,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Jackson Gas Plant rose from 1k lb to 41k lb (38.4\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 3737.5,
+      "magnitude_abs": 40365.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 34620
+        },
+        {
+          "year": 2023,
+          "value": 1080
+        },
+        {
+          "year": 2024,
+          "value": 41445
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Toluene",
+      "summary": "Toluene releases at Jackson Gas Plant rose from 7k lb to 25k lb (3.6\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 264.3,
+      "magnitude_abs": 17909.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 13802
+        },
+        {
+          "year": 2023,
+          "value": 6777
+        },
+        {
+          "year": 2024,
+          "value": 24686
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 15010,
+    "pct_low_income": 12.0,
+    "pct_people_of_color": 42.6,
+    "pct_under_5": 5.5,
+    "pct_over_64": 19.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Jackson County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

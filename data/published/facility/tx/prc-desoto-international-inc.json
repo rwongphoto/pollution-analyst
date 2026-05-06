@@ -1,0 +1,100 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "prc-desoto-international-inc",
+    "name": "Prc-Desoto International INC.",
+    "parent_company": "Ppg Industries INC",
+    "address": "2750 114TH ST",
+    "city": "Grand Prairie",
+    "county": "Tarrant County",
+    "county_slug": "tarrant",
+    "naics_label": "325520 \u00b7 Chemicals",
+    "lat": 32.795673,
+    "lng": -97.03964
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 2500,
+    "air_releases_pounds": 130,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2370,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -63.3,
+    "long_arc_pct_change": -50.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 5040
+      },
+      {
+        "year": 2023,
+        "value": 6810
+      },
+      {
+        "year": 2024,
+        "value": 2500
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Manganese  And Manganese Compounds",
+      "cas": "N450",
+      "category": "respiratory",
+      "total_pounds_recent": 2370,
+      "history": [
+        {
+          "year": 2022,
+          "value": 5040
+        },
+        {
+          "year": 2023,
+          "value": 6810
+        },
+        {
+          "year": 2024,
+          "value": 2370
+        }
+      ],
+      "yoy_pct_change": -65.2,
+      "long_arc_pct_change": -53.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 130,
+      "history": [
+        {
+          "year": 2024,
+          "value": 130
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 64555,
+    "pct_low_income": 32.2,
+    "pct_people_of_color": 74.9,
+    "pct_under_5": 6.0,
+    "pct_over_64": 8.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (44 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

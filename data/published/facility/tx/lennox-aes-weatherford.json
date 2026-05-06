@@ -1,0 +1,115 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "lennox-aes-weatherford",
+    "name": "Lennox Aes-Weatherford",
+    "parent_company": "Lennox International INC",
+    "address": "1831 BARNETT DR",
+    "city": "Weatherford",
+    "county": "Parker County",
+    "county_slug": "parker",
+    "naics_label": "332322 \u00b7 Fabricated Metals",
+    "lat": 32.738807,
+    "lng": -97.745986
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 36038,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 10,
+    "land_releases_pounds": 36028,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -44.7,
+    "long_arc_pct_change": -44.7,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 65114
+      },
+      {
+        "year": 2024,
+        "value": 36038
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chlorodifluoromethane (HCFC-22)",
+      "cas": "75-45-6",
+      "category": "general",
+      "total_pounds_recent": 36028,
+      "history": [
+        {
+          "year": 2023,
+          "value": 64896
+        },
+        {
+          "year": 2024,
+          "value": 36028
+        }
+      ],
+      "yoy_pct_change": -44.5,
+      "long_arc_pct_change": -44.5,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Copper",
+      "cas": "7440-50-8",
+      "category": "general",
+      "total_pounds_recent": 5,
+      "history": [
+        {
+          "year": 2023,
+          "value": 40
+        },
+        {
+          "year": 2024,
+          "value": 5
+        }
+      ],
+      "yoy_pct_change": -87.6,
+      "long_arc_pct_change": -87.6,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 5,
+      "history": [
+        {
+          "year": 2023,
+          "value": 177
+        },
+        {
+          "year": 2024,
+          "value": 5
+        }
+      ],
+      "yoy_pct_change": -97.2,
+      "long_arc_pct_change": -97.2,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 19282,
+    "pct_low_income": 22.7,
+    "pct_people_of_color": 17.6,
+    "pct_under_5": 5.2,
+    "pct_over_64": 21.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (10 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

@@ -1,0 +1,101 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "pilgrim-s-pride-corp-waco-processing-plant",
+    "name": "Pilgrim'S Pride Corp Waco Processing Plant",
+    "parent_company": "Jbs USA Food Co",
+    "address": "2500 E LAKESHORE DR",
+    "city": "Waco",
+    "county": "Mclennan County",
+    "county_slug": "mclennan",
+    "naics_label": "311615 \u00b7 Food",
+    "lat": 31.608385,
+    "lng": -97.126881
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 16820,
+    "air_releases_pounds": 14700,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2120,
+    "chemicals_reported": 1,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": 141.0,
+    "long_arc_baseline_year": 2016,
+    "history": [
+      {
+        "year": 2016,
+        "value": 6980
+      },
+      {
+        "year": 2017,
+        "value": 10620
+      },
+      {
+        "year": 2018,
+        "value": 14360
+      },
+      {
+        "year": 2019,
+        "value": 9320
+      },
+      {
+        "year": 2024,
+        "value": 16820
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 16820,
+      "history": [
+        {
+          "year": 2016,
+          "value": 6980
+        },
+        {
+          "year": 2017,
+          "value": 10620
+        },
+        {
+          "year": 2018,
+          "value": 14360
+        },
+        {
+          "year": 2019,
+          "value": 9320
+        },
+        {
+          "year": 2024,
+          "value": 16820
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 141.0,
+      "long_arc_baseline_year": 2016
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 25165,
+    "pct_low_income": 57.6,
+    "pct_people_of_color": 73.7,
+    "pct_under_5": 7.7,
+    "pct_over_64": 11.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (20 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

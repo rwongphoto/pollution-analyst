@@ -1,0 +1,157 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "spearman-gas-plant",
+    "name": "Spearman Gas Plant",
+    "parent_company": "Energy Transfer LP",
+    "address": "11345 FM 281",
+    "city": "Spearman",
+    "county": "Ochiltree County",
+    "county_slug": "ochiltree",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 36.083459,
+    "lng": -101.047261
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 9062,
+    "air_releases_pounds": 1617,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 7445,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 18.1,
+    "long_arc_pct_change": 28.2,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 7070
+      },
+      {
+        "year": 2023,
+        "value": 7676
+      },
+      {
+        "year": 2024,
+        "value": 9062
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 4087,
+      "history": [
+        {
+          "year": 2022,
+          "value": 770
+        },
+        {
+          "year": 2023,
+          "value": 3671
+        },
+        {
+          "year": 2024,
+          "value": 4087
+        }
+      ],
+      "yoy_pct_change": 11.3,
+      "long_arc_pct_change": 430.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 2020,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1749
+        },
+        {
+          "year": 2024,
+          "value": 2020
+        }
+      ],
+      "yoy_pct_change": 15.5,
+      "long_arc_pct_change": 15.5,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1550,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1340
+        },
+        {
+          "year": 2024,
+          "value": 1550
+        }
+      ],
+      "yoy_pct_change": 15.7,
+      "long_arc_pct_change": 15.7,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 1075,
+      "history": [
+        {
+          "year": 2023,
+          "value": 916
+        },
+        {
+          "year": 2024,
+          "value": 1075
+        }
+      ],
+      "yoy_pct_change": 17.4,
+      "long_arc_pct_change": 17.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 330,
+      "history": [
+        {
+          "year": 2024,
+          "value": 330
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 9924,
+    "pct_low_income": 12.2,
+    "pct_people_of_color": 59.3,
+    "pct_under_5": 8.4,
+    "pct_over_64": 10.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Ochiltree County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

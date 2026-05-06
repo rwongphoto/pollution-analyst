@@ -1,0 +1,194 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "pecos-gas-processing-plant",
+    "name": "Pecos Gas Processing Plant",
+    "parent_company": "Kinetik Holdings LP",
+    "address": "473 COUNTY ROAD 118",
+    "city": "Pecos",
+    "county": "Reeves County",
+    "county_slug": "reeves",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.335452,
+    "lng": -103.502513
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 36601,
+    "air_releases_pounds": 36601,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 6,
+    "yoy_pct_change": 106.2,
+    "long_arc_pct_change": 106.2,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 17750
+      },
+      {
+        "year": 2024,
+        "value": 36601
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 29222,
+      "history": [
+        {
+          "year": 2023,
+          "value": 13317
+        },
+        {
+          "year": 2024,
+          "value": 29222
+        }
+      ],
+      "yoy_pct_change": 119.4,
+      "long_arc_pct_change": 119.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 2953,
+      "history": [
+        {
+          "year": 2023,
+          "value": 984
+        },
+        {
+          "year": 2024,
+          "value": 2953
+        }
+      ],
+      "yoy_pct_change": 200.1,
+      "long_arc_pct_change": 200.1,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1609,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1309
+        },
+        {
+          "year": 2024,
+          "value": 1609
+        }
+      ],
+      "yoy_pct_change": 22.9,
+      "long_arc_pct_change": 22.9,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 1328,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1638
+        },
+        {
+          "year": 2024,
+          "value": 1328
+        }
+      ],
+      "yoy_pct_change": -18.9,
+      "long_arc_pct_change": -18.9,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1025,
+      "history": [
+        {
+          "year": 2023,
+          "value": 267
+        },
+        {
+          "year": 2024,
+          "value": 1025
+        }
+      ],
+      "yoy_pct_change": 284.5,
+      "long_arc_pct_change": 284.5,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Acetaldehyde",
+      "cas": "75-07-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 463,
+      "history": [
+        {
+          "year": 2023,
+          "value": 235
+        },
+        {
+          "year": 2024,
+          "value": 463
+        }
+      ],
+      "yoy_pct_change": 96.9,
+      "long_arc_pct_change": 96.9,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Formaldehyde",
+      "summary": "Formaldehyde releases at Pecos Gas Processing Plant rose from 13k lb to 29k lb (2.2\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 119.4,
+      "magnitude_abs": 15905.4,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 13317
+        },
+        {
+          "year": 2024,
+          "value": 29222
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 14022,
+    "pct_low_income": 21.0,
+    "pct_people_of_color": 79.4,
+    "pct_under_5": 5.4,
+    "pct_over_64": 12.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Reeves County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

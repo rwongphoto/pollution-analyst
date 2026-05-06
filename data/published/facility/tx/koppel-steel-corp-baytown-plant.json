@@ -1,0 +1,127 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "koppel-steel-corp-baytown-plant",
+    "name": "Koppel Steel Corp Baytown Plant",
+    "parent_company": "Tenaris",
+    "address": "2600 E GRAND PKWY S",
+    "city": "Baytown",
+    "county": "Chambers County",
+    "county_slug": "chambers",
+    "naics_label": "332996 \u00b7 Fabricated Metals",
+    "lat": 29.740145,
+    "lng": -94.891088
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 18142,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 396,
+    "land_releases_pounds": 17746,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -13.5,
+    "long_arc_pct_change": 189.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 6269
+      },
+      {
+        "year": 2023,
+        "value": 20966
+      },
+      {
+        "year": 2024,
+        "value": 18142
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 15098,
+      "history": [
+        {
+          "year": 2022,
+          "value": 5149
+        },
+        {
+          "year": 2023,
+          "value": 16806
+        },
+        {
+          "year": 2024,
+          "value": 15098
+        }
+      ],
+      "yoy_pct_change": -10.2,
+      "long_arc_pct_change": 193.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 2951,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1116
+        },
+        {
+          "year": 2023,
+          "value": 3584
+        },
+        {
+          "year": 2024,
+          "value": 2951
+        }
+      ],
+      "yoy_pct_change": -17.7,
+      "long_arc_pct_change": 164.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 93,
+      "history": [
+        {
+          "year": 2023,
+          "value": 576
+        },
+        {
+          "year": 2024,
+          "value": 93
+        }
+      ],
+      "yoy_pct_change": -83.9,
+      "long_arc_pct_change": -83.9,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 9247,
+    "pct_low_income": 33.2,
+    "pct_people_of_color": 59.6,
+    "pct_under_5": 6.3,
+    "pct_over_64": 10.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (5 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

@@ -1,0 +1,168 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "high-plains-gas-plant-targa-resources",
+    "name": "High Plains Gas Plant Targa Resources",
+    "parent_company": "Targa Resources CORP",
+    "address": "13800 EAST COUNTY ROAD 230",
+    "city": "Midland",
+    "county": "Midland County",
+    "county_slug": "midland",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.85533,
+    "lng": -101.788637
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 41618,
+    "air_releases_pounds": 18310,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 23308,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 801.8,
+    "long_arc_pct_change": 801.8,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 4615
+      },
+      {
+        "year": 2024,
+        "value": 41618
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 26293,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3123
+        },
+        {
+          "year": 2024,
+          "value": 26293
+        }
+      ],
+      "yoy_pct_change": 741.9,
+      "long_arc_pct_change": 741.9,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 6461,
+      "history": [
+        {
+          "year": 2022,
+          "value": 15
+        },
+        {
+          "year": 2023,
+          "value": 7
+        },
+        {
+          "year": 2024,
+          "value": 6461
+        }
+      ],
+      "yoy_pct_change": 93132.3,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 6139,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1061
+        },
+        {
+          "year": 2024,
+          "value": 6139
+        }
+      ],
+      "yoy_pct_change": 478.4,
+      "long_arc_pct_change": 478.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2725,
+      "history": [
+        {
+          "year": 2022,
+          "value": 225
+        },
+        {
+          "year": 2023,
+          "value": 423
+        },
+        {
+          "year": 2024,
+          "value": 2725
+        }
+      ],
+      "yoy_pct_change": 543.6,
+      "long_arc_pct_change": 1111.1,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at High Plains Gas Plant Targa Resources rose from 3k lb to 26k lb (8.4\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 741.9,
+      "magnitude_abs": 23170.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 15
+        },
+        {
+          "year": 2023,
+          "value": 3123
+        },
+        {
+          "year": 2024,
+          "value": 26293
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 169393,
+    "pct_low_income": 10.8,
+    "pct_people_of_color": 57.6,
+    "pct_under_5": 8.5,
+    "pct_over_64": 10.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Midland County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

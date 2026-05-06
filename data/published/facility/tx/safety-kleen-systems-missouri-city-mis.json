@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "safety-kleen-systems-missouri-city-mis",
+    "name": "Safety-Kleen Systems Missouri City (Mis)",
+    "parent_company": "Clean Harbors INC",
+    "address": "1580 IND US TRIAL RD",
+    "city": "Missouri City",
+    "county": "Fort Bend County",
+    "county_slug": "fort-bend",
+    "naics_label": "562112 \u00b7 Hazardous Waste",
+    "lat": 29.620864,
+    "lng": -95.539177
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 94,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 94,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 868.0,
+    "long_arc_pct_change": 526.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 15
+      },
+      {
+        "year": 2023,
+        "value": 10
+      },
+      {
+        "year": 2024,
+        "value": 94
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "N590",
+      "category": "pbt",
+      "total_pounds_recent": 93,
+      "history": [
+        {
+          "year": 2022,
+          "value": 15
+        },
+        {
+          "year": 2023,
+          "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 93
+        }
+      ],
+      "yoy_pct_change": 877.9,
+      "long_arc_pct_change": 527.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzo[g,h,i]perylene",
+      "cas": "191-24-2",
+      "category": "pbt",
+      "total_pounds_recent": 1,
+      "history": [
+        {
+          "year": 2022,
+          "value": 0.2
+        },
+        {
+          "year": 2023,
+          "value": 0.2
+        },
+        {
+          "year": 2024,
+          "value": 1
+        }
+      ],
+      "yoy_pct_change": 400.0,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 104844,
+    "pct_low_income": 37.5,
+    "pct_people_of_color": 89.7,
+    "pct_under_5": 6.9,
+    "pct_over_64": 13.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (63 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

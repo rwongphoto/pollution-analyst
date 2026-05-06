@@ -1,0 +1,184 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "silver-plant",
+    "name": "Silver Plant",
+    "parent_company": "Canes Midstream LLC",
+    "address": "2408 HIGHWAY 163 NORTH",
+    "city": "Sterling City",
+    "county": "Sterling County",
+    "county_slug": "sterling",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.020626,
+    "lng": -101.02141
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 23370,
+    "air_releases_pounds": 16780,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 6590,
+    "chemicals_reported": 6,
+    "yoy_pct_change": 1.8,
+    "long_arc_pct_change": -22.6,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 30180
+      },
+      {
+        "year": 2023,
+        "value": 22950
+      },
+      {
+        "year": 2024,
+        "value": 23370
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 12440,
+      "history": [
+        {
+          "year": 2022,
+          "value": 16800
+        },
+        {
+          "year": 2023,
+          "value": 10800
+        },
+        {
+          "year": 2024,
+          "value": 12440
+        }
+      ],
+      "yoy_pct_change": 15.2,
+      "long_arc_pct_change": -26.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 4520,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6440
+        },
+        {
+          "year": 2023,
+          "value": 4310
+        },
+        {
+          "year": 2024,
+          "value": 4520
+        }
+      ],
+      "yoy_pct_change": 4.9,
+      "long_arc_pct_change": -29.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 4180,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4040
+        },
+        {
+          "year": 2023,
+          "value": 4740
+        },
+        {
+          "year": 2024,
+          "value": 4180
+        }
+      ],
+      "yoy_pct_change": -11.8,
+      "long_arc_pct_change": 3.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 1900,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1300
+        },
+        {
+          "year": 2023,
+          "value": 1800
+        },
+        {
+          "year": 2024,
+          "value": 1900
+        }
+      ],
+      "yoy_pct_change": 5.6,
+      "long_arc_pct_change": 46.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 190,
+      "history": [
+        {
+          "year": 2024,
+          "value": 190
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 140,
+      "history": [
+        {
+          "year": 2024,
+          "value": 140
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 1392,
+    "pct_low_income": 1.8,
+    "pct_people_of_color": 34.3,
+    "pct_under_5": 13.7,
+    "pct_over_64": 13.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Sterling County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

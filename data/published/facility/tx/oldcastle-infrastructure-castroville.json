@@ -1,0 +1,104 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "oldcastle-infrastructure-castroville",
+    "name": "Oldcastle Infrastructure - Castroville",
+    "parent_company": "Crh Americas INC",
+    "address": "6145 MECHLER LN",
+    "city": "Castroville",
+    "county": "Medina County",
+    "county_slug": "medina",
+    "naics_label": "327332 \u00b7 Nonmetallic Mineral Product",
+    "lat": 29.371776,
+    "lng": -98.798013
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3,
+    "air_releases_pounds": 2,
+    "water_releases_pounds": 0.08,
+    "land_releases_pounds": 1.0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 175.3,
+    "long_arc_pct_change": -23.2,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 4
+      },
+      {
+        "year": 2023,
+        "value": 1
+      },
+      {
+        "year": 2024,
+        "value": 3
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Lead compounds",
+      "cas": "N420",
+      "category": "pbt",
+      "total_pounds_recent": 3,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4
+        },
+        {
+          "year": 2023,
+          "value": 1
+        },
+        {
+          "year": 2024,
+          "value": 3
+        }
+      ],
+      "yoy_pct_change": 190.9,
+      "long_arc_pct_change": -25.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Mercury compounds",
+      "cas": "N458",
+      "category": "pbt",
+      "total_pounds_recent": 0.1,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0.1
+        },
+        {
+          "year": 2024,
+          "value": 0.1
+        }
+      ],
+      "yoy_pct_change": 3.0,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 11434,
+    "pct_low_income": 14.9,
+    "pct_people_of_color": 76.5,
+    "pct_under_5": 9.9,
+    "pct_over_64": 11.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

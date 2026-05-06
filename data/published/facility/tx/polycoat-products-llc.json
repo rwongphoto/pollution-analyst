@@ -1,0 +1,130 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "polycoat-products-llc",
+    "name": "Polycoat Products LLC",
+    "parent_company": "American Polymers CORP",
+    "address": "3001 E PIONEER PKWY",
+    "city": "Arlington",
+    "county": "Tarrant County",
+    "county_slug": "tarrant",
+    "naics_label": "325510 \u00b7 Chemicals",
+    "lat": 32.712431,
+    "lng": -97.055658
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 32318,
+    "air_releases_pounds": 18,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 32300,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -69.1,
+    "long_arc_pct_change": 51.2,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 21369
+      },
+      {
+        "year": 2023,
+        "value": 104690
+      },
+      {
+        "year": 2024,
+        "value": 32318
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nonylphenol Ethoxylates",
+      "cas": "N535",
+      "category": "general",
+      "total_pounds_recent": 32300,
+      "history": [
+        {
+          "year": 2022,
+          "value": 21369
+        },
+        {
+          "year": 2023,
+          "value": 104677
+        },
+        {
+          "year": 2024,
+          "value": 32300
+        }
+      ],
+      "yoy_pct_change": -69.1,
+      "long_arc_pct_change": 51.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Phthalic anhydride",
+      "cas": "85-44-9",
+      "category": "respiratory",
+      "total_pounds_recent": 18,
+      "history": [
+        {
+          "year": 2023,
+          "value": 13
+        },
+        {
+          "year": 2024,
+          "value": 18
+        }
+      ],
+      "yoy_pct_change": 35.3,
+      "long_arc_pct_change": 35.3,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Nonylphenol Ethoxylates",
+      "summary": "Nonylphenol Ethoxylates releases at Polycoat Products LLC fell from 105k lb to 32k lb (69% lower) between 2023 and 2024.",
+      "magnitude_pct": -69.1,
+      "magnitude_abs": -72377.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 21369
+        },
+        {
+          "year": 2023,
+          "value": 104677
+        },
+        {
+          "year": 2024,
+          "value": 32300
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 126095,
+    "pct_low_income": 46.6,
+    "pct_people_of_color": 85.7,
+    "pct_under_5": 7.7,
+    "pct_over_64": 9.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (81 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

@@ -1,0 +1,559 @@
+{
+  "county": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "bee",
+    "name": "Bee County",
+    "fips": "48025",
+    "population": 30977
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.4069,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.4069
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0817,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0817
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 5267,
+      "units": "lb",
+      "yoy_pct_change": -80.8,
+      "long_arc_pct_change": -80.8,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2855
+        },
+        {
+          "year": 2023,
+          "value": 27450
+        },
+        {
+          "year": 2024,
+          "value": 5267
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2022,
+      "history": [
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 80336,
+      "units": "lb",
+      "yoy_pct_change": 224.2,
+      "long_arc_pct_change": 731.3,
+      "baseline_year": 2022,
+      "history": [
+        {
+          "year": 2022,
+          "value": 9663
+        },
+        {
+          "year": 2023,
+          "value": 24778
+        },
+        {
+          "year": 2024,
+          "value": 80336
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 323086,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 15.1,
+      "long_arc_pct_change": 788.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 36385
+        },
+        {
+          "year": 2011,
+          "value": 506355
+        },
+        {
+          "year": 2012,
+          "value": 612964
+        },
+        {
+          "year": 2013,
+          "value": 909151
+        },
+        {
+          "year": 2014,
+          "value": 1049099
+        },
+        {
+          "year": 2015,
+          "value": 1013990
+        },
+        {
+          "year": 2016,
+          "value": 585466
+        },
+        {
+          "year": 2017,
+          "value": 560115
+        },
+        {
+          "year": 2018,
+          "value": 456996
+        },
+        {
+          "year": 2019,
+          "value": 561155
+        },
+        {
+          "year": 2020,
+          "value": 483618
+        },
+        {
+          "year": 2021,
+          "value": 361006
+        },
+        {
+          "year": 2022,
+          "value": 280583
+        },
+        {
+          "year": 2023,
+          "value": 323086
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "ranch-hand-beeville-154",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "Ranch Hand Beeville - 154",
+      "parent_company": "Lci Industries",
+      "total_pounds_recent": 57725,
+      "yoy_pct_change": 884.1,
+      "top_chemical": "Nickel",
+      "city": "Beeville",
+      "lat": 28.389508,
+      "lng": -97.740896
+    },
+    {
+      "slug": "silver-oak-facility",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "Silver Oak Facility",
+      "parent_company": "Targa Resources CORP",
+      "total_pounds_recent": 27802,
+      "yoy_pct_change": -40.0,
+      "top_chemical": "n-Hexane",
+      "city": "Tuleta",
+      "lat": 28.556041,
+      "lng": -97.856357
+    },
+    {
+      "slug": "halliburton-beeville-baroid",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "Halliburton Beeville Baroid",
+      "parent_company": "Halliburton Energy Services INC",
+      "total_pounds_recent": 76,
+      "yoy_pct_change": null,
+      "top_chemical": "Certain glycol ethers",
+      "city": "Beeville",
+      "lat": 28.385449,
+      "lng": -97.738946
+    }
+  ],
+  "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [
+    {
+      "slug": "beeville",
+      "name": "Beeville",
+      "fips": "4807192",
+      "facilities_count": 2,
+      "utilities_count": 3,
+      "population": 13637
+    },
+    {
+      "slug": "pettus",
+      "name": "Pettus",
+      "fips": "4857116",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 603
+    },
+    {
+      "slug": "skidmore",
+      "name": "Skidmore",
+      "fips": "4868132",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 1168
+    },
+    {
+      "slug": "tynan",
+      "name": "Tynan",
+      "fips": "4874168",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 289
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 30977,
+    "pct_low_income": 20.0,
+    "pct_people_of_color": 70.2,
+    "pct_under_5": 5.4,
+    "pct_over_64": 12.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 61.1,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 49.1,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 35.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 5.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 20.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 12.2,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 50.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 52.5,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 66.2,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 26.9,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 91.1,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 121.4
+      },
+      {
+        "label": "Ozone",
+        "score": 31.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 74.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 15.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 25.6
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 27.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 77.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 96.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 3.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 92.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 47.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 165.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Bee County, TX"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 8.7,
+      "age_adjusted": 8.7,
+      "state_mean": 9.5,
+      "us_mean": 10.0,
+      "vs_state_pp": -0.79,
+      "vs_state_pct": -8.3,
+      "vs_state_class": "better",
+      "vs_us_pp": -1.32,
+      "vs_us_pct": -13.2,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 5.7,
+      "age_adjusted": 5.9,
+      "state_mean": 5.4,
+      "us_mean": 5.5,
+      "vs_state_pp": 0.46,
+      "vs_state_pct": 8.5,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.4,
+      "vs_us_pct": 7.3,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 5.9,
+      "age_adjusted": 6.3,
+      "state_mean": 5.4,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.92,
+      "vs_state_pct": 17.1,
+      "vs_state_class": "worse",
+      "vs_us_pp": 0.99,
+      "vs_us_pct": 18.6,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 13.9,
+      "age_adjusted": 14.6,
+      "state_mean": 12.3,
+      "us_mean": 10.5,
+      "vs_state_pp": 2.33,
+      "vs_state_pct": 19.0,
+      "vs_state_class": "worse",
+      "vs_us_pp": 4.14,
+      "vs_us_pct": 39.6,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.5,
+      "age_adjusted": 17.2,
+      "state_mean": 17.1,
+      "us_mean": 16.8,
+      "vs_state_pp": 0.14,
+      "vs_state_pct": 0.8,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.45,
+      "vs_us_pct": 2.7,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "tx",
+      "slug": "burnet",
+      "name": "Burnet County",
+      "population": 49684,
+      "facilities_count": 3,
+      "total_releases_pounds": 63686,
+      "dominant_medium": "land",
+      "ej_pct_avg": 36.4,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 3 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "tx",
+      "slug": "upshur",
+      "name": "Upshur County",
+      "population": 41261,
+      "facilities_count": 3,
+      "total_releases_pounds": 46636,
+      "dominant_medium": "land",
+      "ej_pct_avg": 40.8,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 3 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "tx",
+      "slug": "jackson",
+      "name": "Jackson County",
+      "population": 15010,
+      "facilities_count": 2,
+      "total_releases_pounds": 107837,
+      "dominant_medium": "land",
+      "ej_pct_avg": 43.0,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "tx",
+      "slug": "lavaca",
+      "name": "Lavaca County",
+      "population": 20379,
+      "facilities_count": 3,
+      "total_releases_pounds": 251626,
+      "dominant_medium": "land",
+      "ej_pct_avg": 39.9,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 3 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "tx",
+      "slug": "cherokee",
+      "name": "Cherokee County",
+      "population": 50824,
+      "facilities_count": 6,
+      "total_releases_pounds": 102580,
+      "dominant_medium": "land",
+      "ej_pct_avg": 44.2,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 6 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "tx",
+      "slug": "chambers",
+      "name": "Chambers County",
+      "population": 47037,
+      "facilities_count": 24,
+      "total_releases_pounds": 1327977,
+      "dominant_medium": "air",
+      "ej_pct_avg": 60.1,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+19 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T13:59:25Z"
+}

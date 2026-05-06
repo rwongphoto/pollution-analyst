@@ -1,0 +1,84 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "black-hills",
+    "name": "Black Hills",
+    "parent_company": null,
+    "address": "10763 E STATE HIGHWAY 97",
+    "city": "Pleasanton",
+    "county": "Atascosa County",
+    "county_slug": "atascosa",
+    "naics_label": "325998 \u00b7 Chemicals",
+    "lat": 29.03162,
+    "lng": -98.335685
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 7655,
+    "air_releases_pounds": 3255,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 4400,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 7655
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 5155,
+      "history": [
+        {
+          "year": 2024,
+          "value": 5155
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2500,
+      "history": [
+        {
+          "year": 2024,
+          "value": 2500
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 49403,
+    "pct_low_income": 14.1,
+    "pct_people_of_color": 68.7,
+    "pct_under_5": 7.3,
+    "pct_over_64": 14.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Atascosa County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

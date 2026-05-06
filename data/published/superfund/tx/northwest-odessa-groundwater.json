@@ -1,0 +1,74 @@
+{
+  "site": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "northwest-odessa-groundwater",
+    "name": "Northwest Odessa Groundwater",
+    "epa_id": "TXN000607499",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Ector County",
+    "county_slug": "ector",
+    "city": "Odessa",
+    "city_slug": null,
+    "address": "Intersection of Andrews Highway and 54th Street",
+    "zip": "79762",
+    "lat": 31.894444,
+    "lng": -102.388889
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "TX0680051",
+        "name": "Canyon Dam Mobile Home Park",
+        "slug": "canyon-dam-mobile-home-park",
+        "state": "tx",
+        "distance_miles": 2.73,
+        "place_name": "Odessa",
+        "primary_source": "groundwater",
+        "population_served": 108,
+        "health_based_5yr": 51,
+        "unresolved": true
+      },
+      {
+        "pwsid": "TX0680163",
+        "name": "Huber Garden Estates",
+        "slug": "huber-garden-estates",
+        "state": "tx",
+        "distance_miles": 2.73,
+        "place_name": "Odessa",
+        "primary_source": "groundwater",
+        "population_served": 200,
+        "health_based_5yr": 36,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 7817,
+    "pct_low_income": 46.3,
+    "pct_people_of_color": 68.8,
+    "pct_under_5": 13.3,
+    "pct_over_64": 7.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:35Z"
+}

@@ -1,0 +1,154 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "north-cross-facility-4",
+    "name": "North Cross Facility 4",
+    "parent_company": "Occidental Petroleum CORP",
+    "address": "4.3 MI. W. ON U.S. 67 FROM S.H",
+    "city": "Mc Camey",
+    "county": "Upton County",
+    "county_slug": "upton",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.147598,
+    "lng": -102.182014
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 17306,
+    "air_releases_pounds": 4366,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 12940,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 5.5,
+    "long_arc_pct_change": 43.1,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 12096
+      },
+      {
+        "year": 2023,
+        "value": 16405
+      },
+      {
+        "year": 2024,
+        "value": 17306
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 10630,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6896
+        },
+        {
+          "year": 2023,
+          "value": 10321
+        },
+        {
+          "year": 2024,
+          "value": 10630
+        }
+      ],
+      "yoy_pct_change": 3.0,
+      "long_arc_pct_change": 54.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 2729,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1863
+        },
+        {
+          "year": 2023,
+          "value": 2726
+        },
+        {
+          "year": 2024,
+          "value": 2729
+        }
+      ],
+      "yoy_pct_change": 0.1,
+      "long_arc_pct_change": 46.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 2047,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1629
+        },
+        {
+          "year": 2023,
+          "value": 1779
+        },
+        {
+          "year": 2024,
+          "value": 2047
+        }
+      ],
+      "yoy_pct_change": 15.1,
+      "long_arc_pct_change": 25.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 1900,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1709
+        },
+        {
+          "year": 2023,
+          "value": 1579
+        },
+        {
+          "year": 2024,
+          "value": 1900
+        }
+      ],
+      "yoy_pct_change": 20.4,
+      "long_arc_pct_change": 11.2,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 1277,
+    "pct_low_income": 48.5,
+    "pct_people_of_color": 80.7,
+    "pct_under_5": 4.9,
+    "pct_over_64": 17.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

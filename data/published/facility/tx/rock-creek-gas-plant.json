@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "rock-creek-gas-plant",
+    "name": "Rock Creek Gas Plant",
+    "parent_company": "Iacx Energy",
+    "address": "NEAR THE W END OF 10TH ST",
+    "city": "Borger",
+    "county": "Hutchinson County",
+    "county_slug": "hutchinson",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 35.658926,
+    "lng": -101.409534
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 367,
+    "air_releases_pounds": 367,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 16.9,
+    "long_arc_pct_change": 5.9,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 347
+      },
+      {
+        "year": 2023,
+        "value": 314
+      },
+      {
+        "year": 2024,
+        "value": 367
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 367,
+      "history": [
+        {
+          "year": 2022,
+          "value": 347
+        },
+        {
+          "year": 2023,
+          "value": 314
+        },
+        {
+          "year": 2024,
+          "value": 367
+        }
+      ],
+      "yoy_pct_change": 16.9,
+      "long_arc_pct_change": 5.9,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 13008,
+    "pct_low_income": 29.0,
+    "pct_people_of_color": 39.3,
+    "pct_under_5": 5.5,
+    "pct_over_64": 15.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (14 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

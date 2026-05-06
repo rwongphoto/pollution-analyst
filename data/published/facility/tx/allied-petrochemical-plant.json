@@ -1,0 +1,191 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "allied-petrochemical-plant",
+    "name": "Allied Petrochemical Plant",
+    "parent_company": null,
+    "address": "2330 FM 2917 RD",
+    "city": "Alvin",
+    "county": "Brazoria County",
+    "county_slug": "brazoria",
+    "naics_label": "324110 \u00b7 Petroleum",
+    "lat": 29.317939,
+    "lng": -95.253877
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3010,
+    "air_releases_pounds": 3010,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 7,
+    "yoy_pct_change": -62.4,
+    "long_arc_pct_change": -62.4,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 8000
+      },
+      {
+        "year": 2024,
+        "value": 3010
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1000
+        },
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": -50.0,
+      "long_arc_pct_change": -50.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Cumene",
+      "cas": "98-82-8",
+      "category": "carcinogen",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1000
+        },
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": -50.0,
+      "long_arc_pct_change": -50.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1000
+        },
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": -50.0,
+      "long_arc_pct_change": -50.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "1,2,4-Trimethylbenzene",
+      "cas": "95-63-6",
+      "category": "general",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1000
+        },
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": -50.0,
+      "long_arc_pct_change": -50.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1000
+        },
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": -50.0,
+      "long_arc_pct_change": -50.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1000
+        },
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": -50.0,
+      "long_arc_pct_change": -50.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Naphthalene",
+      "cas": "91-20-3",
+      "category": "carcinogen",
+      "total_pounds_recent": 10,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1000
+        },
+        {
+          "year": 2024,
+          "value": 10
+        }
+      ],
+      "yoy_pct_change": -99.0,
+      "long_arc_pct_change": -99.0,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 1395,
+    "pct_low_income": 18.1,
+    "pct_people_of_color": 33.9,
+    "pct_under_5": 2.5,
+    "pct_over_64": 12.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

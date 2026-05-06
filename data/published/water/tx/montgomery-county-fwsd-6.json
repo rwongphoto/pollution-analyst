@@ -1,0 +1,285 @@
+{
+  "utility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "montgomery-county-fwsd-6",
+    "name": "Montgomery County Fwsd 6",
+    "pwsid": "TX1700142",
+    "population_served": 426,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Willis"
+    ],
+    "county": "Montgomery County",
+    "county_slug": "montgomery",
+    "place_slug": "willis"
+  },
+  "reporting_period": {
+    "start": "2021-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 4,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    },
+    {
+      "year": 2021,
+      "contaminant": "Chlorine",
+      "contaminant_code": "0999",
+      "severity": "monitoring",
+      "rule": "Disinfectants and Disinfection Byproducts (Stage 2)",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2021,
+      "contaminant": "Chlorine",
+      "contaminant_code": "0999",
+      "severity": "monitoring",
+      "rule": "Disinfectants and Disinfection Byproducts (Stage 2)",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2021,
+      "contaminant": "Chlorine",
+      "contaminant_code": "0999",
+      "severity": "monitoring",
+      "rule": "Disinfectants and Disinfection Byproducts (Stage 2)",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2021,
+        "value": 3
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Chlorine",
+        "count": 3
+      },
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX1700142"
+      }
+    }
+  ],
+  "equity": {
+    "population": 6561,
+    "pct_low_income": 7.5,
+    "pct_people_of_color": 50.5,
+    "pct_under_5": 5.2,
+    "pct_over_64": 14.5,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 76.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 77.3,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 57.6,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 48.8,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 91.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 26.9,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 40.1,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 50.3,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 33.1,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 75.1,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 34.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 59.3
+      },
+      {
+        "label": "Ozone",
+        "score": 30.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 44.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 36.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 69.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 22.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 19.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 19.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 37.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 26.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 55.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 26.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Willis, Texas (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:32Z"
+}

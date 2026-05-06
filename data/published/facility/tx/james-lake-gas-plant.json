@@ -1,0 +1,172 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "james-lake-gas-plant",
+    "name": "James Lake Gas Plant",
+    "parent_company": "Phillips 66 Co",
+    "address": "2401 FM 866",
+    "city": "Goldsmith",
+    "county": "Ector County",
+    "county_slug": "ector",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.79835,
+    "lng": -102.553296
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 2277,
+    "air_releases_pounds": 1299,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 978,
+    "chemicals_reported": 6,
+    "yoy_pct_change": 158.2,
+    "long_arc_pct_change": 39.6,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 1631
+      },
+      {
+        "year": 2023,
+        "value": 882
+      },
+      {
+        "year": 2024,
+        "value": 2277
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1090,
+      "history": [
+        {
+          "year": 2023,
+          "value": 80
+        },
+        {
+          "year": 2024,
+          "value": 1090
+        }
+      ],
+      "yoy_pct_change": 1262.5,
+      "long_arc_pct_change": 1262.5,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 638,
+      "history": [
+        {
+          "year": 2024,
+          "value": 638
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 262,
+      "history": [
+        {
+          "year": 2022,
+          "value": 22
+        },
+        {
+          "year": 2023,
+          "value": 32
+        },
+        {
+          "year": 2024,
+          "value": 262
+        }
+      ],
+      "yoy_pct_change": 718.8,
+      "long_arc_pct_change": 1090.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 157,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1609
+        },
+        {
+          "year": 2023,
+          "value": 770
+        },
+        {
+          "year": 2024,
+          "value": 157
+        }
+      ],
+      "yoy_pct_change": -79.6,
+      "long_arc_pct_change": -90.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 122,
+      "history": [
+        {
+          "year": 2024,
+          "value": 122
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 8,
+      "history": [
+        {
+          "year": 2024,
+          "value": 8
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 7094,
+    "pct_low_income": 47.4,
+    "pct_people_of_color": 87.1,
+    "pct_under_5": 5.5,
+    "pct_over_64": 11.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

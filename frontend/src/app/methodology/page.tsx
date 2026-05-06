@@ -74,6 +74,7 @@ export default function MethodologyPage() {
               <a href="#exclusions">Exclusions</a> ·{" "}
               <a href="#sources">Sources</a> ·{" "}
               <a href="#tri">TRI</a> ·{" "}
+              <a href="#ghgrp">GHGRP</a> ·{" "}
               <a href="#sdwis">SDWIS</a> ·{" "}
               <a href="#ejscreen">EJScreen</a> ·{" "}
               <a href="#rights">Data Rights</a>
@@ -239,6 +240,40 @@ export default function MethodologyPage() {
               <p>
                 <strong>Reference.</strong>{" "}
                 <a href="https://www.epa.gov/toxics-release-inventory-tri-program" target="_blank" rel="noreferrer">EPA TRI Program</a>.
+              </p>
+            </section>
+
+            <section id="ghgrp" style={{ borderTop: "1px solid var(--rule)", paddingTop: 36, marginTop: 36 }}>
+              <h2>GHGRP · Greenhouse Gas Reporting Program</h2>
+              <p>
+                <strong>Owner.</strong> EPA, under 40 CFR Part 98.
+              </p>
+              <p>
+                <strong>What it is.</strong> Annual self-reported greenhouse-gas emissions (CO₂, methane, N₂O, HFCs, others) from large emitters — power plants, refineries, chemicals, cement, landfills, and other facilities above the 25,000 mtCO₂e threshold. Reported in metric tons of CO₂ equivalent per facility per gas per sector subpart.
+              </p>
+              <p>
+                <strong>Cadence.</strong> Annual. Reporting year T historically published in the second half of T+1.
+              </p>
+              <p>
+                <strong>Status — 2024 reporting year is unavailable.</strong> EPA&apos;s Envirofacts API returns zero rows nationally for GHGRP year 2024, for every state. The Trump administration halted the Greenhouse Gas Reporting Program in 2025; the year-2024 dataset that would normally have been published in late 2025 was not released. The Environmental Integrity Project subsequently <a href="https://environmentalintegrity.org/news/eip-releases-2024-industrial-greenhouse-gas-data-after-trump-halts-reporting-program/" target="_blank" rel="noreferrer">obtained and released the 2024 industrial GHG data independently</a>. We have not yet ingested the EIP release; for now, every state&apos;s GHG pathway tile shows 2023 as the most-recent available year. We will revisit when EPA either resumes publication or we wire EIP&apos;s release into the pipeline.
+              </p>
+              <p>
+                <strong>Caveats we surface.</strong>
+              </p>
+              <ul>
+                <li>
+                  <strong>Self-reported, threshold-gated.</strong> Like TRI, GHGRP captures large emitters above a federal threshold. Below-threshold sources — small commercial boilers, distributed agriculture, on-road vehicles — are not in this dataset. We label GHG totals as &ldquo;reported large-emitter CO₂e&rdquo; rather than &ldquo;total greenhouse gases.&rdquo;
+                </li>
+                <li>
+                  <strong>CO₂e is a single number across many gases.</strong> Methane and N₂O are aggregated into the CO₂-equivalent total via 100-year global-warming potentials. Methane-heavy sectors (oil & gas, landfills) shift more under higher-GWP accounting; we use EPA&apos;s reported CO₂e as published.
+                </li>
+                <li>
+                  <strong>Federal-only.</strong> This is the reported federal figure, not a top-down inventory. State and tribal inventories may differ; we do not blend.
+                </li>
+              </ul>
+              <p>
+                <strong>Reference.</strong>{" "}
+                <a href="https://www.epa.gov/ghgreporting" target="_blank" rel="noreferrer">EPA GHGRP</a>.
               </p>
             </section>
 

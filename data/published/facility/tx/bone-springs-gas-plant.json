@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "bone-springs-gas-plant",
+    "name": "Bone Springs Gas Plant",
+    "parent_company": "Western Midstream Partners LP",
+    "address": "8912 FM 2355",
+    "city": "Barstow",
+    "county": "Ward County",
+    "county_slug": "ward",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.488173,
+    "lng": -103.400653
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1504,
+    "air_releases_pounds": 1370,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 134,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -88.7,
+    "long_arc_pct_change": -25.5,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 2020
+      },
+      {
+        "year": 2023,
+        "value": 13313
+      },
+      {
+        "year": 2024,
+        "value": 1504
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1504,
+      "history": [
+        {
+          "year": 2022,
+          "value": 649
+        },
+        {
+          "year": 2023,
+          "value": 836
+        },
+        {
+          "year": 2024,
+          "value": 1504
+        }
+      ],
+      "yoy_pct_change": 79.9,
+      "long_arc_pct_change": 131.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 11347,
+    "pct_low_income": 13.6,
+    "pct_people_of_color": 62.6,
+    "pct_under_5": 7.6,
+    "pct_over_64": 13.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Ward County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

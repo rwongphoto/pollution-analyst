@@ -1,0 +1,647 @@
+{
+  "place": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "beeville",
+    "name": "Beeville",
+    "fips": "4807192",
+    "population": 13637,
+    "county_name": "Bee",
+    "county_fips": "48025"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 3,
+    "total_releases_pounds": 57801,
+    "air_releases_pounds": 121,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 57680,
+    "yoy_pct_change": 885.4,
+    "long_arc_pct_change": 4611.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 1227
+      },
+      {
+        "year": 2023,
+        "value": 5866
+      },
+      {
+        "year": 2024,
+        "value": 57801
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.4069,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.4069
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0817,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0817
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 121,
+      "units": "lb",
+      "yoy_pct_change": 242.3,
+      "long_arc_pct_change": null,
+      "baseline_year": 2022,
+      "history": [
+        {
+          "year": 2022,
+          "value": 256
+        },
+        {
+          "year": 2023,
+          "value": 35
+        },
+        {
+          "year": 2024,
+          "value": 121
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2022,
+      "history": [
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 57680,
+      "units": "lb",
+      "yoy_pct_change": 889.3,
+      "long_arc_pct_change": 889.3,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2022,
+          "value": 971
+        },
+        {
+          "year": 2023,
+          "value": 5831
+        },
+        {
+          "year": 2024,
+          "value": 57680
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 323086,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 15.1,
+      "long_arc_pct_change": 788.0,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 36385
+        },
+        {
+          "year": 2011,
+          "value": 506355
+        },
+        {
+          "year": 2012,
+          "value": 612964
+        },
+        {
+          "year": 2013,
+          "value": 909151
+        },
+        {
+          "year": 2014,
+          "value": 1049099
+        },
+        {
+          "year": 2015,
+          "value": 1013990
+        },
+        {
+          "year": 2016,
+          "value": 585466
+        },
+        {
+          "year": 2017,
+          "value": 560115
+        },
+        {
+          "year": 2018,
+          "value": 456996
+        },
+        {
+          "year": 2019,
+          "value": 561155
+        },
+        {
+          "year": 2020,
+          "value": 483618
+        },
+        {
+          "year": 2021,
+          "value": 361006
+        },
+        {
+          "year": 2022,
+          "value": 280583
+        },
+        {
+          "year": 2023,
+          "value": 323086
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "ranch-hand-beeville-154",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "Ranch Hand Beeville - 154",
+      "parent_company": "Lci Industries",
+      "total_pounds_recent": 57725,
+      "yoy_pct_change": 884.1,
+      "top_chemical": "Nickel",
+      "city": "Beeville",
+      "lat": 28.389508,
+      "lng": -97.740896
+    },
+    {
+      "slug": "halliburton-beeville-baroid",
+      "state": "tx",
+      "state_label": "Texas",
+      "name": "Halliburton Beeville Baroid",
+      "parent_company": "Halliburton Energy Services INC",
+      "total_pounds_recent": 76,
+      "yoy_pct_change": null,
+      "top_chemical": "Certain glycol ethers",
+      "city": "Beeville",
+      "lat": 28.385449,
+      "lng": -97.738946
+    }
+  ],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 13865,
+    "violations_5yr_total": 58,
+    "health_based_5yr_total": 40,
+    "unresolved_total": 26,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "beeville",
+        "state": "tx",
+        "state_label": "Texas",
+        "name": "City Of Beeville",
+        "pwsid": "TX0130001",
+        "population_served": 13664,
+        "health_based_violations_5yr": 39,
+        "unresolved": true
+      },
+      {
+        "slug": "hilltop-mobile-home-park",
+        "state": "tx",
+        "state_label": "Texas",
+        "name": "Hilltop Mobile Home Park",
+        "pwsid": "TX0130019",
+        "population_served": 85,
+        "health_based_violations_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "slug": "south-texas-childrens-home",
+        "state": "tx",
+        "state_label": "Texas",
+        "name": "South Texas Childrens Home",
+        "pwsid": "TX0130016",
+        "population_served": 116,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7500",
+      "summary": "Unresolved Volatile Organic Chemical Rule violation cited in 2025 (contaminant 7500).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX0130001"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2024 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX0130001"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7500",
+      "summary": "Unresolved Volatile Organic Chemical Rule violation cited in 2025 (contaminant 7500).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX0130019"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7000",
+      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2025 (contaminant 7000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TX0130019"
+      }
+    }
+  ],
+  "equity": {
+    "population": 13637,
+    "pct_low_income": 26.7,
+    "pct_people_of_color": 77.8,
+    "pct_under_5": 8.5,
+    "pct_over_64": 13.2,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 60.3,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 49.2,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 56.8,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 10.1,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 9.8,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 16.4,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 58.6,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 58.1,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 83.9,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 26.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 92.9,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 149.8
+      },
+      {
+        "label": "Ozone",
+        "score": 41.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 135.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 28.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 24.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 45.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 120.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 136.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 190.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 63.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 219.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Beeville, Texas (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 9.3,
+      "age_adjusted": 9.3,
+      "state_mean": 9.5,
+      "us_mean": 10.0,
+      "vs_state_pp": -0.19,
+      "vs_state_pct": -2.0,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.72,
+      "vs_us_pct": -7.2,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 6.0,
+      "age_adjusted": 5.8,
+      "state_mean": 5.4,
+      "us_mean": 5.5,
+      "vs_state_pp": 0.36,
+      "vs_state_pct": 6.6,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.3,
+      "vs_us_pct": 5.5,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 6.4,
+      "age_adjusted": 6.0,
+      "state_mean": 5.4,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.62,
+      "vs_state_pct": 11.5,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.69,
+      "vs_us_pct": 13.0,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 15.9,
+      "age_adjusted": 15.3,
+      "state_mean": 12.3,
+      "us_mean": 10.5,
+      "vs_state_pp": 3.03,
+      "vs_state_pct": 24.7,
+      "vs_state_class": "worse",
+      "vs_us_pp": 4.84,
+      "vs_us_pct": 46.3,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.8,
+      "age_adjusted": 18.0,
+      "state_mean": 17.1,
+      "us_mean": 16.8,
+      "vs_state_pp": 0.94,
+      "vs_state_pct": 5.5,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.25,
+      "vs_us_pct": 7.5,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "skidmore",
+      "name": "Skidmore",
+      "population": 1168,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "pettus",
+      "name": "Pettus",
+      "population": 603,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "tynan",
+      "name": "Tynan",
+      "population": 289,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "crowley",
+      "name": "Crowley",
+      "population": 18392,
+      "facilities_count": 2,
+      "total_releases_pounds": 69053,
+      "dominant_medium": "land",
+      "ej_pct_avg": 55.3,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "galena-park",
+      "name": "Galena Park",
+      "population": 10641,
+      "facilities_count": 2,
+      "total_releases_pounds": 34431,
+      "dominant_medium": "land",
+      "ej_pct_avg": 85.0,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+39 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "lackland-afb",
+      "name": "Lackland AFB",
+      "population": 7077,
+      "facilities_count": 2,
+      "total_releases_pounds": 50633,
+      "dominant_medium": "land",
+      "ej_pct_avg": 56.0,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T13:59:37Z"
+}

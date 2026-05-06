@@ -1,0 +1,169 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "mertzon-gas-plant",
+    "name": "Mertzon Gas Plant",
+    "parent_company": "Targa Resources CORP",
+    "address": "14701 US-67",
+    "city": "Mertzon",
+    "county": "Irion County",
+    "county_slug": "irion",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.339937,
+    "lng": -100.71793
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 8132,
+    "air_releases_pounds": 5411,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2721,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 46.6,
+    "long_arc_pct_change": -62.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 21635
+      },
+      {
+        "year": 2023,
+        "value": 5548
+      },
+      {
+        "year": 2024,
+        "value": 8132
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2637,
+      "history": [
+        {
+          "year": 2022,
+          "value": 140
+        },
+        {
+          "year": 2023,
+          "value": 2357
+        },
+        {
+          "year": 2024,
+          "value": 2637
+        }
+      ],
+      "yoy_pct_change": 11.9,
+      "long_arc_pct_change": 1783.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 2467,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1000
+        },
+        {
+          "year": 2023,
+          "value": 2240
+        },
+        {
+          "year": 2024,
+          "value": 2467
+        }
+      ],
+      "yoy_pct_change": 10.1,
+      "long_arc_pct_change": 146.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1329,
+      "history": [
+        {
+          "year": 2022,
+          "value": 490
+        },
+        {
+          "year": 2023,
+          "value": 951
+        },
+        {
+          "year": 2024,
+          "value": 1329
+        }
+      ],
+      "yoy_pct_change": 39.8,
+      "long_arc_pct_change": 171.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 1080,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 1080
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 619,
+      "history": [
+        {
+          "year": 2022,
+          "value": 495
+        },
+        {
+          "year": 2024,
+          "value": 619
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 25.1,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 1561,
+    "pct_low_income": 7.4,
+    "pct_people_of_color": 27.700000000000003,
+    "pct_under_5": 6.9,
+    "pct_over_64": 19.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Irion County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

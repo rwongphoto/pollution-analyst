@@ -1,0 +1,177 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "freeport-lng-liquefaction-facility",
+    "name": "Freeport Lng Liquefaction Facility",
+    "parent_company": "Freeport Lng Development LP",
+    "address": "1500 LAMAR ST",
+    "city": "Freeport",
+    "county": "Brazoria County",
+    "county_slug": "brazoria",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 28.929456,
+    "lng": -95.314628
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 24000,
+    "air_releases_pounds": 24000,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 5,
+    "yoy_pct_change": -11.8,
+    "long_arc_pct_change": 8.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 22214
+      },
+      {
+        "year": 2023,
+        "value": 27221
+      },
+      {
+        "year": 2024,
+        "value": 24000
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene",
+      "cas": "74-85-1",
+      "category": "general",
+      "total_pounds_recent": 24000,
+      "history": [
+        {
+          "year": 2022,
+          "value": 22212
+        },
+        {
+          "year": 2023,
+          "value": 27220
+        },
+        {
+          "year": 2024,
+          "value": 24000
+        }
+      ],
+      "yoy_pct_change": -11.8,
+      "long_arc_pct_change": 8.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 0.46,
+      "history": [
+        {
+          "year": 2022,
+          "value": 0.87
+        },
+        {
+          "year": 2023,
+          "value": 0.53
+        },
+        {
+          "year": 2024,
+          "value": 0.46
+        }
+      ],
+      "yoy_pct_change": -14.1,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 0.1,
+      "history": [
+        {
+          "year": 2022,
+          "value": 0.33
+        },
+        {
+          "year": 2023,
+          "value": 0.16
+        },
+        {
+          "year": 2024,
+          "value": 0.1
+        }
+      ],
+      "yoy_pct_change": -38.4,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 0.02,
+      "history": [
+        {
+          "year": 2022,
+          "value": 0.02
+        },
+        {
+          "year": 2023,
+          "value": 0.05
+        },
+        {
+          "year": 2024,
+          "value": 0.02
+        }
+      ],
+      "yoy_pct_change": -63.0,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 0.01,
+      "history": [
+        {
+          "year": 2022,
+          "value": 0.11
+        },
+        {
+          "year": 2023,
+          "value": 0.01
+        },
+        {
+          "year": 2024,
+          "value": 0.01
+        }
+      ],
+      "yoy_pct_change": -37.5,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 1719,
+    "pct_low_income": 67.8,
+    "pct_people_of_color": 76.8,
+    "pct_under_5": 14.8,
+    "pct_over_64": 12.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

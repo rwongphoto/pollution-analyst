@@ -1,0 +1,214 @@
+{
+  "site": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "north-east-2nd-street-site",
+    "name": "North East 2Nd Street Site",
+    "epa_id": "TXN000606760",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Swisher County",
+    "county_slug": "swisher",
+    "city": "Happy",
+    "city_slug": "happy",
+    "address": "201 North Gordon Street",
+    "zip": "79042",
+    "lat": 34.745,
+    "lng": -101.853333
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 4,
+    "primary_contaminant": "1,2-Dibromoethane"
+  },
+  "contaminants": [
+    {
+      "name": "1,2-Dibromoethane",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "1,2-Dichloroethane",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Carbon Tetrachloride",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Chloroform",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "TX2190001",
+        "name": "Happy Municipal Water System",
+        "slug": "happy-municipal-water-system",
+        "state": "tx",
+        "distance_miles": 0.32,
+        "place_name": "Happy",
+        "primary_source": "groundwater",
+        "population_served": 712,
+        "health_based_5yr": 1,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 6989,
+    "pct_low_income": 29.5,
+    "pct_people_of_color": 57.9,
+    "pct_under_5": 6.4,
+    "pct_over_64": 17.3,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 6.1,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 47.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 25.9,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 6.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 5.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 5.9,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 74.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 72.4,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 28.4,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 60.4,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 7.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 79.2,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 13.3
+      },
+      {
+        "label": "Ozone",
+        "score": 193.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 70.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 19.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 11.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 16.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 149.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 19.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 22.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 110.3
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 40.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Swisher County, Texas (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:35Z"
+}

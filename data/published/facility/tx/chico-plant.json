@@ -1,0 +1,134 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "chico-plant",
+    "name": "Chico Plant",
+    "parent_company": "Targa Resources CORP",
+    "address": "383 CO RD 1745",
+    "city": "Chico",
+    "county": "Wise County",
+    "county_slug": "wise",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 33.312677,
+    "lng": -97.878807
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 27985,
+    "air_releases_pounds": 3676,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 24309,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 97.6,
+    "long_arc_pct_change": 97.6,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 14164
+      },
+      {
+        "year": 2024,
+        "value": 27985
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 15755,
+      "history": [
+        {
+          "year": 2023,
+          "value": 8472
+        },
+        {
+          "year": 2024,
+          "value": 15755
+        }
+      ],
+      "yoy_pct_change": 86.0,
+      "long_arc_pct_change": 86.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 5945,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2847
+        },
+        {
+          "year": 2024,
+          "value": 5945
+        }
+      ],
+      "yoy_pct_change": 108.8,
+      "long_arc_pct_change": 108.8,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 3554,
+      "history": [
+        {
+          "year": 2024,
+          "value": 3554
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 2731,
+      "history": [
+        {
+          "year": 2022,
+          "value": 845
+        },
+        {
+          "year": 2023,
+          "value": 2845
+        },
+        {
+          "year": 2024,
+          "value": 2731
+        }
+      ],
+      "yoy_pct_change": -4.0,
+      "long_arc_pct_change": 223.2,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 70062,
+    "pct_low_income": 9.1,
+    "pct_people_of_color": 25.400000000000006,
+    "pct_under_5": 6.5,
+    "pct_over_64": 15.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Wise County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

@@ -1,0 +1,114 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "mid-south-control-line",
+    "name": "Mid-South Control Line",
+    "parent_company": null,
+    "address": "1368 E RICHEY RD",
+    "city": "Houston",
+    "county": "Harris County",
+    "county_slug": "harris",
+    "naics_label": "331210 \u00b7 Primary Metals",
+    "lat": 29.997464,
+    "lng": -95.38412
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 254,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 12,
+    "land_releases_pounds": 242,
+    "chemicals_reported": 4,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 254
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 162,
+      "history": [
+        {
+          "year": 2024,
+          "value": 162
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 70,
+      "history": [
+        {
+          "year": 2024,
+          "value": 70
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Copper",
+      "cas": "7440-50-8",
+      "category": "general",
+      "total_pounds_recent": 11,
+      "history": [
+        {
+          "year": 2024,
+          "value": 11
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 11,
+      "history": [
+        {
+          "year": 2024,
+          "value": 11
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 58268,
+    "pct_low_income": 42.2,
+    "pct_people_of_color": 90.6,
+    "pct_under_5": 8.1,
+    "pct_over_64": 6.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (31 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

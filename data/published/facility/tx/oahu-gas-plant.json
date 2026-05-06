@@ -1,0 +1,217 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "oahu-gas-plant",
+    "name": "Oahu Gas Plant",
+    "parent_company": "Targa Resources CORP",
+    "address": "3542 FM 1776",
+    "city": "Coyanosa",
+    "county": "Pecos County",
+    "county_slug": "pecos",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.344114,
+    "lng": -103.028869
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 2861657,
+    "air_releases_pounds": 1761,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2859896,
+    "chemicals_reported": 7,
+    "yoy_pct_change": 3797.6,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 4293
+      },
+      {
+        "year": 2023,
+        "value": 73421
+      },
+      {
+        "year": 2024,
+        "value": 2861657
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Hydrogen sulfide",
+      "cas": "7783-06-4",
+      "category": "general",
+      "total_pounds_recent": 2801462,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4213
+        },
+        {
+          "year": 2024,
+          "value": 2801462
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 32932,
+      "history": [
+        {
+          "year": 2023,
+          "value": 30508
+        },
+        {
+          "year": 2024,
+          "value": 32932
+        }
+      ],
+      "yoy_pct_change": 7.9,
+      "long_arc_pct_change": 7.9,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 14290,
+      "history": [
+        {
+          "year": 2023,
+          "value": 9544
+        },
+        {
+          "year": 2024,
+          "value": 14290
+        }
+      ],
+      "yoy_pct_change": 49.7,
+      "long_arc_pct_change": 49.7,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 6129,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2448
+        },
+        {
+          "year": 2024,
+          "value": 6129
+        }
+      ],
+      "yoy_pct_change": 150.4,
+      "long_arc_pct_change": 150.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 4574,
+      "history": [
+        {
+          "year": 2023,
+          "value": 30921
+        },
+        {
+          "year": 2024,
+          "value": 4574
+        }
+      ],
+      "yoy_pct_change": -85.2,
+      "long_arc_pct_change": -85.2,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 1667,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6
+        },
+        {
+          "year": 2024,
+          "value": 1667
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 603,
+      "history": [
+        {
+          "year": 2024,
+          "value": 603
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Cyclohexane",
+      "summary": "Cyclohexane releases at Oahu Gas Plant fell from 31k lb to 5k lb (85% lower) between 2023 and 2024.",
+      "magnitude_pct": -85.2,
+      "magnitude_abs": -26347.1,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 5
+        },
+        {
+          "year": 2023,
+          "value": 30921
+        },
+        {
+          "year": 2024,
+          "value": 4574
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 15114,
+    "pct_low_income": 23.0,
+    "pct_people_of_color": 76.3,
+    "pct_under_5": 7.4,
+    "pct_over_64": 13.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Pecos County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

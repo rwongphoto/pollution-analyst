@@ -1,0 +1,150 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "dcp-midstream-eagle-gas-plant",
+    "name": "Dcp Midstream Eagle Gas Plant",
+    "parent_company": "Phillips 66 Co",
+    "address": "3048 CR 282",
+    "city": "Edna",
+    "county": "Jackson County",
+    "county_slug": "jackson",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 29.138905,
+    "lng": -96.651042
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 10140,
+    "air_releases_pounds": 2480,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 7660,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 82.6,
+    "long_arc_pct_change": -67.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 30690
+      },
+      {
+        "year": 2023,
+        "value": 5552
+      },
+      {
+        "year": 2024,
+        "value": 10140
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 5780,
+      "history": [
+        {
+          "year": 2022,
+          "value": 13400
+        },
+        {
+          "year": 2023,
+          "value": 3710
+        },
+        {
+          "year": 2024,
+          "value": 5780
+        }
+      ],
+      "yoy_pct_change": 55.8,
+      "long_arc_pct_change": -56.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1760,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4100
+        },
+        {
+          "year": 2023,
+          "value": 1101
+        },
+        {
+          "year": 2024,
+          "value": 1760
+        }
+      ],
+      "yoy_pct_change": 59.8,
+      "long_arc_pct_change": -57.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 1680,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1600
+        },
+        {
+          "year": 2023,
+          "value": 741
+        },
+        {
+          "year": 2024,
+          "value": 1680
+        }
+      ],
+      "yoy_pct_change": 126.6,
+      "long_arc_pct_change": 5.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 920,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2390
+        },
+        {
+          "year": 2024,
+          "value": 920
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -61.5,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 15010,
+    "pct_low_income": 12.0,
+    "pct_people_of_color": 42.6,
+    "pct_under_5": 5.5,
+    "pct_over_64": 19.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Jackson County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

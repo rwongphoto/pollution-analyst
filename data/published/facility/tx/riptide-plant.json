@@ -1,0 +1,219 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "riptide-plant",
+    "name": "Riptide Plant",
+    "parent_company": "Enlink Midstream Operating LP",
+    "address": "3014 FM 829",
+    "city": "Lenorah",
+    "county": "Martin County",
+    "county_slug": "martin",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.252542,
+    "lng": -101.913196
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 25236,
+    "air_releases_pounds": 8746,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 16490,
+    "chemicals_reported": 7,
+    "yoy_pct_change": 28.6,
+    "long_arc_pct_change": 14.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 22000
+      },
+      {
+        "year": 2023,
+        "value": 19622
+      },
+      {
+        "year": 2024,
+        "value": 25236
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 11704,
+      "history": [
+        {
+          "year": 2022,
+          "value": 11361
+        },
+        {
+          "year": 2023,
+          "value": 9772
+        },
+        {
+          "year": 2024,
+          "value": 11704
+        }
+      ],
+      "yoy_pct_change": 19.8,
+      "long_arc_pct_change": 3.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 10189,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10014
+        },
+        {
+          "year": 2023,
+          "value": 8148
+        },
+        {
+          "year": 2024,
+          "value": 10189
+        }
+      ],
+      "yoy_pct_change": 25.0,
+      "long_arc_pct_change": 1.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 2189,
+      "history": [
+        {
+          "year": 2022,
+          "value": 488
+        },
+        {
+          "year": 2023,
+          "value": 1332
+        },
+        {
+          "year": 2024,
+          "value": 2189
+        }
+      ],
+      "yoy_pct_change": 64.3,
+      "long_arc_pct_change": 348.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 838,
+      "history": [
+        {
+          "year": 2022,
+          "value": 87
+        },
+        {
+          "year": 2023,
+          "value": 230
+        },
+        {
+          "year": 2024,
+          "value": 838
+        }
+      ],
+      "yoy_pct_change": 264.3,
+      "long_arc_pct_change": 863.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 296,
+      "history": [
+        {
+          "year": 2022,
+          "value": 40
+        },
+        {
+          "year": 2023,
+          "value": 100
+        },
+        {
+          "year": 2024,
+          "value": 296
+        }
+      ],
+      "yoy_pct_change": 196.0,
+      "long_arc_pct_change": 640.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 10,
+      "history": [
+        {
+          "year": 2023,
+          "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 10
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 10,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10
+        },
+        {
+          "year": 2023,
+          "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 10
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 5228,
+    "pct_low_income": 16.9,
+    "pct_people_of_color": 57.0,
+    "pct_under_5": 6.4,
+    "pct_over_64": 10.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Martin County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

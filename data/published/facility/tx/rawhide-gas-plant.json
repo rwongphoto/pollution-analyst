@@ -1,0 +1,210 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "rawhide-gas-plant",
+    "name": "Rawhide Gas Plant",
+    "parent_company": "Phillips 66 Co",
+    "address": "527 MCDONALD RD N",
+    "city": "Big Spring",
+    "county": "Glasscock County",
+    "county_slug": "glasscock",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.276673,
+    "lng": -101.374562
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 25302,
+    "air_releases_pounds": 2158,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 23144,
+    "chemicals_reported": 6,
+    "yoy_pct_change": -26.0,
+    "long_arc_pct_change": 4.2,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 24292
+      },
+      {
+        "year": 2023,
+        "value": 34200
+      },
+      {
+        "year": 2024,
+        "value": 25302
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 12183,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4201
+        },
+        {
+          "year": 2023,
+          "value": 12000
+        },
+        {
+          "year": 2024,
+          "value": 12183
+        }
+      ],
+      "yoy_pct_change": 1.5,
+      "long_arc_pct_change": 190.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 7406,
+      "history": [
+        {
+          "year": 2022,
+          "value": 3700
+        },
+        {
+          "year": 2023,
+          "value": 5500
+        },
+        {
+          "year": 2024,
+          "value": 7406
+        }
+      ],
+      "yoy_pct_change": 34.7,
+      "long_arc_pct_change": 100.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 2663,
+      "history": [
+        {
+          "year": 2022,
+          "value": 590
+        },
+        {
+          "year": 2023,
+          "value": 2100
+        },
+        {
+          "year": 2024,
+          "value": 2663
+        }
+      ],
+      "yoy_pct_change": 26.8,
+      "long_arc_pct_change": 351.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2321,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2500
+        },
+        {
+          "year": 2023,
+          "value": 1600
+        },
+        {
+          "year": 2024,
+          "value": 2321
+        }
+      ],
+      "yoy_pct_change": 45.1,
+      "long_arc_pct_change": -7.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 384,
+      "history": [
+        {
+          "year": 2024,
+          "value": 384
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 345,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1200
+        },
+        {
+          "year": 2024,
+          "value": 345
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -71.2,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0000050000",
+      "summary": "0000050000 releases at Rawhide Gas Plant fell from 13k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -13000.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 10000
+        },
+        {
+          "year": 2023,
+          "value": 13000
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 583,
+    "pct_low_income": 30.9,
+    "pct_people_of_color": 15.4,
+    "pct_under_5": 2.9,
+    "pct_over_64": 27.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}

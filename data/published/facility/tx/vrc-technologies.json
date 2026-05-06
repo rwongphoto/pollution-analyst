@@ -1,0 +1,179 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "vrc-technologies",
+    "name": "Vrc Technologies",
+    "parent_company": null,
+    "address": "1412 CUSTER RD",
+    "city": "Brownwood",
+    "county": "Brown County",
+    "county_slug": "brown",
+    "naics_label": "325199 \u00b7 Chemicals",
+    "lat": 31.681397,
+    "lng": -98.978989
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1712,
+    "air_releases_pounds": 1712,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -93.8,
+    "long_arc_pct_change": -63.9,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 4744
+      },
+      {
+        "year": 2022,
+        "value": 30798
+      },
+      {
+        "year": 2023,
+        "value": 27734
+      },
+      {
+        "year": 2024,
+        "value": 1712
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 1657,
+      "history": [
+        {
+          "year": 2021,
+          "value": 3404
+        },
+        {
+          "year": 2022,
+          "value": 18224
+        },
+        {
+          "year": 2023,
+          "value": 13236
+        },
+        {
+          "year": 2024,
+          "value": 1657
+        }
+      ],
+      "yoy_pct_change": -87.5,
+      "long_arc_pct_change": -51.3,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 55,
+      "history": [
+        {
+          "year": 2021,
+          "value": 587
+        },
+        {
+          "year": 2022,
+          "value": 9260
+        },
+        {
+          "year": 2023,
+          "value": 13323
+        },
+        {
+          "year": 2024,
+          "value": 55
+        }
+      ],
+      "yoy_pct_change": -99.6,
+      "long_arc_pct_change": -90.6,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Formaldehyde",
+      "summary": "Formaldehyde releases at Vrc Technologies fell from 13k lb to 55 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -99.6,
+      "magnitude_abs": -13268.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 587
+        },
+        {
+          "year": 2022,
+          "value": 9260
+        },
+        {
+          "year": 2023,
+          "value": 13323
+        },
+        {
+          "year": 2024,
+          "value": 55
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Methanol",
+      "summary": "Methanol releases at Vrc Technologies fell from 13k lb to 2k lb (87% lower) between 2023 and 2024.",
+      "magnitude_pct": -87.5,
+      "magnitude_abs": -11579.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 3404
+        },
+        {
+          "year": 2022,
+          "value": 18224
+        },
+        {
+          "year": 2023,
+          "value": 13236
+        },
+        {
+          "year": 2024,
+          "value": 1657
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 16167,
+    "pct_low_income": 45.8,
+    "pct_people_of_color": 41.0,
+    "pct_under_5": 5.1,
+    "pct_over_64": 16.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (16 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

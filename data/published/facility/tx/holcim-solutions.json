@@ -1,0 +1,116 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "holcim-solutions",
+    "name": "Holcim Solutions",
+    "parent_company": "Holcim Participations (Us) INC",
+    "address": "2400 SPRING STUEBNER RD",
+    "city": "Spring",
+    "county": "Harris County",
+    "county_slug": "harris",
+    "naics_label": "325991 \u00b7 Chemicals",
+    "lat": 30.083032,
+    "lng": -95.452857
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 8151,
+    "air_releases_pounds": 164,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 7987,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 24.9,
+    "long_arc_pct_change": 472.0,
+    "long_arc_baseline_year": 2016,
+    "history": [
+      {
+        "year": 2016,
+        "value": 1425
+      },
+      {
+        "year": 2017,
+        "value": 10
+      },
+      {
+        "year": 2018,
+        "value": 5
+      },
+      {
+        "year": 2020,
+        "value": 250
+      },
+      {
+        "year": 2021,
+        "value": 4183
+      },
+      {
+        "year": 2023,
+        "value": 6525
+      },
+      {
+        "year": 2024,
+        "value": 8151
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nonylphenol Ethoxylates",
+      "cas": "N535",
+      "category": "general",
+      "total_pounds_recent": 6498,
+      "history": [
+        {
+          "year": 2023,
+          "value": 5717
+        },
+        {
+          "year": 2024,
+          "value": 6498
+        }
+      ],
+      "yoy_pct_change": 13.7,
+      "long_arc_pct_change": 13.7,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 1653,
+      "history": [
+        {
+          "year": 2023,
+          "value": 808
+        },
+        {
+          "year": 2024,
+          "value": 1653
+        }
+      ],
+      "yoy_pct_change": 104.6,
+      "long_arc_pct_change": 104.6,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 72831,
+    "pct_low_income": 21.7,
+    "pct_people_of_color": 56.2,
+    "pct_under_5": 7.8,
+    "pct_over_64": 8.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (33 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

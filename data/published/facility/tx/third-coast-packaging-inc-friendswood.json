@@ -1,0 +1,114 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "third-coast-packaging-inc-friendswood",
+    "name": "Third Coast Packaging INC. Friendswood",
+    "parent_company": "Third Coast Packaging INC",
+    "address": "18410 W CLOVER LANE",
+    "city": "Friendswood",
+    "county": "Galveston County",
+    "county_slug": "galveston",
+    "naics_label": "493190 \u00b7 Other",
+    "lat": 29.510244,
+    "lng": -95.234497
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 21936,
+    "air_releases_pounds": 35,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 21901,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 204.8,
+    "long_arc_pct_change": 204.8,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 7196
+      },
+      {
+        "year": 2024,
+        "value": 21936
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Diisocyanates",
+      "cas": "N120",
+      "category": "general",
+      "total_pounds_recent": 20083,
+      "history": [
+        {
+          "year": 2023,
+          "value": 7196
+        },
+        {
+          "year": 2024,
+          "value": 20083
+        }
+      ],
+      "yoy_pct_change": 179.1,
+      "long_arc_pct_change": 179.1,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Certain glycol ethers",
+      "cas": "N230",
+      "category": "respiratory",
+      "total_pounds_recent": 1853,
+      "history": [
+        {
+          "year": 2024,
+          "value": 1853
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Diisocyanates",
+      "summary": "Diisocyanates releases at Third Coast Packaging INC. Friendswood rose from 7k lb to 20k lb (2.8\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 179.1,
+      "magnitude_abs": 12887.3,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 7196
+        },
+        {
+          "year": 2024,
+          "value": 20083
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 40286,
+    "pct_low_income": 11.8,
+    "pct_people_of_color": 34.1,
+    "pct_under_5": 6.5,
+    "pct_over_64": 14.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (24 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

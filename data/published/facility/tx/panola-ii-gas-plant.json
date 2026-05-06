@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "panola-ii-gas-plant",
+    "name": "Panola II Gas Plant",
+    "parent_company": "Enterprise Products Operating LLC",
+    "address": "2539 COUNTY ROAD 301",
+    "city": "Carthage",
+    "county": "Panola County",
+    "county_slug": "panola",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.191811,
+    "lng": -94.268904
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 2903,
+    "air_releases_pounds": 1719,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1184,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 5.2,
+    "long_arc_pct_change": 5.8,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 2745
+      },
+      {
+        "year": 2023,
+        "value": 2759
+      },
+      {
+        "year": 2024,
+        "value": 2903
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 2903,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2745
+        },
+        {
+          "year": 2023,
+          "value": 2759
+        },
+        {
+          "year": 2024,
+          "value": 2903
+        }
+      ],
+      "yoy_pct_change": 5.2,
+      "long_arc_pct_change": 5.8,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 928,
+    "pct_low_income": 17.8,
+    "pct_people_of_color": 41.9,
+    "pct_under_5": 18.9,
+    "pct_over_64": 15.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:30Z"
+}

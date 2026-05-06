@@ -1,0 +1,188 @@
+{
+  "facility": {
+    "state": "tx",
+    "state_label": "Texas",
+    "slug": "sterling-gas-plant",
+    "name": "Sterling Gas Plant",
+    "parent_company": "Targa Resources CORP",
+    "address": "14206 US HIGHWAY 87 N",
+    "city": "Sterling City",
+    "county": "Sterling County",
+    "county_slug": "sterling",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 31.968495,
+    "lng": -101.235754
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 27935,
+    "air_releases_pounds": 20667,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 7268,
+    "chemicals_reported": 6,
+    "yoy_pct_change": 387.9,
+    "long_arc_pct_change": 16.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 24005
+      },
+      {
+        "year": 2023,
+        "value": 5726
+      },
+      {
+        "year": 2024,
+        "value": 27935
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 20000,
+      "history": [
+        {
+          "year": 2022,
+          "value": 22000
+        },
+        {
+          "year": 2024,
+          "value": 20000
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -9.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 3252,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2574
+        },
+        {
+          "year": 2024,
+          "value": 3252
+        }
+      ],
+      "yoy_pct_change": 26.3,
+      "long_arc_pct_change": 26.3,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 2176,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1049
+        },
+        {
+          "year": 2024,
+          "value": 2176
+        }
+      ],
+      "yoy_pct_change": 107.4,
+      "long_arc_pct_change": 107.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1116,
+      "history": [
+        {
+          "year": 2022,
+          "value": 525
+        },
+        {
+          "year": 2023,
+          "value": 816
+        },
+        {
+          "year": 2024,
+          "value": 1116
+        }
+      ],
+      "yoy_pct_change": 36.7,
+      "long_arc_pct_change": 112.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 898,
+      "history": [
+        {
+          "year": 2022,
+          "value": 525
+        },
+        {
+          "year": 2023,
+          "value": 768
+        },
+        {
+          "year": 2024,
+          "value": 898
+        }
+      ],
+      "yoy_pct_change": 16.9,
+      "long_arc_pct_change": 71.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 493,
+      "history": [
+        {
+          "year": 2022,
+          "value": 925
+        },
+        {
+          "year": 2023,
+          "value": 518
+        },
+        {
+          "year": 2024,
+          "value": 493
+        }
+      ],
+      "yoy_pct_change": -4.9,
+      "long_arc_pct_change": -46.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 1392,
+    "pct_low_income": 1.8,
+    "pct_people_of_color": 34.3,
+    "pct_under_5": 13.7,
+    "pct_over_64": 13.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Sterling County, TX (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T13:59:29Z"
+}
