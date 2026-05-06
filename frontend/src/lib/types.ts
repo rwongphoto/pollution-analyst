@@ -551,3 +551,55 @@ export interface HomePagePayload {
   featured: FeaturedEntity[]; // 3 featured cards
   _published_at?: string;
 }
+
+// ---- Rankings (cross-state, per-pathway top-N tables) -------------------
+// Powers /rankings/counties, /rankings/cities, /rankings/facilities.
+// Written by pipeline/src/publish/rankings.py — one file at
+// data/published/rankings.json. Each surface lists multiple tables; each
+// table holds an ordered list of rows for one indicator + direction.
+
+export type RankingDirection = "most" | "least";
+
+export interface RankingRow {
+  rank: number;
+  state: string;
+  state_label: string;
+  slug: string;
+  name: string;
+  value: number;
+  value_label: string;
+  // Place-only fields (counties + cities)
+  population?: number;
+  county_name?: string | null;
+  // Facility-only fields
+  city?: string | null;
+  county?: string | null;
+  top_chemical?: string | null;
+}
+
+export interface RankingTable {
+  lane: string;            // e.g. "pm25_annual" / "cancer_risk" / "tri_air"
+  label: string;           // table heading, e.g. "PM2.5 annual mean"
+  units: string;           // value units, e.g. "µg/m³"
+  direction: RankingDirection;
+  county_derived?: boolean; // true → ranking inherits a county-grain value
+  rows: RankingRow[];
+}
+
+export interface RankingsSurface {
+  tables: RankingTable[];
+}
+
+export interface RankingsPayload {
+  reporting_year: number;
+  states_covered: string[];
+  counts: {
+    counties: number;
+    cities: number;
+    facilities: number;
+  };
+  counties: RankingsSurface;
+  cities: RankingsSurface;
+  facilities: RankingsSurface;
+  _published_at?: string;
+}

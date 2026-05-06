@@ -13,6 +13,7 @@ import type {
   CountyPagePayload,
   FacilityPagePayload,
   HomePagePayload,
+  RankingsPayload,
   StatePagePayload,
   SuperfundPayload,
   WaterUtilityPayload,
@@ -27,6 +28,10 @@ async function readJson<T>(relPath: string): Promise<T> {
 
 export async function loadHome(): Promise<HomePagePayload> {
   return readJson<HomePagePayload>("home.json");
+}
+
+export async function loadRankings(): Promise<RankingsPayload> {
+  return readJson<RankingsPayload>("rankings.json");
 }
 
 export async function loadFacility(state: string, slug: string): Promise<FacilityPagePayload> {
