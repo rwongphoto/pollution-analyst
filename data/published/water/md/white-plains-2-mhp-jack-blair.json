@@ -1,0 +1,205 @@
+{
+  "utility": {
+    "state": "md",
+    "state_label": "Maryland",
+    "slug": "white-plains-2-mhp-jack-blair",
+    "name": "White Plains 2 Mhp/Jack Blair",
+    "pwsid": "MD0080208",
+    "population_served": 70,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Jessup"
+    ],
+    "county": "Charles County",
+    "county_slug": "charles",
+    "place_slug": "jessup"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 9602,
+    "pct_low_income": 4.4,
+    "pct_people_of_color": 70.7,
+    "pct_under_5": 2.0,
+    "pct_over_64": 6.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 13.8,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 57.1,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 43.8,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 78.8,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 58.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 66.4,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 28.1,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 90.9,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 91.1,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 88.1,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 55.1,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 59.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 16.1
+      },
+      {
+        "label": "Ozone",
+        "score": 73.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 47.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 88.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 63.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 72.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 12.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 99.3
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 101.6
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 97.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 59.8
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 66.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Jessup, Maryland (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:44:52Z"
+}

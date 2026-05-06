@@ -1,0 +1,432 @@
+{
+  "place": {
+    "state": "nm",
+    "state_label": "New Mexico",
+    "slug": "grady",
+    "name": "Grady",
+    "fips": "3530210",
+    "population": 153,
+    "county_name": "Curry",
+    "county_fips": "35009"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.0089,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.0089
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.112,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.112
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 88795,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 2.2,
+      "long_arc_pct_change": 119.1,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 40532
+        },
+        {
+          "year": 2011,
+          "value": 42422
+        },
+        {
+          "year": 2012,
+          "value": 43564
+        },
+        {
+          "year": 2013,
+          "value": 37772
+        },
+        {
+          "year": 2014,
+          "value": 38976
+        },
+        {
+          "year": 2015,
+          "value": 40097
+        },
+        {
+          "year": 2016,
+          "value": 41599
+        },
+        {
+          "year": 2017,
+          "value": 42552
+        },
+        {
+          "year": 2018,
+          "value": 43401
+        },
+        {
+          "year": 2019,
+          "value": 84193
+        },
+        {
+          "year": 2020,
+          "value": 87627
+        },
+        {
+          "year": 2021,
+          "value": 89195
+        },
+        {
+          "year": 2022,
+          "value": 86894
+        },
+        {
+          "year": 2023,
+          "value": 88795
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 127,
+    "violations_5yr_total": 15,
+    "health_based_5yr_total": 5,
+    "unresolved_total": 6,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "grady-water-system",
+        "state": "nm",
+        "state_label": "New Mexico",
+        "name": "Grady Water System",
+        "pwsid": "NM3527405",
+        "population_served": 127,
+        "health_based_violations_5yr": 5,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0700",
+      "summary": "Unresolved Drinking water rule (140) violation cited in 2025 (contaminant 0700).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NM3527405"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0700",
+      "summary": "Unresolved Drinking water rule (140) violation cited in 2025 (contaminant 0700).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NM3527405"
+      }
+    }
+  ],
+  "equity": {
+    "population": 153,
+    "pct_low_income": 11.8,
+    "pct_people_of_color": 2.5999999999999943,
+    "pct_under_5": 5.2,
+    "pct_over_64": 47.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Grady, New Mexico (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.3,
+      "age_adjusted": 10.1,
+      "state_mean": 10.0,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.12,
+      "vs_state_pct": 1.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.08,
+      "vs_us_pct": 0.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 7.8,
+      "age_adjusted": 5.6,
+      "state_mean": 5.7,
+      "us_mean": 5.5,
+      "vs_state_pp": -0.06,
+      "vs_state_pct": -1.1,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.1,
+      "vs_us_pct": 1.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.4,
+      "age_adjusted": 5.4,
+      "state_mean": 5.9,
+      "us_mean": 5.3,
+      "vs_state_pp": -0.46,
+      "vs_state_pct": -7.8,
+      "vs_state_class": "better",
+      "vs_us_pp": 0.09,
+      "vs_us_pct": 1.7,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 12.4,
+      "age_adjusted": 8.6,
+      "state_mean": 11.4,
+      "us_mean": 10.5,
+      "vs_state_pp": -2.81,
+      "vs_state_pct": -24.6,
+      "vs_state_class": "better",
+      "vs_us_pp": -1.86,
+      "vs_us_pct": -17.8,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 14.9,
+      "age_adjusted": 17.0,
+      "state_mean": 17.1,
+      "us_mean": 16.8,
+      "vs_state_pp": -0.1,
+      "vs_state_pct": -0.6,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.25,
+      "vs_us_pct": 1.5,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "nm",
+      "slug": "melrose",
+      "name": "Melrose",
+      "population": 473,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 32.5,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nm",
+      "slug": "clovis",
+      "name": "Clovis",
+      "population": 38453,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 36.3,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nm",
+      "slug": "cannon-afb",
+      "name": "Cannon AFB",
+      "population": 2682,
+      "facilities_count": 1,
+      "total_releases_pounds": 592,
+      "dominant_medium": "land",
+      "ej_pct_avg": 32.6,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nm",
+      "slug": "sena",
+      "name": "Sena",
+      "population": 158,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "nm",
+      "slug": "conchas-dam",
+      "name": "Conchas Dam",
+      "population": 147,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "nm",
+      "slug": "ponderosa",
+      "name": "Ponderosa",
+      "population": 160,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T17:01:29Z"
+}

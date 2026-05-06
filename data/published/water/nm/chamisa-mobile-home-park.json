@@ -1,0 +1,252 @@
+{
+  "utility": {
+    "state": "nm",
+    "state_label": "New Mexico",
+    "slug": "chamisa-mobile-home-park",
+    "name": "Chamisa Mobile Home Park",
+    "pwsid": "NM3549101",
+    "population_served": 58,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Albuquerque"
+    ],
+    "county": "Bernalillo County",
+    "county_slug": "bernalillo",
+    "place_slug": "albuquerque"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 3,
+    "health_based_violations_5yr": 1,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "health_based",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Treatment technique violation; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 2
+      },
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 2
+      },
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 5200",
+      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NM3549101"
+      }
+    }
+  ],
+  "equity": {
+    "population": 562551,
+    "pct_low_income": 16.5,
+    "pct_people_of_color": 63.0,
+    "pct_under_5": 5.5,
+    "pct_over_64": 16.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 24.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 79.4,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 79.9,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 92.1,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 17.2,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 74.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 53.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 81.5,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 65.2,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 69.9,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 70.8,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 88.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 50.2
+      },
+      {
+        "label": "Ozone",
+        "score": 169.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 141.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 155.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 31.6
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 125.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 61.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 112.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 107.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 118.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 98.8
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 135.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Albuquerque, New Mexico (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:01:29Z"
+}

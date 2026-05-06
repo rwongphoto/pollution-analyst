@@ -1,0 +1,472 @@
+{
+  "place": {
+    "state": "nm",
+    "state_label": "New Mexico",
+    "slug": "seboyeta",
+    "name": "Seboyeta",
+    "fips": "3571510",
+    "population": 516,
+    "county_name": "Cibola",
+    "county_fips": "35006"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 3,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 10.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.7261,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.7261
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0442,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0442
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 37979,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -0.1,
+      "long_arc_pct_change": -3.1,
+      "baseline_year": 2021,
+      "history": [
+        {
+          "year": 2021,
+          "value": 39182
+        },
+        {
+          "year": 2022,
+          "value": 38025
+        },
+        {
+          "year": 2023,
+          "value": 37979
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 505,
+    "violations_5yr_total": 90,
+    "health_based_5yr_total": 27,
+    "unresolved_total": 20,
+    "utilities_with_unresolved": 3,
+    "utilities": [
+      {
+        "slug": "bibo-mutual-domestic-water-assoc",
+        "state": "nm",
+        "state_label": "New Mexico",
+        "name": "Bibo Mutual Domestic Water Assoc",
+        "pwsid": "NM3526033",
+        "population_served": 241,
+        "health_based_violations_5yr": 14,
+        "unresolved": true
+      },
+      {
+        "slug": "moquino-water-system",
+        "state": "nm",
+        "state_label": "New Mexico",
+        "name": "Moquino Water System",
+        "pwsid": "NM3525633",
+        "population_served": 55,
+        "health_based_violations_5yr": 7,
+        "unresolved": true
+      },
+      {
+        "slug": "seboyeta-water-system",
+        "state": "nm",
+        "state_label": "New Mexico",
+        "name": "Seboyeta Water System",
+        "pwsid": "NM3525933",
+        "population_served": 209,
+        "health_based_violations_5yr": 6,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7500",
+      "summary": "Unresolved Volatile Organic Chemical Rule violation cited in 2023 (contaminant 7500).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NM3525633"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0700",
+      "summary": "Unresolved Drinking water rule (140) violation cited in 2022 (contaminant 0700).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NM3525633"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7500",
+      "summary": "Unresolved Volatile Organic Chemical Rule violation cited in 2024 (contaminant 7500).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NM3525933"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NM3525933"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0700",
+      "summary": "Unresolved Drinking water rule (140) violation cited in 2025 (contaminant 0700).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NM3526033"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0700",
+      "summary": "Unresolved Drinking water rule (140) violation cited in 2025 (contaminant 0700).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NM3526033"
+      }
+    }
+  ],
+  "equity": {
+    "population": 516,
+    "pct_low_income": 16.7,
+    "pct_people_of_color": 100.0,
+    "pct_under_5": 0.0,
+    "pct_over_64": 24.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Seboyeta, New Mexico (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 8.7,
+      "age_adjusted": 9.5,
+      "state_mean": 10.0,
+      "us_mean": 10.0,
+      "vs_state_pp": -0.48,
+      "vs_state_pct": -4.8,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.52,
+      "vs_us_pct": -5.2,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 5.8,
+      "age_adjusted": 3.8,
+      "state_mean": 5.7,
+      "us_mean": 5.5,
+      "vs_state_pp": -1.86,
+      "vs_state_pct": -32.9,
+      "vs_state_class": "better",
+      "vs_us_pp": -1.7,
+      "vs_us_pct": -30.9,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 9.0,
+      "age_adjusted": 5.1,
+      "state_mean": 5.9,
+      "us_mean": 5.3,
+      "vs_state_pp": -0.76,
+      "vs_state_pct": -13.0,
+      "vs_state_class": "better",
+      "vs_us_pp": -0.21,
+      "vs_us_pct": -4.0,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 19.5,
+      "age_adjusted": 12.5,
+      "state_mean": 11.4,
+      "us_mean": 10.5,
+      "vs_state_pp": 1.09,
+      "vs_state_pct": 9.6,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.04,
+      "vs_us_pct": 19.5,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 12.4,
+      "age_adjusted": 16.2,
+      "state_mean": 17.1,
+      "us_mean": 16.8,
+      "vs_state_pp": -0.9,
+      "vs_state_pct": -5.3,
+      "vs_state_class": "better",
+      "vs_us_pp": -0.55,
+      "vs_us_pct": -3.3,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "nm",
+      "slug": "bluewater",
+      "name": "Bluewater",
+      "population": 224,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nm",
+      "slug": "san-rafael",
+      "name": "San Rafael",
+      "population": 2322,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nm",
+      "slug": "milan",
+      "name": "Milan",
+      "population": 2375,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 41.0,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nm",
+      "slug": "grants",
+      "name": "Grants",
+      "population": 9177,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 41.8,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nm",
+      "slug": "lake-arthur",
+      "name": "Lake Arthur",
+      "population": 527,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "nm",
+      "slug": "lemitar",
+      "name": "Lemitar",
+      "population": 533,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T17:01:29Z"
+}

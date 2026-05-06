@@ -1,0 +1,198 @@
+{
+  "site": {
+    "state": "az",
+    "state_label": "Arizona",
+    "slug": "mountain-view-mobile-home-estates",
+    "name": "Mountain View Mobile Home Estates",
+    "epa_id": "AZD980735724",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Gila County",
+    "county_slug": "gila",
+    "city": "Globe",
+    "city_slug": "globe",
+    "address": "Rte 77",
+    "zip": "85501",
+    "lat": 33.3728,
+    "lng": -110.7332
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Asbestos"
+  },
+  "contaminants": [
+    {
+      "name": "Asbestos",
+      "media": "Debris",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Asbestos",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "AZ0404008",
+        "name": "Globe City Of",
+        "slug": "globe-city-of",
+        "state": "az",
+        "distance_miles": 1.51,
+        "place_name": "Globe",
+        "primary_source": "groundwater",
+        "population_served": 7536,
+        "health_based_5yr": 2,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 7230,
+    "pct_low_income": 17.5,
+    "pct_people_of_color": 58.6,
+    "pct_under_5": 4.0,
+    "pct_over_64": 20.2,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 1.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 93.2,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 51.0,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 14.2,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 99.6,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 23.2,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 70.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 18.3,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 70.2,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 91.1,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 1.5
+      },
+      {
+        "label": "Ozone",
+        "score": 145.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 77.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 25.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 151.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 39.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 99.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 30.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 92.3
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 139.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Globe, Arizona (no Census block groups within 1 mile \u2014 falling back to host city; disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:09:59Z"
+}

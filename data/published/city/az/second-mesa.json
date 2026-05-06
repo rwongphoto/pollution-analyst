@@ -1,0 +1,317 @@
+{
+  "place": {
+    "state": "az",
+    "state_label": "Arizona",
+    "slug": "second-mesa",
+    "name": "Second Mesa",
+    "fips": "0465280",
+    "population": 1372,
+    "county_name": null,
+    "county_fips": null
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 4,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 2784,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "shungopavi",
+        "state": "az",
+        "state_label": "Arizona",
+        "name": "Shungopavi",
+        "pwsid": "090400259",
+        "population_served": 1430,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sipaulovi-lower-sipaulovi-lower-mishongnovi",
+        "state": "az",
+        "state_label": "Arizona",
+        "name": "Sipaulovi (Lower Sipaulovi/Lower Mishongnovi)",
+        "pwsid": "090400107",
+        "population_served": 609,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "mishongnovi-upper-sipaulovi-upper-mishongnovi",
+        "state": "az",
+        "state_label": "Arizona",
+        "name": "Mishongnovi (Upper Sipaulovi/Upper Mishongnovi)",
+        "pwsid": "090400394",
+        "population_served": 490,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "second-mesa-day-school-bia",
+        "state": "az",
+        "state_label": "Arizona",
+        "name": "Second Mesa Day School - Bia",
+        "pwsid": "090400057",
+        "population_served": 255,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [],
+  "equity": {
+    "population": 1372,
+    "pct_low_income": 44.2,
+    "pct_people_of_color": 100.0,
+    "pct_under_5": 10.1,
+    "pct_over_64": 17.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Second Mesa, Arizona (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 17.1,
+      "age_adjusted": 17.1,
+      "state_mean": 10.5,
+      "us_mean": 10.0,
+      "vs_state_pp": 6.61,
+      "vs_state_pct": 63.0,
+      "vs_state_class": "worse",
+      "vs_us_pp": 7.08,
+      "vs_us_pct": 70.7,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 12.2,
+      "age_adjusted": 11.5,
+      "state_mean": 5.7,
+      "us_mean": 5.5,
+      "vs_state_pp": 5.84,
+      "vs_state_pct": 103.2,
+      "vs_state_class": "worse",
+      "vs_us_pp": 6.0,
+      "vs_us_pct": 109.1,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 9.0,
+      "age_adjusted": 8.1,
+      "state_mean": 5.2,
+      "us_mean": 5.3,
+      "vs_state_pp": 2.89,
+      "vs_state_pct": 55.5,
+      "vs_state_class": "worse",
+      "vs_us_pp": 2.79,
+      "vs_us_pct": 52.5,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 17.8,
+      "age_adjusted": 16.9,
+      "state_mean": 9.8,
+      "us_mean": 10.5,
+      "vs_state_pp": 7.05,
+      "vs_state_pct": 71.6,
+      "vs_state_class": "worse",
+      "vs_us_pp": 6.44,
+      "vs_us_pct": 61.6,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 24.0,
+      "age_adjusted": 24.4,
+      "state_mean": 16.2,
+      "us_mean": 16.8,
+      "vs_state_pp": 8.23,
+      "vs_state_pct": 50.9,
+      "vs_state_class": "worse",
+      "vs_us_pp": 7.65,
+      "vs_us_pct": 45.7,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "az",
+      "slug": "tubac",
+      "name": "Tubac",
+      "population": 1375,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "az",
+      "slug": "dolan-springs",
+      "name": "Dolan Springs",
+      "population": 1397,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 24.0,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "az",
+      "slug": "st-david",
+      "name": "St. David",
+      "population": 1300,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "az",
+      "slug": "morenci",
+      "name": "Morenci",
+      "population": 1467,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 45.4,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "az",
+      "slug": "peach-springs",
+      "name": "Peach Springs",
+      "population": 1482,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "az",
+      "slug": "congress",
+      "name": "Congress",
+      "population": 1512,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 29.0,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T17:09:59Z"
+}

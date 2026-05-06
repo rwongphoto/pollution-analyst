@@ -1,0 +1,174 @@
+{
+  "facility": {
+    "state": "az",
+    "state_label": "Arizona",
+    "slug": "golden-vertex-corp",
+    "name": "Golden Vertex Corp",
+    "parent_company": "Mako US",
+    "address": "2127 SOUTH OPPORTUNITY WAY",
+    "city": "Bullhead City",
+    "county": "Mohave County",
+    "county_slug": "mohave",
+    "naics_label": "212220 \u00b7 Metal Mining",
+    "lat": 35.095309,
+    "lng": -114.444417
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 688,
+    "air_releases_pounds": 688,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -96.6,
+    "long_arc_pct_change": 32.2,
+    "long_arc_baseline_year": 2018,
+    "history": [
+      {
+        "year": 2018,
+        "value": 520
+      },
+      {
+        "year": 2019,
+        "value": 995
+      },
+      {
+        "year": 2020,
+        "value": 1210
+      },
+      {
+        "year": 2021,
+        "value": 1471
+      },
+      {
+        "year": 2022,
+        "value": 1601
+      },
+      {
+        "year": 2023,
+        "value": 20160
+      },
+      {
+        "year": 2024,
+        "value": 688
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Cyanide compounds",
+      "cas": "N106",
+      "category": "respiratory",
+      "total_pounds_recent": 688,
+      "history": [
+        {
+          "year": 2018,
+          "value": 57
+        },
+        {
+          "year": 2019,
+          "value": 63
+        },
+        {
+          "year": 2020,
+          "value": 58
+        },
+        {
+          "year": 2021,
+          "value": 73
+        },
+        {
+          "year": 2022,
+          "value": 384
+        },
+        {
+          "year": 2023,
+          "value": 1288
+        },
+        {
+          "year": 2024,
+          "value": 688
+        }
+      ],
+      "yoy_pct_change": -46.6,
+      "long_arc_pct_change": 1106.5,
+      "long_arc_baseline_year": 2018
+    },
+    {
+      "chemical": "Zinc (fume or dust)",
+      "cas": "7440-66-6",
+      "category": "general",
+      "total_pounds_recent": 0.32,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0.68
+        },
+        {
+          "year": 2024,
+          "value": 0.32
+        }
+      ],
+      "yoy_pct_change": -52.9,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "N420",
+      "summary": "N420 releases at Golden Vertex Corp fell from 19k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -18871.5,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2018,
+          "value": 463
+        },
+        {
+          "year": 2019,
+          "value": 931
+        },
+        {
+          "year": 2020,
+          "value": 1152
+        },
+        {
+          "year": 2021,
+          "value": 1398
+        },
+        {
+          "year": 2022,
+          "value": 1217
+        },
+        {
+          "year": 2023,
+          "value": 18872
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 1603,
+    "pct_low_income": 32.9,
+    "pct_people_of_color": 26.5,
+    "pct_under_5": 1.2,
+    "pct_over_64": 29.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:09:58Z"
+}

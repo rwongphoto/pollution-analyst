@@ -1,0 +1,110 @@
+{
+  "site": {
+    "state": "md",
+    "state_label": "Maryland",
+    "slug": "chemical-metals-industries-inc",
+    "name": "Chemical Metals Industries, Inc.",
+    "epa_id": "MDD980555478",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Baltimore City County",
+    "county_slug": "baltimore-city",
+    "city": "Baltimore",
+    "city_slug": "baltimore",
+    "address": "2001 & 2103 Annapolis Rd",
+    "zip": "21230",
+    "lat": 39.265419,
+    "lng": -76.6325
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MD0020218",
+        "name": "Rio Vista Plaza Mobile Home Park",
+        "slug": "rio-vista-plaza-mobile-home-park",
+        "state": "md",
+        "distance_miles": 2.67,
+        "place_name": "Baltimore",
+        "primary_source": "groundwater",
+        "population_served": 150,
+        "health_based_5yr": 1,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MD0030011",
+        "name": "Sunnybrook",
+        "slug": "sunnybrook",
+        "state": "md",
+        "distance_miles": 2.67,
+        "place_name": "Baltimore",
+        "primary_source": "groundwater",
+        "population_served": 416,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MD0030017",
+        "name": "Phoenix",
+        "slug": "phoenix",
+        "state": "md",
+        "distance_miles": 2.67,
+        "place_name": "Baltimore",
+        "primary_source": "groundwater",
+        "population_served": 31,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MD0120007",
+        "name": "Campus Hills Water Works",
+        "slug": "campus-hills-water-works",
+        "state": "md",
+        "distance_miles": 2.67,
+        "place_name": "Baltimore",
+        "primary_source": "groundwater",
+        "population_served": 250,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MD0300007",
+        "name": "Johns Hopkins University",
+        "slug": "johns-hopkins-university",
+        "state": "md",
+        "distance_miles": 2.67,
+        "place_name": "Baltimore",
+        "primary_source": "mixed",
+        "population_served": 2058,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 7682,
+    "pct_low_income": 48.0,
+    "pct_people_of_color": 80.5,
+    "pct_under_5": 5.9,
+    "pct_over_64": 11.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (9 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:44:53Z"
+}

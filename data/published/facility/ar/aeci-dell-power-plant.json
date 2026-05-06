@@ -1,0 +1,153 @@
+{
+  "facility": {
+    "state": "ar",
+    "state_label": "Arkansas",
+    "slug": "aeci-dell-power-plant",
+    "name": "Aeci Dell Power Plant",
+    "parent_company": "Associated Electric Cooperative INC",
+    "address": "301 E STATE HIGHWAY 18",
+    "city": "Dell",
+    "county": "Mississippi County",
+    "county_slug": "mississippi",
+    "naics_label": "221112 \u00b7 Electric Utilities",
+    "lat": 35.862613,
+    "lng": -90.026458
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 29221,
+    "air_releases_pounds": 29221,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 82.5,
+    "long_arc_pct_change": 996.5,
+    "long_arc_baseline_year": 2011,
+    "history": [
+      {
+        "year": 2011,
+        "value": 2665
+      },
+      {
+        "year": 2012,
+        "value": 3186
+      },
+      {
+        "year": 2023,
+        "value": 16011
+      },
+      {
+        "year": 2024,
+        "value": 29221
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 29000,
+      "history": [
+        {
+          "year": 2011,
+          "value": 2665
+        },
+        {
+          "year": 2012,
+          "value": 3186
+        },
+        {
+          "year": 2023,
+          "value": 16011
+        },
+        {
+          "year": 2024,
+          "value": 29000
+        }
+      ],
+      "yoy_pct_change": 81.1,
+      "long_arc_pct_change": 988.2,
+      "long_arc_baseline_year": 2011
+    },
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "N590",
+      "category": "pbt",
+      "total_pounds_recent": 130,
+      "history": [
+        {
+          "year": 2024,
+          "value": 130
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Naphthalene",
+      "cas": "91-20-3",
+      "category": "carcinogen",
+      "total_pounds_recent": 91,
+      "history": [
+        {
+          "year": 2024,
+          "value": 91
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Ammonia",
+      "summary": "Ammonia releases at Aeci Dell Power Plant rose from 16k lb to 29k lb between 2023 and 2024.",
+      "magnitude_pct": 81.1,
+      "magnitude_abs": 12989.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2011,
+          "value": 2665
+        },
+        {
+          "year": 2012,
+          "value": 3186
+        },
+        {
+          "year": 2023,
+          "value": 16011
+        },
+        {
+          "year": 2024,
+          "value": 29000
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 40361,
+    "pct_low_income": 21.9,
+    "pct_people_of_color": 43.5,
+    "pct_under_5": 7.0,
+    "pct_over_64": 15.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Mississippi County, AR (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:52:52Z"
+}

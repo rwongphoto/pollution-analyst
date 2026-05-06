@@ -116,6 +116,46 @@ STATES: dict[str, State] = {
         population=3959353,
         counties_total=77,
     ),
+    "ma": State(
+        slug="ma",
+        abbr="MA",
+        name="Massachusetts",
+        fips="25",
+        population=7029917,
+        counties_total=14,
+    ),
+    "md": State(
+        slug="md",
+        abbr="MD",
+        name="Maryland",
+        fips="24",
+        population=6177224,
+        counties_total=24,
+    ),
+    "ar": State(
+        slug="ar",
+        abbr="AR",
+        name="Arkansas",
+        fips="05",
+        population=3011524,
+        counties_total=75,
+    ),
+    "nm": State(
+        slug="nm",
+        abbr="NM",
+        name="New Mexico",
+        fips="35",
+        population=2117522,
+        counties_total=33,
+    ),
+    "az": State(
+        slug="az",
+        abbr="AZ",
+        name="Arizona",
+        fips="04",
+        population=7151502,
+        counties_total=15,
+    ),
 }
 
 

@@ -1,0 +1,164 @@
+{
+  "site": {
+    "state": "ma",
+    "state_label": "Massachusetts",
+    "slug": "new-bedford",
+    "name": "New Bedford",
+    "epa_id": "MAD980731335",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Bristol County",
+    "county_slug": "bristol",
+    "city": "New Bedford",
+    "city_slug": "new-bedford",
+    "address": "Acushnet Estuary",
+    "zip": "02740",
+    "lat": 41.643171,
+    "lng": -70.919887
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 12,
+    "primary_contaminant": "Polychlorinated Biphenyls (Pcbs)"
+  },
+  "contaminants": [
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Sediment",
+      "operable_units": [
+        "02",
+        "01"
+      ],
+      "citation_count": 4
+    },
+    {
+      "name": "Cadmium",
+      "media": "Sediment",
+      "operable_units": [
+        "02",
+        "01"
+      ],
+      "citation_count": 3
+    },
+    {
+      "name": "Copper",
+      "media": "Sediment",
+      "operable_units": [
+        "01",
+        "02"
+      ],
+      "citation_count": 3
+    },
+    {
+      "name": "Lead",
+      "media": "Sediment",
+      "operable_units": [
+        "01",
+        "02"
+      ],
+      "citation_count": 3
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Surface Water",
+      "operable_units": [
+        "02",
+        "01"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Arsenic",
+      "media": "Sediment",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Cadmium",
+      "media": "Surface Water",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Chromium",
+      "media": "Sediment",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Copper",
+      "media": "Surface Water",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Surface Water",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Fish Tissue",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Zinc",
+      "media": "Sediment",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MA4003002",
+        "name": "Brookside Mobile Home Park",
+        "slug": "brookside-mobile-home-park",
+        "state": "ma",
+        "distance_miles": 1.56,
+        "place_name": "New Bedford",
+        "primary_source": "groundwater",
+        "population_served": 67,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 18663,
+    "pct_low_income": 51.6,
+    "pct_people_of_color": 48.5,
+    "pct_under_5": 6.3,
+    "pct_over_64": 16.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (18 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:36:44Z"
+}

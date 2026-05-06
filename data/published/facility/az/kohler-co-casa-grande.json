@@ -1,0 +1,99 @@
+{
+  "facility": {
+    "state": "az",
+    "state_label": "Arizona",
+    "slug": "kohler-co-casa-grande",
+    "name": "Kohler CO. Casa Grande",
+    "parent_company": "Kohler Co",
+    "address": "1495 N ETHINGTON RD",
+    "city": "Casa Grande",
+    "county": "Pinal County",
+    "county_slug": "pinal",
+    "naics_label": "326191 \u00b7 Plastics and Rubber",
+    "lat": 32.893018,
+    "lng": -111.808855
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 57908,
+    "air_releases_pounds": 57908,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 206.4,
+    "long_arc_pct_change": 206.4,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 18900
+      },
+      {
+        "year": 2024,
+        "value": 57908
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Styrene",
+      "cas": "100-42-5",
+      "category": "carcinogen",
+      "total_pounds_recent": 57908,
+      "history": [
+        {
+          "year": 2023,
+          "value": 18900
+        },
+        {
+          "year": 2024,
+          "value": 57908
+        }
+      ],
+      "yoy_pct_change": 206.4,
+      "long_arc_pct_change": 206.4,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Styrene",
+      "summary": "Styrene releases at Kohler CO. Casa Grande rose from 19k lb to 58k lb (3.1\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 206.4,
+      "magnitude_abs": 39008.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 18900
+        },
+        {
+          "year": 2024,
+          "value": 57908
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 7930,
+    "pct_low_income": 41.1,
+    "pct_people_of_color": 57.6,
+    "pct_under_5": 6.4,
+    "pct_over_64": 22.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (6 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:09:58Z"
+}

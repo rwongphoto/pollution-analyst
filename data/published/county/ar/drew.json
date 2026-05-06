@@ -1,0 +1,501 @@
+{
+  "county": {
+    "state": "ar",
+    "state_label": "Arkansas",
+    "slug": "drew",
+    "name": "Drew County",
+    "fips": "05043",
+    "population": 17309
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 30.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 30.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.8024,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.8024
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0893,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0893
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 27046,
+      "units": "lb",
+      "yoy_pct_change": 3703.9,
+      "long_arc_pct_change": null,
+      "baseline_year": 2019,
+      "history": [
+        {
+          "year": 2019,
+          "value": 29
+        },
+        {
+          "year": 2022,
+          "value": 732
+        },
+        {
+          "year": 2023,
+          "value": 711
+        },
+        {
+          "year": 2024,
+          "value": 27046
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2019,
+      "history": [
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 40,
+      "units": "lb",
+      "yoy_pct_change": -99.9,
+      "long_arc_pct_change": null,
+      "baseline_year": 2019,
+      "history": [
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 34190
+        },
+        {
+          "year": 2023,
+          "value": 33180
+        },
+        {
+          "year": 2024,
+          "value": 40
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "interfor-u-s-inc",
+      "state": "ar",
+      "state_label": "Arkansas",
+      "name": "Interfor U.S. INC.",
+      "parent_company": "Interfor US INC",
+      "total_pounds_recent": 27086,
+      "yoy_pct_change": -20.1,
+      "top_chemical": "Methanol",
+      "city": "Monticello",
+      "lat": 33.607626,
+      "lng": -91.778925
+    }
+  ],
+  "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [
+    {
+      "slug": "dermott",
+      "name": "Dermott",
+      "fips": "0518520",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 2655
+    },
+    {
+      "slug": "monticello",
+      "name": "Monticello",
+      "fips": "0546580",
+      "facilities_count": 0,
+      "utilities_count": 6,
+      "population": 8443
+    },
+    {
+      "slug": "tillar",
+      "name": "Tillar",
+      "fips": "0569230",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 195
+    },
+    {
+      "slug": "wilmar",
+      "name": "Wilmar",
+      "fips": "0575860",
+      "facilities_count": 0,
+      "utilities_count": 2,
+      "population": 384
+    },
+    {
+      "slug": "winchester",
+      "name": "Winchester",
+      "fips": "0576010",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 91
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 17309,
+    "pct_low_income": 21.4,
+    "pct_people_of_color": 35.0,
+    "pct_under_5": 5.3,
+    "pct_over_64": 17.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 44.6,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 19.0,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 10.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 8.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 7.5,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 17.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 50.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 47.6,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 38.2,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.8,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 75.7
+      },
+      {
+        "label": "Ozone",
+        "score": 34.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 22.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 18.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 9.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 31.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 72.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 1.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 61.1
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 58.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 2.4
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Drew County, AR"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.1,
+      "age_adjusted": 11.1,
+      "state_mean": 10.4,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.72,
+      "vs_state_pct": 6.9,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.08,
+      "vs_us_pct": 10.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 9.8,
+      "age_adjusted": 8.7,
+      "state_mean": 7.5,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.23,
+      "vs_state_pct": 16.5,
+      "vs_state_class": "worse",
+      "vs_us_pp": 3.2,
+      "vs_us_pct": 58.2,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.5,
+      "age_adjusted": 7.1,
+      "state_mean": 6.4,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.72,
+      "vs_state_pct": 11.3,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.79,
+      "vs_us_pct": 33.7,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 15.2,
+      "age_adjusted": 13.5,
+      "state_mean": 11.5,
+      "us_mean": 10.5,
+      "vs_state_pp": 1.98,
+      "vs_state_pct": 17.2,
+      "vs_state_class": "worse",
+      "vs_us_pp": 3.04,
+      "vs_us_pct": 29.1,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 19.8,
+      "age_adjusted": 20.7,
+      "state_mean": 19.5,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.19,
+      "vs_state_pct": 6.1,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 3.95,
+      "vs_us_pct": 23.6,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ar",
+      "slug": "bradley",
+      "name": "Bradley County",
+      "population": 10461,
+      "facilities_count": 1,
+      "total_releases_pounds": 51469,
+      "dominant_medium": "air",
+      "ej_pct_avg": 32.3,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ar",
+      "slug": "carroll",
+      "name": "Carroll County",
+      "population": 28362,
+      "facilities_count": 2,
+      "total_releases_pounds": 14371,
+      "dominant_medium": "air",
+      "ej_pct_avg": 30.6,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ar",
+      "slug": "saline",
+      "name": "Saline County",
+      "population": 123988,
+      "facilities_count": 1,
+      "total_releases_pounds": 9882,
+      "dominant_medium": "air",
+      "ej_pct_avg": 46.4,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ar",
+      "slug": "lawrence",
+      "name": "Lawrence County",
+      "population": 16258,
+      "facilities_count": 1,
+      "total_releases_pounds": 2166,
+      "dominant_medium": "air",
+      "ej_pct_avg": 38.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ar",
+      "slug": "madison",
+      "name": "Madison County",
+      "population": 16737,
+      "facilities_count": 1,
+      "total_releases_pounds": 1345,
+      "dominant_medium": "air",
+      "ej_pct_avg": 26.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ar",
+      "slug": "crittenden",
+      "name": "Crittenden County",
+      "population": 47945,
+      "facilities_count": 5,
+      "total_releases_pounds": 49811,
+      "dominant_medium": "air",
+      "ej_pct_avg": 59.5,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+27 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T16:52:52Z"
+}

@@ -1,0 +1,193 @@
+{
+  "site": {
+    "state": "nm",
+    "state_label": "New Mexico",
+    "slug": "united-nuclear-corp",
+    "name": "United Nuclear Corp.",
+    "epa_id": "NMD030443303",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Mckinley County",
+    "county_slug": "mckinley",
+    "city": "Church Rock",
+    "city_slug": null,
+    "address": "Hwy 566 21 Mi Ne Of Gallup",
+    "zip": "87311",
+    "lat": 35.643331,
+    "lng": -108.5
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 3,
+    "primary_contaminant": "Radium-226"
+  },
+  "contaminants": [
+    {
+      "name": "Radium-226",
+      "media": "Solid Waste",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Radon-222",
+      "media": "Solid Waste",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Uranium",
+      "media": "Solid Waste",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 72073,
+    "pct_low_income": 33.6,
+    "pct_people_of_color": 92.0,
+    "pct_under_5": 7.9,
+    "pct_over_64": 12.7,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 0.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 63.6,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 32.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 25.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 0.9,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 13.3,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 46.1,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 28.2,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 62.2,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 26.2,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 78.9,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 1.2
+      },
+      {
+        "label": "Ozone",
+        "score": 256.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 89.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 68.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 0.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 29.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 93.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 20.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 39.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 3.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 86.8
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 32.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 156.2
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Mckinley County, New Mexico (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:01:29Z"
+}

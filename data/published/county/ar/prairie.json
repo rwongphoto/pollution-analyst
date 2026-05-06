@@ -1,0 +1,520 @@
+{
+  "county": {
+    "state": "ar",
+    "state_label": "Arkansas",
+    "slug": "prairie",
+    "name": "Prairie County",
+    "fips": "05117",
+    "population": 8217
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 30.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 30.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.8292,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.8292
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0758,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0758
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 200,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 200
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": -100.0,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 151944,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 1.1,
+      "long_arc_pct_change": 44.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 105270
+        },
+        {
+          "year": 2011,
+          "value": 117501
+        },
+        {
+          "year": 2012,
+          "value": 131505
+        },
+        {
+          "year": 2013,
+          "value": 141416
+        },
+        {
+          "year": 2014,
+          "value": 145299
+        },
+        {
+          "year": 2015,
+          "value": 147918
+        },
+        {
+          "year": 2016,
+          "value": 149447
+        },
+        {
+          "year": 2017,
+          "value": 148397
+        },
+        {
+          "year": 2018,
+          "value": 148166
+        },
+        {
+          "year": 2019,
+          "value": 147322
+        },
+        {
+          "year": 2020,
+          "value": 146934
+        },
+        {
+          "year": 2021,
+          "value": 148166
+        },
+        {
+          "year": 2022,
+          "value": 150226
+        },
+        {
+          "year": 2023,
+          "value": 151944
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "white-river-energetics-llc",
+      "state": "ar",
+      "state_label": "Arkansas",
+      "name": "White River Energetics LLC",
+      "parent_company": "D & M Holding Co INC",
+      "total_pounds_recent": 200,
+      "yoy_pct_change": 19900.0,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Des Arc",
+      "lat": 35.008191,
+      "lng": -91.621251
+    }
+  ],
+  "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [
+    {
+      "slug": "hazen",
+      "name": "Hazen",
+      "fips": "0530940",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 1738
+    },
+    {
+      "slug": "ulm",
+      "name": "Ulm",
+      "fips": "0570760",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 196
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 8217,
+    "pct_low_income": 10.0,
+    "pct_people_of_color": 15.799999999999997,
+    "pct_under_5": 4.7,
+    "pct_over_64": 23.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 48.0,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 28.1,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 19.2,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 19.8,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 8.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 6.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 49.0,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 37.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 49.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 79.7,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 58.6
+      },
+      {
+        "label": "Ozone",
+        "score": 45.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 24.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 25.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 9.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 7.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 49.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 34.4
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 32.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 25.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Prairie County, AR"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.4,
+      "age_adjusted": 10.6,
+      "state_mean": 10.4,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.22,
+      "vs_state_pct": 2.1,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.58,
+      "vs_us_pct": 5.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 10.4,
+      "age_adjusted": 8.0,
+      "state_mean": 7.5,
+      "us_mean": 5.5,
+      "vs_state_pp": 0.53,
+      "vs_state_pct": 7.1,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.5,
+      "vs_us_pct": 45.5,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 9.6,
+      "age_adjusted": 6.6,
+      "state_mean": 6.4,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.22,
+      "vs_state_pct": 3.4,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.29,
+      "vs_us_pct": 24.3,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 15.1,
+      "age_adjusted": 11.3,
+      "state_mean": 11.5,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.22,
+      "vs_state_pct": -1.9,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.84,
+      "vs_us_pct": 8.0,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 18.0,
+      "age_adjusted": 20.4,
+      "state_mean": 19.5,
+      "us_mean": 16.8,
+      "vs_state_pp": 0.89,
+      "vs_state_pct": 4.6,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 3.65,
+      "vs_us_pct": 21.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ar",
+      "slug": "sevier",
+      "name": "Sevier County",
+      "population": 15913,
+      "facilities_count": 1,
+      "total_releases_pounds": 250,
+      "dominant_medium": "air",
+      "ej_pct_avg": 41.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ar",
+      "slug": "grant",
+      "name": "Grant County",
+      "population": 18022,
+      "facilities_count": 2,
+      "total_releases_pounds": 328,
+      "dominant_medium": "air",
+      "ej_pct_avg": 37.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ar",
+      "slug": "madison",
+      "name": "Madison County",
+      "population": 16737,
+      "facilities_count": 1,
+      "total_releases_pounds": 1345,
+      "dominant_medium": "air",
+      "ej_pct_avg": 26.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ar",
+      "slug": "lawrence",
+      "name": "Lawrence County",
+      "population": 16258,
+      "facilities_count": 1,
+      "total_releases_pounds": 2166,
+      "dominant_medium": "air",
+      "ej_pct_avg": 38.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ar",
+      "slug": "searcy",
+      "name": "Searcy County",
+      "population": 7880,
+      "facilities_count": 2,
+      "total_releases_pounds": 3194,
+      "dominant_medium": "air",
+      "ej_pct_avg": 28.5,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ar",
+      "slug": "columbia",
+      "name": "Columbia County",
+      "population": 22707,
+      "facilities_count": 7,
+      "total_releases_pounds": 1062317,
+      "dominant_medium": "land",
+      "ej_pct_avg": 46.5,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+13 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T16:52:52Z"
+}

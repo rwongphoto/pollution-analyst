@@ -1,0 +1,140 @@
+{
+  "facility": {
+    "state": "md",
+    "state_label": "Maryland",
+    "slug": "u-s-public-health-service-national-institutes-of-health",
+    "name": "U.S. Public Health Service National Institutes Of Health",
+    "parent_company": "US Department Of Health & Human Services",
+    "address": "9000 ROCKVILLE PIKE",
+    "city": "Bethesda",
+    "county": "Montgomery County",
+    "county_slug": "montgomery",
+    "naics_label": "541711 \u00b7 Other",
+    "lat": 39.00373,
+    "lng": -77.097478
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1839,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1839,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": 442.6,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 339
+      },
+      {
+        "year": 2015,
+        "value": 430
+      },
+      {
+        "year": 2017,
+        "value": 59
+      },
+      {
+        "year": 2018,
+        "value": 56
+      },
+      {
+        "year": 2019,
+        "value": 30
+      },
+      {
+        "year": 2021,
+        "value": 367
+      },
+      {
+        "year": 2022,
+        "value": 242
+      },
+      {
+        "year": 2024,
+        "value": 1839
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 1643,
+      "history": [
+        {
+          "year": 2010,
+          "value": 339
+        },
+        {
+          "year": 2021,
+          "value": 354
+        },
+        {
+          "year": 2022,
+          "value": 220
+        },
+        {
+          "year": 2024,
+          "value": 1643
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 384.8,
+      "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "Polychlorinated biphenyls",
+      "cas": "1336-36-3",
+      "category": "pbt",
+      "total_pounds_recent": 196,
+      "history": [
+        {
+          "year": 2015,
+          "value": 430
+        },
+        {
+          "year": 2017,
+          "value": 24
+        },
+        {
+          "year": 2018,
+          "value": 56
+        },
+        {
+          "year": 2019,
+          "value": 30
+        },
+        {
+          "year": 2024,
+          "value": 196
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -54.4,
+      "long_arc_baseline_year": 2015
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 147216,
+    "pct_low_income": 10.8,
+    "pct_people_of_color": 35.1,
+    "pct_under_5": 5.1,
+    "pct_over_64": 18.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (113 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:44:52Z"
+}

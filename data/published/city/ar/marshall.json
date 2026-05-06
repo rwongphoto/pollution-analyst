@@ -1,0 +1,546 @@
+{
+  "place": {
+    "state": "ar",
+    "state_label": "Arkansas",
+    "slug": "marshall",
+    "name": "Marshall",
+    "fips": "0544300",
+    "population": 1384,
+    "county_name": "Searcy",
+    "county_fips": "05129"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 4,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 30.1,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 30.1
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.5006,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.5006
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0789,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0789
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 4,
+    "population_served_total": 5561,
+    "violations_5yr_total": 64,
+    "health_based_5yr_total": 25,
+    "unresolved_total": 11,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "morning-star-public-water-authority",
+        "state": "ar",
+        "state_label": "Arkansas",
+        "name": "Morning Star Public Water Authority",
+        "pwsid": "AR0000681",
+        "population_served": 1543,
+        "health_based_violations_5yr": 20,
+        "unresolved": true
+      },
+      {
+        "slug": "south-mountain-water-assn",
+        "state": "ar",
+        "state_label": "Arkansas",
+        "name": "South Mountain Water Assn",
+        "pwsid": "AR0000815",
+        "population_served": 948,
+        "health_based_violations_5yr": 5,
+        "unresolved": true
+      },
+      {
+        "slug": "marshall-waterworks",
+        "state": "ar",
+        "state_label": "Arkansas",
+        "name": "Marshall Waterworks",
+        "pwsid": "AR0000501",
+        "population_served": 2550,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "sdm-water-association",
+        "state": "ar",
+        "state_label": "Arkansas",
+        "name": "Sdm Water Association",
+        "pwsid": "AR0000758",
+        "population_served": 520,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0200",
+      "summary": "Unresolved Surface Water Treatment Rule violation cited in 2021 (contaminant 0200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AR0000681"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0200",
+      "summary": "Unresolved Surface Water Treatment Rule violation cited in 2021 (contaminant 0200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AR0000681"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2021 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AR0000815"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2021 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AR0000815"
+      }
+    }
+  ],
+  "equity": {
+    "population": 1384,
+    "pct_low_income": 31.7,
+    "pct_people_of_color": 13.599999999999994,
+    "pct_under_5": 4.3,
+    "pct_over_64": 33.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 19.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 11.3,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 17.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 8.0,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 5.5,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 8.1,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 48.4,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 41.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 14.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.7,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 27.5
+      },
+      {
+        "label": "Ozone",
+        "score": 31.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 24.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 12.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 8.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 13.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 56.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 55.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 19.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 101.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Marshall, Arkansas (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.3,
+      "age_adjusted": 11.5,
+      "state_mean": 10.4,
+      "us_mean": 10.0,
+      "vs_state_pp": 1.12,
+      "vs_state_pct": 10.8,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.48,
+      "vs_us_pct": 14.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 14.2,
+      "age_adjusted": 11.5,
+      "state_mean": 7.5,
+      "us_mean": 5.5,
+      "vs_state_pp": 4.03,
+      "vs_state_pct": 53.9,
+      "vs_state_class": "worse",
+      "vs_us_pp": 6.0,
+      "vs_us_pct": 109.1,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 11.4,
+      "age_adjusted": 8.1,
+      "state_mean": 6.4,
+      "us_mean": 5.3,
+      "vs_state_pp": 1.72,
+      "vs_state_pct": 27.0,
+      "vs_state_class": "worse",
+      "vs_us_pp": 2.79,
+      "vs_us_pct": 52.5,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 16.9,
+      "age_adjusted": 13.3,
+      "state_mean": 11.5,
+      "us_mean": 10.5,
+      "vs_state_pp": 1.78,
+      "vs_state_pct": 15.5,
+      "vs_state_class": "worse",
+      "vs_us_pp": 2.84,
+      "vs_us_pct": 27.2,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 21.1,
+      "age_adjusted": 23.4,
+      "state_mean": 19.5,
+      "us_mean": 16.8,
+      "vs_state_pp": 3.89,
+      "vs_state_pct": 19.9,
+      "vs_state_class": "worse",
+      "vs_us_pp": 6.65,
+      "vs_us_pct": 39.7,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ar",
+      "slug": "leslie",
+      "name": "Leslie",
+      "population": 483,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ar",
+      "slug": "st-joe",
+      "name": "St. Joe",
+      "population": 207,
+      "facilities_count": 1,
+      "total_releases_pounds": 115,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ar",
+      "slug": "clarendon",
+      "name": "Clarendon",
+      "population": 1366,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ar",
+      "slug": "dardanelle",
+      "name": "Dardanelle",
+      "population": 4544,
+      "facilities_count": 1,
+      "total_releases_pounds": 261190,
+      "dominant_medium": "water",
+      "ej_pct_avg": 55.5,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+29 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "ar",
+      "slug": "redfield",
+      "name": "Redfield",
+      "population": 1408,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ar",
+      "slug": "mount-ida",
+      "name": "Mount Ida",
+      "population": 1410,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T16:52:53Z"
+}

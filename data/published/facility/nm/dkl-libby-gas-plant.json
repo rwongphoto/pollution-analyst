@@ -1,0 +1,187 @@
+{
+  "facility": {
+    "state": "nm",
+    "state_label": "New Mexico",
+    "slug": "dkl-libby-gas-plant",
+    "name": "Dkl Libby Gas Plant",
+    "parent_company": "Delek US Holdings INC",
+    "address": "674 MARATHON RD",
+    "city": "Hobbs",
+    "county": "Lea County",
+    "county_slug": "lea",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.589611,
+    "lng": -103.516806
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 138297,
+    "air_releases_pounds": 7597,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 130700,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 196.5,
+    "long_arc_pct_change": 1242.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 10300
+      },
+      {
+        "year": 2023,
+        "value": 46641
+      },
+      {
+        "year": 2024,
+        "value": 138297
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 130694,
+      "history": [
+        {
+          "year": 2022,
+          "value": 9438
+        },
+        {
+          "year": 2023,
+          "value": 41349
+        },
+        {
+          "year": 2024,
+          "value": 130694
+        }
+      ],
+      "yoy_pct_change": 216.1,
+      "long_arc_pct_change": 1284.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 4400,
+      "history": [
+        {
+          "year": 2022,
+          "value": 862
+        },
+        {
+          "year": 2023,
+          "value": 3654
+        },
+        {
+          "year": 2024,
+          "value": 4400
+        }
+      ],
+      "yoy_pct_change": 20.4,
+      "long_arc_pct_change": 410.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 2186,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1504
+        },
+        {
+          "year": 2024,
+          "value": 2186
+        }
+      ],
+      "yoy_pct_change": 45.3,
+      "long_arc_pct_change": 45.3,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 953,
+      "history": [
+        {
+          "year": 2024,
+          "value": 953
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 64,
+      "history": [
+        {
+          "year": 2023,
+          "value": 72
+        },
+        {
+          "year": 2024,
+          "value": 64
+        }
+      ],
+      "yoy_pct_change": -11.1,
+      "long_arc_pct_change": -11.1,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Methanol",
+      "summary": "Methanol releases at Dkl Libby Gas Plant rose from 41k lb to 131k lb (3.2\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 216.1,
+      "magnitude_abs": 89345.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 9438
+        },
+        {
+          "year": 2023,
+          "value": 41349
+        },
+        {
+          "year": 2024,
+          "value": 130694
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 73103,
+    "pct_low_income": 17.8,
+    "pct_people_of_color": 67.6,
+    "pct_under_5": 8.7,
+    "pct_over_64": 11.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Lea County, NM (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:01:29Z"
+}

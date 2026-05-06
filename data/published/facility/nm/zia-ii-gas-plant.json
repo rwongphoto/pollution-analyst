@@ -1,0 +1,179 @@
+{
+  "facility": {
+    "state": "nm",
+    "state_label": "New Mexico",
+    "slug": "zia-ii-gas-plant",
+    "name": "Zia II Gas Plant",
+    "parent_company": "Phillips 66 Co",
+    "address": "89 LUSK RD.",
+    "city": "Lovington",
+    "county": "Lea County",
+    "county_slug": "lea",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 32.647786,
+    "lng": -103.808957
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 50198,
+    "air_releases_pounds": 9848,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 40350,
+    "chemicals_reported": 5,
+    "yoy_pct_change": -22.1,
+    "long_arc_pct_change": -18.8,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 61800
+      },
+      {
+        "year": 2023,
+        "value": 64414
+      },
+      {
+        "year": 2024,
+        "value": 50198
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 30400,
+      "history": [
+        {
+          "year": 2022,
+          "value": 31500
+        },
+        {
+          "year": 2023,
+          "value": 42512
+        },
+        {
+          "year": 2024,
+          "value": 30400
+        }
+      ],
+      "yoy_pct_change": -28.5,
+      "long_arc_pct_change": -3.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 7390,
+      "history": [
+        {
+          "year": 2022,
+          "value": 8700
+        },
+        {
+          "year": 2024,
+          "value": 7390
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -15.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 6370,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6000
+        },
+        {
+          "year": 2023,
+          "value": 8902
+        },
+        {
+          "year": 2024,
+          "value": 6370
+        }
+      ],
+      "yoy_pct_change": -28.4,
+      "long_arc_pct_change": 6.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 5500,
+      "history": [
+        {
+          "year": 2024,
+          "value": 5500
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 538,
+      "history": [
+        {
+          "year": 2024,
+          "value": 538
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0000050000",
+      "summary": "0000050000 releases at Zia II Gas Plant fell from 13k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -13000.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 11000
+        },
+        {
+          "year": 2023,
+          "value": 13000
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 73103,
+    "pct_low_income": 17.8,
+    "pct_people_of_color": 67.6,
+    "pct_under_5": 8.7,
+    "pct_over_64": 11.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Lea County, NM (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:01:29Z"
+}

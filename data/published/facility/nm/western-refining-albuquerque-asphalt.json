@@ -1,0 +1,84 @@
+{
+  "facility": {
+    "state": "nm",
+    "state_label": "New Mexico",
+    "slug": "western-refining-albuquerque-asphalt",
+    "name": "Western Refining - Albuquerque Asphalt",
+    "parent_company": "Marathon Petroleum CORP",
+    "address": "2030 2ND ST SW",
+    "city": "Albuquerque",
+    "county": "Bernalillo County",
+    "county_slug": "bernalillo",
+    "naics_label": "424710 \u00b7 Petroleum Bulk Terminals",
+    "lat": 35.06468,
+    "lng": -106.652494
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 15,
+    "air_releases_pounds": 15,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 15
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Naphthalene",
+      "cas": "91-20-3",
+      "category": "carcinogen",
+      "total_pounds_recent": 14,
+      "history": [
+        {
+          "year": 2024,
+          "value": 14
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "N590",
+      "category": "pbt",
+      "total_pounds_recent": 0.7,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0.7
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 73136,
+    "pct_low_income": 49.3,
+    "pct_people_of_color": 74.5,
+    "pct_under_5": 4.1,
+    "pct_over_64": 15.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (58 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:01:29Z"
+}

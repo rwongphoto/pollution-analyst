@@ -1,0 +1,99 @@
+{
+  "facility": {
+    "state": "ar",
+    "state_label": "Arkansas",
+    "slug": "dbg-conway",
+    "name": "Dbg Conway",
+    "parent_company": null,
+    "address": "600 DAVE WARD DRIVE",
+    "city": "Conway",
+    "county": "Faulkner County",
+    "county_slug": "faulkner",
+    "naics_label": "332322 \u00b7 Fabricated Metals",
+    "lat": 35.066768,
+    "lng": -92.430256
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 461,
+    "air_releases_pounds": 361,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 100,
+    "chemicals_reported": 3,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 461
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Diisocyanates",
+      "cas": "N120",
+      "category": "general",
+      "total_pounds_recent": 361,
+      "history": [
+        {
+          "year": 2024,
+          "value": 361
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 90,
+      "history": [
+        {
+          "year": 2024,
+          "value": 90
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Manganese  And Manganese Compounds",
+      "cas": "N450",
+      "category": "respiratory",
+      "total_pounds_recent": 10,
+      "history": [
+        {
+          "year": 2024,
+          "value": 10
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 39118,
+    "pct_low_income": 45.6,
+    "pct_people_of_color": 34.9,
+    "pct_under_5": 5.5,
+    "pct_over_64": 9.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (25 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T16:52:52Z"
+}

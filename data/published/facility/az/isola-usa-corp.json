@@ -1,0 +1,93 @@
+{
+  "facility": {
+    "state": "az",
+    "state_label": "Arizona",
+    "slug": "isola-usa-corp",
+    "name": "Isola USA Corp.",
+    "parent_company": "Cerberus Capital Management L P",
+    "address": "6565 W FRYE RD",
+    "city": "Chandler",
+    "county": "Maricopa County",
+    "county_slug": "maricopa",
+    "naics_label": "334419 \u00b7 Computers and Electronic Products",
+    "lat": 33.298804,
+    "lng": -111.954834
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 52853,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 52853,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 0.0,
+    "long_arc_pct_change": 1735.2,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 2880
+      },
+      {
+        "year": 2022,
+        "value": 5280
+      },
+      {
+        "year": 2023,
+        "value": 52853
+      },
+      {
+        "year": 2024,
+        "value": 52853
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Hydrochloric acid (acid aerosols including mists, vapors, gas, fog, and other airborne forms of any particle size)",
+      "cas": "7647-01-0",
+      "category": "respiratory",
+      "total_pounds_recent": 52853,
+      "history": [
+        {
+          "year": 2021,
+          "value": 2880
+        },
+        {
+          "year": 2022,
+          "value": 5280
+        },
+        {
+          "year": 2023,
+          "value": 52853
+        },
+        {
+          "year": 2024,
+          "value": 52853
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 1735.2,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 66197,
+    "pct_low_income": 17.5,
+    "pct_people_of_color": 40.1,
+    "pct_under_5": 5.5,
+    "pct_over_64": 11.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (43 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:09:58Z"
+}

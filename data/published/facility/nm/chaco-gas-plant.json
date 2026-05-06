@@ -1,0 +1,177 @@
+{
+  "facility": {
+    "state": "nm",
+    "state_label": "New Mexico",
+    "slug": "chaco-gas-plant",
+    "name": "Chaco Gas Plant",
+    "parent_company": "Enterprise Products Operating LLC",
+    "address": "895 C.R. 7100",
+    "city": "Bloomfield",
+    "county": "San Juan County",
+    "county_slug": "san-juan",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 36.488542,
+    "lng": -108.123499
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 275080,
+    "air_releases_pounds": 75080,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 200000,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 6.6,
+    "long_arc_pct_change": 13.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 241880
+      },
+      {
+        "year": 2023,
+        "value": 257970
+      },
+      {
+        "year": 2024,
+        "value": 275080
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 223600,
+      "history": [
+        {
+          "year": 2022,
+          "value": 188842
+        },
+        {
+          "year": 2023,
+          "value": 202900
+        },
+        {
+          "year": 2024,
+          "value": 223600
+        }
+      ],
+      "yoy_pct_change": 10.2,
+      "long_arc_pct_change": 18.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 37000,
+      "history": [
+        {
+          "year": 2022,
+          "value": 41127
+        },
+        {
+          "year": 2023,
+          "value": 41000
+        },
+        {
+          "year": 2024,
+          "value": 37000
+        }
+      ],
+      "yoy_pct_change": -9.8,
+      "long_arc_pct_change": -10.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 6790,
+      "history": [
+        {
+          "year": 2022,
+          "value": 371
+        },
+        {
+          "year": 2023,
+          "value": 6730
+        },
+        {
+          "year": 2024,
+          "value": 6790
+        }
+      ],
+      "yoy_pct_change": 0.9,
+      "long_arc_pct_change": 1728.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 4120,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4584
+        },
+        {
+          "year": 2023,
+          "value": 3870
+        },
+        {
+          "year": 2024,
+          "value": 4120
+        }
+      ],
+      "yoy_pct_change": 6.5,
+      "long_arc_pct_change": -10.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 3570,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6955
+        },
+        {
+          "year": 2023,
+          "value": 3470
+        },
+        {
+          "year": 2024,
+          "value": 3570
+        }
+      ],
+      "yoy_pct_change": 2.9,
+      "long_arc_pct_change": -48.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 121798,
+    "pct_low_income": 24.5,
+    "pct_people_of_color": 63.8,
+    "pct_under_5": 6.9,
+    "pct_over_64": 15.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "San Juan County, NM (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:01:29Z"
+}

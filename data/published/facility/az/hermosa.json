@@ -1,0 +1,136 @@
+{
+  "facility": {
+    "state": "az",
+    "state_label": "Arizona",
+    "slug": "hermosa",
+    "name": "Hermosa",
+    "parent_company": null,
+    "address": "749 HARSHAW RD",
+    "city": "Patagonia",
+    "county": "Santa Cruz County",
+    "county_slug": "santa-cruz",
+    "naics_label": "212230 \u00b7 Metal Mining",
+    "lat": 31.464463,
+    "lng": -110.720012
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 4501,
+    "air_releases_pounds": 1,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 4500,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -94.9,
+    "long_arc_pct_change": -97.5,
+    "long_arc_baseline_year": 2018,
+    "history": [
+      {
+        "year": 2018,
+        "value": 179486
+      },
+      {
+        "year": 2019,
+        "value": 95834
+      },
+      {
+        "year": 2022,
+        "value": 69300
+      },
+      {
+        "year": 2023,
+        "value": 87627
+      },
+      {
+        "year": 2024,
+        "value": 4501
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Lead compounds",
+      "cas": "N420",
+      "category": "pbt",
+      "total_pounds_recent": 4501,
+      "history": [
+        {
+          "year": 2018,
+          "value": 179228
+        },
+        {
+          "year": 2019,
+          "value": 95739
+        },
+        {
+          "year": 2023,
+          "value": 1295
+        },
+        {
+          "year": 2024,
+          "value": 4501
+        }
+      ],
+      "yoy_pct_change": 247.6,
+      "long_arc_pct_change": -97.5,
+      "long_arc_baseline_year": 2018
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "N450",
+      "summary": "N450 releases at Hermosa fell from 74k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -74003.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 69300
+        },
+        {
+          "year": 2023,
+          "value": 74003
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "N982",
+      "summary": "N982 releases at Hermosa fell from 11k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -11290.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 11290
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 47838,
+    "pct_low_income": 20.2,
+    "pct_people_of_color": 84.9,
+    "pct_under_5": 7.0,
+    "pct_over_64": 18.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Santa Cruz County, AZ (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T17:09:58Z"
+}
