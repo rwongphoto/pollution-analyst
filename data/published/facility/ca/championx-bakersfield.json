@@ -13,16 +13,16 @@
     "lat": 35.31303,
     "lng": -119.07359
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024 reporting year",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
   "totals": {
-    "total_releases_pounds": 3788,
-    "air_releases_pounds": 3788,
+    "total_releases_pounds": 571,
+    "air_releases_pounds": 571,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
-    "chemicals_reported": 2,
-    "yoy_pct_change": 563.5,
-    "long_arc_pct_change": 668.4,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 26.3,
+    "long_arc_pct_change": 15.8,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -80,35 +80,20 @@
       {
         "year": 2023,
         "value": 571
-      },
-      {
-        "year": 2024,
-        "value": 3788
       }
     ]
   },
   "chemicals": [
     {
-      "chemical": "Ammonia",
-      "cas": "7664-41-7",
-      "category": "general",
-      "total_pounds_recent": 3033,
-      "history": [
-        {
-          "year": 2024,
-          "value": 3033
-        }
-      ],
-      "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "long_arc_baseline_year": 2024
-    },
-    {
       "chemical": "Methanol",
       "cas": "67-56-1",
       "category": "respiratory",
-      "total_pounds_recent": 755,
+      "total_pounds_recent": 429,
       "history": [
+        {
+          "year": 2010,
+          "value": 493
+        },
         {
           "year": 2011,
           "value": 616
@@ -160,15 +145,65 @@
         {
           "year": 2023,
           "value": 429
-        },
-        {
-          "year": 2024,
-          "value": 755
         }
       ],
-      "yoy_pct_change": 76.1,
-      "long_arc_pct_change": 53.1,
+      "yoy_pct_change": -5.0,
+      "long_arc_pct_change": -13.0,
       "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 142,
+      "history": [
+        {
+          "year": 2019,
+          "value": 0.01
+        },
+        {
+          "year": 2020,
+          "value": 0.01
+        },
+        {
+          "year": 2022,
+          "value": 0.01
+        },
+        {
+          "year": 2023,
+          "value": 142
+        }
+      ],
+      "yoy_pct_change": 2025314.3,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2019
+    },
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 0.38,
+      "history": [
+        {
+          "year": 2019,
+          "value": 0.55
+        },
+        {
+          "year": 2020,
+          "value": 0.55
+        },
+        {
+          "year": 2022,
+          "value": 0.51
+        },
+        {
+          "year": 2023,
+          "value": 0.38
+        }
+      ],
+      "yoy_pct_change": -25.5,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2019
     }
   ],
   "flags": [],
@@ -188,5 +223,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-06"
   },
-  "_published_at": "2026-05-06T00:02:39Z"
+  "_published_at": "2026-05-06T00:38:03Z"
 }

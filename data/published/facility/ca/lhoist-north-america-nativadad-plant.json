@@ -13,16 +13,16 @@
     "lat": 36.608894,
     "lng": -121.516722
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024 reporting year",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
   "totals": {
-    "total_releases_pounds": 1082,
+    "total_releases_pounds": 743,
     "air_releases_pounds": 0.97,
-    "water_releases_pounds": 0.0,
-    "land_releases_pounds": 1081,
-    "chemicals_reported": 1,
-    "yoy_pct_change": 45.7,
-    "long_arc_pct_change": 70.7,
+    "water_releases_pounds": 0.02,
+    "land_releases_pounds": 742,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 37.7,
+    "long_arc_pct_change": 17.2,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -80,10 +80,6 @@
       {
         "year": 2023,
         "value": 743
-      },
-      {
-        "year": 2024,
-        "value": 1082
       }
     ]
   },
@@ -92,8 +88,12 @@
       "chemical": "Lead compounds",
       "cas": "N420",
       "category": "pbt",
-      "total_pounds_recent": 1082,
+      "total_pounds_recent": 722,
       "history": [
+        {
+          "year": 2010,
+          "value": 624
+        },
         {
           "year": 2011,
           "value": 180
@@ -145,15 +145,50 @@
         {
           "year": 2023,
           "value": 722
-        },
-        {
-          "year": 2024,
-          "value": 1082
         }
       ],
-      "yoy_pct_change": 50.0,
-      "long_arc_pct_change": 73.5,
+      "yoy_pct_change": 33.7,
+      "long_arc_pct_change": 15.6,
       "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "Mercury compounds",
+      "cas": "N458",
+      "category": "pbt",
+      "total_pounds_recent": 21,
+      "history": [
+        {
+          "year": 2014,
+          "value": 1
+        },
+        {
+          "year": 2015,
+          "value": 0.8
+        },
+        {
+          "year": 2016,
+          "value": 0.6
+        },
+        {
+          "year": 2018,
+          "value": 8
+        },
+        {
+          "year": 2019,
+          "value": 5504
+        },
+        {
+          "year": 2020,
+          "value": 89
+        },
+        {
+          "year": 2023,
+          "value": 21
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 1853.9,
+      "long_arc_baseline_year": 2014
     }
   ],
   "flags": [],
@@ -173,5 +208,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-06"
   },
-  "_published_at": "2026-05-06T00:02:39Z"
+  "_published_at": "2026-05-06T00:38:03Z"
 }

@@ -7,16 +7,16 @@
     "fips": "06045",
     "population": 91145
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 6.915,
+      "current": 9.43,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -26.7,
-      "long_arc_pct_change": -1.9,
+      "yoy_pct_change": -7.0,
+      "long_arc_pct_change": 33.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,20 +74,16 @@
         {
           "year": 2023,
           "value": 9.43
-        },
-        {
-          "year": 2024,
-          "value": 6.915
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 16.15,
+      "current": 27.45,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -41.2,
-      "long_arc_pct_change": -14.1,
+      "yoy_pct_change": 14.9,
+      "long_arc_pct_change": 46.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -145,20 +141,16 @@
         {
           "year": 2023,
           "value": 27.45
-        },
-        {
-          "year": 2024,
-          "value": 16.15
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.045,
+      "current": 0.049,
       "units": "ppm",
-      "yoy_pct_change": -7.1,
-      "long_arc_pct_change": -5.2,
+      "yoy_pct_change": -2.0,
+      "long_arc_pct_change": 2.1,
       "baseline_year": 2010,
       "history": [
         {
@@ -216,10 +208,6 @@
         {
           "year": 2023,
           "value": 0.049
-        },
-        {
-          "year": 2024,
-          "value": 0.045
         }
       ]
     },
@@ -343,10 +331,6 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
@@ -410,19 +394,15 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 60,
+      "current": 250,
       "units": "lb",
-      "yoy_pct_change": -76.1,
+      "yoy_pct_change": 740.6,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -477,10 +457,6 @@
         {
           "year": 2023,
           "value": 250
-        },
-        {
-          "year": 2024,
-          "value": 60
         }
       ]
     },
@@ -523,8 +499,8 @@
       "state_label": "California",
       "name": "Mendocino Forest Products CO. LLC",
       "parent_company": "Mendocino Forest Products Co LLC",
-      "total_pounds_recent": 60,
-      "yoy_pct_change": -76.1,
+      "total_pounds_recent": 250,
+      "yoy_pct_change": 740.6,
       "top_chemical": "Copper  And Copper Compounds",
       "city": "Ukiah",
       "lat": 39.177998,
@@ -622,7 +598,77 @@
       "population": 4968
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "PM2.5 annual mean",
+      "summary": "PM2.5 annual mean in Mendocino County reached 9.4 \u00b5g/m\u00b3 in 2023, 5% above the EPA NAAQS of 9 \u00b5g/m\u00b3.",
+      "magnitude_pct": 4.8,
+      "magnitude_abs": 0.43,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": "\u00b5g/m\u00b3",
+      "history": [
+        {
+          "year": 2010,
+          "value": 7.051
+        },
+        {
+          "year": 2011,
+          "value": 8.693
+        },
+        {
+          "year": 2012,
+          "value": 5.903
+        },
+        {
+          "year": 2013,
+          "value": 9.108
+        },
+        {
+          "year": 2014,
+          "value": 7.138
+        },
+        {
+          "year": 2015,
+          "value": 8.276
+        },
+        {
+          "year": 2016,
+          "value": 6.327
+        },
+        {
+          "year": 2017,
+          "value": 7.887
+        },
+        {
+          "year": 2018,
+          "value": 10.505
+        },
+        {
+          "year": 2019,
+          "value": 5.65
+        },
+        {
+          "year": 2020,
+          "value": 11.396
+        },
+        {
+          "year": 2021,
+          "value": 8.877
+        },
+        {
+          "year": 2022,
+          "value": 10.137
+        },
+        {
+          "year": 2023,
+          "value": 9.43
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 91145,
     "pct_low_income": 16.2,
@@ -835,6 +881,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "tehama",
+      "name": "Tehama County",
+      "population": 65484,
+      "facilities_count": 1,
+      "total_releases_pounds": 666,
+      "dominant_medium": "land",
+      "ej_pct_avg": 47.4,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "siskiyou",
+      "name": "Siskiyou County",
+      "population": 44049,
+      "facilities_count": 1,
+      "total_releases_pounds": 795,
+      "dominant_medium": "land",
+      "ej_pct_avg": 38.3,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "yuba",
+      "name": "Yuba County",
+      "population": 81705,
+      "facilities_count": 1,
+      "total_releases_pounds": 2032,
+      "dominant_medium": "land",
+      "ej_pct_avg": 58.0,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "napa",
+      "name": "Napa County",
+      "population": 137384,
+      "facilities_count": 2,
+      "total_releases_pounds": 679,
+      "dominant_medium": "land",
+      "ej_pct_avg": 52.5,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "san-mateo",
+      "name": "San Mateo County",
+      "population": 754250,
+      "facilities_count": 6,
+      "total_releases_pounds": 663,
+      "dominant_medium": "land",
+      "ej_pct_avg": 56.4,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 6 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "merced",
+      "name": "Merced County",
+      "population": 282290,
+      "facilities_count": 12,
+      "total_releases_pounds": 351796,
+      "dominant_medium": "land",
+      "ej_pct_avg": 65.1,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+31 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -842,5 +968,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:34Z"
+  "_published_at": "2026-05-06T00:37:59Z"
 }

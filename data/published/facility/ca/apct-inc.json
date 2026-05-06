@@ -13,16 +13,16 @@
     "lat": 37.387084,
     "lng": -121.944057
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024 reporting year",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
   "totals": {
-    "total_releases_pounds": 198,
-    "air_releases_pounds": 0,
+    "total_releases_pounds": 14643,
+    "air_releases_pounds": 250,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 198,
-    "chemicals_reported": 1,
-    "yoy_pct_change": -98.6,
-    "long_arc_pct_change": -80.3,
+    "land_releases_pounds": 14393,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 6807.1,
+    "long_arc_pct_change": 1357.0,
     "long_arc_baseline_year": 2012,
     "history": [
       {
@@ -56,19 +56,30 @@
       {
         "year": 2023,
         "value": 14643
-      },
-      {
-        "year": 2024,
-        "value": 198
       }
     ]
   },
   "chemicals": [
     {
+      "chemical": "Nitric acid",
+      "cas": "7697-37-2",
+      "category": "general",
+      "total_pounds_recent": 14446,
+      "history": [
+        {
+          "year": 2023,
+          "value": 14446
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    },
+    {
       "chemical": "Copper  And Copper Compounds",
       "cas": "N100",
       "category": "general",
-      "total_pounds_recent": 198,
+      "total_pounds_recent": 197,
       "history": [
         {
           "year": 2017,
@@ -97,36 +108,14 @@
         {
           "year": 2023,
           "value": 197
-        },
-        {
-          "year": 2024,
-          "value": 198
         }
       ],
-      "yoy_pct_change": 0.5,
-      "long_arc_pct_change": 450.0,
+      "yoy_pct_change": -7.1,
+      "long_arc_pct_change": 447.2,
       "long_arc_baseline_year": 2017
     }
   ],
-  "flags": [
-    {
-      "type": "release_shift",
-      "severity": "drop",
-      "label": "0007697372",
-      "summary": "0007697372 releases at Apct INC fell from 14k lb to 0 lb (100% lower) between 2023 and 2024.",
-      "magnitude_pct": -100.0,
-      "magnitude_abs": -14446.0,
-      "baseline_year": 2023,
-      "recent_year": 2024,
-      "units": "lb",
-      "history": [
-        {
-          "year": 2023,
-          "value": 14446
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 132488,
     "pct_low_income": 15.4,
@@ -143,5 +132,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-06"
   },
-  "_published_at": "2026-05-06T00:02:39Z"
+  "_published_at": "2026-05-06T00:38:03Z"
 }

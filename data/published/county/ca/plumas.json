@@ -7,16 +7,16 @@
     "fips": "06063",
     "population": 19650
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 8.617,
+      "current": 12.537,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -31.3,
-      "long_arc_pct_change": -8.3,
+      "yoy_pct_change": 21.5,
+      "long_arc_pct_change": 33.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,20 +74,16 @@
         {
           "year": 2023,
           "value": 12.537
-        },
-        {
-          "year": 2024,
-          "value": 8.617
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 28.0,
+      "current": 28.125,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -0.4,
-      "long_arc_pct_change": -30.0,
+      "yoy_pct_change": 11.1,
+      "long_arc_pct_change": -29.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -145,10 +141,6 @@
         {
           "year": 2023,
           "value": 28.125
-        },
-        {
-          "year": 2024,
-          "value": 28.0
         }
       ]
     },
@@ -215,10 +207,10 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 23730,
+      "current": 17328,
       "units": "lb",
-      "yoy_pct_change": 36.9,
-      "long_arc_pct_change": 114.4,
+      "yoy_pct_change": -42.2,
+      "long_arc_pct_change": 56.6,
       "baseline_year": 2011,
       "history": [
         {
@@ -276,10 +268,6 @@
         {
           "year": 2023,
           "value": 17328
-        },
-        {
-          "year": 2024,
-          "value": 23730
         }
       ]
     },
@@ -347,19 +335,15 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 3,
+      "current": 9,
       "units": "lb",
-      "yoy_pct_change": -66.2,
+      "yoy_pct_change": -65.0,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -418,10 +402,6 @@
         {
           "year": 2023,
           "value": 9
-        },
-        {
-          "year": 2024,
-          "value": 3
         }
       ]
     }
@@ -433,8 +413,8 @@
       "state_label": "California",
       "name": "Sierra Pacific Industries Quincy Div",
       "parent_company": "Sierra Pacific Industries",
-      "total_pounds_recent": 23672,
-      "yoy_pct_change": 36.6,
+      "total_pounds_recent": 17327,
+      "yoy_pct_change": -42.2,
       "top_chemical": "Ammonia",
       "city": "Quincy",
       "lat": 39.9392,
@@ -446,8 +426,8 @@
       "state_label": "California",
       "name": "Collins Pine CO Chester Sawmill",
       "parent_company": "Collins Pine Co",
-      "total_pounds_recent": 61,
-      "yoy_pct_change": 514.2,
+      "total_pounds_recent": 10,
+      "yoy_pct_change": -65.1,
       "top_chemical": "Lead  And Lead Compounds",
       "city": "Chester",
       "lat": 40.301208,
@@ -529,7 +509,77 @@
       "population": 319
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "PM2.5 annual mean",
+      "summary": "PM2.5 annual mean in Plumas County reached 12.5 \u00b5g/m\u00b3 in 2023, 39% above the EPA NAAQS of 9 \u00b5g/m\u00b3.",
+      "magnitude_pct": 39.3,
+      "magnitude_abs": 3.537,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": "\u00b5g/m\u00b3",
+      "history": [
+        {
+          "year": 2010,
+          "value": 9.401
+        },
+        {
+          "year": 2011,
+          "value": 11.454
+        },
+        {
+          "year": 2012,
+          "value": 11.298
+        },
+        {
+          "year": 2013,
+          "value": 11.291
+        },
+        {
+          "year": 2014,
+          "value": 12.37
+        },
+        {
+          "year": 2015,
+          "value": 15.157
+        },
+        {
+          "year": 2016,
+          "value": 10.894
+        },
+        {
+          "year": 2017,
+          "value": 13.329
+        },
+        {
+          "year": 2018,
+          "value": 11.922
+        },
+        {
+          "year": 2019,
+          "value": 9.654
+        },
+        {
+          "year": 2020,
+          "value": 17.469
+        },
+        {
+          "year": 2021,
+          "value": 14.483
+        },
+        {
+          "year": 2022,
+          "value": 10.322
+        },
+        {
+          "year": 2023,
+          "value": 12.537
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 19650,
     "pct_low_income": 10.9,
@@ -742,6 +792,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "colusa",
+      "name": "Colusa County",
+      "population": 21811,
+      "facilities_count": 1,
+      "total_releases_pounds": 118960,
+      "dominant_medium": "air",
+      "ej_pct_avg": 45.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "yolo",
+      "name": "Yolo County",
+      "population": 217141,
+      "facilities_count": 5,
+      "total_releases_pounds": 51005,
+      "dominant_medium": "air",
+      "ej_pct_avg": 63.5,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 5 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "placer",
+      "name": "Placer County",
+      "population": 406608,
+      "facilities_count": 8,
+      "total_releases_pounds": 28512,
+      "dominant_medium": "air",
+      "ej_pct_avg": 59.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 8 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "sonoma",
+      "name": "Sonoma County",
+      "population": 488436,
+      "facilities_count": 9,
+      "total_releases_pounds": 46676,
+      "dominant_medium": "air",
+      "ej_pct_avg": 48.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 9 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "shasta",
+      "name": "Shasta County",
+      "population": 181852,
+      "facilities_count": 6,
+      "total_releases_pounds": 214614,
+      "dominant_medium": "air",
+      "ej_pct_avg": 53.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 6 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "glenn",
+      "name": "Glenn County",
+      "population": 28657,
+      "facilities_count": 1,
+      "total_releases_pounds": 155880,
+      "dominant_medium": "land",
+      "ej_pct_avg": 49.1,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+10 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -749,5 +879,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:34Z"
+  "_published_at": "2026-05-06T00:37:59Z"
 }

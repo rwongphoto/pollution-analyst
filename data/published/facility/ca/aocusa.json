@@ -1,0 +1,109 @@
+{
+  "facility": {
+    "state": "ca",
+    "state_label": "California",
+    "slug": "aocusa",
+    "name": "Aocusa",
+    "parent_company": null,
+    "address": "4000 E WASHINGTON BLVD",
+    "city": "Commerce",
+    "county": "Los Angeles County",
+    "county_slug": "los-angeles",
+    "naics_label": "324191 \u00b7 Petroleum",
+    "lat": 34.010767,
+    "lng": -118.190891
+  },
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
+  "totals": {
+    "total_releases_pounds": 5,
+    "air_releases_pounds": 5,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 24900.0,
+    "long_arc_pct_change": -50.0,
+    "long_arc_baseline_year": 2018,
+    "history": [
+      {
+        "year": 2018,
+        "value": 10
+      },
+      {
+        "year": 2019,
+        "value": 500
+      },
+      {
+        "year": 2020,
+        "value": 295
+      },
+      {
+        "year": 2021,
+        "value": 10
+      },
+      {
+        "year": 2022,
+        "value": 0.02
+      },
+      {
+        "year": 2023,
+        "value": 5
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 5,
+      "history": [
+        {
+          "year": 2018,
+          "value": 10
+        },
+        {
+          "year": 2019,
+          "value": 500
+        },
+        {
+          "year": 2020,
+          "value": 295
+        },
+        {
+          "year": 2021,
+          "value": 10
+        },
+        {
+          "year": 2022,
+          "value": 0.02
+        },
+        {
+          "year": 2023,
+          "value": 5
+        }
+      ],
+      "yoy_pct_change": 24900.0,
+      "long_arc_pct_change": -50.0,
+      "long_arc_baseline_year": 2018
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 295138,
+    "pct_low_income": 49.2,
+    "pct_people_of_color": 97.6,
+    "pct_under_5": 5.9,
+    "pct_over_64": 11.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (188 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T00:38:03Z"
+}

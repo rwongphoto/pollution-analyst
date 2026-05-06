@@ -9,17 +9,17 @@
     "county_name": "San Luis Obispo",
     "county_fips": "06079"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 2,
-    "total_releases_pounds": 248,
+    "total_releases_pounds": 275,
     "air_releases_pounds": 0,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 248,
-    "yoy_pct_change": -9.8,
-    "long_arc_pct_change": 18.7,
+    "land_releases_pounds": 275,
+    "yoy_pct_change": -6.8,
+    "long_arc_pct_change": 31.6,
     "long_arc_baseline_year": 2019,
     "history": [
       {
@@ -41,10 +41,6 @@
       {
         "year": 2023,
         "value": 275
-      },
-      {
-        "year": 2024,
-        "value": 248
       }
     ]
   },
@@ -52,10 +48,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 4.975,
+      "current": 4.853,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 2.5,
-      "long_arc_pct_change": -47.0,
+      "yoy_pct_change": -31.6,
+      "long_arc_pct_change": -48.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -113,20 +109,16 @@
         {
           "year": 2023,
           "value": 4.853
-        },
-        {
-          "year": 2024,
-          "value": 4.975
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 13.7,
+      "current": 15.5,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -11.6,
-      "long_arc_pct_change": -57.1,
+      "yoy_pct_change": -17.0,
+      "long_arc_pct_change": -51.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -184,20 +176,16 @@
         {
           "year": 2023,
           "value": 15.5
-        },
-        {
-          "year": 2024,
-          "value": 13.7
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.061,
+      "current": 0.058,
       "units": "ppm",
-      "yoy_pct_change": 5.1,
-      "long_arc_pct_change": 1.4,
+      "yoy_pct_change": -1.7,
+      "long_arc_pct_change": -3.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -255,20 +243,16 @@
         {
           "year": 2023,
           "value": 0.058
-        },
-        {
-          "year": 2024,
-          "value": 0.061
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 2.539,
+      "current": 2.824,
       "units": "ppb",
-      "yoy_pct_change": -10.1,
-      "long_arc_pct_change": -73.2,
+      "yoy_pct_change": -12.9,
+      "long_arc_pct_change": -70.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -326,10 +310,6 @@
         {
           "year": 2023,
           "value": 2.824
-        },
-        {
-          "year": 2024,
-          "value": 2.539
         }
       ]
     },
@@ -406,10 +386,6 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
@@ -441,19 +417,15 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 248,
+      "current": 275,
       "units": "lb",
-      "yoy_pct_change": -9.8,
+      "yoy_pct_change": -6.8,
       "long_arc_pct_change": null,
       "baseline_year": 2019,
       "history": [
@@ -476,10 +448,6 @@
         {
           "year": 2023,
           "value": 275
-        },
-        {
-          "year": 2024,
-          "value": 248
         }
       ]
     },
@@ -558,8 +526,8 @@
       "state_label": "California",
       "name": "Rantec Power Systems INC",
       "parent_company": "Rps Holdings INC",
-      "total_pounds_recent": 248,
-      "yoy_pct_change": -9.8,
+      "total_pounds_recent": 275,
+      "yoy_pct_change": -6.8,
       "top_chemical": "Lead",
       "city": "Los Osos",
       "lat": 35.313129,
@@ -809,6 +777,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "san-miguel",
+      "name": "San Miguel",
+      "population": 2756,
+      "facilities_count": 1,
+      "total_releases_pounds": 2668,
+      "dominant_medium": "land",
+      "ej_pct_avg": 40.8,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "el-paso-de-robles-paso-robles",
+      "name": "El Paso de Robles (Paso Robles)",
+      "population": 31595,
+      "facilities_count": 1,
+      "total_releases_pounds": 12370,
+      "dominant_medium": "land",
+      "ej_pct_avg": 49.3,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "san-luis-obispo",
+      "name": "San Luis Obispo",
+      "population": 47529,
+      "facilities_count": 1,
+      "total_releases_pounds": 1323,
+      "dominant_medium": "air",
+      "ej_pct_avg": 47.8,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "nipomo",
+      "name": "Nipomo",
+      "population": 18009,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 37.9,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "kerman",
+      "name": "Kerman",
+      "population": 15980,
+      "facilities_count": 1,
+      "total_releases_pounds": 248,
+      "dominant_medium": "land",
+      "ej_pct_avg": 56.2,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "pico-rivera",
+      "name": "Pico Rivera",
+      "population": 61561,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 87.5,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+56 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -821,5 +869,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:06Z"
 }

@@ -610,14 +610,13 @@ def run_state(
     all_county_fips.update(airtox_county.keys())
     all_county_fips.update(county_demos.keys())
     all_county_fips.update(county_pops.keys())
-    county_paths: set = set()
+    # First pass: synthesise empty CountyAgg entries for counties with no
+    # current-year TRI rows so the publish loop and the related-counties
+    # similarity pass see the same set of geographies.
+    counties_for_publish: dict[str, CountyAgg] = {}
     for cfips in all_county_fips:
         c = counties.get(cfips)
         if c is None:
-            # Synthesise an empty CountyAgg for a county with no 2024 TRI
-            # rows. The publish_county call still renders pathway tiles
-            # (GHG when present), equity overlay, and an empty facilities
-            # table.
             cname = _county_name_from_fips(cfips, state.abbr)
             if not cname:
                 continue  # FIPS doesn't resolve to a county name — skip rather than write nonsense
@@ -627,6 +626,19 @@ def run_state(
                 state_abbr=state.abbr,
                 state_slug=state.slug,
             )
+        counties_for_publish[cfips] = c
+    # Peer facts for the related-counties cross-link module — computed once
+    # over the full state's counties, consumed by every per-county publish.
+    county_peer_facts = publish_site.build_county_peer_facts(
+        state_slug=state.slug,
+        counties=counties_for_publish,
+        facilities=facilities,
+        county_pops=county_pops,
+        county_percentiles=county_percentiles,
+        year=year,
+    )
+    county_paths: set = set()
+    for cfips, c in counties_for_publish.items():
         in_county = [f for f in facilities.values() if f.county_fips == cfips]
         county_paths.add(publish_site.publish_county(
             c, in_county, year,
@@ -648,6 +660,7 @@ def run_state(
             ),
             flags=county_flags.get(cfips, []),
             cities_directory=cities_by_county_fips.get(cfips, []),
+            related_places=publish_site.pick_related_counties(cfips, county_peer_facts),
         ))
     # 3-mile buffer demographics per facility — block-group-level pop-weighted
     # aggregation so the equity overlay describes who lives *near* the facility,
@@ -715,6 +728,19 @@ def run_state(
     # place_to_canonical_county) were computed above the county-publish
     # loop so the cities_directory could share the same canonical-county
     # resolution.
+    # Peer facts for the related-cities cross-link module — same approach as
+    # counties but with same-county weighting so e.g. Stockton surfaces Lodi
+    # rather than Fontana. Computed once over every eligible place.
+    city_peer_facts = publish_site.build_city_peer_facts(
+        state_slug=state.slug,
+        place_to_facility_ids=place_to_facility_ids,
+        place_to_utilities=place_to_utilities,
+        place_to_canonical_county=place_to_canonical_county,
+        place_fips_to_name=place_fips_to_name,
+        place_demos=place_demos,
+        place_percentiles=place_percentiles,
+        facilities=facilities,
+    )
     city_paths: set = set()
     # Build a city hub for any place with ≥1 facility or ≥1 (filtered) utility — places
     # with neither aren't worth a programmatic page.
@@ -804,6 +830,7 @@ def run_state(
                 release_label=health_release_label,
             ),
             flags=city_flags,
+            related_places=publish_site.pick_related_cities(pf, city_peer_facts),
         ))
 
     removed_fac = publish_site.cleanup_stale("facility", state.slug, facility_paths)

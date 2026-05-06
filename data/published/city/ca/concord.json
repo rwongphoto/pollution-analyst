@@ -9,22 +9,42 @@
     "county_name": "Contra Costa",
     "county_fips": "06013"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
-    "facilities_in_city": 0,
+    "facilities_in_city": 1,
     "utilities_serving": 3,
-    "total_releases_pounds": 0,
-    "air_releases_pounds": 0,
+    "total_releases_pounds": 1,
+    "air_releases_pounds": 1,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
     "yoy_pct_change": null,
-    "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2024,
+    "long_arc_pct_change": -75.0,
+    "long_arc_baseline_year": 2010,
     "history": [
       {
-        "year": 2024,
-        "value": 0
+        "year": 2010,
+        "value": 4
+      },
+      {
+        "year": 2011,
+        "value": 2
+      },
+      {
+        "year": 2012,
+        "value": 5
+      },
+      {
+        "year": 2013,
+        "value": 3
+      },
+      {
+        "year": 2014,
+        "value": 3
+      },
+      {
+        "year": 2023,
+        "value": 1
       }
     ]
   },
@@ -32,10 +52,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 6.847,
+      "current": 8.136,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -15.8,
-      "long_arc_pct_change": -44.1,
+      "yoy_pct_change": -3.3,
+      "long_arc_pct_change": -33.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -93,20 +113,16 @@
         {
           "year": 2023,
           "value": 8.136
-        },
-        {
-          "year": 2024,
-          "value": 6.847
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 17.7,
+      "current": 21.85,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -19.0,
-      "long_arc_pct_change": -58.5,
+      "yoy_pct_change": -3.3,
+      "long_arc_pct_change": -48.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -164,20 +180,16 @@
         {
           "year": 2023,
           "value": 21.85
-        },
-        {
-          "year": 2024,
-          "value": 17.7
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.039,
+      "current": 0.055,
       "units": "ppm",
-      "yoy_pct_change": -29.0,
-      "long_arc_pct_change": -41.6,
+      "yoy_pct_change": -3.5,
+      "long_arc_pct_change": -17.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -235,20 +247,16 @@
         {
           "year": 2023,
           "value": 0.055
-        },
-        {
-          "year": 2024,
-          "value": 0.039
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 6.086,
+      "current": 4.686,
       "units": "ppb",
-      "yoy_pct_change": 29.9,
-      "long_arc_pct_change": -54.1,
+      "yoy_pct_change": -21.6,
+      "long_arc_pct_change": -64.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -306,10 +314,6 @@
         {
           "year": 2023,
           "value": 4.686
-        },
-        {
-          "year": 2024,
-          "value": 6.086
         }
       ]
     },
@@ -361,15 +365,35 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 0,
+      "current": 1,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2010,
       "history": [
         {
-          "year": 2024,
+          "year": 2010,
           "value": 0
+        },
+        {
+          "year": 2011,
+          "value": 0
+        },
+        {
+          "year": 2012,
+          "value": 0
+        },
+        {
+          "year": 2013,
+          "value": 0
+        },
+        {
+          "year": 2014,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 1
         }
       ]
     },
@@ -380,10 +404,30 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2010,
       "history": [
         {
-          "year": 2024,
+          "year": 2010,
+          "value": 0
+        },
+        {
+          "year": 2011,
+          "value": 0
+        },
+        {
+          "year": 2012,
+          "value": 0
+        },
+        {
+          "year": 2013,
+          "value": 0
+        },
+        {
+          "year": 2014,
+          "value": 0
+        },
+        {
+          "year": 2023,
           "value": 0
         }
       ]
@@ -395,10 +439,30 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2010,
       "history": [
         {
-          "year": 2024,
+          "year": 2010,
+          "value": 4
+        },
+        {
+          "year": 2011,
+          "value": 2
+        },
+        {
+          "year": 2012,
+          "value": 5
+        },
+        {
+          "year": 2013,
+          "value": 3
+        },
+        {
+          "year": 2014,
+          "value": 3
+        },
+        {
+          "year": 2023,
           "value": 0
         }
       ]
@@ -471,7 +535,21 @@
       ]
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "slug": "cemex-concord",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Cemex Concord",
+      "parent_company": "Cemex INC",
+      "total_pounds_recent": 1,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Concord",
+      "lat": 38.0055,
+      "lng": -122.047446
+    }
+  ],
   "water": {
     "utilities_count": 3,
     "population_served_total": 198001,
@@ -725,6 +803,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "hercules",
+      "name": "Hercules",
+      "population": 26041,
+      "facilities_count": 1,
+      "total_releases_pounds": 30,
+      "dominant_medium": "air",
+      "ej_pct_avg": 56.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "antioch",
+      "name": "Antioch",
+      "population": 115016,
+      "facilities_count": 2,
+      "total_releases_pounds": 5256,
+      "dominant_medium": "air",
+      "ej_pct_avg": 62.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "martinez",
+      "name": "Martinez",
+      "population": 37093,
+      "facilities_count": 2,
+      "total_releases_pounds": 30339,
+      "dominant_medium": "air",
+      "ej_pct_avg": 65.5,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "richmond",
+      "name": "Richmond",
+      "population": 115619,
+      "facilities_count": 10,
+      "total_releases_pounds": 590767,
+      "dominant_medium": "air",
+      "ej_pct_avg": 71.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 10 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "salinas",
+      "name": "Salinas",
+      "population": 162783,
+      "facilities_count": 1,
+      "total_releases_pounds": 0.05,
+      "dominant_medium": "air",
+      "ej_pct_avg": 52.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "lompoc",
+      "name": "Lompoc",
+      "population": 44086,
+      "facilities_count": 2,
+      "total_releases_pounds": 216,
+      "dominant_medium": "land",
+      "ej_pct_avg": 36.3,
+      "relation": "contrast",
+      "reason": "Same scale, lighter equity burden (30 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -737,5 +895,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:06Z"
 }

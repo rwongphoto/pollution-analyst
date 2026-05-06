@@ -7,16 +7,16 @@
     "fips": "06043",
     "population": 17130
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.07,
+      "current": 0.064,
       "units": "ppm",
-      "yoy_pct_change": 8.6,
-      "long_arc_pct_change": -21.5,
+      "yoy_pct_change": -7.9,
+      "long_arc_pct_change": -27.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,10 +74,6 @@
         {
           "year": 2023,
           "value": 0.064
-        },
-        {
-          "year": 2024,
-          "value": 0.07
         }
       ]
     },
@@ -521,6 +517,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "trinity",
+      "name": "Trinity County",
+      "population": 15889,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 32.0,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "inyo",
+      "name": "Inyo County",
+      "population": 18829,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "mono",
+      "name": "Mono County",
+      "population": 13219,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.8,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "del-norte",
+      "name": "Del Norte County",
+      "population": 27462,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 28.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "modoc",
+      "name": "Modoc County",
+      "population": 8651,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 39.8,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "glenn",
+      "name": "Glenn County",
+      "population": 28657,
+      "facilities_count": 1,
+      "total_releases_pounds": 155880,
+      "dominant_medium": "land",
+      "ej_pct_avg": 49.1,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+11 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -528,5 +604,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:34Z"
+  "_published_at": "2026-05-06T00:37:59Z"
 }

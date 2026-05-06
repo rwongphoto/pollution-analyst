@@ -7,16 +7,16 @@
     "fips": "06005",
     "population": 40577
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.072,
+      "current": 0.062,
       "units": "ppm",
-      "yoy_pct_change": 16.1,
-      "long_arc_pct_change": -23.4,
+      "yoy_pct_change": -3.1,
+      "long_arc_pct_change": -34.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,10 +74,6 @@
         {
           "year": 2023,
           "value": 0.062
-        },
-        {
-          "year": 2024,
-          "value": 0.072
         }
       ]
     },
@@ -372,81 +368,7 @@
       "population": 59
     }
   ],
-  "flags": [
-    {
-      "type": "naaqs_exceedance",
-      "severity": "exceedance",
-      "label": "Ozone 8-hour 4th-highest daily max",
-      "summary": "Ozone 8-hour 4th-highest daily max in Amador County reached 0.072 ppm in 2024, 3% above the EPA NAAQS of 0.07 ppm.",
-      "magnitude_pct": 2.9,
-      "magnitude_abs": 0.002,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": "ppm",
-      "history": [
-        {
-          "year": 2010,
-          "value": 0.094
-        },
-        {
-          "year": 2011,
-          "value": 0.07
-        },
-        {
-          "year": 2012,
-          "value": 0.078
-        },
-        {
-          "year": 2013,
-          "value": 0.066
-        },
-        {
-          "year": 2014,
-          "value": 0.074
-        },
-        {
-          "year": 2015,
-          "value": 0.074
-        },
-        {
-          "year": 2016,
-          "value": 0.071
-        },
-        {
-          "year": 2017,
-          "value": 0.071
-        },
-        {
-          "year": 2018,
-          "value": 0.075
-        },
-        {
-          "year": 2019,
-          "value": 0.067
-        },
-        {
-          "year": 2020,
-          "value": 0.065
-        },
-        {
-          "year": 2021,
-          "value": 0.071
-        },
-        {
-          "year": 2022,
-          "value": 0.064
-        },
-        {
-          "year": 2023,
-          "value": 0.062
-        },
-        {
-          "year": 2024,
-          "value": 0.072
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 40577,
     "pct_low_income": 7.8,
@@ -659,6 +581,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "calaveras",
+      "name": "Calaveras County",
+      "population": 45674,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 44.2,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "del-norte",
+      "name": "Del Norte County",
+      "population": 27462,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 28.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "inyo",
+      "name": "Inyo County",
+      "population": 18829,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.3,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "mariposa",
+      "name": "Mariposa County",
+      "population": 17130,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 38.4,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "sutter",
+      "name": "Sutter County",
+      "population": 99101,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 60.7,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "nevada",
+      "name": "Nevada County",
+      "population": 102322,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.4,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -666,5 +668,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:34Z"
+  "_published_at": "2026-05-06T00:37:59Z"
 }

@@ -13,16 +13,16 @@
     "lat": 38.026811,
     "lng": -121.945623
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024 reporting year",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
   "totals": {
-    "total_releases_pounds": 202730,
-    "air_releases_pounds": 1170,
-    "water_releases_pounds": 97,
-    "land_releases_pounds": 201463,
+    "total_releases_pounds": 168391,
+    "air_releases_pounds": 1089,
+    "water_releases_pounds": 121,
+    "land_releases_pounds": 167182,
     "chemicals_reported": 5,
-    "yoy_pct_change": 20.4,
-    "long_arc_pct_change": 453.8,
+    "yoy_pct_change": 55.3,
+    "long_arc_pct_change": 360.0,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -80,10 +80,6 @@
       {
         "year": 2023,
         "value": 168391
-      },
-      {
-        "year": 2024,
-        "value": 202730
       }
     ]
   },
@@ -92,8 +88,12 @@
       "chemical": "Molybdenum trioxide",
       "cas": "1313-27-5",
       "category": "carcinogen",
-      "total_pounds_recent": 155386,
+      "total_pounds_recent": 128650,
       "history": [
+        {
+          "year": 2010,
+          "value": 17821
+        },
         {
           "year": 2011,
           "value": 17104
@@ -145,22 +145,22 @@
         {
           "year": 2023,
           "value": 128650
-        },
-        {
-          "year": 2024,
-          "value": 155386
         }
       ],
-      "yoy_pct_change": 20.8,
-      "long_arc_pct_change": 771.9,
+      "yoy_pct_change": 57.9,
+      "long_arc_pct_change": 621.9,
       "long_arc_baseline_year": 2010
     },
     {
-      "chemical": "Nickel  And Nickel Compounds",
+      "chemical": "Nickel compounds",
       "cas": "N495",
       "category": "carcinogen",
-      "total_pounds_recent": 41787,
+      "total_pounds_recent": 35212,
       "history": [
+        {
+          "year": 2010,
+          "value": 3932
+        },
         {
           "year": 2011,
           "value": 4595
@@ -212,22 +212,22 @@
         {
           "year": 2023,
           "value": 35212
-        },
-        {
-          "year": 2024,
-          "value": 41787
         }
       ],
-      "yoy_pct_change": 18.7,
-      "long_arc_pct_change": 962.6,
+      "yoy_pct_change": 56.2,
+      "long_arc_pct_change": 795.4,
       "long_arc_baseline_year": 2010
     },
     {
-      "chemical": "Cobalt  And Cobalt Compounds",
+      "chemical": "Cobalt compounds",
       "cas": "N096",
       "category": "carcinogen",
-      "total_pounds_recent": 4323,
+      "total_pounds_recent": 2856,
       "history": [
+        {
+          "year": 2010,
+          "value": 313
+        },
         {
           "year": 2011,
           "value": 910
@@ -279,22 +279,22 @@
         {
           "year": 2023,
           "value": 2856
-        },
-        {
-          "year": 2024,
-          "value": 4323
         }
       ],
-      "yoy_pct_change": 51.4,
-      "long_arc_pct_change": 1279.4,
+      "yoy_pct_change": 13.1,
+      "long_arc_pct_change": 811.2,
       "long_arc_baseline_year": 2010
     },
     {
       "chemical": "Ammonia",
       "cas": "7664-41-7",
       "category": "general",
-      "total_pounds_recent": 1151,
+      "total_pounds_recent": 1573,
       "history": [
+        {
+          "year": 2010,
+          "value": 13942
+        },
         {
           "year": 2011,
           "value": 15494
@@ -346,22 +346,22 @@
         {
           "year": 2023,
           "value": 1573
-        },
-        {
-          "year": 2024,
-          "value": 1151
         }
       ],
-      "yoy_pct_change": -26.8,
-      "long_arc_pct_change": -91.7,
+      "yoy_pct_change": -8.5,
+      "long_arc_pct_change": -88.7,
       "long_arc_baseline_year": 2010
     },
     {
       "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "cas": "N511",
       "category": "general",
-      "total_pounds_recent": 83,
+      "total_pounds_recent": 100,
       "history": [
+        {
+          "year": 2010,
+          "value": 597
+        },
         {
           "year": 2011,
           "value": 249
@@ -413,18 +413,153 @@
         {
           "year": 2023,
           "value": 100
-        },
-        {
-          "year": 2024,
-          "value": 83
         }
       ],
-      "yoy_pct_change": -16.6,
-      "long_arc_pct_change": -86.1,
+      "yoy_pct_change": -40.9,
+      "long_arc_pct_change": -83.3,
       "long_arc_baseline_year": 2010
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Molybdenum trioxide",
+      "summary": "Molybdenum trioxide releases at Shell Catalysts & Technologies - Pittsburg rose from 81k lb to 129k lb between 2022 and 2023.",
+      "magnitude_pct": 57.9,
+      "magnitude_abs": 47157.3,
+      "baseline_year": 2022,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 17821
+        },
+        {
+          "year": 2011,
+          "value": 17104
+        },
+        {
+          "year": 2012,
+          "value": 23233
+        },
+        {
+          "year": 2013,
+          "value": 57541
+        },
+        {
+          "year": 2014,
+          "value": 37227
+        },
+        {
+          "year": 2015,
+          "value": 34399
+        },
+        {
+          "year": 2016,
+          "value": 76068
+        },
+        {
+          "year": 2017,
+          "value": 58806
+        },
+        {
+          "year": 2018,
+          "value": 76047
+        },
+        {
+          "year": 2019,
+          "value": 84188
+        },
+        {
+          "year": 2020,
+          "value": 82963
+        },
+        {
+          "year": 2021,
+          "value": 60753
+        },
+        {
+          "year": 2022,
+          "value": 81493
+        },
+        {
+          "year": 2023,
+          "value": 128650
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Nickel compounds",
+      "summary": "Nickel compounds releases at Shell Catalysts & Technologies - Pittsburg rose from 23k lb to 35k lb between 2022 and 2023.",
+      "magnitude_pct": 56.2,
+      "magnitude_abs": 12674.3,
+      "baseline_year": 2022,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 3932
+        },
+        {
+          "year": 2011,
+          "value": 4595
+        },
+        {
+          "year": 2012,
+          "value": 7984
+        },
+        {
+          "year": 2013,
+          "value": 18500
+        },
+        {
+          "year": 2014,
+          "value": 12356
+        },
+        {
+          "year": 2015,
+          "value": 13577
+        },
+        {
+          "year": 2016,
+          "value": 27127
+        },
+        {
+          "year": 2017,
+          "value": 18169
+        },
+        {
+          "year": 2018,
+          "value": 22307
+        },
+        {
+          "year": 2019,
+          "value": 29416
+        },
+        {
+          "year": 2020,
+          "value": 20859
+        },
+        {
+          "year": 2021,
+          "value": 15470
+        },
+        {
+          "year": 2022,
+          "value": 22538
+        },
+        {
+          "year": 2023,
+          "value": 35212
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 62680,
     "pct_low_income": 29.9,
@@ -441,5 +576,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-06"
   },
-  "_published_at": "2026-05-06T00:02:39Z"
+  "_published_at": "2026-05-06T00:38:03Z"
 }

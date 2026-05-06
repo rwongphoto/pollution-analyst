@@ -9,17 +9,17 @@
     "county_name": "Santa Barbara",
     "county_fips": "06083"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 2,
-    "total_releases_pounds": 146,
-    "air_releases_pounds": 146,
+    "total_releases_pounds": 234,
+    "air_releases_pounds": 234,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
-    "yoy_pct_change": -37.8,
-    "long_arc_pct_change": -44.9,
+    "yoy_pct_change": -42.5,
+    "long_arc_pct_change": -11.5,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,10 +77,6 @@
       {
         "year": 2023,
         "value": 234
-      },
-      {
-        "year": 2024,
-        "value": 146
       }
     ]
   },
@@ -88,10 +84,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 5.262,
+      "current": 5.374,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -2.1,
-      "long_arc_pct_change": -47.4,
+      "yoy_pct_change": -15.5,
+      "long_arc_pct_change": -46.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -149,20 +145,16 @@
         {
           "year": 2023,
           "value": 5.374
-        },
-        {
-          "year": 2024,
-          "value": 5.262
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 12.633,
+      "current": 14.36,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -12.0,
-      "long_arc_pct_change": -33.3,
+      "yoy_pct_change": 1.8,
+      "long_arc_pct_change": -24.2,
       "baseline_year": 2010,
       "history": [
         {
@@ -220,10 +212,6 @@
         {
           "year": 2023,
           "value": 14.36
-        },
-        {
-          "year": 2024,
-          "value": 12.633
         }
       ]
     },
@@ -232,8 +220,8 @@
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
       "current": 0.05,
       "units": "ppm",
-      "yoy_pct_change": -1.8,
-      "long_arc_pct_change": -23.3,
+      "yoy_pct_change": -2.6,
+      "long_arc_pct_change": -22.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -291,20 +279,16 @@
         {
           "year": 2023,
           "value": 0.05
-        },
-        {
-          "year": 2024,
-          "value": 0.05
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 1.027,
+      "current": 0.737,
       "units": "ppb",
-      "yoy_pct_change": 39.4,
-      "long_arc_pct_change": -86.1,
+      "yoy_pct_change": -39.8,
+      "long_arc_pct_change": -90.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -362,10 +346,6 @@
         {
           "year": 2023,
           "value": 0.737
-        },
-        {
-          "year": 2024,
-          "value": 1.027
         }
       ]
     },
@@ -417,9 +397,9 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 146,
+      "current": 234,
       "units": "lb",
-      "yoy_pct_change": -37.8,
+      "yoy_pct_change": -42.5,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -478,10 +458,6 @@
         {
           "year": 2023,
           "value": 234
-        },
-        {
-          "year": 2024,
-          "value": 146
         }
       ]
     },
@@ -549,10 +525,6 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
@@ -619,10 +591,6 @@
         },
         {
           "year": 2023,
-          "value": 0
-        },
-        {
-          "year": 2024,
           "value": 0
         }
       ]
@@ -702,8 +670,8 @@
       "state_label": "California",
       "name": "Nusil Technology LLC",
       "parent_company": "Avantor Performance Materials INC",
-      "total_pounds_recent": 146,
-      "yoy_pct_change": -37.8,
+      "total_pounds_recent": 234,
+      "yoy_pct_change": -42.5,
       "top_chemical": "Xylene (mixed isomers)",
       "city": "Carpinteria",
       "lat": 34.388946,
@@ -953,6 +921,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "vandenberg-afb",
+      "name": "Vandenberg AFB",
+      "population": 3681,
+      "facilities_count": 1,
+      "total_releases_pounds": 3101,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "lompoc",
+      "name": "Lompoc",
+      "population": 44086,
+      "facilities_count": 2,
+      "total_releases_pounds": 216,
+      "dominant_medium": "land",
+      "ej_pct_avg": 36.3,
+      "relation": "peer",
+      "reason": "Comparable release scale \u00b7 2 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "guadalupe",
+      "name": "Guadalupe",
+      "population": 8272,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 40.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "solvang",
+      "name": "Solvang",
+      "population": 6035,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 38.8,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "west-carson",
+      "name": "West Carson",
+      "population": 22240,
+      "facilities_count": 1,
+      "total_releases_pounds": 318,
+      "dominant_medium": "air",
+      "ej_pct_avg": 84.7,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "cambria",
+      "name": "Cambria",
+      "population": 5825,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 27.7,
+      "relation": "contrast",
+      "reason": "Same scale, lighter equity burden (23 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -965,5 +1013,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:06Z"
 }

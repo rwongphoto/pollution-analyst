@@ -7,16 +7,16 @@
     "fips": "06109",
     "population": 54993
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.071,
+      "current": 0.067,
       "units": "ppm",
-      "yoy_pct_change": 6.0,
-      "long_arc_pct_change": -21.1,
+      "yoy_pct_change": 9.8,
+      "long_arc_pct_change": -25.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,10 +74,6 @@
         {
           "year": 2023,
           "value": 0.067
-        },
-        {
-          "year": 2024,
-          "value": 0.071
         }
       ]
     },
@@ -131,7 +127,7 @@
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 0,
       "units": "lb",
-      "yoy_pct_change": -25.0,
+      "yoy_pct_change": -5.7,
       "long_arc_pct_change": null,
       "baseline_year": 2011,
       "history": [
@@ -185,10 +181,6 @@
         },
         {
           "year": 2023,
-          "value": 0
-        },
-        {
-          "year": 2024,
           "value": 0
         }
       ]
@@ -253,10 +245,6 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
@@ -320,10 +308,6 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     }
@@ -335,8 +319,8 @@
       "state_label": "California",
       "name": "Spi Sonora Div",
       "parent_company": "Sierra Pacific Industries",
-      "total_pounds_recent": 0.12,
-      "yoy_pct_change": -25.0,
+      "total_pounds_recent": 0.16,
+      "yoy_pct_change": -5.7,
       "top_chemical": "Dioxin and dioxin-like compounds",
       "city": "Sonora",
       "lat": 37.962904,
@@ -426,81 +410,7 @@
       "population": 2154
     }
   ],
-  "flags": [
-    {
-      "type": "naaqs_exceedance",
-      "severity": "exceedance",
-      "label": "Ozone 8-hour 4th-highest daily max",
-      "summary": "Ozone 8-hour 4th-highest daily max in Tuolumne County reached 0.071 ppm in 2024, 1% above the EPA NAAQS of 0.07 ppm.",
-      "magnitude_pct": 1.4,
-      "magnitude_abs": 0.001,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": "ppm",
-      "history": [
-        {
-          "year": 2010,
-          "value": 0.09
-        },
-        {
-          "year": 2011,
-          "value": 0.074
-        },
-        {
-          "year": 2012,
-          "value": 0.075
-        },
-        {
-          "year": 2013,
-          "value": 0.07
-        },
-        {
-          "year": 2014,
-          "value": 0.075
-        },
-        {
-          "year": 2015,
-          "value": 0.076
-        },
-        {
-          "year": 2016,
-          "value": 0.088
-        },
-        {
-          "year": 2017,
-          "value": 0.077
-        },
-        {
-          "year": 2018,
-          "value": 0.074
-        },
-        {
-          "year": 2019,
-          "value": 0.069
-        },
-        {
-          "year": 2020,
-          "value": 0.08
-        },
-        {
-          "year": 2021,
-          "value": 0.068
-        },
-        {
-          "year": 2022,
-          "value": 0.061
-        },
-        {
-          "year": 2023,
-          "value": 0.067
-        },
-        {
-          "year": 2024,
-          "value": 0.071
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 54993,
     "pct_low_income": 11.4,
@@ -713,6 +623,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "marin",
+      "name": "Marin County",
+      "population": 260485,
+      "facilities_count": 1,
+      "total_releases_pounds": 52,
+      "dominant_medium": "air",
+      "ej_pct_avg": 49.4,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "lake",
+      "name": "Lake County",
+      "population": 68024,
+      "facilities_count": 1,
+      "total_releases_pounds": 176,
+      "dominant_medium": "air",
+      "ej_pct_avg": 38.6,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "santa-cruz",
+      "name": "Santa Cruz County",
+      "population": 268571,
+      "facilities_count": 2,
+      "total_releases_pounds": 145,
+      "dominant_medium": "air",
+      "ej_pct_avg": 48.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "colusa",
+      "name": "Colusa County",
+      "population": 21811,
+      "facilities_count": 1,
+      "total_releases_pounds": 118960,
+      "dominant_medium": "air",
+      "ej_pct_avg": 45.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "plumas",
+      "name": "Plumas County",
+      "population": 19650,
+      "facilities_count": 2,
+      "total_releases_pounds": 17337,
+      "dominant_medium": "air",
+      "ej_pct_avg": 39.0,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "yolo",
+      "name": "Yolo County",
+      "population": 217141,
+      "facilities_count": 5,
+      "total_releases_pounds": 51005,
+      "dominant_medium": "air",
+      "ej_pct_avg": 63.5,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+19 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -720,5 +710,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:34Z"
+  "_published_at": "2026-05-06T00:37:59Z"
 }

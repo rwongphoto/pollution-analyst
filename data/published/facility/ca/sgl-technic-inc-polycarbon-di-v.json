@@ -13,16 +13,16 @@
     "lat": 34.43554,
     "lng": -118.590058
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024 reporting year",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
   "totals": {
-    "total_releases_pounds": 143899,
-    "air_releases_pounds": 74,
+    "total_releases_pounds": 44883,
+    "air_releases_pounds": 56,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 143825,
+    "land_releases_pounds": 44827,
     "chemicals_reported": 2,
-    "yoy_pct_change": 220.6,
-    "long_arc_pct_change": 191.1,
+    "yoy_pct_change": -67.4,
+    "long_arc_pct_change": -9.2,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -80,10 +80,6 @@
       {
         "year": 2023,
         "value": 44883
-      },
-      {
-        "year": 2024,
-        "value": 143899
       }
     ]
   },
@@ -92,8 +88,12 @@
       "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
       "cas": "N511",
       "category": "general",
-      "total_pounds_recent": 143825,
+      "total_pounds_recent": 44827,
       "history": [
+        {
+          "year": 2010,
+          "value": 49315
+        },
         {
           "year": 2011,
           "value": 102591
@@ -145,22 +145,22 @@
         {
           "year": 2023,
           "value": 44827
-        },
-        {
-          "year": 2024,
-          "value": 143825
         }
       ],
-      "yoy_pct_change": 220.8,
-      "long_arc_pct_change": 191.6,
+      "yoy_pct_change": -67.5,
+      "long_arc_pct_change": -9.1,
       "long_arc_baseline_year": 2010
     },
     {
       "chemical": "Nitric acid",
       "cas": "7697-37-2",
       "category": "general",
-      "total_pounds_recent": 74,
+      "total_pounds_recent": 56,
       "history": [
+        {
+          "year": 2010,
+          "value": 113
+        },
         {
           "year": 2011,
           "value": 131
@@ -212,27 +212,23 @@
         {
           "year": 2023,
           "value": 56
-        },
-        {
-          "year": 2024,
-          "value": 74
         }
       ],
-      "yoy_pct_change": 32.1,
-      "long_arc_pct_change": -34.5,
+      "yoy_pct_change": -27.3,
+      "long_arc_pct_change": -50.4,
       "long_arc_baseline_year": 2010
     }
   ],
   "flags": [
     {
       "type": "release_shift",
-      "severity": "surge",
+      "severity": "drop",
       "label": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
-      "summary": "Nitrate compounds (water dissociable; reportable only when in aqueous solution) releases at Sgl Technic INC Polycarbon Di V rose from 45k lb to 144k lb (3.2\u00d7) between 2023 and 2024.",
-      "magnitude_pct": 220.8,
-      "magnitude_abs": 98997.6,
-      "baseline_year": 2023,
-      "recent_year": 2024,
+      "summary": "Nitrate compounds (water dissociable; reportable only when in aqueous solution) releases at Sgl Technic INC Polycarbon Di V fell from 138k lb to 45k lb (67% lower) between 2022 and 2023.",
+      "magnitude_pct": -67.5,
+      "magnitude_abs": -92939.6,
+      "baseline_year": 2022,
+      "recent_year": 2023,
       "units": "lb",
       "history": [
         {
@@ -290,10 +286,6 @@
         {
           "year": 2023,
           "value": 44827
-        },
-        {
-          "year": 2024,
-          "value": 143825
         }
       ]
     }
@@ -314,5 +306,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-06"
   },
-  "_published_at": "2026-05-06T00:02:39Z"
+  "_published_at": "2026-05-06T00:38:03Z"
 }

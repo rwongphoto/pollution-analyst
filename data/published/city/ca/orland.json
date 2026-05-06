@@ -9,8 +9,8 @@
     "county_name": "Glenn",
     "county_fips": "06021"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 0,
     "utilities_serving": 1,
@@ -20,10 +20,10 @@
     "land_releases_pounds": 0,
     "yoy_pct_change": null,
     "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2024,
+    "long_arc_baseline_year": 2023,
     "history": [
       {
-        "year": 2024,
+        "year": 2023,
         "value": 0
       }
     ]
@@ -32,10 +32,10 @@
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.057,
+      "current": 0.06,
       "units": "ppm",
-      "yoy_pct_change": -5.0,
-      "long_arc_pct_change": -23.0,
+      "yoy_pct_change": -4.8,
+      "long_arc_pct_change": -18.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -93,10 +93,6 @@
         {
           "year": 2023,
           "value": 0.06
-        },
-        {
-          "year": 2024,
-          "value": 0.057
         }
       ]
     },
@@ -152,10 +148,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2023,
       "history": [
         {
-          "year": 2024,
+          "year": 2023,
           "value": 0
         }
       ]
@@ -167,10 +163,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2023,
       "history": [
         {
-          "year": 2024,
+          "year": 2023,
           "value": 0
         }
       ]
@@ -182,10 +178,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2023,
       "history": [
         {
-          "year": 2024,
+          "year": 2023,
           "value": 0
         }
       ]
@@ -442,6 +438,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "artois",
+      "name": "Artois",
+      "population": 248,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "elk-creek",
+      "name": "Elk Creek",
+      "population": 45,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "corning",
+      "name": "Corning",
+      "population": 8196,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 48.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "commerce",
+      "name": "Commerce",
+      "population": 12253,
+      "facilities_count": 15,
+      "total_releases_pounds": 38662,
+      "dominant_medium": "air",
+      "ej_pct_avg": 87.0,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+39 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "guadalupe",
+      "name": "Guadalupe",
+      "population": 8272,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 40.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "plumas-lake",
+      "name": "Plumas Lake",
+      "population": 8301,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 50.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -454,5 +530,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:05Z"
 }

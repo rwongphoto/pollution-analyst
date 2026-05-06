@@ -9,23 +9,19 @@
     "county_name": "Alameda",
     "county_fips": "06001"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
-    "facilities_in_city": 2,
+    "facilities_in_city": 1,
     "utilities_serving": 2,
-    "total_releases_pounds": 220,
-    "air_releases_pounds": 183,
+    "total_releases_pounds": 182,
+    "air_releases_pounds": 182,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 37,
-    "yoy_pct_change": 21.0,
-    "long_arc_pct_change": 19927.3,
-    "long_arc_baseline_year": 2010,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": 3093.0,
+    "long_arc_pct_change": -98.2,
+    "long_arc_baseline_year": 2017,
     "history": [
-      {
-        "year": 2010,
-        "value": 1
-      },
       {
         "year": 2017,
         "value": 9878
@@ -44,19 +40,15 @@
       },
       {
         "year": 2021,
-        "value": 9
+        "value": 8
       },
       {
         "year": 2022,
-        "value": 7
+        "value": 6
       },
       {
         "year": 2023,
         "value": 182
-      },
-      {
-        "year": 2024,
-        "value": 220
       }
     ]
   },
@@ -64,10 +56,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 6.691,
+      "current": 6.879,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -2.7,
-      "long_arc_pct_change": -44.4,
+      "yoy_pct_change": -16.0,
+      "long_arc_pct_change": -42.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -125,20 +117,16 @@
         {
           "year": 2023,
           "value": 6.879
-        },
-        {
-          "year": 2024,
-          "value": 6.691
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 17.043,
+      "current": 20.314,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -16.1,
-      "long_arc_pct_change": -54.3,
+      "yoy_pct_change": -6.5,
+      "long_arc_pct_change": -45.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -196,20 +184,16 @@
         {
           "year": 2023,
           "value": 20.314
-        },
-        {
-          "year": 2024,
-          "value": 17.043
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.037,
+      "current": 0.052,
       "units": "ppm",
-      "yoy_pct_change": -28.1,
-      "long_arc_pct_change": -37.3,
+      "yoy_pct_change": -0.5,
+      "long_arc_pct_change": -12.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -267,20 +251,16 @@
         {
           "year": 2023,
           "value": 0.052
-        },
-        {
-          "year": 2024,
-          "value": 0.037
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 10.653,
+      "current": 8.729,
       "units": "ppb",
-      "yoy_pct_change": 22.0,
-      "long_arc_pct_change": -40.6,
+      "yoy_pct_change": -18.3,
+      "long_arc_pct_change": -51.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -338,10 +318,6 @@
         {
           "year": 2023,
           "value": 8.729
-        },
-        {
-          "year": 2024,
-          "value": 10.653
         }
       ]
     },
@@ -393,16 +369,12 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 183,
+      "current": 182,
       "units": "lb",
-      "yoy_pct_change": 0.5,
+      "yoy_pct_change": 3093.0,
       "long_arc_pct_change": null,
-      "baseline_year": 2010,
+      "baseline_year": 2017,
       "history": [
-        {
-          "year": 2010,
-          "value": 0
-        },
         {
           "year": 2017,
           "value": 9878
@@ -430,10 +402,6 @@
         {
           "year": 2023,
           "value": 182
-        },
-        {
-          "year": 2024,
-          "value": 183
         }
       ]
     },
@@ -444,12 +412,8 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2010,
+      "baseline_year": 2017,
       "history": [
-        {
-          "year": 2010,
-          "value": 0
-        },
         {
           "year": 2017,
           "value": 0
@@ -477,26 +441,18 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 37,
+      "current": 0,
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2010,
+      "baseline_year": 2017,
       "history": [
-        {
-          "year": 2010,
-          "value": 1
-        },
         {
           "year": 2017,
           "value": 0
@@ -515,19 +471,15 @@
         },
         {
           "year": 2021,
-          "value": 2
+          "value": 0
         },
         {
           "year": 2022,
-          "value": 1
+          "value": 0
         },
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 37
         }
       ]
     },
@@ -606,25 +558,12 @@
       "state_label": "California",
       "name": "Gillig",
       "parent_company": null,
-      "total_pounds_recent": 183,
-      "yoy_pct_change": 0.5,
+      "total_pounds_recent": 182,
+      "yoy_pct_change": 3093.0,
       "top_chemical": "Methyl methacrylate",
       "city": "Livermore",
       "lat": 37.68802,
       "lng": -121.812266
-    },
-    {
-      "slug": "u-s-doe-lawrence-livermore-national-laboratory",
-      "state": "ca",
-      "state_label": "California",
-      "name": "U.S. Doe Lawrence Livermore National Laboratory",
-      "parent_company": "US Department Of Energy",
-      "total_pounds_recent": 37,
-      "yoy_pct_change": null,
-      "top_chemical": "Mercury",
-      "city": "Livermore",
-      "lat": 37.679874,
-      "lng": -121.702776
     }
   ],
   "water": {
@@ -870,6 +809,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "pleasanton",
+      "name": "Pleasanton",
+      "population": 78691,
+      "facilities_count": 2,
+      "total_releases_pounds": 76,
+      "dominant_medium": "air",
+      "ej_pct_avg": 54.6,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "oakland",
+      "name": "Oakland",
+      "population": 437825,
+      "facilities_count": 3,
+      "total_releases_pounds": 89,
+      "dominant_medium": "air",
+      "ej_pct_avg": 64.6,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 3 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "sunol",
+      "name": "Sunol",
+      "population": 920,
+      "facilities_count": 1,
+      "total_releases_pounds": 6,
+      "dominant_medium": "air",
+      "ej_pct_avg": 53.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "berkeley",
+      "name": "Berkeley",
+      "population": 121385,
+      "facilities_count": 1,
+      "total_releases_pounds": 78,
+      "dominant_medium": "land",
+      "ej_pct_avg": 69.7,
+      "relation": "peer",
+      "reason": "Comparable release scale \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "simi-valley",
+      "name": "Simi Valley",
+      "population": 126153,
+      "facilities_count": 1,
+      "total_releases_pounds": 250,
+      "dominant_medium": "air",
+      "ej_pct_avg": 55.4,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "lompoc",
+      "name": "Lompoc",
+      "population": 44086,
+      "facilities_count": 2,
+      "total_releases_pounds": 216,
+      "dominant_medium": "land",
+      "ej_pct_avg": 36.3,
+      "relation": "contrast",
+      "reason": "Same scale, lighter equity burden (22 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -882,5 +901,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:06Z"
 }

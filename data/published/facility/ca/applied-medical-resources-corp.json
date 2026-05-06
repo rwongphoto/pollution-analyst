@@ -5,80 +5,81 @@
     "slug": "applied-medical-resources-corp",
     "name": "Applied Medical Resources Corp",
     "parent_company": "Applied Medical Resources CORP",
-    "address": "23061 ARROYO VIS",
-    "city": "Rancho Santa Margarita",
+    "address": "9401 TOLEDO WAY",
+    "city": "Irvine",
     "county": "Orange County",
     "county_slug": "orange",
     "naics_label": "339112 \u00b7 Miscellaneous Manufacturing",
-    "lat": 33.627919,
-    "lng": -117.607963
+    "lat": 33.656566,
+    "lng": -117.714046
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024 reporting year",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
   "totals": {
-    "total_releases_pounds": 56,
-    "air_releases_pounds": 0,
+    "total_releases_pounds": 36,
+    "air_releases_pounds": 36,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 56,
-    "chemicals_reported": 2,
-    "yoy_pct_change": null,
-    "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2024,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 718.9,
+    "long_arc_pct_change": 72.1,
+    "long_arc_baseline_year": 2021,
     "history": [
       {
-        "year": 2024,
-        "value": 56
+        "year": 2021,
+        "value": 21
+      },
+      {
+        "year": 2022,
+        "value": 4
+      },
+      {
+        "year": 2023,
+        "value": 36
       }
     ]
   },
   "chemicals": [
     {
-      "chemical": "Nickel",
-      "cas": "7440-02-0",
+      "chemical": "Ethylene oxide",
+      "cas": "75-21-8",
       "category": "carcinogen",
-      "total_pounds_recent": 28,
+      "total_pounds_recent": 36,
       "history": [
         {
-          "year": 2024,
-          "value": 28
-        }
-      ],
-      "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "long_arc_baseline_year": 2024
-    },
-    {
-      "chemical": "Chromium",
-      "cas": "7440-47-3",
-      "category": "respiratory",
-      "total_pounds_recent": 28,
-      "history": [
+          "year": 2021,
+          "value": 21
+        },
         {
-          "year": 2024,
-          "value": 28
+          "year": 2022,
+          "value": 4
+        },
+        {
+          "year": 2023,
+          "value": 36
         }
       ],
-      "yoy_pct_change": null,
-      "long_arc_pct_change": null,
-      "long_arc_baseline_year": 2024
+      "yoy_pct_change": 718.9,
+      "long_arc_pct_change": 72.1,
+      "long_arc_baseline_year": 2021
     }
   ],
   "flags": [],
   "equity": {
-    "population": 96092,
-    "pct_low_income": 11.5,
-    "pct_people_of_color": 38.3,
-    "pct_under_5": 5.3,
-    "pct_over_64": 16.5,
+    "population": 111236,
+    "pct_low_income": 18.4,
+    "pct_people_of_color": 56.1,
+    "pct_under_5": 6.5,
+    "pct_over_64": 14.5,
     "ej_indexes": [],
     "disparity_scores": [],
     "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
-    "geography_label": "Within 3 miles of this facility (63 Census block groups, population-weighted demographics)"
+    "geography_label": "Within 3 miles of this facility (64 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Toxics Release Inventory",
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-06"
   },
-  "_published_at": "2026-05-06T00:02:39Z"
+  "_published_at": "2026-05-06T00:38:03Z"
 }

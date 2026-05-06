@@ -9,7 +9,9 @@ visual doesn't go missing on the page.
 from __future__ import annotations
 
 import json
+import math
 import re
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -462,6 +464,311 @@ def _build_equity(
     }
 
 
+# ---- Cross-link module: similar places within state --------------------
+# Picks 5 pollution-profile peers + 1 deliberate contrast (similar scale,
+# opposite EJ band). Surfaced at the bottom of county and city pages. The
+# contrast slot is the editorial point — it puts the wealth-pollution gap on
+# the page rather than just shuffling navigation between similar geographies.
+
+RELATED_TARGET_COUNT = 6
+RELATED_PEER_COUNT = 5  # remaining slot is the contrast
+
+
+@dataclass
+class _PeerFacts:
+    fips: str
+    state: str
+    name: str
+    slug: str
+    population: int
+    facilities_count: int
+    total_releases_pounds: float
+    dominant_medium: str  # "air" | "water" | "land" | "none"
+    ej_pct_avg: float | None
+    # City-only — None on county facts.
+    county_fips: str | None = None
+
+
+def _dominant_medium(pounds_air: float, pounds_water: float, pounds_land: float) -> str:
+    biggest = max(pounds_air, pounds_water, pounds_land)
+    if biggest <= 0:
+        return "none"
+    if biggest == pounds_air:
+        return "air"
+    if biggest == pounds_water:
+        return "water"
+    return "land"
+
+
+def _avg_ej_pct(percentiles: list | None) -> float | None:
+    if not percentiles:
+        return None
+    vals = [getattr(p, "pct_us", None) for p in percentiles]
+    vals = [v for v in vals if v is not None]
+    if not vals:
+        return None
+    return sum(vals) / len(vals)
+
+
+def _peer_distance(a: _PeerFacts, b: _PeerFacts) -> float:
+    """Lower = more similar. Weighted across dominant medium, release
+    magnitude, facility count, and population. Each component is clamped to
+    roughly [0, 1] before weighting so no single dimension can dominate
+    when one place is an extreme outlier (e.g. Kern's billion-lb totals).
+    """
+    medium_d = 0.0 if a.dominant_medium == b.dominant_medium else 1.0
+    a_mag = math.log10(max(a.total_releases_pounds, 1))
+    b_mag = math.log10(max(b.total_releases_pounds, 1))
+    mag_d = min(abs(a_mag - b_mag) / 4.0, 1.0)
+    a_fac = math.log10(max(a.facilities_count, 1))
+    b_fac = math.log10(max(b.facilities_count, 1))
+    fac_d = min(abs(a_fac - b_fac) / 2.0, 1.0)
+    a_pop = math.log10(max(a.population, 1))
+    b_pop = math.log10(max(b.population, 1))
+    pop_d = min(abs(a_pop - b_pop) / 3.0, 1.0)
+    return medium_d * 1.5 + mag_d * 1.0 + fac_d * 0.7 + pop_d * 0.5
+
+
+def _peer_reason(target: _PeerFacts, peer: _PeerFacts) -> str:
+    """Strongest similarity dimension between target and peer. Drives the
+    one-line hook on each card."""
+    fac_word = "facility" if peer.facilities_count == 1 else "facilities"
+    if target.dominant_medium == peer.dominant_medium and peer.dominant_medium != "none":
+        medium_label = {"air": "air", "water": "water", "land": "land"}[peer.dominant_medium]
+        return f"Similar TRI {medium_label} profile · {peer.facilities_count} {fac_word}"
+    target_mag = math.log10(max(target.total_releases_pounds, 1))
+    peer_mag = math.log10(max(peer.total_releases_pounds, 1))
+    if abs(target_mag - peer_mag) <= 0.5 and peer.total_releases_pounds > 0:
+        return f"Comparable release scale · {peer.facilities_count} {fac_word}"
+    target_pop = math.log10(max(target.population, 1))
+    peer_pop = math.log10(max(peer.population, 1))
+    if abs(target_pop - peer_pop) <= 0.3:
+        return "Comparable population"
+    return "Statewide pollution-profile peer"
+
+
+def _contrast_reason(target: _PeerFacts, peer: _PeerFacts) -> str:
+    """Frame the contrast around scale + EJ-band gap so the wealth-pollution
+    angle is on the surface."""
+    if target.ej_pct_avg is None or peer.ej_pct_avg is None:
+        return "Same scale, contrasting profile"
+    delta = peer.ej_pct_avg - target.ej_pct_avg
+    if delta < 0:
+        return f"Same scale, lighter equity burden ({abs(delta):.0f} pct-pt EJ gap)"
+    return f"Same scale, heavier equity burden (+{delta:.0f} pct-pt EJ gap)"
+
+
+def _pick_contrast(target: _PeerFacts, candidates: list[_PeerFacts]) -> _PeerFacts | None:
+    """Find a place with similar population scale but the largest EJ
+    percentile gap from the target. Returns None when neither side has EJ
+    data or no candidate falls inside the population window.
+    """
+    if target.ej_pct_avg is None:
+        return None
+    target_pop_log = math.log10(max(target.population, 1))
+    similar_scale = [
+        c for c in candidates
+        if c.ej_pct_avg is not None
+        and abs(math.log10(max(c.population, 1)) - target_pop_log) <= 0.6
+    ]
+    if not similar_scale:
+        return None
+    if target.ej_pct_avg >= 50:
+        # Target is on the burdened end; surface a less-burdened peer.
+        best = min(similar_scale, key=lambda c: c.ej_pct_avg)
+        if target.ej_pct_avg - best.ej_pct_avg < 10:
+            return None  # not a real contrast
+        return best
+    # Target is on the lighter end; surface a more-burdened peer.
+    best = max(similar_scale, key=lambda c: c.ej_pct_avg)
+    if best.ej_pct_avg - target.ej_pct_avg < 10:
+        return None
+    return best
+
+
+def _to_related_payload(
+    f: _PeerFacts, kind: str, relation: str, reason: str,
+) -> dict:
+    return {
+        "kind": kind,
+        "state": f.state,
+        "slug": f.slug,
+        "name": f.name,
+        "population": f.population,
+        "facilities_count": f.facilities_count,
+        "total_releases_pounds": _round_pounds(f.total_releases_pounds),
+        "dominant_medium": f.dominant_medium,
+        "ej_pct_avg": round(f.ej_pct_avg, 1) if f.ej_pct_avg is not None else None,
+        "relation": relation,
+        "reason": reason,
+    }
+
+
+def pick_related_counties(
+    target_fips: str, facts: dict[str, _PeerFacts],
+) -> list[dict]:
+    """5 closest peers + 1 contrast within the same state. Skips when the
+    state has too few peers — empty list renders as a hidden module on the
+    page rather than a stub.
+    """
+    target = facts.get(target_fips)
+    if target is None:
+        return []
+    candidates = [f for fips, f in facts.items() if fips != target_fips]
+    if len(candidates) < 2:
+        return []
+    ranked = sorted(candidates, key=lambda c: _peer_distance(target, c))
+    contrast = _pick_contrast(target, candidates)
+    out: list[dict] = []
+    used: set[str] = set()
+    for peer in ranked[:RELATED_PEER_COUNT]:
+        out.append(_to_related_payload(peer, "county", "peer", _peer_reason(target, peer)))
+        used.add(peer.fips)
+    if contrast and contrast.fips not in used:
+        out.append(_to_related_payload(contrast, "county", "contrast", _contrast_reason(target, contrast)))
+    elif len(ranked) > RELATED_PEER_COUNT:
+        # No usable contrast — fill the slot with the next closest peer
+        # rather than render only 5 cards (asymmetric grid).
+        extra = ranked[RELATED_PEER_COUNT]
+        out.append(_to_related_payload(extra, "county", "peer", _peer_reason(target, extra)))
+    return out[:RELATED_TARGET_COUNT]
+
+
+def pick_related_cities(
+    target_fips: str, facts: dict[str, _PeerFacts],
+) -> list[dict]:
+    """City strategy: prioritize same-county siblings (Lodi from Stockton)
+    over statewide profile-peers (Fontana from Stockton is too random).
+    Up to 4 same-county slots + 1 statewide peer + 1 statewide contrast.
+    Falls back to all-statewide when the county has too few siblings.
+    """
+    target = facts.get(target_fips)
+    if target is None:
+        return []
+    same_county = [
+        f for fips, f in facts.items()
+        if fips != target_fips
+        and target.county_fips
+        and f.county_fips == target.county_fips
+    ]
+    statewide = [f for fips, f in facts.items() if fips != target_fips]
+    if not statewide:
+        return []
+    same_county_ranked = sorted(same_county, key=lambda c: _peer_distance(target, c))
+    statewide_ranked = sorted(statewide, key=lambda c: _peer_distance(target, c))
+
+    out: list[dict] = []
+    used: set[str] = set()
+    SAME_COUNTY_SLOTS = 4
+    for peer in same_county_ranked[:SAME_COUNTY_SLOTS]:
+        out.append(_to_related_payload(peer, "city", "peer", _peer_reason(target, peer)))
+        used.add(peer.fips)
+    # One statewide profile-peer beyond the same-county set.
+    for peer in statewide_ranked:
+        if peer.fips in used:
+            continue
+        out.append(_to_related_payload(peer, "city", "peer", _peer_reason(target, peer)))
+        used.add(peer.fips)
+        break
+    # Contrast pulled from statewide candidates so the contrast can actually
+    # differ from the target's own neighbourhood (Lodi-vs-Stockton is too
+    # close on EJ to teach anything).
+    contrast = _pick_contrast(target, [f for f in statewide if f.fips not in used])
+    if contrast:
+        out.append(_to_related_payload(contrast, "city", "contrast", _contrast_reason(target, contrast)))
+    # Fill remaining slots with next-closest statewide peers when same-county
+    # was thin and no contrast was available.
+    if len(out) < RELATED_TARGET_COUNT:
+        for peer in statewide_ranked:
+            if len(out) >= RELATED_TARGET_COUNT:
+                break
+            if peer.fips in used:
+                continue
+            out.append(_to_related_payload(peer, "city", "peer", _peer_reason(target, peer)))
+            used.add(peer.fips)
+    return out[:RELATED_TARGET_COUNT]
+
+
+def build_county_peer_facts(
+    *,
+    state_slug: str,
+    counties: dict,
+    facilities: dict,
+    county_pops: dict[str, int],
+    county_percentiles: dict[str, list],
+    county_medium_history: dict[str, dict[str, dict[int, float]]] | None = None,
+    year: int = 0,
+) -> dict[str, _PeerFacts]:
+    """Build peer facts for every county that resolves to a valid name.
+
+    Counties absent from `counties` (no current-year TRI rows) but present in
+    other ingest dicts get a synthesised entry with zero pounds — they still
+    deserve to appear in someone else's contrast slot if their EJ profile
+    differs sharply.
+    """
+    out: dict[str, _PeerFacts] = {}
+    for cfips, c in counties.items():
+        in_county = [f for f in facilities.values() if f.county_fips == cfips]
+        out[cfips] = _PeerFacts(
+            fips=cfips,
+            state=state_slug,
+            name=c.name + " County" if not c.name.endswith("County") else c.name,
+            slug=_county_slug(c.name, cfips),
+            population=county_pops.get(cfips, 0),
+            facilities_count=len(in_county),
+            total_releases_pounds=c.pounds_total,
+            dominant_medium=_dominant_medium(c.pounds_air, c.pounds_water, c.pounds_land),
+            ej_pct_avg=_avg_ej_pct(county_percentiles.get(cfips)),
+        )
+    return out
+
+
+def build_city_peer_facts(
+    *,
+    state_slug: str,
+    place_to_facility_ids: dict[str, list],
+    place_to_utilities: dict[str, list],
+    place_to_canonical_county: dict[str, str],
+    place_fips_to_name: dict[str, str],
+    place_demos: dict,
+    place_percentiles: dict[str, list],
+    facilities: dict,
+) -> dict[str, _PeerFacts]:
+    """Per-place peer facts. Only places that get a programmatic page (≥1
+    facility OR ≥1 county-filtered utility) participate.
+    """
+    out: dict[str, _PeerFacts] = {}
+    eligible = set(place_to_facility_ids.keys()) | set(place_to_utilities.keys())
+    for pf in eligible:
+        place_name = place_fips_to_name.get(pf)
+        if not place_name:
+            continue
+        ids = place_to_facility_ids.get(pf, [])
+        facs = [facilities[fid] for fid in ids if fid in facilities]
+        pounds_air = sum(f.pounds_air for f in facs)
+        pounds_water = sum(f.pounds_water for f in facs)
+        pounds_land = sum(f.pounds_land for f in facs)
+        pounds_total = sum(f.pounds_total for f in facs)
+        place_pop = (
+            place_demos.get(pf).population
+            if pf in place_demos and hasattr(place_demos.get(pf), "population")
+            else 0
+        )
+        out[pf] = _PeerFacts(
+            fips=pf,
+            state=state_slug,
+            name=place_name,
+            slug=place_slug(place_name, pf),
+            population=place_pop,
+            facilities_count=len(facs),
+            total_releases_pounds=pounds_total,
+            dominant_medium=_dominant_medium(pounds_air, pounds_water, pounds_land),
+            ej_pct_avg=_avg_ej_pct(place_percentiles.get(pf)),
+            county_fips=place_to_canonical_county.get(pf),
+        )
+    return out
+
+
 # ---- Facility ------------------------------------------------------------
 
 def publish_facility(
@@ -792,6 +1099,7 @@ def publish_city_hub(
     county_airtox_history: dict[str, dict[int, float]] | None = None,
     health_indicators: list | None = None,
     flags: list | None = None,
+    related_places: list[dict] | None = None,
 ) -> Path:
     """Build the place-anchored city hub payload."""
     # In-city totals (TRI). Sum facility-level pounds; identical to county
@@ -907,6 +1215,7 @@ def publish_city_hub(
             percentiles=place_percentiles,
         ),
         "health_indicators": health_indicators or [],
+        "related_places": related_places or [],
         "sources": [
             {
                 "label": "EPA Toxics Release Inventory",
@@ -957,6 +1266,7 @@ def publish_county(
     health_indicators: list | None = None,
     flags: list | None = None,
     cities_directory: list[dict] | None = None,
+    related_places: list[dict] | None = None,
 ) -> Path:
     top = sorted(facilities_in_county, key=lambda f: f.pounds_total, reverse=True)[:COUNTY_TOP_FACILITIES]
     history_map = history or {year: county.pounds_total}
@@ -999,6 +1309,7 @@ def publish_county(
             percentiles=percentiles,
         ),
         "health_indicators": health_indicators or [],
+        "related_places": related_places or [],
         "sources": [
             {
                 "label": "EPA Toxics Release Inventory",

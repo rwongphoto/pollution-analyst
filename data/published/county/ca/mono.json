@@ -7,16 +7,16 @@
     "fips": "06051",
     "population": 13219
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 4.073,
+      "current": 5.057,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -19.4,
-      "long_arc_pct_change": -78.1,
+      "yoy_pct_change": -10.7,
+      "long_arc_pct_change": -72.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -46,20 +46,16 @@
         {
           "year": 2023,
           "value": 5.057
-        },
-        {
-          "year": 2024,
-          "value": 4.073
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 11.25,
+      "current": 15.05,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -25.2,
-      "long_arc_pct_change": -63.7,
+      "yoy_pct_change": -14.0,
+      "long_arc_pct_change": -51.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -89,10 +85,6 @@
         {
           "year": 2023,
           "value": 15.05
-        },
-        {
-          "year": 2024,
-          "value": 11.25
         }
       ]
     },
@@ -564,6 +556,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "trinity",
+      "name": "Trinity County",
+      "population": 15889,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 32.0,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "mariposa",
+      "name": "Mariposa County",
+      "population": 17130,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 38.4,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "inyo",
+      "name": "Inyo County",
+      "population": 18829,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "modoc",
+      "name": "Modoc County",
+      "population": 8651,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 39.8,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "del-norte",
+      "name": "Del Norte County",
+      "population": 27462,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 28.1,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "amador",
+      "name": "Amador County",
+      "population": 40577,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 48.3,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -571,5 +643,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:34Z"
+  "_published_at": "2026-05-06T00:37:59Z"
 }

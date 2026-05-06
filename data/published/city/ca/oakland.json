@@ -9,17 +9,17 @@
     "county_name": "Alameda",
     "county_fips": "06001"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 3,
     "utilities_serving": 2,
-    "total_releases_pounds": 318,
-    "air_releases_pounds": 81,
+    "total_releases_pounds": 89,
+    "air_releases_pounds": 82,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 237,
-    "yoy_pct_change": 258.9,
-    "long_arc_pct_change": -90.8,
+    "land_releases_pounds": 7,
+    "yoy_pct_change": -23.7,
+    "long_arc_pct_change": -97.4,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,10 +77,6 @@
       {
         "year": 2023,
         "value": 89
-      },
-      {
-        "year": 2024,
-        "value": 318
       }
     ]
   },
@@ -88,10 +84,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 6.691,
+      "current": 6.879,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -2.7,
-      "long_arc_pct_change": -44.4,
+      "yoy_pct_change": -16.0,
+      "long_arc_pct_change": -42.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -149,20 +145,16 @@
         {
           "year": 2023,
           "value": 6.879
-        },
-        {
-          "year": 2024,
-          "value": 6.691
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 17.043,
+      "current": 20.314,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -16.1,
-      "long_arc_pct_change": -54.3,
+      "yoy_pct_change": -6.5,
+      "long_arc_pct_change": -45.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -220,20 +212,16 @@
         {
           "year": 2023,
           "value": 20.314
-        },
-        {
-          "year": 2024,
-          "value": 17.043
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.037,
+      "current": 0.052,
       "units": "ppm",
-      "yoy_pct_change": -28.1,
-      "long_arc_pct_change": -37.3,
+      "yoy_pct_change": -0.5,
+      "long_arc_pct_change": -12.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -291,20 +279,16 @@
         {
           "year": 2023,
           "value": 0.052
-        },
-        {
-          "year": 2024,
-          "value": 0.037
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 10.653,
+      "current": 8.729,
       "units": "ppb",
-      "yoy_pct_change": 22.0,
-      "long_arc_pct_change": -40.6,
+      "yoy_pct_change": -18.3,
+      "long_arc_pct_change": -51.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -362,10 +346,6 @@
         {
           "year": 2023,
           "value": 8.729
-        },
-        {
-          "year": 2024,
-          "value": 10.653
         }
       ]
     },
@@ -417,9 +397,9 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 81,
+      "current": 82,
       "units": "lb",
-      "yoy_pct_change": -0.7,
+      "yoy_pct_change": -25.2,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -478,10 +458,6 @@
         {
           "year": 2023,
           "value": 82
-        },
-        {
-          "year": 2024,
-          "value": 81
         }
       ]
     },
@@ -549,19 +525,15 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 237,
+      "current": 7,
       "units": "lb",
-      "yoy_pct_change": 3285.7,
+      "yoy_pct_change": 0.0,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -620,10 +592,6 @@
         {
           "year": 2023,
           "value": 7
-        },
-        {
-          "year": 2024,
-          "value": 237
         }
       ]
     },
@@ -697,30 +665,30 @@
   ],
   "facilities": [
     {
-      "slug": "pacific-galvanizing-inc",
-      "state": "ca",
-      "state_label": "California",
-      "name": "Pacific Galvanizing INC.",
-      "parent_company": null,
-      "total_pounds_recent": 249,
-      "yoy_pct_change": 1237.7,
-      "top_chemical": "Zinc compounds",
-      "city": "Oakland",
-      "lat": 37.766293,
-      "lng": -122.217603
-    },
-    {
       "slug": "chemical-compounding-co",
       "state": "ca",
       "state_label": "California",
       "name": "Chemical Compounding CO",
       "parent_company": null,
-      "total_pounds_recent": 49,
-      "yoy_pct_change": -10.9,
+      "total_pounds_recent": 55,
+      "yoy_pct_change": -5.2,
       "top_chemical": "Nitric acid",
       "city": "Oakland",
       "lat": 37.755493,
       "lng": -122.204525
+    },
+    {
+      "slug": "pacific-galvanizing-inc",
+      "state": "ca",
+      "state_label": "California",
+      "name": "Pacific Galvanizing INC.",
+      "parent_company": null,
+      "total_pounds_recent": 19,
+      "yoy_pct_change": 41.4,
+      "top_chemical": "Zinc compounds",
+      "city": "Oakland",
+      "lat": 37.766293,
+      "lng": -122.217603
     },
     {
       "slug": "transene-co-oakland",
@@ -728,8 +696,8 @@
       "state_label": "California",
       "name": "Transene CO Oakland",
       "parent_company": "Transene Co INC",
-      "total_pounds_recent": 20,
-      "yoy_pct_change": 33.3,
+      "total_pounds_recent": 15,
+      "yoy_pct_change": -66.7,
       "top_chemical": "Nitric acid",
       "city": "Oakland",
       "lat": 37.763195,
@@ -979,6 +947,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "pleasanton",
+      "name": "Pleasanton",
+      "population": 78691,
+      "facilities_count": 2,
+      "total_releases_pounds": 76,
+      "dominant_medium": "air",
+      "ej_pct_avg": 54.6,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "livermore",
+      "name": "Livermore",
+      "population": 87154,
+      "facilities_count": 1,
+      "total_releases_pounds": 182,
+      "dominant_medium": "air",
+      "ej_pct_avg": 58.7,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "sunol",
+      "name": "Sunol",
+      "population": 920,
+      "facilities_count": 1,
+      "total_releases_pounds": 6,
+      "dominant_medium": "air",
+      "ej_pct_avg": 53.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "berkeley",
+      "name": "Berkeley",
+      "population": 121385,
+      "facilities_count": 1,
+      "total_releases_pounds": 78,
+      "dominant_medium": "land",
+      "ej_pct_avg": 69.7,
+      "relation": "peer",
+      "reason": "Comparable release scale \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "redding",
+      "name": "Redding",
+      "population": 93327,
+      "facilities_count": 2,
+      "total_releases_pounds": 124,
+      "dominant_medium": "air",
+      "ej_pct_avg": 57.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "santa-rosa",
+      "name": "Santa Rosa",
+      "population": 178221,
+      "facilities_count": 3,
+      "total_releases_pounds": 17022,
+      "dominant_medium": "land",
+      "ej_pct_avg": 48.0,
+      "relation": "contrast",
+      "reason": "Same scale, lighter equity burden (17 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -991,5 +1039,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:06Z"
 }

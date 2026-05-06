@@ -9,17 +9,17 @@
     "county_name": "Lassen",
     "county_fips": "06035"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 1,
-    "total_releases_pounds": 8258,
+    "total_releases_pounds": 28499,
     "air_releases_pounds": 0,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 8258,
-    "yoy_pct_change": -71.0,
-    "long_arc_pct_change": -30.0,
+    "land_releases_pounds": 28499,
+    "yoy_pct_change": 39.7,
+    "long_arc_pct_change": 141.5,
     "long_arc_baseline_year": 2015,
     "history": [
       {
@@ -57,10 +57,6 @@
       {
         "year": 2023,
         "value": 28499
-      },
-      {
-        "year": 2024,
-        "value": 8258
       }
     ]
   },
@@ -154,10 +150,6 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
@@ -205,20 +197,16 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 8258,
+      "current": 28499,
       "units": "lb",
-      "yoy_pct_change": -71.0,
-      "long_arc_pct_change": -29.4,
+      "yoy_pct_change": 39.7,
+      "long_arc_pct_change": 143.7,
       "baseline_year": 2015,
       "history": [
         {
@@ -256,10 +244,6 @@
         {
           "year": 2023,
           "value": 28499
-        },
-        {
-          "year": 2024,
-          "value": 8258
         }
       ]
     }
@@ -271,9 +255,9 @@
       "state_label": "California",
       "name": "U.S Army Sierra Army Depot",
       "parent_company": "US Department Of Defense",
-      "total_pounds_recent": 8258,
-      "yoy_pct_change": -71.0,
-      "top_chemical": "Xylene (mixed isomers)",
+      "total_pounds_recent": 28499,
+      "yoy_pct_change": 39.7,
+      "top_chemical": "Methanol",
       "city": "Herlong",
       "lat": 40.146007,
       "lng": -120.125967
@@ -393,6 +377,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "patton-village",
+      "name": "Patton Village",
+      "population": 792,
+      "facilities_count": 1,
+      "total_releases_pounds": 374,
+      "dominant_medium": "land",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "westwood",
+      "name": "Westwood",
+      "population": 1116,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 39.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "bieber",
+      "name": "Bieber",
+      "population": 151,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "susanville",
+      "name": "Susanville",
+      "population": 15737,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 44.2,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "gustine",
+      "name": "Gustine",
+      "population": 6122,
+      "facilities_count": 1,
+      "total_releases_pounds": 80542,
+      "dominant_medium": "land",
+      "ej_pct_avg": 51.0,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "fort-irwin",
+      "name": "Fort Irwin",
+      "population": 8967,
+      "facilities_count": 1,
+      "total_releases_pounds": 96542,
+      "dominant_medium": "land",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -405,5 +469,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:41Z"
+  "_published_at": "2026-05-06T00:38:05Z"
 }

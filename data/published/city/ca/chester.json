@@ -9,17 +9,17 @@
     "county_name": "Plumas",
     "county_fips": "06063"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 2,
-    "total_releases_pounds": 61,
-    "air_releases_pounds": 58,
+    "total_releases_pounds": 10,
+    "air_releases_pounds": 0.78,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 3,
-    "yoy_pct_change": 514.2,
-    "long_arc_pct_change": -83.7,
+    "land_releases_pounds": 9,
+    "yoy_pct_change": -65.1,
+    "long_arc_pct_change": -97.4,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,10 +77,6 @@
       {
         "year": 2023,
         "value": 10
-      },
-      {
-        "year": 2024,
-        "value": 61
       }
     ]
   },
@@ -88,10 +84,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 8.617,
+      "current": 12.537,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -31.3,
-      "long_arc_pct_change": -8.3,
+      "yoy_pct_change": 21.5,
+      "long_arc_pct_change": 33.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -149,20 +145,16 @@
         {
           "year": 2023,
           "value": 12.537
-        },
-        {
-          "year": 2024,
-          "value": 8.617
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 28.0,
+      "current": 28.125,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -0.4,
-      "long_arc_pct_change": -30.0,
+      "yoy_pct_change": 11.1,
+      "long_arc_pct_change": -29.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -220,10 +212,6 @@
         {
           "year": 2023,
           "value": 28.125
-        },
-        {
-          "year": 2024,
-          "value": 28.0
         }
       ]
     },
@@ -290,9 +278,9 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 58,
+      "current": 1,
       "units": "lb",
-      "yoy_pct_change": 7360.5,
+      "yoy_pct_change": -65.8,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -351,10 +339,6 @@
         {
           "year": 2023,
           "value": 1
-        },
-        {
-          "year": 2024,
-          "value": 58
         }
       ]
     },
@@ -422,19 +406,15 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 3,
+      "current": 9,
       "units": "lb",
-      "yoy_pct_change": -66.2,
+      "yoy_pct_change": -65.0,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -493,10 +473,6 @@
         {
           "year": 2023,
           "value": 9
-        },
-        {
-          "year": 2024,
-          "value": 3
         }
       ]
     }
@@ -508,8 +484,8 @@
       "state_label": "California",
       "name": "Collins Pine CO Chester Sawmill",
       "parent_company": "Collins Pine Co",
-      "total_pounds_recent": 61,
-      "yoy_pct_change": 514.2,
+      "total_pounds_recent": 10,
+      "yoy_pct_change": -65.1,
       "top_chemical": "Lead  And Lead Compounds",
       "city": "Chester",
       "lat": 40.301208,
@@ -792,6 +768,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "portola",
+      "name": "Portola",
+      "population": 2427,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "quincy",
+      "name": "Quincy",
+      "population": 1368,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 42.7,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "greenville",
+      "name": "Greenville",
+      "population": 705,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "graeagle",
+      "name": "Graeagle",
+      "population": 401,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "artesia",
+      "name": "Artesia",
+      "population": 16237,
+      "facilities_count": 1,
+      "total_releases_pounds": 26,
+      "dominant_medium": "land",
+      "ej_pct_avg": 82.6,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "irwindale",
+      "name": "Irwindale",
+      "population": 1343,
+      "facilities_count": 5,
+      "total_releases_pounds": 1942,
+      "dominant_medium": "air",
+      "ej_pct_avg": 81.8,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+43 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -804,5 +860,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:06Z"
 }

@@ -9,17 +9,17 @@
     "county_name": "Colusa",
     "county_fips": "06011"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 1,
-    "total_releases_pounds": 104334,
-    "air_releases_pounds": 104334,
+    "total_releases_pounds": 118960,
+    "air_releases_pounds": 118960,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
-    "yoy_pct_change": -12.3,
-    "long_arc_pct_change": 162.1,
+    "yoy_pct_change": -51.2,
+    "long_arc_pct_change": 198.9,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,10 +77,6 @@
       {
         "year": 2023,
         "value": 118960
-      },
-      {
-        "year": 2024,
-        "value": 104334
       }
     ]
   },
@@ -88,10 +84,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 8.37,
+      "current": 10.358,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -19.2,
-      "long_arc_pct_change": 2.1,
+      "yoy_pct_change": 15.1,
+      "long_arc_pct_change": 26.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -149,20 +145,16 @@
         {
           "year": 2023,
           "value": 10.358
-        },
-        {
-          "year": 2024,
-          "value": 8.37
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 18.0,
+      "current": 24.85,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -27.6,
-      "long_arc_pct_change": -30.8,
+      "yoy_pct_change": 35.8,
+      "long_arc_pct_change": -4.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -220,10 +212,6 @@
         {
           "year": 2023,
           "value": 24.85
-        },
-        {
-          "year": 2024,
-          "value": 18.0
         }
       ]
     },
@@ -232,7 +220,7 @@
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
       "current": 0.059,
       "units": "ppm",
-      "yoy_pct_change": 0.0,
+      "yoy_pct_change": 3.5,
       "long_arc_pct_change": -16.9,
       "baseline_year": 2010,
       "history": [
@@ -291,10 +279,6 @@
         {
           "year": 2023,
           "value": 0.059
-        },
-        {
-          "year": 2024,
-          "value": 0.059
         }
       ]
     },
@@ -346,10 +330,10 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 104334,
+      "current": 118960,
       "units": "lb",
-      "yoy_pct_change": -12.3,
-      "long_arc_pct_change": 162.1,
+      "yoy_pct_change": -51.2,
+      "long_arc_pct_change": 198.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -407,10 +391,6 @@
         {
           "year": 2023,
           "value": 118960
-        },
-        {
-          "year": 2024,
-          "value": 104334
         }
       ]
     },
@@ -478,10 +458,6 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
@@ -548,10 +524,6 @@
         },
         {
           "year": 2023,
-          "value": 0
-        },
-        {
-          "year": 2024,
           "value": 0
         }
       ]
@@ -631,8 +603,8 @@
       "state_label": "California",
       "name": "Latham Pool Products Inc-Ca",
       "parent_company": "Latham Pool Products INC",
-      "total_pounds_recent": 104334,
-      "yoy_pct_change": -12.3,
+      "total_pounds_recent": 118960,
+      "yoy_pct_change": -51.2,
       "top_chemical": "Styrene",
       "city": "Williams",
       "lat": 39.141238,
@@ -872,6 +844,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "colusa",
+      "name": "Colusa",
+      "population": 6380,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 49.4,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "arbuckle",
+      "name": "Arbuckle",
+      "population": 3072,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 42.9,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "maxwell",
+      "name": "Maxwell",
+      "population": 1181,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "princeton",
+      "name": "Princeton",
+      "population": 357,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "shasta-lake",
+      "name": "Shasta Lake",
+      "population": 10361,
+      "facilities_count": 1,
+      "total_releases_pounds": 214475,
+      "dominant_medium": "air",
+      "ej_pct_avg": 48.3,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "commerce",
+      "name": "Commerce",
+      "population": 12253,
+      "facilities_count": 15,
+      "total_releases_pounds": 38662,
+      "dominant_medium": "air",
+      "ej_pct_avg": 87.0,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+43 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -884,5 +936,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:06Z"
 }

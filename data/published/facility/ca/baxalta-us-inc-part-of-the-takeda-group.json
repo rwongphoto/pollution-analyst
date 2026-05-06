@@ -13,16 +13,16 @@
     "lat": 34.141803,
     "lng": -118.271258
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024 reporting year",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
   "totals": {
-    "total_releases_pounds": 26972,
+    "total_releases_pounds": 33069,
     "air_releases_pounds": 500,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 26472,
+    "land_releases_pounds": 32569,
     "chemicals_reported": 2,
-    "yoy_pct_change": -18.4,
-    "long_arc_pct_change": 267.7,
+    "yoy_pct_change": -50.2,
+    "long_arc_pct_change": 350.8,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -80,10 +80,6 @@
       {
         "year": 2023,
         "value": 33069
-      },
-      {
-        "year": 2024,
-        "value": 26972
       }
     ]
   },
@@ -92,7 +88,7 @@
       "chemical": "Peracetic acid",
       "cas": "79-21-0",
       "category": "general",
-      "total_pounds_recent": 26472,
+      "total_pounds_recent": 32569,
       "history": [
         {
           "year": 2014,
@@ -129,14 +125,10 @@
         {
           "year": 2023,
           "value": 32569
-        },
-        {
-          "year": 2024,
-          "value": 26472
         }
       ],
-      "yoy_pct_change": -18.7,
-      "long_arc_pct_change": 591.0,
+      "yoy_pct_change": -0.8,
+      "long_arc_pct_change": 750.1,
       "long_arc_baseline_year": 2014
     },
     {
@@ -145,6 +137,10 @@
       "category": "respiratory",
       "total_pounds_recent": 500,
       "history": [
+        {
+          "year": 2010,
+          "value": 6130
+        },
         {
           "year": 2011,
           "value": 4971
@@ -196,10 +192,6 @@
         {
           "year": 2023,
           "value": 500
-        },
-        {
-          "year": 2024,
-          "value": 500
         }
       ],
       "yoy_pct_change": 0.0,
@@ -207,7 +199,49 @@
       "long_arc_baseline_year": 2010
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0000107211",
+      "summary": "0000107211 releases at Baxalta US INC. Part Of The Takeda Group fell from 33k lb to 0 lb (100% lower) between 2022 and 2023.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -33041.0,
+      "baseline_year": 2022,
+      "recent_year": 2023,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2014,
+          "value": 1234
+        },
+        {
+          "year": 2015,
+          "value": 15885
+        },
+        {
+          "year": 2016,
+          "value": 197454
+        },
+        {
+          "year": 2017,
+          "value": 6566
+        },
+        {
+          "year": 2018,
+          "value": 113359
+        },
+        {
+          "year": 2019,
+          "value": 40486
+        },
+        {
+          "year": 2022,
+          "value": 33041
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 222851,
     "pct_low_income": 30.2,
@@ -224,5 +258,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-06"
   },
-  "_published_at": "2026-05-06T00:02:39Z"
+  "_published_at": "2026-05-06T00:38:03Z"
 }

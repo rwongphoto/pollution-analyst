@@ -7,16 +7,16 @@
     "fips": "06009",
     "population": 45674
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "pathways": [
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 5.479,
+      "current": 5.541,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -1.1,
-      "long_arc_pct_change": -39.0,
+      "yoy_pct_change": -8.2,
+      "long_arc_pct_change": -38.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -74,20 +74,16 @@
         {
           "year": 2023,
           "value": 5.541
-        },
-        {
-          "year": 2024,
-          "value": 5.479
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 12.9,
+      "current": 14.7,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -12.2,
-      "long_arc_pct_change": -57.0,
+      "yoy_pct_change": -11.4,
+      "long_arc_pct_change": -51.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -145,20 +141,16 @@
         {
           "year": 2023,
           "value": 14.7
-        },
-        {
-          "year": 2024,
-          "value": 12.9
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.072,
+      "current": 0.065,
       "units": "ppm",
-      "yoy_pct_change": 10.8,
-      "long_arc_pct_change": -26.5,
+      "yoy_pct_change": 6.6,
+      "long_arc_pct_change": -33.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -216,10 +208,6 @@
         {
           "year": 2023,
           "value": 0.065
-        },
-        {
-          "year": 2024,
-          "value": 0.072
         }
       ]
     },
@@ -358,81 +346,7 @@
       "population": 777
     }
   ],
-  "flags": [
-    {
-      "type": "naaqs_exceedance",
-      "severity": "exceedance",
-      "label": "Ozone 8-hour 4th-highest daily max",
-      "summary": "Ozone 8-hour 4th-highest daily max in Calaveras County reached 0.072 ppm in 2024, 3% above the EPA NAAQS of 0.07 ppm.",
-      "magnitude_pct": 2.9,
-      "magnitude_abs": 0.002,
-      "baseline_year": null,
-      "recent_year": 2024,
-      "units": "ppm",
-      "history": [
-        {
-          "year": 2010,
-          "value": 0.098
-        },
-        {
-          "year": 2011,
-          "value": 0.075
-        },
-        {
-          "year": 2012,
-          "value": 0.076
-        },
-        {
-          "year": 2013,
-          "value": 0.067
-        },
-        {
-          "year": 2014,
-          "value": 0.071
-        },
-        {
-          "year": 2015,
-          "value": 0.081
-        },
-        {
-          "year": 2016,
-          "value": 0.077
-        },
-        {
-          "year": 2017,
-          "value": 0.078
-        },
-        {
-          "year": 2018,
-          "value": 0.069
-        },
-        {
-          "year": 2019,
-          "value": 0.066
-        },
-        {
-          "year": 2020,
-          "value": 0.073
-        },
-        {
-          "year": 2021,
-          "value": 0.072
-        },
-        {
-          "year": 2022,
-          "value": 0.061
-        },
-        {
-          "year": 2023,
-          "value": 0.065
-        },
-        {
-          "year": 2024,
-          "value": 0.072
-        }
-      ]
-    }
-  ],
+  "flags": [],
   "equity": {
     "population": 45674,
     "pct_low_income": 13.1,
@@ -645,6 +559,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "amador",
+      "name": "Amador County",
+      "population": 40577,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 48.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "del-norte",
+      "name": "Del Norte County",
+      "population": 27462,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 28.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "sutter",
+      "name": "Sutter County",
+      "population": 99101,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 60.7,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "nevada",
+      "name": "Nevada County",
+      "population": 102322,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.4,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "inyo",
+      "name": "Inyo County",
+      "population": 18829,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.3,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "imperial",
+      "name": "Imperial County",
+      "population": 179578,
+      "facilities_count": 5,
+      "total_releases_pounds": 288653,
+      "dominant_medium": "land",
+      "ej_pct_avg": 61.7,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+17 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -652,5 +646,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:34Z"
+  "_published_at": "2026-05-06T00:37:59Z"
 }

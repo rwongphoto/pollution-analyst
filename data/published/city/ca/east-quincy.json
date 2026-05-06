@@ -9,17 +9,17 @@
     "county_name": "Plumas",
     "county_fips": "06063"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 0,
-    "total_releases_pounds": 23672,
-    "air_releases_pounds": 23672,
+    "total_releases_pounds": 17327,
+    "air_releases_pounds": 17327,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
-    "yoy_pct_change": 36.6,
-    "long_arc_pct_change": 3757288.4,
+    "yoy_pct_change": -42.2,
+    "long_arc_pct_change": 2750220.8,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -73,10 +73,6 @@
       {
         "year": 2023,
         "value": 17327
-      },
-      {
-        "year": 2024,
-        "value": 23672
       }
     ]
   },
@@ -84,10 +80,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 8.617,
+      "current": 12.537,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -31.3,
-      "long_arc_pct_change": -8.3,
+      "yoy_pct_change": 21.5,
+      "long_arc_pct_change": 33.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -145,20 +141,16 @@
         {
           "year": 2023,
           "value": 12.537
-        },
-        {
-          "year": 2024,
-          "value": 8.617
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 28.0,
+      "current": 28.125,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -0.4,
-      "long_arc_pct_change": -30.0,
+      "yoy_pct_change": 11.1,
+      "long_arc_pct_change": -29.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -216,10 +208,6 @@
         {
           "year": 2023,
           "value": 28.125
-        },
-        {
-          "year": 2024,
-          "value": 28.0
         }
       ]
     },
@@ -286,10 +274,10 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 23672,
+      "current": 17327,
       "units": "lb",
-      "yoy_pct_change": 36.6,
-      "long_arc_pct_change": 116.1,
+      "yoy_pct_change": -42.2,
+      "long_arc_pct_change": 58.2,
       "baseline_year": 2011,
       "history": [
         {
@@ -343,10 +331,6 @@
         {
           "year": 2023,
           "value": 17327
-        },
-        {
-          "year": 2024,
-          "value": 23672
         }
       ]
     },
@@ -409,10 +393,6 @@
         },
         {
           "year": 2023,
-          "value": 0
-        },
-        {
-          "year": 2024,
           "value": 0
         }
       ]
@@ -477,10 +457,6 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     }
@@ -492,8 +468,8 @@
       "state_label": "California",
       "name": "Sierra Pacific Industries Quincy Div",
       "parent_company": "Sierra Pacific Industries",
-      "total_pounds_recent": 23672,
-      "yoy_pct_change": 36.6,
+      "total_pounds_recent": 17327,
+      "yoy_pct_change": -42.2,
       "top_chemical": "Ammonia",
       "city": "Quincy",
       "lat": 39.9392,
@@ -722,6 +698,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "chester",
+      "name": "Chester",
+      "population": 2271,
+      "facilities_count": 1,
+      "total_releases_pounds": 10,
+      "dominant_medium": "land",
+      "ej_pct_avg": 38.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "portola",
+      "name": "Portola",
+      "population": 2427,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "quincy",
+      "name": "Quincy",
+      "population": 1368,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 42.7,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "greenville",
+      "name": "Greenville",
+      "population": 705,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "lakeview",
+      "name": "Lakeview",
+      "population": 2327,
+      "facilities_count": 1,
+      "total_releases_pounds": 17495,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "irwindale",
+      "name": "Irwindale",
+      "population": 1343,
+      "facilities_count": 5,
+      "total_releases_pounds": 1942,
+      "dominant_medium": "air",
+      "ej_pct_avg": 81.8,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+42 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -734,5 +790,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:06Z"
 }

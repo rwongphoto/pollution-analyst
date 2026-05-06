@@ -9,8 +9,8 @@
     "county_name": "Tuolumne",
     "county_fips": "06109"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 0,
     "utilities_serving": 1,
@@ -20,10 +20,10 @@
     "land_releases_pounds": 0,
     "yoy_pct_change": null,
     "long_arc_pct_change": null,
-    "long_arc_baseline_year": 2024,
+    "long_arc_baseline_year": 2023,
     "history": [
       {
-        "year": 2024,
+        "year": 2023,
         "value": 0
       }
     ]
@@ -32,10 +32,10 @@
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.071,
+      "current": 0.067,
       "units": "ppm",
-      "yoy_pct_change": 6.0,
-      "long_arc_pct_change": -21.1,
+      "yoy_pct_change": 9.8,
+      "long_arc_pct_change": -25.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -93,10 +93,6 @@
         {
           "year": 2023,
           "value": 0.067
-        },
-        {
-          "year": 2024,
-          "value": 0.071
         }
       ]
     },
@@ -152,10 +148,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2023,
       "history": [
         {
-          "year": 2024,
+          "year": 2023,
           "value": 0
         }
       ]
@@ -167,10 +163,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2023,
       "history": [
         {
-          "year": 2024,
+          "year": 2023,
           "value": 0
         }
       ]
@@ -182,10 +178,10 @@
       "units": "lb",
       "yoy_pct_change": null,
       "long_arc_pct_change": null,
-      "baseline_year": 2024,
+      "baseline_year": 2023,
       "history": [
         {
-          "year": 2024,
+          "year": 2023,
           "value": 0
         }
       ]
@@ -442,6 +438,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "twain-harte",
+      "name": "Twain Harte",
+      "population": 2154,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 38.2,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "soulsbyville",
+      "name": "Soulsbyville",
+      "population": 1972,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 38.4,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "jamestown",
+      "name": "Jamestown",
+      "population": 3742,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 42.8,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "sonora",
+      "name": "Sonora",
+      "population": 4963,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.3,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "portola",
+      "name": "Portola",
+      "population": 2427,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "irwindale",
+      "name": "Irwindale",
+      "population": 1343,
+      "facilities_count": 5,
+      "total_releases_pounds": 1942,
+      "dominant_medium": "air",
+      "ej_pct_avg": 81.8,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+42 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -454,5 +530,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:06Z"
 }

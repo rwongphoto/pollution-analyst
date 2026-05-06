@@ -9,17 +9,17 @@
     "county_name": "San Diego",
     "county_fips": "06073"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 0,
-    "total_releases_pounds": 787,
+    "total_releases_pounds": 889,
     "air_releases_pounds": 0,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 787,
-    "yoy_pct_change": -11.5,
-    "long_arc_pct_change": 446.3,
+    "land_releases_pounds": 889,
+    "yoy_pct_change": -9.8,
+    "long_arc_pct_change": 517.2,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -77,10 +77,6 @@
       {
         "year": 2023,
         "value": 889
-      },
-      {
-        "year": 2024,
-        "value": 787
       }
     ]
   },
@@ -88,10 +84,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 8.799,
+      "current": 8.323,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 5.7,
-      "long_arc_pct_change": -39.3,
+      "yoy_pct_change": -0.1,
+      "long_arc_pct_change": -42.6,
       "baseline_year": 2010,
       "history": [
         {
@@ -149,20 +145,16 @@
         {
           "year": 2023,
           "value": 8.323
-        },
-        {
-          "year": 2024,
-          "value": 8.799
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 19.564,
+      "current": 17.308,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 13.0,
-      "long_arc_pct_change": -52.5,
+      "yoy_pct_change": 4.1,
+      "long_arc_pct_change": -57.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -220,20 +212,16 @@
         {
           "year": 2023,
           "value": 17.308
-        },
-        {
-          "year": 2024,
-          "value": 19.564
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.067,
+      "current": 0.068,
       "units": "ppm",
-      "yoy_pct_change": -1.6,
-      "long_arc_pct_change": -7.2,
+      "yoy_pct_change": 5.2,
+      "long_arc_pct_change": -5.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -291,20 +279,16 @@
         {
           "year": 2023,
           "value": 0.068
-        },
-        {
-          "year": 2024,
-          "value": 0.067
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 7.811,
+      "current": 8.853,
       "units": "ppb",
-      "yoy_pct_change": -11.8,
-      "long_arc_pct_change": -59.6,
+      "yoy_pct_change": 2.6,
+      "long_arc_pct_change": -54.3,
       "baseline_year": 2010,
       "history": [
         {
@@ -362,10 +346,6 @@
         {
           "year": 2023,
           "value": 8.853
-        },
-        {
-          "year": 2024,
-          "value": 7.811
         }
       ]
     },
@@ -478,10 +458,6 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
@@ -549,19 +525,15 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
     {
       "pathway": "tri_land",
       "label": "TRI land + off-site releases",
-      "current": 787,
+      "current": 889,
       "units": "lb",
-      "yoy_pct_change": -11.5,
+      "yoy_pct_change": -9.8,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -620,10 +592,6 @@
         {
           "year": 2023,
           "value": 889
-        },
-        {
-          "year": 2024,
-          "value": 787
         }
       ]
     },
@@ -702,8 +670,8 @@
       "state_label": "California",
       "name": "Costco Optical Lab #908",
       "parent_company": "Costco Wholesale INC",
-      "total_pounds_recent": 787,
-      "yoy_pct_change": -11.5,
+      "total_pounds_recent": 889,
+      "yoy_pct_change": -9.8,
       "top_chemical": "Lead",
       "city": "National City",
       "lat": 32.663431,
@@ -932,6 +900,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "poway",
+      "name": "Poway",
+      "population": 48737,
+      "facilities_count": 4,
+      "total_releases_pounds": 2033,
+      "dominant_medium": "land",
+      "ej_pct_avg": 57.6,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 4 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "el-cajon",
+      "name": "El Cajon",
+      "population": 105721,
+      "facilities_count": 2,
+      "total_releases_pounds": 50378,
+      "dominant_medium": "land",
+      "ej_pct_avg": 66.3,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "lakeside",
+      "name": "Lakeside",
+      "population": 21759,
+      "facilities_count": 1,
+      "total_releases_pounds": 2,
+      "dominant_medium": "land",
+      "ej_pct_avg": 54.1,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "camp-pendleton-mainside",
+      "name": "Camp Pendleton Mainside",
+      "population": 9599,
+      "facilities_count": 1,
+      "total_releases_pounds": 561630,
+      "dominant_medium": "land",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "san-fernando",
+      "name": "San Fernando",
+      "population": 23958,
+      "facilities_count": 1,
+      "total_releases_pounds": 789,
+      "dominant_medium": "land",
+      "ej_pct_avg": 69.8,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "blythe",
+      "name": "Blythe",
+      "population": 17949,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 30.9,
+      "relation": "contrast",
+      "reason": "Same scale, lighter equity burden (41 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -944,5 +992,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:06Z"
 }

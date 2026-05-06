@@ -229,6 +229,26 @@ export interface WaterUtilityPayload {
   _published_at?: string;
 }
 
+// ---- Cross-link module: similar places within state --------------------
+// Surfaced at the bottom of county and city pages. The pipeline picks 5
+// pollution-profile peers + 1 deliberate contrast (similar scale, opposite
+// EJ band) so the section teaches the wealth-pollution gap rather than just
+// shuffling navigation. See pipeline/src/publish/site.py.
+
+export interface RelatedPlace {
+  kind: "county" | "city";
+  state: string;
+  slug: string;
+  name: string;
+  population: number;
+  facilities_count: number;
+  total_releases_pounds: number;
+  dominant_medium: "air" | "water" | "land" | "none";
+  ej_pct_avg: number | null;
+  relation: "peer" | "contrast";
+  reason: string;
+}
+
 // ---- Tier 2: City hub (place-anchored) ----------------------------------
 // /state/[state]/city/[slug] — the "is the environment here OK?" page for
 // a Census place. Aggregates TRI facilities in the place polygon, GHG
@@ -275,6 +295,7 @@ export interface CityHubPayload {
   flags: Flag[];
   equity: EquityOverlay;
   health_indicators?: HealthIndicator[];
+  related_places?: RelatedPlace[];
   sources: { label: string; url: string; retrieved: string }[];
   _published_at?: string;
 }
@@ -346,6 +367,7 @@ export interface CountyPagePayload {
   flags: Flag[];
   equity: EquityOverlay;
   health_indicators?: HealthIndicator[];
+  related_places?: RelatedPlace[];
   sources: {
     label: string;
     url: string;

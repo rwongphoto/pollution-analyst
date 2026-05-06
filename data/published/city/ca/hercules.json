@@ -9,17 +9,17 @@
     "county_name": "Contra Costa",
     "county_fips": "06013"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 0,
-    "total_releases_pounds": 26,
-    "air_releases_pounds": 26,
+    "total_releases_pounds": 30,
+    "air_releases_pounds": 30,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
-    "yoy_pct_change": -13.1,
-    "long_arc_pct_change": -54.5,
+    "yoy_pct_change": 795.9,
+    "long_arc_pct_change": -47.7,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -57,10 +57,6 @@
       {
         "year": 2023,
         "value": 30
-      },
-      {
-        "year": 2024,
-        "value": 26
       }
     ]
   },
@@ -68,10 +64,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 6.847,
+      "current": 8.136,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -15.8,
-      "long_arc_pct_change": -44.1,
+      "yoy_pct_change": -3.3,
+      "long_arc_pct_change": -33.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -129,20 +125,16 @@
         {
           "year": 2023,
           "value": 8.136
-        },
-        {
-          "year": 2024,
-          "value": 6.847
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 17.7,
+      "current": 21.85,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -19.0,
-      "long_arc_pct_change": -58.5,
+      "yoy_pct_change": -3.3,
+      "long_arc_pct_change": -48.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -200,20 +192,16 @@
         {
           "year": 2023,
           "value": 21.85
-        },
-        {
-          "year": 2024,
-          "value": 17.7
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.039,
+      "current": 0.055,
       "units": "ppm",
-      "yoy_pct_change": -29.0,
-      "long_arc_pct_change": -41.6,
+      "yoy_pct_change": -3.5,
+      "long_arc_pct_change": -17.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -271,20 +259,16 @@
         {
           "year": 2023,
           "value": 0.055
-        },
-        {
-          "year": 2024,
-          "value": 0.039
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 6.086,
+      "current": 4.686,
       "units": "ppb",
-      "yoy_pct_change": 29.9,
-      "long_arc_pct_change": -54.1,
+      "yoy_pct_change": -21.6,
+      "long_arc_pct_change": -64.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -342,10 +326,6 @@
         {
           "year": 2023,
           "value": 4.686
-        },
-        {
-          "year": 2024,
-          "value": 6.086
         }
       ]
     },
@@ -397,9 +377,9 @@
     {
       "pathway": "tri_air",
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
-      "current": 26,
+      "current": 30,
       "units": "lb",
-      "yoy_pct_change": -13.1,
+      "yoy_pct_change": 795.9,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -438,10 +418,6 @@
         {
           "year": 2023,
           "value": 30
-        },
-        {
-          "year": 2024,
-          "value": 26
         }
       ]
     },
@@ -489,10 +465,6 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
@@ -539,10 +511,6 @@
         },
         {
           "year": 2023,
-          "value": 0
-        },
-        {
-          "year": 2024,
           "value": 0
         }
       ]
@@ -622,8 +590,8 @@
       "state_label": "California",
       "name": "Benda Tool & Model Works",
       "parent_company": null,
-      "total_pounds_recent": 26,
-      "yoy_pct_change": -13.1,
+      "total_pounds_recent": 30,
+      "yoy_pct_change": 795.9,
       "top_chemical": "Aluminum (fume or dust)",
       "city": "Hercules",
       "lat": 38.02174,
@@ -852,6 +820,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "concord",
+      "name": "Concord",
+      "population": 125007,
+      "facilities_count": 1,
+      "total_releases_pounds": 1,
+      "dominant_medium": "air",
+      "ej_pct_avg": 66.6,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "antioch",
+      "name": "Antioch",
+      "population": 115016,
+      "facilities_count": 2,
+      "total_releases_pounds": 5256,
+      "dominant_medium": "air",
+      "ej_pct_avg": 62.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "martinez",
+      "name": "Martinez",
+      "population": 37093,
+      "facilities_count": 2,
+      "total_releases_pounds": 30339,
+      "dominant_medium": "air",
+      "ej_pct_avg": 65.5,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "richmond",
+      "name": "Richmond",
+      "population": 115619,
+      "facilities_count": 10,
+      "total_releases_pounds": 590767,
+      "dominant_medium": "air",
+      "ej_pct_avg": 71.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 10 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "novato",
+      "name": "Novato",
+      "population": 53055,
+      "facilities_count": 1,
+      "total_releases_pounds": 52,
+      "dominant_medium": "air",
+      "ej_pct_avg": 46.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "blythe",
+      "name": "Blythe",
+      "population": 17949,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 30.9,
+      "relation": "contrast",
+      "reason": "Same scale, lighter equity burden (26 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -864,5 +912,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:06Z"
 }

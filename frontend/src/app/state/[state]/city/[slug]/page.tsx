@@ -8,6 +8,7 @@ import { EquityStub } from "@/components/site/EquityStub";
 import { HealthIndicators } from "@/components/site/HealthIndicators";
 import { HeroChart } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
+import { RelatedPlaces } from "@/components/site/RelatedPlaces";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
@@ -526,6 +527,11 @@ export default async function CityHubPage({
         <EquitySection data={data} />
         <HealthIndicators
           indicators={data.health_indicators ?? []}
+          scopeLabel="City"
+          stateLabel={data.place.state_label}
+        />
+        <RelatedPlaces
+          places={data.related_places ?? []}
           scopeLabel="City"
           stateLabel={data.place.state_label}
         />

@@ -9,8 +9,8 @@
     "county_name": "Ventura",
     "county_fips": "06111"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 2,
@@ -77,10 +77,6 @@
       {
         "year": 2023,
         "value": 250
-      },
-      {
-        "year": 2024,
-        "value": 250
       }
     ]
   },
@@ -88,10 +84,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 5.844,
+      "current": 5.775,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": 1.2,
-      "long_arc_pct_change": -54.3,
+      "yoy_pct_change": -15.3,
+      "long_arc_pct_change": -54.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -149,20 +145,16 @@
         {
           "year": 2023,
           "value": 5.775
-        },
-        {
-          "year": 2024,
-          "value": 5.844
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 12.3,
+      "current": 14.01,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -12.2,
-      "long_arc_pct_change": -67.9,
+      "yoy_pct_change": -5.7,
+      "long_arc_pct_change": -63.4,
       "baseline_year": 2010,
       "history": [
         {
@@ -220,20 +212,16 @@
         {
           "year": 2023,
           "value": 14.01
-        },
-        {
-          "year": 2024,
-          "value": 12.3
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.065,
+      "current": 0.066,
       "units": "ppm",
-      "yoy_pct_change": -0.6,
-      "long_arc_pct_change": -13.5,
+      "yoy_pct_change": -5.5,
+      "long_arc_pct_change": -13.0,
       "baseline_year": 2010,
       "history": [
         {
@@ -291,20 +279,16 @@
         {
           "year": 2023,
           "value": 0.066
-        },
-        {
-          "year": 2024,
-          "value": 0.065
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "NO\u2082 annual mean (NAAQS 53 ppb (annual))",
-      "current": 5.152,
+      "current": 4.271,
       "units": "ppb",
-      "yoy_pct_change": 20.6,
-      "long_arc_pct_change": -57.6,
+      "yoy_pct_change": -18.4,
+      "long_arc_pct_change": -64.8,
       "baseline_year": 2010,
       "history": [
         {
@@ -362,10 +346,6 @@
         {
           "year": 2023,
           "value": 4.271
-        },
-        {
-          "year": 2024,
-          "value": 5.152
         }
       ]
     },
@@ -478,10 +458,6 @@
         {
           "year": 2023,
           "value": 250
-        },
-        {
-          "year": 2024,
-          "value": 250
         }
       ]
     },
@@ -549,10 +525,6 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
@@ -619,10 +591,6 @@
         },
         {
           "year": 2023,
-          "value": 0
-        },
-        {
-          "year": 2024,
           "value": 0
         }
       ]
@@ -1002,6 +970,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "el-rio",
+      "name": "El Rio",
+      "population": 6418,
+      "facilities_count": 1,
+      "total_releases_pounds": 577,
+      "dominant_medium": "air",
+      "ej_pct_avg": 66.5,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "moorpark",
+      "name": "Moorpark",
+      "population": 36073,
+      "facilities_count": 1,
+      "total_releases_pounds": 10,
+      "dominant_medium": "air",
+      "ej_pct_avg": 55.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "camarillo",
+      "name": "Camarillo",
+      "population": 70622,
+      "facilities_count": 3,
+      "total_releases_pounds": 10023,
+      "dominant_medium": "air",
+      "ej_pct_avg": 56.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 3 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "oxnard",
+      "name": "Oxnard",
+      "population": 202279,
+      "facilities_count": 3,
+      "total_releases_pounds": 31457,
+      "dominant_medium": "air",
+      "ej_pct_avg": 64.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 3 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "livermore",
+      "name": "Livermore",
+      "population": 87154,
+      "facilities_count": 1,
+      "total_releases_pounds": 182,
+      "dominant_medium": "air",
+      "ej_pct_avg": 58.7,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "lompoc",
+      "name": "Lompoc",
+      "population": 44086,
+      "facilities_count": 2,
+      "total_releases_pounds": 216,
+      "dominant_medium": "land",
+      "ej_pct_avg": 36.3,
+      "relation": "contrast",
+      "reason": "Same scale, lighter equity burden (19 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -1014,5 +1062,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:05Z"
 }

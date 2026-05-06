@@ -9,17 +9,17 @@
     "county_name": "Shasta",
     "county_fips": "06089"
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023",
   "totals": {
     "facilities_in_city": 1,
     "utilities_serving": 8,
-    "total_releases_pounds": 0.32,
-    "air_releases_pounds": 0.32,
+    "total_releases_pounds": 0.4,
+    "air_releases_pounds": 0.4,
     "water_releases_pounds": 0,
     "land_releases_pounds": 0,
-    "yoy_pct_change": -20.3,
-    "long_arc_pct_change": 112.7,
+    "yoy_pct_change": 34.7,
+    "long_arc_pct_change": 166.7,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -73,10 +73,6 @@
       {
         "year": 2023,
         "value": 0.4
-      },
-      {
-        "year": 2024,
-        "value": 0.32
       }
     ]
   },
@@ -84,10 +80,10 @@
     {
       "pathway": "criteria_air",
       "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
-      "current": 6.018,
+      "current": 7.135,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -15.7,
-      "long_arc_pct_change": -36.5,
+      "yoy_pct_change": 4.7,
+      "long_arc_pct_change": -24.7,
       "baseline_year": 2010,
       "history": [
         {
@@ -145,20 +141,16 @@
         {
           "year": 2023,
           "value": 7.135
-        },
-        {
-          "year": 2024,
-          "value": 6.018
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
-      "current": 22.45,
+      "current": 25.6,
       "units": "\u00b5g/m\u00b3",
-      "yoy_pct_change": -12.3,
-      "long_arc_pct_change": -35.9,
+      "yoy_pct_change": 8.2,
+      "long_arc_pct_change": -26.9,
       "baseline_year": 2010,
       "history": [
         {
@@ -216,20 +208,16 @@
         {
           "year": 2023,
           "value": 25.6
-        },
-        {
-          "year": 2024,
-          "value": 22.45
         }
       ]
     },
     {
       "pathway": "criteria_air",
       "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
-      "current": 0.064,
+      "current": 0.063,
       "units": "ppm",
-      "yoy_pct_change": 1.7,
-      "long_arc_pct_change": -16.1,
+      "yoy_pct_change": -3.8,
+      "long_arc_pct_change": -17.5,
       "baseline_year": 2010,
       "history": [
         {
@@ -287,10 +275,6 @@
         {
           "year": 2023,
           "value": 0.063
-        },
-        {
-          "year": 2024,
-          "value": 0.064
         }
       ]
     },
@@ -344,7 +328,7 @@
       "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
       "current": 0,
       "units": "lb",
-      "yoy_pct_change": -20.3,
+      "yoy_pct_change": 34.7,
       "long_arc_pct_change": null,
       "baseline_year": 2010,
       "history": [
@@ -398,10 +382,6 @@
         },
         {
           "year": 2023,
-          "value": 0
-        },
-        {
-          "year": 2024,
           "value": 0
         }
       ]
@@ -466,10 +446,6 @@
         {
           "year": 2023,
           "value": 0
-        },
-        {
-          "year": 2024,
-          "value": 0
         }
       ]
     },
@@ -532,10 +508,6 @@
         },
         {
           "year": 2023,
-          "value": 0
-        },
-        {
-          "year": 2024,
           "value": 0
         }
       ]
@@ -615,8 +587,8 @@
       "state_label": "California",
       "name": "Sierra Pacific Industries Anderson Div",
       "parent_company": "Sierra Pacific Industries",
-      "total_pounds_recent": 0.32,
-      "yoy_pct_change": -20.3,
+      "total_pounds_recent": 0.4,
+      "yoy_pct_change": 34.7,
       "top_chemical": "Dioxin and dioxin-like compounds",
       "city": "Anderson",
       "lat": 40.470061,
@@ -1087,6 +1059,86 @@
       "vintage_year": 2023
     }
   ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "redding",
+      "name": "Redding",
+      "population": 93327,
+      "facilities_count": 2,
+      "total_releases_pounds": 124,
+      "dominant_medium": "air",
+      "ej_pct_avg": 57.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "shasta-lake",
+      "name": "Shasta Lake",
+      "population": 10361,
+      "facilities_count": 1,
+      "total_releases_pounds": 214475,
+      "dominant_medium": "air",
+      "ej_pct_avg": 48.3,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "cottonwood",
+      "name": "Cottonwood",
+      "population": 5893,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 48.8,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "palo-cedro",
+      "name": "Palo Cedro",
+      "population": 3396,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 44.6,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "winters",
+      "name": "Winters",
+      "population": 7270,
+      "facilities_count": 1,
+      "total_releases_pounds": 0.17,
+      "dominant_medium": "air",
+      "ej_pct_avg": 37.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ca",
+      "slug": "cambria",
+      "name": "Cambria",
+      "population": 5825,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 27.7,
+      "relation": "contrast",
+      "reason": "Same scale, lighter equity burden (30 pct-pt EJ gap)"
+    }
+  ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
@@ -1099,5 +1151,5 @@
       "retrieved": "2026-05-06"
     }
   ],
-  "_published_at": "2026-05-06T00:02:42Z"
+  "_published_at": "2026-05-06T00:38:06Z"
 }

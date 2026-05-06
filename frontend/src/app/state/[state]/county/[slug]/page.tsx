@@ -9,6 +9,7 @@ import { EquityStub } from "@/components/site/EquityStub";
 import { HealthIndicators } from "@/components/site/HealthIndicators";
 import { HeroChart } from "@/components/site/HeroChart";
 import { Ic } from "@/components/site/icons";
+import { RelatedPlaces } from "@/components/site/RelatedPlaces";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
@@ -496,6 +497,11 @@ export default async function CountyPage({
           stateLabel={data.county.state_label}
         />
         <CityDirectory data={data} />
+        <RelatedPlaces
+          places={data.related_places ?? []}
+          scopeLabel="County"
+          stateLabel={data.county.state_label}
+        />
         <SourcesFooter data={data} />
       </main>
       <SiteFooter briefingLabel={data.briefing_label} />

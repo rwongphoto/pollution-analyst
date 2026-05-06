@@ -13,16 +13,16 @@
     "lat": 32.892333,
     "lng": -117.143995
   },
-  "reporting_year": 2024,
-  "briefing_label": "TRI 2024 reporting year",
+  "reporting_year": 2023,
+  "briefing_label": "TRI 2023 reporting year",
   "totals": {
-    "total_releases_pounds": 30445,
-    "air_releases_pounds": 586,
+    "total_releases_pounds": 311,
+    "air_releases_pounds": 311,
     "water_releases_pounds": 0,
-    "land_releases_pounds": 29859,
+    "land_releases_pounds": 0,
     "chemicals_reported": 3,
-    "yoy_pct_change": 9689.4,
-    "long_arc_pct_change": -9.9,
+    "yoy_pct_change": -99.0,
+    "long_arc_pct_change": -99.1,
     "long_arc_baseline_year": 2010,
     "history": [
       {
@@ -80,10 +80,6 @@
       {
         "year": 2023,
         "value": 311
-      },
-      {
-        "year": 2024,
-        "value": 30445
       }
     ]
   },
@@ -92,8 +88,12 @@
       "chemical": "N,N-Dimethylformamide",
       "cas": "68-12-2",
       "category": "carcinogen",
-      "total_pounds_recent": 30167,
+      "total_pounds_recent": 135,
       "history": [
+        {
+          "year": 2010,
+          "value": 15462
+        },
         {
           "year": 2011,
           "value": 12790
@@ -145,21 +145,76 @@
         {
           "year": 2023,
           "value": 135
-        },
-        {
-          "year": 2024,
-          "value": 30167
         }
       ],
-      "yoy_pct_change": 22245.9,
-      "long_arc_pct_change": 95.1,
+      "yoy_pct_change": -99.5,
+      "long_arc_pct_change": -99.1,
       "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 95,
+      "history": [
+        {
+          "year": 2012,
+          "value": 83
+        },
+        {
+          "year": 2013,
+          "value": 148
+        },
+        {
+          "year": 2014,
+          "value": 176
+        },
+        {
+          "year": 2015,
+          "value": 70
+        },
+        {
+          "year": 2016,
+          "value": 65
+        },
+        {
+          "year": 2017,
+          "value": 23
+        },
+        {
+          "year": 2018,
+          "value": 50
+        },
+        {
+          "year": 2019,
+          "value": 84
+        },
+        {
+          "year": 2020,
+          "value": 99
+        },
+        {
+          "year": 2021,
+          "value": 104
+        },
+        {
+          "year": 2022,
+          "value": 816
+        },
+        {
+          "year": 2023,
+          "value": 95
+        }
+      ],
+      "yoy_pct_change": -88.4,
+      "long_arc_pct_change": 14.5,
+      "long_arc_baseline_year": 2012
     },
     {
       "chemical": "Acetonitrile",
       "cas": "75-05-8",
       "category": "respiratory",
-      "total_pounds_recent": 193,
+      "total_pounds_recent": 81,
       "history": [
         {
           "year": 2010,
@@ -212,81 +267,84 @@
         {
           "year": 2023,
           "value": 81
-        },
-        {
-          "year": 2024,
-          "value": 193
         }
       ],
-      "yoy_pct_change": 138.3,
-      "long_arc_pct_change": -96.9,
+      "yoy_pct_change": -90.3,
+      "long_arc_pct_change": -98.7,
       "long_arc_baseline_year": 2010
-    },
+    }
+  ],
+  "flags": [
     {
-      "chemical": "Methanol",
-      "cas": "67-56-1",
-      "category": "respiratory",
-      "total_pounds_recent": 85,
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "N,N-Dimethylformamide",
+      "summary": "N,N-Dimethylformamide releases at Polypeptide Laboratories San Diego fell from 29k lb to 135 lb (100% lower) between 2022 and 2023.",
+      "magnitude_pct": -99.5,
+      "magnitude_abs": -28501.0,
+      "baseline_year": 2022,
+      "recent_year": 2023,
+      "units": "lb",
       "history": [
         {
+          "year": 2010,
+          "value": 15462
+        },
+        {
+          "year": 2011,
+          "value": 12790
+        },
+        {
           "year": 2012,
-          "value": 83
+          "value": 93131
         },
         {
           "year": 2013,
-          "value": 148
+          "value": 80912
         },
         {
           "year": 2014,
-          "value": 176
+          "value": 9582
         },
         {
           "year": 2015,
-          "value": 70
+          "value": 116
         },
         {
           "year": 2016,
-          "value": 65
+          "value": 540
         },
         {
           "year": 2017,
-          "value": 23
+          "value": 88
         },
         {
           "year": 2018,
-          "value": 50
+          "value": 239
         },
         {
           "year": 2019,
-          "value": 84
+          "value": 163
         },
         {
           "year": 2020,
-          "value": 99
+          "value": 204
         },
         {
           "year": 2021,
-          "value": 104
+          "value": 282
         },
         {
           "year": 2022,
-          "value": 816
+          "value": 28636
         },
         {
           "year": 2023,
-          "value": 95
-        },
-        {
-          "year": 2024,
-          "value": 85
+          "value": 135
         }
-      ],
-      "yoy_pct_change": -10.5,
-      "long_arc_pct_change": 2.4,
-      "long_arc_baseline_year": 2012
+      ]
     }
   ],
-  "flags": [],
   "equity": {
     "population": 85842,
     "pct_low_income": 19.8,
@@ -303,5 +361,5 @@
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
     "retrieved": "2026-05-06"
   },
-  "_published_at": "2026-05-06T00:02:39Z"
+  "_published_at": "2026-05-06T00:38:03Z"
 }

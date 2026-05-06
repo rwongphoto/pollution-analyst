@@ -89,6 +89,7 @@ JSON-LD: `Organization` + `BreadcrumbList` + `Article` for SEO.
 | `FacilitiesSection` | inline | Top-10 in-county facilities table. Links to facility entity pages. |
 | `UtilitiesSection` | inline | Public water utilities serving the county (when SDWIS county join has resolved). Links to `/state/[state]/water/[slug]`. |
 | `EquitySection` | inline + `EquityStub` | ACS county demographics + EJ disparity scores aggregated across county block groups. |
+| `RelatedPlaces` | shared | 5 pollution-profile peer counties + 1 deliberate contrast (similar scale, opposite EJ band). Picker lives in `pipeline/src/publish/site.py:pick_related_counties`. |
 | `SourcesFooter` | inline | Per-source attribution + retrieval. |
 
 ---
@@ -110,6 +111,7 @@ Pipeline build: TRI facilities are point-in-polygon-tested against TIGER 2020 pl
 | `FacilitiesSection` | inline | In-city TRI facilities table. Hidden when zero facilities are inside the polygon. |
 | `WaterSection` | inline | Compliance-posture lede + 4-stat strip + utilities-serving table linking each row to `/state/[state]/water/[slug]`. Footer note: PWS is the regulated entity, not the city. |
 | `EquitySection` | inline + `EquityStub` | ACS place demographics + EJ disparity scores aggregated across the city's block groups. |
+| `RelatedPlaces` | shared | 4 same-county sibling cities + 1 statewide profile peer + 1 deliberate contrast. Same-county weighting prevents irrelevant matches (Lodi from Stockton, not Fontana). Picker: `pick_related_cities`. |
 | `SourcesFooter` | inline | TRI + SDWIS attribution. |
 
 Eligibility for a city hub: place must have ≥1 TRI facility OR ≥1 utility serving. Places with neither don't get a programmatic page.
@@ -164,6 +166,7 @@ Reusable components in [`frontend/src/components/site/`](frontend/src/components
 | `MediaSplitBar` | Facility | Stacked bar showing air/water/land split for the most recent year. |
 | `AnomalyCard` | Inside `NotableSignals` | One card per `Flag`. Severity → spike/drop/rare CSS variant. Includes optional sparkline + external link. |
 | `NotableSignals` | All four templates | Section wrapper: severity-weighted sort, render cap 4, explicit empty-state. |
+| `RelatedPlaces` | County, City | 6-card cross-link grid: 5 pollution-profile peers + 1 deliberate contrast (same scale, opposite EJ band). Selection happens at publish time; the contrast slot is the editorial point — surfaces the wealth-pollution gap rather than echo-chamber navigation. |
 | `EquityStub` | All four templates (fallback) | Renders when `isEquityStub(equity)` returns true — i.e., demographics + disparity both empty. |
 | `Crumbs` | All non-home pages | Breadcrumbs. Current page is unlinked. |
 | `SiteHeader` / `SiteFooter` | All pages | Chrome with five nav items (States · Counties · Cities · Facilities · Methodology). |
