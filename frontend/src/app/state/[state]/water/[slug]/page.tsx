@@ -215,7 +215,7 @@ function ViolationsSection({ violations }: { violations: WaterUtilityPayload["vi
                 )}
               </div>
               <h3>
-                {v.year} · {v.rule}
+                {v.year} · {v.contaminant} · {v.rule}
               </h3>
               <p>{v.description}</p>
               <p className="meta-mono" style={{ color: "var(--fg-4)", fontSize: 11, marginTop: 12 }}>
@@ -265,8 +265,10 @@ function EquitySection({ data }: { data: WaterUtilityPayload }) {
           ].map((row) => (
             <div key={row.label} className="city-tile live" style={{ cursor: "default" }}>
               <div className="tile-meta"><span>POPULATION SHARE</span></div>
-              <h3 style={{ fontSize: 28 }}>{row.value == null ? "—" : `${row.value.toFixed(1)}%`}</h3>
-              <p className="desc">{row.label}</p>
+              <div style={{ fontSize: 28, fontWeight: 600, letterSpacing: "-0.02em", color: "var(--fg)" }}>
+                {row.value == null ? "—" : `${row.value.toFixed(1)}%`}
+              </div>
+              <p className="desc" style={{ margin: 0 }}>{row.label}</p>
             </div>
           ))}
         </div>

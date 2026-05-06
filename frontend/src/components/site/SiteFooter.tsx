@@ -14,20 +14,20 @@ export function SiteFooter({ briefingLabel }: { briefingLabel?: string }) {
             </p>
           </div>
           <nav className="col" aria-label="Surfaces">
-            <h3>Surfaces</h3>
+            <p className="col-title">Surfaces</p>
             <Link href="/state/ca">States</Link>
             <Link href="/state/ca/county/kern">Counties</Link>
             <Link href="/state/ca/city/stockton">Cities</Link>
             <Link href="/state/ca/facility/chevron-products-co-richmond-refinery">Facilities (TRI)</Link>
           </nav>
           <nav className="col" aria-label="Methodology">
-            <h3>Method</h3>
+            <p className="col-title">Method</p>
             <Link href="/methodology">Methodology overview</Link>
             <Link href="/methodology#equity">Equity overlay stance</Link>
             <Link href="/methodology#sources">Data sources</Link>
           </nav>
           <nav className="col" aria-label="Elsewhere">
-            <h3>Elsewhere</h3>
+            <p className="col-title">Elsewhere</p>
             <a href="https://www.publicanalyst.ai" target="_blank" rel="noreferrer">Public Analyst.ai</a>
           </nav>
         </div>

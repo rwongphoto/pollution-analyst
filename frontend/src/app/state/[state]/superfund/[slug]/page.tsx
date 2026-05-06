@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { CSSProperties } from "react";
 
 import { NotableSignals } from "@/components/site/AnomalyCard";
 import { ChemicalCell } from "@/components/site/ChemicalCell";
@@ -156,6 +157,22 @@ const MEDIA_COLOR: Record<string, string> = {
   Air: "#34D399",
 };
 
+const CONT_TH_BASE: CSSProperties = {
+  padding: "10px 14px",
+  textAlign: "left",
+  borderBottom: "1px solid var(--rule)",
+  fontSize: 11.5,
+  letterSpacing: "0.06em",
+  textTransform: "uppercase",
+  color: "var(--fg-3)",
+  fontWeight: "normal",
+};
+
+const CONT_TD_BASE: CSSProperties = {
+  padding: "10px 14px",
+  verticalAlign: "baseline",
+};
+
 function ContaminantsSection({ data }: { data: SuperfundPayload }) {
   const conts = data.contaminants;
   if (!conts.length) {
@@ -196,48 +213,42 @@ function ContaminantsSection({ data }: { data: SuperfundPayload }) {
             decision records (RODs and related) that name the pair.
           </p>
         </div>
-        <div className="cont-table" style={{ border: "1px solid var(--rule)", borderRadius: 6, overflow: "hidden" }}>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 160px 80px",
-              gap: 0,
-              padding: "10px 14px",
-              background: "var(--graphite-2)",
-              borderBottom: "1px solid var(--rule)",
-              fontSize: 11.5,
-              letterSpacing: "0.06em",
-              textTransform: "uppercase",
-              color: "var(--fg-3)",
-            }}
-          >
-            <span>Contaminant</span>
-            <span>Pathway</span>
-            <span style={{ textAlign: "right" }}>Cited</span>
-          </div>
-          {visible.map((c, i) => {
-            const color = MEDIA_COLOR[c.media] ?? "var(--fg-3)";
-            return (
-              <div
-                key={`${c.name}-${c.media}-${i}`}
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "1fr 160px 80px",
-                  gap: 0,
-                  padding: "10px 14px",
-                  borderTop: i === 0 ? "0" : "1px solid var(--rule-soft)",
-                  alignItems: "baseline",
-                }}
-              >
-                <span><ChemicalCell name={c.name} /></span>
-                <span style={{ color, fontSize: 13 }}>{c.media || "—"}</span>
-                <span style={{ textAlign: "right", color: "var(--fg-3)", fontSize: 13 }}>
-                  {c.citation_count}
-                </span>
-              </div>
-            );
-          })}
-        </div>
+        <table
+          className="cont-table"
+          style={{
+            width: "100%",
+            borderCollapse: "collapse",
+            tableLayout: "fixed",
+            border: "1px solid var(--rule)",
+            borderRadius: 6,
+            overflow: "hidden",
+          }}
+        >
+          <thead>
+            <tr style={{ background: "var(--graphite-2)" }}>
+              <th scope="col" style={CONT_TH_BASE}>Contaminant</th>
+              <th scope="col" style={{ ...CONT_TH_BASE, width: 160 }}>Pathway</th>
+              <th scope="col" style={{ ...CONT_TH_BASE, width: 80, textAlign: "right" }}>Cited</th>
+            </tr>
+          </thead>
+          <tbody>
+            {visible.map((c, i) => {
+              const color = MEDIA_COLOR[c.media] ?? "var(--fg-3)";
+              return (
+                <tr
+                  key={`${c.name}-${c.media}-${i}`}
+                  style={{ borderTop: i === 0 ? "0" : "1px solid var(--rule-soft)" }}
+                >
+                  <td style={CONT_TD_BASE}><ChemicalCell name={c.name} /></td>
+                  <td style={{ ...CONT_TD_BASE, color, fontSize: 13 }}>{c.media || "—"}</td>
+                  <td style={{ ...CONT_TD_BASE, textAlign: "right", color: "var(--fg-3)", fontSize: 13 }}>
+                    {c.citation_count}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
         {hidden > 0 ? (
           <p className="muted" style={{ fontSize: 12.5, marginTop: 14 }}>
             Showing the top {visible.length} pairs by SEMS citation count. {hidden} additional (contaminant, pathway)
@@ -365,8 +376,10 @@ function EquitySection({ data }: { data: SuperfundPayload }) {
           ].map((row) => (
             <div key={row.label} className="city-tile live" style={{ cursor: "default" }}>
               <div className="tile-meta"><span>POPULATION SHARE</span></div>
-              <h3 style={{ fontSize: 28 }}>{row.value == null ? "—" : `${row.value.toFixed(1)}%`}</h3>
-              <p className="desc">{row.label}</p>
+              <div style={{ fontSize: 28, fontWeight: 600, letterSpacing: "-0.02em", color: "var(--fg)" }}>
+                {row.value == null ? "—" : `${row.value.toFixed(1)}%`}
+              </div>
+              <p className="desc" style={{ margin: 0 }}>{row.label}</p>
             </div>
           ))}
         </div>

@@ -26,7 +26,7 @@ export function Sparkline({
   years,
 }: Props) {
   if (!values.length) {
-    return <svg width={width} height={height} className={className} />;
+    return <svg width={width} height={height} className={className} aria-hidden="true" focusable="false" />;
   }
   const showLabels = years != null && years.length >= 2 && height >= 30;
   const labelH = showLabels ? 12 : 0;
@@ -43,7 +43,7 @@ export function Sparkline({
     })
     .join(" L ");
   return (
-    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} className={className} style={{ display: "block" }}>
+    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} className={className} style={{ display: "block" }} aria-hidden="true" focusable="false">
       <path d={`M ${points}`} fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       {showLabels && (
         <>

@@ -44,6 +44,13 @@ export function HeroChart({
   const barW = widthPerBar - barGap;
   const totalW = padLeft + padRight + sorted.length * widthPerBar;
 
+  const firstYear = sorted[0].year;
+  const lastYear = sorted[sorted.length - 1].year;
+  const lastValue = sorted[sorted.length - 1].value;
+  const ariaLabel =
+    `Bar chart of annual values from ${firstYear} to ${lastYear}, in ${units}. ` +
+    `Most recent year (${lastYear}): ${formatValue(lastValue, units)}.`;
+
   return (
     <div style={{ overflowX: "auto" }}>
       <svg
@@ -51,7 +58,10 @@ export function HeroChart({
         height={height}
         viewBox={`0 0 ${totalW} ${height}`}
         style={{ display: "block" }}
+        role="img"
+        aria-label={ariaLabel}
       >
+        <title>{ariaLabel}</title>
         {/* y-axis max label */}
         <text x={padLeft} y={padTop - 8} fontSize={10} fontFamily="var(--font-mono)" fill="var(--fg-4)">
           {formatValue(max, units)}

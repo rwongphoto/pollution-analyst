@@ -276,8 +276,10 @@ function WaterSection({ data }: { data: CityHubPayload }) {
           ].map((row) => (
             <div key={row.label} className="city-tile live" style={{ cursor: "default" }}>
               <div className="tile-meta"><span>SDWIS · 5-YR WINDOW</span></div>
-              <h3 style={{ fontSize: 28 }}>{row.value}</h3>
-              <p className="desc">{row.label}</p>
+              <div style={{ fontSize: 28, fontWeight: 600, letterSpacing: "-0.02em", color: "var(--fg)" }}>
+                {row.value}
+              </div>
+              <p className="desc" style={{ margin: 0 }}>{row.label}</p>
             </div>
           ))}
         </div>
@@ -398,8 +400,10 @@ function EquitySection({ data }: { data: CityHubPayload }) {
           ].map((row) => (
             <div key={row.label} className="city-tile live" style={{ cursor: "default" }}>
               <div className="tile-meta"><span>POPULATION SHARE</span></div>
-              <h3 style={{ fontSize: 28 }}>{row.value == null ? "—" : `${row.value.toFixed(1)}%`}</h3>
-              <p className="desc">{row.label}</p>
+              <div style={{ fontSize: 28, fontWeight: 600, letterSpacing: "-0.02em", color: "var(--fg)" }}>
+                {row.value == null ? "—" : `${row.value.toFixed(1)}%`}
+              </div>
+              <p className="desc" style={{ margin: 0 }}>{row.label}</p>
             </div>
           ))}
         </div>

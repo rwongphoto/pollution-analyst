@@ -161,7 +161,7 @@ export function StateMap({ stateFips, stateName, topCounties, topFacilities, cou
         <span className="meta-mono">TRI total releases (lbs/yr)</span>
         <div className="ramp">
           {PALETTE.map((c) => (
-            <i key={c} style={{ background: c }} />
+            <span key={c} style={{ background: c }} aria-hidden="true" />
           ))}
         </div>
         <span className="meta-mono" style={{ color: "var(--fg-4)" }}>LOW → HIGH</span>
