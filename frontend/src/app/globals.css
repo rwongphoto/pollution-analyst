@@ -137,14 +137,24 @@ hr, .rule { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
 .site-nav .nav-item { position: relative; }
 .site-nav .nav-item > button { display: inline-flex; align-items: center; gap: 6px; }
 .site-nav .nav-item > button .caret { width: 7px; height: 7px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translate(-1px, -1px); opacity: 0.6; transition: transform var(--dur-fast) var(--ease-std); }
-.site-nav .nav-item:hover > button .caret, .site-nav .nav-item.open > button .caret { transform: rotate(225deg) translate(-2px, -2px); opacity: 0.95; }
+/* Caret rotation: `.open` covers tap-to-toggle on every device; the
+   :hover variant is gated to true-pointer devices via `@media (hover: hover)`
+   so sticky-hover on touch screens can't keep the menu visually "open"
+   after the user has tapped to close. */
+.site-nav .nav-item.open > button .caret { transform: rotate(225deg) translate(-2px, -2px); opacity: 0.95; }
+@media (hover: hover) {
+  .site-nav .nav-item:hover > button .caret { transform: rotate(225deg) translate(-2px, -2px); opacity: 0.95; }
+}
 /* `top: 100%` (not `calc(100% + 6px)`) — keeping a literal gap between the
    trigger and the submenu creates a dead zone where the cursor is over neither
    element, mouseleave fires on .nav-item, and the menu closes mid-traverse.
    Visual separation lives in the submenu's own padding instead, so the
    breathing room is inside its hit-target. */
 .site-nav .submenu { position: absolute; top: 100%; left: 0; min-width: 260px; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--r-3); padding: 6px; display: none; z-index: 40; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
-.site-nav .nav-item:hover .submenu, .site-nav .nav-item.open .submenu { display: block; }
+.site-nav .nav-item.open .submenu { display: block; }
+@media (hover: hover) {
+  .site-nav .nav-item:hover .submenu { display: block; }
+}
 .site-nav .submenu a, .site-nav .submenu .submenu-disabled { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 12px; border-radius: var(--r-2); text-transform: none; letter-spacing: 0; font-family: var(--font-body); font-weight: 500; font-size: 13px; color: var(--fg-2); }
 .site-nav .submenu a:hover { background: var(--bg-3); color: var(--fg); }
 .site-nav .submenu a.active { color: var(--fg); background: var(--bg-3); box-shadow: inset 2px 0 0 var(--blue); }
@@ -155,7 +165,10 @@ hr, .rule { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
 
 /* Mega-nav variant — region columns under States */
 .site-nav .submenu-mega { min-width: 600px; padding: 14px; gap: 4px 24px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-.site-nav .nav-item:hover .submenu-mega, .site-nav .nav-item.open .submenu-mega { display: grid; }
+.site-nav .nav-item.open .submenu-mega { display: grid; }
+@media (hover: hover) {
+  .site-nav .nav-item:hover .submenu-mega { display: grid; }
+}
 .site-nav .submenu-mega .mega-col { display: flex; flex-direction: column; min-width: 0; }
 .site-nav .submenu-mega .mega-col .sm-section { padding: 4px 12px 6px; margin-bottom: 4px; border-bottom: 1px solid var(--line); }
 .site-nav .submenu-mega .mega-banner { grid-column: 1 / -1; padding: 10px 12px; margin-bottom: 6px; border-bottom: 1px solid var(--line); font-weight: 600; color: var(--fg); }
@@ -726,7 +739,7 @@ hr, .rule { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
   .site-nav .submenu a, .site-nav .submenu .submenu-disabled { padding: 10px 14px; }
   /* States mega-nav: stack regions vertically inside the mobile drawer. */
   .site-nav .submenu-mega { padding: 4px; gap: 0; grid-template-columns: 1fr; }
-  .site-nav .nav-item:hover .submenu-mega, .site-nav .nav-item.open .submenu-mega { display: block; }
+  .site-nav .nav-item.open .submenu-mega { display: block; }
   .site-nav .submenu-mega .mega-col .sm-section { padding: 10px 14px 4px; margin-bottom: 0; border-bottom: 0; }
 }
 
