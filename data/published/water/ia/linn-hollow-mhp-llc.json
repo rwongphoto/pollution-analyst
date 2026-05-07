@@ -1,0 +1,304 @@
+{
+  "utility": {
+    "state": "ia",
+    "state_label": "Iowa",
+    "slug": "linn-hollow-mhp-llc",
+    "name": "Linn Hollow Mhp Llc",
+    "pwsid": "IA9200601",
+    "population_served": 68,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Muscatine"
+    ],
+    "county": "Washington County",
+    "county_slug": "washington",
+    "place_slug": "muscatine"
+  },
+  "reporting_period": {
+    "start": "2020-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 3,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 2,
+    "contaminants_with_violations": 3,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": true,
+      "description": "Monitoring failure"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Beryllium",
+      "contaminant_code": "1040",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    },
+    {
+      "year": 2020,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2020,
+        "value": 1
+      },
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 1
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2020,
+        "value": 0
+      },
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 1
+      },
+      {
+        "contaminant": "Beryllium",
+        "count": 1
+      },
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IA9200601"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Beryllium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2023 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IA9200601"
+      }
+    }
+  ],
+  "equity": {
+    "population": 23671,
+    "pct_low_income": 17.4,
+    "pct_people_of_color": 28.400000000000006,
+    "pct_under_5": 6.1,
+    "pct_over_64": 15.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 55.4,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 52.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 47.2,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 28.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 73.6,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 39.1,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 80.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 90.9,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 28.8,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 72.9,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 56.9,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 70.7
+      },
+      {
+        "label": "Ozone",
+        "score": 55.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 59.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 37.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 91.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 49.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 94.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 110.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 37.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 80.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 70.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Muscatine, Iowa (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:36:24Z"
+}

@@ -1,0 +1,247 @@
+{
+  "utility": {
+    "state": "ia",
+    "state_label": "Iowa",
+    "slug": "madrid-water-department",
+    "name": "Madrid Water Department",
+    "pwsid": "IA0848015",
+    "population_served": 3090,
+    "primary_source": "mixed",
+    "cities_served": [
+      "Madrid"
+    ],
+    "county": "Boone County",
+    "county_slug": "boone",
+    "place_slug": "madrid"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 2,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 2257",
+      "contaminant_code": "2257",
+      "severity": "health_based",
+      "rule": "Nitrate/Nitrite",
+      "is_unresolved": true,
+      "description": "Treatment technique violation"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 2257",
+      "contaminant_code": "2257",
+      "severity": "health_based",
+      "rule": "Nitrate/Nitrite",
+      "is_unresolved": false,
+      "description": "Treatment technique violation; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 2257",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 2257",
+      "summary": "Unresolved Nitrate/Nitrite violation cited in 2025 (contaminant 2257).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IA0848015"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent",
+      "label": "Contaminant 2257",
+      "summary": "Nitrate/Nitrite health-based violation cited in 2025 (contaminant 2257).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IA0848015"
+      }
+    }
+  ],
+  "equity": {
+    "population": 2784,
+    "pct_low_income": 9.8,
+    "pct_people_of_color": 3.700000000000003,
+    "pct_under_5": 4.5,
+    "pct_over_64": 22.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 25.0,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 29.1,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 44.9,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 20.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 50.9,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 3.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 77.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 45.0,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 67.0,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 29.5,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 13.6
+      },
+      {
+        "label": "Ozone",
+        "score": 20.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 23.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 11.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 26.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 2.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 37.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 23.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 33.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 15.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Madrid, Iowa (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:36:24Z"
+}

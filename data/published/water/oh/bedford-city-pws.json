@@ -1,0 +1,280 @@
+{
+  "utility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "bedford-city-pws",
+    "name": "Bedford City Pws",
+    "pwsid": "OH1800003",
+    "population_served": 13149,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Bedford"
+    ],
+    "county": "Cuyahoga County",
+    "county_slug": "cuyahoga",
+    "place_slug": "bedford"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 3,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 3,
+    "contaminants_with_violations": 3,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Reporting failure"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Total Trihalomethanes (TTHM)",
+      "contaminant_code": "2950",
+      "severity": "monitoring",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Haloacetic Acids (HAA5)",
+      "contaminant_code": "2456",
+      "severity": "monitoring",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 3
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 1
+      },
+      {
+        "contaminant": "Total Trihalomethanes (TTHM)",
+        "count": 1
+      },
+      {
+        "contaminant": "Haloacetic Acids (HAA5)",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:OH1800003"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:OH1800003"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Haloacetic Acids (HAA5)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (haloacetic acids (haa5)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:OH1800003"
+      }
+    }
+  ],
+  "equity": {
+    "population": 13043,
+    "pct_low_income": 11.6,
+    "pct_people_of_color": 61.6,
+    "pct_under_5": 6.3,
+    "pct_over_64": 17.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 60.8,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 70.0,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 70.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 71.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 87.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 66.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 81.4,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 74.8,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 81.7,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 82.1,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 79.1,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 101.1
+      },
+      {
+        "label": "Ozone",
+        "score": 122.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 110.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 114.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 139.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 106.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 121.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 117.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 130.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 123.6
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 127.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Bedford, Ohio (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

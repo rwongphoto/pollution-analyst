@@ -1,0 +1,231 @@
+{
+  "utility": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "grand-beach",
+    "name": "Grand Beach",
+    "pwsid": "MI0002730",
+    "population_served": 272,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Grand Beach"
+    ],
+    "county": "Berrien County",
+    "county_slug": "berrien",
+    "place_slug": "grand-beach"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 3,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 3
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 3
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 377,
+    "pct_low_income": 1.6,
+    "pct_people_of_color": 9.0,
+    "pct_under_5": 3.2,
+    "pct_over_64": 49.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 40.1,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 88.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 19.7,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 34.0,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 56.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 19.2,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 62.7,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 30.4,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 16.9,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 84.8,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 32.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 25.3
+      },
+      {
+        "label": "Ozone",
+        "score": 52.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 12.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 22.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 34.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 12.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 34.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 19.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 11.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 50.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 19.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Grand Beach, Michigan (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:51:50Z"
+}

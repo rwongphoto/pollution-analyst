@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "ia",
+    "state_label": "Iowa",
+    "slug": "acterra-group-llc",
+    "name": "Acterra Group LLC",
+    "parent_company": "Brass Ring Capital INC",
+    "address": "200 35TH ST",
+    "city": "Marion",
+    "county": "Linn County",
+    "county_slug": "linn",
+    "naics_label": "332313 \u00b7 Fabricated Metals",
+    "lat": 42.027944,
+    "lng": -91.574362
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1803,
+    "air_releases_pounds": 1774,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 29,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -14.9,
+    "long_arc_pct_change": 1739.8,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 98
+      },
+      {
+        "year": 2023,
+        "value": 2119
+      },
+      {
+        "year": 2024,
+        "value": 1803
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1246,
+      "history": [
+        {
+          "year": 2022,
+          "value": 68
+        },
+        {
+          "year": 2023,
+          "value": 1464
+        },
+        {
+          "year": 2024,
+          "value": 1246
+        }
+      ],
+      "yoy_pct_change": -14.9,
+      "long_arc_pct_change": 1732.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 557,
+      "history": [
+        {
+          "year": 2022,
+          "value": 30
+        },
+        {
+          "year": 2023,
+          "value": 655
+        },
+        {
+          "year": 2024,
+          "value": 557
+        }
+      ],
+      "yoy_pct_change": -15.0,
+      "long_arc_pct_change": 1756.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 37353,
+    "pct_low_income": 19.8,
+    "pct_people_of_color": 10.6,
+    "pct_under_5": 6.9,
+    "pct_over_64": 18.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (25 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:36:24Z"
+}

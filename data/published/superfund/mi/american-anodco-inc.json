@@ -1,0 +1,74 @@
+{
+  "site": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "american-anodco-inc",
+    "name": "American Anodco, Inc.",
+    "epa_id": "MID006029102",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Ionia",
+    "county_slug": "ionia",
+    "city": "Ionia",
+    "city_slug": "ionia",
+    "address": "28 North Beardsley Street",
+    "zip": "48846",
+    "lat": 42.9875,
+    "lng": -85.03
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MI0003370",
+        "name": "Ionia",
+        "slug": "ionia",
+        "state": "mi",
+        "distance_miles": 2.37,
+        "place_name": "Ionia",
+        "primary_source": "groundwater",
+        "population_served": 12997,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MI0040456",
+        "name": "Quiet Cove Trailer Park",
+        "slug": "quiet-cove-trailer-park",
+        "state": "mi",
+        "distance_miles": 2.37,
+        "place_name": "Ionia",
+        "primary_source": "groundwater",
+        "population_served": 70,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 773,
+    "pct_low_income": 13.6,
+    "pct_people_of_color": 14.9,
+    "pct_under_5": 3.6,
+    "pct_over_64": 13.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:51:51Z"
+}

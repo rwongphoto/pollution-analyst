@@ -1,0 +1,156 @@
+{
+  "facility": {
+    "state": "ia",
+    "state_label": "Iowa",
+    "slug": "gold-eagle-coop-galt",
+    "name": "Gold Eagle Coop - Galt",
+    "parent_company": "Gold Eagle Cooperative",
+    "address": "2624 HIGHWAY 69",
+    "city": "Galt",
+    "county": "Wright County",
+    "county_slug": "wright",
+    "naics_label": "311119 \u00b7 Food",
+    "lat": 42.669847,
+    "lng": -93.636775
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3511,
+    "air_releases_pounds": 3511,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 4,
+    "yoy_pct_change": -92.7,
+    "long_arc_pct_change": -92.7,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 48132
+      },
+      {
+        "year": 2024,
+        "value": 3511
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 1564,
+      "history": [
+        {
+          "year": 2023,
+          "value": 25714
+        },
+        {
+          "year": 2024,
+          "value": 1564
+        }
+      ],
+      "yoy_pct_change": -93.9,
+      "long_arc_pct_change": -93.9,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Manganese compounds",
+      "cas": "N450",
+      "category": "respiratory",
+      "total_pounds_recent": 698,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6616
+        },
+        {
+          "year": 2024,
+          "value": 698
+        }
+      ],
+      "yoy_pct_change": -89.4,
+      "long_arc_pct_change": -89.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 665,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6248
+        },
+        {
+          "year": 2024,
+          "value": 665
+        }
+      ],
+      "yoy_pct_change": -89.4,
+      "long_arc_pct_change": -89.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 584,
+      "history": [
+        {
+          "year": 2023,
+          "value": 9554
+        },
+        {
+          "year": 2024,
+          "value": 584
+        }
+      ],
+      "yoy_pct_change": -93.9,
+      "long_arc_pct_change": -93.9,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Formaldehyde",
+      "summary": "Formaldehyde releases at Gold Eagle Coop - Galt fell from 26k lb to 2k lb (94% lower) between 2023 and 2024.",
+      "magnitude_pct": -93.9,
+      "magnitude_abs": -24149.6,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 25714
+        },
+        {
+          "year": 2024,
+          "value": 1564
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 1188,
+    "pct_low_income": 26.5,
+    "pct_people_of_color": 7.5,
+    "pct_under_5": 8.7,
+    "pct_over_64": 19.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:36:24Z"
+}

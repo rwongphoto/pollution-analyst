@@ -1,0 +1,96 @@
+{
+  "facility": {
+    "state": "wi",
+    "state_label": "Wisconsin",
+    "slug": "zinkpower-stoughton-llc",
+    "name": "Zinkpower-Stoughton LLC",
+    "parent_company": "Zinkpower-Usa CORP",
+    "address": "2443 COUNTY HIGHWAY A",
+    "city": "Stoughton",
+    "county": "Dane County",
+    "county_slug": "dane",
+    "naics_label": "332812 \u00b7 Fabricated Metals",
+    "lat": 42.911306,
+    "lng": -89.195636
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 28954,
+    "air_releases_pounds": 42,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 28912,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 40.8,
+    "long_arc_pct_change": 40.8,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 20557
+      },
+      {
+        "year": 2024,
+        "value": 28954
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 28954,
+      "history": [
+        {
+          "year": 2023,
+          "value": 20556
+        },
+        {
+          "year": 2024,
+          "value": 28954
+        }
+      ],
+      "yoy_pct_change": 40.9,
+      "long_arc_pct_change": 40.9,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 0.02,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0.77
+        },
+        {
+          "year": 2024,
+          "value": 0.02
+        }
+      ],
+      "yoy_pct_change": -96.9,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 12815,
+    "pct_low_income": 22.4,
+    "pct_people_of_color": 7.2,
+    "pct_under_5": 5.6,
+    "pct_over_64": 18.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (10 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:14:07Z"
+}

@@ -1,0 +1,943 @@
+{
+  "county": {
+    "state": "mn",
+    "state_label": "Minnesota",
+    "slug": "otter-tail",
+    "name": "Otter Tail County",
+    "fips": "27111",
+    "population": 60072
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "criteria_air",
+      "label": "PM2.5 annual mean (NAAQS 9 \u00b5g/m\u00b3 (annual))",
+      "current": 9.532,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 9.532
+        }
+      ]
+    },
+    {
+      "pathway": "criteria_air",
+      "label": "PM2.5 24-hour 98th percentile (NAAQS 35 \u00b5g/m\u00b3 (24-hour))",
+      "current": 22.8,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 22.8
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.9087,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.9087
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1255,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1255
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 18306,
+      "units": "lb",
+      "yoy_pct_change": -18.4,
+      "long_arc_pct_change": -64.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 51631
+        },
+        {
+          "year": 2011,
+          "value": 40332
+        },
+        {
+          "year": 2012,
+          "value": 32102
+        },
+        {
+          "year": 2013,
+          "value": 29084
+        },
+        {
+          "year": 2014,
+          "value": 36614
+        },
+        {
+          "year": 2015,
+          "value": 31419
+        },
+        {
+          "year": 2016,
+          "value": 28658
+        },
+        {
+          "year": 2017,
+          "value": 29259
+        },
+        {
+          "year": 2018,
+          "value": 29108
+        },
+        {
+          "year": 2019,
+          "value": 25424
+        },
+        {
+          "year": 2020,
+          "value": 24889
+        },
+        {
+          "year": 2021,
+          "value": 23635
+        },
+        {
+          "year": 2022,
+          "value": 31326
+        },
+        {
+          "year": 2023,
+          "value": 22444
+        },
+        {
+          "year": 2024,
+          "value": 18306
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 46
+        },
+        {
+          "year": 2011,
+          "value": 43
+        },
+        {
+          "year": 2012,
+          "value": 37
+        },
+        {
+          "year": 2013,
+          "value": 47
+        },
+        {
+          "year": 2014,
+          "value": 46
+        },
+        {
+          "year": 2015,
+          "value": 28
+        },
+        {
+          "year": 2016,
+          "value": 22
+        },
+        {
+          "year": 2017,
+          "value": 27
+        },
+        {
+          "year": 2018,
+          "value": 45
+        },
+        {
+          "year": 2019,
+          "value": 38
+        },
+        {
+          "year": 2020,
+          "value": 28
+        },
+        {
+          "year": 2021,
+          "value": 12
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 50411,
+      "units": "lb",
+      "yoy_pct_change": -5.8,
+      "long_arc_pct_change": -82.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 285198
+        },
+        {
+          "year": 2011,
+          "value": 296312
+        },
+        {
+          "year": 2012,
+          "value": 246434
+        },
+        {
+          "year": 2013,
+          "value": 310144
+        },
+        {
+          "year": 2014,
+          "value": 259079
+        },
+        {
+          "year": 2015,
+          "value": 164610
+        },
+        {
+          "year": 2016,
+          "value": 139901
+        },
+        {
+          "year": 2017,
+          "value": 128421
+        },
+        {
+          "year": 2018,
+          "value": 257010
+        },
+        {
+          "year": 2019,
+          "value": 144695
+        },
+        {
+          "year": 2020,
+          "value": 101157
+        },
+        {
+          "year": 2021,
+          "value": 100999
+        },
+        {
+          "year": 2022,
+          "value": 80838
+        },
+        {
+          "year": 2023,
+          "value": 53512
+        },
+        {
+          "year": 2024,
+          "value": 50411
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 138999,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -1.7,
+      "long_arc_pct_change": -87.2,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1086079
+        },
+        {
+          "year": 2011,
+          "value": 1058904
+        },
+        {
+          "year": 2012,
+          "value": 874628
+        },
+        {
+          "year": 2013,
+          "value": 1050773
+        },
+        {
+          "year": 2014,
+          "value": 730598
+        },
+        {
+          "year": 2015,
+          "value": 424716
+        },
+        {
+          "year": 2016,
+          "value": 385000
+        },
+        {
+          "year": 2017,
+          "value": 436546
+        },
+        {
+          "year": 2018,
+          "value": 750746
+        },
+        {
+          "year": 2019,
+          "value": 495905
+        },
+        {
+          "year": 2020,
+          "value": 365557
+        },
+        {
+          "year": 2021,
+          "value": 281197
+        },
+        {
+          "year": 2022,
+          "value": 141351
+        },
+        {
+          "year": 2023,
+          "value": 138999
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "bongards-creameries-perham",
+      "state": "mn",
+      "state_label": "Minnesota",
+      "name": "Bongards' Creameries Perham",
+      "parent_company": "Bongards' Creameries",
+      "total_pounds_recent": 49734,
+      "yoy_pct_change": -4.1,
+      "top_chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "city": "Perham",
+      "lat": 46.59391,
+      "lng": -95.56919
+    },
+    {
+      "slug": "green-plains-otter-tail-llc",
+      "state": "mn",
+      "state_label": "Minnesota",
+      "name": "Green Plains Otter Tail LLC",
+      "parent_company": "Green Plains Renewable Energy INC",
+      "total_pounds_recent": 16209,
+      "yoy_pct_change": -15.7,
+      "top_chemical": "Acetaldehyde",
+      "city": "Fergus Falls",
+      "lat": 46.312886,
+      "lng": -96.133663
+    },
+    {
+      "slug": "master-composites-inc",
+      "state": "mn",
+      "state_label": "Minnesota",
+      "name": "Master Composites INC",
+      "parent_company": null,
+      "total_pounds_recent": 2025,
+      "yoy_pct_change": -41.9,
+      "top_chemical": "Styrene",
+      "city": "Henning",
+      "lat": 46.326026,
+      "lng": -95.440723
+    },
+    {
+      "slug": "quality-circuits-inc",
+      "state": "mn",
+      "state_label": "Minnesota",
+      "name": "Quality Circuits INC",
+      "parent_company": null,
+      "total_pounds_recent": 739,
+      "yoy_pct_change": -46.9,
+      "top_chemical": "Ammonia",
+      "city": "Fergus Falls",
+      "lat": 46.295585,
+      "lng": -96.09873
+    },
+    {
+      "slug": "barrel-o-fun-snack-foods-co",
+      "state": "mn",
+      "state_label": "Minnesota",
+      "name": "Barrel O'Fun Snack Foods CO",
+      "parent_company": "Clayton Dubilier & Rice LLC",
+      "total_pounds_recent": 10,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Nitric acid",
+      "city": "Perham",
+      "lat": 46.599768,
+      "lng": -95.580697
+    }
+  ],
+  "utilities": [],
+  "superfund": [
+    {
+      "slug": "perham-arsenic-site",
+      "state": "mn",
+      "name": "Perham Arsenic Site",
+      "epa_id": "MND980609572",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Perham",
+      "city_slug": "perham",
+      "primary_contaminant": "Arsenic"
+    }
+  ],
+  "superfund_total": 1,
+  "cities_directory": [
+    {
+      "slug": "battle-lake",
+      "name": "Battle Lake",
+      "fips": "2703970",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 744
+    },
+    {
+      "slug": "dalton",
+      "name": "Dalton",
+      "fips": "2714626",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 295
+    },
+    {
+      "slug": "deer-creek",
+      "name": "Deer Creek",
+      "fips": "2715184",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 253
+    },
+    {
+      "slug": "fergus-falls",
+      "name": "Fergus Falls",
+      "fips": "2720906",
+      "facilities_count": 1,
+      "utilities_count": 2,
+      "population": 14108
+    },
+    {
+      "slug": "henning",
+      "name": "Henning",
+      "fips": "2728520",
+      "facilities_count": 1,
+      "utilities_count": 2,
+      "population": 771
+    },
+    {
+      "slug": "new-york-mills",
+      "name": "New York Mills",
+      "fips": "2746060",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 1166
+    },
+    {
+      "slug": "ottertail",
+      "name": "Ottertail",
+      "fips": "2749210",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 478
+    },
+    {
+      "slug": "parkers-prairie",
+      "name": "Parkers Prairie",
+      "fips": "2749732",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 1209
+    },
+    {
+      "slug": "pelican-rapids",
+      "name": "Pelican Rapids",
+      "fips": "2750164",
+      "facilities_count": 0,
+      "utilities_count": 3,
+      "population": 2589
+    },
+    {
+      "slug": "perham",
+      "name": "Perham",
+      "fips": "2750470",
+      "facilities_count": 2,
+      "utilities_count": 1,
+      "population": 3524
+    },
+    {
+      "slug": "underwood",
+      "name": "Underwood",
+      "fips": "2766172",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 420
+    },
+    {
+      "slug": "vergas",
+      "name": "Vergas",
+      "fips": "2766766",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 242
+    }
+  ],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Otter Tail County have more than three-quarters since 2010 (through 2024).",
+      "magnitude_pct": -79.6,
+      "magnitude_abs": -268158.4,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 336876
+        },
+        {
+          "year": 2011,
+          "value": 336686
+        },
+        {
+          "year": 2012,
+          "value": 278572
+        },
+        {
+          "year": 2013,
+          "value": 339276
+        },
+        {
+          "year": 2014,
+          "value": 295740
+        },
+        {
+          "year": 2015,
+          "value": 196058
+        },
+        {
+          "year": 2016,
+          "value": 168581
+        },
+        {
+          "year": 2017,
+          "value": 157707
+        },
+        {
+          "year": 2018,
+          "value": 286163
+        },
+        {
+          "year": 2019,
+          "value": 170157
+        },
+        {
+          "year": 2020,
+          "value": 126074
+        },
+        {
+          "year": 2021,
+          "value": 124647
+        },
+        {
+          "year": 2022,
+          "value": 112164
+        },
+        {
+          "year": 2023,
+          "value": 75956
+        },
+        {
+          "year": 2024,
+          "value": 68717
+        }
+      ]
+    },
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "PM2.5 annual mean",
+      "summary": "PM2.5 annual mean in Otter Tail County reached 9.5 \u00b5g/m\u00b3 in 2010, 6% above the EPA NAAQS of 9 \u00b5g/m\u00b3.",
+      "magnitude_pct": 5.9,
+      "magnitude_abs": 0.532,
+      "baseline_year": null,
+      "recent_year": 2010,
+      "units": "\u00b5g/m\u00b3",
+      "history": [
+        {
+          "year": 2010,
+          "value": 9.532
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 60072,
+    "pct_low_income": 8.7,
+    "pct_people_of_color": 8.900000000000006,
+    "pct_under_5": 6.5,
+    "pct_over_64": 24.4,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 1.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 28.1,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 32.6,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 12.8,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 21.6,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 12.8,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 65.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 56.7,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 56.4,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 24.1,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 47.2,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 38.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.6,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 1.2
+      },
+      {
+        "label": "Ozone",
+        "score": 19.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 30.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 12.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 13.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 10.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 45.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 9.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 29.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 15.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 29.9
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 16.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 2.6
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Otter Tail County County, MN"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.0,
+      "age_adjusted": 10.2,
+      "state_mean": 9.9,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.25,
+      "vs_state_pct": 2.5,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.18,
+      "vs_us_pct": 1.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 7.2,
+      "age_adjusted": 5.3,
+      "state_mean": 4.7,
+      "us_mean": 5.5,
+      "vs_state_pp": 0.62,
+      "vs_state_pct": 13.2,
+      "vs_state_class": "elevated",
+      "vs_us_pp": -0.2,
+      "vs_us_pct": -3.6,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.1,
+      "age_adjusted": 5.3,
+      "state_mean": 4.9,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.37,
+      "vs_state_pct": 7.5,
+      "vs_state_class": "elevated",
+      "vs_us_pp": -0.01,
+      "vs_us_pct": -0.2,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 12.1,
+      "age_adjusted": 8.7,
+      "state_mean": 8.7,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.02,
+      "vs_state_pct": -0.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -1.76,
+      "vs_us_pct": -16.8,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 14.7,
+      "age_adjusted": 17.1,
+      "state_mean": 15.9,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.18,
+      "vs_state_pct": 7.4,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.35,
+      "vs_us_pct": 2.1,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "mn",
+      "slug": "winona",
+      "name": "Winona County",
+      "population": 49792,
+      "facilities_count": 9,
+      "total_releases_pounds": 80563,
+      "dominant_medium": "land",
+      "ej_pct_avg": 50.4,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 9 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "mn",
+      "slug": "chisago",
+      "name": "Chisago County",
+      "population": 56927,
+      "facilities_count": 4,
+      "total_releases_pounds": 22492,
+      "dominant_medium": "land",
+      "ej_pct_avg": 31.8,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 4 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "mn",
+      "slug": "morrison",
+      "name": "Morrison County",
+      "population": 34023,
+      "facilities_count": 3,
+      "total_releases_pounds": 106444,
+      "dominant_medium": "land",
+      "ej_pct_avg": 37.5,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 3 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "mn",
+      "slug": "hubbard",
+      "name": "Hubbard County",
+      "population": 21479,
+      "facilities_count": 2,
+      "total_releases_pounds": 49042,
+      "dominant_medium": "land",
+      "ej_pct_avg": 25.1,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "mn",
+      "slug": "isanti",
+      "name": "Isanti County",
+      "population": 41257,
+      "facilities_count": 2,
+      "total_releases_pounds": 150606,
+      "dominant_medium": "land",
+      "ej_pct_avg": 32.5,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "mn",
+      "slug": "clay",
+      "name": "Clay County",
+      "population": 65307,
+      "facilities_count": 2,
+      "total_releases_pounds": 284621,
+      "dominant_medium": "air",
+      "ej_pct_avg": 54.4,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+17 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T04:04:53Z"
+}

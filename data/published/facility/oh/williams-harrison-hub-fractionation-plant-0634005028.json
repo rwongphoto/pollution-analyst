@@ -1,0 +1,180 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "williams-harrison-hub-fractionation-plant-0634005028",
+    "name": "Williams Harrison Hub Fractionation Plant (0634005028)",
+    "parent_company": "The Williams Cos",
+    "address": "37905 CRIMM RD.",
+    "city": "Scio",
+    "county": "Harrison County",
+    "county_slug": "harrison",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 40.404474,
+    "lng": -81.109145
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 38571,
+    "air_releases_pounds": 6471,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 32100,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 214.9,
+    "long_arc_pct_change": 453.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 6970
+      },
+      {
+        "year": 2023,
+        "value": 12250
+      },
+      {
+        "year": 2024,
+        "value": 38571
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 34854,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6130
+        },
+        {
+          "year": 2023,
+          "value": 11214
+        },
+        {
+          "year": 2024,
+          "value": 34854
+        }
+      ],
+      "yoy_pct_change": 210.8,
+      "long_arc_pct_change": 468.6,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 2977,
+      "history": [
+        {
+          "year": 2022,
+          "value": 568
+        },
+        {
+          "year": 2023,
+          "value": 834
+        },
+        {
+          "year": 2024,
+          "value": 2977
+        }
+      ],
+      "yoy_pct_change": 257.1,
+      "long_arc_pct_change": 424.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 428,
+      "history": [
+        {
+          "year": 2022,
+          "value": 154
+        },
+        {
+          "year": 2023,
+          "value": 54
+        },
+        {
+          "year": 2024,
+          "value": 428
+        }
+      ],
+      "yoy_pct_change": 689.8,
+      "long_arc_pct_change": 177.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 312,
+      "history": [
+        {
+          "year": 2022,
+          "value": 117
+        },
+        {
+          "year": 2023,
+          "value": 148
+        },
+        {
+          "year": 2024,
+          "value": 312
+        }
+      ],
+      "yoy_pct_change": 110.5,
+      "long_arc_pct_change": 166.1,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Williams Harrison Hub Fractionation Plant (0634005028) rose from 11k lb to 35k lb (3.1\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 210.8,
+      "magnitude_abs": 23640.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 6130
+        },
+        {
+          "year": 2023,
+          "value": 11214
+        },
+        {
+          "year": 2024,
+          "value": 34854
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 1891,
+    "pct_low_income": 28.2,
+    "pct_people_of_color": 0.8,
+    "pct_under_5": 5.3,
+    "pct_over_64": 30.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

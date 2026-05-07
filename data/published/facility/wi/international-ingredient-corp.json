@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "wi",
+    "state_label": "Wisconsin",
+    "slug": "international-ingredient-corp",
+    "name": "International Ingredient Corp",
+    "parent_company": "International Ingredient CORP",
+    "address": "1310 4TH AVE W",
+    "city": "Monroe",
+    "county": "Green County",
+    "county_slug": "green",
+    "naics_label": "311119 \u00b7 Food",
+    "lat": 42.598129,
+    "lng": -89.661535
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 11046,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 11046,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -5.9,
+    "long_arc_pct_change": 52.5,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 7245
+      },
+      {
+        "year": 2023,
+        "value": 11736
+      },
+      {
+        "year": 2024,
+        "value": 11046
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitric acid",
+      "cas": "7697-37-2",
+      "category": "general",
+      "total_pounds_recent": 11046,
+      "history": [
+        {
+          "year": 2022,
+          "value": 7245
+        },
+        {
+          "year": 2023,
+          "value": 11736
+        },
+        {
+          "year": 2024,
+          "value": 11046
+        }
+      ],
+      "yoy_pct_change": -5.9,
+      "long_arc_pct_change": 52.5,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 11586,
+    "pct_low_income": 29.3,
+    "pct_people_of_color": 10.1,
+    "pct_under_5": 5.3,
+    "pct_over_64": 21.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (11 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:14:07Z"
+}

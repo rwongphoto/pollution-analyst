@@ -1,0 +1,174 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "lake-city-plating",
+    "name": "Lake City Plating",
+    "parent_company": "Lake City Plating",
+    "address": "108 S SYCAMORE ST",
+    "city": "Jefferson",
+    "county": "Ashtabula County",
+    "county_slug": "ashtabula",
+    "naics_label": "332813 \u00b7 Fabricated Metals",
+    "lat": 41.736015,
+    "lng": -80.759059
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 44634,
+    "air_releases_pounds": 30639,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 13995,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -50.0,
+    "long_arc_pct_change": 10.3,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 40456
+      },
+      {
+        "year": 2023,
+        "value": 89251
+      },
+      {
+        "year": 2024,
+        "value": 44634
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitric acid",
+      "cas": "7697-37-2",
+      "category": "general",
+      "total_pounds_recent": 30639,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4840
+        },
+        {
+          "year": 2023,
+          "value": 16155
+        },
+        {
+          "year": 2024,
+          "value": 30639
+        }
+      ],
+      "yoy_pct_change": 89.7,
+      "long_arc_pct_change": 533.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 13970,
+      "history": [
+        {
+          "year": 2022,
+          "value": 35616
+        },
+        {
+          "year": 2023,
+          "value": 73096
+        },
+        {
+          "year": 2024,
+          "value": 13970
+        }
+      ],
+      "yoy_pct_change": -80.9,
+      "long_arc_pct_change": -60.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyanide compounds",
+      "cas": "N106",
+      "category": "respiratory",
+      "total_pounds_recent": 25,
+      "history": [
+        {
+          "year": 2024,
+          "value": 25
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "summary": "Nitrate compounds (water dissociable; reportable only when in aqueous solution) releases at Lake City Plating fell from 73k lb to 14k lb (81% lower) between 2023 and 2024.",
+      "magnitude_pct": -80.9,
+      "magnitude_abs": -59125.7,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 35616
+        },
+        {
+          "year": 2023,
+          "value": 73096
+        },
+        {
+          "year": 2024,
+          "value": 13970
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Nitric acid",
+      "summary": "Nitric acid releases at Lake City Plating rose from 16k lb to 31k lb between 2023 and 2024.",
+      "magnitude_pct": 89.7,
+      "magnitude_abs": 14484.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 4840
+        },
+        {
+          "year": 2023,
+          "value": 16155
+        },
+        {
+          "year": 2024,
+          "value": 30639
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 4164,
+    "pct_low_income": 29.5,
+    "pct_people_of_color": 5.7,
+    "pct_under_5": 3.1,
+    "pct_over_64": 25.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

@@ -1,0 +1,82 @@
+{
+  "site": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "ten-mile-drain",
+    "name": "Ten-Mile Drain",
+    "epa_id": "MIN000510063",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Macomb",
+    "county_slug": "macomb",
+    "city": "St. Clair Shores",
+    "city_slug": "st-clair-shores",
+    "address": "Intersection Of Bon Brae St & Harper Ave",
+    "zip": "48081",
+    "lat": 42.486944,
+    "lng": -82.899167
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 4,
+    "primary_contaminant": "Polychlorinated Biphenyls (Pcbs)"
+  },
+  "contaminants": [
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 3
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Buildings/Structures",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Free-phase NAPL",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 14175,
+    "pct_low_income": 15.6,
+    "pct_people_of_color": 8.2,
+    "pct_under_5": 5.6,
+    "pct_over_64": 20.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (15 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:51:51Z"
+}

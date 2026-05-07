@@ -1,0 +1,99 @@
+{
+  "facility": {
+    "state": "mn",
+    "state_label": "Minnesota",
+    "slug": "upsher-smith-laboratories-llc",
+    "name": "Upsher-Smith Laboratories LLC",
+    "parent_company": null,
+    "address": "6701 EVENSTAD DRIVE",
+    "city": "Maple Grove",
+    "county": "Hennepin County",
+    "county_slug": "hennepin",
+    "naics_label": "325412 \u00b7 Chemicals",
+    "lat": 45.074515,
+    "lng": -93.441789
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 28723,
+    "air_releases_pounds": 28709,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 14,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 1137.0,
+    "long_arc_pct_change": 1137.0,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 2322
+      },
+      {
+        "year": 2024,
+        "value": 28723
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 28723,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2322
+        },
+        {
+          "year": 2024,
+          "value": 28723
+        }
+      ],
+      "yoy_pct_change": 1137.0,
+      "long_arc_pct_change": 1137.0,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Methanol",
+      "summary": "Methanol releases at Upsher-Smith Laboratories LLC rose from 2k lb to 29k lb (12.4\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 1137.0,
+      "magnitude_abs": 26401.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 2322
+        },
+        {
+          "year": 2024,
+          "value": 28723
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 67711,
+    "pct_low_income": 10.7,
+    "pct_people_of_color": 26.6,
+    "pct_under_5": 6.2,
+    "pct_over_64": 15.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (48 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:04:54Z"
+}

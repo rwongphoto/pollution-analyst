@@ -1,0 +1,101 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "alpont-llc",
+    "name": "Alpont LLC",
+    "parent_company": "Interstate Chemical Co INC",
+    "address": "325 N LALLENDORF RD",
+    "city": "Oregon",
+    "county": "Lucas County",
+    "county_slug": "lucas",
+    "naics_label": "325110 \u00b7 Chemicals",
+    "lat": 41.65776,
+    "lng": -83.448555
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 8934,
+    "air_releases_pounds": 8580,
+    "water_releases_pounds": 250,
+    "land_releases_pounds": 104,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 9.8,
+    "long_arc_pct_change": -7.6,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 9670
+      },
+      {
+        "year": 2021,
+        "value": 9620
+      },
+      {
+        "year": 2022,
+        "value": 8484
+      },
+      {
+        "year": 2023,
+        "value": 8140
+      },
+      {
+        "year": 2024,
+        "value": 8934
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 8934,
+      "history": [
+        {
+          "year": 2020,
+          "value": 9670
+        },
+        {
+          "year": 2021,
+          "value": 9620
+        },
+        {
+          "year": 2022,
+          "value": 8484
+        },
+        {
+          "year": 2023,
+          "value": 8140
+        },
+        {
+          "year": 2024,
+          "value": 8934
+        }
+      ],
+      "yoy_pct_change": 9.8,
+      "long_arc_pct_change": -7.6,
+      "long_arc_baseline_year": 2020
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 26211,
+    "pct_low_income": 34.3,
+    "pct_people_of_color": 25.7,
+    "pct_under_5": 5.4,
+    "pct_over_64": 19.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (28 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

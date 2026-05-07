@@ -1,0 +1,239 @@
+{
+  "utility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "glouster-public-water-system",
+    "name": "Glouster Public Water System",
+    "pwsid": "OH0500703",
+    "population_served": 1659,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Glouster"
+    ],
+    "county": "Athens County",
+    "county_slug": "athens",
+    "place_slug": "glouster"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 1,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "health_based",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Treatment technique violation; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 2
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 5200",
+      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:OH0500703"
+      }
+    }
+  ],
+  "equity": {
+    "population": 61276,
+    "pct_low_income": 24.4,
+    "pct_people_of_color": 10.599999999999994,
+    "pct_under_5": 3.6,
+    "pct_over_64": 14.3,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 25.1,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 23.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 27.1,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 16.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 55.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 24.4,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 65.6,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 62.9,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 71.9,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.8,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 34.5
+      },
+      {
+        "label": "Ozone",
+        "score": 61.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 43.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 27.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 65.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 36.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 71.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 1.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 76.1
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 83.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 107.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Athens County, Ohio (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

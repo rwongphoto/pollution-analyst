@@ -1,0 +1,470 @@
+{
+  "place": {
+    "state": "wi",
+    "state_label": "Wisconsin",
+    "slug": "abbotsford",
+    "name": "Abbotsford",
+    "fips": "5500100",
+    "population": 2186,
+    "county_name": "Clark County",
+    "county_fips": "55019"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 0,
+    "total_releases_pounds": 0.1,
+    "air_releases_pounds": 0.1,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": -2.0,
+    "long_arc_pct_change": -2.0,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 0.1
+      },
+      {
+        "year": 2024,
+        "value": 0.1
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.9598,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.9598
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1095,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1095
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": -2.0,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "henry-g-meigs",
+      "state": "wi",
+      "state_label": "Wisconsin",
+      "name": "Henry G Meigs",
+      "parent_company": "Asphalt Materials INC",
+      "total_pounds_recent": 0.1,
+      "yoy_pct_change": -2.0,
+      "top_chemical": "Polycyclic aromatic compounds",
+      "city": "Abbotsford",
+      "lat": 44.947843,
+      "lng": -90.322423
+    }
+  ],
+  "water": {
+    "utilities_count": 0,
+    "population_served_total": 0,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": []
+  },
+  "superfund": [],
+  "flags": [],
+  "equity": {
+    "population": 2186,
+    "pct_low_income": 17.2,
+    "pct_people_of_color": 44.2,
+    "pct_under_5": 9.4,
+    "pct_over_64": 14.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 20.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 26.0,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 57.1,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 20.2,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 21.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 22.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 65.4,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 94.2,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 79.7,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 27.6,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 23.8
+      },
+      {
+        "label": "Ozone",
+        "score": 19.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 63.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 24.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 23.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 28.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 66.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 106.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 87.1
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 30.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 88.2
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Abbotsford, Wisconsin (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.6,
+      "age_adjusted": 10.7,
+      "state_mean": 10.9,
+      "us_mean": 10.0,
+      "vs_state_pp": -0.19,
+      "vs_state_pct": -1.7,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.68,
+      "vs_us_pct": 6.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 8.0,
+      "age_adjusted": 7.0,
+      "state_mean": 5.5,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.48,
+      "vs_state_pct": 26.8,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.5,
+      "vs_us_pct": 27.3,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.7,
+      "age_adjusted": 6.4,
+      "state_mean": 5.3,
+      "us_mean": 5.3,
+      "vs_state_pp": 1.05,
+      "vs_state_pct": 19.6,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.09,
+      "vs_us_pct": 20.5,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 13.0,
+      "age_adjusted": 11.5,
+      "state_mean": 9.6,
+      "us_mean": 10.5,
+      "vs_state_pp": 1.86,
+      "vs_state_pct": 19.3,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.04,
+      "vs_us_pct": 9.9,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 16.3,
+      "age_adjusted": 17.1,
+      "state_mean": 16.5,
+      "us_mean": 16.8,
+      "vs_state_pp": 0.59,
+      "vs_state_pct": 3.6,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.35,
+      "vs_us_pct": 2.1,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "wi",
+      "slug": "colby",
+      "name": "Colby",
+      "population": 2132,
+      "facilities_count": 1,
+      "total_releases_pounds": 2,
+      "dominant_medium": "air",
+      "ej_pct_avg": 40.5,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "wi",
+      "slug": "owen",
+      "name": "Owen",
+      "population": 972,
+      "facilities_count": 1,
+      "total_releases_pounds": 5,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "wi",
+      "slug": "neillsville",
+      "name": "Neillsville",
+      "population": 2311,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "wi",
+      "slug": "thorp",
+      "name": "Thorp",
+      "population": 1753,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 39.5,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "wi",
+      "slug": "cameron",
+      "name": "Cameron",
+      "population": 1800,
+      "facilities_count": 1,
+      "total_releases_pounds": 0.1,
+      "dominant_medium": "air",
+      "ej_pct_avg": 36.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "wi",
+      "slug": "west-milwaukee",
+      "name": "West Milwaukee",
+      "population": 4096,
+      "facilities_count": 1,
+      "total_releases_pounds": 32513,
+      "dominant_medium": "land",
+      "ej_pct_avg": 80.0,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+35 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T04:14:08Z"
+}

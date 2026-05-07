@@ -1,0 +1,284 @@
+{
+  "place": {
+    "state": "mn",
+    "state_label": "Minnesota",
+    "slug": "hazel-run",
+    "name": "Hazel Run",
+    "fips": "2728016",
+    "population": 80,
+    "county_name": "Yellow Medicine County",
+    "county_fips": "27173"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.9603,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.9603
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0682,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0682
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 61,
+    "violations_5yr_total": 4,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "hazel-run",
+        "state": "mn",
+        "state_label": "Minnesota",
+        "name": "Hazel Run",
+        "pwsid": "MN1870011",
+        "population_served": 61,
+        "health_based_violations_5yr": 2,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 5200",
+      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MN1870011"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 5200",
+      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MN1870011"
+      }
+    }
+  ],
+  "equity": {
+    "population": 80,
+    "pct_low_income": 11.3,
+    "pct_people_of_color": 15.0,
+    "pct_under_5": 23.8,
+    "pct_over_64": 10.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Hazel Run, Minnesota (Census place block groups)"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "mn",
+      "slug": "st-leo",
+      "name": "St. Leo",
+      "population": 151,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mn",
+      "slug": "porter",
+      "name": "Porter",
+      "population": 185,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mn",
+      "slug": "echo",
+      "name": "Echo",
+      "population": 237,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mn",
+      "slug": "hanley-falls",
+      "name": "Hanley Falls",
+      "population": 344,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mn",
+      "slug": "darfur",
+      "name": "Darfur",
+      "population": 80,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mn",
+      "slug": "beltrami",
+      "name": "Beltrami",
+      "population": 80,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T04:04:55Z"
+}

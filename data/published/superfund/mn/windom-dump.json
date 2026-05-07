@@ -1,0 +1,127 @@
+{
+  "site": {
+    "state": "mn",
+    "state_label": "Minnesota",
+    "slug": "windom-dump",
+    "name": "Windom Dump",
+    "epa_id": "MND980034516",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Cottonwood",
+    "county_slug": "cottonwood",
+    "city": "Windom",
+    "city_slug": "windom",
+    "address": "Near Lakeview Ave",
+    "zip": "56101",
+    "lat": 43.86875,
+    "lng": -95.100939
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 8,
+    "primary_contaminant": "1,2-Dichloroethene (Cis And Trans Mixture)"
+  },
+  "contaminants": [
+    {
+      "name": "1,2-Dichloroethene (Cis And Trans Mixture)",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Arsenic",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Benzene",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Chloroethene (Vinyl Chloride)",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Dibutyl Phthalate",
+      "media": "Solid Waste",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Nitrate",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Tetrachloroethene",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Trichloroethene",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MN1170006",
+        "name": "Windom",
+        "slug": "windom",
+        "state": "mn",
+        "distance_miles": 0.97,
+        "place_name": "Windom",
+        "primary_source": "groundwater",
+        "population_served": 4646,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 999,
+    "pct_low_income": 55.6,
+    "pct_people_of_color": 31.4,
+    "pct_under_5": 4.8,
+    "pct_over_64": 20.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:04:55Z"
+}

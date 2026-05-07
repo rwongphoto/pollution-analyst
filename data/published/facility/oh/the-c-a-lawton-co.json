@@ -1,0 +1,177 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "the-c-a-lawton-co",
+    "name": "The C.A. Lawton CO.",
+    "parent_company": "The Lawton Standard Co",
+    "address": "233 N CLEVELAND ST",
+    "city": "Minster",
+    "county": "Auglaize County",
+    "county_slug": "auglaize",
+    "naics_label": "331511 \u00b7 Primary Metals",
+    "lat": 40.398624,
+    "lng": -84.384226
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 25830,
+    "air_releases_pounds": 3,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 25827,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 622.3,
+    "long_arc_pct_change": 553.9,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 3950
+      },
+      {
+        "year": 2022,
+        "value": 4812
+      },
+      {
+        "year": 2023,
+        "value": 3576
+      },
+      {
+        "year": 2024,
+        "value": 25830
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 15913,
+      "history": [
+        {
+          "year": 2021,
+          "value": 882
+        },
+        {
+          "year": 2022,
+          "value": 2470
+        },
+        {
+          "year": 2023,
+          "value": 1225
+        },
+        {
+          "year": 2024,
+          "value": 15913
+        }
+      ],
+      "yoy_pct_change": 1199.0,
+      "long_arc_pct_change": 1704.2,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 6464,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1028
+        },
+        {
+          "year": 2021,
+          "value": 3068
+        },
+        {
+          "year": 2022,
+          "value": 1511
+        },
+        {
+          "year": 2023,
+          "value": 1933
+        },
+        {
+          "year": 2024,
+          "value": 6464
+        }
+      ],
+      "yoy_pct_change": 234.4,
+      "long_arc_pct_change": 528.8,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 3454,
+      "history": [
+        {
+          "year": 2022,
+          "value": 831
+        },
+        {
+          "year": 2023,
+          "value": 418
+        },
+        {
+          "year": 2024,
+          "value": 3454
+        }
+      ],
+      "yoy_pct_change": 726.2,
+      "long_arc_pct_change": 315.6,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Nickel",
+      "summary": "Nickel releases at The C.A. Lawton CO. rose from 1k lb to 16k lb (13.0\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 1199.0,
+      "magnitude_abs": 14688.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 882
+        },
+        {
+          "year": 2022,
+          "value": 2470
+        },
+        {
+          "year": 2023,
+          "value": 1225
+        },
+        {
+          "year": 2024,
+          "value": 15913
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 5836,
+    "pct_low_income": 10.9,
+    "pct_people_of_color": 3.4,
+    "pct_under_5": 5.6,
+    "pct_over_64": 18.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (5 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

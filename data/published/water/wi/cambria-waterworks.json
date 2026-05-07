@@ -1,0 +1,257 @@
+{
+  "utility": {
+    "state": "wi",
+    "state_label": "Wisconsin",
+    "slug": "cambria-waterworks",
+    "name": "Cambria Waterworks",
+    "pwsid": "WI1110041",
+    "population_served": 767,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Cambria"
+    ],
+    "county": "Columbia County",
+    "county_slug": "columbia",
+    "place_slug": "cambria"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 4,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Beryllium",
+      "contaminant_code": "1040",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Beryllium",
+      "contaminant_code": "1040",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Beryllium",
+      "contaminant_code": "1040",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Beryllium",
+      "contaminant_code": "1040",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 4
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Beryllium",
+        "count": 4
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Beryllium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:WI1110041"
+      }
+    }
+  ],
+  "equity": {
+    "population": 750,
+    "pct_low_income": 8.8,
+    "pct_people_of_color": 19.200000000000003,
+    "pct_under_5": 4.8,
+    "pct_over_64": 14.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 38.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 68.3,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 41.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 16.8,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 52.8,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 1.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 80.9,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 85.5,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 17.1,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 44.7,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 29.5,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 38.1
+      },
+      {
+        "label": "Ozone",
+        "score": 43.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 39.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 18.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 50.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 72.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 79.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 18.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 40.9
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 27.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Cambria, Wisconsin (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:14:07Z"
+}

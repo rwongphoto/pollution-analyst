@@ -1,0 +1,84 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "trailer-components-manufacturing-8200",
+    "name": "Trailer Components Manufacturing - 8200",
+    "parent_company": "Buyers Products Co",
+    "address": "8200 TYLER BLVD",
+    "city": "Mentor",
+    "county": "Lake County",
+    "county_slug": "lake",
+    "naics_label": "336390 \u00b7 Transportation Equipment",
+    "lat": 41.682794,
+    "lng": -81.346577
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 10,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 10,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 10
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 5,
+      "history": [
+        {
+          "year": 2024,
+          "value": 5
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 5,
+      "history": [
+        {
+          "year": 2024,
+          "value": 5
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 52697,
+    "pct_low_income": 18.0,
+    "pct_people_of_color": 11.3,
+    "pct_under_5": 5.0,
+    "pct_over_64": 22.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (31 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

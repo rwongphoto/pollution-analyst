@@ -1,0 +1,456 @@
+{
+  "place": {
+    "state": "ia",
+    "state_label": "Iowa",
+    "slug": "lake-view",
+    "name": "Lake View",
+    "fips": "1942690",
+    "population": 920,
+    "county_name": "Sac County",
+    "county_fips": "19161"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 2,
+    "utilities_serving": 1,
+    "total_releases_pounds": 52,
+    "air_releases_pounds": 0.8,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 51,
+    "yoy_pct_change": -29.2,
+    "long_arc_pct_change": 2170.2,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 2
+      },
+      {
+        "year": 2021,
+        "value": 0.7
+      },
+      {
+        "year": 2022,
+        "value": 51
+      },
+      {
+        "year": 2023,
+        "value": 74
+      },
+      {
+        "year": 2024,
+        "value": 52
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.0563,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.0563
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0818,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0818
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 1,
+      "units": "lb",
+      "yoy_pct_change": 60.8,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1
+        },
+        {
+          "year": 2021,
+          "value": 1
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 51,
+      "units": "lb",
+      "yoy_pct_change": -29.8,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 51
+        },
+        {
+          "year": 2023,
+          "value": 73
+        },
+        {
+          "year": 2024,
+          "value": 51
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "evapco-lakeview",
+      "state": "ia",
+      "state_label": "Iowa",
+      "name": "Evapco - Lakeview",
+      "parent_company": "Evapco INC",
+      "total_pounds_recent": 36,
+      "yoy_pct_change": -50.7,
+      "top_chemical": "Chromium",
+      "city": "Lake View",
+      "lat": 42.311574,
+      "lng": -95.013168
+    },
+    {
+      "slug": "hancock-concrete-products",
+      "state": "ia",
+      "state_label": "Iowa",
+      "name": "Hancock Concrete Products",
+      "parent_company": "Crh Americas INC",
+      "total_pounds_recent": 16,
+      "yoy_pct_change": 2216.3,
+      "top_chemical": "Lead compounds",
+      "city": "Lake View",
+      "lat": 42.302066,
+      "lng": -95.047284
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 1133,
+    "violations_5yr_total": 14,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 2,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "lake-view-water-supply",
+        "state": "ia",
+        "state_label": "Iowa",
+        "name": "Lake View Water Supply",
+        "pwsid": "IA8127048",
+        "population_served": 1133,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Haloacetic Acids (HAA5)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2022 (haloacetic acids (haa5)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IA8127048"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2022 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IA8127048"
+      }
+    }
+  ],
+  "equity": {
+    "population": 920,
+    "pct_low_income": 8.3,
+    "pct_people_of_color": 1.5999999999999943,
+    "pct_under_5": 4.3,
+    "pct_over_64": 38.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Lake View, Iowa (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 9.8,
+      "age_adjusted": 10.2,
+      "state_mean": 10.0,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.18,
+      "vs_state_pct": 1.8,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.18,
+      "vs_us_pct": 1.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 9.1,
+      "age_adjusted": 5.9,
+      "state_mean": 6.0,
+      "us_mean": 5.5,
+      "vs_state_pp": -0.06,
+      "vs_state_pct": -1.0,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.4,
+      "vs_us_pct": 7.3,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 9.6,
+      "age_adjusted": 5.2,
+      "state_mean": 5.4,
+      "us_mean": 5.3,
+      "vs_state_pp": -0.17,
+      "vs_state_pct": -3.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.11,
+      "vs_us_pct": -2.1,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 14.4,
+      "age_adjusted": 8.8,
+      "state_mean": 9.7,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.89,
+      "vs_state_pct": -9.2,
+      "vs_state_class": "better",
+      "vs_us_pp": -1.66,
+      "vs_us_pct": -15.9,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 13.5,
+      "age_adjusted": 17.5,
+      "state_mean": 17.3,
+      "us_mean": 16.8,
+      "vs_state_pp": 0.19,
+      "vs_state_pct": 1.1,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.75,
+      "vs_us_pct": 4.5,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ia",
+      "slug": "odebolt",
+      "name": "Odebolt",
+      "population": 873,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 42.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ia",
+      "slug": "schaller",
+      "name": "Schaller",
+      "population": 844,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 42.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ia",
+      "slug": "early",
+      "name": "Early",
+      "population": 787,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ia",
+      "slug": "wall-lake",
+      "name": "Wall Lake",
+      "population": 691,
+      "facilities_count": 1,
+      "total_releases_pounds": 2520,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ia",
+      "slug": "missouri-valley",
+      "name": "Missouri Valley",
+      "population": 2692,
+      "facilities_count": 1,
+      "total_releases_pounds": 73,
+      "dominant_medium": "land",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ia",
+      "slug": "shell-rock",
+      "name": "Shell Rock",
+      "population": 1542,
+      "facilities_count": 1,
+      "total_releases_pounds": 226,
+      "dominant_medium": "land",
+      "ej_pct_avg": 47.1,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T04:36:25Z"
+}

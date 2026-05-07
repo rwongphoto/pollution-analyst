@@ -1,0 +1,365 @@
+{
+  "place": {
+    "state": "ia",
+    "state_label": "Iowa",
+    "slug": "atkins",
+    "name": "Atkins",
+    "fips": "1903475",
+    "population": 2296,
+    "county_name": "Benton County",
+    "county_fips": "19011"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.1479,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.1479
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 2056,
+    "violations_5yr_total": 5,
+    "health_based_5yr_total": 3,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "atkins-municipal-water-works",
+        "state": "ia",
+        "state_label": "Iowa",
+        "name": "Atkins Municipal Water Works",
+        "pwsid": "IA0603072",
+        "population_served": 2056,
+        "health_based_violations_5yr": 3,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Total Trihalomethanes Rule health-based violation cited in 2021 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IA0603072"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Total Trihalomethanes Rule health-based violation cited in 2021 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IA0603072"
+      }
+    }
+  ],
+  "equity": {
+    "population": 2296,
+    "pct_low_income": 2.7,
+    "pct_people_of_color": 2.5,
+    "pct_under_5": 6.3,
+    "pct_over_64": 10.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Atkins, Iowa (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 9.9,
+      "age_adjusted": 9.8,
+      "state_mean": 10.0,
+      "us_mean": 10.0,
+      "vs_state_pp": -0.22,
+      "vs_state_pct": -2.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.22,
+      "vs_us_pct": -2.2,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 5.4,
+      "age_adjusted": 5.0,
+      "state_mean": 6.0,
+      "us_mean": 5.5,
+      "vs_state_pp": -0.96,
+      "vs_state_pct": -16.1,
+      "vs_state_class": "better",
+      "vs_us_pp": -0.5,
+      "vs_us_pct": -9.1,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 5.0,
+      "age_adjusted": 4.8,
+      "state_mean": 5.4,
+      "us_mean": 5.3,
+      "vs_state_pp": -0.57,
+      "vs_state_pct": -10.6,
+      "vs_state_class": "better",
+      "vs_us_pp": -0.51,
+      "vs_us_pct": -9.6,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 8.8,
+      "age_adjusted": 7.8,
+      "state_mean": 9.7,
+      "us_mean": 10.5,
+      "vs_state_pp": -1.89,
+      "vs_state_pct": -19.5,
+      "vs_state_class": "better",
+      "vs_us_pp": -2.66,
+      "vs_us_pct": -25.4,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 16.1,
+      "age_adjusted": 16.6,
+      "state_mean": 17.3,
+      "us_mean": 16.8,
+      "vs_state_pp": -0.71,
+      "vs_state_pct": -4.1,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.15,
+      "vs_us_pct": -0.9,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ia",
+      "slug": "fairfax",
+      "name": "Fairfax",
+      "population": 2814,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ia",
+      "slug": "urbana",
+      "name": "Urbana",
+      "population": 1565,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ia",
+      "slug": "walford",
+      "name": "Walford",
+      "population": 1434,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ia",
+      "slug": "shellsburg",
+      "name": "Shellsburg",
+      "population": 834,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ia",
+      "slug": "lamoni",
+      "name": "Lamoni",
+      "population": 2284,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 33.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ia",
+      "slug": "cascade",
+      "name": "Cascade",
+      "population": 2312,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 50.5,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T04:36:25Z"
+}

@@ -1,0 +1,201 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "trelleborg-seals-profiles-americas",
+    "name": "Trelleborg Seals & Profiles Americas",
+    "parent_company": "Trelleborg CORP",
+    "address": "285 LENA DR",
+    "city": "Aurora",
+    "county": "Portage County",
+    "county_slug": "portage",
+    "naics_label": "326291 \u00b7 Plastics and Rubber",
+    "lat": 41.284032,
+    "lng": -81.335673
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 35657,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 35657,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -44.1,
+    "long_arc_pct_change": 121.2,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 16120
+      },
+      {
+        "year": 2020,
+        "value": 77349
+      },
+      {
+        "year": 2021,
+        "value": 9234
+      },
+      {
+        "year": 2022,
+        "value": 68725
+      },
+      {
+        "year": 2023,
+        "value": 63773
+      },
+      {
+        "year": 2024,
+        "value": 35657
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Sodium nitrite",
+      "cas": "7632-00-0",
+      "category": "general",
+      "total_pounds_recent": 23999,
+      "history": [
+        {
+          "year": 2020,
+          "value": 64322
+        },
+        {
+          "year": 2021,
+          "value": 9234
+        },
+        {
+          "year": 2022,
+          "value": 60999
+        },
+        {
+          "year": 2023,
+          "value": 55999
+        },
+        {
+          "year": 2024,
+          "value": 23999
+        }
+      ],
+      "yoy_pct_change": -57.1,
+      "long_arc_pct_change": -62.7,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 6288,
+      "history": [
+        {
+          "year": 2020,
+          "value": 9156
+        },
+        {
+          "year": 2022,
+          "value": 7479
+        },
+        {
+          "year": 2023,
+          "value": 7619
+        },
+        {
+          "year": 2024,
+          "value": 6288
+        }
+      ],
+      "yoy_pct_change": -17.5,
+      "long_arc_pct_change": -31.3,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 5370,
+      "history": [
+        {
+          "year": 2019,
+          "value": 16010
+        },
+        {
+          "year": 2020,
+          "value": 3871
+        },
+        {
+          "year": 2022,
+          "value": 247
+        },
+        {
+          "year": 2023,
+          "value": 156
+        },
+        {
+          "year": 2024,
+          "value": 5370
+        }
+      ],
+      "yoy_pct_change": 3351.2,
+      "long_arc_pct_change": -66.5,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Sodium nitrite",
+      "summary": "Sodium nitrite releases at Trelleborg Seals & Profiles Americas fell from 56k lb to 24k lb (57% lower) between 2023 and 2024.",
+      "magnitude_pct": -57.1,
+      "magnitude_abs": -32000.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2019,
+          "value": 100
+        },
+        {
+          "year": 2020,
+          "value": 64322
+        },
+        {
+          "year": 2021,
+          "value": 9234
+        },
+        {
+          "year": 2022,
+          "value": 60999
+        },
+        {
+          "year": 2023,
+          "value": 55999
+        },
+        {
+          "year": 2024,
+          "value": 23999
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 20161,
+    "pct_low_income": 22.8,
+    "pct_people_of_color": 14.0,
+    "pct_under_5": 5.3,
+    "pct_over_64": 18.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (14 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

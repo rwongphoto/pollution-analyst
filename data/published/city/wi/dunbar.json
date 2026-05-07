@@ -1,0 +1,351 @@
+{
+  "place": {
+    "state": "wi",
+    "state_label": "Wisconsin",
+    "slug": "dunbar",
+    "name": "Dunbar",
+    "fips": "5520975",
+    "population": 86,
+    "county_name": "Marinette County",
+    "county_fips": "55075"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 19.7,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 19.7
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.8413,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.8413
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1117,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1117
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 175306,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -19.6,
+      "long_arc_pct_change": 124.9,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 77960
+        },
+        {
+          "year": 2011,
+          "value": 73423
+        },
+        {
+          "year": 2012,
+          "value": 108976
+        },
+        {
+          "year": 2013,
+          "value": 108616
+        },
+        {
+          "year": 2014,
+          "value": 148317
+        },
+        {
+          "year": 2015,
+          "value": 106930
+        },
+        {
+          "year": 2016,
+          "value": 139350
+        },
+        {
+          "year": 2017,
+          "value": 165055
+        },
+        {
+          "year": 2018,
+          "value": 215626
+        },
+        {
+          "year": 2019,
+          "value": 121587
+        },
+        {
+          "year": 2020,
+          "value": 119407
+        },
+        {
+          "year": 2021,
+          "value": 131595
+        },
+        {
+          "year": 2022,
+          "value": 218121
+        },
+        {
+          "year": 2023,
+          "value": 175306
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 75,
+    "violations_5yr_total": 160,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 50,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "northland-mission",
+        "state": "wi",
+        "state_label": "Wisconsin",
+        "name": "Northland Mission",
+        "pwsid": "WI4380440",
+        "population_served": 75,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2024 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:WI4380440"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Lindane",
+      "summary": "Unresolved Nitrate/Nitrite violation cited in 2024 (lindane).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:WI4380440"
+      }
+    }
+  ],
+  "equity": {
+    "population": 86,
+    "pct_low_income": 5.8,
+    "pct_people_of_color": 1.2000000000000028,
+    "pct_under_5": 0.0,
+    "pct_over_64": 55.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Dunbar, Wisconsin (Census place block groups)"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "wi",
+      "slug": "goodman",
+      "name": "Goodman",
+      "population": 200,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "wi",
+      "slug": "pound",
+      "name": "Pound",
+      "population": 313,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "wi",
+      "slug": "coleman",
+      "name": "Coleman",
+      "population": 787,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "wi",
+      "slug": "crivitz",
+      "name": "Crivitz",
+      "population": 1187,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "wi",
+      "slug": "glen-flora",
+      "name": "Glen Flora",
+      "population": 85,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "wi",
+      "slug": "stone-lake",
+      "name": "Stone Lake",
+      "population": 83,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T04:14:08Z"
+}

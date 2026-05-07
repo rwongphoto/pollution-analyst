@@ -1,0 +1,143 @@
+{
+  "facility": {
+    "state": "ia",
+    "state_label": "Iowa",
+    "slug": "safety-kleen-systems-des-moines-des",
+    "name": "Safety-Kleen Systems Des Moines (Des)",
+    "parent_company": "Clean Harbors INC",
+    "address": "4704 NE 22ND ST",
+    "city": "Des Moines",
+    "county": "Polk County",
+    "county_slug": "polk",
+    "naics_label": "562112 \u00b7 Hazardous Waste",
+    "lat": 41.646653,
+    "lng": -93.581397
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 80947,
+    "air_releases_pounds": 4,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 80943,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 17451.4,
+    "long_arc_pct_change": 488.5,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 13754
+      },
+      {
+        "year": 2022,
+        "value": 25217
+      },
+      {
+        "year": 2023,
+        "value": 461
+      },
+      {
+        "year": 2024,
+        "value": 80947
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 80613,
+      "history": [
+        {
+          "year": 2021,
+          "value": 13074
+        },
+        {
+          "year": 2022,
+          "value": 24967
+        },
+        {
+          "year": 2024,
+          "value": 80613
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": 516.6,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "N590",
+      "category": "pbt",
+      "total_pounds_recent": 328,
+      "history": [
+        {
+          "year": 2021,
+          "value": 671
+        },
+        {
+          "year": 2022,
+          "value": 247
+        },
+        {
+          "year": 2023,
+          "value": 455
+        },
+        {
+          "year": 2024,
+          "value": 328
+        }
+      ],
+      "yoy_pct_change": -28.0,
+      "long_arc_pct_change": -51.2,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Benzo[g,h,i]perylene",
+      "cas": "191-24-2",
+      "category": "pbt",
+      "total_pounds_recent": 7,
+      "history": [
+        {
+          "year": 2021,
+          "value": 8
+        },
+        {
+          "year": 2022,
+          "value": 3
+        },
+        {
+          "year": 2023,
+          "value": 6
+        },
+        {
+          "year": 2024,
+          "value": 7
+        }
+      ],
+      "yoy_pct_change": 8.2,
+      "long_arc_pct_change": -21.4,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 44389,
+    "pct_low_income": 41.0,
+    "pct_people_of_color": 35.0,
+    "pct_under_5": 6.4,
+    "pct_over_64": 14.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (37 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:36:24Z"
+}

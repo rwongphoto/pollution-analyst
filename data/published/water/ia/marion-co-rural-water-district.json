@@ -1,0 +1,301 @@
+{
+  "utility": {
+    "state": "ia",
+    "state_label": "Iowa",
+    "slug": "marion-co-rural-water-district",
+    "name": "Marion Co. Rural Water District",
+    "pwsid": "IA6342711",
+    "population_served": 5687,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Knoxville"
+    ],
+    "county": "Marion County",
+    "county_slug": "marion",
+    "place_slug": "knoxville"
+  },
+  "reporting_period": {
+    "start": "2023-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 4,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 3,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 7500",
+      "contaminant_code": "7500",
+      "severity": "other",
+      "rule": "Volatile Organic Chemical Rule",
+      "is_unresolved": true,
+      "description": "OTHER"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Cyanide",
+      "contaminant_code": "1041",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Cyanide",
+      "contaminant_code": "1041",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Cyanide",
+      "contaminant_code": "1041",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2023,
+        "value": 3
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Cyanide",
+        "count": 3
+      },
+      {
+        "contaminant": "Contaminant 7500",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7500",
+      "summary": "Unresolved Volatile Organic Chemical Rule violation cited in 2025 (contaminant 7500).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IA6342711"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Cyanide",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2023 (cyanide).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IA6342711"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Cyanide",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2023 (cyanide).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IA6342711"
+      }
+    }
+  ],
+  "equity": {
+    "population": 7523,
+    "pct_low_income": 13.0,
+    "pct_people_of_color": 7.799999999999997,
+    "pct_under_5": 5.6,
+    "pct_over_64": 24.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 23.2,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 23.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 53.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 19.0,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 30.2,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 31.3,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 82.4,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 68.0,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 37.7,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 85.0,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 50.4,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 27.8
+      },
+      {
+        "label": "Ozone",
+        "score": 39.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 60.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 23.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 35.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 38.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 91.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 77.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 43.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 95.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 58.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Knoxville, Iowa (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:36:24Z"
+}

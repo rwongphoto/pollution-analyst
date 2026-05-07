@@ -1,0 +1,150 @@
+{
+  "facility": {
+    "state": "mn",
+    "state_label": "Minnesota",
+    "slug": "new-flyer-of-america",
+    "name": "New Flyer Of America",
+    "parent_company": "New Flyer Holdings INC",
+    "address": "6200 GLENN CARLSON DR",
+    "city": "Saint Cloud",
+    "county": "Stearns County",
+    "county_slug": "stearns",
+    "naics_label": "336120 \u00b7 Transportation Equipment",
+    "lat": 45.46791,
+    "lng": -94.122451
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 8172,
+    "air_releases_pounds": 8172,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -79.2,
+    "long_arc_pct_change": -60.1,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 20466
+      },
+      {
+        "year": 2021,
+        "value": 19717
+      },
+      {
+        "year": 2022,
+        "value": 15420
+      },
+      {
+        "year": 2023,
+        "value": 39259
+      },
+      {
+        "year": 2024,
+        "value": 8172
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "1,2,4-Trimethylbenzene",
+      "cas": "95-63-6",
+      "category": "general",
+      "total_pounds_recent": 8138,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20466
+        },
+        {
+          "year": 2021,
+          "value": 19717
+        },
+        {
+          "year": 2022,
+          "value": 12618
+        },
+        {
+          "year": 2023,
+          "value": 39259
+        },
+        {
+          "year": 2024,
+          "value": 8138
+        }
+      ],
+      "yoy_pct_change": -79.3,
+      "long_arc_pct_change": -60.2,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 34,
+      "history": [
+        {
+          "year": 2024,
+          "value": 34
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "1,2,4-Trimethylbenzene",
+      "summary": "1,2,4-Trimethylbenzene releases at New Flyer Of America fell from 39k lb to 8k lb (79% lower) between 2023 and 2024.",
+      "magnitude_pct": -79.3,
+      "magnitude_abs": -31121.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2020,
+          "value": 20466
+        },
+        {
+          "year": 2021,
+          "value": 19717
+        },
+        {
+          "year": 2022,
+          "value": 12618
+        },
+        {
+          "year": 2023,
+          "value": 39259
+        },
+        {
+          "year": 2024,
+          "value": 8138
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 1889,
+    "pct_low_income": 34.8,
+    "pct_people_of_color": 29.6,
+    "pct_under_5": 10.8,
+    "pct_over_64": 8.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:04:54Z"
+}

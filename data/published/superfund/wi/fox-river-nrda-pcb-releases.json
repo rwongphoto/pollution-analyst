@@ -1,0 +1,143 @@
+{
+  "site": {
+    "state": "wi",
+    "state_label": "Wisconsin",
+    "slug": "fox-river-nrda-pcb-releases",
+    "name": "Fox River Nrda/Pcb Releases",
+    "epa_id": "WI0001954841",
+    "npl_status": "Proposed for NPL",
+    "is_active_npl": false,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Brown",
+    "county_slug": "brown",
+    "city": "Green Bay",
+    "city_slug": "green-bay",
+    "address": "Fox River And Green Bay",
+    "zip": "54302",
+    "lat": 44.5331,
+    "lng": -88.0015
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 10,
+    "primary_contaminant": "Polychlorinated Biphenyls (Pcbs)"
+  },
+  "contaminants": [
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 4
+    },
+    {
+      "name": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin (Tcdd)",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Lead",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Mercury",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Mercury",
+      "media": "Surface Water",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "P,P'-Ddd",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "P,P'-Ddt",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Surface Water",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Arsenic",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "P,P'-Dde",
+      "media": "Sediment",
+      "operable_units": [
+        "04"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "WI4150000",
+        "name": "Cottage Glen Condominiums",
+        "slug": "cottage-glen-condominiums",
+        "state": "wi",
+        "distance_miles": 1.09,
+        "place_name": "Green Bay",
+        "primary_source": "groundwater",
+        "population_served": 52,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 3951,
+    "pct_low_income": 31.3,
+    "pct_people_of_color": 30.4,
+    "pct_under_5": 4.6,
+    "pct_over_64": 10.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:14:08Z"
+}

@@ -1,0 +1,222 @@
+{
+  "utility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "crestline-village-pws",
+    "name": "Crestline Village Pws",
+    "pwsid": "OH1700112",
+    "population_served": 4525,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Crestline"
+    ],
+    "county": "Crawford County",
+    "county_slug": "crawford",
+    "place_slug": "crestline"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 2
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 4490,
+    "pct_low_income": 15.0,
+    "pct_people_of_color": 10.099999999999994,
+    "pct_under_5": 6.8,
+    "pct_over_64": 14.4,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 20.8,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 47.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 60.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 27.0,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 34.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 10.1,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 88.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 47.3,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 15.9,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 53.8,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 48.6,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 17.4
+      },
+      {
+        "label": "Ozone",
+        "score": 52.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 46.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 22.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 26.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 9.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 67.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 37.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 13.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 38.9
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 37.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 61.5
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Crestline, Ohio (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

@@ -1,0 +1,77 @@
+{
+  "facility": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "request-foods-greenly-street-plant",
+    "name": "Request Foods Greenly Street Plant",
+    "parent_company": "Request Foods INC",
+    "address": "12875 GREENLY ST.",
+    "city": "Holland",
+    "county": "Ottawa County",
+    "county_slug": "ottawa",
+    "naics_label": "311412 \u00b7 Food",
+    "lat": 42.83374,
+    "lng": -86.100369
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 5000,
+    "air_releases_pounds": 5000,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": -19.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 6200
+      },
+      {
+        "year": 2024,
+        "value": 5000
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 5000,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6200
+        },
+        {
+          "year": 2024,
+          "value": 5000
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -19.4,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 38919,
+    "pct_low_income": 24.8,
+    "pct_people_of_color": 41.2,
+    "pct_under_5": 5.5,
+    "pct_over_64": 14.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (25 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:51:50Z"
+}

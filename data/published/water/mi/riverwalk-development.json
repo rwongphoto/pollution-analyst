@@ -1,0 +1,222 @@
+{
+  "utility": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "riverwalk-development",
+    "name": "Riverwalk Development",
+    "pwsid": "MI0005712",
+    "population_served": 137,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Hamilton"
+    ],
+    "county": "Allegan County",
+    "county_slug": "allegan",
+    "place_slug": null
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 2
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 120189,
+    "pct_low_income": 9.5,
+    "pct_people_of_color": 13.799999999999997,
+    "pct_under_5": 6.5,
+    "pct_over_64": 17.4,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 22.2,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 84.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 23.0,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 22.2,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 61.7,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 17.9,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 63.9,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 91.5,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 48.2,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 34.4,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 62.8,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 62.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.6,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 19.8
+      },
+      {
+        "label": "Ozone",
+        "score": 65.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 21.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 20.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 39.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 14.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 48.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 48.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 12.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 20.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 38.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 43.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 7.8
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Allegan County, Michigan (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:51:50Z"
+}

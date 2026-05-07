@@ -1,0 +1,88 @@
+{
+  "facility": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "sika-corp",
+    "name": "Sika Corp",
+    "parent_company": "Sika CORP",
+    "address": "1611 HULTS DR",
+    "city": "Eaton Rapids",
+    "county": "Eaton County",
+    "county_slug": "eaton",
+    "naics_label": "325520 \u00b7 Chemicals",
+    "lat": 42.493295,
+    "lng": -84.651196
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 0.81,
+    "air_releases_pounds": 0.81,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2014,
+    "history": [
+      {
+        "year": 2014,
+        "value": 1
+      },
+      {
+        "year": 2024,
+        "value": 0.81
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Mixture",
+      "cas": "MIXTURE",
+      "category": "general",
+      "total_pounds_recent": 0.75,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0.75
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Diisocyanates",
+      "cas": "N120",
+      "category": "general",
+      "total_pounds_recent": 0.06,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0.06
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 9542,
+    "pct_low_income": 20.4,
+    "pct_people_of_color": 8.1,
+    "pct_under_5": 5.9,
+    "pct_over_64": 15.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:51:50Z"
+}

@@ -1,0 +1,147 @@
+{
+  "site": {
+    "state": "wi",
+    "state_label": "Wisconsin",
+    "slug": "sheboygan-harbor-river",
+    "name": "Sheboygan Harbor & River",
+    "epa_id": "WID980996367",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Sheboygan",
+    "county_slug": "sheboygan",
+    "city": "Sheboygan",
+    "city_slug": null,
+    "address": "Harbor",
+    "zip": "53081",
+    "lat": 43.749444,
+    "lng": -87.70075
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 9,
+    "primary_contaminant": "Arsenic"
+  },
+  "contaminants": [
+    {
+      "name": "Arsenic",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Cadmium",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Chromium",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Copper",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Mercury",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Nickel",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Surface Water",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Zinc",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "WI4600403",
+        "name": "Sheboygan Tn Waterworks",
+        "slug": "sheboygan-tn-waterworks",
+        "state": "wi",
+        "distance_miles": 1.64,
+        "place_name": "Sheboygan",
+        "primary_source": "groundwater",
+        "population_served": 4596,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "WI4600447",
+        "name": "Rocky Knoll Health Care Fac",
+        "slug": "rocky-knoll-health-care-fac",
+        "state": "wi",
+        "distance_miles": 1.64,
+        "place_name": "Sheboygan",
+        "primary_source": "groundwater",
+        "population_served": 564,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 5320,
+    "pct_low_income": 45.4,
+    "pct_people_of_color": 26.3,
+    "pct_under_5": 4.2,
+    "pct_over_64": 23.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (4 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:14:08Z"
+}

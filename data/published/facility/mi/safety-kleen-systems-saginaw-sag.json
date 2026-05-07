@@ -1,0 +1,181 @@
+{
+  "facility": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "safety-kleen-systems-saginaw-sag",
+    "name": "Safety-Kleen Systems Saginaw (Sag)",
+    "parent_company": "Clean Harbors INC",
+    "address": "3899 WOLF RD",
+    "city": "Saginaw",
+    "county": "Saginaw County",
+    "county_slug": "saginaw",
+    "naics_label": "562112 \u00b7 Hazardous Waste",
+    "lat": 43.464851,
+    "lng": -83.885722
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 50530,
+    "air_releases_pounds": 3,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 50527,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 63.4,
+    "long_arc_pct_change": 63.4,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 30932
+      },
+      {
+        "year": 2024,
+        "value": 50530
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 48912,
+      "history": [
+        {
+          "year": 2023,
+          "value": 30233
+        },
+        {
+          "year": 2024,
+          "value": 48912
+        }
+      ],
+      "yoy_pct_change": 61.8,
+      "long_arc_pct_change": 61.8,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "N590",
+      "category": "pbt",
+      "total_pounds_recent": 1600,
+      "history": [
+        {
+          "year": 2023,
+          "value": 691
+        },
+        {
+          "year": 2024,
+          "value": 1600
+        }
+      ],
+      "yoy_pct_change": 131.6,
+      "long_arc_pct_change": 131.6,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Benzo[g,h,i]perylene",
+      "cas": "191-24-2",
+      "category": "pbt",
+      "total_pounds_recent": 19,
+      "history": [
+        {
+          "year": 2023,
+          "value": 9
+        },
+        {
+          "year": 2024,
+          "value": 19
+        }
+      ],
+      "yoy_pct_change": 113.8,
+      "long_arc_pct_change": 113.8,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Ethylene glycol",
+      "summary": "Ethylene glycol releases at Safety-Kleen Systems Saginaw (Sag) rose from 30k lb to 49k lb between 2023 and 2024.",
+      "magnitude_pct": 61.8,
+      "magnitude_abs": 18679.5,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 16
+        },
+        {
+          "year": 2011,
+          "value": 18
+        },
+        {
+          "year": 2012,
+          "value": 14
+        },
+        {
+          "year": 2013,
+          "value": 7
+        },
+        {
+          "year": 2014,
+          "value": 6
+        },
+        {
+          "year": 2015,
+          "value": 6
+        },
+        {
+          "year": 2016,
+          "value": 5
+        },
+        {
+          "year": 2017,
+          "value": 6
+        },
+        {
+          "year": 2018,
+          "value": 5
+        },
+        {
+          "year": 2019,
+          "value": 4
+        },
+        {
+          "year": 2022,
+          "value": 4
+        },
+        {
+          "year": 2023,
+          "value": 30233
+        },
+        {
+          "year": 2024,
+          "value": 48912
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 13069,
+    "pct_low_income": 53.4,
+    "pct_people_of_color": 56.4,
+    "pct_under_5": 6.5,
+    "pct_over_64": 14.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (15 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:51:50Z"
+}

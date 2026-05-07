@@ -1,0 +1,205 @@
+{
+  "utility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "marysville-city-pws",
+    "name": "Marysville City Pws",
+    "pwsid": "OH8000314",
+    "population_served": 25571,
+    "primary_source": "surface_water",
+    "cities_served": [
+      "Marysville"
+    ],
+    "county": "Union County",
+    "county_slug": "union",
+    "place_slug": "marysville"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 25806,
+    "pct_low_income": 7.8,
+    "pct_people_of_color": 12.299999999999997,
+    "pct_under_5": 6.2,
+    "pct_over_64": 11.7,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 31.1,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 51.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 79.8,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 39.5,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 52.0,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 31.3,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 59.9,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 84.6,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 20.1,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 78.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 37.0,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 17.5
+      },
+      {
+        "label": "Ozone",
+        "score": 39.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 41.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 21.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 28.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 17.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 28.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 44.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 12.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 37.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 20.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 42.1
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Marysville, Ohio (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:14Z"
+}

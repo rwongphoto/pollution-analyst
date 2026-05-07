@@ -1,0 +1,218 @@
+{
+  "utility": {
+    "state": "mn",
+    "state_label": "Minnesota",
+    "slug": "good-thunder",
+    "name": "Good Thunder",
+    "pwsid": "MN1070005",
+    "population_served": 583,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Good Thunder"
+    ],
+    "county": "Blue Earth County",
+    "county_slug": "blue-earth",
+    "place_slug": "good-thunder"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Chlorine",
+      "contaminant_code": "0999",
+      "severity": "monitoring",
+      "rule": "Disinfectants and Disinfection Byproducts (Stage 2)",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 1
+      },
+      {
+        "contaminant": "Chlorine",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 69022,
+    "pct_low_income": 16.4,
+    "pct_people_of_color": 13.900000000000006,
+    "pct_under_5": 5.7,
+    "pct_over_64": 14.5,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 9.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 32.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 59.6,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 31.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 52.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 33.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 66.0,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 77.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 66.8,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 20.8,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 60.8,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 25.4,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 10.6
+      },
+      {
+        "label": "Ozone",
+        "score": 35.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 62.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 34.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 48.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 36.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 49.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 64.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 62.9
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 21.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 45.3
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 25.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Blue Earth County, Minnesota (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:04:54Z"
+}

@@ -1,0 +1,116 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "ohio-pickling-processing",
+    "name": "Ohio Pickling & Processing",
+    "parent_company": null,
+    "address": "1149 CAMBELL ST",
+    "city": "Toledo",
+    "county": "Lucas County",
+    "county_slug": "lucas",
+    "naics_label": "332813 \u00b7 Fabricated Metals",
+    "lat": 41.642031,
+    "lng": -83.571199
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 8869,
+    "air_releases_pounds": 1995,
+    "water_releases_pounds": 37,
+    "land_releases_pounds": 6837,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 586.4,
+    "long_arc_pct_change": 224.8,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 2731
+      },
+      {
+        "year": 2022,
+        "value": 7797
+      },
+      {
+        "year": 2023,
+        "value": 1292
+      },
+      {
+        "year": 2024,
+        "value": 8869
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 6874,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6085
+        },
+        {
+          "year": 2023,
+          "value": 57
+        },
+        {
+          "year": 2024,
+          "value": 6874
+        }
+      ],
+      "yoy_pct_change": 12013.8,
+      "long_arc_pct_change": 13.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Hydrochloric acid (acid aerosols including mists, vapors, gas, fog, and other airborne forms of any particle size)",
+      "cas": "7647-01-0",
+      "category": "respiratory",
+      "total_pounds_recent": 1995,
+      "history": [
+        {
+          "year": 2021,
+          "value": 2695
+        },
+        {
+          "year": 2022,
+          "value": 1235
+        },
+        {
+          "year": 2023,
+          "value": 1179
+        },
+        {
+          "year": 2024,
+          "value": 1995
+        }
+      ],
+      "yoy_pct_change": 69.3,
+      "long_arc_pct_change": -26.0,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 90241,
+    "pct_low_income": 58.0,
+    "pct_people_of_color": 54.4,
+    "pct_under_5": 5.8,
+    "pct_over_64": 13.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (128 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

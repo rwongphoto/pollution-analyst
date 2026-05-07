@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "seneca-gas-processing-plant",
+    "name": "Seneca Gas Processing Plant",
+    "parent_company": "Marathon Petroleum CORP",
+    "address": "26645 ZEP ROAD EAST",
+    "city": "Summerfield",
+    "county": "Noble County",
+    "county_slug": "noble",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 39.800111,
+    "lng": -81.343881
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 9581,
+    "air_releases_pounds": 9054,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 527,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 40.8,
+    "long_arc_pct_change": -40.5,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 16106
+      },
+      {
+        "year": 2023,
+        "value": 6807
+      },
+      {
+        "year": 2024,
+        "value": 9581
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 9581,
+      "history": [
+        {
+          "year": 2022,
+          "value": 16106
+        },
+        {
+          "year": 2023,
+          "value": 6807
+        },
+        {
+          "year": 2024,
+          "value": 9581
+        }
+      ],
+      "yoy_pct_change": 40.8,
+      "long_arc_pct_change": -40.5,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 557,
+    "pct_low_income": 41.3,
+    "pct_people_of_color": 1.4,
+    "pct_under_5": 10.1,
+    "pct_over_64": 31.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

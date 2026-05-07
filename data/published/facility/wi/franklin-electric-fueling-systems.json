@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "wi",
+    "state_label": "Wisconsin",
+    "slug": "franklin-electric-fueling-systems",
+    "name": "Franklin Electric Fueling Systems",
+    "parent_company": "Franklin Electric Co",
+    "address": "600 BURTON BLVD",
+    "city": "Deforest",
+    "county": "Dane County",
+    "county_slug": "dane",
+    "naics_label": "326199 \u00b7 Plastics and Rubber",
+    "lat": 43.257619,
+    "lng": -89.335522
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3288,
+    "air_releases_pounds": 3126,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 162,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -18.3,
+    "long_arc_pct_change": -13.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 3780
+      },
+      {
+        "year": 2023,
+        "value": 4026
+      },
+      {
+        "year": 2024,
+        "value": 3288
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Styrene",
+      "cas": "100-42-5",
+      "category": "carcinogen",
+      "total_pounds_recent": 3288,
+      "history": [
+        {
+          "year": 2022,
+          "value": 3780
+        },
+        {
+          "year": 2023,
+          "value": 4026
+        },
+        {
+          "year": 2024,
+          "value": 3288
+        }
+      ],
+      "yoy_pct_change": -18.3,
+      "long_arc_pct_change": -13.0,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 16303,
+    "pct_low_income": 16.7,
+    "pct_people_of_color": 14.2,
+    "pct_under_5": 6.1,
+    "pct_over_64": 14.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:14:07Z"
+}

@@ -1,0 +1,199 @@
+{
+  "site": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "motor-wheel-inc",
+    "name": "Motor Wheel, Inc.",
+    "epa_id": "MID980702989",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Ingham",
+    "county_slug": "ingham",
+    "city": "Lansing",
+    "city_slug": "lansing",
+    "address": "2401 N High St (Rear)",
+    "zip": "48906",
+    "lat": 42.760831,
+    "lng": -84.535
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 11,
+    "primary_contaminant": "Arsenic"
+  },
+  "contaminants": [
+    {
+      "name": "Arsenic",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Chloroethene (Vinyl Chloride)",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Dieldrin",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Fluoride",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Heptachlor",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "P,P'-Ddt",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polycyclic Aromatic Hydrocarbons (Pahs)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Tetrachloroethene",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Toluene",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Trichloroethene",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Xylene (Mixed Isomers)",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MI0000796",
+        "name": "General White Apartments",
+        "slug": "general-white-apartments",
+        "state": "mi",
+        "distance_miles": 2.79,
+        "place_name": "East Lansing",
+        "primary_source": "groundwater",
+        "population_served": 50,
+        "health_based_5yr": 3,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MI0001995",
+        "name": "East Lansing Meridian Water Authority",
+        "slug": "east-lansing-meridian-water-authority",
+        "state": "mi",
+        "distance_miles": 2.79,
+        "place_name": "East Lansing",
+        "primary_source": "groundwater",
+        "population_served": 1,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MI0002845",
+        "name": "Gregg Apartments",
+        "slug": "gregg-apartments",
+        "state": "mi",
+        "distance_miles": 2.79,
+        "place_name": "East Lansing",
+        "primary_source": "groundwater",
+        "population_served": 64,
+        "health_based_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MI0004340",
+        "name": "Michigan State University",
+        "slug": "michigan-state-university",
+        "state": "mi",
+        "distance_miles": 2.79,
+        "place_name": "East Lansing",
+        "primary_source": "groundwater",
+        "population_served": 12793,
+        "health_based_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MI0007285",
+        "name": "Eagle Pointe Condominiums",
+        "slug": "eagle-pointe-condominiums",
+        "state": "mi",
+        "distance_miles": 2.79,
+        "place_name": "East Lansing",
+        "primary_source": "groundwater",
+        "population_served": 90,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 8202,
+    "pct_low_income": 37.7,
+    "pct_people_of_color": 42.9,
+    "pct_under_5": 6.0,
+    "pct_over_64": 13.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (8 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:51:51Z"
+}

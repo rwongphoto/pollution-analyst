@@ -1,0 +1,549 @@
+{
+  "place": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "bessemer",
+    "name": "Bessemer",
+    "fips": "2607960",
+    "population": 1708,
+    "county_name": "Gogebic County",
+    "county_fips": "26053"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 16.4,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 16.4
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.7193,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.7193
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.065,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.065
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 33257,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -16.5,
+      "long_arc_pct_change": -26.6,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 45310
+        },
+        {
+          "year": 2011,
+          "value": 15718
+        },
+        {
+          "year": 2012,
+          "value": 4275
+        },
+        {
+          "year": 2013,
+          "value": 4684
+        },
+        {
+          "year": 2014,
+          "value": 1944
+        },
+        {
+          "year": 2015,
+          "value": 35047
+        },
+        {
+          "year": 2019,
+          "value": 53915
+        },
+        {
+          "year": 2020,
+          "value": 38876
+        },
+        {
+          "year": 2021,
+          "value": 53363
+        },
+        {
+          "year": 2022,
+          "value": 39835
+        },
+        {
+          "year": 2023,
+          "value": 33257
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 1796,
+    "violations_5yr_total": 13,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 4,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "bessemer",
+        "state": "mi",
+        "state_label": "Michigan",
+        "name": "Bessemer",
+        "pwsid": "MI0000660",
+        "population_served": 1619,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "gogebic-range-water-auth",
+        "state": "mi",
+        "state_label": "Michigan",
+        "name": "Gogebic Range Water Auth",
+        "pwsid": "MI0002685",
+        "population_served": 177,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2022 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MI0002685"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2022 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MI0002685"
+      }
+    }
+  ],
+  "equity": {
+    "population": 1708,
+    "pct_low_income": 18.4,
+    "pct_people_of_color": 6.599999999999994,
+    "pct_under_5": 5.9,
+    "pct_over_64": 23.2,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 1.4,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 12.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 34.0,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 4.5,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 0.6,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 13.2,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 85.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 92.6,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 9.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 0.9
+      },
+      {
+        "label": "Ozone",
+        "score": 10.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 30.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 4.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 0.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 13.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 74.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 82.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 8.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Bessemer, Michigan (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.7,
+      "age_adjusted": 11.9,
+      "state_mean": 11.6,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.35,
+      "vs_state_pct": 3.0,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.88,
+      "vs_us_pct": 18.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 10.8,
+      "age_adjusted": 8.4,
+      "state_mean": 6.9,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.46,
+      "vs_state_pct": 21.0,
+      "vs_state_class": "worse",
+      "vs_us_pp": 2.9,
+      "vs_us_pct": 52.7,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 9.3,
+      "age_adjusted": 6.5,
+      "state_mean": 5.7,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.83,
+      "vs_state_pct": 14.6,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.19,
+      "vs_us_pct": 22.4,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 14.0,
+      "age_adjusted": 10.5,
+      "state_mean": 10.1,
+      "us_mean": 10.5,
+      "vs_state_pp": 0.4,
+      "vs_state_pct": 4.0,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.04,
+      "vs_us_pct": 0.4,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 18.4,
+      "age_adjusted": 20.7,
+      "state_mean": 18.7,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.96,
+      "vs_state_pct": 10.5,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 3.95,
+      "vs_us_pct": 23.6,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "wakefield",
+      "name": "Wakefield",
+      "population": 1554,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 32.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "ramsay",
+      "name": "Ramsay",
+      "population": 272,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "marenisco",
+      "name": "Marenisco",
+      "population": 249,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "watersmeet",
+      "name": "Watersmeet",
+      "population": 243,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 23.8,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "sylvan-lake",
+      "name": "Sylvan Lake",
+      "population": 1729,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 64.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "huntington-woods",
+      "name": "Huntington Woods",
+      "population": 6365,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 71.9,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+39 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T03:51:52Z"
+}

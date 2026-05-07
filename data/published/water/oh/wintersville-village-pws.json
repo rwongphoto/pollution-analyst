@@ -1,0 +1,218 @@
+{
+  "utility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "wintersville-village-pws",
+    "name": "Wintersville Village Pws",
+    "pwsid": "OH4103003",
+    "population_served": 3924,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Wintersville"
+    ],
+    "county": "Jefferson County",
+    "county_slug": "jefferson",
+    "place_slug": "wintersville"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Total Trihalomethanes (TTHM)",
+      "contaminant_code": "2950",
+      "severity": "monitoring",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Haloacetic Acids (HAA5)",
+      "contaminant_code": "2456",
+      "severity": "monitoring",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Total Trihalomethanes (TTHM)",
+        "count": 1
+      },
+      {
+        "contaminant": "Haloacetic Acids (HAA5)",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 3983,
+    "pct_low_income": 13.2,
+    "pct_people_of_color": 7.400000000000006,
+    "pct_under_5": 3.6,
+    "pct_over_64": 22.5,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 35.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 59.0,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 41.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 28.8,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 71.8,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 27.1,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 67.7,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 66.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 42.9,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 61.1,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 80.0,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 79.9,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 36.1
+      },
+      {
+        "label": "Ozone",
+        "score": 70.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 40.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 29.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 69.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 27.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 59.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 64.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 41.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 56.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 76.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 75.8
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Wintersville, Ohio (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:14Z"
+}

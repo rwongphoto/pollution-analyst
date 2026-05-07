@@ -1,0 +1,74 @@
+{
+  "site": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "kaydon-corp",
+    "name": "Kaydon Corp.",
+    "epa_id": "MID006016703",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Muskegon",
+    "county_slug": "muskegon",
+    "city": "Norton Shores",
+    "city_slug": "norton-shores",
+    "address": "2860 Mccracken Ave",
+    "zip": "49441",
+    "lat": 43.2007,
+    "lng": -86.2908
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MI0040356",
+        "name": "Arlington Woods",
+        "slug": "arlington-woods",
+        "state": "mi",
+        "distance_miles": 2.46,
+        "place_name": "Muskegon",
+        "primary_source": "groundwater",
+        "population_served": 1650,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MI0040361",
+        "name": "Maple Island Estates",
+        "slug": "maple-island-estates",
+        "state": "mi",
+        "distance_miles": 2.46,
+        "place_name": "Muskegon",
+        "primary_source": "groundwater",
+        "population_served": 320,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 7439,
+    "pct_low_income": 28.8,
+    "pct_people_of_color": 18.6,
+    "pct_under_5": 7.5,
+    "pct_over_64": 17.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (9 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:51:51Z"
+}

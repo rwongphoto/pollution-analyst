@@ -1,0 +1,83 @@
+{
+  "site": {
+    "state": "wi",
+    "state_label": "Wisconsin",
+    "slug": "scrap-processing-co-inc",
+    "name": "Scrap Processing Co., Inc.",
+    "epa_id": "WID046536785",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Taylor",
+    "county_slug": "taylor",
+    "city": "Medford",
+    "city_slug": "medford",
+    "address": "510 W Allman",
+    "zip": "54451",
+    "lat": 45.1456,
+    "lng": -90.3529
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 1,
+    "primary_contaminant": "Lead"
+  },
+  "contaminants": [
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "WI8610125",
+        "name": "Medford Waterworks",
+        "slug": "medford-waterworks",
+        "state": "wi",
+        "distance_miles": 0.86,
+        "place_name": "Medford",
+        "primary_source": "groundwater",
+        "population_served": 4318,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "WI8610411",
+        "name": "Medford Mhp Llc",
+        "slug": "medford-mhp-llc",
+        "state": "wi",
+        "distance_miles": 0.86,
+        "place_name": "Medford",
+        "primary_source": "groundwater",
+        "population_served": 51,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 2014,
+    "pct_low_income": 28.8,
+    "pct_people_of_color": 2.7,
+    "pct_under_5": 5.6,
+    "pct_over_64": 24.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:14:08Z"
+}

@@ -1,0 +1,239 @@
+{
+  "utility": {
+    "state": "ia",
+    "state_label": "Iowa",
+    "slug": "corning-muni-water-department",
+    "name": "Corning Muni Water Department",
+    "pwsid": "IA0220075",
+    "population_served": 1735,
+    "primary_source": "surface_water",
+    "cities_served": [
+      "Corning"
+    ],
+    "county": "Adams County",
+    "county_slug": "adams",
+    "place_slug": "corning"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Beryllium",
+      "contaminant_code": "1040",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Beryllium",
+      "contaminant_code": "1040",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 2
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Beryllium",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Beryllium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IA0220075"
+      }
+    }
+  ],
+  "equity": {
+    "population": 3680,
+    "pct_low_income": 9.5,
+    "pct_people_of_color": 5.700000000000003,
+    "pct_under_5": 6.1,
+    "pct_over_64": 23.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 16.8,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 17.4,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 20.8,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 12.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 22.8,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 2.9,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 83.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 52.9,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 35.7,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 31.4,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 14.4
+      },
+      {
+        "label": "Ozone",
+        "score": 27.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 17.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 11.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 17.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 2.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 63.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 41.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 22.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 24.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Adams County, Iowa (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:36:24Z"
+}

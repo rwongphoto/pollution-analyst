@@ -1,0 +1,253 @@
+{
+  "utility": {
+    "state": "mn",
+    "state_label": "Minnesota",
+    "slug": "majestic-greens-llc-senior-living-apt",
+    "name": "Majestic Greens Llc Senior Living (Apt.)",
+    "pwsid": "MN1020038",
+    "population_served": 67,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Golden Valley"
+    ],
+    "county": "Anoka County",
+    "county_slug": "anoka",
+    "place_slug": "golden-valley"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 4,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Chlorine",
+      "contaminant_code": "0999",
+      "severity": "monitoring",
+      "rule": "Disinfectants and Disinfection Byproducts (Stage 2)",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Chlorine",
+      "contaminant_code": "0999",
+      "severity": "monitoring",
+      "rule": "Disinfectants and Disinfection Byproducts (Stage 2)",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 4
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 2
+      },
+      {
+        "contaminant": "Chlorine",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Chlorine",
+      "summary": "Unresolved Disinfectants and Disinfection Byproducts (Stage 2) violation cited in 2025 (chlorine).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MN1020038"
+      }
+    }
+  ],
+  "equity": {
+    "population": 22142,
+    "pct_low_income": 8.6,
+    "pct_people_of_color": 18.799999999999997,
+    "pct_under_5": 4.6,
+    "pct_over_64": 22.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 26.6,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 24.4,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 69.6,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 83.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 64.8,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 86.2,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 72.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 92.0,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 73.1,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 85.4,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 69.0,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 20.1,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.6,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 16.9
+      },
+      {
+        "label": "Ozone",
+        "score": 15.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 41.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 51.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 39.6
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 52.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 33.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 55.6
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 43.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 51.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 35.8
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 12.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 2.2
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Golden Valley, Minnesota (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:04:54Z"
+}

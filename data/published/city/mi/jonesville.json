@@ -1,0 +1,371 @@
+{
+  "place": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "jonesville",
+    "name": "Jonesville",
+    "fips": "2641920",
+    "population": 2304,
+    "county_name": "Hillsdale County",
+    "county_fips": "26059"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.1362,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.1362
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1052,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1052
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2016)",
+      "current": 115665,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -64.1,
+      "long_arc_pct_change": -72.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 418741
+        },
+        {
+          "year": 2011,
+          "value": 337182
+        },
+        {
+          "year": 2012,
+          "value": 361321
+        },
+        {
+          "year": 2013,
+          "value": 248819
+        },
+        {
+          "year": 2014,
+          "value": 375276
+        },
+        {
+          "year": 2015,
+          "value": 322320
+        },
+        {
+          "year": 2016,
+          "value": 115665
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 2258,
+    "violations_5yr_total": 5,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "jonesville",
+        "state": "mi",
+        "state_label": "Michigan",
+        "name": "Jonesville",
+        "pwsid": "MI0003490",
+        "population_served": 2258,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [],
+  "equity": {
+    "population": 2304,
+    "pct_low_income": 24.8,
+    "pct_people_of_color": 4.700000000000003,
+    "pct_under_5": 8.0,
+    "pct_over_64": 14.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Jonesville, Michigan (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 12.0,
+      "age_adjusted": 12.2,
+      "state_mean": 11.6,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.65,
+      "vs_state_pct": 5.6,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.18,
+      "vs_us_pct": 21.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 11.2,
+      "age_adjusted": 9.0,
+      "state_mean": 6.9,
+      "us_mean": 5.5,
+      "vs_state_pp": 2.06,
+      "vs_state_pct": 29.7,
+      "vs_state_class": "worse",
+      "vs_us_pp": 3.5,
+      "vs_us_pct": 63.6,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.9,
+      "age_adjusted": 6.6,
+      "state_mean": 5.7,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.93,
+      "vs_state_pct": 16.4,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.29,
+      "vs_us_pct": 24.3,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 13.8,
+      "age_adjusted": 10.9,
+      "state_mean": 10.1,
+      "us_mean": 10.5,
+      "vs_state_pp": 0.8,
+      "vs_state_pct": 7.9,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.44,
+      "vs_us_pct": 4.2,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 19.3,
+      "age_adjusted": 21.1,
+      "state_mean": 18.7,
+      "us_mean": 16.8,
+      "vs_state_pp": 2.36,
+      "vs_state_pct": 12.6,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 4.35,
+      "vs_us_pct": 26.0,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "reading",
+      "name": "Reading",
+      "population": 1207,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "litchfield",
+      "name": "Litchfield",
+      "population": 1195,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "camden",
+      "name": "Camden",
+      "population": 699,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "waldron",
+      "name": "Waldron",
+      "population": 605,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "harrison",
+      "name": "Harrison",
+      "population": 2311,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 38.7,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "perry",
+      "name": "Perry",
+      "population": 2281,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T03:51:52Z"
+}

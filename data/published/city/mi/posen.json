@@ -1,0 +1,384 @@
+{
+  "place": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "posen",
+    "name": "Posen",
+    "fips": "2666000",
+    "population": 237,
+    "county_name": "Presque Isle County",
+    "county_fips": "26141"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.7046,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.7046
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0582,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0582
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 34555,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -22.9,
+      "long_arc_pct_change": 11.7,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 30924
+        },
+        {
+          "year": 2011,
+          "value": 32791
+        },
+        {
+          "year": 2012,
+          "value": 32434
+        },
+        {
+          "year": 2013,
+          "value": 33580
+        },
+        {
+          "year": 2014,
+          "value": 35336
+        },
+        {
+          "year": 2015,
+          "value": 38077
+        },
+        {
+          "year": 2016,
+          "value": 41200
+        },
+        {
+          "year": 2017,
+          "value": 37094
+        },
+        {
+          "year": 2018,
+          "value": 47682
+        },
+        {
+          "year": 2019,
+          "value": 60590
+        },
+        {
+          "year": 2020,
+          "value": 66041
+        },
+        {
+          "year": 2021,
+          "value": 70893
+        },
+        {
+          "year": 2022,
+          "value": 44821
+        },
+        {
+          "year": 2023,
+          "value": 34555
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 234,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "posen-village-of",
+        "state": "mi",
+        "state_label": "Michigan",
+        "name": "Posen, Village Of",
+        "pwsid": "MI0005543",
+        "population_served": 234,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [],
+  "equity": {
+    "population": 237,
+    "pct_low_income": 24.9,
+    "pct_people_of_color": 2.0999999999999943,
+    "pct_under_5": 3.4,
+    "pct_over_64": 25.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Posen, Michigan (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 12.0,
+      "age_adjusted": 12.1,
+      "state_mean": 11.6,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.55,
+      "vs_state_pct": 4.8,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 2.08,
+      "vs_us_pct": 20.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 10.8,
+      "age_adjusted": 8.6,
+      "state_mean": 6.9,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.66,
+      "vs_state_pct": 23.9,
+      "vs_state_class": "worse",
+      "vs_us_pp": 3.1,
+      "vs_us_pct": 56.4,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.4,
+      "age_adjusted": 6.1,
+      "state_mean": 5.7,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.43,
+      "vs_state_pct": 7.6,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.79,
+      "vs_us_pct": 14.9,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 13.0,
+      "age_adjusted": 10.0,
+      "state_mean": 10.1,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.1,
+      "vs_state_pct": -1.0,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.46,
+      "vs_us_pct": -4.4,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 18.8,
+      "age_adjusted": 21.0,
+      "state_mean": 18.7,
+      "us_mean": 16.8,
+      "vs_state_pp": 2.26,
+      "vs_state_pct": 12.1,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 4.25,
+      "vs_us_pct": 25.4,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "millersburg",
+      "name": "Millersburg",
+      "population": 162,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "onaway",
+      "name": "Onaway",
+      "population": 813,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 35.4,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "rogers-city",
+      "name": "Rogers City",
+      "population": 2866,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 34.3,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "lincoln",
+      "name": "Lincoln",
+      "population": 233,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "applegate",
+      "name": "Applegate",
+      "population": 233,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "watersmeet",
+      "name": "Watersmeet",
+      "population": 243,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 23.8,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T03:51:52Z"
+}

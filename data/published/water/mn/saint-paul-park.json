@@ -1,0 +1,213 @@
+{
+  "utility": {
+    "state": "mn",
+    "state_label": "Minnesota",
+    "slug": "saint-paul-park",
+    "name": "Saint Paul Park",
+    "pwsid": "MN1820018",
+    "population_served": 5427,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "St. Paul Park"
+    ],
+    "county": "Washington County",
+    "county_slug": "washington",
+    "place_slug": "st-paul-park"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 5497,
+    "pct_low_income": 5.6,
+    "pct_people_of_color": 24.900000000000006,
+    "pct_under_5": 6.1,
+    "pct_over_64": 12.9,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 30.0,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 21.2,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 54.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 54.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 81.6,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 50.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 64.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 95.2,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 71.1,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 49.0,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 74.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 24.0
+      },
+      {
+        "label": "Ozone",
+        "score": 20.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 40.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 42.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 62.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 38.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 38.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 73.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 54.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 36.1
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 57.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "St. Paul Park, Minnesota (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:04:54Z"
+}

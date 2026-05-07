@@ -1,0 +1,213 @@
+{
+  "facility": {
+    "state": "ia",
+    "state_label": "Iowa",
+    "slug": "perdue-foods-llc-sioux-preme-packing-co-center-plant",
+    "name": "Perdue Foods LLC - Sioux Preme Packing CO. Center Plant",
+    "parent_company": "Perdue Farms INC",
+    "address": "4241 US-75 - 2 MI S OF TOWN",
+    "city": "Sioux Center",
+    "county": "Sioux County",
+    "county_slug": "sioux",
+    "naics_label": "311611 \u00b7 Food",
+    "lat": 43.034952,
+    "lng": -96.175212
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 54381,
+    "air_releases_pounds": 11672,
+    "water_releases_pounds": 151,
+    "land_releases_pounds": 42557,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 200.3,
+    "long_arc_pct_change": 1414.8,
+    "long_arc_baseline_year": 2015,
+    "history": [
+      {
+        "year": 2015,
+        "value": 3590
+      },
+      {
+        "year": 2016,
+        "value": 4800
+      },
+      {
+        "year": 2017,
+        "value": 9000
+      },
+      {
+        "year": 2018,
+        "value": 7310
+      },
+      {
+        "year": 2019,
+        "value": 6636
+      },
+      {
+        "year": 2020,
+        "value": 29736
+      },
+      {
+        "year": 2021,
+        "value": 11154
+      },
+      {
+        "year": 2022,
+        "value": 7116
+      },
+      {
+        "year": 2023,
+        "value": 18107
+      },
+      {
+        "year": 2024,
+        "value": 54381
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 41099,
+      "history": [
+        {
+          "year": 2020,
+          "value": 23196
+        },
+        {
+          "year": 2021,
+          "value": 974
+        },
+        {
+          "year": 2023,
+          "value": 8485
+        },
+        {
+          "year": 2024,
+          "value": 41099
+        }
+      ],
+      "yoy_pct_change": 384.4,
+      "long_arc_pct_change": 77.2,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Hydrogen sulfide",
+      "cas": "7783-06-4",
+      "category": "general",
+      "total_pounds_recent": 9081,
+      "history": [
+        {
+          "year": 2015,
+          "value": 3590
+        },
+        {
+          "year": 2016,
+          "value": 4800
+        },
+        {
+          "year": 2017,
+          "value": 9000
+        },
+        {
+          "year": 2018,
+          "value": 7310
+        },
+        {
+          "year": 2019,
+          "value": 6636
+        },
+        {
+          "year": 2020,
+          "value": 6540
+        },
+        {
+          "year": 2021,
+          "value": 10180
+        },
+        {
+          "year": 2022,
+          "value": 7116
+        },
+        {
+          "year": 2023,
+          "value": 9622
+        },
+        {
+          "year": 2024,
+          "value": 9081
+        }
+      ],
+      "yoy_pct_change": -5.6,
+      "long_arc_pct_change": 153.0,
+      "long_arc_baseline_year": 2015
+    },
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 4201,
+      "history": [
+        {
+          "year": 2024,
+          "value": 4201
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "summary": "Nitrate compounds (water dissociable; reportable only when in aqueous solution) releases at Perdue Foods LLC - Sioux Preme Packing CO. Center Plant rose from 8k lb to 41k lb (4.8\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 384.4,
+      "magnitude_abs": 32614.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2020,
+          "value": 23196
+        },
+        {
+          "year": 2021,
+          "value": 974
+        },
+        {
+          "year": 2023,
+          "value": 8485
+        },
+        {
+          "year": 2024,
+          "value": 41099
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 3658,
+    "pct_low_income": 13.8,
+    "pct_people_of_color": 15.3,
+    "pct_under_5": 8.0,
+    "pct_over_64": 17.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:36:24Z"
+}

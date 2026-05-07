@@ -1,0 +1,96 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "unison-industries-llc",
+    "name": "Unison Industries LLC",
+    "parent_company": "General Electric Co (Ge Co)",
+    "address": "4230 RESEARCH BLVD",
+    "city": "Beavercreek",
+    "county": "Greene County",
+    "county_slug": "greene",
+    "naics_label": "336412 \u00b7 Transportation Equipment",
+    "lat": 39.728241,
+    "lng": -84.09242
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 24,
+    "air_releases_pounds": 11,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 13,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 26.3,
+    "long_arc_pct_change": 26.3,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 19
+      },
+      {
+        "year": 2024,
+        "value": 24
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 15,
+      "history": [
+        {
+          "year": 2023,
+          "value": 11
+        },
+        {
+          "year": 2024,
+          "value": 15
+        }
+      ],
+      "yoy_pct_change": 36.4,
+      "long_arc_pct_change": 36.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 9,
+      "history": [
+        {
+          "year": 2023,
+          "value": 8
+        },
+        {
+          "year": 2024,
+          "value": 9
+        }
+      ],
+      "yoy_pct_change": 12.5,
+      "long_arc_pct_change": 12.5,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 71601,
+    "pct_low_income": 26.6,
+    "pct_people_of_color": 16.4,
+    "pct_under_5": 5.9,
+    "pct_over_64": 17.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (60 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

@@ -1,0 +1,77 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "vwr-chemicals-llc",
+    "name": "Vwr Chemicals LLC",
+    "parent_company": "Avantor Performance Materials INC",
+    "address": "220 LENA DR",
+    "city": "Aurora",
+    "county": "Portage County",
+    "county_slug": "portage",
+    "naics_label": "325180 \u00b7 Chemicals",
+    "lat": 41.283936,
+    "lng": -81.338011
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 264,
+    "air_releases_pounds": 175,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 89,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -84.9,
+    "long_arc_pct_change": -84.9,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 1744
+      },
+      {
+        "year": 2024,
+        "value": 264
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 264,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1744
+        },
+        {
+          "year": 2024,
+          "value": 264
+        }
+      ],
+      "yoy_pct_change": -84.9,
+      "long_arc_pct_change": -84.9,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 20161,
+    "pct_low_income": 22.8,
+    "pct_people_of_color": 14.0,
+    "pct_under_5": 5.3,
+    "pct_over_64": 18.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (14 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

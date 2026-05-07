@@ -1,0 +1,146 @@
+{
+  "facility": {
+    "state": "wi",
+    "state_label": "Wisconsin",
+    "slug": "kcs-international-inc-pulaski",
+    "name": "Kcs International INC (Pulaski)",
+    "parent_company": "Marinemax Products INC",
+    "address": "700 E GLENBROOK DR",
+    "city": "Pulaski",
+    "county": "Brown County",
+    "county_slug": "brown",
+    "naics_label": "336612 \u00b7 Transportation Equipment",
+    "lat": 44.664105,
+    "lng": -88.224717
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 54913,
+    "air_releases_pounds": 54548,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 365,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 47.2,
+    "long_arc_pct_change": 1893.2,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 2755
+      },
+      {
+        "year": 2022,
+        "value": 31750
+      },
+      {
+        "year": 2023,
+        "value": 37305
+      },
+      {
+        "year": 2024,
+        "value": 54913
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Styrene",
+      "cas": "100-42-5",
+      "category": "carcinogen",
+      "total_pounds_recent": 53913,
+      "history": [
+        {
+          "year": 2022,
+          "value": 28219
+        },
+        {
+          "year": 2023,
+          "value": 33962
+        },
+        {
+          "year": 2024,
+          "value": 53913
+        }
+      ],
+      "yoy_pct_change": 58.7,
+      "long_arc_pct_change": 91.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methyl methacrylate",
+      "cas": "80-62-6",
+      "category": "respiratory",
+      "total_pounds_recent": 1000,
+      "history": [
+        {
+          "year": 2021,
+          "value": 1331
+        },
+        {
+          "year": 2022,
+          "value": 3531
+        },
+        {
+          "year": 2023,
+          "value": 3343
+        },
+        {
+          "year": 2024,
+          "value": 1000
+        }
+      ],
+      "yoy_pct_change": -70.1,
+      "long_arc_pct_change": -24.9,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Styrene",
+      "summary": "Styrene releases at Kcs International INC (Pulaski) rose from 34k lb to 54k lb between 2023 and 2024.",
+      "magnitude_pct": 58.7,
+      "magnitude_abs": 19951.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 1424
+        },
+        {
+          "year": 2022,
+          "value": 28219
+        },
+        {
+          "year": 2023,
+          "value": 33962
+        },
+        {
+          "year": 2024,
+          "value": 53913
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 6091,
+    "pct_low_income": 27.1,
+    "pct_people_of_color": 11.9,
+    "pct_under_5": 9.3,
+    "pct_over_64": 10.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:14:07Z"
+}

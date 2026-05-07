@@ -1,0 +1,267 @@
+{
+  "utility": {
+    "state": "wi",
+    "state_label": "Wisconsin",
+    "slug": "luck-waterworks",
+    "name": "Luck Waterworks",
+    "pwsid": "WI6490338",
+    "population_served": 1150,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Luck"
+    ],
+    "county": "Polk County",
+    "county_slug": "polk",
+    "place_slug": "luck"
+  },
+  "reporting_period": {
+    "start": "2023-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 2,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 3
+  },
+  "violations": [
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 2946",
+      "contaminant_code": "2946",
+      "severity": "monitoring",
+      "rule": "Nitrate/Nitrite",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 2931",
+      "contaminant_code": "2931",
+      "severity": "monitoring",
+      "rule": "Nitrate/Nitrite",
+      "is_unresolved": true,
+      "description": "Failure to monitor as scheduled"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2023,
+        "value": 2
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 2946",
+        "count": 1
+      },
+      {
+        "contaminant": "Contaminant 2931",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 2946",
+      "summary": "Unresolved Nitrate/Nitrite violation cited in 2023 (contaminant 2946).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:WI6490338"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 2931",
+      "summary": "Unresolved Nitrate/Nitrite violation cited in 2023 (contaminant 2931).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:WI6490338"
+      }
+    }
+  ],
+  "equity": {
+    "population": 1214,
+    "pct_low_income": 9.2,
+    "pct_people_of_color": 8.400000000000006,
+    "pct_under_5": 3.0,
+    "pct_over_64": 19.7,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 3.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 23.4,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 17.1,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 7.5,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 7.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 1.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 71.4,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 27.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 7.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 2.9
+      },
+      {
+        "label": "Ozone",
+        "score": 13.6
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 12.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 6.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 5.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 46.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 0.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Luck, Wisconsin (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:14:07Z"
+}

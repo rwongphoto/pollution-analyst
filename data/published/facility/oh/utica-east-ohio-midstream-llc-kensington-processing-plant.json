@@ -1,0 +1,176 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "utica-east-ohio-midstream-llc-kensington-processing-plant",
+    "name": "Utica East Ohio Midstream LLC Kensington Processing Plant",
+    "parent_company": "The Williams Cos",
+    "address": "11543 SR 644",
+    "city": "Kensington",
+    "county": "Carroll County",
+    "county_slug": "carroll",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 40.733822,
+    "lng": -80.930204
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 130312,
+    "air_releases_pounds": 5383,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 124929,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 1994.5,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 3599
+      },
+      {
+        "year": 2023,
+        "value": 6222
+      },
+      {
+        "year": 2024,
+        "value": 130312
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 112147,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2789
+        },
+        {
+          "year": 2023,
+          "value": 3859
+        },
+        {
+          "year": 2024,
+          "value": 112147
+        }
+      ],
+      "yoy_pct_change": 2806.1,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 14757,
+      "history": [
+        {
+          "year": 2022,
+          "value": 204
+        },
+        {
+          "year": 2023,
+          "value": 646
+        },
+        {
+          "year": 2024,
+          "value": 14757
+        }
+      ],
+      "yoy_pct_change": 2184.4,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 1875,
+      "history": [
+        {
+          "year": 2023,
+          "value": 19
+        },
+        {
+          "year": 2024,
+          "value": 1875
+        }
+      ],
+      "yoy_pct_change": 9928.5,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 1532,
+      "history": [
+        {
+          "year": 2022,
+          "value": 606
+        },
+        {
+          "year": 2023,
+          "value": 1698
+        },
+        {
+          "year": 2024,
+          "value": 1532
+        }
+      ],
+      "yoy_pct_change": -9.8,
+      "long_arc_pct_change": 152.8,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Utica East Ohio Midstream LLC Kensington Processing Plant rose from 4k lb to 112k lb (29.1\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 2806.1,
+      "magnitude_abs": 108288.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 2789
+        },
+        {
+          "year": 2023,
+          "value": 3859
+        },
+        {
+          "year": 2024,
+          "value": 112147
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 1112,
+    "pct_low_income": 35.0,
+    "pct_people_of_color": 3.6,
+    "pct_under_5": 0.2,
+    "pct_over_64": 13.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

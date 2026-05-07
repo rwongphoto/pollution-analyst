@@ -1,0 +1,120 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "ironunits-llc",
+    "name": "Ironunits LLC",
+    "parent_company": "Cleveland-Cliffs INC",
+    "address": "300 MILLARD ST",
+    "city": "Toledo",
+    "county": "Lucas County",
+    "county_slug": "lucas",
+    "naics_label": "331110 \u00b7 Primary Metals",
+    "lat": 41.675052,
+    "lng": -83.477261
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 33806,
+    "air_releases_pounds": 33338,
+    "water_releases_pounds": 467,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -0.4,
+    "long_arc_pct_change": 4.7,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 32291
+      },
+      {
+        "year": 2022,
+        "value": 35221
+      },
+      {
+        "year": 2023,
+        "value": 33935
+      },
+      {
+        "year": 2024,
+        "value": 33806
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 33792,
+      "history": [
+        {
+          "year": 2021,
+          "value": 32261
+        },
+        {
+          "year": 2022,
+          "value": 32452
+        },
+        {
+          "year": 2023,
+          "value": 33921
+        },
+        {
+          "year": 2024,
+          "value": 33792
+        }
+      ],
+      "yoy_pct_change": -0.4,
+      "long_arc_pct_change": 4.7,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 13,
+      "history": [
+        {
+          "year": 2021,
+          "value": 6
+        },
+        {
+          "year": 2022,
+          "value": 14
+        },
+        {
+          "year": 2023,
+          "value": 14
+        },
+        {
+          "year": 2024,
+          "value": 13
+        }
+      ],
+      "yoy_pct_change": -5.5,
+      "long_arc_pct_change": 108.6,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 46109,
+    "pct_low_income": 52.8,
+    "pct_people_of_color": 42.0,
+    "pct_under_5": 8.2,
+    "pct_over_64": 13.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (58 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "shelter-works",
+    "name": "Shelter Works",
+    "parent_company": null,
+    "address": "3691 STATE ROUTE 4",
+    "city": "Bucyrus",
+    "county": "Crawford County",
+    "county_slug": "crawford",
+    "naics_label": "336612 \u00b7 Transportation Equipment",
+    "lat": 40.837996,
+    "lng": -82.970405
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 7216,
+    "air_releases_pounds": 7216,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 7.0,
+    "long_arc_pct_change": 76.9,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 4078
+      },
+      {
+        "year": 2023,
+        "value": 6743
+      },
+      {
+        "year": 2024,
+        "value": 7216
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Styrene",
+      "cas": "100-42-5",
+      "category": "carcinogen",
+      "total_pounds_recent": 6417,
+      "history": [
+        {
+          "year": 2022,
+          "value": 3575
+        },
+        {
+          "year": 2023,
+          "value": 5948
+        },
+        {
+          "year": 2024,
+          "value": 6417
+        }
+      ],
+      "yoy_pct_change": 7.9,
+      "long_arc_pct_change": 79.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methyl methacrylate",
+      "cas": "80-62-6",
+      "category": "respiratory",
+      "total_pounds_recent": 799,
+      "history": [
+        {
+          "year": 2022,
+          "value": 503
+        },
+        {
+          "year": 2023,
+          "value": 795
+        },
+        {
+          "year": 2024,
+          "value": 799
+        }
+      ],
+      "yoy_pct_change": 0.5,
+      "long_arc_pct_change": 58.8,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 8921,
+    "pct_low_income": 44.6,
+    "pct_people_of_color": 6.4,
+    "pct_under_5": 7.4,
+    "pct_over_64": 18.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (10 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

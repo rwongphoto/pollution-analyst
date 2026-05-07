@@ -1,0 +1,73 @@
+{
+  "facility": {
+    "state": "ia",
+    "state_label": "Iowa",
+    "slug": "kraft-heinz-davenport",
+    "name": "Kraft Heinz - Davenport",
+    "parent_company": null,
+    "address": "9401 GRANITE WAY",
+    "city": "Davenport",
+    "county": "Scott County",
+    "county_slug": "scott",
+    "naics_label": "311612 \u00b7 Food",
+    "lat": 41.615037,
+    "lng": -90.612594
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 10260,
+    "air_releases_pounds": 10000,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 260,
+    "chemicals_reported": 1,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": 1582.0,
+    "long_arc_baseline_year": 2017,
+    "history": [
+      {
+        "year": 2017,
+        "value": 610
+      },
+      {
+        "year": 2024,
+        "value": 10260
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 10260,
+      "history": [
+        {
+          "year": 2024,
+          "value": 10260
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 14664,
+    "pct_low_income": 18.9,
+    "pct_people_of_color": 23.7,
+    "pct_under_5": 6.9,
+    "pct_over_64": 15.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (8 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:36:24Z"
+}

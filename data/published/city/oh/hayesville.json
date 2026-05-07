@@ -1,0 +1,451 @@
+{
+  "place": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "hayesville",
+    "name": "Hayesville",
+    "fips": "3934636",
+    "population": 599,
+    "county_name": "Ashland County",
+    "county_fips": "39005"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.2,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.2
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.2469,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.2469
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1501,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1501
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 448,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "hayesville-village",
+        "state": "oh",
+        "state_label": "Ohio",
+        "name": "Hayesville Village",
+        "pwsid": "OH0300712",
+        "population_served": 448,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [],
+  "equity": {
+    "population": 599,
+    "pct_low_income": 8.0,
+    "pct_people_of_color": 4.200000000000003,
+    "pct_under_5": 12.7,
+    "pct_over_64": 19.4,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 24.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 47.2,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 43.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 27.1,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 30.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 14.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 81.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 28.5,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 22.0,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 39.8,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 51.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 11.3
+      },
+      {
+        "label": "Ozone",
+        "score": 29.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 19.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 13.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 13.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 7.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 34.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 13.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 10.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 17.6
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 23.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Hayesville, Ohio (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.3,
+      "age_adjusted": 11.5,
+      "state_mean": 11.2,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.34,
+      "vs_state_pct": 3.0,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.48,
+      "vs_us_pct": 14.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 9.4,
+      "age_adjusted": 7.9,
+      "state_mean": 6.9,
+      "us_mean": 5.5,
+      "vs_state_pp": 0.99,
+      "vs_state_pct": 14.3,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.4,
+      "vs_us_pct": 43.6,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.2,
+      "age_adjusted": 6.3,
+      "state_mean": 5.8,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.47,
+      "vs_state_pct": 8.1,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.99,
+      "vs_us_pct": 18.6,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 13.6,
+      "age_adjusted": 11.0,
+      "state_mean": 11.3,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.32,
+      "vs_state_pct": -2.8,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.54,
+      "vs_us_pct": 5.2,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 18.4,
+      "age_adjusted": 20.1,
+      "state_mean": 18.6,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.54,
+      "vs_state_pct": 8.3,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 3.35,
+      "vs_us_pct": 20.0,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "oh",
+      "slug": "jeromesville",
+      "name": "Jeromesville",
+      "population": 642,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 39.8,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "oh",
+      "slug": "perrysville",
+      "name": "Perrysville",
+      "population": 803,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 38.7,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "oh",
+      "slug": "loudonville",
+      "name": "Loudonville",
+      "population": 2898,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 44.6,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "oh",
+      "slug": "ashland",
+      "name": "Ashland",
+      "population": 19270,
+      "facilities_count": 3,
+      "total_releases_pounds": 72138,
+      "dominant_medium": "land",
+      "ej_pct_avg": 55.4,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "oh",
+      "slug": "syracuse",
+      "name": "Syracuse",
+      "population": 601,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "oh",
+      "slug": "newburgh-heights",
+      "name": "Newburgh Heights",
+      "population": 1760,
+      "facilities_count": 1,
+      "total_releases_pounds": 6111,
+      "dominant_medium": "air",
+      "ej_pct_avg": 81.7,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+40 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T04:24:16Z"
+}

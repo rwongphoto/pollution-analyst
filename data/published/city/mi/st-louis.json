@@ -1,0 +1,538 @@
+{
+  "place": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "st-louis",
+    "name": "St. Louis",
+    "fips": "2671000",
+    "population": 6932,
+    "county_name": "Gratiot County",
+    "county_fips": "26057"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 3,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.0273,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.0273
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1142,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1142
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 47031,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -1.0,
+      "long_arc_pct_change": 32.3,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 35542
+        },
+        {
+          "year": 2021,
+          "value": 42350
+        },
+        {
+          "year": 2022,
+          "value": 47503
+        },
+        {
+          "year": 2023,
+          "value": 47031
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 3,
+    "population_served_total": 7071,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "st-louis-city-of",
+        "state": "mi",
+        "state_label": "Michigan",
+        "name": "St. Louis, City Of",
+        "pwsid": "MI0006320",
+        "population_served": 6976,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "nesen-s-countryside-acres",
+        "state": "mi",
+        "state_label": "Michigan",
+        "name": "Nesen's Countryside Acres",
+        "pwsid": "MI0040637",
+        "population_served": 95,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "gratiot-area-water-authority",
+        "state": "mi",
+        "state_label": "Michigan",
+        "name": "Gratiot Area Water Authority",
+        "pwsid": "MI0002836",
+        "population_served": 0,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [
+    {
+      "slug": "velsicol-burn-pit",
+      "state": "mi",
+      "name": "Velsicol Burn Pit",
+      "epa_id": "MIN000510389",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "St. Louis",
+      "city_slug": "st-louis",
+      "primary_contaminant": "1,1-Dichloroethane"
+    },
+    {
+      "slug": "velsicol-chemical-corp-michigan",
+      "state": "mi",
+      "name": "Velsicol Chemical Corp. (Michigan)",
+      "epa_id": "MID000722439",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "St. Louis",
+      "city_slug": "st-louis",
+      "primary_contaminant": "Hexabromobiphenyl"
+    },
+    {
+      "slug": "gratiot-county-golf-course",
+      "state": "mi",
+      "name": "Gratiot County Golf Course",
+      "epa_id": "MID980794531",
+      "npl_status": "Deleted from the Final NPL",
+      "is_active_npl": false,
+      "is_deleted": true,
+      "is_federal_facility": false,
+      "city": "St. Louis",
+      "city_slug": "st-louis",
+      "primary_contaminant": null
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 6932,
+    "pct_low_income": 13.5,
+    "pct_people_of_color": 39.7,
+    "pct_under_5": 2.1,
+    "pct_over_64": 10.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 9.1,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 64.0,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 33.5,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 15.3,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 40.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 17.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 44.0,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 98.4,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 44.9,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 85.3,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 12.2,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 10.7
+      },
+      {
+        "label": "Ozone",
+        "score": 50.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 36.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 18.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 42.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 21.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 23.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 105.3
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 47.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 86.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 13.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "St. Louis, Michigan (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.9,
+      "age_adjusted": 10.9,
+      "state_mean": 11.6,
+      "us_mean": 10.0,
+      "vs_state_pp": -0.65,
+      "vs_state_pct": -5.6,
+      "vs_state_class": "better",
+      "vs_us_pp": 0.88,
+      "vs_us_pct": 8.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 9.3,
+      "age_adjusted": 9.9,
+      "state_mean": 6.9,
+      "us_mean": 5.5,
+      "vs_state_pp": 2.96,
+      "vs_state_pct": 42.7,
+      "vs_state_class": "worse",
+      "vs_us_pp": 4.4,
+      "vs_us_pct": 80.0,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.1,
+      "age_adjusted": 7.8,
+      "state_mean": 5.7,
+      "us_mean": 5.3,
+      "vs_state_pp": 2.13,
+      "vs_state_pct": 37.6,
+      "vs_state_class": "worse",
+      "vs_us_pp": 2.49,
+      "vs_us_pct": 46.9,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 12.7,
+      "age_adjusted": 13.7,
+      "state_mean": 10.1,
+      "us_mean": 10.5,
+      "vs_state_pp": 3.6,
+      "vs_state_pct": 35.6,
+      "vs_state_class": "worse",
+      "vs_us_pp": 3.24,
+      "vs_us_pct": 31.0,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 20.6,
+      "age_adjusted": 20.0,
+      "state_mean": 18.7,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.26,
+      "vs_state_pct": 6.7,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 3.25,
+      "vs_us_pct": 19.4,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "breckenridge",
+      "name": "Breckenridge",
+      "population": 1413,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 42.6,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "perrinton",
+      "name": "Perrinton",
+      "population": 517,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "ashley",
+      "name": "Ashley",
+      "population": 475,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "alma",
+      "name": "Alma",
+      "population": 9436,
+      "facilities_count": 1,
+      "total_releases_pounds": 115,
+      "dominant_medium": "air",
+      "ej_pct_avg": 47.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "freeland",
+      "name": "Freeland",
+      "population": 7357,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 51.9,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "melvindale",
+      "name": "Melvindale",
+      "population": 12639,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 82.9,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+39 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T03:51:52Z"
+}

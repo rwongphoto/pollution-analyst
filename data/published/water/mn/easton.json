@@ -1,0 +1,214 @@
+{
+  "utility": {
+    "state": "mn",
+    "state_label": "Minnesota",
+    "slug": "easton",
+    "name": "Easton",
+    "pwsid": "MN1220005",
+    "population_served": 199,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Easton"
+    ],
+    "county": "Faribault County",
+    "county_slug": "faribault",
+    "place_slug": "easton"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 7500",
+      "contaminant_code": "7500",
+      "severity": "other",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 7500",
+      "contaminant_code": "7500",
+      "severity": "other",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 7500",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 13931,
+    "pct_low_income": 11.4,
+    "pct_people_of_color": 11.200000000000003,
+    "pct_under_5": 6.7,
+    "pct_over_64": 22.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 8.9,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 37.2,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 34.5,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 14.9,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 53.5,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 3.9,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 86.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 72.8,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 44.3,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 16.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 7.9
+      },
+      {
+        "label": "Ozone",
+        "score": 34.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 32.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 15.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 39.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 4.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 72.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 45.8
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 28.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 9.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Faribault County, Minnesota (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:04:54Z"
+}

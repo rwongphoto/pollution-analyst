@@ -1,0 +1,103 @@
+{
+  "site": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "h-k-sales",
+    "name": "H & K Sales",
+    "epa_id": "MI0001271535",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Ionia",
+    "county_slug": "ionia",
+    "city": "Belding",
+    "city_slug": "belding",
+    "address": "Bridge Street",
+    "zip": "48809",
+    "lat": 43.098611,
+    "lng": -85.228333
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Radium-226"
+  },
+  "contaminants": [
+    {
+      "name": "Radium-226",
+      "media": "Air",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Radon-222",
+      "media": "Air",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MI0000560",
+        "name": "Belding",
+        "slug": "belding",
+        "state": "mi",
+        "distance_miles": 0.28,
+        "place_name": "Belding",
+        "primary_source": "groundwater",
+        "population_served": 5769,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MI0040210",
+        "name": "Pine View Mobile Home Park",
+        "slug": "pine-view-mobile-home-park",
+        "state": "mi",
+        "distance_miles": 0.28,
+        "place_name": "Belding",
+        "primary_source": "groundwater",
+        "population_served": 50,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MI0040418",
+        "name": "Country Village",
+        "slug": "country-village",
+        "state": "mi",
+        "distance_miles": 0.28,
+        "place_name": "Belding",
+        "primary_source": "groundwater",
+        "population_served": 78,
+        "health_based_5yr": 7,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 4346,
+    "pct_low_income": 33.9,
+    "pct_people_of_color": 14.4,
+    "pct_under_5": 5.6,
+    "pct_over_64": 12.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (4 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:51:51Z"
+}

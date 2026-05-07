@@ -1,0 +1,84 @@
+{
+  "facility": {
+    "state": "mn",
+    "state_label": "Minnesota",
+    "slug": "geotek-llc-g2",
+    "name": "Geotek LLC (G2)",
+    "parent_company": "Geotek",
+    "address": "1 ROCHESTER MEDICAL DR NW",
+    "city": "Stewartville",
+    "county": "Olmsted County",
+    "county_slug": "olmsted",
+    "naics_label": "326121 \u00b7 Plastics and Rubber",
+    "lat": 43.867538,
+    "lng": -92.49001
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 80799,
+    "air_releases_pounds": 79886,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 913,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 80799
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Styrene",
+      "cas": "100-42-5",
+      "category": "carcinogen",
+      "total_pounds_recent": 80769,
+      "history": [
+        {
+          "year": 2024,
+          "value": 80769
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Diisocyanates",
+      "cas": "N120",
+      "category": "general",
+      "total_pounds_recent": 30,
+      "history": [
+        {
+          "year": 2024,
+          "value": 30
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 8086,
+    "pct_low_income": 21.4,
+    "pct_people_of_color": 5.7,
+    "pct_under_5": 7.0,
+    "pct_over_64": 13.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (6 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:04:54Z"
+}

@@ -1,0 +1,551 @@
+{
+  "place": {
+    "state": "mi",
+    "state_label": "Michigan",
+    "slug": "sanford",
+    "name": "Sanford",
+    "fips": "2671560",
+    "population": 757,
+    "county_name": "Midland County",
+    "county_fips": "26111"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.3,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.3
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.0356,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.0356
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1291,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1291
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 4830001,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 25.4,
+      "long_arc_pct_change": 96.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 2460676
+        },
+        {
+          "year": 2011,
+          "value": 2468116
+        },
+        {
+          "year": 2012,
+          "value": 3558025
+        },
+        {
+          "year": 2013,
+          "value": 2274886
+        },
+        {
+          "year": 2014,
+          "value": 2133529
+        },
+        {
+          "year": 2015,
+          "value": 3156921
+        },
+        {
+          "year": 2016,
+          "value": 4005891
+        },
+        {
+          "year": 2017,
+          "value": 3464090
+        },
+        {
+          "year": 2018,
+          "value": 4081946
+        },
+        {
+          "year": 2019,
+          "value": 4489913
+        },
+        {
+          "year": 2020,
+          "value": 4760386
+        },
+        {
+          "year": 2021,
+          "value": 3541852
+        },
+        {
+          "year": 2022,
+          "value": 3850208
+        },
+        {
+          "year": 2023,
+          "value": 4830001
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 11000,
+    "violations_5yr_total": 14,
+    "health_based_5yr_total": 6,
+    "unresolved_total": 4,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "midland-co-water-dist-no-1-of",
+        "state": "mi",
+        "state_label": "Michigan",
+        "name": "Midland Co., Water Dist. No. 1 Of",
+        "pwsid": "MI0004375",
+        "population_served": 11000,
+        "health_based_violations_5yr": 6,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MI0004375"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2023 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MI0004375"
+      }
+    }
+  ],
+  "equity": {
+    "population": 757,
+    "pct_low_income": 11.0,
+    "pct_people_of_color": 2.4000000000000057,
+    "pct_under_5": 4.8,
+    "pct_over_64": 18.2,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 6.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 64.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 9.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 6.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 45.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 16.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 67.9,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 60.5,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 15.5,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 76.6,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 15.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 92.0,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 6.2
+      },
+      {
+        "label": "Ozone",
+        "score": 38.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 8.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 7.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 39.6
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 16.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 53.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 52.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 15.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 65.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 13.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 79.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Sanford, Michigan (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.2,
+      "age_adjusted": 11.2,
+      "state_mean": 11.6,
+      "us_mean": 10.0,
+      "vs_state_pp": -0.35,
+      "vs_state_pct": -3.0,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.18,
+      "vs_us_pct": 11.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 8.3,
+      "age_adjusted": 6.6,
+      "state_mean": 6.9,
+      "us_mean": 5.5,
+      "vs_state_pp": -0.34,
+      "vs_state_pct": -4.9,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.1,
+      "vs_us_pct": 20.0,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.5,
+      "age_adjusted": 5.6,
+      "state_mean": 5.7,
+      "us_mean": 5.3,
+      "vs_state_pp": -0.07,
+      "vs_state_pct": -1.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.29,
+      "vs_us_pct": 5.5,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 11.2,
+      "age_adjusted": 8.8,
+      "state_mean": 10.1,
+      "us_mean": 10.5,
+      "vs_state_pp": -1.3,
+      "vs_state_pct": -12.9,
+      "vs_state_class": "better",
+      "vs_us_pp": -1.66,
+      "vs_us_pct": -15.9,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 16.6,
+      "age_adjusted": 18.2,
+      "state_mean": 18.7,
+      "us_mean": 16.8,
+      "vs_state_pp": -0.54,
+      "vs_state_pct": -2.9,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.45,
+      "vs_us_pct": 8.7,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "coleman",
+      "name": "Coleman",
+      "population": 1012,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "midland",
+      "name": "Midland",
+      "population": 42404,
+      "facilities_count": 7,
+      "total_releases_pounds": 755916,
+      "dominant_medium": "air",
+      "ej_pct_avg": 63.4,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "saugatuck",
+      "name": "Saugatuck",
+      "population": 751,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "sylvan-lake",
+      "name": "Sylvan Lake",
+      "population": 1729,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 64.1,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+25 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "maple-rapids",
+      "name": "Maple Rapids",
+      "population": 764,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mi",
+      "slug": "mcbain",
+      "name": "McBain",
+      "population": 747,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T03:51:52Z"
+}

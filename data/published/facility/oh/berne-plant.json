@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "oh",
+    "state_label": "Ohio",
+    "slug": "berne-plant",
+    "name": "Berne Plant",
+    "parent_company": "Blue Racer Midstream LLC",
+    "address": "46240 SWAZEY RD",
+    "city": "Lewisville",
+    "county": "Monroe County",
+    "county_slug": "monroe",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 39.76963,
+    "lng": -81.28974
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 5085,
+    "air_releases_pounds": 712,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 4373,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -34.4,
+    "long_arc_pct_change": -30.2,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 7282
+      },
+      {
+        "year": 2023,
+        "value": 7753
+      },
+      {
+        "year": 2024,
+        "value": 5085
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 4440,
+      "history": [
+        {
+          "year": 2022,
+          "value": 6568
+        },
+        {
+          "year": 2023,
+          "value": 7111
+        },
+        {
+          "year": 2024,
+          "value": 4440
+        }
+      ],
+      "yoy_pct_change": -37.6,
+      "long_arc_pct_change": -32.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 645,
+      "history": [
+        {
+          "year": 2022,
+          "value": 714
+        },
+        {
+          "year": 2023,
+          "value": 642
+        },
+        {
+          "year": 2024,
+          "value": 645
+        }
+      ],
+      "yoy_pct_change": 0.5,
+      "long_arc_pct_change": -9.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 13401,
+    "pct_low_income": 13.9,
+    "pct_people_of_color": 4.400000000000006,
+    "pct_under_5": 6.4,
+    "pct_over_64": 23.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Monroe County County, OH (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:24:13Z"
+}

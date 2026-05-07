@@ -1,0 +1,104 @@
+{
+  "facility": {
+    "state": "wi",
+    "state_label": "Wisconsin",
+    "slug": "american-packaging-corp-site",
+    "name": "American Packaging Corp Site",
+    "parent_company": "American Packaging CORP",
+    "address": "751 SHONKOO WAY",
+    "city": "Deforest",
+    "county": "Dane County",
+    "county_slug": "dane",
+    "naics_label": "323111 \u00b7 Printing",
+    "lat": 43.262217,
+    "lng": -89.330716
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3283,
+    "air_releases_pounds": 1639,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1644,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 32.3,
+    "long_arc_pct_change": 85.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 1771
+      },
+      {
+        "year": 2023,
+        "value": 2481
+      },
+      {
+        "year": 2024,
+        "value": 3283
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Certain glycol ethers",
+      "cas": "N230",
+      "category": "respiratory",
+      "total_pounds_recent": 1796,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1284
+        },
+        {
+          "year": 2024,
+          "value": 1796
+        }
+      ],
+      "yoy_pct_change": 39.9,
+      "long_arc_pct_change": 39.9,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Diisocyanates",
+      "cas": "N120",
+      "category": "general",
+      "total_pounds_recent": 1487,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1771
+        },
+        {
+          "year": 2023,
+          "value": 1198
+        },
+        {
+          "year": 2024,
+          "value": 1487
+        }
+      ],
+      "yoy_pct_change": 24.1,
+      "long_arc_pct_change": -16.1,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 16303,
+    "pct_low_income": 16.7,
+    "pct_people_of_color": 14.2,
+    "pct_under_5": 6.1,
+    "pct_over_64": 14.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:14:07Z"
+}

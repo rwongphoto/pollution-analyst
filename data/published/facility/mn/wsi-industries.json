@@ -1,0 +1,104 @@
+{
+  "facility": {
+    "state": "mn",
+    "state_label": "Minnesota",
+    "slug": "wsi-industries",
+    "name": "Wsi Industries",
+    "parent_company": "Polaris Industries INC",
+    "address": "213 CHELSEA RD",
+    "city": "Monticello",
+    "county": "Wright County",
+    "county_slug": "wright",
+    "naics_label": "332999 \u00b7 Fabricated Metals",
+    "lat": 45.293992,
+    "lng": -93.790984
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 147,
+    "air_releases_pounds": 147,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -3.0,
+    "long_arc_pct_change": 482.3,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 25
+      },
+      {
+        "year": 2023,
+        "value": 152
+      },
+      {
+        "year": 2024,
+        "value": 147
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Copper",
+      "cas": "7440-50-8",
+      "category": "general",
+      "total_pounds_recent": 144,
+      "history": [
+        {
+          "year": 2022,
+          "value": 25
+        },
+        {
+          "year": 2023,
+          "value": 149
+        },
+        {
+          "year": 2024,
+          "value": 144
+        }
+      ],
+      "yoy_pct_change": -3.0,
+      "long_arc_pct_change": 482.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 3,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3
+        },
+        {
+          "year": 2024,
+          "value": 3
+        }
+      ],
+      "yoy_pct_change": -2.8,
+      "long_arc_pct_change": -2.8,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 19960,
+    "pct_low_income": 21.2,
+    "pct_people_of_color": 13.5,
+    "pct_under_5": 7.6,
+    "pct_over_64": 11.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (10 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:04:54Z"
+}
