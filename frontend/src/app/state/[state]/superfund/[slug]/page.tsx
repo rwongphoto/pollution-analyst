@@ -17,6 +17,7 @@ import {
 import { isEquityStub } from "@/lib/prose";
 import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { SuperfundPayload } from "@/lib/types";
+import { ownerTypeLabel } from "@/lib/utilityOwnerType";
 
 function superfundDescription(data: SuperfundPayload): string {
   const s = data.site;
@@ -318,10 +319,18 @@ function WaterLinkageSection({ data }: { data: SuperfundPayload }) {
               </tr>
             </thead>
             <tbody>
-              {utils.map((u) => (
+              {utils.map((u) => {
+                const owner = ownerTypeLabel(u.owner_type);
+                return (
                 <tr key={u.pwsid}>
                   <td className="name">
                     <Link href={`/state/${u.state}/water/${u.slug}`}>{u.name}</Link>
+                    {owner ? (
+                      <>
+                        {" "}
+                        <span className="chip ink" style={{ marginLeft: 6 }}>{owner}</span>
+                      </>
+                    ) : null}
                   </td>
                   <td>{u.place_name}</td>
                   <td className="right num-mono">{u.distance_miles.toFixed(1)} mi</td>
@@ -341,7 +350,8 @@ function WaterLinkageSection({ data }: { data: SuperfundPayload }) {
                     )}
                   </td>
                 </tr>
-              ))}
+                );
+              })}
             </tbody>
           </table>
         ) : null}

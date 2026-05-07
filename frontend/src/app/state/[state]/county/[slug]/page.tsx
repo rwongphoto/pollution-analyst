@@ -33,6 +33,7 @@ import { getEjIndicatorRisk } from "@/lib/ejIndicatorRisk";
 import { getPathwayHealthRisk } from "@/lib/pathwayHealthRisk";
 import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { CountyPagePayload, PollutantSummary } from "@/lib/types";
+import { ownerTypeLabel } from "@/lib/utilityOwnerType";
 
 function countyDescription(data: CountyPagePayload): string {
   return `${data.county.name} pollution data: TRI facility releases, hazardous air pollutants, GHG emissions, and equity context. ${data.facilities.length} top facilities tracked.`;
@@ -256,10 +257,18 @@ function UtilitiesSection({ data }: { data: CountyPagePayload }) {
             </tr>
           </thead>
           <tbody>
-            {data.utilities.map((u) => (
+            {data.utilities.map((u) => {
+              const owner = ownerTypeLabel(u.owner_type);
+              return (
               <tr key={u.slug}>
                 <td className="name">
                   <Link href={`/state/${u.state}/water/${u.slug}`}>{u.name}</Link>
+                  {owner ? (
+                    <>
+                      {" "}
+                      <span className="chip ink" style={{ marginLeft: 6 }}>{owner}</span>
+                    </>
+                  ) : null}
                 </td>
                 <td className="num-mono">{u.pwsid}</td>
                 <td className="right num-mono">{u.population_served.toLocaleString()}</td>
@@ -278,7 +287,8 @@ function UtilitiesSection({ data }: { data: CountyPagePayload }) {
                   )}
                 </td>
               </tr>
-            ))}
+              );
+            })}
           </tbody>
         </table>
       </div>

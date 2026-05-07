@@ -31,6 +31,7 @@ class WaterSystem:
     population_served: int
     primary_source_code: str   # 'GW', 'SW', 'GWP', 'SWP', 'GU', etc.
     pws_type_code: str         # filtered to 'CWS' upstream
+    owner_type_code: str       # 'L' local govt, 'M' mixed, 'N' tribal, 'P' private, 'S' state, 'F' federal
     city_name: str
     is_active: bool
     is_wholesaler: bool
@@ -81,6 +82,7 @@ def fetch_active_cws(state: State) -> list[WaterSystem]:
                 population_served=pop,
                 primary_source_code=str(r.get("primary_source_code") or "").strip().upper(),
                 pws_type_code=str(r.get("pws_type_code") or "").strip().upper(),
+                owner_type_code=str(r.get("owner_type_code") or "").strip().upper(),
                 city_name=_clean(r.get("city_name")),
                 is_active=str(r.get("pws_activity_code") or "").upper() == "A",
                 is_wholesaler=str(r.get("is_wholesaler_ind") or "").upper() == "Y",

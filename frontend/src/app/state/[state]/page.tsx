@@ -28,6 +28,7 @@ import { getEjIndicatorRisk } from "@/lib/ejIndicatorRisk";
 import { getPathwayHealthRisk } from "@/lib/pathwayHealthRisk";
 import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { PollutantSummary, StatePagePayload } from "@/lib/types";
+import { ownerTypeLabel } from "@/lib/utilityOwnerType";
 
 function stateDescription(data: StatePagePayload): string {
   return `${data.state.name} pollution data: ${data.totals.facilities_tracked.toLocaleString()} TRI facilities, ${data.totals.utilities_tracked.toLocaleString()} water utilities, ${data.totals.counties_with_data} counties tracked. Equity context from EJScreen.`;
@@ -321,10 +322,18 @@ function UtilitiesSection({ data }: { data: StatePagePayload }) {
             </tr>
           </thead>
           <tbody>
-            {data.top_utilities.map((u) => (
+            {data.top_utilities.map((u) => {
+              const owner = ownerTypeLabel(u.owner_type);
+              return (
               <tr key={u.slug}>
                 <td className="name">
                   <Link href={`/state/${u.state}/water/${u.slug}`}>{u.name}</Link>
+                  {owner ? (
+                    <>
+                      {" "}
+                      <span className="chip ink" style={{ marginLeft: 6 }}>{owner}</span>
+                    </>
+                  ) : null}
                 </td>
                 <td className="num-mono">{u.pwsid}</td>
                 <td className="right num-mono">{u.population_served.toLocaleString()}</td>
@@ -343,7 +352,8 @@ function UtilitiesSection({ data }: { data: StatePagePayload }) {
                   )}
                 </td>
               </tr>
-            ))}
+              );
+            })}
           </tbody>
         </table>
       </div>

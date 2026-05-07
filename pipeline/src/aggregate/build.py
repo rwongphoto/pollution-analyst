@@ -194,6 +194,7 @@ class UtilityAgg:
     state_slug: str
     population_served: int
     primary_source: str  # 'groundwater' | 'surface_water' | 'purchased' | 'mixed'
+    owner_type: str | None  # 'local' | 'mixed' | 'tribal' | 'private' | 'state' | 'federal' | None
     city_name: str
     is_wholesaler: bool
     violations: list[UtilityViolation] = field(default_factory=list)
@@ -223,6 +224,17 @@ _PRIMARY_SOURCE_MAP = {
     "GU": "mixed",
 }
 
+# SDWIS WATER_SYSTEM.owner_type_code → normalized vocabulary. Empty / unrecognized
+# codes map to None so the frontend can omit the chip rather than render "Unknown."
+_OWNER_TYPE_MAP = {
+    "L": "local",     # local government — municipal utilities, water districts
+    "M": "mixed",     # mixed public/private ownership
+    "N": "tribal",    # Native American (tribal) ownership
+    "P": "private",   # privately owned (mobile-home parks, HOAs, investor-owned)
+    "S": "state",     # state government
+    "F": "federal",   # federal government
+}
+
 
 def aggregate_utilities(
     systems: list[WaterSystem],
@@ -239,6 +251,7 @@ def aggregate_utilities(
             state_slug=state_slug,
             population_served=s.population_served,
             primary_source=_PRIMARY_SOURCE_MAP.get(s.primary_source_code, "mixed"),
+            owner_type=_OWNER_TYPE_MAP.get(s.owner_type_code),
             city_name=s.city_name,
             is_wholesaler=s.is_wholesaler,
         )
@@ -328,6 +341,7 @@ class NearbyGroundwaterUtility:
     distance_miles: float
     place_name: str
     primary_source: str          # 'groundwater' | 'mixed' | 'purchased' | 'surface_water'
+    owner_type: str | None       # 'local' | 'mixed' | 'tribal' | 'private' | 'state' | 'federal' | None
     population_served: int
     health_based_5yr: int
     unresolved: bool
@@ -520,6 +534,7 @@ def attach_water_linkage(
                 distance_miles=round(d, 2),
                 place_name=u.city_name,
                 primary_source=u.primary_source,
+                owner_type=u.owner_type,
                 population_served=u.population_served,
                 health_based_5yr=u.health_based_5yr,
                 unresolved=u.unresolved > 0,

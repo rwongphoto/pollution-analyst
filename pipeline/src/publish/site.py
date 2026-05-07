@@ -1028,6 +1028,7 @@ def publish_water(
             "pwsid": util.pwsid,
             "population_served": util.population_served,
             "primary_source": util.primary_source,
+            "owner_type": util.owner_type,
             "cities_served": [util.city_name] if util.city_name else [],
             "county": county_label,
             "county_slug": county_slug_value,
@@ -1200,6 +1201,7 @@ def publish_superfund(
                     "distance_miles": u.distance_miles,
                     "place_name": u.place_name,
                     "primary_source": u.primary_source,
+                    "owner_type": u.owner_type,
                     "population_served": u.population_served,
                     "health_based_5yr": u.health_based_5yr,
                     "unresolved": u.unresolved,
@@ -1549,6 +1551,7 @@ def _utility_summary(u: UtilityAgg) -> dict:
         "name": u.name,
         "pwsid": u.pwsid,
         "population_served": u.population_served,
+        "owner_type": u.owner_type,
         "health_based_violations_5yr": u.health_based_5yr,
         "unresolved": u.unresolved > 0,
     }

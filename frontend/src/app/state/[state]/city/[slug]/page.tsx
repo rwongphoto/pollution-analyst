@@ -29,6 +29,7 @@ import { getEjIndicatorRisk } from "@/lib/ejIndicatorRisk";
 import { getPathwayHealthRisk } from "@/lib/pathwayHealthRisk";
 import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { CityHubPayload, PollutantSummary } from "@/lib/types";
+import { ownerTypeLabel } from "@/lib/utilityOwnerType";
 
 function cityDescription(data: CityHubPayload): string {
   return `${data.place.name}, ${data.place.state_label} — ${data.totals.facilities_in_city} TRI facilities in the city, ${data.totals.utilities_serving} public water systems serving residents, with EPA equity context.`;
@@ -368,10 +369,18 @@ function WaterSection({ data }: { data: CityHubPayload }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {flagged.map((u) => (
+                  {flagged.map((u) => {
+                    const owner = ownerTypeLabel(u.owner_type);
+                    return (
                     <tr key={u.slug}>
                       <td className="name">
                         <Link href={`/state/${u.state}/water/${u.slug}`}>{u.name}</Link>
+                        {owner ? (
+                          <>
+                            {" "}
+                            <span className="chip ink" style={{ marginLeft: 6 }}>{owner}</span>
+                          </>
+                        ) : null}
                       </td>
                       <td className="num-mono">{u.pwsid}</td>
                       <td className="right num-mono">{u.population_served.toLocaleString()}</td>
@@ -394,7 +403,8 @@ function WaterSection({ data }: { data: CityHubPayload }) {
                         )}
                       </td>
                     </tr>
-                  ))}
+                    );
+                  })}
                 </tbody>
               </table>
               {compliantCount > 0 ? (

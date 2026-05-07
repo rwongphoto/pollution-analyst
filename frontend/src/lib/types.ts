@@ -199,6 +199,7 @@ export interface WaterUtilityPayload {
     pwsid: string;
     population_served: number;
     primary_source: "groundwater" | "surface_water" | "purchased" | "mixed";
+    owner_type?: UtilityOwnerType | null;
     cities_served: string[];
     county?: string | null;
     county_slug?: string | null;
@@ -272,6 +273,7 @@ export interface NearbyGroundwaterUtility {
   distance_miles: number;
   place_name: string;
   primary_source: "groundwater" | "mixed" | "purchased" | "surface_water";
+  owner_type?: UtilityOwnerType | null;
   population_served: number;
   health_based_5yr: number;
   unresolved: boolean;
@@ -407,6 +409,14 @@ export interface FacilitySummary {
   lng: number | null;
 }
 
+export type UtilityOwnerType =
+  | "local"
+  | "mixed"
+  | "tribal"
+  | "private"
+  | "state"
+  | "federal";
+
 export interface UtilitySummary {
   slug: string;
   state: string;
@@ -414,6 +424,7 @@ export interface UtilitySummary {
   name: string;
   pwsid: string;
   population_served: number;
+  owner_type?: UtilityOwnerType | null;  // SDWIS WATER_SYSTEM.owner_type_code, normalized
   health_based_violations_5yr: number;
   unresolved: boolean;
 }

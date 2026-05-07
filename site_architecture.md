@@ -1,6 +1,6 @@
 # Pollution Analyst.ai — Site Architecture
 
-**Status:** California POC live. One state ingested end-to-end (TRI, SDWIS, GHGRP, AQS, EJScreen-clone, ACS). Five programmatic page types render statically.
+**Status:** 50-state coverage live. Every US state ingested end-to-end (TRI, SDWIS, GHGRP, AQS, AirToxScreen, EJScreen-clone, CDC PLACES, SEMS, ACS). Eight programmatic page types render statically, plus five cross-surface ranking pages.
 
 **Companion docs:**
 - [`page_templates.md`](page_templates.md) — per-template section breakdowns.
@@ -10,27 +10,29 @@
 
 ## Positioning
 
-Trend intelligence and narrative platform for environmental data — **not a real-time AQI dashboard**. The differentiation, all of which has shipped (CA only):
+Trend intelligence and narrative platform for environmental data — **not a real-time AQI dashboard**. The differentiation, all of which has shipped:
 
 - Analytics + storytelling layer on top of public-domain federal data.
 - Methodological discipline (transparent caveats, federal-only sourcing).
-- Programmatic SEO at scale via stacked place / entity surfaces — 4,735 pages rendered for CA alone.
-- Anomaly detection as encoded editorial judgment (five flag types calibrated against CA data).
+- Programmatic SEO at scale via stacked place / entity surfaces — ~87k pages rendered across all 50 states.
+- Anomaly detection as encoded editorial judgment (five flag types calibrated against the 50-state corpus).
 - Deterministic template prose — no LLM in the loop. See [`prose_strategy.md`](prose_strategy.md).
 
-## Live Coverage (CA POC)
+## Live Coverage
 
 | Geography | Count | Source |
 |---|---|---|
-| State hub | 1 (CA) | TRI 2010–2024 + GHGRP 2010–2024 + AQS 2010–2024 + SDWIS + EJScreen-clone + SEMS |
-| County hubs | 58 | every CA county with TRI / GHG / AQS / EJ / SEMS data |
-| City hubs (place-anchored) | 787 | CA Census places with ≥1 facility, ≥1 utility serving, or ≥1 NPL site |
-| TRI facility entity pages | 785 | CA only |
-| SDWIS water utility entity pages | 3,071 | CA active CWSes + Flint MI demo |
-| Superfund / NPL site entity pages | 117 | CA Final + Proposed + Deleted + Withdrawn from SEMS |
+| State hubs | 50 | TRI 2010–2024 + GHGRP 2010–2023 + AQS 2010–2024 + SDWIS + AirToxScreen 2020 + EJScreen-clone + SEMS |
+| County hubs | 3,146 | every published county with TRI / GHG / AQS / EJ / SEMS data |
+| City hubs (place-anchored) | 17,257 | Census places with ≥1 facility, ≥1 utility serving, or ≥1 NPL site |
+| TRI facility entity pages | 16,461 | every state |
+| SDWIS water utility entity pages | 48,652 | active CWSes across every state |
+| Superfund / NPL site entity pages | 1,814 | Final + Proposed + Deleted + Withdrawn from SEMS, every state |
+| Cross-surface ranking pages | 5 | states · counties · cities · facilities · superfund |
 | Methodology | 1 | static |
+| Legal (Terms + Privacy) | 1 | static |
 
-Total static pages: **4,820** at last build.
+Total static pages: **~87,388** at last build.
 
 ## Route Map
 
@@ -39,6 +41,12 @@ All routes are statically generated (`generateStaticParams`). `dynamicParams = f
 ```
 /                                     Home
 /methodology                          Methodology + per-source caveats
+/legal                                Terms + Privacy
+/rankings/states                      Cross-state rankings
+/rankings/counties                    Cross-county rankings (national + by state)
+/rankings/cities                      Cross-city rankings (national + by state)
+/rankings/facilities                  Cross-facility rankings
+/rankings/superfund                   Cross-NPL-site rankings
 /state/[state]                        State hub (e.g. /state/ca)
 /state/[state]/county/[slug]          County place page
 /state/[state]/city/[slug]            City hub — place-anchored aggregate
@@ -57,8 +65,14 @@ The routing follows a four-tier hierarchy distinct from the crime site's single-
 
 | Route | Purpose | Update cadence |
 |---|---|---|
-| `/` | Cross-state hero, three featured entities, principles, equity band, CTAs | Every publish |
+| `/` | Cross-state hero, national choropleth, rankings pivot, principles, equity band, CTAs | Every publish |
 | `/methodology` | Pollutant taxonomy, anomaly engine rules, equity-overlay stance, per-source caveats | When sources or thresholds change |
+| `/legal` | Terms of Use + Privacy Policy | Static |
+| `/rankings/states` | Top 10 states per indicator (PM2.5, NO₂, ozone, TRI air, EJ disparity, etc.) | Every publish |
+| `/rankings/counties` | Top 10 counties nationally + Top 10 by state | Every publish |
+| `/rankings/cities` | Top 10 cities nationally + Top 10 by state | Every publish |
+| `/rankings/facilities` | Top facilities by release / chemical | Every publish |
+| `/rankings/superfund` | Top NPL sites by status / contaminant burden | Every publish |
 | `/state/[state]` | State hub: pathways, top counties, top facilities, top utilities, equity, county directory | Every publish |
 | `/state/[state]/county/[slug]` | County: pathways, top facilities, utilities, NPL sites, equity | Every publish |
 | `/state/[state]/city/[slug]` | City hub: in-city facilities + utilities-serving + NPL sites + equity | Every publish |
@@ -191,21 +205,7 @@ Rendered on state, county, city hub, facility (3-mile block-group buffer → con
 
 ## Open Areas
 
-- **Ranking pages — county / city / state (HIGH PRIORITY — wealth-pollution gap visualization).** Sortable tables that surface the structural pattern across each programmatic surface. Currently the wealth-pollution correlation is only visible if you compare Marin (median income ~$140k, 0 TRI facilities, PM2.5 80th %ile) to Kern (median income ~$60k, 87 TRI facilities, PM2.5 99th %ile) by hand. Data is already in every payload (`equity.ej_indexes` + `equity.population` + ACS pulls). Three routes share one template:
-  - `/rankings/counties` — every published county sorted by indicator percentile, with median income alongside.
-  - `/rankings/cities` — same shape across the 822 published city hubs. The most editorially valuable surface — facility-host cities (Richmond, Fontana, Bakersfield) jump to the top of PM2.5 / NO₂ rankings and that's the story.
-  - `/rankings/states` — across all ingested states. Trivially small (1 row today, 50 at full coverage) but high-traffic SEO surface — "most polluted states" is a real query.
-
-  **Page structure — each ranking page groups every header section into two parallel top-10 tables, named by the surface:**
-  - `/rankings/states` → **Top 10 states** (national across every ingested state).
-  - `/rankings/counties` → **Top 10 counties** (national across every published county) + **Top 10 by State** (per-state sub-tables, or a state filter on the same table).
-  - `/rankings/cities` → **Top 10 cities** (national across every published city hub) + **Top 10 by State** (per-state sub-tables).
-
-  Both blocks appear under every header section on the page (e.g. PM2.5, NO₂, ozone, TRI air, EJ disparity) so a reader can pivot between "Top 10 nationally" and "Top 10 by State" without leaving the page. Today (CA-only POC) the **Top 10 by State** block is the shippable surface — facility-host cities (Richmond, Fontana, Bakersfield) jump to the top of PM2.5 / NO₂. Until cross-state coverage lands, the **Top 10 counties** / **Top 10 cities** national blocks render a "expands when state #2 ingests" placeholder rather than being hidden — the structure should be visible from day one. **Top 10 states** is also placeholder-only until state #2.
-
-  All three pages render at home-publish time by reading the union of state / county / city JSONs. Optional: scatter / strip-plot of percentile vs median income to make the correlation literally a chart, not just a table. Optional cross-link: "X ranks Yth nationally / Zth in CA" on every per-place page header.
-- **Semantic HTML pass on every programmatic template (CA-only, before cross-state expansion).** Audit `frontend/src/app/state/[state]/page.tsx`, `.../county/[slug]/page.tsx`, `.../city/[slug]/page.tsx`, `.../facility/[slug]/page.tsx`, `.../water/[slug]/page.tsx` for proper structure: single `<h1>`, hierarchical `<h2>`/`<h3>` (no rank skips), `<main>` / `<section>` / `<article>` / `<nav>` / `<aside>` in place of generic `<div>`s, `<time datetime="…">` on every reporting-year / publication-date, `<table>` with `<caption>` + `<thead>`/`<tbody>` + `<th scope="col|row">`, `<figure>` + `<figcaption>` for charts and maps, descriptive `alt` on every visualization, real link text (never "click here"). Why now: every template only exists once today (CA POC). Fixing the markup before cross-state fanout means the audit happens in one place instead of being repeated per state. Payoff is threefold — screen-reader accessibility, Google Lighthouse SEO score, and AI-crawler comprehension (SGE / Gemini / ChatGPT browsing weight semantic structure heavily when summarizing).
-- **Schema.org JSON-LD on every entity template — shipped (CA POC).** Six templates emit a `@graph` block from a `<script type="application/ld+json">` tag in the page component, alongside the existing home (`WebSite`, `Organization`) and `/methodology` (`Article`, `BreadcrumbList`, `Organization`) blocks. Each page reuses a single `*Description(data)` helper so the meta description and the schema description can't drift, and each breadcrumb mirrors the visible `<Crumbs>` items (URL-less crumbs are skipped — Google's `BreadcrumbList` rich result requires every `item` to be a URL).
+- **Schema.org JSON-LD on every entity template — shipped.** Six templates emit a `@graph` block from a `<script type="application/ld+json">` tag in the page component, alongside the existing home (`WebSite`, `Organization`) and `/methodology` (`Article`, `BreadcrumbList`, `Organization`) blocks. Each page reuses a single `*Description(data)` helper so the meta description and the schema description can't drift, and each breadcrumb mirrors the visible `<Crumbs>` items (URL-less crumbs are skipped — Google's `BreadcrumbList` rich result requires every `item` to be a URL).
   - **State** ([`state/[state]/page.tsx`](frontend/src/app/state/%5Bstate%5D/page.tsx)) → `BreadcrumbList` + `Article` + `Organization` + `Place`. Image: `/icon.png`.
   - **County** ([`county/[slug]/page.tsx`](frontend/src/app/state/%5Bstate%5D/county/%5Bslug%5D/page.tsx)) → `BreadcrumbList` + `Article` + `Place` (with `PostalAddress.addressRegion`) + `Organization`. Image: `ImageObject` `/icon.png` 512×512.
   - **City** ([`city/[slug]/page.tsx`](frontend/src/app/state/%5Bstate%5D/city/%5Bslug%5D/page.tsx)) → `Place` (with `addressLocality`) + `BreadcrumbList` (4-item with county / 3-item without) + `Organization` + `Article`.
@@ -218,17 +218,15 @@ Rendered on state, county, city hub, facility (3-mile block-group buffer → con
   **Open follow-ups:**
   - **`Dataset` nodes per pathway block** (TRI air, AQS PM2.5/NO₂/O₃, SDWIS, AirToxScreen) — not yet emitted. Would cite EPA as `creator` and retrieval date as `dateModified`. Significant payload-shape work since `creator` / `distribution` blocks need machine-readable URLs per pathway, not just our display labels. Deferred until pathways stabilize across data sources.
   - **`WebPage` with `lastReviewed`** — not yet emitted. Less impactful than the per-entity nodes above; the `Article.dateModified` already gives crawlers a freshness signal on facility/Superfund pages.
-  - **Rankings pages → `ItemList`** — not yet shipped (rankings template still in flight). When wired, each Top-10 block gets one `ItemList` with `position` + `url` per entity.
+  - **Rankings pages → `ItemList`** — rankings pages are live at `/rankings/{states,counties,cities,facilities,superfund}` but none emit `ItemList` JSON-LD yet. When wired, each Top-10 block gets one `ItemList` with `position` + `url` per entity.
   - **Per-page OG images** — every Article currently uses `/icon.png`. Article rich results favor larger per-page images; revisit when an `opengraph-image.tsx` route generator is justifiable. Pipeline could synthesize per-state / per-entity hero charts at build time.
 - **TRI ↔ GHGRP facility-ID join.** Unlocks facility-level `ghg_step` flags.
 - **Sustained-shift / streak-break flags.** Need a monthly cadence; TRI is annual-native.
-- **Cross-state expansion.** Pipeline is parameterized on state slug; bulk-CSV cache is keyed per state. Adding a state is registration + ACS + TIGER fetch + a non-`--history-cache-only` warm-up run for AQS history.
-- **SDWIS `OWNER_TYPE_CODE` ingest + UI chip.** SDWIS classifies each PWS by owner type (`L` local government, `M` mixed, `N` Native American, `P` private, `S` state government, `F` federal). Currently we don't ingest this field and the city-hub / state water-system tables can't tell readers whether a row is "City of Stockton" (municipal) vs "Stockton Verde Mobile Home Park" (private). Two pieces of work: (1) extend `pipeline/src/ingest/sdwis.py:WaterSystem` + `aggregate/build.py:UtilityAgg` + the `UtilitySummary` payload to carry an `owner_type` field; (2) surface it as a chip in the water-system table cell, e.g. MUNICIPAL / PRIVATE / DISTRICT, so readers can mentally bucket without inferring from the name.
-- **Superfund / NPL site coverage — shipped (CA POC).** 117 entity pages (97 Final + 17 Deleted + 1 Withdrawn + 2 Proposed) at `/state/[state]/superfund/[slug]`, plus `SuperfundSection` rollups on state / county / city hubs. City-hub eligibility extended to "≥1 NPL site in the polygon" as a third qualifying condition. Source: `sems.envirofacts_site` + `sems.envirofacts_contaminants` via Envirofacts. Page template: [`page_templates.md`](page_templates.md) §8.
+- **SDWIS `OWNER_TYPE_CODE` ingest + UI chip — shipped.** `WaterSystem.owner_type_code` ingested from `WATER_SYSTEM`, normalized to `local | mixed | tribal | private | state | federal` on `UtilityAgg.owner_type`, threaded through `_utility_summary` + `publish_water` payload. Frontend chip ("Municipal" / "Private" / "Tribal" / "State-owned" / "Federal" / "Mixed") renders on state / county / city water tables and on the entity hero. Field is optional in the type system so old payloads stay valid until each state runs a cache-only republish.
+- **Superfund / NPL site coverage — shipped.** 1,814 entity pages (Final + Proposed + Deleted + Withdrawn) at `/state/[state]/superfund/[slug]`, plus `SuperfundSection` rollups on state / county / city hubs. City-hub eligibility extended to "≥1 NPL site in the polygon" as a third qualifying condition. Equity overlay is a 1-mile block-group buffer (host-city / county fallback when no centroids fall inside). Source: `sems.envirofacts_site` + `sems.envirofacts_contaminants` via Envirofacts. Page template: [`page_templates.md`](page_templates.md) §8.
 
   Open follow-ups:
-  - **Equity overlay — rerun pending.** Switched from host-city demographics to a 1-mile block-group buffer (`pipeline/src/spatial/facility_buffer.py` reused at `radius_miles=1.0`). Existing `published/superfund/<state>/<slug>.json` payloads were generated under the old fallback chain — needs another `python -m pipeline.src.main run --state ca --year <Y> --history-from 2010 --history-cache-only` to regenerate every NPL JSON with the new buffer demographics. Visible change on the page: different population numbers + a new `geography_label` string ("Within 1 mile of this site (N Census block groups, ...)"). Sites with no block-group centroids inside the radius fall through to host city, then county.
-  - **`WaterLinkageSection`** — shipped on entity page (3-mile buffer; 49 of 117 CA NPL sites have ≥1 nearby groundwater PWS). Distance computed to served-place centroid since SDWIS doesn't expose wellhead lat/lon — methodology disclosure on the section.
+  - **`WaterLinkageSection`** — shipped on entity page (3-mile buffer). Distance computed to served-place centroid since SDWIS doesn't expose wellhead lat/lon — methodology disclosure on the section.
   - **Listing-date enrichment — evaluated, shelved.** Probed Envirofacts SEMS tables, cumulis.epa.gov SiteProfile scraping (multi-tab + multi-pattern regex), and SEMS Public PDF reports. Envirofacts has no listing-date column. Cumulis prose coverage was ~25–60% on a sample (many profile pages have no NPL-mentioning sentences); reliable extraction would require parsing the 4–34 MB FOIA-15 / List-8R PDFs. Not worth the lift relative to the editorial payoff. Hero degrades gracefully without the date — the §8 entity page leads with status + location instead of "Listed YYYY — N years in cleanup." Revisit if (a) EPA publishes a flat dataset of `(epa_id, listing_date)` rows, or (b) the editorial value swings hard enough to justify PDF parsing.
   - **`PhaseTimeline` component** — depended on the shelved listing-date enrichment; deferred indefinitely.
   - **Superfund-driven flags** (`stalled_cleanup`, `recently_deleted`, `5yr_review_overdue`) — deferred until calibrated.

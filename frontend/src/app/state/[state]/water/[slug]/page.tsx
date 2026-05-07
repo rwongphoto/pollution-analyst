@@ -24,6 +24,7 @@ import {
 import { getEjIndicatorRisk } from "@/lib/ejIndicatorRisk";
 import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { WaterUtilityPayload } from "@/lib/types";
+import { ownerTypeLabel } from "@/lib/utilityOwnerType";
 
 function waterDescription(data: WaterUtilityPayload, city: string): string {
   return `${data.utility.name} (PWSID ${data.utility.pwsid}) — drinking water serving ${city}, ${data.utility.state_label}. ${data.utility.population_served.toLocaleString()} people served. SDWIS violation history and contaminant detail.`;
@@ -87,8 +88,11 @@ function WaterHero({ data, slug }: { data: WaterUtilityPayload; slug: string }) 
         <div>
           <div className="eyebrow">{u.state_label} · drinking water · {data.briefing_label}</div>
           <h1>{u.name} Water Quality — {city}, {u.state_label}</h1>
-          <p className="muted" style={{ marginTop: -4, marginBottom: 16, fontSize: 13.5 }}>
-            PWSID {u.pwsid} · {SOURCE_LABEL[u.primary_source]}
+          <p className="muted" style={{ marginTop: -4, marginBottom: 16, fontSize: 13.5, display: "inline-flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+            <span>PWSID {u.pwsid} · {SOURCE_LABEL[u.primary_source]}</span>
+            {ownerTypeLabel(u.owner_type) ? (
+              <span className="chip ink">{ownerTypeLabel(u.owner_type)}</span>
+            ) : null}
           </p>
           <p className="lead lede" style={{ maxWidth: "70ch" }}>
             <strong>{u.population_served.toLocaleString()}</strong> people served.
