@@ -7,7 +7,7 @@
     "dev": "next dev",
     "prebuild": "node scripts/sync-search-index.mjs",
     "build": "next build",
-    "postbuild": "node scripts/strip-rsc-sidecars.mjs",
+    "postbuild": "node scripts/strip-rsc-sidecars.mjs && node scripts/generate-sitemap.mjs",
     "start": "next start",
     "lint": "eslint"
   },
