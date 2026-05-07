@@ -1,0 +1,151 @@
+{
+  "facility": {
+    "state": "ga",
+    "state_label": "Georgia",
+    "slug": "pilgrim-s-pride-douglas-processing-plant",
+    "name": "Pilgrim'S Pride Douglas Processing Plant",
+    "parent_company": "Jbs USA Food Co",
+    "address": "113 MCNEAL DR.",
+    "city": "Douglas",
+    "county": "Coffee County",
+    "county_slug": "coffee",
+    "naics_label": "311615 \u00b7 Food",
+    "lat": 31.526055,
+    "lng": -82.847735
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 8298,
+    "air_releases_pounds": 4149,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 4149,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -73.0,
+    "long_arc_pct_change": 1820.8,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 432
+      },
+      {
+        "year": 2017,
+        "value": 550
+      },
+      {
+        "year": 2018,
+        "value": 838
+      },
+      {
+        "year": 2019,
+        "value": 1016
+      },
+      {
+        "year": 2020,
+        "value": 1083
+      },
+      {
+        "year": 2021,
+        "value": 9544
+      },
+      {
+        "year": 2022,
+        "value": 9982
+      },
+      {
+        "year": 2023,
+        "value": 30715
+      },
+      {
+        "year": 2024,
+        "value": 8298
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Peracetic acid",
+      "cas": "79-21-0",
+      "category": "general",
+      "total_pounds_recent": 8298,
+      "history": [
+        {
+          "year": 2017,
+          "value": 550
+        },
+        {
+          "year": 2018,
+          "value": 838
+        },
+        {
+          "year": 2019,
+          "value": 1016
+        },
+        {
+          "year": 2020,
+          "value": 1083
+        },
+        {
+          "year": 2021,
+          "value": 9544
+        },
+        {
+          "year": 2022,
+          "value": 9982
+        },
+        {
+          "year": 2023,
+          "value": 11254
+        },
+        {
+          "year": 2024,
+          "value": 8298
+        }
+      ],
+      "yoy_pct_change": -26.3,
+      "long_arc_pct_change": 1408.7,
+      "long_arc_baseline_year": 2017
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0007664417",
+      "summary": "0007664417 releases at Pilgrim'S Pride Douglas Processing Plant fell from 19k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -19461.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 432
+        },
+        {
+          "year": 2023,
+          "value": 19461
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 10049,
+    "pct_low_income": 54.5,
+    "pct_people_of_color": 55.0,
+    "pct_under_5": 7.7,
+    "pct_over_64": 11.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (9 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:34:52Z"
+}

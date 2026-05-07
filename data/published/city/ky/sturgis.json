@@ -1,0 +1,336 @@
+{
+  "place": {
+    "state": "ky",
+    "state_label": "Kentucky",
+    "slug": "sturgis",
+    "name": "Sturgis",
+    "fips": "2174316",
+    "population": 1693,
+    "county_name": "Union County",
+    "county_fips": "21225"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.584,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.584
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1012,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1012
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 44524,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -5.5,
+      "long_arc_pct_change": -44.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 80275
+        },
+        {
+          "year": 2011,
+          "value": 162590
+        },
+        {
+          "year": 2012,
+          "value": 199797
+        },
+        {
+          "year": 2013,
+          "value": 171962
+        },
+        {
+          "year": 2014,
+          "value": 192713
+        },
+        {
+          "year": 2015,
+          "value": 86763
+        },
+        {
+          "year": 2016,
+          "value": 79633
+        },
+        {
+          "year": 2017,
+          "value": 75216
+        },
+        {
+          "year": 2018,
+          "value": 78945
+        },
+        {
+          "year": 2019,
+          "value": 74569
+        },
+        {
+          "year": 2020,
+          "value": 70439
+        },
+        {
+          "year": 2021,
+          "value": 66535
+        },
+        {
+          "year": 2022,
+          "value": 47136
+        },
+        {
+          "year": 2023,
+          "value": 44524
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 3490,
+    "violations_5yr_total": 30,
+    "health_based_5yr_total": 26,
+    "unresolved_total": 18,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "sturgis-water-works",
+        "state": "ky",
+        "state_label": "Kentucky",
+        "name": "Sturgis Water Works",
+        "pwsid": "KY1130422",
+        "population_served": 3490,
+        "health_based_violations_5yr": 26,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:KY1130422"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:KY1130422"
+      }
+    }
+  ],
+  "equity": {
+    "population": 1693,
+    "pct_low_income": 17.2,
+    "pct_people_of_color": 5.700000000000003,
+    "pct_under_5": 2.1,
+    "pct_over_64": 27.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Sturgis, Kentucky (Census place block groups)"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "morganfield",
+      "name": "Morganfield",
+      "population": 3242,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "uniontown",
+      "name": "Uniontown",
+      "population": 732,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "breckinridge-center",
+      "name": "Breckinridge Center",
+      "population": 1770,
+      "facilities_count": 1,
+      "total_releases_pounds": 7881,
+      "dominant_medium": "air",
+      "ej_pct_avg": 47.0,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "taylorsville",
+      "name": "Taylorsville",
+      "population": 1718,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "worthington",
+      "name": "Worthington",
+      "population": 1722,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 53.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "auburn",
+      "name": "Auburn",
+      "population": 1645,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T22:25:49Z"
+}

@@ -1,0 +1,98 @@
+{
+  "site": {
+    "state": "ga",
+    "state_label": "Georgia",
+    "slug": "armstrong-world-industries",
+    "name": "Armstrong World Industries",
+    "epa_id": "GAN000410033",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Bibb",
+    "county_slug": "bibb",
+    "city": "Macon-Bibb County",
+    "city_slug": "macon-bibb-county",
+    "address": "4520 Broadway Road",
+    "zip": "31206",
+    "lat": 32.773497,
+    "lng": -83.6516
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 6,
+    "primary_contaminant": "Benzo[A]Pyrene"
+  },
+  "contaminants": [
+    {
+      "name": "Benzo[A]Pyrene",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Copper",
+      "media": "Solid Waste",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Dibenzo(A,H)Anthracene",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Solid Waste",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 688,
+    "pct_low_income": 87.0,
+    "pct_people_of_color": 61.2,
+    "pct_under_5": 7.4,
+    "pct_over_64": 23.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:34:54Z"
+}

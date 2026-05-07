@@ -91,7 +91,7 @@ STATE_TO_REGION: dict[str, str] = {
     "NJ": "2",
     "NY": "2",
     "AL": "4a",
-    "KY": "4a",
+    "KY": "4b",  # verified 2026-05-06 — KY's cancer XLSX is in R4b, not 4a
     "GA": "4a",
     "FL": "4a",
     "MS": "4b",

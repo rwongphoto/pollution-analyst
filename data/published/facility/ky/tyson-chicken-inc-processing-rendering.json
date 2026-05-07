@@ -1,0 +1,195 @@
+{
+  "facility": {
+    "state": "ky",
+    "state_label": "Kentucky",
+    "slug": "tyson-chicken-inc-processing-rendering",
+    "name": "Tyson Chicken INC. Processing & Rendering",
+    "parent_company": "Tyson Foods INC",
+    "address": "14660 U.S. 41 S",
+    "city": "Robards",
+    "county": "Henderson County",
+    "county_slug": "henderson",
+    "naics_label": "311615 \u00b7 Food",
+    "lat": 37.652348,
+    "lng": -87.524551
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 4740,
+    "air_releases_pounds": 4740,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -71.2,
+    "long_arc_pct_change": -9.5,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 5237
+      },
+      {
+        "year": 2012,
+        "value": 268
+      },
+      {
+        "year": 2015,
+        "value": 10
+      },
+      {
+        "year": 2016,
+        "value": 10
+      },
+      {
+        "year": 2017,
+        "value": 5132
+      },
+      {
+        "year": 2018,
+        "value": 19684
+      },
+      {
+        "year": 2019,
+        "value": 13240
+      },
+      {
+        "year": 2020,
+        "value": 53
+      },
+      {
+        "year": 2021,
+        "value": 60
+      },
+      {
+        "year": 2022,
+        "value": 160
+      },
+      {
+        "year": 2023,
+        "value": 16446
+      },
+      {
+        "year": 2024,
+        "value": 4740
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Peracetic acid",
+      "cas": "79-21-0",
+      "category": "general",
+      "total_pounds_recent": 4740,
+      "history": [
+        {
+          "year": 2017,
+          "value": 255
+        },
+        {
+          "year": 2018,
+          "value": 140
+        },
+        {
+          "year": 2019,
+          "value": 140
+        },
+        {
+          "year": 2020,
+          "value": 53
+        },
+        {
+          "year": 2021,
+          "value": 60
+        },
+        {
+          "year": 2022,
+          "value": 160
+        },
+        {
+          "year": 2023,
+          "value": 16446
+        },
+        {
+          "year": 2024,
+          "value": 4740
+        }
+      ],
+      "yoy_pct_change": -71.2,
+      "long_arc_pct_change": 1758.8,
+      "long_arc_baseline_year": 2017
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Peracetic acid",
+      "summary": "Peracetic acid releases at Tyson Chicken INC. Processing & Rendering fell from 16k lb to 5k lb (71% lower) between 2023 and 2024.",
+      "magnitude_pct": -71.2,
+      "magnitude_abs": -11705.6,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2015,
+          "value": 10
+        },
+        {
+          "year": 2016,
+          "value": 10
+        },
+        {
+          "year": 2017,
+          "value": 255
+        },
+        {
+          "year": 2018,
+          "value": 140
+        },
+        {
+          "year": 2019,
+          "value": 140
+        },
+        {
+          "year": 2020,
+          "value": 53
+        },
+        {
+          "year": 2021,
+          "value": 60
+        },
+        {
+          "year": 2022,
+          "value": 160
+        },
+        {
+          "year": 2023,
+          "value": 16446
+        },
+        {
+          "year": 2024,
+          "value": 4740
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 1125,
+    "pct_low_income": 16.3,
+    "pct_people_of_color": 3.3,
+    "pct_under_5": 4.0,
+    "pct_over_64": 14.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:25:49Z"
+}

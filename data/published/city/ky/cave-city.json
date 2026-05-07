@@ -1,0 +1,334 @@
+{
+  "place": {
+    "state": "ky",
+    "state_label": "Kentucky",
+    "slug": "cave-city",
+    "name": "Cave City",
+    "fips": "2113492",
+    "population": 2707,
+    "county_name": "Edmonson County",
+    "county_fips": "21061"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "criteria_air",
+      "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
+      "current": 0.062,
+      "units": "ppm",
+      "yoy_pct_change": -12.7,
+      "long_arc_pct_change": -29.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.088
+        },
+        {
+          "year": 2011,
+          "value": 0.071
+        },
+        {
+          "year": 2012,
+          "value": 0.081
+        },
+        {
+          "year": 2013,
+          "value": 0.063
+        },
+        {
+          "year": 2014,
+          "value": 0.065
+        },
+        {
+          "year": 2015,
+          "value": 0.063
+        },
+        {
+          "year": 2016,
+          "value": 0.065
+        },
+        {
+          "year": 2017,
+          "value": 0.064
+        },
+        {
+          "year": 2018,
+          "value": 0.061
+        },
+        {
+          "year": 2019,
+          "value": 0.06
+        },
+        {
+          "year": 2020,
+          "value": 0.056
+        },
+        {
+          "year": 2021,
+          "value": 0.061
+        },
+        {
+          "year": 2022,
+          "value": 0.061
+        },
+        {
+          "year": 2023,
+          "value": 0.071
+        },
+        {
+          "year": 2024,
+          "value": 0.062
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.6005,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.6005
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0983,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0983
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 6441,
+    "violations_5yr_total": 3,
+    "health_based_5yr_total": 1,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "brownsville-municipal-water-system",
+        "state": "ky",
+        "state_label": "Kentucky",
+        "name": "Brownsville Municipal Water System",
+        "pwsid": "KY0310706",
+        "population_served": 1441,
+        "health_based_violations_5yr": 1,
+        "unresolved": false
+      },
+      {
+        "slug": "mammoth-cave-central-system",
+        "state": "ky",
+        "state_label": "Kentucky",
+        "name": "Mammoth Cave/Central System",
+        "pwsid": "KY0310940",
+        "population_served": 5000,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 5200",
+      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:KY0310706"
+      }
+    }
+  ],
+  "equity": {
+    "population": 2707,
+    "pct_low_income": 31.6,
+    "pct_people_of_color": 13.799999999999997,
+    "pct_under_5": 3.8,
+    "pct_over_64": 17.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Cave City, Kentucky (Census place block groups)"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "brownsville",
+      "name": "Brownsville",
+      "population": 1050,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "russell-springs",
+      "name": "Russell Springs",
+      "population": 2713,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 37.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "tompkinsville",
+      "name": "Tompkinsville",
+      "population": 2699,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "fulton",
+      "name": "Fulton",
+      "population": 2693,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.5,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "hartford",
+      "name": "Hartford",
+      "population": 2672,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "louisa",
+      "name": "Louisa",
+      "population": 2652,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 36.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T22:25:49Z"
+}

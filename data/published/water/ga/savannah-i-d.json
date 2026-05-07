@@ -1,0 +1,247 @@
+{
+  "utility": {
+    "state": "ga",
+    "state_label": "Georgia",
+    "slug": "savannah-i-d",
+    "name": "Savannah-I & D",
+    "pwsid": "GA0510004",
+    "population_served": 10500,
+    "primary_source": "surface_water",
+    "cities_served": [
+      "Port Wentworth"
+    ],
+    "county": "Chatham County",
+    "county_slug": "chatham",
+    "place_slug": "port-wentworth"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 2,
+    "unresolved_violations": 2,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 0300",
+      "contaminant_code": "0300",
+      "severity": "health_based",
+      "rule": "Long Term 1 Enhanced SWTR",
+      "is_unresolved": true,
+      "description": "Treatment technique violation"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 0300",
+      "contaminant_code": "0300",
+      "severity": "health_based",
+      "rule": "Long Term 1 Enhanced SWTR",
+      "is_unresolved": true,
+      "description": "Treatment technique violation"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 0300",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0300",
+      "summary": "Unresolved Long Term 1 Enhanced SWTR violation cited in 2025 (contaminant 0300).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:GA0510004"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0300",
+      "summary": "Unresolved Long Term 1 Enhanced SWTR violation cited in 2025 (contaminant 0300).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:GA0510004"
+      }
+    }
+  ],
+  "equity": {
+    "population": 11103,
+    "pct_low_income": 15.0,
+    "pct_people_of_color": 64.4,
+    "pct_under_5": 9.3,
+    "pct_over_64": 9.4,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 75.1,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 6.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 17.9,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 45.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 47.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 32.8,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 17.9,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 68.5,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 61.9,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 58.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 54.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 156.0
+      },
+      {
+        "label": "Ozone",
+        "score": 19.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 40.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 97.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 85.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 70.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 5.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 131.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 123.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 113.1
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 111.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Port Wentworth, Georgia (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:34:52Z"
+}

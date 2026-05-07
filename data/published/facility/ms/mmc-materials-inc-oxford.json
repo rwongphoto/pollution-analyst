@@ -1,0 +1,100 @@
+{
+  "facility": {
+    "state": "ms",
+    "state_label": "Mississippi",
+    "slug": "mmc-materials-inc-oxford",
+    "name": "Mmc Materials INC - Oxford",
+    "parent_company": "Mmc Materials INC",
+    "address": "695 HIGHWAY 30 EAST",
+    "city": "Oxford",
+    "county": "Lafayette County",
+    "county_slug": "lafayette",
+    "naics_label": "327320 \u00b7 Nonmetallic Mineral Product",
+    "lat": 34.402381,
+    "lng": -89.407421
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 25,
+    "air_releases_pounds": 0.1,
+    "water_releases_pounds": 25,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 17.5,
+    "long_arc_pct_change": 17.5,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 21
+      },
+      {
+        "year": 2024,
+        "value": 25
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 25,
+      "history": [
+        {
+          "year": 2023,
+          "value": 21
+        },
+        {
+          "year": 2024,
+          "value": 25
+        }
+      ],
+      "yoy_pct_change": 17.7,
+      "long_arc_pct_change": 17.7,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 0.35,
+      "history": [
+        {
+          "year": 2022,
+          "value": 0.06
+        },
+        {
+          "year": 2023,
+          "value": 0.32
+        },
+        {
+          "year": 2024,
+          "value": 0.35
+        }
+      ],
+      "yoy_pct_change": 7.7,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 56172,
+    "pct_low_income": 19.6,
+    "pct_people_of_color": 30.099999999999994,
+    "pct_under_5": 4.5,
+    "pct_over_64": 13.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Lafayette County County, MS (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:58:25Z"
+}

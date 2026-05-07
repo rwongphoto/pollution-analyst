@@ -1,0 +1,484 @@
+{
+  "place": {
+    "state": "ky",
+    "state_label": "Kentucky",
+    "slug": "stanford",
+    "name": "Stanford",
+    "fips": "2173110",
+    "population": 3654,
+    "county_name": "Lincoln County",
+    "county_fips": "21137"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 1,
+    "utilities_serving": 1,
+    "total_releases_pounds": 1776,
+    "air_releases_pounds": 1493,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 283,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": 8.4,
+    "long_arc_baseline_year": 2017,
+    "history": [
+      {
+        "year": 2017,
+        "value": 1638
+      },
+      {
+        "year": 2018,
+        "value": 1231
+      },
+      {
+        "year": 2021,
+        "value": 4468
+      },
+      {
+        "year": 2024,
+        "value": 1776
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.397,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.397
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1107,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1107
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 1493,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2017,
+      "history": [
+        {
+          "year": 2017,
+          "value": 1363
+        },
+        {
+          "year": 2018,
+          "value": 976
+        },
+        {
+          "year": 2021,
+          "value": 2512
+        },
+        {
+          "year": 2024,
+          "value": 1493
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2017,
+      "history": [
+        {
+          "year": 2017,
+          "value": 0
+        },
+        {
+          "year": 2018,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 283,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2017,
+      "history": [
+        {
+          "year": 2017,
+          "value": 275
+        },
+        {
+          "year": 2018,
+          "value": 255
+        },
+        {
+          "year": 2021,
+          "value": 1956
+        },
+        {
+          "year": 2024,
+          "value": 283
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 136031,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -2.8,
+      "long_arc_pct_change": 205.6,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 44506
+        },
+        {
+          "year": 2011,
+          "value": 57573
+        },
+        {
+          "year": 2012,
+          "value": 67074
+        },
+        {
+          "year": 2013,
+          "value": 31691
+        },
+        {
+          "year": 2014,
+          "value": 111493
+        },
+        {
+          "year": 2015,
+          "value": 37981
+        },
+        {
+          "year": 2016,
+          "value": 30819
+        },
+        {
+          "year": 2017,
+          "value": 74212
+        },
+        {
+          "year": 2018,
+          "value": 158163
+        },
+        {
+          "year": 2019,
+          "value": 74655
+        },
+        {
+          "year": 2020,
+          "value": 105506
+        },
+        {
+          "year": 2021,
+          "value": 147502
+        },
+        {
+          "year": 2022,
+          "value": 139919
+        },
+        {
+          "year": 2023,
+          "value": 136031
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "decoart-inc",
+      "state": "ky",
+      "state_label": "Kentucky",
+      "name": "Decoart INC",
+      "parent_company": null,
+      "total_pounds_recent": 1776,
+      "yoy_pct_change": null,
+      "top_chemical": "Nonylphenol Ethoxylates",
+      "city": "Stanford",
+      "lat": 37.542312,
+      "lng": -84.649569
+    }
+  ],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 9284,
+    "violations_5yr_total": 1,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "stanford-water-works",
+        "state": "ky",
+        "state_label": "Kentucky",
+        "name": "Stanford Water Works",
+        "pwsid": "KY0690417",
+        "population_served": 9284,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [],
+  "equity": {
+    "population": 3654,
+    "pct_low_income": 10.8,
+    "pct_people_of_color": 10.5,
+    "pct_under_5": 6.0,
+    "pct_over_64": 22.2,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 39.2,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 55.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 29.9,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 54.8,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 57.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 17.0,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 74.0,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 81.2,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 54.6
+      },
+      {
+        "label": "Ozone",
+        "score": 58.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 73.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 43.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 73.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 21.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 68.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 24.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 96.9
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 110.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Stanford, Kentucky (Census place block groups)"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "crab-orchard",
+      "name": "Crab Orchard",
+      "population": 796,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "hustonville",
+      "name": "Hustonville",
+      "population": 612,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "mckinney",
+      "name": "McKinney",
+      "population": 37,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "russellville",
+      "name": "Russellville",
+      "population": 7186,
+      "facilities_count": 1,
+      "total_releases_pounds": 1527,
+      "dominant_medium": "air",
+      "ej_pct_avg": 52.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "elsmere",
+      "name": "Elsmere",
+      "population": 9126,
+      "facilities_count": 1,
+      "total_releases_pounds": 155577,
+      "dominant_medium": "land",
+      "ej_pct_avg": 72.5,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+26 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "guthrie",
+      "name": "Guthrie",
+      "population": 1414,
+      "facilities_count": 1,
+      "total_releases_pounds": 2504,
+      "dominant_medium": "air",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T22:25:49Z"
+}

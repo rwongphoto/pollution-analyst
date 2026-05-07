@@ -1,0 +1,120 @@
+{
+  "facility": {
+    "state": "fl",
+    "state_label": "Florida",
+    "slug": "tms-international-llc",
+    "name": "Tms International LLC",
+    "parent_company": "Tms International CORP",
+    "address": "22 NUCOR DRIVE",
+    "city": "Frostproof",
+    "county": "Polk County",
+    "county_slug": "polk",
+    "naics_label": "562920 \u00b7 Hazardous Waste",
+    "lat": 27.731959,
+    "lng": -81.543665
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3,
+    "air_releases_pounds": 3,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -26.1,
+    "long_arc_pct_change": 31.6,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 2
+      },
+      {
+        "year": 2022,
+        "value": 3
+      },
+      {
+        "year": 2023,
+        "value": 4
+      },
+      {
+        "year": 2024,
+        "value": 3
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Manganese  And Manganese Compounds",
+      "cas": "N450",
+      "category": "respiratory",
+      "total_pounds_recent": 3,
+      "history": [
+        {
+          "year": 2021,
+          "value": 2
+        },
+        {
+          "year": 2022,
+          "value": 3
+        },
+        {
+          "year": 2023,
+          "value": 4
+        },
+        {
+          "year": 2024,
+          "value": 3
+        }
+      ],
+      "yoy_pct_change": -26.0,
+      "long_arc_pct_change": 31.5,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Lead  And Lead Compounds",
+      "cas": "N420",
+      "category": "pbt",
+      "total_pounds_recent": 0.0,
+      "history": [
+        {
+          "year": 2021,
+          "value": 0.0
+        },
+        {
+          "year": 2022,
+          "value": 0.0
+        },
+        {
+          "year": 2023,
+          "value": 0.01
+        },
+        {
+          "year": 2024,
+          "value": 0.0
+        }
+      ],
+      "yoy_pct_change": -33.3,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 5642,
+    "pct_low_income": 39.2,
+    "pct_people_of_color": 32.2,
+    "pct_under_5": 7.6,
+    "pct_over_64": 36.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:45:36Z"
+}

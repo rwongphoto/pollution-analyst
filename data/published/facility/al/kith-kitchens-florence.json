@@ -1,0 +1,95 @@
+{
+  "facility": {
+    "state": "al",
+    "state_label": "Alabama",
+    "slug": "kith-kitchens-florence",
+    "name": "Kith Kitchens-Florence",
+    "parent_company": "Pfingsten Partners LLC",
+    "address": "4184 RUSHTON ST",
+    "city": "Florence",
+    "county": "Lauderdale County",
+    "county_slug": "lauderdale",
+    "naics_label": "337110 \u00b7 Furniture",
+    "lat": 34.863507,
+    "lng": -87.650918
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 13012,
+    "air_releases_pounds": 13012,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -48.4,
+    "long_arc_pct_change": -48.4,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 25229
+      },
+      {
+        "year": 2024,
+        "value": 13012
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Xylene (mixed isomers)",
+      "cas": "1330-20-7",
+      "category": "respiratory",
+      "total_pounds_recent": 13012,
+      "history": [
+        {
+          "year": 2023,
+          "value": 9651
+        },
+        {
+          "year": 2024,
+          "value": 13012
+        }
+      ],
+      "yoy_pct_change": 34.8,
+      "long_arc_pct_change": 34.8,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0000108883",
+      "summary": "0000108883 releases at Kith Kitchens-Florence fell from 16k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -15578.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 15578
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 24426,
+    "pct_low_income": 37.8,
+    "pct_people_of_color": 24.0,
+    "pct_under_5": 4.5,
+    "pct_over_64": 22.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (17 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:17:17Z"
+}

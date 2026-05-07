@@ -1,0 +1,130 @@
+{
+  "facility": {
+    "state": "al",
+    "state_label": "Alabama",
+    "slug": "alabama-pellets-llc",
+    "name": "Alabama Pellets LLC",
+    "parent_company": "Drax Biomass INC",
+    "address": "970 INDUSTRIAL PARK RD",
+    "city": "Demopolis",
+    "county": "Marengo County",
+    "county_slug": "marengo",
+    "naics_label": "321999 \u00b7 Wood Products",
+    "lat": 32.461326,
+    "lng": -87.958782
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 16355,
+    "air_releases_pounds": 16333,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 23,
+    "chemicals_reported": 4,
+    "yoy_pct_change": -41.6,
+    "long_arc_pct_change": -41.6,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 27986
+      },
+      {
+        "year": 2024,
+        "value": 16355
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 6632,
+      "history": [
+        {
+          "year": 2023,
+          "value": 11696
+        },
+        {
+          "year": 2024,
+          "value": 6632
+        }
+      ],
+      "yoy_pct_change": -43.3,
+      "long_arc_pct_change": -43.3,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 5867,
+      "history": [
+        {
+          "year": 2023,
+          "value": 9554
+        },
+        {
+          "year": 2024,
+          "value": 5867
+        }
+      ],
+      "yoy_pct_change": -38.6,
+      "long_arc_pct_change": -38.6,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Acetaldehyde",
+      "cas": "75-07-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 3831,
+      "history": [
+        {
+          "year": 2023,
+          "value": 6735
+        },
+        {
+          "year": 2024,
+          "value": 3831
+        }
+      ],
+      "yoy_pct_change": -43.1,
+      "long_arc_pct_change": -43.1,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Lead  And Lead Compounds",
+      "cas": "N420",
+      "category": "pbt",
+      "total_pounds_recent": 24,
+      "history": [
+        {
+          "year": 2024,
+          "value": 24
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 19180,
+    "pct_low_income": 21.5,
+    "pct_people_of_color": 55.5,
+    "pct_under_5": 5.3,
+    "pct_over_64": 19.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "Marengo County County, AL (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:17:17Z"
+}

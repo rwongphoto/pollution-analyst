@@ -1,0 +1,116 @@
+{
+  "facility": {
+    "state": "al",
+    "state_label": "Alabama",
+    "slug": "rex-lumber-troy-llc",
+    "name": "Rex Lumber Troy LLC",
+    "parent_company": "Rex Lumber LLC",
+    "address": "1946 COUNTY ROAD 7714",
+    "city": "Troy",
+    "county": "Pike County",
+    "county_slug": "pike",
+    "naics_label": "321113 \u00b7 Wood Products",
+    "lat": 31.903718,
+    "lng": -86.005267
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 37761,
+    "air_releases_pounds": 37761,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 24.8,
+    "long_arc_pct_change": 30.7,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 28882
+      },
+      {
+        "year": 2023,
+        "value": 30255
+      },
+      {
+        "year": 2024,
+        "value": 37761
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 37733,
+      "history": [
+        {
+          "year": 2022,
+          "value": 28860
+        },
+        {
+          "year": 2023,
+          "value": 30232
+        },
+        {
+          "year": 2024,
+          "value": 37733
+        }
+      ],
+      "yoy_pct_change": 24.8,
+      "long_arc_pct_change": 30.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 28,
+      "history": [
+        {
+          "year": 2020,
+          "value": 17
+        },
+        {
+          "year": 2021,
+          "value": 19
+        },
+        {
+          "year": 2022,
+          "value": 22
+        },
+        {
+          "year": 2023,
+          "value": 23
+        },
+        {
+          "year": 2024,
+          "value": 28
+        }
+      ],
+      "yoy_pct_change": 24.8,
+      "long_arc_pct_change": 65.9,
+      "long_arc_baseline_year": 2020
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 830,
+    "pct_low_income": 52.0,
+    "pct_people_of_color": 53.1,
+    "pct_under_5": 2.3,
+    "pct_over_64": 12.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:17:17Z"
+}

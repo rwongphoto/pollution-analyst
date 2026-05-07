@@ -1,0 +1,109 @@
+{
+  "facility": {
+    "state": "ga",
+    "state_label": "Georgia",
+    "slug": "harvard-chemical-llc",
+    "name": "Harvard Chemical LLC",
+    "parent_company": "Simoniz USA INC",
+    "address": "3595 ZIP INDUSTRIAL BLVD SE",
+    "city": "Atlanta",
+    "county": "Fulton County",
+    "county_slug": "fulton",
+    "naics_label": "325611 \u00b7 Chemicals",
+    "lat": 33.657561,
+    "lng": -84.384819
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 10262,
+    "air_releases_pounds": 12,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 10250,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -32.8,
+    "long_arc_pct_change": 344.6,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 2308
+      },
+      {
+        "year": 2020,
+        "value": 3593
+      },
+      {
+        "year": 2021,
+        "value": 5241
+      },
+      {
+        "year": 2022,
+        "value": 1772
+      },
+      {
+        "year": 2023,
+        "value": 15265
+      },
+      {
+        "year": 2024,
+        "value": 10262
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Certain glycol ethers",
+      "cas": "N230",
+      "category": "respiratory",
+      "total_pounds_recent": 10262,
+      "history": [
+        {
+          "year": 2019,
+          "value": 1812
+        },
+        {
+          "year": 2020,
+          "value": 3326
+        },
+        {
+          "year": 2021,
+          "value": 4956
+        },
+        {
+          "year": 2022,
+          "value": 1772
+        },
+        {
+          "year": 2023,
+          "value": 15265
+        },
+        {
+          "year": 2024,
+          "value": 10262
+        }
+      ],
+      "yoy_pct_change": -32.8,
+      "long_arc_pct_change": 466.3,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 43505,
+    "pct_low_income": 50.8,
+    "pct_people_of_color": 87.5,
+    "pct_under_5": 7.4,
+    "pct_over_64": 14.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (46 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:34:52Z"
+}

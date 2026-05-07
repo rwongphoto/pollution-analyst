@@ -1,0 +1,96 @@
+{
+  "facility": {
+    "state": "fl",
+    "state_label": "Florida",
+    "slug": "sun-coatings-inc",
+    "name": "Sun Coatings INC",
+    "parent_company": "Khh INC",
+    "address": "4701 E 7TH AVE",
+    "city": "Tampa",
+    "county": "Hillsborough County",
+    "county_slug": "hillsborough",
+    "naics_label": "325510 \u00b7 Chemicals",
+    "lat": 27.960827,
+    "lng": -82.405812
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3707,
+    "air_releases_pounds": 3707,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -16.7,
+    "long_arc_pct_change": -16.7,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 4448
+      },
+      {
+        "year": 2024,
+        "value": 3707
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 2791,
+      "history": [
+        {
+          "year": 2023,
+          "value": 3177
+        },
+        {
+          "year": 2024,
+          "value": 2791
+        }
+      ],
+      "yoy_pct_change": -12.1,
+      "long_arc_pct_change": -12.1,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 916,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1271
+        },
+        {
+          "year": 2024,
+          "value": 916
+        }
+      ],
+      "yoy_pct_change": -27.9,
+      "long_arc_pct_change": -27.9,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 57893,
+    "pct_low_income": 52.7,
+    "pct_people_of_color": 80.0,
+    "pct_under_5": 5.7,
+    "pct_over_64": 13.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (55 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:45:36Z"
+}

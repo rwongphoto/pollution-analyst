@@ -1,0 +1,206 @@
+{
+  "facility": {
+    "state": "ga",
+    "state_label": "Georgia",
+    "slug": "claxton-poultry-farms",
+    "name": "Claxton Poultry Farms",
+    "parent_company": null,
+    "address": "8816 HWY 301 N",
+    "city": "Claxton",
+    "county": "Evans County",
+    "county_slug": "evans",
+    "naics_label": "311615 \u00b7 Food",
+    "lat": 32.181141,
+    "lng": -81.89151
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1782700,
+    "air_releases_pounds": 6215,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1776485,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 1293.5,
+    "long_arc_pct_change": 1293.5,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 127928
+      },
+      {
+        "year": 2024,
+        "value": 1782700
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Peracetic acid",
+      "cas": "79-21-0",
+      "category": "general",
+      "total_pounds_recent": 1776485,
+      "history": [
+        {
+          "year": 2023,
+          "value": 125928
+        },
+        {
+          "year": 2024,
+          "value": 1776485
+        }
+      ],
+      "yoy_pct_change": 1310.7,
+      "long_arc_pct_change": 1310.7,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 6215,
+      "history": [
+        {
+          "year": 2011,
+          "value": 8275
+        },
+        {
+          "year": 2012,
+          "value": 5023
+        },
+        {
+          "year": 2013,
+          "value": 2033
+        },
+        {
+          "year": 2014,
+          "value": 5510
+        },
+        {
+          "year": 2015,
+          "value": 2749
+        },
+        {
+          "year": 2016,
+          "value": 5564
+        },
+        {
+          "year": 2017,
+          "value": 2273
+        },
+        {
+          "year": 2018,
+          "value": 2286
+        },
+        {
+          "year": 2019,
+          "value": 3274
+        },
+        {
+          "year": 2020,
+          "value": 2241
+        },
+        {
+          "year": 2021,
+          "value": 4000
+        },
+        {
+          "year": 2022,
+          "value": 4025
+        },
+        {
+          "year": 2023,
+          "value": 2000
+        },
+        {
+          "year": 2024,
+          "value": 6215
+        }
+      ],
+      "yoy_pct_change": 210.8,
+      "long_arc_pct_change": 106.8,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Peracetic acid",
+      "summary": "Peracetic acid releases at Claxton Poultry Farms rose from 126k lb to 1.8M lb (14.1\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 1310.7,
+      "magnitude_abs": 1650557.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2013,
+          "value": 5100
+        },
+        {
+          "year": 2014,
+          "value": 5100
+        },
+        {
+          "year": 2015,
+          "value": 6532
+        },
+        {
+          "year": 2016,
+          "value": 10797
+        },
+        {
+          "year": 2017,
+          "value": 7225
+        },
+        {
+          "year": 2018,
+          "value": 13320
+        },
+        {
+          "year": 2019,
+          "value": 36045
+        },
+        {
+          "year": 2020,
+          "value": 47847
+        },
+        {
+          "year": 2021,
+          "value": 20908
+        },
+        {
+          "year": 2022,
+          "value": 25413
+        },
+        {
+          "year": 2023,
+          "value": 125928
+        },
+        {
+          "year": 2024,
+          "value": 1776485
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 3640,
+    "pct_low_income": 51.0,
+    "pct_people_of_color": 56.6,
+    "pct_under_5": 5.8,
+    "pct_over_64": 14.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (4 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:34:52Z"
+}

@@ -1,0 +1,390 @@
+{
+  "county": {
+    "state": "ky",
+    "state_label": "Kentucky",
+    "slug": "casey",
+    "name": "Casey County",
+    "fips": "21045",
+    "population": 15942
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.4074,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.4074
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1002,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1002
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 107551,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": -3.5,
+      "long_arc_pct_change": 40.3,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 76636
+        },
+        {
+          "year": 2011,
+          "value": 77560
+        },
+        {
+          "year": 2012,
+          "value": 66550
+        },
+        {
+          "year": 2013,
+          "value": 43824
+        },
+        {
+          "year": 2014,
+          "value": 28018
+        },
+        {
+          "year": 2015,
+          "value": 40458
+        },
+        {
+          "year": 2016,
+          "value": 26995
+        },
+        {
+          "year": 2017,
+          "value": 29404
+        },
+        {
+          "year": 2018,
+          "value": 74272
+        },
+        {
+          "year": 2019,
+          "value": 85037
+        },
+        {
+          "year": 2020,
+          "value": 119950
+        },
+        {
+          "year": 2021,
+          "value": 128151
+        },
+        {
+          "year": 2022,
+          "value": 111431
+        },
+        {
+          "year": 2023,
+          "value": 107551
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [
+    {
+      "slug": "liberty",
+      "name": "Liberty",
+      "fips": "2146072",
+      "facilities_count": 0,
+      "utilities_count": 2,
+      "population": 2164
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 15942,
+    "pct_low_income": 26.1,
+    "pct_people_of_color": 5.799999999999997,
+    "pct_under_5": 6.0,
+    "pct_over_64": 20.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 32.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 26.0,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 28.9,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 9.3,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 7.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 3.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 50.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 15.2,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 34.2,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 57.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.9,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 44.5
+      },
+      {
+        "label": "Ozone",
+        "score": 50.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 37.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 14.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 9.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 5.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 56.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 13.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 42.8
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 59.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 5.6
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Casey County County, KY"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "rockcastle",
+      "name": "Rockcastle County",
+      "population": 16171,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 36.5,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "lawrence",
+      "name": "Lawrence County",
+      "population": 16228,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 31.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "fleming",
+      "name": "Fleming County",
+      "population": 15111,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 34.0,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "larue",
+      "name": "Larue County",
+      "population": 14902,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 37.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "garrard",
+      "name": "Garrard County",
+      "population": 17175,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 41.8,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "henderson",
+      "name": "Henderson County",
+      "population": 44770,
+      "facilities_count": 12,
+      "total_releases_pounds": 574781,
+      "dominant_medium": "air",
+      "ej_pct_avg": 60.1,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+27 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T22:25:48Z"
+}

@@ -1,0 +1,147 @@
+{
+  "facility": {
+    "state": "fl",
+    "state_label": "Florida",
+    "slug": "safety-kleen-systems-tallahassee-tal",
+    "name": "Safety-Kleen Systems Tallahassee (Tal)",
+    "parent_company": "Clean Harbors INC",
+    "address": "4426 ENTREPOT BLVD",
+    "city": "Tallahassee",
+    "county": "Leon County",
+    "county_slug": "leon",
+    "naics_label": "562112 \u00b7 Hazardous Waste",
+    "lat": 30.401995,
+    "lng": -84.32471
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 4064,
+    "air_releases_pounds": 1,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 4063,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 303.6,
+    "long_arc_pct_change": -24.6,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 5391
+      },
+      {
+        "year": 2022,
+        "value": 83
+      },
+      {
+        "year": 2023,
+        "value": 1007
+      },
+      {
+        "year": 2024,
+        "value": 4064
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 3926,
+      "history": [
+        {
+          "year": 2021,
+          "value": 5047
+        },
+        {
+          "year": 2022,
+          "value": 33
+        },
+        {
+          "year": 2023,
+          "value": 918
+        },
+        {
+          "year": 2024,
+          "value": 3926
+        }
+      ],
+      "yoy_pct_change": 327.5,
+      "long_arc_pct_change": -22.2,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "N590",
+      "category": "pbt",
+      "total_pounds_recent": 136,
+      "history": [
+        {
+          "year": 2021,
+          "value": 333
+        },
+        {
+          "year": 2022,
+          "value": 49
+        },
+        {
+          "year": 2023,
+          "value": 87
+        },
+        {
+          "year": 2024,
+          "value": 136
+        }
+      ],
+      "yoy_pct_change": 56.4,
+      "long_arc_pct_change": -59.1,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Benzo[g,h,i]perylene",
+      "cas": "191-24-2",
+      "category": "pbt",
+      "total_pounds_recent": 2,
+      "history": [
+        {
+          "year": 2021,
+          "value": 11
+        },
+        {
+          "year": 2022,
+          "value": 0.8
+        },
+        {
+          "year": 2023,
+          "value": 2
+        },
+        {
+          "year": 2024,
+          "value": 2
+        }
+      ],
+      "yoy_pct_change": 26.7,
+      "long_arc_pct_change": -82.6,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 33049,
+    "pct_low_income": 65.9,
+    "pct_people_of_color": 68.8,
+    "pct_under_5": 4.2,
+    "pct_over_64": 7.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (28 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:45:36Z"
+}

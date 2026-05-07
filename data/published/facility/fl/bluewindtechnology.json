@@ -1,0 +1,101 @@
+{
+  "facility": {
+    "state": "fl",
+    "state_label": "Florida",
+    "slug": "bluewindtechnology",
+    "name": "Bluewindtechnology",
+    "parent_company": "Bluewind Technology",
+    "address": "7500 SEARS BLVD",
+    "city": "Pensacola",
+    "county": "Escambia County",
+    "county_slug": "escambia",
+    "naics_label": "339999 \u00b7 Miscellaneous Manufacturing",
+    "lat": 30.504952,
+    "lng": -87.249797
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 44550,
+    "air_releases_pounds": 44550,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 8.2,
+    "long_arc_pct_change": 57.2,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 28342
+      },
+      {
+        "year": 2021,
+        "value": 33634
+      },
+      {
+        "year": 2022,
+        "value": 37138
+      },
+      {
+        "year": 2023,
+        "value": 41158
+      },
+      {
+        "year": 2024,
+        "value": 44550
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Styrene",
+      "cas": "100-42-5",
+      "category": "carcinogen",
+      "total_pounds_recent": 44550,
+      "history": [
+        {
+          "year": 2020,
+          "value": 28342
+        },
+        {
+          "year": 2021,
+          "value": 33634
+        },
+        {
+          "year": 2022,
+          "value": 37138
+        },
+        {
+          "year": 2023,
+          "value": 41158
+        },
+        {
+          "year": 2024,
+          "value": 44550
+        }
+      ],
+      "yoy_pct_change": 8.2,
+      "long_arc_pct_change": 57.2,
+      "long_arc_baseline_year": 2020
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 56792,
+    "pct_low_income": 38.1,
+    "pct_people_of_color": 45.1,
+    "pct_under_5": 5.1,
+    "pct_over_64": 15.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (34 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:45:36Z"
+}

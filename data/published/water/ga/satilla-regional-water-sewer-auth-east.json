@@ -1,0 +1,230 @@
+{
+  "utility": {
+    "state": "ga",
+    "state_label": "Georgia",
+    "slug": "satilla-regional-water-sewer-auth-east",
+    "name": "Satilla Regional Water & Sewer Auth-East",
+    "pwsid": "GA2990051",
+    "population_served": 3654,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Waycross"
+    ],
+    "county": "Ware County",
+    "county_slug": "ware",
+    "place_slug": "waycross"
+  },
+  "reporting_period": {
+    "start": "2023-01-01",
+    "end": "2026-05-06"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 3
+  },
+  "violations": [
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2023,
+        "value": 2
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 13856,
+    "pct_low_income": 33.8,
+    "pct_people_of_color": 63.0,
+    "pct_under_5": 10.2,
+    "pct_over_64": 16.5,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 45.6,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 4.2,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 51.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 39.2,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 28.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 32.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 72.7,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 40.2,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 38.0,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 81.9,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 45.4,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 109.6
+      },
+      {
+        "label": "Ozone",
+        "score": 9.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 124.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 98.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 66.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 78.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 146.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 93.6
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 90.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 168.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 102.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 182.4
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Waycross, Georgia (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:34:53Z"
+}

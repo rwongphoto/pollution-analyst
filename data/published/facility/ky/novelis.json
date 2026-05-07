@@ -1,0 +1,127 @@
+{
+  "facility": {
+    "state": "ky",
+    "state_label": "Kentucky",
+    "slug": "novelis",
+    "name": "Novelis",
+    "parent_company": "Novelis INC",
+    "address": "7799 OLD RAILROAD LN",
+    "city": "Guthrie",
+    "county": "Todd County",
+    "county_slug": "todd",
+    "naics_label": "331315 \u00b7 Primary Metals",
+    "lat": 36.669467,
+    "lng": -87.169602
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3520,
+    "air_releases_pounds": 3518,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 270695.5,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 0.1
+      },
+      {
+        "year": 2021,
+        "value": 1
+      },
+      {
+        "year": 2022,
+        "value": 2
+      },
+      {
+        "year": 2023,
+        "value": 1
+      },
+      {
+        "year": 2024,
+        "value": 3520
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Hydrochloric acid (acid aerosols including mists, vapors, gas, fog, and other airborne forms of any particle size)",
+      "cas": "7647-01-0",
+      "category": "respiratory",
+      "total_pounds_recent": 3517,
+      "history": [
+        {
+          "year": 2024,
+          "value": 3517
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Lead  And Lead Compounds",
+      "cas": "N420",
+      "category": "pbt",
+      "total_pounds_recent": 3,
+      "history": [
+        {
+          "year": 2021,
+          "value": 1
+        },
+        {
+          "year": 2022,
+          "value": 2
+        },
+        {
+          "year": 2023,
+          "value": 1
+        },
+        {
+          "year": 2024,
+          "value": 3
+        }
+      ],
+      "yoy_pct_change": 138.5,
+      "long_arc_pct_change": 181.8,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Dioxin and dioxin-like compounds",
+      "cas": "N150",
+      "category": "pbt",
+      "total_pounds_recent": 0.24,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0.24
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 1706,
+    "pct_low_income": 64.8,
+    "pct_people_of_color": 49.7,
+    "pct_under_5": 5.1,
+    "pct_over_64": 18.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:25:49Z"
+}

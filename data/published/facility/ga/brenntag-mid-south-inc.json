@@ -1,0 +1,190 @@
+{
+  "facility": {
+    "state": "ga",
+    "state_label": "Georgia",
+    "slug": "brenntag-mid-south-inc",
+    "name": "Brenntag Mid-South INC.",
+    "parent_company": "Brenntag North America INC",
+    "address": "2225 LAWERENCE AVE",
+    "city": "East Point",
+    "county": "Fulton County",
+    "county_slug": "fulton",
+    "naics_label": "424690 \u00b7 Chemical Wholesalers",
+    "lat": 33.694074,
+    "lng": -84.441265
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 7521,
+    "air_releases_pounds": 91,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 7430,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -71.2,
+    "long_arc_pct_change": 1729.9,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 411
+      },
+      {
+        "year": 2021,
+        "value": 176
+      },
+      {
+        "year": 2022,
+        "value": 179
+      },
+      {
+        "year": 2023,
+        "value": 26110
+      },
+      {
+        "year": 2024,
+        "value": 7521
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Certain glycol ethers",
+      "cas": "N230",
+      "category": "respiratory",
+      "total_pounds_recent": 5016,
+      "history": [
+        {
+          "year": 2012,
+          "value": 62
+        },
+        {
+          "year": 2020,
+          "value": 249
+        },
+        {
+          "year": 2021,
+          "value": 101
+        },
+        {
+          "year": 2022,
+          "value": 105
+        },
+        {
+          "year": 2023,
+          "value": 102
+        },
+        {
+          "year": 2024,
+          "value": 5016
+        }
+      ],
+      "yoy_pct_change": 4817.6,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2012
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 2476,
+      "history": [
+        {
+          "year": 2024,
+          "value": 2476
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Nonylphenol Ethoxylates",
+      "cas": "N535",
+      "category": "general",
+      "total_pounds_recent": 29,
+      "history": [
+        {
+          "year": 2019,
+          "value": 70
+        },
+        {
+          "year": 2020,
+          "value": 162
+        },
+        {
+          "year": 2021,
+          "value": 75
+        },
+        {
+          "year": 2022,
+          "value": 74
+        },
+        {
+          "year": 2023,
+          "value": 40
+        },
+        {
+          "year": 2024,
+          "value": 29
+        }
+      ],
+      "yoy_pct_change": -27.5,
+      "long_arc_pct_change": -58.6,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0000108883",
+      "summary": "0000108883 releases at Brenntag Mid-South INC. fell from 13k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -12998.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 12998
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0001330207",
+      "summary": "0001330207 releases at Brenntag Mid-South INC. fell from 13k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -12970.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 12970
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 76421,
+    "pct_low_income": 47.0,
+    "pct_people_of_color": 87.3,
+    "pct_under_5": 6.5,
+    "pct_over_64": 14.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (81 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:34:52Z"
+}

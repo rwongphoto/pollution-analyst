@@ -1,0 +1,132 @@
+{
+  "facility": {
+    "state": "fl",
+    "state_label": "Florida",
+    "slug": "miami-international-airport-mia-jet-a-fueling-facility",
+    "name": "Miami International Airport Mia Jet-A Fueling Facility",
+    "parent_company": null,
+    "address": "NW 20TH ST & PERIMETER RD",
+    "city": "Miami",
+    "county": "Miami-Dade County",
+    "county_slug": "miami-dade",
+    "naics_label": "424710 \u00b7 Petroleum Bulk Terminals",
+    "lat": 26.078541,
+    "lng": -80.167747
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1291,
+    "air_releases_pounds": 1291,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 1.0,
+    "long_arc_pct_change": -40.6,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 2174
+      },
+      {
+        "year": 2011,
+        "value": 2186
+      },
+      {
+        "year": 2017,
+        "value": 1182
+      },
+      {
+        "year": 2023,
+        "value": 1278
+      },
+      {
+        "year": 2024,
+        "value": 1291
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Naphthalene",
+      "cas": "91-20-3",
+      "category": "carcinogen",
+      "total_pounds_recent": 948,
+      "history": [
+        {
+          "year": 2010,
+          "value": 901
+        },
+        {
+          "year": 2011,
+          "value": 987
+        },
+        {
+          "year": 2017,
+          "value": 866
+        },
+        {
+          "year": 2023,
+          "value": 938
+        },
+        {
+          "year": 2024,
+          "value": 948
+        }
+      ],
+      "yoy_pct_change": 1.1,
+      "long_arc_pct_change": 5.2,
+      "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 343,
+      "history": [
+        {
+          "year": 2010,
+          "value": 384
+        },
+        {
+          "year": 2011,
+          "value": 383
+        },
+        {
+          "year": 2017,
+          "value": 316
+        },
+        {
+          "year": 2023,
+          "value": 340
+        },
+        {
+          "year": 2024,
+          "value": 343
+        }
+      ],
+      "yoy_pct_change": 0.9,
+      "long_arc_pct_change": -10.7,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 99443,
+    "pct_low_income": 38.7,
+    "pct_people_of_color": 59.2,
+    "pct_under_5": 5.9,
+    "pct_over_64": 16.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (73 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:45:36Z"
+}

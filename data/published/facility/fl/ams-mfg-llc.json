@@ -1,0 +1,101 @@
+{
+  "facility": {
+    "state": "fl",
+    "state_label": "Florida",
+    "slug": "ams-mfg-llc",
+    "name": "Ams Mfg LLC",
+    "parent_company": null,
+    "address": "20150 INDEPENDENCE BLVD",
+    "city": "Groveland",
+    "county": "Lake County",
+    "county_slug": "lake",
+    "naics_label": "336612 \u00b7 Transportation Equipment",
+    "lat": 28.642315,
+    "lng": -81.829516
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 7866,
+    "air_releases_pounds": 7809,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 57,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -14.8,
+    "long_arc_pct_change": -49.4,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 15540
+      },
+      {
+        "year": 2021,
+        "value": 9061
+      },
+      {
+        "year": 2022,
+        "value": 11810
+      },
+      {
+        "year": 2023,
+        "value": 9229
+      },
+      {
+        "year": 2024,
+        "value": 7866
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Styrene",
+      "cas": "100-42-5",
+      "category": "carcinogen",
+      "total_pounds_recent": 7866,
+      "history": [
+        {
+          "year": 2010,
+          "value": 15540
+        },
+        {
+          "year": 2021,
+          "value": 9061
+        },
+        {
+          "year": 2022,
+          "value": 11810
+        },
+        {
+          "year": 2023,
+          "value": 9229
+        },
+        {
+          "year": 2024,
+          "value": 7866
+        }
+      ],
+      "yoy_pct_change": -14.8,
+      "long_arc_pct_change": -49.4,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 3601,
+    "pct_low_income": 18.6,
+    "pct_people_of_color": 18.1,
+    "pct_under_5": 2.1,
+    "pct_over_64": 45.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:45:36Z"
+}

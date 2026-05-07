@@ -1,0 +1,120 @@
+{
+  "facility": {
+    "state": "ky",
+    "state_label": "Kentucky",
+    "slug": "kentucky-solite-corp",
+    "name": "Kentucky Solite Corp",
+    "parent_company": "Arcosa INC",
+    "address": "1797 CORAL RIDGE RD",
+    "city": "Brooks",
+    "county": "Bullitt County",
+    "county_slug": "bullitt",
+    "naics_label": "327992 \u00b7 Nonmetallic Mineral Product",
+    "lat": 38.03938,
+    "lng": -85.709904
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 10,
+    "air_releases_pounds": 10,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -1.2,
+    "long_arc_pct_change": 8.2,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 9
+      },
+      {
+        "year": 2022,
+        "value": 9
+      },
+      {
+        "year": 2023,
+        "value": 10
+      },
+      {
+        "year": 2024,
+        "value": 10
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Lead compounds",
+      "cas": "N420",
+      "category": "pbt",
+      "total_pounds_recent": 10,
+      "history": [
+        {
+          "year": 2021,
+          "value": 8
+        },
+        {
+          "year": 2022,
+          "value": 8
+        },
+        {
+          "year": 2023,
+          "value": 9
+        },
+        {
+          "year": 2024,
+          "value": 10
+        }
+      ],
+      "yoy_pct_change": 2.1,
+      "long_arc_pct_change": 12.8,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Dioxin and dioxin-like compounds",
+      "cas": "N150",
+      "category": "pbt",
+      "total_pounds_recent": 0.48,
+      "history": [
+        {
+          "year": 2021,
+          "value": 0.8
+        },
+        {
+          "year": 2022,
+          "value": 0.78
+        },
+        {
+          "year": 2023,
+          "value": 0.8
+        },
+        {
+          "year": 2024,
+          "value": 0.48
+        }
+      ],
+      "yoy_pct_change": -40.3,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 21898,
+    "pct_low_income": 31.3,
+    "pct_people_of_color": 10.2,
+    "pct_under_5": 4.8,
+    "pct_over_64": 16.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (14 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:25:49Z"
+}

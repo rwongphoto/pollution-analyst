@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "ky",
+    "state_label": "Kentucky",
+    "slug": "decoart-inc",
+    "name": "Decoart INC",
+    "parent_company": null,
+    "address": "49 COTTON AVE",
+    "city": "Stanford",
+    "county": "Lincoln County",
+    "county_slug": "lincoln",
+    "naics_label": "325510 \u00b7 Chemicals",
+    "lat": 37.542312,
+    "lng": -84.649569
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1776,
+    "air_releases_pounds": 1493,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 283,
+    "chemicals_reported": 1,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": 8.4,
+    "long_arc_baseline_year": 2017,
+    "history": [
+      {
+        "year": 2017,
+        "value": 1638
+      },
+      {
+        "year": 2018,
+        "value": 1231
+      },
+      {
+        "year": 2021,
+        "value": 4468
+      },
+      {
+        "year": 2024,
+        "value": 1776
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nonylphenol Ethoxylates",
+      "cas": "N535",
+      "category": "general",
+      "total_pounds_recent": 1776,
+      "history": [
+        {
+          "year": 2021,
+          "value": 2422
+        },
+        {
+          "year": 2024,
+          "value": 1776
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -26.7,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 4697,
+    "pct_low_income": 41.5,
+    "pct_people_of_color": 13.3,
+    "pct_under_5": 4.7,
+    "pct_over_64": 21.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (4 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:25:49Z"
+}

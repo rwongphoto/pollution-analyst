@@ -1,0 +1,168 @@
+{
+  "facility": {
+    "state": "ms",
+    "state_label": "Mississippi",
+    "slug": "bakelite-chemicals-llc",
+    "name": "Bakelite Chemicals LLC",
+    "parent_company": "Bakelite US Holdco INC",
+    "address": "13218 HWY 28 WEST",
+    "city": "Taylorsville",
+    "county": "Smith County",
+    "county_slug": "smith",
+    "naics_label": "325211 \u00b7 Chemicals",
+    "lat": 31.827823,
+    "lng": -89.414156
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 96584,
+    "air_releases_pounds": 96242,
+    "water_releases_pounds": 41,
+    "land_releases_pounds": 301,
+    "chemicals_reported": 6,
+    "yoy_pct_change": 9.1,
+    "long_arc_pct_change": 9.1,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 88549
+      },
+      {
+        "year": 2024,
+        "value": 96584
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 78016,
+      "history": [
+        {
+          "year": 2023,
+          "value": 71010
+        },
+        {
+          "year": 2024,
+          "value": 78016
+        }
+      ],
+      "yoy_pct_change": 9.9,
+      "long_arc_pct_change": 9.9,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 15760,
+      "history": [
+        {
+          "year": 2023,
+          "value": 14759
+        },
+        {
+          "year": 2024,
+          "value": 15760
+        }
+      ],
+      "yoy_pct_change": 6.8,
+      "long_arc_pct_change": 6.8,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Phenol",
+      "cas": "108-95-2",
+      "category": "respiratory",
+      "total_pounds_recent": 1375,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1370
+        },
+        {
+          "year": 2024,
+          "value": 1375
+        }
+      ],
+      "yoy_pct_change": 0.4,
+      "long_arc_pct_change": 0.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 1231,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1230
+        },
+        {
+          "year": 2024,
+          "value": 1231
+        }
+      ],
+      "yoy_pct_change": 0.1,
+      "long_arc_pct_change": 0.1,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Acetaldehyde",
+      "cas": "75-07-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 200,
+      "history": [
+        {
+          "year": 2023,
+          "value": 180
+        },
+        {
+          "year": 2024,
+          "value": 200
+        }
+      ],
+      "yoy_pct_change": 11.1,
+      "long_arc_pct_change": 11.1,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Formic acid",
+      "cas": "64-18-6",
+      "category": "general",
+      "total_pounds_recent": 2,
+      "history": [
+        {
+          "year": 2024,
+          "value": 2
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 2396,
+    "pct_low_income": 41.4,
+    "pct_people_of_color": 45.1,
+    "pct_under_5": 8.6,
+    "pct_over_64": 18.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:58:25Z"
+}

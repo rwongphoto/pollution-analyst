@@ -1,0 +1,457 @@
+{
+  "county": {
+    "state": "fl",
+    "state_label": "Florida",
+    "slug": "glades",
+    "name": "Glades County",
+    "fips": "12043",
+    "population": 12179
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 21.8,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 21.8
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.4282,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.4282
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.033,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.033
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 1,
+      "units": "lb",
+      "yoy_pct_change": -6.0,
+      "long_arc_pct_change": null,
+      "baseline_year": 2021,
+      "history": [
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 1
+        },
+        {
+          "year": 2024,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2021,
+      "history": [
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2021,
+      "history": [
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "quikrete-ortona-fl-plant",
+      "state": "fl",
+      "state_label": "Florida",
+      "name": "Quikrete - Ortona Fl Plant",
+      "parent_company": "Quikrete Holdings",
+      "total_pounds_recent": 0.52,
+      "yoy_pct_change": -6.0,
+      "top_chemical": "Lead",
+      "city": "Moore Haven",
+      "lat": 26.76816,
+      "lng": -81.284537
+    }
+  ],
+  "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [
+    {
+      "slug": "moore-haven",
+      "name": "Moore Haven",
+      "fips": "1246550",
+      "facilities_count": 0,
+      "utilities_count": 2,
+      "population": 2034
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 12179,
+    "pct_low_income": 21.9,
+    "pct_people_of_color": 43.0,
+    "pct_under_5": 3.1,
+    "pct_over_64": 26.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 18.4,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 36.9,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 6.0,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 8.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 15.0,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 6.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 36.3,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.9,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 63.2,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 9.9,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 86.0,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 34.2
+      },
+      {
+        "label": "Ozone",
+        "score": 4.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 14.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 18.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 22.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 14.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 40.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 26.6
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 78.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 4.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 110.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Glades County County, FL"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 9.8,
+      "age_adjusted": 9.9,
+      "state_mean": 9.5,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.4,
+      "vs_state_pct": 4.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.12,
+      "vs_us_pct": -1.2,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 11.7,
+      "age_adjusted": 9.2,
+      "state_mean": 5.8,
+      "us_mean": 5.5,
+      "vs_state_pp": 3.36,
+      "vs_state_pct": 57.5,
+      "vs_state_class": "worse",
+      "vs_us_pp": 3.7,
+      "vs_us_pct": 67.3,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 10.9,
+      "age_adjusted": 7.8,
+      "state_mean": 5.6,
+      "us_mean": 5.3,
+      "vs_state_pp": 2.18,
+      "vs_state_pct": 38.8,
+      "vs_state_class": "worse",
+      "vs_us_pp": 2.49,
+      "vs_us_pct": 46.9,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 17.7,
+      "age_adjusted": 14.4,
+      "state_mean": 11.1,
+      "us_mean": 10.5,
+      "vs_state_pp": 3.3,
+      "vs_state_pct": 29.7,
+      "vs_state_class": "worse",
+      "vs_us_pp": 3.94,
+      "vs_us_pct": 37.7,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 18.2,
+      "age_adjusted": 20.1,
+      "state_mean": 17.3,
+      "us_mean": 16.8,
+      "vs_state_pp": 2.83,
+      "vs_state_pct": 16.4,
+      "vs_state_class": "worse",
+      "vs_us_pp": 3.35,
+      "vs_us_pct": 20.0,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "fl",
+      "slug": "desoto",
+      "name": "DeSoto County",
+      "population": 34258,
+      "facilities_count": 1,
+      "total_releases_pounds": 0.39,
+      "dominant_medium": "air",
+      "ej_pct_avg": 36.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "fl",
+      "slug": "charlotte",
+      "name": "Charlotte County",
+      "population": 189900,
+      "facilities_count": 8,
+      "total_releases_pounds": 13,
+      "dominant_medium": "air",
+      "ej_pct_avg": 37.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 8 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "fl",
+      "slug": "collier",
+      "name": "Collier County",
+      "population": 380221,
+      "facilities_count": 4,
+      "total_releases_pounds": 237,
+      "dominant_medium": "air",
+      "ej_pct_avg": 38.7,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 4 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "fl",
+      "slug": "monroe",
+      "name": "Monroe County",
+      "population": 82044,
+      "facilities_count": 2,
+      "total_releases_pounds": 2204,
+      "dominant_medium": "air",
+      "ej_pct_avg": 30.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "fl",
+      "slug": "hendry",
+      "name": "Hendry County",
+      "population": 39902,
+      "facilities_count": 2,
+      "total_releases_pounds": 788280,
+      "dominant_medium": "air",
+      "ej_pct_avg": 35.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "fl",
+      "slug": "taylor",
+      "name": "Taylor County",
+      "population": 21421,
+      "facilities_count": 1,
+      "total_releases_pounds": 56000,
+      "dominant_medium": "water",
+      "ej_pct_avg": 44.8,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+15 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T22:45:34Z"
+}

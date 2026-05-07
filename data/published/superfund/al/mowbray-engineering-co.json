@@ -1,0 +1,91 @@
+{
+  "site": {
+    "state": "al",
+    "state_label": "Alabama",
+    "slug": "mowbray-engineering-co",
+    "name": "Mowbray Engineering Co.",
+    "epa_id": "ALD031618069",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Butler",
+    "county_slug": "butler",
+    "city": "Greenville",
+    "city_slug": "greenville",
+    "address": "Jct Of 2Nd & Beeland Sts",
+    "zip": "36037",
+    "lat": 31.831669,
+    "lng": -86.61305
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Aroclor 1260"
+  },
+  "contaminants": [
+    {
+      "name": "Aroclor 1260",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polychlorinated Biphenyls (Pcbs)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "AL0000125",
+        "name": "Greenville Water Works",
+        "slug": "greenville-water-works",
+        "state": "al",
+        "distance_miles": 1.61,
+        "place_name": "Greenville",
+        "primary_source": "groundwater",
+        "population_served": 9336,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "AL0001507",
+        "name": "Butler County Water Authority",
+        "slug": "butler-county-water-authority",
+        "state": "al",
+        "distance_miles": 1.61,
+        "place_name": "Greenville",
+        "primary_source": "groundwater",
+        "population_served": 14052,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 3524,
+    "pct_low_income": 49.5,
+    "pct_people_of_color": 62.5,
+    "pct_under_5": 8.3,
+    "pct_over_64": 13.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:17:18Z"
+}

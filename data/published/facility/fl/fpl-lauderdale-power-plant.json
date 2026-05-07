@@ -1,0 +1,128 @@
+{
+  "facility": {
+    "state": "fl",
+    "state_label": "Florida",
+    "slug": "fpl-lauderdale-power-plant",
+    "name": "Fpl-Lauderdale Power Plant",
+    "parent_company": "Nextera Energy INC",
+    "address": "4300 SW 42ND ST",
+    "city": "Fort Lauderdale",
+    "county": "Broward County",
+    "county_slug": "broward",
+    "naics_label": "221112 \u00b7 Electric Utilities",
+    "lat": 26.068195,
+    "lng": -80.20171
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 49816,
+    "air_releases_pounds": 49815,
+    "water_releases_pounds": 0.9,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 17.5,
+    "long_arc_pct_change": 79.9,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 27685
+      },
+      {
+        "year": 2023,
+        "value": 42401
+      },
+      {
+        "year": 2024,
+        "value": 49816
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 49800,
+      "history": [
+        {
+          "year": 2022,
+          "value": 27000
+        },
+        {
+          "year": 2023,
+          "value": 42386
+        },
+        {
+          "year": 2024,
+          "value": 49800
+        }
+      ],
+      "yoy_pct_change": 17.5,
+      "long_arc_pct_change": 84.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "N590",
+      "category": "pbt",
+      "total_pounds_recent": 16,
+      "history": [
+        {
+          "year": 2014,
+          "value": 10
+        },
+        {
+          "year": 2015,
+          "value": 109
+        },
+        {
+          "year": 2016,
+          "value": 299
+        },
+        {
+          "year": 2017,
+          "value": 38
+        },
+        {
+          "year": 2018,
+          "value": 14
+        },
+        {
+          "year": 2022,
+          "value": 685
+        },
+        {
+          "year": 2023,
+          "value": 14
+        },
+        {
+          "year": 2024,
+          "value": 16
+        }
+      ],
+      "yoy_pct_change": 13.1,
+      "long_arc_pct_change": 56.6,
+      "long_arc_baseline_year": 2014
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 110256,
+    "pct_low_income": 34.8,
+    "pct_people_of_color": 62.8,
+    "pct_under_5": 5.6,
+    "pct_over_64": 13.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (63 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:45:35Z"
+}

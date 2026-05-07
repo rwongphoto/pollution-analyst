@@ -1,0 +1,350 @@
+{
+  "place": {
+    "state": "ky",
+    "state_label": "Kentucky",
+    "slug": "salem",
+    "name": "Salem",
+    "fips": "2168052",
+    "population": 879,
+    "county_name": "Livingston County",
+    "county_fips": "21139"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "criteria_air",
+      "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
+      "current": 0.061,
+      "units": "ppm",
+      "yoy_pct_change": -15.3,
+      "long_arc_pct_change": -23.8,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.08
+        },
+        {
+          "year": 2011,
+          "value": 0.071
+        },
+        {
+          "year": 2012,
+          "value": 0.087
+        },
+        {
+          "year": 2013,
+          "value": 0.065
+        },
+        {
+          "year": 2014,
+          "value": 0.065
+        },
+        {
+          "year": 2015,
+          "value": 0.063
+        },
+        {
+          "year": 2016,
+          "value": 0.068
+        },
+        {
+          "year": 2017,
+          "value": 0.063
+        },
+        {
+          "year": 2018,
+          "value": 0.067
+        },
+        {
+          "year": 2019,
+          "value": 0.06
+        },
+        {
+          "year": 2020,
+          "value": 0.064
+        },
+        {
+          "year": 2021,
+          "value": 0.062
+        },
+        {
+          "year": 2022,
+          "value": 0.068
+        },
+        {
+          "year": 2023,
+          "value": 0.072
+        },
+        {
+          "year": 2024,
+          "value": 0.061
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.686,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.686
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1242,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1242
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 10812,
+    "violations_5yr_total": 2,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "crittenden-livingston-co-water-district",
+        "state": "ky",
+        "state_label": "Kentucky",
+        "name": "Crittenden-Livingston Co Water District",
+        "pwsid": "KY0700532",
+        "population_served": 9571,
+        "health_based_violations_5yr": 2,
+        "unresolved": false
+      },
+      {
+        "slug": "salem-municipal-water-system",
+        "state": "ky",
+        "state_label": "Kentucky",
+        "name": "Salem Municipal Water System",
+        "pwsid": "KY0700380",
+        "population_served": 1241,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Bromate",
+      "summary": "Disinfectants and Disinfection Byproducts (Stage 2) health-based violation cited in 2021 (bromate).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:KY0700532"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Bromate",
+      "summary": "Disinfectants and Disinfection Byproducts (Stage 2) health-based violation cited in 2021 (bromate).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:KY0700532"
+      }
+    }
+  ],
+  "equity": {
+    "population": 879,
+    "pct_low_income": 16.1,
+    "pct_people_of_color": 10.400000000000006,
+    "pct_under_5": 3.3,
+    "pct_over_64": 26.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Salem, Kentucky (Census place block groups)"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "grand-rivers",
+      "name": "Grand Rivers",
+      "population": 432,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "ledbetter",
+      "name": "Ledbetter",
+      "population": 1815,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 55.0,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "smithland",
+      "name": "Smithland",
+      "population": 274,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "new-castle",
+      "name": "New Castle",
+      "population": 880,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "nortonville",
+      "name": "Nortonville",
+      "population": 882,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 39.8,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ky",
+      "slug": "evarts",
+      "name": "Evarts",
+      "population": 874,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 28.2,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T22:25:50Z"
+}

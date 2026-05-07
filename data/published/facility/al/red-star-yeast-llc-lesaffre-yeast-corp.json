@@ -1,0 +1,219 @@
+{
+  "facility": {
+    "state": "al",
+    "state_label": "Alabama",
+    "slug": "red-star-yeast-llc-lesaffre-yeast-corp",
+    "name": "Red Star Yeast LLC / Lesaffre Yeast Corp.",
+    "parent_company": "Lesaffre International",
+    "address": "13211 US HWY 431 S",
+    "city": "Headland",
+    "county": "Henry County",
+    "county_slug": "henry",
+    "naics_label": "311991 \u00b7 Food",
+    "lat": 31.400387,
+    "lng": -85.323394
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 184372,
+    "air_releases_pounds": 5720,
+    "water_releases_pounds": 12954,
+    "land_releases_pounds": 165698,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 94.7,
+    "long_arc_pct_change": 131.7,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 79570
+      },
+      {
+        "year": 2020,
+        "value": 110158
+      },
+      {
+        "year": 2021,
+        "value": 70251
+      },
+      {
+        "year": 2022,
+        "value": 102620
+      },
+      {
+        "year": 2023,
+        "value": 94682
+      },
+      {
+        "year": 2024,
+        "value": 184372
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 108098,
+      "history": [
+        {
+          "year": 2019,
+          "value": 53600
+        },
+        {
+          "year": 2020,
+          "value": 55708
+        },
+        {
+          "year": 2021,
+          "value": 22765
+        },
+        {
+          "year": 2022,
+          "value": 72453
+        },
+        {
+          "year": 2023,
+          "value": 55919
+        },
+        {
+          "year": 2024,
+          "value": 108098
+        }
+      ],
+      "yoy_pct_change": 93.3,
+      "long_arc_pct_change": 101.7,
+      "long_arc_baseline_year": 2019
+    },
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 76274,
+      "history": [
+        {
+          "year": 2019,
+          "value": 25970
+        },
+        {
+          "year": 2020,
+          "value": 54451
+        },
+        {
+          "year": 2021,
+          "value": 47485
+        },
+        {
+          "year": 2022,
+          "value": 30167
+        },
+        {
+          "year": 2023,
+          "value": 38763
+        },
+        {
+          "year": 2024,
+          "value": 76274
+        }
+      ],
+      "yoy_pct_change": 96.8,
+      "long_arc_pct_change": 193.7,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Ammonia",
+      "summary": "Ammonia releases at Red Star Yeast LLC / Lesaffre Yeast Corp. rose from 56k lb to 108k lb between 2023 and 2024.",
+      "magnitude_pct": 93.3,
+      "magnitude_abs": 52179.1,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2019,
+          "value": 53600
+        },
+        {
+          "year": 2020,
+          "value": 55708
+        },
+        {
+          "year": 2021,
+          "value": 22765
+        },
+        {
+          "year": 2022,
+          "value": 72453
+        },
+        {
+          "year": 2023,
+          "value": 55919
+        },
+        {
+          "year": 2024,
+          "value": 108098
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "summary": "Nitrate compounds (water dissociable; reportable only when in aqueous solution) releases at Red Star Yeast LLC / Lesaffre Yeast Corp. rose from 39k lb to 76k lb between 2023 and 2024.",
+      "magnitude_pct": 96.8,
+      "magnitude_abs": 37510.9,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2019,
+          "value": 25970
+        },
+        {
+          "year": 2020,
+          "value": 54451
+        },
+        {
+          "year": 2021,
+          "value": 47485
+        },
+        {
+          "year": 2022,
+          "value": 30167
+        },
+        {
+          "year": 2023,
+          "value": 38763
+        },
+        {
+          "year": 2024,
+          "value": 76274
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 1213,
+    "pct_low_income": 38.1,
+    "pct_people_of_color": 38.3,
+    "pct_under_5": 3.4,
+    "pct_over_64": 12.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:17:17Z"
+}

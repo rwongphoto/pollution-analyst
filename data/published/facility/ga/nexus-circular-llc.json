@@ -1,0 +1,145 @@
+{
+  "facility": {
+    "state": "ga",
+    "state_label": "Georgia",
+    "slug": "nexus-circular-llc",
+    "name": "Nexus Circular LLC",
+    "parent_company": "Nexus Circular LLC",
+    "address": "500 WATERFRONT DR SW",
+    "city": "Atlanta",
+    "county": "Fulton County",
+    "county_slug": "fulton",
+    "naics_label": "324199 \u00b7 Petroleum",
+    "lat": 33.765844,
+    "lng": -84.543523
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 3000,
+    "air_releases_pounds": 3000,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 500.0,
+    "long_arc_pct_change": 500.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 500
+      },
+      {
+        "year": 2023,
+        "value": 500
+      },
+      {
+        "year": 2024,
+        "value": 3000
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Propylene",
+      "cas": "115-07-1",
+      "category": "general",
+      "total_pounds_recent": 1000,
+      "history": [
+        {
+          "year": 2022,
+          "value": 500
+        },
+        {
+          "year": 2023,
+          "value": 500
+        },
+        {
+          "year": 2024,
+          "value": 1000
+        }
+      ],
+      "yoy_pct_change": 100.0,
+      "long_arc_pct_change": 100.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Ethylene",
+      "cas": "74-85-1",
+      "category": "general",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Ethylbenzene",
+      "cas": "100-41-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 45750,
+    "pct_low_income": 43.9,
+    "pct_people_of_color": 92.5,
+    "pct_under_5": 8.3,
+    "pct_over_64": 11.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (32 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:34:52Z"
+}

@@ -1,0 +1,128 @@
+{
+  "facility": {
+    "state": "al",
+    "state_label": "Alabama",
+    "slug": "pilgrim-s-pride-guntersville-processing-plant",
+    "name": "Pilgrim'S Pride Guntersville Processing Plant",
+    "parent_company": "Jbs USA Food Co",
+    "address": "3500 LAKE GUNTERSVILLE PARK DR.",
+    "city": "Guntersville",
+    "county": "Marshall County",
+    "county_slug": "marshall",
+    "naics_label": "311615 \u00b7 Food",
+    "lat": 34.345794,
+    "lng": -86.279824
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 8157,
+    "air_releases_pounds": 1516,
+    "water_releases_pounds": 13,
+    "land_releases_pounds": 6628,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 34.0,
+    "long_arc_pct_change": -71.8,
+    "long_arc_baseline_year": 2018,
+    "history": [
+      {
+        "year": 2018,
+        "value": 28935
+      },
+      {
+        "year": 2019,
+        "value": 3
+      },
+      {
+        "year": 2021,
+        "value": 10425
+      },
+      {
+        "year": 2022,
+        "value": 9956
+      },
+      {
+        "year": 2023,
+        "value": 6087
+      },
+      {
+        "year": 2024,
+        "value": 8157
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 6641,
+      "history": [
+        {
+          "year": 2018,
+          "value": 28935
+        },
+        {
+          "year": 2019,
+          "value": 3
+        },
+        {
+          "year": 2024,
+          "value": 6641
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -77.0,
+      "long_arc_baseline_year": 2018
+    },
+    {
+      "chemical": "Peracetic acid",
+      "cas": "79-21-0",
+      "category": "general",
+      "total_pounds_recent": 1516,
+      "history": [
+        {
+          "year": 2017,
+          "value": 276
+        },
+        {
+          "year": 2021,
+          "value": 10425
+        },
+        {
+          "year": 2022,
+          "value": 9956
+        },
+        {
+          "year": 2023,
+          "value": 6087
+        },
+        {
+          "year": 2024,
+          "value": 1516
+        }
+      ],
+      "yoy_pct_change": -75.1,
+      "long_arc_pct_change": 448.9,
+      "long_arc_baseline_year": 2017
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 6033,
+    "pct_low_income": 41.1,
+    "pct_people_of_color": 24.8,
+    "pct_under_5": 6.6,
+    "pct_over_64": 17.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (6 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:17:17Z"
+}

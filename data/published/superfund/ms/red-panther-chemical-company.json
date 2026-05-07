@@ -1,0 +1,110 @@
+{
+  "site": {
+    "state": "ms",
+    "state_label": "Mississippi",
+    "slug": "red-panther-chemical-company",
+    "name": "Red Panther Chemical Company",
+    "epa_id": "MSD000272385",
+    "npl_status": "Deleted from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Coahoma",
+    "county_slug": "coahoma",
+    "city": "Clarksdale",
+    "city_slug": "clarksdale",
+    "address": "1201 Normandy Avenue",
+    "zip": "38614",
+    "lat": 34.187408,
+    "lng": -90.561625
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MS0140002",
+        "name": "Clarksdale Public Utilities",
+        "slug": "clarksdale-public-utilities",
+        "state": "ms",
+        "distance_miles": 0.59,
+        "place_name": "Clarksdale",
+        "primary_source": "groundwater",
+        "population_served": 14903,
+        "health_based_5yr": 22,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MS0140009",
+        "name": "Lu-Rand Utility District",
+        "slug": "lu-rand-utility-district",
+        "state": "ms",
+        "distance_miles": 0.59,
+        "place_name": "Clarksdale",
+        "primary_source": "groundwater",
+        "population_served": 105,
+        "health_based_5yr": 1,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MS0140045",
+        "name": "Pine Grove Water Association",
+        "slug": "pine-grove-water-association",
+        "state": "ms",
+        "distance_miles": 0.59,
+        "place_name": "Clarksdale",
+        "primary_source": "groundwater",
+        "population_served": 457,
+        "health_based_5yr": 8,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MS0140053",
+        "name": "Coahoma Utility Dist #2",
+        "slug": "coahoma-utility-dist-2",
+        "state": "ms",
+        "distance_miles": 0.59,
+        "place_name": "Clarksdale",
+        "primary_source": "groundwater",
+        "population_served": 645,
+        "health_based_5yr": 16,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MS0140010",
+        "name": "Town Of Lyon",
+        "slug": "lyon",
+        "state": "ms",
+        "distance_miles": 2.3,
+        "place_name": "Lyon",
+        "primary_source": "groundwater",
+        "population_served": 270,
+        "health_based_5yr": 1,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 4080,
+    "pct_low_income": 77.7,
+    "pct_people_of_color": 98.0,
+    "pct_under_5": 5.2,
+    "pct_over_64": 19.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (6 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:58:26Z"
+}

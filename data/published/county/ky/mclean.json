@@ -1,0 +1,386 @@
+{
+  "county": {
+    "state": "ky",
+    "state_label": "Kentucky",
+    "slug": "mclean",
+    "name": "McLean County",
+    "fips": "21149",
+    "population": 9173
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "criteria_air",
+      "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
+      "current": 0.079,
+      "units": "ppm",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.079
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.6875,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.6875
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1028,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1028
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "utilities": [],
+  "superfund": [
+    {
+      "slug": "brantley-landfill",
+      "state": "ky",
+      "name": "Brantley Landfill",
+      "epa_id": "KYD980501019",
+      "npl_status": "Deleted from the Final NPL",
+      "is_active_npl": false,
+      "is_deleted": true,
+      "is_federal_facility": false,
+      "city": "Island",
+      "city_slug": null,
+      "primary_contaminant": "Ammonia"
+    }
+  ],
+  "superfund_total": 1,
+  "cities_directory": [
+    {
+      "slug": "calhoun",
+      "name": "Calhoun",
+      "fips": "2111854",
+      "facilities_count": 0,
+      "utilities_count": 3,
+      "population": 833
+    },
+    {
+      "slug": "island",
+      "name": "Island",
+      "fips": "2139700",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 615
+    },
+    {
+      "slug": "sacramento",
+      "name": "Sacramento",
+      "fips": "2167638",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 413
+    }
+  ],
+  "flags": [
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "Ozone 8-hour 4th-highest daily max",
+      "summary": "Ozone 8-hour 4th-highest daily max in McLean County reached 0.079 ppm in 2010, 13% above the EPA NAAQS of 0.07 ppm.",
+      "magnitude_pct": 12.9,
+      "magnitude_abs": 0.009,
+      "baseline_year": null,
+      "recent_year": 2010,
+      "units": "ppm",
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.079
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 9173,
+    "pct_low_income": 7.9,
+    "pct_people_of_color": 5.299999999999997,
+    "pct_under_5": 5.8,
+    "pct_over_64": 19.7,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 51.8,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 57.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 36.8,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 14.5,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 97.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 1.4,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 56.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 51.9,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 32.1,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 59.6,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 79.1,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 44.1
+      },
+      {
+        "label": "Ozone",
+        "score": 42.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 30.1
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 13.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 68.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 0.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 40.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 42.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 2.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 19.1
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 43.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 20.1
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in McLean County County, KY"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "livingston",
+      "name": "Livingston County",
+      "population": 8980,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 51.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "crittenden",
+      "name": "Crittenden County",
+      "population": 8979,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "bracken",
+      "name": "Bracken County",
+      "population": 8420,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 39.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "leslie",
+      "name": "Leslie County",
+      "population": 10468,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 24.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "nicholas",
+      "name": "Nicholas County",
+      "population": 7613,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 33.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "green",
+      "name": "Green County",
+      "population": 11198,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 36.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T22:25:48Z"
+}

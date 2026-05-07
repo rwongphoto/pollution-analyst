@@ -1,0 +1,445 @@
+{
+  "county": {
+    "state": "ga",
+    "state_label": "Georgia",
+    "slug": "crawford",
+    "name": "Crawford County",
+    "fips": "13079",
+    "population": 12156
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 30.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 30.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.8876,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.8876
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0889,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0889
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2019,
+      "history": [
+        {
+          "year": 2019,
+          "value": 201
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2019,
+      "history": [
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 7332,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2019,
+      "history": [
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 7332
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "blue-cube-operations-llc",
+      "state": "ga",
+      "state_label": "Georgia",
+      "name": "Blue Cube Operations LLC",
+      "parent_company": "Olin CORP",
+      "total_pounds_recent": 7332,
+      "yoy_pct_change": null,
+      "top_chemical": "Nonylphenol",
+      "city": "Roberta",
+      "lat": 32.71625,
+      "lng": -84.023759
+    }
+  ],
+  "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [
+    {
+      "slug": "roberta",
+      "name": "Roberta",
+      "fips": "1365856",
+      "facilities_count": 0,
+      "utilities_count": 3,
+      "population": 1462
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 12156,
+    "pct_low_income": 16.6,
+    "pct_people_of_color": 27.5,
+    "pct_under_5": 5.0,
+    "pct_over_64": 18.7,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 63.0,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 7.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 4.6,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 12.9,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 38.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 8.4,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 42.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.7,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 24.5,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 34.1,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 38.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 77.7,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 79.9
+      },
+      {
+        "label": "Ozone",
+        "score": 16.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 6.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 17.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 44.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 7.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 46.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 19.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 4.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 32.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 41.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 25.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 23.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Crawford County County, GA"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.4,
+      "age_adjusted": 10.4,
+      "state_mean": 10.1,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.31,
+      "vs_state_pct": 3.1,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.38,
+      "vs_us_pct": 3.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 9.0,
+      "age_adjusted": 7.2,
+      "state_mean": 5.9,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.28,
+      "vs_state_pct": 21.6,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.7,
+      "vs_us_pct": 30.9,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.9,
+      "age_adjusted": 6.0,
+      "state_mean": 5.5,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.54,
+      "vs_state_pct": 9.9,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.69,
+      "vs_us_pct": 13.0,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 15.5,
+      "age_adjusted": 12.1,
+      "state_mean": 12.1,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.03,
+      "vs_state_pct": -0.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.64,
+      "vs_us_pct": 15.7,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.7,
+      "age_adjusted": 19.5,
+      "state_mean": 17.4,
+      "us_mean": 16.8,
+      "vs_state_pp": 2.07,
+      "vs_state_pct": 11.9,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.75,
+      "vs_us_pct": 16.4,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ga",
+      "slug": "brantley",
+      "name": "Brantley County",
+      "population": 18105,
+      "facilities_count": 1,
+      "total_releases_pounds": 5021,
+      "dominant_medium": "land",
+      "ej_pct_avg": 27.3,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ga",
+      "slug": "cook",
+      "name": "Cook County",
+      "population": 17242,
+      "facilities_count": 1,
+      "total_releases_pounds": 12781,
+      "dominant_medium": "land",
+      "ej_pct_avg": 36.1,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ga",
+      "slug": "lumpkin",
+      "name": "Lumpkin County",
+      "population": 33405,
+      "facilities_count": 1,
+      "total_releases_pounds": 10437,
+      "dominant_medium": "land",
+      "ej_pct_avg": 29.5,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ga",
+      "slug": "taylor",
+      "name": "Taylor County",
+      "population": 7799,
+      "facilities_count": 1,
+      "total_releases_pounds": 3376,
+      "dominant_medium": "land",
+      "ej_pct_avg": 32.9,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ga",
+      "slug": "toombs",
+      "name": "Toombs County",
+      "population": 26946,
+      "facilities_count": 2,
+      "total_releases_pounds": 5633,
+      "dominant_medium": "land",
+      "ej_pct_avg": 40.1,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ga",
+      "slug": "polk",
+      "name": "Polk County",
+      "population": 43019,
+      "facilities_count": 5,
+      "total_releases_pounds": 42706,
+      "dominant_medium": "air",
+      "ej_pct_avg": 44.5,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+11 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T22:34:51Z"
+}

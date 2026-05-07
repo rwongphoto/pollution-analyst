@@ -1,0 +1,506 @@
+{
+  "county": {
+    "state": "ga",
+    "state_label": "Georgia",
+    "slug": "pickens",
+    "name": "Pickens County",
+    "fips": "13227",
+    "population": 33439
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 30.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 30.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.7025,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.7025
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0957,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0957
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 64,
+      "units": "lb",
+      "yoy_pct_change": 23.0,
+      "long_arc_pct_change": null,
+      "baseline_year": 2019,
+      "history": [
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2020,
+          "value": 53
+        },
+        {
+          "year": 2021,
+          "value": 46
+        },
+        {
+          "year": 2022,
+          "value": 63
+        },
+        {
+          "year": 2023,
+          "value": 52
+        },
+        {
+          "year": 2024,
+          "value": 64
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2019,
+      "history": [
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2019,
+      "history": [
+        {
+          "year": 2019,
+          "value": 0
+        },
+        {
+          "year": 2020,
+          "value": 0
+        },
+        {
+          "year": 2021,
+          "value": 0
+        },
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "royston-llc",
+      "state": "ga",
+      "state_label": "Georgia",
+      "name": "Royston LLC",
+      "parent_company": "Royston LLC",
+      "total_pounds_recent": 64,
+      "yoy_pct_change": 23.0,
+      "top_chemical": "Nickel",
+      "city": "Jasper",
+      "lat": 34.433225,
+      "lng": -84.391524
+    },
+    {
+      "slug": "thomas-concrete-jasper",
+      "state": "ga",
+      "state_label": "Georgia",
+      "name": "Thomas Concrete - Jasper",
+      "parent_company": "Thomas Concrete INC",
+      "total_pounds_recent": 0.03,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Jasper",
+      "lat": 34.456946,
+      "lng": -84.446629
+    }
+  ],
+  "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [
+    {
+      "slug": "jasper",
+      "name": "Jasper",
+      "fips": "1341932",
+      "facilities_count": 0,
+      "utilities_count": 3,
+      "population": 4177
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 33439,
+    "pct_low_income": 13.5,
+    "pct_people_of_color": 7.400000000000006,
+    "pct_under_5": 4.3,
+    "pct_over_64": 22.1,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 31.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 16.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 8.5,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 15.1,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 44.8,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 9.4,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 41.3,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 45.9,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 97.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.1,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 27.3
+      },
+      {
+        "label": "Ozone",
+        "score": 13.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 8.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 14.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 35.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 9.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 25.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 33.4
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 75.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 2.1
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Pickens County County, GA"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.0,
+      "age_adjusted": 10.1,
+      "state_mean": 10.1,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.01,
+      "vs_state_pct": 0.1,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.08,
+      "vs_us_pct": 0.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 8.5,
+      "age_adjusted": 6.7,
+      "state_mean": 5.9,
+      "us_mean": 5.5,
+      "vs_state_pp": 0.78,
+      "vs_state_pct": 13.2,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.2,
+      "vs_us_pct": 21.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.9,
+      "age_adjusted": 5.7,
+      "state_mean": 5.5,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.24,
+      "vs_state_pct": 4.4,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.39,
+      "vs_us_pct": 7.3,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 13.6,
+      "age_adjusted": 10.3,
+      "state_mean": 12.1,
+      "us_mean": 10.5,
+      "vs_state_pp": -1.83,
+      "vs_state_pct": -15.1,
+      "vs_state_class": "better",
+      "vs_us_pp": -0.16,
+      "vs_us_pct": -1.5,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.1,
+      "age_adjusted": 19.1,
+      "state_mean": 17.4,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.67,
+      "vs_state_pct": 9.6,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.35,
+      "vs_us_pct": 14.0,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ga",
+      "slug": "pike",
+      "name": "Pike County",
+      "population": 19145,
+      "facilities_count": 2,
+      "total_releases_pounds": 12,
+      "dominant_medium": "air",
+      "ej_pct_avg": 31.0,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ga",
+      "slug": "murray",
+      "name": "Murray County",
+      "population": 40063,
+      "facilities_count": 1,
+      "total_releases_pounds": 20,
+      "dominant_medium": "air",
+      "ej_pct_avg": 32.3,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ga",
+      "slug": "emanuel",
+      "name": "Emanuel County",
+      "population": 22907,
+      "facilities_count": 2,
+      "total_releases_pounds": 505,
+      "dominant_medium": "air",
+      "ej_pct_avg": 36.3,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ga",
+      "slug": "dawson",
+      "name": "Dawson County",
+      "population": 27355,
+      "facilities_count": 2,
+      "total_releases_pounds": 787,
+      "dominant_medium": "air",
+      "ej_pct_avg": 37.0,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ga",
+      "slug": "mitchell",
+      "name": "Mitchell County",
+      "population": 21634,
+      "facilities_count": 2,
+      "total_releases_pounds": 688,
+      "dominant_medium": "air",
+      "ej_pct_avg": 36.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ga",
+      "slug": "rockdale",
+      "name": "Rockdale County",
+      "population": 93641,
+      "facilities_count": 8,
+      "total_releases_pounds": 5678510,
+      "dominant_medium": "air",
+      "ej_pct_avg": 55.2,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+18 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T22:34:51Z"
+}

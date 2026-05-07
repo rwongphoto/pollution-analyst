@@ -1,0 +1,222 @@
+{
+  "facility": {
+    "state": "ga",
+    "state_label": "Georgia",
+    "slug": "southwire-co-villa-rica-plant",
+    "name": "Southwire CO Villa Rica Plant",
+    "parent_company": "Southwire Co",
+    "address": "540 W INDUSTRIAL CT",
+    "city": "Villa Rica",
+    "county": "Carroll County",
+    "county_slug": "carroll",
+    "naics_label": "335929 \u00b7 Electrical Equipment",
+    "lat": 33.741027,
+    "lng": -84.943597
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 54889,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 54889,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 54.9,
+    "long_arc_pct_change": 174.6,
+    "long_arc_baseline_year": 2017,
+    "history": [
+      {
+        "year": 2017,
+        "value": 19989
+      },
+      {
+        "year": 2018,
+        "value": 15927
+      },
+      {
+        "year": 2019,
+        "value": 28349
+      },
+      {
+        "year": 2020,
+        "value": 30820
+      },
+      {
+        "year": 2021,
+        "value": 59857
+      },
+      {
+        "year": 2022,
+        "value": 100168
+      },
+      {
+        "year": 2023,
+        "value": 35433
+      },
+      {
+        "year": 2024,
+        "value": 54889
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Antimony compounds",
+      "cas": "N010",
+      "category": "respiratory",
+      "total_pounds_recent": 30884,
+      "history": [
+        {
+          "year": 2017,
+          "value": 16457
+        },
+        {
+          "year": 2018,
+          "value": 12619
+        },
+        {
+          "year": 2019,
+          "value": 18952
+        },
+        {
+          "year": 2020,
+          "value": 21356
+        },
+        {
+          "year": 2021,
+          "value": 34951
+        },
+        {
+          "year": 2022,
+          "value": 56325
+        },
+        {
+          "year": 2023,
+          "value": 19767
+        },
+        {
+          "year": 2024,
+          "value": 30884
+        }
+      ],
+      "yoy_pct_change": 56.2,
+      "long_arc_pct_change": 87.7,
+      "long_arc_baseline_year": 2017
+    },
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 24005,
+      "history": [
+        {
+          "year": 2017,
+          "value": 3532
+        },
+        {
+          "year": 2018,
+          "value": 3308
+        },
+        {
+          "year": 2019,
+          "value": 9397
+        },
+        {
+          "year": 2020,
+          "value": 9464
+        },
+        {
+          "year": 2021,
+          "value": 24906
+        },
+        {
+          "year": 2022,
+          "value": 43843
+        },
+        {
+          "year": 2023,
+          "value": 15666
+        },
+        {
+          "year": 2024,
+          "value": 24005
+        }
+      ],
+      "yoy_pct_change": 53.2,
+      "long_arc_pct_change": 579.6,
+      "long_arc_baseline_year": 2017
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Antimony compounds",
+      "summary": "Antimony compounds releases at Southwire CO Villa Rica Plant rose from 20k lb to 31k lb between 2023 and 2024.",
+      "magnitude_pct": 56.2,
+      "magnitude_abs": 11117.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2015,
+          "value": 1023
+        },
+        {
+          "year": 2016,
+          "value": 558
+        },
+        {
+          "year": 2017,
+          "value": 16457
+        },
+        {
+          "year": 2018,
+          "value": 12619
+        },
+        {
+          "year": 2019,
+          "value": 18952
+        },
+        {
+          "year": 2020,
+          "value": 21356
+        },
+        {
+          "year": 2021,
+          "value": 34951
+        },
+        {
+          "year": 2022,
+          "value": 56325
+        },
+        {
+          "year": 2023,
+          "value": 19767
+        },
+        {
+          "year": 2024,
+          "value": 30884
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 21268,
+    "pct_low_income": 31.0,
+    "pct_people_of_color": 44.6,
+    "pct_under_5": 7.1,
+    "pct_over_64": 11.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (12 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:34:52Z"
+}

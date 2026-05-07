@@ -1,0 +1,171 @@
+{
+  "site": {
+    "state": "ms",
+    "state_label": "Mississippi",
+    "slug": "southeastern-wood-preserving",
+    "name": "Southeastern Wood Preserving",
+    "epa_id": "MSD000828558",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Madison",
+    "county_slug": "madison",
+    "city": "Canton",
+    "city_slug": "canton",
+    "address": "Northern Side Of Covington Drive",
+    "zip": "39046",
+    "lat": 32.618061,
+    "lng": -90.018189
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 3,
+    "primary_contaminant": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin (Tcdd) Toxicity Equivalents (Teq)"
+  },
+  "contaminants": [
+    {
+      "name": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin (Tcdd) Toxicity Equivalents (Teq)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Benzo[A]Pyrene Equivalents (Bapeq)",
+      "media": "Sediment",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Benzo[A]Pyrene Equivalents (Bapeq)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MS0450002",
+        "name": "Bear Creek W/A -East",
+        "slug": "bear-creek-w-a-east",
+        "state": "ms",
+        "distance_miles": 1.58,
+        "place_name": "Canton",
+        "primary_source": "groundwater",
+        "population_served": 18770,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MS0450003",
+        "name": "Big Black Water Association",
+        "slug": "big-black-water-association",
+        "state": "ms",
+        "distance_miles": 1.58,
+        "place_name": "Canton",
+        "primary_source": "groundwater",
+        "population_served": 1080,
+        "health_based_5yr": 2,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MS0450004",
+        "name": "Big Black W/A-Camden",
+        "slug": "big-black-w-a-camden",
+        "state": "ms",
+        "distance_miles": 1.58,
+        "place_name": "Canton",
+        "primary_source": "groundwater",
+        "population_served": 1272,
+        "health_based_5yr": 1,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MS0450005",
+        "name": "Cameron Community Water System, Inc",
+        "slug": "cameron-community-water-system-inc",
+        "state": "ms",
+        "distance_miles": 1.58,
+        "place_name": "Canton",
+        "primary_source": "groundwater",
+        "population_served": 428,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MS0450006",
+        "name": "City Of Canton",
+        "slug": "canton",
+        "state": "ms",
+        "distance_miles": 1.58,
+        "place_name": "Canton",
+        "primary_source": "groundwater",
+        "population_served": 16785,
+        "health_based_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MS0450007",
+        "name": "East Madison Water Assn-West",
+        "slug": "east-madison-water-assn-west",
+        "state": "ms",
+        "distance_miles": 1.58,
+        "place_name": "Canton",
+        "primary_source": "groundwater",
+        "population_served": 7339,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MS0450021",
+        "name": "Bear Creek W/A-West",
+        "slug": "bear-creek-w-a-west",
+        "state": "ms",
+        "distance_miles": 1.58,
+        "place_name": "Canton",
+        "primary_source": "groundwater",
+        "population_served": 26677,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MS0450034",
+        "name": "Cmu - Lake Caroline",
+        "slug": "cmu-lake-caroline",
+        "state": "ms",
+        "distance_miles": 1.58,
+        "place_name": "Canton",
+        "primary_source": "groundwater",
+        "population_served": 8511,
+        "health_based_5yr": 2,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 4172,
+    "pct_low_income": 61.8,
+    "pct_people_of_color": 83.9,
+    "pct_under_5": 5.1,
+    "pct_over_64": 20.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:58:26Z"
+}

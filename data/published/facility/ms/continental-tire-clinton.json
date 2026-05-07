@@ -1,0 +1,123 @@
+{
+  "facility": {
+    "state": "ms",
+    "state_label": "Mississippi",
+    "slug": "continental-tire-clinton",
+    "name": "Continental Tire - Clinton",
+    "parent_company": "Continental Tire Holding US LLC",
+    "address": "3000 CONTINENTAL PARKWAY",
+    "city": "Clinton",
+    "county": "Hinds County",
+    "county_slug": "hinds",
+    "naics_label": "326211 \u00b7 Plastics and Rubber",
+    "lat": 32.364642,
+    "lng": -90.407926
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 29,
+    "air_releases_pounds": 0.22,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 29,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -50.9,
+    "long_arc_pct_change": -52.0,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 60
+      },
+      {
+        "year": 2023,
+        "value": 59
+      },
+      {
+        "year": 2024,
+        "value": 29
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 29,
+      "history": [
+        {
+          "year": 2022,
+          "value": 60
+        },
+        {
+          "year": 2023,
+          "value": 59
+        },
+        {
+          "year": 2024,
+          "value": 29
+        }
+      ],
+      "yoy_pct_change": -51.1,
+      "long_arc_pct_change": -52.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "N590",
+      "category": "pbt",
+      "total_pounds_recent": 0.22,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0.17
+        },
+        {
+          "year": 2024,
+          "value": 0.22
+        }
+      ],
+      "yoy_pct_change": 25.6,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Benzo[g,h,i]perylene",
+      "cas": "191-24-2",
+      "category": "pbt",
+      "total_pounds_recent": 0.0,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0.0
+        },
+        {
+          "year": 2024,
+          "value": 0.0
+        }
+      ],
+      "yoy_pct_change": 100.0,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 750,
+    "pct_low_income": 60.3,
+    "pct_people_of_color": 42.1,
+    "pct_under_5": 4.1,
+    "pct_over_64": 16.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:58:25Z"
+}

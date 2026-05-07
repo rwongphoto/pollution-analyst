@@ -1,0 +1,526 @@
+{
+  "place": {
+    "state": "al",
+    "state_label": "Alabama",
+    "slug": "abbeville",
+    "name": "Abbeville",
+    "fips": "0100124",
+    "population": 2309,
+    "county_name": "Henry County",
+    "county_fips": "01067"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 30.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 30.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.8309,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.8309
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0736,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0736
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 15558,
+    "violations_5yr_total": 490,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 257,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "henry-county-water-authority",
+        "state": "al",
+        "state_label": "Alabama",
+        "name": "Henry County Water Authority",
+        "pwsid": "AL0000663",
+        "population_served": 11625,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "abbeville-water-works-sewer-board",
+        "state": "al",
+        "state_label": "Alabama",
+        "name": "Abbeville, Water Works & Sewer Board",
+        "pwsid": "AL0000657",
+        "population_served": 3933,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Endrin",
+      "summary": "Unresolved Nitrate/Nitrite violation cited in 2023 (endrin).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AL0000657"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Lindane",
+      "summary": "Unresolved Nitrate/Nitrite violation cited in 2023 (lindane).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AL0000657"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Xylenes (total)",
+      "summary": "Unresolved Arsenic Rule violation cited in 2024 (xylenes (total)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AL0000663"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Xylenes (total)",
+      "summary": "Unresolved Arsenic Rule violation cited in 2024 (xylenes (total)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:AL0000663"
+      }
+    }
+  ],
+  "equity": {
+    "population": 2309,
+    "pct_low_income": 21.5,
+    "pct_people_of_color": 46.8,
+    "pct_under_5": 3.9,
+    "pct_over_64": 33.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 59.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 11.3,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 13.9,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 4.3,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 18.2,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 17.6,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 62.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 55.8,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 45.6,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 80.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 99.1,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 129.6
+      },
+      {
+        "label": "Ozone",
+        "score": 21.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 29.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 10.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 39.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 42.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 117.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 113.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 92.9
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 170.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 208.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Abbeville, Alabama (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.1,
+      "age_adjusted": 11.4,
+      "state_mean": 10.1,
+      "us_mean": 10.0,
+      "vs_state_pp": 1.3,
+      "vs_state_pct": 12.9,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.38,
+      "vs_us_pct": 13.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 12.2,
+      "age_adjusted": 9.2,
+      "state_mean": 7.0,
+      "us_mean": 5.5,
+      "vs_state_pp": 2.24,
+      "vs_state_pct": 32.2,
+      "vs_state_class": "worse",
+      "vs_us_pp": 3.7,
+      "vs_us_pct": 67.3,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 10.9,
+      "age_adjusted": 7.2,
+      "state_mean": 6.0,
+      "us_mean": 5.3,
+      "vs_state_pp": 1.15,
+      "vs_state_pct": 19.0,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.89,
+      "vs_us_pct": 35.6,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 21.3,
+      "age_adjusted": 16.2,
+      "state_mean": 12.8,
+      "us_mean": 10.5,
+      "vs_state_pp": 3.45,
+      "vs_state_pct": 27.1,
+      "vs_state_class": "worse",
+      "vs_us_pp": 5.74,
+      "vs_us_pct": 54.9,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.8,
+      "age_adjusted": 20.6,
+      "state_mean": 18.2,
+      "us_mean": 16.8,
+      "vs_state_pp": 2.42,
+      "vs_state_pct": 13.3,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 3.85,
+      "vs_us_pct": 23.0,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "al",
+      "slug": "headland",
+      "name": "Headland",
+      "population": 5027,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 44.0,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "al",
+      "slug": "newville",
+      "name": "Newville",
+      "population": 503,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "al",
+      "slug": "kinsey",
+      "name": "Kinsey",
+      "population": 2254,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 42.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "al",
+      "slug": "tarrant",
+      "name": "Tarrant",
+      "population": 6077,
+      "facilities_count": 3,
+      "total_releases_pounds": 173779,
+      "dominant_medium": "land",
+      "ej_pct_avg": 74.5,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+33 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "al",
+      "slug": "clayton",
+      "name": "Clayton",
+      "population": 2230,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "al",
+      "slug": "bayou-la-batre",
+      "name": "Bayou La Batre",
+      "population": 2215,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 50.4,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T22:17:18Z"
+}

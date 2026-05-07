@@ -1,0 +1,233 @@
+{
+  "facility": {
+    "state": "fl",
+    "state_label": "Florida",
+    "slug": "coca-cola-n-a",
+    "name": "Coca-Cola N.A.",
+    "parent_company": "The Coca-Cola Co",
+    "address": "705 MAIN ST",
+    "city": "Auburndale",
+    "county": "Polk County",
+    "county_slug": "polk",
+    "naics_label": "311411 \u00b7 Food",
+    "lat": 28.053603,
+    "lng": -81.788554
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 2134,
+    "air_releases_pounds": 755,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1379,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -85.7,
+    "long_arc_pct_change": 182.6,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 755
+      },
+      {
+        "year": 2011,
+        "value": 5
+      },
+      {
+        "year": 2012,
+        "value": 5
+      },
+      {
+        "year": 2013,
+        "value": 10
+      },
+      {
+        "year": 2014,
+        "value": 2728
+      },
+      {
+        "year": 2015,
+        "value": 1033
+      },
+      {
+        "year": 2016,
+        "value": 30
+      },
+      {
+        "year": 2017,
+        "value": 13
+      },
+      {
+        "year": 2018,
+        "value": 1175
+      },
+      {
+        "year": 2019,
+        "value": 1860
+      },
+      {
+        "year": 2020,
+        "value": 1868
+      },
+      {
+        "year": 2021,
+        "value": 2607
+      },
+      {
+        "year": 2022,
+        "value": 2804
+      },
+      {
+        "year": 2023,
+        "value": 14880
+      },
+      {
+        "year": 2024,
+        "value": 2134
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 1379,
+      "history": [
+        {
+          "year": 2014,
+          "value": 2718
+        },
+        {
+          "year": 2015,
+          "value": 1023
+        },
+        {
+          "year": 2016,
+          "value": 20
+        },
+        {
+          "year": 2017,
+          "value": 3
+        },
+        {
+          "year": 2018,
+          "value": 1155
+        },
+        {
+          "year": 2019,
+          "value": 1840
+        },
+        {
+          "year": 2020,
+          "value": 1848
+        },
+        {
+          "year": 2021,
+          "value": 2587
+        },
+        {
+          "year": 2022,
+          "value": 2049
+        },
+        {
+          "year": 2023,
+          "value": 1164
+        },
+        {
+          "year": 2024,
+          "value": 1379
+        }
+      ],
+      "yoy_pct_change": 18.5,
+      "long_arc_pct_change": -49.3,
+      "long_arc_baseline_year": 2014
+    },
+    {
+      "chemical": "Nitric acid",
+      "cas": "7697-37-2",
+      "category": "general",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2022,
+          "value": 500
+        },
+        {
+          "year": 2023,
+          "value": 500
+        },
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Peracetic acid",
+      "cas": "79-21-0",
+      "category": "general",
+      "total_pounds_recent": 255,
+      "history": [
+        {
+          "year": 2022,
+          "value": 255
+        },
+        {
+          "year": 2023,
+          "value": 255
+        },
+        {
+          "year": 2024,
+          "value": 255
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0007664417",
+      "summary": "0007664417 releases at Coca-Cola N.A. fell from 13k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -12961.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 750
+        },
+        {
+          "year": 2023,
+          "value": 12961
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 41140,
+    "pct_low_income": 47.1,
+    "pct_people_of_color": 43.5,
+    "pct_under_5": 6.9,
+    "pct_over_64": 16.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (25 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:45:36Z"
+}

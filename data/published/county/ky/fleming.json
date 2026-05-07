@@ -1,0 +1,337 @@
+{
+  "county": {
+    "state": "ky",
+    "state_label": "Kentucky",
+    "slug": "fleming",
+    "name": "Fleming County",
+    "fips": "21069",
+    "population": 15111
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.365,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.365
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1089,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1089
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "utilities": [],
+  "superfund": [
+    {
+      "slug": "maxey-flats-nuclear-disposal",
+      "state": "ky",
+      "name": "Maxey Flats Nuclear Disposal",
+      "epa_id": "KYD980729107",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Hillsboro",
+      "city_slug": null,
+      "primary_contaminant": "1,2-Dichloroethane"
+    }
+  ],
+  "superfund_total": 1,
+  "cities_directory": [
+    {
+      "slug": "flemingsburg",
+      "name": "Flemingsburg",
+      "fips": "2127856",
+      "facilities_count": 0,
+      "utilities_count": 2,
+      "population": 2955
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 15111,
+    "pct_low_income": 21.0,
+    "pct_people_of_color": 5.5,
+    "pct_under_5": 6.6,
+    "pct_over_64": 18.2,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 30.3,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 19.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 26.9,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 11.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 34.7,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 2.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 60.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 72.1,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 34.4,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 30.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 78.8,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 36.1
+      },
+      {
+        "label": "Ozone",
+        "score": 45.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 31.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 15.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 37.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 2.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 61.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 27.5
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 2.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 32.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 34.6
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 60.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Fleming County County, KY"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "larue",
+      "name": "Larue County",
+      "population": 14902,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 37.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "casey",
+      "name": "Casey County",
+      "population": 15942,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 32.7,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "knott",
+      "name": "Knott County",
+      "population": 14282,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 25.5,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "estill",
+      "name": "Estill County",
+      "population": 14138,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 37.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "rockcastle",
+      "name": "Rockcastle County",
+      "population": 16171,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 36.5,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "henderson",
+      "name": "Henderson County",
+      "population": 44770,
+      "facilities_count": 12,
+      "total_releases_pounds": 574781,
+      "dominant_medium": "air",
+      "ej_pct_avg": 60.1,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+26 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T22:25:48Z"
+}

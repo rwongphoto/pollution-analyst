@@ -1,0 +1,104 @@
+{
+  "facility": {
+    "state": "fl",
+    "state_label": "Florida",
+    "slug": "florida-chemical-co",
+    "name": "Florida Chemical CO",
+    "parent_company": "Archer Daniels Midland Co",
+    "address": "351 BERT SCHULZ BLVD",
+    "city": "Winter Haven",
+    "county": "Polk County",
+    "county_slug": "polk",
+    "naics_label": "325998 \u00b7 Chemicals",
+    "lat": 28.071967,
+    "lng": -81.702045
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1712,
+    "air_releases_pounds": 1712,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 114.3,
+    "long_arc_pct_change": 1823.6,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 89
+      },
+      {
+        "year": 2023,
+        "value": 799
+      },
+      {
+        "year": 2024,
+        "value": 1712
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 1267,
+      "history": [
+        {
+          "year": 2023,
+          "value": 135
+        },
+        {
+          "year": 2024,
+          "value": 1267
+        }
+      ],
+      "yoy_pct_change": 838.5,
+      "long_arc_pct_change": 838.5,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 445,
+      "history": [
+        {
+          "year": 2022,
+          "value": 89
+        },
+        {
+          "year": 2023,
+          "value": 664
+        },
+        {
+          "year": 2024,
+          "value": 445
+        }
+      ],
+      "yoy_pct_change": -33.0,
+      "long_arc_pct_change": 400.0,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 35321,
+    "pct_low_income": 41.0,
+    "pct_people_of_color": 55.3,
+    "pct_under_5": 7.0,
+    "pct_over_64": 26.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (21 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:45:36Z"
+}

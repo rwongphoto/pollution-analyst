@@ -1,0 +1,104 @@
+{
+  "facility": {
+    "state": "fl",
+    "state_label": "Florida",
+    "slug": "synergy-recycling-of-central-florida-llc",
+    "name": "Synergy Recycling Of Central Florida LLC",
+    "parent_company": "Clean Harbors INC",
+    "address": "3800 W LAKE HAMILTON DR",
+    "city": "Winter Haven",
+    "county": "Polk County",
+    "county_slug": "polk",
+    "naics_label": "424710 \u00b7 Petroleum Bulk Terminals",
+    "lat": 28.039076,
+    "lng": -81.672065
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 11,
+    "air_releases_pounds": 6,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 5,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -64.4,
+    "long_arc_pct_change": -96.8,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 351
+      },
+      {
+        "year": 2023,
+        "value": 31
+      },
+      {
+        "year": 2024,
+        "value": 11
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 6,
+      "history": [
+        {
+          "year": 2022,
+          "value": 7
+        },
+        {
+          "year": 2023,
+          "value": 19
+        },
+        {
+          "year": 2024,
+          "value": 6
+        }
+      ],
+      "yoy_pct_change": -68.2,
+      "long_arc_pct_change": -11.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "N590",
+      "category": "pbt",
+      "total_pounds_recent": 5,
+      "history": [
+        {
+          "year": 2023,
+          "value": 10
+        },
+        {
+          "year": 2024,
+          "value": 5
+        }
+      ],
+      "yoy_pct_change": -50.4,
+      "long_arc_pct_change": -50.4,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 35388,
+    "pct_low_income": 35.5,
+    "pct_people_of_color": 45.2,
+    "pct_under_5": 6.5,
+    "pct_over_64": 23.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (15 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-06"
+  },
+  "_published_at": "2026-05-06T22:45:36Z"
+}

@@ -1,0 +1,420 @@
+{
+  "county": {
+    "state": "ky",
+    "state_label": "Kentucky",
+    "slug": "morgan",
+    "name": "Morgan County",
+    "fips": "21175",
+    "population": 13840
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "criteria_air",
+      "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
+      "current": 0.058,
+      "units": "ppm",
+      "yoy_pct_change": -7.9,
+      "long_arc_pct_change": -28.4,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.081
+        },
+        {
+          "year": 2011,
+          "value": 0.06
+        },
+        {
+          "year": 2012,
+          "value": 0.072
+        },
+        {
+          "year": 2013,
+          "value": 0.058
+        },
+        {
+          "year": 2014,
+          "value": 0.064
+        },
+        {
+          "year": 2015,
+          "value": 0.064
+        },
+        {
+          "year": 2016,
+          "value": 0.066
+        },
+        {
+          "year": 2017,
+          "value": 0.064
+        },
+        {
+          "year": 2018,
+          "value": 0.062
+        },
+        {
+          "year": 2019,
+          "value": 0.058
+        },
+        {
+          "year": 2020,
+          "value": 0.054
+        },
+        {
+          "year": 2021,
+          "value": 0.059
+        },
+        {
+          "year": 2022,
+          "value": 0.059
+        },
+        {
+          "year": 2023,
+          "value": 0.063
+        },
+        {
+          "year": 2024,
+          "value": 0.058
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.3919,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.3919
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1111,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1111
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 96,
+      "units": "lb",
+      "yoy_pct_change": -18.3,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 117
+        },
+        {
+          "year": 2024,
+          "value": 96
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2023,
+      "history": [
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "hinkle-contracting-co-llc-pomp-asphalt-cave-run-mine",
+      "state": "ky",
+      "state_label": "Kentucky",
+      "name": "Hinkle Contracting CO LLC - Pomp Asphalt & Cave Run Mine",
+      "parent_company": "Crh Americas INC",
+      "total_pounds_recent": 96,
+      "yoy_pct_change": -18.3,
+      "top_chemical": "Polycyclic aromatic compounds",
+      "city": "West Liberty",
+      "lat": 37.988152,
+      "lng": -83.354885
+    }
+  ],
+  "utilities": [],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [
+    {
+      "slug": "west-liberty",
+      "name": "West Liberty",
+      "fips": "2181858",
+      "facilities_count": 0,
+      "utilities_count": 2,
+      "population": 3247
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 13840,
+    "pct_low_income": 20.4,
+    "pct_people_of_color": 7.799999999999997,
+    "pct_under_5": 4.6,
+    "pct_over_64": 17.1,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 20.1,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 6.6,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 9.7,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 5.8,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 18.5,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 1.2,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 50.3,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 36.3,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 23.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 25.5
+      },
+      {
+        "label": "Ozone",
+        "score": 26.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 12.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 7.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 21.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 0.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 52.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 39.9
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 26.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 2.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Morgan County County, KY"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "russell",
+      "name": "Russell County",
+      "population": 18021,
+      "facilities_count": 1,
+      "total_releases_pounds": 49,
+      "dominant_medium": "air",
+      "ej_pct_avg": 33.4,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "floyd",
+      "name": "Floyd County",
+      "population": 35780,
+      "facilities_count": 1,
+      "total_releases_pounds": 152,
+      "dominant_medium": "air",
+      "ej_pct_avg": 28.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "trigg",
+      "name": "Trigg County",
+      "population": 14154,
+      "facilities_count": 1,
+      "total_releases_pounds": 296,
+      "dominant_medium": "air",
+      "ej_pct_avg": 40.6,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "lyon",
+      "name": "Lyon County",
+      "population": 8721,
+      "facilities_count": 1,
+      "total_releases_pounds": 16,
+      "dominant_medium": "air",
+      "ej_pct_avg": 43.7,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "clay",
+      "name": "Clay County",
+      "population": 20322,
+      "facilities_count": 1,
+      "total_releases_pounds": 645,
+      "dominant_medium": "air",
+      "ej_pct_avg": 27.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ky",
+      "slug": "henderson",
+      "name": "Henderson County",
+      "population": 44770,
+      "facilities_count": 12,
+      "total_releases_pounds": 574781,
+      "dominant_medium": "air",
+      "ej_pct_avg": 60.1,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+34 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-06"
+    }
+  ],
+  "_published_at": "2026-05-06T22:25:48Z"
+}
