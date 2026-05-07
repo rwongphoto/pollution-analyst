@@ -1,0 +1,223 @@
+{
+  "utility": {
+    "state": "mo",
+    "state_label": "Missouri",
+    "slug": "jasper-county-pwsd-1",
+    "name": "Jasper County Pwsd 1",
+    "pwsid": "MO5024286",
+    "population_served": 5500,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Carl Junction"
+    ],
+    "county": "Jasper County",
+    "county_slug": "jasper",
+    "place_slug": "carl-junction"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 3,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 3
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 3
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 8197,
+    "pct_low_income": 11.0,
+    "pct_people_of_color": 7.400000000000006,
+    "pct_under_5": 10.5,
+    "pct_over_64": 14.2,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 71.0,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 4.1,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 24.9,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 26.1,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 66.5,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 20.9,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 32.6,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 99.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 29.4,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 39.1,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 45.3,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 61.1,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 45.8
+      },
+      {
+        "label": "Ozone",
+        "score": 20.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 15.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 17.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 41.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 14.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 12.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 63.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 20.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 25.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 28.1
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 38.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 49.6
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Carl Junction, Missouri (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T05:04:44Z"
+}

@@ -1,0 +1,67 @@
+{
+  "site": {
+    "state": "ne",
+    "state_label": "Nebraska",
+    "slug": "omaha-lead",
+    "name": "Omaha Lead",
+    "epa_id": "NESFN0703481",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Douglas",
+    "county_slug": "douglas",
+    "city": "Omaha",
+    "city_slug": "omaha",
+    "address": "Intersection I480 & Abbott Drive",
+    "zip": "68102",
+    "lat": 41.267778,
+    "lng": -95.929722
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Lead"
+  },
+  "contaminants": [
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "02",
+        "01"
+      ],
+      "citation_count": 2
+    },
+    {
+      "name": "Lead",
+      "media": "Buildings/Structures",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 8284,
+    "pct_low_income": 48.6,
+    "pct_people_of_color": 35.4,
+    "pct_under_5": 2.5,
+    "pct_over_64": 7.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (5 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:55:44Z"
+}

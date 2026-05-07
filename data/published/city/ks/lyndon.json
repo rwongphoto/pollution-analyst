@@ -1,0 +1,375 @@
+{
+  "place": {
+    "state": "ks",
+    "state_label": "Kansas",
+    "slug": "lyndon",
+    "name": "Lyndon",
+    "fips": "2043350",
+    "population": 1276,
+    "county_name": "Osage County",
+    "county_fips": "20139"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 25.5,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 25.5
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.3594,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.3594
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1084,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1084
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 1419,
+    "violations_5yr_total": 15,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 3,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "lyndon-city-of",
+        "state": "ks",
+        "state_label": "Kansas",
+        "name": "Lyndon, City Of",
+        "pwsid": "KS2013901",
+        "population_served": 1049,
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "osage-co-rwd-6",
+        "state": "ks",
+        "state_label": "Kansas",
+        "name": "Osage Co Rwd 6",
+        "pwsid": "KS2013902",
+        "population_served": 370,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:KS2013901"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2023 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:KS2013901"
+      }
+    }
+  ],
+  "equity": {
+    "population": 1276,
+    "pct_low_income": 7.8,
+    "pct_people_of_color": 7.700000000000003,
+    "pct_under_5": 10.4,
+    "pct_over_64": 13.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Lyndon, Kansas (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.4,
+      "age_adjusted": 10.4,
+      "state_mean": 10.0,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.42,
+      "vs_state_pct": 4.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.38,
+      "vs_us_pct": 3.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 7.4,
+      "age_adjusted": 6.5,
+      "state_mean": 6.0,
+      "us_mean": 5.5,
+      "vs_state_pp": 0.54,
+      "vs_state_pct": 9.1,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.0,
+      "vs_us_pct": 18.2,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 6.6,
+      "age_adjusted": 5.6,
+      "state_mean": 5.5,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.13,
+      "vs_state_pct": 2.4,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.29,
+      "vs_us_pct": 5.5,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 10.7,
+      "age_adjusted": 9.3,
+      "state_mean": 10.1,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.8,
+      "vs_state_pct": -7.9,
+      "vs_state_class": "better",
+      "vs_us_pp": -1.16,
+      "vs_us_pct": -11.1,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.3,
+      "age_adjusted": 18.2,
+      "state_mean": 16.6,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.55,
+      "vs_state_pct": 9.3,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.45,
+      "vs_us_pct": 8.7,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "carbondale",
+      "name": "Carbondale",
+      "population": 1396,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 37.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "overbrook",
+      "name": "Overbrook",
+      "population": 967,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 41.2,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "vassar",
+      "name": "Vassar",
+      "population": 882,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "scranton",
+      "name": "Scranton",
+      "population": 868,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "arma",
+      "name": "Arma",
+      "population": 1281,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "plains",
+      "name": "Plains",
+      "population": 1266,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 35.4,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T04:48:36Z"
+}

@@ -1,0 +1,195 @@
+{
+  "facility": {
+    "state": "ks",
+    "state_label": "Kansas",
+    "slug": "cst-industries",
+    "name": "Cst Industries",
+    "parent_company": "Solace Capital Partners LLC",
+    "address": "2101 S 21ST ST",
+    "city": "Parsons",
+    "county": "Labette County",
+    "county_slug": "labette",
+    "naics_label": "332420 \u00b7 Fabricated Metals",
+    "lat": 37.321371,
+    "lng": -95.268178
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 5475,
+    "air_releases_pounds": 386,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 5089,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -71.1,
+    "long_arc_pct_change": -95.4,
+    "long_arc_baseline_year": 2015,
+    "history": [
+      {
+        "year": 2015,
+        "value": 119010
+      },
+      {
+        "year": 2016,
+        "value": 68010
+      },
+      {
+        "year": 2017,
+        "value": 85010
+      },
+      {
+        "year": 2018,
+        "value": 136010
+      },
+      {
+        "year": 2019,
+        "value": 68010
+      },
+      {
+        "year": 2020,
+        "value": 102007
+      },
+      {
+        "year": 2021,
+        "value": 17009
+      },
+      {
+        "year": 2022,
+        "value": 22853
+      },
+      {
+        "year": 2023,
+        "value": 18921
+      },
+      {
+        "year": 2024,
+        "value": 5475
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 5475,
+      "history": [
+        {
+          "year": 2015,
+          "value": 104125
+        },
+        {
+          "year": 2016,
+          "value": 59500
+        },
+        {
+          "year": 2017,
+          "value": 74375
+        },
+        {
+          "year": 2018,
+          "value": 119000
+        },
+        {
+          "year": 2019,
+          "value": 59500
+        },
+        {
+          "year": 2020,
+          "value": 89250
+        },
+        {
+          "year": 2021,
+          "value": 14876
+        },
+        {
+          "year": 2022,
+          "value": 18631
+        },
+        {
+          "year": 2023,
+          "value": 18921
+        },
+        {
+          "year": 2024,
+          "value": 5475
+        }
+      ],
+      "yoy_pct_change": -71.1,
+      "long_arc_pct_change": -94.7,
+      "long_arc_baseline_year": 2015
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Chromium",
+      "summary": "Chromium releases at Cst Industries fell from 19k lb to 5k lb (71% lower) between 2023 and 2024.",
+      "magnitude_pct": -71.1,
+      "magnitude_abs": -13446.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2015,
+          "value": 104125
+        },
+        {
+          "year": 2016,
+          "value": 59500
+        },
+        {
+          "year": 2017,
+          "value": 74375
+        },
+        {
+          "year": 2018,
+          "value": 119000
+        },
+        {
+          "year": 2019,
+          "value": 59500
+        },
+        {
+          "year": 2020,
+          "value": 89250
+        },
+        {
+          "year": 2021,
+          "value": 14876
+        },
+        {
+          "year": 2022,
+          "value": 18631
+        },
+        {
+          "year": 2023,
+          "value": 18921
+        },
+        {
+          "year": 2024,
+          "value": 5475
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 8061,
+    "pct_low_income": 44.3,
+    "pct_people_of_color": 20.4,
+    "pct_under_5": 6.6,
+    "pct_over_64": 14.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (8 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:48:35Z"
+}

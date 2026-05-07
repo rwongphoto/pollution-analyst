@@ -1,0 +1,180 @@
+{
+  "facility": {
+    "state": "ks",
+    "state_label": "Kansas",
+    "slug": "mid-continent-fractionation-storage-conway-fra",
+    "name": "Mid-Continent Fractionation & Storage Conway Fra",
+    "parent_company": "The Williams Cos",
+    "address": "1407 5TH AVENUE",
+    "city": "Mcpherson",
+    "county": "McPherson County",
+    "county_slug": "mcpherson",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 38.379126,
+    "lng": -97.832429
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 24528,
+    "air_releases_pounds": 24528,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 4,
+    "yoy_pct_change": -36.7,
+    "long_arc_pct_change": -92.9,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 343153
+      },
+      {
+        "year": 2023,
+        "value": 38748
+      },
+      {
+        "year": 2024,
+        "value": 24528
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 12580,
+      "history": [
+        {
+          "year": 2022,
+          "value": 10008
+        },
+        {
+          "year": 2023,
+          "value": 12600
+        },
+        {
+          "year": 2024,
+          "value": 12580
+        }
+      ],
+      "yoy_pct_change": -0.2,
+      "long_arc_pct_change": 25.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 7200,
+      "history": [
+        {
+          "year": 2022,
+          "value": 330000
+        },
+        {
+          "year": 2023,
+          "value": 21400
+        },
+        {
+          "year": 2024,
+          "value": 7200
+        }
+      ],
+      "yoy_pct_change": -66.4,
+      "long_arc_pct_change": -97.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 3270,
+      "history": [
+        {
+          "year": 2022,
+          "value": 2112
+        },
+        {
+          "year": 2023,
+          "value": 3270
+        },
+        {
+          "year": 2024,
+          "value": 3270
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 54.8,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 1478,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1033
+        },
+        {
+          "year": 2023,
+          "value": 1478
+        },
+        {
+          "year": 2024,
+          "value": 1478
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 43.1,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Methanol",
+      "summary": "Methanol releases at Mid-Continent Fractionation & Storage Conway Fra fell from 21k lb to 7k lb (66% lower) between 2023 and 2024.",
+      "magnitude_pct": -66.4,
+      "magnitude_abs": -14200.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 330000
+        },
+        {
+          "year": 2023,
+          "value": 21400
+        },
+        {
+          "year": 2024,
+          "value": 7200
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 30085,
+    "pct_low_income": 10.6,
+    "pct_people_of_color": 9.700000000000003,
+    "pct_under_5": 6.1,
+    "pct_over_64": 19.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year), county-level fallback",
+    "geography_label": "McPherson County County, KS (no Census block groups within 3 miles \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:48:35Z"
+}

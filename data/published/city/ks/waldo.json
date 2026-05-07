@@ -1,0 +1,335 @@
+{
+  "place": {
+    "state": "ks",
+    "state_label": "Kansas",
+    "slug": "waldo",
+    "name": "Waldo",
+    "fips": "2074575",
+    "population": 51,
+    "county_name": "Russell County",
+    "county_fips": "20167"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.1064,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.1064
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0713,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0713
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 54136,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 2.7,
+      "long_arc_pct_change": -10.7,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 60631
+        },
+        {
+          "year": 2011,
+          "value": 64477
+        },
+        {
+          "year": 2012,
+          "value": 56439
+        },
+        {
+          "year": 2013,
+          "value": 49116
+        },
+        {
+          "year": 2014,
+          "value": 57887
+        },
+        {
+          "year": 2015,
+          "value": 52519
+        },
+        {
+          "year": 2016,
+          "value": 45599
+        },
+        {
+          "year": 2017,
+          "value": 51466
+        },
+        {
+          "year": 2018,
+          "value": 51927
+        },
+        {
+          "year": 2019,
+          "value": 49235
+        },
+        {
+          "year": 2020,
+          "value": 51327
+        },
+        {
+          "year": 2021,
+          "value": 50261
+        },
+        {
+          "year": 2022,
+          "value": 52726
+        },
+        {
+          "year": 2023,
+          "value": 54136
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 31,
+    "violations_5yr_total": 2,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "waldo-city-of",
+        "state": "ks",
+        "state_label": "Kansas",
+        "name": "Waldo, City Of",
+        "pwsid": "KS2016709",
+        "population_served": 31,
+        "health_based_violations_5yr": 2,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Total Trihalomethanes Rule health-based violation cited in 2021 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:KS2016709"
+      }
+    }
+  ],
+  "equity": {
+    "population": 51,
+    "pct_low_income": 9.8,
+    "pct_people_of_color": 0.0,
+    "pct_under_5": 3.9,
+    "pct_over_64": 70.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Waldo, Kansas (Census place block groups)"
+  },
+  "health_indicators": [],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "paradise",
+      "name": "Paradise",
+      "population": 36,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "bunker-hill",
+      "name": "Bunker Hill",
+      "population": 120,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "luray",
+      "name": "Luray",
+      "population": 185,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "dorrance",
+      "name": "Dorrance",
+      "population": 205,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "soldier",
+      "name": "Soldier",
+      "population": 51,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "murdock",
+      "name": "Murdock",
+      "population": 52,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T04:48:36Z"
+}

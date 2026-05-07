@@ -1,0 +1,110 @@
+{
+  "site": {
+    "state": "mo",
+    "state_label": "Missouri",
+    "slug": "sporlan-valve-plant-1",
+    "name": "Sporlan Valve Plant #1",
+    "epa_id": "MON000703541",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Franklin",
+    "county_slug": "franklin",
+    "city": "Washington",
+    "city_slug": "washington",
+    "address": "611 East 7th Street",
+    "zip": "63090",
+    "lat": 38.5519,
+    "lng": -91.00668
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MO3048243",
+        "name": "Eagle Mhp",
+        "slug": "eagle-mhp",
+        "state": "mo",
+        "distance_miles": 0.48,
+        "place_name": "Washington",
+        "primary_source": "groundwater",
+        "population_served": 30,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MO6010838",
+        "name": "Washington Pws",
+        "slug": "washington-pws",
+        "state": "mo",
+        "distance_miles": 0.48,
+        "place_name": "Washington",
+        "primary_source": "groundwater",
+        "population_served": 14068,
+        "health_based_5yr": 3,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MO6024211",
+        "name": "Franklin County Pwsd 1",
+        "slug": "franklin-county-pwsd-1",
+        "state": "mo",
+        "distance_miles": 0.48,
+        "place_name": "Washington",
+        "primary_source": "groundwater",
+        "population_served": 3500,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MO6031215",
+        "name": "Franklin County Pwsd 1 Cardinal Meadows",
+        "slug": "franklin-county-pwsd-1-cardinal-meadows",
+        "state": "mo",
+        "distance_miles": 0.48,
+        "place_name": "Washington",
+        "primary_source": "groundwater",
+        "population_served": 52,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MO6048068",
+        "name": "Avery Mobile Home Court",
+        "slug": "avery-mobile-home-court",
+        "state": "mo",
+        "distance_miles": 0.48,
+        "place_name": "Washington",
+        "primary_source": "groundwater",
+        "population_served": 40,
+        "health_based_5yr": 2,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 4483,
+    "pct_low_income": 31.3,
+    "pct_people_of_color": 10.1,
+    "pct_under_5": 4.7,
+    "pct_over_64": 13.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (4 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T05:04:45Z"
+}

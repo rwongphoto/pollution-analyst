@@ -1,0 +1,177 @@
+{
+  "site": {
+    "state": "ks",
+    "state_label": "Kansas",
+    "slug": "caney-residential-yards",
+    "name": "Caney Residential Yards",
+    "epa_id": "KSN000703396",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Montgomery",
+    "county_slug": "montgomery",
+    "city": "Caney",
+    "city_slug": "caney",
+    "address": "Intersection of North Main Street and East 3rd Ave",
+    "zip": "67333",
+    "lat": 37.013136,
+    "lng": -95.934889
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 1,
+    "primary_contaminant": "Lead"
+  },
+  "contaminants": [
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 31448,
+    "pct_low_income": 16.9,
+    "pct_people_of_color": 22.200000000000003,
+    "pct_under_5": 7.0,
+    "pct_over_64": 19.4,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 64.8,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 26.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 21.5,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 20.2,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 77.2,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 14.6,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 80.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 87.8,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 78.0,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 32.9,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 73.9,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 41.4,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 88.8,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 86.6
+      },
+      {
+        "label": "Ozone",
+        "score": 57.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 32.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 31.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 83.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 22.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 102.1
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 9.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 90.6
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 43.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 76.9
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 37.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 52.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Montgomery County, Kansas (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:48:35Z"
+}

@@ -1,0 +1,112 @@
+{
+  "facility": {
+    "state": "mo",
+    "state_label": "Missouri",
+    "slug": "custom-truck-one-source",
+    "name": "Custom Truck One Source",
+    "parent_company": "Custom Truck One Source",
+    "address": "7701 E INDEPENDENCE AVENUE",
+    "city": "Kansas City",
+    "county": "Jackson County",
+    "county_slug": "jackson",
+    "naics_label": "333120 \u00b7 Machinery",
+    "lat": 39.104256,
+    "lng": -94.493357
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 46,
+    "air_releases_pounds": 46,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -40.5,
+    "long_arc_pct_change": -91.2,
+    "long_arc_baseline_year": 2018,
+    "history": [
+      {
+        "year": 2018,
+        "value": 525
+      },
+      {
+        "year": 2020,
+        "value": 1
+      },
+      {
+        "year": 2023,
+        "value": 78
+      },
+      {
+        "year": 2024,
+        "value": 46
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 23,
+      "history": [
+        {
+          "year": 2018,
+          "value": 101
+        },
+        {
+          "year": 2023,
+          "value": 34
+        },
+        {
+          "year": 2024,
+          "value": 23
+        }
+      ],
+      "yoy_pct_change": -30.1,
+      "long_arc_pct_change": -76.9,
+      "long_arc_baseline_year": 2018
+    },
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 23,
+      "history": [
+        {
+          "year": 2018,
+          "value": 253
+        },
+        {
+          "year": 2023,
+          "value": 44
+        },
+        {
+          "year": 2024,
+          "value": 23
+        }
+      ],
+      "yoy_pct_change": -48.4,
+      "long_arc_pct_change": -91.0,
+      "long_arc_baseline_year": 2018
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 60379,
+    "pct_low_income": 58.1,
+    "pct_people_of_color": 62.6,
+    "pct_under_5": 7.2,
+    "pct_over_64": 9.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (65 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T05:04:43Z"
+}

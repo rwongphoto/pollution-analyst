@@ -1,0 +1,68 @@
+{
+  "site": {
+    "state": "mo",
+    "state_label": "Missouri",
+    "slug": "minker-stout-romaine-creek",
+    "name": "Minker/Stout/Romaine Creek",
+    "epa_id": "MOD980741912",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Jefferson",
+    "county_slug": "jefferson",
+    "city": "Imperial",
+    "city_slug": null,
+    "address": "4037 W Rock Creek Rd & Swaller",
+    "zip": "63052",
+    "lat": 38.44,
+    "lng": -90.48
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin (Tcdd)"
+  },
+  "contaminants": [
+    {
+      "name": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin (Tcdd)",
+      "media": "Soil",
+      "operable_units": [
+        "02",
+        "03",
+        "01"
+      ],
+      "citation_count": 3
+    },
+    {
+      "name": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin (Tcdd)",
+      "media": "Sediment",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 2297,
+    "pct_low_income": 30.2,
+    "pct_people_of_color": 16.6,
+    "pct_under_5": 4.4,
+    "pct_over_64": 8.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T05:04:45Z"
+}

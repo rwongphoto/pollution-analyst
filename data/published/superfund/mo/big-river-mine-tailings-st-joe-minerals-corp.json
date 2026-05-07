@@ -1,0 +1,119 @@
+{
+  "site": {
+    "state": "mo",
+    "state_label": "Missouri",
+    "slug": "big-river-mine-tailings-st-joe-minerals-corp",
+    "name": "Big River Mine Tailings/St. Joe Minerals Corp.",
+    "epa_id": "MOD981126899",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "St. Francois",
+    "county_slug": "st-francois",
+    "city": "Desloge",
+    "city_slug": null,
+    "address": "Section 25 26 35 & 36 T37N R4E",
+    "zip": "63601",
+    "lat": 37.878097,
+    "lng": -90.539344
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 1,
+    "primary_contaminant": "Lead"
+  },
+  "contaminants": [
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MO4011441",
+        "name": "Desloge Pws",
+        "slug": "desloge-pws",
+        "state": "mo",
+        "distance_miles": 1.12,
+        "place_name": "Desloge",
+        "primary_source": "groundwater",
+        "population_served": 5034,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MO4010456",
+        "name": "Leadwood Pws",
+        "slug": "leadwood-pws",
+        "state": "mo",
+        "distance_miles": 2.94,
+        "place_name": "Leadwood",
+        "primary_source": "groundwater",
+        "population_served": 1200,
+        "health_based_5yr": 13,
+        "unresolved": true
+      },
+      {
+        "pwsid": "MO4010087",
+        "name": "Bonne Terre Pws",
+        "slug": "bonne-terre-pws",
+        "state": "mo",
+        "distance_miles": 2.98,
+        "place_name": "Bonne Terre",
+        "primary_source": "groundwater",
+        "population_served": 3537,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MO4036173",
+        "name": "Big River Hills Llc",
+        "slug": "big-river-hills-llc",
+        "state": "mo",
+        "distance_miles": 2.98,
+        "place_name": "Bonne Terre",
+        "primary_source": "groundwater",
+        "population_served": 48,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "MO4061410",
+        "name": "Bonne Terre Prison",
+        "slug": "bonne-terre-prison",
+        "state": "mo",
+        "distance_miles": 2.98,
+        "place_name": "Bonne Terre",
+        "primary_source": "groundwater",
+        "population_served": 3500,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1965,
+    "pct_low_income": 39.9,
+    "pct_people_of_color": 6.4,
+    "pct_under_5": 2.3,
+    "pct_over_64": 21.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T05:04:45Z"
+}

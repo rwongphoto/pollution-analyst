@@ -1,0 +1,213 @@
+{
+  "utility": {
+    "state": "ne",
+    "state_label": "Nebraska",
+    "slug": "133-estates",
+    "name": "133 Estates",
+    "pwsid": "NE3120574",
+    "population_served": 61,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Blair"
+    ],
+    "county": "Washington County",
+    "county_slug": "washington",
+    "place_slug": "blair"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 7813,
+    "pct_low_income": 12.4,
+    "pct_people_of_color": 5.5,
+    "pct_under_5": 5.9,
+    "pct_over_64": 16.7,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 21.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 27.6,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 62.8,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 32.9,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 91.7,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 32.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 84.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 82.4,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 60.3,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 81.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 39.5,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 18.7
+      },
+      {
+        "label": "Ozone",
+        "score": 32.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 50.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 28.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 72.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 26.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 64.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 65.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 45.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 60.6
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 31.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Blair, Nebraska (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:55:44Z"
+}

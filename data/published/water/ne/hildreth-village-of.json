@@ -1,0 +1,213 @@
+{
+  "utility": {
+    "state": "ne",
+    "state_label": "Nebraska",
+    "slug": "hildreth-village-of",
+    "name": "Hildreth, Village Of",
+    "pwsid": "NE3106105",
+    "population_served": 370,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Hildreth"
+    ],
+    "county": "Franklin County",
+    "county_slug": "franklin",
+    "place_slug": "hildreth"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 2901,
+    "pct_low_income": 14.9,
+    "pct_people_of_color": 5.900000000000006,
+    "pct_under_5": 6.0,
+    "pct_over_64": 27.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 4.7,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 10.1,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 11.2,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 4.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 10.8,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 1.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 85.7,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 86.5,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 28.6,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 43.6,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 4.5
+      },
+      {
+        "label": "Ozone",
+        "score": 50.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 9.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 4.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 8.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 71.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 71.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 20.1
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 32.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Franklin County, Nebraska (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:55:43Z"
+}

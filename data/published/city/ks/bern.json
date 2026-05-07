@@ -1,0 +1,342 @@
+{
+  "place": {
+    "state": "ks",
+    "state_label": "Kansas",
+    "slug": "bern",
+    "name": "Bern",
+    "fips": "2006275",
+    "population": 137,
+    "county_name": "Nemaha County",
+    "county_fips": "20131"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.8,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.8
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.2449,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.2449
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0873,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0873
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 513,
+    "violations_5yr_total": 0,
+    "health_based_5yr_total": 0,
+    "unresolved_total": 0,
+    "utilities_with_unresolved": 0,
+    "utilities": [
+      {
+        "slug": "nemaha-co-rwd-1",
+        "state": "ks",
+        "state_label": "Kansas",
+        "name": "Nemaha Co Rwd 1",
+        "pwsid": "KS2013105",
+        "population_served": 350,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "slug": "bern-city-of",
+        "state": "ks",
+        "state_label": "Kansas",
+        "name": "Bern, City Of",
+        "pwsid": "KS2013104",
+        "population_served": 163,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [],
+  "equity": {
+    "population": 137,
+    "pct_low_income": 16.1,
+    "pct_people_of_color": 10.200000000000003,
+    "pct_under_5": 4.4,
+    "pct_over_64": 24.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Bern, Kansas (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.3,
+      "age_adjusted": 10.4,
+      "state_mean": 10.0,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.42,
+      "vs_state_pct": 4.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.38,
+      "vs_us_pct": 3.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 7.1,
+      "age_adjusted": 6.1,
+      "state_mean": 6.0,
+      "us_mean": 5.5,
+      "vs_state_pp": 0.14,
+      "vs_state_pct": 2.3,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.6,
+      "vs_us_pct": 10.9,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 6.5,
+      "age_adjusted": 5.6,
+      "state_mean": 5.5,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.13,
+      "vs_state_pct": 2.4,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.29,
+      "vs_us_pct": 5.5,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 11.0,
+      "age_adjusted": 9.0,
+      "state_mean": 10.1,
+      "us_mean": 10.5,
+      "vs_state_pp": -1.1,
+      "vs_state_pct": -10.9,
+      "vs_state_class": "better",
+      "vs_us_pp": -1.46,
+      "vs_us_pct": -14.0,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 16.5,
+      "age_adjusted": 17.6,
+      "state_mean": 16.6,
+      "us_mean": 16.8,
+      "vs_state_pp": 0.95,
+      "vs_state_pct": 5.7,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.85,
+      "vs_us_pct": 5.1,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "corning",
+      "name": "Corning",
+      "population": 163,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "wetmore",
+      "name": "Wetmore",
+      "population": 291,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "goff",
+      "name": "Goff",
+      "population": 64,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "oneida",
+      "name": "Oneida",
+      "population": 295,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "morland",
+      "name": "Morland",
+      "population": 139,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ks",
+      "slug": "denton",
+      "name": "Denton",
+      "population": 140,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T04:48:36Z"
+}

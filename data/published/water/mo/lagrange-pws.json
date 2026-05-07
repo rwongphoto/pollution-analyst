@@ -1,0 +1,307 @@
+{
+  "utility": {
+    "state": "mo",
+    "state_label": "Missouri",
+    "slug": "lagrange-pws",
+    "name": "Lagrange Pws",
+    "pwsid": "MO2010440",
+    "population_served": 874,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Lagrange"
+    ],
+    "county": "Lewis County",
+    "county_slug": "lewis",
+    "place_slug": null
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 6,
+    "health_based_violations_5yr": 3,
+    "unresolved_violations": 2,
+    "contaminants_with_violations": 3,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 0700",
+      "contaminant_code": "0700",
+      "severity": "monitoring",
+      "rule": "Drinking water rule (140)",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 0700",
+      "contaminant_code": "0700",
+      "severity": "monitoring",
+      "rule": "Drinking water rule (140)",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Total Trihalomethanes (TTHM)",
+      "contaminant_code": "2950",
+      "severity": "health_based",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": true,
+      "description": "Maximum contaminant level exceeded"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Total Trihalomethanes (TTHM)",
+      "contaminant_code": "2950",
+      "severity": "health_based",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": true,
+      "description": "Maximum contaminant level exceeded"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Total Trihalomethanes (TTHM)",
+      "contaminant_code": "2950",
+      "severity": "health_based",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": false,
+      "description": "Maximum contaminant level exceeded; returned to compliance"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 7500",
+      "contaminant_code": "7500",
+      "severity": "other",
+      "rule": "Volatile Organic Chemical Rule",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 6
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 3
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Total Trihalomethanes (TTHM)",
+        "count": 3
+      },
+      {
+        "contaminant": "Contaminant 0700",
+        "count": 2
+      },
+      {
+        "contaminant": "Contaminant 7500",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MO2010440"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MO2010440"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Total Trihalomethanes Rule health-based violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MO2010440"
+      }
+    }
+  ],
+  "equity": {
+    "population": 9987,
+    "pct_low_income": 16.5,
+    "pct_people_of_color": 8.0,
+    "pct_under_5": 5.1,
+    "pct_over_64": 18.7,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 33.1,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 39.2,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 22.6,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 18.5,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 24.8,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 6.6,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 67.0,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 52.2,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 39.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 86.5,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.9,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 32.6
+      },
+      {
+        "label": "Ozone",
+        "score": 40.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 23.7
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 19.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 21.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 7.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 58.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 40.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 2.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 28.2
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 55.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 16.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Lewis County, Missouri (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T05:04:43Z"
+}

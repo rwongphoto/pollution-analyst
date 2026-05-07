@@ -1,0 +1,375 @@
+{
+  "place": {
+    "state": "mo",
+    "state_label": "Missouri",
+    "slug": "theodosia",
+    "name": "Theodosia",
+    "fips": "2972898",
+    "population": 146,
+    "county_name": "Ozark County",
+    "county_fips": "29153"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 30.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 30.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.4996,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.4996
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0797,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0797
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 303,
+    "violations_5yr_total": 7,
+    "health_based_5yr_total": 2,
+    "unresolved_total": 1,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "sundown-water-system-inc",
+        "state": "mo",
+        "state_label": "Missouri",
+        "name": "Sundown Water System Inc",
+        "pwsid": "MO5030209",
+        "population_served": 60,
+        "health_based_violations_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "slug": "ozark-county-pwsd-1",
+        "state": "mo",
+        "state_label": "Missouri",
+        "name": "Ozark County Pwsd 1",
+        "pwsid": "MO5024444",
+        "population_served": 243,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7000",
+      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2025 (contaminant 7000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MO5030209"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 0400",
+      "summary": "Disinfectants and Disinfection Byproducts (Stage 2) health-based violation cited in 2022 (contaminant 0400).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MO5030209"
+      }
+    }
+  ],
+  "equity": {
+    "population": 146,
+    "pct_low_income": 26.7,
+    "pct_people_of_color": 16.400000000000006,
+    "pct_under_5": 1.4,
+    "pct_over_64": 43.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Theodosia, Missouri (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.0,
+      "age_adjusted": 12.1,
+      "state_mean": 10.7,
+      "us_mean": 10.0,
+      "vs_state_pp": 1.42,
+      "vs_state_pct": 13.3,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.08,
+      "vs_us_pct": 20.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 15.0,
+      "age_adjusted": 9.7,
+      "state_mean": 7.0,
+      "us_mean": 5.5,
+      "vs_state_pp": 2.73,
+      "vs_state_pct": 39.2,
+      "vs_state_class": "worse",
+      "vs_us_pp": 4.2,
+      "vs_us_pct": 76.4,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 13.7,
+      "age_adjusted": 7.0,
+      "state_mean": 5.6,
+      "us_mean": 5.3,
+      "vs_state_pp": 1.38,
+      "vs_state_pct": 24.6,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.69,
+      "vs_us_pct": 31.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 19.7,
+      "age_adjusted": 11.6,
+      "state_mean": 10.4,
+      "us_mean": 10.5,
+      "vs_state_pp": 1.19,
+      "vs_state_pct": 11.4,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.14,
+      "vs_us_pct": 10.9,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 16.3,
+      "age_adjusted": 22.5,
+      "state_mean": 18.5,
+      "us_mean": 16.8,
+      "vs_state_pp": 3.98,
+      "vs_state_pct": 21.5,
+      "vs_state_class": "worse",
+      "vs_us_pp": 5.75,
+      "vs_us_pct": 34.3,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "mo",
+      "slug": "bakersfield",
+      "name": "Bakersfield",
+      "population": 231,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mo",
+      "slug": "gainesville",
+      "name": "Gainesville",
+      "population": 835,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "mo",
+      "slug": "amsterdam",
+      "name": "Amsterdam",
+      "population": 146,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mo",
+      "slug": "chula",
+      "name": "Chula",
+      "population": 146,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mo",
+      "slug": "knox-city",
+      "name": "Knox City",
+      "population": 148,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "mo",
+      "slug": "tuscumbia",
+      "name": "Tuscumbia",
+      "population": 148,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T05:04:45Z"
+}

@@ -396,6 +396,30 @@ STATES: dict[str, State] = {
         population=3190369,
         counties_total=99,
     ),
+    "ks": State(
+        slug="ks",
+        abbr="KS",
+        name="Kansas",
+        fips="20",
+        population=2937880,
+        counties_total=105,
+    ),
+    "ne": State(
+        slug="ne",
+        abbr="NE",
+        name="Nebraska",
+        fips="31",
+        population=1961504,
+        counties_total=93,
+    ),
+    "mo": State(
+        slug="mo",
+        abbr="MO",
+        name="Missouri",
+        fips="29",
+        population=6154913,
+        counties_total=114,
+    ),
 }
 
 

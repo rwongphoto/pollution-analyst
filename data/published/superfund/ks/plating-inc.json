@@ -1,0 +1,222 @@
+{
+  "site": {
+    "state": "ks",
+    "state_label": "Kansas",
+    "slug": "plating-inc",
+    "name": "Plating, Inc.",
+    "epa_id": "KSD065735912",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Barton",
+    "county_slug": "barton",
+    "city": "Great Bend",
+    "city_slug": "great-bend",
+    "address": "8801 West Sixth Street",
+    "zip": "67530",
+    "lat": 38.346542,
+    "lng": -98.84946
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 2,
+    "primary_contaminant": "Chromium"
+  },
+  "contaminants": [
+    {
+      "name": "Chromium",
+      "media": "Groundwater",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Chromium(Vi)",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "KS2000911",
+        "name": "Great Bend, City Of",
+        "slug": "great-bend-city-of",
+        "state": "ks",
+        "distance_miles": 2.86,
+        "place_name": "Great Bend",
+        "primary_source": "groundwater",
+        "population_served": 14580,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "KS2000913",
+        "name": "Barton County Community College",
+        "slug": "barton-county-community-college",
+        "state": "ks",
+        "distance_miles": 2.86,
+        "place_name": "Great Bend",
+        "primary_source": "groundwater",
+        "population_served": 1000,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "KS2000915",
+        "name": "Barton Hills Addition",
+        "slug": "barton-hills-addition",
+        "state": "ks",
+        "distance_miles": 2.86,
+        "place_name": "Great Bend",
+        "primary_source": "groundwater",
+        "population_served": 176,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 14725,
+    "pct_low_income": 16.3,
+    "pct_people_of_color": 28.900000000000006,
+    "pct_under_5": 9.0,
+    "pct_over_64": 18.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 11.1,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 17.6,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 50.7,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 28.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 86.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 26.8,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 86.0,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 66.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 40.1,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 92.3,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 72.1,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 18.7
+      },
+      {
+        "label": "Ozone",
+        "score": 105.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 80.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 44.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 122.8
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 43.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 122.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 101.1
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 60.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 126.8
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 110.8
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Great Bend, Kansas (no Census block groups within 1 mile \u2014 falling back to host city; disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:48:35Z"
+}

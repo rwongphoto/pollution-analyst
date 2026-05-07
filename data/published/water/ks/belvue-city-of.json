@@ -1,0 +1,284 @@
+{
+  "utility": {
+    "state": "ks",
+    "state_label": "Kansas",
+    "slug": "belvue-city-of",
+    "name": "Belvue, City Of",
+    "pwsid": "KS2014902",
+    "population_served": 190,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Belvue"
+    ],
+    "county": "Pottawatomie County",
+    "county_slug": "pottawatomie",
+    "place_slug": "belvue"
+  },
+  "reporting_period": {
+    "start": "2020-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 3,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "Reporting failure"
+    },
+    {
+      "year": 2020,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2020,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2020,
+        "value": 2
+      },
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2020,
+        "value": 0
+      },
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 2
+      },
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:KS2014902"
+      }
+    }
+  ],
+  "equity": {
+    "population": 25482,
+    "pct_low_income": 7.2,
+    "pct_people_of_color": 11.299999999999997,
+    "pct_under_5": 7.6,
+    "pct_over_64": 14.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 49.2,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 33.0,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 20.2,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 17.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 65.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 10.1,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 61.1,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 73.1,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 24.4,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 46.7,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 93.1,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 78.4,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 39.1
+      },
+      {
+        "label": "Ozone",
+        "score": 36.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 15.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 14.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 43.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 7.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 40.5
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 52.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 12.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 26.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 49.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 30.5
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Pottawatomie County, Kansas (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:48:35Z"
+}

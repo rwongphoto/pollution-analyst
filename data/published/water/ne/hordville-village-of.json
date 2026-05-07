@@ -1,0 +1,213 @@
+{
+  "utility": {
+    "state": "ne",
+    "state_label": "Nebraska",
+    "slug": "hordville-village-of",
+    "name": "Hordville, Village Of",
+    "pwsid": "NE3108104",
+    "population_served": 147,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Hordville"
+    ],
+    "county": "Hamilton County",
+    "county_slug": "hamilton",
+    "place_slug": "hordville"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5200",
+      "contaminant_code": "5200",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5200",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 9400,
+    "pct_low_income": 5.5,
+    "pct_people_of_color": 6.599999999999994,
+    "pct_under_5": 7.0,
+    "pct_over_64": 20.3,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 5.9,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 14.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 37.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 23.5,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 49.9,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 5.8,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 72.0,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 89.2,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.7,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 63.1,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 94.2,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 91.2,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 3.8
+      },
+      {
+        "label": "Ozone",
+        "score": 28.1
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 23.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 15.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 29.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 3.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 40.2
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 3.2
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 53.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 1.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 28.3
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 40.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 4.6
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Hamilton County, Nebraska (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:55:43Z"
+}

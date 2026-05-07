@@ -1,0 +1,201 @@
+{
+  "facility": {
+    "state": "ks",
+    "state_label": "Kansas",
+    "slug": "clean-harbors-wichita-llc",
+    "name": "Clean Harbors Wichita LLC",
+    "parent_company": "Clean Harbors INC",
+    "address": "2932 N OHIO ST",
+    "city": "Wichita",
+    "county": "Sedgwick County",
+    "county_slug": "sedgwick",
+    "naics_label": "324191 \u00b7 Petroleum",
+    "lat": 37.736587,
+    "lng": -97.324099
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1737,
+    "air_releases_pounds": 1706,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 31,
+    "chemicals_reported": 5,
+    "yoy_pct_change": 2000.9,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 63
+      },
+      {
+        "year": 2022,
+        "value": 70
+      },
+      {
+        "year": 2023,
+        "value": 83
+      },
+      {
+        "year": 2024,
+        "value": 1737
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 1690,
+      "history": [
+        {
+          "year": 2021,
+          "value": 21
+        },
+        {
+          "year": 2022,
+          "value": 29
+        },
+        {
+          "year": 2023,
+          "value": 30
+        },
+        {
+          "year": 2024,
+          "value": 1690
+        }
+      ],
+      "yoy_pct_change": 5478.3,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 35,
+      "history": [
+        {
+          "year": 2021,
+          "value": 19
+        },
+        {
+          "year": 2022,
+          "value": 18
+        },
+        {
+          "year": 2023,
+          "value": 28
+        },
+        {
+          "year": 2024,
+          "value": 35
+        }
+      ],
+      "yoy_pct_change": 25.4,
+      "long_arc_pct_change": 84.6,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Polycyclic aromatic compounds",
+      "cas": "N590",
+      "category": "pbt",
+      "total_pounds_recent": 11,
+      "history": [
+        {
+          "year": 2021,
+          "value": 23
+        },
+        {
+          "year": 2022,
+          "value": 22
+        },
+        {
+          "year": 2023,
+          "value": 12
+        },
+        {
+          "year": 2024,
+          "value": 11
+        }
+      ],
+      "yoy_pct_change": -5.8,
+      "long_arc_pct_change": -50.5,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 0.29,
+      "history": [
+        {
+          "year": 2021,
+          "value": 0.02
+        },
+        {
+          "year": 2022,
+          "value": 0.02
+        },
+        {
+          "year": 2023,
+          "value": 0.23
+        },
+        {
+          "year": 2024,
+          "value": 0.29
+        }
+      ],
+      "yoy_pct_change": 24.8,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Benzo[g,h,i]perylene",
+      "cas": "191-24-2",
+      "category": "pbt",
+      "total_pounds_recent": 0.22,
+      "history": [
+        {
+          "year": 2021,
+          "value": 0.24
+        },
+        {
+          "year": 2022,
+          "value": 0.24
+        },
+        {
+          "year": 2023,
+          "value": 12
+        },
+        {
+          "year": 2024,
+          "value": 0.22
+        }
+      ],
+      "yoy_pct_change": -98.1,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 53625,
+    "pct_low_income": 47.7,
+    "pct_people_of_color": 62.5,
+    "pct_under_5": 4.8,
+    "pct_over_64": 13.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (52 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:48:35Z"
+}

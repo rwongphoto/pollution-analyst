@@ -1,0 +1,298 @@
+{
+  "utility": {
+    "state": "ne",
+    "state_label": "Nebraska",
+    "slug": "north-point-johnson-lake",
+    "name": "North Point Johnson Lake",
+    "pwsid": "NE3107301",
+    "population_served": 25,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Johnson Lake"
+    ],
+    "county": "Dawson County",
+    "county_slug": "dawson",
+    "place_slug": null
+  },
+  "reporting_period": {
+    "start": "2023-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 5,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 2,
+    "contaminants_with_violations": 3,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": true,
+      "description": "OTHER"
+    },
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": true,
+      "description": "Monitoring failure"
+    },
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2023,
+        "value": 2
+      },
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 2
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 3
+      },
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 1
+      },
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7000",
+      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2025 (contaminant 7000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NE3107301"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NE3107301"
+      }
+    }
+  ],
+  "equity": {
+    "population": 24037,
+    "pct_low_income": 14.2,
+    "pct_people_of_color": 43.8,
+    "pct_under_5": 8.2,
+    "pct_over_64": 16.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 4.2,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 9.6,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 36.8,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 34.0,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 30.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 15.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 73.2,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 41.1,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 23.2,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 65.6,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 68.0,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 6.9
+      },
+      {
+        "label": "Ozone",
+        "score": 85.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 67.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 55.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 46.7
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 28.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 93.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 10.1
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 35.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 75.1
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 94.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Dawson County, Nebraska (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:55:43Z"
+}

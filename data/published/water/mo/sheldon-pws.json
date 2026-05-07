@@ -1,0 +1,229 @@
+{
+  "utility": {
+    "state": "mo",
+    "state_label": "Missouri",
+    "slug": "sheldon-pws",
+    "name": "Sheldon Pws",
+    "pwsid": "MO5010738",
+    "population_served": 543,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Sheldon"
+    ],
+    "county": "Vernon County",
+    "county_slug": "vernon",
+    "place_slug": "sheldon"
+  },
+  "reporting_period": {
+    "start": "2022-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 4
+  },
+  "violations": [
+    {
+      "year": 2022,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2022,
+        "value": 1
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 19777,
+    "pct_low_income": 18.1,
+    "pct_people_of_color": 6.700000000000003,
+    "pct_under_5": 6.1,
+    "pct_over_64": 20.1,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 25.6,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 19.6,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 8.9,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 19.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 10.6,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 13.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 68.3,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 34.5,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 23.8,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 55.7,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 54.4,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 76.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 27.8
+      },
+      {
+        "label": "Ozone",
+        "score": 43.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 13.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 23.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 10.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 16.0
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 67.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 19.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 22.2
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 39.8
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 52.4
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 7.3
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Vernon County, Missouri (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T05:04:44Z"
+}

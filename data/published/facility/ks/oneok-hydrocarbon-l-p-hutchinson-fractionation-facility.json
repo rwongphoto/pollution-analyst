@@ -1,0 +1,153 @@
+{
+  "facility": {
+    "state": "ks",
+    "state_label": "Kansas",
+    "slug": "oneok-hydrocarbon-l-p-hutchinson-fractionation-facility",
+    "name": "Oneok Hydrocarbon L.P. - Hutchinson Fractionation Facility",
+    "parent_company": "Oneok INC",
+    "address": "1910 S BROADACRES RD",
+    "city": "Hutchinson",
+    "county": "Reno County",
+    "county_slug": "reno",
+    "naics_label": "211130 \u00b7 Natural Gas Processing",
+    "lat": 38.028311,
+    "lng": -97.976863
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 19889,
+    "air_releases_pounds": 19889,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 3,
+    "yoy_pct_change": 238.5,
+    "long_arc_pct_change": 272.8,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 5335
+      },
+      {
+        "year": 2023,
+        "value": 5876
+      },
+      {
+        "year": 2024,
+        "value": 19889
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "n-Hexane",
+      "cas": "110-54-3",
+      "category": "respiratory",
+      "total_pounds_recent": 16775,
+      "history": [
+        {
+          "year": 2022,
+          "value": 4779
+        },
+        {
+          "year": 2023,
+          "value": 5171
+        },
+        {
+          "year": 2024,
+          "value": 16775
+        }
+      ],
+      "yoy_pct_change": 224.4,
+      "long_arc_pct_change": 251.0,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Benzene",
+      "cas": "71-43-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 1904,
+      "history": [
+        {
+          "year": 2022,
+          "value": 496
+        },
+        {
+          "year": 2023,
+          "value": 526
+        },
+        {
+          "year": 2024,
+          "value": 1904
+        }
+      ],
+      "yoy_pct_change": 262.4,
+      "long_arc_pct_change": 283.9,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Cyclohexane",
+      "cas": "110-82-7",
+      "category": "general",
+      "total_pounds_recent": 1210,
+      "history": [
+        {
+          "year": 2023,
+          "value": 180
+        },
+        {
+          "year": 2024,
+          "value": 1210
+        }
+      ],
+      "yoy_pct_change": 572.4,
+      "long_arc_pct_change": 572.4,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "n-Hexane",
+      "summary": "n-Hexane releases at Oneok Hydrocarbon L.P. - Hutchinson Fractionation Facility rose from 5k lb to 17k lb (3.2\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 224.4,
+      "magnitude_abs": 11603.5,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 4779
+        },
+        {
+          "year": 2023,
+          "value": 5171
+        },
+        {
+          "year": 2024,
+          "value": 16775
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 4490,
+    "pct_low_income": 41.6,
+    "pct_people_of_color": 20.6,
+    "pct_under_5": 6.4,
+    "pct_over_64": 25.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (5 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T04:48:35Z"
+}

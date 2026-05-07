@@ -1,0 +1,229 @@
+{
+  "utility": {
+    "state": "mo",
+    "state_label": "Missouri",
+    "slug": "grain-valley-pws",
+    "name": "Grain Valley Pws",
+    "pwsid": "MO1010320",
+    "population_served": 16000,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Grain Valley"
+    ],
+    "county": "Jackson County",
+    "county_slug": "jackson",
+    "place_slug": "grain-valley"
+  },
+  "reporting_period": {
+    "start": "2022-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 4
+  },
+  "violations": [
+    {
+      "year": 2022,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Monitoring failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2022,
+        "value": 1
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 15688,
+    "pct_low_income": 7.0,
+    "pct_people_of_color": 12.599999999999994,
+    "pct_under_5": 7.2,
+    "pct_over_64": 10.3,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 32.6,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 37.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 42.2,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 40.5,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 85.7,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 27.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 23.6,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 63.9,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 31.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 64.1,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 82.6,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 20.5
+      },
+      {
+        "label": "Ozone",
+        "score": 28.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 25.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 25.4
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 51.4
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 17.2
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 6.6
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 38.1
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 19.6
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 27.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 39.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Grain Valley, Missouri (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T05:04:43Z"
+}
