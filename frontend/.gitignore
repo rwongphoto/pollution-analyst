@@ -37,6 +37,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Generated each build by scripts/sync-search-index.mjs from the pipeline.
+/public/search-index.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

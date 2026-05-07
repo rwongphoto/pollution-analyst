@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { LIVE_STATES_BY_REGION } from "../../lib/states";
 import { Brand } from "./Brand";
+import { SiteSearch } from "./SiteSearch";
 
 type Active =
   | "home"
@@ -137,6 +138,7 @@ export function SiteHeader({ active }: { active?: Active }) {
           </Link>
         </nav>
         <div className="header-actions">
+          <SiteSearch />
           <Link href="/methodology" className="btn btn-primary btn-sm cta-desktop">
             How it works<span style={{ marginLeft: 4 }}>→</span>
           </Link>

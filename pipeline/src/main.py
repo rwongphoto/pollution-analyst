@@ -39,6 +39,7 @@ from .flags import (
 )
 from .ingest import airtoxscreen, aqs, cdc_places, ejscreen, ghgrp, sdwis, superfund, tri
 from .publish import rankings as publish_rankings_mod
+from .publish import search_index as publish_search_index_mod
 from .publish import site as publish_site
 from .spatial.acs import (
     get_county_demographics,
@@ -1044,6 +1045,8 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     publish_rankings_mod.publish_rankings(year=args.year)
+
+    publish_search_index_mod.build_search_index()
 
     if not args.no_flags:
         # Cross-state calibration roll-up — surfaces over-cap entities so

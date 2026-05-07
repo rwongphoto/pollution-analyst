@@ -79,8 +79,9 @@ Every page reads JSON written by the pipeline to `data/published/`. The frontend
 | `facility/<state>/<slug>.json` | `/state/[state]/facility/[slug]` | `publish_site.publish_facility()` |
 | `water/<state>/<slug>.json` | `/state/[state]/water/[slug]` | `publish_site.publish_water()` |
 | `superfund/<state>/<slug>.json` | `/state/[state]/superfund/[slug]` | `publish_site.publish_superfund()` |
+| `search-index.json` | nav search box (client) | `publish.search_index.build_search_index()` |
 
-Loaders live in [`frontend/src/lib/data.ts`](frontend/src/lib/data.ts). All loaders are server-only; the frontend ships zero runtime fetches for these payloads.
+Loaders live in [`frontend/src/lib/data.ts`](frontend/src/lib/data.ts). All loaders are server-only; the frontend ships zero runtime fetches for these payloads — except the nav search index, which the `SiteSearch` client component fetches on first focus from `/search-index.json`. The frontend's `prebuild` (and `predev`) hook runs `frontend/scripts/sync-search-index.mjs`, which copies the pipeline-emitted `data/published/search-index.json` into `frontend/public/` so the static export ships it as a top-level asset. The index covers states + counties + cities + superfund sites only (~22k records, ~290 KB gzipped); water utilities and TRI facilities are excluded to keep the client-side fuzzy-search payload tractable on low-end mobile.
 
 ## Data Flow
 
@@ -107,6 +108,8 @@ pipeline/src/flags/                    (anomaly engine: 4 flag types)
     │
     ▼
 pipeline/src/publish/site.py           (writes data/published/*.json, cleanup_stale)
+pipeline/src/publish/rankings.py       (writes data/published/rankings.json)
+pipeline/src/publish/search_index.py   (writes data/published/search-index.json, nav search)
     │
     ▼
 frontend/ (Next.js SSG)                (statically rendered to Vercel)
@@ -230,3 +233,4 @@ Rendered on state, county, city hub, facility (3-mile block-group buffer → con
   - **`PhaseTimeline` component** — depended on the shelved listing-date enrichment; deferred indefinitely.
   - **Superfund-driven flags** (`stalled_cleanup`, `recently_deleted`, `5yr_review_overdue`) — deferred until calibrated.
   - **Operator / PRP ↔ TRI cross-link** — V2; gated on PRP-name normalization.
+- **Downloadable graphics with Pollution Analyst watermark.** Every chart, map, and table on the site should be downloadable as a PNG with the Pollution Analyst logo + URL watermarked in the lower-right corner. For modules that bundle multiple cards (e.g. an EJ block, a TRI section), the *whole module* is one downloadable image rather than per-card downloads. Goal: turn each rendered surface into a shareable asset that carries attribution back to the site (Reddit / Twitter / Bluesky / journalist screenshots all currently lose the source). Implementation sketch: a `<Downloadable>` wrapper component using `html-to-image` (works under static export — pure client-side DOM-to-canvas) with an absolute-positioned watermark layer that's `opacity-0` on screen and shown only during capture; a small download icon button surfaces in the top-right of the wrapper on hover. Mapbox WebGL canvases need a different code path — `map.getCanvas().toDataURL()` composited with the surrounding DOM via `preserveDrawingBuffer: true`. Open questions for when this gets picked up: (1) logo asset — wordmark SVG vs. PNG mark; (2) format menu — PNG only, or also CSV-for-tables / SVG-for-charts; (3) whether to also bake an OG-image-style hero export per state/county/city as a build-time asset for richer social previews.
