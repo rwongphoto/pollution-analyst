@@ -1,0 +1,432 @@
+{
+  "place": {
+    "state": "il",
+    "state_label": "Illinois",
+    "slug": "camargo",
+    "name": "Camargo",
+    "fips": "1710591",
+    "population": 540,
+    "county_name": "Douglas County",
+    "county_fips": "17041"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 1,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.2804,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.2804
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0946,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0946
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "ghg",
+      "label": "Greenhouse gases (GHGRP large emitters, through 2023)",
+      "current": 21876,
+      "units": "metric tons CO\u2082e",
+      "yoy_pct_change": 8.6,
+      "long_arc_pct_change": -95.2,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 455164
+        },
+        {
+          "year": 2011,
+          "value": 498154
+        },
+        {
+          "year": 2012,
+          "value": 404384
+        },
+        {
+          "year": 2013,
+          "value": 412068
+        },
+        {
+          "year": 2014,
+          "value": 373939
+        },
+        {
+          "year": 2015,
+          "value": 388011
+        },
+        {
+          "year": 2016,
+          "value": 254376
+        },
+        {
+          "year": 2017,
+          "value": 254301
+        },
+        {
+          "year": 2018,
+          "value": 79456
+        },
+        {
+          "year": 2019,
+          "value": 72312
+        },
+        {
+          "year": 2020,
+          "value": 46559
+        },
+        {
+          "year": 2021,
+          "value": 23011
+        },
+        {
+          "year": 2022,
+          "value": 20141
+        },
+        {
+          "year": 2023,
+          "value": 21876
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 1,
+    "population_served_total": 750,
+    "violations_5yr_total": 18,
+    "health_based_5yr_total": 11,
+    "unresolved_total": 11,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "camargo",
+        "state": "il",
+        "state_label": "Illinois",
+        "name": "Camargo",
+        "pwsid": "IL0410100",
+        "population_served": 750,
+        "health_based_violations_5yr": 11,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IL0410100"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IL0410100"
+      }
+    }
+  ],
+  "equity": {
+    "population": 540,
+    "pct_low_income": 7.0,
+    "pct_people_of_color": 1.2999999999999972,
+    "pct_under_5": 5.0,
+    "pct_over_64": 23.1,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Camargo, Illinois (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.3,
+      "age_adjusted": 10.5,
+      "state_mean": 9.9,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.58,
+      "vs_state_pct": 5.8,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.48,
+      "vs_us_pct": 4.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 7.5,
+      "age_adjusted": 6.0,
+      "state_mean": 5.6,
+      "us_mean": 5.5,
+      "vs_state_pp": 0.43,
+      "vs_state_pct": 7.7,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.5,
+      "vs_us_pct": 9.1,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 6.9,
+      "age_adjusted": 5.1,
+      "state_mean": 5.0,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.15,
+      "vs_state_pct": 3.0,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.21,
+      "vs_us_pct": -4.0,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 11.5,
+      "age_adjusted": 8.8,
+      "state_mean": 10.2,
+      "us_mean": 10.5,
+      "vs_state_pp": -1.41,
+      "vs_state_pct": -13.8,
+      "vs_state_class": "better",
+      "vs_us_pp": -1.66,
+      "vs_us_pct": -15.9,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 16.3,
+      "age_adjusted": 18.1,
+      "state_mean": 16.3,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.77,
+      "vs_state_pct": 10.8,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.35,
+      "vs_us_pct": 8.1,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "il",
+      "slug": "newman",
+      "name": "Newman",
+      "population": 780,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "il",
+      "slug": "atwood",
+      "name": "Atwood",
+      "population": 979,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "il",
+      "slug": "arcola",
+      "name": "Arcola",
+      "population": 2726,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 48.8,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "il",
+      "slug": "tuscola",
+      "name": "Tuscola",
+      "population": 4707,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 50.8,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "il",
+      "slug": "hecker",
+      "name": "Hecker",
+      "population": 540,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "il",
+      "slug": "ullin",
+      "name": "Ullin",
+      "population": 538,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 37.4,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T03:30:56Z"
+}

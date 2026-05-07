@@ -1,0 +1,101 @@
+{
+  "facility": {
+    "state": "tn",
+    "state_label": "Tennessee",
+    "slug": "bravo-inc",
+    "name": "Bravo INC.",
+    "parent_company": "S Bravo Systems",
+    "address": "58 ELLIOT POWER DR",
+    "city": "Lexington",
+    "county": "Henderson County",
+    "county_slug": "henderson",
+    "naics_label": "326199 \u00b7 Plastics and Rubber",
+    "lat": 35.719636,
+    "lng": -88.382381
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 32070,
+    "air_releases_pounds": 32070,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 34.7,
+    "long_arc_pct_change": 145.9,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 13041
+      },
+      {
+        "year": 2021,
+        "value": 18000
+      },
+      {
+        "year": 2022,
+        "value": 39010
+      },
+      {
+        "year": 2023,
+        "value": 23811
+      },
+      {
+        "year": 2024,
+        "value": 32070
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Styrene",
+      "cas": "100-42-5",
+      "category": "carcinogen",
+      "total_pounds_recent": 32070,
+      "history": [
+        {
+          "year": 2020,
+          "value": 13041
+        },
+        {
+          "year": 2021,
+          "value": 18000
+        },
+        {
+          "year": 2022,
+          "value": 39010
+        },
+        {
+          "year": 2023,
+          "value": 23811
+        },
+        {
+          "year": 2024,
+          "value": 32070
+        }
+      ],
+      "yoy_pct_change": 34.7,
+      "long_arc_pct_change": 145.9,
+      "long_arc_baseline_year": 2020
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 4759,
+    "pct_low_income": 24.8,
+    "pct_people_of_color": 17.9,
+    "pct_under_5": 7.5,
+    "pct_over_64": 15.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:15:34Z"
+}

@@ -1,0 +1,222 @@
+{
+  "utility": {
+    "state": "il",
+    "state_label": "Illinois",
+    "slug": "royal-oaks-mhp",
+    "name": "Royal Oaks Mhp",
+    "pwsid": "IL1115145",
+    "population_served": 170,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Chicago"
+    ],
+    "county": "McHenry County",
+    "county_slug": "mchenry",
+    "place_slug": "chicago"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": true,
+      "description": "OTHER"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7000",
+      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2025 (contaminant 7000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IL1115145"
+      }
+    }
+  ],
+  "equity": {
+    "population": 2721914,
+    "pct_low_income": 16.9,
+    "pct_people_of_color": 67.3,
+    "pct_under_5": 5.2,
+    "pct_over_64": 13.3,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 77.3,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 90.6,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 97.7,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 93.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 92.3,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 92.9,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 86.1,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 91.5,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 93.6,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 84.3,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 96.0,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 94.2,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 148.2
+      },
+      {
+        "label": "Ozone",
+        "score": 158.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 181.0
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 168.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 170.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 165.6
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 154.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 157.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 161.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 151.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 155.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 172.1
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Chicago, Illinois (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:30:55Z"
+}

@@ -1,0 +1,74 @@
+{
+  "site": {
+    "state": "nc",
+    "state_label": "North Carolina",
+    "slug": "georgia-pacific-corporation-hardwood-sawmill",
+    "name": "Georgia-Pacific Corporation Hardwood Sawmill",
+    "epa_id": "NCD000813592",
+    "npl_status": "Withdrawn from the Final NPL",
+    "is_active_npl": false,
+    "is_deleted": true,
+    "is_federal_facility": false,
+    "county": "Washington",
+    "county_slug": "washington",
+    "city": "Plymouth",
+    "city_slug": "plymouth",
+    "address": "Plywood Drive",
+    "zip": "27962",
+    "lat": 35.874444,
+    "lng": -76.740906
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NC0494010",
+        "name": "Plymouth Water System",
+        "slug": "plymouth-water-system",
+        "state": "nc",
+        "distance_miles": 1.17,
+        "place_name": "Plymouth",
+        "primary_source": "groundwater",
+        "population_served": 3243,
+        "health_based_5yr": 1,
+        "unresolved": false
+      },
+      {
+        "pwsid": "NC0494025",
+        "name": "Washington County Water System",
+        "slug": "washington-county-water-system",
+        "state": "nc",
+        "distance_miles": 1.17,
+        "place_name": "Plymouth",
+        "primary_source": "groundwater",
+        "population_served": 6693,
+        "health_based_5yr": 2,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 982,
+    "pct_low_income": 88.7,
+    "pct_people_of_color": 88.9,
+    "pct_under_5": 0.0,
+    "pct_over_64": 20.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:07:59Z"
+}

@@ -1,0 +1,155 @@
+{
+  "facility": {
+    "state": "tn",
+    "state_label": "Tennessee",
+    "slug": "bioenergy-development-group-llc",
+    "name": "Bioenergy Development Group LLC",
+    "parent_company": null,
+    "address": "2227 DEADRICK AVE",
+    "city": "Memphis",
+    "county": "Shelby County",
+    "county_slug": "shelby",
+    "naics_label": "325199 \u00b7 Chemicals",
+    "lat": 35.104533,
+    "lng": -89.988938
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 258232,
+    "air_releases_pounds": 3620,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 254612,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 54.2,
+    "long_arc_pct_change": 1532.3,
+    "long_arc_baseline_year": 2019,
+    "history": [
+      {
+        "year": 2019,
+        "value": 15820
+      },
+      {
+        "year": 2020,
+        "value": 116658
+      },
+      {
+        "year": 2021,
+        "value": 175898
+      },
+      {
+        "year": 2022,
+        "value": 34519
+      },
+      {
+        "year": 2023,
+        "value": 167427
+      },
+      {
+        "year": 2024,
+        "value": 258232
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 258232,
+      "history": [
+        {
+          "year": 2019,
+          "value": 15820
+        },
+        {
+          "year": 2020,
+          "value": 116658
+        },
+        {
+          "year": 2021,
+          "value": 175898
+        },
+        {
+          "year": 2022,
+          "value": 34519
+        },
+        {
+          "year": 2023,
+          "value": 167427
+        },
+        {
+          "year": 2024,
+          "value": 258232
+        }
+      ],
+      "yoy_pct_change": 54.2,
+      "long_arc_pct_change": 1532.3,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Methanol",
+      "summary": "Methanol releases at Bioenergy Development Group LLC rose from 167k lb to 258k lb between 2023 and 2024.",
+      "magnitude_pct": 54.2,
+      "magnitude_abs": 90805.2,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2016,
+          "value": 730
+        },
+        {
+          "year": 2018,
+          "value": 4990
+        },
+        {
+          "year": 2019,
+          "value": 15820
+        },
+        {
+          "year": 2020,
+          "value": 116658
+        },
+        {
+          "year": 2021,
+          "value": 175898
+        },
+        {
+          "year": 2022,
+          "value": 34519
+        },
+        {
+          "year": 2023,
+          "value": 167427
+        },
+        {
+          "year": 2024,
+          "value": 258232
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 87508,
+    "pct_low_income": 51.0,
+    "pct_people_of_color": 72.1,
+    "pct_under_5": 6.7,
+    "pct_over_64": 16.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (91 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:15:34Z"
+}

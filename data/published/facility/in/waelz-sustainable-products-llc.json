@@ -1,0 +1,180 @@
+{
+  "facility": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "waelz-sustainable-products-llc",
+    "name": "Waelz Sustainable Products LLC",
+    "parent_company": null,
+    "address": "3440 W CR 300 S",
+    "city": "Logansport",
+    "county": "Cass County",
+    "county_slug": "cass",
+    "naics_label": "331492 \u00b7 Primary Metals",
+    "lat": 40.72133,
+    "lng": -86.438049
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 14288011,
+    "air_releases_pounds": 6150,
+    "water_releases_pounds": 131,
+    "land_releases_pounds": 14281730,
+    "chemicals_reported": 4,
+    "yoy_pct_change": 57.7,
+    "long_arc_pct_change": 357.4,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 3123521
+      },
+      {
+        "year": 2023,
+        "value": 9061244
+      },
+      {
+        "year": 2024,
+        "value": 14288011
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 7710677,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1804121
+        },
+        {
+          "year": 2023,
+          "value": 3767237
+        },
+        {
+          "year": 2024,
+          "value": 7710677
+        }
+      ],
+      "yoy_pct_change": 104.7,
+      "long_arc_pct_change": 327.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Manganese  And Manganese Compounds",
+      "cas": "N450",
+      "category": "respiratory",
+      "total_pounds_recent": 6558922,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1300229
+        },
+        {
+          "year": 2023,
+          "value": 5269120
+        },
+        {
+          "year": 2024,
+          "value": 6558922
+        }
+      ],
+      "yoy_pct_change": 24.5,
+      "long_arc_pct_change": 404.4,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Lead  And Lead Compounds",
+      "cas": "N420",
+      "category": "pbt",
+      "total_pounds_recent": 18403,
+      "history": [
+        {
+          "year": 2022,
+          "value": 19076
+        },
+        {
+          "year": 2023,
+          "value": 24443
+        },
+        {
+          "year": 2024,
+          "value": 18403
+        }
+      ],
+      "yoy_pct_change": -24.7,
+      "long_arc_pct_change": -3.5,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Dioxin and dioxin-like compounds",
+      "cas": "N150",
+      "category": "pbt",
+      "total_pounds_recent": 9,
+      "history": [
+        {
+          "year": 2022,
+          "value": 5
+        },
+        {
+          "year": 2023,
+          "value": 8
+        },
+        {
+          "year": 2024,
+          "value": 9
+        }
+      ],
+      "yoy_pct_change": 15.7,
+      "long_arc_pct_change": 100.2,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Zinc compounds",
+      "summary": "Zinc compounds releases at Waelz Sustainable Products LLC rose from 3.8M lb to 7.7M lb (2.0\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 104.7,
+      "magnitude_abs": 3943440.3,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2022,
+          "value": 1804121
+        },
+        {
+          "year": 2023,
+          "value": 3767237
+        },
+        {
+          "year": 2024,
+          "value": 7710677
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 1670,
+    "pct_low_income": 38.7,
+    "pct_people_of_color": 17.5,
+    "pct_under_5": 0.4,
+    "pct_over_64": 17.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:33Z"
+}

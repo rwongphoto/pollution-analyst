@@ -1,0 +1,84 @@
+{
+  "facility": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "starplus-energy-llc",
+    "name": "Starplus Energy LLC",
+    "parent_company": null,
+    "address": "2531 TOUBY PIKE",
+    "city": "Kokomo",
+    "county": "Howard County",
+    "county_slug": "howard",
+    "naics_label": "335910 \u00b7 Electrical Equipment",
+    "lat": 40.512393,
+    "lng": -86.100053
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 8344,
+    "air_releases_pounds": 87,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 8257,
+    "chemicals_reported": 2,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 8344
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 6836,
+      "history": [
+        {
+          "year": 2024,
+          "value": 6836
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Cobalt",
+      "cas": "7440-48-4",
+      "category": "carcinogen",
+      "total_pounds_recent": 1508,
+      "history": [
+        {
+          "year": 2024,
+          "value": 1508
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 18351,
+    "pct_low_income": 47.6,
+    "pct_people_of_color": 25.9,
+    "pct_under_5": 5.2,
+    "pct_over_64": 17.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (18 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:34Z"
+}

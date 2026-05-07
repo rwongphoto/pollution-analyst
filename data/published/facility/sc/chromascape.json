@@ -1,0 +1,77 @@
+{
+  "facility": {
+    "state": "sc",
+    "state_label": "South Carolina",
+    "slug": "chromascape",
+    "name": "Chromascape",
+    "parent_company": "Chromascape INC",
+    "address": "1927 ELROD RD",
+    "city": "Piedmont",
+    "county": "Anderson County",
+    "county_slug": "anderson",
+    "naics_label": "325130 \u00b7 Chemicals",
+    "lat": 34.760589,
+    "lng": -82.482178
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 750,
+    "air_releases_pounds": 750,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 5.3,
+    "long_arc_pct_change": 5.3,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 712
+      },
+      {
+        "year": 2024,
+        "value": 750
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 750,
+      "history": [
+        {
+          "year": 2023,
+          "value": 712
+        },
+        {
+          "year": 2024,
+          "value": 750
+        }
+      ],
+      "yoy_pct_change": 5.3,
+      "long_arc_pct_change": 5.3,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 18692,
+    "pct_low_income": 24.3,
+    "pct_people_of_color": 29.7,
+    "pct_under_5": 5.6,
+    "pct_over_64": 17.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (9 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T02:57:57Z"
+}

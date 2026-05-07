@@ -1,0 +1,454 @@
+{
+  "county": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "owen",
+    "name": "Owen County",
+    "fips": "18119",
+    "population": 21361
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 30.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 30.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.3995,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.3995
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1074,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1074
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "utilities": [],
+  "superfund": [
+    {
+      "slug": "franklin-street-groundwater-contamination",
+      "state": "in",
+      "name": "Franklin Street Groundwater Contamination",
+      "epa_id": "INN000510959",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Spencer",
+      "city_slug": "spencer",
+      "primary_contaminant": null
+    },
+    {
+      "slug": "neal-s-dump-spencer",
+      "state": "in",
+      "name": "Neal'S Dump (Spencer)",
+      "epa_id": "IND980794549",
+      "npl_status": "Deleted from the Final NPL",
+      "is_active_npl": false,
+      "is_deleted": true,
+      "is_federal_facility": false,
+      "city": "Spencer",
+      "city_slug": null,
+      "primary_contaminant": "Polychlorinated Biphenyls (Pcbs)"
+    }
+  ],
+  "superfund_total": 2,
+  "cities_directory": [
+    {
+      "slug": "cloverdale",
+      "name": "Cloverdale",
+      "fips": "1813852",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 2201
+    },
+    {
+      "slug": "spencer",
+      "name": "Spencer",
+      "fips": "1871972",
+      "facilities_count": 0,
+      "utilities_count": 2,
+      "population": 2240
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 21361,
+    "pct_low_income": 12.3,
+    "pct_people_of_color": 4.400000000000006,
+    "pct_under_5": 5.4,
+    "pct_over_64": 20.5,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 51.3,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 53.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 17.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 19.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 23.9,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 9.6,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 63.3,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 84.3,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.8,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 14.5,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 53.9,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 61.2,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 45.6
+      },
+      {
+        "label": "Ozone",
+        "score": 53.0
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 15.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 18.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 18.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 8.8
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 46.8
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 41.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 7.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 6.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 27.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 47.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Owen County County, IN"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.5,
+      "age_adjusted": 11.6,
+      "state_mean": 11.3,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.32,
+      "vs_state_pct": 2.8,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.58,
+      "vs_us_pct": 15.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 10.3,
+      "age_adjusted": 8.3,
+      "state_mean": 7.2,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.12,
+      "vs_state_pct": 15.6,
+      "vs_state_class": "worse",
+      "vs_us_pp": 2.8,
+      "vs_us_pct": 50.9,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.4,
+      "age_adjusted": 6.2,
+      "state_mean": 5.8,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.42,
+      "vs_state_pct": 7.3,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.89,
+      "vs_us_pct": 16.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 14.5,
+      "age_adjusted": 11.1,
+      "state_mean": 11.5,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.38,
+      "vs_state_pct": -3.3,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.64,
+      "vs_us_pct": 6.1,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 18.0,
+      "age_adjusted": 19.9,
+      "state_mean": 18.4,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.53,
+      "vs_state_pct": 8.3,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 3.15,
+      "vs_us_pct": 18.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "in",
+      "slug": "brown",
+      "name": "Brown County",
+      "population": 15513,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 34.7,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "in",
+      "slug": "newton",
+      "name": "Newton County",
+      "population": 13829,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 46.8,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "in",
+      "slug": "harrison",
+      "name": "Harrison County",
+      "population": 39684,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 49.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "in",
+      "slug": "crawford",
+      "name": "Crawford County",
+      "population": 10511,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 41.0,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "county",
+      "state": "in",
+      "slug": "switzerland",
+      "name": "Switzerland County",
+      "population": 9896,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.1,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "county",
+      "state": "in",
+      "slug": "floyd",
+      "name": "Floyd County",
+      "population": 80191,
+      "facilities_count": 6,
+      "total_releases_pounds": 12318,
+      "dominant_medium": "land",
+      "ej_pct_avg": 64.4,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+22 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T03:39:33Z"
+}

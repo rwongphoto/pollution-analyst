@@ -1,0 +1,213 @@
+{
+  "facility": {
+    "state": "nc",
+    "state_label": "North Carolina",
+    "slug": "egger-lexington-particleboard-plant",
+    "name": "Egger - Lexington Particleboard Plant",
+    "parent_company": null,
+    "address": "300 EGGER PARKWAY",
+    "city": "Linwood",
+    "county": "Davidson County",
+    "county_slug": "davidson",
+    "naics_label": "321219 \u00b7 Wood Products",
+    "lat": 35.739138,
+    "lng": -80.34264
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 12557,
+    "air_releases_pounds": 9367,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 3190,
+    "chemicals_reported": 4,
+    "yoy_pct_change": -92.7,
+    "long_arc_pct_change": -83.9,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 77945
+      },
+      {
+        "year": 2022,
+        "value": 115221
+      },
+      {
+        "year": 2023,
+        "value": 172419
+      },
+      {
+        "year": 2024,
+        "value": 12557
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 5731,
+      "history": [
+        {
+          "year": 2023,
+          "value": 4989
+        },
+        {
+          "year": 2024,
+          "value": 5731
+        }
+      ],
+      "yoy_pct_change": 14.9,
+      "long_arc_pct_change": 14.9,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 4352,
+      "history": [
+        {
+          "year": 2021,
+          "value": 31192
+        },
+        {
+          "year": 2022,
+          "value": 46145
+        },
+        {
+          "year": 2023,
+          "value": 84498
+        },
+        {
+          "year": 2024,
+          "value": 4352
+        }
+      ],
+      "yoy_pct_change": -94.8,
+      "long_arc_pct_change": -86.0,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Formaldehyde",
+      "cas": "50-00-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 2469,
+      "history": [
+        {
+          "year": 2021,
+          "value": 44720
+        },
+        {
+          "year": 2022,
+          "value": 66112
+        },
+        {
+          "year": 2023,
+          "value": 79388
+        },
+        {
+          "year": 2024,
+          "value": 2469
+        }
+      ],
+      "yoy_pct_change": -96.9,
+      "long_arc_pct_change": -94.5,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 5,
+      "history": [
+        {
+          "year": 2024,
+          "value": 5
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Methanol",
+      "summary": "Methanol releases at Egger - Lexington Particleboard Plant fell from 84k lb to 4k lb (95% lower) between 2023 and 2024.",
+      "magnitude_pct": -94.8,
+      "magnitude_abs": -80146.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 31192
+        },
+        {
+          "year": 2022,
+          "value": 46145
+        },
+        {
+          "year": 2023,
+          "value": 84498
+        },
+        {
+          "year": 2024,
+          "value": 4352
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Formaldehyde",
+      "summary": "Formaldehyde releases at Egger - Lexington Particleboard Plant fell from 79k lb to 2k lb (97% lower) between 2023 and 2024.",
+      "magnitude_pct": -96.9,
+      "magnitude_abs": -76919.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 44720
+        },
+        {
+          "year": 2022,
+          "value": 66112
+        },
+        {
+          "year": 2023,
+          "value": 79388
+        },
+        {
+          "year": 2024,
+          "value": 2469
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 3911,
+    "pct_low_income": 30.1,
+    "pct_people_of_color": 17.7,
+    "pct_under_5": 5.2,
+    "pct_over_64": 15.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:07:57Z"
+}

@@ -1,0 +1,58 @@
+{
+  "site": {
+    "state": "tn",
+    "state_label": "Tennessee",
+    "slug": "southside-chattanooga-lead",
+    "name": "Southside Chattanooga Lead",
+    "epa_id": "TNN000410686",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Hamilton",
+    "county_slug": "hamilton",
+    "city": "Chattanooga",
+    "city_slug": "chattanooga",
+    "address": "915 E 38th St.",
+    "zip": "37497",
+    "lat": 35.032552,
+    "lng": -85.300559
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 1,
+    "primary_contaminant": "Lead"
+  },
+  "contaminants": [
+    {
+      "name": "Lead",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": []
+  },
+  "flags": [],
+  "equity": {
+    "population": 9463,
+    "pct_low_income": 43.1,
+    "pct_people_of_color": 39.7,
+    "pct_under_5": 3.4,
+    "pct_over_64": 6.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:15:35Z"
+}

@@ -1,0 +1,81 @@
+{
+  "facility": {
+    "state": "tn",
+    "state_label": "Tennessee",
+    "slug": "darling-ingredients-knoxville-facility",
+    "name": "Darling Ingredients Knoxville Facility",
+    "parent_company": "Darling Ingredients INC",
+    "address": "9300 JOHNSON RD.",
+    "city": "Strawberry Plains",
+    "county": "Knox County",
+    "county_slug": "knox",
+    "naics_label": "311613 \u00b7 Food",
+    "lat": 36.048758,
+    "lng": -83.722359
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 12768,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 12409,
+    "land_releases_pounds": 359,
+    "chemicals_reported": 1,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": 16.1,
+    "long_arc_baseline_year": 2016,
+    "history": [
+      {
+        "year": 2016,
+        "value": 11000
+      },
+      {
+        "year": 2017,
+        "value": 12311
+      },
+      {
+        "year": 2019,
+        "value": 13922
+      },
+      {
+        "year": 2024,
+        "value": 12768
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "cas": "N511",
+      "category": "general",
+      "total_pounds_recent": 12768,
+      "history": [
+        {
+          "year": 2024,
+          "value": 12768
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 7580,
+    "pct_low_income": 38.3,
+    "pct_people_of_color": 11.0,
+    "pct_under_5": 5.9,
+    "pct_over_64": 18.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (6 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:15:34Z"
+}

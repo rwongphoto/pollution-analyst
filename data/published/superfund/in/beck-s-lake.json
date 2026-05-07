@@ -1,0 +1,74 @@
+{
+  "site": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "beck-s-lake",
+    "name": "Beck'S Lake",
+    "epa_id": "IND980904379",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "St. Joseph",
+    "county_slug": "st-joseph",
+    "city": "South Bend",
+    "city_slug": "south-bend",
+    "address": "Intersection Of Washington And Falcon Streets",
+    "zip": "46619",
+    "lat": 41.676581,
+    "lng": -86.297514
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "IN5271014",
+        "name": "South Bend Water Works",
+        "slug": "south-bend-water-works",
+        "state": "in",
+        "distance_miles": 1.48,
+        "place_name": "South Bend",
+        "primary_source": "groundwater",
+        "population_served": 115000,
+        "health_based_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "pwsid": "IN5271016",
+        "name": "Sunset Village & Rv Park",
+        "slug": "sunset-village-rv-park",
+        "state": "in",
+        "distance_miles": 1.48,
+        "place_name": "South Bend",
+        "primary_source": "groundwater",
+        "population_served": 25,
+        "health_based_5yr": 3,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 12097,
+    "pct_low_income": 66.9,
+    "pct_people_of_color": 78.4,
+    "pct_under_5": 8.9,
+    "pct_over_64": 10.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (14 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:34Z"
+}

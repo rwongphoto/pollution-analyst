@@ -1,0 +1,86 @@
+{
+  "site": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "broadway-street-corridor-groundwater-contamination",
+    "name": "Broadway Street Corridor Groundwater Contamination",
+    "epa_id": "INN000510915",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Madison",
+    "county_slug": "madison",
+    "city": "Anderson",
+    "city_slug": "anderson",
+    "address": "Intersection Of Broadway Street And Grand Avenue",
+    "zip": "46016",
+    "lat": 40.1184,
+    "lng": -85.6789
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "IN5229011",
+        "name": "Harris Hills Mobile Home Park",
+        "slug": "harris-hills-mobile-home-park",
+        "state": "in",
+        "distance_miles": 2.06,
+        "place_name": "Anderson",
+        "primary_source": "groundwater",
+        "population_served": 27,
+        "health_based_5yr": 7,
+        "unresolved": true
+      },
+      {
+        "pwsid": "IN5248002",
+        "name": "Anderson Water Department",
+        "slug": "anderson-water-department",
+        "state": "in",
+        "distance_miles": 2.06,
+        "place_name": "Anderson",
+        "primary_source": "mixed",
+        "population_served": 55212,
+        "health_based_5yr": 4,
+        "unresolved": true
+      },
+      {
+        "pwsid": "IN5248006",
+        "name": "Edgewood Water Department",
+        "slug": "edgewood-water-department",
+        "state": "in",
+        "distance_miles": 2.06,
+        "place_name": "Anderson",
+        "primary_source": "groundwater",
+        "population_served": 2053,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 5739,
+    "pct_low_income": 52.8,
+    "pct_people_of_color": 27.8,
+    "pct_under_5": 8.2,
+    "pct_over_64": 14.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (6 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:34Z"
+}

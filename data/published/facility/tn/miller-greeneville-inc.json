@@ -1,0 +1,118 @@
+{
+  "facility": {
+    "state": "tn",
+    "state_label": "Tennessee",
+    "slug": "miller-greeneville-inc",
+    "name": "Miller/Greeneville INC.",
+    "parent_company": "Miller Industries INC",
+    "address": "711 CAMPBELL DR",
+    "city": "Greeneville",
+    "county": "Greene County",
+    "county_slug": "greene",
+    "naics_label": "336211 \u00b7 Transportation Equipment",
+    "lat": 36.175474,
+    "lng": -82.816988
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 27386,
+    "air_releases_pounds": 26,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 27360,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 936.3,
+    "long_arc_pct_change": 936.3,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 2643
+      },
+      {
+        "year": 2024,
+        "value": 27386
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 23944,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1153
+        },
+        {
+          "year": 2024,
+          "value": 23944
+        }
+      ],
+      "yoy_pct_change": 1975.9,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 3441,
+      "history": [
+        {
+          "year": 2023,
+          "value": 1489
+        },
+        {
+          "year": 2024,
+          "value": 3441
+        }
+      ],
+      "yoy_pct_change": 131.1,
+      "long_arc_pct_change": 131.1,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Chromium",
+      "summary": "Chromium releases at Miller/Greeneville INC. rose from 1k lb to 24k lb (20.8\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 1975.9,
+      "magnitude_abs": 22790.8,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 1153
+        },
+        {
+          "year": 2024,
+          "value": 23944
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 14764,
+    "pct_low_income": 42.8,
+    "pct_people_of_color": 13.1,
+    "pct_under_5": 5.5,
+    "pct_over_64": 21.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (13 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:15:34Z"
+}

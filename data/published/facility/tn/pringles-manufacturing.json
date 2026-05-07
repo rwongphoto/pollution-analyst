@@ -1,0 +1,140 @@
+{
+  "facility": {
+    "state": "tn",
+    "state_label": "Tennessee",
+    "slug": "pringles-manufacturing",
+    "name": "Pringles Manufacturing",
+    "parent_company": "Kellanova Manufacturing LLC",
+    "address": "1306 HIGHWAY 70 E",
+    "city": "Jackson",
+    "county": "Madison County",
+    "county_slug": "madison",
+    "naics_label": "311919 \u00b7 Food",
+    "lat": 35.802428,
+    "lng": -88.62743
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 42153,
+    "air_releases_pounds": 42040,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 113,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -13.4,
+    "long_arc_pct_change": 19.5,
+    "long_arc_baseline_year": 2017,
+    "history": [
+      {
+        "year": 2017,
+        "value": 35260
+      },
+      {
+        "year": 2018,
+        "value": 54712
+      },
+      {
+        "year": 2019,
+        "value": 30196
+      },
+      {
+        "year": 2020,
+        "value": 9554
+      },
+      {
+        "year": 2022,
+        "value": 50622
+      },
+      {
+        "year": 2023,
+        "value": 48654
+      },
+      {
+        "year": 2024,
+        "value": 42153
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 34513,
+      "history": [
+        {
+          "year": 2017,
+          "value": 35260
+        },
+        {
+          "year": 2018,
+          "value": 54712
+        },
+        {
+          "year": 2019,
+          "value": 30196
+        },
+        {
+          "year": 2020,
+          "value": 9554
+        },
+        {
+          "year": 2022,
+          "value": 47072
+        },
+        {
+          "year": 2023,
+          "value": 41294
+        },
+        {
+          "year": 2024,
+          "value": 34513
+        }
+      ],
+      "yoy_pct_change": -16.4,
+      "long_arc_pct_change": -2.1,
+      "long_arc_baseline_year": 2017
+    },
+    {
+      "chemical": "Acetaldehyde",
+      "cas": "75-07-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 7640,
+      "history": [
+        {
+          "year": 2022,
+          "value": 3550
+        },
+        {
+          "year": 2023,
+          "value": 7360
+        },
+        {
+          "year": 2024,
+          "value": 7640
+        }
+      ],
+      "yoy_pct_change": 3.8,
+      "long_arc_pct_change": 115.2,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 814,
+    "pct_low_income": 40.0,
+    "pct_people_of_color": 19.0,
+    "pct_under_5": 0.0,
+    "pct_over_64": 32.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:15:34Z"
+}

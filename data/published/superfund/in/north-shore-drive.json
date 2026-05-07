@@ -1,0 +1,62 @@
+{
+  "site": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "north-shore-drive",
+    "name": "North Shore Drive",
+    "epa_id": "INSFN0507828",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Elkhart",
+    "county_slug": "elkhart",
+    "city": "Elkhart",
+    "city_slug": null,
+    "address": "North Shore Drive",
+    "zip": "46514",
+    "lat": 41.684722,
+    "lng": -86.055
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "IN5220007",
+        "name": "Elkhart Mobile Home Park",
+        "slug": "elkhart-mobile-home-park",
+        "state": "in",
+        "distance_miles": 1.88,
+        "place_name": "Osceola",
+        "primary_source": "groundwater",
+        "population_served": 96,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 2195,
+    "pct_low_income": 6.1,
+    "pct_people_of_color": 8.7,
+    "pct_under_5": 5.3,
+    "pct_over_64": 13.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:34Z"
+}

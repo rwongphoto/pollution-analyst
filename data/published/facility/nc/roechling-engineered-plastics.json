@@ -1,0 +1,77 @@
+{
+  "facility": {
+    "state": "nc",
+    "state_label": "North Carolina",
+    "slug": "roechling-engineered-plastics",
+    "name": "Roechling Engineered Plastics",
+    "parent_company": null,
+    "address": "120 ROECHLING DR",
+    "city": "Dallas",
+    "county": "Gaston County",
+    "county_slug": "gaston",
+    "naics_label": "326199 \u00b7 Plastics and Rubber",
+    "lat": 35.301829,
+    "lng": -81.184128
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 600,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 600,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 0.0,
+    "long_arc_pct_change": 0.0,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 600
+      },
+      {
+        "year": 2024,
+        "value": 600
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "1,3-Butadiene",
+      "cas": "106-99-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 600,
+      "history": [
+        {
+          "year": 2023,
+          "value": 600
+        },
+        {
+          "year": 2024,
+          "value": 600
+        }
+      ],
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 26111,
+    "pct_low_income": 49.7,
+    "pct_people_of_color": 50.0,
+    "pct_under_5": 7.5,
+    "pct_over_64": 15.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (22 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:07:57Z"
+}

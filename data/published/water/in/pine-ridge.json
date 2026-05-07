@@ -1,0 +1,213 @@
+{
+  "utility": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "pine-ridge",
+    "name": "Pine Ridge",
+    "pwsid": "IN5206004",
+    "population_served": 135,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Westfield"
+    ],
+    "county": "Boone County",
+    "county_slug": "boone",
+    "place_slug": "westfield"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "monitoring",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": false,
+      "description": "Failure to monitor as scheduled; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 48262,
+    "pct_low_income": 4.1,
+    "pct_people_of_color": 20.799999999999997,
+    "pct_under_5": 9.7,
+    "pct_over_64": 13.1,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 74.9,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 60.9,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 76.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 71.5,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 87.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 53.0,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 27.5,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 63.4,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.8,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 18.2,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 47.4,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 75.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.8,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 37.8
+      },
+      {
+        "label": "Ozone",
+        "score": 34.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 36.8
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 35.3
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 42.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 25.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 5.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 17.9
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 5.2
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 9.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 20.6
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 36.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 2.5
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Westfield, Indiana (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:34Z"
+}

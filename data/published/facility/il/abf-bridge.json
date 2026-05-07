@@ -1,0 +1,77 @@
+{
+  "facility": {
+    "state": "il",
+    "state_label": "Illinois",
+    "slug": "abf-bridge",
+    "name": "Abf Bridge",
+    "parent_company": "The Visual Pak Cos",
+    "address": "1275 BRIDGE DRIVE",
+    "city": "Waukegan",
+    "county": "Lake County",
+    "county_slug": "lake",
+    "naics_label": "325611 \u00b7 Chemicals",
+    "lat": 42.333317,
+    "lng": -87.901524
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 36,
+    "air_releases_pounds": 36,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 240.2,
+    "long_arc_pct_change": 240.2,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 11
+      },
+      {
+        "year": 2024,
+        "value": 36
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Certain glycol ethers",
+      "cas": "N230",
+      "category": "respiratory",
+      "total_pounds_recent": 36,
+      "history": [
+        {
+          "year": 2023,
+          "value": 11
+        },
+        {
+          "year": 2024,
+          "value": 36
+        }
+      ],
+      "yoy_pct_change": 240.2,
+      "long_arc_pct_change": 240.2,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 68510,
+    "pct_low_income": 32.0,
+    "pct_people_of_color": 64.0,
+    "pct_under_5": 5.7,
+    "pct_over_64": 13.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (39 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:30:54Z"
+}

@@ -1,0 +1,230 @@
+{
+  "utility": {
+    "state": "sc",
+    "state_label": "South Carolina",
+    "slug": "sandy-springs-water-co-inc-sc0420003",
+    "name": "Sandy Springs Water Co Inc (Sc0420003)",
+    "pwsid": "SC0420003",
+    "population_served": 17311,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Sandy Springs"
+    ],
+    "county": "Anderson County",
+    "county_slug": "anderson",
+    "place_slug": "sandy-springs"
+  },
+  "reporting_period": {
+    "start": "2023-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 2,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 3
+  },
+  "violations": [
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    },
+    {
+      "year": 2023,
+      "contaminant": "Contaminant 8000",
+      "contaminant_code": "8000",
+      "severity": "monitoring",
+      "rule": "Revised Total Coliform Rule",
+      "is_unresolved": false,
+      "description": "Reporting failure; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2023,
+        "value": 2
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 8000",
+        "count": 2
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 873,
+    "pct_low_income": 9.4,
+    "pct_people_of_color": 33.2,
+    "pct_under_5": 8.0,
+    "pct_over_64": 22.3,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 52.9,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 23.4,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 15.0,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 40.1,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 57.2,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 23.4,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 22.0,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 57.5,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 40.4,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 37.9,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 27.6,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 55.0
+      },
+      {
+        "label": "Ozone",
+        "score": 27.5
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 15.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 41.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 58.1
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 25.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 18.3
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 58.1
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 41.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 37.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 27.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Sandy Springs, South Carolina (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T02:57:58Z"
+}

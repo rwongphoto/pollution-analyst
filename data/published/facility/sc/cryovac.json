@@ -1,0 +1,132 @@
+{
+  "facility": {
+    "state": "sc",
+    "state_label": "South Carolina",
+    "slug": "cryovac",
+    "name": "Cryovac",
+    "parent_company": "Sealed Air CORP",
+    "address": "100 ROGERS BRIDGE RD",
+    "city": "Duncan",
+    "county": "Spartanburg County",
+    "county_slug": "spartanburg",
+    "naics_label": "333993 \u00b7 Machinery",
+    "lat": 34.910516,
+    "lng": -82.10379
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 138.8,
+    "long_arc_pct_change": -27.7,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 2
+      },
+      {
+        "year": 2021,
+        "value": 1
+      },
+      {
+        "year": 2022,
+        "value": 0.33
+      },
+      {
+        "year": 2023,
+        "value": 0.61
+      },
+      {
+        "year": 2024,
+        "value": 1
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 1,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1
+        },
+        {
+          "year": 2021,
+          "value": 0.65
+        },
+        {
+          "year": 2022,
+          "value": 0.21
+        },
+        {
+          "year": 2023,
+          "value": 0.42
+        },
+        {
+          "year": 2024,
+          "value": 1
+        }
+      ],
+      "yoy_pct_change": 233.2,
+      "long_arc_pct_change": 40.6,
+      "long_arc_baseline_year": 2010
+    },
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 0.04,
+      "history": [
+        {
+          "year": 2010,
+          "value": 1
+        },
+        {
+          "year": 2021,
+          "value": 0.53
+        },
+        {
+          "year": 2022,
+          "value": 0.11
+        },
+        {
+          "year": 2023,
+          "value": 0.18
+        },
+        {
+          "year": 2024,
+          "value": 0.04
+        }
+      ],
+      "yoy_pct_change": -77.7,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 23566,
+    "pct_low_income": 27.9,
+    "pct_people_of_color": 38.8,
+    "pct_under_5": 4.9,
+    "pct_over_64": 13.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (14 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T02:57:57Z"
+}

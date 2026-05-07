@@ -1,0 +1,205 @@
+{
+  "utility": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "roann-water-works",
+    "name": "Roann Water Works",
+    "pwsid": "IN5285013",
+    "population_served": 400,
+    "primary_source": "groundwater",
+    "cities_served": [
+      "Roann"
+    ],
+    "county": "Wabash County",
+    "county_slug": "wabash",
+    "place_slug": "roann"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 31032,
+    "pct_low_income": 11.0,
+    "pct_people_of_color": 6.599999999999994,
+    "pct_under_5": 4.9,
+    "pct_over_64": 21.2,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 42.0,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 64.9,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 42.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 34.8,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 59.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 17.2,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 79.3,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 52.8,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 29.7,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 65.7,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 40.7,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 77.8,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 36.4
+      },
+      {
+        "label": "Ozone",
+        "score": 64.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 36.4
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 31.5
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 48.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 15.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 61.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 43.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 24.1
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 41.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 32.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 14.2
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Wabash County, Indiana (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:34Z"
+}

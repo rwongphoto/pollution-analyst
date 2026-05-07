@@ -1,0 +1,93 @@
+{
+  "facility": {
+    "state": "sc",
+    "state_label": "South Carolina",
+    "slug": "skf-plant-12b",
+    "name": "Skf Plant 12B",
+    "parent_company": "Skf USA INC",
+    "address": "925 CORPORATE CIRCLE",
+    "city": "Sumter",
+    "county": "Sumter County",
+    "county_slug": "sumter",
+    "naics_label": "332991 \u00b7 Fabricated Metals",
+    "lat": 33.846112,
+    "lng": -80.379893
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 20089,
+    "air_releases_pounds": 15079,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 5010,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 32.1,
+    "long_arc_pct_change": 0.4,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 20000
+      },
+      {
+        "year": 2022,
+        "value": 16500
+      },
+      {
+        "year": 2023,
+        "value": 15212
+      },
+      {
+        "year": 2024,
+        "value": 20089
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 20089,
+      "history": [
+        {
+          "year": 2021,
+          "value": 20000
+        },
+        {
+          "year": 2022,
+          "value": 16500
+        },
+        {
+          "year": 2023,
+          "value": 15212
+        },
+        {
+          "year": 2024,
+          "value": 20089
+        }
+      ],
+      "yoy_pct_change": 32.1,
+      "long_arc_pct_change": 0.4,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 7940,
+    "pct_low_income": 29.3,
+    "pct_people_of_color": 48.7,
+    "pct_under_5": 4.7,
+    "pct_over_64": 19.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (5 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T02:57:57Z"
+}

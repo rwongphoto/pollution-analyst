@@ -1,0 +1,147 @@
+{
+  "site": {
+    "state": "tn",
+    "state_label": "Tennessee",
+    "slug": "former-custom-cleaners",
+    "name": "Former Custom Cleaners",
+    "epa_id": "TNN000402275",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Shelby",
+    "county_slug": "shelby",
+    "city": "Memphis",
+    "city_slug": "memphis",
+    "address": "3517 Southern Avenue",
+    "zip": "38111",
+    "lat": 35.115114,
+    "lng": -89.945
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 9,
+    "primary_contaminant": "Chloroethene (Vinyl Chloride)"
+  },
+  "contaminants": [
+    {
+      "name": "Chloroethene (Vinyl Chloride)",
+      "media": "Air",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Chloroform",
+      "media": "Air",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Cis-1,2-Dichloroethene",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Hexane",
+      "media": "Air",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Naphthalene",
+      "media": "Air",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Tetrachloroethene",
+      "media": "Air",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Tetrachloroethene",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Trichloroethene",
+      "media": "Air",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Trichloroethene",
+      "media": "Soil",
+      "operable_units": [
+        "01"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "MS0720026",
+        "name": "Kwp Utility Company Llc",
+        "slug": "kwp-utility-company-llc",
+        "state": "tn",
+        "distance_miles": 1.29,
+        "place_name": "Memphis",
+        "primary_source": "groundwater",
+        "population_served": 869,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "TN0000450",
+        "name": "Memphis Light, Gas, & Water",
+        "slug": "memphis-light-gas-water",
+        "state": "tn",
+        "distance_miles": 1.29,
+        "place_name": "Memphis",
+        "primary_source": "groundwater",
+        "population_served": 659500,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 15574,
+    "pct_low_income": 43.2,
+    "pct_people_of_color": 50.7,
+    "pct_under_5": 4.0,
+    "pct_over_64": 13.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (12 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:15:35Z"
+}

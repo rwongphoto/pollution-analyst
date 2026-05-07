@@ -1,0 +1,205 @@
+{
+  "utility": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "new-pekin-water-utility",
+    "name": "New Pekin Water Utility",
+    "pwsid": "IN5288004",
+    "population_served": 2150,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Pekin"
+    ],
+    "county": "Washington County",
+    "county_slug": "washington",
+    "place_slug": null
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 28133,
+    "pct_low_income": 13.1,
+    "pct_people_of_color": 4.200000000000003,
+    "pct_under_5": 6.2,
+    "pct_over_64": 17.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 58.0,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 50.9,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 20.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 21.1,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 48.9,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 13.3,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 62.6,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 49.6,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 22.9,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 86.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 50.6
+      },
+      {
+        "label": "Ozone",
+        "score": 45.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 18.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 20.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 35.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 12.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 47.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 1.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.7
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 28.8
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 7.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 48.9
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Washington County, Indiana (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:34Z"
+}

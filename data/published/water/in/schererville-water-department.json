@@ -1,0 +1,205 @@
+{
+  "utility": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "schererville-water-department",
+    "name": "Schererville Water Department",
+    "pwsid": "IN5245041",
+    "population_served": 30000,
+    "primary_source": "purchased",
+    "cities_served": [
+      "Schererville"
+    ],
+    "county": "Lake County",
+    "county_slug": "lake",
+    "place_slug": "schererville"
+  },
+  "reporting_period": {
+    "start": "2025-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 0,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 1
+  },
+  "violations": [
+    {
+      "year": 2025,
+      "contaminant": "Contaminant 7000",
+      "contaminant_code": "7000",
+      "severity": "other",
+      "rule": "Phase I/II/V Synthetic Organic Chemical Rules",
+      "is_unresolved": false,
+      "description": "OTHER; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2025,
+        "value": 1
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 7000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 29573,
+    "pct_low_income": 7.3,
+    "pct_people_of_color": 29.700000000000003,
+    "pct_under_5": 4.9,
+    "pct_over_64": 19.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 77.9,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 84.9,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 67.0,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 71.1,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 84.9,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 51.2,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 39.9,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 78.2,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 87.8,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 51.5,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 75.4,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 52.9,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 67.0
+      },
+      {
+        "label": "Ozone",
+        "score": 66.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 55.3
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 59.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 71.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 43.3
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 26.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 64.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 72.3
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 40.3
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 55.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 33.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Schererville, Indiana (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:34Z"
+}

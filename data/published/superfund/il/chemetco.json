@@ -1,0 +1,181 @@
+{
+  "site": {
+    "state": "il",
+    "state_label": "Illinois",
+    "slug": "chemetco",
+    "name": "Chemetco",
+    "epa_id": "ILD048843809",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Madison",
+    "county_slug": "madison",
+    "city": "Hartford",
+    "city_slug": "hartford",
+    "address": "3754 Chemetco Lane",
+    "zip": "62048",
+    "lat": 38.799,
+    "lng": -90.098
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "IL1190500",
+        "name": "Hartford",
+        "slug": "hartford",
+        "state": "il",
+        "distance_miles": 1.02,
+        "place_name": "Hartford",
+        "primary_source": "groundwater",
+        "population_served": 1260,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1626,
+    "pct_low_income": 15.0,
+    "pct_people_of_color": 7.599999999999994,
+    "pct_under_5": 5.7,
+    "pct_over_64": 21.5,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 71.0,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 76.0,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 55.0,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 61.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 95.9,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 39.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 76.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 74.2,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 90.0,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 77.3,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 54.5,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 98.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 85.6,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 76.9
+      },
+      {
+        "label": "Ozone",
+        "score": 80.8
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 56.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 65.1
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 100.9
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 41.9
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 71.9
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 77.8
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 94.5
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 80.8
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 55.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 103.9
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 84.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Hartford, Illinois (no Census block groups within 1 mile \u2014 falling back to host city; disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:30:56Z"
+}

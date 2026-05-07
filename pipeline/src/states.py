@@ -316,6 +316,46 @@ STATES: dict[str, State] = {
         population=2961279,
         counties_total=82,
     ),
+    "sc": State(
+        slug="sc",
+        abbr="SC",
+        name="South Carolina",
+        fips="45",
+        population=5118425,
+        counties_total=46,
+    ),
+    "nc": State(
+        slug="nc",
+        abbr="NC",
+        name="North Carolina",
+        fips="37",
+        population=10439388,
+        counties_total=100,
+    ),
+    "tn": State(
+        slug="tn",
+        abbr="TN",
+        name="Tennessee",
+        fips="47",
+        population=6910840,
+        counties_total=95,
+    ),
+    "il": State(
+        slug="il",
+        abbr="IL",
+        name="Illinois",
+        fips="17",
+        population=12812508,
+        counties_total=102,
+    ),
+    "in": State(
+        slug="in",
+        abbr="IN",
+        name="Indiana",
+        fips="18",
+        population=6785528,
+        counties_total=92,
+    ),
 }
 
 

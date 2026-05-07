@@ -1,0 +1,230 @@
+{
+  "facility": {
+    "state": "nc",
+    "state_label": "North Carolina",
+    "slug": "cormetech-inc",
+    "name": "Cormetech INC.",
+    "parent_company": "Cormetech INC",
+    "address": "304 LINWOOD RD",
+    "city": "Kings Mountain",
+    "county": "Cleveland County",
+    "county_slug": "cleveland",
+    "naics_label": "333413 \u00b7 Machinery",
+    "lat": 35.252083,
+    "lng": -81.334292
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 69451,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 69451,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -41.5,
+    "long_arc_pct_change": -52.0,
+    "long_arc_baseline_year": 2016,
+    "history": [
+      {
+        "year": 2016,
+        "value": 144628
+      },
+      {
+        "year": 2017,
+        "value": 182929
+      },
+      {
+        "year": 2018,
+        "value": 313782
+      },
+      {
+        "year": 2019,
+        "value": 257370
+      },
+      {
+        "year": 2020,
+        "value": 82283
+      },
+      {
+        "year": 2021,
+        "value": 125505
+      },
+      {
+        "year": 2022,
+        "value": 111549
+      },
+      {
+        "year": 2023,
+        "value": 118655
+      },
+      {
+        "year": 2024,
+        "value": 69451
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Arsenic",
+      "cas": "7440-38-2",
+      "category": "carcinogen",
+      "total_pounds_recent": 44746,
+      "history": [
+        {
+          "year": 2016,
+          "value": 114858
+        },
+        {
+          "year": 2017,
+          "value": 145155
+        },
+        {
+          "year": 2018,
+          "value": 256782
+        },
+        {
+          "year": 2019,
+          "value": 128752
+        },
+        {
+          "year": 2020,
+          "value": 43155
+        },
+        {
+          "year": 2021,
+          "value": 83067
+        },
+        {
+          "year": 2022,
+          "value": 40228
+        },
+        {
+          "year": 2023,
+          "value": 57818
+        },
+        {
+          "year": 2024,
+          "value": 44746
+        }
+      ],
+      "yoy_pct_change": -22.6,
+      "long_arc_pct_change": -61.0,
+      "long_arc_baseline_year": 2016
+    },
+    {
+      "chemical": "Vanadium (except when contained in an alloy)",
+      "cas": "7440-62-2",
+      "category": "general",
+      "total_pounds_recent": 24705,
+      "history": [
+        {
+          "year": 2016,
+          "value": 29770
+        },
+        {
+          "year": 2017,
+          "value": 37774
+        },
+        {
+          "year": 2018,
+          "value": 56876
+        },
+        {
+          "year": 2019,
+          "value": 128618
+        },
+        {
+          "year": 2020,
+          "value": 39128
+        },
+        {
+          "year": 2021,
+          "value": 42438
+        },
+        {
+          "year": 2022,
+          "value": 71321
+        },
+        {
+          "year": 2023,
+          "value": 60837
+        },
+        {
+          "year": 2024,
+          "value": 24705
+        }
+      ],
+      "yoy_pct_change": -59.4,
+      "long_arc_pct_change": -17.0,
+      "long_arc_baseline_year": 2016
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Vanadium (except when contained in an alloy)",
+      "summary": "Vanadium (except when contained in an alloy) releases at Cormetech INC. fell from 61k lb to 25k lb (59% lower) between 2023 and 2024.",
+      "magnitude_pct": -59.4,
+      "magnitude_abs": -36132.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2016,
+          "value": 29770
+        },
+        {
+          "year": 2017,
+          "value": 37774
+        },
+        {
+          "year": 2018,
+          "value": 56876
+        },
+        {
+          "year": 2019,
+          "value": 128618
+        },
+        {
+          "year": 2020,
+          "value": 39128
+        },
+        {
+          "year": 2021,
+          "value": 42438
+        },
+        {
+          "year": 2022,
+          "value": 71321
+        },
+        {
+          "year": 2023,
+          "value": 60837
+        },
+        {
+          "year": 2024,
+          "value": 24705
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 15349,
+    "pct_low_income": 45.3,
+    "pct_people_of_color": 27.0,
+    "pct_under_5": 5.5,
+    "pct_over_64": 17.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (13 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:07:57Z"
+}

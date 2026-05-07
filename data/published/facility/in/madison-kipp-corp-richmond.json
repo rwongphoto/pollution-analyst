@@ -1,0 +1,128 @@
+{
+  "facility": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "madison-kipp-corp-richmond",
+    "name": "Madison - Kipp Corp - Richmond",
+    "parent_company": "Madison - Kipp CORP",
+    "address": "1600 RICH RD",
+    "city": "Richmond",
+    "county": "Wayne County",
+    "county_slug": "wayne",
+    "naics_label": "331523 \u00b7 Primary Metals",
+    "lat": 39.8564,
+    "lng": -84.924448
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 23,
+    "air_releases_pounds": 16,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 8,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 9.4,
+    "long_arc_pct_change": 283.9,
+    "long_arc_baseline_year": 2020,
+    "history": [
+      {
+        "year": 2020,
+        "value": 6
+      },
+      {
+        "year": 2021,
+        "value": 9
+      },
+      {
+        "year": 2022,
+        "value": 7
+      },
+      {
+        "year": 2023,
+        "value": 21
+      },
+      {
+        "year": 2024,
+        "value": 23
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Copper",
+      "cas": "7440-50-8",
+      "category": "general",
+      "total_pounds_recent": 19,
+      "history": [
+        {
+          "year": 2020,
+          "value": 6
+        },
+        {
+          "year": 2021,
+          "value": 8
+        },
+        {
+          "year": 2022,
+          "value": 5
+        },
+        {
+          "year": 2023,
+          "value": 18
+        },
+        {
+          "year": 2024,
+          "value": 19
+        }
+      ],
+      "yoy_pct_change": 4.0,
+      "long_arc_pct_change": 215.3,
+      "long_arc_baseline_year": 2020
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 5,
+      "history": [
+        {
+          "year": 2021,
+          "value": 1
+        },
+        {
+          "year": 2022,
+          "value": 2
+        },
+        {
+          "year": 2023,
+          "value": 3
+        },
+        {
+          "year": 2024,
+          "value": 5
+        }
+      ],
+      "yoy_pct_change": 39.8,
+      "long_arc_pct_change": 283.9,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 20391,
+    "pct_low_income": 47.4,
+    "pct_people_of_color": 23.3,
+    "pct_under_5": 6.4,
+    "pct_over_64": 17.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (17 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:34Z"
+}

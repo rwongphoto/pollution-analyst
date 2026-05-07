@@ -1,0 +1,495 @@
+{
+  "county": {
+    "state": "il",
+    "state_label": "Illinois",
+    "slug": "cumberland",
+    "name": "Cumberland County",
+    "fips": "17035",
+    "population": 10447
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 28.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 28.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.3903,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.3903
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0972,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0972
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2022,
+      "history": [
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2022,
+      "history": [
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 0
+        },
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 15,
+      "units": "lb",
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": null,
+      "baseline_year": 2022,
+      "history": [
+        {
+          "year": 2022,
+          "value": 15
+        },
+        {
+          "year": 2023,
+          "value": 15
+        },
+        {
+          "year": 2024,
+          "value": 15
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "evapco-greenup-il",
+      "state": "il",
+      "state_label": "Illinois",
+      "name": "Evapco - Greenup Il",
+      "parent_company": "Evapco INC",
+      "total_pounds_recent": 15,
+      "yoy_pct_change": 0.0,
+      "top_chemical": "Nickel",
+      "city": "Greenup",
+      "lat": 39.245069,
+      "lng": -88.150978
+    }
+  ],
+  "utilities": [],
+  "superfund": [
+    {
+      "slug": "a-f-material-reclaiming-inc",
+      "state": "il",
+      "name": "A & F Material Reclaiming, Inc.",
+      "epa_id": "ILD980397079",
+      "npl_status": "Deleted from the Final NPL",
+      "is_active_npl": false,
+      "is_deleted": true,
+      "is_federal_facility": false,
+      "city": "Greenup",
+      "city_slug": null,
+      "primary_contaminant": "9H-Fluorene"
+    }
+  ],
+  "superfund_total": 1,
+  "cities_directory": [
+    {
+      "slug": "greenup",
+      "name": "Greenup",
+      "fips": "1731524",
+      "facilities_count": 1,
+      "utilities_count": 1,
+      "population": 1824
+    },
+    {
+      "slug": "jewett",
+      "name": "Jewett",
+      "fips": "1738427",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 261
+    },
+    {
+      "slug": "neoga",
+      "name": "Neoga",
+      "fips": "1751986",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 1263
+    },
+    {
+      "slug": "toledo",
+      "name": "Toledo",
+      "fips": "1775601",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 1181
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 10447,
+    "pct_low_income": 9.7,
+    "pct_people_of_color": 4.0,
+    "pct_under_5": 7.0,
+    "pct_over_64": 20.4,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 59.2,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 49.1,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 31.5,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 29.1,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 16.1,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 8.3,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 71.8,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 66.9,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 19.1,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 55.3,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 44.3,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 34.0
+      },
+      {
+        "label": "Ozone",
+        "score": 33.7
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 17.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 17.2
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 8.0
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 4.7
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 36.7
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 36.6
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 4.4
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 20.0
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 21.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Cumberland County County, IL"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.3,
+      "age_adjusted": 10.5,
+      "state_mean": 9.9,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.58,
+      "vs_state_pct": 5.8,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.48,
+      "vs_us_pct": 4.8,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 8.1,
+      "age_adjusted": 6.5,
+      "state_mean": 5.6,
+      "us_mean": 5.5,
+      "vs_state_pp": 0.93,
+      "vs_state_pct": 16.7,
+      "vs_state_class": "worse",
+      "vs_us_pp": 1.0,
+      "vs_us_pct": 18.2,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 7.3,
+      "age_adjusted": 5.4,
+      "state_mean": 5.0,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.45,
+      "vs_state_pct": 9.1,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.09,
+      "vs_us_pct": 1.7,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 11.9,
+      "age_adjusted": 9.2,
+      "state_mean": 10.2,
+      "us_mean": 10.5,
+      "vs_state_pp": -1.01,
+      "vs_state_pct": -9.9,
+      "vs_state_class": "better",
+      "vs_us_pp": -1.26,
+      "vs_us_pct": -12.0,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 16.8,
+      "age_adjusted": 18.6,
+      "state_mean": 16.3,
+      "us_mean": 16.8,
+      "vs_state_pp": 2.27,
+      "vs_state_pct": 13.9,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 1.85,
+      "vs_us_pct": 11.0,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "il",
+      "slug": "mcdonough",
+      "name": "McDonough County",
+      "population": 27370,
+      "facilities_count": 1,
+      "total_releases_pounds": 4,
+      "dominant_medium": "land",
+      "ej_pct_avg": 44.9,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "il",
+      "slug": "bond",
+      "name": "Bond County",
+      "population": 16750,
+      "facilities_count": 2,
+      "total_releases_pounds": 3,
+      "dominant_medium": "land",
+      "ej_pct_avg": 47.7,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "il",
+      "slug": "jersey",
+      "name": "Jersey County",
+      "population": 21462,
+      "facilities_count": 1,
+      "total_releases_pounds": 382,
+      "dominant_medium": "land",
+      "ej_pct_avg": 49.8,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "il",
+      "slug": "stark",
+      "name": "Stark County",
+      "population": 5395,
+      "facilities_count": 1,
+      "total_releases_pounds": 1928,
+      "dominant_medium": "land",
+      "ej_pct_avg": 48.0,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "il",
+      "slug": "logan",
+      "name": "Logan County",
+      "population": 28027,
+      "facilities_count": 2,
+      "total_releases_pounds": 637,
+      "dominant_medium": "land",
+      "ej_pct_avg": 54.1,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "il",
+      "slug": "lee",
+      "name": "Lee County",
+      "population": 34221,
+      "facilities_count": 6,
+      "total_releases_pounds": 108580,
+      "dominant_medium": "air",
+      "ej_pct_avg": 59.4,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+15 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T03:30:53Z"
+}

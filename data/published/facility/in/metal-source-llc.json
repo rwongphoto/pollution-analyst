@@ -1,0 +1,133 @@
+{
+  "facility": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "metal-source-llc",
+    "name": "Metal Source LLC",
+    "parent_company": "Gebhart Holdings INC",
+    "address": "1605 RIVERFORK DR",
+    "city": "Huntington",
+    "county": "Huntington County",
+    "county_slug": "huntington",
+    "naics_label": "332812 \u00b7 Fabricated Metals",
+    "lat": 40.863166,
+    "lng": -85.522381
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 48189,
+    "air_releases_pounds": 745,
+    "water_releases_pounds": 2,
+    "land_releases_pounds": 47442,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -62.1,
+    "long_arc_pct_change": -62.1,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 127280
+      },
+      {
+        "year": 2024,
+        "value": 48189
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Aluminum (fume or dust)",
+      "cas": "7429-90-5",
+      "category": "general",
+      "total_pounds_recent": 46002,
+      "history": [
+        {
+          "year": 2023,
+          "value": 122360
+        },
+        {
+          "year": 2024,
+          "value": 46002
+        }
+      ],
+      "yoy_pct_change": -62.4,
+      "long_arc_pct_change": -62.4,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Copper  And Copper Compounds",
+      "cas": "N100",
+      "category": "general",
+      "total_pounds_recent": 2161,
+      "history": [
+        {
+          "year": 2024,
+          "value": 2161
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    },
+    {
+      "chemical": "Lead  And Lead Compounds",
+      "cas": "N420",
+      "category": "pbt",
+      "total_pounds_recent": 26,
+      "history": [
+        {
+          "year": 2023,
+          "value": 56
+        },
+        {
+          "year": 2024,
+          "value": 26
+        }
+      ],
+      "yoy_pct_change": -54.0,
+      "long_arc_pct_change": -54.0,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Aluminum (fume or dust)",
+      "summary": "Aluminum (fume or dust) releases at Metal Source LLC fell from 122k lb to 46k lb (62% lower) between 2023 and 2024.",
+      "magnitude_pct": -62.4,
+      "magnitude_abs": -76357.1,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 122360
+        },
+        {
+          "year": 2024,
+          "value": 46002
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 17175,
+    "pct_low_income": 40.9,
+    "pct_people_of_color": 7.2,
+    "pct_under_5": 5.7,
+    "pct_over_64": 15.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (16 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:34Z"
+}

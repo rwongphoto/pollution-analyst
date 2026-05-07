@@ -1,0 +1,92 @@
+{
+  "facility": {
+    "state": "sc",
+    "state_label": "South Carolina",
+    "slug": "nova-molecular-recovery-qozb-holdings-llc",
+    "name": "Nova Molecular Recovery Qozb Holdings LLC",
+    "parent_company": "Nova Molecular Technologies INC",
+    "address": "1135 RACE TRACK RD",
+    "city": "Sumter",
+    "county": "Sumter County",
+    "county_slug": "sumter",
+    "naics_label": "325199 \u00b7 Chemicals",
+    "lat": 33.866192,
+    "lng": -80.303716
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 6924,
+    "air_releases_pounds": 6561,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 363,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 162.5,
+    "long_arc_pct_change": 162.5,
+    "long_arc_baseline_year": 2023,
+    "history": [
+      {
+        "year": 2023,
+        "value": 2638
+      },
+      {
+        "year": 2024,
+        "value": 6924
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Acetonitrile",
+      "cas": "75-05-8",
+      "category": "respiratory",
+      "total_pounds_recent": 4573,
+      "history": [
+        {
+          "year": 2023,
+          "value": 2638
+        },
+        {
+          "year": 2024,
+          "value": 4573
+        }
+      ],
+      "yoy_pct_change": 73.3,
+      "long_arc_pct_change": 73.3,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Ammonia",
+      "cas": "7664-41-7",
+      "category": "general",
+      "total_pounds_recent": 2351,
+      "history": [
+        {
+          "year": 2024,
+          "value": 2351
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "long_arc_baseline_year": 2024
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 6916,
+    "pct_low_income": 54.1,
+    "pct_people_of_color": 79.4,
+    "pct_under_5": 6.8,
+    "pct_over_64": 16.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (7 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T02:57:57Z"
+}

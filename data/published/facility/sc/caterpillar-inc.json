@@ -1,0 +1,151 @@
+{
+  "facility": {
+    "state": "sc",
+    "state_label": "South Carolina",
+    "slug": "caterpillar-inc",
+    "name": "Caterpillar INC",
+    "parent_company": "Caterpillar INC",
+    "address": "108 CORPORATE CT",
+    "city": "Hodges",
+    "county": "Greenwood County",
+    "county_slug": "greenwood",
+    "naics_label": "331511 \u00b7 Primary Metals",
+    "lat": 34.305557,
+    "lng": -82.224141
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 38941,
+    "air_releases_pounds": 2,
+    "water_releases_pounds": 3,
+    "land_releases_pounds": 38937,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -8.2,
+    "long_arc_pct_change": 128.4,
+    "long_arc_baseline_year": 2014,
+    "history": [
+      {
+        "year": 2014,
+        "value": 17050
+      },
+      {
+        "year": 2020,
+        "value": 1
+      },
+      {
+        "year": 2021,
+        "value": 2
+      },
+      {
+        "year": 2022,
+        "value": 3
+      },
+      {
+        "year": 2023,
+        "value": 42429
+      },
+      {
+        "year": 2024,
+        "value": 38941
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Phenol",
+      "cas": "108-95-2",
+      "category": "respiratory",
+      "total_pounds_recent": 37009,
+      "history": [
+        {
+          "year": 2023,
+          "value": 40354
+        },
+        {
+          "year": 2024,
+          "value": 37009
+        }
+      ],
+      "yoy_pct_change": -8.3,
+      "long_arc_pct_change": -8.3,
+      "long_arc_baseline_year": 2023
+    },
+    {
+      "chemical": "Diisocyanates",
+      "cas": "N120",
+      "category": "general",
+      "total_pounds_recent": 1850,
+      "history": [
+        {
+          "year": 2013,
+          "value": 250
+        },
+        {
+          "year": 2014,
+          "value": 500
+        },
+        {
+          "year": 2020,
+          "value": 1
+        },
+        {
+          "year": 2021,
+          "value": 2
+        },
+        {
+          "year": 2022,
+          "value": 3
+        },
+        {
+          "year": 2023,
+          "value": 2018
+        },
+        {
+          "year": 2024,
+          "value": 1850
+        }
+      ],
+      "yoy_pct_change": -8.3,
+      "long_arc_pct_change": 640.1,
+      "long_arc_baseline_year": 2013
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 82,
+      "history": [
+        {
+          "year": 2023,
+          "value": 57
+        },
+        {
+          "year": 2024,
+          "value": 82
+        }
+      ],
+      "yoy_pct_change": 43.3,
+      "long_arc_pct_change": 43.3,
+      "long_arc_baseline_year": 2023
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 3779,
+    "pct_low_income": 38.1,
+    "pct_people_of_color": 26.1,
+    "pct_under_5": 4.6,
+    "pct_over_64": 25.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (3 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T02:57:57Z"
+}

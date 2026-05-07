@@ -1,0 +1,206 @@
+{
+  "facility": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "shoremet-llc",
+    "name": "Shoremet LLC",
+    "parent_company": null,
+    "address": "3601 ENTERPRISE AVE",
+    "city": "Valparaiso",
+    "county": "Porter County",
+    "county_slug": "porter",
+    "naics_label": "325180 \u00b7 Chemicals",
+    "lat": 41.458054,
+    "lng": -87.017108
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 53682,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 53682,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 625.3,
+    "long_arc_pct_change": 1816.0,
+    "long_arc_baseline_year": 2018,
+    "history": [
+      {
+        "year": 2018,
+        "value": 2802
+      },
+      {
+        "year": 2019,
+        "value": 4007
+      },
+      {
+        "year": 2020,
+        "value": 11005
+      },
+      {
+        "year": 2021,
+        "value": 8602
+      },
+      {
+        "year": 2022,
+        "value": 4045
+      },
+      {
+        "year": 2023,
+        "value": 7401
+      },
+      {
+        "year": 2024,
+        "value": 53682
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Copper",
+      "cas": "7440-50-8",
+      "category": "general",
+      "total_pounds_recent": 53680,
+      "history": [
+        {
+          "year": 2018,
+          "value": 2800
+        },
+        {
+          "year": 2019,
+          "value": 4000
+        },
+        {
+          "year": 2020,
+          "value": 11000
+        },
+        {
+          "year": 2021,
+          "value": 8600
+        },
+        {
+          "year": 2022,
+          "value": 4042
+        },
+        {
+          "year": 2023,
+          "value": 7400
+        },
+        {
+          "year": 2024,
+          "value": 53680
+        }
+      ],
+      "yoy_pct_change": 625.4,
+      "long_arc_pct_change": 1817.1,
+      "long_arc_baseline_year": 2018
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 2,
+      "history": [
+        {
+          "year": 2018,
+          "value": 2
+        },
+        {
+          "year": 2019,
+          "value": 7
+        },
+        {
+          "year": 2020,
+          "value": 5
+        },
+        {
+          "year": 2021,
+          "value": 2
+        },
+        {
+          "year": 2022,
+          "value": 3
+        },
+        {
+          "year": 2023,
+          "value": 1
+        },
+        {
+          "year": 2024,
+          "value": 2
+        }
+      ],
+      "yoy_pct_change": 30.8,
+      "long_arc_pct_change": 0.0,
+      "long_arc_baseline_year": 2018
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Copper",
+      "summary": "Copper releases at Shoremet LLC rose from 7k lb to 54k lb (7.3\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 625.4,
+      "magnitude_abs": 46280.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2016,
+          "value": 250
+        },
+        {
+          "year": 2017,
+          "value": 2400
+        },
+        {
+          "year": 2018,
+          "value": 2800
+        },
+        {
+          "year": 2019,
+          "value": 4000
+        },
+        {
+          "year": 2020,
+          "value": 11000
+        },
+        {
+          "year": 2021,
+          "value": 8600
+        },
+        {
+          "year": 2022,
+          "value": 4042
+        },
+        {
+          "year": 2023,
+          "value": 7400
+        },
+        {
+          "year": 2024,
+          "value": 53680
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 24813,
+    "pct_low_income": 31.4,
+    "pct_people_of_color": 18.8,
+    "pct_under_5": 4.5,
+    "pct_over_64": 13.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (16 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:33Z"
+}

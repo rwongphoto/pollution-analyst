@@ -1,0 +1,229 @@
+{
+  "facility": {
+    "state": "nc",
+    "state_label": "North Carolina",
+    "slug": "linamar-light-metals-mr",
+    "name": "Linamar Light Metals-Mr",
+    "parent_company": "Linamar Holding Nevada INC",
+    "address": "490 FERNCLIFF PARK DRIVE",
+    "city": "Mills River",
+    "county": "Henderson County",
+    "county_slug": "henderson",
+    "naics_label": "331523 \u00b7 Primary Metals",
+    "lat": 35.433333,
+    "lng": -82.549473
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 2025,
+    "air_releases_pounds": 2025,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0.03,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -86.7,
+    "long_arc_pct_change": 182.5,
+    "long_arc_baseline_year": 2018,
+    "history": [
+      {
+        "year": 2018,
+        "value": 717
+      },
+      {
+        "year": 2019,
+        "value": 12908
+      },
+      {
+        "year": 2020,
+        "value": 18000
+      },
+      {
+        "year": 2021,
+        "value": 16590
+      },
+      {
+        "year": 2022,
+        "value": 15579
+      },
+      {
+        "year": 2023,
+        "value": 15238
+      },
+      {
+        "year": 2024,
+        "value": 2025
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Aluminum (fume or dust)",
+      "cas": "7429-90-5",
+      "category": "general",
+      "total_pounds_recent": 1980,
+      "history": [
+        {
+          "year": 2018,
+          "value": 717
+        },
+        {
+          "year": 2019,
+          "value": 11944
+        },
+        {
+          "year": 2020,
+          "value": 17776
+        },
+        {
+          "year": 2021,
+          "value": 15684
+        },
+        {
+          "year": 2022,
+          "value": 14690
+        },
+        {
+          "year": 2023,
+          "value": 14670
+        },
+        {
+          "year": 2024,
+          "value": 1980
+        }
+      ],
+      "yoy_pct_change": -86.5,
+      "long_arc_pct_change": 176.2,
+      "long_arc_baseline_year": 2018
+    },
+    {
+      "chemical": "Copper",
+      "cas": "7440-50-8",
+      "category": "general",
+      "total_pounds_recent": 44,
+      "history": [
+        {
+          "year": 2019,
+          "value": 294
+        },
+        {
+          "year": 2020,
+          "value": 208
+        },
+        {
+          "year": 2021,
+          "value": 472
+        },
+        {
+          "year": 2022,
+          "value": 420
+        },
+        {
+          "year": 2023,
+          "value": 467
+        },
+        {
+          "year": 2024,
+          "value": 44
+        }
+      ],
+      "yoy_pct_change": -90.6,
+      "long_arc_pct_change": -85.0,
+      "long_arc_baseline_year": 2019
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 1,
+      "history": [
+        {
+          "year": 2019,
+          "value": 177
+        },
+        {
+          "year": 2020,
+          "value": 8
+        },
+        {
+          "year": 2021,
+          "value": 20
+        },
+        {
+          "year": 2022,
+          "value": 18
+        },
+        {
+          "year": 2023,
+          "value": 18
+        },
+        {
+          "year": 2024,
+          "value": 1
+        }
+      ],
+      "yoy_pct_change": -92.3,
+      "long_arc_pct_change": -99.2,
+      "long_arc_baseline_year": 2019
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Aluminum (fume or dust)",
+      "summary": "Aluminum (fume or dust) releases at Linamar Light Metals-Mr fell from 15k lb to 2k lb (87% lower) between 2023 and 2024.",
+      "magnitude_pct": -86.5,
+      "magnitude_abs": -12690.3,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2018,
+          "value": 717
+        },
+        {
+          "year": 2019,
+          "value": 11944
+        },
+        {
+          "year": 2020,
+          "value": 17776
+        },
+        {
+          "year": 2021,
+          "value": 15684
+        },
+        {
+          "year": 2022,
+          "value": 14690
+        },
+        {
+          "year": 2023,
+          "value": 14670
+        },
+        {
+          "year": 2024,
+          "value": 1980
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 19177,
+    "pct_low_income": 24.3,
+    "pct_people_of_color": 28.5,
+    "pct_under_5": 4.3,
+    "pct_over_64": 20.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (12 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:07:57Z"
+}

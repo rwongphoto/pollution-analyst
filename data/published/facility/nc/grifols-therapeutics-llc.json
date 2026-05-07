@@ -1,0 +1,234 @@
+{
+  "facility": {
+    "state": "nc",
+    "state_label": "North Carolina",
+    "slug": "grifols-therapeutics-llc",
+    "name": "Grifols Therapeutics LLC",
+    "parent_company": "Grifols Shared Services North America INC",
+    "address": "8368 US 70 BUS HWY W",
+    "city": "Clayton",
+    "county": "Johnston County",
+    "county_slug": "johnston",
+    "naics_label": "325414 \u00b7 Chemicals",
+    "lat": 35.620309,
+    "lng": -78.420961
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 38275,
+    "air_releases_pounds": 2810,
+    "water_releases_pounds": 35465,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 678.9,
+    "long_arc_pct_change": 89.3,
+    "long_arc_baseline_year": 2010,
+    "history": [
+      {
+        "year": 2010,
+        "value": 20221
+      },
+      {
+        "year": 2011,
+        "value": 21700
+      },
+      {
+        "year": 2012,
+        "value": 37700
+      },
+      {
+        "year": 2013,
+        "value": 32700
+      },
+      {
+        "year": 2014,
+        "value": 27225
+      },
+      {
+        "year": 2015,
+        "value": 24800
+      },
+      {
+        "year": 2016,
+        "value": 4047
+      },
+      {
+        "year": 2017,
+        "value": 3218
+      },
+      {
+        "year": 2018,
+        "value": 2812
+      },
+      {
+        "year": 2019,
+        "value": 3016
+      },
+      {
+        "year": 2020,
+        "value": 14138
+      },
+      {
+        "year": 2021,
+        "value": 3855
+      },
+      {
+        "year": 2022,
+        "value": 4800
+      },
+      {
+        "year": 2023,
+        "value": 4914
+      },
+      {
+        "year": 2024,
+        "value": 38275
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene glycol",
+      "cas": "107-21-1",
+      "category": "respiratory",
+      "total_pounds_recent": 35475,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1960
+        },
+        {
+          "year": 2023,
+          "value": 2074
+        },
+        {
+          "year": 2024,
+          "value": 35475
+        }
+      ],
+      "yoy_pct_change": 1610.5,
+      "long_arc_pct_change": 1710.1,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Methanol",
+      "cas": "67-56-1",
+      "category": "respiratory",
+      "total_pounds_recent": 2800,
+      "history": [
+        {
+          "year": 2011,
+          "value": 11700
+        },
+        {
+          "year": 2012,
+          "value": 11800
+        },
+        {
+          "year": 2013,
+          "value": 11800
+        },
+        {
+          "year": 2014,
+          "value": 11100
+        },
+        {
+          "year": 2015,
+          "value": 11200
+        },
+        {
+          "year": 2016,
+          "value": 4047
+        },
+        {
+          "year": 2017,
+          "value": 3218
+        },
+        {
+          "year": 2018,
+          "value": 2812
+        },
+        {
+          "year": 2019,
+          "value": 3016
+        },
+        {
+          "year": 2020,
+          "value": 2814
+        },
+        {
+          "year": 2021,
+          "value": 2814
+        },
+        {
+          "year": 2022,
+          "value": 2840
+        },
+        {
+          "year": 2023,
+          "value": 2840
+        },
+        {
+          "year": 2024,
+          "value": 2800
+        }
+      ],
+      "yoy_pct_change": -1.4,
+      "long_arc_pct_change": -76.1,
+      "long_arc_baseline_year": 2010
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Ethylene glycol",
+      "summary": "Ethylene glycol releases at Grifols Therapeutics LLC rose from 2k lb to 35k lb (17.1\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 1610.5,
+      "magnitude_abs": 33401.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2020,
+          "value": 1324
+        },
+        {
+          "year": 2021,
+          "value": 1041
+        },
+        {
+          "year": 2022,
+          "value": 1960
+        },
+        {
+          "year": 2023,
+          "value": 2074
+        },
+        {
+          "year": 2024,
+          "value": 35475
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 23850,
+    "pct_low_income": 28.2,
+    "pct_people_of_color": 38.1,
+    "pct_under_5": 5.3,
+    "pct_over_64": 11.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (13 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:07:57Z"
+}

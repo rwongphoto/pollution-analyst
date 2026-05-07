@@ -95,6 +95,11 @@ STATE_TO_REGION: dict[str, str] = {
     "GA": "4a",
     "FL": "4a",
     "MS": "4b",
+    "SC": "4b",
+    "NC": "4b",
+    "TN": "4b",
+    "IL": "5a",
+    "IN": "5a",
     # Add more as states register: Region 1 = CT/ME/MA/NH/RI/VT,
     # 2 = NJ/NY, 3 = DE/DC/MD/PA/VA/WV, 4a = AL/FL/GA/KY, 4b = MS/NC/SC/TN,
     # 5a = IL/IN/MI, 5b = MN/OH/WI, 6a = AR/LA/NM/OK, 6b = TX (verified

@@ -1,0 +1,108 @@
+{
+  "facility": {
+    "state": "nc",
+    "state_label": "North Carolina",
+    "slug": "americhem-inc-cnc",
+    "name": "Americhem INC Cnc",
+    "parent_company": "Americhem INC",
+    "address": "723 COMMERCE DR",
+    "city": "Concord",
+    "county": "Cabarrus County",
+    "county_slug": "cabarrus",
+    "naics_label": "325991 \u00b7 Chemicals",
+    "lat": 35.378826,
+    "lng": -80.586541
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1072,
+    "air_releases_pounds": 11,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1061,
+    "chemicals_reported": 2,
+    "yoy_pct_change": 10.9,
+    "long_arc_pct_change": 58.2,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 678
+      },
+      {
+        "year": 2022,
+        "value": 2541
+      },
+      {
+        "year": 2023,
+        "value": 967
+      },
+      {
+        "year": 2024,
+        "value": 1072
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Zinc compounds",
+      "cas": "N982",
+      "category": "general",
+      "total_pounds_recent": 543,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1161
+        },
+        {
+          "year": 2023,
+          "value": 967
+        },
+        {
+          "year": 2024,
+          "value": 543
+        }
+      ],
+      "yoy_pct_change": -43.8,
+      "long_arc_pct_change": -53.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Vanadium compounds",
+      "cas": "N770",
+      "category": "general",
+      "total_pounds_recent": 529,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1380
+        },
+        {
+          "year": 2024,
+          "value": 529
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -61.7,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 37756,
+    "pct_low_income": 34.4,
+    "pct_people_of_color": 49.8,
+    "pct_under_5": 8.7,
+    "pct_over_64": 12.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (25 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:07:57Z"
+}

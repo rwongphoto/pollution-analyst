@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "nc",
+    "state_label": "North Carolina",
+    "slug": "sepro-distribution-center",
+    "name": "Sepro Distribution Center",
+    "parent_company": "Sepro CORP",
+    "address": "1259 ATLANTIC AVE",
+    "city": "Rocky Mount",
+    "county": "Edgecombe County",
+    "county_slug": "edgecombe",
+    "naics_label": "325320 \u00b7 Chemicals",
+    "lat": 35.966451,
+    "lng": -77.781623
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 4770,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 4770,
+    "chemicals_reported": 1,
+    "yoy_pct_change": 1367.8,
+    "long_arc_pct_change": 1225.1,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 360
+      },
+      {
+        "year": 2023,
+        "value": 325
+      },
+      {
+        "year": 2024,
+        "value": 4770
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Copper  And Copper Compounds",
+      "cas": "N100",
+      "category": "general",
+      "total_pounds_recent": 4770,
+      "history": [
+        {
+          "year": 2022,
+          "value": 360
+        },
+        {
+          "year": 2023,
+          "value": 325
+        },
+        {
+          "year": 2024,
+          "value": 4770
+        }
+      ],
+      "yoy_pct_change": 1367.8,
+      "long_arc_pct_change": 1225.1,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 25290,
+    "pct_low_income": 44.1,
+    "pct_people_of_color": 78.5,
+    "pct_under_5": 5.3,
+    "pct_over_64": 16.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (26 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:07:57Z"
+}

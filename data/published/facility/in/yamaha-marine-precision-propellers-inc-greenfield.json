@@ -1,0 +1,206 @@
+{
+  "facility": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "yamaha-marine-precision-propellers-inc-greenfield",
+    "name": "Yamaha Marine Precision Propellers INC. Greenfield",
+    "parent_company": "Yamaha Motor CORP USA",
+    "address": "1887 W NEW RD",
+    "city": "Greenfield",
+    "county": "Hancock County",
+    "county_slug": "hancock",
+    "naics_label": "331512 \u00b7 Primary Metals",
+    "lat": 39.813899,
+    "lng": -85.779829
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 12990,
+    "air_releases_pounds": 180,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 12810,
+    "chemicals_reported": 3,
+    "yoy_pct_change": -92.0,
+    "long_arc_pct_change": -95.4,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 281137
+      },
+      {
+        "year": 2022,
+        "value": 383291
+      },
+      {
+        "year": 2023,
+        "value": 162180
+      },
+      {
+        "year": 2024,
+        "value": 12990
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "4,4'-Isopropylidenediphenol",
+      "cas": "80-05-7",
+      "category": "respiratory",
+      "total_pounds_recent": 9643,
+      "history": [
+        {
+          "year": 2021,
+          "value": 14676
+        },
+        {
+          "year": 2022,
+          "value": 19269
+        },
+        {
+          "year": 2023,
+          "value": 18291
+        },
+        {
+          "year": 2024,
+          "value": 9643
+        }
+      ],
+      "yoy_pct_change": -47.3,
+      "long_arc_pct_change": -34.3,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 3266,
+      "history": [
+        {
+          "year": 2021,
+          "value": 146703
+        },
+        {
+          "year": 2022,
+          "value": 200417
+        },
+        {
+          "year": 2023,
+          "value": 79461
+        },
+        {
+          "year": 2024,
+          "value": 3266
+        }
+      ],
+      "yoy_pct_change": -95.9,
+      "long_arc_pct_change": -97.8,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 81,
+      "history": [
+        {
+          "year": 2021,
+          "value": 119758
+        },
+        {
+          "year": 2022,
+          "value": 163605
+        },
+        {
+          "year": 2023,
+          "value": 64429
+        },
+        {
+          "year": 2024,
+          "value": 81
+        }
+      ],
+      "yoy_pct_change": -99.9,
+      "long_arc_pct_change": -99.9,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Chromium",
+      "summary": "Chromium releases at Yamaha Marine Precision Propellers INC. Greenfield fell from 79k lb to 3k lb (96% lower) between 2023 and 2024.",
+      "magnitude_pct": -95.9,
+      "magnitude_abs": -76194.7,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 146703
+        },
+        {
+          "year": 2022,
+          "value": 200417
+        },
+        {
+          "year": 2023,
+          "value": 79461
+        },
+        {
+          "year": 2024,
+          "value": 3266
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Nickel",
+      "summary": "Nickel releases at Yamaha Marine Precision Propellers INC. Greenfield fell from 64k lb to 81 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -99.9,
+      "magnitude_abs": -64347.6,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 119758
+        },
+        {
+          "year": 2022,
+          "value": 163605
+        },
+        {
+          "year": 2023,
+          "value": 64429
+        },
+        {
+          "year": 2024,
+          "value": 81
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 22051,
+    "pct_low_income": 23.8,
+    "pct_people_of_color": 7.7,
+    "pct_under_5": 4.7,
+    "pct_over_64": 17.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (15 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:33Z"
+}

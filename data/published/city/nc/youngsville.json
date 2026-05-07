@@ -1,0 +1,561 @@
+{
+  "place": {
+    "state": "nc",
+    "state_label": "North Carolina",
+    "slug": "youngsville",
+    "name": "Youngsville",
+    "fips": "3776200",
+    "population": 2421,
+    "county_name": "Franklin County",
+    "county_fips": "37069"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "criteria_air",
+      "label": "Ozone 8-hour 4th-highest daily max (NAAQS 0.070 ppm (8-hour))",
+      "current": 0.062,
+      "units": "ppm",
+      "yoy_pct_change": 0.0,
+      "long_arc_pct_change": -29.5,
+      "baseline_year": 2010,
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.088
+        },
+        {
+          "year": 2011,
+          "value": 0.072
+        },
+        {
+          "year": 2012,
+          "value": 0.072
+        },
+        {
+          "year": 2013,
+          "value": 0.06
+        },
+        {
+          "year": 2014,
+          "value": 0.062
+        },
+        {
+          "year": 2015,
+          "value": 0.062
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 30.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 30.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.5519,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.5519
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1384,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1384
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 28792,
+    "violations_5yr_total": 38,
+    "health_based_5yr_total": 14,
+    "unresolved_total": 12,
+    "utilities_with_unresolved": 2,
+    "utilities": [
+      {
+        "slug": "franklin-county-water-sewer",
+        "state": "nc",
+        "state_label": "North Carolina",
+        "name": "Franklin County Water & Sewer",
+        "pwsid": "NC0235030",
+        "population_served": 26060,
+        "health_based_violations_5yr": 12,
+        "unresolved": true
+      },
+      {
+        "slug": "franklinton-town-of",
+        "state": "nc",
+        "state_label": "North Carolina",
+        "name": "Franklinton, Town Of",
+        "pwsid": "NC0235010",
+        "population_served": 2732,
+        "health_based_violations_5yr": 2,
+        "unresolved": true
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Bromate",
+      "summary": "Unresolved Disinfectants and Disinfection Byproducts (Stage 2) violation cited in 2020 (bromate).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2020,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NC0235010"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Bromate",
+      "summary": "Unresolved Disinfectants and Disinfection Byproducts (Stage 2) violation cited in 2020 (bromate).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2020,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NC0235010"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Haloacetic Acids (HAA5)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (haloacetic acids (haa5)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NC0235030"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Haloacetic Acids (HAA5)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (haloacetic acids (haa5)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:NC0235030"
+      }
+    }
+  ],
+  "equity": {
+    "population": 2421,
+    "pct_low_income": 8.6,
+    "pct_people_of_color": 52.1,
+    "pct_under_5": 10.0,
+    "pct_over_64": 7.9,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 19.9,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 9.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 29.9,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 26.6,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 37.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 28.3,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 24.1,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 65.1,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 56.3,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 20.2,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 91.3,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 26.2
+      },
+      {
+        "label": "Ozone",
+        "score": 36.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 37.5
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 35.0
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 46.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 37.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 25.0
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 80.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 67.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 25.0
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 112.5
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Youngsville, North Carolina (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.0,
+      "age_adjusted": 10.9,
+      "state_mean": 10.8,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.05,
+      "vs_state_pct": 0.5,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.88,
+      "vs_us_pct": 8.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 4.9,
+      "age_adjusted": 5.1,
+      "state_mean": 6.2,
+      "us_mean": 5.5,
+      "vs_state_pp": -1.1,
+      "vs_state_pct": -17.7,
+      "vs_state_class": "better",
+      "vs_us_pp": -0.4,
+      "vs_us_pct": -7.3,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 4.4,
+      "age_adjusted": 4.9,
+      "state_mean": 5.5,
+      "us_mean": 5.3,
+      "vs_state_pp": -0.62,
+      "vs_state_pct": -11.2,
+      "vs_state_class": "better",
+      "vs_us_pp": -0.41,
+      "vs_us_pct": -7.7,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 8.7,
+      "age_adjusted": 9.2,
+      "state_mean": 10.5,
+      "us_mean": 10.5,
+      "vs_state_pp": -1.33,
+      "vs_state_pct": -12.6,
+      "vs_state_class": "better",
+      "vs_us_pp": -1.26,
+      "vs_us_pct": -12.0,
+      "vs_us_class": "better",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.1,
+      "age_adjusted": 16.7,
+      "state_mean": 17.3,
+      "us_mean": 16.8,
+      "vs_state_pp": -0.63,
+      "vs_state_pct": -3.6,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.05,
+      "vs_us_pct": -0.3,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "nc",
+      "slug": "bunn",
+      "name": "Bunn",
+      "population": 478,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nc",
+      "slug": "louisburg",
+      "name": "Louisburg",
+      "population": 3099,
+      "facilities_count": 1,
+      "total_releases_pounds": 6,
+      "dominant_medium": "air",
+      "ej_pct_avg": 39.4,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "nc",
+      "slug": "burnsville",
+      "name": "Burnsville",
+      "population": 2380,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "nc",
+      "slug": "mcadenville",
+      "name": "McAdenville",
+      "population": 1125,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 61.7,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+25 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "nc",
+      "slug": "bladenboro",
+      "name": "Bladenboro",
+      "population": 2485,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 28.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "nc",
+      "slug": "connelly-springs",
+      "name": "Connelly Springs",
+      "population": 2355,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T03:07:59Z"
+}

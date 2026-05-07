@@ -1,0 +1,74 @@
+{
+  "site": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "franklin-street-groundwater-contamination",
+    "name": "Franklin Street Groundwater Contamination",
+    "epa_id": "INN000510959",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Owen",
+    "county_slug": "owen",
+    "city": "Spencer",
+    "city_slug": "spencer",
+    "address": "Intersection Of S. Montgomery Street And W.",
+    "zip": "47460",
+    "lat": 39.2849,
+    "lng": -86.7645
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 0,
+    "primary_contaminant": null
+  },
+  "contaminants": [],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "IN5260001",
+        "name": "Bbp Water Company",
+        "slug": "bbp-water-company",
+        "state": "in",
+        "distance_miles": 0.44,
+        "place_name": "Spencer",
+        "primary_source": "groundwater",
+        "population_served": 9903,
+        "health_based_5yr": 0,
+        "unresolved": false
+      },
+      {
+        "pwsid": "IN5260003",
+        "name": "Gosport Water Utility",
+        "slug": "gosport-water-utility",
+        "state": "in",
+        "distance_miles": 0.44,
+        "place_name": "Spencer",
+        "primary_source": "groundwater",
+        "population_served": 849,
+        "health_based_5yr": 0,
+        "unresolved": true
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 1108,
+    "pct_low_income": 43.8,
+    "pct_people_of_color": 2.5,
+    "pct_under_5": 4.7,
+    "pct_over_64": 26.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:34Z"
+}

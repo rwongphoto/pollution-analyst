@@ -1,0 +1,284 @@
+{
+  "utility": {
+    "state": "tn",
+    "state_label": "Tennessee",
+    "slug": "gladeville-utility-district",
+    "name": "Gladeville Utility District",
+    "pwsid": "TN0000264",
+    "population_served": 19813,
+    "primary_source": "mixed",
+    "cities_served": [
+      "Gladeville"
+    ],
+    "county": "Wilson County",
+    "county_slug": "wilson",
+    "place_slug": "gladeville"
+  },
+  "reporting_period": {
+    "start": "2020-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 3,
+    "health_based_violations_5yr": 2,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 2,
+    "years_since_last_violation": 5
+  },
+  "violations": [
+    {
+      "year": 2021,
+      "contaminant": "Contaminant 5000",
+      "contaminant_code": "5000",
+      "severity": "other",
+      "rule": "Phase I/II/V Inorganic Chemical Rules",
+      "is_unresolved": true,
+      "description": "OTHER"
+    },
+    {
+      "year": 2020,
+      "contaminant": "Haloacetic Acids (HAA5)",
+      "contaminant_code": "2456",
+      "severity": "health_based",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": false,
+      "description": "Maximum contaminant level exceeded; returned to compliance"
+    },
+    {
+      "year": 2020,
+      "contaminant": "Haloacetic Acids (HAA5)",
+      "contaminant_code": "2456",
+      "severity": "health_based",
+      "rule": "Total Trihalomethanes Rule",
+      "is_unresolved": false,
+      "description": "Maximum contaminant level exceeded; returned to compliance"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2020,
+        "value": 2
+      },
+      {
+        "year": 2021,
+        "value": 1
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2020,
+        "value": 2
+      },
+      {
+        "year": 2021,
+        "value": 0
+      },
+      {
+        "year": 2022,
+        "value": 0
+      },
+      {
+        "year": 2023,
+        "value": 0
+      },
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Haloacetic Acids (HAA5)",
+        "count": 2
+      },
+      {
+        "contaminant": "Contaminant 5000",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2021 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TN0000264"
+      }
+    }
+  ],
+  "equity": {
+    "population": 149096,
+    "pct_low_income": 8.3,
+    "pct_people_of_color": 17.900000000000006,
+    "pct_under_5": 6.1,
+    "pct_over_64": 15.8,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 36.2,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 30.5,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 28.4,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 50.7,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 40.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 26.9,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 36.9,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 29.5,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 48.5,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 49.0,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 48.0,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 88.8,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 27.4
+      },
+      {
+        "label": "Ozone",
+        "score": 30.2
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 24.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 38.6
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 28.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 22.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 20.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 13.0
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 36.0
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 32.4
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 29.7
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 15.7
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Wilson County, Tennessee (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:15:34Z"
+}

@@ -1,0 +1,471 @@
+{
+  "county": {
+    "state": "nc",
+    "state_label": "North Carolina",
+    "slug": "yadkin",
+    "name": "Yadkin County",
+    "fips": "37197",
+    "population": 37280
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 30.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 30.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.58,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.58
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.1326,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.1326
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "slug": "mathis-concrete-llc",
+      "state": "nc",
+      "state_label": "North Carolina",
+      "name": "Mathis Concrete LLC",
+      "parent_company": null,
+      "total_pounds_recent": 0.02,
+      "yoy_pct_change": null,
+      "top_chemical": "Lead  And Lead Compounds",
+      "city": "Jonesville",
+      "lat": 36.240118,
+      "lng": -80.829735
+    }
+  ],
+  "utilities": [],
+  "superfund": [
+    {
+      "slug": "holcomb-creosote-co",
+      "state": "nc",
+      "name": "Holcomb Creosote Co",
+      "epa_id": "NCD024900987",
+      "npl_status": "Currently on the Final NPL",
+      "is_active_npl": true,
+      "is_deleted": false,
+      "is_federal_facility": false,
+      "city": "Yadkinville",
+      "city_slug": null,
+      "primary_contaminant": "1,1'-Biphenyl"
+    }
+  ],
+  "superfund_total": 1,
+  "cities_directory": [
+    {
+      "slug": "boonville",
+      "name": "Boonville",
+      "fips": "3707140",
+      "facilities_count": 0,
+      "utilities_count": 1,
+      "population": 1364
+    },
+    {
+      "slug": "east-bend",
+      "name": "East Bend",
+      "fips": "3719320",
+      "facilities_count": 0,
+      "utilities_count": 3,
+      "population": 741
+    },
+    {
+      "slug": "jonesville",
+      "name": "Jonesville",
+      "fips": "3734840",
+      "facilities_count": 1,
+      "utilities_count": 1,
+      "population": 2634
+    },
+    {
+      "slug": "yadkinville",
+      "name": "Yadkinville",
+      "fips": "3775960",
+      "facilities_count": 0,
+      "utilities_count": 3,
+      "population": 2971
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 37280,
+    "pct_low_income": 13.8,
+    "pct_people_of_color": 17.099999999999994,
+    "pct_under_5": 5.0,
+    "pct_over_64": 20.6,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 31.0,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 13.8,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 12.7,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 16.9,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 55.7,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 11.1,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 55.3,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 66.2,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 37.8,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 13.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 54.2,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 29.8,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 33.1
+      },
+      {
+        "label": "Ozone",
+        "score": 29.9
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 14.9
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 19.7
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 51.2
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 13.1
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 48.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 40.5
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 27.4
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 4.5
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 51.5
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 25.2
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "All block groups in Yadkin County County, NC"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 10.9,
+      "age_adjusted": 11.0,
+      "state_mean": 10.8,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.15,
+      "vs_state_pct": 1.4,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.98,
+      "vs_us_pct": 9.8,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 9.5,
+      "age_adjusted": 7.6,
+      "state_mean": 6.2,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.4,
+      "vs_state_pct": 22.6,
+      "vs_state_class": "worse",
+      "vs_us_pp": 2.1,
+      "vs_us_pct": 38.2,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.4,
+      "age_adjusted": 6.2,
+      "state_mean": 5.5,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.68,
+      "vs_state_pct": 12.3,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 0.89,
+      "vs_us_pct": 16.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 13.3,
+      "age_adjusted": 10.4,
+      "state_mean": 10.5,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.13,
+      "vs_state_pct": -1.2,
+      "vs_state_class": "neutral",
+      "vs_us_pp": -0.06,
+      "vs_us_pct": -0.6,
+      "vs_us_class": "neutral",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 17.3,
+      "age_adjusted": 19.0,
+      "state_mean": 17.3,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.67,
+      "vs_state_pct": 9.6,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.25,
+      "vs_us_pct": 13.4,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "county",
+      "state": "nc",
+      "slug": "swain",
+      "name": "Swain County",
+      "population": 14130,
+      "facilities_count": 1,
+      "total_releases_pounds": 0.71,
+      "dominant_medium": "air",
+      "ej_pct_avg": 26.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "nc",
+      "slug": "washington",
+      "name": "Washington County",
+      "population": 11051,
+      "facilities_count": 1,
+      "total_releases_pounds": 3,
+      "dominant_medium": "air",
+      "ej_pct_avg": 34.4,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "nc",
+      "slug": "madison",
+      "name": "Madison County",
+      "population": 21414,
+      "facilities_count": 2,
+      "total_releases_pounds": 10,
+      "dominant_medium": "air",
+      "ej_pct_avg": 34.4,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "nc",
+      "slug": "yancey",
+      "name": "Yancey County",
+      "population": 18538,
+      "facilities_count": 1,
+      "total_releases_pounds": 39,
+      "dominant_medium": "air",
+      "ej_pct_avg": 33.5,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "nc",
+      "slug": "sampson",
+      "name": "Sampson County",
+      "population": 59317,
+      "facilities_count": 2,
+      "total_releases_pounds": 32,
+      "dominant_medium": "air",
+      "ej_pct_avg": 33.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "nc",
+      "slug": "rowan",
+      "name": "Rowan County",
+      "population": 147067,
+      "facilities_count": 16,
+      "total_releases_pounds": 431761,
+      "dominant_medium": "land",
+      "ej_pct_avg": 49.8,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+13 pct-pt EJ gap)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T03:07:56Z"
+}

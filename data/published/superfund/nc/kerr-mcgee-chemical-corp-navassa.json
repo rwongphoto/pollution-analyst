@@ -1,0 +1,127 @@
+{
+  "site": {
+    "state": "nc",
+    "state_label": "North Carolina",
+    "slug": "kerr-mcgee-chemical-corp-navassa",
+    "name": "Kerr-Mcgee Chemical Corp - Navassa",
+    "epa_id": "NCD980557805",
+    "npl_status": "Currently on the Final NPL",
+    "is_active_npl": true,
+    "is_deleted": false,
+    "is_federal_facility": false,
+    "county": "Brunswick",
+    "county_slug": "brunswick",
+    "city": "Navassa",
+    "city_slug": "navassa",
+    "address": "North Navassa Road",
+    "zip": "28451",
+    "lat": 34.247222,
+    "lng": -77.999028
+  },
+  "briefing_label": "EPA Superfund SEMS through latest publish",
+  "totals": {
+    "contaminants_count": 5,
+    "primary_contaminant": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin (Tcdd) Toxicity Equivalents (Teq)"
+  },
+  "contaminants": [
+    {
+      "name": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin (Tcdd) Toxicity Equivalents (Teq)",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Benzo[A]Pyrene Equivalents (Bapeq)",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Naphthalene",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Pentachlorophenol",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    },
+    {
+      "name": "Polycyclic Aromatic Hydrocarbons, High Molecular Weight (Hpahs)",
+      "media": "Soil",
+      "operable_units": [
+        "02"
+      ],
+      "citation_count": 1
+    }
+  ],
+  "water_linkage": {
+    "radius_miles": 3.0,
+    "utilities": [
+      {
+        "pwsid": "NC0410070",
+        "name": "Brunswick Regional Water And Sewer H2Go",
+        "slug": "brunswick-regional-water-and-sewer-h2go",
+        "state": "nc",
+        "distance_miles": 2.96,
+        "place_name": "Leland",
+        "primary_source": "groundwater",
+        "population_served": 45748,
+        "health_based_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "pwsid": "NC0465119",
+        "name": "Figure 8 Island",
+        "slug": "figure-8-island",
+        "state": "nc",
+        "distance_miles": 2.96,
+        "place_name": "Leland",
+        "primary_source": "groundwater",
+        "population_served": 999,
+        "health_based_5yr": 2,
+        "unresolved": true
+      },
+      {
+        "pwsid": "NC7010054",
+        "name": "Chadwick Mhp",
+        "slug": "chadwick-mhp",
+        "state": "nc",
+        "distance_miles": 2.96,
+        "place_name": "Leland",
+        "primary_source": "groundwater",
+        "population_served": 90,
+        "health_based_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "flags": [],
+  "equity": {
+    "population": 3313,
+    "pct_low_income": 30.1,
+    "pct_people_of_color": 43.3,
+    "pct_under_5": 3.6,
+    "pct_over_64": 13.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (2 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Superfund Enterprise Management System (SEMS)",
+    "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:07:59Z"
+}

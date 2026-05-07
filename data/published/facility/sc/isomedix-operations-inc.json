@@ -1,0 +1,85 @@
+{
+  "facility": {
+    "state": "sc",
+    "state_label": "South Carolina",
+    "slug": "isomedix-operations-inc",
+    "name": "Isomedix Operations INC.",
+    "parent_company": "Steris CORP",
+    "address": "2072 SOUTHPORT RD",
+    "city": "Spartanburg",
+    "county": "Spartanburg County",
+    "county_slug": "spartanburg",
+    "naics_label": "561910 \u00b7 Other",
+    "lat": 34.918674,
+    "lng": -81.89412
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 27,
+    "air_releases_pounds": 27,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -39.2,
+    "long_arc_pct_change": -49.3,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 53
+      },
+      {
+        "year": 2023,
+        "value": 44
+      },
+      {
+        "year": 2024,
+        "value": 27
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Ethylene oxide",
+      "cas": "75-21-8",
+      "category": "carcinogen",
+      "total_pounds_recent": 27,
+      "history": [
+        {
+          "year": 2022,
+          "value": 53
+        },
+        {
+          "year": 2023,
+          "value": 44
+        },
+        {
+          "year": 2024,
+          "value": 27
+        }
+      ],
+      "yoy_pct_change": -39.2,
+      "long_arc_pct_change": -49.3,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 28256,
+    "pct_low_income": 44.3,
+    "pct_people_of_color": 46.5,
+    "pct_under_5": 6.0,
+    "pct_over_64": 19.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (24 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T02:57:57Z"
+}

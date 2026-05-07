@@ -1,0 +1,230 @@
+{
+  "utility": {
+    "state": "tn",
+    "state_label": "Tennessee",
+    "slug": "rockwood-water-sewer-gas",
+    "name": "Rockwood Water, Sewer & Gas",
+    "pwsid": "TN0000590",
+    "population_served": 11412,
+    "primary_source": "surface_water",
+    "cities_served": [
+      "Rockwood"
+    ],
+    "county": "Roane County",
+    "county_slug": "roane",
+    "place_slug": "rockwood"
+  },
+  "reporting_period": {
+    "start": "2024-01-01",
+    "end": "2026-05-07"
+  },
+  "briefing_label": "SDWIS through latest publish",
+  "totals": {
+    "violations_5yr": 1,
+    "health_based_violations_5yr": 0,
+    "unresolved_violations": 1,
+    "contaminants_with_violations": 1,
+    "years_since_last_violation": 2
+  },
+  "violations": [
+    {
+      "year": 2024,
+      "contaminant": "Contaminant 0300",
+      "contaminant_code": "0300",
+      "severity": "other",
+      "rule": "Long Term 1 Enhanced SWTR",
+      "is_unresolved": true,
+      "description": "OTHER"
+    }
+  ],
+  "metrics": {
+    "violations_history": [
+      {
+        "year": 2024,
+        "value": 1
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "health_based_history": [
+      {
+        "year": 2024,
+        "value": 0
+      },
+      {
+        "year": 2025,
+        "value": 0
+      },
+      {
+        "year": 2026,
+        "value": 0
+      }
+    ],
+    "top_contaminants": [
+      {
+        "contaminant": "Contaminant 0300",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0300",
+      "summary": "Unresolved Long Term 1 Enhanced SWTR violation cited in 2024 (contaminant 0300).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:TN0000590"
+      }
+    }
+  ],
+  "equity": {
+    "population": 5468,
+    "pct_low_income": 17.8,
+    "pct_people_of_color": 8.099999999999994,
+    "pct_under_5": 6.2,
+    "pct_over_64": 23.0,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 15.5,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 21.7,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 31.3,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 31.5,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 63.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 19.7,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 80.6,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 27.7,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 44.6,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 50.1,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 30.6,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.7,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 20.5
+      },
+      {
+        "label": "Ozone",
+        "score": 40.4
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 39.2
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 41.9
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 78.5
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 27.5
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 92.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 3.4
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 1.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 55.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 60.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 36.5
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 4.4
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Rockwood, Tennessee (Census place; block-group disparity scores aggregated by centroid containment)"
+  },
+  "source": {
+    "label": "EPA Safe Drinking Water Information System",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:15:34Z"
+}

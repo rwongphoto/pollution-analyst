@@ -1,0 +1,494 @@
+{
+  "place": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "williamsport",
+    "name": "Williamsport",
+    "fips": "1884410",
+    "population": 1847,
+    "county_name": "Warren County",
+    "county_fips": "18171"
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024",
+  "totals": {
+    "facilities_in_city": 0,
+    "utilities_serving": 2,
+    "total_releases_pounds": 0,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 0,
+    "yoy_pct_change": null,
+    "long_arc_pct_change": null,
+    "long_arc_baseline_year": 2024,
+    "history": [
+      {
+        "year": 2024,
+        "value": 0
+      }
+    ]
+  },
+  "pathways": [
+    {
+      "pathway": "hazardous_air",
+      "label": "Lifetime cancer risk all pollutants (100 in a million (EPA elevated threshold))",
+      "current": 20.0,
+      "units": "per million",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Formaldehyde ambient mean (0.077 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 1.2474,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 1.2474
+        }
+      ]
+    },
+    {
+      "pathway": "hazardous_air",
+      "label": "Benzene ambient mean (0.13 \u00b5g/m\u00b3 (1-in-a-million URE))",
+      "current": 0.0965,
+      "units": "\u00b5g/m\u00b3",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2020,
+      "history": [
+        {
+          "year": 2020,
+          "value": 0.0965
+        }
+      ]
+    },
+    {
+      "pathway": "tri_air",
+      "label": "TRI air releases (5.1 fugitive + 5.2 stack)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_water",
+      "label": "TRI water releases (5.3)",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "pathway": "tri_land",
+      "label": "TRI land + off-site releases",
+      "current": 0,
+      "units": "lb",
+      "yoy_pct_change": null,
+      "long_arc_pct_change": null,
+      "baseline_year": 2024,
+      "history": [
+        {
+          "year": 2024,
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [],
+  "water": {
+    "utilities_count": 2,
+    "population_served_total": 1837,
+    "violations_5yr_total": 65,
+    "health_based_5yr_total": 6,
+    "unresolved_total": 30,
+    "utilities_with_unresolved": 1,
+    "utilities": [
+      {
+        "slug": "pence-water-works",
+        "state": "in",
+        "state_label": "Indiana",
+        "name": "Pence Water Works",
+        "pwsid": "IN5286002",
+        "population_served": 37,
+        "health_based_violations_5yr": 6,
+        "unresolved": true
+      },
+      {
+        "slug": "williamsport-water-utility",
+        "state": "in",
+        "state_label": "Indiana",
+        "name": "Williamsport Water Utility",
+        "pwsid": "IN5286004",
+        "population_served": 1800,
+        "health_based_violations_5yr": 0,
+        "unresolved": false
+      }
+    ]
+  },
+  "superfund": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7000",
+      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2025 (contaminant 7000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IN5286002"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:IN5286002"
+      }
+    }
+  ],
+  "equity": {
+    "population": 1847,
+    "pct_low_income": 12.5,
+    "pct_people_of_color": 3.4000000000000057,
+    "pct_under_5": 5.6,
+    "pct_over_64": 21.9,
+    "ej_indexes": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "pct_us": 58.6,
+        "pct_state": null
+      },
+      {
+        "label": "Ozone",
+        "pct_us": 55.3,
+        "pct_state": null
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "pct_us": 33.7,
+        "pct_state": null
+      },
+      {
+        "label": "Diesel particulate",
+        "pct_us": 27.4,
+        "pct_state": null
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "pct_us": 41.4,
+        "pct_state": null
+      },
+      {
+        "label": "Traffic proximity",
+        "pct_us": 11.5,
+        "pct_state": null
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "pct_us": 67.6,
+        "pct_state": null
+      },
+      {
+        "label": "Superfund site proximity",
+        "pct_us": 55.6,
+        "pct_state": null
+      },
+      {
+        "label": "RMP-facility proximity",
+        "pct_us": 30.5,
+        "pct_state": null
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "pct_us": 24.3,
+        "pct_state": null
+      },
+      {
+        "label": "Underground storage tanks",
+        "pct_us": 56.4,
+        "pct_state": null
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "pct_us": 40.2,
+        "pct_state": null
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "pct_us": 75.5,
+        "pct_state": null
+      }
+    ],
+    "disparity_scores": [
+      {
+        "label": "PM2.5 (fine particulate)",
+        "score": 57.5
+      },
+      {
+        "label": "Ozone",
+        "score": 61.3
+      },
+      {
+        "label": "Nitrogen dioxide (NO\u2082)",
+        "score": 31.6
+      },
+      {
+        "label": "Diesel particulate",
+        "score": 27.8
+      },
+      {
+        "label": "Toxic releases (RSEI)",
+        "score": 39.3
+      },
+      {
+        "label": "Traffic proximity",
+        "score": 13.4
+      },
+      {
+        "label": "Lead-paint risk (pre-1960 housing)",
+        "score": 58.4
+      },
+      {
+        "label": "Superfund site proximity",
+        "score": 0.0
+      },
+      {
+        "label": "RMP-facility proximity",
+        "score": 29.7
+      },
+      {
+        "label": "Hazardous-waste site proximity",
+        "score": 24.9
+      },
+      {
+        "label": "Underground storage tanks",
+        "score": 51.7
+      },
+      {
+        "label": "NPDES wastewater proximity",
+        "score": 38.3
+      },
+      {
+        "label": "Drinking-water non-compliance",
+        "score": 0.0
+      }
+    ],
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
+    "geography_label": "Williamsport, Indiana (Census place block groups)"
+  },
+  "health_indicators": [
+    {
+      "measure_key": "asthma",
+      "label": "Adult asthma (current)",
+      "crude": 11.5,
+      "age_adjusted": 11.7,
+      "state_mean": 11.3,
+      "us_mean": 10.0,
+      "vs_state_pp": 0.42,
+      "vs_state_pct": 3.7,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 1.68,
+      "vs_us_pct": 16.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "copd",
+      "label": "COPD prevalence",
+      "crude": 9.9,
+      "age_adjusted": 8.2,
+      "state_mean": 7.2,
+      "us_mean": 5.5,
+      "vs_state_pp": 1.02,
+      "vs_state_pct": 14.2,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 2.7,
+      "vs_us_pct": 49.1,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "chd",
+      "label": "Coronary heart disease",
+      "crude": 8.1,
+      "age_adjusted": 6.0,
+      "state_mean": 5.8,
+      "us_mean": 5.3,
+      "vs_state_pp": 0.22,
+      "vs_state_pct": 3.8,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.69,
+      "vs_us_pct": 13.0,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "diabetes",
+      "label": "Diabetes (diagnosed)",
+      "crude": 13.8,
+      "age_adjusted": 11.1,
+      "state_mean": 11.5,
+      "us_mean": 10.5,
+      "vs_state_pp": -0.38,
+      "vs_state_pct": -3.3,
+      "vs_state_class": "neutral",
+      "vs_us_pp": 0.64,
+      "vs_us_pct": 6.1,
+      "vs_us_class": "elevated",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    },
+    {
+      "measure_key": "mental",
+      "label": "Frequent mental distress",
+      "crude": 18.3,
+      "age_adjusted": 19.9,
+      "state_mean": 18.4,
+      "us_mean": 16.8,
+      "vs_state_pp": 1.53,
+      "vs_state_pct": 8.3,
+      "vs_state_class": "elevated",
+      "vs_us_pp": 3.15,
+      "vs_us_pct": 18.8,
+      "vs_us_class": "worse",
+      "source": "CDC PLACES \u00b7 2025 release \u00b7 BRFSS 2022-2023",
+      "vintage_year": 2023
+    }
+  ],
+  "related_places": [
+    {
+      "kind": "city",
+      "state": "in",
+      "slug": "west-lebanon",
+      "name": "West Lebanon",
+      "population": 773,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "in",
+      "slug": "frankton",
+      "name": "Frankton",
+      "population": 1849,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 46.7,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "in",
+      "slug": "whiting",
+      "name": "Whiting",
+      "population": 4574,
+      "facilities_count": 1,
+      "total_releases_pounds": 8616212,
+      "dominant_medium": "air",
+      "ej_pct_avg": 84.5,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+40 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "in",
+      "slug": "roanoke",
+      "name": "Roanoke",
+      "population": 1852,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "in",
+      "slug": "henryville",
+      "name": "Henryville",
+      "population": 1837,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 44.4,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "in",
+      "slug": "kentland",
+      "name": "Kentland",
+      "population": 1810,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 50.1,
+      "relation": "peer",
+      "reason": "Comparable population"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPA Toxics Release Inventory",
+      "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+      "retrieved": "2026-05-07"
+    },
+    {
+      "label": "EPA Safe Drinking Water Information System",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
+      "retrieved": "2026-05-07"
+    }
+  ],
+  "_published_at": "2026-05-07T03:39:35Z"
+}

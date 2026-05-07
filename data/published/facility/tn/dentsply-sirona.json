@@ -1,0 +1,120 @@
+{
+  "facility": {
+    "state": "tn",
+    "state_label": "Tennessee",
+    "slug": "dentsply-sirona",
+    "name": "Dentsply Sirona",
+    "parent_company": null,
+    "address": "608 ROLLING HILLS DR",
+    "city": "Johnson City",
+    "county": "Washington County",
+    "county_slug": "washington",
+    "naics_label": "339114 \u00b7 Miscellaneous Manufacturing",
+    "lat": 36.295022,
+    "lng": -82.345438
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1557,
+    "air_releases_pounds": 1273,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 284,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -27.4,
+    "long_arc_pct_change": -39.1,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 2557
+      },
+      {
+        "year": 2022,
+        "value": 2730
+      },
+      {
+        "year": 2023,
+        "value": 2145
+      },
+      {
+        "year": 2024,
+        "value": 1557
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Nickel",
+      "cas": "7440-02-0",
+      "category": "carcinogen",
+      "total_pounds_recent": 1438,
+      "history": [
+        {
+          "year": 2021,
+          "value": 2037
+        },
+        {
+          "year": 2022,
+          "value": 2233
+        },
+        {
+          "year": 2023,
+          "value": 1672
+        },
+        {
+          "year": 2024,
+          "value": 1438
+        }
+      ],
+      "yoy_pct_change": -14.0,
+      "long_arc_pct_change": -29.4,
+      "long_arc_baseline_year": 2021
+    },
+    {
+      "chemical": "Toluene",
+      "cas": "108-88-3",
+      "category": "respiratory",
+      "total_pounds_recent": 119,
+      "history": [
+        {
+          "year": 2021,
+          "value": 520
+        },
+        {
+          "year": 2022,
+          "value": 497
+        },
+        {
+          "year": 2023,
+          "value": 473
+        },
+        {
+          "year": 2024,
+          "value": 119
+        }
+      ],
+      "yoy_pct_change": -74.8,
+      "long_arc_pct_change": -77.1,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 38101,
+    "pct_low_income": 48.8,
+    "pct_people_of_color": 20.0,
+    "pct_under_5": 5.5,
+    "pct_over_64": 13.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (32 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:15:34Z"
+}

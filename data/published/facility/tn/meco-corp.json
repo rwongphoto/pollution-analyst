@@ -1,0 +1,177 @@
+{
+  "facility": {
+    "state": "tn",
+    "state_label": "Tennessee",
+    "slug": "meco-corp",
+    "name": "Meco Corp",
+    "parent_company": null,
+    "address": "1500 INDUSTRIAL RD",
+    "city": "Greeneville",
+    "county": "Greene County",
+    "county_slug": "greene",
+    "naics_label": "335220 \u00b7 Electrical Equipment",
+    "lat": 36.181367,
+    "lng": -82.806699
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 1107,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 1107,
+    "chemicals_reported": 5,
+    "yoy_pct_change": -62.5,
+    "long_arc_pct_change": -41.8,
+    "long_arc_baseline_year": 2022,
+    "history": [
+      {
+        "year": 2022,
+        "value": 1903
+      },
+      {
+        "year": 2023,
+        "value": 2950
+      },
+      {
+        "year": 2024,
+        "value": 1107
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Manganese",
+      "cas": "7439-96-5",
+      "category": "respiratory",
+      "total_pounds_recent": 500,
+      "history": [
+        {
+          "year": 2022,
+          "value": 1272
+        },
+        {
+          "year": 2023,
+          "value": 976
+        },
+        {
+          "year": 2024,
+          "value": 500
+        }
+      ],
+      "yoy_pct_change": -48.8,
+      "long_arc_pct_change": -60.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Phosphorus (yellow or white)",
+      "cas": "12185-10-3",
+      "category": "respiratory",
+      "total_pounds_recent": 309,
+      "history": [
+        {
+          "year": 2022,
+          "value": 19
+        },
+        {
+          "year": 2023,
+          "value": 343
+        },
+        {
+          "year": 2024,
+          "value": 309
+        }
+      ],
+      "yoy_pct_change": -9.9,
+      "long_arc_pct_change": 1526.3,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 142,
+      "history": [
+        {
+          "year": 2022,
+          "value": 454
+        },
+        {
+          "year": 2023,
+          "value": 924
+        },
+        {
+          "year": 2024,
+          "value": 142
+        }
+      ],
+      "yoy_pct_change": -84.6,
+      "long_arc_pct_change": -68.7,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Chromium",
+      "cas": "7440-47-3",
+      "category": "respiratory",
+      "total_pounds_recent": 139,
+      "history": [
+        {
+          "year": 2022,
+          "value": 133
+        },
+        {
+          "year": 2023,
+          "value": 691
+        },
+        {
+          "year": 2024,
+          "value": 139
+        }
+      ],
+      "yoy_pct_change": -79.9,
+      "long_arc_pct_change": 4.2,
+      "long_arc_baseline_year": 2022
+    },
+    {
+      "chemical": "Aluminum (fume or dust)",
+      "cas": "7429-90-5",
+      "category": "general",
+      "total_pounds_recent": 17,
+      "history": [
+        {
+          "year": 2022,
+          "value": 25
+        },
+        {
+          "year": 2023,
+          "value": 16
+        },
+        {
+          "year": 2024,
+          "value": 17
+        }
+      ],
+      "yoy_pct_change": 6.2,
+      "long_arc_pct_change": -32.0,
+      "long_arc_baseline_year": 2022
+    }
+  ],
+  "flags": [],
+  "equity": {
+    "population": 15771,
+    "pct_low_income": 39.1,
+    "pct_people_of_color": 14.2,
+    "pct_under_5": 6.1,
+    "pct_over_64": 19.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (13 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:15:34Z"
+}

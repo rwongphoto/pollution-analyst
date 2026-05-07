@@ -1,0 +1,123 @@
+{
+  "facility": {
+    "state": "in",
+    "state_label": "Indiana",
+    "slug": "us-premier-tube-mills",
+    "name": "US Premier Tube Mills",
+    "parent_company": "Itochu International INC",
+    "address": "2855 MICHIGAN RD",
+    "city": "Madison",
+    "county": "Jefferson County",
+    "county_slug": "jefferson",
+    "naics_label": "335312 \u00b7 Electrical Equipment",
+    "lat": 38.780353,
+    "lng": -85.387394
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 16222,
+    "air_releases_pounds": 14152,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 2070,
+    "chemicals_reported": 1,
+    "yoy_pct_change": -61.2,
+    "long_arc_pct_change": -52.3,
+    "long_arc_baseline_year": 2021,
+    "history": [
+      {
+        "year": 2021,
+        "value": 34017
+      },
+      {
+        "year": 2022,
+        "value": 25137
+      },
+      {
+        "year": 2023,
+        "value": 41808
+      },
+      {
+        "year": 2024,
+        "value": 16222
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Certain glycol ethers",
+      "cas": "N230",
+      "category": "respiratory",
+      "total_pounds_recent": 16222,
+      "history": [
+        {
+          "year": 2021,
+          "value": 34017
+        },
+        {
+          "year": 2022,
+          "value": 25137
+        },
+        {
+          "year": 2023,
+          "value": 41808
+        },
+        {
+          "year": 2024,
+          "value": 16222
+        }
+      ],
+      "yoy_pct_change": -61.2,
+      "long_arc_pct_change": -52.3,
+      "long_arc_baseline_year": 2021
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "Certain glycol ethers",
+      "summary": "Certain glycol ethers releases at US Premier Tube Mills fell from 42k lb to 16k lb (61% lower) between 2023 and 2024.",
+      "magnitude_pct": -61.2,
+      "magnitude_abs": -25586.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2021,
+          "value": 34017
+        },
+        {
+          "year": 2022,
+          "value": 25137
+        },
+        {
+          "year": 2023,
+          "value": 41808
+        },
+        {
+          "year": 2024,
+          "value": 16222
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 7309,
+    "pct_low_income": 36.1,
+    "pct_people_of_color": 10.9,
+    "pct_under_5": 5.3,
+    "pct_over_64": 21.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (6 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:39:34Z"
+}

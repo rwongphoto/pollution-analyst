@@ -1,0 +1,202 @@
+{
+  "facility": {
+    "state": "nc",
+    "state_label": "North Carolina",
+    "slug": "clean-harbors-reidsville-llc",
+    "name": "Clean Harbors Reidsville LLC",
+    "parent_company": "Clean Harbors INC",
+    "address": "208 WATLINGTON INDUSTRIAL DRIVE",
+    "city": "Reidsville",
+    "county": "Rockingham County",
+    "county_slug": "rockingham",
+    "naics_label": "562211 \u00b7 Hazardous Waste",
+    "lat": 36.319461,
+    "lng": -79.648984
+  },
+  "reporting_year": 2024,
+  "briefing_label": "TRI 2024 reporting year",
+  "totals": {
+    "total_releases_pounds": 12468,
+    "air_releases_pounds": 0,
+    "water_releases_pounds": 0,
+    "land_releases_pounds": 12468,
+    "chemicals_reported": 2,
+    "yoy_pct_change": -94.0,
+    "long_arc_pct_change": 402.3,
+    "long_arc_baseline_year": 2012,
+    "history": [
+      {
+        "year": 2012,
+        "value": 2482
+      },
+      {
+        "year": 2013,
+        "value": 52501
+      },
+      {
+        "year": 2014,
+        "value": 96063
+      },
+      {
+        "year": 2015,
+        "value": 35046
+      },
+      {
+        "year": 2016,
+        "value": 21455
+      },
+      {
+        "year": 2017,
+        "value": 30732
+      },
+      {
+        "year": 2018,
+        "value": 70767
+      },
+      {
+        "year": 2019,
+        "value": 141028
+      },
+      {
+        "year": 2020,
+        "value": 76941
+      },
+      {
+        "year": 2021,
+        "value": 141843
+      },
+      {
+        "year": 2022,
+        "value": 203225
+      },
+      {
+        "year": 2023,
+        "value": 209317
+      },
+      {
+        "year": 2024,
+        "value": 12468
+      }
+    ]
+  },
+  "chemicals": [
+    {
+      "chemical": "Lead",
+      "cas": "7439-92-1",
+      "category": "pbt",
+      "total_pounds_recent": 7196,
+      "history": [
+        {
+          "year": 2013,
+          "value": 8136
+        },
+        {
+          "year": 2024,
+          "value": 7196
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -11.5,
+      "long_arc_baseline_year": 2013
+    },
+    {
+      "chemical": "Mercury",
+      "cas": "7439-97-6",
+      "category": "pbt",
+      "total_pounds_recent": 5271,
+      "history": [
+        {
+          "year": 2013,
+          "value": 18884
+        },
+        {
+          "year": 2024,
+          "value": 5271
+        }
+      ],
+      "yoy_pct_change": null,
+      "long_arc_pct_change": -72.1,
+      "long_arc_baseline_year": 2013
+    }
+  ],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "N420",
+      "summary": "N420 releases at Clean Harbors Reidsville LLC fell from 200k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -200474.7,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2012,
+          "value": 2197
+        },
+        {
+          "year": 2013,
+          "value": 25481
+        },
+        {
+          "year": 2014,
+          "value": 59272
+        },
+        {
+          "year": 2015,
+          "value": 24520
+        },
+        {
+          "year": 2016,
+          "value": 9938
+        },
+        {
+          "year": 2017,
+          "value": 30732
+        },
+        {
+          "year": 2018,
+          "value": 64698
+        },
+        {
+          "year": 2019,
+          "value": 107346
+        },
+        {
+          "year": 2020,
+          "value": 76378
+        },
+        {
+          "year": 2021,
+          "value": 141627
+        },
+        {
+          "year": 2022,
+          "value": 200080
+        },
+        {
+          "year": 2023,
+          "value": 200475
+        }
+      ]
+    }
+  ],
+  "equity": {
+    "population": 12725,
+    "pct_low_income": 48.8,
+    "pct_people_of_color": 42.0,
+    "pct_under_5": 6.1,
+    "pct_over_64": 25.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 3-mile buffer around this facility (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 3 miles of this facility (9 Census block groups, population-weighted demographics)"
+  },
+  "source": {
+    "label": "EPA Toxics Release Inventory",
+    "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
+    "retrieved": "2026-05-07"
+  },
+  "_published_at": "2026-05-07T03:07:57Z"
+}
