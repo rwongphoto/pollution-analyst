@@ -6,7 +6,7 @@
     "name": "Rosharon",
     "fips": "4863332",
     "population": 1689,
-    "county_name": "Brazoria",
+    "county_name": "Brazoria County",
     "county_fips": "48039"
   },
   "reporting_year": 2024,
@@ -387,6 +387,7 @@
         "name": "Bateman Water Works",
         "pwsid": "TX0200563",
         "population_served": 63,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       }
@@ -576,19 +577,6 @@
     {
       "kind": "city",
       "state": "tx",
-      "slug": "mccamey",
-      "name": "McCamey",
-      "population": 1691,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 35.6,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "tx",
       "slug": "meridian",
       "name": "Meridian",
       "population": 1691,
@@ -598,19 +586,32 @@
       "ej_pct_avg": 39.2,
       "relation": "peer",
       "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "mccamey",
+      "name": "McCamey",
+      "population": 1691,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 35.6,
+      "relation": "peer",
+      "reason": "Comparable population"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T13:59:37Z"
+  "_published_at": "2026-05-07T10:52:03Z"
 }

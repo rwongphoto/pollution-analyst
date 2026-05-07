@@ -6,7 +6,7 @@
     "name": "Lakeport",
     "fips": "0639710",
     "population": 5014,
-    "county_name": "Lake",
+    "county_name": "Lake County",
     "county_fips": "06033"
   },
   "reporting_year": 2024,
@@ -416,6 +416,7 @@
         "name": "Pier 1900 Homeowner's Association",
         "pwsid": "CA1700630",
         "population_served": 152,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -426,6 +427,7 @@
         "name": "Lakeport, City Of",
         "pwsid": "CA1710004",
         "population_served": 4762,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -436,6 +438,7 @@
         "name": "Kelseyville Co Waterworks District 3",
         "pwsid": "CA1710007",
         "population_served": 4102,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -446,6 +449,7 @@
         "name": "Lake County Csa 21 - North Lakeport",
         "pwsid": "CA1710021",
         "population_served": 4046,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -456,6 +460,7 @@
         "name": "Lake County Csa 20 - Soda Bay",
         "pwsid": "CA1710022",
         "population_served": 2003,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -466,6 +471,7 @@
         "name": "Lake County Csa 2 - Spring Valley",
         "pwsid": "CA1710018",
         "population_served": 1531,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -476,6 +482,7 @@
         "name": "Lake County Csa 13 - Kono Tayee",
         "pwsid": "CA1700554",
         "population_served": 449,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -486,13 +493,79 @@
         "name": "Corinthian Bay Mutual Water Company",
         "pwsid": "CA1700549",
         "population_served": 150,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 1022",
+      "summary": "Unresolved Lead and Copper Rule violation cited in 2022 (contaminant 1022).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1700549"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 1022",
+      "summary": "Unresolved Lead and Copper Rule violation cited in 2022 (contaminant 1022).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1700549"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1700630"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1700630"
+      }
+    }
+  ],
   "equity": {
     "population": 5014,
     "pct_low_income": 11.1,
@@ -789,13 +862,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

@@ -5,7 +5,7 @@
     "slug": "mcdermitt",
     "name": "McDermitt",
     "fips": "3244000",
-    "population": 0,
+    "population": 78,
     "county_name": null,
     "county_fips": null
   },
@@ -91,6 +91,7 @@
         "name": "Ft. Mcdermitt Paiute-Shoshone - Lower",
         "pwsid": "093200165",
         "population_served": 456,
+        "owner_type": "tribal",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -101,6 +102,7 @@
         "name": "Ft. Mcdermitt Paiute-Shoshone - Upper",
         "pwsid": "093200164",
         "population_served": 110,
+        "owner_type": "tribal",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -109,14 +111,14 @@
   "superfund": [],
   "flags": [],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 78,
+    "pct_low_income": 32.1,
+    "pct_people_of_color": 24.400000000000006,
+    "pct_under_5": 0.0,
+    "pct_over_64": 67.9,
     "ej_indexes": [],
     "disparity_scores": [],
-    "source": "EJScreen ingest pending \u2014 placeholder",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "McDermitt, Nevada (Census place block groups)"
   },
   "health_indicators": [
@@ -205,9 +207,9 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "orovada",
+      "name": "Orovada",
+      "population": 89,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -218,9 +220,9 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "baker",
-      "name": "Baker",
-      "population": 0,
+      "slug": "lamoille",
+      "name": "Lamoille",
+      "population": 55,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -231,67 +233,67 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "glenbrook",
-      "name": "Glenbrook",
-      "population": 0,
+      "slug": "valmy",
+      "name": "Valmy",
+      "population": 35,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "crystal-bay",
+      "name": "Crystal Bay",
+      "population": 184,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "goldfield",
       "name": "Goldfield",
-      "population": 0,
+      "population": 212,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "winnemucca",
-      "name": "Winnemucca",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 43.9,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "jackpot",
-      "name": "Jackpot",
-      "population": 0,
+      "slug": "glenbrook",
+      "name": "Glenbrook",
+      "population": 214,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

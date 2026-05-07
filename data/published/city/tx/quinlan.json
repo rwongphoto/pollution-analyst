@@ -6,7 +6,7 @@
     "name": "Quinlan",
     "fips": "4860140",
     "population": 1470,
-    "county_name": "Hunt",
+    "county_name": "Hunt County",
     "county_fips": "48231"
   },
   "reporting_year": 2024,
@@ -337,6 +337,7 @@
         "name": "Whispering Oaks Water Coop",
         "pwsid": "TX1160081",
         "population_served": 141,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -347,6 +348,7 @@
         "name": "Caddo Mesa Wsc",
         "pwsid": "TX1160089",
         "population_served": 93,
+        "owner_type": "local",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -357,6 +359,7 @@
         "name": "Combined Consumers Sud",
         "pwsid": "TX1160052",
         "population_served": 9087,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -367,6 +370,7 @@
         "name": "City Of Quinlan",
         "pwsid": "TX1160007",
         "population_served": 1414,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -591,9 +595,22 @@
     {
       "kind": "city",
       "state": "tx",
-      "slug": "celeste",
-      "name": "Celeste",
+      "slug": "campbell",
+      "name": "Campbell",
       "population": 974,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "danbury",
+      "name": "Danbury",
+      "population": 1465,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -613,32 +630,19 @@
       "ej_pct_avg": 35.7,
       "relation": "peer",
       "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "tx",
-      "slug": "danbury",
-      "name": "Danbury",
-      "population": 1465,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T13:59:38Z"
+  "_published_at": "2026-05-07T10:52:03Z"
 }

@@ -5,8 +5,8 @@
     "slug": "hawthorne",
     "name": "Hawthorne",
     "fips": "3231300",
-    "population": 0,
-    "county_name": "Mineral",
+    "population": 2739,
+    "county_name": "Mineral County",
     "county_fips": "32021"
   },
   "reporting_year": 2024,
@@ -136,6 +136,7 @@
         "name": "Walker Lake Gid",
         "pwsid": "NV0000268",
         "population_served": 450,
+        "owner_type": "local",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -146,6 +147,7 @@
         "name": "Hawthorne Utilities",
         "pwsid": "NV0000073",
         "population_served": 2876,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -156,6 +158,7 @@
         "name": "Hawthorne Army Depot",
         "pwsid": "NV0000357",
         "population_served": 300,
+        "owner_type": "federal",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -166,6 +169,7 @@
         "name": "Mina Luning Water System",
         "pwsid": "NV0000074",
         "population_served": 170,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -239,14 +243,14 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 2739,
+    "pct_low_income": 11.0,
+    "pct_people_of_color": 30.200000000000003,
+    "pct_under_5": 1.3,
+    "pct_over_64": 27.6,
     "ej_indexes": [],
     "disparity_scores": [],
-    "source": "EJScreen ingest pending \u2014 placeholder",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Hawthorne, Nevada (Census place block groups)"
   },
   "health_indicators": [
@@ -335,78 +339,78 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "yerington",
+      "name": "Yerington",
+      "population": 3108,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 48.3,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "baker",
-      "name": "Baker",
-      "population": 0,
+      "slug": "minden",
+      "name": "Minden",
+      "population": 3140,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 41.8,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "glenbrook",
-      "name": "Glenbrook",
-      "population": 0,
+      "slug": "sandy-valley",
+      "name": "Sandy Valley",
+      "population": 1914,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 26.1,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "mcdermitt",
-      "name": "McDermitt",
-      "population": 0,
+      "slug": "stagecoach",
+      "name": "Stagecoach",
+      "population": 1904,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 44.1,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "goldfield",
-      "name": "Goldfield",
-      "population": 0,
+      "slug": "nellis-afb",
+      "name": "Nellis AFB",
+      "population": 4278,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 68.4,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "winnemucca",
-      "name": "Winnemucca",
-      "population": 0,
+      "slug": "lovelock",
+      "name": "Lovelock",
+      "population": 1675,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 43.9,
+      "ej_pct_avg": 38.4,
       "relation": "peer",
       "reason": "Comparable population"
     }
@@ -415,13 +419,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

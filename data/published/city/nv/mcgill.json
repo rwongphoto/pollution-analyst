@@ -5,8 +5,8 @@
     "slug": "mcgill",
     "name": "McGill",
     "fips": "3244200",
-    "population": 0,
-    "county_name": "White Pine",
+    "population": 879,
+    "county_name": "White Pine County",
     "county_fips": "32033"
   },
   "reporting_year": 2024,
@@ -207,6 +207,7 @@
         "name": "Mcgill Water And Sewer Dist",
         "pwsid": "NV0000163",
         "population_served": 1200,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -217,6 +218,7 @@
         "name": "Ruth Water District",
         "pwsid": "NV0000164",
         "population_served": 470,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -242,11 +244,11 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 879,
+    "pct_low_income": 1.9,
+    "pct_people_of_color": 10.099999999999994,
+    "pct_under_5": 1.7,
+    "pct_over_64": 24.9,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -459,46 +461,46 @@
       "state": "nv",
       "slug": "baker",
       "name": "Baker",
-      "population": 0,
+      "population": 21,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "ruth",
       "name": "Ruth",
-      "population": 0,
+      "population": 189,
       "facilities_count": 1,
       "total_releases_pounds": 14468567,
       "dominant_medium": "land",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "ely",
       "name": "Ely",
-      "population": 0,
+      "population": 3957,
       "facilities_count": 2,
       "total_releases_pounds": 497522,
       "dominant_medium": "land",
       "ej_pct_avg": 35.7,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "schurz",
+      "name": "Schurz",
+      "population": 896,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -509,22 +511,22 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sparks",
-      "name": "Sparks",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 9548,
-      "dominant_medium": "land",
-      "ej_pct_avg": 72.9,
+      "slug": "verdi",
+      "name": "Verdi",
+      "population": 1134,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 51.7,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+38 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+17 pct-pt EJ gap)"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "glenbrook",
-      "name": "Glenbrook",
-      "population": 0,
+      "slug": "caliente",
+      "name": "Caliente",
+      "population": 840,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -537,13 +539,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

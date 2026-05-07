@@ -6,7 +6,7 @@
     "name": "Escondido",
     "fips": "0622804",
     "population": 151114,
-    "county_name": "San Diego",
+    "county_name": "San Diego County",
     "county_fips": "06073"
   },
   "reporting_year": 2024,
@@ -709,6 +709,7 @@
         "name": "Oakvale Park",
         "pwsid": "CA3700962",
         "population_served": 260,
+        "owner_type": "private",
         "health_based_violations_5yr": 3,
         "unresolved": true
       },
@@ -719,6 +720,7 @@
         "name": "Escondido, City Of",
         "pwsid": "CA3710006",
         "population_served": 137044,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -729,6 +731,7 @@
         "name": "Rincon Del Diablo Mwd (Id-1)",
         "pwsid": "CA3710018",
         "population_served": 30757,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -739,6 +742,7 @@
         "name": "Rincon Del Diablo Mwd (Id-A)",
         "pwsid": "CA3710044",
         "population_served": 3275,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -749,13 +753,79 @@
         "name": "Del Dios Mutual Water Company",
         "pwsid": "CA3700866",
         "population_served": 330,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 7000",
+      "summary": "Unresolved Phase I/II/V Synthetic Organic Chemical Rules violation cited in 2024 (contaminant 7000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3700866"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 1080",
+      "summary": "Unresolved Lead and Copper Rule violation cited in 2024 (contaminant 1080).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3700866"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Uranium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (uranium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3700962"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Uranium",
+      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2024 (uranium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3700962"
+      }
+    }
+  ],
   "equity": {
     "population": 151114,
     "pct_low_income": 13.2,
@@ -1052,13 +1122,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

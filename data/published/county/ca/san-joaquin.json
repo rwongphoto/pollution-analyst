@@ -914,7 +914,154 @@
       "population": 3870
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at San Joaquin County have more than three-quarters since 2010 (through 2024).",
+      "magnitude_pct": -76.7,
+      "magnitude_abs": -292329.3,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 381340
+        },
+        {
+          "year": 2011,
+          "value": 71165
+        },
+        {
+          "year": 2012,
+          "value": 98428
+        },
+        {
+          "year": 2013,
+          "value": 114314
+        },
+        {
+          "year": 2014,
+          "value": 43962
+        },
+        {
+          "year": 2015,
+          "value": 111443
+        },
+        {
+          "year": 2016,
+          "value": 98391
+        },
+        {
+          "year": 2017,
+          "value": 96847
+        },
+        {
+          "year": 2018,
+          "value": 57165
+        },
+        {
+          "year": 2019,
+          "value": 46629
+        },
+        {
+          "year": 2020,
+          "value": 37089
+        },
+        {
+          "year": 2021,
+          "value": 34528
+        },
+        {
+          "year": 2022,
+          "value": 41790
+        },
+        {
+          "year": 2023,
+          "value": 49235
+        },
+        {
+          "year": 2024,
+          "value": 89011
+        }
+      ]
+    },
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "PM2.5 annual mean",
+      "summary": "PM2.5 annual mean in San Joaquin County reached 9.1 \u00b5g/m\u00b3 in 2024, 2% above the EPA NAAQS of 9 \u00b5g/m\u00b3.",
+      "magnitude_pct": 1.5,
+      "magnitude_abs": 0.137,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": "\u00b5g/m\u00b3",
+      "history": [
+        {
+          "year": 2010,
+          "value": 15.508
+        },
+        {
+          "year": 2011,
+          "value": 11.715
+        },
+        {
+          "year": 2012,
+          "value": 10.265
+        },
+        {
+          "year": 2013,
+          "value": 13.602
+        },
+        {
+          "year": 2014,
+          "value": 10.623
+        },
+        {
+          "year": 2015,
+          "value": 12.652
+        },
+        {
+          "year": 2016,
+          "value": 11.254
+        },
+        {
+          "year": 2017,
+          "value": 11.71
+        },
+        {
+          "year": 2018,
+          "value": 15.008
+        },
+        {
+          "year": 2019,
+          "value": 8.893
+        },
+        {
+          "year": 2020,
+          "value": 14.338
+        },
+        {
+          "year": 2021,
+          "value": 14.689
+        },
+        {
+          "year": 2022,
+          "value": 9.723
+        },
+        {
+          "year": 2023,
+          "value": 9.459
+        },
+        {
+          "year": 2024,
+          "value": 9.137
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 779445,
     "pct_low_income": 12.9,
@@ -1043,7 +1190,7 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "All block groups in San Joaquin County, CA"
+    "geography_label": "All block groups in San Joaquin County County, CA"
   },
   "health_indicators": [
     {
@@ -1211,8 +1358,8 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:52Z"
+  "_published_at": "2026-05-07T08:08:54Z"
 }

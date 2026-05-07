@@ -416,6 +416,7 @@
         "name": "Moriah Wd",
         "pwsid": "NY1500287",
         "population_served": 3100,
+        "owner_type": "local",
         "health_based_violations_5yr": 7,
         "unresolved": true
       },
@@ -426,6 +427,7 @@
         "name": "Port Henry Wd",
         "pwsid": "NY1500290",
         "population_served": 1831,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -631,19 +633,6 @@
     {
       "kind": "city",
       "state": "ny",
-      "slug": "averill-park",
-      "name": "Averill Park",
-      "population": 1608,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 33.3,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "ny",
       "slug": "west-hurley",
       "name": "West Hurley",
       "population": 1608,
@@ -653,19 +642,32 @@
       "ej_pct_avg": 31.6,
       "relation": "peer",
       "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ny",
+      "slug": "averill-park",
+      "name": "Averill Park",
+      "population": 1608,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 33.3,
+      "relation": "peer",
+      "reason": "Comparable population"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T21:59:42Z"
+  "_published_at": "2026-05-07T10:08:50Z"
 }

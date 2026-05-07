@@ -6,7 +6,7 @@
     "name": "Modesto",
     "fips": "0648354",
     "population": 218308,
-    "county_name": "Stanislaus",
+    "county_name": "Stanislaus County",
     "county_fips": "06099"
   },
   "reporting_year": 2024,
@@ -751,6 +751,7 @@
         "name": "Riverdale Park Tract Csd",
         "pwsid": "CA5000019",
         "population_served": 610,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -761,6 +762,7 @@
         "name": "Modesto, City Of",
         "pwsid": "CA5010010",
         "population_served": 218771,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -771,6 +773,7 @@
         "name": "City Of Modesto - Salida",
         "pwsid": "CA5010005",
         "population_served": 14537,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -781,6 +784,7 @@
         "name": "City Of Modesto - Del Rio",
         "pwsid": "CA5010029",
         "population_served": 1327,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -791,6 +795,7 @@
         "name": "City Of Modesto - South Turlock",
         "pwsid": "CA5010023",
         "population_served": 1099,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -801,6 +806,7 @@
         "name": "City Of Modesto - Grayson",
         "pwsid": "CA5010033",
         "population_served": 914,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -811,6 +817,7 @@
         "name": "Hillsview Homes",
         "pwsid": "CA5010007",
         "population_served": 887,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -821,6 +828,7 @@
         "name": "Park Heights Mutual Water Co",
         "pwsid": "CA5000017",
         "population_served": 250,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -831,6 +839,7 @@
         "name": "City Of Modesto - Walnut Manor",
         "pwsid": "CA5010031",
         "population_served": 175,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -841,6 +850,7 @@
         "name": "City Of Modesto - North Turlock",
         "pwsid": "CA5010034",
         "population_served": 172,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -851,6 +861,7 @@
         "name": "City Of Modesto - Central Turlock",
         "pwsid": "CA5010035",
         "population_served": 119,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -861,6 +872,7 @@
         "name": "Morningside Mobilehome Park",
         "pwsid": "CA5000054",
         "population_served": 67,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -871,6 +883,7 @@
         "name": "Country Western Mhrv",
         "pwsid": "CA5000080",
         "population_served": 55,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -881,6 +894,7 @@
         "name": "River Road Mutual Water Company",
         "pwsid": "CA5000020",
         "population_served": 26,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -891,6 +905,7 @@
         "name": "Modesto Irrigation District",
         "pwsid": "CA5010038",
         "population_served": 23,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -911,7 +926,104 @@
       "primary_contaminant": "Tetrachloroethene"
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Uranium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (uranium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA5000019"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Uranium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (uranium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA5000019"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA5000020"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA5000020"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2022 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA5000080"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Haloacetic Acids (HAA5)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2024 (haloacetic acids (haa5)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA5010007"
+      }
+    }
+  ],
   "equity": {
     "population": 218308,
     "pct_low_income": 13.8,
@@ -1208,13 +1320,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

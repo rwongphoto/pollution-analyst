@@ -9,7 +9,7 @@
     "is_active_npl": true,
     "is_deleted": false,
     "is_federal_facility": false,
-    "county": "Mendocino County",
+    "county": "Mendocino",
     "county_slug": "mendocino",
     "city": "Ukiah",
     "city_slug": null,
@@ -84,6 +84,7 @@
         "distance_miles": 2.03,
         "place_name": "Talmage",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 400,
         "health_based_5yr": 1,
         "unresolved": true
@@ -96,6 +97,7 @@
         "distance_miles": 2.03,
         "place_name": "Talmage",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 75,
         "health_based_5yr": 1,
         "unresolved": true
@@ -108,6 +110,7 @@
         "distance_miles": 2.03,
         "place_name": "Talmage",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 2554,
         "health_based_5yr": 1,
         "unresolved": true
@@ -120,6 +123,7 @@
         "distance_miles": 2.53,
         "place_name": "Ukiah",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 250,
         "health_based_5yr": 0,
         "unresolved": true
@@ -132,6 +136,7 @@
         "distance_miles": 2.53,
         "place_name": "Ukiah",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 30,
         "health_based_5yr": 0,
         "unresolved": false
@@ -144,6 +149,7 @@
         "distance_miles": 2.53,
         "place_name": "Ukiah",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 1076,
         "health_based_5yr": 0,
         "unresolved": false
@@ -152,139 +158,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 91145,
-    "pct_low_income": 16.2,
-    "pct_people_of_color": 37.2,
-    "pct_under_5": 6.5,
-    "pct_over_64": 23.3,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 86.0,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 0.5,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 13.5,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 2.5,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 0.7,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 22.9,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 62.1,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 60.3,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 27.7,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 35.6,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 31.4,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 78.5,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 120.8
-      },
-      {
-        "label": "Ozone",
-        "score": 5.7
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 28.1
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 6.1
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 0.0
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 30.8
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 71.9
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 42.1
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 0.0
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 38.7
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 12.9
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 19.3
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Mendocino County, California (NPL site's containing county \u2014 1-mile-buffer aggregation pending tract data)"
+    "population": 2208,
+    "pct_low_income": 44.0,
+    "pct_people_of_color": 31.7,
+    "pct_under_5": 4.6,
+    "pct_over_64": 13.5,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

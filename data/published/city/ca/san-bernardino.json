@@ -6,7 +6,7 @@
     "name": "San Bernardino",
     "fips": "0665000",
     "population": 221041,
-    "county_name": "San Bernardino",
+    "county_name": "San Bernardino County",
     "county_fips": "06071"
   },
   "reporting_year": 2024,
@@ -777,6 +777,7 @@
         "name": "Csa 70-F Morongo",
         "pwsid": "CA3600226",
         "population_served": 300,
+        "owner_type": "local",
         "health_based_violations_5yr": 55,
         "unresolved": true
       },
@@ -787,6 +788,7 @@
         "name": "Csa 70 W-3 Hacienda",
         "pwsid": "CA3600114",
         "population_served": 611,
+        "owner_type": "private",
         "health_based_violations_5yr": 54,
         "unresolved": true
       },
@@ -797,6 +799,7 @@
         "name": "San Bernardino City",
         "pwsid": "CA3610039",
         "population_served": 214665,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -807,6 +810,7 @@
         "name": "San Bernardino Valley Wd",
         "pwsid": "CA3610019",
         "population_served": 109608,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -817,6 +821,7 @@
         "name": "Sbdno County Service Area 64",
         "pwsid": "CA3610121",
         "population_served": 14911,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -827,6 +832,7 @@
         "name": "Muscoy Mwc No. 1",
         "pwsid": "CA3610031",
         "population_served": 13000,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -837,6 +843,7 @@
         "name": "Sbdno County Service Area 70J",
         "pwsid": "CA3610125",
         "population_served": 12843,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -847,6 +854,7 @@
         "name": "Glen Helen Water System",
         "pwsid": "CA3600108",
         "population_served": 5900,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -857,6 +865,7 @@
         "name": "Gilbert Street Complex",
         "pwsid": "CA3600215",
         "population_served": 3833,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -867,6 +876,7 @@
         "name": "Sbdno County Service Area 70 Cedar Glen",
         "pwsid": "CA3610026",
         "population_served": 1240,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -877,6 +887,7 @@
         "name": "Csa 42 Oro Grande",
         "pwsid": "CA3600220",
         "population_served": 529,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -887,6 +898,7 @@
         "name": "Csa 70 W-4 Pioneertown",
         "pwsid": "CA3600196",
         "population_served": 470,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -920,7 +932,152 @@
       "primary_contaminant": "Chromium"
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Uranium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (uranium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3600114"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Uranium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (uranium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3600114"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2022 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3600196"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2022 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3600196"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3600215"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2021 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3600215"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Uranium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (uranium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3600226"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Uranium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (uranium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3600226"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Lead and Copper Rule violation cited in 2020 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2020,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3610031"
+      }
+    }
+  ],
   "equity": {
     "population": 221041,
     "pct_low_income": 20.2,
@@ -1217,13 +1374,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

@@ -6,7 +6,7 @@
     "name": "Soda Springs",
     "fips": "0672492",
     "population": 54,
-    "county_name": "Nevada",
+    "county_name": "Nevada County",
     "county_fips": "06057"
   },
   "reporting_year": 2024,
@@ -364,6 +364,7 @@
         "name": "Donner Summit Public Utility District",
         "pwsid": "CA2910016",
         "population_served": 310,
+        "owner_type": "local",
         "health_based_violations_5yr": 2,
         "unresolved": false
       },
@@ -374,13 +375,47 @@
         "name": "Plavada Community Association",
         "pwsid": "CA2910011",
         "population_served": 384,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 0200",
+      "summary": "Surface Water Treatment Rule health-based violation cited in 2022 (contaminant 0200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2910016"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 0200",
+      "summary": "Surface Water Treatment Rule health-based violation cited in 2022 (contaminant 0200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2910016"
+      }
+    }
+  ],
   "equity": {
     "population": 54,
     "pct_low_income": 0.0,
@@ -558,13 +593,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

@@ -5,7 +5,7 @@
     "slug": "kittitas",
     "name": "Kittitas County",
     "fips": "53037",
-    "population": 0
+    "population": 44424
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -342,7 +342,7 @@
   ],
   "flags": [],
   "equity": {
-    "population": 0,
+    "population": 44424,
     "pct_low_income": 14.5,
     "pct_people_of_color": 19.400000000000006,
     "pct_under_5": 5.0,
@@ -469,7 +469,7 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "All block groups in Kittitas County, WA"
+    "geography_label": "All block groups in Kittitas County County, WA"
   },
   "health_indicators": [
     {
@@ -557,39 +557,13 @@
     {
       "kind": "county",
       "state": "wa",
-      "slug": "columbia",
-      "name": "Columbia County",
-      "population": 0,
+      "slug": "okanogan",
+      "name": "Okanogan County",
+      "population": 42336,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 40.1,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "county",
-      "state": "wa",
-      "slug": "garfield",
-      "name": "Garfield County",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 40.2,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "county",
-      "state": "wa",
-      "slug": "san-juan",
-      "name": "San Juan County",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 27.9,
+      "ej_pct_avg": 35.2,
       "relation": "peer",
       "reason": "Comparable population"
     },
@@ -598,7 +572,7 @@
       "state": "wa",
       "slug": "pacific",
       "name": "Pacific County",
-      "population": 0,
+      "population": 23396,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -609,36 +583,62 @@
     {
       "kind": "county",
       "state": "wa",
+      "slug": "san-juan",
+      "name": "San Juan County",
+      "population": 18001,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 27.9,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "county",
+      "state": "wa",
+      "slug": "skamania",
+      "name": "Skamania County",
+      "population": 12118,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 34.6,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "county",
+      "state": "wa",
       "slug": "lincoln",
       "name": "Lincoln County",
-      "population": 0,
+      "population": 11036,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 41.4,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "county",
       "state": "wa",
-      "slug": "king",
-      "name": "King County",
-      "population": 0,
-      "facilities_count": 57,
-      "total_releases_pounds": 771048,
+      "slug": "franklin",
+      "name": "Franklin County",
+      "population": 96692,
+      "facilities_count": 8,
+      "total_releases_pounds": 143696,
       "dominant_medium": "land",
-      "ej_pct_avg": 67.8,
+      "ej_pct_avg": 61.4,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+30 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+23 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T19:25:41Z"
+  "_published_at": "2026-05-07T11:04:14Z"
 }

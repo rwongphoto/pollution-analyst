@@ -5,8 +5,8 @@
     "slug": "austin",
     "name": "Austin",
     "fips": "3203700",
-    "population": 0,
-    "county_name": "Lander",
+    "population": 16,
+    "county_name": "Lander County",
     "county_fips": "32015"
   },
   "reporting_year": 2024,
@@ -136,6 +136,7 @@
         "name": "Kingston Town Water Utilities",
         "pwsid": "NV0000265",
         "population_served": 350,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -144,14 +145,14 @@
   "superfund": [],
   "flags": [],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 16,
+    "pct_low_income": 0.0,
+    "pct_people_of_color": 0.0,
+    "pct_under_5": 0.0,
+    "pct_over_64": 0.0,
     "ej_indexes": [],
     "disparity_scores": [],
-    "source": "EJScreen ingest pending \u2014 placeholder",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Austin, Nevada (Census place block groups)"
   },
   "health_indicators": [
@@ -242,20 +243,20 @@
       "state": "nv",
       "slug": "battle-mountain",
       "name": "Battle Mountain",
-      "population": 0,
+      "population": 4187,
       "facilities_count": 1,
       "total_releases_pounds": 8620966,
       "dominant_medium": "land",
       "ej_pct_avg": 42.3,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "gerlach",
+      "name": "Gerlach",
+      "population": 21,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -268,7 +269,7 @@
       "state": "nv",
       "slug": "baker",
       "name": "Baker",
-      "population": 0,
+      "population": 21,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -279,9 +280,9 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "glenbrook",
-      "name": "Glenbrook",
-      "population": 0,
+      "slug": "mountain-city",
+      "name": "Mountain City",
+      "population": 12,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -292,41 +293,41 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "mcdermitt",
-      "name": "McDermitt",
-      "population": 0,
+      "slug": "valmy",
+      "name": "Valmy",
+      "population": 35,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "goldfield",
-      "name": "Goldfield",
-      "population": 0,
+      "slug": "lamoille",
+      "name": "Lamoille",
+      "population": 55,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

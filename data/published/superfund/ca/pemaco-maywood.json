@@ -9,7 +9,7 @@
     "is_active_npl": true,
     "is_deleted": false,
     "is_federal_facility": false,
-    "county": "Los Angeles County",
+    "county": "Los Angeles",
     "county_slug": "los-angeles",
     "city": "Bell",
     "city_slug": "bell",
@@ -556,6 +556,7 @@
         "distance_miles": 1.62,
         "place_name": "Cudahy",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 14000,
         "health_based_5yr": 0,
         "unresolved": false
@@ -568,6 +569,7 @@
         "distance_miles": 1.62,
         "place_name": "Cudahy",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 8700,
         "health_based_5yr": 0,
         "unresolved": false
@@ -580,6 +582,7 @@
         "distance_miles": 2.68,
         "place_name": "Huntington Park",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 16180,
         "health_based_5yr": 0,
         "unresolved": false
@@ -588,139 +591,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 33377,
-    "pct_low_income": 23.4,
-    "pct_people_of_color": 93.3,
-    "pct_under_5": 6.5,
-    "pct_over_64": 10.3,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 97.4,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 95.8,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 89.9,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 96.1,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 76.5,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 96.1,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 83.9,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 95.6,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 99.5,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 99.1,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 88.8,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 263.6
-      },
-      {
-        "label": "Ozone",
-        "score": 239.2
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 241.3
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 259.2
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 205.9
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 259.7
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 214.0
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 257.6
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 269.1
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 268.5
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 239.1
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Bell, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "population": 23657,
+    "pct_low_income": 43.8,
+    "pct_people_of_color": 99.1,
+    "pct_under_5": 5.0,
+    "pct_over_64": 10.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (16 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

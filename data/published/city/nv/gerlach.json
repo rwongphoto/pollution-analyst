@@ -5,8 +5,8 @@
     "slug": "gerlach",
     "name": "Gerlach",
     "fips": "3227300",
-    "population": 0,
-    "county_name": "Washoe",
+    "population": 21,
+    "county_name": "Washoe County",
     "county_fips": "32031"
   },
   "reporting_year": 2024,
@@ -487,6 +487,7 @@
         "name": "Empire Mining Company",
         "pwsid": "NV0000042",
         "population_served": 350,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -497,6 +498,7 @@
         "name": "Gerlach Gid",
         "pwsid": "NV0000071",
         "population_served": 180,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -570,14 +572,14 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 21,
+    "pct_low_income": 0.0,
+    "pct_people_of_color": 100.0,
+    "pct_under_5": 0.0,
+    "pct_over_64": 0.0,
     "ej_indexes": [],
     "disparity_scores": [],
-    "source": "EJScreen ingest pending \u2014 placeholder",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Gerlach, Nevada (Census place block groups)"
   },
   "health_indicators": [
@@ -666,61 +668,61 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "incline-village",
-      "name": "Incline Village",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 41.8,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
       "slug": "verdi",
       "name": "Verdi",
-      "population": 0,
+      "population": 1134,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 51.7,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "incline-village",
+      "name": "Incline Village",
+      "population": 9163,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 41.8,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "sun-valley",
       "name": "Sun Valley",
-      "population": 0,
+      "population": 22775,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 65.2,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "reno",
       "name": "Reno",
-      "population": 0,
+      "population": 265196,
       "facilities_count": 4,
       "total_releases_pounds": 13086,
       "dominant_medium": "land",
       "ej_pct_avg": 70.8,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "baker",
+      "name": "Baker",
+      "population": 21,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -731,9 +733,9 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "baker",
-      "name": "Baker",
-      "population": 0,
+      "slug": "austin",
+      "name": "Austin",
+      "population": 16,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -746,13 +748,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

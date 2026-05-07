@@ -9,7 +9,7 @@
     "is_active_npl": false,
     "is_deleted": false,
     "is_federal_facility": false,
-    "county": "Los Angeles County",
+    "county": "Los Angeles",
     "county_slug": "los-angeles",
     "city": "Vernon",
     "city_slug": "vernon",
@@ -35,6 +35,7 @@
         "distance_miles": 2.26,
         "place_name": "Huntington Park",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 16180,
         "health_based_5yr": 0,
         "unresolved": false
@@ -47,6 +48,7 @@
         "distance_miles": 2.92,
         "place_name": "Cudahy",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 14000,
         "health_based_5yr": 0,
         "unresolved": false
@@ -59,6 +61,7 @@
         "distance_miles": 2.92,
         "place_name": "Cudahy",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 8700,
         "health_based_5yr": 0,
         "unresolved": false
@@ -67,139 +70,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 329,
-    "pct_low_income": 0.3,
-    "pct_people_of_color": 94.5,
-    "pct_under_5": 12.5,
-    "pct_over_64": 16.7,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 96.7,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 96.0,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 92.9,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 96.1,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 78.1,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 98.8,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 62.2,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 95.6,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 99.9,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 99.7,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 91.5,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 211.8
-      },
-      {
-        "label": "Ozone",
-        "score": 194.3
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 200.9
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 209.6
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 168.1
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 214.0
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 120.1
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 207.4
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 216.2
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 216.2
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 198.7
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Vernon, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "population": 10219,
+    "pct_low_income": 49.0,
+    "pct_people_of_color": 99.0,
+    "pct_under_5": 4.9,
+    "pct_over_64": 8.7,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (7 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

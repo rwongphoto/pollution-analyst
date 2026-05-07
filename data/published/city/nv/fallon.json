@@ -5,8 +5,8 @@
     "slug": "fallon",
     "name": "Fallon",
     "fips": "3224100",
-    "population": 0,
-    "county_name": "Churchill",
+    "population": 9243,
+    "county_name": "Churchill County",
     "county_fips": "32001"
   },
   "reporting_year": 2024,
@@ -377,6 +377,7 @@
         "name": "Old River Water Company",
         "pwsid": "NV0000303",
         "population_served": 300,
+        "owner_type": "private",
         "health_based_violations_5yr": 11,
         "unresolved": true
       },
@@ -387,6 +388,7 @@
         "name": "Carson River Estates",
         "pwsid": "NV0003068",
         "population_served": 105,
+        "owner_type": "private",
         "health_based_violations_5yr": 2,
         "unresolved": true
       },
@@ -397,6 +399,7 @@
         "name": "Fallon City Of",
         "pwsid": "NV0000045",
         "population_served": 9184,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -407,6 +410,7 @@
         "name": "Fallon Naval Air Station",
         "pwsid": "NV0000350",
         "population_served": 3000,
+        "owner_type": "federal",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -417,6 +421,7 @@
         "name": "Sand Creek",
         "pwsid": "NV0000406",
         "population_served": 953,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -427,6 +432,7 @@
         "name": "Ok Mobile Home Park",
         "pwsid": "NV0000052",
         "population_served": 90,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -532,11 +538,11 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 9243,
+    "pct_low_income": 11.4,
+    "pct_people_of_color": 26.099999999999994,
+    "pct_under_5": 5.6,
+    "pct_over_64": 16.9,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -749,7 +755,7 @@
       "state": "nv",
       "slug": "west-wendover",
       "name": "West Wendover",
-      "population": 0,
+      "population": 4513,
       "facilities_count": 1,
       "total_releases_pounds": 13290,
       "dominant_medium": "land",
@@ -760,22 +766,22 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sandy-valley",
-      "name": "Sandy Valley",
-      "population": 0,
+      "slug": "spring-creek",
+      "name": "Spring Creek",
+      "population": 15062,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 26.1,
+      "ej_pct_avg": 26.8,
       "relation": "contrast",
-      "reason": "Same scale, lighter equity burden (36 pct-pt EJ gap)"
+      "reason": "Same scale, lighter equity burden (35 pct-pt EJ gap)"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "dayton",
       "name": "Dayton",
-      "population": 0,
+      "population": 15415,
       "facilities_count": 2,
       "total_releases_pounds": 21960,
       "dominant_medium": "land",
@@ -788,7 +794,7 @@
       "state": "nv",
       "slug": "sparks",
       "name": "Sparks",
-      "population": 0,
+      "population": 108025,
       "facilities_count": 5,
       "total_releases_pounds": 9548,
       "dominant_medium": "land",
@@ -801,7 +807,7 @@
       "state": "nv",
       "slug": "reno",
       "name": "Reno",
-      "population": 0,
+      "population": 265196,
       "facilities_count": 4,
       "total_releases_pounds": 13086,
       "dominant_medium": "land",
@@ -814,7 +820,7 @@
       "state": "nv",
       "slug": "north-las-vegas",
       "name": "North Las Vegas",
-      "population": 0,
+      "population": 264022,
       "facilities_count": 12,
       "total_releases_pounds": 6233,
       "dominant_medium": "land",
@@ -827,13 +833,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

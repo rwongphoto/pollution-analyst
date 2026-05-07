@@ -6,7 +6,7 @@
     "name": "St. George",
     "fips": "5062046",
     "population": 445,
-    "county_name": "Chittenden",
+    "county_name": "Chittenden County",
     "county_fips": "50007"
   },
   "reporting_year": 2024,
@@ -475,6 +475,7 @@
         "name": "St George Fire District 1",
         "pwsid": "VT0005093",
         "population_served": 42,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -648,19 +649,6 @@
     {
       "kind": "city",
       "state": "vt",
-      "slug": "alburgh",
-      "name": "Alburgh",
-      "population": 443,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "vt",
       "slug": "bakersfield",
       "name": "Bakersfield",
       "population": 443,
@@ -670,19 +658,32 @@
       "ej_pct_avg": 24.5,
       "relation": "peer",
       "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "vt",
+      "slug": "alburgh",
+      "name": "Alburgh",
+      "population": 443,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T14:13:14Z"
+  "_published_at": "2026-05-07T11:01:09Z"
 }

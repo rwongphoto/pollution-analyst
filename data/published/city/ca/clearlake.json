@@ -6,7 +6,7 @@
     "name": "Clearlake",
     "fips": "0613945",
     "population": 16612,
-    "county_name": "Lake",
+    "county_name": "Lake County",
     "county_fips": "06033"
   },
   "reporting_year": 2024,
@@ -416,6 +416,7 @@
         "name": "Highlands Mutual Water Company",
         "pwsid": "CA1710003",
         "population_served": 7772,
+        "owner_type": "private",
         "health_based_violations_5yr": 4,
         "unresolved": false
       },
@@ -426,13 +427,47 @@
         "name": "Konocti County Water District",
         "pwsid": "CA1710006",
         "population_served": 5928,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Haloacetic Acids (HAA5)",
+      "summary": "Total Trihalomethanes Rule health-based violation cited in 2021 (haloacetic acids (haa5)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1710003"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Haloacetic Acids (HAA5)",
+      "summary": "Total Trihalomethanes Rule health-based violation cited in 2021 (haloacetic acids (haa5)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1710003"
+      }
+    }
+  ],
   "equity": {
     "population": 16612,
     "pct_low_income": 24.7,
@@ -729,13 +764,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

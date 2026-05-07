@@ -9,7 +9,7 @@
     "is_active_npl": false,
     "is_deleted": true,
     "is_federal_facility": false,
-    "county": "Butte County",
+    "county": "Butte",
     "county_slug": "butte",
     "city": "Oroville",
     "city_slug": null,
@@ -116,6 +116,7 @@
         "distance_miles": 1.56,
         "place_name": "Oroville",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 28,
         "health_based_5yr": 0,
         "unresolved": false
@@ -128,6 +129,7 @@
         "distance_miles": 1.56,
         "place_name": "Oroville",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 327,
         "health_based_5yr": 1,
         "unresolved": true
@@ -140,6 +142,7 @@
         "distance_miles": 1.56,
         "place_name": "Oroville",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 180,
         "health_based_5yr": 1,
         "unresolved": true
@@ -152,6 +155,7 @@
         "distance_miles": 1.56,
         "place_name": "Oroville",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 25,
         "health_based_5yr": 0,
         "unresolved": false
@@ -160,139 +164,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 213605,
-    "pct_low_income": 18.2,
-    "pct_people_of_color": 31.200000000000003,
-    "pct_under_5": 5.8,
-    "pct_over_64": 18.2,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 99.2,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 83.1,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 42.7,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 41.1,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 5.0,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 48.2,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 58.2,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 55.7,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 42.1,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 63.2,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 64.0,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.8,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 133.5
-      },
-      {
-        "label": "Ozone",
-        "score": 120.1
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 60.4
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 58.7
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 6.4
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 59.7
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 64.0
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 26.0
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 47.2
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 81.1
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 69.2
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 1.1
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Butte County, California (NPL site's containing county \u2014 1-mile-buffer aggregation pending tract data)"
+    "population": 459,
+    "pct_low_income": 49.9,
+    "pct_people_of_color": 34.9,
+    "pct_under_5": 3.3,
+    "pct_over_64": 21.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

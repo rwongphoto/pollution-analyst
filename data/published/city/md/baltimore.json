@@ -6,14 +6,14 @@
     "name": "Baltimore",
     "fips": "2404000",
     "population": 584548,
-    "county_name": "Baltimore City",
+    "county_name": "Baltimore city",
     "county_fips": "24510"
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
   "totals": {
     "facilities_in_city": 20,
-    "utilities_serving": 4,
+    "utilities_serving": 6,
     "total_releases_pounds": 160503,
     "air_releases_pounds": 54589,
     "water_releases_pounds": 52649,
@@ -824,12 +824,12 @@
     }
   ],
   "water": {
-    "utilities_count": 4,
-    "population_served_total": 1602795,
-    "violations_5yr_total": 46,
+    "utilities_count": 6,
+    "population_served_total": 1603242,
+    "violations_5yr_total": 56,
     "health_based_5yr_total": 5,
-    "unresolved_total": 9,
-    "utilities_with_unresolved": 2,
+    "unresolved_total": 14,
+    "utilities_with_unresolved": 4,
     "utilities": [
       {
         "slug": "baltimore",
@@ -838,6 +838,7 @@
         "name": "City Of Baltimore",
         "pwsid": "MD0300002",
         "population_served": 1600000,
+        "owner_type": "local",
         "health_based_violations_5yr": 2,
         "unresolved": true
       },
@@ -848,6 +849,7 @@
         "name": "The Neighborhoods At St. Elizabeth",
         "pwsid": "MD0300004",
         "population_served": 162,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -858,6 +860,7 @@
         "name": "Keswick Multi-Care Center",
         "pwsid": "MD0300005",
         "population_served": 575,
+        "owner_type": "private",
         "health_based_violations_5yr": 2,
         "unresolved": false
       },
@@ -868,8 +871,31 @@
         "name": "Johns Hopkins University",
         "pwsid": "MD0300007",
         "population_served": 2058,
+        "owner_type": "mixed",
         "health_based_violations_5yr": 0,
         "unresolved": false
+      },
+      {
+        "slug": "sunnybrook",
+        "state": "md",
+        "state_label": "Maryland",
+        "name": "Sunnybrook",
+        "pwsid": "MD0030011",
+        "population_served": 416,
+        "owner_type": "local",
+        "health_based_violations_5yr": 0,
+        "unresolved": true
+      },
+      {
+        "slug": "phoenix",
+        "state": "md",
+        "state_label": "Maryland",
+        "name": "Phoenix",
+        "pwsid": "MD0030017",
+        "population_served": 31,
+        "owner_type": "local",
+        "health_based_violations_5yr": 0,
+        "unresolved": true
       }
     ]
   },
@@ -974,6 +1000,54 @@
           "value": 160503
         }
       ]
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MD0030011"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MD0030011"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:MD0030017"
+      }
     },
     {
       "type": "violation_event",
@@ -1368,13 +1442,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T16:44:53Z"
+  "_published_at": "2026-05-07T09:11:56Z"
 }

@@ -6,7 +6,7 @@
     "name": "Poynor",
     "fips": "4859192",
     "population": 428,
-    "county_name": "Henderson",
+    "county_name": "Henderson County",
     "county_fips": "48213"
   },
   "reporting_year": 2024,
@@ -203,6 +203,7 @@
         "name": "Poynor Community Wsc",
         "pwsid": "TX1070234",
         "population_served": 1407,
+        "owner_type": "local",
         "health_based_violations_5yr": 1,
         "unresolved": true
       }
@@ -392,19 +393,6 @@
     {
       "kind": "city",
       "state": "tx",
-      "slug": "garwood",
-      "name": "Garwood",
-      "population": 429,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 36.0,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "tx",
       "slug": "leroy",
       "name": "Leroy",
       "population": 429,
@@ -414,19 +402,32 @@
       "ej_pct_avg": null,
       "relation": "peer",
       "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "garwood",
+      "name": "Garwood",
+      "population": 429,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 36.0,
+      "relation": "peer",
+      "reason": "Comparable population"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T13:59:35Z"
+  "_published_at": "2026-05-07T10:52:03Z"
 }

@@ -6,7 +6,7 @@
     "name": "Huntington Beach",
     "fips": "0636000",
     "population": 197481,
-    "county_name": "Orange",
+    "county_name": "Orange County",
     "county_fips": "06059"
   },
   "reporting_year": 2024,
@@ -803,6 +803,7 @@
         "name": "Liberty Park Water Association",
         "pwsid": "CA3000618",
         "population_served": 85,
+        "owner_type": "private",
         "health_based_violations_5yr": 7,
         "unresolved": true
       },
@@ -813,6 +814,7 @@
         "name": "City Of Huntington Beach",
         "pwsid": "CA3010053",
         "population_served": 201000,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -823,13 +825,47 @@
         "name": "South Midway City Mutual Water Co.",
         "pwsid": "CA3000825",
         "population_served": 891,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3000618"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3000618"
+      }
+    }
+  ],
   "equity": {
     "population": 197481,
     "pct_low_income": 7.3,
@@ -1126,13 +1162,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

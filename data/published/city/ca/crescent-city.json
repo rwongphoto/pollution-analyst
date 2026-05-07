@@ -6,7 +6,7 @@
     "name": "Crescent City",
     "fips": "0617022",
     "population": 6379,
-    "county_name": "Del Norte",
+    "county_name": "Del Norte County",
     "county_fips": "06015"
   },
   "reporting_year": 2024,
@@ -182,6 +182,7 @@
         "name": "West Park Properties",
         "pwsid": "CA0800605",
         "population_served": 112,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -192,6 +193,7 @@
         "name": "Rock Creek Mutual Water Co.",
         "pwsid": "CA0800529",
         "population_served": 60,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -202,6 +204,7 @@
         "name": "City Of Crescent City",
         "pwsid": "CA0810001",
         "population_served": 17262,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -212,6 +215,7 @@
         "name": "Bertsch Ocean View Csd",
         "pwsid": "CA0810003",
         "population_served": 2570,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -222,6 +226,7 @@
         "name": "Big Rock C.S.D.",
         "pwsid": "CA0800532",
         "population_served": 650,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -232,6 +237,7 @@
         "name": "Hrc C.S.D.",
         "pwsid": "CA0800556",
         "population_served": 185,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -242,13 +248,79 @@
         "name": "Jed Smith Homeowners Assn.",
         "pwsid": "CA0800825",
         "population_served": 58,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 0200",
+      "summary": "Unresolved Surface Water Treatment Rule violation cited in 2025 (contaminant 0200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA0800529"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2020 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2020,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA0800556"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA0800605"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA0800605"
+      }
+    }
+  ],
   "equity": {
     "population": 6379,
     "pct_low_income": 22.7,
@@ -545,13 +617,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

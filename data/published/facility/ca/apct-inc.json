@@ -108,7 +108,25 @@
       "long_arc_baseline_year": 2017
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0007697372",
+      "summary": "0007697372 releases at Apct INC fell from 14k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -14446.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 14446
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 132488,
     "pct_low_income": 15.4,
@@ -123,7 +141,7 @@
   "source": {
     "label": "EPA Toxics Release Inventory",
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:57Z"
+  "_published_at": "2026-05-07T08:09:01Z"
 }

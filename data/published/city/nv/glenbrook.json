@@ -5,8 +5,8 @@
     "slug": "glenbrook",
     "name": "Glenbrook",
     "fips": "3227900",
-    "population": 0,
-    "county_name": "Douglas",
+    "population": 214,
+    "county_name": "Douglas County",
     "county_fips": "32005"
   },
   "reporting_year": 2024,
@@ -277,6 +277,7 @@
         "name": "Glenbrook Water Cooperative Inc",
         "pwsid": "NV0000356",
         "population_served": 1000,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       }
@@ -318,14 +319,14 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 214,
+    "pct_low_income": 0.0,
+    "pct_people_of_color": 0.0,
+    "pct_under_5": 0.0,
+    "pct_over_64": 48.6,
     "ej_indexes": [],
     "disparity_scores": [],
-    "source": "EJScreen ingest pending \u2014 placeholder",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Glenbrook, Nevada (Census place block groups)"
   },
   "health_indicators": [
@@ -414,61 +415,61 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "minden",
-      "name": "Minden",
-      "population": 0,
+      "slug": "zephyr-cove",
+      "name": "Zephyr Cove",
+      "population": 637,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 41.8,
+      "ej_pct_avg": 37.8,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "stateline",
       "name": "Stateline",
-      "population": 0,
+      "population": 938,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 43.0,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "minden",
+      "name": "Minden",
+      "population": 3140,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 41.8,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "gardnerville",
       "name": "Gardnerville",
-      "population": 0,
+      "population": 6147,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 42.4,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "zephyr-cove",
-      "name": "Zephyr Cove",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 37.8,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "goldfield",
+      "name": "Goldfield",
+      "population": 212,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -479,9 +480,9 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "baker",
-      "name": "Baker",
-      "population": 0,
+      "slug": "crystal-bay",
+      "name": "Crystal Bay",
+      "population": 184,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -494,13 +495,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

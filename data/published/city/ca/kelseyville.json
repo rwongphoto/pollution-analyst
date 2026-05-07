@@ -6,7 +6,7 @@
     "name": "Kelseyville",
     "fips": "0638044",
     "population": 3828,
-    "county_name": "Lake",
+    "county_name": "Lake County",
     "county_fips": "06033"
   },
   "reporting_year": 2024,
@@ -416,6 +416,7 @@
         "name": "Mt. Konocti Mutual Water Company",
         "pwsid": "CA1710014",
         "population_served": 4360,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -426,6 +427,7 @@
         "name": "Buckingham Park Water District",
         "pwsid": "CA1710011",
         "population_served": 1521,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -436,6 +438,7 @@
         "name": "Harbor View Mutual Water Company",
         "pwsid": "CA1700568",
         "population_served": 550,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -446,6 +449,7 @@
         "name": "Clear Water Mutual Water Company",
         "pwsid": "CA1700546",
         "population_served": 252,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -456,6 +460,7 @@
         "name": "Walnut Cove Mobile Estates",
         "pwsid": "CA1700674",
         "population_served": 200,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -466,13 +471,31 @@
         "name": "Innisfree Water Company",
         "pwsid": "CA1700702",
         "population_served": 56,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1700702"
+      }
+    }
+  ],
   "equity": {
     "population": 3828,
     "pct_low_income": 20.5,
@@ -769,13 +792,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

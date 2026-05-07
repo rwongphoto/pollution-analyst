@@ -5,8 +5,8 @@
     "slug": "spring-creek",
     "name": "Spring Creek",
     "fips": "3268550",
-    "population": 0,
-    "county_name": "Elko",
+    "population": 15062,
+    "county_name": "Elko County",
     "county_fips": "32007"
   },
   "reporting_year": 2024,
@@ -254,6 +254,7 @@
         "name": "Great Basin Water Co  Spring Creek",
         "pwsid": "NV0000036",
         "population_served": 9340,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -264,6 +265,7 @@
         "name": "Great Basin Water Co  Spring Creek Mhp",
         "pwsid": "NV0005027",
         "population_served": 3640,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -272,11 +274,11 @@
   "superfund": [],
   "flags": [],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 15062,
+    "pct_low_income": 8.8,
+    "pct_people_of_color": 15.0,
+    "pct_under_5": 7.5,
+    "pct_over_64": 12.0,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -489,91 +491,91 @@
       "state": "nv",
       "slug": "jackpot",
       "name": "Jackpot",
-      "population": 0,
+      "population": 1215,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "wells",
       "name": "Wells",
-      "population": 0,
+      "population": 1057,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 40.8,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "lamoille",
       "name": "Lamoille",
-      "population": 0,
+      "population": 55,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "mountain-city",
       "name": "Mountain City",
-      "population": 0,
+      "population": 12,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "boulder-city",
+      "name": "Boulder City",
+      "population": 14868,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 45.3,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "nellis-afb",
+      "name": "Nellis AFB",
+      "population": 4278,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "sparks",
-      "name": "Sparks",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 9548,
-      "dominant_medium": "land",
-      "ej_pct_avg": 72.9,
+      "ej_pct_avg": 68.4,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+46 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+42 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

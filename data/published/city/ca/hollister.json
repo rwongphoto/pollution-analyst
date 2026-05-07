@@ -6,7 +6,7 @@
     "name": "Hollister",
     "fips": "0634120",
     "population": 42093,
-    "county_name": "San Benito",
+    "county_name": "San Benito County",
     "county_fips": "06069"
   },
   "reporting_year": 2024,
@@ -627,6 +627,7 @@
         "name": "Hollister, City Of",
         "pwsid": "CA3510001",
         "population_served": 26017,
+        "owner_type": "local",
         "health_based_violations_5yr": 5,
         "unresolved": true
       },
@@ -637,6 +638,7 @@
         "name": "Rancho San Joaquin Mwc",
         "pwsid": "CA3500581",
         "population_served": 914,
+        "owner_type": "private",
         "health_based_violations_5yr": 5,
         "unresolved": true
       },
@@ -647,6 +649,7 @@
         "name": "Csa No. 31 Stonegate Ws",
         "pwsid": "CA3500006",
         "population_served": 230,
+        "owner_type": "local",
         "health_based_violations_5yr": 3,
         "unresolved": true
       },
@@ -657,6 +660,7 @@
         "name": "San Justo Mutual Water Company",
         "pwsid": "CA3500550",
         "population_served": 160,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -667,6 +671,7 @@
         "name": "Sunnyslope County Water Dist",
         "pwsid": "CA3510003",
         "population_served": 24954,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -677,6 +682,7 @@
         "name": "Hollister Ranch Estates",
         "pwsid": "CA3500904",
         "population_served": 150,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -687,6 +693,7 @@
         "name": "Rosa Morada Mutual Water Company",
         "pwsid": "CA3500549",
         "population_served": 138,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -697,6 +704,7 @@
         "name": "Ashford Highlands Mwc",
         "pwsid": "CA3500900",
         "population_served": 132,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -707,6 +715,7 @@
         "name": "Dunneville Estates Csa #50",
         "pwsid": "CA3500910",
         "population_served": 120,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -717,6 +726,7 @@
         "name": "Mcmahon Road Mutual Water Company",
         "pwsid": "CA3500510",
         "population_served": 102,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -727,6 +737,7 @@
         "name": "Comstock Mutual Water Company",
         "pwsid": "CA3500912",
         "population_served": 100,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -737,6 +748,7 @@
         "name": "Union Heights Mwc",
         "pwsid": "CA3500825",
         "population_served": 98,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -747,6 +759,7 @@
         "name": "Vineyard Estates Mwc",
         "pwsid": "CA3500579",
         "population_served": 90,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -757,6 +770,7 @@
         "name": "Creekbridge Mutual Water Company",
         "pwsid": "CA3500911",
         "population_served": 69,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -767,6 +781,7 @@
         "name": "Valenzuela Water System",
         "pwsid": "CA3500527",
         "population_served": 55,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -777,6 +792,7 @@
         "name": "Casa De Fruta Orchards",
         "pwsid": "CA3500511",
         "population_served": 53,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -787,6 +803,7 @@
         "name": "Venture Estates Mwc",
         "pwsid": "CA3500552",
         "population_served": 50,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -797,6 +814,7 @@
         "name": "Springwood Estates Mwc",
         "pwsid": "CA3500575",
         "population_served": 50,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -807,6 +825,7 @@
         "name": "Whispering Pines Inn",
         "pwsid": "CA3500810",
         "population_served": 38,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -817,13 +836,287 @@
         "name": "San Benito County Water District",
         "pwsid": "CA3510007",
         "population_served": 25,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2023 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500006"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2023 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500006"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500527"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500527"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500550"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500550"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500552"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Haloacetic Acids (HAA5)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2025 (haloacetic acids (haa5)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500552"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "E. coli",
+      "summary": "Unresolved Drinking water rule (140) violation cited in 2024 (e. coli).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500579"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500581"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500581"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2024 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500810"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2024 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500810"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Beryllium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2023 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500904"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3500911"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2024 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3510001"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Total Trihalomethanes (TTHM)",
+      "summary": "Unresolved Total Trihalomethanes Rule violation cited in 2024 (total trihalomethanes (tthm)).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3510001"
+      }
+    }
+  ],
   "equity": {
     "population": 42093,
     "pct_low_income": 9.4,
@@ -1120,13 +1413,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

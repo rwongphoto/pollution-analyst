@@ -6,7 +6,7 @@
     "name": "Rosemead",
     "fips": "0662896",
     "population": 51043,
-    "county_name": "Los Angeles",
+    "county_name": "Los Angeles County",
     "county_fips": "06037"
   },
   "reporting_year": 2024,
@@ -725,6 +725,7 @@
         "name": "Golden Sands Mobile Home Park",
         "pwsid": "CA1900649",
         "population_served": 450,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -735,6 +736,7 @@
         "name": "Cal/Am Water Company - San Marino",
         "pwsid": "CA1910139",
         "population_served": 47995,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -745,6 +747,7 @@
         "name": "San Gabriel County Wd",
         "pwsid": "CA1910144",
         "population_served": 39345,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -755,6 +758,7 @@
         "name": "Cal-Am Water Company - Duarte",
         "pwsid": "CA1910186",
         "population_served": 24773,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -765,6 +769,7 @@
         "name": "Cal/Am Water Company - Baldwin Hills",
         "pwsid": "CA1910052",
         "population_served": 20724,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -775,6 +780,7 @@
         "name": "Cal-Am Water Company - East Pasadena",
         "pwsid": "CA1910020",
         "population_served": 9949,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -785,6 +791,7 @@
         "name": "Bellflower Municipal Water System",
         "pwsid": "CA1910018",
         "population_served": 5999,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -795,13 +802,47 @@
         "name": "Amarillo Mutual Water Company",
         "pwsid": "CA1910002",
         "population_served": 3134,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1900649"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1900649"
+      }
+    }
+  ],
   "equity": {
     "population": 51043,
     "pct_low_income": 12.6,
@@ -1098,13 +1139,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

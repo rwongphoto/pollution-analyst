@@ -6,7 +6,7 @@
     "name": "Roosevelt",
     "fips": "0461300",
     "population": 0,
-    "county_name": "Gila",
+    "county_name": "Gila County",
     "county_fips": "04007"
   },
   "reporting_year": 2024,
@@ -300,6 +300,7 @@
         "name": "Quail Run Water System",
         "pwsid": "AZ0404341",
         "population_served": 300,
+        "owner_type": "mixed",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -353,13 +354,13 @@
     {
       "kind": "city",
       "state": "az",
-      "slug": "strawberry",
-      "name": "Strawberry",
-      "population": 1003,
+      "slug": "pine",
+      "name": "Pine",
+      "population": 1526,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 26.7,
+      "ej_pct_avg": 32.1,
       "relation": "peer",
       "reason": "Statewide pollution-profile peer"
     },
@@ -379,28 +380,15 @@
     {
       "kind": "city",
       "state": "az",
-      "slug": "pine",
-      "name": "Pine",
-      "population": 1526,
+      "slug": "strawberry",
+      "name": "Strawberry",
+      "population": 1003,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 32.1,
+      "ej_pct_avg": 26.7,
       "relation": "peer",
       "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "city",
-      "state": "az",
-      "slug": "supai",
-      "name": "Supai",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
     },
     {
       "kind": "city",
@@ -414,19 +402,32 @@
       "ej_pct_avg": null,
       "relation": "peer",
       "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "az",
+      "slug": "concho",
+      "name": "Concho",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T17:09:59Z"
+  "_published_at": "2026-05-07T08:01:27Z"
 }

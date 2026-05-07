@@ -6,7 +6,7 @@
     "name": "Morro Bay",
     "fips": "0649362",
     "population": 10766,
-    "county_name": "San Luis Obispo",
+    "county_name": "San Luis Obispo County",
     "county_fips": "06079"
   },
   "reporting_year": 2024,
@@ -487,6 +487,7 @@
         "name": "Rancho Colina Mobile Home Park",
         "pwsid": "CA4000653",
         "population_served": 249,
+        "owner_type": "private",
         "health_based_violations_5yr": 3,
         "unresolved": false
       },
@@ -497,13 +498,47 @@
         "name": "Morro Bay Pw Dept - Water Division",
         "pwsid": "CA4010011",
         "population_served": 13757,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Beryllium",
+      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2023 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4000653"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Beryllium",
+      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2023 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4000653"
+      }
+    }
+  ],
   "equity": {
     "population": 10766,
     "pct_low_income": 9.8,
@@ -800,13 +835,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

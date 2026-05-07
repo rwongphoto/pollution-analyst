@@ -5,8 +5,8 @@
     "slug": "golconda",
     "name": "Golconda",
     "fips": "3228500",
-    "population": 0,
-    "county_name": "Humboldt",
+    "population": 178,
+    "county_name": "Humboldt County",
     "county_fips": "32013"
   },
   "reporting_year": 2024,
@@ -454,6 +454,7 @@
         "name": "Golconda Gid",
         "pwsid": "NV0005029",
         "population_served": 210,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -536,14 +537,14 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 178,
+    "pct_low_income": 0.0,
+    "pct_people_of_color": 0.0,
+    "pct_under_5": 0.0,
+    "pct_over_64": 0.0,
     "ej_indexes": [],
     "disparity_scores": [],
-    "source": "EJScreen ingest pending \u2014 placeholder",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Golconda, Nevada (Census place block groups)"
   },
   "health_indicators": [
@@ -632,48 +633,48 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "winnemucca",
-      "name": "Winnemucca",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 43.9,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
       "slug": "orovada",
       "name": "Orovada",
-      "population": 0,
+      "population": 89,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "valmy",
       "name": "Valmy",
-      "population": 0,
+      "population": 35,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "winnemucca",
+      "name": "Winnemucca",
+      "population": 8354,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.9,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "ruth",
       "name": "Ruth",
-      "population": 0,
+      "population": 189,
       "facilities_count": 1,
       "total_releases_pounds": 14468567,
       "dominant_medium": "land",
@@ -686,7 +687,7 @@
       "state": "nv",
       "slug": "beatty",
       "name": "Beatty",
-      "population": 0,
+      "population": 596,
       "facilities_count": 1,
       "total_releases_pounds": 9418169,
       "dominant_medium": "land",
@@ -699,7 +700,7 @@
       "state": "nv",
       "slug": "battle-mountain",
       "name": "Battle Mountain",
-      "population": 0,
+      "population": 4187,
       "facilities_count": 1,
       "total_releases_pounds": 8620966,
       "dominant_medium": "land",
@@ -712,13 +713,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

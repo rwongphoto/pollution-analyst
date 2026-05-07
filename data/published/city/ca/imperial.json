@@ -6,7 +6,7 @@
     "name": "Imperial",
     "fips": "0636280",
     "population": 20430,
-    "county_name": "Imperial",
+    "county_name": "Imperial County",
     "county_fips": "06025"
   },
   "reporting_year": 2024,
@@ -487,6 +487,7 @@
         "name": "Iid Village",
         "pwsid": "CA1300588",
         "population_served": 37,
+        "owner_type": "private",
         "health_based_violations_5yr": 2,
         "unresolved": true
       },
@@ -497,6 +498,7 @@
         "name": "Imperial, City Of",
         "pwsid": "CA1310006",
         "population_served": 21591,
+        "owner_type": "local",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -507,6 +509,7 @@
         "name": "Calipatria State Prison",
         "pwsid": "CA1310800",
         "population_served": 4800,
+        "owner_type": "state",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -517,13 +520,63 @@
         "name": "Centinela State Prison",
         "pwsid": "CA1310801",
         "population_served": 4100,
+        "owner_type": "state",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Arsenic",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2020 (arsenic).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2020,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1300588"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1310006"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1310006"
+      }
+    }
+  ],
   "equity": {
     "population": 20430,
     "pct_low_income": 11.1,
@@ -820,13 +873,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

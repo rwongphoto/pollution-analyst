@@ -201,7 +201,58 @@
       "population": 3582
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "PM2.5 24-hour 98th percentile",
+      "summary": "PM2.5 24-hour 98th percentile in Trinity County reached 45.1 \u00b5g/m\u00b3 in 2013, 29% above the EPA NAAQS of 35 \u00b5g/m\u00b3.",
+      "magnitude_pct": 28.9,
+      "magnitude_abs": 10.1,
+      "baseline_year": null,
+      "recent_year": 2013,
+      "units": "\u00b5g/m\u00b3",
+      "history": [
+        {
+          "year": 2011,
+          "value": 54.9
+        },
+        {
+          "year": 2012,
+          "value": 54.0
+        },
+        {
+          "year": 2013,
+          "value": 45.1
+        }
+      ]
+    },
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "PM2.5 annual mean",
+      "summary": "PM2.5 annual mean in Trinity County reached 15.5 \u00b5g/m\u00b3 in 2013, 72% above the EPA NAAQS of 9 \u00b5g/m\u00b3.",
+      "magnitude_pct": 72.4,
+      "magnitude_abs": 6.517,
+      "baseline_year": null,
+      "recent_year": 2013,
+      "units": "\u00b5g/m\u00b3",
+      "history": [
+        {
+          "year": 2011,
+          "value": 21.101
+        },
+        {
+          "year": 2012,
+          "value": 16.489
+        },
+        {
+          "year": 2013,
+          "value": 15.517
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 15889,
     "pct_low_income": 22.0,
@@ -330,7 +381,7 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "All block groups in Trinity County, CA"
+    "geography_label": "All block groups in Trinity County County, CA"
   },
   "health_indicators": [
     {
@@ -498,8 +549,8 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:52Z"
+  "_published_at": "2026-05-07T08:08:54Z"
 }

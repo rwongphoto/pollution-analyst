@@ -5,8 +5,8 @@
     "slug": "fernley",
     "name": "Fernley",
     "fips": "3224900",
-    "population": 0,
-    "county_name": "Lyon",
+    "population": 23035,
+    "county_name": "Lyon County",
     "county_fips": "32019"
   },
   "reporting_year": 2024,
@@ -625,6 +625,7 @@
         "name": "Fernley Public Works",
         "pwsid": "NV0000062",
         "population_served": 23064,
+        "owner_type": "local",
         "health_based_violations_5yr": 1,
         "unresolved": false
       }
@@ -723,11 +724,11 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 23035,
+    "pct_low_income": 10.0,
+    "pct_people_of_color": 29.5,
+    "pct_under_5": 7.7,
+    "pct_over_64": 14.9,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -940,7 +941,7 @@
       "state": "nv",
       "slug": "dayton",
       "name": "Dayton",
-      "population": 0,
+      "population": 15415,
       "facilities_count": 2,
       "total_releases_pounds": 21960,
       "dominant_medium": "land",
@@ -953,78 +954,78 @@
       "state": "nv",
       "slug": "silver-springs",
       "name": "Silver Springs",
-      "population": 0,
+      "population": 5117,
       "facilities_count": 1,
       "total_releases_pounds": 0.1,
       "dominant_medium": "air",
       "ej_pct_avg": 46.9,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "yerington",
       "name": "Yerington",
-      "population": 0,
+      "population": 3108,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 48.3,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "stagecoach",
       "name": "Stagecoach",
-      "population": 0,
+      "population": 1904,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 44.1,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "henderson",
-      "name": "Henderson",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 1867118,
+      "slug": "elko",
+      "name": "Elko",
+      "population": 20513,
+      "facilities_count": 2,
+      "total_releases_pounds": 2044762,
       "dominant_medium": "land",
-      "ej_pct_avg": 65.2,
+      "ej_pct_avg": 49.2,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 5 facilities"
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sandy-valley",
-      "name": "Sandy Valley",
-      "population": 0,
+      "slug": "spring-creek",
+      "name": "Spring Creek",
+      "population": 15062,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 26.1,
+      "ej_pct_avg": 26.8,
       "relation": "contrast",
-      "reason": "Same scale, lighter equity burden (29 pct-pt EJ gap)"
+      "reason": "Same scale, lighter equity burden (28 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

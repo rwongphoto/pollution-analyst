@@ -770,7 +770,81 @@
       "population": 2248
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "regression",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Shasta County have risen 79% since 2010 (through 2024).",
+      "magnitude_pct": 78.8,
+      "magnitude_abs": 82997.3,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 105308
+        },
+        {
+          "year": 2011,
+          "value": 61536
+        },
+        {
+          "year": 2012,
+          "value": 91226
+        },
+        {
+          "year": 2013,
+          "value": 97174
+        },
+        {
+          "year": 2014,
+          "value": 212535
+        },
+        {
+          "year": 2015,
+          "value": 214282
+        },
+        {
+          "year": 2016,
+          "value": 283993
+        },
+        {
+          "year": 2017,
+          "value": 254562
+        },
+        {
+          "year": 2018,
+          "value": 187329
+        },
+        {
+          "year": 2019,
+          "value": 212982
+        },
+        {
+          "year": 2020,
+          "value": 201878
+        },
+        {
+          "year": 2021,
+          "value": 217834
+        },
+        {
+          "year": 2022,
+          "value": 201780
+        },
+        {
+          "year": 2023,
+          "value": 214614
+        },
+        {
+          "year": 2024,
+          "value": 188305
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 181852,
     "pct_low_income": 13.3,
@@ -899,7 +973,7 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "All block groups in Shasta County, CA"
+    "geography_label": "All block groups in Shasta County County, CA"
   },
   "health_indicators": [
     {
@@ -1067,8 +1141,8 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:52Z"
+  "_published_at": "2026-05-07T08:08:54Z"
 }

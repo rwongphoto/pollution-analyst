@@ -6,7 +6,7 @@
     "name": "Santa Ynez",
     "fips": "0670182",
     "population": 4716,
-    "county_name": "Santa Barbara",
+    "county_name": "Santa Barbara County",
     "county_fips": "06083"
   },
   "reporting_year": 2024,
@@ -487,6 +487,7 @@
         "name": "Santa Ynez River Water Cons. Dist. Id#1",
         "pwsid": "CA4210020",
         "population_served": 7022,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -497,6 +498,7 @@
         "name": "Woodstock Ranch",
         "pwsid": "CA4200807",
         "population_served": 325,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -507,6 +509,7 @@
         "name": "Santa Ynez Rancho Estates",
         "pwsid": "CA4200619",
         "population_served": 304,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -517,6 +520,7 @@
         "name": "Skyline Park",
         "pwsid": "CA4200616",
         "population_served": 295,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -527,6 +531,7 @@
         "name": "Oak Trail Estates",
         "pwsid": "CA4200881",
         "population_served": 211,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -537,6 +542,7 @@
         "name": "Meadowlark Ranches Mutual Water Company",
         "pwsid": "CA4200612",
         "population_served": 150,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -547,13 +553,31 @@
         "name": "Oak Trail Ranch",
         "pwsid": "CA4200802",
         "population_served": 102,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4200612"
+      }
+    }
+  ],
   "equity": {
     "population": 4716,
     "pct_low_income": 11.7,
@@ -850,13 +874,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

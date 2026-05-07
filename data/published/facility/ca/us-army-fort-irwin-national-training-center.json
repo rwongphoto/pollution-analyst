@@ -400,7 +400,163 @@
       "long_arc_baseline_year": 2010
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Nitrate compounds (water dissociable; reportable only when in aqueous solution)",
+      "summary": "Nitrate compounds (water dissociable; reportable only when in aqueous solution) releases at US Army Fort Irwin National Training Center rose from 26k lb to 78k lb (3.0\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 202.0,
+      "magnitude_abs": 52013.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 90225
+        },
+        {
+          "year": 2011,
+          "value": 70173
+        },
+        {
+          "year": 2012,
+          "value": 38779
+        },
+        {
+          "year": 2013,
+          "value": 172995
+        },
+        {
+          "year": 2014,
+          "value": 15689
+        },
+        {
+          "year": 2017,
+          "value": 120000
+        },
+        {
+          "year": 2018,
+          "value": 184248
+        },
+        {
+          "year": 2019,
+          "value": 174615
+        },
+        {
+          "year": 2020,
+          "value": 81634
+        },
+        {
+          "year": 2021,
+          "value": 81634
+        },
+        {
+          "year": 2022,
+          "value": 98057
+        },
+        {
+          "year": 2023,
+          "value": 25751
+        },
+        {
+          "year": 2024,
+          "value": 77764
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Copper",
+      "summary": "Copper releases at US Army Fort Irwin National Training Center rose from 35k lb to 64k lb between 2023 and 2024.",
+      "magnitude_pct": 81.8,
+      "magnitude_abs": 28864.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 57946
+        },
+        {
+          "year": 2011,
+          "value": 57433
+        },
+        {
+          "year": 2012,
+          "value": 72034
+        },
+        {
+          "year": 2013,
+          "value": 45267
+        },
+        {
+          "year": 2014,
+          "value": 54464
+        },
+        {
+          "year": 2015,
+          "value": 45017
+        },
+        {
+          "year": 2016,
+          "value": 35033
+        },
+        {
+          "year": 2017,
+          "value": 35739
+        },
+        {
+          "year": 2018,
+          "value": 30782
+        },
+        {
+          "year": 2019,
+          "value": 30565
+        },
+        {
+          "year": 2020,
+          "value": 155559
+        },
+        {
+          "year": 2021,
+          "value": 11703
+        },
+        {
+          "year": 2022,
+          "value": 103929
+        },
+        {
+          "year": 2023,
+          "value": 35302
+        },
+        {
+          "year": 2024,
+          "value": 64166
+        }
+      ]
+    },
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0000055630",
+      "summary": "0000055630 releases at US Army Fort Irwin National Training Center fell from 22k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -21679.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 21679
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 2180563,
     "pct_low_income": 13.8,
@@ -410,12 +566,12 @@
     "ej_indexes": [],
     "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year), county-level fallback",
-    "geography_label": "San Bernardino County, CA (no Census block groups within 3 miles \u2014 falling back to containing county)"
+    "geography_label": "San Bernardino County County, CA (no Census block groups within 3 miles \u2014 falling back to containing county)"
   },
   "source": {
     "label": "EPA Toxics Release Inventory",
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:56Z"
+  "_published_at": "2026-05-07T08:09:00Z"
 }

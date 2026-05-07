@@ -5,8 +5,8 @@
     "slug": "goldfield",
     "name": "Goldfield",
     "fips": "3228900",
-    "population": 0,
-    "county_name": "Esmeralda",
+    "population": 212,
+    "county_name": "Esmeralda County",
     "county_fips": "32009"
   },
   "reporting_year": 2024,
@@ -136,6 +136,7 @@
         "name": "Goldfield Town Water",
         "pwsid": "NV0000072",
         "population_served": 350,
+        "owner_type": "local",
         "health_based_violations_5yr": 4,
         "unresolved": false
       },
@@ -146,6 +147,7 @@
         "name": "Silver Peak Water System",
         "pwsid": "NV0000363",
         "population_served": 138,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -203,14 +205,14 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 212,
+    "pct_low_income": 11.7,
+    "pct_people_of_color": 32.099999999999994,
+    "pct_under_5": 0.0,
+    "pct_over_64": 39.2,
     "ej_indexes": [],
     "disparity_scores": [],
-    "source": "EJScreen ingest pending \u2014 placeholder",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Goldfield, Nevada (Census place block groups)"
   },
   "health_indicators": [
@@ -299,93 +301,93 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "baker",
-      "name": "Baker",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
       "slug": "glenbrook",
       "name": "Glenbrook",
-      "population": 0,
+      "population": 214,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
       "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "crystal-bay",
+      "name": "Crystal Bay",
+      "population": 184,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "eureka",
+      "name": "Eureka",
+      "population": 315,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "orovada",
+      "name": "Orovada",
+      "population": 89,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "mcdermitt",
       "name": "McDermitt",
-      "population": 0,
+      "population": 78,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "winnemucca",
-      "name": "Winnemucca",
-      "population": 0,
+      "slug": "zephyr-cove",
+      "name": "Zephyr Cove",
+      "population": 637,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 43.9,
+      "ej_pct_avg": 37.8,
       "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "jackpot",
-      "name": "Jackpot",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

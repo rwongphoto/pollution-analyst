@@ -9,7 +9,7 @@
     "is_active_npl": false,
     "is_deleted": true,
     "is_federal_facility": false,
-    "county": "Orange County",
+    "county": "Orange",
     "county_slug": "orange",
     "city": "Westminster",
     "city_slug": "westminster",
@@ -35,6 +35,7 @@
         "distance_miles": 0.39,
         "place_name": "Westminster",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 1305,
         "health_based_5yr": 0,
         "unresolved": false
@@ -47,6 +48,7 @@
         "distance_miles": 0.93,
         "place_name": "Midway City",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 2000,
         "health_based_5yr": 0,
         "unresolved": false
@@ -55,139 +57,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 90638,
-    "pct_low_income": 15.7,
-    "pct_people_of_color": 79.2,
-    "pct_under_5": 5.0,
-    "pct_over_64": 17.3,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 95.5,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 94.0,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 87.6,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 91.4,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 76.8,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 96.3,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 60.6,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 56.5,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 93.8,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 96.2,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 82.3,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 198.6
-      },
-      {
-        "label": "Ozone",
-        "score": 164.1
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 180.2
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 188.2
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 157.6
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 199.1
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 101.9
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 100.1
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 191.2
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 199.3
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 166.9
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Westminster, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "population": 24157,
+    "pct_low_income": 44.8,
+    "pct_people_of_color": 79.9,
+    "pct_under_5": 4.3,
+    "pct_over_64": 17.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (13 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

@@ -5,8 +5,8 @@
     "slug": "pioche",
     "name": "Pioche",
     "fips": "3257400",
-    "population": 0,
-    "county_name": "Lincoln",
+    "population": 1111,
+    "county_name": "Lincoln County",
     "county_fips": "32017"
   },
   "reporting_year": 2024,
@@ -136,6 +136,7 @@
         "name": "Pioche Public Utilities Castleton",
         "pwsid": "NV0000187",
         "population_served": 60,
+        "owner_type": "local",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -146,6 +147,7 @@
         "name": "Pioche Public Utilities",
         "pwsid": "NV0000186",
         "population_served": 700,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -219,14 +221,14 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 1111,
+    "pct_low_income": 10.8,
+    "pct_people_of_color": 26.099999999999994,
+    "pct_under_5": 1.3,
+    "pct_over_64": 16.6,
     "ej_indexes": [],
     "disparity_scores": [],
-    "source": "EJScreen ingest pending \u2014 placeholder",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Pioche, Nevada (Census place block groups)"
   },
   "health_indicators": [
@@ -317,7 +319,7 @@
       "state": "nv",
       "slug": "panaca",
       "name": "Panaca",
-      "population": 0,
+      "population": 1039,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -330,7 +332,7 @@
       "state": "nv",
       "slug": "alamo",
       "name": "Alamo",
-      "population": 0,
+      "population": 1019,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -343,7 +345,7 @@
       "state": "nv",
       "slug": "caliente",
       "name": "Caliente",
-      "population": 0,
+      "population": 840,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -354,35 +356,35 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "baker",
-      "name": "Baker",
-      "population": 0,
+      "slug": "verdi",
+      "name": "Verdi",
+      "population": 1134,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 51.7,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "glenbrook",
-      "name": "Glenbrook",
-      "population": 0,
+      "slug": "wells",
+      "name": "Wells",
+      "population": 1057,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 40.8,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "mcdermitt",
-      "name": "McDermitt",
-      "population": 0,
+      "slug": "jackpot",
+      "name": "Jackpot",
+      "population": 1215,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -395,13 +397,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

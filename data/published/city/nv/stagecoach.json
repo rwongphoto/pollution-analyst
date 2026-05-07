@@ -5,8 +5,8 @@
     "slug": "stagecoach",
     "name": "Stagecoach",
     "fips": "3268800",
-    "population": 0,
-    "county_name": "Lyon",
+    "population": 1904,
+    "county_name": "Lyon County",
     "county_fips": "32019"
   },
   "reporting_year": 2024,
@@ -270,6 +270,7 @@
         "name": "Stagecoach Gid",
         "pwsid": "NV0000224",
         "population_served": 1628,
+        "owner_type": "local",
         "health_based_violations_5yr": 6,
         "unresolved": true
       }
@@ -311,11 +312,11 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 1904,
+    "pct_low_income": 11.4,
+    "pct_people_of_color": 10.900000000000006,
+    "pct_under_5": 3.3,
+    "pct_over_64": 25.8,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -528,7 +529,7 @@
       "state": "nv",
       "slug": "yerington",
       "name": "Yerington",
-      "population": 0,
+      "population": 3108,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -541,7 +542,7 @@
       "state": "nv",
       "slug": "silver-springs",
       "name": "Silver Springs",
-      "population": 0,
+      "population": 5117,
       "facilities_count": 1,
       "total_releases_pounds": 0.1,
       "dominant_medium": "air",
@@ -554,65 +555,65 @@
       "state": "nv",
       "slug": "dayton",
       "name": "Dayton",
-      "population": 0,
+      "population": 15415,
       "facilities_count": 2,
       "total_releases_pounds": 21960,
       "dominant_medium": "land",
       "ej_pct_avg": 48.5,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "fernley",
       "name": "Fernley",
-      "population": 0,
+      "population": 23035,
       "facilities_count": 10,
       "total_releases_pounds": 584067,
       "dominant_medium": "land",
       "ej_pct_avg": 55.2,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "sandy-valley",
+      "name": "Sandy Valley",
+      "population": 1914,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 26.1,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sparks",
-      "name": "Sparks",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 9548,
-      "dominant_medium": "land",
-      "ej_pct_avg": 72.9,
+      "slug": "nellis-afb",
+      "name": "Nellis AFB",
+      "population": 4278,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 68.4,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+29 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+24 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

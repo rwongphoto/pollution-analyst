@@ -298,7 +298,25 @@
       "long_arc_baseline_year": 2016
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "0000067561",
+      "summary": "0000067561 releases at U.S Army Sierra Army Depot fell from 10k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -10112.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 10112
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 31873,
     "pct_low_income": 15.2,
@@ -308,12 +326,12 @@
     "ej_indexes": [],
     "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year), county-level fallback",
-    "geography_label": "Lassen County, CA (no Census block groups within 3 miles \u2014 falling back to containing county)"
+    "geography_label": "Lassen County County, CA (no Census block groups within 3 miles \u2014 falling back to containing county)"
   },
   "source": {
     "label": "EPA Toxics Release Inventory",
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:57Z"
+  "_published_at": "2026-05-07T08:09:00Z"
 }

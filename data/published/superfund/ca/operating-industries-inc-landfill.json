@@ -9,7 +9,7 @@
     "is_active_npl": true,
     "is_deleted": false,
     "is_federal_facility": false,
-    "county": "Los Angeles County",
+    "county": "Los Angeles",
     "county_slug": "los-angeles",
     "city": "Monterey Park",
     "city_slug": "monterey-park",
@@ -734,6 +734,7 @@
         "distance_miles": 1.27,
         "place_name": "Montebello",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 26554,
         "health_based_5yr": 0,
         "unresolved": false
@@ -746,6 +747,7 @@
         "distance_miles": 1.27,
         "place_name": "Montebello",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 15021,
         "health_based_5yr": 0,
         "unresolved": false
@@ -758,6 +760,7 @@
         "distance_miles": 1.89,
         "place_name": "Monterey Park",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 62183,
         "health_based_5yr": 1,
         "unresolved": true
@@ -770,6 +773,7 @@
         "distance_miles": 2.78,
         "place_name": "Rosemead",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 38,
         "health_based_5yr": 0,
         "unresolved": false
@@ -782,6 +786,7 @@
         "distance_miles": 2.78,
         "place_name": "Rosemead",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 450,
         "health_based_5yr": 1,
         "unresolved": true
@@ -794,6 +799,7 @@
         "distance_miles": 2.78,
         "place_name": "Rosemead",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 3134,
         "health_based_5yr": 0,
         "unresolved": false
@@ -806,6 +812,7 @@
         "distance_miles": 2.78,
         "place_name": "Rosemead",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 9949,
         "health_based_5yr": 0,
         "unresolved": false
@@ -818,6 +825,7 @@
         "distance_miles": 2.78,
         "place_name": "Rosemead",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 39345,
         "health_based_5yr": 0,
         "unresolved": false
@@ -830,6 +838,7 @@
         "distance_miles": 2.78,
         "place_name": "Rosemead",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 24773,
         "health_based_5yr": 0,
         "unresolved": false
@@ -842,6 +851,7 @@
         "distance_miles": 2.78,
         "place_name": "Rosemead",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 690,
         "health_based_5yr": 0,
         "unresolved": false
@@ -854,6 +864,7 @@
         "distance_miles": 2.78,
         "place_name": "Rosemead",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 1709,
         "health_based_5yr": 0,
         "unresolved": false
@@ -866,6 +877,7 @@
         "distance_miles": 2.78,
         "place_name": "Rosemead",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 2003,
         "health_based_5yr": 0,
         "unresolved": false
@@ -874,139 +886,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 60386,
-    "pct_low_income": 12.0,
-    "pct_people_of_color": 94.6,
-    "pct_under_5": 5.3,
-    "pct_over_64": 21.5,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 96.3,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 98.1,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 83.3,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 97.0,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 62.5,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 97.9,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 77.0,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 94.0,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 94.5,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 96.8,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 94.6,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 221.8
-      },
-      {
-        "label": "Ozone",
-        "score": 219.3
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 186.0
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 223.0
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 142.6
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 224.1
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 154.9
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 214.6
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 208.7
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 221.8
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 216.7
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Monterey Park, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "population": 6815,
+    "pct_low_income": 15.3,
+    "pct_people_of_color": 94.4,
+    "pct_under_5": 2.8,
+    "pct_over_64": 30.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (5 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

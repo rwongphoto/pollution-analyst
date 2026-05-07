@@ -5,8 +5,8 @@
     "slug": "gardnerville",
     "name": "Gardnerville",
     "fips": "3226300",
-    "population": 0,
-    "county_name": "Douglas",
+    "population": 6147,
+    "county_name": "Douglas County",
     "county_fips": "32005"
   },
   "reporting_year": 2024,
@@ -277,6 +277,7 @@
         "name": "Holbrook Station Rv And Mhp",
         "pwsid": "NV0002046",
         "population_served": 180,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -287,6 +288,7 @@
         "name": "Logan Creek Estates Gid",
         "pwsid": "NV0002050",
         "population_served": 50,
+        "owner_type": "local",
         "health_based_violations_5yr": 2,
         "unresolved": false
       },
@@ -297,6 +299,7 @@
         "name": "Gardnerville Ranchos Gid",
         "pwsid": "NV0000066",
         "population_served": 11300,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -307,6 +310,7 @@
         "name": "Gardnerville Water Company",
         "pwsid": "NV0000065",
         "population_served": 5800,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -317,6 +321,7 @@
         "name": "Riverview Mobile Home Park",
         "pwsid": "NV0000068",
         "population_served": 59,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -327,6 +332,7 @@
         "name": "Topaz Lake Water Co Inc",
         "pwsid": "NV0000070",
         "population_served": 40,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -448,11 +454,11 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 6147,
+    "pct_low_income": 9.9,
+    "pct_people_of_color": 29.099999999999994,
+    "pct_under_5": 5.9,
+    "pct_over_64": 27.3,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -663,22 +669,9 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "glenbrook",
-      "name": "Glenbrook",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
       "slug": "minden",
       "name": "Minden",
-      "population": 0,
+      "population": 3140,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -691,65 +684,78 @@
       "state": "nv",
       "slug": "stateline",
       "name": "Stateline",
-      "population": 0,
+      "population": 938,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 43.0,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "zephyr-cove",
       "name": "Zephyr Cove",
-      "population": 0,
+      "population": 637,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 37.8,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "glenbrook",
+      "name": "Glenbrook",
+      "population": 214,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "winnemucca",
+      "name": "Winnemucca",
+      "population": 8354,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.9,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sparks",
-      "name": "Sparks",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 9548,
-      "dominant_medium": "land",
-      "ej_pct_avg": 72.9,
+      "slug": "nellis-afb",
+      "name": "Nellis AFB",
+      "population": 4278,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 68.4,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+30 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+26 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

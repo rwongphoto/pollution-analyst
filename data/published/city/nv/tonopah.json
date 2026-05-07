@@ -5,8 +5,8 @@
     "slug": "tonopah",
     "name": "Tonopah",
     "fips": "3273600",
-    "population": 0,
-    "county_name": "Nye",
+    "population": 1777,
+    "county_name": "Nye County",
     "county_fips": "32023"
   },
   "reporting_year": 2024,
@@ -409,6 +409,7 @@
         "name": "Tonopah Public Utilities",
         "pwsid": "NV0000237",
         "population_served": 2853,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -450,14 +451,14 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 1777,
+    "pct_low_income": 20.1,
+    "pct_people_of_color": 26.599999999999994,
+    "pct_under_5": 0.0,
+    "pct_over_64": 37.0,
     "ej_indexes": [],
     "disparity_scores": [],
-    "source": "EJScreen ingest pending \u2014 placeholder",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Tonopah, Nevada (Census place block groups)"
   },
   "health_indicators": [
@@ -548,7 +549,7 @@
       "state": "nv",
       "slug": "beatty",
       "name": "Beatty",
-      "population": 0,
+      "population": 596,
       "facilities_count": 1,
       "total_releases_pounds": 9418169,
       "dominant_medium": "land",
@@ -561,20 +562,20 @@
       "state": "nv",
       "slug": "pahrump",
       "name": "Pahrump",
-      "population": 0,
+      "population": 44711,
       "facilities_count": 1,
       "total_releases_pounds": 1,
       "dominant_medium": "air",
       "ej_pct_avg": 30.1,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "fallon",
       "name": "Fallon",
-      "population": 0,
+      "population": 9243,
       "facilities_count": 1,
       "total_releases_pounds": 6877,
       "dominant_medium": "land",
@@ -587,7 +588,7 @@
       "state": "nv",
       "slug": "west-wendover",
       "name": "West Wendover",
-      "population": 0,
+      "population": 4513,
       "facilities_count": 1,
       "total_releases_pounds": 13290,
       "dominant_medium": "land",
@@ -600,7 +601,7 @@
       "state": "nv",
       "slug": "dayton",
       "name": "Dayton",
-      "population": 0,
+      "population": 15415,
       "facilities_count": 2,
       "total_releases_pounds": 21960,
       "dominant_medium": "land",
@@ -611,28 +612,28 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sparks",
-      "name": "Sparks",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 9548,
+      "slug": "battle-mountain",
+      "name": "Battle Mountain",
+      "population": 4187,
+      "facilities_count": 1,
+      "total_releases_pounds": 8620966,
       "dominant_medium": "land",
-      "ej_pct_avg": 72.9,
+      "ej_pct_avg": 42.3,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 5 facilities"
+      "reason": "Similar TRI land profile \u00b7 1 facility"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

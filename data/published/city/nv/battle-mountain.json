@@ -5,8 +5,8 @@
     "slug": "battle-mountain",
     "name": "Battle Mountain",
     "fips": "3204900",
-    "population": 0,
-    "county_name": "Lander",
+    "population": 4187,
+    "county_name": "Lander County",
     "county_fips": "32015"
   },
   "reporting_year": 2024,
@@ -374,6 +374,7 @@
         "name": "Lander Co Sewer And Water Dist 2  Austin",
         "pwsid": "NV0000006",
         "population_served": 350,
+        "owner_type": "local",
         "health_based_violations_5yr": 2,
         "unresolved": true
       }
@@ -488,11 +489,11 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 4187,
+    "pct_low_income": 11.2,
+    "pct_people_of_color": 36.9,
+    "pct_under_5": 8.5,
+    "pct_over_64": 12.2,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -705,20 +706,20 @@
       "state": "nv",
       "slug": "austin",
       "name": "Austin",
-      "population": 0,
+      "population": 16,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "beatty",
       "name": "Beatty",
-      "population": 0,
+      "population": 596,
       "facilities_count": 1,
       "total_releases_pounds": 9418169,
       "dominant_medium": "land",
@@ -729,22 +730,22 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sparks",
-      "name": "Sparks",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 9548,
-      "dominant_medium": "land",
-      "ej_pct_avg": 72.9,
+      "slug": "nellis-afb",
+      "name": "Nellis AFB",
+      "population": 4278,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 68.4,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+31 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+26 pct-pt EJ gap)"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "ruth",
       "name": "Ruth",
-      "population": 0,
+      "population": 189,
       "facilities_count": 1,
       "total_releases_pounds": 14468567,
       "dominant_medium": "land",
@@ -755,26 +756,26 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "golconda",
-      "name": "Golconda",
-      "population": 0,
+      "slug": "elko",
+      "name": "Elko",
+      "population": 20513,
       "facilities_count": 2,
-      "total_releases_pounds": 15139218,
+      "total_releases_pounds": 2044762,
       "dominant_medium": "land",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 49.2,
       "relation": "peer",
       "reason": "Similar TRI land profile \u00b7 2 facilities"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "elko",
-      "name": "Elko",
-      "population": 0,
+      "slug": "golconda",
+      "name": "Golconda",
+      "population": 178,
       "facilities_count": 2,
-      "total_releases_pounds": 2044762,
+      "total_releases_pounds": 15139218,
       "dominant_medium": "land",
-      "ej_pct_avg": 49.2,
+      "ej_pct_avg": null,
       "relation": "peer",
       "reason": "Similar TRI land profile \u00b7 2 facilities"
     }
@@ -783,13 +784,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

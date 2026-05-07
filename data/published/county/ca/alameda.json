@@ -898,7 +898,81 @@
       "population": 69502
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "regression",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Alameda County have more than doubled since 2010 (through 2024).",
+      "magnitude_pct": 532.3,
+      "magnitude_abs": 2863093.8,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 537898
+        },
+        {
+          "year": 2011,
+          "value": 415558
+        },
+        {
+          "year": 2012,
+          "value": 405921
+        },
+        {
+          "year": 2013,
+          "value": 639852
+        },
+        {
+          "year": 2014,
+          "value": 729616
+        },
+        {
+          "year": 2015,
+          "value": 611941
+        },
+        {
+          "year": 2016,
+          "value": 814956
+        },
+        {
+          "year": 2017,
+          "value": 800349
+        },
+        {
+          "year": 2018,
+          "value": 1074665
+        },
+        {
+          "year": 2019,
+          "value": 1153238
+        },
+        {
+          "year": 2020,
+          "value": 1209759
+        },
+        {
+          "year": 2021,
+          "value": 1838728
+        },
+        {
+          "year": 2022,
+          "value": 2327269
+        },
+        {
+          "year": 2023,
+          "value": 2804150
+        },
+        {
+          "year": 2024,
+          "value": 3400992
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 1663823,
     "pct_low_income": 9.2,
@@ -1027,7 +1101,7 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "All block groups in Alameda County, CA"
+    "geography_label": "All block groups in Alameda County County, CA"
   },
   "health_indicators": [
     {
@@ -1195,8 +1269,8 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:52Z"
+  "_published_at": "2026-05-07T08:08:54Z"
 }

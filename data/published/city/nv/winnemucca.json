@@ -5,8 +5,8 @@
     "slug": "winnemucca",
     "name": "Winnemucca",
     "fips": "3284800",
-    "population": 0,
-    "county_name": "Humboldt",
+    "population": 8354,
+    "county_name": "Humboldt County",
     "county_fips": "32013"
   },
   "reporting_year": 2024,
@@ -203,6 +203,7 @@
         "name": "Mcdermitt Water System",
         "pwsid": "NV0000162",
         "population_served": 200,
+        "owner_type": "local",
         "health_based_violations_5yr": 7,
         "unresolved": false
       },
@@ -213,6 +214,7 @@
         "name": "Winnemucca City Of",
         "pwsid": "NV0000248",
         "population_served": 8518,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -223,6 +225,7 @@
         "name": "Gold Country Estates",
         "pwsid": "NV0003079",
         "population_served": 1695,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -233,6 +236,7 @@
         "name": "Star City Properties",
         "pwsid": "NV0000252",
         "population_served": 285,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -370,11 +374,11 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 8354,
+    "pct_low_income": 12.4,
+    "pct_people_of_color": 35.099999999999994,
+    "pct_under_5": 9.3,
+    "pct_over_64": 15.2,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -587,76 +591,76 @@
       "state": "nv",
       "slug": "orovada",
       "name": "Orovada",
-      "population": 0,
+      "population": 89,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "valmy",
       "name": "Valmy",
-      "population": 0,
+      "population": 35,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "golconda",
       "name": "Golconda",
-      "population": 0,
+      "population": 178,
       "facilities_count": 2,
       "total_releases_pounds": 15139218,
       "dominant_medium": "land",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "incline-village",
+      "name": "Incline Village",
+      "population": 9163,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 41.8,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sparks",
-      "name": "Sparks",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 9548,
-      "dominant_medium": "land",
-      "ej_pct_avg": 72.9,
+      "slug": "nellis-afb",
+      "name": "Nellis AFB",
+      "population": 4278,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 68.4,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+29 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+24 pct-pt EJ gap)"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "baker",
-      "name": "Baker",
-      "population": 0,
+      "slug": "gardnerville",
+      "name": "Gardnerville",
+      "population": 6147,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 42.4,
       "relation": "peer",
       "reason": "Comparable population"
     }
@@ -665,13 +669,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

@@ -1049,7 +1049,154 @@
       "population": 786
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "Ozone 8-hour 4th-highest daily max",
+      "summary": "Ozone 8-hour 4th-highest daily max in Fresno County reached 0.083 ppm in 2024, 18% above the EPA NAAQS of 0.07 ppm.",
+      "magnitude_pct": 18.0,
+      "magnitude_abs": 0.013,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": "ppm",
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.103
+        },
+        {
+          "year": 2011,
+          "value": 0.092
+        },
+        {
+          "year": 2012,
+          "value": 0.082
+        },
+        {
+          "year": 2013,
+          "value": 0.086
+        },
+        {
+          "year": 2014,
+          "value": 0.087
+        },
+        {
+          "year": 2015,
+          "value": 0.086
+        },
+        {
+          "year": 2016,
+          "value": 0.087
+        },
+        {
+          "year": 2017,
+          "value": 0.087
+        },
+        {
+          "year": 2018,
+          "value": 0.083
+        },
+        {
+          "year": 2019,
+          "value": 0.076
+        },
+        {
+          "year": 2020,
+          "value": 0.083
+        },
+        {
+          "year": 2021,
+          "value": 0.084
+        },
+        {
+          "year": 2022,
+          "value": 0.075
+        },
+        {
+          "year": 2023,
+          "value": 0.078
+        },
+        {
+          "year": 2024,
+          "value": 0.083
+        }
+      ]
+    },
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "PM2.5 annual mean",
+      "summary": "PM2.5 annual mean in Fresno County reached 10.1 \u00b5g/m\u00b3 in 2024, 12% above the EPA NAAQS of 9 \u00b5g/m\u00b3.",
+      "magnitude_pct": 11.8,
+      "magnitude_abs": 1.063,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": "\u00b5g/m\u00b3",
+      "history": [
+        {
+          "year": 2010,
+          "value": 20.619
+        },
+        {
+          "year": 2011,
+          "value": 16.157
+        },
+        {
+          "year": 2012,
+          "value": 18.343
+        },
+        {
+          "year": 2013,
+          "value": 15.859
+        },
+        {
+          "year": 2014,
+          "value": 13.066
+        },
+        {
+          "year": 2015,
+          "value": 13.105
+        },
+        {
+          "year": 2016,
+          "value": 10.792
+        },
+        {
+          "year": 2017,
+          "value": 12.098
+        },
+        {
+          "year": 2018,
+          "value": 14.066
+        },
+        {
+          "year": 2019,
+          "value": 8.841
+        },
+        {
+          "year": 2020,
+          "value": 16.727
+        },
+        {
+          "year": 2021,
+          "value": 13.411
+        },
+        {
+          "year": 2022,
+          "value": 10.906
+        },
+        {
+          "year": 2023,
+          "value": 9.35
+        },
+        {
+          "year": 2024,
+          "value": 10.063
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 1008280,
     "pct_low_income": 19.5,
@@ -1178,7 +1325,7 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "All block groups in Fresno County, CA"
+    "geography_label": "All block groups in Fresno County County, CA"
   },
   "health_indicators": [
     {
@@ -1346,8 +1493,8 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:52Z"
+  "_published_at": "2026-05-07T08:08:54Z"
 }

@@ -5,8 +5,8 @@
     "slug": "jackpot",
     "name": "Jackpot",
     "fips": "3236500",
-    "population": 0,
-    "county_name": "Elko",
+    "population": 1215,
+    "county_name": "Elko County",
     "county_fips": "32007"
   },
   "reporting_year": 2024,
@@ -254,6 +254,7 @@
         "name": "Jackpot Water System",
         "pwsid": "NV0000088",
         "population_served": 1240,
+        "owner_type": "local",
         "health_based_violations_5yr": 1,
         "unresolved": true
       }
@@ -295,14 +296,14 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 1215,
+    "pct_low_income": 5.2,
+    "pct_people_of_color": 82.8,
+    "pct_under_5": 9.8,
+    "pct_over_64": 9.3,
     "ej_indexes": [],
     "disparity_scores": [],
-    "source": "EJScreen ingest pending \u2014 placeholder",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Jackpot, Nevada (Census place block groups)"
   },
   "health_indicators": [
@@ -393,7 +394,7 @@
       "state": "nv",
       "slug": "wells",
       "name": "Wells",
-      "population": 0,
+      "population": 1057,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -406,59 +407,59 @@
       "state": "nv",
       "slug": "spring-creek",
       "name": "Spring Creek",
-      "population": 0,
+      "population": 15062,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 26.8,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "lamoille",
       "name": "Lamoille",
-      "population": 0,
+      "population": 55,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "mountain-city",
       "name": "Mountain City",
-      "population": 0,
+      "population": 12,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "verdi",
+      "name": "Verdi",
+      "population": 1134,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 51.7,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "baker",
-      "name": "Baker",
-      "population": 0,
+      "slug": "pioche",
+      "name": "Pioche",
+      "population": 1111,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -471,13 +472,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

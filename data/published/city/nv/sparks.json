@@ -5,8 +5,8 @@
     "slug": "sparks",
     "name": "Sparks",
     "fips": "3268400",
-    "population": 0,
-    "county_name": "Washoe",
+    "population": 108025,
+    "county_name": "Washoe County",
     "county_fips": "32031"
   },
   "reporting_year": 2024,
@@ -777,6 +777,7 @@
         "name": "Alpine Mobile Home Park",
         "pwsid": "NV0000200",
         "population_served": 35,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -785,11 +786,11 @@
   "superfund": [],
   "flags": [],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 108025,
+    "pct_low_income": 8.5,
+    "pct_people_of_color": 45.9,
+    "pct_under_5": 6.8,
+    "pct_over_64": 15.5,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -1002,7 +1003,7 @@
       "state": "nv",
       "slug": "reno",
       "name": "Reno",
-      "population": 0,
+      "population": 265196,
       "facilities_count": 4,
       "total_releases_pounds": 13086,
       "dominant_medium": "land",
@@ -1013,48 +1014,48 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "gerlach",
-      "name": "Gerlach",
-      "population": 0,
+      "slug": "sun-valley",
+      "name": "Sun Valley",
+      "population": 22775,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 65.2,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "incline-village",
       "name": "Incline Village",
-      "population": 0,
+      "population": 9163,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 41.8,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "verdi",
       "name": "Verdi",
-      "population": 0,
+      "population": 1134,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 51.7,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "north-las-vegas",
       "name": "North Las Vegas",
-      "population": 0,
+      "population": 264022,
       "facilities_count": 12,
       "total_releases_pounds": 6233,
       "dominant_medium": "land",
@@ -1065,28 +1066,28 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sandy-valley",
-      "name": "Sandy Valley",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 26.1,
+      "slug": "pahrump",
+      "name": "Pahrump",
+      "population": 44711,
+      "facilities_count": 1,
+      "total_releases_pounds": 1,
+      "dominant_medium": "air",
+      "ej_pct_avg": 30.1,
       "relation": "contrast",
-      "reason": "Same scale, lighter equity burden (47 pct-pt EJ gap)"
+      "reason": "Same scale, lighter equity burden (43 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

@@ -9,7 +9,7 @@
     "is_active_npl": true,
     "is_deleted": false,
     "is_federal_facility": true,
-    "county": "Sacramento County",
+    "county": "Sacramento",
     "county_slug": "sacramento",
     "city": "McClellan Park",
     "city_slug": "mcclellan-park",
@@ -2918,6 +2918,7 @@
         "distance_miles": 1.67,
         "place_name": "North Highlands",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 700,
         "health_based_5yr": 0,
         "unresolved": true
@@ -2930,6 +2931,7 @@
         "distance_miles": 1.67,
         "place_name": "North Highlands",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 262,
         "health_based_5yr": 0,
         "unresolved": true
@@ -2942,6 +2944,7 @@
         "distance_miles": 2.97,
         "place_name": "Rio Linda",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 15460,
         "health_based_5yr": 0,
         "unresolved": false
@@ -2951,138 +2954,19 @@
   "flags": [],
   "equity": {
     "population": 1193,
-    "pct_low_income": 45.7,
+    "pct_low_income": 80.6,
     "pct_people_of_color": 71.0,
-    "pct_under_5": 12.6,
+    "pct_under_5": 6.0,
     "pct_over_64": 2.3,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 98.5,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 85.9,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 63.5,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 70.0,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 15.2,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 85.0,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 60.0,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 99.3,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 57.0,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 84.7,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 90.5,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 295.6
-      },
-      {
-        "label": "Ozone",
-        "score": 268.4
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 187.0
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 208.1
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 45.2
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 253.3
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 159.8
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 298.6
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 168.9
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 253.3
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 271.4
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "McClellan Park, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

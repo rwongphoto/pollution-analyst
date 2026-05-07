@@ -6,7 +6,7 @@
     "name": "Imperial Beach",
     "fips": "0636294",
     "population": 26157,
-    "county_name": "San Diego",
+    "county_name": "San Diego County",
     "county_fips": "06073"
   },
   "reporting_year": 2024,
@@ -487,13 +487,47 @@
         "name": "Cal-Am Water Coronado",
         "pwsid": "CA3710001",
         "population_served": 106000,
+        "owner_type": "private",
         "health_based_violations_5yr": 2,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 8000",
+      "summary": "Revised Total Coliform Rule health-based violation cited in 2023 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3710001"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 8000",
+      "summary": "Revised Total Coliform Rule health-based violation cited in 2023 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3710001"
+      }
+    }
+  ],
   "equity": {
     "population": 26157,
     "pct_low_income": 15.3,
@@ -790,13 +824,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

@@ -5,8 +5,8 @@
     "slug": "pahrump",
     "name": "Pahrump",
     "fips": "3253800",
-    "population": 0,
-    "county_name": "Nye",
+    "population": 44711,
+    "county_name": "Nye County",
     "county_fips": "32023"
   },
   "reporting_year": 2024,
@@ -329,6 +329,7 @@
         "name": "Anchor In Mhp",
         "pwsid": "NV0005033",
         "population_served": 36,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -339,6 +340,7 @@
         "name": "Pleasant Valley",
         "pwsid": "NV0000402",
         "population_served": 110,
+        "owner_type": "private",
         "health_based_violations_5yr": 2,
         "unresolved": false
       },
@@ -349,6 +351,7 @@
         "name": "Pahrump Utility Company Inc",
         "pwsid": "NV0000926",
         "population_served": 985,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": false
       },
@@ -359,6 +362,7 @@
         "name": "Great Basin Water Company",
         "pwsid": "NV0000270",
         "population_served": 12255,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -369,6 +373,7 @@
         "name": "Mountain Falls Water System Gbwc",
         "pwsid": "NV0000920",
         "population_served": 4345,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -379,6 +384,7 @@
         "name": "Desert Utilities",
         "pwsid": "NV0000300",
         "population_served": 1086,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -389,6 +395,7 @@
         "name": "Country View Estates Gbwc",
         "pwsid": "NV0005032",
         "population_served": 1072,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -399,6 +406,7 @@
         "name": "Gabbs Water System",
         "pwsid": "NV0000063",
         "population_served": 411,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -409,6 +417,7 @@
         "name": "Desert Mirage Homeowners Association",
         "pwsid": "NV0000831",
         "population_served": 230,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -419,6 +428,7 @@
         "name": "Calvada Meadows  Gbwc",
         "pwsid": "NV0000408",
         "population_served": 112,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -429,6 +439,7 @@
         "name": "Spring Mountain Motor Sports Ranch",
         "pwsid": "NV0001093",
         "population_served": 85,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -439,6 +450,7 @@
         "name": "Rancho Vista 4",
         "pwsid": "NV0002571",
         "population_served": 50,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -449,6 +461,7 @@
         "name": "Rancho Vista 3",
         "pwsid": "NV0005039",
         "population_served": 50,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -459,6 +472,7 @@
         "name": "Chipmunk Retreat",
         "pwsid": "NV0002554",
         "population_served": 45,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -469,6 +483,7 @@
         "name": "Manhattan Town Water",
         "pwsid": "NV0000165",
         "population_served": 40,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -686,11 +701,11 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 44711,
+    "pct_low_income": 15.0,
+    "pct_people_of_color": 28.700000000000003,
+    "pct_under_5": 5.6,
+    "pct_over_64": 31.9,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -903,59 +918,33 @@
       "state": "nv",
       "slug": "tonopah",
       "name": "Tonopah",
-      "population": 0,
+      "population": 1777,
       "facilities_count": 1,
       "total_releases_pounds": 44,
       "dominant_medium": "land",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "beatty",
       "name": "Beatty",
-      "population": 0,
+      "population": 596,
       "facilities_count": 1,
       "total_releases_pounds": 9418169,
       "dominant_medium": "land",
       "ej_pct_avg": null,
       "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "silver-springs",
-      "name": "Silver Springs",
-      "population": 0,
-      "facilities_count": 1,
-      "total_releases_pounds": 0.1,
-      "dominant_medium": "air",
-      "ej_pct_avg": 46.9,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 1 facility"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "sparks",
-      "name": "Sparks",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 9548,
-      "dominant_medium": "land",
-      "ej_pct_avg": 72.9,
-      "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+43 pct-pt EJ gap)"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "enterprise",
       "name": "Enterprise",
-      "population": 0,
+      "population": 225461,
       "facilities_count": 1,
       "total_releases_pounds": 0.79,
       "dominant_medium": "air",
@@ -966,9 +955,35 @@
     {
       "kind": "city",
       "state": "nv",
+      "slug": "sparks",
+      "name": "Sparks",
+      "population": 108025,
+      "facilities_count": 5,
+      "total_releases_pounds": 9548,
+      "dominant_medium": "land",
+      "ej_pct_avg": 72.9,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+43 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "silver-springs",
+      "name": "Silver Springs",
+      "population": 5117,
+      "facilities_count": 1,
+      "total_releases_pounds": 0.1,
+      "dominant_medium": "air",
+      "ej_pct_avg": 46.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
       "slug": "las-vegas",
       "name": "Las Vegas",
-      "population": 0,
+      "population": 644835,
       "facilities_count": 5,
       "total_releases_pounds": 26,
       "dominant_medium": "air",
@@ -981,13 +996,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

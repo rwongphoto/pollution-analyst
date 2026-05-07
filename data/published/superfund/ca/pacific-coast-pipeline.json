@@ -9,7 +9,7 @@
     "is_active_npl": true,
     "is_deleted": false,
     "is_federal_facility": false,
-    "county": "Ventura County",
+    "county": "Ventura",
     "county_slug": "ventura",
     "city": "Fillmore",
     "city_slug": null,
@@ -188,6 +188,7 @@
         "distance_miles": 0.91,
         "place_name": "Fillmore",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 22,
         "health_based_5yr": 1,
         "unresolved": true
@@ -200,6 +201,7 @@
         "distance_miles": 0.91,
         "place_name": "Fillmore",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 353,
         "health_based_5yr": 0,
         "unresolved": false
@@ -212,6 +214,7 @@
         "distance_miles": 0.91,
         "place_name": "Fillmore",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 43,
         "health_based_5yr": 0,
         "unresolved": false
@@ -224,6 +227,7 @@
         "distance_miles": 0.91,
         "place_name": "Fillmore",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 16419,
         "health_based_5yr": 0,
         "unresolved": true
@@ -232,139 +236,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 842009,
-    "pct_low_income": 9.0,
-    "pct_people_of_color": 56.5,
-    "pct_under_5": 6.0,
-    "pct_over_64": 16.3,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 47.3,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 86.7,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 45.5,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 56.8,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 13.1,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 72.7,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 50.9,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 60.4,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 89.0,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 77.1,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 90.3,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 77.4,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 70.7
-      },
-      {
-        "label": "Ozone",
-        "score": 87.8
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 63.7
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 80.6
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 17.4
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 100.2
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 56.6
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 45.9
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 99.8
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 105.5
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 123.4
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 16.5
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Ventura County, California (NPL site's containing county \u2014 1-mile-buffer aggregation pending tract data)"
+    "population": 3210,
+    "pct_low_income": 45.0,
+    "pct_people_of_color": 75.0,
+    "pct_under_5": 2.6,
+    "pct_over_64": 13.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (2 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

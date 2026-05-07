@@ -925,7 +925,227 @@
       "population": 9165
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "regression",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Stanislaus County have more than doubled since 2010 (through 2024).",
+      "magnitude_pct": 166.9,
+      "magnitude_abs": 155401.2,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 93093
+        },
+        {
+          "year": 2011,
+          "value": 117953
+        },
+        {
+          "year": 2012,
+          "value": 122421
+        },
+        {
+          "year": 2013,
+          "value": 128287
+        },
+        {
+          "year": 2014,
+          "value": 162297
+        },
+        {
+          "year": 2015,
+          "value": 467049
+        },
+        {
+          "year": 2016,
+          "value": 503249
+        },
+        {
+          "year": 2017,
+          "value": 411909
+        },
+        {
+          "year": 2018,
+          "value": 381486
+        },
+        {
+          "year": 2019,
+          "value": 484714
+        },
+        {
+          "year": 2020,
+          "value": 342834
+        },
+        {
+          "year": 2021,
+          "value": 388246
+        },
+        {
+          "year": 2022,
+          "value": 552207
+        },
+        {
+          "year": 2023,
+          "value": 574701
+        },
+        {
+          "year": 2024,
+          "value": 248495
+        }
+      ]
+    },
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "Ozone 8-hour 4th-highest daily max",
+      "summary": "Ozone 8-hour 4th-highest daily max in Stanislaus County reached 0.080 ppm in 2024, 14% above the EPA NAAQS of 0.07 ppm.",
+      "magnitude_pct": 14.3,
+      "magnitude_abs": 0.01,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": "ppm",
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.088
+        },
+        {
+          "year": 2011,
+          "value": 0.081
+        },
+        {
+          "year": 2012,
+          "value": 0.084
+        },
+        {
+          "year": 2013,
+          "value": 0.077
+        },
+        {
+          "year": 2014,
+          "value": 0.081
+        },
+        {
+          "year": 2015,
+          "value": 0.084
+        },
+        {
+          "year": 2016,
+          "value": 0.083
+        },
+        {
+          "year": 2017,
+          "value": 0.084
+        },
+        {
+          "year": 2018,
+          "value": 0.081
+        },
+        {
+          "year": 2019,
+          "value": 0.079
+        },
+        {
+          "year": 2020,
+          "value": 0.079
+        },
+        {
+          "year": 2021,
+          "value": 0.08
+        },
+        {
+          "year": 2022,
+          "value": 0.074
+        },
+        {
+          "year": 2023,
+          "value": 0.075
+        },
+        {
+          "year": 2024,
+          "value": 0.08
+        }
+      ]
+    },
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "PM2.5 annual mean",
+      "summary": "PM2.5 annual mean in Stanislaus County reached 9.2 \u00b5g/m\u00b3 in 2024, 2% above the EPA NAAQS of 9 \u00b5g/m\u00b3.",
+      "magnitude_pct": 2.4,
+      "magnitude_abs": 0.213,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": "\u00b5g/m\u00b3",
+      "history": [
+        {
+          "year": 2010,
+          "value": 18.68
+        },
+        {
+          "year": 2011,
+          "value": 15.496
+        },
+        {
+          "year": 2012,
+          "value": 12.933
+        },
+        {
+          "year": 2013,
+          "value": 14.405
+        },
+        {
+          "year": 2014,
+          "value": 11.95
+        },
+        {
+          "year": 2015,
+          "value": 12.502
+        },
+        {
+          "year": 2016,
+          "value": 11.264
+        },
+        {
+          "year": 2017,
+          "value": 12.76
+        },
+        {
+          "year": 2018,
+          "value": 15.823
+        },
+        {
+          "year": 2019,
+          "value": 9.358
+        },
+        {
+          "year": 2020,
+          "value": 13.989
+        },
+        {
+          "year": 2021,
+          "value": 14.005
+        },
+        {
+          "year": 2022,
+          "value": 12.211
+        },
+        {
+          "year": 2023,
+          "value": 10.378
+        },
+        {
+          "year": 2024,
+          "value": 9.213
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 552063,
     "pct_low_income": 13.7,
@@ -1054,7 +1274,7 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "All block groups in Stanislaus County, CA"
+    "geography_label": "All block groups in Stanislaus County County, CA"
   },
   "health_indicators": [
     {
@@ -1222,8 +1442,8 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:52Z"
+  "_published_at": "2026-05-07T08:08:54Z"
 }

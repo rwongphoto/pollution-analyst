@@ -6,7 +6,7 @@
     "name": "Moreno Valley",
     "fips": "0649270",
     "population": 209578,
-    "county_name": "Riverside",
+    "county_name": "Riverside County",
     "county_fips": "06065"
   },
   "reporting_year": 2024,
@@ -690,13 +690,31 @@
         "name": "Box Springs Mutual Wc",
         "pwsid": "CA3310004",
         "population_served": 3382,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "E. coli",
+      "summary": "Unresolved Drinking water rule (140) violation cited in 2025 (e. coli).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3310004"
+      }
+    }
+  ],
   "equity": {
     "population": 209578,
     "pct_low_income": 12.9,
@@ -993,13 +1011,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

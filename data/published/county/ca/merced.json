@@ -871,7 +871,81 @@
       "population": 11986
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "Ozone 8-hour 4th-highest daily max",
+      "summary": "Ozone 8-hour 4th-highest daily max in Merced County reached 0.081 ppm in 2024, 16% above the EPA NAAQS of 0.07 ppm.",
+      "magnitude_pct": 15.7,
+      "magnitude_abs": 0.011,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": "ppm",
+      "history": [
+        {
+          "year": 2010,
+          "value": 0.103
+        },
+        {
+          "year": 2011,
+          "value": 0.082
+        },
+        {
+          "year": 2012,
+          "value": 0.079
+        },
+        {
+          "year": 2013,
+          "value": 0.083
+        },
+        {
+          "year": 2014,
+          "value": 0.082
+        },
+        {
+          "year": 2015,
+          "value": 0.083
+        },
+        {
+          "year": 2016,
+          "value": 0.082
+        },
+        {
+          "year": 2017,
+          "value": 0.078
+        },
+        {
+          "year": 2018,
+          "value": 0.079
+        },
+        {
+          "year": 2019,
+          "value": 0.072
+        },
+        {
+          "year": 2020,
+          "value": 0.079
+        },
+        {
+          "year": 2021,
+          "value": 0.079
+        },
+        {
+          "year": 2022,
+          "value": 0.072
+        },
+        {
+          "year": 2023,
+          "value": 0.075
+        },
+        {
+          "year": 2024,
+          "value": 0.081
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 282290,
     "pct_low_income": 18.5,
@@ -1000,7 +1074,7 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "All block groups in Merced County, CA"
+    "geography_label": "All block groups in Merced County County, CA"
   },
   "health_indicators": [
     {
@@ -1168,8 +1242,8 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:52Z"
+  "_published_at": "2026-05-07T08:08:54Z"
 }

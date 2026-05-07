@@ -6,7 +6,7 @@
     "name": "Twentynine Palms",
     "fips": "0680994",
     "population": 28006,
-    "county_name": "San Bernardino",
+    "county_name": "San Bernardino County",
     "county_fips": "06071"
   },
   "reporting_year": 2024,
@@ -725,6 +725,7 @@
         "name": "Twentynine Palms Water District",
         "pwsid": "CA3610049",
         "population_served": 18795,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -735,13 +736,88 @@
         "name": "Usmc - 29 Palms",
         "pwsid": "CA3610703",
         "population_served": 15248,
+        "owner_type": "federal",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Twentynine Palms have more than halved since 2010 (through 2024).",
+      "magnitude_pct": -51.2,
+      "magnitude_abs": -127351.7,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 248808
+        },
+        {
+          "year": 2011,
+          "value": 256450
+        },
+        {
+          "year": 2012,
+          "value": 322398
+        },
+        {
+          "year": 2013,
+          "value": 220677
+        },
+        {
+          "year": 2014,
+          "value": 178248
+        },
+        {
+          "year": 2015,
+          "value": 186664
+        },
+        {
+          "year": 2016,
+          "value": 241266
+        },
+        {
+          "year": 2017,
+          "value": 267556
+        },
+        {
+          "year": 2018,
+          "value": 207041
+        },
+        {
+          "year": 2019,
+          "value": 137235
+        },
+        {
+          "year": 2020,
+          "value": 164837
+        },
+        {
+          "year": 2021,
+          "value": 146663
+        },
+        {
+          "year": 2022,
+          "value": 119119
+        },
+        {
+          "year": 2023,
+          "value": 115190
+        },
+        {
+          "year": 2024,
+          "value": 121456
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 28006,
     "pct_low_income": 17.2,
@@ -1038,13 +1114,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

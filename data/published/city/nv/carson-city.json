@@ -5,7 +5,7 @@
     "slug": "carson-city",
     "name": "Carson City",
     "fips": "3209700",
-    "population": 0,
+    "population": 58249,
     "county_name": "Carson City",
     "county_fips": "32510"
   },
@@ -612,11 +612,11 @@
   "superfund": [],
   "flags": [],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 58249,
+    "pct_low_income": 11.2,
+    "pct_people_of_color": 35.7,
+    "pct_under_5": 5.6,
+    "pct_over_64": 20.6,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -829,7 +829,7 @@
       "state": "nv",
       "slug": "sunrise-manor",
       "name": "Sunrise Manor",
-      "population": 0,
+      "population": 198325,
       "facilities_count": 2,
       "total_releases_pounds": 3135,
       "dominant_medium": "air",
@@ -840,22 +840,48 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sandy-valley",
-      "name": "Sandy Valley",
-      "population": 0,
+      "slug": "spring-creek",
+      "name": "Spring Creek",
+      "population": 15062,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 26.1,
+      "ej_pct_avg": 26.8,
       "relation": "contrast",
-      "reason": "Same scale, lighter equity burden (30 pct-pt EJ gap)"
+      "reason": "Same scale, lighter equity burden (29 pct-pt EJ gap)"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "mesquite",
+      "name": "Mesquite",
+      "population": 20659,
+      "facilities_count": 1,
+      "total_releases_pounds": 39918,
+      "dominant_medium": "air",
+      "ej_pct_avg": 36.9,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "las-vegas",
+      "name": "Las Vegas",
+      "population": 644835,
+      "facilities_count": 5,
+      "total_releases_pounds": 26,
+      "dominant_medium": "air",
+      "ej_pct_avg": 63.7,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 5 facilities"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "east-valley",
       "name": "East Valley",
-      "population": 0,
+      "population": 1294,
       "facilities_count": 1,
       "total_releases_pounds": 599,
       "dominant_medium": "air",
@@ -868,37 +894,11 @@
       "state": "nv",
       "slug": "moapa-town",
       "name": "Moapa Town",
-      "population": 0,
+      "population": 775,
       "facilities_count": 1,
       "total_releases_pounds": 11927,
       "dominant_medium": "air",
       "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 1 facility"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "las-vegas",
-      "name": "Las Vegas",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 26,
-      "dominant_medium": "air",
-      "ej_pct_avg": 63.7,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 5 facilities"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "mesquite",
-      "name": "Mesquite",
-      "population": 0,
-      "facilities_count": 1,
-      "total_releases_pounds": 39918,
-      "dominant_medium": "air",
-      "ej_pct_avg": 36.9,
       "relation": "peer",
       "reason": "Similar TRI air profile \u00b7 1 facility"
     }
@@ -907,13 +907,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

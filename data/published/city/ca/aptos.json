@@ -6,7 +6,7 @@
     "name": "Aptos",
     "fips": "0602378",
     "population": 6614,
-    "county_name": "Santa Cruz",
+    "county_name": "Santa Cruz County",
     "county_fips": "06087"
   },
   "reporting_year": 2024,
@@ -431,6 +431,7 @@
         "name": "Central Water District",
         "pwsid": "CA4410018",
         "population_served": 2726,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -441,6 +442,7 @@
         "name": "Trout Gulch Mutual Water Company",
         "pwsid": "CA4400502",
         "population_served": 614,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -451,6 +453,7 @@
         "name": "Puresource Water, Inc",
         "pwsid": "CA4400598",
         "population_served": 206,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -461,6 +464,7 @@
         "name": "Pine Tree Lane Mutual Water Co",
         "pwsid": "CA4400582",
         "population_served": 80,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -471,6 +475,7 @@
         "name": "Cathedral Hills Mwc, Inc",
         "pwsid": "CA4400652",
         "population_served": 60,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -481,13 +486,31 @@
         "name": "Emerald City Mutual Water Co",
         "pwsid": "CA4400667",
         "population_served": 26,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4400652"
+      }
+    }
+  ],
   "equity": {
     "population": 6614,
     "pct_low_income": 4.3,
@@ -784,13 +807,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

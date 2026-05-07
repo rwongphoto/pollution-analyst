@@ -9,7 +9,7 @@
     "is_active_npl": false,
     "is_deleted": true,
     "is_federal_facility": false,
-    "county": "Butte County",
+    "county": "Butte",
     "county_slug": "butte",
     "city": "South Oroville",
     "city_slug": "south-oroville",
@@ -100,6 +100,7 @@
         "distance_miles": 0.94,
         "place_name": "Oroville",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 28,
         "health_based_5yr": 0,
         "unresolved": false
@@ -112,6 +113,7 @@
         "distance_miles": 0.94,
         "place_name": "Oroville",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 327,
         "health_based_5yr": 1,
         "unresolved": true
@@ -124,6 +126,7 @@
         "distance_miles": 0.94,
         "place_name": "Oroville",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 180,
         "health_based_5yr": 1,
         "unresolved": true
@@ -136,6 +139,7 @@
         "distance_miles": 0.94,
         "place_name": "Oroville",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 25,
         "health_based_5yr": 0,
         "unresolved": false
@@ -144,139 +148,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 2291,
-    "pct_low_income": 15.8,
-    "pct_people_of_color": 45.2,
-    "pct_under_5": 5.8,
-    "pct_over_64": 15.2,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 99.3,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 88.7,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 25.8,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 36.9,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 5.4,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 28.9,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 60.0,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 85.7,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 77.3,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 61.8,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 43.6,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 166.1
-      },
-      {
-        "label": "Ozone",
-        "score": 151.5
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 46.0
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 65.9
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 9.4
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 52.1
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 77.9
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 141.1
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 126.9
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 102.9
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 72.3
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "South Oroville, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "population": 2494,
+    "pct_low_income": 40.1,
+    "pct_people_of_color": 50.0,
+    "pct_under_5": 6.1,
+    "pct_over_64": 16.6,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (4 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

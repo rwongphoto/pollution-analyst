@@ -332,7 +332,45 @@
       "long_arc_baseline_year": 2010
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "surge",
+      "label": "Ammonia",
+      "summary": "Ammonia releases at National Cement CO Of California INC rose from 19k lb to 41k lb (2.1\u00d7) between 2023 and 2024.",
+      "magnitude_pct": 114.0,
+      "magnitude_abs": 21720.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2019,
+          "value": 16552
+        },
+        {
+          "year": 2020,
+          "value": 17463
+        },
+        {
+          "year": 2021,
+          "value": 20931
+        },
+        {
+          "year": 2022,
+          "value": 21822
+        },
+        {
+          "year": 2023,
+          "value": 19047
+        },
+        {
+          "year": 2024,
+          "value": 40767
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 906883,
     "pct_low_income": 19.3,
@@ -342,12 +380,12 @@
     "ej_indexes": [],
     "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year), county-level fallback",
-    "geography_label": "Kern County, CA (no Census block groups within 3 miles \u2014 falling back to containing county)"
+    "geography_label": "Kern County County, CA (no Census block groups within 3 miles \u2014 falling back to containing county)"
   },
   "source": {
     "label": "EPA Toxics Release Inventory",
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:56Z"
+  "_published_at": "2026-05-07T08:09:00Z"
 }

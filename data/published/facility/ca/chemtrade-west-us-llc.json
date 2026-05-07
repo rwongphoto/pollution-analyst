@@ -156,7 +156,25 @@
       "long_arc_baseline_year": 2010
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "MIXTURE",
+      "summary": "MIXTURE releases at Chemtrade West US LLC fell from 12k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -12460.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2023,
+          "value": 12460
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 77930,
     "pct_low_income": 36.6,
@@ -171,7 +189,7 @@
   "source": {
     "label": "EPA Toxics Release Inventory",
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:57Z"
+  "_published_at": "2026-05-07T08:09:01Z"
 }

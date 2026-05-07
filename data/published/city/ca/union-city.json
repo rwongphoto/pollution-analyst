@@ -6,7 +6,7 @@
     "name": "Union City",
     "fips": "0681204",
     "population": 69502,
-    "county_name": "Alameda",
+    "county_name": "Alameda County",
     "county_fips": "06001"
   },
   "reporting_year": 2024,
@@ -720,7 +720,81 @@
     "utilities": []
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "regression",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Union City have more than doubled since 2010 (through 2024).",
+      "magnitude_pct": 171.0,
+      "magnitude_abs": 533202.0,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 311900
+        },
+        {
+          "year": 2011,
+          "value": 251959
+        },
+        {
+          "year": 2012,
+          "value": 284839
+        },
+        {
+          "year": 2013,
+          "value": 350655
+        },
+        {
+          "year": 2014,
+          "value": 416859
+        },
+        {
+          "year": 2015,
+          "value": 355537
+        },
+        {
+          "year": 2016,
+          "value": 414935
+        },
+        {
+          "year": 2017,
+          "value": 454112
+        },
+        {
+          "year": 2018,
+          "value": 515316
+        },
+        {
+          "year": 2019,
+          "value": 434691
+        },
+        {
+          "year": 2020,
+          "value": 465608
+        },
+        {
+          "year": 2021,
+          "value": 1154502
+        },
+        {
+          "year": 2022,
+          "value": 869114
+        },
+        {
+          "year": 2023,
+          "value": 940861
+        },
+        {
+          "year": 2024,
+          "value": 845102
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 69502,
     "pct_low_income": 6.6,
@@ -1017,13 +1091,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

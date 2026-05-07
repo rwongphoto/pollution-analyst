@@ -88,7 +88,37 @@
       "long_arc_baseline_year": 2020
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "release_shift",
+      "severity": "drop",
+      "label": "N511",
+      "summary": "N511 releases at Keysight Technologies INC fell from 17k lb to 0 lb (100% lower) between 2023 and 2024.",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -16951.0,
+      "baseline_year": 2023,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2018,
+          "value": 25051
+        },
+        {
+          "year": 2021,
+          "value": 18875
+        },
+        {
+          "year": 2022,
+          "value": 16933
+        },
+        {
+          "year": 2023,
+          "value": 16951
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 73815,
     "pct_low_income": 23.2,
@@ -103,7 +133,7 @@
   "source": {
     "label": "EPA Toxics Release Inventory",
     "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:57Z"
+  "_published_at": "2026-05-07T08:09:00Z"
 }

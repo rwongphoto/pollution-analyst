@@ -6,7 +6,7 @@
     "name": "Marianna",
     "fips": "0544120",
     "population": 3575,
-    "county_name": "Lee",
+    "county_name": "Lee County",
     "county_fips": "05077"
   },
   "reporting_year": 2024,
@@ -136,6 +136,7 @@
         "name": "Lee County Water Association",
         "pwsid": "AR0000313",
         "population_served": 3770,
+        "owner_type": "local",
         "health_based_violations_5yr": 121,
         "unresolved": true
       },
@@ -146,6 +147,7 @@
         "name": "Marianna Waterworks",
         "pwsid": "AR0000310",
         "population_served": 3238,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -156,6 +158,7 @@
         "name": "Adc East Arkansas Regional",
         "pwsid": "AR0000796",
         "population_served": 1650,
+        "owner_type": "state",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -345,19 +348,6 @@
     {
       "kind": "city",
       "state": "ar",
-      "slug": "manila",
-      "name": "Manila",
-      "population": 3659,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 42.3,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "ar",
       "slug": "austin",
       "name": "Austin",
       "population": 3659,
@@ -367,19 +357,32 @@
       "ej_pct_avg": null,
       "relation": "peer",
       "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "ar",
+      "slug": "manila",
+      "name": "Manila",
+      "population": 3659,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 42.3,
+      "relation": "peer",
+      "reason": "Comparable population"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T16:52:53Z"
+  "_published_at": "2026-05-07T07:57:05Z"
 }

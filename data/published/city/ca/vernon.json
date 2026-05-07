@@ -6,7 +6,7 @@
     "name": "Vernon",
     "fips": "0682422",
     "population": 329,
-    "county_name": "Los Angeles",
+    "county_name": "Los Angeles County",
     "county_fips": "06037"
   },
   "reporting_year": 2024,
@@ -842,6 +842,7 @@
         "name": "Vernon-City, Water Dept.",
         "pwsid": "CA1910167",
         "population_served": 28112,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -862,7 +863,81 @@
       "primary_contaminant": null
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Vernon have more than halved since 2010 (through 2024).",
+      "magnitude_pct": -66.0,
+      "magnitude_abs": -154409.6,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 233894
+        },
+        {
+          "year": 2011,
+          "value": 346556
+        },
+        {
+          "year": 2012,
+          "value": 248082
+        },
+        {
+          "year": 2013,
+          "value": 188579
+        },
+        {
+          "year": 2014,
+          "value": 249039
+        },
+        {
+          "year": 2015,
+          "value": 255507
+        },
+        {
+          "year": 2016,
+          "value": 292278
+        },
+        {
+          "year": 2017,
+          "value": 1859829
+        },
+        {
+          "year": 2018,
+          "value": 414778
+        },
+        {
+          "year": 2019,
+          "value": 582507
+        },
+        {
+          "year": 2020,
+          "value": 387485
+        },
+        {
+          "year": 2021,
+          "value": 204447
+        },
+        {
+          "year": 2022,
+          "value": 96139
+        },
+        {
+          "year": 2023,
+          "value": 79867
+        },
+        {
+          "year": 2024,
+          "value": 79484
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 329,
     "pct_low_income": 0.3,
@@ -1159,13 +1234,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

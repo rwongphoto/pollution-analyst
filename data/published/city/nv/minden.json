@@ -5,8 +5,8 @@
     "slug": "minden",
     "name": "Minden",
     "fips": "3247000",
-    "population": 0,
-    "county_name": "Douglas",
+    "population": 3140,
+    "county_name": "Douglas County",
     "county_fips": "32005"
   },
   "reporting_year": 2024,
@@ -277,6 +277,7 @@
         "name": "Pinion Pines Mhp",
         "pwsid": "NV0000067",
         "population_served": 30,
+        "owner_type": "private",
         "health_based_violations_5yr": 2,
         "unresolved": false
       },
@@ -287,6 +288,7 @@
         "name": "Douglas County Carson Valley System",
         "pwsid": "NV0002216",
         "population_served": 6488,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -297,6 +299,7 @@
         "name": "Town Of Minden",
         "pwsid": "NV0000168",
         "population_served": 3500,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -307,6 +310,7 @@
         "name": "Cave Rock Skyland",
         "pwsid": "NV0000259",
         "population_served": 1267,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -317,6 +321,7 @@
         "name": "Zephyr Cove Water Utility Distr",
         "pwsid": "NV0000258",
         "population_served": 1209,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -327,6 +332,7 @@
         "name": "Fairgrounds/Sunrise Estates",
         "pwsid": "NV0002540",
         "population_served": 1011,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -337,6 +343,7 @@
         "name": "Foothill Water System",
         "pwsid": "NV0000959",
         "population_served": 346,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -347,6 +354,7 @@
         "name": "Uppaway Water System",
         "pwsid": "NV0000817",
         "population_served": 85,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -357,6 +365,7 @@
         "name": "Sierra Country Estates",
         "pwsid": "NV0000931",
         "population_served": 47,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -367,6 +376,7 @@
         "name": "Mountain View Mhp",
         "pwsid": "NV0003081",
         "population_served": 45,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -440,11 +450,11 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 3140,
+    "pct_low_income": 9.4,
+    "pct_people_of_color": 13.700000000000003,
+    "pct_under_5": 4.4,
+    "pct_over_64": 29.1,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -655,35 +665,9 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "glenbrook",
-      "name": "Glenbrook",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "stateline",
-      "name": "Stateline",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 43.0,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
       "slug": "gardnerville",
       "name": "Gardnerville",
-      "population": 0,
+      "population": 6147,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -694,54 +678,80 @@
     {
       "kind": "city",
       "state": "nv",
+      "slug": "stateline",
+      "name": "Stateline",
+      "population": 938,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.0,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
       "slug": "zephyr-cove",
       "name": "Zephyr Cove",
-      "population": 0,
+      "population": 637,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 37.8,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "glenbrook",
+      "name": "Glenbrook",
+      "population": 214,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "yerington",
+      "name": "Yerington",
+      "population": 3108,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 48.3,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sparks",
-      "name": "Sparks",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 9548,
-      "dominant_medium": "land",
-      "ej_pct_avg": 72.9,
+      "slug": "nellis-afb",
+      "name": "Nellis AFB",
+      "population": 4278,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 68.4,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+31 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+27 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

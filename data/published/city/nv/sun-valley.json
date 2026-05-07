@@ -5,8 +5,8 @@
     "slug": "sun-valley",
     "name": "Sun Valley",
     "fips": "3271600",
-    "population": 0,
-    "county_name": "Washoe",
+    "population": 22775,
+    "county_name": "Washoe County",
     "county_fips": "32031"
   },
   "reporting_year": 2024,
@@ -487,6 +487,7 @@
         "name": "Sun Valley Gid",
         "pwsid": "NV0000211",
         "population_served": 17000,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -495,11 +496,11 @@
   "superfund": [],
   "flags": [],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 22775,
+    "pct_low_income": 16.9,
+    "pct_people_of_color": 58.4,
+    "pct_under_5": 7.1,
+    "pct_over_64": 11.7,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -710,93 +711,93 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "gerlach",
-      "name": "Gerlach",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
       "slug": "incline-village",
       "name": "Incline Village",
-      "population": 0,
+      "population": 9163,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 41.8,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "verdi",
       "name": "Verdi",
-      "population": 0,
+      "population": 1134,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 51.7,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "reno",
-      "name": "Reno",
-      "population": 0,
-      "facilities_count": 4,
-      "total_releases_pounds": 13086,
-      "dominant_medium": "land",
-      "ej_pct_avg": 70.8,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "gerlach",
+      "name": "Gerlach",
+      "population": 21,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": null,
       "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "sparks",
+      "name": "Sparks",
+      "population": 108025,
+      "facilities_count": 5,
+      "total_releases_pounds": 9548,
+      "dominant_medium": "land",
+      "ej_pct_avg": 72.9,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "spring-creek",
+      "name": "Spring Creek",
+      "population": 15062,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 26.8,
+      "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sandy-valley",
-      "name": "Sandy Valley",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 26.1,
+      "slug": "pahrump",
+      "name": "Pahrump",
+      "population": 44711,
+      "facilities_count": 1,
+      "total_releases_pounds": 1,
+      "dominant_medium": "air",
+      "ej_pct_avg": 30.1,
       "relation": "contrast",
-      "reason": "Same scale, lighter equity burden (39 pct-pt EJ gap)"
+      "reason": "Same scale, lighter equity burden (35 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

@@ -5,8 +5,8 @@
     "slug": "ruth",
     "name": "Ruth",
     "fips": "3263800",
-    "population": 0,
-    "county_name": "White Pine",
+    "population": 189,
+    "county_name": "White Pine County",
     "county_fips": "32033"
   },
   "reporting_year": 2024,
@@ -442,14 +442,14 @@
   "superfund": [],
   "flags": [],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 189,
+    "pct_low_income": 20.1,
+    "pct_people_of_color": 2.5999999999999943,
+    "pct_under_5": 0.0,
+    "pct_over_64": 61.4,
     "ej_indexes": [],
     "disparity_scores": [],
-    "source": "EJScreen ingest pending \u2014 placeholder",
+    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "Ruth, Nevada (Census place block groups)"
   },
   "health_indicators": [
@@ -540,7 +540,7 @@
       "state": "nv",
       "slug": "ely",
       "name": "Ely",
-      "population": 0,
+      "population": 3957,
       "facilities_count": 2,
       "total_releases_pounds": 497522,
       "dominant_medium": "land",
@@ -551,35 +551,48 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "baker",
-      "name": "Baker",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
       "slug": "mcgill",
       "name": "McGill",
-      "population": 0,
+      "population": 879,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 34.6,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "baker",
+      "name": "Baker",
+      "population": 21,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
+      "slug": "golconda",
+      "name": "Golconda",
+      "population": 178,
+      "facilities_count": 2,
+      "total_releases_pounds": 15139218,
+      "dominant_medium": "land",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "beatty",
       "name": "Beatty",
-      "population": 0,
+      "population": 596,
       "facilities_count": 1,
       "total_releases_pounds": 9418169,
       "dominant_medium": "land",
@@ -592,39 +605,26 @@
       "state": "nv",
       "slug": "battle-mountain",
       "name": "Battle Mountain",
-      "population": 0,
+      "population": 4187,
       "facilities_count": 1,
       "total_releases_pounds": 8620966,
       "dominant_medium": "land",
       "ej_pct_avg": 42.3,
       "relation": "peer",
       "reason": "Similar TRI land profile \u00b7 1 facility"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "golconda",
-      "name": "Golconda",
-      "population": 0,
-      "facilities_count": 2,
-      "total_releases_pounds": 15139218,
-      "dominant_medium": "land",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 2 facilities"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

@@ -6,7 +6,7 @@
     "name": "Rodeo",
     "fips": "0662490",
     "population": 9334,
-    "county_name": "Contra Costa",
+    "county_name": "Contra Costa County",
     "county_fips": "06013"
   },
   "reporting_year": 2024,
@@ -733,7 +733,81 @@
     "utilities": []
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Rodeo have more than halved since 2010 (through 2024).",
+      "magnitude_pct": -53.7,
+      "magnitude_abs": -642505.9,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 1195640
+        },
+        {
+          "year": 2011,
+          "value": 899133
+        },
+        {
+          "year": 2012,
+          "value": 1098129
+        },
+        {
+          "year": 2013,
+          "value": 726119
+        },
+        {
+          "year": 2014,
+          "value": 692650
+        },
+        {
+          "year": 2015,
+          "value": 1071590
+        },
+        {
+          "year": 2016,
+          "value": 1065753
+        },
+        {
+          "year": 2017,
+          "value": 934117
+        },
+        {
+          "year": 2018,
+          "value": 721704
+        },
+        {
+          "year": 2019,
+          "value": 839718
+        },
+        {
+          "year": 2020,
+          "value": 806027
+        },
+        {
+          "year": 2021,
+          "value": 717392
+        },
+        {
+          "year": 2022,
+          "value": 787328
+        },
+        {
+          "year": 2023,
+          "value": 726450
+        },
+        {
+          "year": 2024,
+          "value": 553134
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 9334,
     "pct_low_income": 9.6,
@@ -1030,13 +1104,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

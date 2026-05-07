@@ -6,7 +6,7 @@
     "name": "Los Angeles",
     "fips": "0644000",
     "population": 3881041,
-    "county_name": "Los Angeles",
+    "county_name": "Los Angeles County",
     "county_fips": "06037"
   },
   "reporting_year": 2024,
@@ -842,6 +842,7 @@
         "name": "Los Angeles-City, Dept. Of Water & Power",
         "pwsid": "CA1910067",
         "population_served": 7751132,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -852,6 +853,7 @@
         "name": "Santa Monica-City, Water Division",
         "pwsid": "CA1910146",
         "population_served": 89947,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -862,6 +864,7 @@
         "name": "Fire Suppression Camp #19",
         "pwsid": "CA1900901",
         "population_served": 125,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -872,6 +875,7 @@
         "name": "California Conservation Camp #14",
         "pwsid": "CA1900007",
         "population_served": 107,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -882,6 +886,7 @@
         "name": "Los Angeles, City Of - Power Plant #2",
         "pwsid": "CA1900542",
         "population_served": 44,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -892,6 +897,7 @@
         "name": "Los Angeles, City Of - Power Plant #1",
         "pwsid": "CA1900555",
         "population_served": 29,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -938,7 +944,81 @@
       "primary_contaminant": null
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "regression",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Los Angeles have more than doubled since 2010 (through 2024).",
+      "magnitude_pct": 194.6,
+      "magnitude_abs": 971510.0,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 499315
+        },
+        {
+          "year": 2011,
+          "value": 366321
+        },
+        {
+          "year": 2012,
+          "value": 457101
+        },
+        {
+          "year": 2013,
+          "value": 629198
+        },
+        {
+          "year": 2014,
+          "value": 688940
+        },
+        {
+          "year": 2015,
+          "value": 658416
+        },
+        {
+          "year": 2016,
+          "value": 819565
+        },
+        {
+          "year": 2017,
+          "value": 725736
+        },
+        {
+          "year": 2018,
+          "value": 891065
+        },
+        {
+          "year": 2019,
+          "value": 999193
+        },
+        {
+          "year": 2020,
+          "value": 663196
+        },
+        {
+          "year": 2021,
+          "value": 675359
+        },
+        {
+          "year": 2022,
+          "value": 768973
+        },
+        {
+          "year": 2023,
+          "value": 1123688
+        },
+        {
+          "year": 2024,
+          "value": 1470825
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 3881041,
     "pct_low_income": 16.6,
@@ -1235,13 +1315,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

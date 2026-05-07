@@ -6,7 +6,7 @@
     "name": "Nevada City",
     "fips": "0650874",
     "population": 3142,
-    "county_name": "Nevada",
+    "county_name": "Nevada County",
     "county_fips": "06057"
   },
   "reporting_year": 2024,
@@ -364,6 +364,7 @@
         "name": "City Of Nevada City",
         "pwsid": "CA2910002",
         "population_served": 3148,
+        "owner_type": "local",
         "health_based_violations_5yr": 3,
         "unresolved": false
       },
@@ -374,6 +375,7 @@
         "name": "Ananda Village",
         "pwsid": "CA2900562",
         "population_served": 222,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -384,6 +386,7 @@
         "name": "Washington Ridge C.C.",
         "pwsid": "CA2910013",
         "population_served": 62,
+        "owner_type": "state",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -394,13 +397,63 @@
         "name": "Yulica",
         "pwsid": "CA2900546",
         "population_served": 25,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 0300",
+      "summary": "Long Term 1 Enhanced SWTR health-based violation cited in 2023 (contaminant 0300).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2910002"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 0300",
+      "summary": "Long Term 1 Enhanced SWTR health-based violation cited in 2023 (contaminant 0300).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2910002"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA2910013"
+      }
+    }
+  ],
   "equity": {
     "population": 3142,
     "pct_low_income": 10.0,
@@ -697,13 +750,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

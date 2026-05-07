@@ -6,7 +6,7 @@
     "name": "Chowchilla",
     "fips": "0613294",
     "population": 18772,
-    "county_name": "Madera",
+    "county_name": "Madera County",
     "county_fips": "06039"
   },
   "reporting_year": 2024,
@@ -730,6 +730,7 @@
         "name": "Chowchilla City Water Dept",
         "pwsid": "CA2010001",
         "population_served": 13916,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -740,6 +741,7 @@
         "name": "Valley State Prison",
         "pwsid": "CA2010801",
         "population_served": 3173,
+        "owner_type": "state",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -750,13 +752,88 @@
         "name": "Central Ca Womens Facility",
         "pwsid": "CA2010800",
         "population_served": 2183,
+        "owner_type": "state",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Chowchilla have more than three-quarters since 2010 (through 2024).",
+      "magnitude_pct": -100.0,
+      "magnitude_abs": -419628.6,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 419699
+        },
+        {
+          "year": 2011,
+          "value": 73464
+        },
+        {
+          "year": 2012,
+          "value": 16454
+        },
+        {
+          "year": 2013,
+          "value": 4
+        },
+        {
+          "year": 2014,
+          "value": 63
+        },
+        {
+          "year": 2015,
+          "value": 81
+        },
+        {
+          "year": 2016,
+          "value": 78
+        },
+        {
+          "year": 2017,
+          "value": 31
+        },
+        {
+          "year": 2018,
+          "value": 258
+        },
+        {
+          "year": 2019,
+          "value": 9
+        },
+        {
+          "year": 2020,
+          "value": 82
+        },
+        {
+          "year": 2021,
+          "value": 171
+        },
+        {
+          "year": 2022,
+          "value": 186189
+        },
+        {
+          "year": 2023,
+          "value": 42
+        },
+        {
+          "year": 2024,
+          "value": 70
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 18772,
     "pct_low_income": 16.7,
@@ -1053,13 +1130,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

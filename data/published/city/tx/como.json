@@ -6,7 +6,7 @@
     "name": "Como",
     "fips": "4816252",
     "population": 560,
-    "county_name": "Hopkins",
+    "county_name": "Hopkins County",
     "county_fips": "48223"
   },
   "reporting_year": 2024,
@@ -136,6 +136,7 @@
         "name": "Martin Springs Wsc",
         "pwsid": "TX1120015",
         "population_served": 4095,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -146,6 +147,7 @@
         "name": "City Of Como",
         "pwsid": "TX1120012",
         "population_served": 702,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -454,19 +456,6 @@
     {
       "kind": "city",
       "state": "tx",
-      "slug": "scotland",
-      "name": "Scotland",
-      "population": 562,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": null,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "tx",
       "slug": "sunset-valley",
       "name": "Sunset Valley",
       "population": 562,
@@ -476,19 +465,32 @@
       "ej_pct_avg": 54.0,
       "relation": "peer",
       "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "lone-oak",
+      "name": "Lone Oak",
+      "population": 562,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": null,
+      "relation": "peer",
+      "reason": "Comparable population"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T13:59:38Z"
+  "_published_at": "2026-05-07T10:52:02Z"
 }

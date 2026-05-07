@@ -6,7 +6,7 @@
     "name": "Santa Clarita",
     "fips": "0669088",
     "population": 225850,
-    "county_name": "Los Angeles",
+    "county_name": "Los Angeles County",
     "county_fips": "06037"
   },
   "reporting_year": 2024,
@@ -790,6 +790,7 @@
         "name": "Sleepy Valley Water Company",
         "pwsid": "CA1900903",
         "population_served": 160,
+        "owner_type": "private",
         "health_based_violations_5yr": 4,
         "unresolved": true
       },
@@ -800,13 +801,152 @@
         "name": "Los Angeles Residential Community Founda",
         "pwsid": "CA1900062",
         "population_served": 184,
+        "owner_type": "private",
         "health_based_violations_5yr": 1,
         "unresolved": true
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "regression",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Santa Clarita have more than doubled since 2010 (through 2024).",
+      "magnitude_pct": 172.3,
+      "magnitude_abs": 91111.4,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 52866
+        },
+        {
+          "year": 2011,
+          "value": 104619
+        },
+        {
+          "year": 2012,
+          "value": 84371
+        },
+        {
+          "year": 2013,
+          "value": 63717
+        },
+        {
+          "year": 2014,
+          "value": 85197
+        },
+        {
+          "year": 2015,
+          "value": 65993
+        },
+        {
+          "year": 2016,
+          "value": 52347
+        },
+        {
+          "year": 2017,
+          "value": 58862
+        },
+        {
+          "year": 2018,
+          "value": 56350
+        },
+        {
+          "year": 2019,
+          "value": 64658
+        },
+        {
+          "year": 2020,
+          "value": 85185
+        },
+        {
+          "year": 2021,
+          "value": 156326
+        },
+        {
+          "year": 2022,
+          "value": 138130
+        },
+        {
+          "year": 2023,
+          "value": 45108
+        },
+        {
+          "year": 2024,
+          "value": 143977
+        }
+      ]
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1900062"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1900062"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Beryllium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2021 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1900903"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Beryllium",
+      "summary": "Phase I/II/V Inorganic Chemical Rules health-based violation cited in 2021 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1900903"
+      }
+    }
+  ],
   "equity": {
     "population": 225850,
     "pct_low_income": 8.0,
@@ -1103,13 +1243,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

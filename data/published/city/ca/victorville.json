@@ -6,7 +6,7 @@
     "name": "Victorville",
     "fips": "0682590",
     "population": 134417,
-    "county_name": "San Bernardino",
+    "county_name": "San Bernardino County",
     "county_fips": "06071"
   },
   "reporting_year": 2024,
@@ -764,6 +764,7 @@
         "name": "Victorville Water District",
         "pwsid": "CA3610052",
         "population_served": 135983,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -774,6 +775,7 @@
         "name": "River Ranch Mhp",
         "pwsid": "CA3600155",
         "population_served": 176,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -794,7 +796,97 @@
       "primary_contaminant": "Trichloroethene"
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Victorville have more than halved since 2010 (through 2024).",
+      "magnitude_pct": -60.9,
+      "magnitude_abs": -49223.5,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 80817
+        },
+        {
+          "year": 2011,
+          "value": 69897
+        },
+        {
+          "year": 2012,
+          "value": 188328
+        },
+        {
+          "year": 2013,
+          "value": 274865
+        },
+        {
+          "year": 2014,
+          "value": 356934
+        },
+        {
+          "year": 2015,
+          "value": 339083
+        },
+        {
+          "year": 2016,
+          "value": 219252
+        },
+        {
+          "year": 2017,
+          "value": 35420
+        },
+        {
+          "year": 2018,
+          "value": 34026
+        },
+        {
+          "year": 2019,
+          "value": 34532
+        },
+        {
+          "year": 2020,
+          "value": 34410
+        },
+        {
+          "year": 2021,
+          "value": 34608
+        },
+        {
+          "year": 2022,
+          "value": 36360
+        },
+        {
+          "year": 2023,
+          "value": 367456
+        },
+        {
+          "year": 2024,
+          "value": 31594
+        }
+      ]
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 8000",
+      "summary": "Unresolved Revised Total Coliform Rule violation cited in 2025 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3600155"
+      }
+    }
+  ],
   "equity": {
     "population": 134417,
     "pct_low_income": 19.1,
@@ -1091,13 +1183,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

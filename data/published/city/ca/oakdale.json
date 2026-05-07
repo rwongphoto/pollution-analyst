@@ -6,7 +6,7 @@
     "name": "Oakdale",
     "fips": "0652694",
     "population": 23120,
-    "county_name": "Stanislaus",
+    "county_name": "Stanislaus County",
     "county_fips": "06099"
   },
   "reporting_year": 2024,
@@ -738,6 +738,7 @@
         "name": "Oakdale, City Of",
         "pwsid": "CA5010014",
         "population_served": 23235,
+        "owner_type": "local",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -748,6 +749,7 @@
         "name": "Oid-Oakdale Rural Water System #1",
         "pwsid": "CA5000433",
         "population_served": 1570,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -758,6 +760,7 @@
         "name": "Oid #51 - Sunset Oaks #10",
         "pwsid": "CA5000317",
         "population_served": 287,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -768,6 +771,7 @@
         "name": "Oid #46 - Sunset Oaks",
         "pwsid": "CA5000014",
         "population_served": 269,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -778,6 +782,7 @@
         "name": "North Oaks Mutual Water Co",
         "pwsid": "CA5000237",
         "population_served": 234,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -788,6 +793,7 @@
         "name": "Oid #22 - Williams Tract",
         "pwsid": "CA5000015",
         "population_served": 150,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -798,6 +804,7 @@
         "name": "Oid #45",
         "pwsid": "CA5000013",
         "population_served": 144,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -808,6 +815,7 @@
         "name": "Twin Cypress Mobile Home Park",
         "pwsid": "CA5000071",
         "population_served": 112,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -818,6 +826,7 @@
         "name": "4N Mobilehome Park",
         "pwsid": "CA5000082",
         "population_served": 65,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -828,6 +837,7 @@
         "name": "Lone Pine Mhp",
         "pwsid": "CA5000049",
         "population_served": 64,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -838,13 +848,63 @@
         "name": "Tully Mobile Estates",
         "pwsid": "CA5000067",
         "population_served": 56,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2023 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA5000237"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA5010014"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5200",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5200).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA5010014"
+      }
+    }
+  ],
   "equity": {
     "population": 23120,
     "pct_low_income": 13.0,
@@ -1141,13 +1201,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

@@ -9,7 +9,7 @@
     "is_active_npl": true,
     "is_deleted": false,
     "is_federal_facility": false,
-    "county": "Santa Clara County",
+    "county": "Santa Clara",
     "county_slug": "santa-clara",
     "city": "Sunnyvale",
     "city_slug": "sunnyvale",
@@ -399,139 +399,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 154573,
-    "pct_low_income": 5.3,
-    "pct_people_of_color": 72.5,
-    "pct_under_5": 5.4,
-    "pct_over_64": 12.5,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 89.5,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 51.8,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 69.4,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 61.6,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 16.9,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 93.3,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 60.9,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 99.0,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 33.6,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 98.5,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 96.4,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 128.3
-      },
-      {
-        "label": "Ozone",
-        "score": 29.1
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 96.8
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 84.4
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 24.2
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 132.0
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 63.1
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 139.9
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 43.5
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 139.4
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 135.3
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Sunnyvale, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "population": 17912,
+    "pct_low_income": 14.2,
+    "pct_people_of_color": 81.7,
+    "pct_under_5": 7.1,
+    "pct_over_64": 7.9,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (9 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

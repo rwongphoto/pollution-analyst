@@ -228,7 +228,25 @@
       "population": 811
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "naaqs_exceedance",
+      "severity": "exceedance",
+      "label": "PM2.5 24-hour 98th percentile",
+      "summary": "PM2.5 24-hour 98th percentile in Modoc County reached 37.0 \u00b5g/m\u00b3 in 2010, 6% above the EPA NAAQS of 35 \u00b5g/m\u00b3.",
+      "magnitude_pct": 5.7,
+      "magnitude_abs": 2.0,
+      "baseline_year": null,
+      "recent_year": 2010,
+      "units": "\u00b5g/m\u00b3",
+      "history": [
+        {
+          "year": 2010,
+          "value": 37.0
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 8651,
     "pct_low_income": 16.9,
@@ -357,7 +375,7 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "All block groups in Modoc County, CA"
+    "geography_label": "All block groups in Modoc County County, CA"
   },
   "health_indicators": [
     {
@@ -525,8 +543,8 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:52Z"
+  "_published_at": "2026-05-07T08:08:54Z"
 }

@@ -6,7 +6,7 @@
     "name": "Santa Ana",
     "fips": "0669000",
     "population": 311379,
-    "county_name": "Orange",
+    "county_name": "Orange County",
     "county_fips": "06059"
   },
   "reporting_year": 2024,
@@ -842,13 +842,88 @@
         "name": "City Of Santa Ana",
         "pwsid": "CA3010038",
         "population_served": 310539,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Santa Ana have more than halved since 2010 (through 2024).",
+      "magnitude_pct": -62.3,
+      "magnitude_abs": -167916.1,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 269419
+        },
+        {
+          "year": 2011,
+          "value": 214983
+        },
+        {
+          "year": 2012,
+          "value": 66908
+        },
+        {
+          "year": 2013,
+          "value": 63189
+        },
+        {
+          "year": 2014,
+          "value": 78082
+        },
+        {
+          "year": 2015,
+          "value": 79429
+        },
+        {
+          "year": 2016,
+          "value": 98475
+        },
+        {
+          "year": 2017,
+          "value": 105476
+        },
+        {
+          "year": 2018,
+          "value": 100229
+        },
+        {
+          "year": 2019,
+          "value": 152849
+        },
+        {
+          "year": 2020,
+          "value": 121362
+        },
+        {
+          "year": 2021,
+          "value": 118363
+        },
+        {
+          "year": 2022,
+          "value": 139611
+        },
+        {
+          "year": 2023,
+          "value": 104457
+        },
+        {
+          "year": 2024,
+          "value": 101503
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 311379,
     "pct_low_income": 11.5,
@@ -1145,13 +1220,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

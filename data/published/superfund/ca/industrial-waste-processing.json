@@ -9,7 +9,7 @@
     "is_active_npl": true,
     "is_deleted": false,
     "is_federal_facility": false,
-    "county": "Fresno County",
+    "county": "Fresno",
     "county_slug": "fresno",
     "city": "Fresno",
     "city_slug": "fresno",
@@ -30,139 +30,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 541528,
-    "pct_low_income": 22.1,
-    "pct_people_of_color": 74.6,
-    "pct_under_5": 7.8,
-    "pct_over_64": 11.9,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 99.6,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 96.1,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 67.7,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 94.7,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 77.3,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 80.5,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 59.6,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 75.9,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 89.2,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 86.3,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 55.4,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 222.1
-      },
-      {
-        "label": "Ozone",
-        "score": 216.6
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 150.7
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 209.9
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 168.7
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 175.8
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 104.1
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 164.0
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 181.2
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 190.0
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 78.9
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Fresno, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "population": 8460,
+    "pct_low_income": 29.2,
+    "pct_people_of_color": 66.0,
+    "pct_under_5": 7.1,
+    "pct_over_64": 18.2,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (6 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

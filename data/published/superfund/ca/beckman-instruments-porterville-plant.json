@@ -9,7 +9,7 @@
     "is_active_npl": false,
     "is_deleted": true,
     "is_federal_facility": false,
-    "county": "Tulare County",
+    "county": "Tulare",
     "county_slug": "tulare",
     "city": "Porterville",
     "city_slug": "porterville",
@@ -124,6 +124,7 @@
         "distance_miles": 1.26,
         "place_name": "Porterville",
         "primary_source": "groundwater",
+        "owner_type": "tribal",
         "population_served": 25,
         "health_based_5yr": 0,
         "unresolved": false
@@ -136,6 +137,7 @@
         "distance_miles": 1.26,
         "place_name": "Porterville",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 60,
         "health_based_5yr": 0,
         "unresolved": false
@@ -148,6 +150,7 @@
         "distance_miles": 1.26,
         "place_name": "Porterville",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 75,
         "health_based_5yr": 1,
         "unresolved": true
@@ -160,6 +163,7 @@
         "distance_miles": 1.26,
         "place_name": "Porterville",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 165,
         "health_based_5yr": 1,
         "unresolved": true
@@ -172,6 +176,7 @@
         "distance_miles": 1.26,
         "place_name": "Porterville",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 46,
         "health_based_5yr": 0,
         "unresolved": false
@@ -184,6 +189,7 @@
         "distance_miles": 1.26,
         "place_name": "Porterville",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 41,
         "health_based_5yr": 0,
         "unresolved": true
@@ -196,6 +202,7 @@
         "distance_miles": 1.26,
         "place_name": "Porterville",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 43,
         "health_based_5yr": 12,
         "unresolved": false
@@ -208,6 +215,7 @@
         "distance_miles": 1.26,
         "place_name": "Porterville",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 63487,
         "health_based_5yr": 1,
         "unresolved": true
@@ -220,6 +228,7 @@
         "distance_miles": 1.26,
         "place_name": "Porterville",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 339,
         "health_based_5yr": 1,
         "unresolved": true
@@ -232,6 +241,7 @@
         "distance_miles": 1.26,
         "place_name": "Porterville",
         "primary_source": "groundwater",
+        "owner_type": "state",
         "population_served": 1281,
         "health_based_5yr": 2,
         "unresolved": false
@@ -240,139 +250,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 62491,
-    "pct_low_income": 17.7,
-    "pct_people_of_color": 79.3,
-    "pct_under_5": 7.2,
-    "pct_over_64": 11.8,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 99.8,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 97.5,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 85.0,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 74.1,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 9.8,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 41.9,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 56.6,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 55.6,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 58.5,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 68.2,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 7.7,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 90.4,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 239.9
-      },
-      {
-        "label": "Ozone",
-        "score": 239.9
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 200.1
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 177.7
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 24.2
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 101.9
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 99.9
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 0.0
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 134.6
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 161.0
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 0.0
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 4.7
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Porterville, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "population": 9658,
+    "pct_low_income": 53.6,
+    "pct_people_of_color": 89.0,
+    "pct_under_5": 9.0,
+    "pct_over_64": 9.8,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (5 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

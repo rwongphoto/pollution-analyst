@@ -6,7 +6,7 @@
     "name": "Lompoc",
     "fips": "0642524",
     "population": 44086,
-    "county_name": "Santa Barbara",
+    "county_name": "Santa Barbara County",
     "county_fips": "06083"
   },
   "reporting_year": 2024,
@@ -706,6 +706,7 @@
         "name": "Santa Rita Water",
         "pwsid": "CA4200822",
         "population_served": 59,
+        "owner_type": "private",
         "health_based_violations_5yr": 18,
         "unresolved": true
       },
@@ -716,6 +717,7 @@
         "name": "Vista Hills Mutual Water Company",
         "pwsid": "CA4200848",
         "population_served": 75,
+        "owner_type": "private",
         "health_based_violations_5yr": 3,
         "unresolved": true
       },
@@ -726,6 +728,7 @@
         "name": "Lompoc-City Water Utility Div",
         "pwsid": "CA4210006",
         "population_served": 40473,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -736,6 +739,7 @@
         "name": "Vandenberg Village Comm. Serv. Dist.",
         "pwsid": "CA4210017",
         "population_served": 7308,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -746,13 +750,79 @@
         "name": "Mission Hills Csd",
         "pwsid": "CA4210019",
         "population_served": 3600,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4200822"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Arsenic",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2022 (arsenic).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2022,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4200822"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Asbestos",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (asbestos).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4200848"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Asbestos",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (asbestos).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA4200848"
+      }
+    }
+  ],
   "equity": {
     "population": 44086,
     "pct_low_income": 17.2,
@@ -1049,13 +1119,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

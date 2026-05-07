@@ -5,8 +5,8 @@
     "slug": "silver-springs",
     "name": "Silver Springs",
     "fips": "3267200",
-    "population": 0,
-    "county_name": "Lyon",
+    "population": 5117,
+    "county_name": "Lyon County",
     "county_fips": "32019"
   },
   "reporting_year": 2024,
@@ -508,6 +508,7 @@
         "name": "Silver Springs Mutual Water Company",
         "pwsid": "NV0000223",
         "population_served": 3070,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -549,11 +550,11 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 5117,
+    "pct_low_income": 15.5,
+    "pct_people_of_color": 16.799999999999997,
+    "pct_under_5": 3.7,
+    "pct_over_64": 24.8,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -766,7 +767,7 @@
       "state": "nv",
       "slug": "yerington",
       "name": "Yerington",
-      "population": 0,
+      "population": 3108,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -779,78 +780,78 @@
       "state": "nv",
       "slug": "stagecoach",
       "name": "Stagecoach",
-      "population": 0,
+      "population": 1904,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 44.1,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "dayton",
       "name": "Dayton",
-      "population": 0,
+      "population": 15415,
       "facilities_count": 2,
       "total_releases_pounds": 21960,
       "dominant_medium": "land",
       "ej_pct_avg": 48.5,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "fernley",
       "name": "Fernley",
-      "population": 0,
+      "population": 23035,
       "facilities_count": 10,
       "total_releases_pounds": 584067,
       "dominant_medium": "land",
       "ej_pct_avg": 55.2,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "enterprise",
-      "name": "Enterprise",
-      "population": 0,
+      "slug": "pahrump",
+      "name": "Pahrump",
+      "population": 44711,
       "facilities_count": 1,
-      "total_releases_pounds": 0.79,
+      "total_releases_pounds": 1,
       "dominant_medium": "air",
-      "ej_pct_avg": 55.5,
+      "ej_pct_avg": 30.1,
       "relation": "peer",
       "reason": "Similar TRI air profile \u00b7 1 facility"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sparks",
-      "name": "Sparks",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 9548,
-      "dominant_medium": "land",
-      "ej_pct_avg": 72.9,
+      "slug": "nellis-afb",
+      "name": "Nellis AFB",
+      "population": 4278,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 68.4,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+26 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+21 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

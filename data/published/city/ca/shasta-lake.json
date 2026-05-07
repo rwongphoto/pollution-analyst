@@ -6,7 +6,7 @@
     "name": "Shasta Lake",
     "fips": "0671225",
     "population": 10361,
-    "county_name": "Shasta",
+    "county_name": "Shasta County",
     "county_fips": "06089"
   },
   "reporting_year": 2024,
@@ -654,13 +654,88 @@
         "name": "City Of Shasta Lake",
         "pwsid": "CA4510006",
         "population_served": 10657,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "regression",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Shasta Lake have more than doubled since 2010 (through 2024).",
+      "magnitude_pct": 130.1,
+      "magnitude_abs": 106289.7,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 81724
+        },
+        {
+          "year": 2011,
+          "value": 61086
+        },
+        {
+          "year": 2012,
+          "value": 61132
+        },
+        {
+          "year": 2013,
+          "value": 57802
+        },
+        {
+          "year": 2014,
+          "value": 155706
+        },
+        {
+          "year": 2015,
+          "value": 185500
+        },
+        {
+          "year": 2016,
+          "value": 209858
+        },
+        {
+          "year": 2017,
+          "value": 177018
+        },
+        {
+          "year": 2018,
+          "value": 179799
+        },
+        {
+          "year": 2019,
+          "value": 195462
+        },
+        {
+          "year": 2020,
+          "value": 199219
+        },
+        {
+          "year": 2021,
+          "value": 210393
+        },
+        {
+          "year": 2022,
+          "value": 201581
+        },
+        {
+          "year": 2023,
+          "value": 214475
+        },
+        {
+          "year": 2024,
+          "value": 188014
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 10361,
     "pct_low_income": 18.1,
@@ -957,13 +1032,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

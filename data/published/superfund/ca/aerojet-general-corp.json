@@ -9,7 +9,7 @@
     "is_active_npl": true,
     "is_deleted": false,
     "is_federal_facility": false,
-    "county": "Sacramento County",
+    "county": "Sacramento",
     "county_slug": "sacramento",
     "city": "Rancho Cordova",
     "city_slug": null,
@@ -742,6 +742,7 @@
         "distance_miles": 2.91,
         "place_name": "Rancho Cordova",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 400,
         "health_based_5yr": 0,
         "unresolved": false
@@ -754,6 +755,7 @@
         "distance_miles": 2.91,
         "place_name": "Rancho Cordova",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 5658,
         "health_based_5yr": 0,
         "unresolved": false
@@ -766,6 +768,7 @@
         "distance_miles": 2.91,
         "place_name": "Rancho Cordova",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 159,
         "health_based_5yr": 0,
         "unresolved": false
@@ -778,6 +781,7 @@
         "distance_miles": 2.91,
         "place_name": "Rancho Cordova",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 2026,
         "health_based_5yr": 0,
         "unresolved": false
@@ -790,6 +794,7 @@
         "distance_miles": 2.91,
         "place_name": "Rancho Cordova",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 545,
         "health_based_5yr": 0,
         "unresolved": false
@@ -802,6 +807,7 @@
         "distance_miles": 2.91,
         "place_name": "Rancho Cordova",
         "primary_source": "groundwater",
+        "owner_type": "local",
         "population_served": 205,
         "health_based_5yr": 24,
         "unresolved": true
@@ -814,6 +820,7 @@
         "distance_miles": 2.95,
         "place_name": "Gold River",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 880,
         "health_based_5yr": 0,
         "unresolved": false
@@ -949,12 +956,12 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Sacramento County, California (NPL site's containing county \u2014 1-mile-buffer aggregation pending tract data)"
+    "geography_label": "Sacramento County, California (no Census block groups within 1 mile and no host city \u2014 falling back to containing county)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

@@ -5,8 +5,8 @@
     "slug": "boulder-city",
     "name": "Boulder City",
     "fips": "3206500",
-    "population": 0,
-    "county_name": "Clark",
+    "population": 14868,
+    "county_name": "Clark County",
     "county_fips": "32003"
   },
   "reporting_year": 2024,
@@ -487,6 +487,7 @@
         "name": "Boulder City",
         "pwsid": "NV0000011",
         "population_served": 15000,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -497,6 +498,7 @@
         "name": "Nps Boulder Beach",
         "pwsid": "NV0003005",
         "population_served": 690,
+        "owner_type": "federal",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -507,6 +509,7 @@
         "name": "Nps Echo Bay",
         "pwsid": "NV0002503",
         "population_served": 274,
+        "owner_type": "federal",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -517,6 +520,7 @@
         "name": "Nps Callville Bay",
         "pwsid": "NV0002506",
         "population_served": 250,
+        "owner_type": "federal",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
@@ -622,11 +626,11 @@
     }
   ],
   "equity": {
-    "population": 0,
-    "pct_low_income": null,
-    "pct_people_of_color": null,
-    "pct_under_5": null,
-    "pct_over_64": null,
+    "population": 14868,
+    "pct_low_income": 10.6,
+    "pct_people_of_color": 16.099999999999994,
+    "pct_under_5": 6.5,
+    "pct_over_64": 29.3,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -837,48 +841,48 @@
     {
       "kind": "city",
       "state": "nv",
+      "slug": "nellis-afb",
+      "name": "Nellis AFB",
+      "population": 4278,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 68.4,
+      "relation": "peer",
+      "reason": "Statewide pollution-profile peer"
+    },
+    {
+      "kind": "city",
+      "state": "nv",
       "slug": "sandy-valley",
       "name": "Sandy Valley",
-      "population": 0,
+      "population": 1914,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 26.1,
       "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "indian-springs",
       "name": "Indian Springs",
-      "population": 0,
+      "population": 837,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 30.9,
       "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "nv",
-      "slug": "nellis-afb",
-      "name": "Nellis AFB",
-      "population": 0,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 68.4,
-      "relation": "peer",
-      "reason": "Comparable population"
+      "reason": "Statewide pollution-profile peer"
     },
     {
       "kind": "city",
       "state": "nv",
       "slug": "enterprise",
       "name": "Enterprise",
-      "population": 0,
+      "population": 225461,
       "facilities_count": 1,
       "total_releases_pounds": 0.79,
       "dominant_medium": "air",
@@ -889,41 +893,41 @@
     {
       "kind": "city",
       "state": "nv",
-      "slug": "panaca",
-      "name": "Panaca",
-      "population": 0,
+      "slug": "spring-creek",
+      "name": "Spring Creek",
+      "population": 15062,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": null,
+      "ej_pct_avg": 26.8,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "city",
       "state": "nv",
-      "slug": "sparks",
-      "name": "Sparks",
-      "population": 0,
-      "facilities_count": 5,
-      "total_releases_pounds": 9548,
-      "dominant_medium": "land",
-      "ej_pct_avg": 72.9,
+      "slug": "sun-valley",
+      "name": "Sun Valley",
+      "population": 22775,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 65.2,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+28 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+20 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T15:58:40Z"
+  "_published_at": "2026-05-07T10:02:47Z"
 }

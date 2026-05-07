@@ -6,7 +6,7 @@
     "name": "Camarillo",
     "fips": "0610046",
     "population": 70622,
-    "county_name": "Ventura",
+    "county_name": "Ventura County",
     "county_fips": "06111"
   },
   "reporting_year": 2024,
@@ -751,6 +751,7 @@
         "name": "Camarillo Water Dept",
         "pwsid": "CA5610019",
         "population_served": 46824,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -761,6 +762,7 @@
         "name": "Camrosa Water District",
         "pwsid": "CA5610063",
         "population_served": 32700,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -771,6 +773,7 @@
         "name": "Pleasant Valley Mutual Water Co",
         "pwsid": "CA5610008",
         "population_served": 5000,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       },
@@ -781,6 +784,7 @@
         "name": "Crestview Mutual Water Co",
         "pwsid": "CA5610058",
         "population_served": 2079,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -791,6 +795,7 @@
         "name": "Rio Manor Mutual Water Co",
         "pwsid": "CA5610035",
         "population_served": 983,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -801,6 +806,7 @@
         "name": "Solano Verde Mutual Water Co",
         "pwsid": "CA5602130",
         "population_served": 100,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -811,13 +817,47 @@
         "name": "Community Mutual Water Co",
         "pwsid": "CA5601125",
         "population_served": 65,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Beryllium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA5610008"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Beryllium",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2024 (beryllium).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2024,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA5610008"
+      }
+    }
+  ],
   "equity": {
     "population": 70622,
     "pct_low_income": 7.4,
@@ -1114,13 +1154,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

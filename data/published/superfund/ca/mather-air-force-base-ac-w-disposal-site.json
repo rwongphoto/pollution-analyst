@@ -9,7 +9,7 @@
     "is_active_npl": true,
     "is_deleted": false,
     "is_federal_facility": true,
-    "county": "Sacramento County",
+    "county": "Sacramento",
     "county_slug": "sacramento",
     "city": "Mather",
     "city_slug": "mather",
@@ -1097,6 +1097,7 @@
         "distance_miles": 0.93,
         "place_name": "Mather",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 65,
         "health_based_5yr": 2,
         "unresolved": true
@@ -1109,6 +1110,7 @@
         "distance_miles": 0.93,
         "place_name": "Mather",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 232,
         "health_based_5yr": 0,
         "unresolved": false
@@ -1117,139 +1119,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 4712,
-    "pct_low_income": 5.1,
-    "pct_people_of_color": 44.0,
-    "pct_under_5": 9.0,
-    "pct_over_64": 10.3,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 96.2,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 86.4,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 33.6,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 41.7,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 14.0,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 49.1,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 29.1,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 99.9,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 52.0,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 77.6,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 47.3,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 115.3
-      },
-      {
-        "label": "Ozone",
-        "score": 106.9
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 44.2
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 53.5
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 17.2
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 62.0
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 22.8
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 118.9
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 61.3
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 93.7
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 53.4
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Mather, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "population": 795,
+    "pct_low_income": 60.8,
+    "pct_people_of_color": 78.9,
+    "pct_under_5": 15.8,
+    "pct_over_64": 5.0,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

@@ -5,7 +5,7 @@
     "slug": "grays-harbor",
     "name": "Grays Harbor County",
     "fips": "53027",
-    "population": 0
+    "population": 75672
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -482,7 +482,7 @@
   ],
   "flags": [],
   "equity": {
-    "population": 0,
+    "population": 75672,
     "pct_low_income": 14.9,
     "pct_people_of_color": 22.400000000000006,
     "pct_under_5": 5.4,
@@ -609,7 +609,7 @@
       }
     ],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "All block groups in Grays Harbor County, WA"
+    "geography_label": "All block groups in Grays Harbor County County, WA"
   },
   "health_indicators": [
     {
@@ -697,22 +697,9 @@
     {
       "kind": "county",
       "state": "wa",
-      "slug": "thurston",
-      "name": "Thurston County",
-      "population": 0,
-      "facilities_count": 4,
-      "total_releases_pounds": 126363,
-      "dominant_medium": "air",
-      "ej_pct_avg": 41.3,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 4 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "wa",
       "slug": "stevens",
       "name": "Stevens County",
-      "population": 0,
+      "population": 46774,
       "facilities_count": 5,
       "total_releases_pounds": 21548,
       "dominant_medium": "air",
@@ -723,9 +710,22 @@
     {
       "kind": "county",
       "state": "wa",
+      "slug": "thurston",
+      "name": "Thurston County",
+      "population": 294272,
+      "facilities_count": 4,
+      "total_releases_pounds": 126363,
+      "dominant_medium": "air",
+      "ej_pct_avg": 41.3,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 4 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "wa",
       "slug": "clallam",
       "name": "Clallam County",
-      "population": 0,
+      "population": 77333,
       "facilities_count": 4,
       "total_releases_pounds": 13771,
       "dominant_medium": "air",
@@ -736,22 +736,9 @@
     {
       "kind": "county",
       "state": "wa",
-      "slug": "skagit",
-      "name": "Skagit County",
-      "population": 0,
-      "facilities_count": 10,
-      "total_releases_pounds": 461144,
-      "dominant_medium": "air",
-      "ej_pct_avg": 41.8,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 10 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "wa",
       "slug": "walla-walla",
       "name": "Walla Walla County",
-      "population": 0,
+      "population": 62150,
       "facilities_count": 4,
       "total_releases_pounds": 1102547,
       "dominant_medium": "air",
@@ -762,23 +749,36 @@
     {
       "kind": "county",
       "state": "wa",
-      "slug": "king",
-      "name": "King County",
-      "population": 0,
-      "facilities_count": 57,
-      "total_releases_pounds": 771048,
+      "slug": "skagit",
+      "name": "Skagit County",
+      "population": 129480,
+      "facilities_count": 10,
+      "total_releases_pounds": 461144,
+      "dominant_medium": "air",
+      "ej_pct_avg": 41.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 10 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "wa",
+      "slug": "franklin",
+      "name": "Franklin County",
+      "population": 96692,
+      "facilities_count": 8,
+      "total_releases_pounds": 143696,
       "dominant_medium": "land",
-      "ej_pct_avg": 67.8,
+      "ej_pct_avg": 61.4,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+34 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+28 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T19:25:41Z"
+  "_published_at": "2026-05-07T11:04:14Z"
 }

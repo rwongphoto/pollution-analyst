@@ -6,7 +6,7 @@
     "name": "Chester",
     "fips": "0612930",
     "population": 2271,
-    "county_name": "Plumas",
+    "county_name": "Plumas County",
     "county_fips": "06063"
   },
   "reporting_year": 2024,
@@ -531,6 +531,7 @@
         "name": "Chester Public U.D.",
         "pwsid": "CA3210009",
         "population_served": 2187,
+        "owner_type": "local",
         "health_based_violations_5yr": 2,
         "unresolved": false
       },
@@ -541,13 +542,47 @@
         "name": "West Almanor M.W.C.",
         "pwsid": "CA3210007",
         "population_served": 1394,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 8000",
+      "summary": "Revised Total Coliform Rule health-based violation cited in 2021 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3210009"
+      }
+    },
+    {
+      "type": "violation_event",
+      "severity": "health_based_recent5y",
+      "label": "Contaminant 8000",
+      "summary": "Revised Total Coliform Rule health-based violation cited in 2021 (contaminant 8000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2021,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA3210009"
+      }
+    }
+  ],
   "equity": {
     "population": 2271,
     "pct_low_income": 9.0,
@@ -844,13 +879,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

@@ -6,7 +6,7 @@
     "name": "Bellflower",
     "fips": "0604982",
     "population": 78352,
-    "county_name": "Los Angeles",
+    "county_name": "Los Angeles County",
     "county_fips": "06037"
   },
   "reporting_year": 2024,
@@ -487,6 +487,7 @@
         "name": "Bellflower - Somerset Mwc",
         "pwsid": "CA1910013",
         "population_served": 46300,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -497,13 +498,31 @@
         "name": "Bellflower Home Garden Water Company",
         "pwsid": "CA1910012",
         "population_served": 1129,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": true
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 5000",
+      "summary": "Unresolved Phase I/II/V Inorganic Chemical Rules violation cited in 2025 (contaminant 5000).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2025,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1910012"
+      }
+    }
+  ],
   "equity": {
     "population": 78352,
     "pct_low_income": 14.2,
@@ -800,13 +819,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:11:00Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

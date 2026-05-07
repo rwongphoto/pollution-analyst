@@ -6,7 +6,7 @@
     "name": "Riverside",
     "fips": "0662000",
     "population": 316076,
-    "county_name": "Riverside",
+    "county_name": "Riverside County",
     "county_fips": "06065"
   },
   "reporting_year": 2024,
@@ -816,6 +816,7 @@
         "name": "Riverside, City Of",
         "pwsid": "CA3310031",
         "population_served": 298398,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -826,6 +827,7 @@
         "name": "Western Mwd",
         "pwsid": "CA3310049",
         "population_served": 86062,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -836,6 +838,7 @@
         "name": "Western Mwd - Murrieta Division",
         "pwsid": "CA3310036",
         "population_served": 17453,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -846,6 +849,7 @@
         "name": "Western Mwd (Id A - Rainbow)",
         "pwsid": "CA3310076",
         "population_served": 192,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -856,6 +860,7 @@
         "name": "Harmony Haven",
         "pwsid": "CA3301055",
         "population_served": 54,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -866,6 +871,7 @@
         "name": "Western Mwd (Arlington)",
         "pwsid": "CA3310075",
         "population_served": 0,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -886,7 +892,81 @@
       "primary_contaminant": null
     }
   ],
-  "flags": [],
+  "flags": [
+    {
+      "type": "long_arc_shift",
+      "severity": "improvement",
+      "label": "Total TRI releases",
+      "summary": "Total TRI releases at Riverside have more than three-quarters since 2010 (through 2024).",
+      "magnitude_pct": -76.9,
+      "magnitude_abs": -82624.9,
+      "baseline_year": 2010,
+      "recent_year": 2024,
+      "units": "lb",
+      "history": [
+        {
+          "year": 2010,
+          "value": 107476
+        },
+        {
+          "year": 2011,
+          "value": 72114
+        },
+        {
+          "year": 2012,
+          "value": 99152
+        },
+        {
+          "year": 2013,
+          "value": 55911
+        },
+        {
+          "year": 2014,
+          "value": 14070
+        },
+        {
+          "year": 2015,
+          "value": 25475
+        },
+        {
+          "year": 2016,
+          "value": 16459
+        },
+        {
+          "year": 2017,
+          "value": 21368
+        },
+        {
+          "year": 2018,
+          "value": 28919
+        },
+        {
+          "year": 2019,
+          "value": 24499
+        },
+        {
+          "year": 2020,
+          "value": 21377
+        },
+        {
+          "year": 2021,
+          "value": 21340
+        },
+        {
+          "year": 2022,
+          "value": 21767
+        },
+        {
+          "year": 2023,
+          "value": 23319
+        },
+        {
+          "year": 2024,
+          "value": 24851
+        }
+      ]
+    }
+  ],
   "equity": {
     "population": 316076,
     "pct_low_income": 12.8,
@@ -1183,13 +1263,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

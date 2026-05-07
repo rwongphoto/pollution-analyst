@@ -9,7 +9,7 @@
     "is_active_npl": true,
     "is_deleted": false,
     "is_federal_facility": false,
-    "county": "Santa Clara County",
+    "county": "Santa Clara",
     "county_slug": "santa-clara",
     "city": "Palo Alto",
     "city_slug": "palo-alto",
@@ -292,6 +292,7 @@
         "distance_miles": 1.72,
         "place_name": "Palo Alto",
         "primary_source": "groundwater",
+        "owner_type": "private",
         "population_served": 2789,
         "health_based_5yr": 0,
         "unresolved": false
@@ -300,139 +301,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 67901,
-    "pct_low_income": 4.7,
-    "pct_people_of_color": 51.3,
-    "pct_under_5": 5.4,
-    "pct_over_64": 19.3,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 88.8,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 29.5,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 45.5,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 43.2,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 16.4,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 84.7,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 80.0,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 97.3,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 27.7,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 94.9,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 89.6,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 92.9
-      },
-      {
-        "label": "Ozone",
-        "score": 11.6
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 46.3
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 45.9
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 17.0
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 86.6
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 75.2
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 99.5
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 0.0
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 98.0
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 75.5
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Palo Alto, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "population": 24551,
+    "pct_low_income": 19.6,
+    "pct_people_of_color": 49.6,
+    "pct_under_5": 4.9,
+    "pct_over_64": 12.4,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (16 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }

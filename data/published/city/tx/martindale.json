@@ -6,7 +6,7 @@
     "name": "Martindale",
     "fips": "4846848",
     "population": 1311,
-    "county_name": "Caldwell",
+    "county_name": "Caldwell County",
     "county_fips": "48055"
   },
   "reporting_year": 2024,
@@ -233,6 +233,7 @@
         "name": "Martindale Wsc",
         "pwsid": "TX0280013",
         "population_served": 3045,
+        "owner_type": "local",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
@@ -389,19 +390,6 @@
     {
       "kind": "city",
       "state": "tx",
-      "slug": "tatum",
-      "name": "Tatum",
-      "population": 1319,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 43.3,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "city",
-      "state": "tx",
       "slug": "munday",
       "name": "Munday",
       "population": 1319,
@@ -411,19 +399,32 @@
       "ej_pct_avg": 32.4,
       "relation": "peer",
       "reason": "Comparable population"
+    },
+    {
+      "kind": "city",
+      "state": "tx",
+      "slug": "tatum",
+      "name": "Tatum",
+      "population": 1319,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 43.3,
+      "relation": "peer",
+      "reason": "Comparable population"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T13:59:37Z"
+  "_published_at": "2026-05-07T10:52:03Z"
 }

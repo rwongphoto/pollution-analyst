@@ -6,7 +6,7 @@
     "name": "Kernville",
     "fips": "0638310",
     "population": 836,
-    "county_name": "Kern",
+    "county_name": "Kern County",
     "county_fips": "06029"
   },
   "reporting_year": 2024,
@@ -487,6 +487,7 @@
         "name": "Camp Owen Water System",
         "pwsid": "CA1502315",
         "population_served": 110,
+        "owner_type": "local",
         "health_based_violations_5yr": 1,
         "unresolved": true
       },
@@ -497,6 +498,7 @@
         "name": "Rivernook Campground",
         "pwsid": "CA1500481",
         "population_served": 877,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -507,6 +509,7 @@
         "name": "Riverkern Mutual Water Company",
         "pwsid": "CA1500251",
         "population_served": 272,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -517,6 +520,7 @@
         "name": "Sierra Meadows",
         "pwsid": "CA1502564",
         "population_served": 68,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -527,6 +531,7 @@
         "name": "Burlando Heights Mutual Water Co.",
         "pwsid": "CA1500336",
         "population_served": 44,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       },
@@ -537,13 +542,31 @@
         "name": "Frontier Trails Homeowners Assoc Inc.",
         "pwsid": "CA1500398",
         "population_served": 32,
+        "owner_type": "private",
         "health_based_violations_5yr": 0,
         "unresolved": false
       }
     ]
   },
   "superfund": [],
-  "flags": [],
+  "flags": [
+    {
+      "type": "violation_event",
+      "severity": "unresolved",
+      "label": "Contaminant 1032",
+      "summary": "Unresolved Lead and Copper Rule violation cited in 2023 (contaminant 1032).",
+      "magnitude_pct": null,
+      "magnitude_abs": null,
+      "baseline_year": null,
+      "recent_year": 2023,
+      "units": null,
+      "history": [],
+      "link": {
+        "label": "EPA SDWIS record",
+        "href": "https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NO::P200_PWSID:CA1502315"
+      }
+    }
+  ],
   "equity": {
     "population": 836,
     "pct_low_income": 12.9,
@@ -840,13 +863,13 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     },
     {
       "label": "EPA Safe Drinking Water Information System",
       "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-      "retrieved": "2026-05-06"
+      "retrieved": "2026-05-07"
     }
   ],
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:08Z"
 }

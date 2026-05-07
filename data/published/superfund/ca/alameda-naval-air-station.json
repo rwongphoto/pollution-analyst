@@ -9,7 +9,7 @@
     "is_active_npl": true,
     "is_deleted": false,
     "is_federal_facility": true,
-    "county": "Alameda County",
+    "county": "Alameda",
     "county_slug": "alameda",
     "city": "Alameda",
     "city_slug": "alameda",
@@ -965,139 +965,20 @@
   },
   "flags": [],
   "equity": {
-    "population": 77565,
-    "pct_low_income": 7.1,
-    "pct_people_of_color": 58.7,
-    "pct_under_5": 6.1,
-    "pct_over_64": 17.0,
-    "ej_indexes": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "pct_us": 89.7,
-        "pct_state": null
-      },
-      {
-        "label": "Ozone",
-        "pct_us": 0.7,
-        "pct_state": null
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 67.0,
-        "pct_state": null
-      },
-      {
-        "label": "Diesel particulate",
-        "pct_us": 75.8,
-        "pct_state": null
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "pct_us": 42.1,
-        "pct_state": null
-      },
-      {
-        "label": "Traffic proximity",
-        "pct_us": 90.5,
-        "pct_state": null
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 75.5,
-        "pct_state": null
-      },
-      {
-        "label": "Superfund site proximity",
-        "pct_us": 94.2,
-        "pct_state": null
-      },
-      {
-        "label": "RMP-facility proximity",
-        "pct_us": 42.8,
-        "pct_state": null
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "pct_us": 92.8,
-        "pct_state": null
-      },
-      {
-        "label": "Underground storage tanks",
-        "pct_us": 27.5,
-        "pct_state": null
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "pct_us": 7.7,
-        "pct_state": null
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
-        "pct_state": null
-      }
-    ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 116.6
-      },
-      {
-        "label": "Ozone",
-        "score": 3.3
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 83.0
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 96.5
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 54.2
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 115.8
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 78.4
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 112.5
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 55.4
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 119.1
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 0.0
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
-    "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Alameda, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "population": 1322,
+    "pct_low_income": 72.1,
+    "pct_people_of_color": 92.4,
+    "pct_under_5": 14.0,
+    "pct_over_64": 12.3,
+    "ej_indexes": [],
+    "disparity_scores": [],
+    "source": "Census ACS 2018-2022 block-group demographics, population-weighted across the 1-mile buffer around this site (from USEPA-clone/EJAM-open blockgroupstats)",
+    "geography_label": "Within 1 mile of this site (1 Census block groups, population-weighted demographics)"
   },
   "source": {
     "label": "EPA Superfund Enterprise Management System (SEMS)",
     "url": "https://www.epa.gov/superfund/superfund-data-and-reports",
-    "retrieved": "2026-05-06"
+    "retrieved": "2026-05-07"
   },
-  "_published_at": "2026-05-06T04:10:59Z"
+  "_published_at": "2026-05-07T08:09:07Z"
 }
