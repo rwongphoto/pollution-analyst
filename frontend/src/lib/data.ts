@@ -18,12 +18,12 @@ import type {
   WaterUtilityPayload,
 } from "./types";
 
-// String-concat instead of `path.join(process.cwd(), "..", "data", "published")`.
-// Turbopack recognizes the path.join form as a resolvable literal prefix and
-// reports the entire data/published tree (~15K JSON, 60K+ context-module
-// matches) as bundleable, which produces the "Overly broad patterns" warnings
-// at lib/data.ts:22 and :25. `+` concatenation isn't analyzed as a path build,
-// so the read stays a true runtime fs operation.
+// Turbopack 16.2's static analyzer traces dynamic fs paths under data/published
+// regardless of how the path is constructed (path.join, +-concat, or this loop
+// helper) and emits "Overly broad patterns" warnings. The warnings are
+// suppressed via `turbopack.ignoreIssue` in next.config.ts — they don't apply
+// to us because `output: 'export'` ships rendered HTML, not a server bundle
+// that could over-bundle the JSON tree. Reads here happen at SSG time only.
 function dataPath(...segments: string[]): string {
   let p = process.cwd() + "/../data/published";
   for (const s of segments) p += "/" + s;
