@@ -13,7 +13,8 @@ import {
   LANE_OVERRIDES,
 } from "@/lib/rankingLanes";
 import { buildRankingJumpItems } from "@/lib/rankingJump";
-import { pageMeta } from "@/lib/seo";
+import { buildRankingsJsonLd } from "@/lib/rankingJsonLd";
+import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { RankingTable } from "@/lib/types";
 
 // Editorial caption shown above each table — one short sentence per lane,
@@ -62,8 +63,23 @@ export default async function RankingsStatesPage() {
   const data = await loadRankings();
   const tables = data.states.tables;
 
+  const pageUrl = `${SITE_URL}/rankings/states`;
+  const jsonLd = buildRankingsJsonLd({
+    pageUrl,
+    pageTitle: "Most & Least Polluted States — National Rankings",
+    pageDescription:
+      "Top 10 most and least polluted states nationally, ranked across total TRI releases, PM2.5, lifetime cancer risk (AirToxScreen), and GHG emissions.",
+    surfaceLabel: "States Rankings",
+    tables,
+    rowUrl: (r) => `${SITE_URL}/state/${r.slug}`,
+  });
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <SiteHeader active="rankings-states" />
       <main>
         <Crumbs items={[{ label: "Rankings" }, { label: "States" }]} />

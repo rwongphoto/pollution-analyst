@@ -289,6 +289,14 @@ export default function MethodologyPage() {
                 <strong>Cadence.</strong> Quarterly federal aggregation; states report as violations occur and resolve.
               </p>
               <p>
+                <strong>How we interpret it.</strong>
+              </p>
+              <ul>
+                <li>
+                  <strong>Ownership type chip.</strong> SDWIS classifies every public water system by owner — local government, private, tribal, state, federal, or mixed. We surface that as a chip on every utility row (Municipal / Private / Tribal / State-owned / Federal / Mixed) so a reader can tell &quot;City of Stockton&quot; from a mobile-home park or HOA-run system without inferring from the name. Private systems are roughly 45% of the national CWS roster — many are small operators serving a single subdivision or trailer park; their compliance posture deserves a different read than a municipal utility&apos;s.
+                </li>
+              </ul>
+              <p>
                 <strong>Caveats we surface.</strong>
               </p>
               <ul>

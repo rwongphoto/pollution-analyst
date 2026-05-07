@@ -8,8 +8,9 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { loadRankings } from "@/lib/data";
 import { buildRankingJumpItems } from "@/lib/rankingJump";
+import { buildRankingsJsonLd } from "@/lib/rankingJsonLd";
 import { LANE_METHODOLOGY, LANE_OVERRIDES } from "@/lib/rankingLanes";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { RankingTable } from "@/lib/types";
 
 // Editorial caption per (lane, direction). PM2.5 / cancer risk are
@@ -42,8 +43,23 @@ export default async function RankingsCitiesPage() {
   const tables = data.cities.tables;
   const anyCountyDerived = tables.some((t) => t.county_derived);
 
+  const pageUrl = `${SITE_URL}/rankings/cities`;
+  const jsonLd = buildRankingsJsonLd({
+    pageUrl,
+    pageTitle: "Most & Least Polluted Cities — National Rankings",
+    pageDescription:
+      "Top 10 most and least polluted cities nationally, ranked across PM2.5, lifetime cancer risk (AirToxScreen), and TRI air releases.",
+    surfaceLabel: "Cities Rankings",
+    tables,
+    rowUrl: (r) => `${SITE_URL}/state/${r.state}/city/${r.slug}`,
+  });
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <SiteHeader active="rankings-cities" />
       <main>
         <Crumbs items={[{ label: "Rankings" }, { label: "Cities" }]} />

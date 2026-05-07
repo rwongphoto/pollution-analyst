@@ -9,8 +9,9 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { loadRankings } from "@/lib/data";
 import { buildRankingJumpItems } from "@/lib/rankingJump";
+import { buildRankingsJsonLd } from "@/lib/rankingJsonLd";
 import { LANE_METHODOLOGY, LANE_OVERRIDES } from "@/lib/rankingLanes";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { RankingTable } from "@/lib/types";
 
 // Editorial caption per lane — superfund tables are "most" only.
@@ -32,8 +33,23 @@ export default async function RankingsSuperfundPage() {
   const data = await loadRankings();
   const tables = data.superfund.tables;
 
+  const pageUrl = `${SITE_URL}/rankings/superfund`;
+  const jsonLd = buildRankingsJsonLd({
+    pageUrl,
+    pageTitle: "Most Contaminated Superfund Sites — National Rankings",
+    pageDescription:
+      "Federal Superfund / NPL sites with the broadest contamination footprint, ranked by distinct contaminants reported and by nearby groundwater utilities.",
+    surfaceLabel: "Superfund Rankings",
+    tables,
+    rowUrl: (r) => `${SITE_URL}/state/${r.state}/superfund/${r.slug}`,
+  });
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <SiteHeader active="rankings-superfund" />
       <main>
         <Crumbs items={[{ label: "Rankings" }, { label: "Superfund" }]} />
