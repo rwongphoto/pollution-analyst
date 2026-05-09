@@ -269,8 +269,8 @@ function FacilitiesSection({ data }: { data: StatePagePayload }) {
             </tr>
           </thead>
           <tbody>
-            {data.top_facilities.map((f) => (
-              <tr key={f.slug}>
+            {data.top_facilities.map((f, i) => (
+              <tr key={`${f.slug}-${i}`}>
                 <td className="name">
                   <Link href={`/state/${f.state}/facility/${f.slug}`}>{f.name}</Link>
                   {f.parent_company ? <span className="muted" style={{ display: "block", fontSize: 12 }}>{f.parent_company}</span> : null}
@@ -322,10 +322,10 @@ function UtilitiesSection({ data }: { data: StatePagePayload }) {
             </tr>
           </thead>
           <tbody>
-            {data.top_utilities.map((u) => {
+            {data.top_utilities.map((u, i) => {
               const owner = ownerTypeLabel(u.owner_type);
               return (
-              <tr key={u.slug}>
+              <tr key={`${u.slug}-${i}`}>
                 <td className="name">
                   <Link href={`/state/${u.state}/water/${u.slug}`}>{u.name}</Link>
                   {owner ? (
@@ -375,7 +375,7 @@ function EquitySection({ data }: { data: StatePagePayload }) {
   const topDisp = (e.disparity_scores ?? [])[0];
   return (
     <section className="section" id="equity">
-      <div className="wrap">
+      <div className="wrap" data-pngable>
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Equity context · ACS 2018-2022 · USEPA-clone EJ disparity</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>

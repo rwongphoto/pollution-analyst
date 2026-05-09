@@ -352,6 +352,51 @@ hr, .rule { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
   .back-to-top { right: 16px; bottom: 16px; width: 38px; height: 38px; }
 }
 
+/* ---------- png export button ----------
+   Injected by PngDownloads above each table.tbl, chart SVG, and card grid.
+   Filled blue accent so the affordance is obvious; sits on its own row,
+   right-aligned. Excluded from the rendered PNG itself because it lives
+   outside the captured element. */
+.png-export-btn {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  margin: 0 0 12px auto;
+  background: var(--blue);
+  color: #fff;
+  border: 1px solid var(--blue);
+  border-radius: var(--r-2);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(59,130,246,0.25);
+  transition: background var(--dur-fast) var(--ease-std),
+              border-color var(--dur-fast) var(--ease-std),
+              transform var(--dur-fast) var(--ease-std),
+              box-shadow var(--dur-fast) var(--ease-std);
+}
+.png-export-btn svg { width: 14px; height: 14px; }
+.png-export-btn:hover {
+  background: var(--blue-2);
+  border-color: var(--blue-2);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(59,130,246,0.35), 0 0 0 1px rgba(59,130,246,0.4);
+}
+.png-export-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.png-export-btn:disabled {
+  opacity: 0.65;
+  cursor: progress;
+  transform: none;
+}
+
 /* ---------- pills / chips ---------- */
 .pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border: 1px solid var(--line-2); background: transparent; border-radius: var(--r-pill); font-family: var(--font-mono); font-size: 11px; font-weight: 500; color: var(--fg-2); text-decoration: none; cursor: pointer; letter-spacing: 0.04em; transition: all var(--dur-fast) var(--ease-std); }
 .pill:hover { border-color: var(--line-strong); color: var(--fg); }

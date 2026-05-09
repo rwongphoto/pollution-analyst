@@ -378,7 +378,7 @@ function EquitySection({ data }: { data: SuperfundPayload }) {
   }
   return (
     <section className="section section-tint" id="equity">
-      <div className="wrap">
+      <div className="wrap" data-pngable>
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Equity context · ACS 2018-2022 block-group demographics</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>

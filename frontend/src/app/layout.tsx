@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 
 import { BackToTop } from "@/components/site/BackToTop";
+import { PngDownloads } from "@/components/site/PngDownloads";
 
 import "./globals.css";
 
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </noscript>
         {children}
         <BackToTop />
+        <PngDownloads />
       </body>
     </html>
   );
