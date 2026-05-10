@@ -5,8 +5,10 @@ Program (Subpart A facilities and below). Each row is one
 (facility, year, sector, subsector, gas) combination with a CO2e emission
 in metric tons.
 
-Aggregates to state and county levels for the pathway tiles. Facility-level
-GHG isn't surfaced yet (TRI is the facility-level emission story for now).
+Aggregates to state, county, and facility levels. Facility-level totals are
+keyed by FRS ID (EPA's universal facility registry ID), which is the bridge
+to TRI — TRI rows already prefer FRS as their facility_id, so a TRI facility
+with a matching FRS in the GHGRP set gets a facility-level ghg_step flag.
 """
 
 from __future__ import annotations
@@ -28,6 +30,13 @@ class GhgRow:
     state_county_fips: str
     year: int
     co2e_emission: float
+    # Bridge fields for the TRI ↔ GHGRP join. frs_id covers ~82% of GHGRP
+    # rows (the rest are pre-FRS-rollout facilities); lat/lng/parent are
+    # kept for fuzzy fallback matching if we ever need it.
+    frs_id: str = ""
+    lat: float | None = None
+    lng: float | None = None
+    parent_company: str = ""
 
 
 def fetch_state_year(state: State, year: int, cache_only: bool = False) -> list[GhgRow]:
@@ -64,6 +73,11 @@ def fetch_state_year(state: State, year: int, cache_only: bool = False) -> list[
             fid = int(r.get("facility_id"))
         except (TypeError, ValueError):
             continue
+        try:
+            lat_v = float(r["latitude"]) if r.get("latitude") is not None else None
+            lng_v = float(r["longitude"]) if r.get("longitude") is not None else None
+        except (TypeError, ValueError):
+            lat_v = lng_v = None
         out.append(
             GhgRow(
                 facility_id=fid,
@@ -71,6 +85,10 @@ def fetch_state_year(state: State, year: int, cache_only: bool = False) -> list[
                 state_county_fips=str(r.get("county_fips") or "").strip(),
                 year=int(r.get("year") or 0),
                 co2e_emission=co2e_v,
+                frs_id=str(r.get("frs_id") or "").strip(),
+                lat=lat_v,
+                lng=lng_v,
+                parent_company=str(r.get("parent_company") or "").strip(),
             )
         )
     log.info("GHGRP %s %d: kept %d rows with positive emissions", state.abbr, year, len(rows := out))
@@ -87,4 +105,18 @@ def aggregate_county_totals(rows: list[GhgRow]) -> dict[str, float]:
         if not r.state_county_fips:
             continue
         out[r.state_county_fips] = out.get(r.state_county_fips, 0.0) + r.co2e_emission
+    return out
+
+
+def aggregate_facility_totals(rows: list[GhgRow]) -> dict[str, float]:
+    """Per-facility CO2e totals keyed by FRS ID. Drops rows with no FRS —
+    they can't be joined to TRI without it, and we have no other key the
+    TRI side carries. Same shape as ``aggregate_county_totals``: caller
+    builds the multi-year history by re-keying year-by-year results.
+    """
+    out: dict[str, float] = {}
+    for r in rows:
+        if not r.frs_id:
+            continue
+        out[r.frs_id] = out.get(r.frs_id, 0.0) + r.co2e_emission
     return out

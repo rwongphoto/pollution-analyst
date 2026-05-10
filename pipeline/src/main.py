@@ -227,6 +227,9 @@ def run_state(
     # --- GHGRP (greenhouse gas emissions) ---
     ghg_state_history: dict[int, float] = {}
     ghg_county_history: dict[str, dict[int, float]] = {}
+    # Facility-level GHG history keyed by FRS ID. Drives the facility-level
+    # ghg_step flag for TRI facilities whose FRS matches a GHGRP facility.
+    ghg_facility_history: dict[str, dict[int, float]] = {}
     ghg_years = [year]
     if history_from is not None:
         ghg_years = list(range(history_from, year + 1))
@@ -241,6 +244,8 @@ def run_state(
         ghg_state_history[y] = ghgrp.aggregate_state_total(ghg_rows)
         for fips, co2e in ghgrp.aggregate_county_totals(ghg_rows).items():
             ghg_county_history.setdefault(fips, {})[y] = co2e
+        for frs_id, co2e in ghgrp.aggregate_facility_totals(ghg_rows).items():
+            ghg_facility_history.setdefault(frs_id, {})[y] = co2e
 
     # --- AQS (criteria-air monitor readings) ---
     # State-level: per-metric annual mean across all in-state monitors.
@@ -503,6 +508,21 @@ def run_state(
                 facility_label=f.name,
                 recent_year=year,
             ))
+            # Facility-level ghg_step fires when this TRI facility's FRS ID
+            # matches a GHGRP facility's FRS — the ~14% TRI/GHGRP overlap
+            # (refineries, large chemical plants, steel, cement, paper).
+            # f.facility_id is FRS-or-TRIFD per ingest/tri.py; only the FRS
+            # case can possibly match the GHGRP-keyed history.
+            fac_ghg_history = ghg_facility_history.get(f.facility_id)
+            if fac_ghg_history:
+                ghg_flag = detect_ghg_step(
+                    ghg_history=fac_ghg_history,
+                    geography_label=f.name,
+                    recent_year=year,
+                    at_facility=True,
+                )
+                if ghg_flag is not None:
+                    ff.append(ghg_flag)
             if ff:
                 facility_flags_map[f.facility_id] = ff
                 flags_summarize("facility", f"{state.slug}/{f.facility_id}", ff)

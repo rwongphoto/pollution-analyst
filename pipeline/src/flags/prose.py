@@ -74,8 +74,12 @@ def render_violation_event(contaminant: str, rule: str, year: int, is_unresolved
     return f"{rule} {severity} violation cited in {year} ({contaminant.lower()})."
 
 
-def render_ghg_step(geography_label: str, prior: float, recent: float, pct: float) -> str:
-    """e.g. 'GHG emissions in Kern County fell 41% year over year — typical of a fuel switch or unit shutdown.'"""
+def render_ghg_step(
+    geography_label: str, prior: float, recent: float, pct: float,
+    at_facility: bool = False,
+) -> str:
+    """e.g. county: 'GHG emissions in Kern County fell 41% year over year — typical of a fuel switch or unit shutdown.'
+    facility: 'GHG emissions at Marathon Galveston Bay Refinery rose 35% year over year — typical of new commissioning or expanded operations.'"""
     direction = "rose" if pct > 0 else "fell"
     abs_pct = abs(pct)
     nudge = (
@@ -83,8 +87,9 @@ def render_ghg_step(geography_label: str, prior: float, recent: float, pct: floa
         if pct < 0 else
         " — typical of new commissioning or expanded operations."
     )
+    preposition = "at" if at_facility else "in"
     return (
-        f"GHG emissions in {geography_label} {direction} {abs_pct:.0f}% year over year "
+        f"GHG emissions {preposition} {geography_label} {direction} {abs_pct:.0f}% year over year "
         f"({_mtco2e(prior)} → {_mtco2e(recent)}){nudge}"
     )
 

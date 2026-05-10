@@ -1,9 +1,9 @@
-"""ghg_step detector — county-level GHGRP YoY shifts.
+"""ghg_step detector — GHGRP YoY shifts at county and facility level.
 
-v1 emits at county level only. Facility-level needs a TRI↔GHGRP facility-ID
-join (TRI uses TRIFID, GHGRP uses its own facility_id) — deferred until
-that join exists. County totals are clean signals (well-defined sum) and
-already in the publish payload.
+Facility-level fires when a TRI facility's FRS ID matches a GHGRP facility's
+FRS ID (the ~14% of GHGRP facilities that are also in TRI — refineries,
+large chemical plants, steel mills, cement, paper). Same threshold as
+county-level: 30% YoY on a base of ≥10K mtCO2e in both years.
 """
 
 from __future__ import annotations
@@ -21,8 +21,11 @@ def detect_ghg_step(
     ghg_history: dict[int, float] | None,
     geography_label: str,
     recent_year: int,
+    at_facility: bool = False,
 ) -> Flag | None:
-    """Detect a year-over-year step change in county GHG emissions."""
+    """Detect a year-over-year step change in GHG emissions. ``at_facility``
+    only swaps the prose preposition ("at" vs "in") so the same detector
+    can flag both county-level and facility-level shifts."""
     if not ghg_history:
         return None
     recent = ghg_history.get(recent_year, 0.0)
@@ -42,7 +45,7 @@ def detect_ghg_step(
         type="ghg_step",
         severity=severity,
         label="Greenhouse gas emissions",
-        summary=render_ghg_step(geography_label, prior, recent, pct * 100),
+        summary=render_ghg_step(geography_label, prior, recent, pct * 100, at_facility=at_facility),
         magnitude_pct=round(pct * 100, 1),
         magnitude_abs=round(delta, 1),
         baseline_year=recent_year - 1,
