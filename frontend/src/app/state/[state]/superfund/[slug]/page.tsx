@@ -497,7 +497,12 @@ export default async function SuperfundPage({
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "BreadcrumbList", itemListElement: breadcrumbItems },
+      place,
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: breadcrumbItems,
+        "@id": `${pageUrl}#breadcrumblist`,
+      },
       {
         "@type": "Article",
         mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
@@ -518,9 +523,19 @@ export default async function SuperfundPage({
           url: SITE_URL,
           logo: { "@type": "ImageObject", url: `${SITE_URL}/icon.png` },
         },
+        "@id": `${pageUrl}#article`,
       },
-      place,
+      {
+        "@type": "Organization",
+        "@id": `${SITE_URL}/#organization`,
+        name: "Pollution Analyst",
+        url: SITE_URL,
+        logo: { "@type": "ImageObject", url: `${SITE_URL}/icon.png` },
+        description:
+          "Pollution trend intelligence built from federal public data. Methodology-first. Updated on each source's native cadence.",
+      },
     ],
+    url: pageUrl,
   };
   return (
     <>
