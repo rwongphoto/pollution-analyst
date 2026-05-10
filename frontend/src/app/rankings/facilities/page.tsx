@@ -108,9 +108,9 @@ function FacilityRankingSection({ table, tint }: { table: RankingTable; tint: bo
     <section className={`section ${tint ? "section-tint" : ""}`} id={`${table.lane}-${table.direction}`}>
       <div className="wrap">
         <div style={{ marginBottom: 24 }}>
-          <div className="eyebrow">Top {table.rows.length} most polluting facilities</div>
-          <h2 className="h-display" style={{ fontSize: "clamp(24px,2.6vw,34px)", margin: "8px 0 0" }}>
-            {displayLabel}
+          <h2 className="h-display" style={{ fontSize: "clamp(24px,2.6vw,34px)", margin: "0" }}>
+            Top {table.rows.length} Most Polluting Facilities — {displayLabel}{" "}
+            <span className="muted">({table.units})</span>
             {tooltip ? (
               <InfoTip heading={tooltip.heading} body={tooltip.body} ariaLabel={`About ${displayLabel}`} />
             ) : null}

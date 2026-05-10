@@ -167,14 +167,24 @@ function findNearestHeading(el: Element): string | null {
     const pos = el.compareDocumentPosition(h);
     const before = (pos & Node.DOCUMENT_POSITION_PRECEDING) !== 0;
     if (before || h.contains(el)) {
-      best = (h.textContent ?? "").trim() || best;
+      best = headingText(h) || best;
     }
   }
   if (!best) {
-    const h1 = document.querySelector("h1");
-    best = h1?.textContent?.trim() ?? null;
+    const h1 = document.querySelector<HTMLElement>("h1");
+    best = h1 ? headingText(h1) : null;
   }
   return best;
+}
+
+// Visible heading text only — strips embedded InfoTips so the hidden
+// tooltip body (and its "i" icon) doesn't bleed into the PNG title.
+function headingText(h: HTMLElement): string {
+  const clone = h.cloneNode(true) as HTMLElement;
+  clone
+    .querySelectorAll(".info-tip, [role='tooltip']")
+    .forEach((n) => n.remove());
+  return (clone.textContent ?? "").replace(/\s+/g, " ").trim();
 }
 
 function sanitizeFilename(s: string): string {
