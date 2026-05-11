@@ -30,6 +30,8 @@ const COUNTY_TABLE_CAPTIONS: Record<string, string> = {
     "Counties with the smallest reported TRI air releases among those with reporting facilities.",
   "ghg:most":
     "Counties hosting the largest GHGRP-reporting industrial emitters.",
+  "ghg:least":
+    "Counties with the smallest GHG emissions among those hosting GHGRP-reporting facilities.",
 };
 
 export const metadata: Metadata = pageMeta({
