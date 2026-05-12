@@ -33,10 +33,12 @@ export function HealthIndicators({
   indicators,
   scopeLabel,
   stateLabel,
+  placeName,
 }: {
   indicators: HealthIndicator[];
   scopeLabel: "County" | "City";
   stateLabel: string; // e.g. "California" — used as "California mean" comparator
+  placeName: string; // e.g. "Los Angeles County" — prefixed into the section header
 }) {
   if (!indicators || indicators.length === 0) return null;
   const sourceLabels = Array.from(new Set(indicators.map((h) => h.source)));
@@ -46,7 +48,7 @@ export function HealthIndicators({
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Health context</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 12px" }}>
-            Co-Located Health Indicators
+            {placeName} Co-Located Health Indicators
           </h2>
           <p className="lead" style={{ margin: 0, maxWidth: "62ch", fontSize: 15 }}>
             Modeled adult-prevalence estimates published by CDC PLACES, paired with this {scopeLabel.toLowerCase()}&apos;s pollution and demographic context. Comparisons are ecological, not causal — pollution and disease prevalence covary at the area level, but the data does not attribute any individual&apos;s diagnosis to local exposure.{" "}

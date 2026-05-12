@@ -218,7 +218,7 @@ function ContaminantsSection({ data }: { data: SuperfundPayload }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Contaminants of concern · per EPA SEMS</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            What's In This Site
+            What Contaminants Are In {data.site.name}
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             Each row pairs a contaminant with the medium it was found in (the exposure pathway). Hover any

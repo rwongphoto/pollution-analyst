@@ -147,14 +147,14 @@ function FacilityHero({ data }: { data: FacilityPagePayload }) {
   );
 }
 
-function ChemicalsSection({ chemicals }: { chemicals: ChemicalRelease[] }) {
+function ChemicalsSection({ chemicals, facilityName }: { chemicals: ChemicalRelease[]; facilityName: string }) {
   return (
     <section className="section" id="chemicals">
       <div className="wrap">
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Chemicals reported · most recent year</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            What This Facility Releases
+            What Toxic Chemicals {facilityName} Releases
           </h2>
         </div>
         <div className="cities-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
@@ -209,7 +209,7 @@ function EquitySection({ data }: { data: FacilityPagePayload }) {
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Equity context · ACS 2018-2022 block-group demographics</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Who Lives Next To This Facility
+            Who Lives Near {data.facility.name}
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             {e.geography_label}: a population of <strong>{e.population.toLocaleString()}</strong>.{" "}
@@ -370,7 +370,7 @@ export default async function FacilityPage({
           emptyLabel="No notable signals at this facility for the current reporting year. See chemicals and equity context below for the full picture."
           id="signals"
         />
-        <ChemicalsSection chemicals={data.chemicals} />
+        <ChemicalsSection chemicals={data.chemicals} facilityName={data.facility.name} />
         <EquitySection data={data} />
         <SourceFooter data={data} />
       </main>

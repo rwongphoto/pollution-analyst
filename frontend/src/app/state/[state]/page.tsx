@@ -379,7 +379,7 @@ function EquitySection({ data }: { data: StatePagePayload }) {
         <div style={{ marginBottom: 24 }}>
           <div className="eyebrow">Equity context · ACS 2018-2022 · USEPA-clone EJ disparity</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Statewide Population Characteristics
+            {data.state.name} Population Characteristics
           </h2>
           <p className="lead" style={{ maxWidth: "62ch", marginTop: 14 }}>
             {e.geography_label}: <strong>{e.population.toLocaleString()}</strong> residents.
@@ -642,7 +642,7 @@ export default async function StatePage({
             <div style={{ marginBottom: 24 }}>
               <div className="eyebrow">Where the burden sits</div>
               <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-                County-Level TRI Choropleth
+                {data.state.name} County TRI Choropleth
               </h2>
               <p style={{ fontSize: 15, marginTop: 10, maxWidth: "62ch" }}>
                 A color-shaded map of pollution data. Darker counties report more pounds of toxic

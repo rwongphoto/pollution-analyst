@@ -252,7 +252,7 @@ function FacilitiesSection({ data }: { data: CityHubPayload }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Top facilities · TRI {data.reporting_year}</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Largest Emitters Inside The City
+            Largest Emitters Within {data.place.name}
           </h2>
         </div>
         <table className="tbl">
@@ -672,6 +672,7 @@ export default async function CityHubPage({
           indicators={data.health_indicators ?? []}
           scopeLabel="City"
           stateLabel={data.place.state_label}
+          placeName={data.place.name}
         />
         <RelatedPlaces
           places={data.related_places ?? []}

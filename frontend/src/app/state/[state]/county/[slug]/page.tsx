@@ -196,7 +196,7 @@ function FacilitiesSection({ data }: { data: CountyPagePayload }) {
         <div style={{ marginBottom: 32 }}>
           <div className="eyebrow">Top facilities · {data.reporting_year}</div>
           <h2 className="h-display" style={{ fontSize: "clamp(28px,3vw,40px)", margin: "8px 0 0" }}>
-            Where The Chemical Releases Are Concentrated
+            Where Chemical Releases Are Concentrated In {data.county.name}
           </h2>
         </div>
         <table className="tbl">
@@ -605,6 +605,7 @@ export default async function CountyPage({
           indicators={data.health_indicators ?? []}
           scopeLabel="County"
           stateLabel={data.county.state_label}
+          placeName={data.county.name}
         />
         <CityDirectory data={data} />
         <RelatedPlaces
