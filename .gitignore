@@ -30,6 +30,9 @@ next-env.d.ts
 data/*
 !data/reference/
 !data/published/
+# Generated each build by frontend/scripts/prebuild.mjs (headline counts for the
+# homepage); regenerated, not a source artifact.
+data/published/_site-counts.json
 *.db
 *.sqlite
 *.sqlite3

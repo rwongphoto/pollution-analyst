@@ -5,7 +5,9 @@
 // process.cwd() is the frontend/ directory during `next build` and `next dev`,
 // so we walk up one level to the repo root where data/ lives.
 
-import { promises as fs } from "node:fs";
+import { existsSync, promises as fs, readFileSync } from "node:fs";
+
+import { notFound } from "next/navigation";
 
 import type {
   CityHubPayload,
@@ -35,8 +37,69 @@ async function readJson<T>(relPath: string): Promise<T> {
   return JSON.parse(raw) as T;
 }
 
+// Big-tree CDN base. Defaults to this repo's published data served over GitHub
+// raw so prod works even when the env var isn't set (matches bird-analyst).
+// Override with NEXT_PUBLIC_DATA_CDN_BASE for staging/branch data.
+const CDN = (
+  process.env.NEXT_PUBLIC_DATA_CDN_BASE ??
+  "https://raw.githubusercontent.com/rwongphoto/pollution-analyst/main/data/published"
+).replace(/\/$/, "");
+
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+// Big per-entity trees (facility/water/city/county/superfund): read from disk
+// when present (local dev), otherwise fetch from the CDN at request time. On
+// Vercel these subtrees are dropped from the build workspace by prebuild, so the
+// fetch path runs in prod. Their pages return [] from generateStaticParams
+// (pure on-demand ISR) — never a build-time dependency.
+async function bigJson<T>(relPath: string): Promise<T> {
+  const local = dataPath(relPath);
+  if (existsSync(local)) return JSON.parse(readFileSync(local, "utf8")) as T;
+  const url = `${CDN}/${relPath}`;
+  // A crawl burst (Screaming Frog, Googlebot) makes raw.githubusercontent
+  // throttle cold renders, which would otherwise throw → HTTP 500. Retry
+  // transient failures (429 / 5xx / network) with exponential backoff + jitter.
+  // A genuine 404 means the combo doesn't exist → render a clean not-found.
+  let lastStatus = 0;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    if (attempt > 0) await sleep(200 * 2 ** (attempt - 1) + Math.floor(Math.random() * 150));
+    let res: Response;
+    try {
+      res = await fetch(url, { next: { revalidate: 86400 } });
+    } catch {
+      lastStatus = 0; // network error → retry
+      continue;
+    }
+    if (res.ok) return (await res.json()) as T;
+    lastStatus = res.status;
+    if (res.status === 404) notFound();
+    if (res.status !== 429 && res.status < 500) break; // other 4xx → don't retry
+  }
+  throw new Error(`fetch ${relPath} → ${lastStatus}`);
+}
+
 export async function loadHome(): Promise<HomePagePayload> {
   return readJson<HomePagePayload>("home.json");
+}
+
+export type SiteCounts = {
+  states: number;
+  facility: number;
+  water: number;
+  city: number;
+  county: number;
+  superfund: number;
+};
+
+// Headline entity counts written by scripts/prebuild.mjs while it walks the
+// published tree. Read here (not derived from listing the big trees) because
+// those trees are dropped from the build workspace on Vercel before render.
+export async function loadSiteCounts(): Promise<SiteCounts> {
+  try {
+    return await readJson<SiteCounts>("_site-counts.json");
+  } catch {
+    return { states: 0, facility: 0, water: 0, city: 0, county: 0, superfund: 0 };
+  }
 }
 
 export async function loadRankings(): Promise<RankingsPayload> {
@@ -44,23 +107,23 @@ export async function loadRankings(): Promise<RankingsPayload> {
 }
 
 export async function loadFacility(state: string, slug: string): Promise<FacilityPagePayload> {
-  return readJson<FacilityPagePayload>(`facility/${state}/${slug}.json`);
+  return bigJson<FacilityPagePayload>(`facility/${state}/${slug}.json`);
 }
 
 export async function loadWaterUtility(state: string, slug: string): Promise<WaterUtilityPayload> {
-  return readJson<WaterUtilityPayload>(`water/${state}/${slug}.json`);
+  return bigJson<WaterUtilityPayload>(`water/${state}/${slug}.json`);
 }
 
 export async function loadSuperfund(state: string, slug: string): Promise<SuperfundPayload> {
-  return readJson<SuperfundPayload>(`superfund/${state}/${slug}.json`);
+  return bigJson<SuperfundPayload>(`superfund/${state}/${slug}.json`);
 }
 
 export async function loadCityHub(state: string, slug: string): Promise<CityHubPayload> {
-  return readJson<CityHubPayload>(`city/${state}/${slug}.json`);
+  return bigJson<CityHubPayload>(`city/${state}/${slug}.json`);
 }
 
 export async function loadCounty(state: string, slug: string): Promise<CountyPagePayload> {
-  return readJson<CountyPagePayload>(`county/${state}/${slug}.json`);
+  return bigJson<CountyPagePayload>(`county/${state}/${slug}.json`);
 }
 
 export async function loadState(state: string): Promise<StatePagePayload> {

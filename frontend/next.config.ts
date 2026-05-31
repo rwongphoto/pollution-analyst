@@ -23,13 +23,34 @@ import type { NextConfig } from "next";
 })();
 
 const nextConfig: NextConfig = {
-  output: "export",
+  // ISR serving model (the bird-analyst / college-study-data pattern), replacing
+  // the old `output: 'export'` full-SSG. Per-entity pages now render on demand
+  // and revalidate every 24h, so deploys no longer pre-render the ~84k-page long
+  // tail (9.6 GB out/). The big per-entity JSON trees are fetched from a CDN at
+  // request time — see src/lib/data.ts.
+  //
+  // data/published/ lives one level up from frontend/. Trace from the repo root
+  // so the bundled-artifact includes below resolve.
+  outputFileTracingRoot: resolve(__dirname, ".."),
+  // Bundle only the small, always-needed artifacts into each serverless
+  // function. The big per-entity trees (facility/**, water/**, city/**,
+  // county/**, superfund/**) are served from the CDN at request time and are
+  // dropped from the build workspace by scripts/prebuild.mjs on Vercel/CI so the
+  // function bundle stays under the 300 MB cap.
+  outputFileTracingIncludes: {
+    "/**": [
+      "../data/published/home.json",
+      "../data/published/rankings.json",
+      "../data/published/search-index.json",
+      "../data/published/state/**",
+    ],
+  },
   turbopack: {
     // src/lib/data.ts reads per-page JSON artifacts from ../data/published at
-    // SSG time. Turbopack 16.2 traces those dynamic fs paths and warns
-    // "Overly broad patterns ... matches N files". Safe to suppress: with
-    // `output: 'export'` there is no server bundle for the JSON to over-bundle
-    // into — only rendered HTML ships.
+    // request / ISR time (local-disk fallback path). Turbopack 16.2 traces those
+    // dynamic fs paths and warns "Overly broad patterns ... matches N files".
+    // Safe to suppress — server-side reads only, never bundled into client
+    // output, and the big trees are CDN-fetched in prod.
     ignoreIssue: [{ path: "**/src/lib/data.ts" }],
   },
 };

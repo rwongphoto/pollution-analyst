@@ -32,11 +32,11 @@ Trend intelligence and narrative platform for environmental data — **not a rea
 | Methodology | 1 | static |
 | Legal (Terms + Privacy) | 1 | static |
 
-Total static pages: **~87,388** at last build.
+Pages reachable: **~87,388**. Only ~64 are pre-rendered at build (home, legal, methodology, the 5 ranking pages, and one page per state). The ~84k per-entity pages (facility / water / city / county / superfund) render **on demand via ISR** and are not built ahead of time — see [Serving model](#serving-model-isr--cdn).
 
 ## Route Map
 
-All routes are statically generated (`generateStaticParams`). `dynamicParams = false` on every dynamic segment — only what the pipeline published is reachable.
+Static hubs (home, legal, methodology, rankings) and per-state pages are pre-rendered at build (`generateStaticParams`). The five per-entity segments use **on-demand ISR**: `dynamicParams = true`, `revalidate = 86400`, and `generateStaticParams` returns `[]` — so a page is rendered the first time it's requested, then cached 24h. A slug with no published JSON returns a clean 404 (the loader calls `notFound()` on the CDN's 404).
 
 ```
 /                                     Home
@@ -95,7 +95,16 @@ Every page reads JSON written by the pipeline to `data/published/`. The frontend
 | `superfund/<state>/<slug>.json` | `/state/[state]/superfund/[slug]` | `publish_site.publish_superfund()` |
 | `search-index.json` | nav search box (client) | `publish.search_index.build_search_index()` |
 
-Loaders live in [`frontend/src/lib/data.ts`](frontend/src/lib/data.ts). All loaders are server-only; the frontend ships zero runtime fetches for these payloads — except the nav search index, which the `SiteSearch` client component fetches on first focus from `/search-index.json`. The frontend's `prebuild` (and `predev`) hook runs `frontend/scripts/sync-search-index.mjs`, which copies the pipeline-emitted `data/published/search-index.json` into `frontend/public/` so the static export ships it as a top-level asset. The index covers states + counties + cities + superfund sites only (~22k records, ~290 KB gzipped); water utilities and TRI facilities are excluded to keep the client-side fuzzy-search payload tractable on low-end mobile.
+Loaders live in [`frontend/src/lib/data.ts`](frontend/src/lib/data.ts). All loaders are server-only. Small, always-needed artifacts (`home.json`, `rankings.json`, `search-index.json`, the `state/` tree, and the generated `_site-counts.json`) are read from disk and bundled into the serverless function via `outputFileTracingIncludes` in [`frontend/next.config.ts`](frontend/next.config.ts). The five big per-entity trees go through `bigJson()`, which reads from disk when present (local dev) and otherwise fetches from the **data CDN** at request time. The `SiteSearch` client component fetches `/search-index.json`. The index covers states + counties + cities + superfund sites only (~22k records, ~290 KB gzipped); water utilities and TRI facilities are excluded to keep the client-side fuzzy-search payload tractable on low-end mobile.
+
+## Serving model (ISR + CDN)
+
+This is the bird-analyst / college-study-data pattern (chosen for deploy speed — the old `output: 'export'` pre-rendered ~87k pages into a 9.6 GB `out/` that made deploys infeasible):
+
+- **Build** pre-renders only the ~64 hub/state pages. The five per-entity segments return `[]` from `generateStaticParams`.
+- **Request time** — a per-entity page renders on demand, `bigJson()` fetches its JSON from `NEXT_PUBLIC_DATA_CDN_BASE` (default `https://raw.githubusercontent.com/rwongphoto/pollution-analyst/main/data/published`), and the page is cached 24h (`revalidate = 86400`). Transient CDN 429/5xx are retried with backoff; a 404 → `notFound()`.
+- **The CDN is this same public repo** served over GitHub raw — no second repo, no upload step. The data must be committed and pushed to `main`, and the repo must be **public**, for the raw URLs to resolve.
+- **`frontend/scripts/prebuild.mjs`** (runs on `predev` + `prebuild`): copies the search index into `public/`, walks `data/published/` to emit sharded sitemaps + `sitemap.xml` into `public/`, writes `data/published/_site-counts.json` (headline counts for the homepage), and **on Vercel/CI deletes the five big trees from the build workspace** so the function bundle stays under the 300 MB cap (they remain in git → still served by the CDN). Sitemaps and the search index are gitignored (regenerated each build).
 
 ## Data Flow
 
@@ -126,7 +135,8 @@ pipeline/src/publish/rankings.py       (writes data/published/rankings.json)
 pipeline/src/publish/search_index.py   (writes data/published/search-index.json, nav search)
     │
     ▼
-frontend/ (Next.js SSG)                (statically rendered to Vercel)
+frontend/ (Next.js ISR)                (hubs pre-rendered; per-entity pages on
+                                        demand, fetching JSON from the data CDN)
 ```
 
 Pipeline CLI: `python -m pipeline.src.main run --state ca --year 2023 --history-from 2010`. Flags `--no-flags`, `--skip-sdwis`, `--history-cache-only` for partial runs.
@@ -176,10 +186,10 @@ Rendered on state, county, city hub, facility (3-mile block-group buffer → con
 
 ## Frontend Stack
 
-- **Next.js 16 (App Router, Turbopack)** — SSG, `dynamicParams = false` on every dynamic segment. The Next.js version diverges from training-data defaults; `frontend/AGENTS.md` is the binding rule for any Next.js work.
+- **Next.js 16 (App Router, Turbopack)** — ISR: hubs + per-state pages pre-rendered; per-entity segments are on-demand (`dynamicParams = true`, `revalidate = 86400`, `generateStaticParams → []`). See [Serving model](#serving-model-isr--cdn). The Next.js version diverges from training-data defaults; `frontend/AGENTS.md` is the binding rule for any Next.js work.
 - **Inline SVG** for sparklines, hero charts, anomaly card sparklines. No charting library — direct SVG keeps the static bundle small.
 - **CSS variables** for the design system (`--ink`, `--fg-2`, `--blue`, `--green`, `--red`, `--amber`, `--graphite-2`). Pathway colors live alongside each consuming component.
-- **No client-side data fetching** for page content — all JSON is read server-side at build time.
+- **No client-side data fetching** for page content — page JSON is read server-side (bundled small artifacts at build, big per-entity trees fetched server-side from the CDN at request/ISR time). Only the nav search index is client-fetched.
 - **No Mapbox** yet. Crime site uses Mapbox heavily; pollution site doesn't have neighborhood polygons, so a choropleth isn't load-bearing yet.
 
 ## Operational Cadence

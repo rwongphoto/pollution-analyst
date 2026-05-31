@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
 import { USMapClient } from "@/components/site/USMapClient";
-import { listCitySlugs, loadCounty, loadHome, loadNationalCountyBurdens, loadStateMapSummaries } from "@/lib/data";
+import { loadCounty, loadHome, loadNationalCountyBurdens, loadSiteCounts, loadStateMapSummaries } from "@/lib/data";
 import { SITE_URL } from "@/lib/seo";
 import type { FeaturedEntity } from "@/lib/types";
 
@@ -380,10 +380,10 @@ function HomeCTA() {
 }
 
 export default async function HomePage() {
-  const [data, kern, citySlugs, nationalBurdens, stateSummaries] = await Promise.all([
+  const [data, kern, siteCounts, nationalBurdens, stateSummaries] = await Promise.all([
     loadHome(),
     loadCounty("ca", "kern"),
-    listCitySlugs(),
+    loadSiteCounts(),
     loadNationalCountyBurdens(),
     loadStateMapSummaries(),
   ]);
@@ -392,7 +392,7 @@ export default async function HomePage() {
     .slice(0, 5)
     .map(({ label, pct_us }) => ({ label, pct_us }));
   const kernGeoLabel = `${kern.county.name}, ${kern.county.state.toUpperCase()}`;
-  const citiesTracked = citySlugs.length;
+  const citiesTracked = siteCounts.city;
   const statesCovered = new Set(nationalBurdens.map((b) => b.fips.slice(0, 2))).size;
 
   const jsonLd = {

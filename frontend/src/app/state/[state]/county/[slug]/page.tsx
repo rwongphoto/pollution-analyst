@@ -16,10 +16,7 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
 import { SuperfundSection } from "@/components/site/SuperfundSection";
-import {
-  listCountySlugs,
-  loadCounty,
-} from "@/lib/data";
+import { loadCounty } from "@/lib/data";
 import {
   disparityLanguage,
   equityIndexLanguage,
@@ -39,12 +36,15 @@ function countyDescription(data: CountyPagePayload): string {
   return `${data.county.name} pollution data: TRI facility releases, hazardous air pollutants, GHG emissions, and equity context. ${data.facilities.length} top facilities tracked.`;
 }
 
-export const dynamicParams = false;
+// Big tree: render on demand + 24h revalidate (the fast-deploy ISR model). The
+// per-county JSON is fetched from the data CDN at request time.
+export const dynamicParams = true;
+export const revalidate = 86400;
 
 type RouteParams = { state: string; slug: string };
 
 export async function generateStaticParams(): Promise<RouteParams[]> {
-  return listCountySlugs();
+  return []; // pure on-demand: zero build-time big-tree reads (CDN-served at runtime)
 }
 
 export async function generateMetadata({

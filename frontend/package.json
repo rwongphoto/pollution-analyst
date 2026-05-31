@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/sync-search-index.mjs",
+    "predev": "node scripts/prebuild.mjs",
     "dev": "next dev",
-    "prebuild": "node scripts/sync-search-index.mjs",
+    "prebuild": "node scripts/prebuild.mjs",
     "build": "next build",
-    "postbuild": "node scripts/strip-rsc-sidecars.mjs && node scripts/generate-sitemap.mjs",
     "start": "next start",
     "lint": "eslint"
   },

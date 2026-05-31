@@ -37,8 +37,10 @@ yarn-error.log*
 # vercel
 .vercel
 
-# Generated each build by scripts/sync-search-index.mjs from the pipeline.
+# Generated each build by scripts/prebuild.mjs from the published data tree.
 /public/search-index.json
+/public/sitemap.xml
+/public/sitemap-*.xml
 
 # typescript
 *.tsbuildinfo

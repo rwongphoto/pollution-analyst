@@ -2,7 +2,7 @@
 
 Per-template structural reference. For the route map, pipeline data flow, and high-level positioning see [`site_architecture.md`](site_architecture.md).
 
-Every page is a server component that reads JSON from `data/published/` via [`frontend/src/lib/data.ts`](frontend/src/lib/data.ts) and renders statically. No client-side fetches for page content. All dynamic routes use `dynamicParams = false`.
+Every page is a server component that reads JSON from `data/published/` via [`frontend/src/lib/data.ts`](frontend/src/lib/data.ts). No client-side fetches for page content. Hubs + per-state pages are pre-rendered at build; the five per-entity segments (facility/water/city/county/superfund) render **on-demand via ISR** (`dynamicParams = true`, `revalidate = 86400`, `generateStaticParams → []`) and fetch their JSON from the data CDN at request time. See `site_architecture.md` → Serving model.
 
 Shared chrome on every page:
 - [`SiteHeader`](frontend/src/components/site/SiteHeader.tsx) — five nav items: States · Counties · Cities · Facilities · Methodology.

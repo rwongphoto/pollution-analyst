@@ -10,10 +10,7 @@ import { Ic } from "@/components/site/icons";
 import { JumpStrip } from "@/components/site/JumpStrip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
-import {
-  listSuperfundSlugs,
-  loadSuperfund,
-} from "@/lib/data";
+import { loadSuperfund } from "@/lib/data";
 import { isEquityStub } from "@/lib/prose";
 import { pageMeta, SITE_URL } from "@/lib/seo";
 import type { SuperfundPayload } from "@/lib/types";
@@ -25,12 +22,15 @@ function superfundDescription(data: SuperfundPayload): string {
   return `${s.name} (${s.npl_status}) in ${where}. ${data.totals.contaminants_count} contaminants of concern reported to EPA's Superfund Enterprise Management System.`;
 }
 
-export const dynamicParams = false;
+// Big tree: render on demand + 24h revalidate (the fast-deploy ISR model). The
+// per-site JSON is fetched from the data CDN at request time.
+export const dynamicParams = true;
+export const revalidate = 86400;
 
 type RouteParams = { state: string; slug: string };
 
 export async function generateStaticParams(): Promise<RouteParams[]> {
-  return listSuperfundSlugs();
+  return []; // pure on-demand: zero build-time big-tree reads (CDN-served at runtime)
 }
 
 export async function generateMetadata({

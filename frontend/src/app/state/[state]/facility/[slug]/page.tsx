@@ -10,10 +10,7 @@ import { JumpStrip } from "@/components/site/JumpStrip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
-import {
-  listFacilitySlugs,
-  loadFacility,
-} from "@/lib/data";
+import { loadFacility } from "@/lib/data";
 import {
   isEquityStub,
   longArcLanguage,
@@ -32,12 +29,15 @@ function citySlugFromName(cityName: string): string {
   return cityName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 }
 
-export const dynamicParams = false;
+// Big tree: render on demand + 24h revalidate (the fast-deploy ISR model). The
+// per-facility JSON is fetched from the data CDN at request time.
+export const dynamicParams = true;
+export const revalidate = 86400;
 
 type RouteParams = { state: string; slug: string };
 
 export async function generateStaticParams(): Promise<RouteParams[]> {
-  return listFacilitySlugs();
+  return []; // pure on-demand: zero build-time big-tree reads (CDN-served at runtime)
 }
 
 export async function generateMetadata({

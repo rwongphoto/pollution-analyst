@@ -10,10 +10,7 @@ import { InfoTip } from "@/components/site/InfoTip";
 import { JumpStrip } from "@/components/site/JumpStrip";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
-import {
-  listWaterSlugs,
-  loadWaterUtility,
-} from "@/lib/data";
+import { loadWaterUtility } from "@/lib/data";
 import {
   disparityLanguage,
   equityIndexLanguage,
@@ -30,12 +27,15 @@ function waterDescription(data: WaterUtilityPayload, city: string): string {
   return `${data.utility.name} (PWSID ${data.utility.pwsid}) — drinking water serving ${city}, ${data.utility.state_label}. ${data.utility.population_served.toLocaleString()} people served. SDWIS violation history and contaminant detail.`;
 }
 
-export const dynamicParams = false;
+// Big tree: render on demand + 24h revalidate (the fast-deploy ISR model). The
+// per-utility JSON is fetched from the data CDN at request time.
+export const dynamicParams = true;
+export const revalidate = 86400;
 
 type RouteParams = { state: string; slug: string };
 
 export async function generateStaticParams(): Promise<RouteParams[]> {
-  return listWaterSlugs();
+  return []; // pure on-demand: zero build-time big-tree reads (CDN-served at runtime)
 }
 
 // Derive the city display name from the utility payload. Prefers the
