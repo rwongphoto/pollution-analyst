@@ -11,6 +11,7 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
 import { loadFacility } from "@/lib/data";
+import { cityHref, loadPlaceSlugs } from "@/lib/placeLinks";
 import {
   isEquityStub,
   longArcLanguage,
@@ -23,10 +24,6 @@ import type { ChemicalRelease, FacilityPagePayload } from "@/lib/types";
 
 function facilityDescription(data: FacilityPagePayload): string {
   return `${data.facility.name} reported ${poundsFormat(data.totals.total_releases_pounds)} of TRI-tracked toxic releases in ${data.reporting_year}. ${data.totals.chemicals_reported} chemicals; equity context from EJScreen.`;
-}
-
-function citySlugFromName(cityName: string): string {
-  return cityName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 }
 
 // Big tree: render on demand + 24h revalidate (the fast-deploy ISR model). The
@@ -269,12 +266,14 @@ export default async function FacilityPage({
   params: Promise<RouteParams>;
 }) {
   const { state, slug } = await params;
-  const data = await loadFacility(state, slug);
+  const [data, placeSlugs] = await Promise.all([loadFacility(state, slug), loadPlaceSlugs()]);
   const f = data.facility;
   const stateUrl = `${SITE_URL}/state/${state}`;
   const countyUrl = `${stateUrl}/county/${f.county_slug}`;
-  const citySlug = f.city ? citySlugFromName(f.city) : null;
-  const cityUrl = citySlug ? `${stateUrl}/city/${citySlug}` : null;
+  // Link to the city hub only when one was actually published (the raw TRI city
+  // string often maps to no hub, or a differently-slugged one).
+  const cityPath = cityHref(placeSlugs, state, f.city);
+  const cityUrl = cityPath ? `${SITE_URL}${cityPath}` : null;
   const pageUrl = `${stateUrl}/facility/${slug}`;
   const description = facilityDescription(data);
   const publishedAt = data._published_at ?? data.source.retrieved;
@@ -287,7 +286,7 @@ export default async function FacilityPage({
     { "@type": "ListItem", position: 2, item: { "@id": stateUrl, name: f.state_label } },
     { "@type": "ListItem", position: 3, item: { "@id": countyUrl, name: f.county } },
   ];
-  if (f.city && cityUrl) {
+  if (cityUrl) {
     breadcrumbItems.push({ "@type": "ListItem", position: breadcrumbItems.length + 1, item: { "@id": cityUrl, name: f.city } });
   }
   breadcrumbItems.push({ "@type": "ListItem", position: breadcrumbItems.length + 1, item: { "@id": pageUrl, name: f.name } });
@@ -352,7 +351,7 @@ export default async function FacilityPage({
           items={[
             { label: f.state_label, href: `/state/${f.state}` },
             { label: f.county, href: `/state/${f.state}/county/${f.county_slug}` },
-            ...(f.city && citySlug ? [{ label: f.city, href: `/state/${f.state}/city/${citySlug}` }] : []),
+            ...(cityPath ? [{ label: f.city, href: cityPath }] : []),
             { label: f.name },
           ]}
         />

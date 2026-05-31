@@ -16,6 +16,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { Sparkline } from "@/components/site/Sparkline";
 import { SuperfundSection } from "@/components/site/SuperfundSection";
 import { loadCityHub } from "@/lib/data";
+import { countyHref, loadPlaceSlugs } from "@/lib/placeLinks";
 import {
   disparityLanguage,
   equityIndexLanguage,
@@ -41,6 +42,8 @@ function cityDescription(data: CityHubPayload): string {
 // strips them before slugifying, and the frontend has to match. Order is
 // significant: " city and borough" must come before " borough" so Juneau
 // strips fully.
+// County hub slugs are resolved via lib/placeLinks (countyHref); this only
+// builds the human display label.
 const COUNTY_SUFFIXES = [
   " city and borough",
   " borough",
@@ -50,18 +53,6 @@ const COUNTY_SUFFIXES = [
   " municipio",
   " county",
 ];
-
-function stripCountySuffix(name: string): string {
-  const low = name.toLowerCase();
-  for (const suffix of COUNTY_SUFFIXES) {
-    if (low.endsWith(suffix)) return name.slice(0, -suffix.length).trimEnd();
-  }
-  return name;
-}
-
-function countySlugFromName(countyName: string): string {
-  return stripCountySuffix(countyName).toLowerCase().replace(/\s+/g, "-");
-}
 
 function countyLabelFromName(countyName: string): string {
   const low = countyName.toLowerCase();
@@ -108,7 +99,7 @@ const PATHWAY_COLOR: Record<PollutantSummary["pathway"], string> = {
   pesticide: "#6FCF97",
 };
 
-function CityHero({ data }: { data: CityHubPayload }) {
+function CityHero({ data, countyPath }: { data: CityHubPayload; countyPath: string | null }) {
   const p = data.place;
   const t = data.totals;
   const yoyLanguage = magnitudeLanguage(t.yoy_pct_change);
@@ -140,9 +131,7 @@ function CityHero({ data }: { data: CityHubPayload }) {
             {p.county_name ? (
               <>
                 {" "}·{" "}
-                <Link href={`/state/${p.state}/county/${(p.county_name || "").toLowerCase().replace(/\s+county$/, "").replace(/\s+/g, "-")}`}>
-                  {p.county_name}
-                </Link>
+                {countyPath ? <Link href={countyPath}>{p.county_name}</Link> : p.county_name}
               </>
             ) : null}
           </p>
@@ -570,15 +559,16 @@ export default async function CityHubPage({
   params: Promise<RouteParams>;
 }) {
   const { state, slug } = await params;
-  const data = await loadCityHub(state, slug);
+  const [data, placeSlugs] = await Promise.all([loadCityHub(state, slug), loadPlaceSlugs()]);
   const stateUrl = `${SITE_URL}/state/${state}`;
   const pageUrl = `${stateUrl}/city/${slug}`;
   const description = cityDescription(data);
   const placeName = `${data.place.name}, ${data.place.state_label}`;
   const countyName = data.place.county_name;
-  const countySlug = countyName ? countySlugFromName(countyName) : null;
+  // Link to the county hub only when one was published for this name.
+  const countyPath = countyHref(placeSlugs, state, countyName);
   const countyLabel = countyName ? countyLabelFromName(countyName) : null;
-  const countyUrl = countySlug ? `${stateUrl}/county/${countySlug}` : null;
+  const countyUrl = countyPath ? `${SITE_URL}${countyPath}` : null;
   const breadcrumbItems: Array<{ "@type": "ListItem"; position: number; name: string; item: string }> = [
     { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
     { "@type": "ListItem", position: 2, name: data.place.state_label, item: stateUrl },
@@ -640,13 +630,13 @@ export default async function CityHubPage({
         <Crumbs
           items={[
             { label: data.place.state_label, href: `/state/${state}` },
-            ...(countyLabel && countyUrl
-              ? [{ label: countyLabel, href: `/state/${state}/county/${countySlug}` }]
+            ...(countyLabel && countyPath
+              ? [{ label: countyLabel, href: countyPath }]
               : []),
             { label: data.place.name },
           ]}
         />
-        <CityHero data={data} />
+        <CityHero data={data} countyPath={countyPath} />
         <JumpStrip
           items={[
             { id: "signals", label: "Signals", show: (data.flags?.length ?? 0) > 0 },

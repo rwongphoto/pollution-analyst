@@ -62,13 +62,19 @@ const buckets = {
   ],
 };
 const counts = { states: stateSlugs.length };
+// Per-state sets of published city/county slugs. Bundled into the function so
+// link helpers can drop links to places that have no hub (see lib/placeLinks.ts)
+// — the big trees themselves are gone from the workspace on Vercel.
+const placeSlugs = { city: {}, county: {} };
 
 for (const kind of BIG_TREES) {
   const root = join(PUBLISHED, kind);
   const urls = [];
   if (existsSync(root)) {
     for (const st of readdirSync(root)) {
-      for (const slug of slugsIn(join(root, st))) urls.push(`/state/${st}/${kind}/${slug}`);
+      const slugs = slugsIn(join(root, st));
+      for (const slug of slugs) urls.push(`/state/${st}/${kind}/${slug}`);
+      if (kind === "city" || kind === "county") placeSlugs[kind][st] = slugs;
     }
   }
   buckets[kind] = urls;
@@ -114,8 +120,10 @@ writeFileSync(
     .join("\n")}\n</sitemapindex>\n`,
 );
 
-// ---- 3. counts for the homepage (written before the deletion below) ----
+// ---- 3. counts for the homepage + published city/county slug index ----
+// (both written before the deletion below; both bundled via next.config.ts)
 writeFileSync(join(PUBLISHED, "_site-counts.json"), `${JSON.stringify(counts)}\n`);
+writeFileSync(join(PUBLISHED, "_place-slugs.json"), JSON.stringify(placeSlugs));
 
 const total = order.reduce((n, k) => n + (buckets[k]?.length ?? 0), 0);
 console.log(

@@ -43,6 +43,9 @@ const nextConfig: NextConfig = {
       "../data/published/rankings.json",
       "../data/published/search-index.json",
       "../data/published/state/**",
+      // Published city/county slug index — entity pages (ISR functions) use it
+      // to drop links to places that have no hub. See src/lib/placeLinks.ts.
+      "../data/published/_place-slugs.json",
     ],
   },
   turbopack: {
