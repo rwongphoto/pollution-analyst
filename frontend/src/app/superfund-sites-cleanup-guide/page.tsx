@@ -11,8 +11,7 @@ import { pageMeta, SITE_URL } from "@/lib/seo";
 const PATH = "/superfund-sites-cleanup-guide";
 
 export const metadata: Metadata = pageMeta({
-  title:
-    "The Superfund Program: Understanding Contaminated Sites & Cleanup Process | Pollution Analyst",
+  title: "Superfund Sites and Cleanup: A Comprehensive Guide | Pollution Analyst",
   description:
     "A comprehensive guide to EPA Superfund sites — what they are, how the cleanup process works, key legislation, current statistics, and environmental-justice context for the NPL sites tracked across the US.",
   path: PATH,
@@ -468,8 +467,9 @@ export default async function SuperfundGuidePage() {
               <p>
                 Pollution Analyst&apos;s current database spans{" "}
                 <strong>{totalSites.toLocaleString()} NPL sites</strong> across all{" "}
-                {stateCount} ingested states, drawn from EPA&apos;s Superfund Enterprise
-                Management System (SEMS){retrieved ? ` as of the ${retrieved} pipeline run` : ""}.
+                {stateCount}{" "}
+                ingested states, drawn from EPA&apos;s Superfund Enterprise Management
+                System (SEMS){retrieved ? ` as of the ${retrieved} pipeline run` : ""}.
                 This total combines NPL Final sites (under active or completed cleanup
                 oversight) and a smaller number of NPL Deleted sites where EPA has
                 certified cleanup completion.
