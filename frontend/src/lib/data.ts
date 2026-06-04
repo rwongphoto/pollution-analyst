@@ -182,6 +182,46 @@ export async function loadStateMapSummaries(): Promise<StateMapSummary[]> {
   return out;
 }
 
+export type StateNplCount = {
+  slug: string;  // 'nj'
+  name: string;  // 'New Jersey'
+  npl: number;   // count of NPL sites tracked in this state
+};
+
+// Per-state NPL site counts, summed from each state's totals.npl_sites_tracked
+// and sorted highest-first. Powers the "Regional Distribution" section on the
+// Superfund rankings page (answers "which state has the most Superfund sites").
+// State JSONs stay in the build workspace on Vercel (only big per-entity trees
+// are dropped), so this disk read is safe at render time.
+export async function loadStateNplCounts(): Promise<StateNplCount[]> {
+  const root = dataPath("state");
+  let files: string[] = [];
+  try {
+    files = await fs.readdir(root);
+  } catch {
+    return [];
+  }
+  const out: StateNplCount[] = [];
+  await Promise.all(
+    files
+      .filter((f) => f.endsWith(".json"))
+      .map(async (f) => {
+        try {
+          const raw = await fs.readFile(root + "/" + f, "utf8");
+          const data = JSON.parse(raw) as StatePagePayload;
+          const npl = data.totals.npl_sites_tracked ?? 0;
+          if (npl > 0) {
+            out.push({ slug: data.state.slug, name: data.state.name, npl });
+          }
+        } catch {
+          // skip unreadable / malformed state files
+        }
+      }),
+  );
+  out.sort((a, b) => b.npl - a.npl);
+  return out;
+}
+
 export async function loadNationalCountyBurdens(): Promise<
   { fips: string; total_releases_pounds: number }[]
 > {

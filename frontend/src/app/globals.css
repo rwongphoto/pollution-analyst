@@ -1826,3 +1826,44 @@ hr, .rule { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
   color: var(--fg-3) !important;
 }
 .mapboxgl-ctrl-attrib a { color: var(--fg-2) !important; }
+
+/* ── Superfund rankings page — SEO additions ────────────────────────────
+   Components added to /rankings/superfund (keystat callout, ranking-metric
+   prose, sites-by-state bar list, FAQ accordion). Scoped under rk- names so
+   nothing leaks into the shared rankings layout. */
+.rk-keystat { display: flex; align-items: center; gap: 20px; margin: 28px 0 0; padding: 18px 22px; background: var(--bg-2); border: 1px solid var(--line); border-left: 3px solid var(--blue); border-radius: var(--r-3); max-width: 640px; }
+.rk-keystat-num { font-family: var(--font-mono); font-weight: 500; font-size: clamp(34px, 5vw, 46px); line-height: 1; color: var(--blue-2); letter-spacing: -0.02em; flex-shrink: 0; }
+.rk-keystat-body { display: flex; flex-direction: column; gap: 5px; }
+.rk-keystat-body strong { font-size: 15px; color: var(--fg); }
+.rk-keystat-body span { font-size: 13.5px; line-height: 1.55; color: var(--fg-3); }
+
+.rk-prose p { font-size: 15px; line-height: 1.7; color: var(--fg-2); max-width: 72ch; margin: 0 0 14px; }
+.rk-prose p:last-child { margin-bottom: 0; }
+.rk-prose strong { color: var(--fg); }
+
+/* sites-by-state horizontal bars */
+.rk-bars { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; max-width: 680px; }
+.rk-bars li { display: grid; grid-template-columns: 24px 150px 1fr 44px; align-items: center; gap: 12px; }
+.rk-bar-rank { font-family: var(--font-mono); font-size: 12px; color: var(--fg-4); text-align: right; }
+.rk-bar-name { font-size: 14px; font-weight: 500; color: var(--fg); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rk-bar-name:hover { color: var(--blue-2); }
+.rk-bar-track { height: 10px; background: var(--bg-3); border-radius: var(--r-pill); overflow: hidden; }
+.rk-bar-fill { display: block; height: 100%; background: var(--blue); border-radius: var(--r-pill); }
+.rk-bar-val { font-size: 13px; color: var(--fg-2); text-align: right; }
+
+/* FAQ accordion (mirrors the guide-page accordion, scoped to rankings) */
+.rk-faq { max-width: 800px; }
+.rk-faq details { border-bottom: 1px solid var(--line); }
+.rk-faq summary { padding: 15px 0; font-size: 15px; font-weight: 600; color: var(--fg-2); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.rk-faq summary:hover { color: var(--fg); }
+.rk-faq summary::-webkit-details-marker { display: none; }
+.rk-faq summary::after { content: "+"; font-size: 18px; color: var(--fg-4); flex-shrink: 0; }
+.rk-faq details[open] summary { color: var(--fg); }
+.rk-faq details[open] summary::after { content: "−"; }
+.rk-faq .answer { padding: 0 0 16px; font-size: 14px; line-height: 1.7; color: var(--fg-3); max-width: 76ch; }
+.rk-faq .answer a { color: var(--blue-2); }
+
+@media (max-width: 640px) {
+  .rk-keystat { gap: 14px; padding: 14px 16px; }
+  .rk-bars li { grid-template-columns: 20px 110px 1fr 38px; gap: 8px; }
+}
