@@ -215,7 +215,7 @@ export default async function SuperfundGuidePage() {
 
               <div className="two-col">
                 <div className="two-col-cell">
-                  <h3>Common Site Types</h3>
+                  <h3>Common Superfund Site Types</h3>
                   <ul>
                     <li>Former industrial plants &amp; chemical manufacturers</li>
                     <li>Military installations (DoD) &amp; weapons ranges</li>
