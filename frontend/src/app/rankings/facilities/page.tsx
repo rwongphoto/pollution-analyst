@@ -38,12 +38,14 @@ export default async function RankingsFacilitiesPage() {
   const tables = data.facilities.tables;
 
   const pageUrl = `${SITE_URL}/rankings/facilities`;
+  const crumbs = [{ label: "Rankings" }, { label: "Facilities" }];
   const jsonLd = buildRankingsJsonLd({
     pageUrl,
     pageTitle: "Most Polluting Facilities — National Rankings",
     pageDescription:
       "Most polluting industrial facilities nationally — ranked by total TRI releases and broken down by air, water, and land.",
     surfaceLabel: "Facilities Rankings",
+    crumbs,
     tables,
     rowUrl: (r) => `${SITE_URL}/state/${r.state}/facility/${r.slug}`,
   });
@@ -56,7 +58,7 @@ export default async function RankingsFacilitiesPage() {
       />
       <SiteHeader active="rankings-facilities" />
       <main>
-        <Crumbs items={[{ label: "Rankings" }, { label: "Facilities" }]} />
+        <Crumbs items={crumbs} />
 
         <section className="section">
           <div className="wrap">

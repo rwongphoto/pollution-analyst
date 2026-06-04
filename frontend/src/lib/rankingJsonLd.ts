@@ -1,21 +1,45 @@
 import { SITE_URL } from "./seo";
 import type { RankingRow, RankingTable } from "./types";
 
+// One breadcrumb segment — mirrors the <Crumbs> component's CrumbItem so the
+// JSON-LD BreadcrumbList is built from the exact same trail shown on the page.
+export interface CrumbSegment {
+  label: string;
+  href?: string;  // omitted for non-link crumbs (e.g. the "Rankings" parent)
+}
+
 export interface RankingsJsonLdInput {
   pageUrl: string;          // canonical absolute URL for this rankings page
   pageTitle: string;        // Article headline / page title (no site suffix)
   pageDescription: string;
-  surfaceLabel: string;     // breadcrumb leaf label (e.g. "States Rankings")
+  surfaceLabel: string;     // ItemList description label (e.g. "States Rankings")
+  crumbs: CrumbSegment[];   // the SAME items passed to <Crumbs> (Home auto-added)
   tables: RankingTable[];
   rowUrl: (row: RankingRow) => string;  // returns absolute URL for a row entity
 }
 
 // Generates the @graph JSON-LD for a rankings page: BreadcrumbList + Article +
-// Organization + one ItemList per ranking table. The "Rankings" parent crumb
-// has no URL (no /rankings index page) so it's skipped per Google's rule that
-// every BreadcrumbList item must be a URL.
+// Organization + one ItemList per ranking table.
+//
+// The BreadcrumbList is built from the visible crumb trail (Home + the items
+// passed to <Crumbs>) so the structured data always matches what users see.
+// Crumbs without an href (e.g. the "Rankings" parent, which has no index page)
+// are emitted as name-only ListItems — exactly the non-link rendering on the
+// page; the leaf item resolves to the page's own canonical URL.
 export function buildRankingsJsonLd(input: RankingsJsonLdInput) {
-  const { pageUrl, pageTitle, pageDescription, surfaceLabel, tables, rowUrl } = input;
+  const { pageUrl, pageTitle, pageDescription, surfaceLabel, crumbs, tables, rowUrl } = input;
+
+  const trail: CrumbSegment[] = [{ label: "Home", href: "/" }, ...crumbs];
+  const breadcrumbItems = trail.map((c, i) => {
+    const isLast = i === trail.length - 1;
+    const url = c.href ? `${SITE_URL}${c.href}` : isLast ? pageUrl : undefined;
+    return {
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.label,
+      ...(url ? { item: url } : {}),
+    };
+  });
 
   const itemLists = tables.map((t) => {
     const directionWord = t.direction === "most" ? "highest" : "lowest";
@@ -42,10 +66,7 @@ export function buildRankingsJsonLd(input: RankingsJsonLdInput) {
     "@graph": [
       {
         "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
-          { "@type": "ListItem", position: 2, name: surfaceLabel, item: pageUrl },
-        ],
+        itemListElement: breadcrumbItems,
       },
       {
         "@type": "Article",

@@ -44,12 +44,14 @@ export default async function RankingsCitiesPage() {
   const anyCountyDerived = tables.some((t) => t.county_derived);
 
   const pageUrl = `${SITE_URL}/rankings/cities`;
+  const crumbs = [{ label: "Rankings" }, { label: "Cities" }];
   const jsonLd = buildRankingsJsonLd({
     pageUrl,
     pageTitle: "Most & Least Polluted Cities — National Rankings",
     pageDescription:
       "Top 10 most and least polluted cities nationally, ranked across PM2.5, lifetime cancer risk (AirToxScreen), and TRI air releases.",
     surfaceLabel: "Cities Rankings",
+    crumbs,
     tables,
     rowUrl: (r) => `${SITE_URL}/state/${r.state}/city/${r.slug}`,
   });
@@ -62,7 +64,7 @@ export default async function RankingsCitiesPage() {
       />
       <SiteHeader active="rankings-cities" />
       <main>
-        <Crumbs items={[{ label: "Rankings" }, { label: "Cities" }]} />
+        <Crumbs items={crumbs} />
 
         <section className="section">
           <div className="wrap">

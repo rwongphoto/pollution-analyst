@@ -71,12 +71,16 @@ export default async function RankingsSuperfundPage() {
   ];
 
   const pageUrl = `${SITE_URL}/rankings/superfund`;
+  // Single source for the breadcrumb trail — shared by <Crumbs> and the
+  // BreadcrumbList JSON-LD so the structured data matches the visible crumbs.
+  const crumbs = [{ label: "Rankings" }, { label: "Superfund" }];
   const jsonLd = buildRankingsJsonLd({
     pageUrl,
     pageTitle: "Superfund Site Rankings: Most Contaminated & Impacted Sites",
     pageDescription:
       "Federal Superfund / NPL sites with the broadest contamination footprint, ranked by distinct contaminants reported and by nearby groundwater utilities.",
     surfaceLabel: "Superfund Rankings",
+    crumbs,
     tables,
     rowUrl: (r) => `${SITE_URL}/state/${r.state}/superfund/${r.slug}`,
   });
@@ -106,7 +110,7 @@ export default async function RankingsSuperfundPage() {
       />
       <SiteHeader active="rankings-superfund" />
       <main>
-        <Crumbs items={[{ label: "Rankings" }, { label: "Superfund" }]} />
+        <Crumbs items={crumbs} />
 
         <section className="section">
           <div className="wrap">
@@ -151,7 +155,7 @@ export default async function RankingsSuperfundPage() {
               <div className="rk-keystat-body">
                 <strong>Superfund (NPL) sites tracked in the U.S.</strong>
                 <span>
-                  Across {stateCount} states, drawn from EPA&apos;s SEMS database.
+                  Across {stateCount}{" "}states, drawn from EPA&apos;s SEMS database.
                   {leadState ? (
                     <>
                       {" "}
@@ -182,7 +186,7 @@ export default async function RankingsSuperfundPage() {
             </h2>
             <div className="rk-prose">
               <p>
-                <strong>Distinct contaminants reported.</strong> This is a count of
+                <strong>Distinct contaminants reported.</strong>{" "}This is a count of
                 chemical complexity, not mass. A high count means EPA&apos;s decision
                 documents name a wide array of different pollutants across multiple
                 media — groundwater, soil, sediment, and surface water — signalling a
@@ -204,7 +208,7 @@ export default async function RankingsSuperfundPage() {
                 reached a utility&apos;s intake.
               </p>
               <p>
-                <strong>Why these metrics.</strong> SEMS publishes neither a single
+                <strong>Why these metrics.</strong>{" "}SEMS publishes neither a single
                 severity score nor a pounds-of-waste figure per site, so the
                 conventional &ldquo;largest&rdquo; or &ldquo;worst&rdquo; framings —
                 acreage, waste volume, cleanup cost — aren&apos;t uniformly available
@@ -227,8 +231,8 @@ export default async function RankingsSuperfundPage() {
                 Superfund Sites by State: Which States Have the Most?
               </h2>
               <p className="muted" style={{ fontSize: 14, margin: "0 0 20px", maxWidth: "62ch" }}>
-                NPL site counts per state across the {totalSites.toLocaleString()} sites
-                tracked. {leadState ? `${leadState.name} carries the most (${leadState.npl}); ` : ""}
+                NPL site counts per state across the {totalSites.toLocaleString()}{" "}sites
+                tracked.{" "}{leadState ? `${leadState.name} carries the most (${leadState.npl}); ` : ""}
                 states with deep industrial and military legacies cluster at the top.
                 Below are the ten states with the most Superfund sites.
               </p>
@@ -271,8 +275,8 @@ export default async function RankingsSuperfundPage() {
                   <div className="answer">
                     {f.q === "How many Superfund sites are there in the U.S.?" ? (
                       <>
-                        Pollution Analyst tracks {totalSites.toLocaleString()} National
-                        Priorities List (NPL) sites across {stateCount} states, drawn from
+                        Pollution Analyst tracks {totalSites.toLocaleString()}{" "}National
+                        Priorities List (NPL) sites across {stateCount}{" "}states, drawn from
                         EPA&apos;s SEMS database. The count combines NPL Final sites under
                         active cleanup oversight and NPL Deleted sites where EPA has
                         certified cleanup complete, and it fluctuates as sites are added or

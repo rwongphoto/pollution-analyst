@@ -64,12 +64,14 @@ export default async function RankingsStatesPage() {
   const tables = data.states.tables;
 
   const pageUrl = `${SITE_URL}/rankings/states`;
+  const crumbs = [{ label: "Rankings" }, { label: "States" }];
   const jsonLd = buildRankingsJsonLd({
     pageUrl,
     pageTitle: "Most & Least Polluted States — National Rankings",
     pageDescription:
       "Top 10 most and least polluted states nationally, ranked across total TRI releases, PM2.5, lifetime cancer risk (AirToxScreen), and GHG emissions.",
     surfaceLabel: "States Rankings",
+    crumbs,
     tables,
     rowUrl: (r) => `${SITE_URL}/state/${r.slug}`,
   });
@@ -82,7 +84,7 @@ export default async function RankingsStatesPage() {
       />
       <SiteHeader active="rankings-states" />
       <main>
-        <Crumbs items={[{ label: "Rankings" }, { label: "States" }]} />
+        <Crumbs items={crumbs} />
 
         <section className="section">
           <div className="wrap">
