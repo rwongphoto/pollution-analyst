@@ -805,6 +805,124 @@ hr, .rule { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
 .method-page p { font-size: 14.5px; line-height: 1.65; color: var(--fg-2); max-width: 72ch; }
 .method-page ul { padding-left: 22px; color: var(--fg-2); font-size: 14.5px; line-height: 1.7; max-width: 72ch; }
 
+/* ── Superfund pillar / guide page ──────────────────────────────────
+   Editorial hub at /superfund-sites-cleanup-guide. Reuses the sitewide
+   tokens (.eyebrow, .lede, .chip) and adds the structured components the
+   page needs (stat strip, process steps, two-col, EJ grid, related grid,
+   FAQ accordion). All namespaced under .guide-page so nothing leaks. */
+.guide-page { padding: 8px 0 24px; }
+.guide-page > .wrap-narrow { max-width: 880px; }
+
+.guide-header { padding: 44px 0 32px; border-bottom: 1px solid var(--line); }
+.guide-header .eyebrow { display: block; margin-bottom: 14px; color: var(--blue-2); }
+.guide-header h1 { font-family: var(--font-body); font-weight: 600; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -0.02em; color: var(--fg); margin: 0 0 16px; }
+.guide-header .lede { font-size: 17px; line-height: 1.6; color: var(--fg-2); max-width: 66ch; margin: 0; }
+
+/* headline stat strip */
+.guide-page .stat-strip { display: flex; flex-wrap: wrap; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-3); overflow: hidden; margin: 32px 0 0; }
+.guide-page .stat-cell { flex: 1 1 170px; background: var(--bg-2); padding: 16px 18px; }
+.guide-page .stat-cell .label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-4); margin-bottom: 6px; line-height: 1.4; }
+.guide-page .stat-cell .value { font-family: var(--font-mono); font-weight: 500; font-size: 26px; line-height: 1; color: var(--fg); letter-spacing: -0.01em; }
+.guide-page .stat-cell .sub { font-size: 12px; color: var(--fg-3); margin-top: 6px; line-height: 1.4; }
+
+/* jump nav */
+.guide-jump { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.guide-jump .jump-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-4); }
+.guide-jump a { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.04em; color: var(--fg-3); text-decoration: none; }
+.guide-jump a:hover { color: var(--fg); }
+
+/* sections */
+.guide-section { padding: 44px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 80px; }
+.guide-section:last-of-type { border-bottom: none; }
+.guide-section .section-head { margin-bottom: 22px; }
+.guide-section .kicker { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-4); margin-bottom: 8px; }
+.guide-section h2 { font-family: var(--font-body); font-weight: 600; font-size: clamp(21px, 2.4vw, 27px); line-height: 1.2; letter-spacing: -0.01em; color: var(--fg); margin: 0; }
+.guide-section h3 { font-family: var(--font-body); font-weight: 600; font-size: 15px; color: var(--fg); margin: 0 0 5px; }
+.guide-section p { font-size: 15px; line-height: 1.68; color: var(--fg-2); max-width: 72ch; margin: 0 0 14px; }
+.guide-section p:last-child { margin-bottom: 0; }
+.guide-section strong { color: var(--fg); }
+
+/* callouts — left-rule accent variants mapped to sitewide score colors */
+.guide-page .callout { background: var(--bg-2); border: 1px solid var(--line); border-left: 3px solid var(--blue); border-radius: var(--r-2); padding: 15px 18px; margin: 22px 0; }
+.guide-page .callout p { font-size: 14px; margin: 0; max-width: none; color: var(--fg-2); }
+.guide-page .callout.green { border-left-color: var(--green); }
+.guide-page .callout.amber { border-left-color: var(--amber); }
+.guide-page .callout.signal { border-left-color: var(--blue-2); }
+
+/* two-column fact lists */
+.guide-page .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-3); overflow: hidden; margin: 22px 0; }
+.guide-page .two-col-cell { background: var(--bg-2); padding: 18px 20px; }
+.guide-page .two-col-cell h3 { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-4); margin-bottom: 10px; }
+.guide-page .two-col-cell ul { list-style: none; display: flex; flex-direction: column; gap: 6px; margin: 0; padding: 0; }
+.guide-page .two-col-cell li { font-size: 14px; line-height: 1.45; color: var(--fg-2); padding-left: 14px; position: relative; }
+.guide-page .two-col-cell li::before { content: "·"; position: absolute; left: 0; color: var(--blue-2); font-weight: 700; }
+
+/* process steps */
+.guide-page .steps { list-style: none; margin: 20px 0 0; padding: 0; }
+.guide-page .step { display: grid; grid-template-columns: 34px 1fr; gap: 0 18px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.guide-page .step:last-child { border-bottom: none; }
+.guide-page .step-num { width: 30px; height: 30px; background: var(--bg-3); border: 1px solid var(--line-2); border-radius: var(--r-pill); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--blue-2); margin-top: 1px; }
+.guide-page .step-content h3 { margin-bottom: 5px; }
+.guide-page .step-content p { font-size: 14px; color: var(--fg-3); margin: 0; }
+
+/* contaminant chips — reuses .chip; just lays them out */
+.guide-page .chip-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0; }
+.guide-page .chip-row .chip { text-transform: none; letter-spacing: 0.02em; }
+
+/* source line */
+.guide-page .source-line { font-size: 12px; color: var(--fg-4); margin: 12px 0 0; font-style: italic; max-width: 72ch; }
+.guide-page .source-line a { font-style: normal; }
+
+/* statistics table */
+.guide-page .data-table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 18px 0 0; }
+.guide-page .data-table th { text-align: left; padding: 8px 12px; background: var(--bg-3); color: var(--fg-4); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.guide-page .data-table td { padding: 10px 12px; border-bottom: 1px solid var(--line); color: var(--fg-2); vertical-align: top; }
+.guide-page .data-table tr:last-child td { border-bottom: none; }
+.guide-page .data-table tr:hover td { background: var(--bg-2); }
+.guide-page .data-table .rank { width: 30px; font-family: var(--font-mono); font-size: 12px; color: var(--fg-4); }
+.guide-page .data-table .num { text-align: right; font-family: var(--font-mono); color: var(--fg); white-space: nowrap; }
+.guide-page .data-table .site-name { color: var(--fg); font-weight: 500; }
+.guide-page .data-table .badge { display: inline-block; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 5px; border-radius: var(--r-1); margin-left: 6px; vertical-align: middle; }
+.guide-page .data-table .badge-fed { background: var(--blue-wash); color: var(--blue-2); border: 1px solid var(--blue); }
+
+/* EJ example grid */
+.guide-page .ej-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-3); overflow: hidden; margin: 18px 0; }
+.guide-page .ej-cell { background: var(--bg-2); padding: 16px; }
+.guide-page .ej-cell .ej-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-4); margin-bottom: 6px; }
+.guide-page .ej-cell .ej-value { font-family: var(--font-mono); font-weight: 500; font-size: 22px; line-height: 1; color: var(--blue-2); margin-bottom: 5px; }
+.guide-page .ej-cell .ej-desc { font-size: 12px; color: var(--fg-3); }
+
+/* related links grid */
+.guide-page .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-3); overflow: hidden; margin: 22px 0 0; }
+.guide-page .related-cell { background: var(--bg-2); padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; }
+.guide-page .related-cell .rel-label { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-4); }
+.guide-page .related-cell a { font-size: 14px; font-weight: 600; color: var(--fg); text-decoration: none; }
+.guide-page .related-cell a:hover { color: var(--blue-2); }
+.guide-page .related-cell .rel-desc { font-size: 12px; color: var(--fg-3); }
+
+/* FAQ accordion */
+.guide-page .faq-list { margin-top: 6px; }
+.guide-page details { border-bottom: 1px solid var(--line); }
+.guide-page summary { padding: 15px 0; font-size: 15px; font-weight: 600; color: var(--fg-2); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.guide-page summary:hover { color: var(--fg); }
+.guide-page summary::-webkit-details-marker { display: none; }
+.guide-page summary::after { content: "+"; font-size: 18px; color: var(--fg-4); flex-shrink: 0; }
+.guide-page details[open] summary { color: var(--fg); }
+.guide-page details[open] summary::after { content: "−"; }
+.guide-page details .answer { padding: 0 0 16px; font-size: 14px; line-height: 1.7; color: var(--fg-3); max-width: 76ch; }
+
+/* footer disclaimer */
+.guide-footer { padding: 28px 0 8px; }
+.guide-footer p { font-size: 12.5px; line-height: 1.6; color: var(--fg-4); max-width: 76ch; }
+.guide-footer strong { color: var(--fg-3); }
+
+@media (max-width: 640px) {
+  .guide-page .two-col { grid-template-columns: 1fr; }
+  .guide-page .stat-cell .value { font-size: 22px; }
+  .guide-page .data-table { font-size: 12.5px; }
+  .guide-page .data-table th, .guide-page .data-table td { padding: 8px 8px; }
+}
+
 /* responsive */
 @media (max-width: 980px) {
   /* `minmax(0, 1fr)` (not bare `1fr`) lets the column shrink below the

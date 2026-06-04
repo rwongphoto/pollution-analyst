@@ -58,6 +58,7 @@ const buckets = {
     "/rankings/cities",
     "/rankings/facilities",
     "/rankings/superfund",
+    "/superfund-sites-cleanup-guide",
     ...stateSlugs.map((s) => `/state/${s}`),
   ],
 };

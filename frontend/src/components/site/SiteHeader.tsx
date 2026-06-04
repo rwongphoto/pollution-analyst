@@ -20,39 +20,46 @@ type Active =
   | "rankings-cities"
   | "rankings-facilities"
   | "rankings-superfund"
+  | "superfund-guide"
   | undefined;
 
 export function SiteHeader({ active }: { active?: Active }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [statesOpen, setStatesOpen] = useState(false);
+  const [superfundOpen, setSuperfundOpen] = useState(false);
   const statesRef = useRef<HTMLDivElement | null>(null);
+  const superfundRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (!mobileOpen && !statesOpen) return;
+    if (!mobileOpen && !statesOpen && !superfundOpen) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key !== "Escape") return;
       setStatesOpen(false);
+      setSuperfundOpen(false);
       setMobileOpen(false);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [mobileOpen, statesOpen]);
+  }, [mobileOpen, statesOpen, superfundOpen]);
 
   useEffect(() => {
-    if (!statesOpen) return;
+    if (!statesOpen && !superfundOpen) return;
     const onClick = (e: MouseEvent) => {
-      if (statesRef.current && !statesRef.current.contains(e.target as Node)) {
-        setStatesOpen(false);
-      }
+      const t = e.target as Node;
+      if (statesRef.current && !statesRef.current.contains(t)) setStatesOpen(false);
+      if (superfundRef.current && !superfundRef.current.contains(t)) setSuperfundOpen(false);
     };
     window.addEventListener("mousedown", onClick);
     return () => window.removeEventListener("mousedown", onClick);
-  }, [statesOpen]);
+  }, [statesOpen, superfundOpen]);
 
   const closeAll = () => {
     setStatesOpen(false);
+    setSuperfundOpen(false);
     setMobileOpen(false);
   };
+
+  const superfundActive = active === "rankings-superfund" || active === "superfund-guide";
 
   return (
     <header className={`site-header ${mobileOpen ? "mobile-open" : ""}`}>
@@ -122,13 +129,41 @@ export function SiteHeader({ active }: { active?: Active }) {
           >
             Facilities
           </Link>
-          <Link
-            href="/rankings/superfund"
-            className={active === "rankings-superfund" ? "active" : ""}
-            onClick={closeAll}
+          <div
+            ref={superfundRef}
+            className={`nav-item ${superfundOpen ? "open" : ""}`}
           >
-            Superfund
-          </Link>
+            <button
+              type="button"
+              className={superfundActive ? "active" : ""}
+              aria-haspopup="menu"
+              aria-expanded={superfundOpen}
+              onClick={() => setSuperfundOpen((v) => !v)}
+            >
+              Superfund
+              <span className="caret" aria-hidden="true" />
+            </button>
+            <div className="submenu" role="menu">
+              <Link
+                href="/superfund-sites-cleanup-guide"
+                role="menuitem"
+                className={active === "superfund-guide" ? "active" : ""}
+                onClick={closeAll}
+              >
+                <span>Superfund Guide</span>
+                <span className="sub-meta">overview →</span>
+              </Link>
+              <Link
+                href="/rankings/superfund"
+                role="menuitem"
+                className={active === "rankings-superfund" ? "active" : ""}
+                onClick={closeAll}
+              >
+                <span>National Rankings</span>
+                <span className="sub-meta">data →</span>
+              </Link>
+            </div>
+          </div>
           <Link
             href="/methodology"
             className={active === "method" ? "active" : ""}
