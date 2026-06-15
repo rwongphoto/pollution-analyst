@@ -5,7 +5,7 @@
     "slug": "plumas",
     "name": "Plumas County",
     "fips": "06063",
-    "population": 19650
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -457,87 +457,14 @@
   "utilities": [],
   "superfund": [],
   "superfund_total": 0,
-  "cities_directory": [
-    {
-      "slug": "blairsden",
-      "name": "Blairsden",
-      "fips": "0606994",
-      "facilities_count": 0,
-      "utilities_count": 2,
-      "population": 0
-    },
-    {
-      "slug": "chester",
-      "name": "Chester",
-      "fips": "0612930",
-      "facilities_count": 1,
-      "utilities_count": 2,
-      "population": 2271
-    },
-    {
-      "slug": "clio",
-      "name": "Clio",
-      "fips": "0614106",
-      "facilities_count": 0,
-      "utilities_count": 2,
-      "population": 145
-    },
-    {
-      "slug": "east-quincy",
-      "name": "East Quincy",
-      "fips": "0621026",
-      "facilities_count": 1,
-      "utilities_count": 0,
-      "population": 2399
-    },
-    {
-      "slug": "graeagle",
-      "name": "Graeagle",
-      "fips": "0630560",
-      "facilities_count": 0,
-      "utilities_count": 2,
-      "population": 401
-    },
-    {
-      "slug": "greenville",
-      "name": "Greenville",
-      "fips": "0631162",
-      "facilities_count": 0,
-      "utilities_count": 4,
-      "population": 705
-    },
-    {
-      "slug": "portola",
-      "name": "Portola",
-      "fips": "0658352",
-      "facilities_count": 0,
-      "utilities_count": 6,
-      "population": 2427
-    },
-    {
-      "slug": "quincy",
-      "name": "Quincy",
-      "fips": "0659080",
-      "facilities_count": 0,
-      "utilities_count": 2,
-      "population": 1368
-    },
-    {
-      "slug": "twain",
-      "name": "Twain",
-      "fips": "0680952",
-      "facilities_count": 0,
-      "utilities_count": 2,
-      "population": 319
-    }
-  ],
+  "cities_directory": [],
   "flags": [],
   "equity": {
-    "population": 19650,
-    "pct_low_income": 10.9,
-    "pct_people_of_color": 18.0,
-    "pct_under_5": 5.5,
-    "pct_over_64": 29.6,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -605,60 +532,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 88.3
-      },
-      {
-        "label": "Ozone",
-        "score": 83.3
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 19.0
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 1.1
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 3.3
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 0.2
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 48.0
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 0.0
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 0.0
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 13.9
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 6.5
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 4.1
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in Plumas County County, CA"
   },
@@ -748,22 +622,9 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "colusa",
-      "name": "Colusa County",
-      "population": 21811,
-      "facilities_count": 1,
-      "total_releases_pounds": 104334,
-      "dominant_medium": "air",
-      "ej_pct_avg": 45.8,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 1 facility"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
       "slug": "placer",
       "name": "Placer County",
-      "population": 406608,
+      "population": 0,
       "facilities_count": 6,
       "total_releases_pounds": 13998,
       "dominant_medium": "air",
@@ -774,9 +635,22 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "colusa",
+      "name": "Colusa County",
+      "population": 0,
+      "facilities_count": 1,
+      "total_releases_pounds": 104334,
+      "dominant_medium": "air",
+      "ej_pct_avg": 45.8,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 1 facility"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "sonoma",
       "name": "Sonoma County",
-      "population": 488436,
+      "population": 0,
       "facilities_count": 9,
       "total_releases_pounds": 12004,
       "dominant_medium": "air",
@@ -787,9 +661,22 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "ventura",
+      "name": "Ventura County",
+      "population": 0,
+      "facilities_count": 14,
+      "total_releases_pounds": 69516,
+      "dominant_medium": "air",
+      "ej_pct_avg": 61.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 14 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "shasta",
       "name": "Shasta County",
-      "population": 181852,
+      "population": 0,
       "facilities_count": 7,
       "total_releases_pounds": 188305,
       "dominant_medium": "air",
@@ -800,36 +687,23 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "madera",
-      "name": "Madera County",
-      "population": 157243,
-      "facilities_count": 9,
-      "total_releases_pounds": 148356,
-      "dominant_medium": "air",
-      "ej_pct_avg": 60.7,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 9 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "glenn",
-      "name": "Glenn County",
-      "population": 28657,
-      "facilities_count": 1,
-      "total_releases_pounds": 128125,
+      "slug": "los-angeles",
+      "name": "Los Angeles County",
+      "population": 0,
+      "facilities_count": 250,
+      "total_releases_pounds": 8371400,
       "dominant_medium": "land",
-      "ej_pct_avg": 49.1,
+      "ej_pct_avg": 83.2,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+10 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+44 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

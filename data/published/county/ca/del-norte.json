@@ -5,7 +5,7 @@
     "slug": "del-norte",
     "name": "Del Norte County",
     "fips": "06015",
-    "population": 27462
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -161,63 +161,16 @@
   ],
   "facilities": [],
   "utilities": [],
-  "superfund": [
-    {
-      "slug": "del-norte-pesticide-storage",
-      "state": "ca",
-      "name": "Del Norte Pesticide Storage",
-      "epa_id": "CAD000626176",
-      "npl_status": "Deleted from the Final NPL",
-      "is_active_npl": false,
-      "is_deleted": true,
-      "is_federal_facility": false,
-      "city": "Crescent City",
-      "city_slug": null,
-      "primary_contaminant": "1,2-Dichloropropane"
-    }
-  ],
-  "superfund_total": 1,
-  "cities_directory": [
-    {
-      "slug": "crescent-city",
-      "name": "Crescent City",
-      "fips": "0617022",
-      "facilities_count": 0,
-      "utilities_count": 7,
-      "population": 6379
-    },
-    {
-      "slug": "gasquet",
-      "name": "Gasquet",
-      "fips": "0629154",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 366
-    },
-    {
-      "slug": "klamath",
-      "name": "Klamath",
-      "fips": "0638702",
-      "facilities_count": 0,
-      "utilities_count": 3,
-      "population": 924
-    },
-    {
-      "slug": "smith-river",
-      "name": "Smith River",
-      "fips": "0672380",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 849
-    }
-  ],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [],
   "flags": [],
   "equity": {
-    "population": 27462,
-    "pct_low_income": 14.3,
-    "pct_people_of_color": 39.3,
-    "pct_under_5": 6.1,
-    "pct_over_64": 19.2,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -285,60 +238,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 87.4
-      },
-      {
-        "label": "Ozone",
-        "score": 1.5
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 13.7
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 2.2
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 4.2
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 29.5
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 62.9
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 0.0
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 0.0
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 28.0
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 0.4
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 38.6
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in Del Norte County County, CA"
   },
@@ -428,39 +328,52 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "inyo",
-      "name": "Inyo County",
-      "population": 18829,
+      "slug": "san-francisco",
+      "name": "San Francisco County",
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 43.3,
+      "ej_pct_avg": 64.6,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "amador",
-      "name": "Amador County",
-      "population": 40577,
+      "slug": "el-dorado",
+      "name": "El Dorado County",
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 48.3,
+      "ej_pct_avg": 47.3,
       "relation": "peer",
       "reason": "Comparable population"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "mariposa",
-      "name": "Mariposa County",
-      "population": 17130,
+      "slug": "alpine",
+      "name": "Alpine County",
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 38.4,
+      "ej_pct_avg": 35.5,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "nevada",
+      "name": "Nevada County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.4,
       "relation": "peer",
       "reason": "Comparable population"
     },
@@ -469,7 +382,7 @@
       "state": "ca",
       "slug": "calaveras",
       "name": "Calaveras County",
-      "population": 45674,
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -480,36 +393,23 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "trinity",
-      "name": "Trinity County",
-      "population": 15889,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 32.0,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "sutter",
-      "name": "Sutter County",
-      "population": 99101,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 60.7,
+      "slug": "los-angeles",
+      "name": "Los Angeles County",
+      "population": 0,
+      "facilities_count": 250,
+      "total_releases_pounds": 8371400,
+      "dominant_medium": "land",
+      "ej_pct_avg": 83.2,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+33 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+55 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

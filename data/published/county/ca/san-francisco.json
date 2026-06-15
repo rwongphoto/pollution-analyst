@@ -5,7 +5,7 @@
     "slug": "san-francisco",
     "name": "San Francisco County",
     "fips": "06075",
-    "population": 851036
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -574,39 +574,16 @@
   ],
   "facilities": [],
   "utilities": [],
-  "superfund": [
-    {
-      "slug": "hunters-point-naval-shipyard",
-      "state": "ca",
-      "name": "Hunters Point Naval Shipyard",
-      "epa_id": "CA1170090087",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": true,
-      "city": "San Francisco",
-      "city_slug": "san-francisco",
-      "primary_contaminant": "Arsenic"
-    }
-  ],
-  "superfund_total": 1,
-  "cities_directory": [
-    {
-      "slug": "san-francisco",
-      "name": "San Francisco",
-      "fips": "0667000",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 851036
-    }
-  ],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [],
   "flags": [],
   "equity": {
-    "population": 851036,
-    "pct_low_income": 10.5,
-    "pct_people_of_color": 61.7,
-    "pct_under_5": 3.6,
-    "pct_over_64": 16.7,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -674,60 +651,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 128.0
-      },
-      {
-        "label": "Ozone",
-        "score": 0.9
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 118.8
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 111.0
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 60.7
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 131.0
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 115.9
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 99.2
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 71.1
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 141.0
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 2.3
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in San Francisco County County, CA"
   },
@@ -817,88 +741,88 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "marin",
-      "name": "Marin County",
-      "population": 260485,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 49.4,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "butte",
-      "name": "Butte County",
-      "population": 213605,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 54.3,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
       "slug": "el-dorado",
       "name": "El Dorado County",
-      "population": 191713,
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 47.3,
       "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "alpine",
+      "name": "Alpine County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 35.5,
+      "relation": "peer",
+      "reason": "Comparable population"
     },
     {
       "kind": "county",
       "state": "ca",
       "slug": "nevada",
       "name": "Nevada County",
-      "population": 102322,
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 47.4,
       "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
+      "reason": "Comparable population"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "sutter",
-      "name": "Sutter County",
-      "population": 99101,
+      "slug": "calaveras",
+      "name": "Calaveras County",
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 60.7,
+      "ej_pct_avg": 44.2,
       "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
+      "reason": "Comparable population"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "san-luis-obispo",
-      "name": "San Luis Obispo County",
-      "population": 281712,
-      "facilities_count": 5,
-      "total_releases_pounds": 26203,
-      "dominant_medium": "land",
-      "ej_pct_avg": 44.1,
+      "slug": "amador",
+      "name": "Amador County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 48.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "del-norte",
+      "name": "Del Norte County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 28.1,
       "relation": "contrast",
-      "reason": "Same scale, lighter equity burden (20 pct-pt EJ gap)"
+      "reason": "Same scale, lighter equity burden (36 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

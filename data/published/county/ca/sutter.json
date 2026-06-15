@@ -5,7 +5,7 @@
     "slug": "sutter",
     "name": "Sutter County",
     "fips": "06101",
-    "population": 99101
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -528,31 +528,14 @@
   "utilities": [],
   "superfund": [],
   "superfund_total": 0,
-  "cities_directory": [
-    {
-      "slug": "sutter",
-      "name": "Sutter",
-      "fips": "0677378",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 2848
-    },
-    {
-      "slug": "yuba-city",
-      "name": "Yuba City",
-      "fips": "0686972",
-      "facilities_count": 0,
-      "utilities_count": 3,
-      "population": 69535
-    }
-  ],
+  "cities_directory": [],
   "flags": [],
   "equity": {
-    "population": 99101,
-    "pct_low_income": 13.3,
-    "pct_people_of_color": 56.9,
-    "pct_under_5": 7.3,
-    "pct_over_64": 15.7,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -620,60 +603,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 167.2
-      },
-      {
-        "label": "Ozone",
-        "score": 148.7
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 103.5
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 83.9
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 7.3
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 88.8
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 67.7
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 0.0
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 144.7
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 76.5
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 129.5
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 2.3
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in Sutter County County, CA"
   },
@@ -763,13 +693,13 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "nevada",
-      "name": "Nevada County",
-      "population": 102322,
+      "slug": "san-francisco",
+      "name": "San Francisco County",
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 47.4,
+      "ej_pct_avg": 64.6,
       "relation": "peer",
       "reason": "Comparable population"
     },
@@ -778,7 +708,7 @@
       "state": "ca",
       "slug": "el-dorado",
       "name": "El Dorado County",
-      "population": 191713,
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -789,48 +719,48 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "butte",
-      "name": "Butte County",
-      "population": 213605,
+      "slug": "alpine",
+      "name": "Alpine County",
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 54.3,
+      "ej_pct_avg": 35.5,
       "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "nevada",
+      "name": "Nevada County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.4,
+      "relation": "peer",
+      "reason": "Comparable population"
     },
     {
       "kind": "county",
       "state": "ca",
       "slug": "calaveras",
       "name": "Calaveras County",
-      "population": 45674,
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 44.2,
       "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "amador",
-      "name": "Amador County",
-      "population": 40577,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 48.3,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
+      "reason": "Comparable population"
     },
     {
       "kind": "county",
       "state": "ca",
       "slug": "del-norte",
       "name": "Del Norte County",
-      "population": 27462,
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -843,8 +773,8 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

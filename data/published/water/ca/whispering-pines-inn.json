@@ -13,11 +13,11 @@
     ],
     "county": "San Benito County",
     "county_slug": "san-benito",
-    "place_slug": "hollister"
+    "place_slug": null
   },
   "reporting_period": {
     "start": "2024-01-01",
-    "end": "2026-05-07"
+    "end": "2026-06-15"
   },
   "briefing_label": "SDWIS through latest publish",
   "totals": {
@@ -168,60 +168,60 @@
     }
   ],
   "equity": {
-    "population": 42093,
-    "pct_low_income": 9.4,
-    "pct_people_of_color": 77.2,
-    "pct_under_5": 7.1,
-    "pct_over_64": 10.2,
+    "population": 39538223,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
-        "pct_us": 75.9,
+        "pct_us": 93.3,
         "pct_state": null
       },
       {
         "label": "Ozone",
-        "pct_us": 53.4,
+        "pct_us": 92.3,
         "pct_state": null
       },
       {
         "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 47.6,
+        "pct_us": 67.8,
         "pct_state": null
       },
       {
         "label": "Diesel particulate",
-        "pct_us": 30.7,
+        "pct_us": 82.2,
         "pct_state": null
       },
       {
         "label": "Toxic releases (RSEI)",
-        "pct_us": 12.4,
+        "pct_us": 54.6,
         "pct_state": null
       },
       {
         "label": "Traffic proximity",
-        "pct_us": 43.6,
+        "pct_us": 88.2,
         "pct_state": null
       },
       {
         "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 50.3,
+        "pct_us": 63.0,
         "pct_state": null
       },
       {
         "label": "Superfund site proximity",
-        "pct_us": 55.6,
+        "pct_us": 88.1,
         "pct_state": null
       },
       {
         "label": "RMP-facility proximity",
-        "pct_us": 47.4,
+        "pct_us": 77.7,
         "pct_state": null
       },
       {
         "label": "Hazardous-waste site proximity",
-        "pct_us": 56.8,
+        "pct_us": 91.6,
         "pct_state": null
       },
       {
@@ -231,76 +231,23 @@
       },
       {
         "label": "NPDES wastewater proximity",
-        "pct_us": 7.7,
+        "pct_us": 89.4,
         "pct_state": null
       },
       {
         "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
+        "pct_us": 78.0,
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 138.3
-      },
-      {
-        "label": "Ozone",
-        "score": 54.0
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 83.4
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 58.3
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 22.3
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 77.8
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 63.8
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 0.0
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 84.1
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 98.6
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 0.0
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Hollister, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "California state-level (neither place nor county matched for this utility)"
   },
   "source": {
     "label": "EPA Safe Drinking Water Information System",
     "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-07"
+    "retrieved": "2026-06-15"
   },
-  "_published_at": "2026-05-07T08:09:02Z"
+  "_published_at": "2026-06-15T20:31:53Z"
 }

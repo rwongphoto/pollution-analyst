@@ -5,7 +5,7 @@
     "slug": "alameda",
     "name": "Alameda County",
     "fips": "06001",
-    "population": 1663823
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -753,151 +753,9 @@
     }
   ],
   "utilities": [],
-  "superfund": [
-    {
-      "slug": "alameda-naval-air-station",
-      "state": "ca",
-      "name": "Alameda Naval Air Station",
-      "epa_id": "CA2170023236",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": true,
-      "city": "Alameda",
-      "city_slug": "alameda",
-      "primary_contaminant": "Chloroethene (Vinyl Chloride)"
-    },
-    {
-      "slug": "amco-chemical",
-      "state": "ca",
-      "name": "Amco Chemical",
-      "epa_id": "CA0001576081",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Oakland",
-      "city_slug": "oakland",
-      "primary_contaminant": null
-    },
-    {
-      "slug": "lawrence-livermore-natl-lab-main-site-usdoe",
-      "state": "ca",
-      "name": "Lawrence Livermore Natl Lab, Main Site (Usdoe)",
-      "epa_id": "CA2890012584",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": true,
-      "city": "Livermore",
-      "city_slug": "livermore",
-      "primary_contaminant": "1,1-Dichloroethane"
-    },
-    {
-      "slug": "hexcel-corp",
-      "state": "ca",
-      "name": "Hexcel Corp.",
-      "epa_id": "CAD058783952",
-      "npl_status": "Withdrawn from the Final NPL",
-      "is_active_npl": false,
-      "is_deleted": true,
-      "is_federal_facility": false,
-      "city": "Livermore",
-      "city_slug": null,
-      "primary_contaminant": "2-Butanone (Methyl Ethyl Ketone)"
-    }
-  ],
-  "superfund_total": 4,
-  "cities_directory": [
-    {
-      "slug": "berkeley",
-      "name": "Berkeley",
-      "fips": "0606000",
-      "facilities_count": 1,
-      "utilities_count": 0,
-      "population": 121385
-    },
-    {
-      "slug": "castro-valley",
-      "name": "Castro Valley",
-      "fips": "0611964",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 65444
-    },
-    {
-      "slug": "fremont",
-      "name": "Fremont",
-      "fips": "0626000",
-      "facilities_count": 8,
-      "utilities_count": 1,
-      "population": 228795
-    },
-    {
-      "slug": "hayward",
-      "name": "Hayward",
-      "fips": "0633000",
-      "facilities_count": 5,
-      "utilities_count": 1,
-      "population": 160602
-    },
-    {
-      "slug": "livermore",
-      "name": "Livermore",
-      "fips": "0641992",
-      "facilities_count": 2,
-      "utilities_count": 2,
-      "population": 87154
-    },
-    {
-      "slug": "newark",
-      "name": "Newark",
-      "fips": "0650916",
-      "facilities_count": 1,
-      "utilities_count": 0,
-      "population": 47470
-    },
-    {
-      "slug": "oakland",
-      "name": "Oakland",
-      "fips": "0653000",
-      "facilities_count": 3,
-      "utilities_count": 2,
-      "population": 437825
-    },
-    {
-      "slug": "pleasanton",
-      "name": "Pleasanton",
-      "fips": "0657792",
-      "facilities_count": 2,
-      "utilities_count": 3,
-      "population": 78691
-    },
-    {
-      "slug": "san-leandro",
-      "name": "San Leandro",
-      "fips": "0668084",
-      "facilities_count": 1,
-      "utilities_count": 0,
-      "population": 89723
-    },
-    {
-      "slug": "sunol",
-      "name": "Sunol",
-      "fips": "0677042",
-      "facilities_count": 1,
-      "utilities_count": 0,
-      "population": 920
-    },
-    {
-      "slug": "union-city",
-      "name": "Union City",
-      "fips": "0681204",
-      "facilities_count": 1,
-      "utilities_count": 0,
-      "population": 69502
-    }
-  ],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [],
   "flags": [
     {
       "type": "long_arc_shift",
@@ -974,11 +832,11 @@
     }
   ],
   "equity": {
-    "population": 1663823,
-    "pct_low_income": 9.2,
-    "pct_people_of_color": 70.7,
-    "pct_under_5": 5.6,
-    "pct_over_64": 14.6,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -1046,60 +904,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 144.3
-      },
-      {
-        "label": "Ozone",
-        "score": 24.2
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 103.1
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 117.2
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 67.4
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 138.3
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 92.6
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 57.0
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 90.3
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 142.4
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 49.1
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in Alameda County County, CA"
   },
@@ -1191,7 +996,7 @@
       "state": "ca",
       "slug": "contra-costa",
       "name": "Contra Costa County",
-      "population": 1162648,
+      "population": 0,
       "facilities_count": 29,
       "total_releases_pounds": 3013122,
       "dominant_medium": "land",
@@ -1204,7 +1009,7 @@
       "state": "ca",
       "slug": "kern",
       "name": "Kern County",
-      "population": 906883,
+      "population": 0,
       "facilities_count": 32,
       "total_releases_pounds": 6644852,
       "dominant_medium": "land",
@@ -1217,7 +1022,7 @@
       "state": "ca",
       "slug": "san-bernardino",
       "name": "San Bernardino County",
-      "population": 2180563,
+      "population": 0,
       "facilities_count": 82,
       "total_releases_pounds": 2436807,
       "dominant_medium": "land",
@@ -1230,7 +1035,7 @@
       "state": "ca",
       "slug": "sacramento",
       "name": "Sacramento County",
-      "population": 1579211,
+      "population": 0,
       "facilities_count": 14,
       "total_releases_pounds": 800886,
       "dominant_medium": "land",
@@ -1243,7 +1048,7 @@
       "state": "ca",
       "slug": "santa-clara",
       "name": "Santa Clara County",
-      "population": 1916831,
+      "population": 0,
       "facilities_count": 32,
       "total_releases_pounds": 486062,
       "dominant_medium": "land",
@@ -1254,23 +1059,23 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "santa-barbara",
-      "name": "Santa Barbara County",
-      "population": 445213,
-      "facilities_count": 7,
-      "total_releases_pounds": 55535,
-      "dominant_medium": "land",
-      "ej_pct_avg": 47.6,
+      "slug": "del-norte",
+      "name": "Del Norte County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 28.1,
       "relation": "contrast",
-      "reason": "Same scale, lighter equity burden (19 pct-pt EJ gap)"
+      "reason": "Same scale, lighter equity burden (39 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

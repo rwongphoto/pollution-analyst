@@ -5,7 +5,7 @@
     "slug": "ventura",
     "name": "Ventura County",
     "fips": "06111",
-    "population": 842009
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -753,140 +753,16 @@
     }
   ],
   "utilities": [],
-  "superfund": [
-    {
-      "slug": "halaco-engineering-company",
-      "state": "ca",
-      "name": "Halaco Engineering Company",
-      "epa_id": "CAD009688052",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Oxnard",
-      "city_slug": "oxnard",
-      "primary_contaminant": null
-    },
-    {
-      "slug": "pacific-coast-pipeline",
-      "state": "ca",
-      "name": "Pacific Coast Pipeline",
-      "epa_id": "CAD980636781",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Fillmore",
-      "city_slug": null,
-      "primary_contaminant": "Naphthalene"
-    }
-  ],
-  "superfund_total": 2,
-  "cities_directory": [
-    {
-      "slug": "camarillo",
-      "name": "Camarillo",
-      "fips": "0610046",
-      "facilities_count": 3,
-      "utilities_count": 7,
-      "population": 70622
-    },
-    {
-      "slug": "el-rio",
-      "name": "El Rio",
-      "fips": "0622370",
-      "facilities_count": 1,
-      "utilities_count": 0,
-      "population": 6418
-    },
-    {
-      "slug": "fillmore",
-      "name": "Fillmore",
-      "fips": "0624092",
-      "facilities_count": 0,
-      "utilities_count": 4,
-      "population": 16455
-    },
-    {
-      "slug": "moorpark",
-      "name": "Moorpark",
-      "fips": "0649138",
-      "facilities_count": 1,
-      "utilities_count": 5,
-      "population": 36073
-    },
-    {
-      "slug": "oak-view",
-      "name": "Oak View",
-      "fips": "0653182",
-      "facilities_count": 0,
-      "utilities_count": 2,
-      "population": 6468
-    },
-    {
-      "slug": "ojai",
-      "name": "Ojai",
-      "fips": "0653476",
-      "facilities_count": 0,
-      "utilities_count": 6,
-      "population": 7610
-    },
-    {
-      "slug": "oxnard",
-      "name": "Oxnard",
-      "fips": "0654652",
-      "facilities_count": 3,
-      "utilities_count": 13,
-      "population": 202279
-    },
-    {
-      "slug": "port-hueneme",
-      "name": "Port Hueneme",
-      "fips": "0658296",
-      "facilities_count": 0,
-      "utilities_count": 3,
-      "population": 21847
-    },
-    {
-      "slug": "san-buenaventura-ventura",
-      "name": "San Buenaventura (Ventura)",
-      "fips": "0665042",
-      "facilities_count": 1,
-      "utilities_count": 0,
-      "population": 110358
-    },
-    {
-      "slug": "santa-paula",
-      "name": "Santa Paula",
-      "fips": "0670042",
-      "facilities_count": 0,
-      "utilities_count": 5,
-      "population": 30788
-    },
-    {
-      "slug": "simi-valley",
-      "name": "Simi Valley",
-      "fips": "0672016",
-      "facilities_count": 1,
-      "utilities_count": 2,
-      "population": 126153
-    },
-    {
-      "slug": "thousand-oaks",
-      "name": "Thousand Oaks",
-      "fips": "0678582",
-      "facilities_count": 1,
-      "utilities_count": 2,
-      "population": 126532
-    }
-  ],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [],
   "flags": [],
   "equity": {
-    "population": 842009,
-    "pct_low_income": 9.0,
-    "pct_people_of_color": 56.5,
-    "pct_under_5": 6.0,
-    "pct_over_64": 16.3,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -954,60 +830,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 70.7
-      },
-      {
-        "label": "Ozone",
-        "score": 87.8
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 63.7
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 80.6
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 17.4
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 100.2
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 56.6
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 45.9
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 99.8
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 105.5
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 123.4
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 16.5
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in Ventura County County, CA"
   },
@@ -1097,22 +920,9 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "merced",
-      "name": "Merced County",
-      "population": 282290,
-      "facilities_count": 12,
-      "total_releases_pounds": 275402,
-      "dominant_medium": "air",
-      "ej_pct_avg": 65.1,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 12 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
       "slug": "madera",
       "name": "Madera County",
-      "population": 157243,
+      "population": 0,
       "facilities_count": 9,
       "total_releases_pounds": 148356,
       "dominant_medium": "air",
@@ -1123,35 +933,22 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "sonoma",
-      "name": "Sonoma County",
-      "population": 488436,
-      "facilities_count": 9,
-      "total_releases_pounds": 12004,
+      "slug": "merced",
+      "name": "Merced County",
+      "population": 0,
+      "facilities_count": 12,
+      "total_releases_pounds": 275402,
       "dominant_medium": "air",
-      "ej_pct_avg": 48.1,
+      "ej_pct_avg": 65.1,
       "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 9 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "riverside",
-      "name": "Riverside County",
-      "population": 2429487,
-      "facilities_count": 37,
-      "total_releases_pounds": 144629,
-      "dominant_medium": "air",
-      "ej_pct_avg": 69.2,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 37 facilities"
+      "reason": "Similar TRI air profile \u00b7 12 facilities"
     },
     {
       "kind": "county",
       "state": "ca",
       "slug": "shasta",
       "name": "Shasta County",
-      "population": 181852,
+      "population": 0,
       "facilities_count": 7,
       "total_releases_pounds": 188305,
       "dominant_medium": "air",
@@ -1162,23 +959,49 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "san-luis-obispo",
-      "name": "San Luis Obispo County",
-      "population": 281712,
-      "facilities_count": 5,
-      "total_releases_pounds": 26203,
-      "dominant_medium": "land",
-      "ej_pct_avg": 44.1,
+      "slug": "riverside",
+      "name": "Riverside County",
+      "population": 0,
+      "facilities_count": 37,
+      "total_releases_pounds": 144629,
+      "dominant_medium": "air",
+      "ej_pct_avg": 69.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 37 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "sonoma",
+      "name": "Sonoma County",
+      "population": 0,
+      "facilities_count": 9,
+      "total_releases_pounds": 12004,
+      "dominant_medium": "air",
+      "ej_pct_avg": 48.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 9 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "del-norte",
+      "name": "Del Norte County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 28.1,
       "relation": "contrast",
-      "reason": "Same scale, lighter equity burden (17 pct-pt EJ gap)"
+      "reason": "Same scale, lighter equity burden (33 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

@@ -5,7 +5,7 @@
     "slug": "amador",
     "name": "Amador County",
     "fips": "06005",
-    "population": 40577
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -306,88 +306,9 @@
   ],
   "facilities": [],
   "utilities": [],
-  "superfund": [
-    {
-      "slug": "argonaut-mine",
-      "state": "ca",
-      "name": "Argonaut Mine",
-      "epa_id": "CAD983650011",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Jackson",
-      "city_slug": "jackson",
-      "primary_contaminant": null
-    }
-  ],
-  "superfund_total": 1,
-  "cities_directory": [
-    {
-      "slug": "fiddletown",
-      "name": "Fiddletown",
-      "fips": "0623980",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 56
-    },
-    {
-      "slug": "ione",
-      "name": "Ione",
-      "fips": "0636672",
-      "facilities_count": 0,
-      "utilities_count": 2,
-      "population": 5364
-    },
-    {
-      "slug": "jackson",
-      "name": "Jackson",
-      "fips": "0636980",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 5004
-    },
-    {
-      "slug": "pine-grove",
-      "name": "Pine Grove",
-      "fips": "0657148",
-      "facilities_count": 0,
-      "utilities_count": 3,
-      "population": 3386
-    },
-    {
-      "slug": "plymouth",
-      "name": "Plymouth",
-      "fips": "0657834",
-      "facilities_count": 0,
-      "utilities_count": 3,
-      "population": 1297
-    },
-    {
-      "slug": "river-pines",
-      "name": "River Pines",
-      "fips": "0661124",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 487
-    },
-    {
-      "slug": "sutter-creek",
-      "name": "Sutter Creek",
-      "fips": "0677392",
-      "facilities_count": 0,
-      "utilities_count": 6,
-      "population": 2659
-    },
-    {
-      "slug": "volcano",
-      "name": "Volcano",
-      "fips": "0683094",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 59
-    }
-  ],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [],
   "flags": [
     {
       "type": "naaqs_exceedance",
@@ -464,11 +385,11 @@
     }
   ],
   "equity": {
-    "population": 40577,
-    "pct_low_income": 7.8,
-    "pct_people_of_color": 25.099999999999994,
-    "pct_under_5": 4.0,
-    "pct_over_64": 26.9,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -536,60 +457,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 80.5
-      },
-      {
-        "label": "Ozone",
-        "score": 78.6
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 17.6
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 9.4
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 11.8
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 16.4
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 33.9
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 27.3
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 5.5
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 24.5
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 44.2
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 20.0
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in Amador County County, CA"
   },
@@ -679,9 +547,61 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "san-francisco",
+      "name": "San Francisco County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 64.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "el-dorado",
+      "name": "El Dorado County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "alpine",
+      "name": "Alpine County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 35.5,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "nevada",
+      "name": "Nevada County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.4,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "calaveras",
       "name": "Calaveras County",
-      "population": 45674,
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -692,75 +612,23 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "del-norte",
-      "name": "Del Norte County",
-      "population": 27462,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 28.1,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "inyo",
-      "name": "Inyo County",
-      "population": 18829,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 43.3,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "mariposa",
-      "name": "Mariposa County",
-      "population": 17130,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 38.4,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "sutter",
-      "name": "Sutter County",
-      "population": 99101,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 60.7,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "nevada",
-      "name": "Nevada County",
-      "population": 102322,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 47.4,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
+      "slug": "los-angeles",
+      "name": "Los Angeles County",
+      "population": 0,
+      "facilities_count": 250,
+      "total_releases_pounds": 8371400,
+      "dominant_medium": "land",
+      "ej_pct_avg": 83.2,
+      "relation": "contrast",
+      "reason": "Same scale, heavier equity burden (+35 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

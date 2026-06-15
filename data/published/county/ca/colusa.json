@@ -5,7 +5,7 @@
     "slug": "colusa",
     "name": "Colusa County",
     "fips": "06011",
-    "population": 21811
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -567,63 +567,14 @@
   "utilities": [],
   "superfund": [],
   "superfund_total": 0,
-  "cities_directory": [
-    {
-      "slug": "arbuckle",
-      "name": "Arbuckle",
-      "fips": "0602420",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 3072
-    },
-    {
-      "slug": "colusa",
-      "name": "Colusa",
-      "fips": "0614946",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 6380
-    },
-    {
-      "slug": "grimes",
-      "name": "Grimes",
-      "fips": "0631288",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 355
-    },
-    {
-      "slug": "maxwell",
-      "name": "Maxwell",
-      "fips": "0646338",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 1181
-    },
-    {
-      "slug": "princeton",
-      "name": "Princeton",
-      "fips": "0658758",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 357
-    },
-    {
-      "slug": "williams",
-      "name": "Williams",
-      "fips": "0685586",
-      "facilities_count": 1,
-      "utilities_count": 1,
-      "population": 5539
-    }
-  ],
+  "cities_directory": [],
   "flags": [],
   "equity": {
-    "population": 21811,
-    "pct_low_income": 10.9,
-    "pct_people_of_color": 66.5,
-    "pct_under_5": 7.5,
-    "pct_over_64": 15.1,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -691,60 +642,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 175.1
-      },
-      {
-        "label": "Ozone",
-        "score": 123.5
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 78.7
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 38.1
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 11.0
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 49.8
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 95.8
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 0.0
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 94.3
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 13.2
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 3.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 57.2
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 3.5
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in Colusa County County, CA"
   },
@@ -836,7 +734,7 @@
       "state": "ca",
       "slug": "plumas",
       "name": "Plumas County",
-      "population": 19650,
+      "population": 0,
       "facilities_count": 2,
       "total_releases_pounds": 23733,
       "dominant_medium": "air",
@@ -849,7 +747,7 @@
       "state": "ca",
       "slug": "shasta",
       "name": "Shasta County",
-      "population": 181852,
+      "population": 0,
       "facilities_count": 7,
       "total_releases_pounds": 188305,
       "dominant_medium": "air",
@@ -862,7 +760,7 @@
       "state": "ca",
       "slug": "madera",
       "name": "Madera County",
-      "population": 157243,
+      "population": 0,
       "facilities_count": 9,
       "total_releases_pounds": 148356,
       "dominant_medium": "air",
@@ -873,9 +771,22 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "ventura",
+      "name": "Ventura County",
+      "population": 0,
+      "facilities_count": 14,
+      "total_releases_pounds": 69516,
+      "dominant_medium": "air",
+      "ej_pct_avg": 61.1,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 14 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "merced",
       "name": "Merced County",
-      "population": 282290,
+      "population": 0,
       "facilities_count": 12,
       "total_releases_pounds": 275402,
       "dominant_medium": "air",
@@ -886,36 +797,23 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "placer",
-      "name": "Placer County",
-      "population": 406608,
-      "facilities_count": 6,
-      "total_releases_pounds": 13998,
-      "dominant_medium": "air",
-      "ej_pct_avg": 59.2,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 6 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "yuba",
-      "name": "Yuba County",
-      "population": 81705,
-      "facilities_count": 1,
-      "total_releases_pounds": 809,
+      "slug": "los-angeles",
+      "name": "Los Angeles County",
+      "population": 0,
+      "facilities_count": 250,
+      "total_releases_pounds": 8371400,
       "dominant_medium": "land",
-      "ej_pct_avg": 58.0,
+      "ej_pct_avg": 83.2,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+12 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+37 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

@@ -5,7 +5,7 @@
     "slug": "butte",
     "name": "Butte County",
     "fips": "06007",
-    "population": 213605
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -562,137 +562,16 @@
   ],
   "facilities": [],
   "utilities": [],
-  "superfund": [
-    {
-      "slug": "koppers-co-inc-oroville-plant",
-      "state": "ca",
-      "name": "Koppers Co., Inc. (Oroville Plant)",
-      "epa_id": "CAD009112087",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Oroville",
-      "city_slug": "oroville",
-      "primary_contaminant": "2-Propan-2-Yloxypropane"
-    },
-    {
-      "slug": "louisiana-pacific-corp",
-      "state": "ca",
-      "name": "Louisiana-Pacific Corp.",
-      "epa_id": "CAD065021594",
-      "npl_status": "Deleted from the Final NPL",
-      "is_active_npl": false,
-      "is_deleted": true,
-      "is_federal_facility": false,
-      "city": "Oroville",
-      "city_slug": null,
-      "primary_contaminant": "2-Propan-2-Yloxypropane"
-    },
-    {
-      "slug": "western-pacific-railroad-co",
-      "state": "ca",
-      "name": "Western Pacific Railroad Co.",
-      "epa_id": "CAD980894679",
-      "npl_status": "Deleted from the Final NPL",
-      "is_active_npl": false,
-      "is_deleted": true,
-      "is_federal_facility": false,
-      "city": "South Oroville",
-      "city_slug": "south-oroville",
-      "primary_contaminant": "Arsenic"
-    }
-  ],
-  "superfund_total": 3,
-  "cities_directory": [
-    {
-      "slug": "berry-creek",
-      "name": "Berry Creek",
-      "fips": "0606070",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 1006
-    },
-    {
-      "slug": "biggs",
-      "name": "Biggs",
-      "fips": "0606560",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 2665
-    },
-    {
-      "slug": "butte-meadows",
-      "name": "Butte Meadows",
-      "fips": "0609318",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 0
-    },
-    {
-      "slug": "chico",
-      "name": "Chico",
-      "fips": "0613014",
-      "facilities_count": 0,
-      "utilities_count": 13,
-      "population": 102790
-    },
-    {
-      "slug": "clipper-mills",
-      "name": "Clipper Mills",
-      "fips": "0614148",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 314
-    },
-    {
-      "slug": "durham",
-      "name": "Durham",
-      "fips": "0620270",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 6337
-    },
-    {
-      "slug": "forest-ranch",
-      "name": "Forest Ranch",
-      "fips": "0624918",
-      "facilities_count": 0,
-      "utilities_count": 4,
-      "population": 1686
-    },
-    {
-      "slug": "gridley",
-      "name": "Gridley",
-      "fips": "0631260",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 7444
-    },
-    {
-      "slug": "oroville",
-      "name": "Oroville",
-      "fips": "0654386",
-      "facilities_count": 0,
-      "utilities_count": 7,
-      "population": 20283
-    },
-    {
-      "slug": "paradise",
-      "name": "Paradise",
-      "fips": "0655528",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 183
-    }
-  ],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [],
   "flags": [],
   "equity": {
-    "population": 213605,
-    "pct_low_income": 18.2,
-    "pct_people_of_color": 31.200000000000003,
-    "pct_under_5": 5.8,
-    "pct_over_64": 18.2,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -760,60 +639,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 133.5
-      },
-      {
-        "label": "Ozone",
-        "score": 120.1
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 60.4
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 58.7
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 6.4
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 59.7
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 64.0
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 26.0
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 47.2
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 81.1
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 69.2
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 1.1
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in Butte County County, CA"
   },
@@ -903,9 +729,22 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "san-francisco",
+      "name": "San Francisco County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 64.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "el-dorado",
       "name": "El Dorado County",
-      "population": 191713,
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -916,13 +755,13 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "marin",
-      "name": "Marin County",
-      "population": 260485,
+      "slug": "alpine",
+      "name": "Alpine County",
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 49.4,
+      "ej_pct_avg": 35.5,
       "relation": "peer",
       "reason": "Comparable population"
     },
@@ -931,60 +770,47 @@
       "state": "ca",
       "slug": "nevada",
       "name": "Nevada County",
-      "population": 102322,
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
       "ej_pct_avg": 47.4,
       "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
+      "reason": "Comparable population"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "sutter",
-      "name": "Sutter County",
-      "population": 99101,
+      "slug": "calaveras",
+      "name": "Calaveras County",
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 60.7,
+      "ej_pct_avg": 44.2,
       "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
+      "reason": "Comparable population"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "san-francisco",
-      "name": "San Francisco County",
-      "population": 851036,
+      "slug": "del-norte",
+      "name": "Del Norte County",
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
-      "ej_pct_avg": 64.6,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "mendocino",
-      "name": "Mendocino County",
-      "population": 91145,
-      "facilities_count": 1,
-      "total_releases_pounds": 60,
-      "dominant_medium": "land",
-      "ej_pct_avg": 34.6,
+      "ej_pct_avg": 28.1,
       "relation": "contrast",
-      "reason": "Same scale, lighter equity burden (20 pct-pt EJ gap)"
+      "reason": "Same scale, lighter equity burden (26 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

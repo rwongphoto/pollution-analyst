@@ -5,7 +5,7 @@
     "slug": "madera",
     "name": "Madera County",
     "fips": "06039",
-    "population": 157243
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -734,48 +734,7 @@
   "utilities": [],
   "superfund": [],
   "superfund_total": 0,
-  "cities_directory": [
-    {
-      "slug": "chowchilla",
-      "name": "Chowchilla",
-      "fips": "0613294",
-      "facilities_count": 2,
-      "utilities_count": 3,
-      "population": 18772
-    },
-    {
-      "slug": "coarsegold",
-      "name": "Coarsegold",
-      "fips": "0614288",
-      "facilities_count": 0,
-      "utilities_count": 4,
-      "population": 4578
-    },
-    {
-      "slug": "madera",
-      "name": "Madera",
-      "fips": "0645022",
-      "facilities_count": 5,
-      "utilities_count": 30,
-      "population": 66784
-    },
-    {
-      "slug": "north-fork",
-      "name": "North Fork",
-      "fips": "0651868",
-      "facilities_count": 0,
-      "utilities_count": 3,
-      "population": 3279
-    },
-    {
-      "slug": "oakhurst",
-      "name": "Oakhurst",
-      "fips": "0652764",
-      "facilities_count": 0,
-      "utilities_count": 10,
-      "population": 5003
-    }
-  ],
+  "cities_directory": [],
   "flags": [
     {
       "type": "long_arc_shift",
@@ -994,11 +953,11 @@
     }
   ],
   "equity": {
-    "population": 157243,
-    "pct_low_income": 20.1,
-    "pct_people_of_color": 68.3,
-    "pct_under_5": 7.5,
-    "pct_over_64": 14.2,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -1066,60 +1025,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 205.0
-      },
-      {
-        "label": "Ozone",
-        "score": 197.9
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 109.9
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 158.5
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 142.2
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 94.2
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 75.4
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 1.3
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 121.4
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 108.0
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 12.6
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 15.3
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in Madera County County, CA"
   },
@@ -1211,7 +1117,7 @@
       "state": "ca",
       "slug": "shasta",
       "name": "Shasta County",
-      "population": 181852,
+      "population": 0,
       "facilities_count": 7,
       "total_releases_pounds": 188305,
       "dominant_medium": "air",
@@ -1224,7 +1130,7 @@
       "state": "ca",
       "slug": "merced",
       "name": "Merced County",
-      "population": 282290,
+      "population": 0,
       "facilities_count": 12,
       "total_releases_pounds": 275402,
       "dominant_medium": "air",
@@ -1237,7 +1143,7 @@
       "state": "ca",
       "slug": "ventura",
       "name": "Ventura County",
-      "population": 842009,
+      "population": 0,
       "facilities_count": 14,
       "total_releases_pounds": 69516,
       "dominant_medium": "air",
@@ -1248,9 +1154,22 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "riverside",
+      "name": "Riverside County",
+      "population": 0,
+      "facilities_count": 37,
+      "total_releases_pounds": 144629,
+      "dominant_medium": "air",
+      "ej_pct_avg": 69.2,
+      "relation": "peer",
+      "reason": "Similar TRI air profile \u00b7 37 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "sonoma",
       "name": "Sonoma County",
-      "population": 488436,
+      "population": 0,
       "facilities_count": 9,
       "total_releases_pounds": 12004,
       "dominant_medium": "air",
@@ -1261,36 +1180,23 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "placer",
-      "name": "Placer County",
-      "population": 406608,
-      "facilities_count": 6,
-      "total_releases_pounds": 13998,
-      "dominant_medium": "air",
-      "ej_pct_avg": 59.2,
-      "relation": "peer",
-      "reason": "Similar TRI air profile \u00b7 6 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "mendocino",
-      "name": "Mendocino County",
-      "population": 91145,
-      "facilities_count": 1,
-      "total_releases_pounds": 60,
-      "dominant_medium": "land",
-      "ej_pct_avg": 34.6,
+      "slug": "del-norte",
+      "name": "Del Norte County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 28.1,
       "relation": "contrast",
-      "reason": "Same scale, lighter equity burden (26 pct-pt EJ gap)"
+      "reason": "Same scale, lighter equity burden (33 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

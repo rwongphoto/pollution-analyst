@@ -5,7 +5,7 @@
     "slug": "glenn",
     "name": "Glenn County",
     "fips": "06021",
-    "population": 28657
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -358,39 +358,14 @@
   "utilities": [],
   "superfund": [],
   "superfund_total": 0,
-  "cities_directory": [
-    {
-      "slug": "artois",
-      "name": "Artois",
-      "fips": "0602910",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 248
-    },
-    {
-      "slug": "elk-creek",
-      "name": "Elk Creek",
-      "fips": "0622006",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 45
-    },
-    {
-      "slug": "orland",
-      "name": "Orland",
-      "fips": "0654274",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 8221
-    }
-  ],
+  "cities_directory": [],
   "flags": [],
   "equity": {
-    "population": 28657,
-    "pct_low_income": 15.3,
-    "pct_people_of_color": 50.4,
-    "pct_under_5": 6.0,
-    "pct_over_64": 16.9,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -458,60 +433,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 166.3
-      },
-      {
-        "label": "Ozone",
-        "score": 137.9
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 74.3
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 49.4
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 14.2
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 46.1
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 84.9
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 0.0
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 67.2
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 80.3
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 32.3
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in Glenn County County, CA"
   },
@@ -603,7 +525,7 @@
       "state": "ca",
       "slug": "humboldt",
       "name": "Humboldt County",
-      "population": 136132,
+      "population": 0,
       "facilities_count": 2,
       "total_releases_pounds": 96096,
       "dominant_medium": "land",
@@ -616,7 +538,7 @@
       "state": "ca",
       "slug": "lassen",
       "name": "Lassen County",
-      "population": 31873,
+      "population": 0,
       "facilities_count": 1,
       "total_releases_pounds": 8258,
       "dominant_medium": "land",
@@ -627,22 +549,9 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "san-benito",
-      "name": "San Benito County",
-      "population": 64753,
-      "facilities_count": 4,
-      "total_releases_pounds": 37428,
-      "dominant_medium": "land",
-      "ej_pct_avg": 44.3,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 4 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
       "slug": "imperial",
       "name": "Imperial County",
-      "population": 179578,
+      "population": 0,
       "facilities_count": 5,
       "total_releases_pounds": 262832,
       "dominant_medium": "land",
@@ -653,36 +562,49 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "san-luis-obispo",
-      "name": "San Luis Obispo County",
-      "population": 281712,
-      "facilities_count": 5,
-      "total_releases_pounds": 26203,
+      "slug": "san-benito",
+      "name": "San Benito County",
+      "population": 0,
+      "facilities_count": 4,
+      "total_releases_pounds": 37428,
       "dominant_medium": "land",
-      "ej_pct_avg": 44.1,
+      "ej_pct_avg": 44.3,
       "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 5 facilities"
+      "reason": "Similar TRI land profile \u00b7 4 facilities"
     },
     {
       "kind": "county",
       "state": "ca",
-      "slug": "sutter",
-      "name": "Sutter County",
-      "population": 99101,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 60.7,
+      "slug": "santa-barbara",
+      "name": "Santa Barbara County",
+      "population": 0,
+      "facilities_count": 7,
+      "total_releases_pounds": 55535,
+      "dominant_medium": "land",
+      "ej_pct_avg": 47.6,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 7 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "los-angeles",
+      "name": "Los Angeles County",
+      "population": 0,
+      "facilities_count": 250,
+      "total_releases_pounds": 8371400,
+      "dominant_medium": "land",
+      "ej_pct_avg": 83.2,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+12 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+34 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

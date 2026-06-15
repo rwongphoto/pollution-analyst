@@ -13,11 +13,11 @@
     ],
     "county": "Humboldt County",
     "county_slug": "humboldt",
-    "place_slug": "garberville"
+    "place_slug": null
   },
   "reporting_period": {
     "start": "2020-01-01",
-    "end": "2026-05-07"
+    "end": "2026-06-15"
   },
   "briefing_label": "SDWIS through latest publish",
   "totals": {
@@ -463,60 +463,60 @@
     }
   ],
   "equity": {
-    "population": 136132,
-    "pct_low_income": 19.8,
-    "pct_people_of_color": 28.400000000000006,
-    "pct_under_5": 5.5,
-    "pct_over_64": 18.9,
+    "population": 39538223,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
-        "pct_us": 74.9,
+        "pct_us": 93.3,
         "pct_state": null
       },
       {
         "label": "Ozone",
-        "pct_us": 0.0,
+        "pct_us": 92.3,
         "pct_state": null
       },
       {
         "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 12.5,
+        "pct_us": 67.8,
         "pct_state": null
       },
       {
         "label": "Diesel particulate",
-        "pct_us": 8.9,
+        "pct_us": 82.2,
         "pct_state": null
       },
       {
         "label": "Toxic releases (RSEI)",
-        "pct_us": 13.4,
+        "pct_us": 54.6,
         "pct_state": null
       },
       {
         "label": "Traffic proximity",
-        "pct_us": 41.6,
+        "pct_us": 88.2,
         "pct_state": null
       },
       {
         "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 70.0,
+        "pct_us": 63.0,
         "pct_state": null
       },
       {
         "label": "Superfund site proximity",
-        "pct_us": 55.6,
+        "pct_us": 88.1,
         "pct_state": null
       },
       {
         "label": "RMP-facility proximity",
-        "pct_us": 56.6,
+        "pct_us": 77.7,
         "pct_state": null
       },
       {
         "label": "Hazardous-waste site proximity",
-        "pct_us": 53.5,
+        "pct_us": 91.6,
         "pct_state": null
       },
       {
@@ -526,76 +526,23 @@
       },
       {
         "label": "NPDES wastewater proximity",
-        "pct_us": 61.5,
+        "pct_us": 89.4,
         "pct_state": null
       },
       {
         "label": "Drinking-water non-compliance",
-        "pct_us": 76.3,
+        "pct_us": 78.0,
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 102.7
-      },
-      {
-        "label": "Ozone",
-        "score": 0.5
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 25.0
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 17.9
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 16.1
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 53.1
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 82.5
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 3.7
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 54.1
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 61.2
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 45.4
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 13.0
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Humboldt County, California (utility's served county per SDWIS GEOGRAPHIC_AREA \u2014 city-level not yet matched)"
+    "geography_label": "California state-level (neither place nor county matched for this utility)"
   },
   "source": {
     "label": "EPA Safe Drinking Water Information System",
     "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-07"
+    "retrieved": "2026-06-15"
   },
-  "_published_at": "2026-05-07T08:09:01Z"
+  "_published_at": "2026-06-15T20:31:53Z"
 }

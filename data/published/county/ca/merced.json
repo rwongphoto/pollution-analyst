@@ -5,7 +5,7 @@
     "slug": "merced",
     "name": "Merced County",
     "fips": "06047",
-    "population": 282290
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -749,128 +749,9 @@
     }
   ],
   "utilities": [],
-  "superfund": [
-    {
-      "slug": "castle-air-force-base-6-areas",
-      "state": "ca",
-      "name": "Castle Air Force Base (6 Areas)",
-      "epa_id": "CA3570024551",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": true,
-      "city": "Merced",
-      "city_slug": null,
-      "primary_contaminant": "Benzene"
-    }
-  ],
-  "superfund_total": 1,
-  "cities_directory": [
-    {
-      "slug": "atwater",
-      "name": "Atwater",
-      "fips": "0603162",
-      "facilities_count": 1,
-      "utilities_count": 1,
-      "population": 31841
-    },
-    {
-      "slug": "ballico",
-      "name": "Ballico",
-      "fips": "0603708",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 535
-    },
-    {
-      "slug": "delhi",
-      "name": "Delhi",
-      "fips": "0618464",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 10896
-    },
-    {
-      "slug": "dos-palos",
-      "name": "Dos Palos",
-      "fips": "0619612",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 5755
-    },
-    {
-      "slug": "gustine",
-      "name": "Gustine",
-      "fips": "0631568",
-      "facilities_count": 1,
-      "utilities_count": 1,
-      "population": 6122
-    },
-    {
-      "slug": "hilmar-irwin",
-      "name": "Hilmar-Irwin",
-      "fips": "0633861",
-      "facilities_count": 1,
-      "utilities_count": 0,
-      "population": 6484
-    },
-    {
-      "slug": "le-grand",
-      "name": "Le Grand",
-      "fips": "0641040",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 1679
-    },
-    {
-      "slug": "livingston",
-      "name": "Livingston",
-      "fips": "0642006",
-      "facilities_count": 1,
-      "utilities_count": 1,
-      "population": 14344
-    },
-    {
-      "slug": "los-banos",
-      "name": "Los Banos",
-      "fips": "0644028",
-      "facilities_count": 1,
-      "utilities_count": 3,
-      "population": 45560
-    },
-    {
-      "slug": "merced",
-      "name": "Merced",
-      "fips": "0646898",
-      "facilities_count": 3,
-      "utilities_count": 4,
-      "population": 87686
-    },
-    {
-      "slug": "planada",
-      "name": "Planada",
-      "fips": "0657582",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 3494
-    },
-    {
-      "slug": "santa-nella",
-      "name": "Santa Nella",
-      "fips": "0670028",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 2055
-    },
-    {
-      "slug": "winton",
-      "name": "Winton",
-      "fips": "0686076",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 11986
-    }
-  ],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [],
   "flags": [
     {
       "type": "naaqs_exceedance",
@@ -947,11 +828,11 @@
     }
   ],
   "equity": {
-    "population": 282290,
-    "pct_low_income": 18.5,
-    "pct_people_of_color": 74.8,
-    "pct_under_5": 7.9,
-    "pct_over_64": 11.4,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -1019,60 +900,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 210.0
-      },
-      {
-        "label": "Ozone",
-        "score": 200.7
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 111.2
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 170.3
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 29.4
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 101.6
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 84.4
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 93.9
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 101.0
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 109.5
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 107.0
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 12.6
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in Merced County County, CA"
   },
@@ -1164,7 +992,7 @@
       "state": "ca",
       "slug": "madera",
       "name": "Madera County",
-      "population": 157243,
+      "population": 0,
       "facilities_count": 9,
       "total_releases_pounds": 148356,
       "dominant_medium": "air",
@@ -1177,7 +1005,7 @@
       "state": "ca",
       "slug": "shasta",
       "name": "Shasta County",
-      "population": 181852,
+      "population": 0,
       "facilities_count": 7,
       "total_releases_pounds": 188305,
       "dominant_medium": "air",
@@ -1190,7 +1018,7 @@
       "state": "ca",
       "slug": "ventura",
       "name": "Ventura County",
-      "population": 842009,
+      "population": 0,
       "facilities_count": 14,
       "total_releases_pounds": 69516,
       "dominant_medium": "air",
@@ -1203,7 +1031,7 @@
       "state": "ca",
       "slug": "riverside",
       "name": "Riverside County",
-      "population": 2429487,
+      "population": 0,
       "facilities_count": 37,
       "total_releases_pounds": 144629,
       "dominant_medium": "air",
@@ -1216,7 +1044,7 @@
       "state": "ca",
       "slug": "sonoma",
       "name": "Sonoma County",
-      "population": 488436,
+      "population": 0,
       "facilities_count": 9,
       "total_releases_pounds": 12004,
       "dominant_medium": "air",
@@ -1227,23 +1055,23 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "mendocino",
-      "name": "Mendocino County",
-      "population": 91145,
-      "facilities_count": 1,
-      "total_releases_pounds": 60,
-      "dominant_medium": "land",
-      "ej_pct_avg": 34.6,
+      "slug": "del-norte",
+      "name": "Del Norte County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 28.1,
       "relation": "contrast",
-      "reason": "Same scale, lighter equity burden (31 pct-pt EJ gap)"
+      "reason": "Same scale, lighter equity burden (37 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

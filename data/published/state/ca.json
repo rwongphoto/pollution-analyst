@@ -11,7 +11,7 @@
   "totals": {
     "facilities_tracked": 852,
     "utilities_tracked": 3071,
-    "npl_sites_tracked": 117,
+    "npl_sites_tracked": 0,
     "counties_with_data": 42,
     "total_releases_pounds": 36026212,
     "yoy_pct_change": -2.3,
@@ -636,7 +636,7 @@
       "state_label": "California",
       "name": "Los Angeles County",
       "fips": "06037",
-      "population": 9936690,
+      "population": 0,
       "facilities_count": 250,
       "total_releases_pounds": 8371400,
       "yoy_pct_change": -2.2,
@@ -648,7 +648,7 @@
       "state_label": "California",
       "name": "Kern County",
       "fips": "06029",
-      "population": 906883,
+      "population": 0,
       "facilities_count": 32,
       "total_releases_pounds": 6644852,
       "yoy_pct_change": -28.4,
@@ -660,7 +660,7 @@
       "state_label": "California",
       "name": "Kings County",
       "fips": "06031",
-      "population": 152515,
+      "population": 0,
       "facilities_count": 7,
       "total_releases_pounds": 6114151,
       "yoy_pct_change": 50.7,
@@ -672,7 +672,7 @@
       "state_label": "California",
       "name": "Alameda County",
       "fips": "06001",
-      "population": 1663823,
+      "population": 0,
       "facilities_count": 25,
       "total_releases_pounds": 3400992,
       "yoy_pct_change": 21.3,
@@ -684,7 +684,7 @@
       "state_label": "California",
       "name": "Contra Costa County",
       "fips": "06013",
-      "population": 1162648,
+      "population": 0,
       "facilities_count": 29,
       "total_releases_pounds": 3013122,
       "yoy_pct_change": 9.2,
@@ -696,7 +696,7 @@
       "state_label": "California",
       "name": "San Bernardino County",
       "fips": "06071",
-      "population": 2180563,
+      "population": 0,
       "facilities_count": 82,
       "total_releases_pounds": 2436807,
       "yoy_pct_change": -0.4,
@@ -708,7 +708,7 @@
       "state_label": "California",
       "name": "Solano County",
       "fips": "06095",
-      "population": 450995,
+      "population": 0,
       "facilities_count": 15,
       "total_releases_pounds": 886344,
       "yoy_pct_change": 56.7,
@@ -720,7 +720,7 @@
       "state_label": "California",
       "name": "San Diego County",
       "fips": "06073",
-      "population": 3289701,
+      "population": 0,
       "facilities_count": 54,
       "total_releases_pounds": 813681,
       "yoy_pct_change": -39.9,
@@ -732,7 +732,7 @@
       "state_label": "California",
       "name": "Sacramento County",
       "fips": "06067",
-      "population": 1579211,
+      "population": 0,
       "facilities_count": 14,
       "total_releases_pounds": 800886,
       "yoy_pct_change": 4.7,
@@ -744,7 +744,7 @@
       "state_label": "California",
       "name": "Santa Clara County",
       "fips": "06085",
-      "population": 1916831,
+      "population": 0,
       "facilities_count": 32,
       "total_releases_pounds": 486062,
       "yoy_pct_change": 109.6,
@@ -1291,145 +1291,14 @@
       "unresolved": true
     }
   ],
-  "superfund": [
-    {
-      "slug": "advanced-micro-devices-inc",
-      "state": "ca",
-      "name": "Advanced Micro Devices, Inc.",
-      "epa_id": "CAD048634059",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Sunnyvale",
-      "city_slug": "sunnyvale",
-      "primary_contaminant": "1,1,1-Trichloroethane"
-    },
-    {
-      "slug": "advanced-micro-devices-inc-building-915",
-      "state": "ca",
-      "name": "Advanced Micro Devices, Inc. (Building 915)",
-      "epa_id": "CAT080034234",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Sunnyvale",
-      "city_slug": "sunnyvale",
-      "primary_contaminant": "1,1,1-Trichloroethane"
-    },
-    {
-      "slug": "aerojet-general-corp",
-      "state": "ca",
-      "name": "Aerojet General Corp.",
-      "epa_id": "CAD980358832",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Rancho Cordova",
-      "city_slug": null,
-      "primary_contaminant": "1,1,2-Trichloroethane"
-    },
-    {
-      "slug": "afterthought-mine",
-      "state": "ca",
-      "name": "Afterthought Mine",
-      "epa_id": "CAN000908808",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Bella Vista",
-      "city_slug": null,
-      "primary_contaminant": null
-    },
-    {
-      "slug": "alameda-naval-air-station",
-      "state": "ca",
-      "name": "Alameda Naval Air Station",
-      "epa_id": "CA2170023236",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": true,
-      "city": "Alameda",
-      "city_slug": "alameda",
-      "primary_contaminant": "Chloroethene (Vinyl Chloride)"
-    },
-    {
-      "slug": "alark-hard-chrome",
-      "state": "ca",
-      "name": "Alark Hard Chrome",
-      "epa_id": "CAD098229214",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Riverside",
-      "city_slug": "riverside",
-      "primary_contaminant": null
-    },
-    {
-      "slug": "amco-chemical",
-      "state": "ca",
-      "name": "Amco Chemical",
-      "epa_id": "CA0001576081",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Oakland",
-      "city_slug": "oakland",
-      "primary_contaminant": null
-    },
-    {
-      "slug": "applied-materials",
-      "state": "ca",
-      "name": "Applied Materials",
-      "epa_id": "CAD042728840",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Santa Clara",
-      "city_slug": "santa-clara",
-      "primary_contaminant": "1,1,1-Trichloroethane"
-    },
-    {
-      "slug": "argonaut-mine",
-      "state": "ca",
-      "name": "Argonaut Mine",
-      "epa_id": "CAD983650011",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Jackson",
-      "city_slug": "jackson",
-      "primary_contaminant": null
-    },
-    {
-      "slug": "atlas-asbestos-mine",
-      "state": "ca",
-      "name": "Atlas Asbestos Mine",
-      "epa_id": "CAD980496863",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Coalinga",
-      "city_slug": null,
-      "primary_contaminant": "Asbestos"
-    }
-  ],
+  "superfund": [],
   "flags": [],
   "equity": {
     "population": 39538223,
-    "pct_low_income": 12.1,
-    "pct_people_of_color": 64.8,
-    "pct_under_5": 6.0,
-    "pct_over_64": 14.9,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -1497,60 +1366,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 152.5
-      },
-      {
-        "label": "Ozone",
-        "score": 122.4
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 113.1
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 123.7
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 68.0
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 128.9
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 81.4
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 79.6
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 102.5
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 137.1
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 97.2
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 5.2
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All California block groups"
   },
@@ -1558,7 +1374,7 @@
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
   "_chem_cas": [
@@ -1709,5 +1525,5 @@
     "N770",
     "N982"
   ],
-  "_published_at": "2026-05-07T08:08:52Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

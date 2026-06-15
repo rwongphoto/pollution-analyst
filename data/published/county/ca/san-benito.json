@@ -5,7 +5,7 @@
     "slug": "san-benito",
     "name": "San Benito County",
     "fips": "06069",
-    "population": 64753
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -564,63 +564,16 @@
     }
   ],
   "utilities": [],
-  "superfund": [
-    {
-      "slug": "new-idria-mercury-mine",
-      "state": "ca",
-      "name": "New Idria Mercury Mine",
-      "epa_id": "CA0001900463",
-      "npl_status": "Currently on the Final NPL",
-      "is_active_npl": true,
-      "is_deleted": false,
-      "is_federal_facility": false,
-      "city": "Idria",
-      "city_slug": null,
-      "primary_contaminant": null
-    }
-  ],
-  "superfund_total": 1,
-  "cities_directory": [
-    {
-      "slug": "aromas",
-      "name": "Aromas",
-      "fips": "0602812",
-      "facilities_count": 0,
-      "utilities_count": 2,
-      "population": 2744
-    },
-    {
-      "slug": "hollister",
-      "name": "Hollister",
-      "fips": "0634120",
-      "facilities_count": 2,
-      "utilities_count": 20,
-      "population": 42093
-    },
-    {
-      "slug": "san-juan-bautista",
-      "name": "San Juan Bautista",
-      "fips": "0668014",
-      "facilities_count": 0,
-      "utilities_count": 4,
-      "population": 1976
-    },
-    {
-      "slug": "tres-pinos",
-      "name": "Tres Pinos",
-      "fips": "0680364",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 1006
-    }
-  ],
+  "superfund": [],
+  "superfund_total": 0,
+  "cities_directory": [],
   "flags": [],
   "equity": {
-    "population": 64753,
-    "pct_low_income": 7.5,
-    "pct_people_of_color": 69.0,
-    "pct_under_5": 6.9,
-    "pct_over_64": 13.2,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -688,60 +641,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 123.3
-      },
-      {
-        "label": "Ozone",
-        "score": 51.9
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 64.3
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 47.9
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 20.3
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 64.7
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 59.1
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 5.5
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 79.2
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 82.4
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 3.5
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 9.4
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in San Benito County County, CA"
   },
@@ -833,7 +733,7 @@
       "state": "ca",
       "slug": "san-luis-obispo",
       "name": "San Luis Obispo County",
-      "population": 281712,
+      "population": 0,
       "facilities_count": 5,
       "total_releases_pounds": 26203,
       "dominant_medium": "land",
@@ -846,7 +746,7 @@
       "state": "ca",
       "slug": "monterey",
       "name": "Monterey County",
-      "population": 437609,
+      "population": 0,
       "facilities_count": 5,
       "total_releases_pounds": 24485,
       "dominant_medium": "land",
@@ -857,22 +757,9 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "humboldt",
-      "name": "Humboldt County",
-      "population": 136132,
-      "facilities_count": 2,
-      "total_releases_pounds": 96096,
-      "dominant_medium": "land",
-      "ej_pct_avg": 42.5,
-      "relation": "peer",
-      "reason": "Similar TRI land profile \u00b7 2 facilities"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
       "slug": "santa-barbara",
       "name": "Santa Barbara County",
-      "population": 445213,
+      "population": 0,
       "facilities_count": 7,
       "total_releases_pounds": 55535,
       "dominant_medium": "land",
@@ -883,9 +770,22 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "humboldt",
+      "name": "Humboldt County",
+      "population": 0,
+      "facilities_count": 2,
+      "total_releases_pounds": 96096,
+      "dominant_medium": "land",
+      "ej_pct_avg": 42.5,
+      "relation": "peer",
+      "reason": "Similar TRI land profile \u00b7 2 facilities"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "imperial",
       "name": "Imperial County",
-      "population": 179578,
+      "population": 0,
       "facilities_count": 5,
       "total_releases_pounds": 262832,
       "dominant_medium": "land",
@@ -896,23 +796,23 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "yolo",
-      "name": "Yolo County",
-      "population": 217141,
-      "facilities_count": 3,
-      "total_releases_pounds": 1894,
+      "slug": "los-angeles",
+      "name": "Los Angeles County",
+      "population": 0,
+      "facilities_count": 250,
+      "total_releases_pounds": 8371400,
       "dominant_medium": "land",
-      "ej_pct_avg": 63.5,
+      "ej_pct_avg": 83.2,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+19 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+39 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

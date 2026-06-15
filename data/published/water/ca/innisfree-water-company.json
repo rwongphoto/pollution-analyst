@@ -13,11 +13,11 @@
     ],
     "county": "Lake County",
     "county_slug": "lake",
-    "place_slug": "kelseyville"
+    "place_slug": null
   },
   "reporting_period": {
     "start": "2023-01-01",
-    "end": "2026-05-07"
+    "end": "2026-06-15"
   },
   "briefing_label": "SDWIS through latest publish",
   "totals": {
@@ -110,60 +110,60 @@
     }
   ],
   "equity": {
-    "population": 3828,
-    "pct_low_income": 20.5,
-    "pct_people_of_color": 69.9,
-    "pct_under_5": 8.1,
-    "pct_over_64": 14.5,
+    "population": 39538223,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
-        "pct_us": 84.4,
+        "pct_us": 93.3,
         "pct_state": null
       },
       {
         "label": "Ozone",
-        "pct_us": 29.4,
+        "pct_us": 92.3,
         "pct_state": null
       },
       {
         "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 31.5,
+        "pct_us": 67.8,
         "pct_state": null
       },
       {
         "label": "Diesel particulate",
-        "pct_us": 2.7,
+        "pct_us": 82.2,
         "pct_state": null
       },
       {
         "label": "Toxic releases (RSEI)",
-        "pct_us": 0.6,
+        "pct_us": 54.6,
         "pct_state": null
       },
       {
         "label": "Traffic proximity",
-        "pct_us": 26.0,
+        "pct_us": 88.2,
         "pct_state": null
       },
       {
         "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 36.9,
+        "pct_us": 63.0,
         "pct_state": null
       },
       {
         "label": "Superfund site proximity",
-        "pct_us": 71.5,
+        "pct_us": 88.1,
         "pct_state": null
       },
       {
         "label": "RMP-facility proximity",
-        "pct_us": 27.7,
+        "pct_us": 77.7,
         "pct_state": null
       },
       {
         "label": "Hazardous-waste site proximity",
-        "pct_us": 13.6,
+        "pct_us": 91.6,
         "pct_state": null
       },
       {
@@ -173,76 +173,23 @@
       },
       {
         "label": "NPDES wastewater proximity",
-        "pct_us": 7.7,
+        "pct_us": 89.4,
         "pct_state": null
       },
       {
         "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
+        "pct_us": 78.0,
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 198.5
-      },
-      {
-        "label": "Ozone",
-        "score": 44.4
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 72.4
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 7.0
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 0.0
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 65.4
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 72.4
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 165.8
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 0.0
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 0.0
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 0.0
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Kelseyville, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "California state-level (neither place nor county matched for this utility)"
   },
   "source": {
     "label": "EPA Safe Drinking Water Information System",
     "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-07"
+    "retrieved": "2026-06-15"
   },
-  "_published_at": "2026-05-07T08:09:01Z"
+  "_published_at": "2026-06-15T20:31:53Z"
 }

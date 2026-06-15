@@ -5,7 +5,7 @@
     "slug": "calaveras",
     "name": "Calaveras County",
     "fips": "06009",
-    "population": 45674
+    "population": 0
   },
   "reporting_year": 2024,
   "briefing_label": "TRI 2024",
@@ -318,48 +318,7 @@
   "utilities": [],
   "superfund": [],
   "superfund_total": 0,
-  "cities_directory": [
-    {
-      "slug": "arnold",
-      "name": "Arnold",
-      "fips": "0602770",
-      "facilities_count": 0,
-      "utilities_count": 2,
-      "population": 1866
-    },
-    {
-      "slug": "murphys",
-      "name": "Murphys",
-      "fips": "0650034",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 2022
-    },
-    {
-      "slug": "san-andreas",
-      "name": "San Andreas",
-      "fips": "0664420",
-      "facilities_count": 0,
-      "utilities_count": 8,
-      "population": 2936
-    },
-    {
-      "slug": "valley-springs",
-      "name": "Valley Springs",
-      "fips": "0681890",
-      "facilities_count": 0,
-      "utilities_count": 2,
-      "population": 3630
-    },
-    {
-      "slug": "west-point",
-      "name": "West Point",
-      "fips": "0684732",
-      "facilities_count": 0,
-      "utilities_count": 1,
-      "population": 777
-    }
-  ],
+  "cities_directory": [],
   "flags": [
     {
       "type": "naaqs_exceedance",
@@ -436,11 +395,11 @@
     }
   ],
   "equity": {
-    "population": 45674,
-    "pct_low_income": 13.1,
-    "pct_people_of_color": 21.700000000000003,
-    "pct_under_5": 5.2,
-    "pct_over_64": 28.8,
+    "population": 0,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
@@ -508,60 +467,7 @@
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 94.3
-      },
-      {
-        "label": "Ozone",
-        "score": 91.3
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 22.2
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 8.4
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 11.5
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 11.7
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 33.4
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 0.7
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 0.2
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 21.3
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 48.2
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 2.2
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
     "geography_label": "All block groups in Calaveras County County, CA"
   },
@@ -651,9 +557,61 @@
     {
       "kind": "county",
       "state": "ca",
+      "slug": "san-francisco",
+      "name": "San Francisco County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 64.6,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "el-dorado",
+      "name": "El Dorado County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.3,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "alpine",
+      "name": "Alpine County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 35.5,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
+      "slug": "nevada",
+      "name": "Nevada County",
+      "population": 0,
+      "facilities_count": 0,
+      "total_releases_pounds": 0,
+      "dominant_medium": "none",
+      "ej_pct_avg": 47.4,
+      "relation": "peer",
+      "reason": "Comparable population"
+    },
+    {
+      "kind": "county",
+      "state": "ca",
       "slug": "amador",
       "name": "Amador County",
-      "population": 40577,
+      "population": 0,
       "facilities_count": 0,
       "total_releases_pounds": 0,
       "dominant_medium": "none",
@@ -664,75 +622,23 @@
     {
       "kind": "county",
       "state": "ca",
-      "slug": "del-norte",
-      "name": "Del Norte County",
-      "population": 27462,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 28.1,
-      "relation": "peer",
-      "reason": "Comparable population"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "sutter",
-      "name": "Sutter County",
-      "population": 99101,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 60.7,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "nevada",
-      "name": "Nevada County",
-      "population": 102322,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 47.4,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "inyo",
-      "name": "Inyo County",
-      "population": 18829,
-      "facilities_count": 0,
-      "total_releases_pounds": 0,
-      "dominant_medium": "none",
-      "ej_pct_avg": 43.3,
-      "relation": "peer",
-      "reason": "Statewide pollution-profile peer"
-    },
-    {
-      "kind": "county",
-      "state": "ca",
-      "slug": "imperial",
-      "name": "Imperial County",
-      "population": 179578,
-      "facilities_count": 5,
-      "total_releases_pounds": 262832,
+      "slug": "los-angeles",
+      "name": "Los Angeles County",
+      "population": 0,
+      "facilities_count": 250,
+      "total_releases_pounds": 8371400,
       "dominant_medium": "land",
-      "ej_pct_avg": 61.7,
+      "ej_pct_avg": 83.2,
       "relation": "contrast",
-      "reason": "Same scale, heavier equity burden (+17 pct-pt EJ gap)"
+      "reason": "Same scale, heavier equity burden (+39 pct-pt EJ gap)"
     }
   ],
   "sources": [
     {
       "label": "EPA Toxics Release Inventory",
       "url": "https://www.epa.gov/toxics-release-inventory-tri-program",
-      "retrieved": "2026-05-07"
+      "retrieved": "2026-06-15"
     }
   ],
-  "_published_at": "2026-05-07T08:08:54Z"
+  "_published_at": "2026-06-15T20:31:52Z"
 }

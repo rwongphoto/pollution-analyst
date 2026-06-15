@@ -13,11 +13,11 @@
     ],
     "county": "Ventura County",
     "county_slug": "ventura",
-    "place_slug": "westlake-village"
+    "place_slug": null
   },
   "reporting_period": {
     "start": "2021-01-01",
-    "end": "2026-05-07"
+    "end": "2026-06-15"
   },
   "briefing_label": "SDWIS through latest publish",
   "totals": {
@@ -85,60 +85,60 @@
   },
   "flags": [],
   "equity": {
-    "population": 7948,
-    "pct_low_income": 5.0,
-    "pct_people_of_color": 23.099999999999994,
-    "pct_under_5": 6.0,
-    "pct_over_64": 27.9,
+    "population": 39538223,
+    "pct_low_income": null,
+    "pct_people_of_color": null,
+    "pct_under_5": null,
+    "pct_over_64": null,
     "ej_indexes": [
       {
         "label": "PM2.5 (fine particulate)",
-        "pct_us": 63.7,
+        "pct_us": 93.3,
         "pct_state": null
       },
       {
         "label": "Ozone",
-        "pct_us": 92.0,
+        "pct_us": 92.3,
         "pct_state": null
       },
       {
         "label": "Nitrogen dioxide (NO\u2082)",
-        "pct_us": 47.7,
+        "pct_us": 67.8,
         "pct_state": null
       },
       {
         "label": "Diesel particulate",
-        "pct_us": 34.7,
+        "pct_us": 82.2,
         "pct_state": null
       },
       {
         "label": "Toxic releases (RSEI)",
-        "pct_us": 10.3,
+        "pct_us": 54.6,
         "pct_state": null
       },
       {
         "label": "Traffic proximity",
-        "pct_us": 71.4,
+        "pct_us": 88.2,
         "pct_state": null
       },
       {
         "label": "Lead-paint risk (pre-1960 housing)",
-        "pct_us": 27.6,
+        "pct_us": 63.0,
         "pct_state": null
       },
       {
         "label": "Superfund site proximity",
-        "pct_us": 55.6,
+        "pct_us": 88.1,
         "pct_state": null
       },
       {
         "label": "RMP-facility proximity",
-        "pct_us": 27.7,
+        "pct_us": 77.7,
         "pct_state": null
       },
       {
         "label": "Hazardous-waste site proximity",
-        "pct_us": 73.3,
+        "pct_us": 91.6,
         "pct_state": null
       },
       {
@@ -148,76 +148,23 @@
       },
       {
         "label": "NPDES wastewater proximity",
-        "pct_us": 83.9,
+        "pct_us": 89.4,
         "pct_state": null
       },
       {
         "label": "Drinking-water non-compliance",
-        "pct_us": 75.5,
+        "pct_us": 78.0,
         "pct_state": null
       }
     ],
-    "disparity_scores": [
-      {
-        "label": "PM2.5 (fine particulate)",
-        "score": 37.0
-      },
-      {
-        "label": "Ozone",
-        "score": 48.2
-      },
-      {
-        "label": "Nitrogen dioxide (NO\u2082)",
-        "score": 27.1
-      },
-      {
-        "label": "Diesel particulate",
-        "score": 20.7
-      },
-      {
-        "label": "Toxic releases (RSEI)",
-        "score": 5.8
-      },
-      {
-        "label": "Traffic proximity",
-        "score": 39.8
-      },
-      {
-        "label": "Lead-paint risk (pre-1960 housing)",
-        "score": 9.9
-      },
-      {
-        "label": "Superfund site proximity",
-        "score": 0.0
-      },
-      {
-        "label": "RMP-facility proximity",
-        "score": 3.5
-      },
-      {
-        "label": "Hazardous-waste site proximity",
-        "score": 41.1
-      },
-      {
-        "label": "Underground storage tanks",
-        "score": 0.0
-      },
-      {
-        "label": "NPDES wastewater proximity",
-        "score": 45.2
-      },
-      {
-        "label": "Drinking-water non-compliance",
-        "score": 0.0
-      }
-    ],
+    "disparity_scores": [],
     "source": "Census ACS 2018-2022 (5-year) + USEPA-clone EJ blockgroup stats (raw indicators + EJ disparity mirror)",
-    "geography_label": "Westlake Village, California (Census place; block-group disparity scores aggregated by centroid containment)"
+    "geography_label": "California state-level (neither place nor county matched for this utility)"
   },
   "source": {
     "label": "EPA Safe Drinking Water Information System",
     "url": "https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting",
-    "retrieved": "2026-05-07"
+    "retrieved": "2026-06-15"
   },
-  "_published_at": "2026-05-07T08:09:03Z"
+  "_published_at": "2026-06-15T20:31:53Z"
 }
