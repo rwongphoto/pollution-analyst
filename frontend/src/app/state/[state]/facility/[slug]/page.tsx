@@ -45,7 +45,7 @@ export async function generateMetadata({
   const { state, slug } = await params;
   const data = await loadFacility(state, slug);
   return pageMeta({
-    title: `${data.facility.name} — TRI Releases | Pollution Analyst`,
+    title: `${data.facility.name} Pollution Analysis`,
     description: facilityDescription(data),
     path: `/state/${state}/facility/${slug}`,
   });
@@ -79,7 +79,7 @@ function FacilityHero({ data }: { data: FacilityPagePayload }) {
       <div className="wrap">
         <div>
           <div className="eyebrow">TRI facility · {data.briefing_label}</div>
-          <h1>{f.name}</h1>
+          <h1>{f.name} Pollution Analysis</h1>
           <p className="lead lede" style={{ maxWidth: "70ch" }}>
             Total reported releases <strong>{poundsFormat(t.total_releases_pounds)}</strong>{" "}
             {yoyLanguage} year over year ({pctSigned(t.yoy_pct_change)}).
@@ -312,7 +312,7 @@ export default async function FacilityPage({
       {
         "@type": "Article",
         mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
-        headline: `${f.name} — TRI Releases | Pollution Analyst`,
+        headline: `${f.name} Pollution Analysis`,
         description,
         image: {
           "@type": "ImageObject",
