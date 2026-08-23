@@ -48,6 +48,12 @@ export async function generateMetadata({
   });
 }
 
+// SEMS site names don't currently carry the word themselves, but they come from a
+// live federal feed — don't emit "X Superfund Superfund" if one ever does.
+function superfundHeading(name: string): string {
+  return /\bsuperfund\b/i.test(name) ? name : `${name} Superfund`;
+}
+
 function statusEyebrow(s: SuperfundPayload["site"]): string {
   if (s.is_active_npl) return "NPL Final";
   if (s.is_deleted) return "NPL Deleted";
@@ -90,7 +96,7 @@ function SuperfundHero({ data }: { data: SuperfundPayload }) {
               </>
             ) : null}
           </div>
-          <h1>{s.name}</h1>
+          <h1>{superfundHeading(s.name)}</h1>
           <p className="lead lede" style={{ maxWidth: "70ch" }}>
             {statusSentence(s)}
             {t.primary_contaminant ? (

@@ -13,7 +13,7 @@ import type { FeaturedEntity } from "@/lib/types";
 const HOME_DESCRIPTION =
   "Federal pollution data, made readable. TRI factory releases, AQS air-monitor readings, AirToxScreen cancer risk, SDWIS drinking-water violations, and CDC health rates — paired with the demographic context for who lives next to it.";
 
-const HOME_TITLE = "Pollution Trend Intelligence | Pollution Analyst";
+const HOME_TITLE = "Federal Pollution Data Analysis | Pollution Analyst";
 
 export const metadata: Metadata = {
   title: HOME_TITLE,
@@ -58,9 +58,10 @@ function HomeHero({ totals, citiesTracked, briefingLabel }: {
         <div className="grid">
           <div>
             <div className="eyebrow">Pollution trend intelligence · public data</div>
-            <h1>
-              Federal pollution data — what&apos;s actually <em>changing</em>, and who lives next to it
-            </h1>
+            <h1>Federal Pollution Data Analysis</h1>
+            <h2 className="hero-sub">
+              Pollution trend changes, and who lives next to it
+            </h2>
             <p className="lead lede">
               We turn EPA, AQS, AirToxScreen, and CDC PLACES into something a person can actually read. Multi-decade chemical-release histories at the factory, air-monitor readings rolled up to your county, drinking-water violations for your utility, hazardous-air cancer risk where you live — paired with the demographic context for who lives next to it.
             </p>

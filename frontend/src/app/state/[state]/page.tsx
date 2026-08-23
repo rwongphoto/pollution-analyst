@@ -50,7 +50,7 @@ export async function generateMetadata({
   const { state } = await params;
   const data = await loadState(state);
   return pageMeta({
-    title: `${data.state.name} Pollution Trends | Pollution Analyst`,
+    title: `${data.state.name} Pollution Analysis | Pollution Analyst`,
     description: stateDescription(data),
     path: `/state/${state}`,
   });
@@ -83,7 +83,7 @@ function StateHero({ data }: { data: StatePagePayload }) {
       <div className="wrap">
         <div>
           <div className="eyebrow">State · {data.briefing_label}</div>
-          <h1>{s.name} Pollution</h1>
+          <h1>{s.name} Pollution Analysis</h1>
           <p className="lead lede" style={{ maxWidth: "70ch" }}>
             <strong>{t.facilities_tracked.toLocaleString()}</strong> TRI facilities,{" "}
             <strong>{t.utilities_tracked.toLocaleString()}</strong> public water systems,{" "}
@@ -582,7 +582,7 @@ export default async function StatePage({
       {
         "@type": "Article",
         mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
-        headline: `${data.state.name} Pollution`,
+        headline: `${data.state.name} Pollution Analysis`,
         description,
         image: `${SITE_URL}/icon.png`,
         publisher: {
