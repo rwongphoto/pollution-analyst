@@ -16,6 +16,8 @@ import { copyFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { buildEntityMap } from "./build-entitymap.mjs";
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const FRONTEND = resolve(__dirname, "..");
 const PUBLISHED = resolve(FRONTEND, "..", "data", "published");
@@ -39,6 +41,9 @@ if (existsSync(searchIndex)) {
   console.warn("prebuild: search-index.json missing — build continues without nav search");
 }
 
+// ---- 1b. EntityMap → public/entitymap.{json,html} (throws on invalid source) ----
+buildEntityMap();
+
 // ---- 2/3. walk tree → sitemap URL buckets + headline counts ----
 const slugsIn = (dir) =>
   existsSync(dir)
@@ -59,6 +64,7 @@ const buckets = {
     "/rankings/facilities",
     "/rankings/superfund",
     "/superfund-sites-cleanup-guide",
+    "/entitymap.html",
     ...stateSlugs.map((s) => `/state/${s}`),
   ],
 };
@@ -84,9 +90,13 @@ for (const kind of BIG_TREES) {
 
 // ---- write sharded sitemaps + index to public/ ----
 const today = new Date().toISOString().slice(0, 10);
+// Per-URL extras — EntityMap's discovery guidance asks for these on its page.
+const URL_EXTRAS = {
+  "/entitymap.html": "<changefreq>weekly</changefreq><priority>0.9</priority>",
+};
 const urlsetXml = (paths) =>
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${paths
-    .map((p) => `  <url><loc>${xmlEscape(SITE + p)}</loc></url>`)
+    .map((p) => `  <url><loc>${xmlEscape(SITE + p)}</loc>${URL_EXTRAS[p] ?? ""}</url>`)
     .join("\n")}\n</urlset>\n`;
 
 // Sitemap filename labels — kept plural to match the previously published

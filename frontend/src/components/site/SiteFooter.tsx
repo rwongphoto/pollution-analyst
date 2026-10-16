@@ -25,6 +25,7 @@ export function SiteFooter({ briefingLabel }: { briefingLabel?: string }) {
             <Link href="/methodology">Methodology overview</Link>
             <Link href="/methodology#equity">Equity overlay stance</Link>
             <Link href="/methodology#sources">Data sources</Link>
+            <a href="/entitymap.html">Entity map</a>
           </nav>
         </div>
         <div className="legal">

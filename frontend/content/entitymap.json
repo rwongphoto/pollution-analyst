@@ -1,0 +1,458 @@
+{
+  "version": "1.0",
+  "schema": "https://entitymap.org/spec/v1.0",
+  "verificationStatus": "generator-draft",
+  "publisher": {
+    "name": "Pollution Analyst",
+    "url": "https://www.pollutionanalyst.com"
+  },
+  "entities": [
+    {
+      "entityId": "e_001",
+      "@type": "Concept",
+      "name": "Toxics Release Inventory",
+      "alternateName": "TRI",
+      "sameAs": "https://www.wikidata.org/wiki/Q7830419",
+      "description": "EPA's annual, self-reported inventory of releases of roughly 800 listed chemicals by industrial facilities. Pollution Analyst uses it as the core facility-release dataset, reported in pounds rather than concentrations.",
+      "hasChunks": [
+        {
+          "chunkId": "c_001",
+          "text": "Self-reported annual releases of ~800 listed chemicals by industrial facilities meeting NAICS-code and employee thresholds. Reported quantities are estimates (mass balance, emission factors, monitoring data) rather than continuous measurements.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#tri",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_002",
+          "text": "A facility's TRI total is only as good as its Form R submission. EPA does QC checks but the underlying record is the facility's. Anomalous year-over-year shifts often reflect reporting-method changes, not actual emission shifts.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#tri",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_003",
+          "text": "TRI tells you how much was released — not where it ended up or what people inhaled. We pair TRI with the EJ disparity overlay for population-exposure context.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#tri",
+          "pageTitle": "Pollution Analysis Methodology"
+        }
+      ],
+      "relations": [
+        { "predicate": "PRODUCED_BY", "targetUri": "https://www.wikidata.org/wiki/Q460173", "targetName": "United States Environmental Protection Agency" }
+      ]
+    },
+    {
+      "entityId": "e_002",
+      "@type": "Concept",
+      "name": "Greenhouse Gas Reporting Program",
+      "alternateName": "GHGRP",
+      "description": "EPA's annual program for self-reported greenhouse-gas emissions from large emitters above 25,000 mtCO₂e. Pollution Analyst labels its totals as reported large-emitter CO₂e, and the 2024 reporting year is unavailable after the program was halted in 2025.",
+      "hasChunks": [
+        {
+          "chunkId": "c_004",
+          "text": "Annual self-reported greenhouse-gas emissions (CO₂, methane, N₂O, HFCs, others) from large emitters — power plants, refineries, chemicals, cement, landfills, and other facilities above the 25,000 mtCO₂e threshold. Reported in metric tons of CO₂ equivalent per facility per gas per sector subpart.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#ghgrp",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_005",
+          "text": "EPA's Envirofacts API returns zero rows nationally for GHGRP year 2024, for every state. The Trump administration halted the Greenhouse Gas Reporting Program in 2025; the year-2024 dataset that would normally have been published in late 2025 was not released.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#ghgrp",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_006",
+          "text": "Below-threshold sources — small commercial boilers, distributed agriculture, on-road vehicles — are not in this dataset. We label GHG totals as “reported large-emitter CO₂e” rather than “total greenhouse gases.”",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#ghgrp",
+          "pageTitle": "Pollution Analysis Methodology"
+        }
+      ],
+      "relations": [
+        { "predicate": "PRODUCED_BY", "targetUri": "https://www.wikidata.org/wiki/Q460173", "targetName": "United States Environmental Protection Agency" }
+      ]
+    },
+    {
+      "entityId": "e_003",
+      "@type": "Concept",
+      "name": "Safe Drinking Water Information System",
+      "alternateName": "SDWIS",
+      "sameAs": "https://www.wikidata.org/wiki/Q108418901",
+      "description": "The federal compliance record for about 150,000 public water systems, logging each violation with year, contaminant, and resolution status. It records utility-level compliance, not what comes out of an individual tap.",
+      "hasChunks": [
+        {
+          "chunkId": "c_007",
+          "text": "Compliance status for ~150,000 public water systems. Records each violation against an MCL (maximum contaminant level), treatment-technique requirement, or monitoring rule, with year, contaminant, and resolution status.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#sdwis",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_008",
+          "text": "SDWIS records utility-level compliance against federal standards. It does not measure what comes out of any individual tap, which depends on premise plumbing and corrosion conditions.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#sdwis",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_009",
+          "text": "States vary in how aggressively they record monitoring violations. Cross-state comparisons of monitoring-violation counts are noisier than health-based counts.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#sdwis",
+          "pageTitle": "Pollution Analysis Methodology"
+        }
+      ],
+      "relations": [
+        { "predicate": "PRODUCED_BY", "targetUri": "https://www.wikidata.org/wiki/Q460173", "targetName": "United States Environmental Protection Agency" },
+        { "predicate": "INCLUDES", "targetId": "e_005", "targetName": "Health-based violation" }
+      ]
+    },
+    {
+      "entityId": "e_004",
+      "@type": "Concept",
+      "name": "Maximum Contaminant Level",
+      "alternateName": "MCL",
+      "sameAs": "https://www.wikidata.org/wiki/Q6795843",
+      "description": "The federal drinking-water limit for a contaminant. Exceeding an MCL is what makes a SDWIS violation health-based rather than a monitoring lapse.",
+      "hasChunks": [
+        {
+          "chunkId": "c_010",
+          "text": "A health-based violation means an MCL or TT was exceeded — actionable signal. A monitoring violation means the utility didn't collect or report a sample on time — concerning for transparency, but not a measured exceedance.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#sdwis",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_011",
+          "text": "Lead, nitrates, arsenic, disinfection byproducts, microbial. Reported via SDWIS as MCL or treatment-technique violations per public water system.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#taxonomy",
+          "pageTitle": "Pollution Analysis Methodology"
+        }
+      ]
+    },
+    {
+      "entityId": "e_005",
+      "@type": "Concept",
+      "name": "Health-based violation",
+      "description": "A SDWIS violation where a water system exceeded an MCL or treatment-technique requirement, as opposed to missing a sample. Pollution Analyst flags these on utility pages and keeps them separate from monitoring violations.",
+      "hasChunks": [
+        {
+          "chunkId": "c_012",
+          "text": "SDWIS health-based or unresolved violation. Event-driven, not statistical — the violation itself is the signal. Surfaced on water-utility pages with a link to the EPA SDWIS record. Severity ordering: unresolved > health-based within 1 year > health-based within 5 years.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#anomaly-engine",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_013",
+          "text": "Many utilities with health-based violations are mid-remediation under EPA-approved plans. We link to the EPA SDWIS record so readers can verify return-to-compliance status before forming a conclusion.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#sdwis",
+          "pageTitle": "Pollution Analysis Methodology"
+        }
+      ],
+      "relations": [
+        { "predicate": "DEPENDS_ON", "targetId": "e_004", "targetName": "Maximum Contaminant Level" }
+      ]
+    },
+    {
+      "entityId": "e_006",
+      "@type": "ProprietaryTerm",
+      "name": "Anomaly Engine",
+      "description": "Pollution Analyst's flagging system that surfaces notable shifts and violation events across federal datasets. A flag marks editorial attention, not a regulatory finding.",
+      "hasChunks": [
+        {
+          "chunkId": "c_014",
+          "text": "Pollution data comes in several shapes: annual reporting (TRI, GHGRP), discrete violation events (SDWIS), and sparse air-monitor readings (AQS, when it lands). The flag taxonomy is built around those shapes.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#anomaly-engine",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_015",
+          "text": "A flag is editorial attention, not a regulatory finding. Where EPA has issued an enforcement action — SDWIS Tier 1 violations, ECHO actions — we link to the federal record so readers can verify the actual compliance posture rather than infer it from our card.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#anomaly-engine",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_016",
+          "text": "Average flag count is targeted at: ≤3 per facility, ≤5 per county, ≤8 per state. Water utilities are uncapped — violation events are events, not anomalies.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#anomaly-engine",
+          "pageTitle": "Pollution Analysis Methodology"
+        }
+      ],
+      "relations": [
+        { "predicate": "INCLUDES", "targetId": "e_007", "targetName": "Long-Arc Shift" },
+        { "predicate": "INCLUDES", "targetId": "e_008", "targetName": "Release Shift" },
+        { "predicate": "INCLUDES", "targetId": "e_005", "targetName": "Health-based violation" }
+      ]
+    },
+    {
+      "entityId": "e_007",
+      "@type": "ProprietaryTerm",
+      "name": "Long-Arc Shift",
+      "description": "An Anomaly Engine flag for a change of 50% or more between a geography's latest year and a baseline at least ten years earlier. Absolute floors keep tiny baselines from producing misleading percentages.",
+      "hasChunks": [
+        {
+          "chunkId": "c_017",
+          "text": "Triggers when a geography's most-recent-year value differs from a baseline year (≥10 years prior) by ≥50%. Absolute floors keep the percent change meaningful: ≥50,000 lb baseline for TRI pathways, ≥100,000 mtCO₂e for GHG. Surfaced on facility, county, and state pages.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#anomaly-engine",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_018",
+          "text": "Multi-decade declines on the order of −30% to −60% reflect both Clean Air Act controls and the progressive electrification of heavy industry. We report the long arc explicitly because the year-over-year noise can hide it.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#tri",
+          "pageTitle": "Pollution Analysis Methodology"
+        }
+      ],
+      "relations": [
+        { "predicate": "PART_OF", "targetId": "e_006", "targetName": "Anomaly Engine" },
+        { "predicate": "DEPENDS_ON", "targetId": "e_001", "targetName": "Toxics Release Inventory" },
+        { "predicate": "DEPENDS_ON", "targetId": "e_002", "targetName": "Greenhouse Gas Reporting Program" }
+      ]
+    },
+    {
+      "entityId": "e_008",
+      "@type": "ProprietaryTerm",
+      "name": "Release Shift",
+      "description": "An Anomaly Engine flag for a large year-over-year change in one facility's release of one TRI chemical. Three combined floors filter out noise from small baselines.",
+      "hasChunks": [
+        {
+          "chunkId": "c_019",
+          "text": "Year-over-year facility × chemical TRI shift. Three combined floors against tiny-base noise: ≥50% change AND ≥10,000 lb absolute delta AND ≥1,000 lb prior-year baseline. Surfaced on facility pages only — YoY at county/state aggregation is too noisy to be editorial.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#anomaly-engine",
+          "pageTitle": "Pollution Analysis Methodology"
+        }
+      ],
+      "relations": [
+        { "predicate": "PART_OF", "targetId": "e_006", "targetName": "Anomaly Engine" },
+        { "predicate": "DEPENDS_ON", "targetId": "e_001", "targetName": "Toxics Release Inventory" }
+      ]
+    },
+    {
+      "entityId": "e_009",
+      "@type": "ProprietaryTerm",
+      "name": "Equity Overlay",
+      "description": "Pollution Analyst's three-layer demographic and environmental-burden context shown on every facility, county, city, and state page. Census demographics lead, followed by national percentiles and EPA's EJ disparity scores.",
+      "hasChunks": [
+        {
+          "chunkId": "c_020",
+          "text": "EPA retired the public-facing EJScreen tool in 2025. We're now a primary-source compositor for the equity overlay rather than a re-presenter of an EPA-blessed index. Every facility, county, city, and state page renders the overlay in three layers, in order of prominence:",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#equity",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_021",
+          "text": "Each page picks the tightest geography that has data available, in this preference order: Census Place (city) → containing County → State. Facility pages currently use the containing-county overlay as a proxy; a 3-mile-buffer aggregation is a future iteration.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#equity",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_022",
+          "text": "Percentile says “how does this place rank against the country?” — directly legible, easy to cite. Disparity score says “does the population at this place bear more burden than a population-weighted reference?” — a stronger statement about distributive equity, harder to compress into one phrase.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#equity",
+          "pageTitle": "Pollution Analysis Methodology"
+        }
+      ],
+      "relations": [
+        { "predicate": "INCLUDES", "targetId": "e_010", "targetName": "EJ disparity score" },
+        { "predicate": "RELATES_TO", "targetId": "e_011", "targetName": "EJScreen" }
+      ]
+    },
+    {
+      "entityId": "e_010",
+      "@type": "Concept",
+      "name": "EJ disparity score",
+      "description": "EPA's environmental-justice metric, centered on 100 as the population-weighted reference burden; higher means greater disparate exposure. Pollution Analyst population-weights it to state, county, and city, and treats about 150 as notable and 200+ as severe.",
+      "hasChunks": [
+        {
+          "chunkId": "c_023",
+          "text": "EPA's newer disparity-score metric, sourced from the USEPA-clone/ejamdata GitHub mirror that the open-source EJAM package consumes. Population-weighted to state, county, and city. Centered on 100 = the population-weighted reference burden; higher = greater disparate exposure. ~150 is widely considered notable; 200+ is severe.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#equity",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_024",
+          "text": "A score of 150 says “the population here bears notably more burden than the population-weighted reference,” not “X concentration above standard.” We always show the underlying indicator label and the “reference burden” framing on every page.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#ejscreen",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_025",
+          "text": "We do not relabel disparity scores as “our index.” The metric is EPA's; the population weighting and place/county/state aggregation are ours, and the pipeline code is open.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#ejscreen",
+          "pageTitle": "Pollution Analysis Methodology"
+        }
+      ],
+      "relations": [
+        { "predicate": "PRODUCED_BY", "targetUri": "https://www.wikidata.org/wiki/Q460173", "targetName": "United States Environmental Protection Agency" },
+        { "predicate": "PART_OF", "targetId": "e_009", "targetName": "Equity Overlay" }
+      ]
+    },
+    {
+      "entityId": "e_011",
+      "@type": "Concept",
+      "name": "EJScreen",
+      "sameAs": "https://www.wikidata.org/wiki/Q133809149",
+      "description": "EPA's environmental-justice screening tool, whose public site and prebuilt exports were retired in 2025. Pollution Analyst rebuilds its percentile framing from the underlying block-group tables, which EPA still maintains.",
+      "hasChunks": [
+        {
+          "chunkId": "c_026",
+          "text": "EPA retired the public-facing EJScreen tool and its prebuilt CSV exports in 2025. The underlying block-group tables are still maintained by the same EPA team that built EJAM (the open-source successor), published via the USEPA-clone/ejamdata GitHub repo.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#ejscreen",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_027",
+          "text": "Not a personal exposure model. The underlying data rolls modeled exposure to block groups and pairs that with ACS demographics. Inside a block group there is variation we do not capture.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#ejscreen",
+          "pageTitle": "Pollution Analysis Methodology"
+        }
+      ],
+      "relations": [
+        { "predicate": "PRODUCED_BY", "targetUri": "https://www.wikidata.org/wiki/Q460173", "targetName": "United States Environmental Protection Agency" }
+      ]
+    },
+    {
+      "entityId": "e_012",
+      "@type": "Concept",
+      "name": "CDC PLACES",
+      "description": "CDC's modeled estimates of chronic-disease prevalence for counties and places. Pollution Analyst shows five measures next to the equity overlay, framed as ecological correlation, not causation.",
+      "hasChunks": [
+        {
+          "chunkId": "c_028",
+          "text": "County and city pages render five chronic-disease prevalence estimates from CDC's Population Level Analysis and Community Estimates (PLACES) program — adult asthma, COPD, coronary heart disease, diabetes, and frequent mental distress.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#health",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_029",
+          "text": "CDC PLACES uses a multi-level small-area regression on BRFSS (Behavioral Risk Factor Surveillance System) responses to produce a synthetic prevalence estimate per county and per Census place. It is not a count of diagnosed cases at the geography.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#health",
+          "pageTitle": "Pollution Analysis Methodology"
+        },
+        {
+          "chunkId": "c_030",
+          "text": "A higher pollution reading and a higher disease prevalence in the same county do not establish that the pollution caused the disease. Causal attribution requires individual-level data, exposure histories, and confounder controls that an area-level dataset cannot provide.",
+          "sourceUrl": "https://www.pollutionanalyst.com/methodology#health",
+          "pageTitle": "Pollution Analysis Methodology"
+        }
+      ],
+      "relations": [
+        { "predicate": "RELATES_TO", "targetId": "e_009", "targetName": "Equity Overlay" }
+      ]
+    },
+    {
+      "entityId": "e_013",
+      "@type": "Concept",
+      "name": "Superfund site",
+      "sameAs": "https://www.wikidata.org/wiki/Q40010370",
+      "description": "A contaminated property that EPA has found poses a significant risk to health or the environment. Sites that score above the hazard threshold are placed on the National Priorities List for federally directed cleanup.",
+      "hasChunks": [
+        {
+          "chunkId": "c_031",
+          "text": "A Superfund site is a contaminated property that the EPA has determined poses a significant risk to human health or the environment due to hazardous substances — waste, chemical releases, or radioactive material left by former or current industrial, military, or commercial operations.",
+          "sourceUrl": "https://www.pollutionanalyst.com/superfund-sites-cleanup-guide",
+          "pageTitle": "Superfund Sites and Cleanup: A Comprehensive Guide"
+        },
+        {
+          "chunkId": "c_032",
+          "text": "NPL sites are not a uniform category. They include former industrial plants, federal military bases, mining operations, municipal landfills, and smelter sites.",
+          "sourceUrl": "https://www.pollutionanalyst.com/superfund-sites-cleanup-guide",
+          "pageTitle": "Superfund Sites and Cleanup: A Comprehensive Guide"
+        }
+      ],
+      "relations": [
+        { "predicate": "REGULATED_BY", "targetId": "e_015", "targetName": "CERCLA" },
+        { "predicate": "RELATES_TO", "targetId": "e_014", "targetName": "National Priorities List" }
+      ]
+    },
+    {
+      "entityId": "e_014",
+      "@type": "Concept",
+      "name": "National Priorities List",
+      "alternateName": "NPL",
+      "sameAs": "https://www.wikidata.org/wiki/Q6975053",
+      "description": "EPA's list of Superfund sites eligible for federally directed cleanup under CERCLA. A site is NPL Final while cleanup is under federal oversight, and NPL Deleted once EPA certifies its cleanup objectives are met.",
+      "hasChunks": [
+        {
+          "chunkId": "c_033",
+          "text": "A site on the “NPL Final” list is under active federal cleanup oversight. An “NPL Deleted” site has had its cleanup objectives certified by EPA as complete — contamination has been addressed to levels that allow the intended land use. Deletion is not the same as a clean bill of health for all possible uses.",
+          "sourceUrl": "https://www.pollutionanalyst.com/superfund-sites-cleanup-guide",
+          "pageTitle": "Superfund Sites and Cleanup: A Comprehensive Guide"
+        },
+        {
+          "chunkId": "c_034",
+          "text": "A site is deleted from the NPL when EPA and the state determine that all cleanup objectives have been met and no further action is needed. Partial deletion applies to portions of large multi-operable-unit sites. Deleted sites remain indexed in SEMS; their cleanup history is permanent public record.",
+          "sourceUrl": "https://www.pollutionanalyst.com/superfund-sites-cleanup-guide",
+          "pageTitle": "Superfund Sites and Cleanup: A Comprehensive Guide"
+        }
+      ],
+      "relations": [
+        { "predicate": "DEPENDS_ON", "targetId": "e_016", "targetName": "Hazard Ranking System score" },
+        { "predicate": "PRODUCED_BY", "targetUri": "https://www.wikidata.org/wiki/Q460173", "targetName": "United States Environmental Protection Agency" }
+      ]
+    },
+    {
+      "entityId": "e_015",
+      "@type": "Concept",
+      "name": "CERCLA",
+      "alternateName": "Comprehensive Environmental Response, Compensation, and Liability Act",
+      "sameAs": "https://www.wikidata.org/wiki/Q86665348",
+      "description": "The 1980 federal law that created the Superfund program. It set up a cleanup trust fund, gave EPA authority over contaminated sites, and made contributing parties strictly, jointly, and severally liable for cleanup costs.",
+      "hasChunks": [
+        {
+          "chunkId": "c_035",
+          "text": "CERCLA did three things simultaneously: it created a trust fund to pay for cleanups when responsible parties couldn't be identified or compelled; it gave EPA broad authority to investigate, rank, and remediate sites; and it established strict, joint, and several liability — meaning any party that contributed waste to a site could be held responsible for the full cost of cleanup.",
+          "sourceUrl": "https://www.pollutionanalyst.com/superfund-sites-cleanup-guide",
+          "pageTitle": "Superfund Sites and Cleanup: A Comprehensive Guide"
+        },
+        {
+          "chunkId": "c_036",
+          "text": "CERCLA originally funded the Superfund trust through excise taxes on petroleum and chemical feedstocks. Congress allowed those taxes to expire in 1995; the fund ran near-empty for years, slowing cleanups. The Inflation Reduction Act of 2022 reinstated the Superfund excise tax, providing a more stable funding stream for ongoing remediation.",
+          "sourceUrl": "https://www.pollutionanalyst.com/superfund-sites-cleanup-guide",
+          "pageTitle": "Superfund Sites and Cleanup: A Comprehensive Guide"
+        }
+      ]
+    },
+    {
+      "entityId": "e_016",
+      "@type": "Concept",
+      "name": "Hazard Ranking System score",
+      "alternateName": "HRS",
+      "description": "EPA's standardized score for a contaminated site, which weighs contamination pathways against the people and sensitive environments exposed. Sites scoring 28.5 or higher are proposed for the National Priorities List.",
+      "hasChunks": [
+        {
+          "chunkId": "c_037",
+          "text": "What they share is a Hazard Ranking Score (HRS) above 28.5, calculated by EPA using a standardized methodology that weighs contamination pathways — groundwater, surface water, soil, and air — against the population and sensitive environments exposed.",
+          "sourceUrl": "https://www.pollutionanalyst.com/superfund-sites-cleanup-guide",
+          "pageTitle": "Superfund Sites and Cleanup: A Comprehensive Guide"
+        },
+        {
+          "chunkId": "c_038",
+          "text": "EPA applies the HRS model, integrating contamination severity, migration potential, and population exposure. Sites scoring ≥ 28.5 are proposed for the NPL; a public comment period follows.",
+          "sourceUrl": "https://www.pollutionanalyst.com/superfund-sites-cleanup-guide",
+          "pageTitle": "Superfund Sites and Cleanup: A Comprehensive Guide"
+        }
+      ],
+      "relations": [
+        { "predicate": "PRECEDES", "targetId": "e_017", "targetName": "Record of Decision" }
+      ]
+    },
+    {
+      "entityId": "e_017",
+      "@type": "Concept",
+      "name": "Record of Decision",
+      "alternateName": "ROD",
+      "sameAs": "https://www.wikidata.org/wiki/Q7302852",
+      "description": "The public EPA document that formally selects a Superfund site's cleanup remedy. RODs are indexed in EPA's SEMS database, which is where Pollution Analyst gets its contaminant data.",
+      "hasChunks": [
+        {
+          "chunkId": "c_039",
+          "text": "EPA issues a Record of Decision that formally selects the cleanup remedy — excavation, in-situ treatment, containment, groundwater pump-and-treat, monitored natural attenuation, or combinations. The ROD is a public document; all EPA-approved RODs are indexed in the SEMS database, which underpins the contaminant data on this site.",
+          "sourceUrl": "https://www.pollutionanalyst.com/superfund-sites-cleanup-guide",
+          "pageTitle": "Superfund Sites and Cleanup: A Comprehensive Guide"
+        },
+        {
+          "chunkId": "c_040",
+          "text": "EPA's SEMS database records contaminants of concern at each NPL site — the chemicals named in formal decision documents (Records of Decision and related). A single site may list dozens to hundreds of distinct chemicals across multiple media.",
+          "sourceUrl": "https://www.pollutionanalyst.com/superfund-sites-cleanup-guide",
+          "pageTitle": "Superfund Sites and Cleanup: A Comprehensive Guide"
+        }
+      ],
+      "relations": [
+        { "predicate": "PRODUCED_BY", "targetUri": "https://www.wikidata.org/wiki/Q460173", "targetName": "United States Environmental Protection Agency" }
+      ]
+    }
+  ]
+}
