@@ -99,7 +99,7 @@ export default function MethodologyPage() {
             <section id="anomaly-engine">
               <h2>Anomaly Engine</h2>
               <p>
-                Pollution data has different shapes from crime data. Crime is point-incident, monthly, with weak seasonality; pollution is annual (TRI, GHGRP), event-driven (SDWIS), or sparse-monitor (AQS, when it lands). The flag taxonomy reflects that. Four flag types ship today; two more (smoke days, NAAQS exceedance days) defer until air-monitor ingest is in.
+                Pollution data comes in several shapes: annual reporting (TRI, GHGRP), discrete violation events (SDWIS), and sparse air-monitor readings (AQS, when it lands). The flag taxonomy is built around those shapes. Four flag types ship today; two more (smoke days, NAAQS exceedance days) defer until air-monitor ingest is in.
               </p>
               <p>
                 A flag is <strong>editorial attention, not a regulatory finding</strong>. Where EPA has issued an enforcement action — SDWIS Tier 1 violations, ECHO actions — we link to the federal record so readers can verify the actual compliance posture rather than infer it from our card.
@@ -131,20 +131,17 @@ export default function MethodologyPage() {
             </section>
 
             <section id="equity">
-              <h2>Equity Overlay (The Deliberate Inversion From Our Crime Site)</h2>
+              <h2>Equity Overlay</h2>
               <p>
-                Our companion site, <a href="https://www.publicanalyst.ai" target="_blank" rel="noreferrer">Public Analyst.ai</a>, refuses to overlay race or income with neighborhood crime. The reasoning there is specific to crime: it&apos;s reported by police, subject to enforcement-pattern bias, and the juxtaposition reads correlation as causation regardless of authorial intent.
+                Who lives near pollution is a core part of understanding it.
+                <strong> Environmental justice analysis explicitly correlates pollution exposure with race and income.</strong> EPA published EJScreen for exactly this purpose for over a decade, and pairing exposure with demographics is the established, well-documented framing in environmental research. Leaving the overlay out would <em>undermine</em> the value of the site.
               </p>
               <p>
-                For pollution, the opposite is the legitimate, well-documented framing.
-                <strong> Environmental justice analysis explicitly correlates pollution exposure with race and income.</strong> EPA published EJScreen for exactly this purpose for over a decade. Refusing the overlay would <em>undermine</em> the value of the site.
-              </p>
-              <p>
-                The mechanism differs in two important ways:
+                Two properties of pollution data make this overlay sound:
               </p>
               <ul>
                 <li>
-                  <strong>Pollution is measured at the receptor or the source.</strong> A TRI release is reported by the facility under federal mandate; an EJ index pairs that release with the demographics of the surrounding block groups. Neither measurement is filtered through enforcement priorities.
+                  <strong>Pollution is measured at the receptor or the source.</strong> A TRI release is reported by the facility under federal mandate; an EJ index pairs that release with the demographics of the surrounding block groups. Both inputs come from standardized federal reporting.
                 </li>
                 <li>
                   <strong>Concentration is the object of inquiry.</strong> The question on a pollution page is whether a population bears disproportionate exposure — that&apos;s an empirical question with an empirical answer, computed at federally defined geographies.

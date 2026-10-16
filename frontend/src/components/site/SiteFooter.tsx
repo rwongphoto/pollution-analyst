@@ -26,10 +26,6 @@ export function SiteFooter({ briefingLabel }: { briefingLabel?: string }) {
             <Link href="/methodology#equity">Equity overlay stance</Link>
             <Link href="/methodology#sources">Data sources</Link>
           </nav>
-          <nav className="col" aria-label="Elsewhere">
-            <p className="col-title">Elsewhere</p>
-            <a href="https://www.publicanalyst.ai" target="_blank" rel="noreferrer">Public Analyst.ai</a>
-          </nav>
         </div>
         <div className="legal">
           <span>© {new Date().getFullYear()} Pollution Analyst · <Link href="/legal">Terms &amp; Privacy</Link></span>
